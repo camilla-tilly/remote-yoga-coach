@@ -1,0 +1,192 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 33 80% 96%;
+    --foreground: 25 55% 33%;
+
+    --card: 33 80% 96%;
+    --card-foreground: 25 55% 33%;
+
+    --popover: 33 80% 96%;
+    --popover-foreground: 25 55% 33%;
+
+    --primary: 25 55% 33%;
+    --primary-foreground: 33 80% 96%;
+
+    --secondary: 33 50% 75%;
+    --secondary-foreground: 25 55% 33%;
+
+    --muted: 33 30% 90%;
+    --muted-foreground: 25 30% 40%;
+
+    --accent: 33 50% 75%;
+    --accent-foreground: 25 55% 33%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 33 80% 96%;
+
+    --border: 25 30% 80%;
+    --input: 25 30% 80%;
+    --ring: 25 55% 33%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 33 80% 96%;
+    --sidebar-foreground: 25 55% 33%;
+    --sidebar-primary: 25 55% 33%;
+    --sidebar-primary-foreground: 33 80% 96%;
+    --sidebar-accent: 33 50% 75%;
+    --sidebar-accent-foreground: 25 55% 33%;
+    --sidebar-border: 25 30% 80%;
+    --sidebar-ring: 25 55% 33%;
+  }
+
+  /* Dark mode is not needed as per the instructions */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-dalashala-beige text-dalashala-darkBrown font-montserrat;
+    font-size: 12px; /* Reduced base font size */
+  }
+
+  h1, h2, h3 {
+    @apply font-cinzel;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-section {
+    @apply max-w-[720px] mx-auto px-4 sm:px-6 lg:px-8 py-5 md:py-6 lg:py-8;
+  }
+
+  .heading-xl {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-dalashala-darkBrown;
+  }
+
+  .heading-lg {
+    @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-dalashala-darkBrown;
+  }
+
+  .heading-md {
+    @apply text-xl md:text-2xl lg:text-3xl font-bold text-dalashala-darkBrown;
+  }
+
+  .heading-sm {
+    @apply text-lg md:text-xl lg:text-2xl font-bold text-dalashala-darkBrown;
+  }
+
+  .heading-xs {
+    @apply text-base md:text-lg lg:text-xl font-bold text-dalashala-darkBrown;
+  }
+
+  .text-body {
+    @apply text-xs md:text-sm lg:text-base;
+  }
+
+  .text-small {
+    @apply text-xs md:text-xs lg:text-sm;
+  }
+
+  .animate-when-visible {
+    @apply opacity-0;
+  }
+
+  .leaf-decoration {
+    @apply absolute w-4 h-auto text-dalashala-tan/60 transform rotate-12;
+  }
+  
+  /* Text shadow utilities for better visibility */
+  .text-shadow-sm {
+    text-shadow: 0 1px 1px rgba(0,0,0,0.6);
+  }
+  
+  .text-shadow-md {
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 0 3px rgba(0,0,0,0.5);
+  }
+  
+  .text-shadow-xl {
+    text-shadow: 0 3px 6px rgba(0,0,0,0.9), 
+                 0 0 8px rgba(0,0,0,0.7),
+                 0 0 15px rgba(0,0,0,0.5);
+  }
+}
+
+/* Custom scroll observer class will be applied via JavaScript */
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.fade-in-left {
+  animation: fadeInLeft 0.8s ease forwards;
+}
+
+.fade-in-right {
+  animation: fadeInRight 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

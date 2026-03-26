@@ -1,0 +1,163 @@
+
+/* Keep existing code */
+
+/* Ensure full-width content in all sections but with smaller max-width */
+section {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Adjust container widths for various screen sizes - narrower margins */
+.container-section {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media (min-width: 1024px) {
+  .container-section {
+    padding-left: 6%;
+    padding-right: 6%;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container-section {
+    padding-left: 8%;
+    padding-right: 8%;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container-section {
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  
+  .heading-lg {
+    font-size: 3rem !important;
+  }
+  
+  .heading-md {
+    font-size: 2rem !important;
+  }
+
+  /* Larger text in the Why Dala Shala section for better readability */
+  #why-dala-shala .font-eb-garamond {
+    font-size: 1.25rem;
+  }
+  
+  #why-dala-shala .text-xl {
+    font-size: 1rem;
+  }
+  
+  #why-dala-shala .text-2xl {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container-section {
+    padding-left: 12%;
+    padding-right: 12%;
+    max-width: 750px;
+  }
+  
+  .heading-lg {
+    font-size: 3.5rem !important;
+  }
+  
+  .heading-md {
+    font-size: 2.5rem !important;
+  }
+  
+  /* Even larger text for 4K displays */
+  #why-dala-shala .font-eb-garamond {
+    font-size: 1.5rem;
+  }
+  
+  #why-dala-shala .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  #why-dala-shala .text-3xl {
+    font-size: 1.75rem;
+  }
+}
+
+/* Fix for excessive scrolling past the footer */
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+  height: auto;
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make sure the page doesn't scroll past the content */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+footer {
+  margin-top: auto;
+  width: 100vw;
+  left: 0;
+  right: 0;
+}
+
+/* Fix for DrawerContent in mobile menu */
+.vaul-drawer-content {
+  max-height: 80vh !important;
+  overflow-y: auto !important;
+}
+
+/* Animation classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Prevent excessive scrolling on mobile */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+  }
+}
+
+/* Reduce spacing between sections */
+section + section {
+  padding-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  section + section {
+    padding-top: 0.75rem;
+  }
+}

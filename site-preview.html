@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yoga med Camilla – Site Preview (Updated)</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --beige: #f9dec6;
+    --dark-brown: #864927;
+    --medium-brown: #95593b;
+    --tan: #dfbca3;
+    --white: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #f0d4b8; font-family: 'EB Garamond', serif; }
+
+  .tab-bar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+    background: var(--dark-brown);
+    display: flex; gap: 2px; padding: 8px 12px; overflow-x: auto;
+    font-family: 'Montserrat', sans-serif; font-size: 11px;
+  }
+  .tab-bar button {
+    background: rgba(255,255,255,0.15); border: none; cursor: pointer;
+    color: #f9dec6; padding: 6px 12px; border-radius: 20px;
+    text-transform: uppercase; letter-spacing: 0.08em; white-space: nowrap;
+    transition: background 0.2s;
+  }
+  .tab-bar button.active { background: var(--beige); color: var(--dark-brown); font-weight: 600; }
+  .tab-bar button:hover:not(.active) { background: rgba(255,255,255,0.25); }
+
+  .page { display: none; padding-top: 48px; }
+  .page.active { display: block; }
+
+  nav {
+    background: rgba(249,222,198,0.97);
+    padding: 12px 20px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid rgba(223,188,163,0.4);
+    position: sticky; top: 48px; z-index: 100;
+  }
+  .nav-brand { font-family: 'Cinzel Decorative', serif; font-size: 13px; color: var(--dark-brown); font-weight: 700; }
+  .nav-links { display: flex; gap: 18px; align-items: center; }
+  .nav-links span { font-size: 13px; color: var(--dark-brown); cursor: pointer; font-family: 'EB Garamond', serif; }
+
+  .hero {
+    background: var(--beige);
+    text-align: center;
+    padding: 80px 24px 60px;
+  }
+  .hero-logo {
+    width: 100px; height: 100px;
+    background: var(--tan); border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cinzel Decorative', serif; font-size: 10px; color: var(--dark-brown);
+  }
+  .hero h1 { font-family: 'Cinzel Decorative', serif; font-size: 22px; color: var(--dark-brown); margin-bottom: 12px; font-weight: 700; }
+  .hero p { font-family: 'EB Garamond', serif; font-size: 18px; color: var(--medium-brown); margin-bottom: 28px; }
+  .btn-primary {
+    display: inline-block; background: var(--dark-brown); color: var(--beige);
+    padding: 10px 28px; font-family: 'Montserrat', sans-serif; font-size: 12px;
+    text-transform: uppercase; letter-spacing: 0.1em; text-decoration: none;
+    border-radius: 2px;
+  }
+
+  .section { padding: 48px 24px; background: var(--beige); }
+  .section-white { padding: 48px 24px; background: var(--white); }
+  .section-tan { padding: 48px 24px; background: var(--tan); }
+  .section-dark { padding: 48px 24px; background: var(--dark-brown); color: var(--beige); }
+  .container { max-width: 860px; margin: 0 auto; }
+
+  .section-label { font-family: 'Montserrat', sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--medium-brown); margin-bottom: 6px; }
+  .section-title { font-family: 'Cinzel', serif; font-size: 22px; color: var(--dark-brown); margin-bottom: 8px; }
+  .section-subtitle { font-family: 'EB Garamond', serif; font-size: 15px; color: var(--medium-brown); margin-bottom: 32px; }
+
+  .divider {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 20px;
+  }
+  .divider-label { font-family: 'Cinzel', serif; font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--medium-brown); white-space: nowrap; }
+  .divider-line { flex: 1; height: 1px; background: rgba(223,188,163,0.5); }
+
+  .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+  .card {
+    background: white; border-radius: 16px; padding: 20px;
+    border: 1px solid rgba(223,188,163,0.2); box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    position: relative;
+  }
+  .card-tag {
+    position: absolute; top: 14px; right: 14px;
+    background: var(--dark-brown); color: var(--beige);
+    font-family: 'Montserrat', sans-serif; font-size: 9px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    padding: 3px 8px; border-radius: 20px;
+  }
+  .card-title { font-family: 'Cinzel', serif; font-size: 13px; color: var(--dark-brown); margin-bottom: 8px; padding-right: 60px; }
+  .card-body { font-family: 'EB Garamond', serif; font-size: 13px; color: var(--medium-brown); line-height: 1.5; margin-bottom: 10px; }
+  .card-link { font-family: 'Montserrat', sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--dark-brown); }
+
+  .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .why-card { background: rgba(255,255,255,0.6); border-radius: 10px; overflow: hidden; border: 1px solid rgba(223,188,163,0.3); }
+  .why-card-header { background: var(--dark-brown); padding: 10px 14px; }
+  .why-card-header h3 { font-family: 'Montserrat', sans-serif; font-size: 9px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--beige); font-weight: 700; }
+  .why-card-body { padding: 14px; }
+  .why-card-body h4 { font-family: 'Cinzel', serif; font-size: 13px; color: var(--dark-brown); margin-bottom: 6px; }
+  .why-card-body p { font-family: 'EB Garamond', serif; font-size: 12px; color: var(--medium-brown); line-height: 1.5; }
+
+  .page-hero {
+    background: var(--beige); padding: 60px 24px 40px; text-align: center;
+  }
+  .page-hero-tag { font-family: 'Montserrat', sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--medium-brown); margin-bottom: 10px; }
+  .page-hero h1 { font-family: 'Cinzel', serif; font-size: 28px; color: var(--dark-brown); margin-bottom: 14px; line-height: 1.3; }
+  .page-hero p { font-family: 'EB Garamond', serif; font-size: 16px; color: var(--medium-brown); max-width: 540px; margin: 0 auto; line-height: 1.6; }
+
+  .highlight-card { background: white; border-radius: 14px; padding: 20px; border: 1px solid rgba(223,188,163,0.2); }
+  .highlight-card h3 { font-family: 'Cinzel', serif; font-size: 13px; color: var(--dark-brown); margin-bottom: 6px; }
+  .highlight-card p { font-family: 'EB Garamond', serif; font-size: 13px; color: var(--medium-brown); line-height: 1.5; }
+
+  .pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
+  .pricing-card { background: white; border-radius: 12px; padding: 18px; border: 1px solid rgba(223,188,163,0.25); }
+  .pricing-label { font-family: 'Cinzel', serif; font-size: 12px; color: var(--dark-brown); margin-bottom: 6px; }
+  .pricing-price { font-family: 'Montserrat', sans-serif; font-size: 16px; color: var(--medium-brown); font-weight: 600; margin-bottom: 4px; }
+  .pricing-note { font-family: 'EB Garamond', serif; font-size: 12px; color: rgba(149,89,59,0.7); font-style: italic; }
+
+  .cta-block { background: var(--dark-brown); border-radius: 20px; padding: 40px 32px; text-align: center; }
+  .cta-block h2 { font-family: 'Cinzel', serif; font-size: 20px; color: var(--beige); margin-bottom: 10px; }
+  .cta-block p { font-family: 'EB Garamond', serif; font-size: 15px; color: var(--tan); margin-bottom: 24px; line-height: 1.6; }
+  .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn-beige { background: var(--beige); color: var(--dark-brown); padding: 10px 22px; border-radius: 30px; font-family: 'Montserrat', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; border: none; cursor: pointer; }
+  .btn-outline { border: 1px solid var(--beige); color: var(--beige); padding: 10px 22px; border-radius: 30px; font-family: 'Montserrat', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; background: none; cursor: pointer; }
+
+  .english-section { background: white; border-radius: 16px; padding: 28px; margin-top: 32px; }
+  .english-section .en-label { font-family: 'Montserrat', sans-serif; font-size: 9px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--medium-brown); margin-bottom: 8px; }
+  .english-section h3 { font-family: 'Cinzel', serif; font-size: 15px; color: var(--dark-brown); margin-bottom: 12px; }
+  .english-section p { font-family: 'EB Garamond', serif; font-size: 14px; color: var(--medium-brown); line-height: 1.6; margin-bottom: 10px; }
+
+  .related-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .pill { background: var(--tan); color: var(--dark-brown); padding: 5px 14px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 0.07em; }
+
+  .blog-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .blog-card { background: white; border-radius: 16px; overflow: hidden; border: 1px solid rgba(223,188,163,0.25); box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+  .blog-card-img { height: 140px; background: var(--tan); display: flex; align-items: center; justify-content: center; font-family: 'Cinzel', serif; font-size: 11px; color: var(--dark-brown); }
+  .blog-card-body { padding: 18px; }
+  .blog-cat { font-family: 'Montserrat', sans-serif; font-size: 9px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--medium-brown); margin-bottom: 6px; }
+  .blog-card h3 { font-family: 'Cinzel', serif; font-size: 13px; color: var(--dark-brown); margin-bottom: 8px; line-height: 1.4; }
+  .blog-card p { font-family: 'EB Garamond', serif; font-size: 12px; color: var(--medium-brown); line-height: 1.5; }
+
+  /* Story paras */
+  .story p { font-family: 'EB Garamond', serif; font-size: 16px; color: var(--dark-brown); line-height: 1.8; margin-bottom: 16px; }
+
+  @media (max-width: 600px) {
+    .grid-2, .grid-3, .why-grid, .pricing-grid, .blog-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TAB BAR -->
+<div class="tab-bar">
+  <button class="active" onclick="showPage('home',this)">Startsida</button>
+  <button onclick="showPage('about',this)">Om mig</button>
+  <button onclick="showPage('mohippa',this)">Möhippa Yoga</button>
+  <button onclick="showPage('sup',this)">SUP Yoga</button>
+  <button onclick="showPage('hons',this)">Hönsyoga</button>
+  <button onclick="showPage('trail',this)">Trail + Yoga</button>
+  <button onclick="showPage('foretag',this)">Företagsyoga</button>
+  <button onclick="showPage('blog',this)">Blogg</button>
+</div>
+
+<!-- ═══════════════════════════════ STARTSIDA ═══════════════════════════════ -->
+<div id="home" class="page active">
+  <nav>
+    <div class="nav-brand">Yoga with Camilla</div>
+    <div class="nav-links">
+      <span>Tjänster ▾</span>
+      <span>Blogg</span>
+      <span>Om mig</span>
+      <span>Kontakt</span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-logo">YwC</div>
+    <h1>Yoga with Camilla</h1>
+    <p>Yoga i Dalarna &amp; Stockholm</p>
+    <a href="#" class="btn-primary">Se tjänster</a>
+  </div>
+
+  <!-- Vad jag erbjuder -->
+  <div class="section">
+    <div class="container">
+      <div class="section-label">Yoga med Camilla</div>
+      <h2 class="section-title">Vad jag erbjuder</h2>
+      <p class="section-subtitle">Jag är baserad i Dalarna och Stockholm — alla tjänster kan bokas på båda platser om inget annat anges.</p>
+
+      <!-- Stockholm -->
+      <div class="divider">
+        <span class="divider-label">Stockholm</span>
+        <div class="divider-line"></div>
+      </div>
+      <div class="grid-3" style="margin-bottom:32px">
+        <div class="card">
+          <div class="card-tag">Populärt</div>
+          <div class="card-title">SUP Yoga Stockholm</div>
+          <div class="card-body">Privat SUP yoga på Sicklasjön — perfekt som sommardag för team, möhippa eller vänner. Vinyasa och yin på brädan.</div>
+          <div class="card-link">Läs mer →</div>
+        </div>
+        <div class="card">
+          <div class="card-tag">Populärt</div>
+          <div class="card-title">Möhippa Yoga</div>
+          <div class="card-body">Boka yoga som möhippa-aktivitet i Stockholm — på SUP eller på land. Skräddarsytt för din grupp.</div>
+          <div class="card-link">Läs mer →</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Företags- &amp; Konferensyoga</div>
+          <div class="card-body">Yoga för team, konferenser och arbetsdagar i Stockholm. Passar alla nivåer — ingen erfarenhet krävs.</div>
+          <div class="card-link">Läs mer →</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Privatlektioner</div>
+          <div class="card-body">Personliga yoga-sessioner en-till-en i Stockholm. Anpassade efter dina mål, ditt schema, ditt tempo.</div>
+          <div class="card-link">Läs mer →</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Yoga Workshops</div>
+          <div class="card-body">Tematiska workshops i Stockholm — andning, yin, rörlighet eller meditation. Öppna klasser och privata bokningar.</div>
+          <div class="card-link">Läs mer →</div>
+        </div>
+      </div>
+
+      <!-- Dalarna -->
+      <div class="divider">
+        <span class="divider-label">Dalarna</span>
+        <div class="divider-line"></div>
+      </div>
+      <div class="grid-3" style="margin-bottom:36px">
+        <div class="card">
+          <div class="card-tag">Populärt</div>
+          <div class="card-title">Möhippa Yoga på Stugan</div>
+          <div class="card-body">Yoga på vår skogsdäck i Dalarna — en möhippa ingen glömmer. Kabinyoga omgiven av skog, himmel och höns.</div>
+          <div class="card-link">Läs mer →</div>
+        </div>
+        <div class="card">
+          <div class="card-tag">Nytt</div>
+          <div class="card-title">Hönsyoga på Stugan</div>
+          <div class="card-body">Yoga med höns på vår utedäck. Som goat yoga — fast med höns. En unik, lugn upplevelse i naturen.</div>
+          <div class="card-link">Läs mer →</div>
+        </div>
+        <div class="card">
+          <div class="card-tag">Nytt</div>
+          <div class="card-title">Trail Run + Yoga</div>
+          <div class="card-body">Springa + yoga i Dalarnas skogar. Halvdag eller heldag — guidat löppass följt av återhämtande yoga-session.</div>
+          <div class="card-link">Läs mer →</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Mini Retreat Dalarna</div>
+          <div class="card-body">En dag i skogen — utomhusyoga, promenad, fika och stillhet. 2,5 timmar med tåg från Stockholm.</div>
+          <div class="card-link">Läs mer →</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Bröllopsyoga</div>
+          <div class="card-body">Yoga på bröllopsdagen eller som aktivitet för brudföljetet i Dalarna. Lugnt, vackert, oförglömligt.</div>
+          <div class="card-link">Läs mer →</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Äventyrpaket</div>
+          <div class="card-body">En hel dag i Dalarnas natur — yoga, vandring, meditation och friluftsliv. För grupper som vill uppleva mer.</div>
+          <div class="card-link">Läs mer →</div>
+        </div>
+      </div>
+
+      <div style="text-align:center">
+        <p style="font-family:'EB Garamond',serif;color:var(--medium-brown);margin-bottom:16px">Ser du inte det du letar efter? Hör av dig — jag skräddarsyr gärna något för just er.</p>
+        <a href="#" class="btn-primary">Kontakta mig</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Varför Yoga med Camilla -->
+  <div class="section-white">
+    <div class="container">
+      <h2 class="section-title" style="text-align:center;margin-bottom:8px">Varför Yoga med Camilla</h2>
+      <p style="font-family:'EB Garamond',serif;font-size:15px;color:var(--medium-brown);text-align:center;font-style:italic;margin-bottom:32px;max-width:560px;margin-left:auto;margin-right:auto">
+        Oavsett om det är ett privat event, en företagsdag eller en morgonklass på utedäcket — jag skapar ett lugnt, välkomnande rum för rörelse, andning och närvaro. I Dalarna och i Stockholm.
+      </p>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-card-header"><h3>Skräddarsytt</h3></div>
+          <div class="why-card-body">
+            <h4>Ditt event, din yoga</h4>
+            <p>Varje pass är utformat efter er grupp och ert tillfälle — möhippa, födelsedag, bröllop, konferens eller teamdag. Jag anpassar praktiken för alla nivåer.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-card-header"><h3>Miljö</h3></div>
+          <div class="why-card-body">
+            <h4>Naturen som studio</h4>
+            <p>I Dalarna: utedäck omgivet av gran, frisk luft och naturens egna ljud. I Stockholm: SUP yoga på Sicklasjön eller inomhus. Naturen är alltid med, oavsett var vi är.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-card-header"><h3>Flexibelt</h3></div>
+          <div class="why-card-body">
+            <h4>På din plats</h4>
+            <p>Kan inte ni ta er hit? Jag kommer till er. Jag tar med mattor och allt som behövs — konferensrum i Stockholm, stuga i Dalarna eller en trädgård.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-card-header"><h3>Approach</h3></div>
+          <div class="why-card-body">
+            <h4>Ingen press, ingen bedömning</h4>
+            <p>Det finns inga krav eller förväntningar här. Mina lektioner handlar om närvaro och självacceptans — inte perfekta poser. Kom som du är.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ OM MIG ═══════════════════════════════ -->
+<div id="about" class="page">
+  <nav>
+    <div class="nav-brand">Yoga with Camilla</div>
+    <div class="nav-links"><span>Tjänster ▾</span><span>Blogg</span><span style="font-weight:600">Om mig</span><span>Kontakt</span></div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero-tag">Om mig</div>
+    <h1>Yogalärare i Dalarna &amp; Stockholm</h1>
+    <p>Certifierad yogalärare, ursprungligen från Australien. Numera bosatt i en skogskoja i Dalarna — med höns, morgonljus och en stor veranda att undervisa på.</p>
+  </div>
+
+  <div class="section-white">
+    <div class="container">
+      <div class="card story" style="padding:32px;margin-bottom:24px">
+        <p>Jag heter Camilla. Jag är australiensisk, 500-timmar certifierad yogalärare och undervisar yoga i Dalarna, Stockholm och online. Men det som förmodligen är mer relevant är det här: jag trodde länge att yoga handlade om att bli bättre — mer flexibel, mer fokuserad, mer av allting. Det gör det inte. Det tog mig ett tag att förstå det.</p>
+        <p>Jag har sprungit fem ultramaraton, upp till 100 kilometer. Jag har instruerat fitness i sju år som Les Mills-instruktör i Australien och Sverige. Jag är van vid rörelse som ett mål, ett mätvärde, ett bevis. Yoga var det första som inte krävde det. Det var den praktiken jag inte behövde vinna.</p>
+        <p>Jag flyttade till Sverige för att leva ett liv som inte krävde att jag motiverade det för någon. Vi köpte en stuga i Dalarna — med skog, höns och den där veranadan — och det är därifrån jag undervisar. Stugan är inte en bakgrund. Den är en del av det hela.</p>
+      </div>
+
+      <h2 class="section-title" style="text-align:center;margin-bottom:24px">Vad jag undervisar — och varför</h2>
+      <div style="background:var(--tan);border-radius:16px;padding:28px;margin-bottom:32px">
+        <p style="font-family:'EB Garamond',serif;font-size:16px;color:var(--dark-brown);line-height:1.7;margin-bottom:14px">Min undervisning är utmanande men inte bestraffande. Jag leder vinyasaflöden som kräver närvaro, inte prestationer. Det finns inga extrema poser, ingen tävling med grannen på mattan.</p>
+        <p style="font-family:'EB Garamond',serif;font-size:16px;color:var(--dark-brown);line-height:1.7">Jag undervisar yoga som självacceptans, inte självförbättring. Det är en skillnad som låter liten men som förändrar allt.</p>
+      </div>
+
+      <h2 class="section-title" style="text-align:center;margin-bottom:20px">Utbildning &amp; bakgrund</h2>
+      <div class="grid-2" style="margin-bottom:32px">
+        <div class="card">
+          <div style="font-family:'Montserrat',sans-serif;font-size:9px;text-transform:uppercase;letter-spacing:0.14em;color:var(--medium-brown);margin-bottom:8px">500 timmars yoga-certifiering</div>
+          <p style="font-family:'EB Garamond',serif;font-size:14px;color:var(--dark-brown);line-height:1.6">200h YTT vid Rishikul Yogshala, Rishikesh, Indien<br>300h YTT vid Sampoorna Yoga Shala, Goa — Advanced Vinyasa Flow</p>
+        </div>
+        <div class="card">
+          <div style="font-family:'Montserrat',sans-serif;font-size:9px;text-transform:uppercase;letter-spacing:0.14em;color:var(--medium-brown);margin-bottom:8px">Fitness &amp; rörelsevetenskap</div>
+          <p style="font-family:'EB Garamond',serif;font-size:14px;color:var(--dark-brown);line-height:1.6">Certificate III in Fitness, Australien<br>7 år som internationellt certifierad Les Mills Bodypump-instruktör i Australien &amp; Sverige</p>
+        </div>
+        <div class="card">
+          <div style="font-family:'Montserrat',sans-serif;font-size:9px;text-transform:uppercase;letter-spacing:0.14em;color:var(--medium-brown);margin-bottom:8px">Ultralöpning</div>
+          <p style="font-family:'EB Garamond',serif;font-size:14px;color:var(--dark-brown);line-height:1.6">5 ultramaraton genomförda<br>Längsta lopp: 100 kilometer<br>Uthållighetsträning som en praktik i närvaro, inte prestation</p>
+        </div>
+        <div class="card">
+          <div style="font-family:'Montserrat',sans-serif;font-size:9px;text-transform:uppercase;letter-spacing:0.14em;color:var(--medium-brown);margin-bottom:8px">Meditation &amp; mindfulness</div>
+          <p style="font-family:'EB Garamond',serif;font-size:14px;color:var(--dark-brown);line-height:1.6">Retreater med Kadampa Meditation Center<br>Tranquil Wisdom Insight Meditation (TWIM)</p>
+        </div>
+      </div>
+
+      <div class="card" style="text-align:center;padding:28px;margin-bottom:32px">
+        <h2 class="section-title" style="margin-bottom:12px">Var jag undervisar</h2>
+        <p style="font-family:'EB Garamond',serif;font-size:15px;color:var(--dark-brown);line-height:1.7;margin-bottom:10px">Jag undervisar på <strong>WD Wellness i Vansbro</strong>, <strong>Hot Yoga Stockholm</strong>, <strong>Yogarummet Björkhagen</strong> och <strong>Brahma Yoga i Nacka</strong>.</p>
+        <p style="font-family:'EB Garamond',serif;font-size:15px;color:var(--dark-brown);line-height:1.7">Jag tar också emot bokningar för privatlektioner, företagsevent, möhippor, bröllop och gruppevent i Dalarna och Stockholm.</p>
+      </div>
+
+      <div class="cta-block">
+        <h2>Vill du yoga med mig?</h2>
+        <p>Se mina tjänster eller hör av dig direkt — oavsett om det är en privatlektion, ett bröllop, en konferens eller en morgonklass på veranadan.</p>
+        <div class="cta-btns"><button class="btn-beige">Se alla tjänster</button><button class="btn-outline">Kontakta mig</button></div>
+      </div>
+
+      <div class="english-section">
+        <div class="en-label">In English</div>
+        <h3>About Camilla — Yoga Teacher in Dalarna &amp; Stockholm, Sweden</h3>
+        <p>I'm Camilla, an Australian-born 500-hour certified yoga teacher based in Dalarna, Sweden. I teach vinyasa and yin yoga in Swedish and English — in person across Dalarna and Stockholm.</p>
+        <p>My approach to yoga is simple: challenging but not punishing. I'm not interested in impressive poses or performance. I'm interested in what yoga becomes when it stops being another thing you have to do well.</p>
+        <p>I teach at WD Wellness in Vansbro, Hot Yoga Stockholm, Yogarummet Björkhagen, and Brahma Yoga in Nacka. I also take bookings for private lessons, corporate yoga, bachelorette yoga, wedding yoga, and yoga retreats across Dalarna and Stockholm.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ MÖHIPPA ═══════════════════════════════ -->
+<div id="mohippa" class="page">
+  <nav><div class="nav-brand">Yoga with Camilla</div><div class="nav-links"><span>Tjänster ▾</span><span>Blogg</span><span>Om mig</span><span>Kontakt</span></div></nav>
+  <div class="page-hero">
+    <div class="page-hero-tag">Möhippa Yoga</div>
+    <h1>Möhippa Yoga i Dalarna &amp; Stockholm</h1>
+    <p>Yoga som möhippa-aktivitet — på skogsdäcket i Dalarna, på SUP i Stockholm, eller hos er. Inkluderande, minnesvärt, och faktiskt kul.</p>
+  </div>
+  <div class="section-white"><div class="container">
+    <div class="grid-2" style="margin-bottom:32px">
+      <div class="highlight-card"><h3>Möhippa på stugan i Dalarna</h3><p>Yoga utomhus på vår skogsdäck omgiven av granskog. Höns på plats, fika efteråt. Grupper 2–10 pers. Privat bokning — bara ni.</p></div>
+      <div class="highlight-card"><h3>SUP Möhippa i Stockholm</h3><p>Yoga på bräda på Sicklasjön. Det roligaste möhippa-upplägget i Stockholm — garanterat minnen och skratt.</p></div>
+      <div class="highlight-card"><h3>Möhippa hos er</h3><p>Jag reser till er i Stockholm eller Dalarna med all utrustning. Lägenhet, hyrd lokal, trädgård — ni väljer platsen.</p></div>
+      <div class="highlight-card"><h3>Passar alla nivåer</h3><p>Inga förkunskaper krävs. Klassen anpassas för er grupp — från yoganybörjare till de som praktiserar regelbundet.</p></div>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card"><div class="pricing-label">Kabin-möhippa Dalarna</div><div class="pricing-price">från [PRIS] kr</div><div class="pricing-note">Hela gruppen, upp till 10 pers</div></div>
+      <div class="pricing-card"><div class="pricing-label">SUP Möhippa Stockholm</div><div class="pricing-price">från [PRIS] kr</div><div class="pricing-note">På Sicklasjön, sommar</div></div>
+      <div class="pricing-card"><div class="pricing-label">Resande möhippa</div><div class="pricing-price">från [PRIS] kr</div><div class="pricing-note">Camilla reser till er</div></div>
+      <div class="pricing-card"><div class="pricing-label">Möhippa Stockholm (lokal)</div><div class="pricing-price">från [PRIS] kr</div><div class="pricing-note">2h, studio/lokal</div></div>
+    </div>
+    <div style="margin-top:32px"><div class="cta-block"><h2>Boka möhippa-yoga</h2><p>Maila med datum, antal i gruppen och vilken typ av möhippa ni vill ha — jag svarar med tillgänglighet och ett förslag.</p><div class="cta-btns"><button class="btn-beige">Kontakta mig</button></div></div></div>
+    <div class="english-section"><div class="en-label">In English</div><h3>Bachelorette Yoga in Dalarna &amp; Stockholm, Sweden</h3><p>Looking for a unique bachelorette party activity in Sweden? Yoga möhippa is a private yoga class designed for your group — at our forest cabin in Dalarna or on SUP boards in Stockholm. No yoga experience needed. All equipment provided.</p></div>
+    <div class="related-pills" style="margin-top:20px"><span class="pill">SUP Yoga</span><span class="pill">Födelsedag &amp; Events</span><span class="pill">Mini Retreat</span></div>
+  </div></div>
+</div>
+
+<!-- ═══════════════════════════════ SUP YOGA ═══════════════════════════════ -->
+<div id="sup" class="page">
+  <nav><div class="nav-brand">Yoga with Camilla</div><div class="nav-links"><span>Tjänster ▾</span><span>Blogg</span><span>Om mig</span><span>Kontakt</span></div></nav>
+  <div class="page-hero">
+    <div class="page-hero-tag">SUP Yoga Stockholm</div>
+    <h1>SUP Yoga på Sicklasjön</h1>
+    <p>Vinyasa och yin yoga på uppblåsbar surfbräda. Öppna klasser sommar–höst, och privata event för grupper, möhippor och företagsdagar.</p>
+  </div>
+  <div class="section-white"><div class="container">
+    <div class="grid-2" style="margin-bottom:32px">
+      <div class="highlight-card"><h3>Öppna klasser — Vinyasa SUP</h3><p>Dynamiskt vinyasaflöde på brädan. Testar din balans, fokus och kärna på ett sätt som inget landpass kan. Nybörjarvänligt.</p></div>
+      <div class="highlight-card"><h3>Öppna klasser — Yin SUP</h3><p>Långsamma, djupa poser på brädans instabila yta. Vattnet och tystnaden förstärker varje stretch. Extremt avslappnande.</p></div>
+      <div class="highlight-card"><h3>Privat event &amp; teambuilding</h3><p>Boka ett helt tillfälle för er grupp — möhippa, företagsdag, vänner eller kollegor. Stockholm sommartid, upp till 12 pers.</p></div>
+      <div class="highlight-card"><h3>Inga förkunskaper</h3><p>Aldrig stått på en SUP? Aldrig provat yoga? Perfekt. Vi börjar med en kort intro på land innan vi ger oss ut på vattnet.</p></div>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card"><div class="pricing-label">Öppen klass Vinyasa</div><div class="pricing-price">[PRIS] kr/pers</div><div class="pricing-note">90 min inkl. bräda</div></div>
+      <div class="pricing-card"><div class="pricing-label">Öppen klass Yin</div><div class="pricing-price">[PRIS] kr/pers</div><div class="pricing-note">90 min inkl. bräda</div></div>
+      <div class="pricing-card"><div class="pricing-label">Privat event (grupp)</div><div class="pricing-price">från [PRIS] kr</div><div class="pricing-note">Hela klassen, upp till 12 pers</div></div>
+      <div class="pricing-card"><div class="pricing-label">Teambuilding heldag</div><div class="pricing-price">kontakta för offert</div><div class="pricing-note">SUP + yoga + fika</div></div>
+    </div>
+    <div style="margin-top:32px"><div class="cta-block"><h2>Boka SUP Yoga</h2><p>Öppna klasser bokas online. Privata event — maila med datum, antal deltagare och vilket upplägg du vill ha.</p><div class="cta-btns"><button class="btn-beige">Boka öppen klass</button><button class="btn-outline">Kontakta för privat event</button></div></div></div>
+    <div class="english-section"><div class="en-label">In English</div><h3>SUP Yoga Stockholm — Yoga on the Water</h3><p>Stand-up paddleboard yoga at Sickla lake in Stockholm. Open classes (vinyasa and yin) and private event bookings for groups, bachelorette parties, and corporate team building days. No experience needed.</p></div>
+  </div></div>
+</div>
+
+<!-- ═══════════════════════════════ HÖNSYOGA ═══════════════════════════════ -->
+<div id="hons" class="page">
+  <nav><div class="nav-brand">Yoga with Camilla</div><div class="nav-links"><span>Tjänster ▾</span><span>Blogg</span><span>Om mig</span><span>Kontakt</span></div></nav>
+  <div class="page-hero">
+    <div class="page-hero-tag">Hönsyoga · Dalarna</div>
+    <h1>Hönsyoga på Stugan</h1>
+    <p>Yoga utomhus på vår skogsdäck i Dalarna — med hönsen som fria medaktörer. Sveriges svar på goat yoga, fast nordiskare.</p>
+  </div>
+  <div class="section-white"><div class="container">
+    <div style="background:var(--tan);border-radius:16px;padding:28px;margin-bottom:28px">
+      <p style="font-family:'EB Garamond',serif;font-size:16px;color:var(--dark-brown);line-height:1.7;margin-bottom:12px">Goat yoga är ett fenomen från USA — yoga utomhus med getter som fritt vandrar runt och på deltagarna. I Sverige har vi höns. Och höns är, om möjligt, ännu bättre.</p>
+      <p style="font-family:'EB Garamond',serif;font-size:16px;color:var(--dark-brown);line-height:1.7">Hönsen gör något med praktiken. De tvingar dig att vara här, nu. Det är svårt att vara inne i huvudet när det sitter en höna i ditt knä.</p>
+    </div>
+    <div class="grid-2" style="margin-bottom:28px">
+      <div class="highlight-card"><h3>Utomhus på skogsdäcket</h3><p>Klassen hålls på vår stora träddäck i Dalarnas skog. Hönsen rör sig fritt runt om och ibland på deltagarna.</p></div>
+      <div class="highlight-card"><h3>Vinyasa eller Yin</h3><p>Välj ett lugnt vinyasaflöde eller ett djupt yin-pass. Båda fungerar utmärkt med hönssällskap.</p></div>
+      <div class="highlight-card"><h3>Passar möhippor &amp; fester</h3><p>Ett av de roligaste och mest oväntade möhippa-uppläggen som finns. Och barnkalas. Och fredagshäng.</p></div>
+      <div class="highlight-card"><h3>Avslutas med fika</h3><p>Varje hönsyoga-pass avslutas med fika utomhus. Självklart.</p></div>
+    </div>
+    <div class="pricing-grid" style="margin-bottom:32px">
+      <div class="pricing-card"><div class="pricing-label">Hönsyoga (2–10 pers)</div><div class="pricing-price">från [PRIS] kr/pers</div><div class="pricing-note">60–90 min + fika</div></div>
+      <div class="pricing-card"><div class="pricing-label">Privat duo</div><div class="pricing-price">från [PRIS] kr</div><div class="pricing-note">Skräddarsytt för två</div></div>
+    </div>
+    <div class="cta-block"><h2>Boka hönsyoga i Dalarna</h2><p>Maila med önskat datum och antal deltagare — jag svarar med tillgänglighet och vad som ingår.</p><div class="cta-btns"><button class="btn-beige">Kontakta mig</button></div></div>
+    <div class="english-section"><div class="en-label">In English</div><h3>Chicken Yoga in Dalarna, Sweden — Sweden's Answer to Goat Yoga</h3><p>Animal yoga with chickens at our forest cabin in Dalarna. Outdoor yoga on the deck while our chickens roam freely around (and occasionally on) participants. A unique, calming, and genuinely funny yoga experience in the Swedish countryside. Perfect for groups, bachelorette parties, and anyone looking for something truly different.</p></div>
+  </div></div>
+</div>
+
+<!-- ═══════════════════════════════ TRAIL RUN + YOGA ═══════════════════════════════ -->
+<div id="trail" class="page">
+  <nav><div class="nav-brand">Yoga with Camilla</div><div class="nav-links"><span>Tjänster ▾</span><span>Blogg</span><span>Om mig</span><span>Kontakt</span></div></nav>
+  <div class="page-hero">
+    <div class="page-hero-tag">Löp &amp; Yoga · Dalarna</div>
+    <h1>Trail Run + Yoga i Dalarna</h1>
+    <p>Guidat traillöppass i Dalarnas skogar följt av en återhämtande yoga-session. Halvdag eller heldag — för grupper, företag och äventyrslystna.</p>
+  </div>
+  <div class="section-white"><div class="container">
+    <div style="background:white;border-radius:16px;padding:28px;margin-bottom:28px;border:1px solid rgba(223,188,163,0.2)">
+      <p style="font-family:'EB Garamond',serif;font-size:16px;color:var(--dark-brown);line-height:1.7;margin-bottom:12px">Jag är 500-timmars certifierad yogalärare — och ultramaratonlöpare med fem lopp bakom mig, upp till 100 kilometer. De två sakerna hänger ihop mer än man tror.</p>
+      <p style="font-family:'EB Garamond',serif;font-size:16px;color:var(--dark-brown);line-height:1.7">Det här paketet kombinerar de båda: ett guidat löppass i Dalarnas skogar, anpassat efter gruppens nivå, följt av en yoga-session för återhämtning, andning och rörlighet.</p>
+    </div>
+    <div class="grid-2" style="margin-bottom:28px">
+      <div class="highlight-card"><h3>Halvdag — Löp &amp; Yoga</h3><p>Ca 3 timmar. Guidat traillöppass 5–10 km (anpassningsbart tempo), följt av 60 min återhämtande yoga. Avslutas med fika. Grupper 2–10 pers.</p></div>
+      <div class="highlight-card"><h3>Heldag — Full Trail Experience</h3><p>Ca 6 timmar. Längre traillöppass 10–20 km, picknick i skogen, fullständig yoga-session (90 min) och avslutande meditation.</p></div>
+      <div class="highlight-card"><h3>Alla konditionsnivåer</h3><p>Du behöver inte vara löpare. Tempot anpassas alltid — vi kan gå, jogga eller springa. Nykomling eller ultramaratonlöpare, spelar ingen roll.</p></div>
+      <div class="highlight-card"><h3>Företagsdag &amp; teambuilding</h3><p>Trail + yoga är ett av de starkaste teambuildingformaten som finns. Tar folk ur kontorsmiljön, sätter dem i naturen, avslutar med yoga som faktiskt återhämtar.</p></div>
+    </div>
+    <div class="pricing-grid" style="margin-bottom:32px">
+      <div class="pricing-card"><div class="pricing-label">Halvdag (2–10 pers)</div><div class="pricing-price">från [PRIS] kr/pers</div><div class="pricing-note">Ca 3h. Löp + yoga + fika.</div></div>
+      <div class="pricing-card"><div class="pricing-label">Heldag (2–10 pers)</div><div class="pricing-price">från [PRIS] kr/pers</div><div class="pricing-note">Ca 6h. Full trail experience.</div></div>
+      <div class="pricing-card"><div class="pricing-label">Privat par/duo</div><div class="pricing-price">från [PRIS] kr</div><div class="pricing-note">Skräddarsytt för två</div></div>
+      <div class="pricing-card"><div class="pricing-label">Företagsdag (10+ pers)</div><div class="pricing-price">kontakta för offert</div><div class="pricing-note">Baseras på gruppstorl. &amp; längd</div></div>
+    </div>
+    <div class="cta-block"><h2>Boka Trail Run + Yoga</h2><p>Hör av dig med gruppstorlek, önskat datum och om du vill ha halvdag eller heldag — jag skickar ett förslag.</p><div class="cta-btns"><button class="btn-beige">Kontakta mig</button></div></div>
+    <div class="english-section"><div class="en-label">In English</div><h3>Trail Running + Yoga in Dalarna, Sweden</h3><p>A guided trail run through the forests of Dalarna followed by a restorative yoga session. Half-day or full-day packages for groups, corporate teams, runners, and adventure seekers. Led by a 500-hour certified yoga teacher and ultramarathon runner (5 ultras, up to 100km). The perfect outdoor activity in Dalarna — team building, yoga retreat, or a unique day trip from Stockholm.</p></div>
+    <div class="related-pills" style="margin-top:20px"><span class="pill">Äventyrpaket</span><span class="pill">Yoga för Löpare</span><span class="pill">Mini Retreat</span></div>
+  </div></div>
+</div>
+
+<!-- ═══════════════════════════════ FÖRETAGSYOGA ═══════════════════════════════ -->
+<div id="foretag" class="page">
+  <nav><div class="nav-brand">Yoga with Camilla</div><div class="nav-links"><span>Tjänster ▾</span><span>Blogg</span><span>Om mig</span><span>Kontakt</span></div></nav>
+  <div class="page-hero">
+    <div class="page-hero-tag">Företagsyoga</div>
+    <h1>Yoga för Företag i Stockholm &amp; Dalarna</h1>
+    <p>Yoga för konferenser, teamdagar och kontorsaktiviteter. Anpassat för alla nivåer — ingen erfarenhet krävs.</p>
+  </div>
+  <div class="section-white"><div class="container">
+    <div class="grid-2" style="margin-bottom:28px">
+      <div class="highlight-card"><h3>Konferensyoga i Stockholm</h3><p>Morgon- eller lunchyoga under er konferensdag i Stockholm. Jag kommer till er med all utrustning.</p></div>
+      <div class="highlight-card"><h3>Konferensyoga i Dalarna</h3><p>Yoga på er konferensanläggning i Dalarna, eller på utedäcket i skogen. Naturen som konferenssal.</p></div>
+      <div class="highlight-card"><h3>Regelbunden kontorsyoga</h3><p>Veckovisa eller månatliga pass för ert team i Stockholm. Bra investering i arbetsgivarvärde och välmående.</p></div>
+      <div class="highlight-card"><h3>Teambuilding med Trail + Yoga</h3><p>Kombinera företagsdag med guidat traillöppass i Dalarna + yoga. Det starkaste teambuildingupplägget vi har.</p></div>
+    </div>
+    <div class="pricing-grid" style="margin-bottom:32px">
+      <div class="pricing-card"><div class="pricing-label">Engångstillfälle (60 min)</div><div class="pricing-price">från [PRIS] kr</div><div class="pricing-note">Upp till 20 pers, Stockholm/Dalarna</div></div>
+      <div class="pricing-card"><div class="pricing-label">Månadsprogram (4 ggr/mån)</div><div class="pricing-price">från [PRIS] kr/mån</div><div class="pricing-note">Regelbundet, Stockholm</div></div>
+      <div class="pricing-card"><div class="pricing-label">Konferenspaket (heldag)</div><div class="pricing-price">kontakta för offert</div><div class="pricing-note">Yoga + övrig konferensdag</div></div>
+      <div class="pricing-card"><div class="pricing-label">Trail + Yoga företagsdag</div><div class="pricing-price">kontakta för offert</div><div class="pricing-note">Dalarna, 6h, trail + yoga</div></div>
+    </div>
+    <div class="cta-block"><h2>Lägg till yoga på nästa konferens</h2><p>Maila med datum, antal deltagare och stad — jag svarar med tillgänglighet och ett förslag.</p><div class="cta-btns"><button class="btn-beige">Kontakta mig</button></div></div>
+    <div class="english-section"><div class="en-label">In English</div><h3>Corporate Yoga in Stockholm &amp; Dalarna, Sweden</h3><p>Yoga for conferences, team days, and office wellness in Stockholm and Dalarna. One-off sessions or monthly programmes. Trail running + yoga packages available for full-day corporate team building in Dalarna.</p></div>
+  </div></div>
+</div>
+
+<!-- ═══════════════════════════════ BLOGG ═══════════════════════════════ -->
+<div id="blog" class="page">
+  <nav><div class="nav-brand">Yoga with Camilla</div><div class="nav-links"><span>Tjänster ▾</span><span style="font-weight:600">Blogg</span><span>Om mig</span><span>Kontakt</span></div></nav>
+  <div class="page-hero" style="padding-bottom:30px">
+    <div class="page-hero-tag">Blogg</div>
+    <h1>Yoga, natur &amp; friluftsliv</h1>
+    <p>Artiklar om yoga i Dalarna och Stockholm — möhippor, företagsyoga, SUP, hönsyoga och mer.</p>
+  </div>
+  <div class="section-white"><div class="container">
+    <div class="blog-grid">
+      <div class="blog-card">
+        <div class="blog-card-img">🐔 Höns på mattan</div>
+        <div class="blog-card-body">
+          <div class="blog-cat">Yoga &amp; Natur · Nytt</div>
+          <h3>Hönsyoga i Dalarna — Sveriges svar på goat yoga (fast med höns)</h3>
+          <p>Goat yoga är en grej i USA. I Sverige har vi höns. Välkommen till hönsyoga på en skogsdäck i Dalarna — lika charmerande, mycket mer nordiskt.</p>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-card-img">🏃 Trail + Yoga</div>
+        <div class="blog-card-body">
+          <div class="blog-cat">SUP Yoga · Populärt</div>
+          <h3>SUP yoga Stockholm — vad är det och varför ska du prova det i sommar?</h3>
+          <p>Yoga på vatten är roligare, mer utmanande och mer avslappnande än det låter. Här är allt du behöver veta om SUP yoga i Stockholm.</p>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-card-img">💍 Möhippa</div>
+        <div class="blog-card-body">
+          <div class="blog-cat">Events &amp; Möhippa</div>
+          <h3>Yoga möhippa i Dalarna – det roligaste brudpartyt ingen pratat om</h3>
+          <p>Trött på samma gamla möhippa-koncept? Yoga är det oväntade valet som alla i gruppen faktiskt uppskattar.</p>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-card-img">🌲 Utomhus Yoga</div>
+        <div class="blog-card-body">
+          <div class="blog-cat">Yoga &amp; Natur</div>
+          <h3>Utomhusyoga i Dalarna – varför naturen gör din praktik bättre</h3>
+          <p>Det är något med att praktisera yoga utomhus som förändrar hela upplevelsen. Dalarnas skog och luft är mer än en bakgrund.</p>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-card-img">🏢 Konferens</div>
+        <div class="blog-card-body">
+          <div class="blog-cat">Företag &amp; Konferens</div>
+          <h3>Konferensyoga – varför ditt team mår bättre av 60 min yoga</h3>
+          <p>Fler och fler svenska företag lägger in yoga i konferensprogrammet. Varför funkar det?</p>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-card-img">💐 Bröllop</div>
+        <div class="blog-card-body">
+          <div class="blog-cat">Bröllop &amp; Events</div>
+          <h3>Yoga som bröllopaktivitet – en trend som fler svenska par väljer</h3>
+          <p>Allt fler brudpar väljer yoga som en del av bröllopsveckan. Inkluderande, lugnt och minnesvärt.</p>
+        </div>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<script>
+  function showPage(id, btn) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-bar button').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+    window.scrollTo(0, 0);
+  }
+</script>
+</body>
+</html>

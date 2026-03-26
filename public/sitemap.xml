@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://yogawithcamilla.se/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://yogawithcamilla.se/om-mig</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Trail Run + Yoga -->
+  <url>
+    <loc>https://yogawithcamilla.se/tjanster/trail-run-yoga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Hönsyoga -->
+  <url>
+    <loc>https://yogawithcamilla.se/blogg/honsyoga-dalarna-goat-yoga-sverige</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Events & Fester -->
+  <url>
+    <loc>https://yogawithcamilla.se/tjanster/mohippa-yoga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yogawithcamilla.se/tjanster/brollopsyoga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yogawithcamilla.se/tjanster/fodelsedag-yoga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yogawithcamilla.se/tjanster/sup-yoga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Företag & Grupper -->
+  <url>
+    <loc>https://yogawithcamilla.se/tjanster/foretagsyoga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yogawithcamilla.se/tjanster/yoga-workshop</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yogawithcamilla.se/tjanster/adventure-paket</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Privat & Online -->
+  <url>
+    <loc>https://yogawithcamilla.se/tjanster/privatlektioner</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yogawithcamilla.se/tjanster/online-yoga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yogawithcamilla.se/tjanster/yoga-for-lopare</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Retreat & Turister -->
+  <url>
+    <loc>https://yogawithcamilla.se/tjanster/mini-retreat</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yogawithcamilla.se/tjanster/yoga-dalarna-turister</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://yogawithcamilla.se/blogg</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yogawithcamilla.se/blogg/yoga-mohippa-dalarna</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yogawithcamilla.se/blogg/konferensyoga-teambuilding</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yogawithcamilla.se/blogg/sup-yoga-stockholm</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yogawithcamilla.se/blogg/yoga-brollopsaktivitet</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yogawithcamilla.se/blogg/outdoor-yoga-dalarna</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
