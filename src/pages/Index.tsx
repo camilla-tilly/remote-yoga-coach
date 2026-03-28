@@ -2,11 +2,7 @@
 import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import ImageGallery from '@/components/ImageGallery';
 import Services from '@/components/Services';
-import Events from '@/components/Bookings';
-import About from '@/components/About';
-import WhyYogaWithCamilla from '@/components/WhyYogaWithCamilla';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
@@ -67,14 +63,8 @@ const Index = () => {
         <Navbar />
         <main>
           <Hero />
-          <ImageGallery />
-          <div className="w-full mx-auto">
-            <Services />
-            <Events />
-            <About />
-            <WhyYogaWithCamilla />
-            <Contact />
-          </div>
+          <Services />
+          <Contact />
         </main>
       </div>
       <Footer />

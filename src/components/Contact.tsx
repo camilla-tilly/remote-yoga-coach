@@ -20,10 +20,9 @@ const Contact = () => {
       <div className="container-section px-3 mx-auto max-w-4xl">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-8 animate-when-visible" data-animation="fade-in">
-            <h2 className="heading-lg mb-3 text-xl md:text-2xl lg:text-3xl">Get in Touch</h2>
+            <h2 className="heading-lg mb-3 text-xl md:text-2xl lg:text-3xl">Kontakta mig</h2>
             <p className="text-body max-w-xl mx-auto text-sm md:text-base">
-              Have questions about private yoga classes, conference yoga, or want to book an event?
-              Feel free to contact me through any of these channels.
+              Frågor om ett pass, eller redo att boka? Hör av dig — jag svarar inom 24 timmar.
             </p>
           </div>
           
