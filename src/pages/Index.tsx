@@ -59,14 +59,12 @@ const Index = () => {
         canonical="https://yogawithcamilla.se"
         structuredData={homepageStructuredData}
       />
-      <div className="max-w-[750px] mx-auto">
-        <Navbar />
-        <main>
-          <Hero />
-          <Services />
-          <Contact />
-        </main>
-      </div>
+      <Navbar />
+      <main>
+        <Hero />
+        <Services />
+        <Contact />
+      </main>
       <Footer />
       <ScrollToTop />
     </div>

@@ -64,23 +64,25 @@ const dalarnaServices: ServiceCard[] = [
 const ServiceCard = ({ title, description, href, tag }: ServiceCard) => (
   <Link
     to={href}
-    className="group block bg-white rounded-2xl p-5 border border-dalashala-tan/20 shadow-sm hover:shadow-md transition-all duration-300 relative"
+    className="group flex flex-col justify-between bg-white rounded-2xl p-6 border border-dalashala-tan/20 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 relative min-h-[160px]"
   >
     {tag && (
       <span
-        className="absolute top-4 right-4 text-xs font-montserrat uppercase tracking-wide px-2 py-0.5 rounded-full"
+        className="absolute top-4 right-4 text-xs font-montserrat uppercase tracking-wide px-2.5 py-0.5 rounded-full"
         style={{ backgroundColor: '#864927', color: '#f9dec6' }}
       >
         {tag}
       </span>
     )}
-    <h3 className="font-cinzel text-sm text-dalashala-darkBrown mb-2 group-hover:text-dalashala-mediumBrown transition-colors pr-16">
-      {title}
-    </h3>
-    <p className="font-eb-garamond text-sm text-dalashala-mediumBrown leading-relaxed">
-      {description}
-    </p>
-    <span className="mt-3 inline-block font-montserrat text-xs text-dalashala-darkBrown uppercase tracking-wide group-hover:underline">
+    <div>
+      <h3 className="font-cinzel text-base text-dalashala-darkBrown mb-2 group-hover:text-dalashala-mediumBrown transition-colors pr-16 leading-snug">
+        {title}
+      </h3>
+      <p className="font-eb-garamond text-base text-dalashala-mediumBrown leading-relaxed">
+        {description}
+      </p>
+    </div>
+    <span className="mt-4 inline-block font-montserrat text-xs text-dalashala-darkBrown uppercase tracking-widest group-hover:underline">
       Läs mer →
     </span>
   </Link>
@@ -88,9 +90,8 @@ const ServiceCard = ({ title, description, href, tag }: ServiceCard) => (
 
 const Services = () => {
   return (
-    <section id="services" className="relative py-10 md:py-14 bg-dalashala-beige">
-      <div className="container-section">
-        <div className="max-w-[1200px] mx-auto">
+    <section id="services" className="relative py-12 md:py-16 bg-dalashala-beige">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Section header */}
           <div className="mb-10">
@@ -101,19 +102,19 @@ const Services = () => {
               Vad jag erbjuder
             </h2>
             <p className="font-eb-garamond text-base text-dalashala-mediumBrown max-w-xl">
-              Jag är baserad i Dalarna och Stockholm — alla tjänster kan bokas på båda platser om inget annat anges.
+              Baserad i Dalarna och Stockholm — jag tar med all utrustning och kommer till er.
             </p>
           </div>
 
           {/* Stockholm */}
           <div id="stockholm" className="mb-12 scroll-mt-20">
-            <div className="flex items-center gap-3 mb-5">
-              <h3 className="font-cinzel text-sm uppercase tracking-widest text-dalashala-mediumBrown">
+            <div className="flex items-center gap-3 mb-6">
+              <h3 className="font-cinzel text-sm uppercase tracking-widest text-dalashala-mediumBrown whitespace-nowrap">
                 Stockholm
               </h3>
               <div className="flex-1 h-px bg-dalashala-tan/40" />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               {stockholmServices.map((s) => (
                 <ServiceCard key={s.href + s.title} {...s} />
               ))}
@@ -122,13 +123,13 @@ const Services = () => {
 
           {/* Dalarna */}
           <div id="dalarna" className="mb-10 scroll-mt-20">
-            <div className="flex items-center gap-3 mb-5">
-              <h3 className="font-cinzel text-sm uppercase tracking-widest text-dalashala-mediumBrown">
+            <div className="flex items-center gap-3 mb-6">
+              <h3 className="font-cinzel text-sm uppercase tracking-widest text-dalashala-mediumBrown whitespace-nowrap">
                 Dalarna
               </h3>
               <div className="flex-1 h-px bg-dalashala-tan/40" />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               {dalarnaServices.map((s) => (
                 <ServiceCard key={s.href + s.title} {...s} />
               ))}
@@ -149,7 +150,6 @@ const Services = () => {
             </a>
           </div>
 
-        </div>
       </div>
     </section>
   );
