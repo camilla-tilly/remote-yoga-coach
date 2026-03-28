@@ -10,43 +10,45 @@ import {
 } from '@/components/ui/drawer';
 import { Button } from './ui/button';
 
-const serviceGroups = [
+const locationGroups = [
   {
-    group: 'Events & Fester',
+    location: 'Stockholm',
     links: [
       { name: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
-      { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
-      { name: 'Födelsedag & Privata Events', href: '/tjanster/fodelsedag-yoga' },
-      { name: 'SUP Yoga Stockholm', href: '/tjanster/sup-yoga' },
-    ]
-  },
-  {
-    group: 'Företag & Grupper',
-    links: [
       { name: 'Företags- & Konferensyoga', href: '/tjanster/foretagsyoga' },
-      { name: 'Yoga Workshops', href: '/tjanster/yoga-workshop' },
-      { name: 'Äventyrpaket Dalarna', href: '/tjanster/adventure-paket' },
-    ]
-  },
-  {
-    group: 'Privat & Online',
-    links: [
+      { name: 'SUP Yoga', href: '/tjanster/sup-yoga' },
+      { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
       { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
-      { name: 'Online Yoga (English)', href: '/tjanster/online-yoga' },
-      { name: 'Yoga för Löpare', href: '/tjanster/yoga-for-lopare' },
+      { name: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
+      { name: 'Yoga Workshops', href: '/tjanster/yoga-workshop' },
     ]
   },
   {
-    group: 'Retreat & Turister',
+    location: 'Dalarna',
     links: [
-      { name: 'Mini Yoga Retreat', href: '/tjanster/mini-retreat' },
-      { name: 'Yoga i Dalarna (Turister)', href: '/tjanster/yoga-dalarna-turister' },
+      { name: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
+      { name: 'Möhippa på Stugan', href: '/tjanster/mohippa-yoga' },
+      { name: 'Mini Retreat', href: '/tjanster/mini-retreat' },
+      { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
+      { name: 'Äventyrpaket', href: '/tjanster/adventure-paket' },
+      { name: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
+      { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
+      { name: 'Yoga för Turister', href: '/tjanster/yoga-dalarna-turister' },
     ]
   },
 ];
 
-// Flat list for mobile
-const allServiceLinks = serviceGroups.flatMap(g => g.links);
+const onlineLink = { name: 'Online Yoga (English)', href: '/tjanster/online-yoga' };
+
+// Flat list for mobile (deduplicated by href+name)
+const allServiceLinks = [
+  ...locationGroups[0].links,
+  { name: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
+  { name: 'Mini Retreat', href: '/tjanster/mini-retreat' },
+  { name: 'Äventyrpaket', href: '/tjanster/adventure-paket' },
+  { name: 'Yoga för Turister', href: '/tjanster/yoga-dalarna-turister' },
+  onlineLink,
+];
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -132,25 +134,35 @@ const Navbar = () => {
                   />
                 </button>
                 {servicesOpen && (
-                  <div className="absolute top-full right-0 mt-2 w-72 bg-dalashala-beige border border-dalashala-tan/30 rounded-xl shadow-lg overflow-hidden z-50">
-                    {serviceGroups.map((group) => (
-                      <div key={group.group}>
-                        <p className="px-4 pt-3 pb-1 font-cinzel text-xs uppercase tracking-widest text-dalashala-mediumBrown/60">
-                          {group.group}
-                        </p>
-                        {group.links.map((link) => (
-                          <Link
-                            key={link.href}
-                            to={link.href}
-                            onClick={() => setServicesOpen(false)}
-                            className="block px-4 py-2 font-eb-garamond text-sm text-dalashala-darkBrown hover:bg-dalashala-tan/30 transition-colors"
-                          >
-                            {link.name}
-                          </Link>
-                        ))}
-                      </div>
-                    ))}
-                    <div className="h-2" />
+                  <div className="absolute top-full right-0 mt-2 bg-dalashala-beige border border-dalashala-tan/30 rounded-xl shadow-lg overflow-hidden z-50" style={{ width: '480px' }}>
+                    <div className="flex">
+                      {locationGroups.map((group) => (
+                        <div key={group.location} className="flex-1 border-r last:border-r-0 border-dalashala-tan/20">
+                          <p className="px-4 pt-3 pb-1 font-cinzel text-xs uppercase tracking-widest text-dalashala-mediumBrown/70">
+                            {group.location}
+                          </p>
+                          {group.links.map((link) => (
+                            <Link
+                              key={group.location + link.href + link.name}
+                              to={link.href}
+                              onClick={() => setServicesOpen(false)}
+                              className="block px-4 py-1.5 font-eb-garamond text-sm text-dalashala-darkBrown hover:bg-dalashala-tan/30 transition-colors"
+                            >
+                              {link.name}
+                            </Link>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                    <div className="border-t border-dalashala-tan/20 px-4 py-2">
+                      <Link
+                        to={onlineLink.href}
+                        onClick={() => setServicesOpen(false)}
+                        className="block font-eb-garamond text-sm text-dalashala-darkBrown hover:bg-dalashala-tan/30 transition-colors py-1 rounded"
+                      >
+                        🌐 {onlineLink.name}
+                      </Link>
+                    </div>
                   </div>
                 )}
               </div>
@@ -199,19 +211,32 @@ const Navbar = () => {
                     </DrawerClose>
                   </div>
                   <div className="flex flex-col items-center pb-6 px-4 space-y-1">
-                    <p className="font-cinzel text-xs uppercase tracking-widest text-dalashala-mediumBrown pt-2 pb-1">
-                      Tjänster
-                    </p>
-                    {allServiceLinks.map((link) => (
-                      <DrawerClose key={link.href} asChild>
-                        <Link
-                          to={link.href}
-                          className="text-dalashala-darkBrown text-sm font-eb-garamond w-full text-center py-2 px-3 hover:text-dalashala-mediumBrown transition-colors"
-                        >
-                          {link.name}
-                        </Link>
-                      </DrawerClose>
+                    {locationGroups.map((group) => (
+                      <div key={group.location} className="w-full">
+                        <p className="font-cinzel text-xs uppercase tracking-widest text-dalashala-mediumBrown pt-3 pb-1 text-center">
+                          {group.location}
+                        </p>
+                        {group.links.map((link) => (
+                          <DrawerClose key={group.location + link.href + link.name} asChild>
+                            <Link
+                              to={link.href}
+                              className="text-dalashala-darkBrown text-sm font-eb-garamond w-full text-center py-1.5 px-3 hover:text-dalashala-mediumBrown transition-colors block"
+                            >
+                              {link.name}
+                            </Link>
+                          </DrawerClose>
+                        ))}
+                        <div className="w-full border-t border-dalashala-tan/30 mt-2" />
+                      </div>
                     ))}
+                    <DrawerClose asChild>
+                      <Link
+                        to={onlineLink.href}
+                        className="text-dalashala-darkBrown text-sm font-eb-garamond w-full text-center py-1.5 px-3 hover:text-dalashala-mediumBrown transition-colors block"
+                      >
+                        Online Yoga (English)
+                      </Link>
+                    </DrawerClose>
 
                     <div className="w-full border-t border-dalashala-tan/40 my-2" />
 

@@ -123,7 +123,7 @@ const Services = () => {
           </div>
 
           {/* Stockholm */}
-          <div className="mb-12">
+          <div id="stockholm" className="mb-12 scroll-mt-20">
             <div className="flex items-center gap-3 mb-5">
               <h3 className="font-cinzel text-sm uppercase tracking-widest text-dalashala-mediumBrown">
                 Stockholm
@@ -138,7 +138,7 @@ const Services = () => {
           </div>
 
           {/* Dalarna */}
-          <div className="mb-10">
+          <div id="dalarna" className="mb-10 scroll-mt-20">
             <div className="flex items-center gap-3 mb-5">
               <h3 className="font-cinzel text-sm uppercase tracking-widest text-dalashala-mediumBrown">
                 Dalarna

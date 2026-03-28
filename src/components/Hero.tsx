@@ -64,20 +64,30 @@ const Hero = () => {
           Yoga with Camilla
         </h2>
 
-        <p 
-          ref={subtitleRef} 
+        <p
+          ref={subtitleRef}
           className="font-eb-garamond text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-dalashala-mediumBrown mb-6 sm:mb-8 opacity-0 -translate-y-4 transition-all duration-1000 ease-out delay-500 px-3"
         >
-          Yoga i Dalarna & Stockholm
+          Privat yoga i Stockholm & Dalarna
         </p>
 
-        <a 
+        <div
           ref={buttonRef}
-          href="#services" 
-          className="inline-block bg-dalashala-darkBrown text-dalashala-beige px-4 sm:px-6 py-1.5 sm:py-2 md:px-8 md:py-3 lg:px-10 lg:py-2.5 text-base md:text-lg lg:text-xl rounded-sm font-medium hover:bg-dalashala-mediumBrown transition-colors duration-300 opacity-0 -translate-y-4 transition-all duration-1000 ease-out delay-700 mb-16 sm:mb-20 md:mb-24 lg:mb-32 xl:mb-40"
+          className="flex flex-col sm:flex-row gap-3 justify-center items-center opacity-0 -translate-y-4 transition-all duration-1000 ease-out delay-700 mb-16 sm:mb-20 md:mb-24 lg:mb-32 xl:mb-40"
         >
-          Se tjänster
-        </a>
+          <a
+            href="#stockholm"
+            className="inline-block bg-dalashala-darkBrown text-dalashala-beige px-6 py-2.5 md:px-8 md:py-3 text-base md:text-lg rounded-sm font-medium hover:bg-dalashala-mediumBrown transition-colors duration-300 whitespace-nowrap"
+          >
+            Jag är i Stockholm
+          </a>
+          <a
+            href="#dalarna"
+            className="inline-block border border-dalashala-darkBrown text-dalashala-darkBrown px-6 py-2.5 md:px-8 md:py-3 text-base md:text-lg rounded-sm font-medium hover:bg-dalashala-tan/40 transition-colors duration-300 whitespace-nowrap"
+          >
+            Jag är i Dalarna
+          </a>
+        </div>
       </div>
     </section>
   );
