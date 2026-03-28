@@ -9,71 +9,54 @@ type ServiceCard = {
 
 const stockholmServices: ServiceCard[] = [
   {
-    title: 'SUP Yoga Stockholm',
-    description: 'Privat SUP yoga på Sicklasjön — perfekt som sommardag för team, möhippa eller vänner. Vinyasa och yin på brädan.',
-    href: '/tjanster/sup-yoga',
-    tag: 'Populärt',
-  },
-  {
     title: 'Möhippa Yoga',
-    description: 'Boka yoga som möhippa-aktivitet i Stockholm — på SUP eller på land. Skräddarsytt för din grupp.',
+    description: 'Privat yogaklass för möhippan — på SUP på Sicklasjön eller på land. Skräddarsytt för hela gruppen, ingen erfarenhet krävs.',
     href: '/tjanster/mohippa-yoga',
     tag: 'Populärt',
   },
   {
     title: 'Företags- & Konferensyoga',
-    description: 'Yoga för team, konferenser och arbetsdagar i Stockholm. Passar alla nivåer — ingen erfarenhet krävs.',
+    description: 'Yoga på jobbet, konferensen eller kick-offen. Passar alla nivåer — jag tar med all utrustning och anpassar passet för er grupp.',
     href: '/tjanster/foretagsyoga',
   },
   {
-    title: 'Privatlektioner',
-    description: 'Personliga yoga-sessioner en-till-en i Stockholm. Anpassade efter dina mål, ditt schema, ditt tempo.',
-    href: '/tjanster/privatlektioner',
+    title: 'SUP Yoga Stockholm',
+    description: 'Yoga på brädan på Sicklasjön — för team, möhippa eller en annorlunda sommardag. Vinyasa och yin på vattnet.',
+    href: '/tjanster/sup-yoga',
   },
   {
-    title: 'Yoga Workshops',
-    description: 'Tematiska workshops i Stockholm — andning, yin, rörlighet eller meditation. Öppna klasser och privata bokningar.',
-    href: '/tjanster/yoga-workshop',
+    title: 'Privatlektioner',
+    description: 'En-till-en yoga anpassad helt efter dig — dina mål, ditt schema, ditt tempo. I Stockholm eller online.',
+    href: '/tjanster/privatlektioner',
   },
 ];
 
 const dalarnaServices: ServiceCard[] = [
   {
-    title: 'Möhippa Yoga på Stugan',
-    description: 'Yoga på altanen i Dalarna — en möhippa ingen glömmer. Kabinyoga omgiven av skog, himmel och höns.',
-    href: '/tjanster/mohippa-yoga',
+    title: 'Hönsyoga på Stugan',
+    description: 'Yoga på altanen med hönsen fritt strövande runt. Sveriges svar på goat yoga — lugnt, jordnära och helt unikt. Privat bokning, upp till 6 pers.',
+    href: '/tjanster/honsyoga',
+    tag: 'Unikt',
+  },
+  {
+    title: 'Mini Retreat i Dalarna',
+    description: 'En dag i skogen — utomhusyoga, promenad, fika och stillhet. 2,5 timmar med tåg från Stockholm. Perfekt ensam eller med vänner.',
+    href: '/tjanster/mini-retreat',
     tag: 'Populärt',
   },
   {
-    title: 'Hönsyoga på Stugan',
-    description: 'Yoga med höns på vår altan i Dalarna. Som goat yoga — fast med höns. En unik, lugn upplevelse i naturen.',
-    href: '/tjanster/honsyoga',
-    tag: 'Nytt',
-  },
-  {
     title: 'Trail Run + Yoga',
-    description: 'Springa + yoga i Dalarnas skogar. Halvdag eller heldag — guidat löppass följt av en återhämtande yoga-session.',
+    description: 'Guidat löppass i Dalarnas skogar följt av en återhämtande yogasession. Halvdag eller heldag — för löpare som vill röra sig och landa.',
     href: '/tjanster/trail-run-yoga',
-    tag: 'Nytt',
-  },
-  {
-    title: 'Mini Retreat Dalarna',
-    description: 'En dag i skogen — utomhusyoga, promenad, fika och stillhet. 2,5 timmar med tåg från Stockholm.',
-    href: '/tjanster/mini-retreat',
   },
   {
     title: 'Bröllopsyoga',
-    description: 'Yoga på bröllopsdagen eller som aktivitet för brudföljetet i Dalarna. Lugnt, vackert, oförglömligt.',
+    description: 'Yoga som en del av bröllopsveckan — morgonen av, kvällen innan, eller dagen efter. I Dalarna eller Stockholm, Camilla kommer till er.',
     href: '/tjanster/brollopsyoga',
   },
   {
-    title: 'Privatlektioner Dalarna',
-    description: 'En-till-en yoga på stugan eller hos dig — i Dalarna och omnejd.',
-    href: '/tjanster/privatlektioner',
-  },
-  {
     title: 'Äventyrpaket',
-    description: 'En hel dag i Dalarnas natur — yoga, vandring, meditation och friluftsliv. För grupper som vill uppleva mer.',
+    description: 'En hel dag i Dalarnas natur — yoga, vandring, meditation och friluftsliv. För grupper som vill ha mer än ett vanligt yogapass.',
     href: '/tjanster/adventure-paket',
   },
 ];

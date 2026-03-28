@@ -28,31 +28,30 @@ const BrollopYoga = () => (
     canonical="https://yogawithcamilla.se/tjanster/brollopsyoga"
     heroTag="Bröllop & Wellness"
     heroHeading="Yoga för Bröllop"
-    heroSubtitle="Gör er bröllopsvecka lite mer zen. En morgonyoga på bröllopsdagen, en avslappningsklass för gästerna dagen innan, eller ett wellnessinslag på bröllopsmiddagen – yoga passar perfekt in."
+    heroSubtitle="Yoga som en naturlig del av bröllopsveckan — morgonen av, kvällen innan, eller dagen efter. Jag tar med all utrustning och kommer till er, i Dalarna eller Stockholm."
     heroImage="/lovable-uploads/54e28b90-5dc5-42be-ac91-2bcbcc7e5c58.png"
     heroImageAlt="Lugn yoga i naturen – perfekt som bröllopsaktivitet"
-    introHeading="Yoga som en del av er bröllopsvecka"
+    introHeading="Yoga som en del av bröllopsveckan"
     introParagraphs={[
-      "Allt fler par i Sverige väljer yoga som en del av sitt bröllopsupplägg – och det är lätt att förstå varför. En yogaklass ger gästerna ett gemensamt välmåendemoment bortom middagsbord och tal. Det är inkluderande för alla åldrar och fitnessnivåer, och skapar ett lugnt, vackert minne.",
-      "Jag erbjuder yoga för bröllop i Dalarna och Stockholm. I Dalarna kan vi hålla klassen utomhus på min altan i Dalarna, eller på er bröllopslokation. I Stockholm kan jag ta med utrustning och hålla klass utomhus eller i en hyrd lokal.",
-      "Varje klass anpassas för er grupp – oavsett om det är ett intimt bröllopssällskap om 8 personer eller ett större gästsläkting på 20. Inga förkunskaper behövs. Jag undervisar på engelska men kan hålla genomgångar på svenska vid behov."
+      "Yoga passar in när som helst i bröllopsveckan — det beror helt på vad ni vill ha ut av det. En lugn start på bröllopsdagen, ett sätt att samla gästerna kvällen innan, eller en mjuk landning dagen efter. Inkluderande för alla åldrar och fitnessnivåer, inga förkunskaper krävs.",
+      "Jag tar med all utrustning — mattor, block och bolster — och kommer till er oavsett om det är en stuga i Dalarna, ett slott i Sörmland eller en innergård i Stockholm."
     ]}
     highlights={[
       {
-        heading: "Morgonyoga för brudparet",
-        text: "Börja bröllopsdagen med lugn och närvaro. En 45–60 minuters yogaklass bara för er två – eller med era allra närmaste – innan det stora kalaset drar igång."
+        heading: "Morgonen av bröllopsdagen",
+        text: "Börja dagen med lugn och närvaro. En 45–60 min yogaklass bara för er två, eller med era närmaste — innan det stora kalaset drar igång."
       },
       {
-        heading: "Gäst-yoga dagen innan",
-        text: "En perfekt bröllopsmiddagsaktivitet. Samla gästerna för en gemensam yogaklass på eftermiddagen innan ceremonin – ett sätt att få hela gruppen att mötas och slappna av."
+        heading: "Kvällen eller dagen innan",
+        text: "Samla gästerna för ett gemensamt välmående-moment innan ceremonin. Yoga är ett enkelt sätt att få hela gruppen att mötas, andas och slappna av tillsammans."
       },
       {
-        heading: "Bröllop i Dalarna",
-        text: "Utomhusyoga på vår altan i Dalarna. En naturskön miljö som lyfter hela upplevelsen. Perfekt för bröllop som redan hålls i Dalarna."
+        heading: "Dagen efter",
+        text: "En mjuk, återhämtande klass morgonen efter festen. Rörelse och andning som hjälper kroppen att landa — uppskattad av gäster oavsett hur sena de var."
       },
       {
-        heading: "Bröllop i Stockholm",
-        text: "Jag kan komma till er bröllopslokation i Stockholm med all utrustning och hålla yoga på er tilldelade yta. Hör av er med detaljer om lokal och antal gäster."
+        heading: "Camilla kommer till er",
+        text: "Jag reser till er bröllopslokation i Dalarna eller Stockholm med all utrustning. Hör av er med datum, plats och antal gäster så sätter vi ihop något."
       }
     ]}
     detailsHeading="Praktisk information"
