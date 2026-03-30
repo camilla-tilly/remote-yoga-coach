@@ -22,7 +22,7 @@ const Contact = () => {
           <div className="text-center mb-8 animate-when-visible" data-animation="fade-in">
             <h2 className="heading-lg mb-3 text-xl md:text-2xl lg:text-3xl">Kontakta mig</h2>
             <p className="text-body max-w-xl mx-auto text-sm md:text-base">
-              Frågor om ett pass, eller redo att boka? Hör av dig — jag svarar inom 24 timmar.
+              Frågor om ett pass, eller redo att boka? Hör av dig.
             </p>
           </div>
           

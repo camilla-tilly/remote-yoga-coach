@@ -25,6 +25,11 @@ const stockholmServices: ServiceCard[] = [
     href: '/tjanster/sup-yoga',
   },
   {
+    title: 'Trail Run + Yoga',
+    description: 'SUP yoga på Sicklasjön följt av guidat trail run i Nacka Naturreservat. En aktiv heldagsupplevelse.',
+    href: '/tjanster/trail-run-yoga',
+  },
+  {
     title: 'Privatlektioner',
     description: 'En-till-en yoga i ditt tempo — anpassad efter dina mål. I Stockholm eller online.',
     href: '/tjanster/privatlektioner',
@@ -40,24 +45,19 @@ const dalarnaServices: ServiceCard[] = [
   },
   {
     title: 'Mini Retreat',
-    description: 'En dag i skogen — yoga, promenad, fika och stillhet. 2,5 timmar med tåg från Stockholm.',
+    description: 'En lugn dag i skogen — yoga, promenad och fika. 2,5 timmar med tåg från Stockholm.',
     href: '/tjanster/mini-retreat',
     tag: 'Populärt',
   },
   {
     title: 'Trail Run + Yoga',
-    description: 'Guidat löppass i skogen + återhämtningsyoga. Halvdag eller heldag för aktiva grupper.',
+    description: 'Guidat löppass i Dalarnas skogar + återhämtningsyoga. För dig som vill röra dig och landa.',
     href: '/tjanster/trail-run-yoga',
   },
   {
     title: 'Bröllopsyoga',
     description: 'Yoga som en del av bröllopsveckan — morgonen av, kvällen innan eller dagen efter.',
     href: '/tjanster/brollopsyoga',
-  },
-  {
-    title: 'Äventyrpaket',
-    description: 'En hel dag i Dalarnas natur — yoga, vandring och friluftsliv för grupper.',
-    href: '/tjanster/adventure-paket',
   },
 ];
 
@@ -114,7 +114,7 @@ const Services = () => {
               </h3>
               <div className="flex-1 h-px bg-dalashala-tan/40" />
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
               {stockholmServices.map((s) => (
                 <ServiceCard key={s.href + s.title} {...s} />
               ))}
@@ -129,7 +129,7 @@ const Services = () => {
               </h3>
               <div className="flex-1 h-px bg-dalashala-tan/40" />
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {dalarnaServices.map((s) => (
                 <ServiceCard key={s.href + s.title} {...s} />
               ))}
@@ -138,7 +138,7 @@ const Services = () => {
 
           {/* Bottom CTA */}
           <div className="text-center pt-4">
-            <p className="font-eb-garamond text-dalashala-mediumBrown mb-4">
+            <p className="font-eb-garamond text-lg md:text-xl text-dalashala-mediumBrown mb-4">
               Ser du inte det du letar efter? Hör av dig — jag skräddarsyr gärna något för just er.
             </p>
             <a
