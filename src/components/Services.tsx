@@ -10,23 +10,23 @@ type ServiceCard = {
 const stockholmServices: ServiceCard[] = [
   {
     title: 'Möhippa Yoga',
-    description: 'Privat yogaklass för möhippan — på SUP på Sicklasjön eller på land. Skräddarsytt för hela gruppen, ingen erfarenhet krävs.',
+    description: 'Privat yoga för hela gruppen — på SUP eller på land. Ingen erfarenhet krävs.',
     href: '/tjanster/mohippa-yoga',
     tag: 'Populärt',
   },
   {
     title: 'Företags- & Konferensyoga',
-    description: 'Yoga på jobbet, konferensen eller kick-offen. Passar alla nivåer — jag tar med all utrustning och anpassar passet för er grupp.',
+    description: 'Yoga för team och konferenser. Jag tar med all utrustning och anpassar efter er.',
     href: '/tjanster/foretagsyoga',
   },
   {
     title: 'SUP Yoga Stockholm',
-    description: 'Yoga på brädan på Sicklasjön — för team, möhippa eller en annorlunda sommardag. Vinyasa och yin på vattnet.',
+    description: 'Yoga på brädan på Sicklasjön. Perfekt för team, möhippa eller en sommardag.',
     href: '/tjanster/sup-yoga',
   },
   {
     title: 'Privatlektioner',
-    description: 'En-till-en yoga anpassad helt efter dig — dina mål, ditt schema, ditt tempo. I Stockholm eller online.',
+    description: 'En-till-en yoga i ditt tempo — anpassad efter dina mål. I Stockholm eller online.',
     href: '/tjanster/privatlektioner',
   },
 ];
@@ -34,29 +34,29 @@ const stockholmServices: ServiceCard[] = [
 const dalarnaServices: ServiceCard[] = [
   {
     title: 'Hönsyoga på Stugan',
-    description: 'Yoga på altanen med hönsen fritt strövande runt. Sveriges svar på goat yoga — lugnt, jordnära och helt unikt. Privat bokning, upp till 6 pers.',
+    description: 'Yoga på altanen med hönsen runt. Sveriges svar på goat yoga — unikt och helt ostört.',
     href: '/tjanster/honsyoga',
     tag: 'Unikt',
   },
   {
-    title: 'Mini Retreat i Dalarna',
-    description: 'En dag i skogen — utomhusyoga, promenad, fika och stillhet. 2,5 timmar med tåg från Stockholm. Perfekt ensam eller med vänner.',
+    title: 'Mini Retreat',
+    description: 'En dag i skogen — yoga, promenad, fika och stillhet. 2,5 timmar med tåg från Stockholm.',
     href: '/tjanster/mini-retreat',
     tag: 'Populärt',
   },
   {
     title: 'Trail Run + Yoga',
-    description: 'Guidat löppass i Dalarnas skogar följt av en återhämtande yogasession. Halvdag eller heldag — för löpare som vill röra sig och landa.',
+    description: 'Guidat löppass i skogen + återhämtningsyoga. Halvdag eller heldag för aktiva grupper.',
     href: '/tjanster/trail-run-yoga',
   },
   {
     title: 'Bröllopsyoga',
-    description: 'Yoga som en del av bröllopsveckan — morgonen av, kvällen innan, eller dagen efter. I Dalarna eller Stockholm, Camilla kommer till er.',
+    description: 'Yoga som en del av bröllopsveckan — morgonen av, kvällen innan eller dagen efter.',
     href: '/tjanster/brollopsyoga',
   },
   {
     title: 'Äventyrpaket',
-    description: 'En hel dag i Dalarnas natur — yoga, vandring, meditation och friluftsliv. För grupper som vill ha mer än ett vanligt yogapass.',
+    description: 'En hel dag i Dalarnas natur — yoga, vandring och friluftsliv för grupper.',
     href: '/tjanster/adventure-paket',
   },
 ];
@@ -64,21 +64,21 @@ const dalarnaServices: ServiceCard[] = [
 const ServiceCard = ({ title, description, href, tag }: ServiceCard) => (
   <Link
     to={href}
-    className="group flex flex-col justify-between bg-white rounded-2xl p-6 border border-dalashala-tan/20 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 relative min-h-[160px]"
+    className="group flex flex-col justify-between bg-white rounded-2xl p-5 border border-dalashala-tan/20 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
   >
-    {tag && (
-      <span
-        className="absolute top-4 right-4 text-xs font-montserrat uppercase tracking-wide px-2.5 py-0.5 rounded-full"
-        style={{ backgroundColor: '#864927', color: '#f9dec6' }}
-      >
-        {tag}
-      </span>
-    )}
     <div>
-      <h3 className="font-cinzel text-base text-dalashala-darkBrown mb-2 group-hover:text-dalashala-mediumBrown transition-colors pr-16 leading-snug">
+      {tag && (
+        <span
+          className="inline-block mb-2 text-xs font-montserrat uppercase tracking-wide px-2.5 py-0.5 rounded-full"
+          style={{ backgroundColor: '#864927', color: '#f9dec6' }}
+        >
+          {tag}
+        </span>
+      )}
+      <h3 className="font-cinzel text-sm md:text-base text-dalashala-darkBrown mb-2 group-hover:text-dalashala-mediumBrown transition-colors leading-snug">
         {title}
       </h3>
-      <p className="font-eb-garamond text-base text-dalashala-mediumBrown leading-relaxed">
+      <p className="font-eb-garamond text-sm text-dalashala-mediumBrown leading-relaxed">
         {description}
       </p>
     </div>
@@ -91,7 +91,7 @@ const ServiceCard = ({ title, description, href, tag }: ServiceCard) => (
 const Services = () => {
   return (
     <section id="services" className="relative py-12 md:py-16 bg-dalashala-beige">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
 
           {/* Section header */}
           <div className="mb-10">
@@ -114,7 +114,7 @@ const Services = () => {
               </h3>
               <div className="flex-1 h-px bg-dalashala-tan/40" />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {stockholmServices.map((s) => (
                 <ServiceCard key={s.href + s.title} {...s} />
               ))}
@@ -129,7 +129,7 @@ const Services = () => {
               </h3>
               <div className="flex-1 h-px bg-dalashala-tan/40" />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
               {dalarnaServices.map((s) => (
                 <ServiceCard key={s.href + s.title} {...s} />
               ))}
