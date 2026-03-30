@@ -20,33 +20,33 @@ const locationGroups = [
       { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
       { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
       { name: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
-      { name: 'Yoga Workshops', href: '/tjanster/yoga-workshop' },
     ]
   },
   {
     location: 'Dalarna',
     links: [
       { name: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
-      { name: 'Möhippa på Stugan', href: '/tjanster/mohippa-yoga' },
+      { name: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
       { name: 'Mini Retreat', href: '/tjanster/mini-retreat' },
       { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
-      { name: 'Äventyrpaket', href: '/tjanster/adventure-paket' },
       { name: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
       { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
-      { name: 'Yoga för Turister', href: '/tjanster/yoga-dalarna-turister' },
     ]
   },
 ];
 
 const onlineLink = { name: 'Online Yoga (English)', href: '/tjanster/online-yoga' };
 
-// Flat list for mobile (deduplicated by href+name)
+// Flat list for mobile (deduplicated)
 const allServiceLinks = [
-  ...locationGroups[0].links,
+  { name: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
+  { name: 'Företags- & Konferensyoga', href: '/tjanster/foretagsyoga' },
+  { name: 'SUP Yoga', href: '/tjanster/sup-yoga' },
+  { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
+  { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
+  { name: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
   { name: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
   { name: 'Mini Retreat', href: '/tjanster/mini-retreat' },
-  { name: 'Äventyrpaket', href: '/tjanster/adventure-paket' },
-  { name: 'Yoga för Turister', href: '/tjanster/yoga-dalarna-turister' },
   onlineLink,
 ];
 

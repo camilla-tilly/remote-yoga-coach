@@ -45,7 +45,7 @@ const dalarnaServices: ServiceCard[] = [
   },
   {
     title: 'Mini Retreat',
-    description: 'En lugn dag i skogen — yoga, promenad och fika. 2,5 timmar med tåg från Stockholm.',
+    description: 'En hel dag i Dalarnas natur — yoga, promenad och fika. En riktig paus, långt från stan.',
     href: '/tjanster/mini-retreat',
     tag: 'Populärt',
   },
