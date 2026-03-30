@@ -89,7 +89,7 @@ const OmMig = () => {
                     Jag älskar rörelse, natur och mindfulness — och upplever hur mycket de ger tillbaka när man gör dem till en del av vardagen. Yoga är för mig den röda tråden: ett sätt att vara närvarande, andas och hitta balans mitt i allt annat.
                   </p>
                   <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-darkBrown">
-                    Jag är baserad i Stockholm och undervisar regelbundet i Dalarna, där vi har en stuga med en stor altan som ibland förvandlas till yogashala.
+                    Jag är baserad i Stockholm och undervisar även i Dalarna, där jag har en stuga med en stor altan som ibland förvandlas till yogashala.
                   </p>
                 </div>
                 <div className="md:col-span-2">
