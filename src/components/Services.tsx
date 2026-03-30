@@ -16,7 +16,7 @@ const stockholmServices: ServiceCard[] = [
   },
   {
     title: 'Företags- & Konferensyoga',
-    description: 'Yoga för team och konferenser. Jag tar med all utrustning och anpassar efter er.',
+    description: 'Yoga för team och konferenser i Stockholm. Anpassat för er grupp, alla nivåer.',
     href: '/tjanster/foretagsyoga',
   },
   {
@@ -102,7 +102,7 @@ const Services = () => {
               Vad jag erbjuder
             </h2>
             <p className="font-eb-garamond text-base text-dalashala-mediumBrown max-w-xl">
-              Baserad i Dalarna och Stockholm — jag tar med all utrustning och kommer till er.
+              Baserad i Dalarna och Stockholm — privat yoga för grupper och individer.
             </p>
           </div>
 
