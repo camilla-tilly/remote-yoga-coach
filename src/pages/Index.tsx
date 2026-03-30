@@ -65,12 +65,12 @@ const Index = () => {
 
         {/* Photo strip */}
         <div className="w-full grid grid-cols-3 gap-0">
-          {/* Warrior I — she's centre-left, keep her visible */}
+          {/* Misty backbend — focus on pose in lower centre */}
           <div className="aspect-square overflow-hidden">
             <img
-              src="/images/IMG_5788.JPG"
+              src="/images/IMG_8340.JPG"
               alt="Yoga på altanen i Dalarna"
-              className="w-full h-full object-cover object-[35%_60%]"
+              className="w-full h-full object-cover object-[50%_60%]"
             />
           </div>
           {/* Wild thing — pose is in lower portion of portrait image */}
