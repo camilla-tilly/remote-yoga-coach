@@ -45,10 +45,10 @@ const About = () => {
               <div className="col-span-2 animate-when-visible" data-animation="fade-in-up">
                 <div className="columns-3 gap-6 text-xs md:text-sm font-eb-garamond leading-relaxed" style={{ columnFill: 'auto', height: '320px' }}>
                   <p className="mb-3">
-                    Hi, my name is Camilla and I am a 500 hour certified yoga teacher. I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, followed by a 300-hour YTT at Sampoorna Yoga Shala, Goa in Advanced Vinyasa Flow. Yoga has been a steady part of my life for the past ten years.
+                    Hi, my name is Camilla and I am a 500 hour certified yoga teacher based in Stockholm, with regular classes in Dalarna. I love movement, nature, and mindfulness — and I've experienced firsthand how much they give back when you make them part of everyday life.
                   </p>
                   <p className="mb-3">
-                    Originally from Australia, I was drawn to Dalarna's seasons, forests, and open skies. When we bought our cabin, I knew I wanted to teach yoga in this space—on our big deck, surrounded by nature. My background spans fitness instruction—a Certificate III in Fitness from Australia and seven years as an internationally accredited Les Mills Bodypump instructor (certified 2018) across gyms in both Australia and Sweden, giving me solid grounding in exercise science, anatomy, and program design.
+                    I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, followed by a 300-hour YTT at Sampoorna Yoga Shala, Goa in Advanced Vinyasa Flow. My background spans seven years as a Les Mills Bodypump instructor across gyms in Australia and Sweden.
                   </p>
                   <p className="mb-3">
                     Over the last four years, I've become an ultra runner, completing five ultra marathons up to 100 kilometers. These events mirror yoga's essence—learning to witness experience without attachment.
@@ -57,7 +57,7 @@ const About = () => {
                     My practice extends through meditation retreats with the Kadampa Meditation Center and Tranquil Wisdom Insight Meditation (TWIM), deepening my understanding of mindfulness.
                   </p>
                   <p>
-                    I teach at WD Wellness in Vansbro, Hot Yoga Stockholm, Yogarummet Björkhagen, and Brahma Yoga in Nacka.
+                    I teach at WD Wellness in Vansbro, Hot Yoga Stockholm, Yogarummet Björkhagen, Brahma Yoga in Nacka, and as the SUP yoga teacher for Smashing Balance.
                   </p>
                 </div>
               </div>
@@ -72,27 +72,23 @@ const About = () => {
                 
                 <div className="space-y-4 mb-6">
                   <p className="text-base md:text-lg font-eb-garamond">
-                    Hi, my name is Camilla and I am a 500 hour certified yoga teacher. I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, followed by a 300-hour YTT at Sampoorna Yoga Shala, Goa in Advanced Vinyasa Flow. Yoga has been a steady part of my life for the past ten years. For me, it is a way to go inward, find presence and explore my creativity.
+                    Hi, my name is Camilla and I am a 500 hour certified yoga teacher based in Stockholm, with regular classes in Dalarna. I love movement, nature, and mindfulness — and I've experienced firsthand how much they give back when you make them part of everyday life.
                   </p>
-                  
+
                   <p className="text-base md:text-lg font-eb-garamond">
-                    Originally from Australia, I was drawn to Dalarna's seasons, forests, and open skies. When we bought our cabin, I knew I wanted to teach yoga in this space—on our big deck, surrounded by nature.
+                    I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, followed by a 300-hour YTT at Sampoorna Yoga Shala, Goa in Advanced Vinyasa Flow. My background also spans seven years as a Les Mills Bodypump instructor across gyms in Australia and Sweden.
                   </p>
-                  
+
                   <p className="text-base md:text-lg font-eb-garamond">
-                    My background spans fitness instruction as well—a Certificate III in Fitness from Australia and seven years as an internationally accredited Les Mills Bodypump instructor (certified 2018) across gyms in both Australia and Sweden. This experience has given me solid grounding in exercise science, anatomy, program design, and how to meet the needs of individual students.
+                    Over the last four years, I've become an ultra runner, completing five ultra marathons up to 100 kilometers. These events mirror yoga's essence — learning to witness experience without attachment.
                   </p>
-                  
+
                   <p className="text-base md:text-lg font-eb-garamond">
-                    Over the last four years, I've become an ultra runner, completing five ultra marathons with the longest being 100 kilometers. These endurance events test the mind and body in equal measure—they invite you to simply observe states of being rather than let the mind take over. This practice of sustained presence under duress mirrors the essence of yoga, where we learn to witness our experience without attachment.
+                    My practice extends through meditation retreats with the Kadampa Meditation Center and Tranquil Wisdom Insight Meditation (TWIM), deepening my understanding of mindfulness.
                   </p>
-                  
+
                   <p className="text-base md:text-lg font-eb-garamond">
-                    My commitment to practice extends beyond the mat through several meditation retreats, including immersive experiences with the Kadampa Meditation Center and Tranquil Wisdom Insight Meditation (TWIM). These retreats have deepened my understanding of mindfulness and contemplative practice.
-                  </p>
-                  
-                  <p className="text-base md:text-lg font-eb-garamond">
-                    I teach at WD Wellness in Vansbro, Hot Yoga Stockholm, Yogarummet Björkhagen, and Brahma Yoga in Nacka.
+                    I teach at WD Wellness in Vansbro, Hot Yoga Stockholm, Yogarummet Björkhagen, Brahma Yoga in Nacka, and as the SUP yoga teacher for Smashing Balance.
                   </p>
                 </div>
               </div>

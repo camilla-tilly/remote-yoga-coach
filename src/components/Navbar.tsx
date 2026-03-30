@@ -27,9 +27,9 @@ const locationGroups = [
       { name: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
       { name: 'Företagsyoga Dalarna', href: '/tjanster/foretagsyoga' },
       { name: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
-      { name: 'Mini Retreat', href: '/tjanster/mini-retreat' },
       { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
       { name: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
+      { name: 'Mini Retreat', href: '/tjanster/mini-retreat' },
       { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
     ]
   },
@@ -138,7 +138,7 @@ const Navbar = () => {
                     <div className="flex">
                       {locationGroups.map((group) => (
                         <div key={group.location} className="flex-1 border-r last:border-r-0 border-dalashala-tan/20">
-                          <p className="px-4 pt-3 pb-1 font-cinzel text-xs uppercase tracking-widest text-dalashala-mediumBrown/70">
+                          <p className="px-4 pt-3 pb-1 font-cinzel text-xs uppercase tracking-widest text-dalashala-mediumBrown font-bold">
                             {group.location}
                           </p>
                           {group.links.map((link) => (
@@ -153,15 +153,6 @@ const Navbar = () => {
                           ))}
                         </div>
                       ))}
-                    </div>
-                    <div className="border-t border-dalashala-tan/20 px-4 py-2">
-                      <Link
-                        to={onlineLink.href}
-                        onClick={() => setServicesOpen(false)}
-                        className="block font-eb-garamond text-sm text-dalashala-darkBrown hover:bg-dalashala-tan/30 transition-colors py-1 rounded"
-                      >
-                        🌐 {onlineLink.name}
-                      </Link>
                     </div>
                   </div>
                 )}
@@ -213,7 +204,7 @@ const Navbar = () => {
                   <div className="flex flex-col items-center pb-6 px-4 space-y-1">
                     {locationGroups.map((group) => (
                       <div key={group.location} className="w-full">
-                        <p className="font-cinzel text-xs uppercase tracking-widest text-dalashala-mediumBrown pt-3 pb-1 text-center">
+                        <p className="font-cinzel text-xs uppercase tracking-widest text-dalashala-mediumBrown font-bold pt-3 pb-1 text-center">
                           {group.location}
                         </p>
                         {group.links.map((link) => (
@@ -229,15 +220,6 @@ const Navbar = () => {
                         <div className="w-full border-t border-dalashala-tan/30 mt-2" />
                       </div>
                     ))}
-                    <DrawerClose asChild>
-                      <Link
-                        to={onlineLink.href}
-                        className="text-dalashala-darkBrown text-sm font-eb-garamond w-full text-center py-1.5 px-3 hover:text-dalashala-mediumBrown transition-colors block"
-                      >
-                        Online Yoga (English)
-                      </Link>
-                    </DrawerClose>
-
                     <div className="w-full border-t border-dalashala-tan/40 my-2" />
 
                     <DrawerClose asChild>
