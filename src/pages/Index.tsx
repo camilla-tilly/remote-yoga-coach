@@ -65,25 +65,28 @@ const Index = () => {
 
         {/* Photo strip */}
         <div className="w-full grid grid-cols-3 gap-0">
-          <div className="aspect-[4/3] overflow-hidden">
+          {/* Warrior I — she's centre-left, keep her visible */}
+          <div className="aspect-square overflow-hidden">
             <img
               src="/images/IMG_5788.JPG"
               alt="Yoga på altanen i Dalarna"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover object-[35%_60%]"
             />
           </div>
-          <div className="aspect-[4/3] overflow-hidden">
+          {/* Wild thing — pose is in lower portion of portrait image */}
+          <div className="aspect-square overflow-hidden">
             <img
               src="/images/IMG_7919.jpeg"
               alt="Utomhusyoga i Dalarna"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-[50%_75%]"
             />
           </div>
-          <div className="aspect-[4/3] overflow-hidden">
+          {/* Plank with chickens — she's in lower half, chickens surrounding */}
+          <div className="aspect-square overflow-hidden">
             <img
               src="/images/IMG_3367.jpeg"
               alt="Hönsyoga — yoga med höns på altanen"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover object-[50%_65%]"
             />
           </div>
         </div>
