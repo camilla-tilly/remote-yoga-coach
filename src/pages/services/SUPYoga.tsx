@@ -25,8 +25,8 @@ const SUPYoga = () => (
     heroTag="SUP Yoga · Stockholm"
     heroHeading="Yoga on the Water"
     heroSubtitle="Paddleboard yoga at Sickla Strand, Stockholm. Open classes in vinyasa and yin, plus private events for groups. In partnership with Smashing Balance."
-    heroImage="/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.png"
-    heroImageAlt="SUP yoga on paddleboards at Sickla Strand, Stockholm"
+    heroImage="/images/sup-yoga-poster.png"
+    heroImageAlt="SUP yoga på Sicklasjön, Stockholm — April–September 2026"
     introHeading="What to expect"
     introParagraphs={[
       "SUP yoga is yoga on a wide, stable paddleboard on open water. The moving surface means you work harder to stay steady — and that tends to take care of the mental noise on its own. Classes are held at Sickla Strand in Stockholm, in partnership with Smashing Balance who handle all the kit and safety on the water.",
@@ -88,8 +88,10 @@ const SUPYoga = () => (
       "Teaching in English.",
       "Open classes: book via Smashing Balance at smashingbalance.se/pages/sup-yoga-stockholm. Private events: email hello.yogawithcamilla@gmail.com with your date, group size and preferred format."
     ]}
-    ctaHeading="Book SUP Yoga in Stockholm"
-    ctaText="Want to book a private event — hen party, birthday, corporate or otherwise? Email me with your date and number of guests and we'll put something together."
+    ctaHeading="Boka SUP Yoga i Stockholm"
+    ctaText="Öppna klasser April–September 2026 på Sicklasjön. Boka via Smashing Balance — allt utrustning ingår. Vill du boka ett privat event (möhippa, team eller födelsedag)? Hör av dig så löser vi det."
+    bookingHref="https://smashingbalance.se/collections/sup-yoga"
+    bookingLabel="Boka SUP Yoga →"
     termsHref="/tjanster/sup-yoga/villkor"
     structuredData={structuredData}
     relatedServices={relatedServices}

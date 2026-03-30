@@ -33,6 +33,8 @@ interface ServicePageProps {
   detailsParagraphs?: string[];
   ctaHeading: string;
   ctaText: string;
+  bookingHref?: string;
+  bookingLabel?: string;
   structuredData?: object;
   relatedServices?: { label: string; href: string }[];
   englishKeywords?: {
@@ -59,6 +61,8 @@ const ServicePageLayout = ({
   detailsParagraphs,
   ctaHeading,
   ctaText,
+  bookingHref,
+  bookingLabel,
   structuredData,
   relatedServices,
   englishKeywords,
@@ -91,7 +95,9 @@ const ServicePageLayout = ({
                 className="bg-dalashala-darkBrown text-dalashala-beige hover:bg-dalashala-darkBrown/90 font-montserrat py-2 px-8 rounded-full uppercase tracking-wide text-sm"
                 asChild
               >
-                <a href="mailto:hello.yogawithcamilla@gmail.com">Boka nu / Book now</a>
+                <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
+                  {bookingLabel || 'Boka nu'}
+                </a>
               </Button>
             </div>
           </section>
@@ -245,7 +251,9 @@ const ServicePageLayout = ({
                 className="bg-dalashala-beige text-dalashala-darkBrown hover:bg-dalashala-beige/90 font-montserrat py-2 px-8 rounded-full uppercase tracking-wide text-sm"
                 asChild
               >
-                <a href="mailto:hello.yogawithcamilla@gmail.com">Skicka förfrågan / Send enquiry</a>
+                <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
+                  {bookingLabel || 'Skicka förfrågan'}
+                </a>
               </Button>
             </div>
           </section>
