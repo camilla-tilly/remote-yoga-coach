@@ -17,7 +17,6 @@ const locationGroups = [
       { name: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
       { name: 'Företags- & Konferensyoga', href: '/tjanster/foretagsyoga' },
       { name: 'SUP Yoga', href: '/tjanster/sup-yoga' },
-      { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
       { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
       { name: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
     ]
@@ -25,12 +24,13 @@ const locationGroups = [
   {
     location: 'Dalarna',
     links: [
-      { name: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
       { name: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
+      { name: 'Företagsyoga Dalarna', href: '/tjanster/foretagsyoga' },
+      { name: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
       { name: 'Mini Retreat', href: '/tjanster/mini-retreat' },
-      { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
-      { name: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
       { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
+      { name: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
+      { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
     ]
   },
 ];

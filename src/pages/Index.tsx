@@ -73,12 +73,12 @@ const Index = () => {
               className="w-full h-full object-cover object-[50%_60%]"
             />
           </div>
-          {/* Wild thing — pose is in lower portion of portrait image */}
+          {/* Middle photo */}
           <div className="aspect-square overflow-hidden">
             <img
-              src="/images/IMG_7919.jpeg"
+              src="/images/IMG_4442.jpeg"
               alt="Utomhusyoga i Dalarna"
-              className="w-full h-full object-cover object-[50%_75%]"
+              className="w-full h-full object-cover object-center"
             />
           </div>
           {/* Plank with chickens — she's in lower half, chickens surrounding */}

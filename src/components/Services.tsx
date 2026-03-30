@@ -21,7 +21,7 @@ const stockholmServices: ServiceCard[] = [
   },
   {
     title: 'SUP Yoga Stockholm',
-    description: 'Yoga på brädan på Sicklasjön. Perfekt för team, möhippa eller en sommardag.',
+    description: 'Yoga på brädan på Sicklasjön. Perfekt för team, födelsedag eller en sommardag.',
     href: '/tjanster/sup-yoga',
   },
   {
@@ -53,6 +53,16 @@ const dalarnaServices: ServiceCard[] = [
     title: 'Trail Run + Yoga',
     description: 'Guidat löppass i Dalarnas skogar + återhämtningsyoga. För dig som vill röra dig och landa.',
     href: '/tjanster/trail-run-yoga',
+  },
+  {
+    title: 'Möhippa Yoga',
+    description: 'Privat yoga för möhippan — perfekt om ni hyr stuga i Dalarna. På altanen, i skogen eller vid sjön.',
+    href: '/tjanster/mohippa-yoga',
+  },
+  {
+    title: 'Företagsyoga Dalarna',
+    description: 'Yoga för team och konferenser i Falun, Borlänge och övriga Dalarna. Alla nivåer.',
+    href: '/tjanster/foretagsyoga',
   },
   {
     title: 'Bröllopsyoga',

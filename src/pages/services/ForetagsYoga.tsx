@@ -64,7 +64,7 @@ const ForetagsYoga = () => (
     detailsHeading="Format & praktisk information"
     detailsParagraphs={[
       "Klassen är vanligtvis 30–90 minuter. Jag tar med all utrustning (mattor, block) för upp till 20 deltagare. Ni behöver bara ha ett utrymme som är tillräckligt stort.",
-      "För konferenser i Stockholm: hyr ni lokal så kan jag komma dit, eller hjälper jag gärna till att hitta en lämplig yogasal.",
+      "I Stockholm kommer jag till er lokal, eller hjälper gärna till att hitta en lämplig yogasal. I Dalarna erbjuder jag företagsyoga i Falun, Borlänge och omnejd — på ert kontor, er konferensanläggning eller utomhus.",
       "Maila hello.yogawithcamilla@gmail.com med datum, antal deltagare, stad och typ av event för en offert."
     ]}
     ctaHeading="Boka företagsyoga"
