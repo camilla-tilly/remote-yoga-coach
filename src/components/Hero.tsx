@@ -43,7 +43,7 @@ const Hero = () => {
   return (
     <section 
       id="hero" 
-      className="relative h-[100svh] sm:min-h-screen flex items-center justify-center overflow-hidden pt-36 sm:pt-44 md:min-h-[65vh] md:pt-48 lg:pt-52 bg-dalashala-beige w-full pb-16 sm:pb-20 md:pb-24 lg:pb-32 xl:pb-40"
+      className="relative flex items-center justify-center overflow-hidden pt-36 sm:pt-44 md:pt-48 lg:pt-52 bg-dalashala-beige w-full pb-12 md:pb-16"
     >
       <div className="container-section relative z-10 text-center w-full px-2 sm:px-3">
         <div 
@@ -73,7 +73,7 @@ const Hero = () => {
 
         <div
           ref={buttonRef}
-          className="flex flex-col sm:flex-row gap-3 justify-center items-center opacity-0 -translate-y-4 transition-all duration-1000 ease-out delay-700 mb-16 sm:mb-20 md:mb-24 lg:mb-32 xl:mb-40"
+          className="flex flex-col sm:flex-row gap-3 justify-center items-center opacity-0 -translate-y-4 transition-all duration-1000 ease-out delay-700"
         >
           <a
             href="#stockholm"

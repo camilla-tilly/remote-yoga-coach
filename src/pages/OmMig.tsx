@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import SEO from '@/components/SEO';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -55,6 +57,7 @@ const OmMig = () => {
         structuredData={structuredData}
       />
 
+      <Navbar />
       <div className="min-h-screen bg-dalashala-beige pt-20">
 
         {/* ── Hero ── */}
@@ -202,6 +205,7 @@ const OmMig = () => {
         </section>
 
       </div>
+      <Footer />
     </>
   );
 };

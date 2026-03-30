@@ -62,6 +62,32 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
+
+        {/* Photo strip */}
+        <div className="w-full grid grid-cols-3 gap-0">
+          <div className="aspect-[4/3] overflow-hidden">
+            <img
+              src="/images/IMG_5788.JPG"
+              alt="Yoga på altanen i Dalarna"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+          <div className="aspect-[4/3] overflow-hidden">
+            <img
+              src="/images/IMG_7919.jpeg"
+              alt="Utomhusyoga i Dalarna"
+              className="w-full h-full object-cover object-top"
+            />
+          </div>
+          <div className="aspect-[4/3] overflow-hidden">
+            <img
+              src="/images/IMG_3367.jpeg"
+              alt="Hönsyoga — yoga med höns på altanen"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+        </div>
+
         <Services />
         <Contact />
       </main>
