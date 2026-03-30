@@ -25,8 +25,8 @@ const SUPYoga = () => (
     heroTag="SUP Yoga · Stockholm"
     heroHeading="Yoga on the Water"
     heroSubtitle="Paddleboard yoga at Sickla Strand, Stockholm. Open classes in vinyasa and yin, plus private events for groups. In partnership with Smashing Balance."
-    heroImage="/images/sup-yoga-poster.png"
-    heroImageAlt="SUP yoga på Sicklasjön, Stockholm — April–September 2026"
+    heroImage="/images/sup-yoga-sickla.png"
+    heroImageAlt="SUP yoga på Sicklasjön, Stockholm"
     introHeading="What to expect"
     introParagraphs={[
       "SUP yoga is yoga on a wide, stable paddleboard on open water. The moving surface means you work harder to stay steady — and that tends to take care of the mental noise on its own. Classes are held at Sickla Strand in Stockholm, in partnership with Smashing Balance who handle all the kit and safety on the water.",
@@ -50,33 +50,6 @@ const SUPYoga = () => (
       {
         heading: "Private events",
         text: "Book the whole class for your group — hen party, birthday, corporate event, or just a day on the water with friends. You choose the format (vinyasa or yin), date and time."
-      }
-    ]}
-    pricing={[
-      {
-        label: "Drop-in (incl. equipment + sauna)",
-        price: "350 kr",
-        note: "Paddleboard, paddle and wood-fired sauna included."
-      },
-      {
-        label: "Drop-in with own board (+ sauna)",
-        price: "150 kr",
-        note: "Sauna included."
-      },
-      {
-        label: "Season pass 2026 (incl. sauna)",
-        price: "1 500 kr",
-        note: "All classes this season. Personal, non-transferable."
-      },
-      {
-        label: "10-class card",
-        price: "1 000 kr",
-        note: "Shareable — use it with a friend."
-      },
-      {
-        label: "Private event (up to 10 people, 1 hr)",
-        price: "2 500 kr",
-        note: "All SUP equipment included. Contact to book."
       }
     ]}
     detailsHeading="Practical information"
