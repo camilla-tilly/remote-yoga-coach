@@ -26,7 +26,7 @@ const stockholmServices: ServiceCard[] = [
   },
   {
     title: 'Trail Run + Yoga',
-    description: 'SUP yoga på Sicklasjön följt av guidat trail run i Nacka Naturreservat. En aktiv heldagsupplevelse.',
+    description: 'Guidat trail run i Nacka Naturreservat + återhämtningsyoga. En aktiv heldagsupplevelse.',
     href: '/tjanster/trail-run-yoga',
   },
   {
@@ -45,14 +45,9 @@ const dalarnaServices: ServiceCard[] = [
   },
   {
     title: 'Mini Retreat',
-    description: 'En hel dag i Dalarnas natur — yoga, promenad och fika. En riktig paus, långt från stan.',
+    description: 'En dag i Dalarnas natur — yoga, vandring eller löpning, fika och mindfulness. Skräddarsytt för din grupp.',
     href: '/tjanster/mini-retreat',
     tag: 'Populärt',
-  },
-  {
-    title: 'Trail Run + Yoga',
-    description: 'Guidat löppass i Dalarnas skogar + återhämtningsyoga. För dig som vill röra dig och landa.',
-    href: '/tjanster/trail-run-yoga',
   },
   {
     title: 'Möhippa Yoga',

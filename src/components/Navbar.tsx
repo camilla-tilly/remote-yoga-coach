@@ -27,27 +27,22 @@ const locationGroups = [
       { name: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
       { name: 'Företagsyoga Dalarna', href: '/tjanster/foretagsyoga' },
       { name: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
-      { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
-      { name: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
       { name: 'Mini Retreat', href: '/tjanster/mini-retreat' },
       { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
     ]
   },
 ];
 
-const onlineLink = { name: 'Online Yoga (English)', href: '/tjanster/online-yoga' };
-
 // Flat list for mobile (deduplicated)
 const allServiceLinks = [
   { name: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
   { name: 'Företags- & Konferensyoga', href: '/tjanster/foretagsyoga' },
   { name: 'SUP Yoga', href: '/tjanster/sup-yoga' },
-  { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
   { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
   { name: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
   { name: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
   { name: 'Mini Retreat', href: '/tjanster/mini-retreat' },
-  onlineLink,
+  { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
 ];
 
 const Navbar = () => {
