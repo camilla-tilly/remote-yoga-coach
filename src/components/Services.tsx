@@ -114,7 +114,7 @@ const Services = () => {
           {/* Stockholm */}
           <div id="stockholm" className="mb-12 scroll-mt-20">
             <div className="flex items-center gap-3 mb-6">
-              <h3 className="font-cinzel text-sm uppercase tracking-widest text-dalashala-mediumBrown whitespace-nowrap">
+              <h3 className="font-cinzel text-sm uppercase tracking-widest text-dalashala-mediumBrown font-bold whitespace-nowrap">
                 Stockholm
               </h3>
               <div className="flex-1 h-px bg-dalashala-tan/40" />
@@ -129,12 +129,12 @@ const Services = () => {
           {/* Dalarna */}
           <div id="dalarna" className="mb-10 scroll-mt-20">
             <div className="flex items-center gap-3 mb-6">
-              <h3 className="font-cinzel text-sm uppercase tracking-widest text-dalashala-mediumBrown whitespace-nowrap">
+              <h3 className="font-cinzel text-sm uppercase tracking-widest text-dalashala-mediumBrown font-bold whitespace-nowrap">
                 Dalarna
               </h3>
               <div className="flex-1 h-px bg-dalashala-tan/40" />
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
               {dalarnaServices.map((s) => (
                 <ServiceCard key={s.href + s.title} {...s} />
               ))}
