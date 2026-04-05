@@ -54,7 +54,7 @@ const About = () => {
                     Over the last four years, I've become an ultra runner, completing five ultra marathons up to 100 kilometers. These events mirror yoga's essence—learning to witness experience without attachment.
                   </p>
                   <p className="mb-3">
-                    My practice extends through meditation retreats with the Kadampa Meditation Center and Tranquil Wisdom Insight Meditation (TWIM), deepening my understanding of mindfulness.
+                    My practice extends through meditation retreats with the Kadampa Buddhism meditation and Tranquil Wisdom Insight Meditation (TWIM), deepening my understanding of mindfulness.
                   </p>
                   <p>
                     I teach at WD Wellness in Vansbro, Hot Yoga Stockholm, Yogarummet Björkhagen, Brahma Yoga in Nacka, and as the SUP yoga teacher for Smashing Balance.
@@ -84,7 +84,7 @@ const About = () => {
                   </p>
 
                   <p className="text-base md:text-lg font-eb-garamond">
-                    My practice extends through meditation retreats with the Kadampa Meditation Center and Tranquil Wisdom Insight Meditation (TWIM), deepening my understanding of mindfulness.
+                    My practice extends through meditation retreats with the Kadampa Buddhism meditation and Tranquil Wisdom Insight Meditation (TWIM), deepening my understanding of mindfulness.
                   </p>
 
                   <p className="text-base md:text-lg font-eb-garamond">

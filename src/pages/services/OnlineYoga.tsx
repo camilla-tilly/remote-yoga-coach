@@ -25,8 +25,8 @@ const OnlineYoga = () => (
     heroTag="Online Yoga"
     heroHeading="Online Yoga – Privata klasser var du än är"
     heroSubtitle="Samma kvalitet som en privat lektion – via Zoom. Oavsett om du sitter i Stockholm, Sydney eller någonstans däremellan."
-    heroImage="/lovable-uploads/c1e6d7f9-3ac6-42af-ac83-3058516ff2ef.png"
-    heroImageAlt="Online yoga via Zoom – privata klasser på engelska"
+    heroImage="/images/IMG_5776.JPG"
+    heroImageAlt="Yoga på altanen i Dalarna — online klasser via Zoom"
     introHeading="Yoga utan gränser"
     introParagraphs={[
       "Online yoga är inte ett kompromiss – det är ett format med egna styrkor. Du behöver inget gym, ingen studio, inga resekostnader. Du behöver en matta, tillräckligt med golvyta och en internetuppkoppling.",
@@ -48,7 +48,7 @@ const OnlineYoga = () => (
       },
       {
         heading: "Flexibla tider",
-        text: "Vi hittar en tid som passar din tidszon och ditt schema. Morgonklasser, lunch, kväll – vad som fungerar för dig."
+        text: "Jag hittar en tid som passar din tidszon och ditt schema. Morgonklasser, lunch, kväll – vad som fungerar för dig."
       }
     ]}
     pricing={[
@@ -76,12 +76,12 @@ const OnlineYoga = () => (
     detailsHeading="Hur fungerar det?"
     detailsParagraphs={[
       "1. Maila hello.yogawithcamilla@gmail.com med dina mål, din erfarenhetsnivå och vilka tider som passar dig.",
-      "2. Vi bokar in ett inledande samtal (15 min, kostnadsfritt) för att gå igenom dina behov och sätta upp ett upplägg.",
-      "3. Vi håller lektionen via Zoom. Du behöver en matta, golvyta som är ungefär din kroppslängd, och bekväma kläder.",
+      "2. Jag bokar in ett inledande samtal (15 min, kostnadsfritt) för att gå igenom dina behov och sätta upp ett upplägg.",
+      "3. Lektionen hålls via Zoom. Du behöver en matta, golvyta som är ungefär din kroppslängd, och bekväma kläder.",
       "4. Betalning sker enkelt via Swish eller banköverföring innan lektionen."
     ]}
     ctaHeading="Starta din online yogapraktik"
-    ctaText="Maila mig med dina mål och önskade tider. Vi bokar ett kostnadsfritt introduktionssamtal och sätter igång."
+    ctaText="Maila mig med dina mål och önskade tider. Jag bokar ett kostnadsfritt introduktionssamtal och så sätter vi igång."
     structuredData={structuredData}
     relatedServices={relatedServices}
     englishKeywords={{

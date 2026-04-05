@@ -44,7 +44,7 @@ const credentials = [
   },
   {
     title: "Meditation & mindfulness",
-    detail: "Retreater med Kadampa Meditation Center\nTranquil Wisdom Insight Meditation (TWIM)"
+    detail: "Retreater med Kadampa Buddhism meditation\nTranquil Wisdom Insight Meditation (TWIM)"
   }
 ];
 
@@ -95,8 +95,8 @@ const OmMig = () => {
                 <div className="md:col-span-2">
                   <div className="overflow-hidden rounded-2xl">
                     <img
-                      src="/images/IMG_8340.JPG"
-                      alt="Camilla på altanen i Dalarna — mistig morgon"
+                      src="/lovable-uploads/c1e6d7f9-3ac6-42af-ac83-3058516ff2ef.png"
+                      alt="Camilla i warrior pose på altanen i Dalarna"
                       className="w-full h-full object-cover rounded-2xl"
                     />
                   </div>
@@ -111,7 +111,7 @@ const OmMig = () => {
           <div className="max-w-3xl mx-auto">
             <div className="bg-dalashala-tan rounded-2xl p-8 md:p-10">
               <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-darkBrown">
-                Mina klasser är utmanande men inte bestraffande. Inga extrema poser, ingen tävling med grannen på mattan. Yoga som rörelse, andning och närvaro — oavsett om vi är på altanen i Dalarna eller i ett studio i Stockholm.
+                Mina klasser är utmanande men inte bestraffande. Inga extrema poser, ingen tävling med grannen på mattan. Yoga som rörelse, andning och närvaro — oavsett om jag undervisar på altanen i Dalarna eller i ett studio i Stockholm.
               </p>
             </div>
           </div>

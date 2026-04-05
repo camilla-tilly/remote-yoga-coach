@@ -29,8 +29,8 @@ const MiniRetreat = () => (
     heroTag="Retreat & Fördjupning"
     heroHeading="Mini Yoga Retreat i Dalarna"
     heroSubtitle="En skräddarsydd dag eller helg i Dalarnas natur — yoga, mindfulness och rörelse i form av vandring eller löpning. Anpassat för din grupp."
-    heroImage="/lovable-uploads/54e28b90-5dc5-42be-ac91-2bcbcc7e5c58.png"
-    heroImageAlt="Yoga retreat i naturen – stuga i Dalarna"
+    heroImage="/images/IMG_8366.jpeg"
+    heroImageAlt="Yogamattor uppställda på altanen — mini retreat i Dalarna"
     introHeading="Retreat i skogen — inte på skärmen"
     introParagraphs={[
       "Dalarna erbjuder exakt det som ett retreat ska ge: avskildhet, natur och tid att vara närvarande. Du väljer upplägget — yoga och vandring i skogen, ett guidat löppass med återhämtningsyoga efteråt, eller en heldag med mindfulness, andning och fika.",

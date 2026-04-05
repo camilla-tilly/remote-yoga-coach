@@ -29,7 +29,7 @@ const Privatlektioner = () => (
     heroTag="Privatlektioner"
     heroHeading="Privata Yogalektioner"
     heroSubtitle="En-till-en yoga med full fokus på dig. Din kropp, dina mål, ditt tempo. Privatlektioner är det snabbaste och effektivaste sättet att fördjupa din yogapraktik."
-    heroImage="/lovable-uploads/c1e6d7f9-3ac6-42af-ac83-3058516ff2ef.png"
+    heroImage="/images/IMG_5788.JPG"
     heroImageAlt="Privat yogalektion med personlig instruktion"
     introHeading="Yoga anpassad helt för dig"
     introParagraphs={[
@@ -40,7 +40,7 @@ const Privatlektioner = () => (
     highlights={[
       {
         heading: "Nybörjare",
-        text: "Har du aldrig provat yoga men är nyfiken? En privat lektion är det bästa sättet att komma igång utan att känna sig utpekad eller efter. Vi börjar från grunden i din takt."
+        text: "Har du aldrig provat yoga men är nyfiken? En privat lektion är det bästa sättet att komma igång utan att känna sig utpekad eller efter. Jag börjar från grunden i din takt."
       },
       {
         heading: "Fördjupning",
@@ -48,7 +48,7 @@ const Privatlektioner = () => (
       },
       {
         heading: "Återhämtning & rörlighet",
-        text: "Springer du, gymmar, sitter mycket på jobbet? Yoga är ett utmärkt komplement. Vi fokuserar på rörlighet, balans och återhämtning kopplat till din vardag."
+        text: "Springer du, gymmar, sitter mycket på jobbet? Yoga är ett utmärkt komplement. Jag fokuserar på rörlighet, balans och återhämtning kopplat till din vardag."
       },
       {
         heading: "Meditation & andning",
@@ -57,12 +57,12 @@ const Privatlektioner = () => (
     ]}
     detailsHeading="Praktisk information"
     detailsParagraphs={[
-      "Privatlektioner är 60 eller 90 minuter. Vi kan ha en enstaka lektion, ett paket om 5 eller 10 lektioner, eller en regelbunden veckopraktik.",
+      "Privatlektioner är 60 eller 90 minuter. Jag erbjuder enstaka lektioner, ett paket om 5 eller 10 lektioner, eller en regelbunden veckopraktik.",
       "Stockholm: lektioner hålls i yogasal eller på lämplig plats inomhus eller utomhus. Dalarna: på altanen vid stugan eller inomhus. Jag erbjuder inte online-lektioner — för mig är det personliga mötet det som gör skillnad.",
       "Maila hello.yogawithcamilla@gmail.com för att boka eller ställa frågor om upplägg och priser."
     ]}
     ctaHeading="Starta din personliga yogapraktik"
-    ctaText="Maila mig med dina mål och önskemål – och vi hittar ett upplägg som fungerar för dig."
+    ctaText="Maila mig med dina mål och önskemål – så hittar jag ett upplägg som fungerar för dig."
     structuredData={structuredData}
     relatedServices={relatedServices}
   />

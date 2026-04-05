@@ -29,13 +29,13 @@ const TrailRunYoga = () => (
     heroTag="Löp & Yoga"
     heroHeading="Trail Run + Yoga"
     heroSubtitle="Ett guidat löp- eller vandringpass följt av yoga — i Nacka Naturreservat eller Dalarnas skogar. För dig som vill ta ut dig och sedan landa ordentligt."
-    heroImage="/lovable-uploads/c1e6d7f9-3ac6-42af-ac83-3058516ff2ef.png"
-    heroImageAlt="Trail running och yoga i naturen"
+    heroImage="/images/trail-run-nacka.jpeg"
+    heroImageAlt="Utsikt över Nacka Naturreservat — trail run och yoga"
     introHeading="Rörelse och närvaro — på riktigt"
     introParagraphs={[
       "Jag är 500-timmars certifierad yogalärare — och ultramaratonlöpare med fem lopp bakom mig. De två sakerna hänger ihop mer än man tror. Traillöpning och yoga tränar samma sak: att vara i kroppen, att ta ett steg i taget, att inte låta tankarna köra iväg.",
       "Det här paketet kombinerar de båda. Ett guidat pass i naturen — anpassat till gruppens nivå, oavsett om ni springer eller vandrar — följt av yoga för återhämtning, andning och rörlighet.",
-      "Du behöver inte vara löpare. Tempot sätts alltid efter gruppen. Vi kan vandra, jogga eller springa — det spelar ingen roll. Det som spelar roll är att ni tar er ut."
+      "Du behöver inte vara löpare. Tempot sätts alltid efter gruppen. Jag anpassar till vandring, jogging eller löpning — det spelar ingen roll. Det som spelar roll är att ni tar er ut."
     ]}
     highlights={[
       {
@@ -48,7 +48,7 @@ const TrailRunYoga = () => (
       },
       {
         heading: "Flexibelt för alla nivåer",
-        text: "Har du sprungit ett ultramaraton eller aldrig sprungit förut — det spelar ingen roll. Vi anpassar tempot och sträckan till gruppen. Vandring är alltid ett alternativ."
+        text: "Har du sprungit ett ultramaraton eller aldrig sprungit förut — det spelar ingen roll. Jag anpassar tempot och sträckan till gruppen. Vandring är alltid ett alternativ."
       },
       {
         heading: "Företagsdag & teambuilding",

@@ -25,13 +25,13 @@ const MohenNatt = () => (
     heroTag="Möhippa & Bachelorette Yoga"
     heroHeading="Möhippa med Yoga"
     heroSubtitle="Ge brud-to-be och hennes vänner en oförglömlig upplevelse – avslappnad, rolig och faktiskt minnesvärd. Yoga är det perfekta alternativet till det traditionella möhippaprogrammet."
-    heroImage="/lovable-uploads/54e28b90-5dc5-42be-ac91-2bcbcc7e5c58.png"
-    heroImageAlt="Yoga på altan i skog i Dalarna, perfekt för möhippa"
+    heroImage="/images/IMG_6793.JPG"
+    heroImageAlt="Yoga i solnedgång — perfekt för möhippa"
     introHeading="Varför välja yoga till möhippan?"
     introParagraphs={[
       "En yogaklass på möhippan är ett allt populärare alternativ till traditionella aktiviteter – och det är inte konstigt. Det är inkluderande för alla fitnessnivåer, ger genuint lugn och välmående, och ger gruppen en chans att koppla av och njuta av varandra i en vacker miljö.",
       "Jag håller klassen på svenska eller engelska och anpassar alltid svårighetsgraden för hela gruppen. Du behöver inte ha någon yogaerfarenhet alls – det är poängen.",
-      "Vi kan hålla klassen på altanen vid stugan i Dalarna, eller jag kan komma till er — oavsett om det är ett hus på landet, ett hotell i Stockholm eller er AirBnB."
+      "Jag kan hålla klassen på altanen vid stugan i Dalarna, eller komma till er — oavsett om det är ett hus på landet, ett hotell i Stockholm eller er AirBnB."
     ]}
     highlights={[
       {
@@ -39,7 +39,7 @@ const MohenNatt = () => (
         text: "Yoga på altanen vid stugan, omgiven av skog och fågelsång. Jag fixar mattor och all utrustning. Plats för upp till 10 personer."
       },
       {
-        heading: "Vi kommer till er",
+        heading: "Jag kommer till er",
         text: "Jag reser runt om i Dalarna med mattor, block och all utrustning för upp till 10 personer. Perfekt om ni hyr en stuga eller bor på hotell i regionen."
       },
       {
@@ -58,7 +58,7 @@ const MohenNatt = () => (
         note: "All utrustning ingår."
       },
       {
-        label: "Vi kommer till er (Dalarna)",
+        label: "Jag kommer till er (Dalarna)",
         price: "kontakta för pris",
         note: "Resor i Dalarna. Reseavgift kan tillkomma."
       },

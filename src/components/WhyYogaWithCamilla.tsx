@@ -44,7 +44,7 @@ const WhyYogaWithCamilla = () => {
               <h4 className="text-base md:text-lg font-cinzel mb-3 text-dalashala-darkBrown">Naturen som studio</h4>
               <p className="text-dalashala-mediumBrown leading-relaxed font-eb-garamond text-xs md:text-sm">
                 I Dalarna: altan omgivet av gran, frisk luft och naturens egna ljud. I Stockholm: SUP yoga på
-                Sicklasjön eller inomhus hos etablerade studios. Naturen är alltid med, oavsett var vi är.
+                Sicklasjön eller inomhus hos etablerade studios. Naturen är alltid med, oavsett var jag undervisar.
               </p>
             </div>
           </div>

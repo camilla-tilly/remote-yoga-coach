@@ -29,11 +29,11 @@ const HonsYoga = () => (
     heroTag="Hönsyoga · Dalarna"
     heroHeading="Hönsyoga i Dalarna"
     heroSubtitle="Yoga på altanen — med höns fritt strövande runt. En lugn, jordnära upplevelse i Dalarnas natur."
-    heroImage="/lovable-uploads/54e28b90-5dc5-42be-ac91-2bcbcc7e5c58.png"
-    heroImageAlt="Yoga på altan i Dalarna med höns"
+    heroImage="/images/IMG_3765.jpeg"
+    heroImageAlt="Höns på yogamattan — hönsyoga i Dalarna"
     introHeading="Yoga med sällskap"
     introParagraphs={[
-      "Vi har höns. De lever sina egna liv och rör sig fritt på och runt altanen. Under ett yogapass är de ibland nära, ibland inte — men de finns där, i bakgrunden, som en påminnelse om att ingenting behöver vara perfekt för att fungera.",
+      "Jag har höns. De lever sina egna liv och rör sig fritt på och runt altanen. Under ett yogapass är de ibland nära, ibland inte — men de finns där, i bakgrunden, som en påminnelse om att ingenting behöver vara perfekt för att fungera.",
       "Hönsyoga är ett vanligt yogapass på altanen utomhus, med hönsens närvaro som ett naturligt inslag. Klassen leds av mig, Camilla — 500-timmars certifierad yogalärare — och följer samma upplägg som alla mina klasser: rörelse, andning, närvaro.",
       "Det är yoga i Dalarna som det faktiskt ser ut. Inget mer, inget mindre."
     ]}
@@ -66,7 +66,7 @@ const HonsYoga = () => (
       "Maila hello.yogawithcamilla@gmail.com med önskat datum och antal deltagare."
     ]}
     ctaHeading="Boka Hönsyoga"
-    ctaText="Hör av dig med datum och antal deltagare — så fixar vi ett pass."
+    ctaText="Hör av dig med datum och antal deltagare — så fixar jag ett pass."
     structuredData={structuredData}
     relatedServices={relatedServices}
     englishKeywords={{

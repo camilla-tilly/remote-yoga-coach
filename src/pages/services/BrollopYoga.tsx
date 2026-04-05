@@ -51,7 +51,7 @@ const BrollopYoga = () => (
       },
       {
         heading: "Camilla kommer till er",
-        text: "Jag reser till er bröllopslokation i Dalarna eller Stockholm med all utrustning. Hör av er med datum, plats och antal gäster så sätter vi ihop något."
+        text: "Jag reser till er bröllopslokation i Dalarna eller Stockholm med all utrustning. Hör av er med datum, plats och antal gäster så sätter jag ihop något."
       }
     ]}
     detailsHeading="Praktisk information"
@@ -60,7 +60,7 @@ const BrollopYoga = () => (
       "Boka gärna 4–8 veckor i förväg för bröllopsdatum, då dessa dagar bokas upp tidigt. Maila hello.yogawithcamilla@gmail.com med datum, plats och antal deltagare för en offert."
     ]}
     ctaHeading="Lägg till yoga i er bröllopsvecka"
-    ctaText="Maila mig med ert datum, plats och antal gäster så sätter vi ihop något vackert tillsammans."
+    ctaText="Maila mig med ert datum, plats och antal gäster så sätter jag ihop något vackert."
     structuredData={structuredData}
     relatedServices={relatedServices}
   />
