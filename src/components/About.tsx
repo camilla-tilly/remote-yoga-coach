@@ -45,7 +45,7 @@ const About = () => {
               <div className="col-span-2 animate-when-visible" data-animation="fade-in-up">
                 <div className="columns-3 gap-6 text-xs md:text-sm font-eb-garamond leading-relaxed" style={{ columnFill: 'auto', height: '320px' }}>
                   <p className="mb-3">
-                    Hi, my name is Camilla and I am a 500 hour certified yoga teacher based in Stockholm, with regular classes in Dalarna. I love movement, nature, and mindfulness — and I've experienced firsthand how much they give back when you make them part of everyday life.
+                    Hi, my name is Camilla and I am a 500 hour certified yoga teacher based in Stockholm, with regular classes in Dalarna. Movement, nature, and mindfulness have always been important to me.
                   </p>
                   <p className="mb-3">
                     I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, followed by a 300-hour YTT at Sampoorna Yoga Shala, Goa in Advanced Vinyasa Flow. My background spans seven years as a Les Mills Bodypump instructor across gyms in Australia and Sweden.
@@ -72,7 +72,7 @@ const About = () => {
                 
                 <div className="space-y-4 mb-6">
                   <p className="text-base md:text-lg font-eb-garamond">
-                    Hi, my name is Camilla and I am a 500 hour certified yoga teacher based in Stockholm, with regular classes in Dalarna. I love movement, nature, and mindfulness — and I've experienced firsthand how much they give back when you make them part of everyday life.
+                    Hi, my name is Camilla and I am a 500 hour certified yoga teacher based in Stockholm, with regular classes in Dalarna. Movement, nature, and mindfulness have always been important to me.
                   </p>
 
                   <p className="text-base md:text-lg font-eb-garamond">

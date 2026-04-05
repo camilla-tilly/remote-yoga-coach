@@ -4,7 +4,7 @@ const relatedServices = [
   { label: 'Mini Yoga Retreat', href: '/tjanster/mini-retreat' },
   { label: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
   { label: 'SUP Yoga Stockholm', href: '/tjanster/sup-yoga' },
-  { label: 'Äventyrpaket', href: '/tjanster/adventure-paket' },
+  { label: 'Online Yoga', href: '/tjanster/online-yoga' },
 ];
 
 const structuredData = {
@@ -28,38 +28,37 @@ const Privatlektioner = () => (
     canonical="https://yogawithcamilla.se/tjanster/privatlektioner"
     heroTag="Privatlektioner"
     heroHeading="Privata Yogalektioner"
-    heroSubtitle="En-till-en yoga med full fokus på dig. Din kropp, dina mål, ditt tempo. Privatlektioner är det snabbaste och effektivaste sättet att fördjupa din yogapraktik."
+    heroSubtitle="En-till-en yoga med full fokus på dig. Din kropp, dina mål, ditt tempo."
     heroImage="/images/IMG_5788.JPG"
     heroImageAlt="Privat yogalektion med personlig instruktion"
     introHeading="Yoga anpassad helt för dig"
     introParagraphs={[
-      "I en grupplektion gäller ett gemensamt tempo. I en privat lektion gäller ditt. Jag kan fokusera på exakt de områden du vill utveckla – rörlighet, styrka, andning, meditation, återhämtning efter skada, eller helt enkelt att bygga en hållbar daglig praktik.",
-      "Jag erbjuder privatlektioner på plats i Stockholm (i yogasal eller annan lämplig lokal) och i Dalarna (på altanen eller inomhus i stugan). Alla lektioner sker fysiskt — jag tror på närvaro och personlig kontakt.",
-      "Jag är 500-timmars certifierad med bakgrund i vinyasa flow, men anpassar alltid metodiken efter vad som passar dig bäst. Lektionen hålls på engelska."
+      "I en grupplektion gäller ett gemensamt tempo. I en privat lektion gäller ditt. Jag fokuserar på det du vill utveckla — rörlighet, styrka, andning, meditation eller återhämtning.",
+      "Privatlektioner i Stockholm (yogasal eller lämplig lokal) och i Dalarna (altanen eller inomhus). Lektionen hålls på engelska."
     ]}
     highlights={[
       {
         heading: "Nybörjare",
-        text: "Har du aldrig provat yoga men är nyfiken? En privat lektion är det bästa sättet att komma igång utan att känna sig utpekad eller efter. Jag börjar från grunden i din takt."
+        text: "Aldrig provat yoga? En privatlektion är ett bra sätt att komma igång i din egen takt."
       },
       {
         heading: "Fördjupning",
-        text: "Praktiserar du redan yoga men vill ta nästa steg? Jag hjälper dig att förfina din teknik, gå djupare i poses och förstå hur andning och rörelse samverkar."
+        text: "Redan yogare? Jag hjälper dig förfina teknik och gå djupare i hur andning och rörelse samverkar."
       },
       {
         heading: "Återhämtning & rörlighet",
-        text: "Springer du, gymmar, sitter mycket på jobbet? Yoga är ett utmärkt komplement. Jag fokuserar på rörlighet, balans och återhämtning kopplat till din vardag."
+        text: "Löpning, gym, kontorsjobb — yoga som komplement. Fokus på rörlighet, balans och återhämtning."
       },
       {
         heading: "Meditation & andning",
-        text: "Vill du lära dig pranayama, mindfulness eller meditation? Jag kan vägleda dig i dessa praktiker som en del av eller separat från den fysiska yogan."
+        text: "Pranayama, mindfulness eller meditation — som en del av eller separat från den fysiska yogan."
       }
     ]}
     detailsHeading="Praktisk information"
     detailsParagraphs={[
-      "Privatlektioner är 60 eller 90 minuter. Jag erbjuder enstaka lektioner, ett paket om 5 eller 10 lektioner, eller en regelbunden veckopraktik.",
-      "Stockholm: lektioner hålls i yogasal eller på lämplig plats inomhus eller utomhus. Dalarna: på altanen vid stugan eller inomhus. Jag erbjuder inte online-lektioner — för mig är det personliga mötet det som gör skillnad.",
-      "Maila hello.yogawithcamilla@gmail.com för att boka eller ställa frågor om upplägg och priser."
+      "60 eller 90 minuter. Enstaka lektion, paket om 5 eller 10, eller regelbunden veckopraktik.",
+      "Stockholm: yogasal eller lämplig plats. Dalarna: altanen eller inomhus i stugan.",
+      "Maila hello.yogawithcamilla@gmail.com för bokning och priser."
     ]}
     ctaHeading="Starta din personliga yogapraktik"
     ctaText="Maila mig med dina mål och önskemål – så hittar jag ett upplägg som fungerar för dig."

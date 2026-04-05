@@ -40,7 +40,7 @@ const credentials = [
   },
   {
     title: "Ultralöpning",
-    detail: "5 ultramaraton genomförda, inklusive en pallplats\nUthållighetsträning som en praktik i närvaro, inte prestation"
+    detail: "5 ultramaraton genomförda, inklusive en pallplats"
   },
   {
     title: "Meditation & mindfulness",
@@ -86,7 +86,7 @@ const OmMig = () => {
                     Jag heter Camilla. Jag är australiensisk, 500-timmar certifierad yogalärare och undervisar yoga i Stockholm och Dalarna. Jag har instruerat fitness i sju år som Les Mills-instruktör och sprungit fem ultramaraton — inklusive en pallplats. Rörelse har alltid varit en stor del av mitt liv.
                   </p>
                   <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-darkBrown">
-                    Jag älskar rörelse, natur och mindfulness — och upplever hur mycket de ger tillbaka när man gör dem till en del av vardagen. Yoga är för mig den röda tråden: ett sätt att vara närvarande, andas och hitta balans mitt i allt annat.
+                    Rörelse, natur och mindfulness har alltid varit viktiga för mig. Yoga binder ihop dem — det är där jag landar.
                   </p>
                   <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-darkBrown">
                     Jag är baserad i Stockholm och undervisar även i Dalarna, där jag har en stuga med en stor altan som ibland förvandlas till yogashala.
@@ -111,7 +111,7 @@ const OmMig = () => {
           <div className="max-w-3xl mx-auto">
             <div className="bg-dalashala-tan rounded-2xl p-8 md:p-10">
               <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-darkBrown">
-                Mina klasser är utmanande men inte bestraffande. Inga extrema poser, ingen tävling med grannen på mattan. Yoga som rörelse, andning och närvaro — oavsett om jag undervisar på altanen i Dalarna eller i ett studio i Stockholm.
+                Mina klasser är utmanande men inte bestraffande. Inga extrema poser, ingen tävling med grannen på mattan. Yoga som rörelse, andning och närvaro — oavsett om jag undervisar på altanen i Dalarna eller i en studio i Stockholm.
               </p>
             </div>
           </div>
@@ -166,7 +166,7 @@ const OmMig = () => {
                 Vill du yoga med mig?
               </h2>
               <p className="font-eb-garamond text-dalashala-tan text-lg mb-8 leading-relaxed">
-                Se mina tjänster eller hör av dig direkt — oavsett om det är en privatlektion, ett bröllop, en konferens eller en morgonklass på veranadan.
+                Se mina tjänster eller hör av dig direkt — oavsett om det är en privatlektion, ett bröllop, en konferens eller en morgonklass på altanen.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
@@ -206,7 +206,7 @@ const OmMig = () => {
                 I'm Camilla, an Australian-born 500-hour certified yoga teacher based in Stockholm, Sweden, with regular classes in Dalarna. I teach vinyasa and yin yoga in Swedish and English.
               </p>
               <p>
-                I love movement, nature, and mindfulness — and I've experienced firsthand how much they give back when you make them part of everyday life. I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, and my 300-hour advanced vinyasa training at Sampoorna Yoga Shala in Goa. I also have a background in fitness instruction as a Les Mills certified instructor (7 years, Australia and Sweden), and I've completed five ultramarathons — including a podium finish.
+                Movement, nature, and mindfulness have always been important to me. I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, and my 300-hour advanced vinyasa training at Sampoorna Yoga Shala in Goa. I also have a background in fitness instruction as a Les Mills certified instructor (7 years, Australia and Sweden), and I've completed five ultramarathons — including a podium finish.
               </p>
               <p>
                 My approach to yoga is simple: challenging but not punishing. I'm not interested in impressive poses or performance. I'm interested in what yoga becomes when it stops being another thing you have to do well.

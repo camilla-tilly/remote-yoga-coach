@@ -3,7 +3,7 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 const relatedServices = [
   { label: 'Mini Yoga Retreat', href: '/tjanster/mini-retreat' },
   { label: 'Privatlektioner', href: '/tjanster/privatlektioner' },
-  { label: 'Äventyrpaket', href: '/tjanster/adventure-paket' },
+  { label: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
   { label: 'SUP Yoga Stockholm', href: '/tjanster/sup-yoga' },
 ];
 
@@ -28,31 +28,30 @@ const ForetagsYoga = () => (
     canonical="https://yogawithcamilla.se/tjanster/foretagsyoga"
     heroTag="Företag & Konferens"
     heroHeading="Företagsyoga & Konferensyoga"
-    heroSubtitle="Ge ditt team en välförtjänt paus. Yoga på konferensen ökar fokus, minskar stress och stärker teamkänslan – på ett sätt som alla kan delta i, oavsett erfarenhet."
+    heroSubtitle="Yoga för konferenser, kickoffs och regelbundna klasser på kontoret. Alla kan delta, ingen erfarenhet krävs."
     heroImage="/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.png"
     heroImageAlt="Lugn och fokus – yoga för konferens och företagsevent"
-    introHeading="Yoga som ger ditt team rätt energi"
+    introHeading="Rörelse som bryter av"
     introParagraphs={[
-      "Konferenser och arbetsdagar är fyllda av stillasittande, skärmar och mental belastning. En välplacerad yogaklass på konferensen ger deltagarna exakt det de behöver: rörelse, andning och närvaro som laddar om hjärnan och kroppen.",
-      "Jag erbjuder företagsyoga i Stockholm och Dalarna – anpassad för konferenser, kickoffs, AWs, retreats och regelbundna träningssessioner på kontoret. Klassen hålls på engelska men med svenska förklaringar vid behov.",
-      "Ingen yogaerfarenhet krävs. Klassen anpassas helt för din grupp – oavsett om deltagarna är aktiva träningsentusiaster eller aldrig steppat på en matta."
+      "Jag erbjuder företagsyoga i Stockholm och Dalarna — konferenser, kickoffs, AWs, retreats och regelbundna klasser på kontoret. Klassen hålls på engelska.",
+      "Ingen yogaerfarenhet krävs. Klassen anpassas efter gruppen."
     ]}
     highlights={[
       {
         heading: "Konferensyoga",
-        text: "En inbäddad yogapaus under konferensdagen – morgon, lunch eller eftermiddag. Perfekt för att återladda energin mitt i ett intensivt program."
+        text: "Yogapaus under konferensdagen — morgon, lunch eller eftermiddag."
       },
       {
         heading: "Kickoff & AW",
-        text: "Gör teamaktiviteten lite mer oväntad. Yoga fungerar utmärkt som en del av kickoff-programmet och ger teamet ett gemensamt välmåendemoment."
+        text: "Yoga som en del av kickoff-programmet. Funkar bra som gemensam teamaktivitet."
       },
       {
-        heading: "Regelbunden yoga på kontoret",
-        text: "Vill ni ha yoga som en återkommande aktivitet? Jag erbjuder regelbundna klasser på ert kontor i Stockholm – veckovis eller varannan vecka."
+        heading: "Regelbundna klasser",
+        text: "Återkommande yoga på ert kontor i Stockholm — veckovis eller varannan vecka."
       },
       {
-        heading: "Konferensretreat i Dalarna",
-        text: "Kombinera konferensen med naturupplevelse. Håll er konferens i Dalarna och lägg till yoga på altanen som en del av programmet. Magisk miljö, bevisat effekt."
+        heading: "Konferens i Dalarna",
+        text: "Kombinera konferensen med yoga på altanen i Dalarna. Utomhus, i skogen."
       }
     ]}
     pricing={[

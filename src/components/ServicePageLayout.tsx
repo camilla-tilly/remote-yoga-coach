@@ -25,6 +25,7 @@ interface ServicePageProps {
   heroSubtitle: string;
   heroImage?: string;
   heroImageAlt?: string;
+  heroImagePosition?: string;
   introHeading: string;
   introParagraphs: string[];
   highlights: ServiceHighlight[];
@@ -53,6 +54,7 @@ const ServicePageLayout = ({
   heroSubtitle,
   heroImage,
   heroImageAlt,
+  heroImagePosition,
   introHeading,
   introParagraphs,
   highlights,
@@ -110,6 +112,7 @@ const ServicePageLayout = ({
                   src={heroImage}
                   alt={heroImageAlt || heroHeading}
                   className="w-full h-full object-cover"
+                  style={heroImagePosition ? { objectPosition: heroImagePosition } : undefined}
                 />
               </div>
             </section>

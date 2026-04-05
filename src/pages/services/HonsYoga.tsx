@@ -2,8 +2,8 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
   { label: 'Mini Retreat Dalarna', href: '/tjanster/mini-retreat' },
-  { label: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
-  { label: 'Äventyrpaket', href: '/tjanster/adventure-paket' },
+  { label: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
+  { label: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
   { label: 'Privatlektioner', href: '/tjanster/privatlektioner' },
 ];
 
@@ -31,11 +31,11 @@ const HonsYoga = () => (
     heroSubtitle="Yoga på altanen — med höns fritt strövande runt. En lugn, jordnära upplevelse i Dalarnas natur."
     heroImage="/images/IMG_3765.jpeg"
     heroImageAlt="Höns på yogamattan — hönsyoga i Dalarna"
+    heroImagePosition="center 70%"
     introHeading="Yoga med sällskap"
     introParagraphs={[
-      "Jag har höns. De lever sina egna liv och rör sig fritt på och runt altanen. Under ett yogapass är de ibland nära, ibland inte — men de finns där, i bakgrunden, som en påminnelse om att ingenting behöver vara perfekt för att fungera.",
-      "Hönsyoga är ett vanligt yogapass på altanen utomhus, med hönsens närvaro som ett naturligt inslag. Klassen leds av mig, Camilla — 500-timmars certifierad yogalärare — och följer samma upplägg som alla mina klasser: rörelse, andning, närvaro.",
-      "Det är yoga i Dalarna som det faktiskt ser ut. Inget mer, inget mindre."
+      "Jag har höns. De rör sig fritt på och runt altanen — ibland nära, ibland inte. Under yogapasset finns de där i bakgrunden.",
+      "Hönsyoga är ett vanligt yogapass utomhus på altanen, med hönsens närvaro som naturligt inslag. Samma upplägg som alla mina klasser: rörelse, andning, närvaro."
     ]}
     highlights={[
       {
@@ -43,16 +43,16 @@ const HonsYoga = () => (
         text: "Klassen hålls på altanen vid stugan i Dalarna. Plats för upp till 6 deltagare. Yogamattor tillhandahålls."
       },
       {
-        heading: "Alla nivåer välkomna",
-        text: "Ingen yogaerfarenhet krävs. Klassen anpassas efter gruppen — nybörjare och erfarna yogis kan delta tillsammans."
+        heading: "Alla nivåer",
+        text: "Ingen yogaerfarenhet krävs. Klassen anpassas efter gruppen."
       },
       {
-        heading: "För grupper och sällskap",
-        text: "Hönsyoga passar utmärkt som en aktivitet för vänner, möhippa, födelsedag, kollegor eller ett litet sällskap som vill ha en annorlunda upplevelse i Dalarna."
+        heading: "Grupper & sällskap",
+        text: "Passar bra för vänner, möhippa, födelsedag eller kollegor som vill ha en annorlunda upplevelse i Dalarna."
       },
       {
         heading: "Privat bokning",
-        text: "Alla klasser är privatbokade — du bokar passet för dig och din grupp. Inga okända deltagare. Klassen hålls på engelska."
+        text: "Alla klasser är privatbokade — du bokar passet för din grupp. Klassen hålls på engelska."
       }
     ]}
     pricing={[

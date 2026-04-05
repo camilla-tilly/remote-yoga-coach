@@ -2,8 +2,8 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
   { label: 'Privatlektioner', href: '/tjanster/privatlektioner' },
-  { label: 'Yoga Workshops', href: '/tjanster/yoga-workshop' },
-  { label: 'Yoga för Löpare', href: '/tjanster/yoga-for-lopare' },
+  { label: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
+  { label: 'SUP Yoga Stockholm', href: '/tjanster/sup-yoga' },
   { label: 'Mini Retreat', href: '/tjanster/mini-retreat' },
 ];
 
@@ -24,31 +24,30 @@ const OnlineYoga = () => (
     canonical="https://yogawithcamilla.se/tjanster/online-yoga"
     heroTag="Online Yoga"
     heroHeading="Online Yoga – Privata klasser var du än är"
-    heroSubtitle="Samma kvalitet som en privat lektion – via Zoom. Oavsett om du sitter i Stockholm, Sydney eller någonstans däremellan."
+    heroSubtitle="Privata en-till-en lektioner via Zoom, på engelska. Var du än befinner dig."
     heroImage="/images/IMG_5776.JPG"
     heroImageAlt="Yoga på altanen i Dalarna — online klasser via Zoom"
-    introHeading="Yoga utan gränser"
+    introHeading="Hur det funkar"
     introParagraphs={[
-      "Online yoga är inte ett kompromiss – det är ett format med egna styrkor. Du behöver inget gym, ingen studio, inga resekostnader. Du behöver en matta, tillräckligt med golvyta och en internetuppkoppling.",
-      "Jag erbjuder privata en-till-en lektioner online via Zoom, på engelska. Klassen är helt anpassad för dig – dina mål, dina begränsningar, ditt tempo. Det är det effektivaste sättet att utveckla en yogapraktik oavsett var i världen du befinner dig.",
-      "Populärt bland expats i Sverige, turister som besökt Dalarna och vill fortsätta, löpare och idrottare som vill ha specifik återhämtningssupport, och alla som av schemalogistik inte kan ta sig till en studio."
+      "Privata en-till-en lektioner via Zoom, på engelska. Anpassad helt efter dig — dina mål, din nivå, ditt tempo.",
+      "Du behöver en matta, golvyta och internetuppkoppling. Populärt bland expats, löpare och alla som inte kan ta sig till en studio."
     ]}
     highlights={[
       {
         heading: "En-till-en via Zoom",
-        text: "Full uppmärksamhet på dig. Jag ser dig, korrigerar i realtid och anpassar klassen löpande. Samma kvalitet som en fysisk privatlektion – utan resan."
+        text: "Jag ser dig, korrigerar i realtid och anpassar klassen löpande."
       },
       {
         heading: "På engelska",
-        text: "Alla onlinelektioner hålls på engelska. Perfekt för expats, internationella studenter, turister och engelskspråkiga som bor i Sverige eller utomlands."
+        text: "Alla onlinelektioner hålls på engelska. Bra för expats, turister och engelskspråkiga var som helst."
       },
       {
         heading: "Alla nivåer",
-        text: "Nybörjare som aldrig steppat på en matta till erfarna praktiserare som vill fördjupa sig. Jag anpassar metodiken och tempot för exakt din nivå."
+        text: "Nybörjare till erfarna. Jag anpassar metodiken och tempot efter din nivå."
       },
       {
         heading: "Flexibla tider",
-        text: "Jag hittar en tid som passar din tidszon och ditt schema. Morgonklasser, lunch, kväll – vad som fungerar för dig."
+        text: "Alla tidszoner. Morgon, lunch eller kväll — vad som fungerar för dig."
       }
     ]}
     pricing={[

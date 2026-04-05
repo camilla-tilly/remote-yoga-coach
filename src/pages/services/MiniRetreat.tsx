@@ -31,11 +31,11 @@ const MiniRetreat = () => (
     heroSubtitle="En skräddarsydd dag eller helg i Dalarnas natur — yoga, mindfulness och rörelse i form av vandring eller löpning. Anpassat för din grupp."
     heroImage="/images/IMG_8366.jpeg"
     heroImageAlt="Yogamattor uppställda på altanen — mini retreat i Dalarna"
-    introHeading="Retreat i skogen — inte på skärmen"
+    heroImagePosition="center 60%"
+    introHeading="Retreat i skogen"
     introParagraphs={[
-      "Dalarna erbjuder exakt det som ett retreat ska ge: avskildhet, natur och tid att vara närvarande. Du väljer upplägget — yoga och vandring i skogen, ett guidat löppass med återhämtningsyoga efteråt, eller en heldag med mindfulness, andning och fika.",
-      "Jag erbjuder mini-retreats för enskilda eller i liten grupp (max 6 personer), antingen som en dagslång upplevelse eller ett weekend-format. Programmet skräddarsys helt efter din grupps önskemål och nivå.",
-      "Retreaten leds på engelska och är öppen för alla nivåer. Ingen yogaerfarenhet krävs — det enda som krävs är en vilja att vara mer med sig själv."
+      "Du väljer upplägget — yoga och vandring i skogen, ett guidat löppass med återhämtningsyoga efteråt, eller en heldag med mindfulness, andning och fika.",
+      "Mini-retreats för enskilda eller liten grupp (max 6 personer), som dagsupplevelse eller weekend. Programmet anpassas efter er. Leds på engelska, alla nivåer."
     ]}
     highlights={[
       {
@@ -57,8 +57,8 @@ const MiniRetreat = () => (
     ]}
     detailsHeading="Praktisk information"
     detailsParagraphs={[
-      "Stugan ligger i Dalarna. Resan från Stockholm tar ca 4 timmar med tåg eller bil. Det är en resa som kräver en övernattning om du vill hinna vara här ordentligt — och det är poängen.",
-      "Maila hello.yogawithcamilla@gmail.com för att diskutera datum, format och vad som ingår. Retreatdagar är tillgängliga på helger och enstaka vardagar."
+      "Stugan ligger i Dalarna — ca 4 timmar från Stockholm med tåg eller bil.",
+      "Maila hello.yogawithcamilla@gmail.com med datum, format och gruppstorlek. Tillgängligt på helger och enstaka vardagar."
     ]}
     ctaHeading="Boka ditt mini-retreat"
     ctaText="Hör av dig med önskade datum och vad du söker — en dag, ett weekend, ensam eller i grupp."

@@ -35,19 +35,9 @@ const Index = () => {
     document.body.style.overflowX = 'hidden';
     document.documentElement.style.overflowX = 'hidden';
 
-    if (window.innerWidth > 2560) {
-      document.documentElement.style.maxWidth = '1400px';
-      document.documentElement.style.margin = '0 auto';
-    } else if (window.innerWidth > 1920) {
-      document.documentElement.style.maxWidth = '1200px';
-      document.documentElement.style.margin = '0 auto';
-    }
-
     return () => {
       document.body.style.overflowX = '';
       document.documentElement.style.overflowX = '';
-      document.documentElement.style.maxWidth = '';
-      document.documentElement.style.margin = '';
     };
   }, []);
 

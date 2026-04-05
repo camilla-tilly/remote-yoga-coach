@@ -2,16 +2,16 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
   { label: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
-  { label: 'Födelsedag & Privata Events', href: '/tjanster/fodelsedag-yoga' },
   { label: 'SUP Yoga Stockholm', href: '/tjanster/sup-yoga' },
-  { label: 'Äventyrpaket', href: '/tjanster/adventure-paket' },
+  { label: 'Mini Retreat Dalarna', href: '/tjanster/mini-retreat' },
+  { label: 'Privatlektioner', href: '/tjanster/privatlektioner' },
 ];
 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Möhippa Yoga i Dalarna & Stockholm",
-  "description": "Privat yogaklass för möhippa i Dalarna eller Stockholm. Skräddarsydd upplevelse för brudtärna och brudgumtärna med yoga, andningsövningar och rörelse i naturskön miljö.",
+  "description": "Privat yogaklass för möhippa i Dalarna eller Stockholm. Privat yogaklass för hela gruppen — ingen erfarenhet krävs.",
   "provider": { "@type": "LocalBusiness", "name": "Yoga med Camilla", "url": "https://yogawithcamilla.se" },
   "areaServed": ["Dalarna", "Stockholm"],
   "url": "https://yogawithcamilla.se/tjanster/mohippa-yoga"
@@ -24,14 +24,14 @@ const MohenNatt = () => (
     canonical="https://yogawithcamilla.se/tjanster/mohippa-yoga"
     heroTag="Möhippa & Bachelorette Yoga"
     heroHeading="Möhippa med Yoga"
-    heroSubtitle="Ge brud-to-be och hennes vänner en oförglömlig upplevelse – avslappnad, rolig och faktiskt minnesvärd. Yoga är det perfekta alternativet till det traditionella möhippaprogrammet."
+    heroSubtitle="Privat yogaklass för möhippan — avslappnad, rolig och inkluderande. Ingen erfarenhet krävs."
     heroImage="/images/IMG_6793.JPG"
     heroImageAlt="Yoga i solnedgång — perfekt för möhippa"
+    heroImagePosition="center 75%"
     introHeading="Varför välja yoga till möhippan?"
     introParagraphs={[
-      "En yogaklass på möhippan är ett allt populärare alternativ till traditionella aktiviteter – och det är inte konstigt. Det är inkluderande för alla fitnessnivåer, ger genuint lugn och välmående, och ger gruppen en chans att koppla av och njuta av varandra i en vacker miljö.",
-      "Jag håller klassen på svenska eller engelska och anpassar alltid svårighetsgraden för hela gruppen. Du behöver inte ha någon yogaerfarenhet alls – det är poängen.",
-      "Jag kan hålla klassen på altanen vid stugan i Dalarna, eller komma till er — oavsett om det är ett hus på landet, ett hotell i Stockholm eller er AirBnB."
+      "Jag håller klassen på svenska eller engelska och anpassar efter gruppen. Ingen yogaerfarenhet krävs.",
+      "Jag kan hålla klassen på altanen i Dalarna, eller komma till er — hus på landet, hotell i Stockholm eller er AirBnB."
     ]}
     highlights={[
       {

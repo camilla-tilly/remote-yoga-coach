@@ -2,9 +2,9 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
   { label: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
-  { label: 'Privata Events', href: '/tjanster/fodelsedag-yoga' },
   { label: 'Mini Yoga Retreat', href: '/tjanster/mini-retreat' },
-  { label: 'Äventyrpaket', href: '/tjanster/adventure-paket' },
+  { label: 'Privatlektioner', href: '/tjanster/privatlektioner' },
+  { label: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
 ];
 
 const structuredData = {
@@ -33,8 +33,8 @@ const BrollopYoga = () => (
     heroImageAlt="Lugn yoga i naturen – perfekt som bröllopsaktivitet"
     introHeading="Yoga som en del av bröllopsveckan"
     introParagraphs={[
-      "Yoga passar in när som helst i bröllopsveckan — det beror helt på vad ni vill ha ut av det. En lugn start på bröllopsdagen, ett sätt att samla gästerna kvällen innan, eller en mjuk landning dagen efter. Inkluderande för alla åldrar och fitnessnivåer, inga förkunskaper krävs.",
-      "Jag tar med all utrustning — mattor, block och bolster — och kommer till er oavsett om det är en stuga i Dalarna, ett slott i Sörmland eller en innergård i Stockholm."
+      "Yoga passar in när som helst i bröllopsveckan — morgonen av, kvällen innan eller dagen efter. Inkluderande för alla åldrar och nivåer, inga förkunskaper krävs.",
+      "Jag tar med all utrustning och kommer till er — stuga i Dalarna, slott i Sörmland eller innergård i Stockholm."
     ]}
     highlights={[
       {
