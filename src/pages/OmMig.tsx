@@ -8,7 +8,7 @@ const structuredData = {
   "@type": "Person",
   "name": "Camilla",
   "jobTitle": "Certifierad Yogalärare",
-  "description": "Australiensisk yogalärare baserad i Stockholm med regelbundna klasser i Dalarna. 500-timmar certifierad i vinyasa yoga.",
+  "description": "Australiensisk yogalärare baserad i Stockholm med undervisar även i Dalarna. 500-timmar certifierad i vinyasa yoga.",
   "url": "https://yogawithcamilla.se/om-mig",
   "sameAs": [
     "https://www.youtube.com/@camilla_yoga",
@@ -44,7 +44,7 @@ const credentials = [
   },
   {
     title: "Meditation & mindfulness",
-    detail: "Retreater med Kadampa Buddhism meditation\nTranquil Wisdom Insight Meditation (TWIM)"
+    detail: "Erfarenhet inom Kadampa Buddhism meditation\noch Tranquil Wisdom Insight Meditation (TWIM)"
   }
 ];
 
@@ -53,7 +53,7 @@ const OmMig = () => {
     <>
       <SEO
         title="Om Camilla — Yogalärare i Dalarna & Stockholm | Yoga with Camilla"
-        description="Australiensisk yogalärare baserad i Stockholm med regelbundna klasser i Dalarna. 500-timmar certifierad. Yoga som självacceptans, inte självförbättring."
+        description="Australiensisk yogalärare baserad i Stockholm med undervisar även i Dalarna. 500-timmar certifierad. Yoga som självacceptans, inte självförbättring."
         canonical="https://yogawithcamilla.se/om-mig"
         structuredData={structuredData}
       />
@@ -71,7 +71,7 @@ const OmMig = () => {
               Yogalärare i Dalarna<br className="hidden md:block" /> & Stockholm
             </h1>
             <p className="font-eb-garamond text-xl text-dalashala-darkBrown max-w-xl mx-auto leading-relaxed">
-              Certifierad yogalärare, ursprungligen från Australien. Baserad i Stockholm med regelbundna klasser i Dalarna.
+              Certifierad yogalärare, ursprungligen från Australien. Baserad i Stockholm med undervisar även i Dalarna.
             </p>
           </div>
         </section>

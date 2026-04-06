@@ -60,7 +60,7 @@ const Index = () => {
             <img
               src="/images/IMG_8340.JPG"
               alt="Yoga på altanen i Dalarna"
-              className="w-full h-full object-cover object-[50%_60%]"
+              className="w-full h-full object-cover object-[50%_40%]"
             />
           </div>
           {/* Middle photo */}
@@ -76,7 +76,7 @@ const Index = () => {
             <img
               src="/images/IMG_3367.jpeg"
               alt="Hönsyoga — yoga med höns på altanen"
-              className="w-full h-full object-cover object-[50%_65%]"
+              className="w-full h-full object-cover object-[50%_80%]"
             />
           </div>
         </div>
