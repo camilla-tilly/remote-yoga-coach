@@ -27,7 +27,7 @@ const MohenNatt = () => (
     heroSubtitle="Privat yogaklass för möhippan — avslappnad, rolig och inkluderande. Ingen erfarenhet krävs."
     heroImage="/images/IMG_6793.JPG"
     heroImageAlt="Yoga i solnedgång — perfekt för möhippa"
-    heroImagePosition="center 75%"
+    heroImagePosition="center 35%"
     introHeading="Varför välja yoga till möhippan?"
     introParagraphs={[
       "Jag håller klassen på svenska eller engelska och anpassar efter gruppen. Ingen yogaerfarenhet krävs.",
@@ -82,6 +82,28 @@ const MohenNatt = () => (
     ctaText="Hör av dig med datum, antal personer och önskemål. Jag sätter ihop ett förslag som passar er grupp perfekt."
     structuredData={structuredData}
     relatedServices={relatedServices}
+    faq={[
+      {
+        question: "Behöver vi ha yogaerfarenhet?",
+        answer: "Nej, ingen förkunskap krävs. Klassen anpassas helt efter gruppens nivå — från nybörjare till erfarna."
+      },
+      {
+        question: "Hur många kan delta?",
+        answer: "Upp till 10 personer per klass. Perfekt för en möhippagrupp."
+      },
+      {
+        question: "Var kan ni hålla möhippa-yoga?",
+        answer: "På altanen i Dalarna, i er stuga, på ett hotell i Stockholm eller utomhus i en park. Jag kommer till er med all utrustning."
+      },
+      {
+        question: "Hur lång tid i förväg behöver vi boka?",
+        answer: "Boka gärna minst 2 veckor i förväg för att säkra ert datum. Under högsäsong (maj–september) rekommenderar jag 4 veckors framförhållning."
+      },
+      {
+        question: "Kan vi kombinera yoga med SUP?",
+        answer: "Ja! SUP yoga möhippa vid Sickla sjö i Stockholm är ett populärt alternativ. Kontakta mig för ett kombinerat upplägg."
+      }
+    ]}
     englishKeywords={{
       heading: "Bachelorette Yoga in Sweden – Dalarna & Stockholm",
       text: "Looking for a unique bachelorette party idea in Sweden? I offer private yoga classes for hen parties and bachelorette groups in Dalarna and Stockholm. Whether you want outdoor yoga on a forest deck, SUP yoga on the water in Stockholm, or a class at your accommodation — I bring all the equipment and tailor the session to your group. No yoga experience needed. Teaching is in English. Book your bachelorette yoga experience by emailing hello.yogawithcamilla@gmail.com."

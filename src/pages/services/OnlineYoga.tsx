@@ -81,6 +81,28 @@ const OnlineYoga = () => (
     ]}
     ctaHeading="Starta din online yogapraktik"
     ctaText="Maila mig med dina mål och önskade tider. Jag bokar ett kostnadsfritt introduktionssamtal och så sätter vi igång."
+    faq={[
+      {
+        question: "What do I need for an online class?",
+        answer: "A yoga mat, enough floor space for your body length, comfortable clothes, and a stable internet connection. That's it."
+      },
+      {
+        question: "Do you teach in English?",
+        answer: "Yes — all online classes are taught in English. I'm an Australian yoga teacher based in Sweden."
+      },
+      {
+        question: "Can beginners join?",
+        answer: "Absolutely. Every session is fully personalised to your level, goals, and body. Most of my online students started as beginners."
+      },
+      {
+        question: "What time zones do you cover?",
+        answer: "All of them. I offer morning, lunch, and evening slots that work across European and international time zones."
+      },
+      {
+        question: "How do I book a free intro call?",
+        answer: "Email hello.yogawithcamilla@gmail.com with your goals and preferred times. I'll book a free 15-minute call to go through your needs."
+      }
+    ]}
     structuredData={structuredData}
     relatedServices={relatedServices}
     englishKeywords={{

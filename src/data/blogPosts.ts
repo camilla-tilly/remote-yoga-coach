@@ -9,6 +9,7 @@ export interface BlogPost {
   content: BlogSection[];
   relatedServiceHref?: string;
   relatedServiceLabel?: string;
+  relatedPosts?: { slug: string; label: string }[];
 }
 
 export interface BlogSection {
@@ -28,6 +29,10 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Trött på samma gamla möhippa-koncept? Yoga är det oväntade valet som alla i gruppen – oavsett fitnessnivå – faktiskt uppskattar.',
     relatedServiceHref: '/tjanster/mohippa-yoga',
     relatedServiceLabel: 'Boka möhippa-yoga',
+    relatedPosts: [
+      { slug: 'mohippa-dalarna-aktiviteter', label: 'Möhippa i Dalarna — 7 aktiviteter' },
+      { slug: 'vad-kostar-privat-yoga-stockholm', label: 'Vad kostar privat yoga?' },
+    ],
     content: [
       {
         type: 'paragraph',
@@ -103,6 +108,10 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Fler och fler svenska företag lägger in yoga i konferensprogrammet – och de som provat vittnar om ett tydligt skifte i energi och fokus. Varför funkar det?',
     relatedServiceHref: '/tjanster/foretagsyoga',
     relatedServiceLabel: 'Boka företagsyoga',
+    relatedPosts: [
+      { slug: 'foretagsyoga-vad-ingar-och-kostar', label: 'Företagsyoga — vad ingår och kostar?' },
+      { slug: 'yoga-retreat-dalarna-vs-stockholm', label: 'Retreat Dalarna vs Stockholm' },
+    ],
     content: [
       {
         type: 'paragraph',
@@ -172,6 +181,10 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Yoga på vatten är roligare, mer utmanande och mer avslappnande än det låter. Här är allt du behöver veta om SUP yoga i Stockholm.',
     relatedServiceHref: '/tjanster/sup-yoga',
     relatedServiceLabel: 'Boka SUP Yoga',
+    relatedPosts: [
+      { slug: 'mohippa-dalarna-aktiviteter', label: 'Möhippa i Dalarna — 7 aktiviteter' },
+      { slug: 'vad-kostar-privat-yoga-stockholm', label: 'Vad kostar privat yoga?' },
+    ],
     content: [
       {
         type: 'paragraph',
@@ -440,6 +453,329 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'paragraph',
         text: 'Maila hello.yogawithcamilla@gmail.com för att boka eller ställa frågor om utomhusyoga i Dalarna.'
+      }
+    ]
+  },
+  {
+    slug: 'vad-kostar-privat-yoga-stockholm',
+    title: 'Vad kostar privat yoga i Stockholm 2026?',
+    metaDescription: 'Vad kostar privat yoga i Stockholm? Priser från 1 000 kr per pass. Här är en ärlig genomgång av vad som påverkar priset och vad du får för pengarna.',
+    publishDate: '2026-04-09',
+    readingTime: '5 min',
+    category: 'Priser & Praktiskt',
+    excerpt: 'Att boka privat yoga är en investering — men vad kostar det egentligen? Här är en ärlig genomgång av priser, format och vad som påverkar slutnotan.',
+    relatedServiceHref: '/tjanster/privatlektioner',
+    relatedServiceLabel: 'Boka privat yoga',
+    relatedPosts: [
+      { slug: 'foretagsyoga-vad-ingar-och-kostar', label: 'Företagsyoga — vad ingår och kostar?' },
+      { slug: 'yoga-retreat-dalarna-vs-stockholm', label: 'Retreat Dalarna vs Stockholm' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Du googlar "privat yoga Stockholm" och det du vill veta är: vad kommer det kosta mig? Det är en rimlig fråga — och den förtjänar ett rakt svar.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Kort svar: privat yoga i Stockholm kostar vanligtvis mellan 800 och 2 500 kr per klass, beroende på längd, plats och lärarens erfarenhet. Jag ligger i det spannet — och här förklarar jag vad som påverkar priset.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad påverkar priset på privat yoga?'
+      },
+      {
+        type: 'list',
+        items: [
+          'Klassens längd: 30, 45, 60 eller 90 minuter — kortare pass kostar mindre men ger mindre fördjupning',
+          'Plats: på lärarens studio, hemma hos dig, på kontoret, eller utomhus — reseersättning kan tillkomma',
+          'Gruppstorlek: en-till-en kostar mer per person, men gruppklasser (möhippa, företag) fördelas på fler',
+          'Paketpris: regelbundna bokningar ger lägre pris per pass',
+          'Utrustning: de flesta lärare tar med mattor och block utan extra kostnad'
+        ]
+      },
+      {
+        type: 'heading',
+        text: 'Mina priser — en överblick'
+      },
+      {
+        type: 'paragraph',
+        text: 'Jag erbjuder privat yoga i Stockholm och Dalarna. För regelbundna klasser på kontoret kostar det från 1 000 kr per pass (30 min). Privata en-till-en lektioner och eventbokningar (möhippa, bröllop, konferens) prissätts individuellt baserat på gruppstorlek och plats.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Jag erbjuder också online-yoga via Zoom för engelskspråkiga klienter var som helst i världen. Kontakta mig för priser på paket och enstaka bokningar.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför privat yoga istället för drop-in?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Drop-in på en studio kostar 150–250 kr per pass. Privat yoga kostar mer — men skillnaden i vad du får är enorm. Klassen anpassas efter din kropp, dina mål och din tid. Ingen väntan, inga kompromisser, ingen klass som är för lätt eller för svår.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Många av mina klienter har provat drop-in i månader utan att känna framsteg. Efter 3–4 privata lektioner hade de en helt annan förståelse för sin praktik. Det är skillnaden mellan att följa instruktioner och att faktiskt förstå vad yoga gör i din kropp.'
+      },
+      {
+        type: 'heading',
+        text: 'Är privat yoga värt pengarna?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Om du vill ha en yogapraktik som faktiskt är anpassad för dig — ja. Om du vill ha en unik upplevelse för en grupp (möhippa, konferens, bröllop) — absolut. Om du bara vill röra på dig ibland — då kanske drop-in på en studio räcker.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Maila hello.yogawithcamilla@gmail.com för en offert baserad på dina önskemål. Jag svarar inom 24 timmar.'
+      }
+    ]
+  },
+  {
+    slug: 'mohippa-dalarna-aktiviteter',
+    title: 'Möhippa i Dalarna — 7 aktiviteter utöver det vanliga',
+    metaDescription: 'Planerar du möhippa i Dalarna? Här är 7 unika aktiviteter — från yoga i skogen till hönsyoga och SUP. Allt du behöver för en minnesvärd möhippa.',
+    publishDate: '2026-04-09',
+    readingTime: '6 min',
+    category: 'Events & Möhippa',
+    excerpt: 'Dalarna är perfekt för möhippor som vill bort från stan och in i naturen. Här är 7 aktiviteter som gör möhippan minnesvärd — utan att det blir cringe.',
+    relatedServiceHref: '/tjanster/mohippa-yoga',
+    relatedServiceLabel: 'Boka möhippa-yoga',
+    relatedPosts: [
+      { slug: 'yoga-mohippa-dalarna', label: 'Yoga möhippa i Dalarna' },
+      { slug: 'yoga-retreat-dalarna-vs-stockholm', label: 'Retreat Dalarna vs Stockholm' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Dalarna har blivit en av de populäraste destinationerna för möhippor i Sverige — och det är inte svårt att förstå varför. Stugorna, naturen, lugnet. Det är ett alternativ till krogen i Gamla Stan som fler och fler brudtärnor väljer.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Men vad gör man egentligen på en möhippa i Dalarna? Här är 7 aktiviteter som funkar — testade, uppskattade och långt ifrån det vanliga.'
+      },
+      {
+        type: 'heading',
+        text: '1. Yoga på altanen'
+      },
+      {
+        type: 'paragraph',
+        text: 'En privat yogaklass i naturen — utomhus, i skogen, med fågelsång som soundtrack. Alla kan delta oavsett nivå. Det sätter stämningen för hela helgen och ger gruppen ett gemensamt andrum innan festligheterna drar igång. Jag kan komma till er stuga med all utrustning.'
+      },
+      {
+        type: 'heading',
+        text: '2. Hönsyoga'
+      },
+      {
+        type: 'paragraph',
+        text: 'Yoga på altanen vid stugan i Dalarna, med höns som vandrar fritt runt mattorna. Det låter galet — men det är en av de mest omtyckta upplevelserna jag erbjuder. Hönsen skapar en lätthet som gör att även den mest yogaskeptiska kompisen slappnar av.'
+      },
+      {
+        type: 'heading',
+        text: '3. Vandring med picknicklunch'
+      },
+      {
+        type: 'paragraph',
+        text: 'Dalarna har vandringsleder för alla nivåer. Packa en korglunch, ta en halvdagsvandring och njut av utsikten. Enkel logistik, noll kostnad (förutom maten), och en aktivitet som alla kan hantera.'
+      },
+      {
+        type: 'heading',
+        text: '4. Bastubad vid sjön'
+      },
+      {
+        type: 'paragraph',
+        text: 'Många stugor i Dalarna har bastu — och har ni en sjö i närheten blir det ett naturligt inslag. Basta, dopp, upprepa. Det behöver inte vara mer komplicerat än så.'
+      },
+      {
+        type: 'heading',
+        text: '5. Matlagning på stugan'
+      },
+      {
+        type: 'paragraph',
+        text: 'Skippa restaurangen och laga mat tillsammans istället. Köp lokala råvaror, duka fint och gör middagen till en del av upplevelsen. Det blir både billigare och mer personligt.'
+      },
+      {
+        type: 'heading',
+        text: '6. Paddling eller kanot'
+      },
+      {
+        type: 'paragraph',
+        text: 'Dalarna har gott om sjöar och åar. Hyr kanoter för en halvdag på vattnet — lugnt tempo, bra för samtal och skratt. Ingen erfarenhet krävs.'
+      },
+      {
+        type: 'heading',
+        text: '7. Trail run + yoga-kombo'
+      },
+      {
+        type: 'paragraph',
+        text: 'För den aktiva gruppen: en löptur i skogen följt av en yogaklass. Jag erbjuder trail run + yoga som paket — perfekt om möhippagruppen gillar att röra på sig.'
+      },
+      {
+        type: 'heading',
+        text: 'Planera er möhippa i Dalarna'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det bästa med en möhippa i Dalarna är att programmet kan vara enkelt. Stuga + natur + en eller två organiserade aktiviteter = en helg som alla minns. Vill ni ha yoga som en del av det — hör av er på hello.yogawithcamilla@gmail.com.'
+      }
+    ]
+  },
+  {
+    slug: 'yoga-retreat-dalarna-vs-stockholm',
+    title: 'Yoga retreat i Dalarna vs Stockholm — var ska du boka?',
+    metaDescription: 'Jämför yoga retreat i Dalarna med Stockholm. Natur vs stad, pris, upplevelse och vad som passar dig bäst. Tips från en yogalärare som erbjuder båda.',
+    publishDate: '2026-04-09',
+    readingTime: '5 min',
+    category: 'Retreats & Upplevelser',
+    excerpt: 'Funderar du på yoga retreat men vet inte om du ska välja Dalarna eller Stockholm? Här jämför jag de två — och hjälper dig välja rätt.',
+    relatedServiceHref: '/tjanster/mini-retreat',
+    relatedServiceLabel: 'Boka mini retreat i Dalarna',
+    relatedPosts: [
+      { slug: 'outdoor-yoga-dalarna', label: 'Utomhusyoga i Dalarna' },
+      { slug: 'vad-kostar-privat-yoga-stockholm', label: 'Vad kostar privat yoga?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Du vill ha ett avbrott. Tid för dig själv, yoga, natur, och kanske några timmars tystnad utan att behöva förklara varför. Du har landat i att en retreat vore det perfekta — men var?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Dalarna och Stockholm erbjuder helt olika retreat-upplevelser. Här jämför jag de två så att du kan välja det som faktiskt passar dig.'
+      },
+      {
+        type: 'heading',
+        text: 'Dalarna — skogen, lugnet och tystnaden'
+      },
+      {
+        type: 'paragraph',
+        text: 'En yoga retreat i Dalarna är en naturupplevelse. Yoga på altanen omgiven av granskog, fågelsång istället för trafik, och en avskildhet som gör det enkelt att stänga av. Här handlar retreaten inte bara om yogan — det är platsen i sig som gör jobbet.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Jag erbjuder mini-retreats i Dalarna: en halvdag eller heldag med yoga, andningsövningar och tid i naturen. Perfekt för dig som vill ha retreat-känslan utan att ta en hel vecka ledigt.'
+      },
+      {
+        type: 'heading',
+        text: 'Stockholm — tillgänglighet och stad'
+      },
+      {
+        type: 'paragraph',
+        text: 'En retreat i Stockholm passar dig som inte vill resa. Du kan ha yoga på morgonen och vara hemma till middag. Det är bekvämt, och det finns bra lokaler och parker att praktisera i.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Nackdelen? Du får aldrig samma avskildhet. Stadsmiljön är kvar runt hörnet, och den mentala brytningen blir inte lika stark som när du åker bort.'
+      },
+      {
+        type: 'heading',
+        text: 'Jämförelse — vad passar dig?'
+      },
+      {
+        type: 'list',
+        items: [
+          'Vill du koppla av totalt? → Dalarna. Naturen gör halva jobbet åt dig.',
+          'Vill du ha en retreat utan övernattning? → Stockholm funkar bra som halv- eller heldagsupplägg.',
+          'Är ni en grupp (möhippa, företag)? → Dalarna med stuga ger den starkaste upplevelsen.',
+          'Har du ont om tid? → Stockholm. Inga resor, flexibla tider.',
+          'Budget? → Dalarna kan vara billigare om ni delar en stuga. Stockholm kräver ofta salsuthyrning.'
+        ]
+      },
+      {
+        type: 'heading',
+        text: 'Min rekommendation'
+      },
+      {
+        type: 'paragraph',
+        text: 'Om du har möjlighet att ta dig till Dalarna — gör det. Kombinationen av yoga och natur ger en effekt som en stadsretreat inte riktigt matchar. Men om tid eller logistik gör det svårt, så erbjuder jag privata yogaklasser i Stockholm som ger retreat-känsla utan resan.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Kontakta hello.yogawithcamilla@gmail.com med dina önskemål — jag sätter ihop ett förslag som funkar för dig.'
+      }
+    ]
+  },
+  {
+    slug: 'foretagsyoga-vad-ingar-och-kostar',
+    title: 'Företagsyoga — vad ingår och vad kostar det?',
+    metaDescription: 'Vad kostar företagsyoga i Stockholm? Priser från 1 000 kr/pass. Läs vad som ingår, hur det funkar och varför fler företag väljer yoga på kontoret.',
+    publishDate: '2026-04-09',
+    readingTime: '5 min',
+    category: 'Företag & Konferens',
+    excerpt: 'Funderar ni på yoga på kontoret eller som konferensinslag? Här är en rak genomgång av vad det kostar, vad som ingår och hur det funkar i praktiken.',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Boka företagsyoga',
+    relatedPosts: [
+      { slug: 'konferensyoga-teambuilding', label: 'Konferensyoga — varför yoga på konferensen?' },
+      { slug: 'vad-kostar-privat-yoga-stockholm', label: 'Vad kostar privat yoga?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Du har fått i uppdrag att hitta en friskvårdsaktivitet för teamet. Eller så ska ni ha konferens och vill ha något bättre än ännu en workshop om "samarbete". Företagsyoga dyker upp som alternativ — men vad kostar det egentligen? Och vad får man?'
+      },
+      {
+        type: 'heading',
+        text: 'Vad kostar företagsyoga?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Mina priser för regelbundna klasser på kontoret i Stockholm:'
+      },
+      {
+        type: 'list',
+        items: [
+          '30 minuter: 1 000 kr/pass',
+          '45 minuter: 1 200 kr/pass',
+          '60 minuter: 1 500 kr/pass',
+          'Konferens och event: kontakta för offert (baseras på antal, längd och plats)'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'Priserna gäller vid regelbunden bokning (minst 1 gång/vecka, månadsvis). Enstaka bokningar prissätts individuellt.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad ingår?'
+      },
+      {
+        type: 'list',
+        items: [
+          'Professionell yogalärare (500-timmars certifierad)',
+          'Mattor och block för upp till 20 deltagare',
+          'Klass anpassad för alla nivåer — ingen förkunskap krävs',
+          'Undervisning på engelska',
+          'Resa till er lokal i Stockholm (ingår i priset)'
+        ]
+      },
+      {
+        type: 'heading',
+        text: 'Hur fungerar det i praktiken?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Ni behöver bara ha ett utrymme som är tillräckligt stort — konferensrum, lounge, tak-terrass. Jag kommer med all utrustning 10 minuter innan klassen börjar, leder passet, och plockar ihop efteråt. Minimal insats från er sida.'
+      },
+      {
+        type: 'paragraph',
+        text: 'De vanligaste formaten: morgonyoga innan arbetsdagen (07:30–08:30), lunchyoga (12:00–12:45), eller en avslutande klass efter jobbet. De flesta företag börjar med en gång i veckan och ökar om det funkar.'
+      },
+      {
+        type: 'heading',
+        text: 'Företagsyoga i Dalarna'
+      },
+      {
+        type: 'paragraph',
+        text: 'Håller ni konferens i Dalarna? Jag erbjuder yoga på er konferensanläggning eller utomhus på altanen i skogen. Utomhusyoga under en konferensdag slår alla konferenssalar i effekt.'
+      },
+      {
+        type: 'heading',
+        text: 'Boka företagsyoga'
+      },
+      {
+        type: 'paragraph',
+        text: 'Maila hello.yogawithcamilla@gmail.com med datum, antal deltagare, stad och typ av event. Jag svarar inom 24 timmar med tillgänglighet och en offert.'
       }
     ]
   }

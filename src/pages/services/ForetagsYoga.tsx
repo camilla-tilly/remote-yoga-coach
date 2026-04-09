@@ -68,6 +68,28 @@ const ForetagsYoga = () => (
     ]}
     ctaHeading="Boka företagsyoga"
     ctaText="Hör av dig med era önskemål och jag sätter ihop ett förslag som passar ert event."
+    faq={[
+      {
+        question: "Behöver deltagarna ha yogaerfarenhet?",
+        answer: "Nej, klassen anpassas för alla nivåer. De flesta deltagare på företagsyoga är nybörjare — och det funkar utmärkt."
+      },
+      {
+        question: "Vad kostar företagsyoga?",
+        answer: "Regelbundna klasser på kontoret kostar från 1 000 kr/pass (30 min). Konferenser och event prissätts individuellt baserat på antal deltagare, längd och plats."
+      },
+      {
+        question: "Vad behöver vi ordna?",
+        answer: "Bara ett utrymme som är tillräckligt stort. Jag tar med mattor, block och all utrustning för upp till 20 deltagare."
+      },
+      {
+        question: "Kan ni hålla yoga utomhus?",
+        answer: "Ja, utomhusyoga funkar utmärkt för konferenser i Dalarna. Jag erbjuder klasser på altanen i skogen eller på er konferensanläggning."
+      },
+      {
+        question: "Hur bokar vi?",
+        answer: "Maila hello.yogawithcamilla@gmail.com med datum, antal deltagare, stad och typ av event. Jag svarar med tillgänglighet och en offert inom 24 timmar."
+      }
+    ]}
     structuredData={structuredData}
     relatedServices={relatedServices}
   />

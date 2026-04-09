@@ -14,24 +14,50 @@ const BlogPostPage = () => {
     return <Navigate to="/blogg" replace />;
   }
 
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": post.title,
-    "description": post.metaDescription,
-    "datePublished": post.publishDate,
-    "url": `https://yogawithcamilla.se/blogg/${post.slug}`,
-    "author": {
-      "@type": "Person",
-      "name": "Camilla",
-      "url": "https://yogawithcamilla.se"
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": post.title,
+      "description": post.metaDescription,
+      "datePublished": post.publishDate,
+      "url": `https://yogawithcamilla.se/blogg/${post.slug}`,
+      "author": {
+        "@type": "Person",
+        "name": "Camilla",
+        "url": "https://yogawithcamilla.se"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Yoga med Camilla",
+        "url": "https://yogawithcamilla.se"
+      }
     },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Yoga med Camilla",
-      "url": "https://yogawithcamilla.se"
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Hem",
+          "item": "https://yogawithcamilla.se"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blogg",
+          "item": "https://yogawithcamilla.se/blogg"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": post.title,
+          "item": `https://yogawithcamilla.se/blogg/${post.slug}`
+        }
+      ]
     }
-  };
+  ];
 
   return (
     <div className="min-h-screen bg-dalashala-beige relative overflow-x-hidden">
@@ -121,6 +147,26 @@ const BlogPostPage = () => {
                 >
                   <Link to={post.relatedServiceHref}>{post.relatedServiceLabel}</Link>
                 </Button>
+              </div>
+            )}
+
+            {/* Related posts */}
+            {post.relatedPosts && post.relatedPosts.length > 0 && (
+              <div className="mb-8">
+                <p className="font-montserrat text-xs uppercase tracking-wider text-dalashala-mediumBrown mb-3">
+                  Läs också
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {post.relatedPosts.map((rp) => (
+                    <Link
+                      key={rp.slug}
+                      to={`/blogg/${rp.slug}`}
+                      className="font-montserrat text-xs bg-white border border-dalashala-tan/40 text-dalashala-darkBrown px-4 py-2 rounded-full hover:bg-dalashala-darkBrown hover:text-dalashala-beige transition-colors"
+                    >
+                      {rp.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
 

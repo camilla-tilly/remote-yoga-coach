@@ -44,8 +44,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-dalashala-beige relative overflow-x-hidden">
       <SEO
-        title="Yoga med Camilla – Privat Yoga i Dalarna & Stockholm"
-        description="Privata yogaklasser och events i Dalarna och Stockholm. Yoga för möhippa, bröllop, företag, SUP yoga och retreats. Australiensisk yogalärare i en skogsstuga i Dalarna."
+        title="Yoga med Camilla – Privat Yoga i Stockholm & Dalarna"
+        description="Privat yoga i Stockholm och Dalarna — möhippa, bröllop, företagsyoga, SUP yoga och retreats. Yogaklasser för alla nivåer med certifierad yogalärare i en skogsstuga i Dalarna."
         canonical="https://yogawithcamilla.se"
         structuredData={homepageStructuredData}
       />
@@ -80,6 +80,20 @@ const Index = () => {
             />
           </div>
         </div>
+
+        {/* SEO keyword section */}
+        <section className="py-12 px-4 bg-dalashala-beige">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="font-cinzel text-lg md:text-xl text-dalashala-darkBrown font-bold mb-4">
+              Privat yoga i Stockholm & Dalarna
+            </h2>
+            <p className="font-eb-garamond text-sm md:text-base text-dalashala-mediumBrown leading-relaxed">
+              Jag erbjuder privata yogaklasser för alla nivåer — möhippor, bröllop, företagsevent, retreats och en-till-en lektioner.
+              I Stockholm kommer jag till er med all utrustning. I Dalarna håller jag klasser utomhus på altanen i skogen,
+              med höns som sällskap. Online-yoga via Zoom på engelska, var du än befinner dig.
+            </p>
+          </div>
+        </section>
 
         <Services />
         <Contact />

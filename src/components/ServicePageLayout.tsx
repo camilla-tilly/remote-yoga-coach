@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -14,6 +15,11 @@ interface PricingTier {
   label: string;
   price: string; // e.g. "Från 350 kr/person" or "PRIS_PLACEHOLDER"
   note?: string;
+}
+
+interface FAQItem {
+  question: string;
+  answer: string;
 }
 
 interface ServicePageProps {
@@ -43,6 +49,7 @@ interface ServicePageProps {
     text: string;
   };
   termsHref?: string;
+  faq?: FAQItem[];
 }
 
 const ServicePageLayout = ({
@@ -69,7 +76,34 @@ const ServicePageLayout = ({
   relatedServices,
   englishKeywords,
   termsHref,
+  faq,
 }: ServicePageProps) => {
+  const faqStructuredData = faq && faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faq.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  } : null;
+
+  useEffect(() => {
+    if (faqStructuredData) {
+      const existingScript = document.getElementById('faq-structured-data');
+      if (existingScript) existingScript.remove();
+      const script = document.createElement('script');
+      script.id = 'faq-structured-data';
+      script.type = 'application/ld+json';
+      script.textContent = JSON.stringify(faqStructuredData);
+      document.head.appendChild(script);
+      return () => { script.remove(); };
+    }
+  }, [faq]);
+
   return (
     <div className="min-h-screen bg-dalashala-beige relative overflow-x-hidden">
       <SEO
@@ -215,6 +249,35 @@ const ServicePageLayout = ({
                 >
                   Deltagarvillkor / Participant T&amp;Cs →
                 </Link>
+              </div>
+            </section>
+          )}
+
+          {/* FAQ Section */}
+          {faq && faq.length > 0 && (
+            <section className="px-4 mb-12">
+              <div className="max-w-2xl mx-auto">
+                <h2 className="font-cinzel text-base md:text-lg text-dalashala-darkBrown font-bold uppercase tracking-wider text-center mb-6">
+                  Vanliga frågor / FAQ
+                </h2>
+                <div className="space-y-3">
+                  {faq.map((item, i) => (
+                    <details
+                      key={i}
+                      className="bg-white rounded-2xl border border-dalashala-tan/20 shadow-sm overflow-hidden group"
+                    >
+                      <summary className="font-montserrat text-sm text-dalashala-darkBrown px-5 py-4 cursor-pointer list-none flex items-center justify-between hover:bg-dalashala-tan/10 transition-colors">
+                        <span>{item.question}</span>
+                        <span className="text-dalashala-mediumBrown ml-2 group-open:rotate-45 transition-transform text-lg">+</span>
+                      </summary>
+                      <div className="px-5 pb-4">
+                        <p className="font-eb-garamond text-sm text-dalashala-mediumBrown leading-relaxed">
+                          {item.answer}
+                        </p>
+                      </div>
+                    </details>
+                  ))}
+                </div>
               </div>
             </section>
           )}
