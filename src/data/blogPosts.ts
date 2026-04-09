@@ -36,11 +36,11 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'paragraph',
-        text: 'Möhippa. Ordet framkallar bilder av rosa penisar på pinnar och en natt i Gamla Stan som ingen minns.'
+        text: 'De flesta möhippor ser ungefär likadana ut. Restaurang, bar, kanske en aktivitet som hälften av gruppen inte riktigt vill göra.'
       },
       {
         type: 'paragraph',
-        text: 'Men det finns ett alternativ. Yoga möhippa. Och nej, det är inte tråkigt. Det är faktiskt en av de roligaste sakerna du kan ge en blivande brud.'
+        text: 'Yoga möhippa är alternativet. En privat klass för hela gruppen, utomhus i naturen eller i en lokal ni väljer. Alla kan delta, ingen erfarenhet krävs.'
       },
       {
         type: 'heading',
@@ -220,7 +220,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Det enda du behöver vara beredd på: du kanske faller i. Det händer. Det är varmt nog under sommaren. Ta det som en del av upplevelsen.'
+        text: 'Du kan hamna i vattnet. Det händer. Det är varmt nog under sommaren och det är en del av upplevelsen.'
       },
       {
         type: 'heading',
@@ -228,7 +228,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'En av de mest efterfrågade möhippa-aktiviteterna i Stockholm just nu. Roligt, lite galet, inkluderande. Och det ger minnen som håller. Speciellt när någon faller i.'
+        text: 'En av de mest efterfrågade möhippa-aktiviteterna i Stockholm. Roligt, inkluderande, och det ger minnen som håller.'
       },
       {
         type: 'paragraph',
@@ -315,7 +315,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'paragraph',
-        text: 'Vi har höns. De lever sina egna liv. De rör sig fritt på altanen, gör sina grejer, och bryr sig inte om vad vi gör på mattorna. Det är lite av poängen.'
+        text: 'Vi har höns. De lever sina egna liv, rör sig fritt på altanen, och bryr sig inte om vad vi gör på mattorna. Det är en del av upplevelsen.'
       },
       {
         type: 'paragraph',
@@ -501,7 +501,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Privat yoga är en annan grej. Vid ett grupp-event får ni en klass som är byggd för just er. Vid en-till-en får du en lärare som ser exakt var du behöver hjälp. Det är skillnaden mellan att "göra yoga" och att faktiskt förstå vad yoga gör i din kropp.'
+        text: 'Privat yoga är något annat. Vid ett grupp-event får ni en klass som är byggd för just er. Vid en-till-en får du en lärare som ser exakt var du behöver hjälp. Det är skillnaden mellan att "göra yoga" och att faktiskt förstå vad yoga gör i din kropp.'
       },
       {
         type: 'heading',
@@ -533,7 +533,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: '2026-04-09',
     readingTime: '6 min',
     category: 'Events & Möhippa',
-    excerpt: 'Dalarna är perfekt för möhippor som vill bort från stan. 7 aktiviteter som gör helgen minnesvärd utan att det blir cringe.',
+    excerpt: 'Dalarna är perfekt för möhippor som vill bort från stan. 7 aktiviteter som gör helgen minnesvärd som faktiskt funkar.',
     relatedServiceHref: '/tjanster/mohippa-yoga',
     relatedServiceLabel: 'Boka möhippa-yoga',
     relatedPosts: [
@@ -543,7 +543,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'paragraph',
-        text: 'Dalarna har blivit en av de populäraste möhippa-destinationerna. Stugorna, naturen, lugnet. Ett alternativ till krogen i Gamla Stan som fler brudtärnor väljer.'
+        text: 'Dalarna har blivit en av de populäraste möhippa-destinationerna. Stugorna, naturen, lugnet. Fler grupper väljer en helg här istället för en kväll i stan.'
       },
       {
         type: 'paragraph',
@@ -563,7 +563,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Yoga på altanen vid stugan, med höns som vandrar fritt runt mattorna. Låter galet. Men det är en av de mest omtyckta upplevelserna jag erbjuder. Hönsen skapar en lätthet som gör att även den mest yogaskeptiska kompisen slappnar av.'
+        text: 'Yoga på altanen vid stugan, med höns som vandrar fritt runt mattorna. Det är en av de mest uppskattade upplevelserna jag erbjuder. Hönsen skapar en lätthet som gör att hela gruppen slappnar av.'
       },
       {
         type: 'heading',
