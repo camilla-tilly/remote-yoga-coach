@@ -1,0 +1,88 @@
+{
+  "description": "Content-kalender for bloggen. Agenten uppdaterar efter varje publicering/planering.",
+  "last_updated": "2026-04-09",
+  "articles": [
+    {
+      "title": "Vad kostar privat yoga i Stockholm 2026?",
+      "slug": "vad-kostar-privat-yoga-stockholm",
+      "target_keyword": "privat yoga pris",
+      "cluster": "private-yoga",
+      "priority": "A",
+      "status": "published",
+      "publish_date": "2026-04-09",
+      "data_reason": "Price content ranks fastest (winning-patterns). Targets high-intent 'vad kostar' queries.",
+      "performance_30d": null
+    },
+    {
+      "title": "Mohippa i Dalarna — 7 aktiviteter utoever det vanliga",
+      "slug": "mohippa-dalarna-aktiviteter",
+      "target_keyword": "mohippa dalarna aktiviteter",
+      "cluster": "event-yoga",
+      "priority": "A",
+      "status": "published",
+      "publish_date": "2026-04-09",
+      "data_reason": "Listicle captures broad event-planning traffic. Positions yoga as top activity.",
+      "performance_30d": null
+    },
+    {
+      "title": "Yoga retreat i Dalarna vs Stockholm — var ska du boka?",
+      "slug": "yoga-retreat-dalarna-vs-stockholm",
+      "target_keyword": "yoga retreat dalarna",
+      "cluster": "nature-yoga",
+      "priority": "A",
+      "status": "published",
+      "publish_date": "2026-04-09",
+      "data_reason": "Comparison content — proven high CTR (winning-patterns). Supports mini-retreat service page.",
+      "performance_30d": null
+    },
+    {
+      "title": "Foretagsyoga — vad ingar och vad kostar det?",
+      "slug": "foretagsyoga-vad-ingar-och-kostar",
+      "target_keyword": "foretagsyoga pris",
+      "cluster": "corporate-yoga",
+      "priority": "A",
+      "status": "published",
+      "publish_date": "2026-04-09",
+      "data_reason": "Price + FAQ combo. Targets B2B searchers with high booking intent.",
+      "performance_30d": null
+    }
+  ],
+  "published_archive": [
+    {
+      "title": "Yoga mohippa i Dalarna",
+      "slug": "yoga-mohippa-dalarna",
+      "publish_date": "2026-03-01",
+      "cluster": "event-yoga"
+    },
+    {
+      "title": "Konferensyoga — teambuilding",
+      "slug": "konferensyoga-teambuilding",
+      "publish_date": "2026-03-08",
+      "cluster": "corporate-yoga"
+    },
+    {
+      "title": "SUP yoga Stockholm",
+      "slug": "sup-yoga-stockholm",
+      "publish_date": "2026-03-15",
+      "cluster": "water-yoga"
+    },
+    {
+      "title": "Yoga som brollopsaktivitet",
+      "slug": "yoga-brollopsaktivitet",
+      "publish_date": "2026-03-20",
+      "cluster": "event-yoga"
+    },
+    {
+      "title": "Honsyoga i Dalarna",
+      "slug": "honsyoga-dalarna-goat-yoga-sverige",
+      "publish_date": "2026-03-24",
+      "cluster": "nature-yoga"
+    },
+    {
+      "title": "Utomhusyoga i Dalarna",
+      "slug": "outdoor-yoga-dalarna",
+      "publish_date": "2026-03-25",
+      "cluster": "nature-yoga"
+    }
+  ]
+}

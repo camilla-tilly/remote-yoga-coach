@@ -1,0 +1,50 @@
+{
+  "domain": "yogawithcamilla.se",
+  "www": "www.yogawithcamilla.se",
+  "business": "Privat yoga, yogaevent och retreats i Dalarna och Stockholm. Australiensisk yogalarare i en skogsstuga i Dalarna.",
+  "team": {
+    "founder": "Camilla"
+  },
+  "differentiators": [
+    "Australiensisk yogalarare i en svensk skogsstuga",
+    "500-timmars certifierad — vinyasa, yin, SUP yoga",
+    "Privat yoga i naturen — altanen, skogen, hons",
+    "Undervisning pa engelska och svenska"
+  ],
+  "tools_always_together": [],
+  "priority_pages": {
+    "description": "Kommersiella karnsidor. All blogg-SEO ska funnelera hit.",
+    "pages": [
+      { "url": "/", "name": "Startsida", "goal": "brand awareness + CTA till tjanster" },
+      { "url": "/tjanster/mohippa-yoga", "name": "Mohippa Yoga", "goal": "konvertering: boka mohippa-yoga" },
+      { "url": "/tjanster/foretagsyoga", "name": "Foretagsyoga", "goal": "fanga B2B-sokningar" },
+      { "url": "/tjanster/sup-yoga", "name": "SUP Yoga", "goal": "konvertering: boka SUP yoga" },
+      { "url": "/tjanster/privatlektioner", "name": "Privatlektioner", "goal": "konvertering: boka privat yoga" },
+      { "url": "/om-mig", "name": "Om Camilla", "goal": "bygga fortroende" }
+    ]
+  },
+  "service_urls": {
+    "mohippa": "/tjanster/mohippa-yoga",
+    "brollop": "/tjanster/brollopsyoga",
+    "foretag": "/tjanster/foretagsyoga",
+    "privatlektioner": "/tjanster/privatlektioner",
+    "mini-retreat": "/tjanster/mini-retreat",
+    "sup-yoga": "/tjanster/sup-yoga",
+    "online": "/tjanster/online-yoga",
+    "trail-run": "/tjanster/trail-run-yoga",
+    "honsyoga": "/tjanster/honsyoga"
+  },
+  "content_paths": {
+    "blog_source": "src/data/blogPosts.ts",
+    "sitemap": "public/sitemap.xml",
+    "seo_component": "src/components/SEO.tsx"
+  },
+  "navigation": {
+    "search_console": "https://search.google.com/search-console",
+    "performance": "Performance -> Search results -> filtrera pa yogawithcamilla.se",
+    "url_inspection": "URL Inspection -> klistra in URL -> Enter",
+    "request_indexing": "URL Inspection -> 'Request Indexing' knappen",
+    "coverage": "Pages -> filtrera pa problem-typer",
+    "sitemaps": "Sitemaps -> se inlamnade sitemaps"
+  }
+}
