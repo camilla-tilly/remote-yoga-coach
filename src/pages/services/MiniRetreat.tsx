@@ -24,8 +24,10 @@ const structuredData = {
 const MiniRetreat = () => (
   <ServicePageLayout
     seoTitle="Mini Yoga Retreat i Dalarna – Dag & Weekend Retreat | Yoga med Camilla"
-    seoDescription="Mini yoga retreat i Dalarna – en dag eller helg av yoga, meditation, naturvandring och stillhet i en stuga i skogen. För enskilda och grupper upp till 6 personer."
+    seoDescription="Mini yoga retreat i Dalarna – en dag eller helg av yoga, meditation och naturvandring i en skogsstuga. För grupper upp till 6 personer."
     canonical="https://yogawithcamilla.se/tjanster/mini-retreat"
+    ogImage="https://yogawithcamilla.se/images/IMG_8366.jpeg"
+    breadcrumbLabel="Mini Yoga Retreat"
     heroTag="Retreat & Fördjupning"
     heroHeading="Mini Yoga Retreat i Dalarna"
     heroSubtitle="En skräddarsydd dag eller helg i Dalarnas natur — yoga, mindfulness och rörelse i form av vandring eller löpning. Anpassat för din grupp."

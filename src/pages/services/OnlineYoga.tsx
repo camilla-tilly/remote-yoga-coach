@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
@@ -17,11 +18,21 @@ const structuredData = {
   "url": "https://yogawithcamilla.se/tjanster/online-yoga"
 };
 
-const OnlineYoga = () => (
+const OnlineYoga = () => {
+  // English-first page — set html lang="en" while mounted
+  useEffect(() => {
+    const prev = document.documentElement.lang || 'sv';
+    document.documentElement.lang = 'en';
+    return () => { document.documentElement.lang = prev; };
+  }, []);
+
+  return (
   <ServicePageLayout
     seoTitle="Online Yoga Classes in English – Private Sessions Worldwide | Yoga med Camilla"
-    seoDescription="Private online yoga classes in English with a 500hr certified teacher. One-on-one sessions via Zoom for all levels — beginners, runners, and anyone wanting personalised yoga."
+    seoDescription="Private online yoga classes in English via Zoom. One-on-one sessions with a 500hr certified teacher — beginners, runners, and all levels welcome."
     canonical="https://yogawithcamilla.se/tjanster/online-yoga"
+    ogImage="https://yogawithcamilla.se/images/IMG_5776.JPG"
+    breadcrumbLabel="Online Yoga"
     heroTag="Online Yoga"
     heroHeading="Online Yoga – Privata klasser var du än är"
     heroSubtitle="Privata en-till-en lektioner via Zoom, på engelska. Var du än befinner dig."
@@ -110,6 +121,7 @@ const OnlineYoga = () => (
       text: "Looking for private online yoga classes in English? I offer one-on-one yoga sessions via Zoom with a 500hr certified yoga teacher based in Sweden. Classes are fully personalised — whether you're a complete beginner, a runner looking for recovery yoga, or an experienced practitioner wanting to go deeper. Sessions available for all time zones. Ideal for expats in Sweden, tourists who visited Dalarna or Stockholm and want to continue their practice, or anyone wanting high-quality private yoga online. Book a free 15-minute intro call by emailing hello.yogawithcamilla@gmail.com."
     }}
   />
-);
+  );
+};
 
 export default OnlineYoga;

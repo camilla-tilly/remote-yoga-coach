@@ -26,6 +26,8 @@ const TrailRunYoga = () => (
     seoTitle="Trail Run + Yoga Stockholm — Nacka Naturreservat | Yoga med Camilla"
     seoDescription="Guidat trail run eller vandring i Nacka Naturreservat + SUP yoga på Sicklasjön. Halvdag för grupper och företag i Stockholm."
     canonical="https://yogawithcamilla.se/tjanster/trail-run-yoga"
+    ogImage="https://yogawithcamilla.se/images/IMG_6175.jpg"
+    breadcrumbLabel="Trail Run + Yoga"
     heroTag="Löp & Yoga · Stockholm"
     heroHeading="Trail Run + Yoga"
     heroSubtitle="Trail run eller vandring i Nacka Naturreservat, följt av SUP yoga på Sicklasjön. Halvdag ca 3–4 timmar."

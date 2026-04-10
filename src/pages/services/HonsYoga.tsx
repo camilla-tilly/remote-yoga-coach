@@ -24,8 +24,10 @@ const structuredData = {
 const HonsYoga = () => (
   <ServicePageLayout
     seoTitle="Hönsyoga i Dalarna — Yoga med Höns | Yoga med Camilla"
-    seoDescription="Yoga på altanen med höns fritt strövande runt — en unik och jordnära yogaupplevelse i Dalarna. Boka hönsyoga för dig, din grupp eller som ett alternativ till goat yoga i Sverige."
+    seoDescription="Yoga på altanen med höns fritt strövande runt — Sveriges svar på goat yoga. Privat bokning i Dalarna för 2–6 personer, maj–september."
     canonical="https://yogawithcamilla.se/tjanster/honsyoga"
+    ogImage="https://yogawithcamilla.se/images/IMG_3765.jpeg"
+    breadcrumbLabel="Hönsyoga"
     heroTag="Hönsyoga · Dalarna"
     heroHeading="Hönsyoga i Dalarna"
     heroSubtitle="Yoga på altanen — med höns fritt strövande runt. En lugn, jordnära upplevelse i Dalarnas natur."

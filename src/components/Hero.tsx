@@ -4,15 +4,15 @@ import { useIsMobile } from '@/hooks/use-mobile';
 
 const Hero = () => {
   const logoRef = useRef<HTMLDivElement>(null);
+  const brandRef = useRef<HTMLParagraphElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
-  const subtitleRef = useRef<HTMLParagraphElement>(null);
   const buttonRef = useRef<HTMLAnchorElement>(null);
   const isMobile = useIsMobile();
 
   useEffect(() => {
     const logo = logoRef.current;
+    const brand = brandRef.current;
     const heading = headingRef.current;
-    const subtitle = subtitleRef.current;
     const button = buttonRef.current;
 
     if (logo) {
@@ -21,15 +21,15 @@ const Hero = () => {
       }, 300);
     }
 
-    if (heading) {
+    if (brand) {
       setTimeout(() => {
-        heading.classList.add('opacity-100', 'translate-y-0');
+        brand.classList.add('opacity-100', 'translate-y-0');
       }, 800);
     }
 
-    if (subtitle) {
+    if (heading) {
       setTimeout(() => {
-        subtitle.classList.add('opacity-100', 'translate-y-0');
+        heading.classList.add('opacity-100', 'translate-y-0');
       }, 1200);
     }
 
@@ -57,19 +57,19 @@ const Hero = () => {
           />
         </div>
 
-        <h2 
-          ref={headingRef}
+        <p
+          ref={brandRef}
           className="font-cinzel-decorative text-xl sm:text-2xl md:text-3xl lg:text-4xl text-dalashala-darkBrown mb-3 sm:mb-4 opacity-0 -translate-y-4 transition-all duration-1000 ease-out font-bold"
         >
           Yoga with Camilla
-        </h2>
+        </p>
 
-        <p
-          ref={subtitleRef}
-          className="font-eb-garamond text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-dalashala-mediumBrown mb-6 sm:mb-8 opacity-0 -translate-y-4 transition-all duration-1000 ease-out delay-500 px-3"
+        <h1
+          ref={headingRef}
+          className="font-eb-garamond text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-dalashala-mediumBrown mb-6 sm:mb-8 opacity-0 -translate-y-4 transition-all duration-1000 ease-out delay-500 px-3 font-normal"
         >
           Privat yoga i Stockholm & Dalarna
-        </p>
+        </h1>
 
         <div
           ref={buttonRef}

@@ -21,6 +21,11 @@ import SUPYogaVillkor from "./pages/services/SUPYogaVillkor";
 import OnlineYoga from "./pages/services/OnlineYoga";
 import TrailRunYoga from "./pages/services/TrailRunYoga";
 import HonsYoga from "./pages/services/HonsYoga";
+import FodelsedagYoga from "./pages/services/FodelsedagYoga";
+import YogaWorkshop from "./pages/services/YogaWorkshop";
+import AdventurePaket from "./pages/services/AdventurePaket";
+import YogaForLopare from "./pages/services/YogaForLopare";
+import YogaDalarnaTurister from "./pages/services/YogaDalarnaTurister";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +57,11 @@ const App = () => (
           <Route path="/tjanster/online-yoga" element={<OnlineYoga />} />
           <Route path="/tjanster/trail-run-yoga" element={<TrailRunYoga />} />
           <Route path="/tjanster/honsyoga" element={<HonsYoga />} />
+          <Route path="/tjanster/fodelsedag-yoga" element={<FodelsedagYoga />} />
+          <Route path="/tjanster/yoga-workshop" element={<YogaWorkshop />} />
+          <Route path="/tjanster/adventure-paket" element={<AdventurePaket />} />
+          <Route path="/tjanster/yoga-for-lopare" element={<YogaForLopare />} />
+          <Route path="/tjanster/yoga-dalarna-turister" element={<YogaDalarnaTurister />} />
 
           {/* About */}
           <Route path="/om-mig" element={<OmMig />} />

@@ -26,6 +26,8 @@ const BrollopYoga = () => (
     seoTitle="Bröllopsyoga i Dalarna & Stockholm | Yoga med Camilla"
     seoDescription="Yoga som bröllopaktivitet för er och era gäster i Dalarna eller Stockholm. En lugn, inkluderande och minnesvärd aktivitet för bröllopsveckan."
     canonical="https://yogawithcamilla.se/tjanster/brollopsyoga"
+    ogImage="https://yogawithcamilla.se/lovable-uploads/54e28b90-5dc5-42be-ac91-2bcbcc7e5c58.png"
+    breadcrumbLabel="Bröllopsyoga"
     heroTag="Bröllop & Wellness"
     heroHeading="Yoga för Bröllop"
     heroSubtitle="Yoga som en naturlig del av bröllopsveckan — morgonen av, kvällen innan, eller dagen efter. Jag tar med all utrustning och kommer till er, i Dalarna eller Stockholm."

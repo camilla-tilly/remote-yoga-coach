@@ -9,11 +9,14 @@ Dessa ar sidans kommersiella karnsidor. ALL bloggproduktion och SEO-arbete ska i
 
 | Sida | Syfte | Mal |
 |------|-------|-----|
-| `/` (startsida) | Varumarkesbygge + konvertering | Brand awareness, CTA till schema/bokning |
-| `/klasser` | Klassschema | Konvertering: boka yogapass |
-| `/online` | Online-yoga | Konvertering: prenumeration/drop-in online |
-| `/foretag` | Foretagsyoga | Fanga B2B-sokningar |
-| `/om-camilla` | Om Camilla | Bygga fortroende |
+| `/` (startsida) | Varumarkesbygge + konvertering | Brand awareness, CTA till tjanster |
+| `/tjanster/mohippa-yoga` | Event-konvertering (hogst volym) | Boka mohippa-yoga |
+| `/tjanster/foretagsyoga` | B2B-konvertering | Boka foretagsyoga/konferensyoga |
+| `/tjanster/sup-yoga` | Event-konvertering (Stockholm) | Boka SUP yoga |
+| `/tjanster/mini-retreat` | Retreat-konvertering (Dalarna) | Boka mini retreat |
+| `/tjanster/privatlektioner` | Private lessons | Boka en-till-en |
+| `/tjanster/brollopsyoga` | Event-konvertering | Boka brollopsyoga |
+| `/om-mig` | Om Camilla | Bygga fortroende |
 
 **Regel for allt innehallsarbete:**
 - Varje blogartikel ska ha minst 1 in-text CTA som leder till en av dessa sidor
@@ -28,66 +31,73 @@ Dessa ar sidans kommersiella karnsidor. ALL bloggproduktion och SEO-arbete ska i
 
 ## Prioriterade Keywords
 
+> **Single source of truth:** `.claude/daily-growth/context/seo-targets.json` is authoritative. This doc mirrors it. If they disagree, trust the JSON.
+>
+> Yoga med Camilla is **not a studio** — it's a private/mobile teacher doing events, corporate, retreats and private lessons. Keywords reflect that commercial reality, not generic studio SEO.
+
 ### Tier 1: Core Keywords (Hogsta prioritet)
 Fokusera pa dessa i homepage, hero sections, och primara sidor:
-1. `yoga stockholm`
-2. `yogaklass`
-3. `yoga for nyborjare`
-4. `yoga online`
-5. `yogastudio`
+1. `privat yoga stockholm`
+2. `yoga dalarna`
+3. `yoga mohippa`
+4. `privat yogaklass`
+5. `yoga event`
 
 ### Tier 2: Services & Typer (Medel prioritet)
 Anvand i tjanstebeskrivningar och klassrelaterat innehall:
-6. `foretagsyoga`
-7. `foretagsyoga stockholm`
-8. `yoga retreat sverige`
-9. `privat yogalektion`
-10. `vinyasa yoga`
-11. `yin yoga`
-12. `hatha yoga`
-13. `yoga gravid`
-14. `prenatalyoga`
-15. `yoga privatlektioner stockholm`
-16. `yoga for foretag`
-17. `yoga teambuilding`
+6. `foretagsyoga stockholm`
+7. `yoga brollop`
+8. `SUP yoga stockholm`
+9. `mini retreat yoga dalarna`
+10. `privat yogalektion`
+11. `online yoga english`
+12. `yoga teambuilding`
+13. `konferensyoga`
+14. `yoga for foretag`
+15. `brollopsyoga dalarna`
 
 ### Tier 3: Specialized (Nisch/blogg)
 Anvand i specifika sektioner och blogginnehall:
-18. `yogaovningar hemma`
-19. `yoga for ryggont`
-20. `yoga stresshantering`
-21. `yoga andning`
-22. `meditation stockholm`
-23. `mindfulness yoga`
-24. `yoga for idrottare`
-25. `yoga stretching`
+16. `honsyoga dalarna`
+17. `utomhusyoga dalarna`
+18. `chicken yoga sweden`
+19. `bachelorette yoga sweden`
+20. `yoga stuga dalarna`
+21. `trail run yoga`
+22. `privat yoga pris`
+23. `mohippa aktiviteter dalarna`
+24. `yoga retreat dalarna`
+25. `foretagsyoga pris`
 
 ## Temavarlj-strategi per sidtyp
 
 ### Homepage (/)
-- **Core keywords**: Alla Tier 1 (1-5)
-- **Extra**: yoga stockholm, yogaklass
+- **Core keywords**: privat yoga stockholm, yoga dalarna, privat yogaklass
+- **Extra**: yoga event, mohippa yoga
 - **Max**: 5-6 keywords naturligt integrerade
 
-### Klasser (/klasser)
-- **Core**: yogaklass, yoga for nyborjare
-- **Typer**: vinyasa yoga, yin yoga, hatha yoga, yoga gravid
-- **Max**: 8 keywords
+### Service pages (/tjanster/*)
+- Varje tjanstesida far en primar Tier 1 eller Tier 2 keyword
+- 2-3 sekundara keywords (cluster-medlemmar)
+- **Max**: 5-6 keywords per sida
+- Se `SEO_STRATEGY.md` i root for den exakta mappningen per sida
 
-### Online (/online)
-- **Core**: yoga online, yogaovningar hemma
-- **Extra**: yoga hemma, yoga video
+### Online Yoga (/tjanster/online-yoga)
+- **Core**: online yoga english, privat yoga online
+- **Extra**: zoom yoga, private yoga english
 - **Max**: 5 keywords
+- Notera: engelsksprakig sida, `<html lang="en">` dynamiskt
 
-### Foretagsyoga (/foretag)
-- **Core**: foretagsyoga, foretagsyoga stockholm
-- **Extra**: yoga teambuilding, yoga for foretag
+### Foretagsyoga (/tjanster/foretagsyoga)
+- **Core**: foretagsyoga stockholm, konferensyoga, yoga for foretag
+- **Extra**: yoga teambuilding, foretagsyoga pris
 - **Max**: 6 keywords
 
-### Blogg (/blog)
-- **Longtail**: yoga for ryggont, yoga stresshantering, etc.
-- **Informational**: yogaovningar hemma, yoga andning
+### Blogg (/blogg/*)
+- **Longtail/high-intent**: privat yoga pris, foretagsyoga pris, mohippa aktiviteter dalarna
+- **Comparison/informational**: yoga retreat dalarna vs stockholm, honsyoga vs goat yoga
 - **Max per artikel**: 3-4 keywords
+- Varje artikel ska lanka till minst en prioriterad kommersiell sida (se Prioriterade Sidor ovan)
 
 ## Placeringsriktlinjer
 

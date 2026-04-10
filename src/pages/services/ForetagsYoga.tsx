@@ -26,6 +26,8 @@ const ForetagsYoga = () => (
     seoTitle="Företagsyoga & Konferensyoga Stockholm & Dalarna | Yoga med Camilla"
     seoDescription="Yoga för konferenser och företagsevent i Stockholm och Dalarna. Öka teamets energi och välmående med en professionell yogaklass – ingen förkunskap krävs."
     canonical="https://yogawithcamilla.se/tjanster/foretagsyoga"
+    ogImage="https://yogawithcamilla.se/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.png"
+    breadcrumbLabel="Företagsyoga"
     heroTag="Företag & Konferens"
     heroHeading="Företagsyoga & Konferensyoga"
     heroSubtitle="Yoga för konferenser, kickoffs och regelbundna klasser på kontoret. Alla kan delta, ingen erfarenhet krävs."

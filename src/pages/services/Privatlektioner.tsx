@@ -26,6 +26,8 @@ const Privatlektioner = () => (
     seoTitle="Privata Yogalektioner Stockholm & Dalarna | Yoga med Camilla"
     seoDescription="En-till-en privata yogalektioner med 500-timmars certifierad lärare i Stockholm och Dalarna. Anpassad klass för dina mål och din nivå."
     canonical="https://yogawithcamilla.se/tjanster/privatlektioner"
+    ogImage="https://yogawithcamilla.se/images/IMG_5788.JPG"
+    breadcrumbLabel="Privatlektioner"
     heroTag="Privatlektioner"
     heroHeading="Privata Yogalektioner"
     heroSubtitle="En-till-en yoga med full fokus på dig. Din kropp, dina mål, ditt tempo."

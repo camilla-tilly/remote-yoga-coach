@@ -20,8 +20,10 @@ const structuredData = {
 const MohenNatt = () => (
   <ServicePageLayout
     seoTitle="Möhippa Yoga Dalarna & Stockholm – Bachelorette Yoga Sweden | Yoga med Camilla"
-    seoDescription="Boka möhippa-yoga i Dalarna eller Stockholm. Privat yogaklass för hela gruppen – ingen erfarenhet krävs. Book bachelorette yoga in Sweden with a certified teacher."
+    seoDescription="Boka möhippa-yoga i Dalarna eller Stockholm. Privat klass för hela gruppen – ingen erfarenhet krävs. Book bachelorette yoga in Sweden."
     canonical="https://yogawithcamilla.se/tjanster/mohippa-yoga"
+    ogImage="https://yogawithcamilla.se/images/IMG_6793.JPG"
+    breadcrumbLabel="Möhippa Yoga"
     heroTag="Möhippa & Bachelorette Yoga"
     heroHeading="Möhippa med Yoga"
     heroSubtitle="Privat yogaklass för möhippan — avslappnad, rolig och inkluderande. Ingen erfarenhet krävs."

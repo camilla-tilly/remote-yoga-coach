@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -7,6 +7,24 @@ import SEO from '@/components/SEO';
 
 const SUPYogaVillkor = () => {
   const [lang, setLang] = useState<'sv' | 'en'>('sv');
+
+  // noindex on legal/terms page — don't waste crawl budget
+  useEffect(() => {
+    const el = document.querySelector('meta[name="robots"]');
+    const prev = el?.getAttribute('content') || 'index, follow';
+    if (el) {
+      el.setAttribute('content', 'noindex, follow');
+    } else {
+      const meta = document.createElement('meta');
+      meta.setAttribute('name', 'robots');
+      meta.setAttribute('content', 'noindex, follow');
+      document.head.appendChild(meta);
+    }
+    return () => {
+      const current = document.querySelector('meta[name="robots"]');
+      if (current) current.setAttribute('content', prev);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-dalashala-beige relative overflow-x-hidden">

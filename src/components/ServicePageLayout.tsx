@@ -26,6 +26,8 @@ interface ServicePageProps {
   seoTitle: string;
   seoDescription: string;
   canonical: string;
+  ogImage?: string;
+  breadcrumbLabel: string;
   heroTag: string;
   heroHeading: string;
   heroSubtitle: string;
@@ -56,6 +58,8 @@ const ServicePageLayout = ({
   seoTitle,
   seoDescription,
   canonical,
+  ogImage,
+  breadcrumbLabel,
   heroTag,
   heroHeading,
   heroSubtitle,
@@ -91,6 +95,31 @@ const ServicePageLayout = ({
     }))
   } : null;
 
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Hem",
+        "item": "https://yogawithcamilla.se"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tjänster",
+        "item": "https://yogawithcamilla.se/#services"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": breadcrumbLabel,
+        "item": canonical
+      }
+    ]
+  };
+
   useEffect(() => {
     if (faqStructuredData) {
       const existingScript = document.getElementById('faq-structured-data');
@@ -104,17 +133,43 @@ const ServicePageLayout = ({
     }
   }, [faq]);
 
+  useEffect(() => {
+    const existingScript = document.getElementById('breadcrumb-structured-data');
+    if (existingScript) existingScript.remove();
+    const script = document.createElement('script');
+    script.id = 'breadcrumb-structured-data';
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(breadcrumbStructuredData);
+    document.head.appendChild(script);
+    return () => { script.remove(); };
+  }, [breadcrumbLabel, canonical]);
+
   return (
     <div className="min-h-screen bg-dalashala-beige relative overflow-x-hidden">
       <SEO
         title={seoTitle}
         description={seoDescription}
         canonical={canonical}
+        ogImage={ogImage}
         structuredData={structuredData}
       />
       <div className="max-w-[750px] mx-auto">
         <Navbar />
         <main className="pt-20">
+          {/* Visible Breadcrumb Trail */}
+          <nav aria-label="Brödsmulor" className="px-4 pt-4">
+            <ol className="max-w-2xl mx-auto flex items-center gap-2 font-montserrat text-[11px] uppercase tracking-wider text-dalashala-mediumBrown">
+              <li>
+                <Link to="/" className="hover:text-dalashala-darkBrown transition-colors">Hem</Link>
+              </li>
+              <li aria-hidden="true" className="opacity-60">/</li>
+              <li>
+                <Link to="/#services" className="hover:text-dalashala-darkBrown transition-colors">Tjänster</Link>
+              </li>
+              <li aria-hidden="true" className="opacity-60">/</li>
+              <li aria-current="page" className="text-dalashala-darkBrown truncate">{breadcrumbLabel}</li>
+            </ol>
+          </nav>
           {/* Hero Section */}
           <section className="relative py-12 md:py-20 bg-dalashala-beige px-4">
             <div className="max-w-2xl mx-auto text-center">

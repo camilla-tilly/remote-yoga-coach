@@ -19,6 +19,9 @@ const locationGroups = [
       { name: 'SUP Yoga', href: '/tjanster/sup-yoga' },
       { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
       { name: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
+      { name: 'Yoga för Löpare', href: '/tjanster/yoga-for-lopare' },
+      { name: 'Födelsedag Yoga', href: '/tjanster/fodelsedag-yoga' },
+      { name: 'Yoga Workshop', href: '/tjanster/yoga-workshop' },
     ]
   },
   {
@@ -29,6 +32,8 @@ const locationGroups = [
       { name: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
       { name: 'Mini Retreat', href: '/tjanster/mini-retreat' },
       { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
+      { name: 'Adventure Paket', href: '/tjanster/adventure-paket' },
+      { name: 'Yoga för Turister', href: '/tjanster/yoga-dalarna-turister' },
     ]
   },
 ];
@@ -43,6 +48,11 @@ const allServiceLinks = [
   { name: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
   { name: 'Mini Retreat', href: '/tjanster/mini-retreat' },
   { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
+  { name: 'Yoga för Löpare', href: '/tjanster/yoga-for-lopare' },
+  { name: 'Yoga Workshop', href: '/tjanster/yoga-workshop' },
+  { name: 'Födelsedag Yoga', href: '/tjanster/fodelsedag-yoga' },
+  { name: 'Adventure Paket', href: '/tjanster/adventure-paket' },
+  { name: 'Yoga för Turister i Dalarna', href: '/tjanster/yoga-dalarna-turister' },
 ];
 
 const Navbar = () => {
@@ -108,10 +118,10 @@ const Navbar = () => {
         <div className="w-full px-3 sm:px-4 lg:px-6 xl:px-8 mx-auto">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link to="/" className="flex items-center">
-              <h1 className="text-sm sm:text-base md:text-lg font-cinzel-decorative font-bold text-dalashala-darkBrown whitespace-nowrap">
+            <Link to="/" className="flex items-center" aria-label="Yoga with Camilla — hem">
+              <p className="text-sm sm:text-base md:text-lg font-cinzel-decorative font-bold text-dalashala-darkBrown whitespace-nowrap">
                 Yoga with Camilla
-              </h1>
+              </p>
             </Link>
 
             {/* Desktop Navigation */}

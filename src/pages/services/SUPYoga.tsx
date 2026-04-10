@@ -29,8 +29,10 @@ const structuredData = {
 const SUPYoga = () => (
   <ServicePageLayout
     seoTitle="SUP Yoga Stockholm – Paddleboard Yoga Sickla Strand | Yoga with Camilla"
-    seoDescription="SUP yoga i Stockholm vid Sickla Strand — vinyasa och yin yoga på paddleboard. Öppna klasser maj–september och privata event. I samarbete med Smashing Balance."
+    seoDescription="SUP yoga i Stockholm vid Sickla Strand — vinyasa och yin på paddleboard. Öppna klasser maj–september, privata event året runt."
     canonical="https://yogawithcamilla.se/tjanster/sup-yoga"
+    ogImage="https://yogawithcamilla.se/images/sup-yoga-sickla.png"
+    breadcrumbLabel="SUP Yoga Stockholm"
     heroTag="SUP Yoga · Stockholm"
     heroHeading="SUP Yoga Stockholm"
     heroSubtitle="Yoga på paddleboard vid Sickla Strand. Öppna klasser i vinyasa och yin, plus privata event. I samarbete med Smashing Balance."

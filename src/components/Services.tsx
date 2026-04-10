@@ -34,6 +34,21 @@ const stockholmServices: ServiceCard[] = [
     description: 'En-till-en yoga i ditt tempo — anpassad efter dina mål. I Stockholm eller online.',
     href: '/tjanster/privatlektioner',
   },
+  {
+    title: 'Yoga för Löpare',
+    description: 'Återhämtning, rörlighet och skadeförebyggande yoga — byggd specifikt för dig som springer.',
+    href: '/tjanster/yoga-for-lopare',
+  },
+  {
+    title: 'Födelsedag Yoga',
+    description: 'En annorlunda födelsedagsaktivitet — privat yogaklass i hemmet, parken eller på hotellet.',
+    href: '/tjanster/fodelsedag-yoga',
+  },
+  {
+    title: 'Yoga Workshop',
+    description: 'Tematiska halvdags- och heldagsworkshops — breathwork, yin, återhämtning och mer.',
+    href: '/tjanster/yoga-workshop',
+  },
 ];
 
 const dalarnaServices: ServiceCard[] = [
@@ -63,6 +78,17 @@ const dalarnaServices: ServiceCard[] = [
     title: 'Bröllopsyoga',
     description: 'Yoga som en del av bröllopsveckan — morgonen av, kvällen innan eller dagen efter.',
     href: '/tjanster/brollopsyoga',
+  },
+  {
+    title: 'Adventure Paket',
+    description: 'Vandring, trail run, SUP och yoga i Dalarnas natur. Halvdag, heldag eller weekend.',
+    href: '/tjanster/adventure-paket',
+  },
+  {
+    title: 'Yoga för Turister',
+    description: 'English-speaking yoga in a forest cabin — for travellers visiting Dalarna.',
+    href: '/tjanster/yoga-dalarna-turister',
+    tag: 'English',
   },
 ];
 
