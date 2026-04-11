@@ -59,19 +59,26 @@ const OmMig = () => {
       />
 
       <Navbar />
-      <div className="min-h-screen bg-dalashala-beige pt-20">
+      <div className="min-h-screen bg-dalashala-cream pt-20">
 
         {/* ── Hero ── */}
-        <section className="py-20 px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="font-montserrat text-xs text-dalashala-mediumBrown uppercase tracking-widest mb-4">
+        <section className="relative py-20 px-4 overflow-hidden">
+          <div className="blob-sage w-[500px] h-[500px] -top-20 -right-40 opacity-40" aria-hidden="true" />
+          <div className="blob-meadow w-[400px] h-[400px] top-10 -left-32 opacity-40" aria-hidden="true" />
+          <div className="relative max-w-3xl mx-auto text-center">
+            <span className="inline-block tag-pill bg-dalashala-sage/15 text-dalashala-olive border border-dalashala-sage/40 mb-5">
               Om mig
-            </p>
-            <h1 className="font-cinzel text-4xl md:text-5xl text-dalashala-darkBrown leading-tight mb-6">
+            </span>
+            <h1 className="font-cinzel-decorative text-4xl md:text-5xl text-dalashala-earth leading-tight mb-5 font-bold">
               Yogalärare i Dalarna<br className="hidden md:block" /> & Stockholm
             </h1>
-            <p className="font-eb-garamond text-xl text-dalashala-darkBrown max-w-xl mx-auto leading-relaxed">
-              Certifierad yogalärare, ursprungligen från Australien. Baserad i Stockholm med undervisar även i Dalarna.
+            <div className="flex justify-center items-center gap-2 mb-5">
+              <span className="h-px w-10 bg-dalashala-olive/40" />
+              <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage" />
+              <span className="h-px w-10 bg-dalashala-olive/40" />
+            </div>
+            <p className="font-eb-garamond italic text-xl text-dalashala-earthSoft max-w-xl mx-auto leading-relaxed">
+              Certifierad yogalärare, ursprungligen från Australien. Baserad i Stockholm, med undervisar även i Dalarna.
             </p>
           </div>
         </section>
@@ -79,21 +86,22 @@ const OmMig = () => {
         {/* ── Story ── */}
         <section className="py-4 px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 md:p-12">
+            <div className="relative card-soft p-8 md:p-12">
+              <div className="absolute top-0 left-8 right-8 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-meadow to-dalashala-olive rounded-full" />
               <div className="grid md:grid-cols-5 gap-8 items-start">
                 <div className="md:col-span-3 space-y-6">
-                  <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-darkBrown">
+                  <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-earth">
                     Jag heter Camilla. Jag är australiensisk, 500-timmar certifierad yogalärare och undervisar yoga i Stockholm och Dalarna. Jag har instruerat fitness i sju år som Les Mills-instruktör och sprungit fem ultramaraton — inklusive en pallplats. Rörelse har alltid varit en stor del av mitt liv.
                   </p>
-                  <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-darkBrown">
+                  <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-earthSoft">
                     Rörelse, natur och mindfulness har alltid varit viktiga för mig. Yoga binder ihop dem — det är där jag landar.
                   </p>
-                  <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-darkBrown">
+                  <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-earthSoft">
                     Jag är baserad i Stockholm och undervisar även i Dalarna, där jag har en stuga med en stor altan som ibland förvandlas till yogashala.
                   </p>
                 </div>
                 <div className="md:col-span-2">
-                  <div className="overflow-hidden rounded-2xl">
+                  <div className="overflow-hidden rounded-2xl shadow-card border border-dalashala-meadow/25">
                     <img
                       src="/lovable-uploads/c1e6d7f9-3ac6-42af-ac83-3058516ff2ef.png"
                       alt="Camilla i warrior pose på altanen i Dalarna"
@@ -109,10 +117,16 @@ const OmMig = () => {
         {/* ── Philosophy ── */}
         <section className="py-12 px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-dalashala-tan rounded-2xl p-8 md:p-10">
-              <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-darkBrown">
-                Mina klasser är utmanande men inte bestraffande. Inga extrema poser, ingen tävling med grannen på mattan. Yoga som rörelse, andning och närvaro — oavsett om jag undervisar på altanen i Dalarna eller i en studio i Stockholm.
-              </p>
+            <div className="relative rounded-3xl overflow-hidden border border-dalashala-meadow/30 shadow-card">
+              <div className="absolute inset-0 bg-gradient-to-br from-dalashala-sage/25 via-dalashala-meadow/20 to-dalashala-creamLight" />
+              <div className="relative p-8 md:p-10">
+                <span className="inline-block tag-pill bg-white/60 text-dalashala-olive border border-dalashala-olive/30 mb-4">
+                  Min praktik
+                </span>
+                <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-earth italic">
+                  Mina klasser är utmanande men inte bestraffande. Inga extrema poser, ingen tävling med grannen på mattan. Yoga som rörelse, andning och närvaro — oavsett om jag undervisar på altanen i Dalarna eller i en studio i Stockholm.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -120,16 +134,22 @@ const OmMig = () => {
         {/* ── Credentials ── */}
         <section className="py-12 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-cinzel text-2xl md:text-3xl text-dalashala-darkBrown text-center mb-8">
-              Utbildning & bakgrund
-            </h2>
+            <div className="text-center mb-10">
+              <span className="inline-block tag-pill bg-dalashala-olive/15 text-dalashala-olive border border-dalashala-olive/30 mb-3">
+                Utbildning
+              </span>
+              <h2 className="font-cinzel-decorative text-2xl md:text-3xl text-dalashala-earth font-bold">
+                Utbildning & bakgrund
+              </h2>
+            </div>
             <div className="grid md:grid-cols-2 gap-4">
               {credentials.map((cred) => (
-                <div key={cred.title} className="bg-white rounded-xl p-6">
-                  <h3 className="font-montserrat text-xs text-dalashala-mediumBrown uppercase tracking-widest mb-3">
+                <div key={cred.title} className="card-soft p-6 hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300">
+                  <h3 className="font-montserrat text-xs text-dalashala-olive uppercase tracking-widest mb-3 flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage" />
                     {cred.title}
                   </h3>
-                  <p className="font-eb-garamond text-dalashala-darkBrown leading-relaxed whitespace-pre-line">
+                  <p className="font-eb-garamond text-dalashala-earthSoft leading-relaxed whitespace-pre-line">
                     {cred.detail}
                   </p>
                 </div>
@@ -141,14 +161,15 @@ const OmMig = () => {
         {/* ── Where I teach ── */}
         <section className="py-12 px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 md:p-12 text-center">
-              <h2 className="font-cinzel text-2xl text-dalashala-darkBrown mb-6">
+            <div className="card-soft p-8 md:p-12 text-center">
+              <div className="absolute top-0 left-8 right-8 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-meadow to-dalashala-olive rounded-full" />
+              <h2 className="font-cinzel-decorative text-2xl md:text-3xl text-dalashala-earth mb-6 font-bold">
                 Var jag undervisar
               </h2>
-              <p className="font-eb-garamond text-lg text-dalashala-darkBrown leading-relaxed mb-4">
-                Jag undervisar på <strong>WD Wellness i Vansbro</strong>, <strong>Hot Yoga Stockholm</strong>, <strong>Yogarummet Björkhagen</strong>, <strong>Brahma Yoga i Nacka</strong> och som SUP yoga-lärare för <strong>Smashing Balance</strong>.
+              <p className="font-eb-garamond text-lg text-dalashala-earthSoft leading-relaxed mb-4">
+                Jag undervisar på <strong className="text-dalashala-earth">WD Wellness i Vansbro</strong>, <strong className="text-dalashala-earth">Hot Yoga Stockholm</strong>, <strong className="text-dalashala-earth">Yogarummet Björkhagen</strong>, <strong className="text-dalashala-earth">Brahma Yoga i Nacka</strong> och som SUP yoga-lärare för <strong className="text-dalashala-earth">Smashing Balance</strong>.
               </p>
-              <p className="font-eb-garamond text-lg text-dalashala-darkBrown leading-relaxed">
+              <p className="font-eb-garamond text-lg text-dalashala-earthSoft leading-relaxed">
                 Jag tar också emot bokningar för privatlektioner, företagsevent, möhippor, bröllop och gruppevent i Dalarna och Stockholm.
               </p>
             </div>
@@ -158,35 +179,31 @@ const OmMig = () => {
         {/* ── CTA ── */}
         <section className="py-16 px-4">
           <div className="max-w-2xl mx-auto">
-            <div
-              className="rounded-2xl p-10 text-center"
-              style={{ backgroundColor: '#864927' }}
-            >
-              <h2 className="font-cinzel text-2xl text-dalashala-beige mb-4">
-                Vill du yoga med mig?
-              </h2>
-              <p className="font-eb-garamond text-dalashala-tan text-lg mb-8 leading-relaxed">
-                Se mina tjänster eller hör av dig direkt — oavsett om det är en privatlektion, ett bröllop, en konferens eller en morgonklass på altanen.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  to="/tjanster/privatlektioner"
-                  className="font-montserrat text-sm px-6 py-3 rounded-full transition-colors"
-                  style={{ backgroundColor: '#f9dec6', color: '#864927' }}
-                  onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#fff')}
-                  onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#f9dec6')}
-                >
-                  Se alla tjänster
-                </Link>
-                <Link
-                  to="/#contact"
-                  className="font-montserrat text-sm px-6 py-3 rounded-full border transition-colors"
-                  style={{ borderColor: '#f9dec6', color: '#f9dec6' }}
-                  onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#95593b')}
-                  onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
-                >
-                  Kontakta mig
-                </Link>
+            <div className="relative rounded-3xl p-10 text-center overflow-hidden shadow-card">
+              <div className="absolute inset-0 bg-earth-gradient" />
+              <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-dalashala-sage/30 blur-3xl" aria-hidden="true" />
+              <div className="absolute -bottom-24 -left-24 w-64 h-64 rounded-full bg-dalashala-olive/40 blur-3xl" aria-hidden="true" />
+              <div className="relative">
+                <h2 className="font-cinzel-decorative text-2xl md:text-3xl text-dalashala-cream mb-4 font-bold">
+                  Vill du yoga med mig?
+                </h2>
+                <p className="font-eb-garamond text-dalashala-cream/85 text-lg mb-8 leading-relaxed max-w-lg mx-auto">
+                  Se mina tjänster eller hör av dig direkt — oavsett om det är en privatlektion, ett bröllop, en konferens eller en morgonklass på altanen.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link
+                    to="/tjanster/privatlektioner"
+                    className="font-montserrat text-sm px-7 py-3 rounded-full bg-dalashala-cream text-dalashala-earth hover:bg-white hover:-translate-y-0.5 transition-all shadow-card"
+                  >
+                    Se alla tjänster
+                  </Link>
+                  <Link
+                    to="/#contact"
+                    className="font-montserrat text-sm px-7 py-3 rounded-full border-2 border-dalashala-cream/60 text-dalashala-cream hover:bg-dalashala-sage/20 hover:border-dalashala-cream transition-all"
+                  >
+                    Kontakta mig
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

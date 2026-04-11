@@ -328,23 +328,28 @@ const ServicePageLayout = ({
 
           {/* FAQ Section */}
           {faq && faq.length > 0 && (
-            <section className="px-4 mb-12">
+            <section className="px-4 mb-14">
               <div className="max-w-2xl mx-auto">
-                <h2 className="font-cinzel text-base md:text-lg text-dalashala-darkBrown font-bold uppercase tracking-wider text-center mb-6">
-                  Vanliga frågor / FAQ
-                </h2>
+                <div className="text-center mb-6">
+                  <span className="inline-block tag-pill bg-dalashala-sage/15 text-dalashala-olive border border-dalashala-sage/40 mb-3">
+                    Vanliga frågor · FAQ
+                  </span>
+                </div>
                 <div className="space-y-3">
                   {faq.map((item, i) => (
                     <details
                       key={i}
-                      className="bg-white rounded-2xl border border-dalashala-tan/20 shadow-sm overflow-hidden group"
+                      className="card-soft overflow-hidden group hover:shadow-card-hover transition-shadow"
                     >
-                      <summary className="font-montserrat text-sm text-dalashala-darkBrown px-5 py-4 cursor-pointer list-none flex items-center justify-between hover:bg-dalashala-tan/10 transition-colors">
-                        <span>{item.question}</span>
-                        <span className="text-dalashala-mediumBrown ml-2 group-open:rotate-45 transition-transform text-lg">+</span>
+                      <summary className="font-montserrat text-sm text-dalashala-earth px-5 py-4 cursor-pointer list-none flex items-center justify-between hover:bg-dalashala-sage/10 transition-colors">
+                        <span className="flex items-center gap-3">
+                          <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage group-open:bg-dalashala-olive transition-colors" />
+                          {item.question}
+                        </span>
+                        <span className="text-dalashala-olive ml-2 group-open:rotate-45 transition-transform text-lg font-light">+</span>
                       </summary>
-                      <div className="px-5 pb-4">
-                        <p className="font-eb-garamond text-sm text-dalashala-mediumBrown leading-relaxed">
+                      <div className="px-5 pb-5 pl-11">
+                        <p className="font-eb-garamond text-sm text-dalashala-earthSoft leading-relaxed">
                           {item.answer}
                         </p>
                       </div>
@@ -357,21 +362,27 @@ const ServicePageLayout = ({
 
           {/* English Keywords Section */}
           {englishKeywords && (
-            <section className="px-4 mb-12">
-              <div className="max-w-2xl mx-auto bg-white/60 rounded-2xl border border-dalashala-tan/20 p-6 md:p-8">
-                <h2 className="font-cinzel text-base md:text-lg text-dalashala-darkBrown font-bold mb-4">
-                  {englishKeywords.heading}
-                </h2>
-                <p className="font-eb-garamond text-sm md:text-base text-dalashala-mediumBrown leading-relaxed">
-                  {englishKeywords.text}
-                </p>
-                <div className="mt-4">
-                  <Button
-                    className="bg-dalashala-darkBrown text-dalashala-beige hover:bg-dalashala-darkBrown/90 font-montserrat py-2 px-6 rounded-full uppercase tracking-wide text-xs"
-                    asChild
-                  >
-                    <a href="mailto:hello.yogawithcamilla@gmail.com">Send enquiry</a>
-                  </Button>
+            <section className="px-4 mb-14">
+              <div className="max-w-2xl mx-auto relative rounded-3xl overflow-hidden border border-dalashala-meadow/30 shadow-card">
+                <div className="absolute inset-0 bg-gradient-to-br from-white via-dalashala-creamLight to-dalashala-sage/15" />
+                <div className="relative p-6 md:p-8">
+                  <span className="inline-block tag-pill bg-dalashala-meadow/25 text-dalashala-earth border border-dalashala-meadow/50 mb-3">
+                    English
+                  </span>
+                  <h2 className="font-cinzel text-base md:text-lg text-dalashala-earth font-bold mb-4">
+                    {englishKeywords.heading}
+                  </h2>
+                  <p className="font-eb-garamond text-sm md:text-base text-dalashala-earthSoft leading-relaxed">
+                    {englishKeywords.text}
+                  </p>
+                  <div className="mt-5">
+                    <Button
+                      className="bg-earth-gradient text-dalashala-cream hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300 font-montserrat py-2 px-6 rounded-full uppercase tracking-wide text-xs shadow-soft"
+                      asChild
+                    >
+                      <a href="mailto:hello.yogawithcamilla@gmail.com">Send enquiry</a>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </section>
@@ -379,21 +390,32 @@ const ServicePageLayout = ({
 
           {/* CTA */}
           <section className="px-4 mb-16">
-            <div className="max-w-2xl mx-auto text-center bg-dalashala-darkBrown rounded-2xl p-8 md:p-12">
-              <h2 className="font-cinzel-decorative text-xl md:text-2xl text-dalashala-beige mb-4 font-bold">
-                {ctaHeading}
-              </h2>
-              <p className="font-eb-garamond text-dalashala-beige/80 text-sm md:text-base mb-8 leading-relaxed">
-                {ctaText}
-              </p>
-              <Button
-                className="bg-dalashala-beige text-dalashala-darkBrown hover:bg-dalashala-beige/90 font-montserrat py-2 px-8 rounded-full uppercase tracking-wide text-sm"
-                asChild
-              >
-                <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
-                  {bookingLabel || 'Skicka förfrågan'}
-                </a>
-              </Button>
+            <div className="max-w-2xl mx-auto relative text-center rounded-3xl overflow-hidden shadow-card">
+              <div className="absolute inset-0 bg-earth-gradient" />
+              {/* Olive glow */}
+              <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-dalashala-olive/40 blur-3xl" aria-hidden="true" />
+              <div className="absolute -bottom-24 -left-24 w-64 h-64 rounded-full bg-dalashala-sage/30 blur-3xl" aria-hidden="true" />
+              <div className="relative p-8 md:p-12">
+                <div className="flex justify-center items-center gap-2 mb-4 opacity-70">
+                  <span className="h-px w-8 bg-dalashala-cream/50" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage" />
+                  <span className="h-px w-8 bg-dalashala-cream/50" />
+                </div>
+                <h2 className="font-cinzel-decorative text-xl md:text-2xl text-dalashala-cream mb-4 font-bold">
+                  {ctaHeading}
+                </h2>
+                <p className="font-eb-garamond text-dalashala-cream/85 text-sm md:text-base mb-8 leading-relaxed max-w-lg mx-auto">
+                  {ctaText}
+                </p>
+                <Button
+                  className="bg-dalashala-cream text-dalashala-earth hover:bg-white hover:-translate-y-0.5 transition-all duration-300 font-montserrat py-2.5 px-8 rounded-full uppercase tracking-wide text-sm shadow-card"
+                  asChild
+                >
+                  <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
+                    {bookingLabel || 'Skicka förfrågan'}
+                  </a>
+                </Button>
+              </div>
             </div>
           </section>
 
@@ -401,15 +423,15 @@ const ServicePageLayout = ({
           {relatedServices && relatedServices.length > 0 && (
             <section className="px-4 mb-16">
               <div className="max-w-2xl mx-auto">
-                <h2 className="font-cinzel text-base text-dalashala-darkBrown mb-4 uppercase tracking-wider text-center">
-                  Fler tjänster / More services
+                <h2 className="font-cinzel text-xs text-dalashala-olive mb-5 uppercase tracking-[0.25em] text-center">
+                  Fler tjänster · More services
                 </h2>
                 <div className="flex flex-wrap gap-3 justify-center">
                   {relatedServices.map((s) => (
                     <Link
                       key={s.href}
                       to={s.href}
-                      className="font-montserrat text-xs uppercase tracking-wider bg-white border border-dalashala-tan/40 text-dalashala-darkBrown px-4 py-2 rounded-full hover:bg-dalashala-darkBrown hover:text-dalashala-beige transition-colors"
+                      className="font-montserrat text-xs uppercase tracking-wider bg-white border border-dalashala-meadow/40 text-dalashala-earth px-4 py-2 rounded-full hover:bg-earth-gradient hover:text-dalashala-cream hover:border-dalashala-earth shadow-soft hover:shadow-card transition-all"
                     >
                       {s.label}
                     </Link>

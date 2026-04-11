@@ -64,7 +64,7 @@ const Index = () => {
                   className="w-full h-full object-cover object-[50%_40%] transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
-              <div className="aspect-square overflow-hidden rounded-2xl shadow-card border border-dalashala-meadow/25 group md:-translate-y-4">
+              <div className="aspect-square overflow-hidden rounded-2xl shadow-card border border-dalashala-meadow/25 group">
                 <img
                   src="/images/IMG_4442.jpeg"
                   alt="Utomhusyoga i Dalarna"

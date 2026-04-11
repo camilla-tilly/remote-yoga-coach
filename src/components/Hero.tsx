@@ -3,40 +3,32 @@ import { useEffect, useRef } from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const Hero = () => {
-  const logoRef = useRef<HTMLDivElement>(null);
   const brandRef = useRef<HTMLParagraphElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
   const buttonRef = useRef<HTMLAnchorElement>(null);
   const isMobile = useIsMobile();
 
   useEffect(() => {
-    const logo = logoRef.current;
     const brand = brandRef.current;
     const heading = headingRef.current;
     const button = buttonRef.current;
 
-    if (logo) {
-      setTimeout(() => {
-        logo.classList.add('opacity-100', 'translate-y-0');
-      }, 300);
-    }
-
     if (brand) {
       setTimeout(() => {
         brand.classList.add('opacity-100', 'translate-y-0');
-      }, 800);
+      }, 400);
     }
 
     if (heading) {
       setTimeout(() => {
         heading.classList.add('opacity-100', 'translate-y-0');
-      }, 1200);
+      }, 800);
     }
 
     if (button) {
       setTimeout(() => {
         button.classList.add('opacity-100', 'translate-y-0');
-      }, 2000);
+      }, 1400);
     }
   }, []);
 
@@ -52,26 +44,16 @@ const Hero = () => {
 
       <div className="container-section relative z-10 text-center w-full px-2 sm:px-3">
         {/* Sage eyebrow tag */}
-        <div className="flex justify-center mb-4 opacity-0 animate-fade-in" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-          <span className="tag-pill bg-dalashala-sage/25 text-dalashala-earth border border-dalashala-sage/40 backdrop-blur-sm">
-            Certifierad yogalärare · Stockholm & Dalarna
+        <div className="flex justify-center mb-6 px-2 opacity-0 animate-fade-in" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+          <span className="tag-pill bg-dalashala-sage/25 text-dalashala-earth border border-dalashala-sage/40 backdrop-blur-sm text-center whitespace-normal max-w-full">
+            <span className="hidden sm:inline">500 timmar certifierad yogalärare · Stockholm & Dalarna</span>
+            <span className="sm:hidden">500h certifierad · Stockholm & Dalarna</span>
           </span>
-        </div>
-
-        <div
-          ref={logoRef}
-          className="mx-auto w-36 h-36 sm:w-32 sm:h-32 md:w-[12rem] md:h-[10rem] lg:w-[15rem] lg:h-[12rem] xl:w-[17rem] xl:h-[14rem] mb-4 sm:mb-6 opacity-0 -translate-y-4 transition-all duration-1000 ease-out overflow-visible"
-        >
-          <img
-            src="/lovable-uploads/fd83582b-7d97-4a90-a866-d7d3117ebdc4.png"
-            alt="Yoga with Camilla Logo"
-            className="w-full h-full object-contain object-center scale-95 sm:scale-90 xl:scale-100 drop-shadow-[0_8px_20px_rgba(94,75,59,0.15)]"
-          />
         </div>
 
         <p
           ref={brandRef}
-          className="font-cinzel-decorative text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-dalashala-earth mb-3 sm:mb-4 opacity-0 -translate-y-4 transition-all duration-1000 ease-out font-bold"
+          className="font-cinzel-decorative text-[1.6rem] sm:text-3xl md:text-4xl lg:text-5xl text-dalashala-earth mb-3 sm:mb-4 px-2 opacity-0 -translate-y-4 transition-all duration-1000 ease-out font-bold leading-tight"
         >
           Yoga with Camilla
         </p>
