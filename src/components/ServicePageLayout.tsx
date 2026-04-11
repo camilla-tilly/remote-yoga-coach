@@ -145,7 +145,7 @@ const ServicePageLayout = ({
   }, [breadcrumbLabel, canonical]);
 
   return (
-    <div className="min-h-screen bg-dalashala-beige relative overflow-x-hidden">
+    <div className="min-h-screen bg-dalashala-cream relative overflow-x-hidden">
       <SEO
         title={seoTitle}
         description={seoDescription}
@@ -157,33 +157,40 @@ const ServicePageLayout = ({
         <Navbar />
         <main className="pt-20">
           {/* Visible Breadcrumb Trail */}
-          <nav aria-label="Brödsmulor" className="px-4 pt-4">
-            <ol className="max-w-2xl mx-auto flex items-center gap-2 font-montserrat text-[11px] uppercase tracking-wider text-dalashala-mediumBrown">
+          <nav aria-label="Brödsmulor" className="px-4 pt-6">
+            <ol className="max-w-2xl mx-auto flex items-center gap-2 font-montserrat text-[11px] uppercase tracking-wider text-dalashala-olive">
               <li>
-                <Link to="/" className="hover:text-dalashala-darkBrown transition-colors">Hem</Link>
+                <Link to="/" className="hover:text-dalashala-earth transition-colors">Hem</Link>
               </li>
               <li aria-hidden="true" className="opacity-60">/</li>
               <li>
-                <Link to="/#services" className="hover:text-dalashala-darkBrown transition-colors">Tjänster</Link>
+                <Link to="/#services" className="hover:text-dalashala-earth transition-colors">Tjänster</Link>
               </li>
               <li aria-hidden="true" className="opacity-60">/</li>
-              <li aria-current="page" className="text-dalashala-darkBrown truncate">{breadcrumbLabel}</li>
+              <li aria-current="page" className="text-dalashala-earth truncate font-bold">{breadcrumbLabel}</li>
             </ol>
           </nav>
           {/* Hero Section */}
-          <section className="relative py-12 md:py-20 bg-dalashala-beige px-4">
-            <div className="max-w-2xl mx-auto text-center">
-              <span className="text-xs uppercase tracking-widest font-cinzel text-dalashala-mediumBrown mb-3 block">
+          <section className="relative py-12 md:py-16 px-4 overflow-hidden">
+            <div className="blob-sage w-[400px] h-[400px] -top-20 -right-20 opacity-40" aria-hidden="true" />
+            <div className="blob-meadow w-[350px] h-[350px] top-20 -left-20 opacity-40" aria-hidden="true" />
+            <div className="relative max-w-2xl mx-auto text-center">
+              <span className="inline-block tag-pill bg-dalashala-sage/15 text-dalashala-olive border border-dalashala-sage/40 mb-5">
                 {heroTag}
               </span>
-              <h1 className="font-cinzel-decorative text-2xl md:text-3xl lg:text-4xl text-dalashala-darkBrown mb-4 font-bold leading-snug">
+              <h1 className="font-cinzel-decorative text-2xl md:text-3xl lg:text-4xl text-dalashala-earth mb-5 font-bold leading-tight">
                 {heroHeading}
               </h1>
-              <p className="font-eb-garamond text-base md:text-lg text-dalashala-mediumBrown mb-8 leading-relaxed">
+              <div className="flex justify-center items-center gap-2 mb-5">
+                <span className="h-px w-8 bg-dalashala-olive/40" />
+                <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage" />
+                <span className="h-px w-8 bg-dalashala-olive/40" />
+              </div>
+              <p className="font-eb-garamond text-base md:text-lg text-dalashala-earthSoft mb-8 leading-relaxed">
                 {heroSubtitle}
               </p>
               <Button
-                className="bg-dalashala-darkBrown text-dalashala-beige hover:bg-dalashala-darkBrown/90 font-montserrat py-2 px-8 rounded-full uppercase tracking-wide text-sm"
+                className="bg-earth-gradient text-dalashala-cream hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300 font-montserrat py-2.5 px-8 rounded-full uppercase tracking-wide text-sm shadow-card"
                 asChild
               >
                 <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
@@ -196,7 +203,7 @@ const ServicePageLayout = ({
           {/* Hero Image */}
           {heroImage && (
             <section className="px-4 mb-12">
-              <div className="max-w-2xl mx-auto overflow-hidden rounded-2xl shadow-lg aspect-video">
+              <div className="max-w-2xl mx-auto overflow-hidden rounded-3xl shadow-card border border-dalashala-meadow/25 aspect-video">
                 <img
                   src={heroImage}
                   alt={heroImageAlt || heroHeading}
@@ -208,13 +215,14 @@ const ServicePageLayout = ({
           )}
 
           {/* Intro */}
-          <section className="px-4 mb-12">
-            <div className="max-w-2xl mx-auto bg-white rounded-2xl p-6 md:p-10 shadow-sm border border-dalashala-tan/20">
-              <h2 className="font-cinzel text-lg md:text-xl text-dalashala-darkBrown mb-5 font-bold">
+          <section className="px-4 mb-14">
+            <div className="max-w-2xl mx-auto card-soft p-6 md:p-10">
+              <div className="absolute top-0 left-8 right-8 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-meadow to-dalashala-olive rounded-full" />
+              <h2 className="font-cinzel text-lg md:text-xl text-dalashala-earth mb-5 font-bold">
                 {introHeading}
               </h2>
               {introParagraphs.map((p, i) => (
-                <p key={i} className="font-eb-garamond text-sm md:text-base text-dalashala-mediumBrown leading-relaxed mb-4 last:mb-0">
+                <p key={i} className="font-eb-garamond text-sm md:text-base text-dalashala-earthSoft leading-relaxed mb-4 last:mb-0">
                   {p}
                 </p>
               ))}
@@ -222,20 +230,21 @@ const ServicePageLayout = ({
           </section>
 
           {/* Highlights Grid */}
-          <section className="px-4 mb-12">
+          <section className="px-4 mb-14">
             <div className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
               {highlights.map((h, i) => (
                 <div
                   key={i}
-                  className="bg-white rounded-2xl border border-dalashala-tan/20 shadow-sm overflow-hidden"
+                  className="card-soft overflow-hidden hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300"
                 >
-                  <div className="bg-dalashala-darkBrown px-4 py-3">
-                    <h3 className="font-cinzel text-dalashala-beige text-sm font-bold uppercase tracking-wider">
+                  <div className="bg-earth-gradient px-4 py-3 flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage" />
+                    <h3 className="font-cinzel text-dalashala-cream text-xs font-bold uppercase tracking-[0.2em]">
                       {h.heading}
                     </h3>
                   </div>
-                  <div className="p-4">
-                    <p className="font-eb-garamond text-sm text-dalashala-mediumBrown leading-relaxed">
+                  <div className="p-5">
+                    <p className="font-eb-garamond text-sm text-dalashala-earthSoft leading-relaxed">
                       {h.text}
                     </p>
                   </div>
@@ -246,32 +255,38 @@ const ServicePageLayout = ({
 
           {/* Pricing */}
           {pricing && pricing.length > 0 && (
-            <section className="px-4 mb-12">
+            <section className="px-4 mb-14">
               <div className="max-w-2xl mx-auto">
-                <h2 className="font-cinzel text-base md:text-lg text-dalashala-darkBrown font-bold uppercase tracking-wider text-center mb-6">
-                  Priser / Pricing
-                </h2>
+                <div className="text-center mb-8">
+                  <span className="inline-block tag-pill bg-dalashala-olive/15 text-dalashala-olive border border-dalashala-olive/30 mb-3">
+                    Priser · Pricing
+                  </span>
+                  <h2 className="font-cinzel-decorative text-xl md:text-2xl text-dalashala-earth font-bold">
+                    Välj det som passar
+                  </h2>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {pricing.map((tier, i) => (
                     <div
                       key={i}
-                      className="bg-white rounded-2xl border border-dalashala-tan/20 shadow-sm p-5 text-center"
+                      className="relative card-soft p-6 text-center hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300 overflow-hidden"
                     >
-                      <p className="font-montserrat text-xs uppercase tracking-wider text-dalashala-mediumBrown mb-2">
+                      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-dalashala-sage to-dalashala-olive" />
+                      <p className="font-montserrat text-[10px] uppercase tracking-widest text-dalashala-olive mb-2">
                         {tier.label}
                       </p>
-                      <p className="font-cinzel text-lg md:text-xl text-dalashala-darkBrown font-bold mb-1">
+                      <p className="font-cinzel text-lg md:text-xl text-dalashala-earth font-bold mb-1">
                         {tier.price}
                       </p>
                       {tier.note && (
-                        <p className="font-eb-garamond text-xs text-dalashala-mediumBrown/70 italic">
+                        <p className="font-eb-garamond text-xs text-dalashala-earthSoft/80 italic">
                           {tier.note}
                         </p>
                       )}
                     </div>
                   ))}
                 </div>
-                <p className="font-eb-garamond text-xs text-dalashala-mediumBrown/60 text-center mt-4 italic">
+                <p className="font-eb-garamond text-xs text-dalashala-earthSoft/70 text-center mt-5 italic">
                   Alla priser är inklusive utrustning. Kontakta mig för skräddarsydd offert. · All prices include equipment. Contact for a custom quote.
                 </p>
               </div>
@@ -280,16 +295,19 @@ const ServicePageLayout = ({
 
           {/* Optional Details */}
           {detailsHeading && detailsParagraphs && (
-            <section className="px-4 mb-12">
-              <div className="max-w-2xl mx-auto bg-dalashala-tan/20 rounded-2xl p-6 md:p-10">
-                <h2 className="font-cinzel text-lg md:text-xl text-dalashala-darkBrown mb-5 font-bold">
-                  {detailsHeading}
-                </h2>
-                {detailsParagraphs.map((p, i) => (
-                  <p key={i} className="font-eb-garamond text-sm md:text-base text-dalashala-mediumBrown leading-relaxed mb-4 last:mb-0">
-                    {p}
-                  </p>
-                ))}
+            <section className="px-4 mb-14">
+              <div className="max-w-2xl mx-auto relative rounded-3xl overflow-hidden border border-dalashala-meadow/30 shadow-card">
+                <div className="absolute inset-0 bg-gradient-to-br from-dalashala-sage/20 via-dalashala-meadow/15 to-dalashala-creamLight" />
+                <div className="relative p-6 md:p-10">
+                  <h2 className="font-cinzel text-lg md:text-xl text-dalashala-earth mb-5 font-bold">
+                    {detailsHeading}
+                  </h2>
+                  {detailsParagraphs.map((p, i) => (
+                    <p key={i} className="font-eb-garamond text-sm md:text-base text-dalashala-earthSoft leading-relaxed mb-4 last:mb-0">
+                      {p}
+                    </p>
+                  ))}
+                </div>
               </div>
             </section>
           )}
