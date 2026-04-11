@@ -5,47 +5,50 @@
 
 @layer base {
   :root {
-    --background: 33 80% 96%;
-    --foreground: 25 55% 33%;
+    /* Almond Cream #F0EAD8 */
+    --background: 42 44% 90%;
+    /* Earth Brown #5E4B3B */
+    --foreground: 28 23% 29%;
 
-    --card: 33 80% 96%;
-    --card-foreground: 25 55% 33%;
+    --card: 45 55% 94%;
+    --card-foreground: 28 23% 29%;
 
-    --popover: 33 80% 96%;
-    --popover-foreground: 25 55% 33%;
+    --popover: 42 44% 90%;
+    --popover-foreground: 28 23% 29%;
 
-    --primary: 25 55% 33%;
-    --primary-foreground: 33 80% 96%;
+    /* Earth Brown primary */
+    --primary: 28 23% 29%;
+    --primary-foreground: 42 44% 90%;
 
-    --secondary: 33 50% 75%;
-    --secondary-foreground: 25 55% 33%;
+    /* Meadow Mist secondary */
+    --secondary: 69 15% 63%;
+    --secondary-foreground: 28 23% 29%;
 
-    --muted: 33 30% 90%;
-    --muted-foreground: 25 30% 40%;
+    --muted: 42 30% 86%;
+    --muted-foreground: 58 18% 32%;
 
-    --accent: 33 50% 75%;
-    --accent-foreground: 25 55% 33%;
+    /* Coastal Sage accent */
+    --accent: 165 9% 63%;
+    --accent-foreground: 28 23% 29%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 33 80% 96%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 42 44% 90%;
 
-    --border: 25 30% 80%;
-    --input: 25 30% 80%;
-    --ring: 25 55% 33%;
+    --border: 58 15% 75%;
+    --input: 58 15% 80%;
+    --ring: 58 24% 35%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 33 80% 96%;
-    --sidebar-foreground: 25 55% 33%;
-    --sidebar-primary: 25 55% 33%;
-    --sidebar-primary-foreground: 33 80% 96%;
-    --sidebar-accent: 33 50% 75%;
-    --sidebar-accent-foreground: 25 55% 33%;
-    --sidebar-border: 25 30% 80%;
-    --sidebar-ring: 25 55% 33%;
+    --sidebar-background: 42 44% 90%;
+    --sidebar-foreground: 28 23% 29%;
+    --sidebar-primary: 28 23% 29%;
+    --sidebar-primary-foreground: 42 44% 90%;
+    --sidebar-accent: 69 15% 63%;
+    --sidebar-accent-foreground: 28 23% 29%;
+    --sidebar-border: 58 15% 75%;
+    --sidebar-ring: 58 24% 35%;
   }
-
-  /* Dark mode is not needed as per the instructions */
 }
 
 @layer base {
@@ -111,7 +114,52 @@
   .leaf-decoration {
     @apply absolute w-4 h-auto text-dalashala-tan/60 transform rotate-12;
   }
-  
+
+  /* Decorative blurred blobs — sit behind content, soft organic depth */
+  .blob {
+    @apply pointer-events-none absolute rounded-full blur-3xl opacity-60 animate-drift;
+  }
+  .blob-sage {
+    @apply blob bg-dalashala-sage/40;
+  }
+  .blob-meadow {
+    @apply blob bg-dalashala-meadow/40;
+  }
+  .blob-cream {
+    @apply blob bg-dalashala-creamLight/70;
+  }
+  .blob-olive {
+    @apply blob bg-dalashala-olive/25;
+  }
+
+  /* Card base — soft depth, subtle edge highlight, organic radius */
+  .card-soft {
+    @apply relative bg-white rounded-2xl border border-dalashala-meadow/20 shadow-card;
+  }
+
+  /* Section background treatments */
+  .bg-cream-soft {
+    background-image: radial-gradient(ellipse 80% 60% at 50% 0%, #F7F1DE 0%, #F0EAD8 50%, #EAE1C8 100%);
+  }
+  .bg-cream-soft-b {
+    background-image: radial-gradient(ellipse 80% 60% at 50% 100%, #F7F1DE 0%, #F0EAD8 50%, #EAE1C8 100%);
+  }
+
+  /* Divider with sage dot centre */
+  .divider-dot {
+    @apply flex items-center gap-3 text-dalashala-sage;
+  }
+  .divider-dot::before,
+  .divider-dot::after {
+    content: '';
+    @apply flex-1 h-px bg-gradient-to-r from-transparent via-dalashala-meadow/50 to-transparent;
+  }
+
+  /* Pill tag */
+  .tag-pill {
+    @apply inline-block text-[10px] font-montserrat uppercase tracking-widest px-2.5 py-1 rounded-full;
+  }
+
   /* Text shadow utilities for better visibility */
   .text-shadow-sm {
     text-shadow: 0 1px 1px rgba(0,0,0,0.6);

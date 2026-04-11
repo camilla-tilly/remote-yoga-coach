@@ -104,94 +104,123 @@ const dalarnaServices: ServiceCard[] = [
   },
 ];
 
+const tagStyles: Record<string, string> = {
+  'Nytt': 'bg-dalashala-sage/20 text-dalashala-earth border border-dalashala-sage/50',
+  'Populärt': 'bg-dalashala-olive/15 text-dalashala-olive border border-dalashala-olive/40',
+  'Unikt': 'bg-dalashala-earth text-dalashala-cream border border-dalashala-earth',
+  'English': 'bg-dalashala-meadow/25 text-dalashala-earth border border-dalashala-meadow/50',
+};
+
 const ServiceCard = ({ title, description, href, tag }: ServiceCard) => (
   <Link
     to={href}
-    className="group flex flex-col justify-between bg-white rounded-2xl p-5 border border-dalashala-tan/20 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+    className="group relative flex flex-col justify-between bg-white rounded-2xl p-5 pt-6 border border-dalashala-meadow/25 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 overflow-hidden"
   >
-    <div>
+    {/* Top accent bar */}
+    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-meadow to-dalashala-olive opacity-80 group-hover:opacity-100 transition-opacity" />
+    {/* Soft corner glow */}
+    <div className="absolute -top-10 -right-10 w-24 h-24 rounded-full bg-dalashala-sage/10 blur-2xl pointer-events-none" />
+
+    <div className="relative">
       {tag && (
-        <span
-          className="inline-block mb-2 text-xs font-montserrat uppercase tracking-wide px-2.5 py-0.5 rounded-full"
-          style={{ backgroundColor: '#864927', color: '#f9dec6' }}
-        >
+        <span className={`tag-pill mb-3 ${tagStyles[tag] || tagStyles['Nytt']}`}>
           {tag}
         </span>
       )}
-      <h3 className="font-cinzel text-sm md:text-base text-dalashala-darkBrown mb-2 group-hover:text-dalashala-mediumBrown transition-colors leading-snug">
+      <h3 className="font-cinzel text-sm md:text-base text-dalashala-earth mb-2 group-hover:text-dalashala-olive transition-colors leading-snug font-bold">
         {title}
       </h3>
-      <p className="font-eb-garamond text-sm text-dalashala-mediumBrown leading-relaxed">
+      <p className="font-eb-garamond text-sm text-dalashala-earthSoft leading-relaxed">
         {description}
       </p>
     </div>
-    <span className="mt-4 inline-block font-montserrat text-xs text-dalashala-darkBrown uppercase tracking-widest group-hover:underline">
-      Läs mer →
+    <span className="relative mt-4 inline-flex items-center gap-1 font-montserrat text-[11px] text-dalashala-olive uppercase tracking-widest group-hover:text-dalashala-earth transition-colors">
+      Läs mer
+      <span className="transition-transform group-hover:translate-x-1">→</span>
     </span>
   </Link>
 );
 
+const LocationHeader = ({
+  label,
+  accent,
+}: {
+  label: string;
+  accent: 'sage' | 'olive';
+}) => (
+  <div className="flex items-center gap-4 mb-8">
+    <div className={`flex items-center gap-2 ${accent === 'sage' ? 'text-dalashala-sage' : 'text-dalashala-olive'}`}>
+      <span className={`w-2 h-2 rounded-full ${accent === 'sage' ? 'bg-dalashala-sage' : 'bg-dalashala-olive'}`} />
+      <span className={`w-8 h-px ${accent === 'sage' ? 'bg-dalashala-sage' : 'bg-dalashala-olive'}`} />
+    </div>
+    <h3 className="font-cinzel text-xs md:text-sm uppercase tracking-[0.25em] text-dalashala-earth font-bold whitespace-nowrap">
+      {label}
+    </h3>
+    <div className="flex-1 h-px bg-gradient-to-r from-dalashala-meadow/50 to-transparent" />
+  </div>
+);
+
 const Services = () => {
   return (
-    <section id="services" className="relative py-12 md:py-16 bg-dalashala-beige">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+    <section id="services" className="relative py-16 md:py-24 overflow-hidden bg-cream-soft-b">
+      {/* Decorative background elements */}
+      <div className="blob-sage w-[500px] h-[500px] top-20 -right-40 opacity-40" aria-hidden="true" />
+      <div className="blob-meadow w-[400px] h-[400px] bottom-40 -left-32 opacity-40" aria-hidden="true" />
 
-          {/* Section header */}
-          <div className="mb-10">
-            <span className="text-xs uppercase tracking-wider font-montserrat text-dalashala-mediumBrown">
-              Yoga med Camilla
-            </span>
-            <h2 className="font-cinzel text-2xl md:text-3xl text-dalashala-darkBrown mt-1 mb-2">
-              Vad jag erbjuder
-            </h2>
-            <p className="font-eb-garamond text-base text-dalashala-mediumBrown max-w-xl">
-              Baserad i Dalarna och Stockholm — privat yoga för grupper och individer.
-            </p>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+
+        {/* Section header */}
+        <div className="mb-14 text-center md:text-left max-w-2xl md:mx-0 mx-auto">
+          <span className="inline-block tag-pill bg-dalashala-olive/15 text-dalashala-olive border border-dalashala-olive/30 mb-3">
+            Yoga med Camilla
+          </span>
+          <h2 className="font-cinzel-decorative text-3xl md:text-4xl lg:text-5xl text-dalashala-earth font-bold mb-3 leading-tight">
+            Vad jag erbjuder
+          </h2>
+          <p className="font-eb-garamond text-base md:text-lg text-dalashala-earthSoft leading-relaxed">
+            Baserad i Dalarna och Stockholm — privat yoga för grupper och individer,
+            i stadsmiljö eller mitt i skogen.
+          </p>
+        </div>
+
+        {/* Stockholm */}
+        <div id="stockholm" className="mb-16 scroll-mt-20">
+          <LocationHeader label="Stockholm" accent="sage" />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
+            {stockholmServices.map((s) => (
+              <ServiceCard key={s.href + s.title} {...s} />
+            ))}
           </div>
+        </div>
 
-          {/* Stockholm */}
-          <div id="stockholm" className="mb-12 scroll-mt-20">
-            <div className="flex items-center gap-3 mb-6">
-              <h3 className="font-cinzel text-sm uppercase tracking-widest text-dalashala-mediumBrown font-bold whitespace-nowrap">
-                Stockholm
-              </h3>
-              <div className="flex-1 h-px bg-dalashala-tan/40" />
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-              {stockholmServices.map((s) => (
-                <ServiceCard key={s.href + s.title} {...s} />
-              ))}
-            </div>
+        {/* Dalarna */}
+        <div id="dalarna" className="mb-14 scroll-mt-20">
+          <LocationHeader label="Dalarna" accent="olive" />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
+            {dalarnaServices.map((s) => (
+              <ServiceCard key={s.href + s.title} {...s} />
+            ))}
           </div>
+        </div>
 
-          {/* Dalarna */}
-          <div id="dalarna" className="mb-10 scroll-mt-20">
-            <div className="flex items-center gap-3 mb-6">
-              <h3 className="font-cinzel text-sm uppercase tracking-widest text-dalashala-mediumBrown font-bold whitespace-nowrap">
-                Dalarna
-              </h3>
-              <div className="flex-1 h-px bg-dalashala-tan/40" />
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-              {dalarnaServices.map((s) => (
-                <ServiceCard key={s.href + s.title} {...s} />
-              ))}
-            </div>
-          </div>
-
-          {/* Bottom CTA */}
-          <div className="text-center pt-4">
-            <p className="font-eb-garamond text-lg md:text-xl text-dalashala-mediumBrown mb-4">
-              Ser du inte det du letar efter? Hör av dig — jag skräddarsyr gärna något för just er.
+        {/* Bottom CTA — elevated card with sage wash */}
+        <div className="relative mt-16 rounded-3xl overflow-hidden shadow-card border border-dalashala-meadow/30">
+          <div className="absolute inset-0 bg-gradient-to-br from-dalashala-sage/30 via-dalashala-meadow/20 to-dalashala-creamLight" />
+          <div className="relative p-8 md:p-12 text-center">
+            <h3 className="font-cinzel-decorative text-xl md:text-2xl text-dalashala-earth mb-3 font-bold">
+              Ser du inte det du letar efter?
+            </h3>
+            <p className="font-eb-garamond text-base md:text-lg text-dalashala-earthSoft mb-6 max-w-xl mx-auto">
+              Hör av dig — jag skräddarsyr gärna något för just er grupp, er dag och er plats.
             </p>
             <a
               href="#contact"
-              className="inline-block font-montserrat text-sm px-6 py-3 rounded-full transition-colors"
-              style={{ backgroundColor: '#864927', color: '#f9dec6' }}
+              className="inline-block font-montserrat text-sm bg-earth-gradient text-dalashala-cream px-8 py-3 rounded-full shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300"
             >
               Kontakta mig
             </a>
           </div>
+        </div>
 
       </div>
     </section>

@@ -41,32 +41,51 @@ const Hero = () => {
   }, []);
 
   return (
-    <section 
-      id="hero" 
-      className="relative flex items-center justify-center overflow-hidden pt-36 sm:pt-44 md:pt-48 lg:pt-52 bg-dalashala-beige w-full pb-12 md:pb-16"
+    <section
+      id="hero"
+      className="relative flex items-center justify-center overflow-hidden pt-36 sm:pt-44 md:pt-48 lg:pt-52 bg-cream-soft w-full pb-16 md:pb-24"
     >
+      {/* Decorative soft colour blobs for organic depth */}
+      <div className="blob-sage w-[420px] h-[420px] -top-20 -left-20" aria-hidden="true" />
+      <div className="blob-meadow w-[380px] h-[380px] top-10 -right-24" aria-hidden="true" />
+      <div className="blob-olive w-[300px] h-[300px] bottom-0 left-1/3" aria-hidden="true" />
+
       <div className="container-section relative z-10 text-center w-full px-2 sm:px-3">
-        <div 
-          ref={logoRef} 
+        {/* Sage eyebrow tag */}
+        <div className="flex justify-center mb-4 opacity-0 animate-fade-in" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+          <span className="tag-pill bg-dalashala-sage/25 text-dalashala-earth border border-dalashala-sage/40 backdrop-blur-sm">
+            Certifierad yogalärare · Stockholm & Dalarna
+          </span>
+        </div>
+
+        <div
+          ref={logoRef}
           className="mx-auto w-36 h-36 sm:w-32 sm:h-32 md:w-[12rem] md:h-[10rem] lg:w-[15rem] lg:h-[12rem] xl:w-[17rem] xl:h-[14rem] mb-4 sm:mb-6 opacity-0 -translate-y-4 transition-all duration-1000 ease-out overflow-visible"
         >
-          <img 
-            src="/lovable-uploads/fd83582b-7d97-4a90-a866-d7d3117ebdc4.png" 
-            alt="Yoga with Camilla Logo" 
-            className="w-full h-full object-contain object-center scale-95 sm:scale-90 xl:scale-100"
+          <img
+            src="/lovable-uploads/fd83582b-7d97-4a90-a866-d7d3117ebdc4.png"
+            alt="Yoga with Camilla Logo"
+            className="w-full h-full object-contain object-center scale-95 sm:scale-90 xl:scale-100 drop-shadow-[0_8px_20px_rgba(94,75,59,0.15)]"
           />
         </div>
 
         <p
           ref={brandRef}
-          className="font-cinzel-decorative text-xl sm:text-2xl md:text-3xl lg:text-4xl text-dalashala-darkBrown mb-3 sm:mb-4 opacity-0 -translate-y-4 transition-all duration-1000 ease-out font-bold"
+          className="font-cinzel-decorative text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-dalashala-earth mb-3 sm:mb-4 opacity-0 -translate-y-4 transition-all duration-1000 ease-out font-bold"
         >
           Yoga with Camilla
         </p>
 
+        {/* Sage divider */}
+        <div className="flex justify-center items-center gap-2 mb-4 opacity-60">
+          <span className="h-px w-10 bg-dalashala-olive/50" />
+          <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage" />
+          <span className="h-px w-10 bg-dalashala-olive/50" />
+        </div>
+
         <h1
           ref={headingRef}
-          className="font-eb-garamond text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-dalashala-mediumBrown mb-6 sm:mb-8 opacity-0 -translate-y-4 transition-all duration-1000 ease-out delay-500 px-3 font-normal"
+          className="font-eb-garamond italic text-lg sm:text-xl md:text-2xl lg:text-3xl text-dalashala-olive mb-8 sm:mb-10 opacity-0 -translate-y-4 transition-all duration-1000 ease-out delay-500 px-3 font-normal"
         >
           Privat yoga i Stockholm & Dalarna
         </h1>
@@ -77,18 +96,21 @@ const Hero = () => {
         >
           <a
             href="#stockholm"
-            className="inline-block bg-dalashala-darkBrown text-dalashala-beige px-6 py-2.5 md:px-8 md:py-3 text-base md:text-lg rounded-sm font-medium hover:bg-dalashala-mediumBrown transition-colors duration-300 whitespace-nowrap"
+            className="inline-block bg-earth-gradient text-dalashala-cream px-8 py-3 md:px-10 md:py-3.5 text-base md:text-lg rounded-full font-medium shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap"
           >
             Jag är i Stockholm
           </a>
           <a
             href="#dalarna"
-            className="inline-block border border-dalashala-darkBrown text-dalashala-darkBrown px-6 py-2.5 md:px-8 md:py-3 text-base md:text-lg rounded-sm font-medium hover:bg-dalashala-tan/40 transition-colors duration-300 whitespace-nowrap"
+            className="inline-block border-2 border-dalashala-earth/80 bg-white/50 backdrop-blur-sm text-dalashala-earth px-8 py-3 md:px-10 md:py-3.5 text-base md:text-lg rounded-full font-medium hover:bg-dalashala-sage/20 hover:border-dalashala-olive transition-all duration-300 whitespace-nowrap"
           >
             Jag är i Dalarna
           </a>
         </div>
       </div>
+
+      {/* Bottom fade into next section */}
+      <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-b from-transparent to-dalashala-cream pointer-events-none" aria-hidden="true" />
     </section>
   );
 };
