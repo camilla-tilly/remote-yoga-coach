@@ -26,6 +26,7 @@ import YogaWorkshop from "./pages/services/YogaWorkshop";
 import AdventurePaket from "./pages/services/AdventurePaket";
 import YogaForLopare from "./pages/services/YogaForLopare";
 import YogaDalarnaTurister from "./pages/services/YogaDalarnaTurister";
+import PrivataEvent from "./pages/services/PrivataEvent";
 
 const queryClient = new QueryClient();
 
@@ -62,6 +63,8 @@ const App = () => (
           <Route path="/tjanster/adventure-paket" element={<AdventurePaket />} />
           <Route path="/tjanster/yoga-for-lopare" element={<YogaForLopare />} />
           <Route path="/tjanster/yoga-dalarna-turister" element={<YogaDalarnaTurister />} />
+          <Route path="/tjanster/privata-event" element={<PrivataEvent />} />
+          <Route path="/tjanster/private-events" element={<PrivataEvent />} />
 
           {/* About */}
           <Route path="/om-mig" element={<OmMig />} />

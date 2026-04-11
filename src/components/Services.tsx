@@ -9,6 +9,12 @@ type ServiceCard = {
 
 const stockholmServices: ServiceCard[] = [
   {
+    title: 'Privata Event',
+    description: 'Möhippa, sommaravslutning, teambuilding eller födelsedag — privat yogaupplevelse för gruppen.',
+    href: '/tjanster/privata-event',
+    tag: 'Nytt',
+  },
+  {
     title: 'Möhippa Yoga',
     description: 'Privat yoga för hela gruppen — på SUP eller på land. Ingen erfarenhet krävs.',
     href: '/tjanster/mohippa-yoga',
@@ -52,6 +58,12 @@ const stockholmServices: ServiceCard[] = [
 ];
 
 const dalarnaServices: ServiceCard[] = [
+  {
+    title: 'Privata Event',
+    description: 'Möhippa, sommaravslutning, teamdag eller födelsedag — skräddarsydd dag för gruppen i Dalarna.',
+    href: '/tjanster/privata-event',
+    tag: 'Nytt',
+  },
   {
     title: 'Hönsyoga på Stugan',
     description: 'Yoga på altanen med hönsen runt. Sveriges svar på goat yoga — unikt och helt ostört.',
