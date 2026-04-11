@@ -15,82 +15,61 @@ const YouTubeIcon = ({ size = 18 }: { size?: number }) => (
 const Contact = () => {
   const googleMapsUrl = `https://www.google.com/maps/place/Högosta+43,+786+92+Dala-järna/@60.512699,14.4331426,17z/data=!3m1!4b1!4m6!3m5!1s0x465d58e842ea004f:0xd1d495f3a126010!8m2!3d60.512699!4d14.4331426!16s%2Fg%2F11w7q_9n1z?entry=ttu`;
 
+  const links = [
+    { Icon: Mail, label: 'Email', value: 'hello.yogawithcamilla@gmail.com', href: 'mailto:hello.yogawithcamilla@gmail.com', external: false },
+    { Icon: Instagram, label: 'Instagram', value: '@yoga_with_camilla', href: 'https://www.instagram.com/yoga_with_camilla/', external: true },
+    { Icon: TikTokIcon, label: 'TikTok', value: '@yoga_with_camilla', href: 'https://www.tiktok.com/@yoga_with_camilla', external: true },
+    { Icon: YouTubeIcon, label: 'YouTube', value: '@camilla_yoga', href: 'https://www.youtube.com/@camilla_yoga', external: true },
+  ];
+
   return (
-    <section id="contact" className="py-12 bg-dalashala-beige relative overflow-hidden">
-      <div className="container-section px-3 mx-auto max-w-4xl">
+    <section id="contact" className="relative py-16 md:py-24 overflow-hidden bg-dalashala-cream">
+      {/* Decorative blobs */}
+      <div className="blob-meadow w-[500px] h-[500px] -top-40 -left-40 opacity-50" aria-hidden="true" />
+      <div className="blob-sage w-[400px] h-[400px] -bottom-20 -right-20 opacity-40" aria-hidden="true" />
+
+      <div className="relative container-section px-3 mx-auto max-w-4xl">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-8 animate-when-visible" data-animation="fade-in">
-            <h2 className="heading-lg mb-3 text-xl md:text-2xl lg:text-3xl">Kontakta mig</h2>
-            <p className="text-body max-w-xl mx-auto text-sm md:text-base">
-              Frågor om ett pass, eller redo att boka? Hör av dig.
+          <div className="text-center mb-10 animate-when-visible" data-animation="fade-in">
+            <span className="inline-block tag-pill bg-dalashala-sage/15 text-dalashala-olive border border-dalashala-sage/40 mb-4">
+              Kontakt
+            </span>
+            <h2 className="font-cinzel-decorative text-2xl md:text-3xl lg:text-4xl text-dalashala-earth font-bold mb-3">
+              Hör av dig
+            </h2>
+            <p className="font-eb-garamond text-base md:text-lg text-dalashala-earthSoft max-w-xl mx-auto">
+              Frågor om ett pass, eller redo att boka? Jag svarar personligen inom 24 timmar.
             </p>
           </div>
-          
-          <div className="max-w-md mx-auto animate-when-visible" data-animation="fade-in">
-              <div className="space-y-4 bg-white/40 rounded-lg p-5 shadow-sm border border-dalashala-tan/30">
-                <div className="flex items-center space-x-4">
-                  <div className="bg-dalashala-mediumBrown text-dalashala-beige p-2 rounded-full flex-shrink-0">
-                    <Mail size={18} />
-                  </div>
-                  <div>
-                    <h3 className="font-cinzel text-base font-medium mb-1 text-dalashala-darkBrown">Email</h3>
-                    <a 
-                      href="mailto:hello.yogawithcamilla@gmail.com"
-                      className="text-dalashala-darkBrown/80 hover:text-dalashala-darkBrown transition-colors text-sm"
-                    >
-                      hello.yogawithcamilla@gmail.com
-                    </a>
-                  </div>
-                </div>
 
-                <div className="flex items-center space-x-4">
-                  <div className="bg-dalashala-mediumBrown text-dalashala-beige p-2 rounded-full flex-shrink-0">
-                    <Instagram size={18} />
-                  </div>
-                  <div>
-                    <a 
-                      href="https://www.instagram.com/yoga_with_camilla/" 
-                      className="text-dalashala-darkBrown/80 hover:text-dalashala-darkBrown transition-colors font-medium text-sm"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      @yoga_with_camilla
-                    </a>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4">
-                  <div className="bg-dalashala-mediumBrown text-dalashala-beige p-2 rounded-full flex-shrink-0">
-                    <TikTokIcon size={18} />
-                  </div>
-                  <div>
-                    <a 
-                      href="https://www.tiktok.com/@yoga_with_camilla" 
-                      className="text-dalashala-darkBrown/80 hover:text-dalashala-darkBrown transition-colors font-medium text-sm"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      @yoga_with_camilla
-                    </a>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4">
-                  <div className="bg-dalashala-mediumBrown text-dalashala-beige p-2 rounded-full flex-shrink-0">
-                    <YouTubeIcon size={18} />
-                  </div>
-                  <div>
-                    <a 
-                      href="https://www.youtube.com/@camilla_yoga" 
-                      className="text-dalashala-darkBrown/80 hover:text-dalashala-darkBrown transition-colors font-medium text-sm"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      @camilla_yoga
-                    </a>
-                  </div>
-                </div>
+          <div className="max-w-lg mx-auto animate-when-visible" data-animation="fade-in">
+            <div className="relative rounded-3xl overflow-hidden shadow-card border border-dalashala-meadow/30">
+              <div className="absolute inset-0 bg-gradient-to-br from-white via-dalashala-creamLight to-dalashala-sage/10" />
+              <div className="relative p-6 md:p-8 space-y-3">
+                {links.map(({ Icon, label, value, href, external }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target={external ? '_blank' : undefined}
+                    rel={external ? 'noopener noreferrer' : undefined}
+                    className="group flex items-center space-x-4 p-3 rounded-xl hover:bg-dalashala-sage/10 transition-colors"
+                  >
+                    <div className="bg-earth-gradient text-dalashala-cream p-2.5 rounded-full flex-shrink-0 shadow-soft group-hover:scale-105 transition-transform">
+                      <Icon size={18} />
+                    </div>
+                    <div className="flex-1">
+                      <p className="font-montserrat text-[10px] uppercase tracking-widest text-dalashala-olive mb-0.5">
+                        {label}
+                      </p>
+                      <p className="font-eb-garamond text-sm md:text-base text-dalashala-earth group-hover:text-dalashala-olive transition-colors">
+                        {value}
+                      </p>
+                    </div>
+                    <span className="text-dalashala-olive opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all">→</span>
+                  </a>
+                ))}
               </div>
+            </div>
           </div>
         </div>
       </div>

@@ -109,10 +109,10 @@ const Navbar = () => {
     <>
       <nav
         className={cn(
-          'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out py-2 w-full',
+          'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out py-3 w-full',
           isScrolled
-            ? 'bg-dalashala-beige/95 backdrop-blur-sm shadow-sm'
-            : 'bg-transparent'
+            ? 'bg-dalashala-cream/90 backdrop-blur-md shadow-soft border-b border-dalashala-meadow/30'
+            : 'bg-gradient-to-b from-dalashala-cream/60 to-transparent backdrop-blur-sm'
         )}
       >
         <div className="w-full px-3 sm:px-4 lg:px-6 xl:px-8 mx-auto">
@@ -139,11 +139,13 @@ const Navbar = () => {
                   />
                 </button>
                 {servicesOpen && (
-                  <div className="absolute top-full right-0 mt-2 bg-dalashala-beige border border-dalashala-tan/30 rounded-xl shadow-lg overflow-hidden z-50" style={{ width: '480px' }}>
-                    <div className="flex">
-                      {locationGroups.map((group) => (
-                        <div key={group.location} className="flex-1 border-r last:border-r-0 border-dalashala-tan/20">
-                          <p className="px-4 pt-3 pb-1 font-cinzel text-xs uppercase tracking-widest text-dalashala-mediumBrown font-bold">
+                  <div className="absolute top-full right-0 mt-3 bg-dalashala-creamLight border border-dalashala-meadow/40 rounded-2xl shadow-card overflow-hidden z-50" style={{ width: '480px' }}>
+                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-meadow to-dalashala-olive" />
+                    <div className="flex pt-1">
+                      {locationGroups.map((group, idx) => (
+                        <div key={group.location} className={cn('flex-1', idx === 0 && 'border-r border-dalashala-meadow/25')}>
+                          <p className="px-4 pt-4 pb-2 font-cinzel text-[10px] uppercase tracking-[0.2em] text-dalashala-olive font-bold flex items-center gap-2">
+                            <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage" />
                             {group.location}
                           </p>
                           {group.links.map((link) => (
@@ -151,7 +153,7 @@ const Navbar = () => {
                               key={group.location + link.href + link.name}
                               to={link.href}
                               onClick={() => setServicesOpen(false)}
-                              className="block px-4 py-1.5 font-eb-garamond text-sm text-dalashala-darkBrown hover:bg-dalashala-tan/30 transition-colors"
+                              className="block px-4 py-2 font-eb-garamond text-sm text-dalashala-earth hover:bg-dalashala-sage/15 hover:text-dalashala-olive transition-colors"
                             >
                               {link.name}
                             </Link>
