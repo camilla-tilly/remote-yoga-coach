@@ -1,0 +1,23 @@
+{
+  "last_updated": "2026-04-09",
+  "top_clusters": [],
+  "best_title_formats": [
+    {"format": "Pris/kostnadsfragor + arstal ('Vad kostar X?')", "avg_ctr": "Hog CTR generellt", "example": "Vad kostar yoga i Stockholm 2026?"},
+    {"format": "Konkret resultat i titel", "avg_ctr": "Hog CTR", "example": "Yoga for ryggont: Sa blir du smarkfri pa 4 veckor"},
+    {"format": "Nybörjarguide med lofte", "avg_ctr": "Medel CTR", "example": "Borja med yoga: Din forsta klass steg for steg"},
+    {"format": "Listicle/jamforelse", "avg_ctr": "Medel CTR", "example": "Vinyasa vs Yin Yoga: Vilken passar dig?"}
+  ],
+  "worst_title_formats": [
+    {"format": "'Komplett guide' i rubrik", "avg_ctr": "Lag CTR", "example": "Yoga: Komplett guide for nyborjare 2026", "reason": "Generiskt, ger ingen nyfikenhet"},
+    {"format": "For bred titel", "avg_ctr": "Lag CTR", "example": "Allt om yoga", "reason": "Svarar inte pa nagon specifik fraga"}
+  ],
+  "keywords_to_double_down": [],
+  "keywords_to_avoid": [],
+  "optimization_results": [],
+  "key_insights": [
+    "STARTA MED PRIS-CONTENT: 'Vad kostar yogapass i Stockholm?' etc. Prisinnehall rankar snabbt och far hog CTR.",
+    "LOKALT FORST: Stockholm/stad-keywords ger snabbare resultat an generiska yoga-keywords.",
+    "JAMFORELSER KONVERTERAR: 'Vinyasa vs Yin' etc. hjalper beslutsfattande och driver bokning.",
+    "NYBORJARE AR STORSTA PUBLIKEN: 'yoga for nyborjare' och liknande longtails har stor volym och lag konkurrens."
+  ]
+}

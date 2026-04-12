@@ -1,0 +1,18 @@
+{
+  "description": "Content-kalender for bloggen. Agenten uppdaterar efter varje publicering/planering.",
+  "last_updated": "2026-04-09",
+  "articles": [
+    {
+      "title": "[FYLL I: Forsta artikel baserad pa keyword research]",
+      "slug": "[slug]",
+      "target_keyword": "[keyword]",
+      "cluster": "[cluster-namn]",
+      "priority": "A",
+      "status": "planerad",
+      "publish_date": null,
+      "data_reason": "[Varfor denna artikel prioriteras]",
+      "performance_30d": null
+    }
+  ],
+  "published_archive": []
+}

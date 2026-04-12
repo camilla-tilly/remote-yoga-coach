@@ -1,0 +1,27 @@
+{
+  "date": null,
+  "completed": false,
+  "phases": {
+    "morning": {
+      "completed": false,
+      "cycles_used": 0,
+      "sync_status": {
+        "sitemap_ok": false,
+        "llms_ok": false,
+        "blog_index_ok": false,
+        "calendar_ok": false,
+        "note": "Forsta korning: kolla att sitemap, blog-index och content-kalender matchar."
+      },
+      "issues_found": [],
+      "issues_fixed": [],
+      "indexing_requested": [],
+      "performance_data_collected": false,
+      "priorities_for_today": []
+    }
+  },
+  "total_cycles_today": 0,
+  "total_actions_today": 0,
+  "total_commits_today": 0,
+  "key_findings": {},
+  "tomorrows_focus": ""
+}

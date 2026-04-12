@@ -50,9 +50,9 @@ const dalarnaServices: ServiceCard[] = [
     href: '/tjanster/privata-event',
   },
   {
-    title: 'Yoga in English',
-    description: 'Private yoga classes in English — at a forest cabin in Dalarna. For visitors and expats.',
-    href: '/tjanster/yoga-dalarna-turister',
+    title: 'Privatlektioner',
+    description: 'En-till-en yoga — i Dalarna, online via Zoom, eller för löpare. Alla lektioner på engelska.',
+    href: '/tjanster/privatlektioner',
     tag: 'English',
   },
 ];

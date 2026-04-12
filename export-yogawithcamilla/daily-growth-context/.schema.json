@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "definitions": {
+    "performance_log": {
+      "description": "Performance-data fran Google Search Console, sparas som logs/performance-YYYY-MM-DD.json",
+      "type": "object",
+      "properties": {
+        "date": {"type": "string", "format": "date"},
+        "period": {"type": "string", "description": "Tidsperiod for datan, t.ex. 'Last 28 days'"},
+        "summary": {
+          "type": "object",
+          "properties": {
+            "total_clicks": {"type": "integer"},
+            "total_impressions": {"type": "integer"},
+            "avg_ctr": {"type": "string"},
+            "avg_position": {"type": "number"},
+            "pages_ranking": {"type": "integer"},
+            "unique_queries": {"type": "integer"}
+          }
+        },
+        "articles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": {"type": "string"},
+              "title": {"type": "string"},
+              "clicks_28d": {"type": "integer"},
+              "impressions_28d": {"type": "integer"},
+              "ctr": {"type": "string"},
+              "avg_position": {"type": "number"},
+              "top_queries": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "query": {"type": "string"},
+                    "clicks": {"type": "integer"},
+                    "impressions": {"type": "integer"},
+                    "position": {"type": "number"}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "keyword_opportunities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "query": {"type": "string"},
+              "clicks_28d": {"type": "integer"},
+              "impressions_28d": {"type": "integer"},
+              "ctr": {"type": "string"},
+              "avg_position": {"type": "number"},
+              "has_dedicated_article": {"type": "boolean"},
+              "opportunity_type": {"type": "string", "enum": ["content_gap", "title_rewrite", "position_boost", "new_cluster"]}
+            }
+          }
+        }
+      }
+    },
+    "indexing_log": {
+      "description": "Indexeringsstatus fran Google Search Console, sparas som logs/indexing-YYYY-MM-DD.json",
+      "type": "object",
+      "properties": {
+        "date": {"type": "string", "format": "date"},
+        "articles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": {"type": "string"},
+              "indexed": {"type": "boolean"},
+              "last_crawl": {"type": ["string", "null"]},
+              "coverage_status": {"type": "string"},
+              "indexing_requested": {"type": "boolean"},
+              "indexing_requested_date": {"type": ["string", "null"]}
+            }
+          }
+        }
+      }
+    }
+  }
+}

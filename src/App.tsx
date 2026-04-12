@@ -17,7 +17,6 @@ import MiniRetreat from "./pages/services/MiniRetreat";
 import SUPYoga from "./pages/services/SUPYoga";
 import SUPYogaVillkor from "./pages/services/SUPYogaVillkor";
 import HonsYoga from "./pages/services/HonsYoga";
-import YogaDalarnaTurister from "./pages/services/YogaDalarnaTurister";
 import PrivataEvent from "./pages/services/PrivataEvent";
 
 const queryClient = new QueryClient();
@@ -58,7 +57,7 @@ const App = () => (
           <Route path="/tjanster/sup-yoga" element={<SUPYoga />} />
           <Route path="/tjanster/sup-yoga/villkor" element={<SUPYogaVillkor />} />
           <Route path="/tjanster/honsyoga" element={<HonsYoga />} />
-          <Route path="/tjanster/yoga-dalarna-turister" element={<YogaDalarnaTurister />} />
+          <Route path="/tjanster/yoga-dalarna-turister" element={<Navigate to="/tjanster/privatlektioner" replace />} />
           <Route path="/tjanster/privata-event" element={<PrivataEvent />} />
           <Route path="/tjanster/private-events" element={<PrivataEvent />} />
 

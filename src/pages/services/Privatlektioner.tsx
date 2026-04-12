@@ -12,8 +12,8 @@ const relatedServices = [
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Privata Yogalektioner, Yoga för Löpare & Online Yoga",
-  "description": "Privata yogalektioner i Stockholm och Dalarna. Specialisering i yoga för löpare. Online sessioner via Zoom på engelska. En-till-en med certifierad lärare.",
+  "name": "Privata Yogalektioner, Yoga för Löpare & Yoga in English",
+  "description": "Privata yogalektioner i Stockholm och Dalarna. Specialisering i yoga för löpare. Online sessioner via Zoom på engelska. Forest cabin yoga i Dalarna för besökare och expats.",
   "provider": {
     "@type": "LocalBusiness",
     "name": "Yoga med Camilla",
@@ -26,9 +26,9 @@ const structuredData = {
 const Privatlektioner = () => {
   const { hash } = useLocation();
 
-  // Set html lang="en" when #online section is targeted
+  // Set html lang="en" when English sections are targeted
   useEffect(() => {
-    if (hash === '#online') {
+    if (hash === '#online' || hash === '#english') {
       const prev = document.documentElement.lang || 'sv';
       document.documentElement.lang = 'en';
       return () => { document.documentElement.lang = prev; };
@@ -37,20 +37,20 @@ const Privatlektioner = () => {
 
   return (
   <ServicePageLayout
-    seoTitle="Privata Yogalektioner, Yoga för Löpare & Online Yoga | Yoga med Camilla"
-    seoDescription="Privata yogalektioner i Stockholm och Dalarna. Specialisering i yoga för löpare. Online sessioner via Zoom på engelska — var du än befinner dig."
+    seoTitle="Privata Yogalektioner, Yoga för Löpare & Yoga in English | Yoga med Camilla"
+    seoDescription="Privata yogalektioner i Stockholm och Dalarna. Yoga för löpare. Online via Zoom. English-speaking yoga at a forest cabin in Dalarna for visitors and expats."
     canonical="https://yogawithcamilla.se/tjanster/privatlektioner"
     ogImage="https://yogawithcamilla.se/images/IMG_5788.JPG"
     breadcrumbLabel="Privatlektioner"
-    heroTag="Privat Yoga — Live & Online"
+    heroTag="Privat Yoga — Live, Online & in English"
     heroHeading="Privata Yogalektioner"
-    heroSubtitle="En-till-en yoga med full fokus på dig. Din kropp, dina mål, ditt tempo. I Stockholm, Dalarna eller online via Zoom."
+    heroSubtitle="En-till-en yoga med full fokus på dig. I Stockholm, Dalarna eller online via Zoom. Alla lektioner hålls på engelska."
     heroImage="/images/IMG_5788.JPG"
     heroImageAlt="Privat yogalektion med personlig instruktion"
     introHeading="Yoga anpassad helt för dig"
     introParagraphs={[
       "I en grupplektion gäller ett gemensamt tempo. I en privat lektion gäller ditt. Jag fokuserar på det du vill utveckla — rörlighet, styrka, andning, meditation eller återhämtning.",
-      "Privatlektioner i Stockholm (yogasal eller lämplig lokal), i Dalarna (altanen eller inomhus) eller online via Zoom på engelska — var du än befinner dig i världen."
+      "Privatlektioner i Stockholm (yogasal eller lämplig lokal), i Dalarna (på altanen vid stugan i skogen) eller online via Zoom — var du än befinner dig i världen. Alla lektioner hålls på engelska."
     ]}
     highlights={[
       {
@@ -66,8 +66,8 @@ const Privatlektioner = () => {
         text: "Jag springer själv ultramarathon och bygger yogan specifikt runt det löpare behöver — höfter, hälsenor, ländrygg och symmetri. Privat session eller för din löparklubb."
       },
       {
-        heading: "Återhämtning & rörlighet",
-        text: "Löpning, gym, kontorsjobb — yoga som komplement. Fokus på rörlighet, balans och återhämtning."
+        heading: "Forest Cabin Yoga — Dalarna",
+        text: "Yoga på altanen vid stugan i skogen, omgiven av svensk natur. Perfekt för besökare, turister och expats som söker en lugn, unik upplevelse. May–September utomhus, året runt inomhus."
       },
       {
         heading: "Online via Zoom",
@@ -113,12 +113,13 @@ const Privatlektioner = () => {
     detailsHeading="Praktisk information"
     detailsParagraphs={[
       "60 eller 90 minuter. Enstaka lektion, paket om 5 eller 10, eller regelbunden veckopraktik.",
-      "Stockholm: yogasal eller lämplig plats. Dalarna: altanen eller inomhus i stugan. Online: via Zoom, du behöver en matta och golvyta.",
+      "Stockholm: yogasal eller lämplig plats. Dalarna: altanen vid stugan i Dala-Järna (ca 3,5 timmar från Stockholm). Online: via Zoom, du behöver en matta och golvyta.",
+      "Forest cabin yoga i Dalarna passar utmärkt för besökare och turister — kombinera gärna med en skogsvandring och fika. Grupper upp till 6 personer. Utomhus maj–september, inomhus året runt.",
       "För online-lektioner erbjuder jag ett kostnadsfritt introduktionssamtal (15 min) där vi går igenom dina mål och sätter upp ett upplägg.",
       "Maila hello.yogawithcamilla@gmail.com för bokning och priser."
     ]}
     ctaHeading="Starta din personliga yogapraktik"
-    ctaText="Maila mig med dina mål och önskemål — så hittar jag ett upplägg som fungerar för dig, oavsett om du vill träna live eller online."
+    ctaText="Maila mig med dina mål och önskemål — så hittar jag ett upplägg som fungerar för dig, oavsett om du vill träna live, i Dalarna eller online."
     structuredData={structuredData}
     relatedServices={relatedServices}
     faq={[
@@ -139,13 +140,17 @@ const Privatlektioner = () => {
         answer: "Via Zoom, på engelska. Du behöver en matta, golvyta och internetuppkoppling. Jag erbjuder ett kostnadsfritt 15-min introduktionssamtal först."
       },
       {
-        question: "Vilka tidszoner erbjuder ni online?",
-        answer: "Alla. Jag erbjuder morgon, lunch och kvällstider som funkar för europeiska och internationella tidszoner."
+        question: "How do I get to the cabin in Dalarna?",
+        answer: "The cabin is in Dala-Järna — about 3.5 hours by car or train from Stockholm. The nearest station is Vansbro. I can help coordinate logistics when you book."
+      },
+      {
+        question: "What's the best time of year to visit Dalarna?",
+        answer: "May to September is ideal for outdoor yoga on the deck. Indoor private bookings are available year-round."
       }
     ]}
     englishKeywords={{
-      heading: "Private Yoga, Yoga for Runners & Online Classes in English",
-      text: "Private one-on-one yoga sessions in Stockholm and Dalarna, Sweden. Specialising in yoga for runners — recovery, mobility and injury prevention, led by a 500-hour certified teacher and ultramarathon runner. Online sessions available worldwide via Zoom in English — for expats, runners, and anyone looking for personalised yoga. Free 15-minute intro call. Email hello.yogawithcamilla@gmail.com to book."
+      heading: "Private Yoga in English — Stockholm, Dalarna & Online",
+      text: "Private one-on-one yoga sessions in Stockholm and Dalarna, Sweden. Forest cabin yoga on a wooden deck surrounded by Swedish pine forest — perfect for visitors, tourists, and expats looking for yoga in English. Specialising in yoga for runners — recovery, mobility and injury prevention, led by a 500-hour certified teacher and ultramarathon runner originally from Australia. Online sessions available worldwide via Zoom. Combine forest yoga with a guided nature walk and fika (Swedish coffee break) for a full day experience. Groups up to 6 people, all equipment included. Free 15-minute intro call. Email hello.yogawithcamilla@gmail.com to book."
     }}
   />
   );

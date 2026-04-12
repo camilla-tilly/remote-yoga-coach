@@ -3,7 +3,7 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 const relatedServices = [
   { label: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
   { label: 'Privata Event', href: '/tjanster/privata-event' },
-  { label: 'Yoga in English', href: '/tjanster/yoga-dalarna-turister' },
+  { label: 'Privatlektioner', href: '/tjanster/privatlektioner' },
   { label: 'Privatlektioner', href: '/tjanster/privatlektioner' },
 ];
 

@@ -1,0 +1,42 @@
+{
+  "domain": "yogawithcamilla.se",
+  "www": "www.yogawithcamilla.se",
+  "business": "Yogastudio och online-yoga for privatpersoner och foretag i Sverige",
+  "team": {
+    "founder": "Camilla [Efternamn]"
+  },
+  "differentiators": ["[Camillas unika metod/approach]", "[Certifieringar]", "[Online + fysiskt]"],
+  "tools_always_together": [],
+  "priority_pages": {
+    "description": "Kommersiella karnsidor. All blogg-SEO ska funnelera hit.",
+    "pages": [
+      { "url": "/", "name": "Startsida", "goal": "brand awareness + CTA till schema/bokning" },
+      { "url": "/klasser", "name": "Klassschema", "goal": "konvertering: boka yogapass" },
+      { "url": "/online", "name": "Online-yoga", "goal": "konvertering: prenumeration/drop-in online" },
+      { "url": "/foretag", "name": "Foretagsyoga", "goal": "fanga B2B-sokningar" },
+      { "url": "/om-camilla", "name": "Om Camilla", "goal": "bygga fortroende" }
+    ]
+  },
+  "service_urls": {
+    "klasser": "/klasser",
+    "schema": "/schema",
+    "online": "/online",
+    "foretag": "/foretag",
+    "retreat": "/retreat",
+    "privatlektioner": "/privatlektioner"
+  },
+  "content_paths": {
+    "blog_source": "content/blog/",
+    "blog_index": "public/docs/blog/index.md",
+    "sitemap": "public/sitemap.xml",
+    "llms_txt": "public/llms.txt"
+  },
+  "navigation": {
+    "search_console": "https://search.google.com/search-console",
+    "performance": "Performance -> Search results -> filtrera pa yogawithcamilla.se",
+    "url_inspection": "URL Inspection -> klistra in URL -> Enter",
+    "request_indexing": "URL Inspection -> 'Request Indexing' knappen",
+    "coverage": "Pages -> filtrera pa problem-typer",
+    "sitemaps": "Sitemaps -> se inlamnade sitemaps"
+  }
+}

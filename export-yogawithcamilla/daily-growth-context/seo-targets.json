@@ -1,0 +1,58 @@
+{
+  "last_updated": "2026-04-09",
+  "source": ".claude/context/seo-strategy.md",
+  "notes": "ANPASSA KEYWORDS: Byt ut platshallar-keywords nedan med riktiga nyckelord fran keyword research (Google Keyword Planner, Ahrefs, eller liknande).",
+  "tiers": {
+    "tier1_core": {
+      "description": "Hogsta prioritet. Homepage, hero sections, primara sidor.",
+      "keywords": [
+        "yoga stockholm",
+        "yogaklass",
+        "yoga for nyborjare",
+        "yoga online",
+        "yogastudio"
+      ]
+    },
+    "tier2_services": {
+      "description": "Medel prioritet. Tjansebeskrivningar och specifika erbjudanden.",
+      "keywords": [
+        "foretagsyoga",
+        "foretagsyoga stockholm",
+        "yoga retreat sverige",
+        "privat yogalektion",
+        "vinyasa yoga",
+        "yin yoga",
+        "hatha yoga",
+        "yoga gravid",
+        "prenatalyoga",
+        "yoga privatlektioner stockholm",
+        "yoga for foretag",
+        "yoga teambuilding"
+      ]
+    },
+    "tier3_specialized": {
+      "description": "Nisch. Specifika sektioner, blogginnehall och longtail.",
+      "keywords": [
+        "yogaovningar hemma",
+        "yoga for ryggont",
+        "yoga stresshantering",
+        "yoga andning",
+        "meditation stockholm",
+        "mindfulness yoga",
+        "yoga for idrottare",
+        "yoga stretching"
+      ]
+    }
+  },
+  "breakout_keywords": [
+    {"keyword": "[FYLL I fran keyword research]", "status": "breakout", "competition": "none", "priority": "A"},
+    {"keyword": "[FYLL I fran keyword research]", "status": "rising", "competition": "low", "priority": "A"}
+  ],
+  "clusters": [
+    {"name": "yoga stockholm", "keywords": ["yoga stockholm", "yogaklass stockholm", "yogastudio stockholm", "yoga city stockholm"]},
+    {"name": "yoga online", "keywords": ["yoga online", "yoga hemma", "yoga video", "online yogaklass"]},
+    {"name": "foretagsyoga", "keywords": ["foretagsyoga", "foretagsyoga stockholm", "yoga for foretag", "yoga teambuilding"]},
+    {"name": "yoga typer", "keywords": ["vinyasa yoga", "yin yoga", "hatha yoga", "power yoga", "restorative yoga"]},
+    {"name": "yoga nyborjare", "keywords": ["yoga for nyborjare", "borja med yoga", "yoga tips nyborjare", "forsta yogaklassen"]}
+  ]
+}
