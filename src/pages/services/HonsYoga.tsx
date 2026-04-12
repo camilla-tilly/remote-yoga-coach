@@ -1,9 +1,9 @@
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
-  { label: 'Mini Retreat Dalarna', href: '/tjanster/mini-retreat' },
-  { label: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
-  { label: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
+  { label: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
+  { label: 'Privata Event', href: '/tjanster/privata-event' },
+  { label: 'Yoga för Turister', href: '/tjanster/yoga-dalarna-turister' },
   { label: 'Privatlektioner', href: '/tjanster/privatlektioner' },
 ];
 

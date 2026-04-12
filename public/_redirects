@@ -1,1 +1,12 @@
+# Consolidated service page redirects (301)
+/tjanster/mohippa-yoga        /tjanster/privata-event     301
+/tjanster/brollopsyoga        /tjanster/privata-event     301
+/tjanster/fodelsedag-yoga     /tjanster/privata-event     301
+/tjanster/yoga-workshop       /tjanster/foretagsyoga      301
+/tjanster/yoga-for-lopare     /tjanster/privatlektioner   301
+/tjanster/online-yoga         /tjanster/privatlektioner   301
+/tjanster/adventure-paket     /tjanster/mini-retreat      301
+/tjanster/trail-run-yoga      /tjanster/mini-retreat      301
+
+# SPA fallback (must be last)
 /*    /index.html   200

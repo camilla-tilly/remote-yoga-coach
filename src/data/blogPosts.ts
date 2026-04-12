@@ -27,8 +27,8 @@ export const blogPosts: BlogPost[] = [
     readingTime: '5 min',
     category: 'Events & Möhippa',
     excerpt: 'Trött på samma möhippa-koncept? Yoga är det oväntade valet som hela gruppen faktiskt uppskattar.',
-    relatedServiceHref: '/tjanster/mohippa-yoga',
-    relatedServiceLabel: 'Boka möhippa-yoga',
+    relatedServiceHref: '/tjanster/privata-event',
+    relatedServiceLabel: 'Boka privat event med yoga',
     relatedPosts: [
       { slug: 'mohippa-dalarna-aktiviteter', label: 'Möhippa i Dalarna, 7 aktiviteter' },
       { slug: 'vad-kostar-privat-yoga-stockholm', label: 'Vad kostar privat yoga?' },
@@ -244,8 +244,8 @@ export const blogPosts: BlogPost[] = [
     readingTime: '4 min',
     category: 'Bröllop & Events',
     excerpt: 'Fler brudpar väljer yoga som en del av bröllopsveckan. Inkluderande, lugnt, och gästerna pratar faktiskt om det efteråt.',
-    relatedServiceHref: '/tjanster/brollopsyoga',
-    relatedServiceLabel: 'Läs mer om bröllopsyoga',
+    relatedServiceHref: '/tjanster/privata-event',
+    relatedServiceLabel: 'Boka privat event med yoga',
     content: [
       {
         type: 'paragraph',
@@ -382,8 +382,8 @@ export const blogPosts: BlogPost[] = [
     readingTime: '4 min',
     category: 'Yoga & Natur',
     excerpt: 'Dalarnas skog och luft är mer än en bakgrund. De är en del av praktiken.',
-    relatedServiceHref: '/tjanster/adventure-paket',
-    relatedServiceLabel: 'Se äventyrpaket i Dalarna',
+    relatedServiceHref: '/tjanster/mini-retreat',
+    relatedServiceLabel: 'Se retreat & upplevelser i Dalarna',
     content: [
       {
         type: 'paragraph',
@@ -534,8 +534,8 @@ export const blogPosts: BlogPost[] = [
     readingTime: '6 min',
     category: 'Events & Möhippa',
     excerpt: 'Dalarna är perfekt för möhippor som vill bort från stan. 7 aktiviteter som gör helgen minnesvärd som faktiskt funkar.',
-    relatedServiceHref: '/tjanster/mohippa-yoga',
-    relatedServiceLabel: 'Boka möhippa-yoga',
+    relatedServiceHref: '/tjanster/privata-event',
+    relatedServiceLabel: 'Boka privat event med yoga',
     relatedPosts: [
       { slug: 'yoga-mohippa-dalarna', label: 'Yoga möhippa i Dalarna' },
       { slug: 'yoga-retreat-dalarna-vs-stockholm', label: 'Retreat Dalarna vs Stockholm' },

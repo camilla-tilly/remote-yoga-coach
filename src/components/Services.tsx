@@ -10,60 +10,28 @@ type ServiceCard = {
 const stockholmServices: ServiceCard[] = [
   {
     title: 'Privata Event',
-    description: 'Möhippa, sommaravslutning, teambuilding eller födelsedag — privat yogaupplevelse för gruppen.',
+    description: 'Möhippa, bröllop, födelsedag eller sommaravslutning — privat yoga för gruppen.',
     href: '/tjanster/privata-event',
-    tag: 'Nytt',
-  },
-  {
-    title: 'Möhippa Yoga',
-    description: 'Privat yoga för hela gruppen — på SUP eller på land. Ingen erfarenhet krävs.',
-    href: '/tjanster/mohippa-yoga',
     tag: 'Populärt',
   },
   {
-    title: 'Företags- & Konferensyoga',
-    description: 'Yoga för team och konferenser i Stockholm. Anpassat för er grupp, alla nivåer.',
+    title: 'Företagsyoga & Workshops',
+    description: 'Konferenser, kickoffs, teambuilding och tematiska workshops. Alla nivåer.',
     href: '/tjanster/foretagsyoga',
   },
   {
     title: 'SUP Yoga Stockholm',
-    description: 'Yoga på brädan på Sicklasjön. Perfekt för team, födelsedag eller en sommardag.',
+    description: 'Yoga på brädan på Sicklasjön. Perfekt för team, möhippa eller en sommardag.',
     href: '/tjanster/sup-yoga',
   },
   {
-    title: 'Trail Run + Yoga',
-    description: 'Guidat trail run i Nacka Naturreservat + återhämtningsyoga. En aktiv heldagsupplevelse.',
-    href: '/tjanster/trail-run-yoga',
-  },
-  {
     title: 'Privatlektioner',
-    description: 'En-till-en yoga i ditt tempo — anpassad efter dina mål. I Stockholm eller online.',
+    description: 'En-till-en yoga — live i Stockholm, specialisering för löpare, eller online via Zoom.',
     href: '/tjanster/privatlektioner',
-  },
-  {
-    title: 'Yoga för Löpare',
-    description: 'Återhämtning, rörlighet och skadeförebyggande yoga — byggd specifikt för dig som springer.',
-    href: '/tjanster/yoga-for-lopare',
-  },
-  {
-    title: 'Födelsedag Yoga',
-    description: 'En annorlunda födelsedagsaktivitet — privat yogaklass i hemmet, parken eller på hotellet.',
-    href: '/tjanster/fodelsedag-yoga',
-  },
-  {
-    title: 'Yoga Workshop',
-    description: 'Tematiska halvdags- och heldagsworkshops — breathwork, yin, återhämtning och mer.',
-    href: '/tjanster/yoga-workshop',
   },
 ];
 
 const dalarnaServices: ServiceCard[] = [
-  {
-    title: 'Privata Event',
-    description: 'Möhippa, sommaravslutning, teamdag eller födelsedag — skräddarsydd dag för gruppen i Dalarna.',
-    href: '/tjanster/privata-event',
-    tag: 'Nytt',
-  },
   {
     title: 'Hönsyoga på Stugan',
     description: 'Yoga på altanen med hönsen runt. Sveriges svar på goat yoga — unikt och helt ostört.',
@@ -71,30 +39,15 @@ const dalarnaServices: ServiceCard[] = [
     tag: 'Unikt',
   },
   {
-    title: 'Mini Retreat',
-    description: 'En dag i Dalarnas natur — yoga, vandring eller löpning, fika och mindfulness. Skräddarsytt för din grupp.',
+    title: 'Mini Retreat & Upplevelser',
+    description: 'Retreat, adventure-paket eller trail run + yoga. Dag, heldag eller weekend i naturen.',
     href: '/tjanster/mini-retreat',
     tag: 'Populärt',
   },
   {
-    title: 'Möhippa Yoga',
-    description: 'Privat yoga för möhippan — perfekt om ni hyr stuga i Dalarna. På altanen, i skogen eller vid sjön.',
-    href: '/tjanster/mohippa-yoga',
-  },
-  {
-    title: 'Företagsyoga Dalarna',
-    description: 'Yoga för team och konferenser i Falun, Borlänge och övriga Dalarna. Alla nivåer.',
-    href: '/tjanster/foretagsyoga',
-  },
-  {
-    title: 'Bröllopsyoga',
-    description: 'Yoga som en del av bröllopsveckan — morgonen av, kvällen innan eller dagen efter.',
-    href: '/tjanster/brollopsyoga',
-  },
-  {
-    title: 'Adventure Paket',
-    description: 'Vandring, trail run, SUP och yoga i Dalarnas natur. Halvdag, heldag eller weekend.',
-    href: '/tjanster/adventure-paket',
+    title: 'Privata Event',
+    description: 'Möhippa, bröllop eller firande — skräddarsydd dag för gruppen på stugan i Dalarna.',
+    href: '/tjanster/privata-event',
   },
   {
     title: 'Yoga för Turister',
@@ -186,7 +139,7 @@ const Services = () => {
         {/* Stockholm */}
         <div id="stockholm" className="mb-16 scroll-mt-20">
           <LocationHeader label="Stockholm" accent="sage" />
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
             {stockholmServices.map((s) => (
               <ServiceCard key={s.href + s.title} {...s} />
             ))}
@@ -196,7 +149,7 @@ const Services = () => {
         {/* Dalarna */}
         <div id="dalarna" className="mb-14 scroll-mt-20">
           <LocationHeader label="Dalarna" accent="olive" />
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
             {dalarnaServices.map((s) => (
               <ServiceCard key={s.href + s.title} {...s} />
             ))}

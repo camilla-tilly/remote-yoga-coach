@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -11,28 +11,32 @@ import OmMig from "./pages/OmMig";
 import Blog from "./pages/Blog";
 import BlogPostPage from "./pages/BlogPostPage";
 
-import MohenNatt from "./pages/services/MohenNatt";
-import BrollopYoga from "./pages/services/BrollopYoga";
 import ForetagsYoga from "./pages/services/ForetagsYoga";
 import Privatlektioner from "./pages/services/Privatlektioner";
 import MiniRetreat from "./pages/services/MiniRetreat";
 import SUPYoga from "./pages/services/SUPYoga";
 import SUPYogaVillkor from "./pages/services/SUPYogaVillkor";
-import OnlineYoga from "./pages/services/OnlineYoga";
-import TrailRunYoga from "./pages/services/TrailRunYoga";
 import HonsYoga from "./pages/services/HonsYoga";
-import FodelsedagYoga from "./pages/services/FodelsedagYoga";
-import YogaWorkshop from "./pages/services/YogaWorkshop";
-import AdventurePaket from "./pages/services/AdventurePaket";
-import YogaForLopare from "./pages/services/YogaForLopare";
 import YogaDalarnaTurister from "./pages/services/YogaDalarnaTurister";
 import PrivataEvent from "./pages/services/PrivataEvent";
 
 const queryClient = new QueryClient();
 
 function ScrollToTopOnNav() {
-  const { pathname } = useLocation();
-  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (hash) {
+      // Allow the page to render, then scroll to the hash target
+      setTimeout(() => {
+        const el = document.getElementById(hash.slice(1));
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
   return null;
 }
 
@@ -47,24 +51,26 @@ const App = () => (
           {/* Home */}
           <Route path="/" element={<Index />} />
 
-          {/* Service Pages */}
-          <Route path="/tjanster/mohippa-yoga" element={<MohenNatt />} />
-          <Route path="/tjanster/brollopsyoga" element={<BrollopYoga />} />
+          {/* Active Service Pages */}
           <Route path="/tjanster/foretagsyoga" element={<ForetagsYoga />} />
           <Route path="/tjanster/privatlektioner" element={<Privatlektioner />} />
           <Route path="/tjanster/mini-retreat" element={<MiniRetreat />} />
           <Route path="/tjanster/sup-yoga" element={<SUPYoga />} />
           <Route path="/tjanster/sup-yoga/villkor" element={<SUPYogaVillkor />} />
-          <Route path="/tjanster/online-yoga" element={<OnlineYoga />} />
-          <Route path="/tjanster/trail-run-yoga" element={<TrailRunYoga />} />
           <Route path="/tjanster/honsyoga" element={<HonsYoga />} />
-          <Route path="/tjanster/fodelsedag-yoga" element={<FodelsedagYoga />} />
-          <Route path="/tjanster/yoga-workshop" element={<YogaWorkshop />} />
-          <Route path="/tjanster/adventure-paket" element={<AdventurePaket />} />
-          <Route path="/tjanster/yoga-for-lopare" element={<YogaForLopare />} />
           <Route path="/tjanster/yoga-dalarna-turister" element={<YogaDalarnaTurister />} />
           <Route path="/tjanster/privata-event" element={<PrivataEvent />} />
           <Route path="/tjanster/private-events" element={<PrivataEvent />} />
+
+          {/* Redirects — old service pages merged into consolidated pages */}
+          <Route path="/tjanster/mohippa-yoga" element={<Navigate to="/tjanster/privata-event" replace />} />
+          <Route path="/tjanster/brollopsyoga" element={<Navigate to="/tjanster/privata-event" replace />} />
+          <Route path="/tjanster/fodelsedag-yoga" element={<Navigate to="/tjanster/privata-event" replace />} />
+          <Route path="/tjanster/yoga-workshop" element={<Navigate to="/tjanster/foretagsyoga" replace />} />
+          <Route path="/tjanster/yoga-for-lopare" element={<Navigate to="/tjanster/privatlektioner" replace />} />
+          <Route path="/tjanster/online-yoga" element={<Navigate to="/tjanster/privatlektioner" replace />} />
+          <Route path="/tjanster/adventure-paket" element={<Navigate to="/tjanster/mini-retreat" replace />} />
+          <Route path="/tjanster/trail-run-yoga" element={<Navigate to="/tjanster/mini-retreat" replace />} />
 
           {/* About */}
           <Route path="/om-mig" element={<OmMig />} />

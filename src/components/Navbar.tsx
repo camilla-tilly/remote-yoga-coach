@@ -14,45 +14,21 @@ const locationGroups = [
   {
     location: 'Stockholm',
     links: [
-      { name: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
-      { name: 'Företags- & Konferensyoga', href: '/tjanster/foretagsyoga' },
+      { name: 'Privata Event', href: '/tjanster/privata-event' },
+      { name: 'Företagsyoga & Workshops', href: '/tjanster/foretagsyoga' },
       { name: 'SUP Yoga', href: '/tjanster/sup-yoga' },
       { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
-      { name: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
-      { name: 'Yoga för Löpare', href: '/tjanster/yoga-for-lopare' },
-      { name: 'Födelsedag Yoga', href: '/tjanster/fodelsedag-yoga' },
-      { name: 'Yoga Workshop', href: '/tjanster/yoga-workshop' },
     ]
   },
   {
     location: 'Dalarna',
     links: [
-      { name: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
-      { name: 'Företagsyoga Dalarna', href: '/tjanster/foretagsyoga' },
       { name: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
-      { name: 'Mini Retreat', href: '/tjanster/mini-retreat' },
-      { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
-      { name: 'Adventure Paket', href: '/tjanster/adventure-paket' },
+      { name: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
+      { name: 'Privata Event', href: '/tjanster/privata-event' },
       { name: 'Yoga för Turister', href: '/tjanster/yoga-dalarna-turister' },
     ]
   },
-];
-
-// Flat list for mobile (deduplicated)
-const allServiceLinks = [
-  { name: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
-  { name: 'Företags- & Konferensyoga', href: '/tjanster/foretagsyoga' },
-  { name: 'SUP Yoga', href: '/tjanster/sup-yoga' },
-  { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
-  { name: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
-  { name: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
-  { name: 'Mini Retreat', href: '/tjanster/mini-retreat' },
-  { name: 'Bröllopsyoga', href: '/tjanster/brollopsyoga' },
-  { name: 'Yoga för Löpare', href: '/tjanster/yoga-for-lopare' },
-  { name: 'Yoga Workshop', href: '/tjanster/yoga-workshop' },
-  { name: 'Födelsedag Yoga', href: '/tjanster/fodelsedag-yoga' },
-  { name: 'Adventure Paket', href: '/tjanster/adventure-paket' },
-  { name: 'Yoga för Turister i Dalarna', href: '/tjanster/yoga-dalarna-turister' },
 ];
 
 const Navbar = () => {
@@ -139,7 +115,7 @@ const Navbar = () => {
                   />
                 </button>
                 {servicesOpen && (
-                  <div className="absolute top-full right-0 mt-3 bg-dalashala-creamLight border border-dalashala-meadow/40 rounded-2xl shadow-card overflow-hidden z-50" style={{ width: '480px' }}>
+                  <div className="absolute top-full right-0 mt-3 bg-dalashala-creamLight border border-dalashala-meadow/40 rounded-2xl shadow-card overflow-hidden z-50" style={{ width: '420px' }}>
                     <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-meadow to-dalashala-olive" />
                     <div className="flex pt-1">
                       {locationGroups.map((group, idx) => (

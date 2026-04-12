@@ -3,9 +3,9 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
   { label: 'Hönsyoga', href: '/tjanster/honsyoga' },
-  { label: 'Mini Yoga Retreat', href: '/tjanster/mini-retreat' },
-  { label: 'Adventure Paket', href: '/tjanster/adventure-paket' },
-  { label: 'Online Yoga', href: '/tjanster/online-yoga' },
+  { label: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
+  { label: 'Privata Event', href: '/tjanster/privata-event' },
+  { label: 'Privatlektioner', href: '/tjanster/privatlektioner' },
 ];
 
 const structuredData = {

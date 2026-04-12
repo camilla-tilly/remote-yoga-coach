@@ -7,11 +7,11 @@ import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 
 const topServices = [
-  { name: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
-  { name: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
+  { name: 'Privata Event', href: '/tjanster/privata-event' },
+  { name: 'Företagsyoga & Workshops', href: '/tjanster/foretagsyoga' },
   { name: 'SUP Yoga Stockholm', href: '/tjanster/sup-yoga' },
   { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
-  { name: 'Mini Yoga Retreat', href: '/tjanster/mini-retreat' },
+  { name: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
   { name: 'Hönsyoga i Dalarna', href: '/tjanster/honsyoga' },
 ];
 

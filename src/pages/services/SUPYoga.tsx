@@ -1,9 +1,9 @@
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
-  { label: 'Möhippa Yoga', href: '/tjanster/mohippa-yoga' },
-  { label: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
-  { label: 'Trail Run + Yoga', href: '/tjanster/trail-run-yoga' },
+  { label: 'Privata Event', href: '/tjanster/privata-event' },
+  { label: 'Företagsyoga & Workshops', href: '/tjanster/foretagsyoga' },
+  { label: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
   { label: 'Privatlektioner', href: '/tjanster/privatlektioner' },
 ];
 
