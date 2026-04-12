@@ -38,7 +38,7 @@ const Contact = () => {
               Hör av dig
             </h2>
             <p className="font-eb-garamond text-base md:text-lg text-dalashala-earthSoft max-w-xl mx-auto">
-              Frågor om ett pass, eller redo att boka? Jag svarar personligen inom 24 timmar.
+              Frågor om ett pass, eller redo att boka?
             </p>
           </div>
 
