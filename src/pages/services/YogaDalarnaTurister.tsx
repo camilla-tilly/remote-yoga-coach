@@ -11,7 +11,7 @@ const relatedServices = [
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Yoga in Dalarna for Tourists",
+  "name": "Yoga Classes in English — Dalarna, Sweden",
   "description": "Private English-speaking yoga classes for tourists visiting Dalarna, Sweden. Outdoor yoga at a forest cabin, SUP yoga, chicken yoga, and guided nature retreats.",
   "provider": {
     "@type": "LocalBusiness",
@@ -33,14 +33,14 @@ const YogaDalarnaTurister = () => {
 
   return (
   <ServicePageLayout
-    seoTitle="Yoga in Dalarna for Tourists — English Classes in the Swedish Forest | Yoga with Camilla"
-    seoDescription="Private English-speaking yoga for tourists in Dalarna, Sweden. Forest cabin yoga, chicken yoga and SUP yoga — book a unique Swedish experience."
+    seoTitle="Yoga Classes in English — Private Yoga in Dalarna, Sweden | Yoga with Camilla"
+    seoDescription="Private yoga classes in English in Dalarna, Sweden. Forest cabin yoga, chicken yoga and nature retreats — a unique Swedish experience for visitors and expats."
     canonical="https://yogawithcamilla.se/tjanster/yoga-dalarna-turister"
     ogImage="https://yogawithcamilla.se/lovable-uploads/yoga-outdoor-pose.jpg"
-    breadcrumbLabel="Yoga for Tourists"
-    heroTag="For Visitors to Dalarna, Sweden"
-    heroHeading="Yoga in Dalarna for Tourists"
-    heroSubtitle="Private English-speaking yoga classes at a forest cabin in Dalarna — a calm, grounded experience for travellers visiting central Sweden."
+    breadcrumbLabel="Yoga in English"
+    heroTag="Private Yoga in English — Dalarna, Sweden"
+    heroHeading="Yoga Classes in English"
+    heroSubtitle="Private yoga in English at a forest cabin in Dalarna — for visitors, expats, and anyone looking for yoga in Sweden."
     introHeading="A Swedish yoga experience, in English"
     introParagraphs={[
       "Visiting Dalarna and looking for something calm, grounded, and distinctly Swedish? I run private yoga classes in English from a forest cabin in Dala-Järna — roughly halfway between Stockholm and the Norwegian border.",

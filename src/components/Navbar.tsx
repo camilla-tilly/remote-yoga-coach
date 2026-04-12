@@ -26,7 +26,7 @@ const locationGroups = [
       { name: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
       { name: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
       { name: 'Privata Event', href: '/tjanster/privata-event' },
-      { name: 'Yoga för Turister', href: '/tjanster/yoga-dalarna-turister' },
+      { name: 'Yoga in English', href: '/tjanster/yoga-dalarna-turister' },
     ]
   },
 ];
