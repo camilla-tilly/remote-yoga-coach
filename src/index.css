@@ -5,49 +5,49 @@
 
 @layer base {
   :root {
-    /* Almond Cream #F0EAD8 */
-    --background: 42 44% 90%;
-    /* Earth Brown #5E4B3B */
-    --foreground: 28 23% 29%;
+    /* Morning Frost #F0EFEE */
+    --background: 20 3% 94%;
+    /* Aged Acorn #726352 */
+    --foreground: 26 16% 38%;
 
-    --card: 45 55% 94%;
-    --card-foreground: 28 23% 29%;
+    --card: 20 4% 96%;
+    --card-foreground: 26 16% 38%;
 
-    --popover: 42 44% 90%;
-    --popover-foreground: 28 23% 29%;
+    --popover: 20 3% 94%;
+    --popover-foreground: 26 16% 38%;
 
-    /* Earth Brown primary */
-    --primary: 28 23% 29%;
-    --primary-foreground: 42 44% 90%;
+    /* Aged Acorn primary */
+    --primary: 26 16% 38%;
+    --primary-foreground: 20 3% 94%;
 
-    /* Meadow Mist secondary */
-    --secondary: 69 15% 63%;
-    --secondary-foreground: 28 23% 29%;
+    /* Rustic Olive secondary */
+    --secondary: 27 12% 55%;
+    --secondary-foreground: 26 16% 38%;
 
-    --muted: 42 30% 86%;
-    --muted-foreground: 58 18% 32%;
+    --muted: 20 3% 90%;
+    --muted-foreground: 26 14% 40%;
 
-    /* Coastal Sage accent */
-    --accent: 165 9% 63%;
-    --accent-foreground: 28 23% 29%;
+    /* River Stone accent */
+    --accent: 0 0% 71%;
+    --accent-foreground: 26 16% 38%;
 
     --destructive: 0 70% 50%;
-    --destructive-foreground: 42 44% 90%;
+    --destructive-foreground: 20 3% 94%;
 
-    --border: 58 15% 75%;
-    --input: 58 15% 80%;
-    --ring: 58 24% 35%;
+    --border: 20 3% 80%;
+    --input: 20 3% 84%;
+    --ring: 72 10% 28%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 42 44% 90%;
-    --sidebar-foreground: 28 23% 29%;
-    --sidebar-primary: 28 23% 29%;
-    --sidebar-primary-foreground: 42 44% 90%;
-    --sidebar-accent: 69 15% 63%;
-    --sidebar-accent-foreground: 28 23% 29%;
-    --sidebar-border: 58 15% 75%;
-    --sidebar-ring: 58 24% 35%;
+    --sidebar-background: 20 3% 94%;
+    --sidebar-foreground: 26 16% 38%;
+    --sidebar-primary: 26 16% 38%;
+    --sidebar-primary-foreground: 20 3% 94%;
+    --sidebar-accent: 27 12% 55%;
+    --sidebar-accent-foreground: 26 16% 38%;
+    --sidebar-border: 20 3% 80%;
+    --sidebar-ring: 72 10% 28%;
   }
 }
 
@@ -139,10 +139,10 @@
 
   /* Section background treatments */
   .bg-cream-soft {
-    background-image: radial-gradient(ellipse 80% 60% at 50% 0%, #F7F1DE 0%, #F0EAD8 50%, #EAE1C8 100%);
+    background-image: radial-gradient(ellipse 80% 60% at 50% 0%, #F7F6F5 0%, #F0EFEE 50%, #E5E3E1 100%);
   }
   .bg-cream-soft-b {
-    background-image: radial-gradient(ellipse 80% 60% at 50% 100%, #F7F1DE 0%, #F0EAD8 50%, #EAE1C8 100%);
+    background-image: radial-gradient(ellipse 80% 60% at 50% 100%, #F7F6F5 0%, #F0EFEE 50%, #E5E3E1 100%);
   }
 
   /* Divider with sage dot centre */

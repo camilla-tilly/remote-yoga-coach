@@ -68,23 +68,23 @@ export default {
 				// semantic aliases so existing markup keeps working.
 				dalashala: {
 					// Legacy names (remapped to new palette)
-					beige: '#F0EAD8',       // Almond Cream
-					lightBeige: '#F7F1DE',  // Slightly lighter cream for card fills
-					darkBrown: '#5E4B3B',   // Earth Brown
-					mediumBrown: '#6F6C43', // Olive Grove
-					tan: '#ACB090',         // Meadow Mist
+					beige: '#F0EFEE',       // Morning Frost
+					lightBeige: '#F7F6F5',  // Morning Frost Light
+					darkBrown: '#726352',   // Aged Acorn
+					mediumBrown: '#4F5141', // Olive Leaf
+					tan: '#9B907F',         // Rustic Olive
 					// New semantic names
-					cream: '#F0EAD8',
-					creamLight: '#F7F1DE',
-					creamDeep: '#E8DFC6',
-					earth: '#5E4B3B',
-					earthSoft: '#7A6453',
-					olive: '#6F6C43',
-					oliveLight: '#8A8760',
-					meadow: '#ACB090',
-					meadowLight: '#C2C4AA',
-					sage: '#99ABA6',
-					sageLight: '#B7C4C0',
+					cream: '#F0EFEE',
+					creamLight: '#F7F6F5',
+					creamDeep: '#E5E3E1',
+					earth: '#726352',
+					earthSoft: '#8A7B6A',
+					olive: '#4F5141',
+					oliveLight: '#6B6D5C',
+					meadow: '#9B907F',
+					meadowLight: '#B3A999',
+					sage: '#B7B7B6',
+					sageLight: '#CDCDCC',
 				}
 			},
 			fontFamily: {
@@ -94,20 +94,20 @@ export default {
 				'eb-garamond': ['"EB Garamond"', 'serif'],
 			},
 			boxShadow: {
-				'soft': '0 4px 20px -4px rgba(94, 75, 59, 0.08), 0 2px 6px -2px rgba(94, 75, 59, 0.06)',
-				'card': '0 10px 30px -10px rgba(94, 75, 59, 0.18), 0 4px 10px -4px rgba(94, 75, 59, 0.08)',
-				'card-hover': '0 20px 40px -12px rgba(94, 75, 59, 0.25), 0 8px 16px -8px rgba(111, 108, 67, 0.15)',
-				'inset-soft': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.6), inset 0 -1px 0 0 rgba(94, 75, 59, 0.05)',
-				'earth-glow': '0 0 0 1px rgba(172, 176, 144, 0.3), 0 6px 24px -8px rgba(94, 75, 59, 0.25)',
+				'soft': '0 4px 20px -4px rgba(114, 99, 82, 0.08), 0 2px 6px -2px rgba(114, 99, 82, 0.06)',
+				'card': '0 10px 30px -10px rgba(114, 99, 82, 0.18), 0 4px 10px -4px rgba(114, 99, 82, 0.08)',
+				'card-hover': '0 20px 40px -12px rgba(114, 99, 82, 0.25), 0 8px 16px -8px rgba(79, 81, 65, 0.15)',
+				'inset-soft': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.6), inset 0 -1px 0 0 rgba(114, 99, 82, 0.05)',
+				'earth-glow': '0 0 0 1px rgba(155, 144, 127, 0.3), 0 6px 24px -8px rgba(114, 99, 82, 0.25)',
 			},
 			backgroundImage: {
-				'cream-gradient': 'linear-gradient(180deg, #F7F1DE 0%, #F0EAD8 50%, #EAE1C8 100%)',
-				'cream-radial': 'radial-gradient(ellipse at top, #F7F1DE 0%, #F0EAD8 45%, #E8DFC6 100%)',
-				'sage-gradient': 'linear-gradient(135deg, #B7C4C0 0%, #99ABA6 100%)',
-				'olive-gradient': 'linear-gradient(135deg, #8A8760 0%, #6F6C43 100%)',
-				'earth-gradient': 'linear-gradient(135deg, #7A6453 0%, #5E4B3B 100%)',
-				'meadow-fade': 'linear-gradient(180deg, rgba(172, 176, 144, 0) 0%, rgba(172, 176, 144, 0.15) 100%)',
-				'grain': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.37 0 0 0 0 0.29 0 0 0 0 0.23 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+				'cream-gradient': 'linear-gradient(180deg, #F7F6F5 0%, #F0EFEE 50%, #E5E3E1 100%)',
+				'cream-radial': 'radial-gradient(ellipse at top, #F7F6F5 0%, #F0EFEE 45%, #E5E3E1 100%)',
+				'sage-gradient': 'linear-gradient(135deg, #CDCDCC 0%, #B7B7B6 100%)',
+				'olive-gradient': 'linear-gradient(135deg, #6B6D5C 0%, #4F5141 100%)',
+				'earth-gradient': 'linear-gradient(135deg, #8A7B6A 0%, #726352 100%)',
+				'meadow-fade': 'linear-gradient(180deg, rgba(155, 144, 127, 0) 0%, rgba(155, 144, 127, 0.15) 100%)',
+				'grain': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.39 0 0 0 0 0.32 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
