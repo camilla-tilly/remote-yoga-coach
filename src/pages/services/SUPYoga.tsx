@@ -38,7 +38,8 @@ const SUPYoga = () => (
     heroSubtitle="Yoga på paddleboard vid Sickla Strand — vedeldad bastu ingår efter passet. Öppna klasser och privata event. I samarbete med Smashing Balance."
     heroImage="/images/sup-yoga-sickla.png"
     heroImageAlt="SUP yoga på Sicklasjön, Stockholm"
-    heroImagePosition="center 45%"
+    heroImageAspect="aspect-[2/3]"
+    heroImagePosition="center 40%"
     introHeading="SUP yoga vid Sickla Strand"
     introParagraphs={[
       "SUP yoga är yoga på ett brett, stabilt paddleboard på öppet vatten. Klasser hålls vid Sickla Strand i Stockholm, i samarbete med Smashing Balance som sköter all utrustning och säkerhet.",

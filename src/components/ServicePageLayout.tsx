@@ -34,6 +34,7 @@ interface ServicePageProps {
   heroImage?: string;
   heroImageAlt?: string;
   heroImagePosition?: string;
+  heroImageAspect?: string;
   introHeading: string;
   introParagraphs: string[];
   highlights: ServiceHighlight[];
@@ -66,6 +67,7 @@ const ServicePageLayout = ({
   heroImage,
   heroImageAlt,
   heroImagePosition,
+  heroImageAspect,
   introHeading,
   introParagraphs,
   highlights,
@@ -203,7 +205,7 @@ const ServicePageLayout = ({
           {/* Hero Image */}
           {heroImage && (
             <section className="px-4 mb-12">
-              <div className="max-w-2xl mx-auto overflow-hidden rounded-3xl shadow-card border border-dalashala-meadow/25 aspect-video">
+              <div className={`max-w-2xl mx-auto overflow-hidden rounded-3xl shadow-card border border-dalashala-meadow/25 ${heroImageAspect || 'aspect-video'}`}>
                 <img
                   src={heroImage}
                   alt={heroImageAlt || heroHeading}
