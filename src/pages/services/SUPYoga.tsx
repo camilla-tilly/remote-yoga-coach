@@ -103,7 +103,7 @@ const SUPYoga = () => (
     ]}
     englishKeywords={{
       heading: "SUP Yoga & Sauna in Stockholm — Paddleboard Yoga at Sickla Strand",
-      text: "SUP yoga and sauna at Sickla Strand, Stockholm. Yoga on paddleboards on the lake, followed by a lakeside sauna session. Open classes May–September, private events for hen parties, birthdays, team days and corporate groups. All equipment included. No experience needed, teaching in English. In partnership with Smashing Balance. Email hello.yogawithcamilla@gmail.com or visit smashingbalance.se/pages/privata-event-i-stockholm-sup-yoga-bastu-vid-sjon for private event bookings."
+      text: "SUP yoga and sauna at Sickla Strand, Stockholm. Yoga on paddleboards on the lake, followed by a lakeside sauna session. Open classes May–September, private events for bachelorette parties, birthdays, team days and corporate groups. All equipment included. No experience needed, teaching in English. In partnership with Smashing Balance. Email hello.yogawithcamilla@gmail.com or visit smashingbalance.se/pages/privata-event-i-stockholm-sup-yoga-bastu-vid-sjon for private event bookings."
     }}
   />
 );

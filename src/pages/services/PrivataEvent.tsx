@@ -133,8 +133,8 @@ const PrivataEvent = () => (
       }
     ]}
     englishKeywords={{
-      heading: "Private Events in Sweden — Hen Party, Wedding & Birthday Yoga",
-      text: "Looking for a different kind of bachelorette party, wedding activity, birthday celebration, or team event in Sweden? I put together private yoga events for groups in Dalarna and Stockholm — hen parties, weddings, birthdays, kick-offs, summer send-offs and friend gatherings. The setup is flexible: a calm morning session, a longer half-day with a few pieces, or a full day out in the forest. Wedding yoga works perfectly the morning of, the evening before, or the day after. No yoga experience needed, all equipment provided, and teaching is in English. Email me at hello.yogawithcamilla@gmail.com with your preferred dates, group size, location and any requests, and I'll come back with a tailored plan."
+      heading: "Private Events in Sweden — Bachelorette Party, Wedding & Birthday Yoga",
+      text: "Looking for a different kind of bachelorette party, wedding activity, birthday celebration, or team event in Sweden? I put together private yoga events for groups in Dalarna and Stockholm — bachelorette parties, weddings, birthdays, kick-offs, summer send-offs and friend gatherings. The setup is flexible: a calm morning session, a longer half-day with a few pieces, or a full day out in the forest. Wedding yoga works perfectly the morning of, the evening before, or the day after. No yoga experience needed, all equipment provided, and teaching is in English. Email me at hello.yogawithcamilla@gmail.com with your preferred dates, group size, location and any requests, and I'll come back with a tailored plan."
     }}
   />
 );
