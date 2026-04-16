@@ -803,8 +803,8 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Starta möhippan med en privat yogaklass bara för er grupp. Jag kommer till er med all utrustning — lägenhet, hotellrum, park eller hyrd lokal. 60 minuter som sätter stämningen för hela dagen. Ingen erfarenhet krävs. Från 3 000 kr. Mejla hello.yogawithcamilla@gmail.com.' },
       { type: 'heading', text: '6. Takvandring över Stockholm' },
       { type: 'paragraph', text: 'Om ni vill ha lite adrenalinkick utan att det tar hela dagen — boka en takvandring. Ni promenerar längs taket på ett av Stockholms höghus med utsikt över hela staden. Lagom skrämmande, spektakulärt, och garanterat något ingen gjort på en möhippa förut.' },
-      { type: 'heading', text: '7. Vinprovning eller bubbelprovning' },
-      { type: 'paragraph', text: 'Stockholm har flera bra ställen för vinprovning i privat miljö. Avslappnat, socialt, och funkar för alla. Kombinera med yoga på morgonen och ni har en hel dag som faktiskt hänger ihop.' },
+      { type: 'heading', text: '7. Spa med privat avdelning' },
+      { type: 'paragraph', text: 'Välj ett spa som erbjuder privat avdelning för er grupp. Avslappnat, socialt, och en fin finish på dagen. Kombinera med yoga på morgonen och ni har en hel dag som faktiskt hänger ihop.' },
       { type: 'paragraph', text: 'Två av aktiviteterna ovan bokar ni direkt via mig: SUP yoga och bastu (yogawithcamilla.se/tjanster/sup-yoga) och privat yoga för er grupp (yogawithcamilla.se/tjanster/privata-event). Mejla hello.yogawithcamilla@gmail.com med datum och antal så får ni en offert samma dag.' },
     ]
   },
