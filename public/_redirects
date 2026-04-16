@@ -9,5 +9,8 @@
 /tjanster/trail-run-yoga      /tjanster/mini-retreat      301
 /tjanster/yoga-dalarna-turister /tjanster/privatlektioner  301
 
+# Removed blog posts (301 to most relevant commercial page)
+/blogg/vad-kostar-privat-yoga-stockholm /tjanster/privatlektioner 301
+
 # SPA fallback (must be last)
 /*    /index.html   200

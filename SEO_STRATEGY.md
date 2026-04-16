@@ -283,22 +283,54 @@
 ## 5. Blog Posts — Full Inventory
 
 > Source: `src/data/blogPosts.ts` + `public/sitemap.xml`
-> All 9 published posts. Sitemap priority 0.7 for all.
+> Sitemap priority 0.7 for all.
+> **Rehaul status:** 5 priority posts (marked 🟢) rewritten to long-form in April 2026 — 1200–1800 words each, with TOC, pricing table, pull quote, and FAQPage structured data. Template documented in `/.claude/plans/synchronous-spinning-bengio.md` for future rewrites.
 
-| # | Title | Slug | Published | Target keyword | Cluster | Links to |
-|---|---|---|---|---|---|---|
-| 1 | Yoga möhippa i Dalarna. Det roligaste brudpartyt ingen pratat om. | `yoga-mohippa-dalarna` | 2026-03-01 | yoga möhippa dalarna | event-yoga | `/tjanster/mohippa-yoga` |
-| 2 | Konferensyoga. Varför 60 minuter yoga slår ännu en teambuilding. | `konferensyoga-teambuilding` | 2026-03-08 | konferensyoga | corporate-yoga | `/tjanster/foretagsyoga` |
-| 3 | SUP yoga Stockholm. Vad är det och varför ska du prova det? | `sup-yoga-stockholm` | 2026-03-15 | SUP yoga stockholm | water-yoga | `/tjanster/sup-yoga` |
-| 4 | Yoga som bröllopsaktivitet. Fler svenska par gör det. | `yoga-brollopsaktivitet` | 2026-03-20 | yoga bröllop | event-yoga | `/tjanster/brollopsyoga` |
-| 5 | Hönsyoga i Dalarna. Yoga utomhus med höns. | `honsyoga-dalarna-goat-yoga-sverige` | 2026-03-24 | hönsyoga, goat yoga sverige | nature-yoga | `/tjanster/honsyoga` |
-| 6 | Utomhusyoga i Dalarna. Varför naturen gör praktiken bättre. | `outdoor-yoga-dalarna` | 2026-03-25 | utomhusyoga dalarna | nature-yoga | `/tjanster/honsyoga`, `/tjanster/mini-retreat` |
-| 7 | Vad kostar privat yoga i Stockholm 2026? ⭐ | `vad-kostar-privat-yoga-stockholm` | 2026-04-09 | privat yoga pris | private-yoga | `/tjanster/privatlektioner` |
-| 8 | Möhippa i Dalarna. 7 aktiviteter utöver det vanliga. ⭐ | `mohippa-dalarna-aktiviteter` | 2026-04-09 | möhippa dalarna aktiviteter | event-yoga | `/tjanster/mohippa-yoga` |
-| 9 | Yoga retreat i Dalarna vs Stockholm. Var ska du boka? ⭐ | `yoga-retreat-dalarna-vs-stockholm` | 2026-04-09 | yoga retreat dalarna | nature-yoga | `/tjanster/mini-retreat` |
-| 10 | Företagsyoga. Vad ingår och vad kostar det? ⭐ | `foretagsyoga-vad-ingar-och-kostar` | 2026-04-09 | företagsyoga pris | corporate-yoga | `/tjanster/foretagsyoga` |
+| # | Title | Slug | Published | Target keyword | Cluster | Links to | Status |
+|---|---|---|---|---|---|---|---|
+| 1 | Yoga möhippa i Dalarna — hela guiden | `yoga-mohippa-dalarna` | 2026-03-01 | yoga möhippa dalarna | event-yoga | `/tjanster/mohippa-yoga` | 🟢 Long-form + FAQ schema |
+| 2 | Konferensyoga & yoga som teambuilding — hela guiden 2026 | `konferensyoga-teambuilding` | 2026-03-08 | konferensyoga, yoga teambuilding | corporate-yoga | `/tjanster/foretagsyoga` | 🟢 Long-form + FAQ schema |
+| 3 | SUP yoga Stockholm — allt du behöver veta innan du bokar | `sup-yoga-stockholm` | 2026-03-15 | SUP yoga stockholm | water-yoga | `/tjanster/sup-yoga` | 🟢 Long-form + FAQ schema |
+| 4 | Yoga som bröllopsaktivitet. Fler svenska par gör det. | `yoga-brollopsaktivitet` | 2026-03-20 | yoga bröllop | event-yoga | `/tjanster/brollopsyoga` | thin (candidate for next rehaul wave) |
+| 5 | Hönsyoga i Dalarna — Sveriges motsvarighet till goat yoga | `honsyoga-dalarna-goat-yoga-sverige` | 2026-03-24 | hönsyoga, goat yoga sverige | nature-yoga | `/tjanster/honsyoga` | 🟢 Long-form + FAQ schema |
+| 6 | Utomhusyoga i Dalarna. Varför naturen gör praktiken bättre. | `outdoor-yoga-dalarna` | 2026-03-25 | utomhusyoga dalarna | nature-yoga | `/tjanster/honsyoga`, `/tjanster/mini-retreat` | thin |
+| 7 | Möhippa i Dalarna. 7 aktiviteter utöver det vanliga. ⭐ | `mohippa-dalarna-aktiviteter` | 2026-04-09 | möhippa dalarna aktiviteter | event-yoga | `/tjanster/mohippa-yoga` | moderate |
+| 8 | Yoga retreat i Dalarna vs Stockholm. Var ska du boka? ⭐ | `yoga-retreat-dalarna-vs-stockholm` | 2026-04-09 | yoga retreat dalarna | nature-yoga | `/tjanster/mini-retreat` | moderate |
+| 9 | Företagsyoga i Stockholm — priser, upplägg och vad som faktiskt ingår ⭐ | `foretagsyoga-vad-ingar-och-kostar` | 2026-04-09 | företagsyoga pris, företagsyoga stockholm | corporate-yoga | `/tjanster/foretagsyoga` | 🟢 Long-form + FAQ schema |
+| 10 | 7 möhippa-aktiviteter i Stockholm du inte tänkt på | `mohippa-aktiviteter-stockholm` | 2026-04-15 | möhippa aktiviteter stockholm | event-yoga | `/tjanster/sup-yoga` | moderate |
+| 11 | 6 Bachelorette Party Ideas in Stockholm | `hen-party-ideas-stockholm` | 2026-04-15 | bachelorette party stockholm | event-yoga (EN) | `/tjanster/sup-yoga` | moderate |
+| 12 | 7 idéer för sommaravslutning i Stockholm | `sommaravslutning-aktiviteter-stockholm` | 2026-04-15 | sommaravslutning stockholm | corporate-yoga | `/tjanster/sup-yoga` | moderate |
+| 13 | 7 Summer Team Day Ideas in Stockholm | `summer-team-day-ideas-stockholm` | 2026-04-15 | summer team day stockholm | corporate-yoga (EN) | `/tjanster/sup-yoga` | moderate |
+| 14 | 7 teambuilding-aktiviteter i Stockholm | `teambuilding-aktiviteter-stockholm` | 2026-04-15 | teambuilding stockholm | corporate-yoga | `/tjanster/sup-yoga` | moderate |
+| 15 | 7 Team Building Activities in Stockholm | `team-building-activities-stockholm` | 2026-04-15 | team building stockholm | corporate-yoga (EN) | `/tjanster/sup-yoga` | moderate |
 
-⭐ = Priority A, high-intent (price + comparison queries)
+⭐ = Priority A, high-intent (price + comparison queries). 🟢 = Rehauled to long-form template with FAQPage schema.
+
+### FAQPage long-tail keywords now captured
+
+The 5 rehauled posts each emit FAQPage JSON-LD. Each FAQ item is a long-tail keyword eligible for "People Also Ask" in Google SERPs. Notable captures:
+
+| Rehauled post | New long-tails now covered via FAQ schema |
+|---|---|
+| `foretagsyoga-vad-ingar-och-kostar` | vad kostar företagsyoga stockholm, räknas företagsyoga som friskvårdsförmån, moms företagsyoga, hur många deltagare företagsyoga, behövs yoga-erfarenhet företagsyoga |
+| `konferensyoga-teambuilding` | vad kostar konferensyoga, hur långt i förväg boka konferensyoga, yoga kombinera andningsworkshop, konferensyoga max gruppstorlek |
+| `sup-yoga-stockholm` | behövs paddla SUP yoga, vad händer om man ramlar SUP yoga, SUP yoga säsong stockholm, SUP yoga barn |
+| `yoga-mohippa-dalarna` | hur mycket kostar yoga möhippa, yoga möhippa nybörjare, yoga möhippa regn, yoga möhippa överraskning brud |
+| `honsyoga-dalarna-goat-yoga-sverige` | vad är hönsyoga, finns goat yoga i sverige, sitter hönsen på en under yoga, hönsyoga säsong |
+
+### Blog meta descriptions
+
+| Slug | Meta description |
+|---|---|
+| `yoga-mohippa-dalarna` | Yoga möhippa i Dalarna: privat utomhusklass i skogen, stugupplägg, vad som ingår, priser från 3 000 kr, tips för att kombinera med andra aktiviteter. |
+| `konferensyoga-teambuilding` | Konferensyoga i Stockholm och Dalarna. Upplägg, priser från 3 000 kr, forskning om rörelse och fokus, och varför 60 min yoga slår ännu en teambuilding. |
+| `sup-yoga-stockholm` | SUP yoga i Stockholm vid Sicklasjön. Priser, vad som ingår, vilken säsong, vem passar det för. Guide för möhippa, team, privata grupper och soloäventyr. |
+| `yoga-brollopsaktivitet` | Yoga som bröllopsaktivitet i Dalarna och Stockholm. Inkluderande, lugnt, minnesvärt. Jag kommer till er med allt. Från 3 000 kr. |
+| `honsyoga-dalarna-goat-yoga-sverige` | Hönsyoga i Dalarna på altanen med mina höns runt mattorna. Vad det är, hur det skiljer sig från goat yoga, priser från 2 500 kr, och hur du bokar för grupp eller möhippa. |
+| `outdoor-yoga-dalarna` | Utomhusyoga i Dalarna på altanen i skogen. Yoga i naturen ger något inomhusstudios inte kan. Privat bokning för grupper och events. |
+| `mohippa-dalarna-aktiviteter` | Planerar du möhippa i Dalarna? 7 aktiviteter som funkar. Yoga i skogen, hönsyoga, SUP, vandring. Stuga + natur = minnesvärd helg. |
+| `yoga-retreat-dalarna-vs-stockholm` | Yoga retreat i Dalarna vs Stockholm. Natur vs stad, pris, upplevelse. Tips från en yogalärare som erbjuder båda. |
+| `foretagsyoga-vad-ingar-och-kostar` | Komplett guide till företagsyoga i Stockholm. Priser från 1 000 kr/pass, format (morgon, lunch, event), vad som ingår, friskvårdsbidrag och svar på vanliga frågor. |
 
 ### Blog meta descriptions
 
