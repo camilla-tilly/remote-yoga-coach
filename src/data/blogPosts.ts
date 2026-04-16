@@ -31,7 +31,6 @@ export const blogPosts: BlogPost[] = [
     relatedServiceLabel: 'Boka privat event med yoga',
     relatedPosts: [
       { slug: 'mohippa-dalarna-aktiviteter', label: 'Möhippa i Dalarna, 7 aktiviteter' },
-      { slug: 'vad-kostar-privat-yoga-stockholm', label: 'Vad kostar privat yoga?' },
     ],
     content: [
       {
@@ -179,7 +178,6 @@ export const blogPosts: BlogPost[] = [
     relatedServiceLabel: 'Boka SUP Yoga',
     relatedPosts: [
       { slug: 'mohippa-dalarna-aktiviteter', label: 'Möhippa i Dalarna, 7 aktiviteter' },
-      { slug: 'vad-kostar-privat-yoga-stockholm', label: 'Vad kostar privat yoga?' },
     ],
     content: [
       {
@@ -441,92 +439,6 @@ export const blogPosts: BlogPost[] = [
     ]
   },
   {
-    slug: 'vad-kostar-privat-yoga-stockholm',
-    title: 'Vad kostar privat yoga i Stockholm 2026?',
-    metaDescription: 'Privat yoga i Stockholm: från 3 000 kr för en grupp-event med yogalärare, mattor och resa. En-till-en online från lägre pris. Här är vad du betalar för.',
-    publishDate: '2026-04-09',
-    readingTime: '5 min',
-    category: 'Priser & Praktiskt',
-    excerpt: 'Privat yoga betyder olika saker beroende på vad du letar efter. Här är en rak genomgång av vad det kostar, vad som ingår och vilken typ som passar dig.',
-    relatedServiceHref: '/tjanster/privatlektioner',
-    relatedServiceLabel: 'Boka privat yoga',
-    relatedPosts: [
-      { slug: 'foretagsyoga-vad-ingar-och-kostar', label: 'Företagsyoga, vad ingår och kostar?' },
-      { slug: 'yoga-retreat-dalarna-vs-stockholm', label: 'Retreat Dalarna vs Stockholm' },
-    ],
-    content: [
-      {
-        type: 'paragraph',
-        text: 'Du googlar "privat yoga Stockholm". Men vad menar du egentligen?'
-      },
-      {
-        type: 'paragraph',
-        text: 'Privat yoga kan betyda två helt olika saker. Det kan vara en en-till-en lektion, bara du och en lärare. Eller så kan det vara ett privat event för en grupp: en möhippa, ett företagsevent, en bröllopsmorgon, en retreat. Priset beror helt på vilken typ du letar efter.'
-      },
-      {
-        type: 'heading',
-        text: 'Typ 1: Privat grupp-event'
-      },
-      {
-        type: 'paragraph',
-        text: 'Det här är det vanligaste jag bokas för. En grupp på 4-20 personer som vill ha en privat yogaklass som en del av en upplevelse. Möhippor. Konferenser. Bröllopshelger. Födelsedagar. Kickoffs.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Vad ingår? Jag, all utrustning (mattor, block), resa till er plats, och en klass anpassad för gruppen. Ni behöver inte ordna något utöver utrymmet.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Pris: från 3 000 kr för 60 minuter. Det inkluderar lärare, utrustning och resa inom Stockholm eller Dalarna. Grupper på 10+ personer eller event utanför stan kan kosta mer. Ni får en exakt offert samma dag.'
-      },
-      {
-        type: 'heading',
-        text: 'Typ 2: En-till-en lektion'
-      },
-      {
-        type: 'paragraph',
-        text: 'Det här är för dig som vill jobba med din egen praktik. Du och jag, 60 eller 90 minuter. Jag ser din kropp, korrigerar i realtid, och bygger klassen kring vad du behöver. Inte vad en hel studio behöver.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Privatlektioner sker online via Zoom (på engelska) eller i person om du befinner dig i Dalarna. Kontakta mig för pris och paket.'
-      },
-      {
-        type: 'heading',
-        text: 'Varför kostar det mer än drop-in?'
-      },
-      {
-        type: 'paragraph',
-        text: 'Drop-in på en studio kostar 150-250 kr per pass. Men du delar läraren med 20 andra. Ingen ser din kropp. Ingen anpassar. Du följer instruktioner och hoppas att det passar.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Privat yoga är något annat. Vid ett grupp-event får ni en klass som är byggd för just er. Vid en-till-en får du en lärare som ser exakt var du behöver hjälp. Det är skillnaden mellan att "göra yoga" och att faktiskt förstå vad yoga gör i din kropp.'
-      },
-      {
-        type: 'heading',
-        text: 'Vilken typ passar dig?'
-      },
-      {
-        type: 'list',
-        items: [
-          'Möhippa, bröllop eller fest? Grupp-event. Från 3 000 kr. Jag kommer till er.',
-          'Företag, konferens eller kickoff? Grupp-event. Från 3 000 kr. Allt ingår.',
-          'Vill du förbättra din egen praktik? En-till-en online via Zoom.',
-          'Bor du i Dalarna? Privat klass på altanen i skogen.'
-        ]
-      },
-      {
-        type: 'heading',
-        text: 'Boka'
-      },
-      {
-        type: 'paragraph',
-        text: 'Maila hello.yogawithcamilla@gmail.com. Berätta vad du letar efter, hur många ni är, och var. Jag svarar med en offert samma dag.'
-      }
-    ]
-  },
-  {
     slug: 'mohippa-dalarna-aktiviteter',
     title: 'Möhippa i Dalarna. 7 aktiviteter utöver det vanliga.',
     metaDescription: 'Planerar du möhippa i Dalarna? 7 aktiviteter som funkar. Yoga i skogen, hönsyoga, SUP, vandring. Stuga + natur = minnesvärd helg.',
@@ -627,7 +539,6 @@ export const blogPosts: BlogPost[] = [
     relatedServiceLabel: 'Boka mini retreat i Dalarna',
     relatedPosts: [
       { slug: 'outdoor-yoga-dalarna', label: 'Utomhusyoga i Dalarna' },
-      { slug: 'vad-kostar-privat-yoga-stockholm', label: 'Vad kostar privat yoga?' },
     ],
     content: [
       {
@@ -702,7 +613,6 @@ export const blogPosts: BlogPost[] = [
     relatedServiceLabel: 'Boka företagsyoga',
     relatedPosts: [
       { slug: 'konferensyoga-teambuilding', label: 'Konferensyoga, varför yoga på konferensen?' },
-      { slug: 'vad-kostar-privat-yoga-stockholm', label: 'Vad kostar privat yoga?' },
     ],
     content: [
       {
