@@ -208,7 +208,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Sickla sjö i Stockholm. I samarbete med Smashing Balance som sköter brädor och säkerhet. Lugnt insjöläge, några minuter från tunnelbanan.'
+        text: 'Sickla sjö i Stockholm. Lugnt insjöläge, några minuter från tunnelbanan. All utrustning ingår.'
       },
       {
         type: 'heading',
@@ -799,13 +799,13 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Det finns ett antal riktigt bra matlagningsstudior i Stockholm som tar emot privata grupper. Ni lagar mat tillsammans, äter ihop, och har något att prata om resten av kvällen. Koll på vad bruden älskar att äta och boka därefter.' },
       { type: 'heading', text: '4. Vinprovning eller bubbelprovning' },
       { type: 'paragraph', text: 'Stockholm har flera bra ställen för vinprovning i privat miljö. Ni får lära er något, ni dricker gott, och det finns ett naturligt samtalsflöde hela kvällen. Funkar lika bra som förmiddagsaktivitet som kvällsaktivitet.' },
-      { type: 'heading', text: '5. Måla och skåla — workshop med duk och dryck' },
-      { type: 'paragraph', text: 'Varje person får en duk, akrylfärger, och en instruktör som visar vad man ska göra. Ni skapar var sin tavla under kvällen, med ett glas i handen. Det kräver noll konstnärlighet — det är poängen.' },
+      { type: 'heading', text: '5. Privat yoga på morgonen' },
+      { type: 'paragraph', text: 'Starta möhippan med en privat yogaklass bara för er grupp. Jag kommer till er med all utrustning — lägenhet, hotellrum, park eller hyrd lokal. 60 minuter som sätter stämningen för hela dagen. Ingen erfarenhet krävs. Från 3 000 kr. Mejla hello.yogawithcamilla@gmail.com.' },
       { type: 'heading', text: '6. Takvandring över Stockholm' },
       { type: 'paragraph', text: 'Om ni vill ha lite adrenalinkick utan att det tar hela dagen — boka en takvandring. Ni promenerar längs taket på ett av Stockholms höghus med utsikt över hela staden. Lagom skrämmande, spektakulärt, och garanterat något ingen gjort på en möhippa förut.' },
-      { type: 'heading', text: '7. Spa-dag med privat avdelning' },
-      { type: 'paragraph', text: 'Klassikern — men det finns en anledning till att den håller. Välj ett spa som erbjuder privat avdelning för er grupp. Kombinera med en behandling var och en fin finish på en dag full av aktiviteter.' },
-      { type: 'paragraph', text: 'Möhippa i Stockholm behöver inte vara komplicerat. Det handlar om att välja aktiviteter som faktiskt passar gruppen — inte vad som ser bra ut på Instagram. Börja med att fråga: vad gillar bruden? Och om ni vill starta dagen med något som ingen av er glömmer på länge, vet ni var ni hittar oss.' },
+      { type: 'heading', text: '7. Vinprovning eller bubbelprovning' },
+      { type: 'paragraph', text: 'Stockholm har flera bra ställen för vinprovning i privat miljö. Avslappnat, socialt, och funkar för alla. Kombinera med yoga på morgonen och ni har en hel dag som faktiskt hänger ihop.' },
+      { type: 'paragraph', text: 'Två av aktiviteterna ovan bokar ni direkt via mig: SUP yoga och bastu (yogawithcamilla.se/tjanster/sup-yoga) och privat yoga för er grupp (yogawithcamilla.se/tjanster/privata-event). Mejla hello.yogawithcamilla@gmail.com med datum och antal så får ni en offert samma dag.' },
     ]
   },
   {
@@ -825,18 +825,18 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Stockholm is genuinely one of the best cities in the world for a bachelorette party. Water everywhere, world-class spas, cobblestone streets in Gamla Stan, and a food scene that keeps getting better. These are six of the best bachelorette party ideas in Stockholm right now.' },
       { type: 'heading', text: '1. SUP yoga and sauna at Sickla Strand' },
       { type: 'paragraph', text: 'This is the one. Yoga on paddleboards on a calm Stockholm lake, followed by a sauna on the water\'s edge. No experience needed — the boards are wide and stable, and the whole session is taught in English. Perfect for groups up to 20.' },
-      { type: 'paragraph', text: 'The SUP yoga and sauna experience is run in partnership with Smashing Balance at Sickla Strand in Nacka, just outside central Stockholm. To book a private event for your group, email hello.yogawithcamilla@gmail.com or visit yogawithcamilla.se/tjanster/sup-yoga for full details.' },
+      { type: 'paragraph', text: 'The SUP yoga and sauna experience runs at Sickla Strand in Nacka, just outside central Stockholm. Groups up to 20 people, all equipment included. To book for your group, email hello.yogawithcamilla@gmail.com or visit yogawithcamilla.se/tjanster/sup-yoga.' },
       { type: 'heading', text: '2. Private archipelago boat tour' },
       { type: 'paragraph', text: 'Stockholm\'s archipelago is 30,000 islands. The best way to see it as a group is on a private charter — champagne on the water, the city skyline getting smaller behind you, and nowhere to be.' },
-      { type: 'heading', text: '3. Cocktail masterclass' },
-      { type: 'paragraph', text: 'A cocktail masterclass is one of the most reliably good bachelorette party ideas because it works for every kind of group. You spend a couple of hours learning to make proper drinks, a professional bartender guides you through the techniques, and everyone has loosened up by the end.' },
+      { type: 'heading', text: '3. Private yoga session for your group' },
+      { type: 'paragraph', text: 'Start the day with a private yoga class just for your group. I come to you with all the equipment — your hotel, an Airbnb, a park, or a rented studio. 60 minutes that sets the tone for the whole day. No experience needed. From 3 000 SEK. Works beautifully as a morning warm-up before SUP yoga or dinner out. Details at yogawithcamilla.se/tjanster/privata-event.' },
       { type: 'heading', text: '4. Swedish cooking class' },
       { type: 'paragraph', text: 'Learning to cook together is one of those activities that sounds simple but becomes one of the most memorable parts of the weekend. Stockholm has excellent cooking schools offering group sessions.' },
-      { type: 'heading', text: '5. Wine tasting in Gamla Stan' },
-      { type: 'paragraph', text: 'Stockholm\'s Old Town is full of wine bars that run private tasting sessions for groups. A guided tasting with well-chosen wines and a cheese board is the kind of bachelorette party activity that suits a broad age range — relaxed, sociable, easy to extend into dinner.' },
-      { type: 'heading', text: '6. Outdoor adventure at Äventyrsbanan' },
-      { type: 'paragraph', text: 'If your group wants to actually move and do something physical, Äventyrsbanan runs outdoor adventure packages specifically for bachelorette parties. High ropes courses, ziplines, and outdoor challenges followed by a sauna session.' },
-      { type: 'paragraph', text: 'If you want to book the SUP yoga and sauna experience for your bachelorette party group, check out yogawithcamilla.se/tjanster/sup-yoga or email hello.yogawithcamilla@gmail.com. I teach in English, the sessions are designed for all levels, and starting the morning on the water before a sauna is a pretty hard act to follow.' },
+      { type: 'heading', text: '5. Cocktail masterclass' },
+      { type: 'paragraph', text: 'A cocktail masterclass works for every kind of group. You spend a couple of hours learning to make proper drinks, a professional bartender guides you through it, and everyone has loosened up by the end. Pairs well with yoga in the morning and dinner after.' },
+      { type: 'heading', text: '6. Wine tasting in Gamla Stan' },
+      { type: 'paragraph', text: 'Stockholm\'s Old Town has excellent wine bars that run private tastings. Relaxed, social, and easy to extend into dinner. A good option if the group wants something low-key to close the day.' },
+      { type: 'paragraph', text: 'Two of the activities above are bookable directly through me: SUP yoga and sauna (yogawithcamilla.se/tjanster/sup-yoga) and private group yoga (yogawithcamilla.se/tjanster/privata-event). Email hello.yogawithcamilla@gmail.com with your dates and group size for a same-day quote.' },
     ]
   },
   {
@@ -864,13 +864,13 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Att laga mat tillsammans är ett av de bästa sätten att få ett team att samarbeta utan att det känns som en samarbetsövning. Det finns flera aktörer i Stockholm som erbjuder guidade utomhusmatlagningar.' },
       { type: 'heading', text: '4. Kajakpaddling i Stockholms inlopp' },
       { type: 'paragraph', text: 'Kajakpaddling kräver ingen förkunskap, det är skonsamt för kroppen och utsikterna längs Stockholms stränder är svåra att slå. Det finns guidade halvdagsturer som tar er längs med Djurgården och ut mot Fjäderholmarna.' },
-      { type: 'heading', text: '5. Rooftop-bar' },
-      { type: 'paragraph', text: 'Ibland är det enkla det bästa. En rooftop-bar i centrala Stockholm med utsikt, god mat och ett glas i handen kan vara precis vad teamet behöver efter en lång vår.' },
+      { type: 'heading', text: '5. Yoga på kontoret eller utomhus' },
+      { type: 'paragraph', text: 'En privat yogaklass för teamet — på kontoret, i en park, eller på taket. 60 minuter som bryter av dagen på ett annat sätt. Jag kommer till er med all utrustning. Funkar som start på dagen eller avslutning. Från 1 500 kr. Läs mer på yogawithcamilla.se/tjanster/foretagsyoga.' },
       { type: 'heading', text: '6. Escape room' },
       { type: 'paragraph', text: 'Escape rooms sätter teamet i ett läge där ni faktiskt behöver kommunicera och lösa problem ihop, fast i ett sammanhang som är kul snarare än pressande. Stockholm har många bra alternativ.' },
       { type: 'heading', text: '7. Guidad promenad på Djurgården med picknick' },
       { type: 'paragraph', text: 'Djurgården är en av Stockholms vackraste platser och den är alldeles gratis. En guidad promenad följt av en gemensam picknick på gräset är ett härligt sätt att fira sommaren utan att krångla till det.' },
-      { type: 'paragraph', text: 'Vill ni boka SUP yoga och bastu för ert team? Mejla hello.yogawithcamilla@gmail.com för offert, eller läs mer på yogawithcamilla.se/tjanster/sup-yoga.' },
+      { type: 'paragraph', text: 'Två av aktiviteterna ovan bokar ni direkt via mig: SUP yoga och bastu (yogawithcamilla.se/tjanster/sup-yoga) och yoga för ert team (yogawithcamilla.se/tjanster/foretagsyoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så får ni en offert samma dag.' },
     ]
   },
   {
@@ -897,13 +897,13 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Cooking together scales up easily. Split into groups, get a challenge, and cook your way through it. The competition is friendly. The food is real. And it fills a summer afternoon without anyone feeling like they are doing a corporate exercise.' },
       { type: 'heading', text: '4. Kayaking Through the City' },
       { type: 'paragraph', text: 'Stockholm is surrounded by water, and kayaking is one of the most underused ways to see it. A guided kayak tour through the inner archipelago gives you a completely different view of the city.' },
-      { type: 'heading', text: '5. Rooftop After-Work' },
-      { type: 'paragraph', text: 'Sometimes the best team day is a short one. Stockholm has excellent rooftop bars. Book a table in the afternoon before the evening crowd arrives. This pairs well as an add-on to another activity.' },
+      { type: 'heading', text: '5. Yoga session for the team' },
+      { type: 'paragraph', text: 'A private yoga class at your office, in a park, or on a rooftop. 60 minutes that resets the energy. I bring all the equipment and adapt for all levels. Works as a morning opener or afternoon wind-down. From 1 500 SEK. Details at yogawithcamilla.se/tjanster/foretagsyoga.' },
       { type: 'heading', text: '6. Escape Room Challenge' },
       { type: 'paragraph', text: 'Stockholm has a solid selection of escape rooms. You see quickly who leads under pressure, who thinks laterally, and who just wants someone else to read the clues. Keep groups at 4 to 6 people per room for the best dynamic.' },
       { type: 'heading', text: '7. Guided Summer Walk Through Stockholm' },
       { type: 'paragraph', text: 'A guided city walk sounds simple. Done well, it is genuinely interesting. Stockholm\'s old town, the Södermalm cliffs, and the waterfront areas all have histories that most people who work in the city have never heard.' },
-      { type: 'paragraph', text: 'If you want one activity that combines movement, water, fresh air, and a proper Swedish sauna experience — the SUP yoga and sauna package at Sickla Strand is hard to beat. Visit yogawithcamilla.se/tjanster/sup-yoga or email hello.yogawithcamilla@gmail.com to check availability.' },
+      { type: 'paragraph', text: 'Two of the activities above are bookable directly through me: SUP yoga and sauna (yogawithcamilla.se/tjanster/sup-yoga) and yoga for your team (yogawithcamilla.se/tjanster/foretagsyoga). Email hello.yogawithcamilla@gmail.com with your dates and group size for a same-day quote.' },
     ]
   },
   {
@@ -933,11 +933,11 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Stockholm är en stad på vatten. Kajakpaddling i skärgården ger teamet frisk luft, rörelse och ett gemensamt äventyr. Flera aktörer erbjuder skräddarsydda upplägg för företagsgrupper.' },
       { type: 'heading', text: '5. Guidad promenad i Stockholm' },
       { type: 'paragraph', text: 'Enkelt och underskattat. En bra guidad stadsvandring, kanske med ett quiz längs vägen, ger teamet tid att prata utan agenda. Gamla Stan, Djurgården och Södermalm är alla bra alternativ.' },
-      { type: 'heading', text: '6. Vinprovning' },
-      { type: 'paragraph', text: 'En vinprovning är avslappnad på ett bra sätt. Gruppen sitter ner, fokuset är på något annat än jobbet, och samtalen flödar naturligt. Passar utmärkt som avslutning på en konferensdag.' },
+      { type: 'heading', text: '6. Yoga på kontoret eller konferensen' },
+      { type: 'paragraph', text: 'En privat yogaklass för teamet — på kontoret, i konferenslokalen eller utomhus. 60 minuter som bryter av och ger ny energi. Alla nivåer, ingen erfarenhet krävs. Jag kommer till er med all utrustning. Från 1 500 kr. Läs mer på yogawithcamilla.se/tjanster/foretagsyoga.' },
       { type: 'heading', text: '7. Utomhuslekar och sportaktiviteter' },
       { type: 'paragraph', text: 'Ibland är det enklaste det bästa. En organiserad utomhusdag i ett av Stockholms parker eller naturområden kostar lite och ger mycket. Djurgården, Haga och Nacka naturreservat är populära val.' },
-      { type: 'paragraph', text: 'SUP yoga och bastu vid Sicklasjön är vårt mest bokade teambuilding-upplägg. Mejla hello.yogawithcamilla@gmail.com för offert, eller läs mer på yogawithcamilla.se/tjanster/sup-yoga.' },
+      { type: 'paragraph', text: 'Tre av aktiviteterna ovan bokar ni direkt via mig: SUP yoga och bastu (yogawithcamilla.se/tjanster/sup-yoga), yoga för teamet (yogawithcamilla.se/tjanster/foretagsyoga), och privata event (yogawithcamilla.se/tjanster/privata-event). Mejla hello.yogawithcamilla@gmail.com med datum och antal så får ni en offert samma dag.' },
     ]
   },
   {
@@ -967,11 +967,11 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Stockholm is built on 14 islands. A guided kayaking session means seeing the city from a completely different angle. It does not require any previous experience.' },
       { type: 'heading', text: '5. City Scavenger Hunt in Gamla Stan' },
       { type: 'paragraph', text: 'A guided city hunt gets teams moving, talking, and competing in a low-pressure way. Works well for large groups (20 to 100 people) because it splits naturally into smaller competing teams.' },
-      { type: 'heading', text: '6. Outdoor Games Day at Djurgården' },
-      { type: 'paragraph', text: 'Djurgården is one of Stockholm\'s best outdoor spaces. A facilitated outdoor games day brings a different energy than venue-based activities. The fresh air alone changes the mood.' },
+      { type: 'heading', text: '6. Yoga session for the team' },
+      { type: 'paragraph', text: 'A private yoga class at your office, conference venue, or outdoors. 60 minutes that resets the group\'s energy. I bring all the equipment and adapt for all levels. Works as a morning opener, lunch break, or conference closer. From 1 500 SEK. Details at yogawithcamilla.se/tjanster/foretagsyoga.' },
       { type: 'heading', text: '7. Wine or Cocktail Tasting' },
       { type: 'paragraph', text: 'A structured wine or cocktail tasting gives the team something to focus on while having a relaxed conversation. The guided format matters — without it, you just have drinks after work. With it, you have a shared experience.' },
-      { type: 'paragraph', text: 'If you are booking team building in Stockholm and want something genuinely different, the SUP yoga and sauna at Sickla Strand is a good place to start. Visit yogawithcamilla.se/tjanster/sup-yoga or email hello.yogawithcamilla@gmail.com.' },
+      { type: 'paragraph', text: 'Three of the activities above are bookable directly through me: SUP yoga and sauna (yogawithcamilla.se/tjanster/sup-yoga), yoga for your team (yogawithcamilla.se/tjanster/foretagsyoga), and private events (yogawithcamilla.se/tjanster/privata-event). Email hello.yogawithcamilla@gmail.com with your dates and group size for a same-day quote.' },
     ]
   }
 ];
