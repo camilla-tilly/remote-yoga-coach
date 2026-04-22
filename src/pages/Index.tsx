@@ -100,8 +100,8 @@ const Index = () => {
             </div>
             <p className="font-eb-garamond text-base md:text-lg text-dalashala-earthSoft leading-relaxed">
               Jag erbjuder privata yogaklasser för alla nivåer — möhippor, bröllop, företagsevent, retreats och en-till-en lektioner.
-              I Stockholm kommer jag till er med all utrustning. I Dalarna håller jag klasser utomhus på altanen i skogen,
-              med höns som sällskap. Online-yoga via Zoom på engelska, var du än befinner dig.
+              I Stockholm kommer jag till er med all utrustning — eller så möts vi vid Sickla Sjö för SUP-yoga och bastu.
+              I Dalarna håller jag klasser utomhus på altanen i skogen, med höns som sällskap.
             </p>
           </div>
         </section>
