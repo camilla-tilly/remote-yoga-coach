@@ -59,7 +59,7 @@ const App = () => (
           <Route path="/tjanster/honsyoga" element={<HonsYoga />} />
           <Route path="/tjanster/yoga-dalarna-turister" element={<Navigate to="/tjanster/privatlektioner" replace />} />
           <Route path="/tjanster/privata-event" element={<PrivataEvent />} />
-          <Route path="/tjanster/private-events" element={<PrivataEvent />} />
+          <Route path="/tjanster/private-events" element={<Navigate to="/tjanster/privata-event" replace />} />
 
           {/* Redirects — old service pages merged into consolidated pages */}
           <Route path="/tjanster/mohippa-yoga" element={<Navigate to="/tjanster/privata-event" replace />} />

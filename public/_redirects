@@ -1,4 +1,5 @@
 # Consolidated service page redirects (301)
+/tjanster/private-events      /tjanster/privata-event     301
 /tjanster/mohippa-yoga        /tjanster/privata-event     301
 /tjanster/brollopsyoga        /tjanster/privata-event     301
 /tjanster/fodelsedag-yoga     /tjanster/privata-event     301
