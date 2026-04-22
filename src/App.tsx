@@ -61,7 +61,7 @@ const App = () => (
           <Route path="/tjanster/privata-event" element={<PrivataEvent />} />
           <Route path="/tjanster/private-events" element={<Navigate to="/tjanster/privata-event" replace />} />
 
-          {/* Redirects — old service pages merged into consolidated pages */}
+          {/* Redirects: old service pages merged into consolidated pages */}
           <Route path="/tjanster/mohippa-yoga" element={<Navigate to="/tjanster/privata-event" replace />} />
           <Route path="/tjanster/brollopsyoga" element={<Navigate to="/tjanster/privata-event" replace />} />
           <Route path="/tjanster/fodelsedag-yoga" element={<Navigate to="/tjanster/privata-event" replace />} />

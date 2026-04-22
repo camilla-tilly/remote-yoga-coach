@@ -8,7 +8,7 @@ import SEO from '@/components/SEO';
 const SUPYogaVillkor = () => {
   const [lang, setLang] = useState<'sv' | 'en'>('sv');
 
-  // noindex on legal/terms page — don't waste crawl budget
+  // noindex on legal/terms page: don't waste crawl budget
   useEffect(() => {
     const el = document.querySelector('meta[name="robots"]');
     const prev = el?.getAttribute('content') || 'index, follow';

@@ -32,11 +32,11 @@ const MiniRetreat = () => (
     heroHeading="Mini Retreat & Upplevelser"
     heroSubtitle="Yoga retreat i Dalarnas natur, adventure-paket med vandring och löpning, eller trail run + yoga i Stockholm. Skräddarsytt för din grupp."
     heroImage="/images/IMG_8366.jpeg"
-    heroImageAlt="Yogamattor uppställda på altanen — mini retreat i Dalarna"
+    heroImageAlt="Yogamattor uppställda på altanen, mini retreat i Dalarna"
     heroImagePosition="center 60%"
-    introHeading="Rörelse och yoga — i naturen"
+    introHeading="Rörelse och yoga i naturen"
     introParagraphs={[
-      "Du väljer upplägget — yoga och vandring i skogen, ett guidat löppass med återhämtningsyoga efteråt, en heldag med mindfulness och fika, eller ett multi-aktivitets-adventure. Allt baserat i Dalarna eller Stockholm.",
+      "Du väljer upplägget: yoga och vandring i skogen, ett guidat löppass med återhämtningsyoga efteråt, en heldag med mindfulness och fika, eller ett multi-aktivitets-adventure. Allt baserat i Dalarna eller Stockholm.",
       "Mini-retreats och adventure-paket för enskilda eller grupp (max 6–8 personer), som dagsupplevelse eller weekend. Programmet anpassas efter er. Leds på engelska, alla nivåer."
     ]}
     highlights={[
@@ -53,16 +53,16 @@ const MiniRetreat = () => (
         text: "Kombinera vandring, trail run, SUP yoga och hönsyoga i en halvdag, heldag eller weekend. Vi bygger ihop ett skräddarsytt paket runt det ni vill göra."
       },
       {
-        heading: "Trail Run + Yoga — Stockholm",
+        heading: "Trail Run + Yoga i Stockholm",
         text: "Trail run eller vandring i Nacka Naturreservat, följt av SUP yoga på Sicklasjön. Halvdag ca 3–4 timmar, grupper om 2–10 personer. Du behöver inte vara löpare."
       },
       {
         heading: "Privat eller grupp",
-        text: "Ensam eller med vänner (max 6–8 personer). Jag skräddarsyr programmet efter er — återhämtning, rörelse, fördjupning, eller det ni just nu behöver mest."
+        text: "Ensam eller med vänner (max 6–8 personer). Jag skräddarsyr programmet efter er: återhämtning, rörelse, fördjupning, eller det ni just nu behöver mest."
       },
       {
         heading: "Teambuilding utomhus",
-        text: "Funkar bra som företagsdag — trail run + yoga eller en adventure-halvdag utomhus som faktiskt känns annorlunda."
+        text: "Funkar bra som företagsdag: trail run + yoga eller en adventure-halvdag utomhus som faktiskt känns annorlunda."
       }
     ]}
     pricing={[
@@ -105,7 +105,7 @@ const MiniRetreat = () => (
       "Maila hello.yogawithcamilla@gmail.com med datum, format och gruppstorlek."
     ]}
     ctaHeading="Boka din upplevelse"
-    ctaText="Hör av dig med önskade datum och vad du söker — retreat, adventure, trail run + yoga, eller något helt eget."
+    ctaText="Hör av dig med önskade datum och vad du söker: retreat, adventure, trail run + yoga, eller något helt eget."
     structuredData={structuredData}
     relatedServices={relatedServices}
     faq={[
@@ -127,7 +127,7 @@ const MiniRetreat = () => (
       },
       {
         question: "Kan adventure-paketet kombineras med hönsyoga?",
-        answer: "Ja, absolut. Hönsyoga på altanen kan vara en del av adventure-paketet — det är ett populärt val, särskilt för grupper som vill ha en unik upplevelse."
+        answer: "Ja, absolut. Hönsyoga på altanen kan vara en del av adventure-paketet. Det är ett populärt val, särskilt för grupper som vill ha en unik upplevelse."
       }
     ]}
     englishKeywords={{

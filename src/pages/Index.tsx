@@ -45,7 +45,7 @@ const Index = () => {
     <div className="min-h-screen bg-dalashala-cream relative overflow-x-hidden">
       <SEO
         title="Yoga med Camilla – Privat Yoga i Stockholm & Dalarna"
-        description="Privat yoga i Stockholm och Dalarna — möhippa, bröllop, företagsyoga, SUP yoga och retreats. Certifierad yogalärare i en skogsstuga i Dalarna."
+        description="Privat yoga i Stockholm och Dalarna: möhippa, företagsyoga, SUP yoga och retreats. Bröllopsyoga för bröllopshelger i Dalarna. Certifierad yogalärare i en skogsstuga i Dalarna."
         canonical="https://yogawithcamilla.se"
         structuredData={homepageStructuredData}
       />
@@ -53,7 +53,7 @@ const Index = () => {
       <main>
         <Hero />
 
-        {/* Photo strip — softer edges, subtle frame, sage dividers */}
+        {/* Photo strip: softer edges, subtle frame, sage dividers */}
         <section className="relative bg-dalashala-cream py-6 md:py-10">
           <div className="max-w-6xl mx-auto px-4 md:px-8">
             <div className="grid grid-cols-3 gap-2 md:gap-4">
@@ -74,7 +74,7 @@ const Index = () => {
               <div className="aspect-square overflow-hidden rounded-2xl shadow-card border border-dalashala-meadow/25 group">
                 <img
                   src="/images/IMG_3367.jpeg"
-                  alt="Hönsyoga — yoga med höns på altanen"
+                  alt="Hönsyoga, yoga med höns på altanen"
                   className="w-full h-full object-cover object-[50%_80%] transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -82,7 +82,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* SEO keyword section — elevated with sage accent */}
+        {/* SEO keyword section: elevated with sage accent */}
         <section className="relative py-14 md:py-20 px-4 overflow-hidden">
           <div className="blob-cream w-[500px] h-[500px] top-0 left-1/2 -translate-x-1/2 opacity-40" aria-hidden="true" />
           <div className="relative max-w-2xl mx-auto text-center">
@@ -99,8 +99,8 @@ const Index = () => {
               <span className="h-px w-8 bg-dalashala-olive/40" />
             </div>
             <p className="font-eb-garamond text-base md:text-lg text-dalashala-earthSoft leading-relaxed">
-              Jag erbjuder privata yogaklasser för alla nivåer — möhippor, bröllop, företagsevent, retreats och en-till-en lektioner.
-              I Stockholm kommer jag till er med all utrustning — eller så möts vi vid Sickla Sjö för SUP-yoga och bastu.
+              Jag erbjuder privata yogaklasser för alla nivåer: möhippor, bröllop, företagsevent, retreats och en-till-en lektioner.
+              I Stockholm kommer jag till er med all utrustning, eller så möts vi vid Sickla Sjö för SUP-yoga och bastu.
               I Dalarna håller jag klasser utomhus på altanen i skogen, med höns som sällskap.
             </p>
           </div>

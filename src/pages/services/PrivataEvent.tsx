@@ -10,8 +10,8 @@ const relatedServices = [
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Privata event med yoga — Möhippa, Bröllop & Födelsedag i Stockholm & Dalarna",
-  "description": "Privata event med yoga i Stockholm och Dalarna — möhippa, bröllop, födelsedag, sommaravslutning, teambuilding och kickoffs. Privat klass anpassad för gruppen, ingen erfarenhet krävs.",
+  "name": "Privata event med yoga: Möhippa & Födelsedag i Stockholm & Dalarna, Bröllopsyoga i Dalarna",
+  "description": "Privata event med yoga i Stockholm och Dalarna: möhippa, födelsedag, sommaravslutning, teambuilding och kickoffs. Bröllopsyoga för bröllopshelger i Dalarna. Privat klass anpassad för gruppen, ingen erfarenhet krävs.",
   "provider": {
     "@type": "LocalBusiness",
     "name": "Yoga med Camilla",
@@ -23,44 +23,44 @@ const structuredData = {
 
 const PrivataEvent = () => (
   <ServicePageLayout
-    seoTitle="Privata Event — Möhippa, Bröllop & Födelsedag Yoga Stockholm & Dalarna | Yoga med Camilla"
-    seoDescription="Annorlunda möhippa, bröllopsyoga eller födelsedag med yoga? Boka en privat yogaupplevelse i Stockholm eller Dalarna. Flexibla datum — mejla för offert."
+    seoTitle="Privata Event | Möhippa & Födelsedag Yoga Stockholm & Dalarna | Bröllopsyoga Dalarna | Yoga med Camilla"
+    seoDescription="Annorlunda möhippa eller födelsedag med yoga i Stockholm eller Dalarna, och bröllopsyoga för bröllopshelger i Dalarna. Flexibla datum, mejla för offert."
     canonical="https://yogawithcamilla.se/tjanster/privata-event"
     ogImage="https://yogawithcamilla.se/images/IMG_6793.JPG"
     breadcrumbLabel="Privata Event"
-    heroTag="Privata Event — Stockholm & Dalarna"
+    heroTag="Privata Event i Stockholm & Dalarna"
     heroHeading="Privata event med yoga"
-    heroSubtitle="Möhippa, bröllop, födelsedag, sommaravslutning eller bara en dag ihop. En riktig paus från allt annat — lugn, rörelse och gott sällskap."
+    heroSubtitle="Möhippa, födelsedag, sommaravslutning eller bara en dag ihop. En riktig paus från allt annat: lugn, rörelse och gott sällskap."
     heroImage="/images/IMG_6793.JPG"
-    heroImageAlt="Yoga utomhus — privat event med Camilla"
+    heroImageAlt="Yoga utomhus, privat event med Camilla"
     heroImagePosition="center 35%"
     introHeading="Något annat än konferensrummet"
     introParagraphs={[
-      "Letar ni efter en annorlunda möhippa, en sommaravslutning med jobbet som faktiskt lämnar avtryck, bröllopsyoga, en födelsedagsaktivitet eller bara en dag ihop? Jag sätter ihop privata event för grupper — möhippor, bröllop, födelsedagar, kickoffs, teamdagar, AW-gäng och kompisgrupper — i Dalarna eller Stockholm.",
-      "Upplägget är flexibelt. Det kan vara ett stilla morgonpass, en längre halvdag med flera bitar, eller en hel dag ute i skogen. Jag formar det runt vad ni faktiskt vill ha ut av dagen — inte runt en färdig mall. Ingen yogaerfarenhet krävs, och klassen hålls på svenska eller engelska.",
+      "Letar ni efter en annorlunda möhippa, en sommaravslutning med jobbet som faktiskt lämnar avtryck, en födelsedagsaktivitet eller bara en dag ihop? Jag sätter ihop privata event för grupper (möhippor, födelsedagar, kickoffs, teamdagar, AW-gäng och kompisgrupper) i Dalarna eller Stockholm. För bröllopshelger på landet i Dalarna håller jag även bröllopsyoga som en del av helgens aktiviteter.",
+      "Upplägget är flexibelt. Det kan vara ett stilla morgonpass, en längre halvdag med flera bitar, eller en hel dag ute i skogen. Jag formar det runt vad ni faktiskt vill ha ut av dagen, inte runt en färdig mall. Ingen yogaerfarenhet krävs, och klassen hålls på engelska.",
       "Jag är flexibel med datum och tider. Mejla mig så hittar vi något som passar er grupp."
     ]}
     highlights={[
       {
         heading: "På stugan i Dalarna",
-        text: "Yoga på altanen vid stugan, omgiven av skog, tystnad och hönsen i bakgrunden. Plats för upp till 10 personer. Jag fixar mattor och all utrustning."
+        text: "Yoga på altanen vid stugan, omgiven av skog, tystnad och hönsen i bakgrunden. Plats för upp till 10 personer. Mattor och all utrustning ingår."
       },
       {
         heading: "Jag kommer till er",
-        text: "Bor ni i en stuga i Dalarna, på ett hotell i Stockholm eller har ni ett kontor där ni vill möta upp? Jag reser med mattor, block och allt som behövs."
+        text: "Ni väljer platsen, inomhus eller utomhus, i Dalarna eller Stockholm. Jag är flexibel och reser med mattor, block och allt som behövs."
       },
       {
         heading: "Formas efter gruppen",
-        text: "Lugnt och återhämtande, eller mer rörelse och flöde — jag frågar innan, och anpassar passet efter nivå, energi och vad ni är sugna på den dagen."
+        text: "Lugnt och återhämtande, eller mer rörelse och flöde. Jag frågar innan, och anpassar passet efter nivå, energi och vad ni är sugna på den dagen."
       },
       {
         heading: "Kombinera gärna",
-        text: "Yogaklassen kan vara hela eventet, eller en del av en större dag. Kombinera med vandring, trail run, SUP yoga, bastu eller fika — jag hjälper er sätta ihop upplägget."
+        text: "Yogaklassen kan vara hela eventet, eller en del av en större dag. Kombinera med vandring, trail run, paddling, bastu eller fika. Jag hjälper er sätta ihop upplägget."
       }
     ]}
     pricing={[
       {
-        label: "Yogapass — privatgrupp",
+        label: "Yogapass för privatgrupp",
         price: "kontakta för pris",
         note: "60–90 min. All utrustning ingår."
       },
@@ -70,7 +70,7 @@ const PrivataEvent = () => (
         note: "Yoga + fika + valfri aktivitet i naturen."
       },
       {
-        label: "Heldag / event med flera bitar",
+        label: "Event med flera bitar",
         price: "kontakta för offert",
         note: "Skräddarsytt upplägg för er grupp."
       },
@@ -82,9 +82,9 @@ const PrivataEvent = () => (
     ]}
     detailsHeading="Perfekt för"
     detailsParagraphs={[
-      "Möhippa & svensexa — en annorlunda möhippa-aktivitet som passar både aktiva gäng och de som hellre tar det lugnt. Sommaravslutning med jobbet — en naturnära paus innan alla skingras för semestern. Teambuilding & företagsevent — en teamdag som faktiskt får gruppen att landa tillsammans, utan att kännas som en övning. Födelsedagsfirande — ett annorlunda sätt att fira, särskilt för den som har allt.",
-      "Kickoff, kick-out och AW-grupper — för jobbkompisar som vill göra något utöver det vanliga. Kompisgäng — som bara vill hitta på något ihop och behöver en anledning. Familjesammankomster och återträffar — något stillsamt för grupper som inte ses ofta.",
-      "Det är en av de där aktiviteterna som funkar för de flesta. Man behöver inte vara vältränad, man behöver inte ha gjort yoga förut, och det finns inga extrema eller imponerande poser på menyn — det är en medveten hållning hos mig. Det handlar mer om att landa ihop, röra sig lite, och få en paus från allt annat."
+      "Möhippa som passar både aktiva gäng och de som hellre tar det lugnt. Sommaravslutning med jobbet, en naturnära paus innan alla skingras för semestern. Teambuilding och företagsevent, en teamdag som faktiskt får gruppen att landa ihop utan att kännas som en övning. Födelsedagsfirande, ett annorlunda sätt att fira för den som har allt.",
+      "Kickoff, kick-out och AW-grupper för jobbkompisar som vill göra något utöver det vanliga. Kompisgäng som bara vill hitta på något ihop och behöver en anledning. Familjesammankomster och återträffar, något stillsamt för grupper som inte ses ofta.",
+      "Det är en av de där aktiviteterna som funkar för de flesta. Man behöver inte vara vältränad, inte ha gjort yoga förut, och det finns inga extrema eller imponerande poser på menyn. Det är medvetet. Det handlar om att landa ihop, röra sig lite, och få en paus från allt annat."
     ]}
     ctaHeading="Boka ert privata event"
     ctaText="Mejla mig med önskade datum, gruppstorlek, plats och eventuella önskemål så återkommer jag med ett upplägg som passar just er."
@@ -97,15 +97,15 @@ const PrivataEvent = () => (
       },
       {
         question: "Hur många kan delta?",
-        answer: "Jag tar privatbokningar för mindre och mellanstora grupper — upp till 10 personer fungerar smidigast. Mejla mig med er gruppstorlek så återkommer jag med vad som funkar."
+        answer: "Jag tar privatbokningar för mindre och mellanstora grupper. Upp till 10 personer fungerar smidigast. Mejla mig med er gruppstorlek så återkommer jag med vad som funkar."
       },
       {
         question: "Funkar det som möhippa-aktivitet?",
-        answer: "Ja, möhippa-yoga är en av de vanligaste bokningarna. Privat klass för hela gruppen — på altanen i Dalarna, i en hyrd lokal i Stockholm, eller utomhus. Kan kombineras med SUP yoga vid Sickla sjö. Ingen yogaerfarenhet krävs."
+        answer: "Ja, möhippa-yoga är en av de vanligaste bokningarna. Privat klass för hela gruppen på altanen i Dalarna, i en hyrd lokal i Stockholm, eller utomhus. Kan kombineras med SUP yoga vid Sickla sjö. Ingen yogaerfarenhet krävs."
       },
       {
         question: "Kan ni ha yoga på bröllopet?",
-        answer: "Ja. Bröllopsyoga passar morgonen av bröllopsdagen, kvällen innan eller dagen efter. En lugn stund för brudparet och gästerna — 45 till 90 minuter. Jag kommer till er bröllopslokation i Dalarna eller Stockholm med all utrustning."
+        answer: "Ja, för bröllopshelger på landet i Dalarna. Bröllopsyoga passar morgonen av bröllopsdagen, kvällen innan eller dagen efter. En lugn stund för brudparet och gästerna, 45 till 90 minuter. Jag kommer till er bröllopslokation i Dalarna med all utrustning."
       },
       {
         question: "Yoga som födelsedagsaktivitet?",
@@ -113,7 +113,7 @@ const PrivataEvent = () => (
       },
       {
         question: "När på året går det att boka?",
-        answer: "Året runt. Utomhusyoga i Dalarna funkar bäst från maj till september — på altanen eller i skogen. Övrig tid håller vi klassen inomhus. I Stockholm fungerar det året runt i hyrda salar eller på er plats."
+        answer: "Året runt. Utomhusyoga i Dalarna funkar bäst från maj till september, på altanen eller i skogen. Övrig tid håller vi klassen inomhus. I Stockholm fungerar det året runt i hyrda salar eller på er plats."
       },
       {
         question: "Var håller ni eventen?",
@@ -133,8 +133,8 @@ const PrivataEvent = () => (
       }
     ]}
     englishKeywords={{
-      heading: "Private Events in Sweden — Bachelorette Party, Wedding & Birthday Yoga",
-      text: "Looking for a different kind of bachelorette party, wedding activity, birthday celebration, or team event in Sweden? I put together private yoga events for groups in Dalarna and Stockholm — bachelorette parties, weddings, birthdays, kick-offs, summer send-offs and friend gatherings. The setup is flexible: a calm morning session, a longer half-day with a few pieces, or a full day out in the forest. Wedding yoga works perfectly the morning of, the evening before, or the day after. No yoga experience needed, all equipment provided, and teaching is in English. Email me at hello.yogawithcamilla@gmail.com with your preferred dates, group size, location and any requests, and I'll come back with a tailored plan."
+      heading: "Private Events in Sweden: Bachelorette & Birthday Yoga in Stockholm & Dalarna, Wedding Yoga in Dalarna",
+      text: "Looking for a different kind of bachelorette party, birthday celebration, or team event in Sweden? I put together private yoga events for groups in Dalarna and Stockholm: bachelorette parties, birthdays, kick-offs, summer send-offs and friend gatherings. For countryside wedding weekends in Dalarna, I also offer wedding yoga as part of the weekend's activities (the morning of, the evening before, or the day after). The setup is flexible: a calm morning session, a longer half-day with a few pieces, or a full day out in the forest. No yoga experience needed, all equipment provided, and teaching is in English. Email me at hello.yogawithcamilla@gmail.com with your preferred dates, group size, location and any requests, and I'll come back with a tailored plan."
     }}
   />
 );

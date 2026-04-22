@@ -22,7 +22,7 @@ const Footer = () => {
             <span className="h-px w-8 bg-dalashala-cream/50" />
           </div>
           <p className="font-eb-garamond italic text-sm md:text-base text-dalashala-cream/80 max-w-md">
-            Privat yoga i Stockholm & Dalarna — i en skogsstuga, på altanen, eller där du är.
+            Privat yoga i Stockholm & Dalarna. I en skogsstuga, på altanen, eller där du är.
           </p>
           <p className="font-montserrat text-[11px] uppercase tracking-widest text-dalashala-cream/60 pt-2">
             &copy; {currentYear} Yoga with Camilla

@@ -10,7 +10,7 @@ type ServiceCard = {
 const stockholmServices: ServiceCard[] = [
   {
     title: 'Privata Event',
-    description: 'Möhippa, bröllop, födelsedag eller sommaravslutning — privat yoga för gruppen.',
+    description: 'Möhippa, födelsedag eller sommaravslutning. Privat yoga för gruppen.',
     href: '/tjanster/privata-event',
     tag: 'Populärt',
   },
@@ -26,7 +26,7 @@ const stockholmServices: ServiceCard[] = [
   },
   {
     title: 'Privatlektioner',
-    description: 'En-till-en yoga — live i Stockholm, specialisering för löpare, eller online via Zoom.',
+    description: 'En-till-en yoga live i Stockholm, specialisering för löpare, eller online via Zoom.',
     href: '/tjanster/privatlektioner',
   },
 ];
@@ -34,7 +34,7 @@ const stockholmServices: ServiceCard[] = [
 const dalarnaServices: ServiceCard[] = [
   {
     title: 'Hönsyoga på Stugan',
-    description: 'Yoga på altanen med hönsen runt. Sveriges svar på goat yoga — unikt och helt ostört.',
+    description: 'Yoga på altanen med hönsen runt. Har du hört talas om goat yoga? Det här är den svenska, lugnare varianten.',
     href: '/tjanster/honsyoga',
     tag: 'Unikt',
   },
@@ -46,12 +46,12 @@ const dalarnaServices: ServiceCard[] = [
   },
   {
     title: 'Privata Event',
-    description: 'Möhippa, bröllop eller firande — skräddarsydd dag för gruppen på stugan i Dalarna.',
+    description: 'Möhippa, bröllop eller firande. Skräddarsydd dag för gruppen på stugan i Dalarna.',
     href: '/tjanster/privata-event',
   },
   {
     title: 'Privatlektioner',
-    description: 'En-till-en yoga — i Dalarna, online via Zoom, eller för löpare. Alla lektioner på engelska.',
+    description: 'En-till-en yoga i Dalarna, online via Zoom, eller för löpare. Alla lektioner på engelska.',
     href: '/tjanster/privatlektioner',
     tag: 'English',
   },
@@ -131,7 +131,7 @@ const Services = () => {
             Vad jag erbjuder
           </h2>
           <p className="font-eb-garamond text-base md:text-lg text-dalashala-earthSoft leading-relaxed">
-            Baserad i Dalarna och Stockholm — privat yoga för grupper och individer,
+            Baserad i Dalarna och Stockholm. Privat yoga för grupper och individer,
             i stadsmiljö eller mitt i skogen.
           </p>
         </div>
@@ -156,7 +156,7 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Bottom CTA — elevated card with sage wash */}
+        {/* Bottom CTA: elevated card with sage wash */}
         <div className="relative mt-16 rounded-3xl overflow-hidden shadow-card border border-dalashala-meadow/30">
           <div className="absolute inset-0 bg-gradient-to-br from-dalashala-sage/30 via-dalashala-meadow/20 to-dalashala-creamLight" />
           <div className="relative p-8 md:p-12 text-center">
@@ -164,7 +164,7 @@ const Services = () => {
               Ser du inte det du letar efter?
             </h3>
             <p className="font-eb-garamond text-base md:text-lg text-dalashala-earthSoft mb-6 max-w-xl mx-auto">
-              Hör av dig — jag skräddarsyr gärna något för just er grupp, er dag och er plats.
+              Hör av dig, jag skräddarsyr gärna något för just er grupp, er dag och er plats.
             </p>
             <a
               href="#contact"

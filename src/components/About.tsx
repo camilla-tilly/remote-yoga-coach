@@ -51,7 +51,7 @@ const About = () => {
                     I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, followed by a 300-hour YTT at Sampoorna Yoga Shala, Goa in Advanced Vinyasa Flow. My background spans seven years as a Les Mills Bodypump instructor across gyms in Australia and Sweden.
                   </p>
                   <p className="mb-3">
-                    Over the last four years, I've become an ultra runner, completing five ultra marathons up to 100 kilometers. These events mirror yoga's essence—learning to witness experience without attachment.
+                    Over the last four years, I've become an ultra runner, completing five ultra marathons up to 100 kilometers. These events mirror yoga's essence, learning to witness experience without attachment.
                   </p>
                   <p className="mb-3">
                     I have experience in Kadampa Buddhism meditation and Tranquil Wisdom Insight Meditation (TWIM), which deepen my understanding of mindfulness.
@@ -80,7 +80,7 @@ const About = () => {
                   </p>
 
                   <p className="text-base md:text-lg font-eb-garamond">
-                    Over the last four years, I've become an ultra runner, completing five ultra marathons up to 100 kilometers. These events mirror yoga's essence — learning to witness experience without attachment.
+                    Over the last four years, I've become an ultra runner, completing five ultra marathons up to 100 kilometers. These events mirror yoga's essence, learning to witness experience without attachment.
                   </p>
 
                   <p className="text-base md:text-lg font-eb-garamond">

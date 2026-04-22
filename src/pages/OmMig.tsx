@@ -32,7 +32,7 @@ const structuredData = {
 const credentials = [
   {
     title: "500 timmars yoga-certifiering",
-    detail: "200h YTT vid Rishikul Yogshala, Rishikesh, Indien\n300h YTT vid Sampoorna Yoga Shala, Goa — Advanced Vinyasa Flow"
+    detail: "200h YTT vid Rishikul Yogshala, Rishikesh, Indien\n300h YTT vid Sampoorna Yoga Shala, Goa i Advanced Vinyasa Flow"
   },
   {
     title: "Fitness & rörelsevetenskap",
@@ -52,7 +52,7 @@ const OmMig = () => {
   return (
     <>
       <SEO
-        title="Om Camilla — Yogalärare i Dalarna & Stockholm | Yoga with Camilla"
+        title="Om Camilla | Yogalärare i Dalarna & Stockholm | Yoga with Camilla"
         description="Australiensisk yogalärare baserad i Stockholm med undervisar även i Dalarna. 500-timmar certifierad. Yoga som självacceptans, inte självförbättring."
         canonical="https://yogawithcamilla.se/om-mig"
         structuredData={structuredData}
@@ -91,10 +91,10 @@ const OmMig = () => {
               <div className="grid md:grid-cols-5 gap-8 items-start">
                 <div className="md:col-span-3 space-y-6">
                   <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-earth">
-                    Jag heter Camilla. Jag är australiensisk, 500-timmar certifierad yogalärare och undervisar yoga i Stockholm och Dalarna. Jag har instruerat fitness i sju år som Les Mills-instruktör och sprungit fem ultramaraton — inklusive en pallplats. Rörelse har alltid varit en stor del av mitt liv.
+                    Jag heter Camilla. Jag är australiensisk, 500-timmar certifierad yogalärare och undervisar yoga i Stockholm och Dalarna. Jag har instruerat fitness i sju år som Les Mills-instruktör och sprungit fem ultramaraton, inklusive en pallplats. Rörelse har alltid varit en stor del av mitt liv.
                   </p>
                   <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-earthSoft">
-                    Rörelse, natur och mindfulness har alltid varit viktiga för mig. Yoga binder ihop dem — det är där jag landar.
+                    Rörelse, natur och mindfulness har alltid varit viktiga för mig. Yoga binder ihop dem. Det är där jag landar.
                   </p>
                   <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-earthSoft">
                     Jag är baserad i Stockholm och undervisar även i Dalarna, där jag har en stuga med en stor altan som ibland förvandlas till yogashala.
@@ -124,7 +124,7 @@ const OmMig = () => {
                   Min praktik
                 </span>
                 <p className="font-eb-garamond text-lg leading-relaxed text-dalashala-earth italic">
-                  Mina klasser är utmanande men inte bestraffande. Inga extrema poser, ingen tävling med grannen på mattan. Yoga som rörelse, andning och närvaro — oavsett om jag undervisar på altanen i Dalarna eller i en studio i Stockholm.
+                  Mina klasser är utmanande men inte bestraffande. Inga extrema poser, ingen tävling med grannen på mattan. Yoga som rörelse, andning och närvaro, oavsett om jag undervisar på altanen i Dalarna eller i en studio i Stockholm.
                 </p>
               </div>
             </div>
@@ -188,7 +188,7 @@ const OmMig = () => {
                   Vill du yoga med mig?
                 </h2>
                 <p className="font-eb-garamond text-dalashala-cream/85 text-lg mb-8 leading-relaxed max-w-lg mx-auto">
-                  Se mina tjänster eller hör av dig direkt — oavsett om det är en privatlektion, ett bröllop, en konferens eller en morgonklass på altanen.
+                  Se mina tjänster eller hör av dig direkt, oavsett om det är en privatlektion, ett bröllop, en konferens eller en morgonklass på altanen.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
@@ -216,14 +216,14 @@ const OmMig = () => {
               In English
             </p>
             <h2 className="font-cinzel text-2xl text-dalashala-darkBrown mb-6">
-              About Camilla — Yoga Teacher in Dalarna &amp; Stockholm, Sweden
+              About Camilla, Yoga Teacher in Dalarna &amp; Stockholm, Sweden
             </h2>
             <div className="space-y-5 font-eb-garamond text-lg text-dalashala-darkBrown leading-relaxed">
               <p>
-                I'm Camilla, an Australian-born 500-hour certified yoga teacher based in Stockholm, Sweden, with regular classes in Dalarna. I teach vinyasa and yin yoga in Swedish and English.
+                I'm Camilla, an Australian-born 500-hour certified yoga teacher based in Stockholm, Sweden, with regular classes in Dalarna. I teach vinyasa and yin yoga in English.
               </p>
               <p>
-                Movement, nature, and mindfulness have always been important to me. I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, and my 300-hour advanced vinyasa training at Sampoorna Yoga Shala in Goa. I also have a background in fitness instruction as a Les Mills certified instructor (7 years, Australia and Sweden), and I've completed five ultramarathons — including a podium finish.
+                Movement, nature, and mindfulness have always been important to me. I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, and my 300-hour advanced vinyasa training at Sampoorna Yoga Shala in Goa. I also have a background in fitness instruction as a Les Mills certified instructor (7 years, Australia and Sweden), and I've completed five ultramarathons, including a podium finish.
               </p>
               <p>
                 My approach to yoga is simple: challenging but not punishing. I'm not interested in impressive poses or performance. I'm interested in what yoga becomes when it stops being another thing you have to do well.
@@ -232,7 +232,7 @@ const OmMig = () => {
                 I teach at WD Wellness in Vansbro, Hot Yoga Stockholm, Yogarummet Björkhagen, Brahma Yoga in Nacka, and as the SUP yoga teacher for Smashing Balance. I also take bookings for private lessons, corporate yoga, bachelorette yoga, wedding yoga, and yoga retreats across Stockholm and Dalarna.
               </p>
               <p>
-                If you're a tourist looking for a yoga class in Dalarna, an expat in Stockholm searching for English-language yoga, or you simply found me on YouTube — you're welcome to get in touch.
+                If you're a tourist looking for a yoga class in Dalarna, an expat in Stockholm searching for English-language yoga, or you simply found me on YouTube, you're welcome to get in touch.
               </p>
             </div>
           </div>

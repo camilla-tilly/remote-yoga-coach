@@ -94,7 +94,7 @@ const Navbar = () => {
         <div className="w-full px-3 sm:px-4 lg:px-6 xl:px-8 mx-auto">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link to="/" className="flex items-center" aria-label="Yoga with Camilla — hem">
+            <Link to="/" className="flex items-center" aria-label="Yoga with Camilla, hem">
               <p className="text-sm sm:text-base md:text-lg font-cinzel-decorative font-bold text-dalashala-darkBrown whitespace-nowrap">
                 Yoga with Camilla
               </p>

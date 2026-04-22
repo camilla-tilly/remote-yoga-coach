@@ -11,7 +11,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Hönsyoga i Dalarna",
-  "description": "Yoga på altanen med höns fritt strövande runt. En lugn och jordnära yogaupplevelse i Dalarnas natur — unik i Sverige.",
+  "description": "Yoga på altanen med höns fritt strövande runt. En lugn och jordnära yogaupplevelse i Dalarnas natur, unik i Sverige.",
   "provider": {
     "@type": "LocalBusiness",
     "name": "Yoga med Camilla",
@@ -23,26 +23,26 @@ const structuredData = {
 
 const HonsYoga = () => (
   <ServicePageLayout
-    seoTitle="Hönsyoga i Dalarna — Yoga med Höns | Yoga med Camilla"
-    seoDescription="Yoga på altanen med höns fritt strövande runt — Sveriges svar på goat yoga. Privat bokning i Dalarna för 2–6 personer, maj–september."
+    seoTitle="Hönsyoga i Dalarna | Yoga med Höns | Yoga med Camilla"
+    seoDescription="Yoga på altanen med höns fritt strövande runt i Dalarna. Om du har hört talas om goat yoga, så är det här den svenska, lugnare varianten. Privat bokning för upp till 10 personer, maj till september."
     canonical="https://yogawithcamilla.se/tjanster/honsyoga"
     ogImage="https://yogawithcamilla.se/images/IMG_3765.jpeg"
     breadcrumbLabel="Hönsyoga"
     heroTag="Hönsyoga · Dalarna"
     heroHeading="Hönsyoga i Dalarna"
-    heroSubtitle="Yoga på altanen — med höns fritt strövande runt. En lugn, jordnära upplevelse i Dalarnas natur."
+    heroSubtitle="Yoga på altanen med höns fritt strövande runt. En lugn, jordnära upplevelse i Dalarnas natur."
     heroImage="/images/IMG_3765.jpeg"
-    heroImageAlt="Höns på yogamattan — hönsyoga i Dalarna"
-    heroImagePosition="center 70%"
+    heroImageAlt="Höns på yogamattan, hönsyoga i Dalarna"
+    heroImagePosition="center bottom"
     introHeading="Yoga med sällskap"
     introParagraphs={[
-      "Jag har höns. De rör sig fritt på och runt altanen — ibland nära, ibland inte. Under yogapasset finns de där i bakgrunden.",
+      "Jag har höns. De rör sig fritt på och runt altanen, ibland nära, ibland inte. Under yogapasset finns de där i bakgrunden.",
       "Hönsyoga är ett vanligt yogapass utomhus på altanen, med hönsens närvaro som naturligt inslag. Samma upplägg som alla mina klasser: rörelse, andning, närvaro."
     ]}
     highlights={[
       {
         heading: "Utomhus på altanen",
-        text: "Klassen hålls på altanen vid stugan i Dalarna. Plats för upp till 6 deltagare. Yogamattor tillhandahålls."
+        text: "Klassen hålls på altanen vid stugan i Dalarna. Plats för upp till 10 deltagare. Yogamattor tillhandahålls."
       },
       {
         heading: "Alla nivåer",
@@ -54,26 +54,26 @@ const HonsYoga = () => (
       },
       {
         heading: "Privat bokning",
-        text: "Alla klasser är privatbokade — du bokar passet för din grupp. Klassen hålls på engelska."
+        text: "Alla klasser är privatbokade. Du bokar passet för din grupp. Klassen hålls på engelska."
       }
     ]}
     pricing={[
-      { label: 'Privat klass (2–6 pers, 60 min)', price: 'kontakta för pris', note: 'Yogamattor ingår.' },
+      { label: 'Privat klass (upp till 10 pers, 60 min)', price: 'kontakta för pris', note: 'Yogamattor ingår.' },
       { label: 'Kombinera med mini-retreat', price: 'kontakta för offert', note: 'Lägg till hönsyoga som en del av ett längre retreatprogram.' },
     ]}
     detailsHeading="Praktisk information"
     detailsParagraphs={[
-      "Hönsyoga hålls vid stugan i Dalarna — utomhus på altanen, väderförhållanden tillåtet. Säsongen är maj–september.",
+      "Hönsyoga hålls vid stugan i Dalarna, utomhus på altanen, väderförhållanden tillåtet. Säsongen är maj–september.",
       "Hönsen rör sig fritt runt altanen under passet. De interagerar inte med deltagarna, men de är där.",
-      "Maila hello.yogawithcamilla@gmail.com med önskat datum och antal deltagare."
+      "Skicka en förfrågan till hello.yogawithcamilla@gmail.com med önskat datum och antal deltagare, så återkommer jag med tillgänglighet och offert."
     ]}
     ctaHeading="Boka Hönsyoga"
-    ctaText="Hör av dig med datum och antal deltagare — så fixar jag ett pass."
+    ctaText="Hör av dig med datum och antal deltagare så fixar jag ett pass."
     structuredData={structuredData}
     relatedServices={relatedServices}
     englishKeywords={{
-      heading: "Chicken Yoga in Dalarna, Sweden — A Swedish Alternative to Goat Yoga",
-      body: "Yoga on the cabin deck with free-roaming chickens — a calm, grounded outdoor yoga experience in Dalarna, Sweden. If you've been searching for goat yoga in Sweden, this is Sweden's own version: quieter, more Nordic, and set in a genuine forest cabin. Classes are led in English by a 500-hour certified yoga teacher. Suitable for all levels. Private bookings only, up to 6 people. Available May–September.",
+      heading: "Chicken Yoga in Dalarna, Sweden: If You've Heard of Goat Yoga, You'll Love This",
+      body: "Yoga on the cabin deck with free-roaming chickens, a calm, grounded outdoor yoga experience in Dalarna, Sweden. If you've heard of goat yoga and liked the idea, this is a quieter, more Nordic take, set on the deck of a genuine Swedish forest cabin. Classes are led in English by a 500-hour certified yoga teacher. Suitable for all levels. Private bookings only, up to 10 people. Available May through September.",
       ctaText: "Book chicken yoga in Dalarna",
       ctaHref: "mailto:hello.yogawithcamilla@gmail.com"
     }}
