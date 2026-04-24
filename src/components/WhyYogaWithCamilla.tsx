@@ -21,7 +21,7 @@ const cards = [
 
 const WhyYogaWithCamilla = () => {
   return (
-    <section id="why-yoga-with-camilla" className="relative py-20 md:py-28 bg-white overflow-hidden">
+    <section id="why-yoga-with-camilla" className="relative py-20 md:py-28 bg-dalashala-creamDeep overflow-hidden">
       {/* Single quiet pine branch motif, low-key */}
       <ForestBranch
         variant="pine"
