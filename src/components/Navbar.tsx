@@ -9,6 +9,7 @@ import {
   DrawerClose
 } from '@/components/ui/drawer';
 import { Button } from './ui/button';
+import OmAccent from '@/components/decorative/OmAccent';
 
 const locationGroups = [
   {
@@ -16,7 +17,8 @@ const locationGroups = [
     links: [
       { name: 'Privata Event', href: '/tjanster/privata-event' },
       { name: 'Företagsyoga & Workshops', href: '/tjanster/foretagsyoga' },
-      { name: 'SUP Yoga', href: '/tjanster/sup-yoga' },
+      { name: 'SUP Yoga (privat event)', href: '/tjanster/sup-yoga' },
+      { name: 'SUP Yoga Klasser (drop-in)', href: '/tjanster/sup-yoga-klasser' },
       { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
     ]
   },
@@ -94,8 +96,12 @@ const Navbar = () => {
         <div className="w-full px-3 sm:px-4 lg:px-6 xl:px-8 mx-auto">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link to="/" className="flex items-center" aria-label="Yoga with Camilla, hem">
-              <p className="text-sm sm:text-base md:text-lg font-cinzel-decorative font-bold text-dalashala-darkBrown whitespace-nowrap">
+            <Link to="/" className="flex items-center gap-2 group" aria-label="Yoga with Camilla, hem">
+              <OmAccent
+                size={28}
+                className="text-dalashala-saffron group-hover:text-dalashala-saffronDeep transition-colors"
+              />
+              <p className="text-sm sm:text-base md:text-lg font-cinzel-decorative font-bold text-dalashala-earth whitespace-nowrap">
                 Yoga with Camilla
               </p>
             </Link>
@@ -106,7 +112,7 @@ const Navbar = () => {
               <div className="relative" ref={dropdownRef}>
                 <button
                   onClick={() => setServicesOpen(!servicesOpen)}
-                  className="flex items-center gap-1 text-base lg:text-lg text-dalashala-darkBrown hover:text-dalashala-mediumBrown transition-colors font-medium whitespace-nowrap"
+                  className="flex items-center gap-1 text-base lg:text-lg text-dalashala-earth hover:text-dalashala-saffronDeep transition-colors font-medium whitespace-nowrap"
                 >
                   Tjänster
                   <ChevronDown
@@ -116,7 +122,7 @@ const Navbar = () => {
                 </button>
                 {servicesOpen && (
                   <div className="absolute top-full right-0 mt-3 bg-dalashala-creamLight border border-dalashala-meadow/40 rounded-2xl shadow-card overflow-hidden z-50" style={{ width: '420px' }}>
-                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-meadow to-dalashala-olive" />
+                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-saffron to-dalashala-olive" />
                     <div className="flex pt-1">
                       {locationGroups.map((group, idx) => (
                         <div key={group.location} className={cn('flex-1', idx === 0 && 'border-r border-dalashala-meadow/25')}>
@@ -143,21 +149,21 @@ const Navbar = () => {
 
               <Link
                 to="/blogg"
-                className="text-base lg:text-lg text-dalashala-darkBrown hover:text-dalashala-mediumBrown transition-colors font-medium"
+                className="text-base lg:text-lg text-dalashala-earth hover:text-dalashala-saffronDeep transition-colors font-medium"
               >
                 Blogg
               </Link>
 
               <Link
                 to="/om-mig"
-                className="text-base lg:text-lg text-dalashala-darkBrown hover:text-dalashala-mediumBrown transition-colors font-medium"
+                className="text-base lg:text-lg text-dalashala-earth hover:text-dalashala-saffronDeep transition-colors font-medium"
               >
                 Om mig
               </Link>
 
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-base lg:text-lg text-dalashala-darkBrown hover:text-dalashala-mediumBrown transition-colors font-medium"
+                className="text-base lg:text-lg text-dalashala-earth hover:text-dalashala-saffronDeep transition-colors font-medium"
               >
                 Kontakt
               </button>

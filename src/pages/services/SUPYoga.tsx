@@ -1,6 +1,7 @@
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
+  { label: 'SUP Yoga Klasser (drop-in)', href: '/tjanster/sup-yoga-klasser' },
   { label: 'Privata Event', href: '/tjanster/privata-event' },
   { label: 'Företagsyoga & Workshops', href: '/tjanster/foretagsyoga' },
   { label: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
@@ -10,100 +11,137 @@ const relatedServices = [
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "SUP Yoga Stockholm – Paddleboard Yoga Sickla Strand",
-  "description": "SUP yoga i Stockholm: vinyasa och yin yoga på paddleboard vid Sickla Strand. Öppna klasser och privata event. I samarbete med Smashing Balance.",
+  "name": "Privat SUP Yoga & Bastu Stockholm – möhippa, team och födelsedag",
+  "description": "Privat SUP yoga och bastu i Stockholm vid Sickla Strand. Yoga-ledda paket för möhippa, team och födelsedag. I samarbete med Smashing Balance som står för plats och utrustning.",
   "provider": { "@type": "LocalBusiness", "name": "Yoga with Camilla", "url": "https://yogawithcamilla.se" },
   "areaServed": ["Stockholm"],
   "url": "https://yogawithcamilla.se/tjanster/sup-yoga",
+  "offers": {
+    "@type": "Offer",
+    "name": "Privat SUP Yoga & Bastu",
+    "priceCurrency": "SEK",
+    "price": "500",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": "500",
+      "priceCurrency": "SEK",
+      "description": "Från 500 kr per person, beroende på upplägg och gruppstorlek"
+    }
+  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "SUP Yoga Stockholm klasser",
+    "name": "Privata SUP Yoga event Stockholm",
     "itemListElement": [
-      { "@type": "Offer", "name": "Vinyasa SUP Yoga Stockholm", "description": "Aktivt flöde på paddleboard" },
-      { "@type": "Offer", "name": "Yin SUP Yoga Stockholm", "description": "Lugn yoga på paddleboard" },
-      { "@type": "Offer", "name": "Privat SUP Yoga event", "description": "Möhippa, födelsedag eller företagsevent" }
+      { "@type": "Offer", "name": "Möhippa: SUP yoga + bastu", "description": "Yoga på paddleboard följt av bastu vid sjön, anpassat för möhippa" },
+      { "@type": "Offer", "name": "Team event: SUP yoga + bastu", "description": "Sommaravslutning, kickoff eller teambuilding för upp till 10 personer (fler på förfrågan)" },
+      { "@type": "Offer", "name": "Födelsedag: SUP yoga + bastu", "description": "Privat födelsedagsupplevelse på vattnet med bastu" }
     ]
   }
 };
 
 const SUPYoga = () => (
   <ServicePageLayout
-    seoTitle="SUP Yoga & Bastu Stockholm – Paddleboard Yoga Sickla Strand | Yoga with Camilla"
-    seoDescription="SUP yoga och bastu i Stockholm vid Sickla Strand: yoga på paddleboard + bastu vid sjön. Öppna klasser och privata event för möhippa, team och grupper."
+    seoTitle="Privat SUP Yoga & Bastu Stockholm – Möhippa, Team, Födelsedag | Yoga with Camilla"
+    seoDescription="Privata SUP yoga-event i Stockholm vid Sickla Strand. Yoga på paddleboard plus bastu, för möhippa, team och födelsedag. Från 500 kr per person."
     canonical="https://yogawithcamilla.se/tjanster/sup-yoga"
     ogImage="https://yogawithcamilla.se/images/sup-yoga-sickla.png"
-    breadcrumbLabel="SUP Yoga Stockholm"
-    heroTag="SUP Yoga · Stockholm"
-    heroHeading="SUP Yoga & Bastu Stockholm"
-    heroSubtitle="Yoga på paddleboard vid Sickla Strand. Bastu ingår efter passet. Öppna klasser och privata event. I samarbete med Smashing Balance."
+    breadcrumbLabel="Privat SUP Yoga Stockholm"
+    heroTag="Privata Event · SUP Yoga Stockholm"
+    heroHeading="Privat SUP Yoga & Bastu i Stockholm"
+    heroSubtitle="Yoga på paddleboard vid Sickla Strand, följt av bastu vid sjön. Skräddarsydda paket för möhippa, team och födelsedag. Du bokar direkt med mig."
     heroImage="/images/sup-yoga-sickla.png"
-    heroImageAlt="SUP yoga på Sicklasjön, Stockholm"
+    heroImageAlt="Privat SUP yoga event på Sicklasjön, Stockholm"
     heroImageAspect="aspect-[2/3]"
     heroImagePosition="center 40%"
-    introHeading="SUP yoga vid Sickla Strand"
+    introHeading="Privat SUP yoga, ledd av mig"
     introParagraphs={[
-      "SUP yoga är yoga på ett brett, stabilt paddleboard på öppet vatten. Klasser hålls vid Sickla Strand i Stockholm, i samarbete med Smashing Balance som sköter all utrustning och säkerhet.",
-      "Ingen erfarenhet krävs, varken yoga eller SUP. Varje klass börjar med säkerhetsgenomgång och intro på land. Undervisning på engelska. Bastu ingår efter passet.",
-      "Gratis första veckan: alla drop-in-klasser vid Sickla Strand är gratis 21–27 april 2026."
+      "Det här är yoga-paketet för er grupp. Vi börjar med en mjuk vinyasa eller lugn yin på brädan, justerat efter gruppens nivå, och avslutar med bastu vid vattnet. Ingen behöver kunna yoga eller paddla sedan tidigare.",
+      "Klasserna hålls vid Sickla Strand, vid Elton's Café och Uthyrning, i samarbete med Smashing Balance som står för plats, brädor, paddel, flytväst och bastun. Jag står för yogan, planeringen och dagen i sin helhet.",
+      "Bokning sker direkt via mig. Jag tar gruppens önskemål, datum och format, och skickar offert samma dag."
     ]}
     highlights={[
       {
-        heading: "Vinyasa SUP Yoga",
-        text: "Aktivt flöde på brädan. Rörelserna är anpassade för vattnet, du bygger styrka och balans samtidigt."
+        heading: "Möhippa på vattnet",
+        text: "Yoga, skratt, någon faller i, alla värms upp i bastun efteråt. Det mest populära paketet för möhippor i Stockholm sommartid."
       },
       {
-        heading: "Yin SUP Yoga",
-        text: "Lugna, hållna positioner med vattnet i rörelse under dig. Bra för återhämtning."
+        heading: "Team & sommaravslutning",
+        text: "Inte tävlingsbetonat, alla är på samma nivå. Funkar för kickoff, teambuilding eller en mjukare sommaravslutning."
       },
       {
-        heading: "Bastu vid sjön",
-        text: "Bastu ingår efter varje pass. Perfekt avslutning: värm upp, hoppa i sjön, repetera. Bastun ligger direkt vid vattnet vid Sickla Strand."
+        heading: "Födelsedag eller vänner",
+        text: "En lugn, lite annorlunda födelsedag, eller bara en eftermiddag med vänner. Yoga + bastu + tid att hänga vid sjön."
       },
       {
-        heading: "Öppna klasser",
-        text: "Boka en plats i en schemalagd klass maj–september. Schema och bokning via Smashing Balance."
+        heading: "Vinyasa eller yin",
+        text: "Ni väljer stil. Vinyasa om ni vill röra på er, yin om ni vill landa och slappna av. Båda anpassas efter gruppen."
       },
       {
-        heading: "Privata event",
-        text: "Boka hela upplevelsen för er grupp: SUP yoga + bastu för möhippa, födelsedag, sommaravslutning, teambuilding eller en dag med vänner. Ni väljer datum och tid."
+        heading: "Bastu ingår",
+        text: "Vedeldad eller eldriven bastu vid vattenkanten ingår i alla privata event. Värm upp, hoppa i sjön, repetera."
+      },
+      {
+        heading: "Plats & utrustning",
+        text: "Sickla Strand vid Elton's Café och Uthyrning, 10 till 15 minuter från city. Brädor, paddel, flytväst och dry bag finns på plats via Smashing Balance."
       }
+    ]}
+    pricing={[
+      { label: "Från", price: "500 kr / person", note: "Beroende på upplägg, gruppstorlek och tillval" },
+      { label: "Gruppstorlek", price: "3 till 10 personer", note: "Större grupper på förfrågan" }
     ]}
     detailsHeading="Praktisk information"
     detailsParagraphs={[
-      "Plats: Sickla Strand, Stockholm, nära Sickla station. Gratis parkering.",
-      "Säsong: Öppna klasser maj–september. Privata event kan arrangeras utanför säsongen om vädret tillåter.",
-      "Utrustning: Paddleboards, paddlar, flytvästar och dry bags tillhandahålls av Smashing Balance. Omklädningsrum finns på plats.",
-      "Undervisning på engelska. Ingen erfarenhet krävs.",
-      "Öppna klasser: boka via Smashing Balance. Privata event: maila hello.yogawithcamilla@gmail.com med datum, gruppstorlek och önskat format."
+      "Plats: Sickla Strand, vid Elton's Café och Uthyrning, Nacka. Cirka 10 till 15 minuter från centrala Stockholm med tunnelbana eller buss. T-bana Sickla eller Hammarby Sjöstad. Det finns parkering på plats.",
+      "Säsong: privata event går att boka från slutet av april till september. Datum utanför säsongen kan funka om vädret tillåter, fråga.",
+      "Längd: oftast 2 till 4 timmar inklusive yoga, bastu och tid att hänga vid sjön. Vi anpassar efter er.",
+      "Utrustning: brädor, paddel, flytväst och dry bag tillhandahålls av Smashing Balance på plats. Omklädningsrum finns. Ta med badkläder, handduk och träningskläder.",
+      "Undervisning på engelska, men jag pratar svenska om ni föredrar det. Ingen erfarenhet krävs, varken yoga eller SUP.",
+      "Bokning: mejla hello.yogawithcamilla@gmail.com med datum, gruppstorlek och önskat format. Ni får offert samma dag."
     ]}
-    ctaHeading="Boka SUP Yoga & Bastu i Stockholm"
-    ctaText="Öppna klasser april–september 2026. Boka via Smashing Balance, all utrustning och bastu ingår. Vill du boka ett privat event (möhippa, sommaravslutning, team eller födelsedag)? Mejla mig eller se mer på Smashing Balance."
-    bookingHref="https://smashingbalance.se/collections/sup-yoga"
-    bookingLabel="Boka SUP Yoga →"
+    ctaHeading="Boka ert privata SUP yoga-event"
+    ctaText="Möhippa, team, födelsedag eller en eftermiddag med vänner. Mejla mig med datum och gruppstorlek så får ni offert samma dag. Letar du efter öppna drop-in-klasser istället? Se SUP Yoga Klasser."
+    bookingHref="mailto:hello.yogawithcamilla@gmail.com"
+    bookingLabel="Mejla för offert"
     termsHref="/tjanster/sup-yoga/villkor"
     structuredData={structuredData}
     relatedServices={relatedServices}
     faq={[
       {
+        question: "Hur bokar vi ett privat event?",
+        answer: "Mejla hello.yogawithcamilla@gmail.com med datum, gruppstorlek och vad ni vill göra (möhippa, team, födelsedag, vänner). Ni får offert samma dag. Bokning bekräftas när depositionen är betald."
+      },
+      {
+        question: "Vad kostar det?",
+        answer: "Från 500 kr per person. Slutpriset beror på gruppstorlek, längd på passet och om ni vill ha tillval som extra bastutid. Ni får alltid en konkret offert innan ni bokar."
+      },
+      {
+        question: "Hur stor grupp kan vi vara?",
+        answer: "Vanligtvis 3 till 10 personer. Större grupper går ofta att lösa, fråga när ni mejlar så ser vi vad som funkar med plats och utrustning."
+      },
+      {
         question: "Ingår bastu?",
-        answer: "Ja, bastu vid sjön ingår efter varje SUP yoga-pass, både öppna klasser och privata event."
+        answer: "Ja, bastu vid sjön ingår i alla privata event. Vedeldad eller eldriven beroende på dag. Perfekt avslutning: värm upp, hoppa i sjön, sitt och prata."
       },
       {
-        question: "Kan vi boka SUP yoga + bastu som privat event?",
-        answer: "Ja. SUP yoga + bastu är perfekt som möhippa, sommaravslutning, teambuilding eller födelsedag. Mejla hello.yogawithcamilla@gmail.com med datum och gruppstorlek, eller läs mer om privata event på smashingbalance.se/pages/privata-event-i-stockholm-sup-yoga-bastu-vid-sjon."
+        question: "Behöver vi kunna yoga eller SUP?",
+        answer: "Nej, ingen erfarenhet krävs. Brädorna är breda och stabila. Vi börjar alltid med en kort säkerhetsgenomgång och introduktion på land."
       },
       {
-        question: "Behöver man kunna yoga eller SUP?",
-        answer: "Nej, ingen erfarenhet krävs. Brädorna är breda och stabila. Varje klass börjar med säkerhetsgenomgång och intro på land."
+        question: "Vad är skillnaden mot drop-in-klasserna?",
+        answer: "Privata event är hela upplevelsen för er grupp, ledd av mig, bokad direkt med mig. Drop-in-klasser är öppna för allmänheten, du bokar enskilda platser via Smashing Balance. Se sidan SUP Yoga Klasser om du letar efter det."
       },
       {
-        question: "Hur stor grupp kan boka privat event?",
-        answer: "Upp till 20 personer för privata event. Alla får egna brädor, paddlar och flytvästar. Bastu ingår."
+        question: "Vem är Smashing Balance?",
+        answer: "Vår partner som driver platsen, brädorna, bastun och säkerhetsutrustningen vid Sickla Strand. Jag står för yogan och hela upplevelsen, de står för det som gör vattnet möjligt."
+      },
+      {
+        question: "Vad gör vi om vädret är dåligt?",
+        answer: "Vid hård vind (över 6 m/s), åska eller för kallt vatten flyttar vi till backup-datum. Du blir kontaktad senast kvällen innan om vi behöver flytta."
       }
     ]}
     englishKeywords={{
-      heading: "SUP Yoga & Sauna in Stockholm: Paddleboard Yoga at Sickla Strand",
-      text: "SUP yoga and sauna at Sickla Strand, Stockholm. Yoga on paddleboards on the lake, followed by a lakeside sauna session. Open classes May–September, private events for bachelorette parties, birthdays, team days and corporate groups. All equipment included. No experience needed, teaching in English. In partnership with Smashing Balance. Email hello.yogawithcamilla@gmail.com or visit smashingbalance.se/pages/privata-event-i-stockholm-sup-yoga-bastu-vid-sjon for private event bookings."
+      heading: "Private SUP Yoga & Sauna Events in Stockholm",
+      text: "Private SUP yoga and sauna events at Sickla Strand, Stockholm. Yoga on paddleboards on the lake, followed by a lakeside sauna. Tailored packages for hen parties, team days, birthdays and friend groups. From 500 kr per person, groups of 3 to 10 (larger groups on request). All equipment included via our partner Smashing Balance. No experience needed, taught in English. Email hello.yogawithcamilla@gmail.com with your dates and group size for a same-day quote. Looking for public drop-in classes instead? See the SUP Yoga Klasser page."
     }}
   />
 );

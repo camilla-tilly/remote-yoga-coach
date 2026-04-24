@@ -7,6 +7,8 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
+import LotusDivider from '@/components/decorative/LotusDivider';
+import Mandala from '@/components/decorative/Mandala';
 
 const homepageStructuredData = {
   "@context": "https://schema.org",
@@ -82,21 +84,29 @@ const Index = () => {
           </div>
         </section>
 
-        {/* SEO keyword section: elevated with sage accent */}
-        <section className="relative py-14 md:py-20 px-4 overflow-hidden">
+        {/* SEO keyword section: saffron band with mandala accent */}
+        <section className="relative py-14 md:py-20 px-4 overflow-hidden bg-saffron-soft">
           <div className="blob-cream w-[500px] h-[500px] top-0 left-1/2 -translate-x-1/2 opacity-40" aria-hidden="true" />
+          <Mandala
+            variant="twelve"
+            strokeWidth={0.7}
+            className="absolute -top-20 -left-16 w-[300px] h-[300px] text-dalashala-saffron/18 pointer-events-none"
+          />
+          <Mandala
+            variant="eight"
+            strokeWidth={0.7}
+            className="absolute -bottom-16 -right-10 w-[240px] h-[240px] text-dalashala-gold/18 pointer-events-none"
+          />
           <div className="relative max-w-2xl mx-auto text-center">
-            <span className="inline-flex items-center gap-2 tag-pill bg-dalashala-sage/15 text-dalashala-olive border border-dalashala-sage/40 mb-5">
-              <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage" />
+            <span className="inline-flex items-center gap-2 tag-pill bg-dalashala-saffronLight/60 text-dalashala-saffronDeep border border-dalashala-saffron/40 mb-5">
+              <span className="w-1.5 h-1.5 rounded-full bg-dalashala-saffron" />
               Stockholm · Dalarna · Online
             </span>
             <h2 className="font-cinzel-decorative text-2xl md:text-3xl text-dalashala-earth font-bold mb-5 leading-tight">
               Privat yoga i Stockholm & Dalarna
             </h2>
-            <div className="flex justify-center items-center gap-2 mb-5">
-              <span className="h-px w-8 bg-dalashala-olive/40" />
-              <span className="w-1 h-1 rounded-full bg-dalashala-sage" />
-              <span className="h-px w-8 bg-dalashala-olive/40" />
+            <div className="max-w-[200px] mx-auto mb-5">
+              <LotusDivider tone="gold" />
             </div>
             <p className="font-eb-garamond text-base md:text-lg text-dalashala-earthSoft leading-relaxed">
               Jag erbjuder privata yogaklasser för alla nivåer: möhippor, bröllop, företagsevent, retreats och en-till-en lektioner.
@@ -106,7 +116,22 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Section rhythm break */}
+        <div className="py-6">
+          <div className="max-w-xs mx-auto">
+            <LotusDivider tone="gold" />
+          </div>
+        </div>
+
         <Services />
+
+        {/* Section rhythm break */}
+        <div className="py-4">
+          <div className="max-w-xs mx-auto">
+            <LotusDivider tone="gold" />
+          </div>
+        </div>
+
         <Contact />
       </main>
       <Footer />

@@ -15,6 +15,7 @@ import ForetagsYoga from "./pages/services/ForetagsYoga";
 import Privatlektioner from "./pages/services/Privatlektioner";
 import MiniRetreat from "./pages/services/MiniRetreat";
 import SUPYoga from "./pages/services/SUPYoga";
+import SUPYogaKlasser from "./pages/services/SUPYogaKlasser";
 import SUPYogaVillkor from "./pages/services/SUPYogaVillkor";
 import HonsYoga from "./pages/services/HonsYoga";
 import PrivataEvent from "./pages/services/PrivataEvent";
@@ -55,6 +56,7 @@ const App = () => (
           <Route path="/tjanster/privatlektioner" element={<Privatlektioner />} />
           <Route path="/tjanster/mini-retreat" element={<MiniRetreat />} />
           <Route path="/tjanster/sup-yoga" element={<SUPYoga />} />
+          <Route path="/tjanster/sup-yoga-klasser" element={<SUPYogaKlasser />} />
           <Route path="/tjanster/sup-yoga/villkor" element={<SUPYogaVillkor />} />
           <Route path="/tjanster/honsyoga" element={<HonsYoga />} />
           <Route path="/tjanster/yoga-dalarna-turister" element={<Navigate to="/tjanster/privatlektioner" replace />} />

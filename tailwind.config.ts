@@ -63,28 +63,34 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Yoga with Camilla palette — Almond Cream, Earth Brown, Olive Grove,
-				// Meadow Mist, Coastal Sage. Legacy `dalashala-*` tokens remain as
-				// semantic aliases so existing markup keeps working.
+				// Yoga with Camilla palette — Forest Yogi theme (warm olive + sage greens
+				// lifted by saffron). Legacy token names are kept as semantic aliases so
+				// existing markup (bg-dalashala-beige, text-dalashala-darkBrown, etc.)
+				// remains valid; the hex values just shift to the new palette.
 				dalashala: {
-					// Legacy names (remapped to new palette)
-					beige: '#F0EAD8',       // Almond Cream
-					lightBeige: '#F7F1DE',  // Slightly lighter cream for card fills
-					darkBrown: '#5E4B3B',   // Earth Brown
-					mediumBrown: '#6F6C43', // Olive Grove
-					tan: '#ACB090',         // Meadow Mist
+					// Legacy names (remapped to forest palette)
+					beige: '#F5EFDE',       // Warm cream (primary bg)
+					lightBeige: '#FBF6E8',  // Lighter cream for card fills
+					darkBrown: '#2F4A34',   // Forest deep (primary text)
+					mediumBrown: '#6F7F4A', // Warm olive (was Olive Grove)
+					tan: '#B8B58C',         // Soft meadow
 					// New semantic names
-					cream: '#F0EAD8',
-					creamLight: '#F7F1DE',
-					creamDeep: '#E8DFC6',
-					earth: '#5E4B3B',
-					earthSoft: '#7A6453',
-					olive: '#6F6C43',
-					oliveLight: '#8A8760',
-					meadow: '#ACB090',
-					meadowLight: '#C2C4AA',
-					sage: '#99ABA6',
-					sageLight: '#B7C4C0',
+					cream: '#F5EFDE',
+					creamLight: '#FBF6E8',
+					creamDeep: '#EBE1C4',
+					earth: '#2F4A34',       // Forest deep
+					earthSoft: '#47633F',   // Fern (secondary headings)
+					olive: '#6F7F4A',       // Warm olive
+					oliveLight: '#93A066',
+					meadow: '#B8B58C',
+					meadowLight: '#D2CEA8',
+					sage: '#9AB19E',
+					sageLight: '#C7D3C0',
+					// Saffron / marigold accent + gold accent
+					saffron: '#E39B35',
+					saffronDeep: '#B8741F',
+					saffronLight: '#F4D19A',
+					gold: '#B8903A',
 				}
 			},
 			fontFamily: {
@@ -92,22 +98,31 @@ export default {
 				'cinzel': ['Cinzel', 'serif'],
 				'montserrat': ['Montserrat', 'sans-serif'],
 				'eb-garamond': ['"EB Garamond"', 'serif'],
+				'devanagari': ['"Tiro Devanagari Hindi"', '"Noto Serif Devanagari"', 'serif'],
 			},
 			boxShadow: {
-				'soft': '0 4px 20px -4px rgba(94, 75, 59, 0.08), 0 2px 6px -2px rgba(94, 75, 59, 0.06)',
-				'card': '0 10px 30px -10px rgba(94, 75, 59, 0.18), 0 4px 10px -4px rgba(94, 75, 59, 0.08)',
-				'card-hover': '0 20px 40px -12px rgba(94, 75, 59, 0.25), 0 8px 16px -8px rgba(111, 108, 67, 0.15)',
-				'inset-soft': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.6), inset 0 -1px 0 0 rgba(94, 75, 59, 0.05)',
-				'earth-glow': '0 0 0 1px rgba(172, 176, 144, 0.3), 0 6px 24px -8px rgba(94, 75, 59, 0.25)',
+				'soft': '0 4px 20px -4px rgba(47, 74, 52, 0.08), 0 2px 6px -2px rgba(47, 74, 52, 0.06)',
+				'card': '0 10px 30px -10px rgba(47, 74, 52, 0.18), 0 4px 10px -4px rgba(47, 74, 52, 0.08)',
+				'card-hover': '0 20px 40px -12px rgba(47, 74, 52, 0.25), 0 8px 16px -8px rgba(111, 127, 74, 0.15)',
+				'inset-soft': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.6), inset 0 -1px 0 0 rgba(47, 74, 52, 0.05)',
+				'earth-glow': '0 0 0 1px rgba(184, 181, 140, 0.3), 0 6px 24px -8px rgba(47, 74, 52, 0.25)',
+				'saffron-glow': '0 0 0 1px rgba(227, 155, 53, 0.35), 0 10px 28px -10px rgba(184, 116, 31, 0.35)',
 			},
 			backgroundImage: {
-				'cream-gradient': 'linear-gradient(180deg, #F7F1DE 0%, #F0EAD8 50%, #EAE1C8 100%)',
-				'cream-radial': 'radial-gradient(ellipse at top, #F7F1DE 0%, #F0EAD8 45%, #E8DFC6 100%)',
-				'sage-gradient': 'linear-gradient(135deg, #B7C4C0 0%, #99ABA6 100%)',
-				'olive-gradient': 'linear-gradient(135deg, #8A8760 0%, #6F6C43 100%)',
-				'earth-gradient': 'linear-gradient(135deg, #7A6453 0%, #5E4B3B 100%)',
-				'meadow-fade': 'linear-gradient(180deg, rgba(172, 176, 144, 0) 0%, rgba(172, 176, 144, 0.15) 100%)',
-				'grain': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.37 0 0 0 0 0.29 0 0 0 0 0.23 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+				'cream-gradient': 'linear-gradient(180deg, #FBF6E8 0%, #F5EFDE 50%, #EBE1C4 100%)',
+				'cream-radial': 'radial-gradient(ellipse at top, #FBF6E8 0%, #F5EFDE 45%, #EBE1C4 100%)',
+				'sage-gradient': 'linear-gradient(135deg, #C7D3C0 0%, #9AB19E 100%)',
+				'olive-gradient': 'linear-gradient(135deg, #93A066 0%, #6F7F4A 100%)',
+				// earth-gradient now renders as forest-gradient (legacy name kept so
+				// existing markup using bg-earth-gradient picks up the new colours)
+				'earth-gradient': 'linear-gradient(135deg, #47633F 0%, #2F4A34 100%)',
+				'forest-gradient': 'linear-gradient(135deg, #47633F 0%, #2F4A34 100%)',
+				'forest-deep-gradient': 'linear-gradient(160deg, #2F4A34 0%, #1F3524 100%)',
+				'sage-fade': 'linear-gradient(180deg, rgba(154, 177, 158, 0) 0%, rgba(154, 177, 158, 0.22) 100%)',
+				'saffron-glow': 'radial-gradient(ellipse 60% 60% at 50% 50%, rgba(227, 155, 53, 0.22) 0%, rgba(227, 155, 53, 0) 70%)',
+				'saffron-gradient': 'linear-gradient(135deg, #E39B35 0%, #B8741F 100%)',
+				'meadow-fade': 'linear-gradient(180deg, rgba(184, 181, 140, 0) 0%, rgba(184, 181, 140, 0.18) 100%)',
+				'grain': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.18 0 0 0 0 0.29 0 0 0 0 0.20 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

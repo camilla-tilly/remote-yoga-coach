@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { blogPosts } from '@/data/blogPosts';
+import LotusDivider from '@/components/decorative/LotusDivider';
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -32,13 +33,16 @@ const Blog = () => {
         <main className="pt-24 pb-16 px-4">
           {/* Header */}
           <div className="text-center mb-12">
-            <span className="text-xs uppercase tracking-widest font-cinzel text-dalashala-mediumBrown mb-3 block">
+            <span className="text-xs uppercase tracking-widest font-cinzel text-dalashala-olive mb-3 block">
               Inspiration & Information
             </span>
-            <h1 className="font-cinzel-decorative text-2xl md:text-3xl text-dalashala-darkBrown font-bold mb-4">
+            <h1 className="font-cinzel-decorative text-2xl md:text-3xl text-dalashala-earth font-bold mb-4">
               Blogg
             </h1>
-            <p className="font-eb-garamond text-sm md:text-base text-dalashala-mediumBrown max-w-md mx-auto leading-relaxed">
+            <div className="max-w-[160px] mx-auto mb-4">
+              <LotusDivider tone="gold" />
+            </div>
+            <p className="font-eb-garamond text-sm md:text-base text-dalashala-earthSoft max-w-md mx-auto leading-relaxed">
               Tankar om yoga, natur, events och välmående från stugan i Dalarna.
             </p>
           </div>
@@ -53,21 +57,22 @@ const Blog = () => {
               >
                 <div className="p-6 md:p-8">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="font-montserrat text-xs uppercase tracking-wider text-dalashala-mediumBrown bg-dalashala-tan/30 px-3 py-1 rounded-full">
+                    <span className="font-montserrat text-xs uppercase tracking-wider text-dalashala-saffronDeep bg-dalashala-saffronLight/60 px-3 py-1 rounded-full border border-dalashala-saffron/30">
                       {post.category}
                     </span>
-                    <span className="font-montserrat text-xs text-dalashala-mediumBrown/60">
+                    <span className="font-montserrat text-xs text-dalashala-earthSoft/70">
                       {post.readingTime} läsning
                     </span>
                   </div>
-                  <h2 className="font-cinzel text-base md:text-lg text-dalashala-darkBrown font-bold mb-3 group-hover:text-dalashala-mediumBrown transition-colors leading-snug">
+                  <h2 className="font-cinzel text-base md:text-lg text-dalashala-earth font-bold mb-3 group-hover:text-dalashala-olive transition-colors leading-snug">
                     {post.title}
                   </h2>
-                  <p className="font-eb-garamond text-sm text-dalashala-mediumBrown leading-relaxed mb-4">
+                  <p className="font-eb-garamond text-sm text-dalashala-earthSoft leading-relaxed mb-4">
                     {post.excerpt}
                   </p>
-                  <span className="font-montserrat text-xs uppercase tracking-wider text-dalashala-darkBrown group-hover:text-dalashala-mediumBrown transition-colors">
-                    Läs mer →
+                  <span className="inline-flex items-center gap-1 font-montserrat text-xs uppercase tracking-wider text-dalashala-saffronDeep group-hover:text-dalashala-earth transition-colors">
+                    Läs mer
+                    <span className="transition-transform group-hover:translate-x-1">→</span>
                   </span>
                 </div>
               </Link>

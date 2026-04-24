@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import Mandala from '@/components/decorative/Mandala';
+import LotusDivider from '@/components/decorative/LotusDivider';
 
 type ServiceCard = {
   title: string;
@@ -20,9 +22,14 @@ const stockholmServices: ServiceCard[] = [
     href: '/tjanster/foretagsyoga',
   },
   {
-    title: 'SUP Yoga Stockholm',
-    description: 'Yoga på brädan på Sicklasjön. Perfekt för team, möhippa eller en sommardag.',
+    title: 'Privat SUP Yoga & Bastu',
+    description: 'Yoga på paddleboard plus bastu vid Sickla Strand. För möhippa, team eller födelsedag.',
     href: '/tjanster/sup-yoga',
+  },
+  {
+    title: 'SUP Yoga Klasser (drop-in)',
+    description: 'Öppna vinyasa- och yin-klasser på vattnet vid Sickla Strand. Bastu ingår. Bokas via Smashing Balance.',
+    href: '/tjanster/sup-yoga-klasser',
   },
   {
     title: 'Privatlektioner',
@@ -59,20 +66,26 @@ const dalarnaServices: ServiceCard[] = [
 
 const tagStyles: Record<string, string> = {
   'Nytt': 'bg-dalashala-sage/20 text-dalashala-earth border border-dalashala-sage/50',
-  'Populärt': 'bg-dalashala-olive/15 text-dalashala-olive border border-dalashala-olive/40',
-  'Unikt': 'bg-dalashala-earth text-dalashala-cream border border-dalashala-earth',
+  'Populärt': 'bg-dalashala-saffronLight/70 text-dalashala-saffronDeep border border-dalashala-saffron/50',
+  'Unikt': 'bg-dalashala-earth text-dalashala-saffronLight border border-dalashala-earth',
   'English': 'bg-dalashala-meadow/25 text-dalashala-earth border border-dalashala-meadow/50',
 };
 
 const ServiceCard = ({ title, description, href, tag }: ServiceCard) => (
   <Link
     to={href}
-    className="group relative flex flex-col justify-between bg-white rounded-2xl p-5 pt-6 border border-dalashala-meadow/25 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+    className="group relative flex flex-col justify-between bg-white rounded-2xl p-5 pt-6 border border-dalashala-meadow/30 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 overflow-hidden"
   >
-    {/* Top accent bar */}
-    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-meadow to-dalashala-olive opacity-80 group-hover:opacity-100 transition-opacity" />
+    {/* Top accent bar — sage → saffron → olive, ties the two themes together */}
+    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-saffron to-dalashala-olive opacity-85 group-hover:opacity-100 transition-opacity" />
     {/* Soft corner glow */}
-    <div className="absolute -top-10 -right-10 w-24 h-24 rounded-full bg-dalashala-sage/10 blur-2xl pointer-events-none" />
+    <div className="absolute -top-10 -right-10 w-24 h-24 rounded-full bg-dalashala-saffron/12 blur-2xl pointer-events-none" />
+    {/* Mandala corner watermark */}
+    <Mandala
+      variant="eight"
+      strokeWidth={0.7}
+      className="absolute -bottom-8 -right-8 w-24 h-24 text-dalashala-gold/18 pointer-events-none"
+    />
 
     <div className="relative">
       {tag && (
@@ -87,7 +100,7 @@ const ServiceCard = ({ title, description, href, tag }: ServiceCard) => (
         {description}
       </p>
     </div>
-    <span className="relative mt-4 inline-flex items-center gap-1 font-montserrat text-[11px] text-dalashala-olive uppercase tracking-widest group-hover:text-dalashala-earth transition-colors">
+    <span className="relative mt-4 inline-flex items-center gap-1 font-montserrat text-[11px] text-dalashala-saffronDeep uppercase tracking-widest group-hover:text-dalashala-earth transition-colors">
       Läs mer
       <span className="transition-transform group-hover:translate-x-1">→</span>
     </span>
@@ -124,7 +137,7 @@ const Services = () => {
 
         {/* Section header */}
         <div className="mb-14 text-center md:text-left max-w-2xl md:mx-0 mx-auto">
-          <span className="inline-block tag-pill bg-dalashala-olive/15 text-dalashala-olive border border-dalashala-olive/30 mb-3">
+          <span className="inline-block tag-pill bg-dalashala-saffronLight/60 text-dalashala-saffronDeep border border-dalashala-saffron/40 mb-3">
             Yoga med Camilla
           </span>
           <h2 className="font-cinzel-decorative text-3xl md:text-4xl lg:text-5xl text-dalashala-earth font-bold mb-3 leading-tight">
@@ -156,10 +169,18 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Bottom CTA: elevated card with sage wash */}
+        {/* Bottom CTA: elevated card with sage + saffron wash */}
         <div className="relative mt-16 rounded-3xl overflow-hidden shadow-card border border-dalashala-meadow/30">
-          <div className="absolute inset-0 bg-gradient-to-br from-dalashala-sage/30 via-dalashala-meadow/20 to-dalashala-creamLight" />
+          <div className="absolute inset-0 bg-gradient-to-br from-dalashala-sage/35 via-dalashala-creamLight to-dalashala-saffronLight/50" />
+          <Mandala
+            variant="twelve"
+            strokeWidth={0.8}
+            className="absolute -right-20 -bottom-20 w-[300px] h-[300px] text-dalashala-gold/20 pointer-events-none"
+          />
           <div className="relative p-8 md:p-12 text-center">
+            <div className="w-32 mx-auto mb-4">
+              <LotusDivider tone="gold" />
+            </div>
             <h3 className="font-cinzel-decorative text-xl md:text-2xl text-dalashala-earth mb-3 font-bold">
               Ser du inte det du letar efter?
             </h3>
@@ -168,7 +189,7 @@ const Services = () => {
             </p>
             <a
               href="#contact"
-              className="inline-block font-montserrat text-sm bg-earth-gradient text-dalashala-cream px-8 py-3 rounded-full shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300"
+              className="inline-block font-montserrat text-sm bg-saffron-gradient text-white px-8 py-3 rounded-full shadow-card hover:shadow-saffron-glow hover:-translate-y-0.5 transition-all duration-300"
             >
               Kontakta mig
             </a>

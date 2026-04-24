@@ -188,7 +188,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Om Dalarna inte funkar, om det är för långt, för kort helg, eller om inte alla kan resa, gör jag samma sak i Stockholm. Jag kommer till er lägenhet, hyrd lokal eller en park i stan med all utrustning. Där funkar även [SUP yoga på Sicklasjön](/tjanster/sup-yoga) som en rolig möhippa-aktivitet. Mer idéer i [7 möhippa-aktiviteter i Stockholm](/blogg/mohippa-aktiviteter-stockholm).'
+        text: 'Om Dalarna inte funkar, om det är för långt, för kort helg, eller om inte alla kan resa, gör jag samma sak i Stockholm. Jag kommer till er lägenhet, hyrd lokal eller en park i stan med all utrustning. Där funkar även [privat SUP yoga och bastu vid Sickla Strand](/tjanster/sup-yoga) (i samarbete med Smashing Balance) som en rolig möhippa-aktivitet. Mer idéer i [7 möhippa-aktiviteter i Stockholm](/blogg/mohippa-aktiviteter-stockholm).'
       },
       {
         type: 'heading',
@@ -492,17 +492,18 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'sup-yoga-stockholm',
-    title: 'SUP yoga Stockholm: allt du behöver veta innan du bokar',
-    metaDescription: 'SUP yoga i Stockholm vid Sicklasjön. Priser, vad som ingår, vilken säsong, vem passar det för. Guide för möhippa, team, privata grupper och soloäventyr.',
+    title: 'SUP yoga Stockholm: privat event eller drop-in klass, här är skillnaden',
+    metaDescription: 'SUP yoga i Stockholm vid Sickla Strand: vinyasa eller yin på paddleboard, bastu ingår. Drop-in klasser via Smashing Balance, privata event för möhippa och team direkt med mig.',
     publishDate: '2026-03-15',
     readingTime: '9 min',
     category: 'SUP Yoga',
-    excerpt: 'Yoga på paddleboard på en lugn sjö 15 minuter från T-centralen. Här är hela guiden: pris, säsong, vad du ska ha på dig, och varför det passar för möhippor, team och folk som aldrig paddlat förut.',
+    excerpt: 'Yoga på paddleboard vid Sickla Strand, 15 minuter från T-centralen. Bastu ingår. Det finns två sätt att vara med: drop-in klass via Smashing Balance, eller privat event för er grupp via mig. Här är skillnaden, priserna och vad som faktiskt ingår.',
     relatedServiceHref: '/tjanster/sup-yoga',
-    relatedServiceLabel: 'Boka SUP Yoga',
+    relatedServiceLabel: 'Boka privat SUP Yoga',
     tableOfContents: true,
     faqSchema: true,
     relatedPosts: [
+      { slug: 'sup-yoga-klasser-stockholm', label: 'SUP yoga klasser Stockholm: drop-in, klippkort, säsongspass' },
       { slug: 'mohippa-aktiviteter-stockholm', label: '7 möhippa-aktiviteter i Stockholm' },
       { slug: 'hen-party-ideas-stockholm', label: '6 Bachelorette Party Ideas in Stockholm' },
       { slug: 'sommaravslutning-aktiviteter-stockholm', label: '7 idéer för sommaravslutning i Stockholm' },
@@ -515,7 +516,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'callout',
-        text: 'Snabbinfo: SUP yoga Stockholm vid Sicklasjön, Nacka. Säsong maj till september. Privata grupper från 3 500 kr, drop-in från 500 kr per person. All utrustning ingår. Ingen tidigare erfarenhet krävs. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för bokning.'
+        text: 'Snabbinfo: SUP yoga vid Sickla Strand i Nacka, i samarbete med Smashing Balance. Säsong slutet april till september. Två sätt att vara med: **drop-in klass från 350 kr** (vinyasa eller yin, 75 min, bastu ingår, [bokas via Smashing Balance](https://smashingbalance.se/collections/sup-yoga)) eller **privat event från 500 kr per person** för möhippa, team eller födelsedag, [bokas direkt med mig](mailto:hello.yogawithcamilla@gmail.com).'
       },
       {
         type: 'heading',
@@ -523,7 +524,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'SUP står för "stand-up paddleboard". En stor, uppblåsbar bräda man står på ute på vattnet. SUP yoga är yoga som utförs på brädan istället för en matta. Brädorna vi använder är bredare och tjockare än vanliga SUP-brädor, designade specifikt för stabilitet när någon ligger, sitter eller gör positioner på dem.'
+        text: 'SUP står för "stand-up paddleboard". En stor, uppblåsbar bräda man står på ute på vattnet. SUP yoga är yoga som utförs på brädan istället för en matta. Brädorna är bredare och tjockare än vanliga SUP-brädor, designade specifikt för stabilitet när någon ligger, sitter eller gör positioner på dem.'
       },
       {
         type: 'paragraph',
@@ -531,15 +532,47 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'heading',
-        text: 'Var: Sicklasjön i Nacka'
+        text: 'Var: Sickla Strand i Nacka'
       },
       {
         type: 'paragraph',
-        text: 'Vi håller klasserna vid Sicklasjön i Nacka. En lugn insjö, 10 till 15 minuter från centrala Stockholm med tunnelbana eller buss. Skyddad från vind och trafikerade vattenleder, lätt att hitta, och omgiven av skog, vilket gör ljudbilden betydligt mjukare än i centrala stan.'
+        text: 'Klasserna och eventen hålls vid Sickla Strand, vid Elton\'s Café och Uthyrning, på Sicklasjön i Nacka. En lugn insjö, 10 till 15 minuter från centrala Stockholm med tunnelbana eller buss. Skyddad från vind och trafikerade vattenleder, omgiven av skog.'
       },
       {
         type: 'paragraph',
-        text: 'Närmaste tunnelbana är Sickla eller Hammarby Sjöstad. Det finns parkering om ni kommer med bil. Vi möts vid badplatsen där jag har brädorna uppblåsta och klara.'
+        text: 'Närmaste tunnelbana är Sickla eller Hammarby Sjöstad. Det finns parkering på plats. Vi möts vid Elton\'s där brädorna och bastun finns.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Smashing Balance driver platsen och utrustningen, jag står för yogan. Det är ett samarbete: de gör vattnet möjligt, jag gör passet.'
+      },
+      {
+        type: 'heading',
+        text: 'Två sätt att vara med'
+      },
+      {
+        type: 'subheading',
+        text: 'Alternativ 1: Drop-in klass (för dig själv eller med någon)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Öppna klasser under säsongen. Du bokar en plats för dig själv eller en vän, dyker upp 10 till 15 minuter innan, och är på vattnet i 75 minuter. Vinyasa eller yin beroende på pass. Bastu vid sjön ingår.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Drop-in 350 kr (bräda och bastu ingår), 150 kr om du tar med egen SUP, 10-klippkort 1 000 kr, säsongspass 2026 för 1 500 kr. Allt bokas via min partner Smashing Balance på [smashingbalance.se/collections/sup-yoga](https://smashingbalance.se/collections/sup-yoga). Mer detaljer på [SUP yoga klasser Stockholm](/blogg/sup-yoga-klasser-stockholm).'
+      },
+      {
+        type: 'subheading',
+        text: 'Alternativ 2: Privat event (för er grupp)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Skräddarsydd upplevelse för er grupp. Möhippa, team, födelsedag, vänner. Ni får brädorna för er själva, jag leder ett pass för just er, vi avslutar i bastun vid sjön. Vinyasa eller yin, ni väljer.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Från 500 kr per person, vanligtvis 3 till 10 personer (större grupper på förfrågan). Bokas direkt med mig på [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com), ni får offert samma dag. Se [Privat SUP Yoga](/tjanster/sup-yoga) för hela paketet.'
       },
       {
         type: 'heading',
@@ -547,7 +580,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'SUP yoga i Stockholm är en sommarsak. Säsongen är maj till september. Vi avbryter vid för hård vind (över 6 m/s), åska, eller riktigt låga temperaturer. Du bokar oftast med en preferensdag och en backup-dag om vädret inte samarbetar.'
+        text: 'SUP yoga i Stockholm är en sommarsak. Säsongen är slutet av april till september. Vi avbryter vid för hård vind (över 6 m/s), åska eller riktigt låga temperaturer. För privata event bokar du oftast med en preferensdag och en backup-dag om vädret inte samarbetar.'
       },
       {
         type: 'paragraph',
@@ -555,57 +588,22 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'heading',
-        text: 'Olika upplägg att boka'
-      },
-      {
-        type: 'subheading',
-        text: 'Drop-in grupp (söndagar)'
-      },
-      {
-        type: 'paragraph',
-        text: 'Öppna grupper för solo-deltagare och par. Körs söndagar under säsong. Perfekt första gång om du vill prova utan att ansvara för en hel bokning. 500 kr per person, inklusive bräda, paddel och alla tillbehör.'
-      },
-      {
-        type: 'subheading',
-        text: 'Privat grupp: möhippa, födelsedag, vänner'
-      },
-      {
-        type: 'paragraph',
-        text: 'Ni bokar brädorna för er själva. 60 till 90 minuter på vattnet. Vanligast är 6 till 12 deltagare, men jag tar upp till 20. Från 3 500 kr. Det är populäraste formatet för möhippor i Stockholm. Se [7 möhippa-aktiviteter i Stockholm](/blogg/mohippa-aktiviteter-stockholm) för mer inspiration.'
-      },
-      {
-        type: 'subheading',
-        text: 'SUP yoga plus bastu'
-      },
-      {
-        type: 'paragraph',
-        text: 'Det mest efterfrågade upplägget. Yoga på brädan först, sedan direkt in i en bastu vid vattenkanten. Byggt för möhippor, sommaravslutningar och lyxigare vängrupper. Tre timmar totalt. Pris anpassat efter antal. Mejla för offert.'
-      },
-      {
-        type: 'subheading',
-        text: 'Företag och teambuilding'
-      },
-      {
-        type: 'paragraph',
-        text: 'SUP yoga är ett av de bästa formaten för teambuilding i Stockholm på sommaren. Det är inte tävlingsbetonat, alla är på samma nivå, och det bryter statuserna i teamet på ett sätt få andra aktiviteter gör. Ofta bokat som sommaravslutning eller kickoff. Se [sommaravslutning i Stockholm](/blogg/sommaravslutning-aktiviteter-stockholm) och [teambuilding-aktiviteter i Stockholm](/blogg/teambuilding-aktiviteter-stockholm).'
-      },
-      {
-        type: 'heading',
         text: 'Priser'
       },
       {
         type: 'table',
-        tableHead: ['Upplägg', 'Längd', 'Pris', 'Passar för'],
+        tableHead: ['Upplägg', 'Längd', 'Pris', 'Bokas via'],
         tableRows: [
-          ['Drop-in söndagar', '60 min', '500 kr per person', 'Ensamma, par, första gången'],
-          ['Privat grupp', '60 till 90 min', 'från 3 500 kr', 'Möhippor, vänner, födelsedag'],
-          ['SUP yoga plus bastu', '3 tim totalt', 'offert', 'Möhippor, företag, evenemang'],
-          ['Företag / teambuilding', '90 min', 'offert', 'Sommaravslutning, kickoff'],
+          ['Drop-in klass', '75 min', '350 kr', 'Smashing Balance'],
+          ['Drop-in (egen SUP)', '75 min', '150 kr', 'Smashing Balance'],
+          ['10-klippkort', '10 klasser', '1 000 kr', 'Smashing Balance'],
+          ['Säsongspass 2026', 'Hela säsongen', '1 500 kr', 'Smashing Balance'],
+          ['Privat event', '2 till 4 tim', 'från 500 kr / person', 'Direkt med mig'],
         ],
       },
       {
         type: 'paragraph',
-        text: 'Alla priser är exklusive moms när det faktureras till företag. Privata grupper betalar med Swish efter genomförd klass, eller mot faktura för företag.'
+        text: 'Bastu vid sjön ingår i alla upplägg. Privata event kan faktureras till företag mot moms.'
       },
       {
         type: 'heading',
@@ -627,7 +625,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Det är mindre lämpat för personer som inte är bekväma med att hamna i vatten, personer med rädsla för att vara på öppet vatten, eller de som är allvarligt rörelsenedsatta (brädan kräver att man kan komma upp i stående position från knä, vilket kan vara utmanande).'
+        text: 'Det är mindre lämpat för personer som inte är bekväma med att hamna i vatten, eller de som är allvarligt rörelsenedsatta (brädan kräver att man kan komma upp i stående position från knä).'
       },
       {
         type: 'heading',
@@ -637,16 +635,16 @@ export const blogPosts: BlogPost[] = [
         type: 'list',
         items: [
           'Badkläder under (ja, du kommer att hamna i vattnet). Cykelshorts och topp funkar också.',
-          'Lätt t-shirt över som kan bli blöt',
+          'Lätt t-shirt eller träningskläder över som kan bli blöta',
           'Handduk',
           'Vattenflaska',
-          'Solglasögon med band (det finns band att låna, men lätt borttappade utan)',
+          'Solglasögon med band',
           'Solkräm. Solen studsar hårt från vattenytan.',
         ],
       },
       {
         type: 'paragraph',
-        text: 'Mobilen stannar på land. Brädan är våt. Det är en av fördelarna.'
+        text: 'Mobilen och värdesakerna stannar på land i låst skåp. Brädan är våt. Det är en av fördelarna.'
       },
       {
         type: 'heading',
@@ -654,11 +652,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Vi möts 15 minuter innan start. Jag har brädorna klara. Vi gör en kort introduktion på land: hur man kommer upp på brädan, hur man paddlar 30 sekunder till där vi ankrar, vad vi ska göra. Sen ut på vattnet.'
+        text: 'Vi möts 10 till 15 minuter innan start vid Elton\'s. Brädorna är klara. Kort säkerhetsgenomgång på land: hur man kommer upp på brädan, hur man paddlar ut till ankringsplatsen, vad vi ska göra. Sen ut på vattnet.'
       },
       {
         type: 'paragraph',
-        text: 'Första 10 minuterna är vi i sittande och liggande positioner nära ankringspunkten. Stabilt, tyst, lugnt. Sen bygger vi upp till knästående och så småningom stående positioner för de som vill. Avslutningen är 5 minuter savasana i ryggläge. Efter klassen paddlar vi in, plockar ihop brädorna, och ni är tillbaka i staden inom 30 minuter.'
+        text: 'Första delen är vi i sittande och liggande positioner nära ankringspunkten. Stabilt, tyst, lugnt. Sen bygger vi upp till knästående och så småningom stående positioner för de som vill. Avslutningen är savasana i ryggläge. Efter klassen paddlar vi in, in i bastun, hoppar i sjön, repeterar.'
       },
       {
         type: 'quote',
@@ -681,44 +679,64 @@ export const blogPosts: BlogPost[] = [
         type: 'faq',
         faqItems: [
           {
+            q: 'Var bokar jag drop-in?',
+            a: 'Drop-in-klasserna bokas via min partner Smashing Balance på smashingbalance.se/collections/sup-yoga. Där ser du aktuellt schema och alla biljettyper (drop-in, klippkort, säsongspass).',
+          },
+          {
+            q: 'Var bokar jag ett privat event?',
+            a: 'Privata event för möhippa, team, födelsedag eller vänner bokas direkt med mig. Mejla hello.yogawithcamilla@gmail.com med datum och gruppstorlek så får ni offert samma dag.',
+          },
+          {
+            q: 'Vad är Smashing Balance?',
+            a: 'Vår partner som driver platsen vid Sickla Strand: brädorna, bastun, säkerhetsutrustningen, schemat för drop-in-klasser. Jag undervisar yogan och håller hela upplevelsen.',
+          },
+          {
             q: 'Behöver jag kunna paddla?',
-            a: 'Nej. Du behöver bara kunna paddla 30 sekunder till platsen där vi ankrar brädorna tillsammans. Det är enkelt. Jag visar hur och är med dig hela vägen.',
+            a: 'Nej. Du behöver bara kunna paddla några minuter ut till platsen där vi ankrar brädorna. Det är enkelt, jag visar hur.',
           },
           {
             q: 'Behöver jag kunna yoga?',
-            a: 'Nej. SUP yoga är ofta lättare att börja med än studio-yoga, eftersom brädans instabilitet innebär att ingen förväntar sig avancerade positioner. Klassen anpassas efter gruppens nivå.',
+            a: 'Nej. SUP yoga är ofta lättare att börja med än studio-yoga, eftersom brädans instabilitet innebär att ingen förväntar sig avancerade positioner. Klassen anpassas efter de som är där.',
           },
           {
             q: 'Vad händer om jag ramlar i vattnet?',
-            a: 'Det händer ofta, särskilt för dem som försöker stå upp första gången. Vattnet vid Sicklasjön är rent och sommartid varmt. Du kravlar upp på brädan igen med hjälp, och klassen fortsätter. Ramlandet är en del av upplevelsen.',
+            a: 'Det händer ofta första gången du försöker stå upp. Vattnet är rent och sommartid varmt. Du kravlar upp på brädan igen och klassen fortsätter. Ramlandet är en del av upplevelsen.',
           },
           {
-            q: 'Vad kostar en privat SUP yoga grupp?',
-            a: 'Från 3 500 kr för grupper upp till 10 personer, 90 minuter inklusive all utrustning. Större grupper och tillägg som bastu prissätts individuellt.',
+            q: 'Vad kostar en drop-in klass?',
+            a: '350 kr per klass, inklusive bräda, paddel, flytväst och bastu efter passet. 150 kr om du tar med egen SUP. Klippkort (10 klasser) 1 000 kr, säsongspass 1 500 kr. Allt via Smashing Balance.',
+          },
+          {
+            q: 'Vad kostar ett privat event?',
+            a: 'Från 500 kr per person, beroende på gruppstorlek, längd och tillval. Vanligtvis 3 till 10 personer, större grupper på förfrågan. Mejla mig så får ni en konkret offert.',
+          },
+          {
+            q: 'Hur lång är en klass?',
+            a: 'Drop-in 75 minuter inklusive paddling till och från ankringsplatsen. Privata event 2 till 4 timmar inklusive yoga, bastu och hängtid vid sjön.',
+          },
+          {
+            q: 'Ingår bastu?',
+            a: 'Ja, bastu vid sjön ingår i alla pass, både drop-in och privata event.',
           },
           {
             q: 'När är säsongen?',
-            a: 'Maj till och med september. Juli och augusti är varmast i vattnet. Maj och september är ofta lugnare och mindre bokade.',
-          },
-          {
-            q: 'Hur många kan vara med?',
-            a: 'Drop-in grupper tar upp till 10 personer. Privata bokningar upp till 20 personer. Större grupper går att lösa med samarbetspartners.',
+            a: 'Slutet av april till september. Juli och augusti är varmast i vattnet. Maj och september är ofta lugnare.',
           },
           {
             q: 'Är SUP yoga säkert?',
-            a: 'Ja. Vattnet är lugnt och grunt, ankringspunkten är nära strand, och jag är utbildad i vattensäkerhet. Flytväst finns tillgänglig på förfrågan.',
+            a: 'Ja. Vattnet är lugnt, ankringspunkten är nära strand, flytväst finns tillgänglig och Smashing Balance ansvarar för säkerhetsutrustningen. Säkerhetsgenomgång hålls innan varje pass.',
           },
           {
             q: 'Kan små barn vara med?',
-            a: 'Rekommenderat från cirka 10 år och uppåt. Yngre barn har ofta svårt att hålla sig still under sekvenserna och tenderar att tappa intresset snabbt.',
+            a: 'Rekommenderat från cirka 10 år och uppåt. Yngre barn har ofta svårt att hålla sig still och tappar lätt intresset.',
           },
           {
             q: 'Var parkerar man?',
-            a: 'Det finns gratis parkering vid badplatsen Sicklasjön. T-bana Sickla eller Hammarby Sjöstad är 10 till 15 minuters promenad.',
+            a: 'Det finns parkering på plats vid Elton\'s Café och Uthyrning. T-bana Sickla eller Hammarby Sjöstad är 10 till 15 minuters promenad.',
           },
           {
             q: 'Vad händer vid dåligt väder?',
-            a: 'Vid hård vind (över 6 m/s), åska eller för kallt vatten flyttar vi klassen till backup-datum. Du blir alltid kontaktad senast kvällen innan om vi behöver flytta.',
+            a: 'Vid hård vind (över 6 m/s), åska eller för kallt vatten flyttar vi passet. För drop-in får du info via Smashing Balance, för privata event blir du kontaktad senast kvällen innan.',
           },
         ],
       },
@@ -728,9 +746,217 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Vill du boka en privat grupp, mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal och om ni vill kombinera med bastu. För drop-in söndagar, se öppna tider på [sup-yoga-sidan](/tjanster/sup-yoga). Söker du inspiration för hela helgen eller möhippan, kolla in [7 möhippa-aktiviteter i Stockholm](/blogg/mohippa-aktiviteter-stockholm).'
+        text: 'Vill ni boka en privat grupp för möhippa, team eller födelsedag? Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal och om ni vill ha extra bastutid. Mer detaljer på [Privat SUP Yoga](/tjanster/sup-yoga). Vill du bara komma på en drop-in klass? Se schema och boka direkt på [Smashing Balance](https://smashingbalance.se/collections/sup-yoga), eller läs mer på [SUP yoga klasser Stockholm](/blogg/sup-yoga-klasser-stockholm).'
       },
     ]
+  },
+  {
+    slug: 'sup-yoga-klasser-stockholm',
+    title: 'SUP yoga klasser Stockholm: drop-in, klippkort och säsongspass på Sickla Strand',
+    metaDescription: 'Drop-in SUP yoga i Stockholm vid Sickla Strand. Vinyasa eller yin på paddleboard, 75 min, bastu ingår. Drop-in 350 kr, 10-klippkort 1 000 kr, säsongspass 1 500 kr.',
+    publishDate: '2026-04-24',
+    readingTime: '7 min',
+    category: 'SUP Yoga',
+    excerpt: 'De öppna SUP yoga-klasserna jag undervisar varje vecka under säsongen. Vinyasa eller yin på paddleboard vid Sickla Strand, 75 minuter, bastu ingår. Här är scheman, priser och vad som faktiskt händer på en klass.',
+    relatedServiceHref: '/tjanster/sup-yoga-klasser',
+    relatedServiceLabel: 'Boka SUP yoga klass',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'sup-yoga-stockholm', label: 'SUP yoga Stockholm: privat event eller drop-in klass' },
+      { slug: 'mohippa-aktiviteter-stockholm', label: '7 möhippa-aktiviteter i Stockholm' },
+      { slug: 'sommaravslutning-aktiviteter-stockholm', label: '7 idéer för sommaravslutning i Stockholm' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Det här är guiden till de öppna [SUP yoga-klasserna](/tjanster/sup-yoga-klasser) jag undervisar i Stockholm under sommaren. Drop-in, klippkort eller säsongspass. Du behöver inte boka en hel grupp, du kan komma själv eller med en vän.',
+      },
+      {
+        type: 'callout',
+        text: 'Snabbinfo: Vinyasa eller yin SUP yoga vid Sickla Strand. 75 minuter inklusive paddling. Bastu vid sjön ingår. Säsong slutet april till september 2026. Drop-in 350 kr, 150 kr med egen SUP, 10-klippkort 1 000 kr, säsongspass 1 500 kr. [Boka via Smashing Balance](https://smashingbalance.se/collections/sup-yoga).',
+      },
+      {
+        type: 'heading',
+        text: 'Vad det är',
+      },
+      {
+        type: 'paragraph',
+        text: 'En öppen yoga-klass på paddleboard, ledd av mig, vid Sickla Strand i Nacka. Brädan är bredare och stabilare än en vanlig SUP. Du paddlar några minuter ut till ankringsplatsen, vi kör ett pass tillsammans, och paddlar in. Bastu vid sjön efteråt.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Klasserna hålls i samarbete med Smashing Balance, som driver platsen, brädorna, bastun och säkerhetsutrustningen. Jag står för yogan.',
+      },
+      {
+        type: 'heading',
+        text: 'Två stilar: vinyasa eller yin',
+      },
+      {
+        type: 'subheading',
+        text: 'Vinyasa SUP yoga',
+      },
+      {
+        type: 'paragraph',
+        text: 'Aktivt flöde på brädan. Mjuka övergångar, anpassade för vattnet. Du bygger styrka och balans samtidigt som du landar i andningen. Bra om du vill röra på dig och bränna lite energi.',
+      },
+      {
+        type: 'subheading',
+        text: 'Yin SUP yoga',
+      },
+      {
+        type: 'paragraph',
+        text: 'Lugna, hållna positioner med vattnet i rörelse under dig. Återhämtande, mjukt, perfekt på en kväll efter jobbet eller en söndagsmorgon. Bra om du behöver landa snarare än röra på dig.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Båda stilarna passar alla nivåer. Schemat varierar från vecka till vecka, kolla aktuella tider på [Smashing Balance](https://smashingbalance.se/collections/sup-yoga) så ser du vilken stil som körs när.',
+      },
+      {
+        type: 'heading',
+        text: 'Priser och biljettyper',
+      },
+      {
+        type: 'table',
+        tableHead: ['Biljett', 'Pris', 'Vad ingår'],
+        tableRows: [
+          ['Drop-in klass', '350 kr', 'En klass, bräda, paddel, flytväst, dry bag, bastu'],
+          ['Drop-in (egen SUP)', '150 kr', 'En klass om du tar med egen bräda, bastu ingår'],
+          ['10-klippkort', '1 000 kr', 'Tio klasser, bräda och bastu ingår'],
+          ['Säsongspass 2026', '1 500 kr', 'Obegränsade klasser hela säsongen'],
+        ],
+      },
+      {
+        type: 'paragraph',
+        text: 'Bastu ingår alltid. Klippkort och säsongspass lönar sig från ungefär tre klasser i månaden. Allt bokas via [Smashing Balance](https://smashingbalance.se/collections/sup-yoga).',
+      },
+      {
+        type: 'heading',
+        text: 'Var och när',
+      },
+      {
+        type: 'paragraph',
+        text: 'Sickla Strand vid Elton\'s Café och Uthyrning, Nacka. Cirka 10 till 15 minuter från city. T-bana Sickla eller Hammarby Sjöstad. Parkering finns på plats.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Säsongen är slutet av april till september 2026. Schemat uppdateras varje vecka. Juli och augusti är varmast i vattnet, maj och september är ofta lugnare och mindre bokade.',
+      },
+      {
+        type: 'heading',
+        text: 'Så går en klass till',
+      },
+      {
+        type: 'paragraph',
+        text: 'Kom 10 till 15 minuter innan klassen börjar. Du checkas in, lägger värdesakerna i ett låst skåp, byter om vid behov. Vi samlas på land för en kort säkerhetsgenomgång: hur du kommer upp på brädan, hur du paddlar ut, vad vi ska göra på vattnet.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Vi paddlar några minuter ut till ankringsplatsen, ankrar brädorna och kör passet. Första delen är sittande och liggande positioner, sen bygger vi upp till knästående och stående för dem som vill. Avslutning i savasana. Sedan tillbaka in, in i bastun.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Hela passet inklusive paddling tar 75 minuter. Räkna med att vara på plats i ungefär två timmar med incheckning, omklädning och bastu efteråt.',
+      },
+      {
+        type: 'heading',
+        text: 'Vad du ska ta med',
+      },
+      {
+        type: 'list',
+        items: [
+          'Badkläder under (du kommer att bli våt)',
+          'Träningskläder eller t-shirt över',
+          'Handduk',
+          'Vattenflaska',
+          'Solglasögon (gärna med band) och solkräm',
+          'Eventuellt extra ombyte för efter bastun',
+        ],
+      },
+      {
+        type: 'paragraph',
+        text: 'Mobil och värdesaker stannar på land i låst skåp. Brädan är våt. Det är en del av poängen.',
+      },
+      {
+        type: 'heading',
+        text: 'Vem klasserna passar för',
+      },
+      {
+        type: 'list',
+        items: [
+          'Du som vill prova SUP yoga utan att binda upp en hel grupp',
+          'Du som har yogamatpraktik och vill ha en sommarvariant utomhus',
+          'Du som inte tycker om varma studior på sommaren',
+          'Du som söker en mjuk veckoritual som inkluderar bad och bastu',
+          'Besökande till Stockholm som vill göra något typiskt skandinaviskt',
+        ],
+      },
+      {
+        type: 'paragraph',
+        text: 'Inga förkunskaper i yoga eller SUP behövs. Brädorna är breda och stabila. Klassen anpassas alltid efter de som dyker upp.',
+      },
+      {
+        type: 'heading',
+        text: 'Drop-in vs privat event',
+      },
+      {
+        type: 'paragraph',
+        text: 'Om du vill komma på egen hand eller med en vän, drop-in är rätt. Om ni är en grupp som vill ha hela upplevelsen för er själva, möhippa, team, födelsedag, då passar ett [privat SUP yoga-event](/tjanster/sup-yoga) bättre. Privata event bokas direkt med mig från 500 kr per person, och hela upplägget anpassas efter er.',
+      },
+      {
+        type: 'heading',
+        text: 'Vanliga frågor',
+      },
+      {
+        type: 'faq',
+        faqItems: [
+          {
+            q: 'Hur bokar jag en klass?',
+            a: 'Via vår partner Smashing Balance på smashingbalance.se/collections/sup-yoga. Där ser du aktuellt schema, väljer datum och biljettyp och betalar online.',
+          },
+          {
+            q: 'Vad kostar det?',
+            a: 'Drop-in 350 kr, 150 kr med egen SUP, 10-klippkort 1 000 kr, säsongspass 2026 för 1 500 kr. Bastu ingår alltid.',
+          },
+          {
+            q: 'Hur lång är en klass?',
+            a: '75 minuter inklusive paddling till och från ankringsplatsen. Räkna med ungefär två timmar på plats med incheckning, omklädning och bastu efteråt.',
+          },
+          {
+            q: 'Vinyasa eller yin, vilken ska jag välja?',
+            a: 'Vinyasa om du vill röra på dig och bränna energi. Yin om du vill landa och slappna av. Båda passar alla nivåer. Kolla schemat på Smashing Balance för att se vilken som körs när.',
+          },
+          {
+            q: 'Behöver jag erfarenhet av yoga eller SUP?',
+            a: 'Nej. Brädorna är stabila och klassen börjar med en säkerhetsgenomgång. Anpassas alltid efter de som är där.',
+          },
+          {
+            q: 'Vad ingår i priset?',
+            a: 'Bräda, paddel, flytväst, dry bag, omklädningsrum, lås till värdesaker och bastu vid sjön efter passet. Allt utom det du har på dig.',
+          },
+          {
+            q: 'Får jag pengarna tillbaka om jag inte kan komma?',
+            a: 'Avbokningsregler hanteras av Smashing Balance. Se deras villkor på smashingbalance.se vid bokning.',
+          },
+          {
+            q: 'Kan jag boka en hel grupp?',
+            a: 'För grupper är ett privat event vanligtvis bättre. Det bokas direkt med mig på hello.yogawithcamilla@gmail.com. Se Privat SUP Yoga för mer info.',
+          },
+          {
+            q: 'Vad händer vid dåligt väder?',
+            a: 'Vid hård vind, åska eller för kallt vatten ställs klassen in. Du får besked via Smashing Balance och oftast möjlighet att boka om.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Nästa steg',
+      },
+      {
+        type: 'paragraph',
+        text: 'Se aktuellt schema och boka en klass på [Smashing Balance](https://smashingbalance.se/collections/sup-yoga). Eller läs mer om hela upplägget på sidan [SUP yoga klasser](/tjanster/sup-yoga-klasser). Är ni en grupp och vill ha det för er själva istället, kolla in [Privat SUP Yoga](/tjanster/sup-yoga).',
+      },
+    ],
   },
   {
     slug: 'yoga-brollopsaktivitet',
@@ -1572,9 +1798,9 @@ export const blogPosts: BlogPost[] = [
     ],
     content: [
       { type: 'paragraph', text: 'Stockholm är en fantastisk stad för möhippa. Vatten överallt, bra restauranger, massor av alternativ. Men grejen är att många grupper fastnar i samma spår: prosecco-frukost, spa, och sedan ut på krogen. Inget fel med det. Men om ni vill ha en dag som faktiskt känns unik, en dag där bruden ser på er och säger "det här var exakt rätt", så lönar det sig att tänka ett varv till.' },
-      { type: 'heading', text: '1. SUP yoga och bastu vid Sicklasjön' },
-      { type: 'paragraph', text: 'Det här är vår absoluta favorit. Yoga på ett paddleboard låter lite galet, men det är precis det som gör det så bra för möhippa. Ni skrattar, ni utmanar er lagom, ingen behöver kunna yoga sedan tidigare. Vi håller ett pass utomhus på Sicklasjön där ni balanserar, faller i, och har det roligaste på länge.' },
-      { type: 'paragraph', text: 'Efteråt: bastu direkt vid vattnet. Varmt, lugnt, bara ni och utsikten. Passar perfekt för grupper. Ingen förkunskap krävs. Mejla hello.yogawithcamilla@gmail.com för offert, eller läs mer på yogawithcamilla.se/tjanster/sup-yoga.' },
+      { type: 'heading', text: '1. Privat SUP yoga och bastu vid Sickla Strand' },
+      { type: 'paragraph', text: 'Det här är vår absoluta favorit. Yoga på ett paddleboard låter lite galet, men det är precis det som gör det så bra för möhippa. Ni skrattar, ni utmanar er lagom, ingen behöver kunna yoga sedan tidigare. Vi håller ett privat pass vid Sickla Strand där ni balanserar, faller i, och har det roligaste på länge. Vinyasa eller yin, ni väljer stil.' },
+      { type: 'paragraph', text: 'Efteråt: bastu direkt vid vattnet. Varmt, lugnt, bara ni och utsikten. Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Klassen leds av mig, plats och utrustning kommer från min partner Smashing Balance. Mejla hello.yogawithcamilla@gmail.com för offert, eller läs mer på yogawithcamilla.se/tjanster/sup-yoga.' },
       { type: 'heading', text: '2. Skärgårdstur med egen båt' },
       { type: 'paragraph', text: 'Stockholms skärgård är ett av världens finaste naturområden och den ligger bokstavligen utanför dörren. Strandrederi hyr ut båtar med skeppare för dagen, ni packar mat och dryck, sätter kurs mot en ö, badar från klippor, grillar, sover i solen. Kanebo Event är alternativet för större grupper, de har båtar som tar upp till 110 gäster. För en snabbare variant med fartvind i håret, boka RIB Stockholm.' },
       { type: 'heading', text: '3. Matlagningskurs tillsammans' },
@@ -1605,9 +1831,9 @@ export const blogPosts: BlogPost[] = [
     ],
     content: [
       { type: 'paragraph', text: 'Stockholm is genuinely one of the best cities in the world for a bachelorette party. Water everywhere, world-class spas, cobblestone streets in Gamla Stan, and a food scene that keeps getting better. These are six of the best bachelorette party ideas in Stockholm right now.' },
-      { type: 'heading', text: '1. SUP yoga and sauna at Sickla Strand' },
-      { type: 'paragraph', text: 'This is the one. Yoga on paddleboards on a calm Stockholm lake, followed by a sauna on the water\'s edge. No experience needed. The boards are wide and stable, and the whole session is taught in English. Perfect for groups up to 20.' },
-      { type: 'paragraph', text: 'The SUP yoga and sauna experience runs at Sickla Strand in Nacka, just outside central Stockholm. Groups up to 20 people, all equipment included.' },
+      { type: 'heading', text: '1. Private SUP yoga and sauna at Sickla Strand' },
+      { type: 'paragraph', text: 'This is the one. Yoga on paddleboards on a calm Stockholm lake, followed by a sauna on the water\'s edge. No experience needed. The boards are wide and stable, and the whole session is taught in English. Vinyasa or yin, you pick the style.' },
+      { type: 'paragraph', text: 'The private SUP yoga and sauna experience runs at Sickla Strand in Nacka, just outside central Stockholm. Usually 3 to 10 people, larger groups on request. From 500 kr per person. Led by me, with venue and equipment provided by our partner Smashing Balance. All gear included.' },
       { type: 'heading', text: '2. Private archipelago boat tour with Strandrederi' },
       { type: 'paragraph', text: 'Stockholm\'s archipelago is 30,000 islands and the best way to see it as a group is on a private charter. Strandrederi rents skippered boats by the day, set up for groups with food and drink on board. For larger parties, Kanebo Event runs boats up to 110 guests. If you want adrenaline, RIB Stockholm will get you further out in less time: 2 hours to a full day.' },
       { type: 'heading', text: '3. Private yoga session for your group' },
@@ -1637,9 +1863,9 @@ export const blogPosts: BlogPost[] = [
     ],
     content: [
       { type: 'paragraph', text: 'Sommaravslutningen är ett av årets viktigaste tillfällen för ett team. Inte för att det står i någon HR-handbok, utan för att det är en av få gånger ni faktiskt stannar upp tillsammans. Firar det ni gjort. Andas ut lite. Här är sju idéer som funkar.' },
-      { type: 'heading', text: '1. SUP yoga och bastu vid Sickla' },
-      { type: 'paragraph', text: 'Yoga på paddleboard vid Sickla är en upplevelse som ingen glömmer. Ni börjar med en guidad yogasekvens på vattnet, sen värmer ni upp i en bastu med utsikt mot sjön. Avkopplande, roligt och lite utmanande på samma gång.' },
-      { type: 'paragraph', text: 'Ingen förkunskap krävs. Funkar för grupper upp till 20 personer, centralt i Sickla och enkelt att nå med tunnelbana.' },
+      { type: 'heading', text: '1. Privat SUP yoga och bastu vid Sickla Strand' },
+      { type: 'paragraph', text: 'Yoga på paddleboard vid Sickla Strand är en upplevelse som ingen glömmer. Ni börjar med en guidad yogasekvens på vattnet, vinyasa eller yin, sen värmer ni upp i en bastu med utsikt mot sjön. Avkopplande, roligt och lite utmanande på samma gång.' },
+      { type: 'paragraph', text: 'Ingen förkunskap krävs. Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Centralt i Sickla, enkelt att nå med tunnelbana. Klassen leds av mig, plats och utrustning kommer från min partner Smashing Balance.' },
       { type: 'heading', text: '2. Skärgårdstur med charterbåt' },
       { type: 'paragraph', text: 'Stockholm har 30 000 öar och sommaren är den enda tiden på året man faktiskt ser dem. Strandrederi hyr ut skärgårdsbåtar med skeppare för hel- eller halvdag, bra för kickoffer och sommaravslutningar där ni vill ha mat, dryck och utrymme ombord. För större grupper kör Kanebo Event båtar som tar upp till 110 gäster. RIB Stockholm är alternativet om ni vill ha fart snarare än lugn, 2 timmar till hel dag.' },
       { type: 'heading', text: '3. Matlagning hos AVEQIA' },
@@ -1670,9 +1896,9 @@ export const blogPosts: BlogPost[] = [
     ],
     content: [
       { type: 'paragraph', text: 'Summer in Stockholm is short, brilliant, and a little bit magic. The light stays until 10 pm. The water is warm enough to actually get in. And your team has probably been sitting in the same meeting room since January.' },
-      { type: 'heading', text: '1. SUP Yoga + Sauna at Sickla Strand' },
-      { type: 'paragraph', text: 'You start on paddleboards on the water, moving through a gentle yoga flow led by a certified instructor. No experience needed. Nobody falls in as often as they expect. And everybody laughs more than they thought they would.' },
-      { type: 'paragraph', text: 'After the session, you step into a sauna right by the water. Groups of up to 20 people, taught in English. Central Sickla location, easy to reach by tunnelbana.' },
+      { type: 'heading', text: '1. Private SUP Yoga + Sauna at Sickla Strand' },
+      { type: 'paragraph', text: 'You start on paddleboards on the water, moving through a gentle vinyasa or yin flow led by me. No experience needed. Nobody falls in as often as they expect. And everybody laughs more than they thought they would.' },
+      { type: 'paragraph', text: 'After the session, you step into a sauna right by the water. Usually 3 to 10 people, larger groups on request. From 500 kr per person. Taught in English. Central Sickla location, easy to reach by tunnelbana. Yoga led by me, with venue and gear from our partner Smashing Balance.' },
       { type: 'heading', text: '2. Archipelago Boat Trip with Strandrederi or Kanebo Event' },
       { type: 'paragraph', text: 'Stockholm sits on one of the most beautiful archipelagos in the world (more than 30,000 islands, most of them empty) and you only see it properly from a boat. Strandrederi charters skippered boats for half or full days, set up for company kickoffs and summer parties with food and drink on board. For bigger groups, Kanebo Event operates boats up to 110 guests. If you want speed over calm, RIB Stockholm runs faster archipelago tours from 2 hours to a full day.' },
       { type: 'heading', text: '3. Cooking Class at AVEQIA' },
@@ -1704,9 +1930,9 @@ export const blogPosts: BlogPost[] = [
     ],
     content: [
       { type: 'paragraph', text: 'Bra teambuilding i Stockholm behöver inte vara krånglig. Den behöver inte vara dyr heller. Men den behöver vara något teamet faktiskt ser fram emot, inte något de klarar av för att de måste.' },
-      { type: 'heading', text: '1. SUP yoga och bastu vid Sicklasjön' },
+      { type: 'heading', text: '1. Privat SUP yoga och bastu vid Sickla Strand' },
       { type: 'paragraph', text: 'Yoga på paddleboard kräver koncentration och balans, vilket betyder att alla i gruppen är helt närvarande. Ingen kollar telefonen. Ingen tänker på deadline. Alla fokuserar på att inte ramla i vattnet, och skrattar när någon gör det ändå.' },
-      { type: 'paragraph', text: 'Efteråt: bastu direkt vid vattnet, tid att prata på riktigt. Funkar för grupper upp till 20 personer, ingen erfarenhet krävs, centralt i Sickla och enkelt att nå med tunnelbana.' },
+      { type: 'paragraph', text: 'Efteråt: bastu direkt vid vattnet, tid att prata på riktigt. Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Ingen erfarenhet krävs, centralt vid Sickla Strand och enkelt att nå med tunnelbana. Yoga ledd av mig, plats och utrustning via min partner Smashing Balance.' },
       { type: 'heading', text: '2. Matlagning hos AVEQIA' },
       { type: 'paragraph', text: 'AVEQIA är det många Stockholmsföretag landar på och det finns en anledning. Grupper från 10 till 140 personer lagar en tre- eller fyrarätters meny tillsammans i privata köksrum, med kockar som guidar. Funkar både för folk som lagar mat varje dag och folk som bränner rostbrödet. Bra val om teamet är blandat och ni vill att alla är med utan att någon känner sig utlämnad.' },
       { type: 'heading', text: '3. Escape room hos Exit Games eller Fox in a Box' },
@@ -1738,9 +1964,9 @@ export const blogPosts: BlogPost[] = [
     ],
     content: [
       { type: 'paragraph', text: 'Planning team building activities in Stockholm is easier than it sounds. The city has the lake, the archipelago, the old town, and enough creative venues to fill a whole conference season. The harder part is choosing something people will actually remember on Monday morning.' },
-      { type: 'heading', text: '1. SUP Yoga + Sauna at Sickla Strand' },
-      { type: 'paragraph', text: 'Paddleboard yoga on Sickla Lake followed by a sauna is one of the more interesting team options in Stockholm right now. It works for groups up to 20, no experience needed, and runs in English, which matters if your team is international.' },
-      { type: 'paragraph', text: 'The yoga happens on the water. People wobble, laugh, and end up helping each other balance within the first few minutes, which does more for group dynamics than most indoor exercises. The sauna afterwards gives everyone a chance to warm up and actually talk. Central location, easy to reach by tunnelbana.' },
+      { type: 'heading', text: '1. Private SUP Yoga + Sauna at Sickla Strand' },
+      { type: 'paragraph', text: 'Paddleboard yoga at Sickla Strand followed by a sauna is one of the more interesting team options in Stockholm right now. It works for groups of 3 to 10 (larger on request), no experience needed, and runs in English, which matters if your team is international.' },
+      { type: 'paragraph', text: 'The yoga happens on the water, vinyasa or yin, led by me. People wobble, laugh, and end up helping each other balance within the first few minutes, which does more for group dynamics than most indoor exercises. The sauna afterwards gives everyone a chance to warm up and actually talk. Central location, easy to reach by tunnelbana. From 500 kr per person. Venue and gear provided by our partner Smashing Balance.' },
       { type: 'heading', text: '2. Cooking Class at AVEQIA' },
       { type: 'paragraph', text: 'AVEQIA is the one most Stockholm companies end up booking, and there is a reason. Groups from 10 to 140 cook a three- or four-course menu together in private kitchen-dining rooms, guided by chefs. It works for people who cook every day and people who burn toast. Good option if your team is mixed and you want everyone included without anyone feeling exposed.' },
       { type: 'heading', text: '3. Escape Room at Exit Games or Fox in a Box' },

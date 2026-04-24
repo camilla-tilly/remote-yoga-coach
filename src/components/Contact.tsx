@@ -1,4 +1,5 @@
 import { Mail, Instagram } from 'lucide-react';
+import Mandala from '@/components/decorative/Mandala';
 
 const TikTokIcon = ({ size = 18 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +32,7 @@ const Contact = () => {
       <div className="relative container-section px-3 mx-auto max-w-4xl">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10 animate-when-visible" data-animation="fade-in">
-            <span className="inline-block tag-pill bg-dalashala-sage/15 text-dalashala-olive border border-dalashala-sage/40 mb-4">
+            <span className="inline-block tag-pill bg-dalashala-saffronLight/60 text-dalashala-saffronDeep border border-dalashala-saffron/40 mb-4">
               Kontakt
             </span>
             <h2 className="font-cinzel-decorative text-2xl md:text-3xl lg:text-4xl text-dalashala-earth font-bold mb-3">
@@ -44,7 +45,12 @@ const Contact = () => {
 
           <div className="max-w-lg mx-auto animate-when-visible" data-animation="fade-in">
             <div className="relative rounded-3xl overflow-hidden shadow-card border border-dalashala-meadow/30">
-              <div className="absolute inset-0 bg-gradient-to-br from-white via-dalashala-creamLight to-dalashala-sage/10" />
+              <div className="absolute inset-0 bg-gradient-to-br from-white via-dalashala-creamLight to-dalashala-sage/15" />
+              <Mandala
+                variant="twelve"
+                strokeWidth={0.7}
+                className="absolute -right-16 -bottom-16 w-[260px] h-[260px] text-dalashala-gold/15 pointer-events-none"
+              />
               <div className="relative p-6 md:p-8 space-y-3">
                 {links.map(({ Icon, label, value, href, external }) => (
                   <a
@@ -52,20 +58,20 @@ const Contact = () => {
                     href={href}
                     target={external ? '_blank' : undefined}
                     rel={external ? 'noopener noreferrer' : undefined}
-                    className="group flex items-center space-x-4 p-3 rounded-xl hover:bg-dalashala-sage/10 transition-colors"
+                    className="group flex items-center space-x-4 p-3 rounded-xl hover:bg-dalashala-saffron/10 transition-colors"
                   >
-                    <div className="bg-earth-gradient text-dalashala-cream p-2.5 rounded-full flex-shrink-0 shadow-soft group-hover:scale-105 transition-transform">
+                    <div className="bg-saffron-gradient text-white p-2.5 rounded-full flex-shrink-0 shadow-soft group-hover:scale-105 group-hover:shadow-saffron-glow transition-all">
                       <Icon size={18} />
                     </div>
                     <div className="flex-1">
-                      <p className="font-montserrat text-[10px] uppercase tracking-widest text-dalashala-olive mb-0.5">
+                      <p className="font-montserrat text-[10px] uppercase tracking-widest text-dalashala-saffronDeep mb-0.5">
                         {label}
                       </p>
-                      <p className="font-eb-garamond text-sm md:text-base text-dalashala-earth group-hover:text-dalashala-olive transition-colors">
+                      <p className="font-eb-garamond text-sm md:text-base text-dalashala-earth group-hover:text-dalashala-saffronDeep transition-colors">
                         {value}
                       </p>
                     </div>
-                    <span className="text-dalashala-olive opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all">→</span>
+                    <span className="text-dalashala-saffron opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all">→</span>
                   </a>
                 ))}
               </div>

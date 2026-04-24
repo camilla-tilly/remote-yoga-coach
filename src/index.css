@@ -5,49 +5,49 @@
 
 @layer base {
   :root {
-    /* Almond Cream #F0EAD8 */
-    --background: 42 44% 90%;
-    /* Earth Brown #5E4B3B */
-    --foreground: 28 23% 29%;
+    /* Warm cream #F5EFDE */
+    --background: 43 50% 91%;
+    /* Forest deep #2F4A34 — primary text */
+    --foreground: 131 23% 24%;
 
-    --card: 45 55% 94%;
-    --card-foreground: 28 23% 29%;
+    --card: 45 63% 95%;
+    --card-foreground: 131 23% 24%;
 
-    --popover: 42 44% 90%;
-    --popover-foreground: 28 23% 29%;
+    --popover: 43 50% 91%;
+    --popover-foreground: 131 23% 24%;
 
-    /* Earth Brown primary */
-    --primary: 28 23% 29%;
-    --primary-foreground: 42 44% 90%;
+    /* Warm olive #6F7F4A primary */
+    --primary: 75 27% 39%;
+    --primary-foreground: 43 50% 91%;
 
-    /* Meadow Mist secondary */
-    --secondary: 69 15% 63%;
-    --secondary-foreground: 28 23% 29%;
+    /* Sage #9AB19E secondary */
+    --secondary: 133 14% 65%;
+    --secondary-foreground: 131 23% 24%;
 
-    --muted: 42 30% 86%;
-    --muted-foreground: 58 18% 32%;
+    --muted: 44 38% 86%;
+    --muted-foreground: 131 15% 32%;
 
-    /* Coastal Sage accent */
-    --accent: 165 9% 63%;
-    --accent-foreground: 28 23% 29%;
+    /* Saffron #E39B35 accent */
+    --accent: 34 77% 55%;
+    --accent-foreground: 131 23% 24%;
 
     --destructive: 0 70% 50%;
-    --destructive-foreground: 42 44% 90%;
+    --destructive-foreground: 43 50% 91%;
 
-    --border: 58 15% 75%;
-    --input: 58 15% 80%;
-    --ring: 58 24% 35%;
+    --border: 62 18% 72%;
+    --input: 62 18% 78%;
+    --ring: 75 27% 39%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 42 44% 90%;
-    --sidebar-foreground: 28 23% 29%;
-    --sidebar-primary: 28 23% 29%;
-    --sidebar-primary-foreground: 42 44% 90%;
-    --sidebar-accent: 69 15% 63%;
-    --sidebar-accent-foreground: 28 23% 29%;
-    --sidebar-border: 58 15% 75%;
-    --sidebar-ring: 58 24% 35%;
+    --sidebar-background: 43 50% 91%;
+    --sidebar-foreground: 131 23% 24%;
+    --sidebar-primary: 75 27% 39%;
+    --sidebar-primary-foreground: 43 50% 91%;
+    --sidebar-accent: 133 14% 65%;
+    --sidebar-accent-foreground: 131 23% 24%;
+    --sidebar-border: 62 18% 72%;
+    --sidebar-ring: 75 27% 39%;
   }
 }
 
@@ -131,6 +131,12 @@
   .blob-olive {
     @apply blob bg-dalashala-olive/25;
   }
+  .blob-saffron {
+    @apply blob bg-dalashala-saffron/20;
+  }
+  .blob-forest {
+    @apply blob bg-dalashala-earth/15;
+  }
 
   /* Card base — soft depth, subtle edge highlight, organic radius */
   .card-soft {
@@ -139,10 +145,15 @@
 
   /* Section background treatments */
   .bg-cream-soft {
-    background-image: radial-gradient(ellipse 80% 60% at 50% 0%, #F7F1DE 0%, #F0EAD8 50%, #EAE1C8 100%);
+    background-image: radial-gradient(ellipse 80% 60% at 50% 0%, #FBF6E8 0%, #F5EFDE 50%, #EBE1C4 100%);
   }
   .bg-cream-soft-b {
-    background-image: radial-gradient(ellipse 80% 60% at 50% 100%, #F7F1DE 0%, #F0EAD8 50%, #EAE1C8 100%);
+    background-image: radial-gradient(ellipse 80% 60% at 50% 100%, #FBF6E8 0%, #F5EFDE 50%, #EBE1C4 100%);
+  }
+
+  /* Subtle saffron wash, used for section rhythm breaks */
+  .bg-saffron-soft {
+    background-image: radial-gradient(ellipse 70% 70% at 50% 50%, rgba(244, 209, 154, 0.35) 0%, rgba(245, 239, 222, 0.4) 60%, rgba(245, 239, 222, 0) 100%);
   }
 
   /* Divider with sage dot centre */
@@ -153,6 +164,16 @@
   .divider-dot::after {
     content: '';
     @apply flex-1 h-px bg-gradient-to-r from-transparent via-dalashala-meadow/50 to-transparent;
+  }
+
+  /* Gold-lined divider, used with decorative motifs (lotus, mandala) */
+  .divider-gold {
+    @apply flex items-center gap-3 text-dalashala-gold;
+  }
+  .divider-gold::before,
+  .divider-gold::after {
+    content: '';
+    @apply flex-1 h-px bg-gradient-to-r from-transparent via-dalashala-gold/45 to-transparent;
   }
 
   /* Pill tag */

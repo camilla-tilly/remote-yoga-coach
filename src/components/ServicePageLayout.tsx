@@ -5,6 +5,9 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
+import IndianBorder from '@/components/decorative/IndianBorder';
+import LotusDivider from '@/components/decorative/LotusDivider';
+import Mandala from '@/components/decorative/Mandala';
 
 interface ServiceHighlight {
   heading: string;
@@ -174,25 +177,31 @@ const ServicePageLayout = ({
           </nav>
           {/* Hero Section */}
           <section className="relative py-12 md:py-16 px-4 overflow-hidden">
+            <div className="text-dalashala-gold/50 absolute top-0 left-0 right-0">
+              <IndianBorder height={12} />
+            </div>
             <div className="blob-sage w-[400px] h-[400px] -top-20 -right-20 opacity-40" aria-hidden="true" />
-            <div className="blob-meadow w-[350px] h-[350px] top-20 -left-20 opacity-40" aria-hidden="true" />
-            <div className="relative max-w-2xl mx-auto text-center">
-              <span className="inline-block tag-pill bg-dalashala-sage/15 text-dalashala-olive border border-dalashala-sage/40 mb-5">
+            <div className="blob-saffron w-[350px] h-[350px] top-20 -left-20 opacity-60" aria-hidden="true" />
+            <Mandala
+              variant="twelve"
+              strokeWidth={0.7}
+              className="absolute -top-24 -right-24 w-[320px] h-[320px] text-dalashala-saffron/12 pointer-events-none"
+            />
+            <div className="relative max-w-2xl mx-auto text-center pt-4">
+              <span className="inline-block tag-pill bg-dalashala-saffronLight/60 text-dalashala-saffronDeep border border-dalashala-saffron/40 mb-5">
                 {heroTag}
               </span>
               <h1 className="font-cinzel-decorative text-2xl md:text-3xl lg:text-4xl text-dalashala-earth mb-5 font-bold leading-tight">
                 {heroHeading}
               </h1>
-              <div className="flex justify-center items-center gap-2 mb-5">
-                <span className="h-px w-8 bg-dalashala-olive/40" />
-                <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage" />
-                <span className="h-px w-8 bg-dalashala-olive/40" />
+              <div className="max-w-[180px] mx-auto mb-5">
+                <LotusDivider tone="gold" />
               </div>
               <p className="font-eb-garamond text-base md:text-lg text-dalashala-earthSoft mb-8 leading-relaxed">
                 {heroSubtitle}
               </p>
               <Button
-                className="bg-earth-gradient text-dalashala-cream hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300 font-montserrat py-2.5 px-8 rounded-full uppercase tracking-wide text-sm shadow-card"
+                className="bg-saffron-gradient text-white hover:shadow-saffron-glow hover:-translate-y-0.5 transition-all duration-300 font-montserrat py-2.5 px-8 rounded-full uppercase tracking-wide text-sm shadow-card"
                 asChild
               >
                 <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
@@ -219,7 +228,7 @@ const ServicePageLayout = ({
           {/* Intro */}
           <section className="px-4 mb-14">
             <div className="max-w-2xl mx-auto card-soft p-6 md:p-10">
-              <div className="absolute top-0 left-8 right-8 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-meadow to-dalashala-olive rounded-full" />
+              <div className="absolute top-0 left-8 right-8 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-saffron to-dalashala-olive rounded-full" />
               <h2 className="font-cinzel text-lg md:text-xl text-dalashala-earth mb-5 font-bold">
                 {introHeading}
               </h2>
@@ -239,8 +248,8 @@ const ServicePageLayout = ({
                   key={i}
                   className="card-soft overflow-hidden hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300"
                 >
-                  <div className="bg-earth-gradient px-4 py-3 flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage" />
+                  <div className="bg-forest-gradient px-4 py-3 flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-dalashala-saffron" />
                     <h3 className="font-cinzel text-dalashala-cream text-xs font-bold uppercase tracking-[0.2em]">
                       {h.heading}
                     </h3>
@@ -260,7 +269,7 @@ const ServicePageLayout = ({
             <section className="px-4 mb-14">
               <div className="max-w-2xl mx-auto">
                 <div className="text-center mb-8">
-                  <span className="inline-block tag-pill bg-dalashala-olive/15 text-dalashala-olive border border-dalashala-olive/30 mb-3">
+                  <span className="inline-block tag-pill bg-dalashala-saffronLight/60 text-dalashala-saffronDeep border border-dalashala-saffron/40 mb-3">
                     Priser · Pricing
                   </span>
                   <h2 className="font-cinzel-decorative text-xl md:text-2xl text-dalashala-earth font-bold">
@@ -271,10 +280,10 @@ const ServicePageLayout = ({
                   {pricing.map((tier, i) => (
                     <div
                       key={i}
-                      className="relative card-soft p-6 text-center hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300 overflow-hidden"
+                      className={`relative card-soft p-6 text-center hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300 overflow-hidden ${i % 2 === 1 ? 'bg-dalashala-sageLight/25' : ''}`}
                     >
-                      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-dalashala-sage to-dalashala-olive" />
-                      <p className="font-montserrat text-[10px] uppercase tracking-widest text-dalashala-olive mb-2">
+                      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-saffron to-dalashala-olive" />
+                      <p className="font-montserrat text-[10px] uppercase tracking-widest text-dalashala-saffronDeep mb-2">
                         {tier.label}
                       </p>
                       <p className="font-cinzel text-lg md:text-xl text-dalashala-earth font-bold mb-1">
@@ -333,7 +342,7 @@ const ServicePageLayout = ({
             <section className="px-4 mb-14">
               <div className="max-w-2xl mx-auto">
                 <div className="text-center mb-6">
-                  <span className="inline-block tag-pill bg-dalashala-sage/15 text-dalashala-olive border border-dalashala-sage/40 mb-3">
+                  <span className="inline-block tag-pill bg-dalashala-saffronLight/60 text-dalashala-saffronDeep border border-dalashala-saffron/40 mb-3">
                     Vanliga frågor · FAQ
                   </span>
                 </div>
@@ -343,12 +352,12 @@ const ServicePageLayout = ({
                       key={i}
                       className="card-soft overflow-hidden group hover:shadow-card-hover transition-shadow"
                     >
-                      <summary className="font-montserrat text-sm text-dalashala-earth px-5 py-4 cursor-pointer list-none flex items-center justify-between hover:bg-dalashala-sage/10 transition-colors">
+                      <summary className="font-montserrat text-sm text-dalashala-earth px-5 py-4 cursor-pointer list-none flex items-center justify-between hover:bg-dalashala-sage/15 transition-colors">
                         <span className="flex items-center gap-3">
-                          <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage group-open:bg-dalashala-olive transition-colors" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage group-open:bg-dalashala-saffron transition-colors" />
                           {item.question}
                         </span>
-                        <span className="text-dalashala-olive ml-2 group-open:rotate-45 transition-transform text-lg font-light">+</span>
+                        <span className="text-dalashala-saffronDeep ml-2 group-open:rotate-45 transition-transform text-lg font-light">+</span>
                       </summary>
                       <div className="px-5 pb-5 pl-11">
                         <p className="font-eb-garamond text-sm text-dalashala-earthSoft leading-relaxed">
@@ -393,15 +402,18 @@ const ServicePageLayout = ({
           {/* CTA */}
           <section className="px-4 mb-16">
             <div className="max-w-2xl mx-auto relative text-center rounded-3xl overflow-hidden shadow-card">
-              <div className="absolute inset-0 bg-earth-gradient" />
-              {/* Olive glow */}
-              <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-dalashala-olive/40 blur-3xl" aria-hidden="true" />
+              <div className="absolute inset-0 bg-forest-gradient" />
+              {/* Saffron + sage glow */}
+              <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-dalashala-saffron/35 blur-3xl" aria-hidden="true" />
               <div className="absolute -bottom-24 -left-24 w-64 h-64 rounded-full bg-dalashala-sage/30 blur-3xl" aria-hidden="true" />
+              <Mandala
+                variant="twelve"
+                strokeWidth={0.7}
+                className="absolute -right-16 -top-16 w-[260px] h-[260px] text-dalashala-saffron/18 pointer-events-none"
+              />
               <div className="relative p-8 md:p-12">
-                <div className="flex justify-center items-center gap-2 mb-4 opacity-70">
-                  <span className="h-px w-8 bg-dalashala-cream/50" />
-                  <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage" />
-                  <span className="h-px w-8 bg-dalashala-cream/50" />
+                <div className="max-w-[160px] mx-auto mb-4">
+                  <LotusDivider tone="cream" />
                 </div>
                 <h2 className="font-cinzel-decorative text-xl md:text-2xl text-dalashala-cream mb-4 font-bold">
                   {ctaHeading}
@@ -410,7 +422,7 @@ const ServicePageLayout = ({
                   {ctaText}
                 </p>
                 <Button
-                  className="bg-dalashala-cream text-dalashala-earth hover:bg-white hover:-translate-y-0.5 transition-all duration-300 font-montserrat py-2.5 px-8 rounded-full uppercase tracking-wide text-sm shadow-card"
+                  className="bg-dalashala-saffron text-white hover:bg-dalashala-saffronDeep hover:-translate-y-0.5 transition-all duration-300 font-montserrat py-2.5 px-8 rounded-full uppercase tracking-wide text-sm shadow-card"
                   asChild
                 >
                   <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
