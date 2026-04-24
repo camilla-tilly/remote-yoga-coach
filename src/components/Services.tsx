@@ -144,20 +144,19 @@ const Services = () => {
 
       </div>
 
-      {/* Bottom CTA — full-bleed dark pine block for contrast */}
-      <div className="relative mt-20 md:mt-28 bg-forest-gradient py-16 md:py-20 text-center overflow-hidden">
-        {/* Honey accent bar, signature element */}
+      {/* Bottom CTA — pale sage wash, distinct from both white sections and the dark footer */}
+      <div className="relative mt-20 md:mt-28 bg-dalashala-creamDeep py-16 md:py-20 text-center">
         <span className="block mx-auto w-14 h-[2px] bg-dalashala-honey mb-7 opacity-90 rounded-full" aria-hidden="true" />
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
-          <h3 className="font-cormorant font-semibold text-4xl md:text-5xl text-white mb-5 tracking-tight leading-[1.05]">
+          <h3 className="font-cormorant font-semibold text-4xl md:text-5xl text-dalashala-earth mb-5 tracking-tight leading-[1.05]">
             Ser du inte det du letar efter?
           </h3>
-          <p className="font-inter font-normal text-base md:text-lg text-white/85 mb-8 max-w-lg mx-auto leading-relaxed">
+          <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth mb-8 max-w-lg mx-auto leading-relaxed">
             Hör av dig, jag skräddarsyr gärna något för just er grupp, er dag och er plats.
           </p>
           <a
             href="#contact"
-            className="inline-block font-inter text-sm font-semibold uppercase tracking-[0.2em] bg-dalashala-honey text-white px-10 py-4 rounded-full hover:bg-dalashala-honeyDeep hover:-translate-y-0.5 transition-all duration-300"
+            className="inline-block font-inter text-sm font-semibold uppercase tracking-[0.2em] bg-dalashala-earth text-white px-10 py-4 rounded-full hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300"
           >
             Kontakta mig
           </a>
