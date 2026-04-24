@@ -13,7 +13,6 @@ const stockholmServices: ServiceCard[] = [
     title: 'Privata Event',
     description: 'Möhippa, födelsedag eller sommaravslutning. Privat yoga för gruppen.',
     href: '/tjanster/privata-event',
-    tag: 'Populärt',
   },
   {
     title: 'Företagsyoga & Workshops',
@@ -42,13 +41,11 @@ const dalarnaServices: ServiceCard[] = [
     title: 'Hönsyoga på Stugan',
     description: 'Yoga på altanen med hönsen runt. Har du hört talas om goat yoga? Det här är den svenska, lugnare varianten.',
     href: '/tjanster/honsyoga',
-    tag: 'Unikt',
   },
   {
     title: 'Mini Retreat & Upplevelser',
     description: 'Retreat, adventure-paket eller trail run + yoga. Dag, heldag eller weekend i naturen.',
     href: '/tjanster/mini-retreat',
-    tag: 'Populärt',
   },
   {
     title: 'Privata Event',
@@ -59,7 +56,6 @@ const dalarnaServices: ServiceCard[] = [
     title: 'Privatlektioner',
     description: 'En-till-en yoga i Dalarna, online via Zoom, eller för löpare. Alla lektioner på engelska.',
     href: '/tjanster/privatlektioner',
-    tag: 'English',
   },
 ];
 
