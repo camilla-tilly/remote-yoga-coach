@@ -12,7 +12,6 @@ import Blog from "./pages/Blog";
 import BlogPostPage from "./pages/BlogPostPage";
 
 import ForetagsYoga from "./pages/services/ForetagsYoga";
-import Privatlektioner from "./pages/services/Privatlektioner";
 import MiniRetreat from "./pages/services/MiniRetreat";
 import SUPYoga from "./pages/services/SUPYoga";
 import SUPYogaKlasser from "./pages/services/SUPYogaKlasser";
@@ -53,13 +52,13 @@ const App = () => (
 
           {/* Active Service Pages */}
           <Route path="/tjanster/foretagsyoga" element={<ForetagsYoga />} />
-          <Route path="/tjanster/privatlektioner" element={<Privatlektioner />} />
           <Route path="/tjanster/mini-retreat" element={<MiniRetreat />} />
           <Route path="/tjanster/sup-yoga" element={<SUPYoga />} />
           <Route path="/tjanster/sup-yoga-klasser" element={<SUPYogaKlasser />} />
           <Route path="/tjanster/sup-yoga/villkor" element={<SUPYogaVillkor />} />
           <Route path="/tjanster/honsyoga" element={<HonsYoga />} />
-          <Route path="/tjanster/yoga-dalarna-turister" element={<Navigate to="/tjanster/privatlektioner" replace />} />
+          <Route path="/tjanster/yoga-dalarna-turister" element={<Navigate to="/tjanster/honsyoga" replace />} />
+          <Route path="/tjanster/privatlektioner" element={<Navigate to="/tjanster/privata-event" replace />} />
           <Route path="/tjanster/privata-event" element={<PrivataEvent />} />
           <Route path="/tjanster/private-events" element={<Navigate to="/tjanster/privata-event" replace />} />
 
@@ -68,8 +67,8 @@ const App = () => (
           <Route path="/tjanster/brollopsyoga" element={<Navigate to="/tjanster/privata-event" replace />} />
           <Route path="/tjanster/fodelsedag-yoga" element={<Navigate to="/tjanster/privata-event" replace />} />
           <Route path="/tjanster/yoga-workshop" element={<Navigate to="/tjanster/foretagsyoga" replace />} />
-          <Route path="/tjanster/yoga-for-lopare" element={<Navigate to="/tjanster/privatlektioner" replace />} />
-          <Route path="/tjanster/online-yoga" element={<Navigate to="/tjanster/privatlektioner" replace />} />
+          <Route path="/tjanster/yoga-for-lopare" element={<Navigate to="/tjanster/mini-retreat" replace />} />
+          <Route path="/tjanster/online-yoga" element={<Navigate to="/" replace />} />
           <Route path="/tjanster/adventure-paket" element={<Navigate to="/tjanster/mini-retreat" replace />} />
           <Route path="/tjanster/trail-run-yoga" element={<Navigate to="/tjanster/mini-retreat" replace />} />
 

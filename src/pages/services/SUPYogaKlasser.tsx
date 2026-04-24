@@ -4,7 +4,6 @@ const relatedServices = [
   { label: 'Privat SUP Yoga (möhippa, team)', href: '/tjanster/sup-yoga' },
   { label: 'Privata Event', href: '/tjanster/privata-event' },
   { label: 'Företagsyoga & Workshops', href: '/tjanster/foretagsyoga' },
-  { label: 'Privatlektioner', href: '/tjanster/privatlektioner' },
 ];
 
 const structuredData = {

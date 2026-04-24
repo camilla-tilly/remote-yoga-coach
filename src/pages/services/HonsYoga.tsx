@@ -3,8 +3,7 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 const relatedServices = [
   { label: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
   { label: 'Privata Event', href: '/tjanster/privata-event' },
-  { label: 'Privatlektioner', href: '/tjanster/privatlektioner' },
-  { label: 'Privatlektioner', href: '/tjanster/privatlektioner' },
+  { label: 'Företagsyoga & Workshops', href: '/tjanster/foretagsyoga' },
 ];
 
 const structuredData = {

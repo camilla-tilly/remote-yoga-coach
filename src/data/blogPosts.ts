@@ -669,7 +669,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'SUP yoga är inte en ersättning för regelbunden yogapraktik på mattan. Det är ett annat format. Mer upplevelsebaserat, mer socialt, mindre tekniskt. Du bygger inte styrka eller flexibilitet på samma sätt. Men du får något som studio-yoga sällan ger: en känsla av att vara utomhus och lekfull samtidigt. Om du söker regelbunden praktik, kolla [privat yoga](/tjanster/privatlektioner) istället.'
+        text: 'SUP yoga är inte en ersättning för regelbunden yogapraktik på mattan. Det är ett annat format. Mer upplevelsebaserat, mer socialt, mindre tekniskt. Du bygger inte styrka eller flexibilitet på samma sätt. Men du får något som studio-yoga sällan ger: en känsla av att vara utomhus och lekfull samtidigt. Om du söker regelbunden praktik, kolla [mina andra tjänster](/#services) istället.'
       },
       {
         type: 'heading',

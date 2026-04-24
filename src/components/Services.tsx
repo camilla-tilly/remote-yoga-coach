@@ -29,11 +29,6 @@ const stockholmServices: ServiceCard[] = [
     description: 'Öppna vinyasa- och yin-klasser på vattnet vid Sickla Strand. Bastu ingår. Bokas via Smashing Balance.',
     href: '/tjanster/sup-yoga-klasser',
   },
-  {
-    title: 'Privatlektioner',
-    description: 'En-till-en yoga live i Stockholm, specialisering för löpare, eller online via Zoom.',
-    href: '/tjanster/privatlektioner',
-  },
 ];
 
 const dalarnaServices: ServiceCard[] = [
@@ -51,11 +46,6 @@ const dalarnaServices: ServiceCard[] = [
     title: 'Privata Event',
     description: 'Möhippa, bröllop eller firande. Skräddarsydd dag för gruppen på stugan i Dalarna.',
     href: '/tjanster/privata-event',
-  },
-  {
-    title: 'Privatlektioner',
-    description: 'En-till-en yoga i Dalarna, online via Zoom, eller för löpare. Alla lektioner på engelska.',
-    href: '/tjanster/privatlektioner',
   },
 ];
 

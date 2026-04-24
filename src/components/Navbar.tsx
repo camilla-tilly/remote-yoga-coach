@@ -19,7 +19,6 @@ const locationGroups = [
       { name: 'Företagsyoga & Workshops', href: '/tjanster/foretagsyoga' },
       { name: 'SUP Yoga (privat event)', href: '/tjanster/sup-yoga' },
       { name: 'SUP Yoga Klasser (drop-in)', href: '/tjanster/sup-yoga-klasser' },
-      { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
     ]
   },
   {
@@ -28,7 +27,6 @@ const locationGroups = [
       { name: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
       { name: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
       { name: 'Privata Event', href: '/tjanster/privata-event' },
-      { name: 'Privatlektioner', href: '/tjanster/privatlektioner' },
     ]
   },
 ];

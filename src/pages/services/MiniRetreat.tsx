@@ -3,7 +3,6 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 const relatedServices = [
   { label: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
   { label: 'Privata Event', href: '/tjanster/privata-event' },
-  { label: 'Privatlektioner', href: '/tjanster/privatlektioner' },
   { label: 'SUP Yoga Stockholm', href: '/tjanster/sup-yoga' },
 ];
 

@@ -158,7 +158,7 @@ const OmMig = () => {
               Jag undervisar på <strong className="text-dalashala-earth font-semibold">WD Wellness i Vansbro</strong>, <strong className="text-dalashala-earth font-semibold">Hot Yoga Stockholm</strong>, <strong className="text-dalashala-earth font-semibold">Yogarummet Björkhagen</strong>, <strong className="text-dalashala-earth font-semibold">Brahma Yoga i Nacka</strong> och som SUP yoga-lärare för <strong className="text-dalashala-earth font-semibold">Smashing Balance</strong>.
             </p>
             <p className="font-inter text-lg md:text-xl text-dalashala-earth/85 leading-relaxed">
-              Jag tar också emot bokningar för privatlektioner, företagsevent, möhippor, bröllop och gruppevent i Dalarna och Stockholm.
+              Jag tar också emot bokningar för företagsevent, möhippor, bröllop och gruppevent i Dalarna och Stockholm.
             </p>
           </div>
         </section>
@@ -176,11 +176,11 @@ const OmMig = () => {
             </h2>
             <span className="block mx-auto w-16 h-[2px] bg-white/50 mb-8 rounded-full" aria-hidden="true" />
             <p className="font-inter text-lg md:text-xl text-white/85 mb-10 leading-relaxed max-w-lg mx-auto">
-              Se mina tjänster eller hör av dig direkt, oavsett om det är en privatlektion, ett bröllop, en konferens eller en morgonklass på altanen.
+              Se mina tjänster eller hör av dig direkt, oavsett om det är ett bröllop, en konferens eller en morgonklass på altanen.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/tjanster/privatlektioner"
+                to="/#services"
                 className="font-inter text-sm font-semibold uppercase tracking-[0.22em] px-10 py-4 rounded-full bg-white text-dalashala-earth hover:-translate-y-0.5 transition-all shadow-card"
               >
                 Se alla tjänster
