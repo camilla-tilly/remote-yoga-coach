@@ -94,6 +94,11 @@
     vertical-align: 0.04em;
     font-variation-settings: normal;
   }
+
+  /* Hide native scrollbar on horizontal photo scroller (mobile) */
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @layer components {

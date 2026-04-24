@@ -54,10 +54,46 @@ const Index = () => {
       <main>
         <Hero />
 
-        {/* Photo strip: sits on a pale sage wash — links hero to the Why section */}
-        <section className="relative bg-dalashala-creamDeep py-16 md:py-20">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
-            <div className="grid grid-cols-3 gap-3 md:gap-5">
+        {/* Photo strip: horizontal snap-scroll on mobile (big, immersive),
+            3-up grid on md+ (balanced triptych). */}
+        <section className="relative bg-dalashala-creamDeep py-14 md:py-20">
+          {/* Mobile: horizontal scroller — each photo fills ~80vw */}
+          <div className="md:hidden">
+            <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pl-4 pr-4 pb-2 scrollbar-none" style={{ scrollbarWidth: 'none' }}>
+              <div className="shrink-0 w-[82vw] aspect-[4/5] overflow-hidden rounded-2xl snap-center shadow-soft">
+                <img
+                  src="/images/IMG_8340.JPG"
+                  alt="Yoga på altanen i Dalarna"
+                  className="w-full h-full object-cover object-[50%_40%]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="shrink-0 w-[82vw] aspect-[4/5] overflow-hidden rounded-2xl snap-center shadow-soft">
+                <img
+                  src="/images/IMG_4442.jpeg"
+                  alt="Utomhusyoga i Dalarna"
+                  className="w-full h-full object-cover object-center"
+                  loading="lazy"
+                />
+              </div>
+              <div className="shrink-0 w-[82vw] aspect-[4/5] overflow-hidden rounded-2xl snap-center shadow-soft">
+                <img
+                  src="/images/IMG_3367.jpeg"
+                  alt="Hönsyoga, yoga med höns på altanen"
+                  className="w-full h-full object-cover object-[50%_80%]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            {/* Small swipe hint */}
+            <p className="mt-5 text-center font-inter text-[10px] uppercase tracking-[0.32em] text-dalashala-olive/80 font-semibold">
+              Swipe →
+            </p>
+          </div>
+
+          {/* md+: balanced triptych */}
+          <div className="hidden md:block max-w-6xl mx-auto px-6 md:px-8">
+            <div className="grid grid-cols-3 gap-5">
               <div className="aspect-[4/5] overflow-hidden rounded-xl group">
                 <img
                   src="/images/IMG_8340.JPG"
