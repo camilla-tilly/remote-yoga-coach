@@ -35,6 +35,7 @@ interface ServicePageProps {
   heroImageAlt?: string;
   heroImagePosition?: string;
   heroImageAspect?: string;
+  gallery?: { src: string; alt: string; position?: string }[];
   introHeading: string;
   introParagraphs: string[];
   highlights: ServiceHighlight[];
@@ -68,6 +69,7 @@ const ServicePageLayout = ({
   heroImageAlt,
   heroImagePosition,
   heroImageAspect,
+  gallery,
   introHeading,
   introParagraphs,
   highlights,
@@ -208,6 +210,25 @@ const ServicePageLayout = ({
                   loading="eager"
                   fetchpriority="high"
                 />
+              </div>
+            </section>
+          )}
+
+          {/* Gallery */}
+          {gallery && gallery.length > 0 && (
+            <section className="px-4 mb-16">
+              <div className="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-3">
+                {gallery.map((img, i) => (
+                  <div key={i} className="overflow-hidden rounded-xl aspect-[3/4]">
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      className="w-full h-full object-cover"
+                      style={img.position ? { objectPosition: img.position } : undefined}
+                      loading="lazy"
+                    />
+                  </div>
+                ))}
               </div>
             </section>
           )}

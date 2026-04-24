@@ -44,15 +44,20 @@ const SUPYoga = () => (
     seoTitle="Privat SUP Yoga & Bastu Stockholm – Möhippa, Team, Födelsedag | Yoga with Camilla"
     seoDescription="Privata SUP yoga-event i Stockholm vid Sickla Strand. Yoga på paddleboard plus bastu, för möhippa, team och födelsedag. Från 500 kr per person."
     canonical="https://yogawithcamilla.se/tjanster/sup-yoga"
-    ogImage="https://yogawithcamilla.se/images/sup-yoga-sickla.jpg"
+    ogImage="https://yogawithcamilla.se/images/sup-yoga-group.jpg"
     breadcrumbLabel="Privat SUP Yoga Stockholm"
     heroTag="Privata Event · SUP Yoga Stockholm"
     heroHeading="Privat SUP Yoga & Bastu i Stockholm"
     heroSubtitle="Yoga på paddleboard vid Sickla Strand, följt av bastu vid sjön. Skräddarsydda paket för möhippa, team och födelsedag. Du bokar direkt med mig."
-    heroImage="/images/sup-yoga-sickla.jpg"
-    heroImageAlt="Privat SUP yoga event på Sicklasjön, Stockholm"
-    heroImageAspect="aspect-[2/3]"
-    heroImagePosition="center 40%"
+    heroImage="/images/sup-yoga-group.jpg"
+    heroImageAlt="Grupp som gör yoga på paddleboards på Sicklasjön, Stockholm"
+    heroImageAspect="aspect-[4/5]"
+    heroImagePosition="center center"
+    gallery={[
+      { src: "/images/sup-yoga-paddling.jpg", alt: "Paddla ut till flytbryggan vid Sickla Strand" },
+      { src: "/images/sup-yoga-floating-dock.jpg", alt: "Flytbrygga på Sicklasjön i morgonljus" },
+      { src: "/images/sup-yoga-group.jpg", alt: "SUP yoga-klass på sammankopplade paddleboards" },
+    ]}
     introHeading="Privat SUP yoga, ledd av mig"
     introParagraphs={[
       "Det här är yoga-paketet för er grupp. Vi börjar med en mjuk vinyasa eller lugn yin på brädan, justerat efter gruppens nivå, och avslutar med bastu vid vattnet. Ingen behöver kunna yoga eller paddla sedan tidigare.",
