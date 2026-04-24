@@ -103,9 +103,10 @@ const OmMig = () => {
                 <div className="md:col-span-2">
                   <div className="overflow-hidden rounded-2xl shadow-card border border-dalashala-meadow/25">
                     <img
-                      src="/lovable-uploads/c1e6d7f9-3ac6-42af-ac83-3058516ff2ef.png"
+                      src="/lovable-uploads/c1e6d7f9-3ac6-42af-ac83-3058516ff2ef.jpg"
                       alt="Camilla i warrior pose på altanen i Dalarna"
                       className="w-full h-full object-cover rounded-2xl"
+                      loading="lazy"
                     />
                   </div>
                 </div>

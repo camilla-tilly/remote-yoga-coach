@@ -4,19 +4,19 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 const ImageGallery = () => {
   const images = [
     {
-      src: "/lovable-uploads/7c04e5d1-c06e-4e32-ac57-b9cc48438631.png",
+      src: "/lovable-uploads/7c04e5d1-c06e-4e32-ac57-b9cc48438631.jpg",
       alt: "Outdoor yoga deck with pine trees",
       heading: "OUR SPACE",
       subHeading: "a serene sanctuary in Dalarna"
     },
     {
-      src: "/lovable-uploads/94dcd753-bf5e-440c-ab83-7f80b68598b8.png",
+      src: "/lovable-uploads/94dcd753-bf5e-440c-ab83-7f80b68598b8.jpg",
       alt: "Forest sunset in Dalarna",
       heading: "NATURE",
       subHeading: "Surrounded by Pristine Forests"
     },
     {
-      src: "/lovable-uploads/6f462914-a6be-4f63-b61d-6c46be9ec25b.png",
+      src: "/lovable-uploads/6f462914-a6be-4f63-b61d-6c46be9ec25b.jpg",
       alt: "Yoga practice on wooden deck",
       heading: "PRACTICE",
       subHeading: "Find Your Flow in the Open Air"
@@ -31,10 +31,11 @@ const ImageGallery = () => {
           {images.map((image, index) => (
             <CarouselItem key={index}>
               <div className="relative h-[320px] rounded-md overflow-hidden">
-                <img 
-                  src={image.src} 
-                  alt={image.alt} 
+                <img
+                  src={image.src}
+                  alt={image.alt}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black/25 flex flex-col justify-end p-4 text-white">
                   <div className="bg-black/50 p-2 rounded-sm backdrop-blur-sm">
@@ -60,10 +61,11 @@ const ImageGallery = () => {
           key={index} 
           className="relative h-[280px] lg:h-[320px] xl:h-[360px] rounded-md overflow-hidden transform transition-all duration-500 hover:scale-[1.02] hover:shadow-xl"
         >
-          <img 
-            src={image.src} 
-            alt={image.alt} 
+          <img
+            src={image.src}
+            alt={image.alt}
             className="w-full h-full object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 flex flex-col justify-end">
             <div className="bg-gradient-to-t from-black/70 to-transparent p-3 pb-4 text-white">

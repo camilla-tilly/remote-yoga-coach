@@ -5,49 +5,49 @@
 
 @layer base {
   :root {
-    /* Warm cream #F5EFDE */
-    --background: 43 50% 91%;
-    /* Forest deep #2F4A34 — primary text */
-    --foreground: 131 23% 24%;
+    /* White background */
+    --background: 0 0% 100%;
+    /* Pine deep #2D3F2F — primary text */
+    --foreground: 127 16% 22%;
 
-    --card: 45 63% 95%;
-    --card-foreground: 131 23% 24%;
+    --card: 0 0% 100%;
+    --card-foreground: 127 16% 22%;
 
-    --popover: 43 50% 91%;
-    --popover-foreground: 131 23% 24%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 127 16% 22%;
 
-    /* Warm olive #6F7F4A primary */
-    --primary: 75 27% 39%;
-    --primary-foreground: 43 50% 91%;
+    /* Eucalyptus #5D7A60 primary */
+    --primary: 125 14% 42%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Sage #9AB19E secondary */
-    --secondary: 133 14% 65%;
-    --secondary-foreground: 131 23% 24%;
+    /* Fresh sage #9EB39F secondary */
+    --secondary: 121 12% 66%;
+    --secondary-foreground: 127 16% 22%;
 
-    --muted: 44 38% 86%;
-    --muted-foreground: 131 15% 32%;
+    --muted: 96 18% 94%;
+    --muted-foreground: 125 16% 40%;
 
-    /* Saffron #E39B35 accent */
-    --accent: 34 77% 55%;
-    --accent-foreground: 131 23% 24%;
+    /* Accent: mossy mint #8AA48E */
+    --accent: 126 13% 59%;
+    --accent-foreground: 127 16% 22%;
 
     --destructive: 0 70% 50%;
-    --destructive-foreground: 43 50% 91%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 62 18% 72%;
-    --input: 62 18% 78%;
-    --ring: 75 27% 39%;
+    --border: 107 15% 79%;
+    --input: 107 15% 85%;
+    --ring: 125 14% 42%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 43 50% 91%;
-    --sidebar-foreground: 131 23% 24%;
-    --sidebar-primary: 75 27% 39%;
-    --sidebar-primary-foreground: 43 50% 91%;
-    --sidebar-accent: 133 14% 65%;
-    --sidebar-accent-foreground: 131 23% 24%;
-    --sidebar-border: 62 18% 72%;
-    --sidebar-ring: 75 27% 39%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 127 16% 22%;
+    --sidebar-primary: 125 14% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 121 12% 66%;
+    --sidebar-accent-foreground: 127 16% 22%;
+    --sidebar-border: 107 15% 79%;
+    --sidebar-ring: 125 14% 42%;
   }
 }
 
@@ -61,12 +61,14 @@
   }
 
   body {
-    @apply bg-dalashala-beige text-dalashala-darkBrown font-montserrat;
-    font-size: 12px; /* Reduced base font size */
+    @apply bg-white text-dalashala-earth font-inter antialiased;
+    font-size: 15px;
+    letter-spacing: 0.005em;
   }
 
-  h1, h2, h3 {
-    @apply font-cinzel;
+  h1, h2, h3, h4 {
+    @apply font-cormorant;
+    letter-spacing: -0.01em;
   }
 
   p {
@@ -115,27 +117,28 @@
     @apply absolute w-4 h-auto text-dalashala-tan/60 transform rotate-12;
   }
 
-  /* Decorative blurred blobs — sit behind content, soft organic depth */
+  /* Decorative blurred blobs — kept minimal, very subtle fresh sage only */
   .blob {
-    @apply pointer-events-none absolute rounded-full blur-3xl opacity-60 animate-drift;
+    @apply pointer-events-none absolute rounded-full blur-3xl opacity-40 animate-drift;
   }
   .blob-sage {
-    @apply blob bg-dalashala-sage/40;
+    @apply blob bg-dalashala-sage/20;
   }
   .blob-meadow {
-    @apply blob bg-dalashala-meadow/40;
+    @apply blob bg-dalashala-meadow/25;
   }
   .blob-cream {
-    @apply blob bg-dalashala-creamLight/70;
+    @apply blob bg-dalashala-creamDeep/40;
   }
   .blob-olive {
-    @apply blob bg-dalashala-olive/25;
+    @apply blob bg-dalashala-olive/10;
   }
+  /* Legacy aliases → neutral sage */
   .blob-saffron {
-    @apply blob bg-dalashala-saffron/20;
+    @apply blob bg-dalashala-sage/15;
   }
   .blob-forest {
-    @apply blob bg-dalashala-earth/15;
+    @apply blob bg-dalashala-earth/8;
   }
 
   /* Card base — soft depth, subtle edge highlight, organic radius */
@@ -143,37 +146,45 @@
     @apply relative bg-white rounded-2xl border border-dalashala-meadow/20 shadow-card;
   }
 
-  /* Section background treatments */
+  /* Section background treatments — pure white with barely-there sage wash */
   .bg-cream-soft {
-    background-image: radial-gradient(ellipse 80% 60% at 50% 0%, #FBF6E8 0%, #F5EFDE 50%, #EBE1C4 100%);
+    background-image: radial-gradient(ellipse 90% 70% at 50% 0%, #FFFFFF 0%, #FAFAF7 60%, #F0F2EC 100%);
   }
   .bg-cream-soft-b {
-    background-image: radial-gradient(ellipse 80% 60% at 50% 100%, #FBF6E8 0%, #F5EFDE 50%, #EBE1C4 100%);
+    background-image: radial-gradient(ellipse 90% 70% at 50% 100%, #FFFFFF 0%, #FAFAF7 60%, #F0F2EC 100%);
   }
 
-  /* Subtle saffron wash, used for section rhythm breaks */
+  /* Legacy alias — mapped to a neutral pale-sage wash so old markup stays clean */
   .bg-saffron-soft {
-    background-image: radial-gradient(ellipse 70% 70% at 50% 50%, rgba(244, 209, 154, 0.35) 0%, rgba(245, 239, 222, 0.4) 60%, rgba(245, 239, 222, 0) 100%);
+    background-color: #FAFAF7;
   }
 
-  /* Divider with sage dot centre */
+  /* Thin horizontal hairline — replaces dotted and decorative dividers */
+  .divider-hairline {
+    @apply h-px w-full bg-dalashala-meadow/60;
+  }
+
+  /* Center-aligned short line, used under headings */
+  .divider-short {
+    @apply mx-auto h-px w-12 bg-dalashala-sage;
+  }
+
+  /* Legacy divider classes → simple hairlines so any stray usage stays clean */
   .divider-dot {
     @apply flex items-center gap-3 text-dalashala-sage;
   }
   .divider-dot::before,
   .divider-dot::after {
     content: '';
-    @apply flex-1 h-px bg-gradient-to-r from-transparent via-dalashala-meadow/50 to-transparent;
+    @apply flex-1 h-px bg-dalashala-meadow/50;
   }
-
-  /* Gold-lined divider, used with decorative motifs (lotus, mandala) */
   .divider-gold {
-    @apply flex items-center gap-3 text-dalashala-gold;
+    @apply flex items-center gap-3 text-dalashala-sage;
   }
   .divider-gold::before,
   .divider-gold::after {
     content: '';
-    @apply flex-1 h-px bg-gradient-to-r from-transparent via-dalashala-gold/45 to-transparent;
+    @apply flex-1 h-px bg-dalashala-meadow/50;
   }
 
   /* Pill tag */

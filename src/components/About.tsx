@@ -19,24 +19,27 @@ const About = () => {
               {/* Images Row */}
               <div className="col-span-2 grid grid-cols-3 gap-6 mb-6 animate-when-visible" data-animation="fade-in">
                 <div className="relative overflow-hidden rounded-2xl aspect-[3/4]">
-                  <img 
-                    src="/lovable-uploads/c1e6d7f9-3ac6-42af-ac83-3058516ff2ef.png" 
-                    alt="Yoga teacher Camilla practicing yoga outdoors" 
+                  <img
+                    src="/lovable-uploads/c1e6d7f9-3ac6-42af-ac83-3058516ff2ef.jpg"
+                    alt="Yoga teacher Camilla practicing yoga outdoors"
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 rounded-2xl"
+                    loading="lazy"
                   />
                 </div>
                 <div className="relative overflow-hidden rounded-2xl aspect-[3/4]">
-                  <img 
-                    src="/lovable-uploads/yoga-studio-interior.jpg" 
-                    alt="Yoga studio interior at WD Wellness with mats and blocks prepared for class" 
+                  <img
+                    src="/lovable-uploads/yoga-studio-interior.jpg"
+                    alt="Yoga studio interior at WD Wellness with mats and blocks prepared for class"
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 rounded-2xl"
+                    loading="lazy"
                   />
                 </div>
                 <div className="relative overflow-hidden rounded-2xl aspect-[3/4]">
-                  <img 
-                    src="/lovable-uploads/yoga-outdoor-pose.jpg" 
-                    alt="Camilla performing an advanced yoga pose outdoors on the deck" 
+                  <img
+                    src="/lovable-uploads/yoga-outdoor-pose.jpg"
+                    alt="Camilla performing an advanced yoga pose outdoors on the deck"
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 rounded-2xl"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -95,10 +98,11 @@ const About = () => {
               
               <div className="col-span-1 relative animate-when-visible" data-animation="fade-in-right">
                 <div className="relative z-10 overflow-hidden rounded-2xl h-[550px]">
-                  <img 
-                    src="/lovable-uploads/c1e6d7f9-3ac6-42af-ac83-3058516ff2ef.png" 
-                    alt="Yoga teacher Camilla practicing yoga outdoors" 
+                  <img
+                    src="/lovable-uploads/c1e6d7f9-3ac6-42af-ac83-3058516ff2ef.jpg"
+                    alt="Yoga teacher Camilla practicing yoga outdoors"
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 rounded-2xl"
+                    loading="lazy"
                   />
                 </div>
               </div>

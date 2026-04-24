@@ -38,10 +38,11 @@ const Events = () => {
             {/* Right - Image */}
             <div className="self-stretch">
               <div className="overflow-hidden rounded-2xl shadow-lg w-full h-full">
-                <img 
-                  src="/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.png" 
-                  alt="Balanced stones in nature" 
+                <img
+                  src="/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
+                  alt="Balanced stones in nature"
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 rounded-2xl"
+                  loading="lazy"
                 />
               </div>
             </div>

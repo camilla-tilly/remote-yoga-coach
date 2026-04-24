@@ -5,9 +5,6 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
-import IndianBorder from '@/components/decorative/IndianBorder';
-import LotusDivider from '@/components/decorative/LotusDivider';
-import Mandala from '@/components/decorative/Mandala';
 
 interface ServiceHighlight {
   heading: string;
@@ -150,7 +147,7 @@ const ServicePageLayout = ({
   }, [breadcrumbLabel, canonical]);
 
   return (
-    <div className="min-h-screen bg-dalashala-cream relative overflow-x-hidden">
+    <div className="min-h-screen bg-white relative overflow-x-hidden">
       <SEO
         title={seoTitle}
         description={seoDescription}
@@ -158,50 +155,38 @@ const ServicePageLayout = ({
         ogImage={ogImage}
         structuredData={structuredData}
       />
-      <div className="max-w-[750px] mx-auto">
+      <div className="max-w-[860px] mx-auto">
         <Navbar />
-        <main className="pt-20">
+        <main className="pt-24">
           {/* Visible Breadcrumb Trail */}
           <nav aria-label="Brödsmulor" className="px-4 pt-6">
-            <ol className="max-w-2xl mx-auto flex items-center gap-2 font-montserrat text-[11px] uppercase tracking-wider text-dalashala-olive">
+            <ol className="max-w-2xl mx-auto flex items-center gap-2 font-inter text-[10px] uppercase tracking-[0.22em] text-dalashala-olive">
               <li>
                 <Link to="/" className="hover:text-dalashala-earth transition-colors">Hem</Link>
               </li>
-              <li aria-hidden="true" className="opacity-60">/</li>
+              <li aria-hidden="true" className="opacity-50">/</li>
               <li>
                 <Link to="/#services" className="hover:text-dalashala-earth transition-colors">Tjänster</Link>
               </li>
-              <li aria-hidden="true" className="opacity-60">/</li>
-              <li aria-current="page" className="text-dalashala-earth truncate font-bold">{breadcrumbLabel}</li>
+              <li aria-hidden="true" className="opacity-50">/</li>
+              <li aria-current="page" className="text-dalashala-earth truncate">{breadcrumbLabel}</li>
             </ol>
           </nav>
           {/* Hero Section */}
-          <section className="relative py-12 md:py-16 px-4 overflow-hidden">
-            <div className="text-dalashala-gold/50 absolute top-0 left-0 right-0">
-              <IndianBorder height={12} />
-            </div>
-            <div className="blob-sage w-[400px] h-[400px] -top-20 -right-20 opacity-40" aria-hidden="true" />
-            <div className="blob-saffron w-[350px] h-[350px] top-20 -left-20 opacity-60" aria-hidden="true" />
-            <Mandala
-              variant="twelve"
-              strokeWidth={0.7}
-              className="absolute -top-24 -right-24 w-[320px] h-[320px] text-dalashala-saffron/12 pointer-events-none"
-            />
-            <div className="relative max-w-2xl mx-auto text-center pt-4">
-              <span className="inline-block tag-pill bg-dalashala-saffronLight/60 text-dalashala-saffronDeep border border-dalashala-saffron/40 mb-5">
+          <section className="relative py-14 md:py-20 px-4">
+            <div className="relative max-w-2xl mx-auto text-center">
+              <p className="font-inter text-[11px] uppercase tracking-[0.32em] text-dalashala-olive mb-6">
                 {heroTag}
-              </span>
-              <h1 className="font-cinzel-decorative text-2xl md:text-3xl lg:text-4xl text-dalashala-earth mb-5 font-bold leading-tight">
+              </p>
+              <h1 className="font-cormorant font-light text-3xl md:text-5xl lg:text-6xl text-dalashala-earth mb-6 leading-[1.05] tracking-tight">
                 {heroHeading}
               </h1>
-              <div className="max-w-[180px] mx-auto mb-5">
-                <LotusDivider tone="gold" />
-              </div>
-              <p className="font-eb-garamond text-base md:text-lg text-dalashala-earthSoft mb-8 leading-relaxed">
+              <span className="block mx-auto w-10 h-px bg-dalashala-sage mb-6 opacity-70" aria-hidden="true" />
+              <p className="font-inter font-light text-base md:text-lg text-dalashala-earthSoft mb-10 leading-relaxed max-w-xl mx-auto">
                 {heroSubtitle}
               </p>
               <Button
-                className="bg-saffron-gradient text-white hover:shadow-saffron-glow hover:-translate-y-0.5 transition-all duration-300 font-montserrat py-2.5 px-8 rounded-full uppercase tracking-wide text-sm shadow-card"
+                className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-3 px-10 rounded-full uppercase tracking-[0.2em] text-[13px]"
                 asChild
               >
                 <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
@@ -213,27 +198,28 @@ const ServicePageLayout = ({
 
           {/* Hero Image */}
           {heroImage && (
-            <section className="px-4 mb-12">
-              <div className={`max-w-2xl mx-auto overflow-hidden rounded-3xl shadow-card border border-dalashala-meadow/25 ${heroImageAspect || 'aspect-video'}`}>
+            <section className="px-4 mb-16">
+              <div className={`max-w-2xl mx-auto overflow-hidden rounded-2xl ${heroImageAspect || 'aspect-video'}`}>
                 <img
                   src={heroImage}
                   alt={heroImageAlt || heroHeading}
                   className="w-full h-full object-cover"
                   style={heroImagePosition ? { objectPosition: heroImagePosition } : undefined}
+                  loading="eager"
+                  fetchpriority="high"
                 />
               </div>
             </section>
           )}
 
           {/* Intro */}
-          <section className="px-4 mb-14">
-            <div className="max-w-2xl mx-auto card-soft p-6 md:p-10">
-              <div className="absolute top-0 left-8 right-8 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-saffron to-dalashala-olive rounded-full" />
-              <h2 className="font-cinzel text-lg md:text-xl text-dalashala-earth mb-5 font-bold">
+          <section className="px-4 mb-16">
+            <div className="max-w-2xl mx-auto">
+              <h2 className="font-cormorant font-light text-2xl md:text-3xl text-dalashala-earth mb-6 tracking-tight leading-snug">
                 {introHeading}
               </h2>
               {introParagraphs.map((p, i) => (
-                <p key={i} className="font-eb-garamond text-sm md:text-base text-dalashala-earthSoft leading-relaxed mb-4 last:mb-0">
+                <p key={i} className="font-inter font-light text-base text-dalashala-earthSoft leading-relaxed mb-5 last:mb-0">
                   {p}
                 </p>
               ))}
@@ -241,24 +227,20 @@ const ServicePageLayout = ({
           </section>
 
           {/* Highlights Grid */}
-          <section className="px-4 mb-14">
-            <div className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+          <section className="px-4 mb-16">
+            <div className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
               {highlights.map((h, i) => (
                 <div
                   key={i}
-                  className="card-soft overflow-hidden hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300"
+                  className="bg-white border border-dalashala-meadow/60 rounded-xl p-7 hover:border-dalashala-olive/60 transition-colors duration-300"
                 >
-                  <div className="bg-forest-gradient px-4 py-3 flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-dalashala-saffron" />
-                    <h3 className="font-cinzel text-dalashala-cream text-xs font-bold uppercase tracking-[0.2em]">
-                      {h.heading}
-                    </h3>
-                  </div>
-                  <div className="p-5">
-                    <p className="font-eb-garamond text-sm text-dalashala-earthSoft leading-relaxed">
-                      {h.text}
-                    </p>
-                  </div>
+                  <span className="block w-6 h-px bg-dalashala-olive mb-4" aria-hidden="true" />
+                  <h3 className="font-cormorant font-light text-xl md:text-2xl text-dalashala-earth mb-3 tracking-tight leading-snug">
+                    {h.heading}
+                  </h3>
+                  <p className="font-inter font-light text-sm text-dalashala-earthSoft leading-relaxed">
+                    {h.text}
+                  </p>
                 </div>
               ))}
             </div>
@@ -268,37 +250,36 @@ const ServicePageLayout = ({
           {pricing && pricing.length > 0 && (
             <section className="px-4 mb-14">
               <div className="max-w-2xl mx-auto">
-                <div className="text-center mb-8">
-                  <span className="inline-block tag-pill bg-dalashala-saffronLight/60 text-dalashala-saffronDeep border border-dalashala-saffron/40 mb-3">
-                    Priser · Pricing
-                  </span>
-                  <h2 className="font-cinzel-decorative text-xl md:text-2xl text-dalashala-earth font-bold">
+                <div className="text-center mb-10">
+                  <p className="font-inter text-[11px] uppercase tracking-[0.32em] text-dalashala-olive mb-4">
+                    Priser
+                  </p>
+                  <h2 className="font-cormorant font-light text-2xl md:text-3xl text-dalashala-earth tracking-tight">
                     Välj det som passar
                   </h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   {pricing.map((tier, i) => (
                     <div
                       key={i}
-                      className={`relative card-soft p-6 text-center hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300 overflow-hidden ${i % 2 === 1 ? 'bg-dalashala-sageLight/25' : ''}`}
+                      className="bg-white border border-dalashala-meadow/60 rounded-xl p-7 text-center hover:border-dalashala-olive/60 transition-colors duration-300"
                     >
-                      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-saffron to-dalashala-olive" />
-                      <p className="font-montserrat text-[10px] uppercase tracking-widest text-dalashala-saffronDeep mb-2">
+                      <p className="font-inter text-[10px] uppercase tracking-[0.28em] text-dalashala-olive mb-3">
                         {tier.label}
                       </p>
-                      <p className="font-cinzel text-lg md:text-xl text-dalashala-earth font-bold mb-1">
+                      <p className="font-cormorant font-light text-2xl md:text-3xl text-dalashala-earth mb-2 tracking-tight">
                         {tier.price}
                       </p>
                       {tier.note && (
-                        <p className="font-eb-garamond text-xs text-dalashala-earthSoft/80 italic">
+                        <p className="font-inter font-light text-xs text-dalashala-earthSoft/80">
                           {tier.note}
                         </p>
                       )}
                     </div>
                   ))}
                 </div>
-                <p className="font-eb-garamond text-xs text-dalashala-earthSoft/70 text-center mt-5 italic">
-                  Alla priser är inklusive utrustning. Kontakta mig för skräddarsydd offert. · All prices include equipment. Contact for a custom quote.
+                <p className="font-inter font-light text-xs text-dalashala-earthSoft/70 text-center mt-6">
+                  Alla priser är inklusive utrustning. Kontakta mig för skräddarsydd offert.
                 </p>
               </div>
             </section>
@@ -306,30 +287,27 @@ const ServicePageLayout = ({
 
           {/* Optional Details */}
           {detailsHeading && detailsParagraphs && (
-            <section className="px-4 mb-14">
-              <div className="max-w-2xl mx-auto relative rounded-3xl overflow-hidden border border-dalashala-meadow/30 shadow-card">
-                <div className="absolute inset-0 bg-gradient-to-br from-dalashala-sage/20 via-dalashala-meadow/15 to-dalashala-creamLight" />
-                <div className="relative p-6 md:p-10">
-                  <h2 className="font-cinzel text-lg md:text-xl text-dalashala-earth mb-5 font-bold">
-                    {detailsHeading}
-                  </h2>
-                  {detailsParagraphs.map((p, i) => (
-                    <p key={i} className="font-eb-garamond text-sm md:text-base text-dalashala-earthSoft leading-relaxed mb-4 last:mb-0">
-                      {p}
-                    </p>
-                  ))}
-                </div>
+            <section className="px-4 mb-16">
+              <div className="max-w-2xl mx-auto bg-dalashala-creamDeep/60 rounded-xl p-7 md:p-10">
+                <h2 className="font-cormorant font-light text-2xl md:text-3xl text-dalashala-earth mb-6 tracking-tight leading-snug">
+                  {detailsHeading}
+                </h2>
+                {detailsParagraphs.map((p, i) => (
+                  <p key={i} className="font-inter font-light text-base text-dalashala-earthSoft leading-relaxed mb-5 last:mb-0">
+                    {p}
+                  </p>
+                ))}
               </div>
             </section>
           )}
 
           {/* Terms & Conditions Link */}
           {termsHref && (
-            <section className="px-4 mb-6 -mt-6">
+            <section className="px-4 mb-8 -mt-8">
               <div className="max-w-2xl mx-auto text-center">
                 <Link
                   to={termsHref}
-                  className="font-montserrat text-xs uppercase tracking-widest text-dalashala-mediumBrown hover:text-dalashala-darkBrown underline underline-offset-4 transition-colors"
+                  className="font-inter text-[11px] uppercase tracking-[0.22em] text-dalashala-olive hover:text-dalashala-earth underline underline-offset-4 transition-colors"
                 >
                   Deltagarvillkor / Participant T&amp;Cs →
                 </Link>
@@ -339,28 +317,25 @@ const ServicePageLayout = ({
 
           {/* FAQ Section */}
           {faq && faq.length > 0 && (
-            <section className="px-4 mb-14">
+            <section className="px-4 mb-16">
               <div className="max-w-2xl mx-auto">
-                <div className="text-center mb-6">
-                  <span className="inline-block tag-pill bg-dalashala-saffronLight/60 text-dalashala-saffronDeep border border-dalashala-saffron/40 mb-3">
-                    Vanliga frågor · FAQ
-                  </span>
+                <div className="text-center mb-8">
+                  <p className="font-inter text-[11px] uppercase tracking-[0.32em] text-dalashala-olive">
+                    Vanliga frågor
+                  </p>
                 </div>
-                <div className="space-y-3">
+                <div className="divide-y divide-dalashala-meadow/60 border-y border-dalashala-meadow/60">
                   {faq.map((item, i) => (
                     <details
                       key={i}
-                      className="card-soft overflow-hidden group hover:shadow-card-hover transition-shadow"
+                      className="group"
                     >
-                      <summary className="font-montserrat text-sm text-dalashala-earth px-5 py-4 cursor-pointer list-none flex items-center justify-between hover:bg-dalashala-sage/15 transition-colors">
-                        <span className="flex items-center gap-3">
-                          <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage group-open:bg-dalashala-saffron transition-colors" />
-                          {item.question}
-                        </span>
-                        <span className="text-dalashala-saffronDeep ml-2 group-open:rotate-45 transition-transform text-lg font-light">+</span>
+                      <summary className="font-inter text-base text-dalashala-earth py-5 cursor-pointer list-none flex items-center justify-between gap-4 hover:text-dalashala-olive transition-colors">
+                        <span className="font-normal">{item.question}</span>
+                        <span className="text-dalashala-olive ml-2 group-open:rotate-45 transition-transform text-xl font-light shrink-0">+</span>
                       </summary>
-                      <div className="px-5 pb-5 pl-11">
-                        <p className="font-eb-garamond text-sm text-dalashala-earthSoft leading-relaxed">
+                      <div className="pb-6">
+                        <p className="font-inter font-light text-sm text-dalashala-earthSoft leading-relaxed">
                           {item.answer}
                         </p>
                       </div>
@@ -373,79 +348,60 @@ const ServicePageLayout = ({
 
           {/* English Keywords Section */}
           {englishKeywords && (
-            <section className="px-4 mb-14">
-              <div className="max-w-2xl mx-auto relative rounded-3xl overflow-hidden border border-dalashala-meadow/30 shadow-card">
-                <div className="absolute inset-0 bg-gradient-to-br from-white via-dalashala-creamLight to-dalashala-sage/15" />
-                <div className="relative p-6 md:p-8">
-                  <span className="inline-block tag-pill bg-dalashala-meadow/25 text-dalashala-earth border border-dalashala-meadow/50 mb-3">
-                    English
-                  </span>
-                  <h2 className="font-cinzel text-base md:text-lg text-dalashala-earth font-bold mb-4">
-                    {englishKeywords.heading}
-                  </h2>
-                  <p className="font-eb-garamond text-sm md:text-base text-dalashala-earthSoft leading-relaxed">
-                    {englishKeywords.text}
-                  </p>
-                  <div className="mt-5">
-                    <Button
-                      className="bg-earth-gradient text-dalashala-cream hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300 font-montserrat py-2 px-6 rounded-full uppercase tracking-wide text-xs shadow-soft"
-                      asChild
-                    >
-                      <a href="mailto:hello.yogawithcamilla@gmail.com">Send enquiry</a>
-                    </Button>
-                  </div>
-                </div>
+            <section className="px-4 mb-16">
+              <div className="max-w-2xl mx-auto bg-dalashala-creamDeep/60 rounded-xl p-7 md:p-10">
+                <p className="font-inter text-[11px] uppercase tracking-[0.32em] text-dalashala-olive mb-4">
+                  English
+                </p>
+                <h2 className="font-cormorant font-light text-xl md:text-2xl text-dalashala-earth mb-4 tracking-tight">
+                  {englishKeywords.heading}
+                </h2>
+                <p className="font-inter font-light text-base text-dalashala-earthSoft leading-relaxed mb-6">
+                  {englishKeywords.text}
+                </p>
+                <Button
+                  className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft transition-all duration-300 font-inter py-2.5 px-7 rounded-full uppercase tracking-[0.2em] text-[12px]"
+                  asChild
+                >
+                  <a href="mailto:hello.yogawithcamilla@gmail.com">Send enquiry</a>
+                </Button>
               </div>
             </section>
           )}
 
           {/* CTA */}
-          <section className="px-4 mb-16">
-            <div className="max-w-2xl mx-auto relative text-center rounded-3xl overflow-hidden shadow-card">
-              <div className="absolute inset-0 bg-forest-gradient" />
-              {/* Saffron + sage glow */}
-              <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-dalashala-saffron/35 blur-3xl" aria-hidden="true" />
-              <div className="absolute -bottom-24 -left-24 w-64 h-64 rounded-full bg-dalashala-sage/30 blur-3xl" aria-hidden="true" />
-              <Mandala
-                variant="twelve"
-                strokeWidth={0.7}
-                className="absolute -right-16 -top-16 w-[260px] h-[260px] text-dalashala-saffron/18 pointer-events-none"
-              />
-              <div className="relative p-8 md:p-12">
-                <div className="max-w-[160px] mx-auto mb-4">
-                  <LotusDivider tone="cream" />
-                </div>
-                <h2 className="font-cinzel-decorative text-xl md:text-2xl text-dalashala-cream mb-4 font-bold">
-                  {ctaHeading}
-                </h2>
-                <p className="font-eb-garamond text-dalashala-cream/85 text-sm md:text-base mb-8 leading-relaxed max-w-lg mx-auto">
-                  {ctaText}
-                </p>
-                <Button
-                  className="bg-dalashala-saffron text-white hover:bg-dalashala-saffronDeep hover:-translate-y-0.5 transition-all duration-300 font-montserrat py-2.5 px-8 rounded-full uppercase tracking-wide text-sm shadow-card"
-                  asChild
-                >
-                  <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
-                    {bookingLabel || 'Skicka förfrågan'}
-                  </a>
-                </Button>
-              </div>
+          <section className="px-4 mb-20">
+            <div className="max-w-2xl mx-auto text-center py-14 border-t border-b border-dalashala-meadow/60">
+              <h2 className="font-cormorant font-light text-3xl md:text-4xl text-dalashala-earth mb-5 tracking-tight leading-tight">
+                {ctaHeading}
+              </h2>
+              <p className="font-inter font-light text-base text-dalashala-earthSoft mb-8 leading-relaxed max-w-lg mx-auto">
+                {ctaText}
+              </p>
+              <Button
+                className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-3 px-10 rounded-full uppercase tracking-[0.2em] text-[13px]"
+                asChild
+              >
+                <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
+                  {bookingLabel || 'Skicka förfrågan'}
+                </a>
+              </Button>
             </div>
           </section>
 
           {/* Related Services */}
           {relatedServices && relatedServices.length > 0 && (
-            <section className="px-4 mb-16">
+            <section className="px-4 mb-20">
               <div className="max-w-2xl mx-auto">
-                <h2 className="font-cinzel text-xs text-dalashala-olive mb-5 uppercase tracking-[0.25em] text-center">
-                  Fler tjänster · More services
-                </h2>
+                <p className="font-inter text-[11px] uppercase tracking-[0.32em] text-dalashala-olive mb-6 text-center">
+                  Fler tjänster
+                </p>
                 <div className="flex flex-wrap gap-3 justify-center">
                   {relatedServices.map((s) => (
                     <Link
                       key={s.href}
                       to={s.href}
-                      className="font-montserrat text-xs uppercase tracking-wider bg-white border border-dalashala-meadow/40 text-dalashala-earth px-4 py-2 rounded-full hover:bg-earth-gradient hover:text-dalashala-cream hover:border-dalashala-earth shadow-soft hover:shadow-card transition-all"
+                      className="font-inter text-[12px] uppercase tracking-[0.2em] bg-white border border-dalashala-meadow/60 text-dalashala-earth px-5 py-2.5 rounded-full hover:border-dalashala-earth hover:bg-dalashala-earth hover:text-white transition-all"
                     >
                       {s.label}
                     </Link>

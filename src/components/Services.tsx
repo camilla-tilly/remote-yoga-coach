@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import Mandala from '@/components/decorative/Mandala';
-import LotusDivider from '@/components/decorative/LotusDivider';
 
 type ServiceCard = {
   title: string;
@@ -65,94 +63,69 @@ const dalarnaServices: ServiceCard[] = [
 ];
 
 const tagStyles: Record<string, string> = {
-  'Nytt': 'bg-dalashala-sage/20 text-dalashala-earth border border-dalashala-sage/50',
-  'Populärt': 'bg-dalashala-saffronLight/70 text-dalashala-saffronDeep border border-dalashala-saffron/50',
-  'Unikt': 'bg-dalashala-earth text-dalashala-saffronLight border border-dalashala-earth',
-  'English': 'bg-dalashala-meadow/25 text-dalashala-earth border border-dalashala-meadow/50',
+  'Nytt': 'bg-dalashala-meadowLight/60 text-dalashala-olive border border-dalashala-meadow',
+  'Populärt': 'bg-dalashala-sageLight/60 text-dalashala-earth border border-dalashala-sage/50',
+  'Unikt': 'bg-dalashala-earth text-white border border-dalashala-earth',
+  'English': 'bg-white text-dalashala-earth border border-dalashala-meadow/80',
 };
 
 const ServiceCard = ({ title, description, href, tag }: ServiceCard) => (
   <Link
     to={href}
-    className="group relative flex flex-col justify-between bg-white rounded-2xl p-5 pt-6 border border-dalashala-meadow/30 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+    className="group flex flex-col justify-between bg-white rounded-xl p-7 border border-dalashala-meadow/50 hover:border-dalashala-olive/60 hover:-translate-y-0.5 transition-all duration-300"
   >
-    {/* Top accent bar — sage → saffron → olive, ties the two themes together */}
-    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-saffron to-dalashala-olive opacity-85 group-hover:opacity-100 transition-opacity" />
-    {/* Soft corner glow */}
-    <div className="absolute -top-10 -right-10 w-24 h-24 rounded-full bg-dalashala-saffron/12 blur-2xl pointer-events-none" />
-    {/* Mandala corner watermark */}
-    <Mandala
-      variant="eight"
-      strokeWidth={0.7}
-      className="absolute -bottom-8 -right-8 w-24 h-24 text-dalashala-gold/18 pointer-events-none"
-    />
-
-    <div className="relative">
+    <div>
       {tag && (
-        <span className={`tag-pill mb-3 ${tagStyles[tag] || tagStyles['Nytt']}`}>
+        <span className={`tag-pill mb-4 ${tagStyles[tag] || tagStyles['Nytt']}`}>
           {tag}
         </span>
       )}
-      <h3 className="font-cinzel text-sm md:text-base text-dalashala-earth mb-2 group-hover:text-dalashala-olive transition-colors leading-snug font-bold">
+      <h3 className="font-cormorant font-light text-xl md:text-[1.5rem] text-dalashala-earth mb-3 group-hover:text-dalashala-olive transition-colors leading-snug tracking-tight">
         {title}
       </h3>
-      <p className="font-eb-garamond text-sm text-dalashala-earthSoft leading-relaxed">
+      <p className="font-inter font-light text-sm text-dalashala-earthSoft leading-relaxed">
         {description}
       </p>
     </div>
-    <span className="relative mt-4 inline-flex items-center gap-1 font-montserrat text-[11px] text-dalashala-saffronDeep uppercase tracking-widest group-hover:text-dalashala-earth transition-colors">
+    <span className="mt-6 inline-flex items-center gap-2 font-inter text-[11px] text-dalashala-olive uppercase tracking-[0.22em] group-hover:text-dalashala-earth transition-colors">
       Läs mer
       <span className="transition-transform group-hover:translate-x-1">→</span>
     </span>
   </Link>
 );
 
-const LocationHeader = ({
-  label,
-  accent,
-}: {
-  label: string;
-  accent: 'sage' | 'olive';
-}) => (
-  <div className="flex items-center gap-4 mb-8">
-    <div className={`flex items-center gap-2 ${accent === 'sage' ? 'text-dalashala-sage' : 'text-dalashala-olive'}`}>
-      <span className={`w-2 h-2 rounded-full ${accent === 'sage' ? 'bg-dalashala-sage' : 'bg-dalashala-olive'}`} />
-      <span className={`w-8 h-px ${accent === 'sage' ? 'bg-dalashala-sage' : 'bg-dalashala-olive'}`} />
-    </div>
-    <h3 className="font-cinzel text-xs md:text-sm uppercase tracking-[0.25em] text-dalashala-earth font-bold whitespace-nowrap">
+const LocationHeader = ({ label }: { label: string }) => (
+  <div className="flex items-baseline gap-5 mb-10">
+    <h3 className="font-cormorant font-light text-2xl md:text-3xl text-dalashala-earth tracking-tight whitespace-nowrap">
       {label}
     </h3>
-    <div className="flex-1 h-px bg-gradient-to-r from-dalashala-meadow/50 to-transparent" />
+    <span className="flex-1 h-px bg-dalashala-meadow" />
   </div>
 );
 
 const Services = () => {
   return (
-    <section id="services" className="relative py-16 md:py-24 overflow-hidden bg-cream-soft-b">
-      {/* Decorative background elements */}
-      <div className="blob-sage w-[500px] h-[500px] top-20 -right-40 opacity-40" aria-hidden="true" />
-      <div className="blob-meadow w-[400px] h-[400px] bottom-40 -left-32 opacity-40" aria-hidden="true" />
-
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-
+    <section id="services" className="relative py-20 md:py-28 bg-white">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
-        <div className="mb-14 text-center md:text-left max-w-2xl md:mx-0 mx-auto">
-          <span className="inline-block tag-pill bg-dalashala-saffronLight/60 text-dalashala-saffronDeep border border-dalashala-saffron/40 mb-3">
-            Yoga med Camilla
-          </span>
-          <h2 className="font-cinzel-decorative text-3xl md:text-4xl lg:text-5xl text-dalashala-earth font-bold mb-3 leading-tight">
+        <div className="max-w-2xl mx-auto text-center mb-16">
+          <p className="font-inter text-[11px] uppercase tracking-[0.32em] text-dalashala-olive mb-5">
+            Tjänster
+          </p>
+          <h2 className="font-cormorant font-light text-3xl md:text-4xl lg:text-5xl text-dalashala-earth mb-6 leading-tight tracking-tight">
             Vad jag erbjuder
           </h2>
-          <p className="font-eb-garamond text-base md:text-lg text-dalashala-earthSoft leading-relaxed">
-            Baserad i Dalarna och Stockholm. Privat yoga för grupper och individer,
+          <span className="block mx-auto w-10 h-px bg-dalashala-sage mb-6 opacity-70" aria-hidden="true" />
+          <p className="font-inter font-light text-base text-dalashala-earthSoft leading-relaxed">
+            Privat yoga för grupper och individer,
             i stadsmiljö eller mitt i skogen.
           </p>
         </div>
 
         {/* Stockholm */}
-        <div id="stockholm" className="mb-16 scroll-mt-20">
-          <LocationHeader label="Stockholm" accent="sage" />
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
+        <div id="stockholm" className="mb-20 scroll-mt-24">
+          <LocationHeader label="Stockholm" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
             {stockholmServices.map((s) => (
               <ServiceCard key={s.href + s.title} {...s} />
             ))}
@@ -160,42 +133,30 @@ const Services = () => {
         </div>
 
         {/* Dalarna */}
-        <div id="dalarna" className="mb-14 scroll-mt-20">
-          <LocationHeader label="Dalarna" accent="olive" />
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
+        <div id="dalarna" className="mb-16 scroll-mt-24">
+          <LocationHeader label="Dalarna" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
             {dalarnaServices.map((s) => (
               <ServiceCard key={s.href + s.title} {...s} />
             ))}
           </div>
         </div>
 
-        {/* Bottom CTA: elevated card with sage + saffron wash */}
-        <div className="relative mt-16 rounded-3xl overflow-hidden shadow-card border border-dalashala-meadow/30">
-          <div className="absolute inset-0 bg-gradient-to-br from-dalashala-sage/35 via-dalashala-creamLight to-dalashala-saffronLight/50" />
-          <Mandala
-            variant="twelve"
-            strokeWidth={0.8}
-            className="absolute -right-20 -bottom-20 w-[300px] h-[300px] text-dalashala-gold/20 pointer-events-none"
-          />
-          <div className="relative p-8 md:p-12 text-center">
-            <div className="w-32 mx-auto mb-4">
-              <LotusDivider tone="gold" />
-            </div>
-            <h3 className="font-cinzel-decorative text-xl md:text-2xl text-dalashala-earth mb-3 font-bold">
-              Ser du inte det du letar efter?
-            </h3>
-            <p className="font-eb-garamond text-base md:text-lg text-dalashala-earthSoft mb-6 max-w-xl mx-auto">
-              Hör av dig, jag skräddarsyr gärna något för just er grupp, er dag och er plats.
-            </p>
-            <a
-              href="#contact"
-              className="inline-block font-montserrat text-sm bg-saffron-gradient text-white px-8 py-3 rounded-full shadow-card hover:shadow-saffron-glow hover:-translate-y-0.5 transition-all duration-300"
-            >
-              Kontakta mig
-            </a>
-          </div>
+        {/* Bottom CTA */}
+        <div className="relative mt-20 border-t border-dalashala-meadow/60 pt-14 text-center">
+          <h3 className="font-cormorant font-light text-2xl md:text-3xl text-dalashala-earth mb-4 tracking-tight">
+            Ser du inte det du letar efter?
+          </h3>
+          <p className="font-inter font-light text-base text-dalashala-earthSoft mb-8 max-w-lg mx-auto leading-relaxed">
+            Hör av dig, jag skräddarsyr gärna något för just er grupp, er dag och er plats.
+          </p>
+          <a
+            href="#contact"
+            className="inline-block font-inter text-[13px] uppercase tracking-[0.2em] bg-dalashala-earth text-white px-10 py-3.5 rounded-full hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300"
+          >
+            Kontakta mig
+          </a>
         </div>
-
       </div>
     </section>
   );

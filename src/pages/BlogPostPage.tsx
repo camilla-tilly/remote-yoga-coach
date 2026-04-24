@@ -258,25 +258,13 @@ const BlogPostPage = () => {
                   return (
                     <blockquote
                       key={i}
-                      className="relative border-l-2 border-dalashala-saffron pl-6 my-6 italic"
+                      className="border-l-2 border-dalashala-sage pl-6 my-8"
                     >
-                      <svg
-                        aria-hidden="true"
-                        width="18"
-                        height="12"
-                        viewBox="0 0 30 20"
-                        fill="currentColor"
-                        className="absolute -left-[10px] top-1 text-dalashala-saffron bg-dalashala-cream"
-                      >
-                        <path d="M15 2 C12 6 12 14 15 18 C18 14 18 6 15 2 Z" opacity="0.85" />
-                        <path d="M15 10 C10 8 4 10 1 14 C6 15 12 13 15 10 Z" opacity="0.55" />
-                        <path d="M15 10 C20 8 26 10 29 14 C24 15 18 13 15 10 Z" opacity="0.55" />
-                      </svg>
-                      <p className="font-cinzel text-base md:text-lg text-dalashala-earth leading-relaxed">
-                        "{section.text}"
+                      <p className="font-cormorant font-light italic text-xl md:text-2xl text-dalashala-earth leading-relaxed tracking-tight">
+                        {section.text}
                       </p>
                       {section.author && (
-                        <footer className="font-montserrat text-xs uppercase tracking-wider text-dalashala-saffronDeep mt-2 not-italic">
+                        <footer className="font-inter text-[11px] uppercase tracking-[0.22em] text-dalashala-olive mt-3 not-italic">
                           {section.author}
                         </footer>
                       )}
@@ -355,13 +343,12 @@ const BlogPostPage = () => {
 
             {/* CTA to related service */}
             {post.relatedServiceHref && post.relatedServiceLabel && (
-              <div className="bg-forest-gradient rounded-2xl p-6 md:p-8 text-center mb-8 relative overflow-hidden">
-                <div className="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-dalashala-saffron/25 blur-3xl pointer-events-none" aria-hidden="true" />
-                <p className="relative font-eb-garamond text-dalashala-cream/85 text-sm mb-4">
+              <div className="border-t border-b border-dalashala-meadow/60 py-12 text-center my-12">
+                <p className="font-inter font-light text-dalashala-earthSoft text-base mb-6">
                   Intresserad av att boka?
                 </p>
                 <Button
-                  className="relative bg-dalashala-saffron text-white hover:bg-dalashala-saffronDeep font-montserrat py-2 px-8 rounded-full uppercase tracking-wide text-xs shadow-card"
+                  className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft font-inter py-3 px-10 rounded-full uppercase tracking-[0.2em] text-[13px] transition-colors"
                   asChild
                 >
                   <Link to={post.relatedServiceHref}>{post.relatedServiceLabel}</Link>

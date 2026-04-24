@@ -63,66 +63,73 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Yoga with Camilla palette — Forest Yogi theme (warm olive + sage greens
-				// lifted by saffron). Legacy token names are kept as semantic aliases so
-				// existing markup (bg-dalashala-beige, text-dalashala-darkBrown, etc.)
-				// remains valid; the hex values just shift to the new palette.
+				// Yoga with Camilla palette — Clean Scandi / fresh pine needles theme.
+				// White backgrounds, pine + eucalyptus greens, minimal accents.
+				// Legacy token names remain as aliases so existing markup works;
+				// their values shift to the new Scandi palette.
 				dalashala: {
-					// Legacy names (remapped to forest palette)
-					beige: '#F5EFDE',       // Warm cream (primary bg)
-					lightBeige: '#FBF6E8',  // Lighter cream for card fills
-					darkBrown: '#2F4A34',   // Forest deep (primary text)
-					mediumBrown: '#6F7F4A', // Warm olive (was Olive Grove)
-					tan: '#B8B58C',         // Soft meadow
+					// Legacy names (remapped to Scandi pine)
+					beige: '#FFFFFF',       // Pure white (primary bg)
+					lightBeige: '#FAFAF7',  // Barely-off-white for card fills
+					darkBrown: '#2D3F2F',   // Pine deep (primary text)
+					mediumBrown: '#5D7A60', // Eucalyptus mid (links, buttons)
+					tan: '#C7D3C0',         // Pale fresh sage (borders)
 					// New semantic names
-					cream: '#F5EFDE',
-					creamLight: '#FBF6E8',
-					creamDeep: '#EBE1C4',
-					earth: '#2F4A34',       // Forest deep
-					earthSoft: '#47633F',   // Fern (secondary headings)
-					olive: '#6F7F4A',       // Warm olive
-					oliveLight: '#93A066',
-					meadow: '#B8B58C',
-					meadowLight: '#D2CEA8',
-					sage: '#9AB19E',
-					sageLight: '#C7D3C0',
-					// Saffron / marigold accent + gold accent
-					saffron: '#E39B35',
-					saffronDeep: '#B8741F',
-					saffronLight: '#F4D19A',
-					gold: '#B8903A',
+					cream: '#FFFFFF',
+					creamLight: '#FAFAF7',
+					creamDeep: '#F0F2EC',   // Palest sage wash for contrast bands
+					earth: '#2D3F2F',       // Pine deep
+					earthSoft: '#4A6B4E',   // Fresh pine (secondary headings)
+					olive: '#5D7A60',       // Eucalyptus
+					oliveLight: '#8AA48E',  // Mossy mint (hover)
+					meadow: '#C7D3C0',
+					meadowLight: '#E1E7DC',
+					sage: '#9EB39F',
+					sageLight: '#DCE4D6',
+					// Accent tokens kept for legacy imports; remapped to muted pine tones
+					// so any stray reference renders neutral rather than warm/saffron.
+					saffron: '#5D7A60',     // was marigold → now eucalyptus
+					saffronDeep: '#2D3F2F', // was deep saffron → now pine deep
+					saffronLight: '#E1E7DC',// was peach → now pale sage
+					gold: '#8AA48E',        // was gold → now mossy mint
 				}
 			},
 			fontFamily: {
-				'cinzel-decorative': ['"Cinzel Decorative"', 'serif'],
-				'cinzel': ['Cinzel', 'serif'],
-				'montserrat': ['Montserrat', 'sans-serif'],
-				'eb-garamond': ['"EB Garamond"', 'serif'],
-				'devanagari': ['"Tiro Devanagari Hindi"', '"Noto Serif Devanagari"', 'serif'],
+				// New Scandi pairing: Cormorant Garamond (display) + Inter (body/UI).
+				// Legacy keys kept so existing markup picks up the new fonts without rewrites.
+				'cormorant': ['"Cormorant Garamond"', 'Georgia', 'serif'],
+				'inter': ['Inter', 'system-ui', 'sans-serif'],
+				'cinzel-decorative': ['"Cormorant Garamond"', 'Georgia', 'serif'],
+				'cinzel': ['"Cormorant Garamond"', 'Georgia', 'serif'],
+				'montserrat': ['Inter', 'system-ui', 'sans-serif'],
+				'eb-garamond': ['"Cormorant Garamond"', 'Georgia', 'serif'],
 			},
 			boxShadow: {
-				'soft': '0 4px 20px -4px rgba(47, 74, 52, 0.08), 0 2px 6px -2px rgba(47, 74, 52, 0.06)',
-				'card': '0 10px 30px -10px rgba(47, 74, 52, 0.18), 0 4px 10px -4px rgba(47, 74, 52, 0.08)',
-				'card-hover': '0 20px 40px -12px rgba(47, 74, 52, 0.25), 0 8px 16px -8px rgba(111, 127, 74, 0.15)',
-				'inset-soft': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.6), inset 0 -1px 0 0 rgba(47, 74, 52, 0.05)',
-				'earth-glow': '0 0 0 1px rgba(184, 181, 140, 0.3), 0 6px 24px -8px rgba(47, 74, 52, 0.25)',
-				'saffron-glow': '0 0 0 1px rgba(227, 155, 53, 0.35), 0 10px 28px -10px rgba(184, 116, 31, 0.35)',
+				'soft': '0 2px 12px -2px rgba(45, 63, 47, 0.05), 0 1px 3px -1px rgba(45, 63, 47, 0.04)',
+				'card': '0 6px 20px -6px rgba(45, 63, 47, 0.08), 0 2px 6px -2px rgba(45, 63, 47, 0.05)',
+				'card-hover': '0 12px 28px -10px rgba(45, 63, 47, 0.15), 0 4px 10px -4px rgba(93, 122, 96, 0.08)',
+				'inset-soft': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.6), inset 0 -1px 0 0 rgba(45, 63, 47, 0.04)',
+				'hairline': '0 0 0 1px rgba(199, 211, 192, 0.6)',
+				// Legacy aliases so existing class names keep rendering
+				'earth-glow': '0 0 0 1px rgba(199, 211, 192, 0.5), 0 4px 16px -6px rgba(45, 63, 47, 0.12)',
+				'saffron-glow': '0 0 0 1px rgba(138, 164, 142, 0.4), 0 6px 20px -8px rgba(45, 63, 47, 0.15)',
 			},
 			backgroundImage: {
-				'cream-gradient': 'linear-gradient(180deg, #FBF6E8 0%, #F5EFDE 50%, #EBE1C4 100%)',
-				'cream-radial': 'radial-gradient(ellipse at top, #FBF6E8 0%, #F5EFDE 45%, #EBE1C4 100%)',
-				'sage-gradient': 'linear-gradient(135deg, #C7D3C0 0%, #9AB19E 100%)',
-				'olive-gradient': 'linear-gradient(135deg, #93A066 0%, #6F7F4A 100%)',
-				// earth-gradient now renders as forest-gradient (legacy name kept so
-				// existing markup using bg-earth-gradient picks up the new colours)
-				'earth-gradient': 'linear-gradient(135deg, #47633F 0%, #2F4A34 100%)',
-				'forest-gradient': 'linear-gradient(135deg, #47633F 0%, #2F4A34 100%)',
-				'forest-deep-gradient': 'linear-gradient(160deg, #2F4A34 0%, #1F3524 100%)',
-				'sage-fade': 'linear-gradient(180deg, rgba(154, 177, 158, 0) 0%, rgba(154, 177, 158, 0.22) 100%)',
-				'saffron-glow': 'radial-gradient(ellipse 60% 60% at 50% 50%, rgba(227, 155, 53, 0.22) 0%, rgba(227, 155, 53, 0) 70%)',
-				'saffron-gradient': 'linear-gradient(135deg, #E39B35 0%, #B8741F 100%)',
-				'meadow-fade': 'linear-gradient(180deg, rgba(184, 181, 140, 0) 0%, rgba(184, 181, 140, 0.18) 100%)',
-				'grain': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.18 0 0 0 0 0.29 0 0 0 0 0.20 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+				// Clean, near-white washes. No warm cream.
+				'cream-gradient': 'linear-gradient(180deg, #FFFFFF 0%, #FAFAF7 50%, #F0F2EC 100%)',
+				'cream-radial': 'radial-gradient(ellipse at top, #FFFFFF 0%, #FAFAF7 60%, #F0F2EC 100%)',
+				'sage-gradient': 'linear-gradient(135deg, #DCE4D6 0%, #9EB39F 100%)',
+				'olive-gradient': 'linear-gradient(135deg, #8AA48E 0%, #5D7A60 100%)',
+				// earth-gradient / forest-gradient: solid deep pine for dark sections
+				'earth-gradient': 'linear-gradient(135deg, #4A6B4E 0%, #2D3F2F 100%)',
+				'forest-gradient': 'linear-gradient(135deg, #4A6B4E 0%, #2D3F2F 100%)',
+				'forest-deep-gradient': 'linear-gradient(160deg, #2D3F2F 0%, #1A2B1D 100%)',
+				'sage-fade': 'linear-gradient(180deg, rgba(158, 179, 159, 0) 0%, rgba(158, 179, 159, 0.18) 100%)',
+				// Legacy saffron names point at neutral pine tones now
+				'saffron-glow': 'radial-gradient(ellipse 60% 60% at 50% 50%, rgba(158, 179, 159, 0.18) 0%, rgba(158, 179, 159, 0) 70%)',
+				'saffron-gradient': 'linear-gradient(135deg, #4A6B4E 0%, #2D3F2F 100%)',
+				'meadow-fade': 'linear-gradient(180deg, rgba(199, 211, 192, 0) 0%, rgba(199, 211, 192, 0.2) 100%)',
+				'grain': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.18 0 0 0 0 0.25 0 0 0 0 0.19 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

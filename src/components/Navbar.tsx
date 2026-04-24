@@ -9,7 +9,6 @@ import {
   DrawerClose
 } from '@/components/ui/drawer';
 import { Button } from './ui/button';
-import OmAccent from '@/components/decorative/OmAccent';
 
 const locationGroups = [
   {
@@ -87,32 +86,28 @@ const Navbar = () => {
     <>
       <nav
         className={cn(
-          'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out py-3 w-full',
+          'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out py-4 w-full',
           isScrolled
-            ? 'bg-dalashala-cream/90 backdrop-blur-md shadow-soft border-b border-dalashala-meadow/30'
-            : 'bg-gradient-to-b from-dalashala-cream/60 to-transparent backdrop-blur-sm'
+            ? 'bg-white/90 backdrop-blur-md border-b border-dalashala-meadow/40'
+            : 'bg-white/40 backdrop-blur-sm'
         )}
       >
-        <div className="w-full px-3 sm:px-4 lg:px-6 xl:px-8 mx-auto">
+        <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 mx-auto max-w-[1400px]">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2 group" aria-label="Yoga with Camilla, hem">
-              <OmAccent
-                size={28}
-                className="text-dalashala-saffron group-hover:text-dalashala-saffronDeep transition-colors"
-              />
-              <p className="text-sm sm:text-base md:text-lg font-cinzel-decorative font-bold text-dalashala-earth whitespace-nowrap">
+            <Link to="/" className="flex items-center" aria-label="Yoga with Camilla, hem">
+              <p className="text-base sm:text-lg md:text-xl font-cormorant font-light text-dalashala-earth whitespace-nowrap tracking-tight">
                 Yoga with Camilla
               </p>
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex md:items-center md:space-x-3 lg:space-x-5 xl:space-x-6">
+            <div className="hidden md:flex md:items-center md:space-x-6 lg:space-x-8">
               {/* Tjänster dropdown */}
               <div className="relative" ref={dropdownRef}>
                 <button
                   onClick={() => setServicesOpen(!servicesOpen)}
-                  className="flex items-center gap-1 text-base lg:text-lg text-dalashala-earth hover:text-dalashala-saffronDeep transition-colors font-medium whitespace-nowrap"
+                  className="flex items-center gap-1 font-inter text-sm text-dalashala-earth hover:text-dalashala-olive transition-colors font-normal whitespace-nowrap"
                 >
                   Tjänster
                   <ChevronDown
@@ -121,13 +116,11 @@ const Navbar = () => {
                   />
                 </button>
                 {servicesOpen && (
-                  <div className="absolute top-full right-0 mt-3 bg-dalashala-creamLight border border-dalashala-meadow/40 rounded-2xl shadow-card overflow-hidden z-50" style={{ width: '420px' }}>
-                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-dalashala-sage via-dalashala-saffron to-dalashala-olive" />
-                    <div className="flex pt-1">
+                  <div className="absolute top-full right-0 mt-3 bg-white border border-dalashala-meadow/40 rounded-xl shadow-card overflow-hidden z-50" style={{ width: '420px' }}>
+                    <div className="flex">
                       {locationGroups.map((group, idx) => (
-                        <div key={group.location} className={cn('flex-1', idx === 0 && 'border-r border-dalashala-meadow/25')}>
-                          <p className="px-4 pt-4 pb-2 font-cinzel text-[10px] uppercase tracking-[0.2em] text-dalashala-olive font-bold flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-dalashala-sage" />
+                        <div key={group.location} className={cn('flex-1', idx === 0 && 'border-r border-dalashala-meadow/30')}>
+                          <p className="px-5 pt-5 pb-3 font-inter text-[10px] uppercase tracking-[0.28em] text-dalashala-olive font-medium">
                             {group.location}
                           </p>
                           {group.links.map((link) => (
@@ -135,7 +128,7 @@ const Navbar = () => {
                               key={group.location + link.href + link.name}
                               to={link.href}
                               onClick={() => setServicesOpen(false)}
-                              className="block px-4 py-2 font-eb-garamond text-sm text-dalashala-earth hover:bg-dalashala-sage/15 hover:text-dalashala-olive transition-colors"
+                              className="block px-5 py-2 font-inter text-sm text-dalashala-earth hover:bg-dalashala-meadowLight/40 hover:text-dalashala-olive transition-colors"
                             >
                               {link.name}
                             </Link>
@@ -149,21 +142,21 @@ const Navbar = () => {
 
               <Link
                 to="/blogg"
-                className="text-base lg:text-lg text-dalashala-earth hover:text-dalashala-saffronDeep transition-colors font-medium"
+                className="font-inter text-sm text-dalashala-earth hover:text-dalashala-olive transition-colors font-normal"
               >
                 Blogg
               </Link>
 
               <Link
                 to="/om-mig"
-                className="text-base lg:text-lg text-dalashala-earth hover:text-dalashala-saffronDeep transition-colors font-medium"
+                className="font-inter text-sm text-dalashala-earth hover:text-dalashala-olive transition-colors font-normal"
               >
                 Om mig
               </Link>
 
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-base lg:text-lg text-dalashala-earth hover:text-dalashala-saffronDeep transition-colors font-medium"
+                className="font-inter text-sm text-dalashala-earth hover:text-dalashala-olive transition-colors font-normal"
               >
                 Kontakt
               </button>
