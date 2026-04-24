@@ -82,17 +82,17 @@
     @apply leading-relaxed;
   }
 
-  /* Tone down the Fraunces ampersand at display size — it's beautifully
-     ornate by default, but dominates headings. Rendered via the
-     `softenAmp(...)` helper in src/lib/amp.tsx, which wraps `&` in this span. */
+  /* The Fraunces ampersand is ornate to the point of reading like @.
+     Swap it for Inter's cleaner, classic & glyph and tone it down so it
+     reads as a quiet connector at display size. */
   .amp {
-    font-size: 0.72em;
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.78em;
     font-weight: 300;
-    opacity: 0.7;
-    margin: 0 0.05em;
-    letter-spacing: 0.02em;
-    vertical-align: 0.05em;
-    font-variation-settings: "opsz" 48, "SOFT" 30;
+    opacity: 0.75;
+    margin: 0 0.08em;
+    vertical-align: 0.04em;
+    font-variation-settings: normal;
   }
 }
 
