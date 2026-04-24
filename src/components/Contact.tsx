@@ -21,17 +21,17 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="relative py-20 md:py-28 bg-dalashala-honeyLight/40">
+    <section id="contact" className="relative py-24 md:py-32 bg-white">
       <div className="relative max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14 animate-when-visible" data-animation="fade-in">
-          <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-5">
+        <div className="text-center mb-16 animate-when-visible" data-animation="fade-in">
+          <p className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-olive font-bold mb-7">
             Kontakt
           </p>
-          <h2 className="font-cormorant font-semibold text-4xl md:text-5xl lg:text-6xl text-dalashala-earth mb-6 tracking-tight leading-[1.05]">
-            Hör av dig
+          <h2 className="font-fraunces text-5xl md:text-6xl lg:text-7xl text-dalashala-earth mb-8 tracking-[-0.03em] leading-[0.98]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
+            Hör av <em className="italic" style={{ fontWeight: 300, fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>dig</em>
           </h2>
-          <span className="block mx-auto w-14 h-[2px] bg-dalashala-honey mb-6 opacity-90 rounded-full" aria-hidden="true" />
-          <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth max-w-lg mx-auto leading-relaxed">
+          <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
+          <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/85 max-w-lg mx-auto leading-relaxed">
             Frågor om ett pass, eller redo att boka?
           </p>
         </div>

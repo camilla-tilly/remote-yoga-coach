@@ -1,12 +1,9 @@
-
 import { useEffect, useRef } from 'react';
-import { useIsMobile } from '@/hooks/use-mobile';
 
 const Hero = () => {
   const brandRef = useRef<HTMLParagraphElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
-  const buttonRef = useRef<HTMLAnchorElement>(null);
-  const isMobile = useIsMobile();
+  const buttonRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const brand = brandRef.current;
@@ -21,27 +18,35 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative flex items-center justify-center pt-36 sm:pt-44 md:pt-48 lg:pt-52 w-full pb-24 md:pb-32 bg-gradient-to-b from-white via-white to-dalashala-creamDeep"
+      className="relative flex items-center justify-center pt-36 sm:pt-44 md:pt-48 lg:pt-56 w-full pb-28 md:pb-36 bg-white overflow-hidden"
     >
-      <div className="container-section relative z-10 text-center w-full max-w-3xl px-4 sm:px-6">
-        {/* Eyebrow tag — thin sage underline style */}
-        <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-10 opacity-0 animate-fade-in" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
+      {/* Subtle pale-sage wash bottom for depth without warm colour */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-0 h-64 pointer-events-none"
+        style={{ background: 'linear-gradient(180deg, rgba(220,228,214,0) 0%, rgba(220,228,214,0.45) 100%)' }}
+      />
+
+      <div className="container-section relative z-10 text-center w-full max-w-5xl px-4 sm:px-6">
+        {/* Eyebrow — tracked caps (kept — Camilla likes this treatment) */}
+        <p className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-olive font-semibold mb-12 opacity-0 animate-fade-in" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
           Stockholm &nbsp;·&nbsp; Dalarna
         </p>
 
         <p
           ref={brandRef}
-          className="font-cormorant text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] text-dalashala-earth mb-6 opacity-0 -translate-y-3 transition-all duration-1000 ease-out font-semibold tracking-tight leading-[1.02]"
+          className="font-fraunces text-[3.75rem] sm:text-[5rem] md:text-[6.75rem] lg:text-[8rem] xl:text-[9rem] text-dalashala-earth mb-8 opacity-0 -translate-y-3 transition-all duration-1000 ease-out tracking-[-0.035em] leading-[0.92]"
+          style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}
         >
-          Yoga with Camilla
+          Yoga with<br className="md:hidden" /> <em className="font-fraunces italic" style={{ fontWeight: 300, fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>Camilla</em>
         </p>
 
-        {/* Short thin centred line — honey accent */}
-        <span className="block mx-auto w-14 h-[2px] bg-dalashala-honey mb-8 opacity-90 rounded-full" aria-hidden="true" />
+        {/* Thin pine line */}
+        <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/70 mb-10 rounded-full opacity-0 animate-fade-in" style={{ animationDelay: '500ms', animationFillMode: 'forwards' }} aria-hidden="true" />
 
         <h1
           ref={headingRef}
-          className="font-inter text-lg md:text-xl text-dalashala-earth mb-14 md:mb-16 opacity-0 -translate-y-3 transition-all duration-1000 ease-out delay-300 font-normal leading-relaxed max-w-xl mx-auto"
+          className="font-inter text-xl md:text-[1.5rem] text-dalashala-earth/90 mb-16 md:mb-20 opacity-0 -translate-y-3 transition-all duration-1000 ease-out delay-300 font-normal leading-[1.55] max-w-2xl mx-auto"
         >
           Privat yoga i Stockholm och Dalarna.<br />
           På en SUP på Sickla Sjö, på skogsaltanen i Dalarna, eller där du är.
@@ -49,17 +54,17 @@ const Hero = () => {
 
         <div
           ref={buttonRef}
-          className="flex flex-col sm:flex-row gap-3 justify-center items-center opacity-0 -translate-y-3 transition-all duration-1000 ease-out delay-500"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 -translate-y-3 transition-all duration-1000 ease-out delay-500"
         >
           <a
             href="#stockholm"
-            className="inline-block bg-dalashala-earth text-white px-9 py-3.5 md:px-11 md:py-4 text-sm uppercase tracking-[0.2em] rounded-full font-inter font-semibold hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap"
+            className="inline-block bg-dalashala-earth text-white px-11 py-4 md:px-14 md:py-[1.125rem] text-sm uppercase tracking-[0.22em] rounded-full font-inter font-semibold hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap shadow-card"
           >
             Stockholm
           </a>
           <a
             href="#dalarna"
-            className="inline-block border border-dalashala-earth bg-transparent text-dalashala-earth px-9 py-3.5 md:px-11 md:py-4 text-sm uppercase tracking-[0.2em] rounded-full font-inter font-semibold hover:bg-dalashala-earth hover:text-white transition-all duration-300 whitespace-nowrap"
+            className="inline-block border border-dalashala-earth bg-transparent text-dalashala-earth px-11 py-4 md:px-14 md:py-[1.125rem] text-sm uppercase tracking-[0.22em] rounded-full font-inter font-semibold hover:bg-dalashala-earth hover:text-white hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap"
           >
             Dalarna
           </a>

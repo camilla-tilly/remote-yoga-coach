@@ -86,30 +86,29 @@ export default {
 					meadowLight: '#E1E7DC',
 					sage: '#9EB39F',
 					sageLight: '#DCE4D6',
-					// Honey / golden hour accent — warm amber gold inspired by
-					// Camilla's Golden Hour morning series. Used sparingly for
-					// emphasis: tags, arrows, highlights. Restrained to avoid
-					// the saturated saffron feel of the earlier direction.
-					honey: '#C89553',       // Warm honey
-					honeyDeep: '#A07430',   // Deeper amber (hover)
-					honeyLight: '#F1E4C8',  // Pale honey wash (tag fills, subtle backgrounds)
-					// Legacy saffron/gold aliases → now point at honey so any
-					// stray reference renders warm-gold on-palette.
-					saffron: '#C89553',     // was eucalyptus → now honey
-					saffronDeep: '#A07430', // was pine deep → now honey deep
-					saffronLight: '#F1E4C8',// was pale sage → now honey light
-					gold: '#C89553',        // was mossy mint → now honey
+					// Honey / gold accents neutralised — Camilla read the warm yellow
+					// as jarring against the fresh-pine palette. Legacy `honey*`
+					// tokens remap to pine/sage tones so any stray reference renders
+					// on-palette rather than saturated-gold.
+					honey: '#4A6B4E',       // was warm honey → fresh pine
+					honeyDeep: '#2D3F2F',   // was deeper amber → pine deep
+					honeyLight: '#E1E7DC',  // was pale honey wash → pale sage
+					saffron: '#5D7A60',
+					saffronDeep: '#2D3F2F',
+					saffronLight: '#DCE4D6',
+					gold: '#5D7A60',
 				}
 			},
 			fontFamily: {
-				// New Scandi pairing: Cormorant Garamond (display) + Inter (body/UI).
-				// Legacy keys kept so existing markup picks up the new fonts without rewrites.
-				'cormorant': ['"Cormorant Garamond"', 'Georgia', 'serif'],
+				// Scandi pairing: Fraunces (characterful variable display serif) + Inter (body/UI).
+				// Legacy keys alias to Fraunces so existing markup picks up the new face.
+				'cormorant': ['Fraunces', 'Georgia', 'serif'],
+				'fraunces': ['Fraunces', 'Georgia', 'serif'],
 				'inter': ['Inter', 'system-ui', 'sans-serif'],
-				'cinzel-decorative': ['"Cormorant Garamond"', 'Georgia', 'serif'],
-				'cinzel': ['"Cormorant Garamond"', 'Georgia', 'serif'],
+				'cinzel-decorative': ['Fraunces', 'Georgia', 'serif'],
+				'cinzel': ['Fraunces', 'Georgia', 'serif'],
 				'montserrat': ['Inter', 'system-ui', 'sans-serif'],
-				'eb-garamond': ['"Cormorant Garamond"', 'Georgia', 'serif'],
+				'eb-garamond': ['Fraunces', 'Georgia', 'serif'],
 			},
 			boxShadow: {
 				'soft': '0 2px 12px -2px rgba(45, 63, 47, 0.05), 0 1px 3px -1px rgba(45, 63, 47, 0.04)',

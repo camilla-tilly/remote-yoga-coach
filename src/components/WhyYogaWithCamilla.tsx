@@ -30,34 +30,34 @@ const WhyYogaWithCamilla = () => {
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
-        <div className="max-w-2xl mx-auto text-center mb-16">
-          <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-5">
+        <div className="max-w-3xl mx-auto text-center mb-20">
+          <p className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-olive font-bold mb-7">
             Så jag jobbar
           </p>
-          <h2 className="font-cormorant font-semibold text-4xl md:text-5xl lg:text-6xl text-dalashala-earth mb-6 tracking-tight leading-[1.05]">
-            Varför Yoga med Camilla
+          <h2 className="font-fraunces text-5xl md:text-6xl lg:text-7xl text-dalashala-earth mb-8 tracking-[-0.03em] leading-[0.98]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
+            Varför Yoga med <em className="italic" style={{ fontWeight: 300, fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>Camilla</em>
           </h2>
-          <span className="block mx-auto w-14 h-[2px] bg-dalashala-honey mb-6 opacity-90 rounded-full" aria-hidden="true" />
-          <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed max-w-xl mx-auto">
+          <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
+          <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/85 leading-relaxed max-w-xl mx-auto">
             Ett lugnt, välkomnande rum för rörelse, andning och närvaro.
             I Dalarna och i Stockholm.
           </p>
         </div>
 
         {/* Card grid — minimal, white, hairline borders */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 md:gap-8 max-w-4xl mx-auto">
           {cards.map((card, i) => (
             <div
               key={card.title}
-              className="relative bg-white border border-dalashala-meadow/60 rounded-xl p-8 md:p-10 hover:border-dalashala-olive/60 transition-colors duration-300 animate-when-visible"
+              className="relative bg-white border border-dalashala-meadow/60 rounded-2xl p-9 md:p-11 hover:border-dalashala-earth/50 hover:shadow-card transition-all duration-400 animate-when-visible"
               data-animation="fade-in-up"
               {...(i ? { 'data-animation-delay': (i * 120).toString() } : {})}
             >
-              <span className="block w-8 h-[2px] bg-dalashala-honey mb-6 rounded-full" aria-hidden="true" />
-              <h3 className="font-cormorant font-semibold text-2xl md:text-[1.875rem] text-dalashala-earth mb-4 leading-snug tracking-tight">
+              <span className="block w-10 h-[2px] bg-dalashala-earth/50 mb-7 rounded-full" aria-hidden="true" />
+              <h3 className="font-fraunces text-[1.75rem] md:text-[2.125rem] text-dalashala-earth mb-5 leading-[1.08] tracking-[-0.02em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 72, 'SOFT' 50" }}>
                 {card.title}
               </h3>
-              <p className="font-inter font-normal text-base text-dalashala-earth leading-relaxed">
+              <p className="font-inter font-normal text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed">
                 {card.body}
               </p>
             </div>

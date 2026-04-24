@@ -19,9 +19,9 @@ const Logo = ({
   ...rest
 }: LogoProps) => {
   const palette = {
-    pine: { bg: '#2D3F2F', fg: '#FFFFFF', accent: '#C89553' },
-    white: { bg: '#FFFFFF', fg: '#2D3F2F', accent: '#C89553' },
-    outline: { bg: 'transparent', fg: '#2D3F2F', accent: '#C89553' },
+    pine: { bg: '#2D3F2F', fg: '#FFFFFF', accent: '#9EB39F' },
+    white: { bg: '#FFFFFF', fg: '#2D3F2F', accent: '#5D7A60' },
+    outline: { bg: 'transparent', fg: '#2D3F2F', accent: '#5D7A60' },
   }[variant];
 
   return (

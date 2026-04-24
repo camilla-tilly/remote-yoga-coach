@@ -175,20 +175,20 @@ const ServicePageLayout = ({
         </nav>
 
         {/* Hero Section — generous, display-forward */}
-        <section className="relative pt-10 md:pt-16 pb-10 md:pb-14 px-4">
-          <div className="relative max-w-3xl mx-auto text-center">
-            <p className="font-inter text-[11px] md:text-xs uppercase tracking-[0.34em] text-dalashala-honeyDeep font-semibold mb-7">
+        <section className="relative pt-12 md:pt-20 pb-12 md:pb-16 px-4">
+          <div className="relative max-w-4xl mx-auto text-center">
+            <p className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-olive font-bold mb-8">
               {heroTag}
             </p>
-            <h1 className="font-cormorant font-semibold text-5xl md:text-[4rem] lg:text-[4.75rem] text-dalashala-earth mb-7 leading-[1.02] tracking-tight">
+            <h1 className="font-fraunces text-5xl md:text-[4.5rem] lg:text-[5.5rem] text-dalashala-earth mb-8 leading-[0.98] tracking-[-0.03em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
               {heroHeading}
             </h1>
-            <span className="block mx-auto w-16 h-[3px] bg-dalashala-honey mb-7 rounded-full" aria-hidden="true" />
-            <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/90 mb-10 leading-relaxed max-w-2xl mx-auto">
+            <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
+            <p className="font-inter font-normal text-xl md:text-2xl text-dalashala-earth/85 mb-12 leading-relaxed max-w-2xl mx-auto">
               {heroSubtitle}
             </p>
             <Button
-              className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-4 px-10 rounded-full uppercase tracking-[0.2em] text-sm font-semibold shadow-card"
+              className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-[1.125rem] px-12 rounded-full uppercase tracking-[0.22em] text-sm font-semibold shadow-card"
               asChild
             >
               <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
