@@ -181,7 +181,7 @@ const ServicePageLayout = ({
               <h1 className="font-cormorant font-semibold text-4xl md:text-5xl lg:text-6xl text-dalashala-earth mb-6 leading-[1.05] tracking-tight">
                 {heroHeading}
               </h1>
-              <span className="block mx-auto w-12 h-px bg-dalashala-sage mb-6 opacity-80" aria-hidden="true" />
+              <span className="block mx-auto w-14 h-[2px] bg-dalashala-honey mb-6 opacity-90 rounded-full" aria-hidden="true" />
               <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth mb-10 leading-relaxed max-w-xl mx-auto">
                 {heroSubtitle}
               </p>
@@ -234,7 +234,7 @@ const ServicePageLayout = ({
                   key={i}
                   className="bg-white border border-dalashala-meadow/60 rounded-xl p-7 md:p-8 hover:border-dalashala-olive/60 transition-colors duration-300"
                 >
-                  <span className="block w-8 h-px bg-dalashala-olive mb-4" aria-hidden="true" />
+                  <span className="block w-8 h-[2px] bg-dalashala-honey mb-4 rounded-full" aria-hidden="true" />
                   <h3 className="font-cormorant font-semibold text-2xl md:text-[1.625rem] text-dalashala-earth mb-3 tracking-tight leading-snug">
                     {h.heading}
                   </h3>
@@ -264,7 +264,7 @@ const ServicePageLayout = ({
                       key={i}
                       className="bg-white border border-dalashala-meadow/60 rounded-xl p-7 md:p-8 text-center hover:border-dalashala-olive/60 transition-colors duration-300"
                     >
-                      <p className="font-inter text-xs uppercase tracking-[0.28em] text-dalashala-olive font-semibold mb-3">
+                      <p className="font-inter text-xs uppercase tracking-[0.28em] text-dalashala-honeyDeep font-semibold mb-3">
                         {tier.label}
                       </p>
                       <p className="font-cormorant font-semibold text-3xl md:text-[2rem] text-dalashala-earth mb-2 tracking-tight">
@@ -333,9 +333,9 @@ const ServicePageLayout = ({
                       key={i}
                       className="group"
                     >
-                      <summary className="font-inter text-base md:text-lg text-dalashala-earth py-6 cursor-pointer list-none flex items-center justify-between gap-4 hover:text-dalashala-olive transition-colors">
+                      <summary className="font-inter text-base md:text-lg text-dalashala-earth py-6 cursor-pointer list-none flex items-center justify-between gap-4 hover:text-dalashala-honeyDeep transition-colors">
                         <span className="font-semibold">{item.question}</span>
-                        <span className="text-dalashala-olive ml-2 group-open:rotate-45 transition-transform text-2xl font-light shrink-0">+</span>
+                        <span className="text-dalashala-honey ml-2 group-open:rotate-45 transition-transform text-2xl font-light shrink-0">+</span>
                       </summary>
                       <div className="pb-6">
                         <p className="font-inter font-normal text-base text-dalashala-earth leading-relaxed">

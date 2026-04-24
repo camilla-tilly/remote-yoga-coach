@@ -86,12 +86,19 @@ export default {
 					meadowLight: '#E1E7DC',
 					sage: '#9EB39F',
 					sageLight: '#DCE4D6',
-					// Accent tokens kept for legacy imports; remapped to muted pine tones
-					// so any stray reference renders neutral rather than warm/saffron.
-					saffron: '#5D7A60',     // was marigold → now eucalyptus
-					saffronDeep: '#2D3F2F', // was deep saffron → now pine deep
-					saffronLight: '#E1E7DC',// was peach → now pale sage
-					gold: '#8AA48E',        // was gold → now mossy mint
+					// Honey / golden hour accent — warm amber gold inspired by
+					// Camilla's Golden Hour morning series. Used sparingly for
+					// emphasis: tags, arrows, highlights. Restrained to avoid
+					// the saturated saffron feel of the earlier direction.
+					honey: '#C89553',       // Warm honey
+					honeyDeep: '#A07430',   // Deeper amber (hover)
+					honeyLight: '#F1E4C8',  // Pale honey wash (tag fills, subtle backgrounds)
+					// Legacy saffron/gold aliases → now point at honey so any
+					// stray reference renders warm-gold on-palette.
+					saffron: '#C89553',     // was eucalyptus → now honey
+					saffronDeep: '#A07430', // was pine deep → now honey deep
+					saffronLight: '#F1E4C8',// was pale sage → now honey light
+					gold: '#C89553',        // was mossy mint → now honey
 				}
 			},
 			fontFamily: {

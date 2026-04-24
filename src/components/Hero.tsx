@@ -36,8 +36,8 @@ const Hero = () => {
           Yoga with Camilla
         </p>
 
-        {/* Short thin centred line */}
-        <span className="block mx-auto w-12 h-px bg-dalashala-sage mb-8 opacity-80" aria-hidden="true" />
+        {/* Short thin centred line — honey accent */}
+        <span className="block mx-auto w-14 h-[2px] bg-dalashala-honey mb-8 opacity-90 rounded-full" aria-hidden="true" />
 
         <h1
           ref={headingRef}

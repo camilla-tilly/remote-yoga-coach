@@ -38,7 +38,7 @@ const Blog = () => {
             <h1 className="font-cormorant font-semibold text-5xl md:text-6xl text-dalashala-earth tracking-tight mb-6 leading-[1.05]">
               Blogg
             </h1>
-            <span className="block mx-auto w-12 h-px bg-dalashala-sage mb-6 opacity-80" aria-hidden="true" />
+            <span className="block mx-auto w-14 h-[2px] bg-dalashala-honey mb-6 opacity-90 rounded-full" aria-hidden="true" />
             <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth max-w-md mx-auto leading-relaxed">
               Tankar om yoga, natur, events och välmående från stugan i Dalarna.
             </p>
@@ -53,7 +53,7 @@ const Blog = () => {
                 className="block py-8 md:py-10 group hover:pl-2 transition-[padding] duration-300"
               >
                 <div className="flex items-center gap-4 mb-3">
-                  <span className="font-inter text-xs uppercase tracking-[0.28em] text-dalashala-olive font-semibold">
+                  <span className="font-inter text-xs uppercase tracking-[0.28em] text-dalashala-honeyDeep font-semibold">
                     {post.category}
                   </span>
                   <span className="w-8 h-px bg-dalashala-meadow" />
@@ -67,7 +67,7 @@ const Blog = () => {
                 <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed mb-4 max-w-2xl">
                   {post.excerpt}
                 </p>
-                <span className="inline-flex items-center gap-2 font-inter text-xs uppercase tracking-[0.22em] font-semibold text-dalashala-olive group-hover:text-dalashala-earth transition-colors">
+                <span className="inline-flex items-center gap-2 font-inter text-xs uppercase tracking-[0.22em] font-semibold text-dalashala-honeyDeep group-hover:text-dalashala-earth transition-colors">
                   Läs mer
                   <span className="transition-transform group-hover:translate-x-1">→</span>
                 </span>

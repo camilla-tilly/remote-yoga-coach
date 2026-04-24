@@ -30,7 +30,7 @@ const Contact = () => {
           <h2 className="font-cormorant font-semibold text-4xl md:text-5xl lg:text-6xl text-dalashala-earth mb-6 tracking-tight leading-[1.05]">
             Hör av dig
           </h2>
-          <span className="block mx-auto w-12 h-px bg-dalashala-sage mb-6 opacity-80" aria-hidden="true" />
+          <span className="block mx-auto w-14 h-[2px] bg-dalashala-honey mb-6 opacity-90 rounded-full" aria-hidden="true" />
           <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth max-w-lg mx-auto leading-relaxed">
             Frågor om ett pass, eller redo att boka?
           </p>

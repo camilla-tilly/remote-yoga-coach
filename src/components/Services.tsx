@@ -64,7 +64,7 @@ const dalarnaServices: ServiceCard[] = [
 
 const tagStyles: Record<string, string> = {
   'Nytt': 'bg-dalashala-meadowLight/60 text-dalashala-olive border border-dalashala-meadow',
-  'Populärt': 'bg-dalashala-sageLight/60 text-dalashala-earth border border-dalashala-sage/50',
+  'Populärt': 'bg-dalashala-honeyLight text-dalashala-honeyDeep border border-dalashala-honey/50',
   'Unikt': 'bg-dalashala-earth text-white border border-dalashala-earth',
   'English': 'bg-white text-dalashala-earth border border-dalashala-meadow/80',
 };
@@ -87,7 +87,7 @@ const ServiceCard = ({ title, description, href, tag }: ServiceCard) => (
         {description}
       </p>
     </div>
-    <span className="mt-6 inline-flex items-center gap-2 font-inter text-xs text-dalashala-olive uppercase tracking-[0.22em] font-semibold group-hover:text-dalashala-earth transition-colors">
+    <span className="mt-6 inline-flex items-center gap-2 font-inter text-xs text-dalashala-honeyDeep uppercase tracking-[0.22em] font-semibold group-hover:text-dalashala-earth transition-colors">
       Läs mer
       <span className="transition-transform group-hover:translate-x-1">→</span>
     </span>
@@ -115,7 +115,7 @@ const Services = () => {
           <h2 className="font-cormorant font-semibold text-4xl md:text-5xl lg:text-6xl text-dalashala-earth mb-6 leading-[1.05] tracking-tight">
             Vad jag erbjuder
           </h2>
-          <span className="block mx-auto w-12 h-px bg-dalashala-sage mb-6 opacity-80" aria-hidden="true" />
+          <span className="block mx-auto w-14 h-[2px] bg-dalashala-honey mb-6 opacity-90 rounded-full" aria-hidden="true" />
           <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed">
             Privat yoga för grupper och individer,
             i stadsmiljö eller mitt i skogen.

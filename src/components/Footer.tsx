@@ -9,7 +9,7 @@ const Footer = () => {
           <h2 className="font-cormorant font-semibold text-2xl md:text-3xl text-dalashala-earth tracking-tight">
             Yoga with Camilla
           </h2>
-          <span className="block w-12 h-px bg-dalashala-sage opacity-80" aria-hidden="true" />
+          <span className="block w-14 h-[2px] bg-dalashala-honey opacity-90 rounded-full" aria-hidden="true" />
           <p className="font-inter font-normal text-base text-dalashala-earth max-w-md leading-relaxed">
             Privat yoga i Stockholm och Dalarna.<br className="hidden sm:block" />
             På en SUP på Sickla Sjö, på skogsaltanen i Dalarna, eller där du är.

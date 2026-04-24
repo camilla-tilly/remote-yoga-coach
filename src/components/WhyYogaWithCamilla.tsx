@@ -37,7 +37,7 @@ const WhyYogaWithCamilla = () => {
           <h2 className="font-cormorant font-semibold text-4xl md:text-5xl lg:text-6xl text-dalashala-earth mb-6 tracking-tight leading-[1.05]">
             Varför Yoga med Camilla
           </h2>
-          <span className="block mx-auto w-12 h-px bg-dalashala-sage mb-6 opacity-80" aria-hidden="true" />
+          <span className="block mx-auto w-14 h-[2px] bg-dalashala-honey mb-6 opacity-90 rounded-full" aria-hidden="true" />
           <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed max-w-xl mx-auto">
             Ett lugnt, välkomnande rum för rörelse, andning och närvaro.
             I Dalarna och i Stockholm.
@@ -53,7 +53,7 @@ const WhyYogaWithCamilla = () => {
               data-animation="fade-in-up"
               {...(i ? { 'data-animation-delay': (i * 120).toString() } : {})}
             >
-              <span className="block w-8 h-px bg-dalashala-olive mb-6" aria-hidden="true" />
+              <span className="block w-8 h-[2px] bg-dalashala-honey mb-6 rounded-full" aria-hidden="true" />
               <h3 className="font-cormorant font-semibold text-2xl md:text-[1.875rem] text-dalashala-earth mb-4 leading-snug tracking-tight">
                 {card.title}
               </h3>
