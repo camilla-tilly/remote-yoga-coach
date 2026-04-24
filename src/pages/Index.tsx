@@ -54,8 +54,8 @@ const Index = () => {
       <main>
         <Hero />
 
-        {/* Photo strip: three simple images, generous whitespace */}
-        <section className="relative bg-white pb-20 md:pb-24">
+        {/* Photo strip: sits on a pale sage wash — links hero to the Why section */}
+        <section className="relative bg-dalashala-creamDeep py-16 md:py-20">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
             <div className="grid grid-cols-3 gap-3 md:gap-5">
               <div className="aspect-[4/5] overflow-hidden rounded-xl group">

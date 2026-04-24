@@ -1,12 +1,29 @@
+import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-forest-gradient text-white py-16 md:py-20 w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
-      <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="relative bg-forest-gradient text-white w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] overflow-hidden">
+      {/* Warm honey glow top-right, low opacity */}
+      <div
+        aria-hidden="true"
+        className="absolute -top-24 -right-24 w-[420px] h-[420px] rounded-full opacity-[0.12] blur-3xl pointer-events-none"
+        style={{ background: 'radial-gradient(circle, #C89553 0%, transparent 70%)' }}
+      />
+      {/* Sage glow bottom-left for depth */}
+      <div
+        aria-hidden="true"
+        className="absolute -bottom-32 -left-20 w-[480px] h-[480px] rounded-full opacity-[0.18] blur-3xl pointer-events-none"
+        style={{ background: 'radial-gradient(circle, #8AA48E 0%, transparent 70%)' }}
+      />
+
+      <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+        {/* Top row — brand block */}
         <div className="flex flex-col items-center text-center gap-5">
-          <h2 className="font-cormorant font-semibold text-3xl md:text-4xl text-white tracking-tight">
+          <Logo size={56} variant="pine" className="rounded-2xl ring-1 ring-white/15" />
+          <h2 className="font-cormorant font-semibold text-3xl md:text-4xl text-white tracking-tight mt-2">
             Yoga with Camilla
           </h2>
           <span className="block w-14 h-[2px] bg-dalashala-honey opacity-90 rounded-full" aria-hidden="true" />
@@ -14,7 +31,37 @@ const Footer = () => {
             Privat yoga i Stockholm och Dalarna.<br className="hidden sm:block" />
             På en SUP på Sickla Sjö, på skogsaltanen i Dalarna, eller där du är.
           </p>
-          <p className="font-inter text-xs uppercase tracking-[0.3em] text-white/55 font-medium pt-4">
+
+          {/* Nav row — gentle horizontal list */}
+          <nav className="mt-8 flex flex-wrap items-center justify-center gap-x-7 gap-y-3 font-inter text-xs uppercase tracking-[0.26em] text-white/75 font-medium">
+            <Link to="/" className="hover:text-dalashala-honey transition-colors">
+              Hem
+            </Link>
+            <span aria-hidden="true" className="text-white/30">·</span>
+            <Link to="/#services" className="hover:text-dalashala-honey transition-colors">
+              Tjänster
+            </Link>
+            <span aria-hidden="true" className="text-white/30">·</span>
+            <Link to="/blogg" className="hover:text-dalashala-honey transition-colors">
+              Blogg
+            </Link>
+            <span aria-hidden="true" className="text-white/30">·</span>
+            <Link to="/om-mig" className="hover:text-dalashala-honey transition-colors">
+              Om mig
+            </Link>
+            <span aria-hidden="true" className="text-white/30">·</span>
+            <a
+              href="mailto:hello.yogawithcamilla@gmail.com"
+              className="hover:text-dalashala-honey transition-colors"
+            >
+              Kontakt
+            </a>
+          </nav>
+
+          {/* Hairline divider */}
+          <span className="block w-24 h-px bg-white/15 mt-10" aria-hidden="true" />
+
+          <p className="font-inter text-[11px] uppercase tracking-[0.3em] text-white/50 font-medium">
             &copy; {currentYear} Yoga with Camilla
           </p>
         </div>

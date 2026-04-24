@@ -69,10 +69,18 @@ const tagStyles: Record<string, string> = {
   'English': 'bg-white text-dalashala-earth border border-dalashala-meadow/80',
 };
 
+// Per-tag card background tint — subtle color variety so not every card is plain white.
+const cardBgStyles: Record<string, string> = {
+  'Populärt': 'bg-dalashala-honeyLight/30 border-dalashala-honey/40',
+  'Unikt': 'bg-dalashala-sageLight/40 border-dalashala-sage/50',
+  'English': 'bg-dalashala-meadowLight/50 border-dalashala-meadow/70',
+  'Nytt': 'bg-dalashala-creamDeep border-dalashala-meadow/70',
+};
+
 const ServiceCard = ({ title, description, href, tag }: ServiceCard) => (
   <Link
     to={href}
-    className="group flex flex-col justify-between bg-white rounded-xl p-7 md:p-8 border border-dalashala-meadow/60 hover:border-dalashala-olive/60 hover:-translate-y-0.5 transition-all duration-300"
+    className={`group flex flex-col justify-between rounded-xl p-7 md:p-8 border hover:border-dalashala-olive/70 hover:-translate-y-0.5 transition-all duration-300 ${tag ? cardBgStyles[tag] || 'bg-white border-dalashala-meadow/60' : 'bg-white border-dalashala-meadow/60'}`}
   >
     <div>
       {tag && (
@@ -105,7 +113,7 @@ const LocationHeader = ({ label }: { label: string }) => (
 
 const Services = () => {
   return (
-    <section id="services" className="relative pt-20 md:pt-28 bg-white">
+    <section id="services" className="relative pt-20 md:pt-28 bg-gradient-to-b from-white via-dalashala-creamLight to-dalashala-creamDeep">
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="max-w-2xl mx-auto text-center mb-16">

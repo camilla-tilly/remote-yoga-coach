@@ -157,63 +157,71 @@ const ServicePageLayout = ({
         ogImage={ogImage}
         structuredData={structuredData}
       />
-      <div className="max-w-[860px] mx-auto">
-        <Navbar />
-        <main className="pt-24">
-          {/* Visible Breadcrumb Trail */}
-          <nav aria-label="Brödsmulor" className="px-4 pt-6">
-            <ol className="max-w-2xl mx-auto flex items-center gap-2 font-inter text-[10px] uppercase tracking-[0.22em] text-dalashala-olive">
-              <li>
-                <Link to="/" className="hover:text-dalashala-earth transition-colors">Hem</Link>
-              </li>
-              <li aria-hidden="true" className="opacity-50">/</li>
-              <li>
-                <Link to="/#services" className="hover:text-dalashala-earth transition-colors">Tjänster</Link>
-              </li>
-              <li aria-hidden="true" className="opacity-50">/</li>
-              <li aria-current="page" className="text-dalashala-earth truncate">{breadcrumbLabel}</li>
-            </ol>
-          </nav>
-          {/* Hero Section */}
-          <section className="relative py-14 md:py-20 px-4">
-            <div className="relative max-w-2xl mx-auto text-center">
-              <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-6">
-                {heroTag}
-              </p>
-              <h1 className="font-cormorant font-semibold text-4xl md:text-5xl lg:text-6xl text-dalashala-earth mb-6 leading-[1.05] tracking-tight">
-                {heroHeading}
-              </h1>
-              <span className="block mx-auto w-14 h-[2px] bg-dalashala-honey mb-6 opacity-90 rounded-full" aria-hidden="true" />
-              <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth mb-10 leading-relaxed max-w-xl mx-auto">
-                {heroSubtitle}
-              </p>
-              <Button
-                className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-4 px-10 rounded-full uppercase tracking-[0.2em] text-sm font-semibold"
-                asChild
-              >
-                <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
-                  {bookingLabel || 'Boka nu'}
-                </a>
-              </Button>
+      <Navbar />
+      <main className="pt-24">
+        {/* Visible Breadcrumb Trail */}
+        <nav aria-label="Brödsmulor" className="px-4 pt-6">
+          <ol className="max-w-[860px] mx-auto flex items-center gap-2 font-inter text-[10px] uppercase tracking-[0.22em] text-dalashala-olive">
+            <li>
+              <Link to="/" className="hover:text-dalashala-earth transition-colors">Hem</Link>
+            </li>
+            <li aria-hidden="true" className="opacity-50">/</li>
+            <li>
+              <Link to="/#services" className="hover:text-dalashala-earth transition-colors">Tjänster</Link>
+            </li>
+            <li aria-hidden="true" className="opacity-50">/</li>
+            <li aria-current="page" className="text-dalashala-earth truncate">{breadcrumbLabel}</li>
+          </ol>
+        </nav>
+
+        {/* Hero Section — generous, display-forward */}
+        <section className="relative pt-10 md:pt-16 pb-10 md:pb-14 px-4">
+          <div className="relative max-w-3xl mx-auto text-center">
+            <p className="font-inter text-[11px] md:text-xs uppercase tracking-[0.34em] text-dalashala-honeyDeep font-semibold mb-7">
+              {heroTag}
+            </p>
+            <h1 className="font-cormorant font-semibold text-5xl md:text-[4rem] lg:text-[4.75rem] text-dalashala-earth mb-7 leading-[1.02] tracking-tight">
+              {heroHeading}
+            </h1>
+            <span className="block mx-auto w-16 h-[3px] bg-dalashala-honey mb-7 rounded-full" aria-hidden="true" />
+            <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/90 mb-10 leading-relaxed max-w-2xl mx-auto">
+              {heroSubtitle}
+            </p>
+            <Button
+              className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-4 px-10 rounded-full uppercase tracking-[0.2em] text-sm font-semibold shadow-card"
+              asChild
+            >
+              <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
+                {bookingLabel || 'Boka nu'}
+              </a>
+            </Button>
+          </div>
+        </section>
+
+        {/* Hero Image — full-bleed-ish, bigger, more cinematic */}
+        {heroImage && (
+          <section className="px-4 mb-20 mt-4">
+            <div className={`relative max-w-5xl mx-auto overflow-hidden rounded-[28px] shadow-card ring-1 ring-dalashala-meadow/50 ${heroImageAspect || 'aspect-[16/10] md:aspect-[21/9]'}`}>
+              <img
+                src={heroImage}
+                alt={heroImageAlt || heroHeading}
+                className="w-full h-full object-cover"
+                style={heroImagePosition ? { objectPosition: heroImagePosition } : undefined}
+                loading="eager"
+                fetchpriority="high"
+              />
+              {/* Gentle vignette for depth */}
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 pointer-events-none"
+                style={{ background: 'linear-gradient(180deg, rgba(45,63,47,0) 60%, rgba(45,63,47,0.18) 100%)' }}
+              />
             </div>
           </section>
+        )}
 
-          {/* Hero Image */}
-          {heroImage && (
-            <section className="px-4 mb-16">
-              <div className={`max-w-2xl mx-auto overflow-hidden rounded-2xl ${heroImageAspect || 'aspect-video'}`}>
-                <img
-                  src={heroImage}
-                  alt={heroImageAlt || heroHeading}
-                  className="w-full h-full object-cover"
-                  style={heroImagePosition ? { objectPosition: heroImagePosition } : undefined}
-                  loading="eager"
-                  fetchpriority="high"
-                />
-              </div>
-            </section>
-          )}
-
+        {/* Body column — narrower for reading rhythm */}
+        <div className="max-w-[860px] mx-auto">
           {/* Gallery */}
           {gallery && gallery.length > 0 && (
             <section className="px-4 mb-16">
@@ -437,8 +445,8 @@ const ServicePageLayout = ({
               </div>
             </section>
           )}
-        </main>
-      </div>
+        </div>
+      </main>
       <Footer />
       <ScrollToTop />
     </div>

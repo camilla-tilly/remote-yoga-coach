@@ -9,6 +9,7 @@ import {
   DrawerClose
 } from '@/components/ui/drawer';
 import { Button } from './ui/button';
+import Logo from './Logo';
 
 const locationGroups = [
   {
@@ -95,7 +96,12 @@ const Navbar = () => {
         <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 mx-auto max-w-[1400px]">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link to="/" className="flex items-center" aria-label="Yoga with Camilla, hem">
+            <Link to="/" className="flex items-center gap-2.5 group" aria-label="Yoga with Camilla, hem">
+              <Logo
+                size={34}
+                variant="pine"
+                className="rounded-lg shadow-soft transition-transform duration-300 group-hover:-rotate-3"
+              />
               <p className="text-lg sm:text-xl md:text-2xl font-cormorant font-semibold text-dalashala-earth whitespace-nowrap tracking-tight">
                 Yoga with Camilla
               </p>

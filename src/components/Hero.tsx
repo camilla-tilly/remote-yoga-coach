@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative flex items-center justify-center pt-36 sm:pt-44 md:pt-48 lg:pt-52 bg-white w-full pb-24 md:pb-32"
+      className="relative flex items-center justify-center pt-36 sm:pt-44 md:pt-48 lg:pt-52 w-full pb-24 md:pb-32 bg-gradient-to-b from-white via-white to-dalashala-creamDeep"
     >
       <div className="container-section relative z-10 text-center w-full max-w-3xl px-4 sm:px-6">
         {/* Eyebrow tag — thin sage underline style */}

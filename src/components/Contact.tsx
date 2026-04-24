@@ -21,7 +21,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="relative py-20 md:py-28 bg-white">
+    <section id="contact" className="relative py-20 md:py-28 bg-dalashala-honeyLight/40">
       <div className="relative max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14 animate-when-visible" data-animation="fade-in">
           <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-5">
