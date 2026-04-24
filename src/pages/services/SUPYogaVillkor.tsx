@@ -27,55 +27,55 @@ const SUPYogaVillkor = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-dalashala-beige relative overflow-x-hidden">
+    <div className="min-h-screen bg-white relative overflow-x-hidden">
       <SEO
         title="Deltagarvillkor SUP Yoga – Yoga med Camilla | Participant T&Cs SUP Yoga"
         description="Deltagarvillkor för SUP yoga vid Sickla sjö, Stockholm. Participant terms and conditions for SUP yoga at Sickla Strand, Stockholm. Yoga med Camilla & Smashing Balance."
         canonical="https://yogawithcamilla.se/tjanster/sup-yoga/villkor"
       />
-      <div className="max-w-[750px] mx-auto">
-        <Navbar />
+      <Navbar />
 
-        <main className="pt-20 pb-16 px-4">
-          {/* Header */}
-          <section className="py-10 md:py-14 text-center">
-            <span className="text-xs uppercase tracking-widest font-cinzel text-dalashala-mediumBrown mb-3 block">
-              SUP Yoga · Sickla Strand
-            </span>
-            <h1 className="font-cinzel-decorative text-2xl md:text-3xl text-dalashala-darkBrown mb-4 font-bold leading-snug">
-              {lang === 'sv' ? 'Deltagarvillkor 2026' : 'Participant Terms & Conditions 2026'}
-            </h1>
-            <p className="font-eb-garamond text-base text-dalashala-mediumBrown mb-6">
-              Yoga with Camilla &amp; Smashing Balance
-            </p>
+      <main className="pt-24 pb-20 px-4">
+        {/* Header */}
+        <section className="py-12 md:py-16 text-center">
+          <p className="font-inter text-xs md:text-sm uppercase tracking-[0.42em] text-dalashala-olive font-bold mb-6">
+            SUP Yoga · Sickla Strand
+          </p>
+          <h1 className="font-fraunces text-4xl md:text-5xl lg:text-6xl text-dalashala-earth mb-5 leading-[1.02] tracking-[-0.03em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
+            {lang === 'sv' ? 'Deltagarvillkor 2026' : 'Participant Terms \u0026 Conditions 2026'}
+          </h1>
+          <span className="block mx-auto w-16 h-[2px] bg-dalashala-earth/60 mb-6 rounded-full" aria-hidden="true" />
+          <p className="font-inter text-base md:text-lg text-dalashala-earth/80 mb-8">
+            Yoga with Camilla <span className="amp">&amp;</span> Smashing Balance
+          </p>
 
-            {/* Language toggle */}
-            <div className="inline-flex rounded-full border border-dalashala-tan/40 overflow-hidden">
-              <button
-                onClick={() => setLang('sv')}
-                className={`px-5 py-1.5 text-sm font-montserrat uppercase tracking-wide transition-colors ${
-                  lang === 'sv'
-                    ? 'bg-dalashala-darkBrown text-dalashala-beige'
-                    : 'bg-transparent text-dalashala-darkBrown hover:bg-dalashala-tan/20'
-                }`}
-              >
-                Svenska
-              </button>
-              <button
-                onClick={() => setLang('en')}
-                className={`px-5 py-1.5 text-sm font-montserrat uppercase tracking-wide transition-colors ${
-                  lang === 'en'
-                    ? 'bg-dalashala-darkBrown text-dalashala-beige'
-                    : 'bg-transparent text-dalashala-darkBrown hover:bg-dalashala-tan/20'
-                }`}
-              >
-                English
-              </button>
-            </div>
-          </section>
+          {/* Language toggle */}
+          <div className="inline-flex rounded-full border border-dalashala-meadow overflow-hidden">
+            <button
+              onClick={() => setLang('sv')}
+              className={`px-6 py-2 text-xs font-inter uppercase tracking-[0.2em] font-semibold transition-colors ${
+                lang === 'sv'
+                  ? 'bg-dalashala-earth text-white'
+                  : 'bg-transparent text-dalashala-earth hover:bg-dalashala-meadowLight/50'
+              }`}
+            >
+              Svenska
+            </button>
+            <button
+              onClick={() => setLang('en')}
+              className={`px-6 py-2 text-xs font-inter uppercase tracking-[0.2em] font-semibold transition-colors ${
+                lang === 'en'
+                  ? 'bg-dalashala-earth text-white'
+                  : 'bg-transparent text-dalashala-earth hover:bg-dalashala-meadowLight/50'
+              }`}
+            >
+              English
+            </button>
+          </div>
+        </section>
 
-          {/* T&C Content */}
-          <div className="max-w-2xl mx-auto bg-white rounded-2xl border border-dalashala-tan/20 shadow-sm px-6 py-8 md:px-10 md:py-10 font-eb-garamond text-dalashala-darkBrown">
+        {/* T&C Content */}
+        <div className="max-w-2xl mx-auto bg-white rounded-2xl border border-dalashala-meadow/60 shadow-soft px-6 py-10 md:px-12 md:py-12 font-inter text-dalashala-earth">
 
             {lang === 'sv' ? (
               <>
@@ -177,19 +177,18 @@ const SUPYogaVillkor = () => {
             )}
           </div>
 
-          {/* Back link */}
-          <div className="text-center mt-8">
-            <Link
-              to="/tjanster/sup-yoga"
-              className="font-montserrat text-xs uppercase tracking-widest text-dalashala-mediumBrown hover:text-dalashala-darkBrown transition-colors"
-            >
-              ← {lang === 'sv' ? 'Tillbaka till SUP Yoga' : 'Back to SUP Yoga'}
-            </Link>
-          </div>
-        </main>
+        {/* Back link */}
+        <div className="text-center mt-10">
+          <Link
+            to="/tjanster/sup-yoga"
+            className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive hover:text-dalashala-earth font-bold transition-colors"
+          >
+            ← {lang === 'sv' ? 'Tillbaka till SUP Yoga' : 'Back to SUP Yoga'}
+          </Link>
+        </div>
+      </main>
 
-        <Footer />
-      </div>
+      <Footer />
       <ScrollToTop />
     </div>
   );
@@ -197,23 +196,23 @@ const SUPYogaVillkor = () => {
 
 // Helper components
 const Section = ({ title, children, last }: { title: string; children: React.ReactNode; last?: boolean }) => (
-  <div className={`${last ? '' : 'mb-7 pb-7 border-b border-dalashala-tan/30'}`}>
-    <h2 className="font-cinzel text-sm md:text-base font-bold uppercase tracking-wider text-dalashala-darkBrown mb-3">
+  <div className={`${last ? '' : 'mb-8 pb-8 border-b border-dalashala-meadow/50'}`}>
+    <h2 className="font-inter text-xs md:text-sm font-bold uppercase tracking-[0.32em] text-dalashala-olive mb-4">
       {title}
     </h2>
-    <div className="text-sm md:text-base leading-relaxed text-dalashala-darkBrown/80">
+    <div className="text-base leading-relaxed text-dalashala-earth/85 font-inter">
       {children}
     </div>
   </div>
 );
 
 const PriceTable = ({ rows }: { rows: [string, string][] }) => (
-  <table className="w-full text-sm border-collapse">
+  <table className="w-full text-base border-collapse my-3">
     <tbody>
       {rows.map(([label, price], i) => (
-        <tr key={i} className={i % 2 === 0 ? 'bg-dalashala-beige/60' : ''}>
-          <td className="py-1.5 px-3 rounded-l">{label}</td>
-          <td className="py-1.5 px-3 text-right font-bold rounded-r">{price}</td>
+        <tr key={i} className={i % 2 === 0 ? 'bg-dalashala-creamDeep/50' : ''}>
+          <td className="py-2 px-3 rounded-l">{label}</td>
+          <td className="py-2 px-3 text-right font-semibold text-dalashala-earth rounded-r">{price}</td>
         </tr>
       ))}
     </tbody>

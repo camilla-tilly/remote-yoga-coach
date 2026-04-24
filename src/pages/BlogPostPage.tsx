@@ -5,6 +5,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { getBlogPost } from '@/data/blogPosts';
 import { Button } from '@/components/ui/button';
+import { softenAmp } from '@/lib/amp';
 
 // Parse inline markdown links [label](/path) and return React children.
 // Supports both internal links (starting with "/") and external (starting with "http").
@@ -142,7 +143,7 @@ const BlogPostPage = () => {
     : [];
 
   return (
-    <div className="min-h-screen bg-dalashala-beige relative overflow-x-hidden">
+    <div className="min-h-screen bg-white relative overflow-x-hidden">
       <SEO
         title={`${post.title} | Yoga med Camilla`}
         description={post.metaDescription}
@@ -150,53 +151,53 @@ const BlogPostPage = () => {
         ogType="article"
         structuredData={structuredData}
       />
-      <div className="max-w-[750px] mx-auto">
-        <Navbar />
-        <main className="pt-24 pb-16 px-4">
-          {/* Breadcrumb */}
-          <div className="mb-6">
-            <Link
-              to="/blogg"
-              className="font-montserrat text-xs uppercase tracking-wider text-dalashala-mediumBrown hover:text-dalashala-darkBrown transition-colors"
-            >
-              ← Tillbaka till bloggen
-            </Link>
+      <Navbar />
+      <main className="pt-28 pb-16 px-4">
+        {/* Breadcrumb */}
+        <div className="max-w-[860px] mx-auto mb-8">
+          <Link
+            to="/blogg"
+            className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive hover:text-dalashala-earth transition-colors font-bold"
+          >
+            ← Tillbaka till bloggen
+          </Link>
+        </div>
+
+        {/* Article Header */}
+        <article className="max-w-[760px] mx-auto">
+          <div className="flex items-center gap-4 mb-6">
+            <span className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold">
+              {post.category}
+            </span>
+            <span className="w-8 h-px bg-dalashala-meadow" />
+            <span className="font-inter text-sm text-dalashala-earth/70">
+              {post.readingTime} läsning
+            </span>
           </div>
 
-          {/* Article Header */}
-          <article className="max-w-2xl mx-auto">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="font-montserrat text-xs uppercase tracking-wider text-dalashala-mediumBrown bg-dalashala-tan/30 px-3 py-1 rounded-full">
-                {post.category}
-              </span>
-              <span className="font-montserrat text-xs text-dalashala-mediumBrown/60">
-                {post.readingTime} läsning
-              </span>
-            </div>
+          <h1 className="font-fraunces text-5xl md:text-6xl lg:text-[4.5rem] text-dalashala-earth mb-10 leading-[1] tracking-[-0.03em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
+            {softenAmp(post.title)}
+          </h1>
 
-            <h1 className="font-cormorant font-semibold text-4xl md:text-5xl lg:text-6xl text-dalashala-earth mb-8 leading-[1.05] tracking-tight">
-              {post.title}
-            </h1>
-
-            {/* Article Content */}
-            <div className="bg-white rounded-2xl border border-dalashala-tan/20 shadow-sm p-6 md:p-10 mb-8">
+          {/* Article Content */}
+          <div className="mb-12">
               {/* Table of Contents */}
               {tocHeadings.length > 2 && (
                 <nav
                   aria-label="Innehåll"
-                  className="bg-dalashala-beige/60 border border-dalashala-tan/30 rounded-xl p-4 md:p-5 mb-6"
+                  className="bg-dalashala-creamDeep/70 border border-dalashala-meadow/50 rounded-xl p-5 md:p-6 mb-10"
                 >
-                  <p className="font-montserrat text-xs uppercase tracking-wider text-dalashala-mediumBrown mb-3">
+                  <p className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mb-4">
                     Innehåll
                   </p>
-                  <ol className="space-y-1.5">
+                  <ol className="space-y-2">
                     {tocHeadings.map((h, i) => (
-                      <li key={h.id} className="font-eb-garamond text-sm text-dalashala-mediumBrown">
+                      <li key={h.id} className="font-inter text-[0.9375rem] text-dalashala-earth">
                         <a
                           href={`#${h.id}`}
-                          className="hover:text-dalashala-darkBrown hover:underline decoration-dalashala-tan underline-offset-2"
+                          className="hover:text-dalashala-earthSoft hover:underline decoration-dalashala-meadow underline-offset-2"
                         >
-                          {i + 1}. {h.text}
+                          {i + 1}. {softenAmp(h.text)}
                         </a>
                       </li>
                     ))}
@@ -211,9 +212,10 @@ const BlogPostPage = () => {
                     <h2
                       key={i}
                       id={id}
-                      className="font-cormorant font-semibold text-2xl md:text-3xl text-dalashala-earth mt-10 mb-4 first:mt-0 scroll-mt-24 tracking-tight leading-snug"
+                      className="font-fraunces text-[2rem] md:text-[2.5rem] text-dalashala-earth mt-14 mb-6 first:mt-0 scroll-mt-24 tracking-[-0.025em] leading-[1.08]"
+                      style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 60" }}
                     >
-                      {section.text}
+                      {section.text && softenAmp(section.text)}
                     </h2>
                   );
                 }
@@ -221,21 +223,22 @@ const BlogPostPage = () => {
                   return (
                     <h3
                       key={i}
-                      className="font-cormorant font-medium text-xl md:text-2xl text-dalashala-earth mt-7 mb-3 tracking-tight leading-snug"
+                      className="font-fraunces text-2xl md:text-[1.75rem] text-dalashala-earth mt-10 mb-4 tracking-[-0.02em] leading-snug"
+                      style={{ fontWeight: 400, fontVariationSettings: "'opsz' 48, 'SOFT' 50" }}
                     >
-                      {section.text}
+                      {section.text && softenAmp(section.text)}
                     </h3>
                   );
                 }
                 if (section.type === 'list' && section.items) {
                   return (
-                    <ul key={i} className="my-4 space-y-2 pl-4">
+                    <ul key={i} className="my-6 space-y-3 pl-4">
                       {section.items.map((item, j) => (
                         <li
                           key={j}
-                          className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed flex gap-2"
+                          className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/90 leading-relaxed flex gap-3"
                         >
-                          <span className="text-dalashala-darkBrown mt-1">–</span>
+                          <span className="text-dalashala-earth mt-1.5 text-sm">–</span>
                           <span>{renderInline(item)}</span>
                         </li>
                       ))}
@@ -246,9 +249,9 @@ const BlogPostPage = () => {
                   return (
                     <aside
                       key={i}
-                      className="bg-dalashala-beige/70 border-l-4 border-dalashala-darkBrown rounded-r-lg px-5 py-4 my-6"
+                      className="bg-dalashala-creamDeep/70 border-l-[3px] border-dalashala-earth rounded-r-xl px-6 py-5 my-8"
                     >
-                      <p className="font-eb-garamond text-sm md:text-base text-dalashala-darkBrown leading-relaxed">
+                      <p className="font-inter text-base md:text-lg text-dalashala-earth leading-relaxed">
                         {renderInline(section.text)}
                       </p>
                     </aside>
@@ -258,13 +261,13 @@ const BlogPostPage = () => {
                   return (
                     <blockquote
                       key={i}
-                      className="border-l-2 border-dalashala-sage pl-6 my-8"
+                      className="border-l-2 border-dalashala-olive pl-8 my-12"
                     >
-                      <p className="font-cormorant font-light italic text-xl md:text-2xl text-dalashala-earth leading-relaxed tracking-tight">
+                      <p className="font-fraunces italic text-2xl md:text-[1.75rem] text-dalashala-earth leading-[1.35] tracking-[-0.01em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 72, 'SOFT' 100" }}>
                         {section.text}
                       </p>
                       {section.author && (
-                        <footer className="font-inter text-[11px] uppercase tracking-[0.22em] text-dalashala-olive mt-3 not-italic">
+                        <footer className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mt-4 not-italic">
                           {section.author}
                         </footer>
                       )}
@@ -273,14 +276,14 @@ const BlogPostPage = () => {
                 }
                 if (section.type === 'table' && section.tableHead && section.tableRows) {
                   return (
-                    <div key={i} className="my-6 overflow-x-auto -mx-2 md:mx-0">
+                    <div key={i} className="my-8 overflow-x-auto -mx-2 md:mx-0">
                       <table className="w-full text-sm md:text-base border-collapse">
                         <thead>
-                          <tr className="bg-dalashala-darkBrown text-dalashala-beige">
+                          <tr className="bg-dalashala-earth text-white">
                             {section.tableHead.map((h, j) => (
                               <th
                                 key={j}
-                                className="font-montserrat text-xs uppercase tracking-wider text-left px-3 py-2"
+                                className="font-inter text-xs uppercase tracking-[0.2em] font-bold text-left px-4 py-3"
                               >
                                 {h}
                               </th>
@@ -291,12 +294,12 @@ const BlogPostPage = () => {
                           {section.tableRows.map((row, j) => (
                             <tr
                               key={j}
-                              className="border-b border-dalashala-tan/30 last:border-b-0"
+                              className="border-b border-dalashala-meadow/50 last:border-b-0"
                             >
                               {row.map((cell, k) => (
                                 <td
                                   key={k}
-                                  className="font-eb-garamond text-dalashala-mediumBrown px-3 py-2.5"
+                                  className="font-inter text-dalashala-earth/90 px-4 py-3"
                                 >
                                   {renderInline(cell)}
                                 </td>
@@ -310,19 +313,19 @@ const BlogPostPage = () => {
                 }
                 if (section.type === 'faq' && section.faqItems) {
                   return (
-                    <dl key={i} className="my-6 space-y-3">
+                    <dl key={i} className="my-10 divide-y divide-dalashala-meadow/60 border-y border-dalashala-meadow/60">
                       {section.faqItems.map((item, j) => (
                         <details
                           key={j}
-                          className="group bg-dalashala-beige/40 border border-dalashala-tan/30 rounded-xl px-4 py-3 open:bg-dalashala-beige/70 transition-colors"
+                          className="group py-5"
                         >
-                          <summary className="font-cinzel text-sm md:text-base text-dalashala-darkBrown font-bold cursor-pointer list-none flex justify-between items-center gap-3">
-                            <span>{item.q}</span>
-                            <span className="text-dalashala-mediumBrown text-lg transition-transform group-open:rotate-45">
+                          <summary className="font-inter text-base md:text-lg text-dalashala-earth font-semibold cursor-pointer list-none flex justify-between items-center gap-3 hover:text-dalashala-earthSoft transition-colors">
+                            <span>{softenAmp(item.q)}</span>
+                            <span className="text-dalashala-olive text-2xl font-light transition-transform group-open:rotate-45 shrink-0">
                               +
                             </span>
                           </summary>
-                          <dd className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed mt-3">
+                          <dd className="font-inter font-normal text-base md:text-lg text-dalashala-earth/90 leading-relaxed mt-4">
                             {renderInline(item.a)}
                           </dd>
                         </details>
@@ -333,61 +336,60 @@ const BlogPostPage = () => {
                 return (
                   <p
                     key={i}
-                    className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed mb-4 last:mb-0"
+                    className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/90 leading-relaxed mb-6 last:mb-0"
                   >
                     {section.text && renderInline(section.text)}
                   </p>
                 );
               })}
-            </div>
+          </div>
 
-            {/* CTA to related service */}
-            {post.relatedServiceHref && post.relatedServiceLabel && (
-              <div className="border-t border-b border-dalashala-meadow/60 py-12 text-center my-12">
-                <p className="font-inter font-light text-dalashala-earthSoft text-base mb-6">
-                  Intresserad av att boka?
-                </p>
-                <Button
-                  className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft font-inter py-3 px-10 rounded-full uppercase tracking-[0.2em] text-[13px] transition-colors"
-                  asChild
-                >
-                  <Link to={post.relatedServiceHref}>{post.relatedServiceLabel}</Link>
-                </Button>
-              </div>
-            )}
-
-            {/* Related posts */}
-            {post.relatedPosts && post.relatedPosts.length > 0 && (
-              <div className="mb-8">
-                <p className="font-montserrat text-xs uppercase tracking-wider text-dalashala-mediumBrown mb-3">
-                  Läs också
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {post.relatedPosts.map((rp) => (
-                    <Link
-                      key={rp.slug}
-                      to={`/blogg/${rp.slug}`}
-                      className="font-montserrat text-xs bg-white border border-dalashala-tan/40 text-dalashala-darkBrown px-4 py-2 rounded-full hover:bg-dalashala-darkBrown hover:text-dalashala-beige transition-colors"
-                    >
-                      {rp.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Back to blog */}
-            <div className="text-center">
-              <Link
-                to="/blogg"
-                className="font-montserrat text-xs uppercase tracking-wider text-dalashala-mediumBrown hover:text-dalashala-darkBrown transition-colors"
+          {/* CTA to related service */}
+          {post.relatedServiceHref && post.relatedServiceLabel && (
+            <div className="border-t border-b border-dalashala-meadow/60 py-14 text-center my-14">
+              <p className="font-inter text-base md:text-lg text-dalashala-earth/80 mb-7">
+                Intresserad av att boka?
+              </p>
+              <Button
+                className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 font-inter py-4 px-10 rounded-full uppercase tracking-[0.22em] text-sm font-semibold transition-all shadow-card"
+                asChild
               >
-                ← Fler artiklar
-              </Link>
+                <Link to={post.relatedServiceHref}>{post.relatedServiceLabel}</Link>
+              </Button>
             </div>
-          </article>
-        </main>
-      </div>
+          )}
+
+          {/* Related posts */}
+          {post.relatedPosts && post.relatedPosts.length > 0 && (
+            <div className="mb-10">
+              <p className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mb-5">
+                Läs också
+              </p>
+              <div className="flex flex-wrap gap-3">
+                {post.relatedPosts.map((rp) => (
+                  <Link
+                    key={rp.slug}
+                    to={`/blogg/${rp.slug}`}
+                    className="font-inter text-sm font-semibold uppercase tracking-[0.18em] bg-white border border-dalashala-meadow/80 text-dalashala-earth px-5 py-3 rounded-full hover:border-dalashala-earth hover:bg-dalashala-earth hover:text-white transition-all"
+                  >
+                    {rp.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Back to blog */}
+          <div className="text-center">
+            <Link
+              to="/blogg"
+              className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive hover:text-dalashala-earth font-bold transition-colors"
+            >
+              ← Fler artiklar
+            </Link>
+          </div>
+        </article>
+      </main>
       <Footer />
       <ScrollToTop />
     </div>
