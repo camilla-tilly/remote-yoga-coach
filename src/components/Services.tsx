@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { softenAmp } from '@/lib/amp';
 
 type ServiceCard = {
   title: string;
@@ -76,7 +77,7 @@ const ServiceCard = ({ title, description, href, tag }: ServiceCard) => (
 
     <div>
       <h3 className="font-fraunces text-[1.875rem] md:text-[2.125rem] text-dalashala-earth mb-4 group-hover:text-dalashala-earthSoft transition-colors leading-[1.05] tracking-[-0.02em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 48, 'SOFT' 50" }}>
-        {title}
+        {softenAmp(title)}
       </h3>
       <p className="font-inter font-normal text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed">
         {description}

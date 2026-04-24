@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import SEO from '@/components/SEO';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { softenAmp } from '@/lib/amp';
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -70,7 +71,7 @@ const OmMig = () => {
               Om mig
             </span>
             <h1 className="font-cinzel-decorative text-4xl md:text-5xl text-dalashala-earth leading-tight mb-5 font-bold">
-              Yogalärare i Dalarna<br className="hidden md:block" /> & Stockholm
+              Yogalärare i Dalarna<br className="hidden md:block" /> <span className="amp">&amp;</span> Stockholm
             </h1>
             <div className="flex justify-center items-center gap-2 mb-5">
               <span className="h-px w-10 bg-dalashala-olive/40" />

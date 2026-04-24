@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
+import { softenAmp } from '@/lib/amp';
 
 interface ServiceHighlight {
   heading: string;
@@ -181,7 +182,7 @@ const ServicePageLayout = ({
               {heroTag}
             </p>
             <h1 className="font-fraunces text-5xl md:text-[4.5rem] lg:text-[5.5rem] text-dalashala-earth mb-8 leading-[0.98] tracking-[-0.03em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
-              {heroHeading}
+              {softenAmp(heroHeading)}
             </h1>
             <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
             <p className="font-inter font-normal text-xl md:text-2xl text-dalashala-earth/85 mb-12 leading-relaxed max-w-2xl mx-auto">
@@ -248,7 +249,7 @@ const ServicePageLayout = ({
           <section className="px-4 mb-16">
             <div className="max-w-2xl mx-auto">
               <h2 className="font-cormorant font-semibold text-3xl md:text-4xl text-dalashala-earth mb-6 tracking-tight leading-snug">
-                {introHeading}
+                {softenAmp(introHeading)}
               </h2>
               {introParagraphs.map((p, i) => (
                 <p key={i} className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed mb-5 last:mb-0">
@@ -268,7 +269,7 @@ const ServicePageLayout = ({
                 >
                   <span className="block w-8 h-[2px] bg-dalashala-honey mb-4 rounded-full" aria-hidden="true" />
                   <h3 className="font-cormorant font-semibold text-2xl md:text-[1.625rem] text-dalashala-earth mb-3 tracking-tight leading-snug">
-                    {h.heading}
+                    {softenAmp(h.heading)}
                   </h3>
                   <p className="font-inter font-normal text-base text-dalashala-earth leading-relaxed">
                     {h.text}
@@ -322,7 +323,7 @@ const ServicePageLayout = ({
             <section className="px-4 mb-16">
               <div className="max-w-2xl mx-auto bg-dalashala-creamDeep/60 rounded-xl p-8 md:p-10">
                 <h2 className="font-cormorant font-semibold text-3xl md:text-4xl text-dalashala-earth mb-6 tracking-tight leading-snug">
-                  {detailsHeading}
+                  {softenAmp(detailsHeading)}
                 </h2>
                 {detailsParagraphs.map((p, i) => (
                   <p key={i} className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed mb-5 last:mb-0">
@@ -389,7 +390,7 @@ const ServicePageLayout = ({
                   English
                 </p>
                 <h2 className="font-cormorant font-semibold text-2xl md:text-3xl text-dalashala-earth mb-4 tracking-tight">
-                  {englishKeywords.heading}
+                  {softenAmp(englishKeywords.heading)}
                 </h2>
                 <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed mb-6">
                   {englishKeywords.text}
@@ -408,7 +409,7 @@ const ServicePageLayout = ({
           <section className="px-4 mb-20">
             <div className="max-w-2xl mx-auto text-center py-16 border-t border-b border-dalashala-meadow/60">
               <h2 className="font-cormorant font-semibold text-4xl md:text-5xl text-dalashala-earth mb-5 tracking-tight leading-[1.05]">
-                {ctaHeading}
+                {softenAmp(ctaHeading)}
               </h2>
               <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth mb-8 leading-relaxed max-w-lg mx-auto">
                 {ctaText}

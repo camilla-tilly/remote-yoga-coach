@@ -81,6 +81,19 @@
   p {
     @apply leading-relaxed;
   }
+
+  /* Tone down the Fraunces ampersand at display size — it's beautifully
+     ornate by default, but dominates headings. Rendered via the
+     `softenAmp(...)` helper in src/lib/amp.tsx, which wraps `&` in this span. */
+  .amp {
+    font-size: 0.72em;
+    font-weight: 300;
+    opacity: 0.7;
+    margin: 0 0.05em;
+    letter-spacing: 0.02em;
+    vertical-align: 0.05em;
+    font-variation-settings: "opsz" 48, "SOFT" 30;
+  }
 }
 
 @layer components {
