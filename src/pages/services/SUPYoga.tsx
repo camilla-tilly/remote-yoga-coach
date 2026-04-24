@@ -56,7 +56,6 @@ const SUPYoga = () => (
     gallery={[
       { src: "/images/sup-yoga-paddling.jpg", alt: "Paddla ut till flytbryggan vid Sickla Strand" },
       { src: "/images/sup-yoga-floating-dock.jpg", alt: "Flytbrygga på Sicklasjön i morgonljus" },
-      { src: "/images/sup-yoga-group.jpg", alt: "SUP yoga-klass på sammankopplade paddleboards" },
     ]}
     introHeading="Privat SUP yoga, ledd av mig"
     introParagraphs={[

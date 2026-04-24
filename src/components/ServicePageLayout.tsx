@@ -217,13 +217,16 @@ const ServicePageLayout = ({
           {/* Gallery */}
           {gallery && gallery.length > 0 && (
             <section className="px-4 mb-16">
-              <div className="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div
+                className="max-w-2xl mx-auto grid gap-4"
+                style={{ gridTemplateColumns: `repeat(auto-fit, minmax(min(100%, 220px), 1fr))` }}
+              >
                 {gallery.map((img, i) => (
-                  <div key={i} className="overflow-hidden rounded-xl aspect-[3/4]">
+                  <div key={i} className="overflow-hidden rounded-2xl aspect-[3/4] shadow-sm ring-1 ring-dalashala-meadow/40">
                     <img
                       src={img.src}
                       alt={img.alt}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-500"
                       style={img.position ? { objectPosition: img.position } : undefined}
                       loading="lazy"
                     />
