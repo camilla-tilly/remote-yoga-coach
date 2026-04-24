@@ -1,7 +1,7 @@
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
-  { label: 'SUP Yoga Klasser (drop-in)', href: '/tjanster/sup-yoga-klasser' },
+  { label: 'SUP Yoga Klasser', href: '/tjanster/sup-yoga-klasser' },
   { label: 'Privata Event', href: '/tjanster/privata-event' },
   { label: 'Företagsyoga & Workshops', href: '/tjanster/foretagsyoga' },
   { label: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
@@ -102,7 +102,7 @@ const SUPYoga = () => (
       "Bokning: mejla hello.yogawithcamilla@gmail.com med datum, gruppstorlek och önskat format. Ni får offert samma dag."
     ]}
     ctaHeading="Boka ert privata SUP yoga-event"
-    ctaText="Möhippa, team, födelsedag eller en eftermiddag med vänner. Mejla mig med datum och gruppstorlek så får ni offert samma dag. Letar du efter öppna drop-in-klasser istället? Se SUP Yoga Klasser."
+    ctaText="Möhippa, team, födelsedag eller en eftermiddag med vänner. Mejla mig med datum och gruppstorlek så får ni offert samma dag. Letar du efter öppna veckoklasser istället? Se SUP Yoga Klasser."
     bookingHref="mailto:hello.yogawithcamilla@gmail.com"
     bookingLabel="Mejla för offert"
     termsHref="/tjanster/sup-yoga/villkor"
@@ -130,8 +130,8 @@ const SUPYoga = () => (
         answer: "Nej, ingen erfarenhet krävs. Brädorna är breda och stabila. Vi börjar alltid med en kort säkerhetsgenomgång och introduktion på land."
       },
       {
-        question: "Vad är skillnaden mot drop-in-klasserna?",
-        answer: "Privata event är hela upplevelsen för er grupp, ledd av mig, bokad direkt med mig. Drop-in-klasser är öppna för allmänheten, du bokar enskilda platser via Smashing Balance. Se sidan SUP Yoga Klasser om du letar efter det."
+        question: "Vad är skillnaden mot de öppna veckoklasserna?",
+        answer: "Privata event är hela upplevelsen för er grupp, ledd av mig, bokad direkt med mig. Veckoklasserna är öppna för allmänheten, du bokar enskilda platser via Smashing Balance. Se sidan SUP Yoga Klasser om du letar efter det."
       },
       {
         question: "Vem är Smashing Balance?",
@@ -144,7 +144,7 @@ const SUPYoga = () => (
     ]}
     englishKeywords={{
       heading: "Private SUP Yoga & Sauna Events in Stockholm",
-      text: "Private SUP yoga and sauna events at Sickla Strand, Stockholm. Yoga on paddleboards on the lake, followed by a lakeside sauna. Tailored packages for hen parties, team days, birthdays and friend groups. From 500 kr per person, groups of 3 to 10 (larger groups on request). All equipment included via our partner Smashing Balance. No experience needed, taught in English. Email hello.yogawithcamilla@gmail.com with your dates and group size for a same-day quote. Looking for public drop-in classes instead? See the SUP Yoga Klasser page."
+      text: "Private SUP yoga and sauna events at Sickla Strand, Stockholm. Yoga on paddleboards on the lake, followed by a lakeside sauna. Tailored packages for hen parties, team days, birthdays and friend groups. From 500 kr per person, groups of 3 to 10 (larger groups on request). All equipment included via our partner Smashing Balance. No experience needed, taught in English. Email hello.yogawithcamilla@gmail.com with your dates and group size for a same-day quote. Looking for open weekly classes instead? See the SUP Yoga Klasser page."
     }}
   />
 );

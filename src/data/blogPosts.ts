@@ -492,20 +492,20 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'sup-yoga-stockholm',
-    title: 'SUP yoga Stockholm: privat event eller drop-in klass, här är skillnaden',
-    metaDescription: 'SUP yoga i Stockholm vid Sickla Strand: vinyasa eller yin på paddleboard, bastu ingår. Drop-in klasser via Smashing Balance, privata event för möhippa och team direkt med mig.',
+    title: 'SUP yoga Stockholm: privat event eller öppen klass, här är skillnaden',
+    metaDescription: 'SUP yoga i Stockholm vid Sickla Strand: vinyasa eller yin på paddleboard, bastu ingår. Öppna veckoklasser via Smashing Balance, privata event för möhippa och team direkt med mig.',
     publishDate: '2026-03-15',
     readingTime: '9 min',
     category: 'SUP Yoga',
-    excerpt: 'Yoga på paddleboard vid Sickla Strand, 15 minuter från T-centralen. Bastu ingår. Det finns två sätt att vara med: drop-in klass via Smashing Balance, eller privat event för er grupp via mig. Här är skillnaden, priserna och vad som faktiskt ingår.',
+    excerpt: 'Yoga på paddleboard vid Sickla Strand, 15 minuter från T-centralen. Bastu ingår. Det finns två sätt att vara med: öppen veckoklass via Smashing Balance, eller privat event för er grupp via mig. Här är skillnaden, priserna och vad som faktiskt ingår.',
     relatedServiceHref: '/tjanster/sup-yoga',
     relatedServiceLabel: 'Boka privat SUP Yoga',
     tableOfContents: true,
     faqSchema: true,
     relatedPosts: [
-      { slug: 'sup-yoga-klasser-stockholm', label: 'SUP yoga klasser Stockholm: drop-in, klippkort, säsongspass' },
-      { slug: 'mohippa-aktiviteter-stockholm', label: '7 möhippa-aktiviteter i Stockholm' },
-      { slug: 'hen-party-ideas-stockholm', label: '6 Bachelorette Party Ideas in Stockholm' },
+      { slug: 'sup-yoga-klasser-stockholm', label: 'SUP yoga klasser Stockholm: enstaka klass, klippkort, säsongspass' },
+      { slug: 'mohippa-aktiviteter-stockholm', label: '6 möhippa-aktiviteter i Stockholm' },
+      { slug: 'hen-party-ideas-stockholm', label: '5 Bachelorette Party Ideas in Stockholm' },
       { slug: 'sommaravslutning-aktiviteter-stockholm', label: '7 idéer för sommaravslutning i Stockholm' },
       { slug: 'teambuilding-aktiviteter-stockholm', label: '7 teambuilding-aktiviteter i Stockholm' },
     ],
@@ -516,7 +516,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'callout',
-        text: 'Snabbinfo: SUP yoga vid Sickla Strand i Nacka, i samarbete med Smashing Balance. Säsong slutet april till september. Två sätt att vara med: **drop-in klass från 350 kr** (vinyasa eller yin, 75 min, bastu ingår, [bokas via Smashing Balance](https://smashingbalance.se/collections/sup-yoga)) eller **privat event från 500 kr per person** för möhippa, team eller födelsedag, [bokas direkt med mig](mailto:hello.yogawithcamilla@gmail.com).'
+        text: 'Snabbinfo: SUP yoga vid Sickla Strand i Nacka, i samarbete med Smashing Balance. Säsong slutet april till september. Två sätt att vara med: **öppen veckoklass från 350 kr** (vinyasa eller yin, 75 min, bastu ingår, [bokas via Smashing Balance](https://smashingbalance.se/collections/sup-yoga)) eller **privat event från 500 kr per person** för möhippa, team eller födelsedag, [bokas direkt med mig](mailto:hello.yogawithcamilla@gmail.com).'
       },
       {
         type: 'heading',
@@ -552,7 +552,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'subheading',
-        text: 'Alternativ 1: Drop-in klass (för dig själv eller med någon)'
+        text: 'Alternativ 1: Öppen veckoklass (för dig själv eller med någon)'
       },
       {
         type: 'paragraph',
@@ -560,7 +560,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Drop-in 350 kr (bräda och bastu ingår), 150 kr om du tar med egen SUP, 10-klippkort 1 000 kr, säsongspass 2026 för 1 500 kr. Allt bokas via min partner Smashing Balance på [smashingbalance.se/collections/sup-yoga](https://smashingbalance.se/collections/sup-yoga). Mer detaljer på [SUP yoga klasser Stockholm](/blogg/sup-yoga-klasser-stockholm).'
+        text: 'Enstaka klass 350 kr (bräda och bastu ingår), 150 kr om du tar med egen SUP, 10-klippkort 1 000 kr, säsongspass 2026 för 1 500 kr. Allt bokas via min partner Smashing Balance på [smashingbalance.se/collections/sup-yoga](https://smashingbalance.se/collections/sup-yoga). Mer detaljer på [SUP yoga klasser Stockholm](/blogg/sup-yoga-klasser-stockholm).'
       },
       {
         type: 'subheading',
@@ -594,8 +594,8 @@ export const blogPosts: BlogPost[] = [
         type: 'table',
         tableHead: ['Upplägg', 'Längd', 'Pris', 'Bokas via'],
         tableRows: [
-          ['Drop-in klass', '75 min', '350 kr', 'Smashing Balance'],
-          ['Drop-in (egen SUP)', '75 min', '150 kr', 'Smashing Balance'],
+          ['Enstaka klass', '75 min', '350 kr', 'Smashing Balance'],
+          ['Enstaka klass (egen SUP)', '75 min', '150 kr', 'Smashing Balance'],
           ['10-klippkort', '10 klasser', '1 000 kr', 'Smashing Balance'],
           ['Säsongspass 2026', 'Hela säsongen', '1 500 kr', 'Smashing Balance'],
           ['Privat event', '2 till 4 tim', 'från 500 kr / person', 'Direkt med mig'],
@@ -679,8 +679,8 @@ export const blogPosts: BlogPost[] = [
         type: 'faq',
         faqItems: [
           {
-            q: 'Var bokar jag drop-in?',
-            a: 'Drop-in-klasserna bokas via min partner Smashing Balance på smashingbalance.se/collections/sup-yoga. Där ser du aktuellt schema och alla biljettyper (drop-in, klippkort, säsongspass).',
+            q: 'Var bokar jag en enstaka klass?',
+            a: 'Veckoklasserna bokas via min partner Smashing Balance på smashingbalance.se/collections/sup-yoga. Där ser du aktuellt schema och alla biljettyper (enstaka klass, klippkort, säsongspass).',
           },
           {
             q: 'Var bokar jag ett privat event?',
@@ -688,7 +688,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Vad är Smashing Balance?',
-            a: 'Vår partner som driver platsen vid Sickla Strand: brädorna, bastun, säkerhetsutrustningen, schemat för drop-in-klasser. Jag undervisar yogan och håller hela upplevelsen.',
+            a: 'Vår partner som driver platsen vid Sickla Strand: brädorna, bastun, säkerhetsutrustningen, schemat för veckoklasserna. Jag undervisar yogan och håller hela upplevelsen.',
           },
           {
             q: 'Behöver jag kunna paddla?',
@@ -703,7 +703,7 @@ export const blogPosts: BlogPost[] = [
             a: 'Det händer ofta första gången du försöker stå upp. Vattnet är rent och sommartid varmt. Du kravlar upp på brädan igen och klassen fortsätter. Ramlandet är en del av upplevelsen.',
           },
           {
-            q: 'Vad kostar en drop-in klass?',
+            q: 'Vad kostar en enstaka klass?',
             a: '350 kr per klass, inklusive bräda, paddel, flytväst och bastu efter passet. 150 kr om du tar med egen SUP. Klippkort (10 klasser) 1 000 kr, säsongspass 1 500 kr. Allt via Smashing Balance.',
           },
           {
@@ -712,11 +712,11 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Hur lång är en klass?',
-            a: 'Drop-in 75 minuter inklusive paddling till och från ankringsplatsen. Privata event 2 till 4 timmar inklusive yoga, bastu och hängtid vid sjön.',
+            a: 'Öppna klasser är 75 minuter inklusive paddling till och från ankringsplatsen. Privata event 2 till 4 timmar inklusive yoga, bastu och hängtid vid sjön.',
           },
           {
             q: 'Ingår bastu?',
-            a: 'Ja, bastu vid sjön ingår i alla pass, både drop-in och privata event.',
+            a: 'Ja, bastu vid sjön ingår i alla pass, både öppna klasser och privata event.',
           },
           {
             q: 'När är säsongen?',
@@ -736,7 +736,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Vad händer vid dåligt väder?',
-            a: 'Vid hård vind (över 6 m/s), åska eller för kallt vatten flyttar vi passet. För drop-in får du info via Smashing Balance, för privata event blir du kontaktad senast kvällen innan.',
+            a: 'Vid hård vind (över 6 m/s), åska eller för kallt vatten flyttar vi passet. För öppna klasser får du info via Smashing Balance, för privata event blir du kontaktad senast kvällen innan.',
           },
         ],
       },
@@ -746,14 +746,14 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Vill ni boka en privat grupp för möhippa, team eller födelsedag? Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal och om ni vill ha extra bastutid. Mer detaljer på [Privat SUP Yoga](/tjanster/sup-yoga). Vill du bara komma på en drop-in klass? Se schema och boka direkt på [Smashing Balance](https://smashingbalance.se/collections/sup-yoga), eller läs mer på [SUP yoga klasser Stockholm](/blogg/sup-yoga-klasser-stockholm).'
+        text: 'Vill ni boka en privat grupp för möhippa, team eller födelsedag? Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal och om ni vill ha extra bastutid. Mer detaljer på [Privat SUP Yoga](/tjanster/sup-yoga). Vill du bara komma på en öppen veckoklass? Se schema och boka direkt på [Smashing Balance](https://smashingbalance.se/collections/sup-yoga), eller läs mer på [SUP yoga klasser Stockholm](/blogg/sup-yoga-klasser-stockholm).'
       },
     ]
   },
   {
     slug: 'sup-yoga-klasser-stockholm',
-    title: 'SUP yoga klasser Stockholm: drop-in, klippkort och säsongspass på Sickla Strand',
-    metaDescription: 'Drop-in SUP yoga i Stockholm vid Sickla Strand. Vinyasa eller yin på paddleboard, 75 min, bastu ingår. Drop-in 350 kr, 10-klippkort 1 000 kr, säsongspass 1 500 kr.',
+    title: 'SUP yoga klasser Stockholm: enstaka klass, klippkort och säsongspass på Sickla Strand',
+    metaDescription: 'Öppna SUP yoga-klasser varje vecka i Stockholm vid Sickla Strand. Vinyasa eller yin på paddleboard, 75 min, bastu ingår. Enstaka klass 350 kr, 10-klippkort 1 000 kr, säsongspass 1 500 kr.',
     publishDate: '2026-04-24',
     readingTime: '7 min',
     category: 'SUP Yoga',
@@ -763,18 +763,18 @@ export const blogPosts: BlogPost[] = [
     tableOfContents: true,
     faqSchema: true,
     relatedPosts: [
-      { slug: 'sup-yoga-stockholm', label: 'SUP yoga Stockholm: privat event eller drop-in klass' },
+      { slug: 'sup-yoga-stockholm', label: 'SUP yoga Stockholm: privat event eller öppen klass' },
       { slug: 'mohippa-aktiviteter-stockholm', label: '7 möhippa-aktiviteter i Stockholm' },
       { slug: 'sommaravslutning-aktiviteter-stockholm', label: '7 idéer för sommaravslutning i Stockholm' },
     ],
     content: [
       {
         type: 'paragraph',
-        text: 'Det här är guiden till de öppna [SUP yoga-klasserna](/tjanster/sup-yoga-klasser) jag undervisar i Stockholm under sommaren. Drop-in, klippkort eller säsongspass. Du behöver inte boka en hel grupp, du kan komma själv eller med en vän.',
+        text: 'Det här är guiden till de öppna [SUP yoga-klasserna](/tjanster/sup-yoga-klasser) jag undervisar i Stockholm under sommaren. Enstaka klass, klippkort eller säsongspass. Du behöver inte boka en hel grupp, du kan komma själv eller med en vän.',
       },
       {
         type: 'callout',
-        text: 'Snabbinfo: Vinyasa eller yin SUP yoga vid Sickla Strand. 75 minuter inklusive paddling. Bastu vid sjön ingår. Säsong slutet april till september 2026. Drop-in 350 kr, 150 kr med egen SUP, 10-klippkort 1 000 kr, säsongspass 1 500 kr. [Boka via Smashing Balance](https://smashingbalance.se/collections/sup-yoga).',
+        text: 'Snabbinfo: Vinyasa eller yin SUP yoga vid Sickla Strand. 75 minuter inklusive paddling. Bastu vid sjön ingår. Säsong slutet april till september 2026. Enstaka klass 350 kr, 150 kr med egen SUP, 10-klippkort 1 000 kr, säsongspass 1 500 kr. [Boka via Smashing Balance](https://smashingbalance.se/collections/sup-yoga).',
       },
       {
         type: 'heading',
@@ -820,8 +820,8 @@ export const blogPosts: BlogPost[] = [
         type: 'table',
         tableHead: ['Biljett', 'Pris', 'Vad ingår'],
         tableRows: [
-          ['Drop-in klass', '350 kr', 'En klass, bräda, paddel, flytväst, dry bag, bastu'],
-          ['Drop-in (egen SUP)', '150 kr', 'En klass om du tar med egen bräda, bastu ingår'],
+          ['Enstaka klass', '350 kr', 'En klass, bräda, paddel, flytväst, dry bag, bastu'],
+          ['Enstaka klass (egen SUP)', '150 kr', 'En klass om du tar med egen bräda, bastu ingår'],
           ['10-klippkort', '1 000 kr', 'Tio klasser, bräda och bastu ingår'],
           ['Säsongspass 2026', '1 500 kr', 'Obegränsade klasser hela säsongen'],
         ],
@@ -897,11 +897,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'heading',
-        text: 'Drop-in vs privat event',
+        text: 'Öppen veckoklass vs privat event',
       },
       {
         type: 'paragraph',
-        text: 'Om du vill komma på egen hand eller med en vän, drop-in är rätt. Om ni är en grupp som vill ha hela upplevelsen för er själva, möhippa, team, födelsedag, då passar ett [privat SUP yoga-event](/tjanster/sup-yoga) bättre. Privata event bokas direkt med mig från 500 kr per person, och hela upplägget anpassas efter er.',
+        text: 'Om du vill komma på egen hand eller med en vän, en öppen veckoklass är rätt. Om ni är en grupp som vill ha hela upplevelsen för er själva, möhippa, team, födelsedag, då passar ett [privat SUP yoga-event](/tjanster/sup-yoga) bättre. Privata event bokas direkt med mig från 500 kr per person, och hela upplägget anpassas efter er.',
       },
       {
         type: 'heading',
@@ -916,7 +916,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Vad kostar det?',
-            a: 'Drop-in 350 kr, 150 kr med egen SUP, 10-klippkort 1 000 kr, säsongspass 2026 för 1 500 kr. Bastu ingår alltid.',
+            a: 'Enstaka klass 350 kr, 150 kr med egen SUP, 10-klippkort 1 000 kr, säsongspass 2026 för 1 500 kr. Bastu ingår alltid.',
           },
           {
             q: 'Hur lång är en klass?',
@@ -1784,8 +1784,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'mohippa-aktiviteter-stockholm',
-    title: '7 möhippa-aktiviteter i Stockholm du inte tänkt på',
-    metaDescription: 'Planerar du möhippa i Stockholm? Här är 7 aktiviteter som faktiskt funkar för hela gänget, från SUP yoga med bastu till skärgårdstur och vinprovning.',
+    title: '6 möhippa-aktiviteter i Stockholm du inte tänkt på',
+    metaDescription: 'Planerar du möhippa i Stockholm? Här är 6 aktiviteter som faktiskt funkar för hela gänget, från SUP yoga med bastu till skärgårdstur och vinprovning.',
     publishDate: '2026-04-15',
     readingTime: '6 min',
     category: 'Events & Möhippa',
@@ -1807,19 +1807,17 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'AVEQIA är det klassiska valet för privata grupper i Stockholm: 10 till 140 personer, privata köksrum, kockar som guidar genom en tre- eller fyrarätters meny. För mindre och mer personliga upplägg kör Swedish Taste säsongsmenyer och vinkurser i mindre format. Kolla vad bruden älskar att äta och välj därefter.' },
       { type: 'heading', text: '4. Vinprovning eller bubbelprovning' },
       { type: 'paragraph', text: 'Grus Grus Wine Bar kör 1-timmas provningar för privata grupper på 6–10 personer: ni väljer tema, sommeliern väljer fyra viner, och det finns tid att faktiskt prata. För en mer skräddarsydd upplevelse drivs Nolea av en WSET-3-sommelier som kommer till er lägenhet, ett vinkällare på Östermalm eller en jägarstuga i Enskede. Från runt 5 000 kr. Funkar lika bra som förmiddags- som kvällsaktivitet.' },
-      { type: 'heading', text: '5. Privat yoga på morgonen' },
-      { type: 'paragraph', text: 'Starta möhippan med en privat yogaklass bara för er grupp. Lägenhet, hotellrum, park eller hyrd lokal. 60 minuter som sätter stämningen för hela dagen. Ingen erfarenhet krävs.' },
-      { type: 'heading', text: '6. Cocktailkurs med Bartendrr' },
+      { type: 'heading', text: '5. Cocktailkurs med Bartendrr' },
       { type: 'paragraph', text: 'Bartendrr kommer till er lägenhet eller AirBnB med bar, glas, råvaror och is, och guidar gruppen genom två–tre signaturdrinkar. Ingen behöver ha skakat en drink förut. Funkar extra bra om någon i gänget ogillar yoga eller spa, alla är med på cocktails. Pairar bra med middag efteråt.' },
-      { type: 'heading', text: '7. Spa med privat avdelning' },
+      { type: 'heading', text: '6. Spa med privat avdelning' },
       { type: 'paragraph', text: 'Stockholms Spa & Hälsostudio och Sparadiset erbjuder båda privata avdelningar ni kan boka för er grupp: jacuzzi, bastu, behandlingar, ingen främmande ni stöter på i omklädningsrummet. För en större upplevelse 50 minuter utanför stan har Smådalarö Gård Sveriges enda grupbehandlingsrum med plats för upp till 10 personer. Avslappnat, socialt och en fin finish på dagen, särskilt i kombination med yoga på morgonen.' },
-      { type: 'paragraph', text: 'Två av aktiviteterna ovan bokar ni direkt via mig: SUP yoga och bastu (yogawithcamilla.se/tjanster/sup-yoga) och privat yoga för er grupp (yogawithcamilla.se/tjanster/privata-event). Mejla hello.yogawithcamilla@gmail.com med datum och antal så får ni en offert samma dag.' },
+      { type: 'paragraph', text: 'SUP yoga och bastu bokar ni direkt via mig (yogawithcamilla.se/tjanster/sup-yoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så får ni en offert samma dag.' },
     ]
   },
   {
     slug: 'hen-party-ideas-stockholm',
-    title: '6 Bachelorette Party Ideas in Stockholm',
-    metaDescription: 'Planning a bachelorette party in Stockholm? Here are 6 unforgettable bachelorette activities, from SUP yoga and sauna to archipelago boat trips and cooking classes.',
+    title: '5 Bachelorette Party Ideas in Stockholm',
+    metaDescription: 'Planning a bachelorette party in Stockholm? Here are 5 unforgettable bachelorette activities, from SUP yoga and sauna to archipelago boat trips and cooking classes.',
     publishDate: '2026-04-15',
     readingTime: '6 min',
     category: 'Events & Möhippa',
@@ -1830,21 +1828,19 @@ export const blogPosts: BlogPost[] = [
       { slug: 'mohippa-aktiviteter-stockholm', label: 'Möhippa i Stockholm, 7 aktiviteter' },
     ],
     content: [
-      { type: 'paragraph', text: 'Stockholm is genuinely one of the best cities in the world for a bachelorette party. Water everywhere, world-class spas, cobblestone streets in Gamla Stan, and a food scene that keeps getting better. These are six of the best bachelorette party ideas in Stockholm right now.' },
+      { type: 'paragraph', text: 'Stockholm is genuinely one of the best cities in the world for a bachelorette party. Water everywhere, world-class spas, cobblestone streets in Gamla Stan, and a food scene that keeps getting better. These are five of the best bachelorette party ideas in Stockholm right now.' },
       { type: 'heading', text: '1. Private SUP yoga and sauna at Sickla Strand' },
       { type: 'paragraph', text: 'This is the one. Yoga on paddleboards on a calm Stockholm lake, followed by a sauna on the water\'s edge. No experience needed. The boards are wide and stable, and the whole session is taught in English. Vinyasa or yin, you pick the style.' },
       { type: 'paragraph', text: 'The private SUP yoga and sauna experience runs at Sickla Strand in Nacka, just outside central Stockholm. Usually 3 to 10 people, larger groups on request. From 500 kr per person. Led by me, with venue and equipment provided by our partner Smashing Balance. All gear included.' },
       { type: 'heading', text: '2. Private archipelago boat tour with Strandrederi' },
       { type: 'paragraph', text: 'Stockholm\'s archipelago is 30,000 islands and the best way to see it as a group is on a private charter. Strandrederi rents skippered boats by the day, set up for groups with food and drink on board. For larger parties, Kanebo Event runs boats up to 110 guests. If you want adrenaline, RIB Stockholm will get you further out in less time: 2 hours to a full day.' },
-      { type: 'heading', text: '3. Private yoga session for your group' },
-      { type: 'paragraph', text: 'Start the day with a private yoga class just for your group. I come to you: your hotel, an Airbnb, a park, or a rented studio. 60 minutes that sets the tone for the whole day. No experience needed. Works beautifully as a morning warm-up before SUP yoga or dinner out.' },
-      { type: 'heading', text: '4. Swedish cooking class at AVEQIA' },
+      { type: 'heading', text: '3. Swedish cooking class at AVEQIA' },
       { type: 'paragraph', text: 'AVEQIA is what most private groups in Stockholm book: 10 to 140 people, private kitchen-dining rooms, a three- or four-course menu guided by chefs. Nobody needs to know how to cook beforehand. For smaller and more personal, Swedish Taste runs seasonal menus in an intimate format.' },
-      { type: 'heading', text: '5. Cocktail masterclass with Bartendrr' },
+      { type: 'heading', text: '4. Cocktail masterclass with Bartendrr' },
       { type: 'paragraph', text: 'Bartendrr will come to your Airbnb or hotel with a full bar, ingredients, ice and glassware, and walk the group through making two or three signature cocktails. Everyone gets to mix, shake, and stir, and by the end of two hours nobody is a stranger. Moyagi is the alternative if you want a venue rather than in-house. They combine cocktail craft with an Asian sharing menu.' },
-      { type: 'heading', text: '6. Wine tasting with Grus Grus or Nolea' },
+      { type: 'heading', text: '5. Wine tasting with Grus Grus or Nolea' },
       { type: 'paragraph', text: 'Grus Grus Wine Bar in Gamla Stan runs 1-hour private tastings for groups of 6 to 10: you pick the theme, their sommelier picks the wines, and you actually get time to talk. For something more tailored, Nolea is run by a WSET-3 sommelier and will come to you: your Airbnb, a wine cellar in Östermalm, or a hunter\'s cabin in Enskede. From around 5 000 SEK. Good choice for a low-key close to the day.' },
-      { type: 'paragraph', text: 'Two of the activities above are bookable directly through me: SUP yoga and sauna (yogawithcamilla.se/tjanster/sup-yoga) and private group yoga (yogawithcamilla.se/tjanster/privata-event). Email hello.yogawithcamilla@gmail.com with your dates and group size for a same-day quote.' },
+      { type: 'paragraph', text: 'SUP yoga and sauna is bookable directly through me (yogawithcamilla.se/tjanster/sup-yoga). Email hello.yogawithcamilla@gmail.com with your dates and group size for a same-day quote.' },
     ]
   },
   {
@@ -1945,7 +1941,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'En privat yogaklass för teamet, på kontoret, i konferenslokalen eller utomhus. 60 minuter som bryter av och ger ny energi. Alla nivåer, ingen erfarenhet krävs.' },
       { type: 'heading', text: '7. Vinprovning med Nolea eller cocktailkurs med Bartendrr' },
       { type: 'paragraph', text: 'För vin: Nolea drivs av en WSET-3-sommelier och gör skräddarsydda företagsprovningar hemma på kontoret, i en vinkällare på Östermalm eller i en jägarstuga i Enskede. 1,5–2 timmar från runt 5 000 kr. För cocktails: Bartendrr kommer till er med bar, glas, råvaror och is och guidar teamet genom två–tre signaturdrinkar. Båda ger gruppen något att fokusera på så att samtalet får en anledning att hända.' },
-      { type: 'paragraph', text: 'Tre av aktiviteterna ovan bokar ni direkt via mig: SUP yoga och bastu (yogawithcamilla.se/tjanster/sup-yoga), yoga för teamet (yogawithcamilla.se/tjanster/foretagsyoga), och privata event (yogawithcamilla.se/tjanster/privata-event). Mejla hello.yogawithcamilla@gmail.com med datum och antal så får ni en offert samma dag.' },
+      { type: 'paragraph', text: 'Två av aktiviteterna ovan bokar ni direkt via mig: SUP yoga och bastu (yogawithcamilla.se/tjanster/sup-yoga) och yoga för teamet (yogawithcamilla.se/tjanster/foretagsyoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så får ni en offert samma dag.' },
     ]
   },
   {
@@ -1979,7 +1975,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'A private yoga session at your office, conference venue, or outdoors works well as a morning opener, a lunch reset, or a closing session at the end of a conference day. 60 minutes, adapted for all levels, no equipment required from the team.' },
       { type: 'heading', text: '7. Wine Tasting with Nolea or a Cocktail Masterclass with Bartendrr' },
       { type: 'paragraph', text: 'For wine, Nolea is run by a WSET-3 sommelier and does tailored corporate tastings: in your office, in a wine cellar in Östermalm, or in a hunter\'s cabin in Enskede. Sessions run 1.5 to 2 hours from around 5 000 SEK. For cocktails, Bartendrr will come to your office with bar, equipment, ingredients and ice, and walk the team through making two or three signature drinks. Both formats give the group something to focus on so the conversation has a reason to happen.' },
-      { type: 'paragraph', text: 'Three of the activities above are bookable directly through me: SUP yoga and sauna (yogawithcamilla.se/tjanster/sup-yoga), yoga for your team (yogawithcamilla.se/tjanster/foretagsyoga), and private events (yogawithcamilla.se/tjanster/privata-event). Email hello.yogawithcamilla@gmail.com with your dates and group size for a same-day quote.' },
+      { type: 'paragraph', text: 'Two of the activities above are bookable directly through me: SUP yoga and sauna (yogawithcamilla.se/tjanster/sup-yoga) and yoga for your team (yogawithcamilla.se/tjanster/foretagsyoga). Email hello.yogawithcamilla@gmail.com with your dates and group size for a same-day quote.' },
     ]
   }
 ];

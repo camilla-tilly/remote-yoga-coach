@@ -87,8 +87,8 @@ const SUPYogaVillkor = () => {
                 <Section title="Priser">
                   <PriceTable
                     rows={[
-                      ['Drop-in (inkl. utrustning + bastu)', '350 kr'],
-                      ['Drop-in med egen bräda (+ bastu)', '150 kr'],
+                      ['Enstaka klass (inkl. utrustning + bastu)', '350 kr'],
+                      ['Enstaka klass med egen bräda (+ bastu)', '150 kr'],
                       ['Säsongskort 2026 (inkl. bastu)', '1 500 kr'],
                       ['Klipkort – 10 klasser', '1 000 kr'],
                     ]}
@@ -97,12 +97,12 @@ const SUPYogaVillkor = () => {
                 </Section>
 
                 <Section title="Avbokning av deltagare">
-                  <p><strong>Drop-in:</strong> Platser reserveras via bokningssystemet men betalas vid ankomst. Om du behöver avboka, vänligen gör det senast 24 timmar i förväg så att platsen kan erbjudas till någon annan. Upprepade sena avbokningar eller uteblivna besök kan påverka möjligheten att boka framtida klasser.</p>
+                  <p><strong>Enstaka klass:</strong> Platser reserveras via bokningssystemet men betalas vid ankomst. Om du behöver avboka, vänligen gör det senast 24 timmar i förväg så att platsen kan erbjudas till någon annan. Upprepade sena avbokningar eller uteblivna besök kan påverka möjligheten att boka framtida klasser.</p>
                   <p className="mt-2"><strong>Säsongskort:</strong> Avbokning av enskild klass måste ske senast 24 timmar före start för att berättiga till kredit. Kredit är personlig, giltig under resten av säsongen och kan ej lösas in mot kontanter.</p>
                 </Section>
 
                 <Section title="Inställt av arrangören">
-                  <p>Klassen kan ställas in vid för få anmälda deltagare, alltför kraftig blåst eller annan omständighet utanför arrangörens kontroll. Deltagare meddelas senast 2 timmar före start. Drop-in-deltagare debiteras inte. Säsongskortsinnehavare och klipkortsinnehavare erhåller kredit för den inställda klassen.</p>
+                  <p>Klassen kan ställas in vid för få anmälda deltagare, alltför kraftig blåst eller annan omständighet utanför arrangörens kontroll. Deltagare meddelas senast 2 timmar före start. Deltagare som betalar per klass debiteras inte. Säsongskortsinnehavare och klipkortsinnehavare erhåller kredit för den inställda klassen.</p>
                 </Section>
 
                 <Section title="Säkerhet och eget ansvar">
@@ -136,8 +136,8 @@ const SUPYogaVillkor = () => {
                 <Section title="Pricing">
                   <PriceTable
                     rows={[
-                      ['Drop-in (incl. equipment + sauna)', '350 kr'],
-                      ['Drop-in with own board (+ sauna)', '150 kr'],
+                      ['Single class (incl. equipment + sauna)', '350 kr'],
+                      ['Single class with own board (+ sauna)', '150 kr'],
                       ['Season pass 2026 (incl. sauna)', '1 500 kr'],
                       ['10-class card (klipkort)', '1 000 kr'],
                     ]}

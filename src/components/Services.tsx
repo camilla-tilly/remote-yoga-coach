@@ -10,11 +10,6 @@ type ServiceCard = {
 
 const stockholmServices: ServiceCard[] = [
   {
-    title: 'Privata Event',
-    description: 'Möhippa, födelsedag eller sommaravslutning. Privat yoga för gruppen.',
-    href: '/tjanster/privata-event',
-  },
-  {
     title: 'Företagsyoga & Workshops',
     description: 'Konferenser, kickoffs, teambuilding och tematiska workshops. Alla nivåer.',
     href: '/tjanster/foretagsyoga',
@@ -25,8 +20,8 @@ const stockholmServices: ServiceCard[] = [
     href: '/tjanster/sup-yoga',
   },
   {
-    title: 'SUP Yoga Klasser (drop-in)',
-    description: 'Öppna vinyasa- och yin-klasser på vattnet vid Sickla Strand. Bastu ingår. Bokas via Smashing Balance.',
+    title: 'SUP Yoga Klasser',
+    description: 'Öppna vinyasa- och yin-klasser på vattnet vid Sickla Strand varje vecka under säsong. Bastu ingår. Bokas via Smashing Balance.',
     href: '/tjanster/sup-yoga-klasser',
   },
 ];

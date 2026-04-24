@@ -10,8 +10,8 @@ const cards = [
     body: 'I Dalarna: altan omgivet av gran, frisk luft och naturens egna ljud. I Stockholm: SUP yoga på Sicklasjön eller etablerade studios.',
   },
   {
-    title: 'På din plats',
-    body: 'Kan ni inte ta er hit? Jag kommer till er med mattor och allt som behövs. Konferensrum, stuga eller trädgård, det går bra.',
+    title: 'På er plats',
+    body: 'Föredrar ni att jag kommer till er? Jag tar med mattor och allt som behövs. Konferensrum, stuga eller trädgård, det går bra.',
   },
   {
     title: 'Ingen press, ingen bedömning',

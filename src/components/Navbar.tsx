@@ -15,10 +15,9 @@ const locationGroups = [
   {
     location: 'Stockholm',
     links: [
-      { name: 'Privata Event', href: '/tjanster/privata-event' },
       { name: 'Företagsyoga & Workshops', href: '/tjanster/foretagsyoga' },
       { name: 'SUP Yoga (privat event)', href: '/tjanster/sup-yoga' },
-      { name: 'SUP Yoga Klasser (drop-in)', href: '/tjanster/sup-yoga-klasser' },
+      { name: 'SUP Yoga Klasser', href: '/tjanster/sup-yoga-klasser' },
     ]
   },
   {

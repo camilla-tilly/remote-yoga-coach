@@ -2,7 +2,6 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
   { label: 'Privat SUP Yoga (möhippa, team)', href: '/tjanster/sup-yoga' },
-  { label: 'Privata Event', href: '/tjanster/privata-event' },
   { label: 'Företagsyoga & Workshops', href: '/tjanster/foretagsyoga' },
 ];
 
@@ -10,7 +9,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "SUP Yoga Klasser Stockholm – Vinyasa & Yin på Sickla Strand",
-  "description": "Drop-in SUP yoga-klasser i Stockholm vid Sickla Strand. Vinyasa eller yin på paddleboard, 75 minuter, bastu ingår. Säsong slutet april till september.",
+  "description": "Öppna SUP yoga-klasser varje vecka i Stockholm vid Sickla Strand. Vinyasa eller yin på paddleboard, 75 minuter, bastu ingår. Säsong slutet april till september.",
   "provider": { "@type": "LocalBusiness", "name": "Yoga with Camilla", "url": "https://yogawithcamilla.se" },
   "areaServed": ["Stockholm"],
   "url": "https://yogawithcamilla.se/tjanster/sup-yoga-klasser",
@@ -18,8 +17,8 @@ const structuredData = {
     "@type": "OfferCatalog",
     "name": "SUP Yoga Klasser priser",
     "itemListElement": [
-      { "@type": "Offer", "name": "Drop-in klass", "price": "350", "priceCurrency": "SEK", "description": "En SUP yoga-klass, bräda och bastu ingår" },
-      { "@type": "Offer", "name": "Drop-in (egen SUP)", "price": "150", "priceCurrency": "SEK", "description": "En SUP yoga-klass om du tar med egen bräda, bastu ingår" },
+      { "@type": "Offer", "name": "Enstaka klass", "price": "350", "priceCurrency": "SEK", "description": "En SUP yoga-klass, bräda och bastu ingår" },
+      { "@type": "Offer", "name": "Enstaka klass (egen SUP)", "price": "150", "priceCurrency": "SEK", "description": "En SUP yoga-klass om du tar med egen bräda, bastu ingår" },
       { "@type": "Offer", "name": "10-klippkort", "price": "1000", "priceCurrency": "SEK", "description": "Tio SUP yoga-klasser, bräda och bastu ingår" },
       { "@type": "Offer", "name": "Säsongspass 2026", "price": "1500", "priceCurrency": "SEK", "description": "Obegränsade SUP yoga-klasser hela säsongen, bräda och bastu ingår" }
     ]
@@ -29,20 +28,20 @@ const structuredData = {
 const SUPYogaKlasser = () => (
   <ServicePageLayout
     seoTitle="SUP Yoga Klasser Stockholm – Vinyasa & Yin på Sickla Strand | Yoga with Camilla"
-    seoDescription="Drop-in SUP yoga i Stockholm vid Sickla Strand. Vinyasa eller yin, 75 min, bastu ingår. Drop-in 350 kr, 10-klippkort 1 000 kr, säsongspass 1 500 kr. Säsong slutet april till september."
+    seoDescription="Öppna SUP yoga-klasser varje vecka i Stockholm vid Sickla Strand. Vinyasa eller yin, 75 min, bastu ingår. Enstaka klass 350 kr, 10-klippkort 1 000 kr, säsongspass 1 500 kr. Säsong slutet april till september."
     canonical="https://yogawithcamilla.se/tjanster/sup-yoga-klasser"
     ogImage="https://yogawithcamilla.se/images/sup-yoga-klasser.jpg"
     breadcrumbLabel="SUP Yoga Klasser Stockholm"
-    heroTag="Drop-in Klasser · SUP Yoga Stockholm"
+    heroTag="Öppna Veckoklasser · SUP Yoga Stockholm"
     heroHeading="SUP Yoga Klasser i Stockholm"
-    heroSubtitle="Vinyasa eller yin på paddleboard vid Sickla Strand. 75 minuter, bastu ingår. Säsong slutet april till september. Bokas via Smashing Balance."
+    heroSubtitle="Öppna vinyasa- eller yin-klasser på paddleboard vid Sickla Strand. 75 minuter, bastu ingår. Säsong slutet april till september. Bokas via Smashing Balance."
     heroImage="/images/sup-yoga-klasser.jpg"
     heroImageAlt="SUP yoga-klass på paddleboards vid Sickla Strand"
     heroImageAspect="aspect-[4/5]"
     heroImagePosition="center center"
     introHeading="Öppna SUP yoga-klasser, vinyasa eller yin"
     introParagraphs={[
-      "Det här är de öppna drop-in-klasserna jag undervisar varje vecka under säsongen. Du bokar en plats för dig själv, kommer 10 till 15 minuter innan för säkerhetsgenomgång, och är på vattnet i 75 minuter.",
+      "Det här är de öppna klasserna jag undervisar varje vecka under säsongen. Du bokar en plats för dig själv, kommer 10 till 15 minuter innan för säkerhetsgenomgång, och är på vattnet i 75 minuter.",
       "Klasserna hålls vid Sickla Strand, vid Elton's Café och Uthyrning, i samarbete med Smashing Balance som står för plats, brädor och bastu. Bastu vid sjön ingår i varje klass.",
       "Bokning sker via Smashing Balance. Letar du efter ett privat event för möhippa, team eller födelsedag istället? Se Privat SUP Yoga."
     ]}
@@ -73,8 +72,8 @@ const SUPYogaKlasser = () => (
       }
     ]}
     pricing={[
-      { label: "Drop-in", price: "350 kr", note: "Bräda och bastu ingår" },
-      { label: "Drop-in (egen SUP)", price: "150 kr", note: "Om du tar med egen bräda" },
+      { label: "Enstaka klass", price: "350 kr", note: "Bräda och bastu ingår" },
+      { label: "Enstaka klass (egen SUP)", price: "150 kr", note: "Om du tar med egen bräda" },
       { label: "10-klippkort", price: "1 000 kr", note: "Tio klasser, bräda och bastu ingår" },
       { label: "Säsongspass 2026", price: "1 500 kr", note: "Obegränsat hela säsongen" }
     ]}
@@ -89,7 +88,7 @@ const SUPYogaKlasser = () => (
       "Bokning sker via Smashing Balance. Klicka på knappen nedan för att se aktuella tider och boka."
     ]}
     ctaHeading="Boka en SUP yoga-klass"
-    ctaText="Se aktuellt schema och boka direkt via Smashing Balance. Drop-in från 350 kr, klippkort och säsongspass tillgängliga. Letar du efter ett privat event för er grupp istället? Se Privat SUP Yoga."
+    ctaText="Se aktuellt schema och boka direkt via Smashing Balance. Enstaka klass från 350 kr, klippkort och säsongspass tillgängliga. Letar du efter ett privat event för er grupp istället? Se Privat SUP Yoga."
     bookingHref="https://smashingbalance.se/collections/sup-yoga"
     bookingLabel="Boka SUP klass →"
     structuredData={structuredData}
@@ -97,7 +96,7 @@ const SUPYogaKlasser = () => (
     faq={[
       {
         question: "Var bokar jag?",
-        answer: "Drop-in-klasserna bokas via vår partner Smashing Balance på smashingbalance.se/collections/sup-yoga. Där ser du aktuellt schema och alla biljettyper."
+        answer: "Klasserna bokas via vår partner Smashing Balance på smashingbalance.se/collections/sup-yoga. Där ser du aktuellt schema och alla biljettyper."
       },
       {
         question: "Hur lång är en klass?",
@@ -109,11 +108,11 @@ const SUPYogaKlasser = () => (
       },
       {
         question: "Ingår bastu?",
-        answer: "Ja, bastu vid sjön ingår i alla drop-in-klasser, oavsett biljettyp."
+        answer: "Ja, bastu vid sjön ingår i alla klasser, oavsett biljettyp."
       },
       {
         question: "Vad kostar det?",
-        answer: "Drop-in 350 kr (bräda och bastu ingår), 150 kr om du tar med egen SUP, 10-klippkort 1 000 kr och säsongspass 2026 för 1 500 kr."
+        answer: "Enstaka klass 350 kr (bräda och bastu ingår), 150 kr om du tar med egen SUP, 10-klippkort 1 000 kr och säsongspass 2026 för 1 500 kr."
       },
       {
         question: "Behöver jag erfarenhet?",
@@ -129,8 +128,8 @@ const SUPYogaKlasser = () => (
       }
     ]}
     englishKeywords={{
-      heading: "SUP Yoga Drop-in Classes in Stockholm",
-      text: "Open drop-in SUP yoga classes at Sickla Strand, Stockholm. Vinyasa or yin on paddleboards, 75 minutes including paddling time, lakeside sauna included. Season runs late April through September 2026. Drop-in 350 kr (board and sauna included), 150 kr if you bring your own SUP, 10-class pass 1 000 kr, season pass 1 500 kr. All classes taught in English. No experience needed. Booking via our partner Smashing Balance at smashingbalance.se/collections/sup-yoga. Looking for a private group event for a hen party, team day or birthday instead? See the Private SUP Yoga page."
+      heading: "SUP Yoga Classes in Stockholm",
+      text: "Open SUP yoga classes every week at Sickla Strand, Stockholm. Vinyasa or yin on paddleboards, 75 minutes including paddling time, lakeside sauna included. Season runs late April through September 2026. Single class 350 kr (board and sauna included), 150 kr if you bring your own SUP, 10-class pass 1 000 kr, season pass 1 500 kr. All classes taught in English. No experience needed. Booking via our partner Smashing Balance at smashingbalance.se/collections/sup-yoga. Looking for a private group event for a hen party, team day or birthday instead? See the Private SUP Yoga page."
     }}
   />
 );
