@@ -35,7 +35,7 @@ const WhyYogaWithCamilla = () => {
             Så jag jobbar
           </p>
           <h2 className="font-fraunces text-5xl md:text-6xl lg:text-7xl text-dalashala-earth mb-8 tracking-[-0.03em] leading-[0.98]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
-            Varför Yoga med <em className="italic" style={{ fontWeight: 300, fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>Camilla</em>
+            Varför Yoga med Camilla
           </h2>
           <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
           <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/85 leading-relaxed max-w-xl mx-auto">

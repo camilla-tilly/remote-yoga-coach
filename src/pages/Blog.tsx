@@ -42,7 +42,7 @@ const Blog = () => {
               Inspiration &amp; Information
             </p>
             <h1 className="font-fraunces text-7xl md:text-8xl lg:text-[8rem] text-dalashala-earth tracking-[-0.03em] mb-8 leading-[0.95]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
-              <em className="italic" style={{ fontWeight: 300, fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>Blogg</em>
+              Blogg
             </h1>
             <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
             <p className="font-inter font-normal text-xl md:text-2xl text-dalashala-earth/85 max-w-xl mx-auto leading-relaxed">

@@ -28,7 +28,7 @@ const Contact = () => {
             Kontakt
           </p>
           <h2 className="font-fraunces text-5xl md:text-6xl lg:text-7xl text-dalashala-earth mb-8 tracking-[-0.03em] leading-[0.98]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
-            Hör av <em className="italic" style={{ fontWeight: 300, fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>dig</em>
+            Hör av dig
           </h2>
           <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
           <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/85 max-w-lg mx-auto leading-relaxed">

@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="flex flex-col items-center text-center gap-5">
           <Logo size={60} variant="pine" className="rounded-2xl ring-1 ring-white/15" />
           <h2 className="font-fraunces text-4xl md:text-5xl text-white tracking-[-0.02em] mt-3 leading-[1]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
-            Yoga with <em className="italic" style={{ fontWeight: 300, fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>Camilla</em>
+            Yoga with Camilla
           </h2>
           <span className="block w-16 h-[2px] bg-white/50 mt-2 rounded-full" aria-hidden="true" />
           <p className="font-inter font-normal text-lg md:text-xl text-white/85 max-w-md leading-relaxed mt-3">

@@ -38,7 +38,7 @@ const Hero = () => {
           className="font-fraunces text-[3.75rem] sm:text-[5rem] md:text-[6.75rem] lg:text-[8rem] xl:text-[9rem] text-dalashala-earth mb-8 opacity-0 -translate-y-3 transition-all duration-1000 ease-out tracking-[-0.035em] leading-[0.92]"
           style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}
         >
-          Yoga with<br className="md:hidden" /> <em className="font-fraunces italic" style={{ fontWeight: 300, fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>Camilla</em>
+          Yoga with<br className="md:hidden" /> Camilla
         </p>
 
         {/* Thin pine line */}
