@@ -24,14 +24,14 @@ const Contact = () => {
     <section id="contact" className="relative py-20 md:py-28 bg-white">
       <div className="relative max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14 animate-when-visible" data-animation="fade-in">
-          <p className="font-inter text-[11px] uppercase tracking-[0.32em] text-dalashala-olive mb-5">
+          <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-5">
             Kontakt
           </p>
-          <h2 className="font-cormorant font-light text-3xl md:text-4xl lg:text-5xl text-dalashala-earth mb-6 tracking-tight leading-tight">
+          <h2 className="font-cormorant font-semibold text-4xl md:text-5xl lg:text-6xl text-dalashala-earth mb-6 tracking-tight leading-[1.05]">
             Hör av dig
           </h2>
-          <span className="block mx-auto w-10 h-px bg-dalashala-sage mb-6 opacity-70" aria-hidden="true" />
-          <p className="font-inter font-light text-base text-dalashala-earthSoft max-w-lg mx-auto leading-relaxed">
+          <span className="block mx-auto w-12 h-px bg-dalashala-sage mb-6 opacity-80" aria-hidden="true" />
+          <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth max-w-lg mx-auto leading-relaxed">
             Frågor om ett pass, eller redo att boka?
           </p>
         </div>
@@ -44,16 +44,16 @@ const Contact = () => {
                 href={href}
                 target={external ? '_blank' : undefined}
                 rel={external ? 'noopener noreferrer' : undefined}
-                className="group flex items-center gap-5 py-5 hover:pl-2 transition-[padding] duration-300"
+                className="group flex items-center gap-5 py-6 hover:pl-2 transition-[padding] duration-300"
               >
-                <span className="flex-shrink-0 w-9 h-9 rounded-full border border-dalashala-meadow flex items-center justify-center text-dalashala-olive group-hover:bg-dalashala-earth group-hover:text-white group-hover:border-dalashala-earth transition-colors">
-                  <Icon size={16} />
+                <span className="flex-shrink-0 w-10 h-10 rounded-full border border-dalashala-meadow flex items-center justify-center text-dalashala-olive group-hover:bg-dalashala-earth group-hover:text-white group-hover:border-dalashala-earth transition-colors">
+                  <Icon size={18} />
                 </span>
                 <div className="flex-1 min-w-0">
-                  <p className="font-inter text-[10px] uppercase tracking-[0.28em] text-dalashala-olive mb-1">
+                  <p className="font-inter text-xs uppercase tracking-[0.28em] text-dalashala-olive font-semibold mb-1">
                     {label}
                   </p>
-                  <p className="font-inter font-light text-sm md:text-base text-dalashala-earth group-hover:text-dalashala-olive transition-colors truncate">
+                  <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth group-hover:text-dalashala-olive transition-colors truncate">
                     {value}
                   </p>
                 </div>

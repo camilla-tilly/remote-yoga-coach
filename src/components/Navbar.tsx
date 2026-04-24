@@ -96,7 +96,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <Link to="/" className="flex items-center" aria-label="Yoga with Camilla, hem">
-              <p className="text-base sm:text-lg md:text-xl font-cormorant font-light text-dalashala-earth whitespace-nowrap tracking-tight">
+              <p className="text-lg sm:text-xl md:text-2xl font-cormorant font-semibold text-dalashala-earth whitespace-nowrap tracking-tight">
                 Yoga with Camilla
               </p>
             </Link>
@@ -107,7 +107,7 @@ const Navbar = () => {
               <div className="relative" ref={dropdownRef}>
                 <button
                   onClick={() => setServicesOpen(!servicesOpen)}
-                  className="flex items-center gap-1 font-inter text-sm text-dalashala-earth hover:text-dalashala-olive transition-colors font-normal whitespace-nowrap"
+                  className="flex items-center gap-1 font-inter text-[15px] text-dalashala-earth hover:text-dalashala-olive transition-colors font-medium whitespace-nowrap"
                 >
                   Tjänster
                   <ChevronDown
@@ -142,21 +142,21 @@ const Navbar = () => {
 
               <Link
                 to="/blogg"
-                className="font-inter text-sm text-dalashala-earth hover:text-dalashala-olive transition-colors font-normal"
+                className="font-inter text-[15px] text-dalashala-earth hover:text-dalashala-olive transition-colors font-medium"
               >
                 Blogg
               </Link>
 
               <Link
                 to="/om-mig"
-                className="font-inter text-sm text-dalashala-earth hover:text-dalashala-olive transition-colors font-normal"
+                className="font-inter text-[15px] text-dalashala-earth hover:text-dalashala-olive transition-colors font-medium"
               >
                 Om mig
               </Link>
 
               <button
                 onClick={() => scrollToSection('contact')}
-                className="font-inter text-sm text-dalashala-earth hover:text-dalashala-olive transition-colors font-normal"
+                className="font-inter text-[15px] text-dalashala-earth hover:text-dalashala-olive transition-colors font-medium"
               >
                 Kontakt
               </button>

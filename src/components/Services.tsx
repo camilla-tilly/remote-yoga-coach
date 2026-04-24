@@ -72,22 +72,22 @@ const tagStyles: Record<string, string> = {
 const ServiceCard = ({ title, description, href, tag }: ServiceCard) => (
   <Link
     to={href}
-    className="group flex flex-col justify-between bg-white rounded-xl p-7 border border-dalashala-meadow/50 hover:border-dalashala-olive/60 hover:-translate-y-0.5 transition-all duration-300"
+    className="group flex flex-col justify-between bg-white rounded-xl p-7 md:p-8 border border-dalashala-meadow/60 hover:border-dalashala-olive/60 hover:-translate-y-0.5 transition-all duration-300"
   >
     <div>
       {tag && (
-        <span className={`tag-pill mb-4 ${tagStyles[tag] || tagStyles['Nytt']}`}>
+        <span className={`tag-pill mb-4 font-semibold ${tagStyles[tag] || tagStyles['Nytt']}`}>
           {tag}
         </span>
       )}
-      <h3 className="font-cormorant font-light text-xl md:text-[1.5rem] text-dalashala-earth mb-3 group-hover:text-dalashala-olive transition-colors leading-snug tracking-tight">
+      <h3 className="font-cormorant font-semibold text-[1.625rem] md:text-[1.75rem] text-dalashala-earth mb-3 group-hover:text-dalashala-olive transition-colors leading-snug tracking-tight">
         {title}
       </h3>
-      <p className="font-inter font-light text-sm text-dalashala-earthSoft leading-relaxed">
+      <p className="font-inter font-normal text-base text-dalashala-earth leading-relaxed">
         {description}
       </p>
     </div>
-    <span className="mt-6 inline-flex items-center gap-2 font-inter text-[11px] text-dalashala-olive uppercase tracking-[0.22em] group-hover:text-dalashala-earth transition-colors">
+    <span className="mt-6 inline-flex items-center gap-2 font-inter text-xs text-dalashala-olive uppercase tracking-[0.22em] font-semibold group-hover:text-dalashala-earth transition-colors">
       Läs mer
       <span className="transition-transform group-hover:translate-x-1">→</span>
     </span>
@@ -96,7 +96,7 @@ const ServiceCard = ({ title, description, href, tag }: ServiceCard) => (
 
 const LocationHeader = ({ label }: { label: string }) => (
   <div className="flex items-baseline gap-5 mb-10">
-    <h3 className="font-cormorant font-light text-2xl md:text-3xl text-dalashala-earth tracking-tight whitespace-nowrap">
+    <h3 className="font-cormorant font-semibold text-3xl md:text-4xl text-dalashala-earth tracking-tight whitespace-nowrap">
       {label}
     </h3>
     <span className="flex-1 h-px bg-dalashala-meadow" />
@@ -109,14 +109,14 @@ const Services = () => {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="max-w-2xl mx-auto text-center mb-16">
-          <p className="font-inter text-[11px] uppercase tracking-[0.32em] text-dalashala-olive mb-5">
+          <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-5">
             Tjänster
           </p>
-          <h2 className="font-cormorant font-light text-3xl md:text-4xl lg:text-5xl text-dalashala-earth mb-6 leading-tight tracking-tight">
+          <h2 className="font-cormorant font-semibold text-4xl md:text-5xl lg:text-6xl text-dalashala-earth mb-6 leading-[1.05] tracking-tight">
             Vad jag erbjuder
           </h2>
-          <span className="block mx-auto w-10 h-px bg-dalashala-sage mb-6 opacity-70" aria-hidden="true" />
-          <p className="font-inter font-light text-base text-dalashala-earthSoft leading-relaxed">
+          <span className="block mx-auto w-12 h-px bg-dalashala-sage mb-6 opacity-80" aria-hidden="true" />
+          <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed">
             Privat yoga för grupper och individer,
             i stadsmiljö eller mitt i skogen.
           </p>
@@ -144,15 +144,15 @@ const Services = () => {
 
         {/* Bottom CTA */}
         <div className="relative mt-20 border-t border-dalashala-meadow/60 pt-14 text-center">
-          <h3 className="font-cormorant font-light text-2xl md:text-3xl text-dalashala-earth mb-4 tracking-tight">
+          <h3 className="font-cormorant font-semibold text-3xl md:text-4xl text-dalashala-earth mb-4 tracking-tight">
             Ser du inte det du letar efter?
           </h3>
-          <p className="font-inter font-light text-base text-dalashala-earthSoft mb-8 max-w-lg mx-auto leading-relaxed">
+          <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth mb-8 max-w-lg mx-auto leading-relaxed">
             Hör av dig, jag skräddarsyr gärna något för just er grupp, er dag och er plats.
           </p>
           <a
             href="#contact"
-            className="inline-block font-inter text-[13px] uppercase tracking-[0.2em] bg-dalashala-earth text-white px-10 py-3.5 rounded-full hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300"
+            className="inline-block font-inter text-sm font-semibold uppercase tracking-[0.2em] bg-dalashala-earth text-white px-10 py-4 rounded-full hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300"
           >
             Kontakta mig
           </a>

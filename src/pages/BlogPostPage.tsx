@@ -174,7 +174,7 @@ const BlogPostPage = () => {
               </span>
             </div>
 
-            <h1 className="font-cinzel text-xl md:text-2xl text-dalashala-darkBrown font-bold mb-6 leading-snug">
+            <h1 className="font-cormorant font-semibold text-4xl md:text-5xl lg:text-6xl text-dalashala-earth mb-8 leading-[1.05] tracking-tight">
               {post.title}
             </h1>
 
@@ -211,7 +211,7 @@ const BlogPostPage = () => {
                     <h2
                       key={i}
                       id={id}
-                      className="font-cinzel text-base md:text-lg text-dalashala-darkBrown font-bold mt-8 mb-4 first:mt-0 scroll-mt-24"
+                      className="font-cormorant font-semibold text-2xl md:text-3xl text-dalashala-earth mt-10 mb-4 first:mt-0 scroll-mt-24 tracking-tight leading-snug"
                     >
                       {section.text}
                     </h2>
@@ -221,7 +221,7 @@ const BlogPostPage = () => {
                   return (
                     <h3
                       key={i}
-                      className="font-cinzel text-sm md:text-base text-dalashala-darkBrown font-bold mt-6 mb-3"
+                      className="font-cormorant font-medium text-xl md:text-2xl text-dalashala-earth mt-7 mb-3 tracking-tight leading-snug"
                     >
                       {section.text}
                     </h3>
@@ -233,7 +233,7 @@ const BlogPostPage = () => {
                       {section.items.map((item, j) => (
                         <li
                           key={j}
-                          className="font-eb-garamond text-sm md:text-base text-dalashala-mediumBrown leading-relaxed flex gap-2"
+                          className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed flex gap-2"
                         >
                           <span className="text-dalashala-darkBrown mt-1">–</span>
                           <span>{renderInline(item)}</span>
@@ -322,7 +322,7 @@ const BlogPostPage = () => {
                               +
                             </span>
                           </summary>
-                          <dd className="font-eb-garamond text-sm md:text-base text-dalashala-mediumBrown leading-relaxed mt-3">
+                          <dd className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed mt-3">
                             {renderInline(item.a)}
                           </dd>
                         </details>
@@ -333,7 +333,7 @@ const BlogPostPage = () => {
                 return (
                   <p
                     key={i}
-                    className="font-eb-garamond text-sm md:text-base text-dalashala-mediumBrown leading-relaxed mb-4 last:mb-0"
+                    className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed mb-4 last:mb-0"
                   >
                     {section.text && renderInline(section.text)}
                   </p>

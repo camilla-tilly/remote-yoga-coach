@@ -175,18 +175,18 @@ const ServicePageLayout = ({
           {/* Hero Section */}
           <section className="relative py-14 md:py-20 px-4">
             <div className="relative max-w-2xl mx-auto text-center">
-              <p className="font-inter text-[11px] uppercase tracking-[0.32em] text-dalashala-olive mb-6">
+              <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-6">
                 {heroTag}
               </p>
-              <h1 className="font-cormorant font-light text-3xl md:text-5xl lg:text-6xl text-dalashala-earth mb-6 leading-[1.05] tracking-tight">
+              <h1 className="font-cormorant font-semibold text-4xl md:text-5xl lg:text-6xl text-dalashala-earth mb-6 leading-[1.05] tracking-tight">
                 {heroHeading}
               </h1>
-              <span className="block mx-auto w-10 h-px bg-dalashala-sage mb-6 opacity-70" aria-hidden="true" />
-              <p className="font-inter font-light text-base md:text-lg text-dalashala-earthSoft mb-10 leading-relaxed max-w-xl mx-auto">
+              <span className="block mx-auto w-12 h-px bg-dalashala-sage mb-6 opacity-80" aria-hidden="true" />
+              <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth mb-10 leading-relaxed max-w-xl mx-auto">
                 {heroSubtitle}
               </p>
               <Button
-                className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-3 px-10 rounded-full uppercase tracking-[0.2em] text-[13px]"
+                className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-4 px-10 rounded-full uppercase tracking-[0.2em] text-sm font-semibold"
                 asChild
               >
                 <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
@@ -215,11 +215,11 @@ const ServicePageLayout = ({
           {/* Intro */}
           <section className="px-4 mb-16">
             <div className="max-w-2xl mx-auto">
-              <h2 className="font-cormorant font-light text-2xl md:text-3xl text-dalashala-earth mb-6 tracking-tight leading-snug">
+              <h2 className="font-cormorant font-semibold text-3xl md:text-4xl text-dalashala-earth mb-6 tracking-tight leading-snug">
                 {introHeading}
               </h2>
               {introParagraphs.map((p, i) => (
-                <p key={i} className="font-inter font-light text-base text-dalashala-earthSoft leading-relaxed mb-5 last:mb-0">
+                <p key={i} className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed mb-5 last:mb-0">
                   {p}
                 </p>
               ))}
@@ -232,13 +232,13 @@ const ServicePageLayout = ({
               {highlights.map((h, i) => (
                 <div
                   key={i}
-                  className="bg-white border border-dalashala-meadow/60 rounded-xl p-7 hover:border-dalashala-olive/60 transition-colors duration-300"
+                  className="bg-white border border-dalashala-meadow/60 rounded-xl p-7 md:p-8 hover:border-dalashala-olive/60 transition-colors duration-300"
                 >
-                  <span className="block w-6 h-px bg-dalashala-olive mb-4" aria-hidden="true" />
-                  <h3 className="font-cormorant font-light text-xl md:text-2xl text-dalashala-earth mb-3 tracking-tight leading-snug">
+                  <span className="block w-8 h-px bg-dalashala-olive mb-4" aria-hidden="true" />
+                  <h3 className="font-cormorant font-semibold text-2xl md:text-[1.625rem] text-dalashala-earth mb-3 tracking-tight leading-snug">
                     {h.heading}
                   </h3>
-                  <p className="font-inter font-light text-sm text-dalashala-earthSoft leading-relaxed">
+                  <p className="font-inter font-normal text-base text-dalashala-earth leading-relaxed">
                     {h.text}
                   </p>
                 </div>
@@ -251,10 +251,10 @@ const ServicePageLayout = ({
             <section className="px-4 mb-14">
               <div className="max-w-2xl mx-auto">
                 <div className="text-center mb-10">
-                  <p className="font-inter text-[11px] uppercase tracking-[0.32em] text-dalashala-olive mb-4">
+                  <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-4">
                     Priser
                   </p>
-                  <h2 className="font-cormorant font-light text-2xl md:text-3xl text-dalashala-earth tracking-tight">
+                  <h2 className="font-cormorant font-semibold text-3xl md:text-4xl text-dalashala-earth tracking-tight">
                     Välj det som passar
                   </h2>
                 </div>
@@ -262,23 +262,23 @@ const ServicePageLayout = ({
                   {pricing.map((tier, i) => (
                     <div
                       key={i}
-                      className="bg-white border border-dalashala-meadow/60 rounded-xl p-7 text-center hover:border-dalashala-olive/60 transition-colors duration-300"
+                      className="bg-white border border-dalashala-meadow/60 rounded-xl p-7 md:p-8 text-center hover:border-dalashala-olive/60 transition-colors duration-300"
                     >
-                      <p className="font-inter text-[10px] uppercase tracking-[0.28em] text-dalashala-olive mb-3">
+                      <p className="font-inter text-xs uppercase tracking-[0.28em] text-dalashala-olive font-semibold mb-3">
                         {tier.label}
                       </p>
-                      <p className="font-cormorant font-light text-2xl md:text-3xl text-dalashala-earth mb-2 tracking-tight">
+                      <p className="font-cormorant font-semibold text-3xl md:text-[2rem] text-dalashala-earth mb-2 tracking-tight">
                         {tier.price}
                       </p>
                       {tier.note && (
-                        <p className="font-inter font-light text-xs text-dalashala-earthSoft/80">
+                        <p className="font-inter font-normal text-sm text-dalashala-earth/80">
                           {tier.note}
                         </p>
                       )}
                     </div>
                   ))}
                 </div>
-                <p className="font-inter font-light text-xs text-dalashala-earthSoft/70 text-center mt-6">
+                <p className="font-inter font-normal text-sm text-dalashala-earth/70 text-center mt-6">
                   Alla priser är inklusive utrustning. Kontakta mig för skräddarsydd offert.
                 </p>
               </div>
@@ -288,12 +288,12 @@ const ServicePageLayout = ({
           {/* Optional Details */}
           {detailsHeading && detailsParagraphs && (
             <section className="px-4 mb-16">
-              <div className="max-w-2xl mx-auto bg-dalashala-creamDeep/60 rounded-xl p-7 md:p-10">
-                <h2 className="font-cormorant font-light text-2xl md:text-3xl text-dalashala-earth mb-6 tracking-tight leading-snug">
+              <div className="max-w-2xl mx-auto bg-dalashala-creamDeep/60 rounded-xl p-8 md:p-10">
+                <h2 className="font-cormorant font-semibold text-3xl md:text-4xl text-dalashala-earth mb-6 tracking-tight leading-snug">
                   {detailsHeading}
                 </h2>
                 {detailsParagraphs.map((p, i) => (
-                  <p key={i} className="font-inter font-light text-base text-dalashala-earthSoft leading-relaxed mb-5 last:mb-0">
+                  <p key={i} className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed mb-5 last:mb-0">
                     {p}
                   </p>
                 ))}
@@ -320,9 +320,12 @@ const ServicePageLayout = ({
             <section className="px-4 mb-16">
               <div className="max-w-2xl mx-auto">
                 <div className="text-center mb-8">
-                  <p className="font-inter text-[11px] uppercase tracking-[0.32em] text-dalashala-olive">
+                  <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-3">
                     Vanliga frågor
                   </p>
+                  <h2 className="font-cormorant font-semibold text-3xl md:text-4xl text-dalashala-earth tracking-tight">
+                    FAQ
+                  </h2>
                 </div>
                 <div className="divide-y divide-dalashala-meadow/60 border-y border-dalashala-meadow/60">
                   {faq.map((item, i) => (
@@ -330,12 +333,12 @@ const ServicePageLayout = ({
                       key={i}
                       className="group"
                     >
-                      <summary className="font-inter text-base text-dalashala-earth py-5 cursor-pointer list-none flex items-center justify-between gap-4 hover:text-dalashala-olive transition-colors">
-                        <span className="font-normal">{item.question}</span>
-                        <span className="text-dalashala-olive ml-2 group-open:rotate-45 transition-transform text-xl font-light shrink-0">+</span>
+                      <summary className="font-inter text-base md:text-lg text-dalashala-earth py-6 cursor-pointer list-none flex items-center justify-between gap-4 hover:text-dalashala-olive transition-colors">
+                        <span className="font-semibold">{item.question}</span>
+                        <span className="text-dalashala-olive ml-2 group-open:rotate-45 transition-transform text-2xl font-light shrink-0">+</span>
                       </summary>
                       <div className="pb-6">
-                        <p className="font-inter font-light text-sm text-dalashala-earthSoft leading-relaxed">
+                        <p className="font-inter font-normal text-base text-dalashala-earth leading-relaxed">
                           {item.answer}
                         </p>
                       </div>
@@ -349,18 +352,18 @@ const ServicePageLayout = ({
           {/* English Keywords Section */}
           {englishKeywords && (
             <section className="px-4 mb-16">
-              <div className="max-w-2xl mx-auto bg-dalashala-creamDeep/60 rounded-xl p-7 md:p-10">
-                <p className="font-inter text-[11px] uppercase tracking-[0.32em] text-dalashala-olive mb-4">
+              <div className="max-w-2xl mx-auto bg-dalashala-creamDeep/60 rounded-xl p-8 md:p-10">
+                <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-4">
                   English
                 </p>
-                <h2 className="font-cormorant font-light text-xl md:text-2xl text-dalashala-earth mb-4 tracking-tight">
+                <h2 className="font-cormorant font-semibold text-2xl md:text-3xl text-dalashala-earth mb-4 tracking-tight">
                   {englishKeywords.heading}
                 </h2>
-                <p className="font-inter font-light text-base text-dalashala-earthSoft leading-relaxed mb-6">
+                <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed mb-6">
                   {englishKeywords.text}
                 </p>
                 <Button
-                  className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft transition-all duration-300 font-inter py-2.5 px-7 rounded-full uppercase tracking-[0.2em] text-[12px]"
+                  className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft transition-all duration-300 font-inter py-3 px-8 rounded-full uppercase tracking-[0.2em] text-sm font-semibold"
                   asChild
                 >
                   <a href="mailto:hello.yogawithcamilla@gmail.com">Send enquiry</a>
@@ -371,15 +374,15 @@ const ServicePageLayout = ({
 
           {/* CTA */}
           <section className="px-4 mb-20">
-            <div className="max-w-2xl mx-auto text-center py-14 border-t border-b border-dalashala-meadow/60">
-              <h2 className="font-cormorant font-light text-3xl md:text-4xl text-dalashala-earth mb-5 tracking-tight leading-tight">
+            <div className="max-w-2xl mx-auto text-center py-16 border-t border-b border-dalashala-meadow/60">
+              <h2 className="font-cormorant font-semibold text-4xl md:text-5xl text-dalashala-earth mb-5 tracking-tight leading-[1.05]">
                 {ctaHeading}
               </h2>
-              <p className="font-inter font-light text-base text-dalashala-earthSoft mb-8 leading-relaxed max-w-lg mx-auto">
+              <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth mb-8 leading-relaxed max-w-lg mx-auto">
                 {ctaText}
               </p>
               <Button
-                className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-3 px-10 rounded-full uppercase tracking-[0.2em] text-[13px]"
+                className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-4 px-10 rounded-full uppercase tracking-[0.2em] text-sm font-semibold"
                 asChild
               >
                 <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
@@ -393,7 +396,7 @@ const ServicePageLayout = ({
           {relatedServices && relatedServices.length > 0 && (
             <section className="px-4 mb-20">
               <div className="max-w-2xl mx-auto">
-                <p className="font-inter text-[11px] uppercase tracking-[0.32em] text-dalashala-olive mb-6 text-center">
+                <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-6 text-center">
                   Fler tjänster
                 </p>
                 <div className="flex flex-wrap gap-3 justify-center">
@@ -401,7 +404,7 @@ const ServicePageLayout = ({
                     <Link
                       key={s.href}
                       to={s.href}
-                      className="font-inter text-[12px] uppercase tracking-[0.2em] bg-white border border-dalashala-meadow/60 text-dalashala-earth px-5 py-2.5 rounded-full hover:border-dalashala-earth hover:bg-dalashala-earth hover:text-white transition-all"
+                      className="font-inter text-sm font-semibold uppercase tracking-[0.18em] bg-white border border-dalashala-meadow/80 text-dalashala-earth px-5 py-3 rounded-full hover:border-dalashala-earth hover:bg-dalashala-earth hover:text-white transition-all"
                     >
                       {s.label}
                     </Link>

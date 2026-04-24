@@ -31,14 +31,14 @@ const WhyYogaWithCamilla = () => {
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="max-w-2xl mx-auto text-center mb-16">
-          <p className="font-inter text-[11px] uppercase tracking-[0.32em] text-dalashala-olive mb-5">
+          <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-5">
             Så jag jobbar
           </p>
-          <h2 className="font-cormorant font-light text-3xl md:text-4xl lg:text-5xl text-dalashala-earth mb-6 tracking-tight leading-tight">
+          <h2 className="font-cormorant font-semibold text-4xl md:text-5xl lg:text-6xl text-dalashala-earth mb-6 tracking-tight leading-[1.05]">
             Varför Yoga med Camilla
           </h2>
-          <span className="block mx-auto w-10 h-px bg-dalashala-sage mb-6 opacity-70" aria-hidden="true" />
-          <p className="font-inter font-light text-base text-dalashala-earthSoft leading-relaxed max-w-xl mx-auto">
+          <span className="block mx-auto w-12 h-px bg-dalashala-sage mb-6 opacity-80" aria-hidden="true" />
+          <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed max-w-xl mx-auto">
             Ett lugnt, välkomnande rum för rörelse, andning och närvaro.
             I Dalarna och i Stockholm.
           </p>
@@ -49,15 +49,15 @@ const WhyYogaWithCamilla = () => {
           {cards.map((card, i) => (
             <div
               key={card.title}
-              className="relative bg-white border border-dalashala-meadow/50 rounded-xl p-8 md:p-10 hover:border-dalashala-olive/50 transition-colors duration-300 animate-when-visible"
+              className="relative bg-white border border-dalashala-meadow/60 rounded-xl p-8 md:p-10 hover:border-dalashala-olive/60 transition-colors duration-300 animate-when-visible"
               data-animation="fade-in-up"
               {...(i ? { 'data-animation-delay': (i * 120).toString() } : {})}
             >
-              <span className="block w-6 h-px bg-dalashala-olive mb-6" aria-hidden="true" />
-              <h3 className="font-cormorant font-light text-2xl md:text-[1.75rem] text-dalashala-earth mb-4 leading-snug tracking-tight">
+              <span className="block w-8 h-px bg-dalashala-olive mb-6" aria-hidden="true" />
+              <h3 className="font-cormorant font-semibold text-2xl md:text-[1.875rem] text-dalashala-earth mb-4 leading-snug tracking-tight">
                 {card.title}
               </h3>
-              <p className="font-inter font-light text-sm text-dalashala-earthSoft leading-relaxed">
+              <p className="font-inter font-normal text-base text-dalashala-earth leading-relaxed">
                 {card.body}
               </p>
             </div>

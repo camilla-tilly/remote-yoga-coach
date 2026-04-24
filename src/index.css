@@ -62,12 +62,19 @@
 
   body {
     @apply bg-white text-dalashala-earth font-inter antialiased;
-    font-size: 15px;
+    font-size: 17px;
     letter-spacing: 0.005em;
   }
 
-  h1, h2, h3, h4 {
-    @apply font-cormorant;
+  /* Main headings — bolder for clear hierarchy against subheads + body */
+  h1, h2 {
+    @apply font-cormorant font-semibold;
+    letter-spacing: -0.015em;
+  }
+
+  /* Subheadings — medium weight, not as heavy as H1/H2 */
+  h3, h4 {
+    @apply font-cormorant font-medium;
     letter-spacing: -0.01em;
   }
 
