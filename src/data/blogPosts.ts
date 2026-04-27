@@ -34,7 +34,7 @@ export const blogPosts: BlogPost[] = [
     readingTime: '9 min',
     category: 'Events & Möhippa',
     excerpt: 'Det mest inkluderande möhippa-formatet i Dalarna. En privat yogaklass på altanen i skogen, för grupper där mamman inte dricker, kompisen inte springer, och kollegan har ryggont. Här är hela guiden.',
-    relatedServiceHref: '/tjanster/mohippa-yoga',
+    relatedServiceHref: '/tjanster/privata-event',
     relatedServiceLabel: 'Boka yoga möhippa',
     tableOfContents: true,
     faqSchema: true,
@@ -47,7 +47,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'paragraph',
-        text: 'De flesta möhippor ser ungefär likadana ut. Restaurang, bar, kanske en aktivitet som hälften av gänget inte riktigt vill göra. [Yoga möhippa i Dalarna](/tjanster/mohippa-yoga) är alternativet. En privat klass för hela gruppen, utomhus i skogen eller i en stuga ni hyrt. Alla kan delta, oavsett nivå, ålder eller hur fysisk man känner för att vara. Här är hela guiden: varför det funkar, vad det kostar, och hur ni planerar helgen runt det.'
+        text: 'De flesta möhippor ser ungefär likadana ut. Restaurang, bar, kanske en aktivitet som hälften av gänget inte riktigt vill göra. [Yoga möhippa i Dalarna](/tjanster/privata-event) är alternativet. En privat klass för hela gruppen, utomhus i skogen eller i en stuga ni hyrt. Alla kan delta, oavsett nivå, ålder eller hur fysisk man känner för att vara. Här är hela guiden: varför det funkar, vad det kostar, och hur ni planerar helgen runt det.'
       },
       {
         type: 'callout',
@@ -259,7 +259,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal, om ni redan har stuga eller lokal, och om ni vill kombinera med andra aktiviteter. Jag svarar inom ett dygn med tillgänglighet och en konkret offert. Läs mer på tjänstesidan för [möhippa-yoga](/tjanster/mohippa-yoga), eller bläddra bland fler [möhippa-aktiviteter i Dalarna](/blogg/mohippa-dalarna-aktiviteter).'
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal, om ni redan har stuga eller lokal, och om ni vill kombinera med andra aktiviteter. Jag svarar inom ett dygn med tillgänglighet och en konkret offert. Läs mer på tjänstesidan för [privata event](/tjanster/privata-event), eller bläddra bland fler [möhippa-aktiviteter i Dalarna](/blogg/mohippa-dalarna-aktiviteter).'
       },
     ]
   },

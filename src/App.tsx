@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -57,20 +57,11 @@ const App = () => (
           <Route path="/tjanster/sup-yoga-klasser" element={<SUPYogaKlasser />} />
           <Route path="/tjanster/sup-yoga/villkor" element={<SUPYogaVillkor />} />
           <Route path="/tjanster/honsyoga" element={<HonsYoga />} />
-          <Route path="/tjanster/yoga-dalarna-turister" element={<Navigate to="/tjanster/honsyoga" replace />} />
-          <Route path="/tjanster/privatlektioner" element={<Navigate to="/tjanster/privata-event" replace />} />
           <Route path="/tjanster/privata-event" element={<PrivataEvent />} />
-          <Route path="/tjanster/private-events" element={<Navigate to="/tjanster/privata-event" replace />} />
 
-          {/* Redirects: old service pages merged into consolidated pages */}
-          <Route path="/tjanster/mohippa-yoga" element={<Navigate to="/tjanster/privata-event" replace />} />
-          <Route path="/tjanster/brollopsyoga" element={<Navigate to="/tjanster/privata-event" replace />} />
-          <Route path="/tjanster/fodelsedag-yoga" element={<Navigate to="/tjanster/privata-event" replace />} />
-          <Route path="/tjanster/yoga-workshop" element={<Navigate to="/tjanster/foretagsyoga" replace />} />
-          <Route path="/tjanster/yoga-for-lopare" element={<Navigate to="/tjanster/mini-retreat" replace />} />
-          <Route path="/tjanster/online-yoga" element={<Navigate to="/" replace />} />
-          <Route path="/tjanster/adventure-paket" element={<Navigate to="/tjanster/mini-retreat" replace />} />
-          <Route path="/tjanster/trail-run-yoga" element={<Navigate to="/tjanster/mini-retreat" replace />} />
+          {/* Note: 301 redirects for old service URLs are handled at the Netlify edge
+              via public/_redirects. Do NOT add client-side <Navigate> for those paths —
+              it creates a redirect chain that Google reports as "Redirect error". */}
 
           {/* About */}
           <Route path="/om-mig" element={<OmMig />} />
