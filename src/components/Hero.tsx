@@ -18,27 +18,31 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative flex items-center justify-center pt-36 sm:pt-44 md:pt-48 lg:pt-56 w-full pb-28 md:pb-36 bg-white overflow-hidden"
+      className="relative w-full bg-white pt-20 md:pt-0 overflow-hidden"
     >
-      {/* Scandi watercolor illustration — full-bleed background */}
-      <img
-        src="/hero.jpg"
-        alt=""
-        aria-hidden="true"
-        loading="eager"
-        fetchPriority="high"
-        decoding="async"
-        className="absolute inset-0 w-full h-full object-contain object-center pointer-events-none select-none"
-      />
+      {/* Aspect-locked container — matches the illustration's 16:9 ratio so the
+          image fills edge-to-edge with no cropping and no side gutters on md+.
+          On mobile it falls back to natural aspect so text has room to stack below. */}
+      <div className="relative w-full md:aspect-[16/9]">
+        {/* Scandi watercolor illustration */}
+        <img
+          src="/hero.jpg"
+          alt=""
+          aria-hidden="true"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          className="block w-full h-auto md:absolute md:inset-0 md:h-full md:object-cover md:object-center pointer-events-none select-none"
+        />
 
-      {/* Soft cream wash to keep headline crisp against the illustration */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 pointer-events-none"
-        style={{ background: 'linear-gradient(180deg, rgba(255,253,247,0.35) 0%, rgba(255,253,247,0.55) 50%, rgba(220,228,214,0.45) 100%)' }}
-      />
+        {/* Soft cream wash on md+ to keep the headline crisp over the illustration */}
+        <div
+          aria-hidden="true"
+          className="hidden md:block absolute inset-0 pointer-events-none"
+          style={{ background: 'linear-gradient(180deg, rgba(255,253,247,0.35) 0%, rgba(255,253,247,0.55) 50%, rgba(220,228,214,0.45) 100%)' }}
+        />
 
-      <div className="container-section relative z-10 text-center w-full max-w-5xl px-4 sm:px-6">
+        <div className="relative z-10 text-center w-full max-w-5xl mx-auto px-4 sm:px-6 py-12 md:py-0 md:absolute md:inset-0 md:flex md:flex-col md:items-center md:justify-center">
         {/* Eyebrow — tracked caps (kept — Camilla likes this treatment) */}
         <p className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-olive font-semibold mb-12 opacity-0 animate-fade-in" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
           Stockholm &nbsp;·&nbsp; Dalarna
@@ -79,6 +83,7 @@ const Hero = () => {
           >
             Dalarna
           </a>
+        </div>
         </div>
       </div>
     </section>
