@@ -20,11 +20,22 @@ const Hero = () => {
       id="hero"
       className="relative flex items-center justify-center pt-36 sm:pt-44 md:pt-48 lg:pt-56 w-full pb-28 md:pb-36 bg-white overflow-hidden"
     >
-      {/* Subtle pale-sage wash bottom for depth without warm colour */}
+      {/* Scandi watercolor illustration — full-bleed background */}
+      <img
+        src="/hero.jpg"
+        alt=""
+        aria-hidden="true"
+        loading="eager"
+        fetchPriority="high"
+        decoding="async"
+        className="absolute inset-0 w-full h-full object-contain object-center pointer-events-none select-none"
+      />
+
+      {/* Soft cream wash to keep headline crisp against the illustration */}
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 h-64 pointer-events-none"
-        style={{ background: 'linear-gradient(180deg, rgba(220,228,214,0) 0%, rgba(220,228,214,0.45) 100%)' }}
+        className="absolute inset-0 pointer-events-none"
+        style={{ background: 'linear-gradient(180deg, rgba(255,253,247,0.35) 0%, rgba(255,253,247,0.55) 50%, rgba(220,228,214,0.45) 100%)' }}
       />
 
       <div className="container-section relative z-10 text-center w-full max-w-5xl px-4 sm:px-6">
