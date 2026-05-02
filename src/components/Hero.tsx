@@ -18,12 +18,12 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative w-full bg-white pt-20 md:pt-0 overflow-hidden"
+      className="relative w-full bg-white overflow-hidden"
     >
-      {/* Aspect-locked container — matches the illustration's 16:9 ratio so the
-          image fills edge-to-edge with no cropping and no side gutters on md+.
-          On mobile it falls back to natural aspect so text has room to stack below. */}
-      <div className="relative w-full md:aspect-[16/9]">
+      {/* Aspect-locked on md+ so the illustration fills edge-to-edge with no crop
+          or side gutters. On mobile, falls back to a tall hero (80vh) with the
+          image cover-filling behind the headline. */}
+      <div className="relative w-full min-h-[80vh] md:min-h-0 md:aspect-[16/9]">
         {/* Scandi watercolor illustration */}
         <img
           src="/hero.jpg"
@@ -32,17 +32,17 @@ const Hero = () => {
           loading="eager"
           fetchPriority="high"
           decoding="async"
-          className="block w-full h-auto md:absolute md:inset-0 md:h-full md:object-cover md:object-center pointer-events-none select-none"
+          className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none"
         />
 
-        {/* Soft cream wash on md+ to keep the headline crisp over the illustration */}
+        {/* Soft cream wash to keep the headline crisp over the illustration */}
         <div
           aria-hidden="true"
-          className="hidden md:block absolute inset-0 pointer-events-none"
+          className="absolute inset-0 pointer-events-none"
           style={{ background: 'linear-gradient(180deg, rgba(255,253,247,0.35) 0%, rgba(255,253,247,0.55) 50%, rgba(220,228,214,0.45) 100%)' }}
         />
 
-        <div className="relative z-10 text-center w-full max-w-5xl mx-auto px-4 sm:px-6 py-12 md:py-0 md:absolute md:inset-0 md:flex md:flex-col md:items-center md:justify-center">
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center w-full max-w-5xl mx-auto px-4 sm:px-6 pt-16 md:pt-0">
         {/* Eyebrow — tracked caps (kept — Camilla likes this treatment) */}
         <p className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-olive font-semibold mb-12 opacity-0 animate-fade-in" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
           Stockholm &nbsp;·&nbsp; Dalarna
