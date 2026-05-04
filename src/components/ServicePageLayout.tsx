@@ -337,7 +337,7 @@ const ServicePageLayout = ({
                 {detailsParagraphs.map((p, i) =>
                   typeof p === 'string' ? (
                     <p key={i} className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed mb-5 last:mb-0">
-                      {p}
+                      {renderInlineLinks(p)}
                     </p>
                   ) : (
                     <h3 key={i} className="font-cormorant font-semibold text-xl md:text-2xl text-dalashala-earth tracking-tight mt-2 mb-3 first:mt-0">
@@ -472,6 +472,37 @@ const ServicePageLayout = ({
       <ScrollToTop />
     </div>
   );
+};
+
+const renderInlineLinks = (text: string) => {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, i) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (!match) return part;
+    const [, label, href] = match;
+    if (href.startsWith('/')) {
+      return (
+        <Link
+          key={i}
+          to={href}
+          className="text-dalashala-earth underline underline-offset-2 hover:text-dalashala-honeyDeep transition-colors"
+        >
+          {label}
+        </Link>
+      );
+    }
+    return (
+      <a
+        key={i}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-dalashala-earth underline underline-offset-2 hover:text-dalashala-honeyDeep transition-colors"
+      >
+        {label}
+      </a>
+    );
+  });
 };
 
 interface HeroCarouselProps {

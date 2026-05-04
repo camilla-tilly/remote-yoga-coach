@@ -65,11 +65,10 @@ const ForetagsYoga = () => (
     detailsHeading="Format & praktisk information"
     detailsParagraphs={[
       { subheading: "Allmänt" },
-      "Ni väljer längd: 30, 45 eller 60 minuter. Ni behöver bara ha ett utrymme som är tillräckligt stort.",
-      "Har ni egna yogamattor är det perfekt. Om jag behöver ta med utrustning diskuterar vi det separat, baserat på antal deltagare, avstånd och vad som behövs på plats.",
+      "Ni behöver bara ha ett utrymme som är tillräckligt stort. Har ni egna yogamattor är det perfekt; behöver jag ta med utrustning diskuterar vi det separat, baserat på antal deltagare, avstånd och vad som behövs på plats.",
       "Vi pratar också igenom kläder innan. Ska klassen funka i det folk redan har på sig på kontoret, eller hinner ni byta om till träningskläder? Båda funkar, jag anpassar rörelserna efter det.",
       { subheading: "Stockholm" },
-      "Jag kommer till er lokal, eller hjälper gärna till att hitta en lämplig yogasal. Regelbundna klasser på kontoret erbjuds endast i Stockholm.",
+      "Jag kommer till ert kontor eller er konferensanläggning, eller hjälper gärna till att hitta en lämplig yogasal. Vill ni hellre ha yoga på vattnet kan vi i stället boka en [SUP-yoga-session](/tjanster/sup-yoga) vid Sicklasjön. Regelbundna klasser på kontoret erbjuds endast i Stockholm.",
       { subheading: "Dalarna" },
       "Jag reser till Vansbro, Falun, Borlänge, Ludvika, Mora, Leksand och Rättvik, och området däremellan, för konferenser, kickoffs och företagsevent på er konferensanläggning eller utomhus.",
       { subheading: "Boka" },
@@ -84,11 +83,11 @@ const ForetagsYoga = () => (
       },
       {
         question: "Vad kostar företagsyoga?",
-        answer: "Regelbundna klasser på kontoret kostar från 1 600 kr/klass (30 min), 1 800 kr (45 min) eller 2 100 kr (60 min). Om ni behöver att jag tar med utrustning diskuterar vi det separat, eftersom priset beror på antal deltagare, avstånd och vad som behövs på plats. Konferenser, kickoffs och event prissätts individuellt baserat på antal deltagare, längd och plats."
+        answer: "Regelbundna klasser på kontoret prissätts efter längd, se prislistan ovan. Konferenser, kickoffs och event prissätts individuellt baserat på antal deltagare, längd och plats. Behöver jag ta med utrustning diskuterar vi det separat."
       },
       {
         question: "Hur lång är en klass?",
-        answer: "Vanligtvis 30, 45 eller 60 minuter. På kontoret är 30 eller 45 minuter populärast. Under en konferens passar ofta 60 minuter på morgonen eller som eftermiddagspaus."
+        answer: "På kontoret är 30 eller 45 minuter populärast. Under en konferens passar 60 minuter på morgonen eller som eftermiddagspaus."
       },
       {
         question: "Vad behöver vi ordna?",
