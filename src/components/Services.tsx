@@ -28,6 +28,11 @@ const stockholmServices: ServiceCard[] = [
 
 const dalarnaServices: ServiceCard[] = [
   {
+    title: 'Företagsyoga',
+    description: 'Yoga för konferenser, kickoffs och företagsevent. Falun, Borlänge, Mora, Leksand, Rättvik och omnejd.',
+    href: '/tjanster/foretagsyoga',
+  },
+  {
     title: 'Hönsyoga',
     description: 'Yoga på altanen med hönsen runt. Mysiga läten från landsbygden medan vi praktiserar.',
     href: '/tjanster/honsyoga',
@@ -41,11 +46,6 @@ const dalarnaServices: ServiceCard[] = [
     title: 'Privata Event',
     description: 'Möhippa, bröllop eller firande. Skräddarsydd dag för gruppen på altanen i Dalarna.',
     href: '/tjanster/privata-event',
-  },
-  {
-    title: 'Företagsyoga',
-    description: 'Yoga för konferenser, kickoffs och företagsevent. Falun, Borlänge, Mora, Leksand, Rättvik och omnejd.',
-    href: '/tjanster/foretagsyoga',
   },
 ];
 

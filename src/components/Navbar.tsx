@@ -23,6 +23,7 @@ const locationGroups = [
   {
     location: 'Dalarna',
     links: [
+      { name: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
       { name: 'Hönsyoga', href: '/tjanster/honsyoga' },
       { name: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
       { name: 'Privata Event', href: '/tjanster/privata-event' },
