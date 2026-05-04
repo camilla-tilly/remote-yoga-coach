@@ -3,11 +3,11 @@ import ForestBranch from "@/components/decorative/ForestBranch";
 const cards = [
   {
     title: 'Skräddarsytt',
-    body: 'Varje pass är utformat efter er grupp och ert tillfälle. Möhippa, födelsedag, bröllop, konferens eller teamdag. Alla nivåer, alltid välkomna.',
+    body: 'Varje klass är utformad efter er grupp och ert tillfälle. Möhippa, födelsedag, bröllop, konferens eller teamdag. Alla nivåer, alltid välkomna.',
   },
   {
     title: 'Naturen som studio',
-    body: 'I Dalarna: altan omgivet av gran, frisk luft och naturens egna ljud. I Stockholm: SUP yoga på Sicklasjön eller etablerade studios.',
+    body: 'Helst håller jag klasser utomhus. På altanen i Dalarna omgiven av gran, eller på SUP-bräda på Sicklasjön i Stockholm. Det är något med naturens stillhet och förundran som hjälper dig landa i dig själv igen.',
   },
   {
     title: 'På er plats',
