@@ -28,8 +28,8 @@ const stockholmServices: ServiceCard[] = [
 
 const dalarnaServices: ServiceCard[] = [
   {
-    title: 'Hönsyoga på Stugan',
-    description: 'Yoga på altanen med hönsen runt. Har du hört talas om goat yoga? Det här är den svenska, lugnare varianten.',
+    title: 'Hönsyoga',
+    description: 'Yoga på altanen med hönsen runt. Mysiga läten från landsbygden medan vi praktiserar.',
     href: '/tjanster/honsyoga',
   },
   {
@@ -39,7 +39,7 @@ const dalarnaServices: ServiceCard[] = [
   },
   {
     title: 'Privata Event',
-    description: 'Möhippa, bröllop eller firande. Skräddarsydd dag för gruppen på stugan i Dalarna.',
+    description: 'Möhippa, bröllop eller firande. Skräddarsydd dag för gruppen på altanen i Dalarna.',
     href: '/tjanster/privata-event',
   },
 ];

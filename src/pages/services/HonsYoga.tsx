@@ -41,7 +41,7 @@ const HonsYoga = () => (
     highlights={[
       {
         heading: "Utomhus på altanen",
-        text: "Klassen hålls på altanen vid stugan i Dalarna. Plats för upp till 10 deltagare. Yogamattor tillhandahålls."
+        text: "Klassen hålls på altanen i Dalarna. Plats för upp till 10 deltagare. Yogamattor tillhandahålls."
       },
       {
         heading: "Alla nivåer",
@@ -62,7 +62,7 @@ const HonsYoga = () => (
     ]}
     detailsHeading="Praktisk information"
     detailsParagraphs={[
-      "Hönsyoga hålls vid stugan i Dalarna, utomhus på altanen, väderförhållanden tillåtet. Säsongen är maj–september.",
+      "Hönsyoga hålls utomhus på altanen i Dalarna, väderförhållanden tillåtet. Säsongen är maj–september.",
       "Hönsen rör sig fritt runt altanen under klassen. De interagerar inte med deltagarna, men de är där.",
       "Skicka en förfrågan till hello.yogawithcamilla@gmail.com med önskat datum och antal deltagare, så återkommer jag med tillgänglighet och offert."
     ]}

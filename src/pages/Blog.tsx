@@ -46,7 +46,7 @@ const Blog = () => {
             </h1>
             <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
             <p className="font-inter font-normal text-xl md:text-2xl text-dalashala-earth/85 max-w-xl mx-auto leading-relaxed">
-              Tankar om yoga, natur, events och välmående från stugan i Dalarna.
+              Tankar om yoga, natur, events och välmående från altanen i Dalarna.
             </p>
           </div>
         </header>

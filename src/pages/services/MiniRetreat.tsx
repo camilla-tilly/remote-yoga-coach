@@ -1,7 +1,7 @@
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
-  { label: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
+  { label: 'Hönsyoga', href: '/tjanster/honsyoga' },
   { label: 'Privata Event', href: '/tjanster/privata-event' },
   { label: 'SUP Yoga Stockholm', href: '/tjanster/sup-yoga' },
 ];
@@ -45,7 +45,7 @@ const MiniRetreat = () => (
       },
       {
         heading: "Weekend-retreat",
-        text: "Lördag–söndag med övernattning. Mer tid för djup meditation, längre yogaklasser, vandring och naturupplevelse. Inkluderar logi i stugan (begränsat antal platser)."
+        text: "Lördag–söndag med övernattning. Mer tid för djup meditation, längre yogaklasser, vandring och naturupplevelse. Inkluderar logi på plats (begränsat antal platser)."
       },
       {
         heading: "Adventure Paket",
@@ -98,9 +98,9 @@ const MiniRetreat = () => (
     ]}
     detailsHeading="Praktisk information"
     detailsParagraphs={[
-      "Retreats i Dalarna: stugan ligger ca 4 timmar från Stockholm med tåg eller bil. Tillgängligt på helger och enstaka vardagar.",
+      "Retreats i Dalarna: vi är ca 4 timmar från Stockholm med tåg eller bil. Tillgängligt på helger och enstaka vardagar.",
       "Trail Run + Yoga Stockholm: Nacka Naturreservat + Sicklasjön. Enkelt att nå med kollektivtrafik. Ta med löparskor eller vandringsskor, bekväma kläder och vattenflaska.",
-      "Adventure-paket: basläger vid stugan i Dalarna. Vandring och trail run i närliggande skogsmark. SUP yoga kan ske på Sicklasjön i Stockholm.",
+      "Adventure-paket: basläger på altanen i Dalarna. Vandring och trail run i närliggande skogsmark. SUP yoga kan ske på Sicklasjön i Stockholm.",
       "Maila hello.yogawithcamilla@gmail.com med datum, format och gruppstorlek."
     ]}
     ctaHeading="Boka din upplevelse"
@@ -122,7 +122,7 @@ const MiniRetreat = () => (
       },
       {
         question: "Var sker aktiviteterna?",
-        answer: "Retreat och adventure: basläger vid stugan i Dalarna. Trail Run + Yoga: Nacka Naturreservat och Sicklasjön i Stockholm. SUP yoga sker i samarbete med Smashing Balance."
+        answer: "Retreat och adventure: basläger på altanen i Dalarna. Trail Run + Yoga: Nacka Naturreservat och Sicklasjön i Stockholm. SUP yoga sker i samarbete med Smashing Balance."
       },
       {
         question: "Kan adventure-paketet kombineras med hönsyoga?",

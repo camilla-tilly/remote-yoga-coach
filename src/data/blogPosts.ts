@@ -47,11 +47,11 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'paragraph',
-        text: 'De flesta möhippor ser ungefär likadana ut. Restaurang, bar, kanske en aktivitet som hälften av gänget inte riktigt vill göra. [Yoga möhippa i Dalarna](/tjanster/privata-event) är alternativet. En privat klass för hela gruppen, utomhus i skogen eller i en stuga ni hyrt. Alla kan delta, oavsett nivå, ålder eller hur fysisk man känner för att vara. Här är hela guiden: varför det funkar, vad det kostar, och hur ni planerar helgen runt det.'
+        text: 'De flesta möhippor ser ungefär likadana ut. Restaurang, bar, kanske en aktivitet som hälften av gänget inte riktigt vill göra. [Yoga möhippa i Dalarna](/tjanster/privata-event) är alternativet. En privat klass för hela gruppen, utomhus i skogen eller på er hyrda boendeplats. Alla kan delta, oavsett nivå, ålder eller hur fysisk man känner för att vara. Här är hela guiden: varför det funkar, vad det kostar, och hur ni planerar helgen runt det.'
       },
       {
         type: 'callout',
-        text: 'Snabbversion: Privat yoga möhippa i Dalarna från 3 000 kr. 60 eller 90 minuter utomhus eller i stuga. All utrustning ingår. Passar för 4 till 20 deltagare. Kombineras ofta med stughelg och andra aktiviteter. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum och antal för offert.'
+        text: 'Snabbversion: Privat yoga möhippa i Dalarna från 3 000 kr. 60 eller 90 minuter utomhus eller inomhus. All utrustning ingår. Passar för 4 till 20 deltagare. Kombineras ofta med en helg på landet och andra aktiviteter. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum och antal för offert.'
       },
       {
         type: 'heading',
@@ -84,11 +84,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'subheading',
-        text: 'I er stuga'
+        text: 'På er hyrda boendeplats'
       },
       {
         type: 'paragraph',
-        text: 'Har ni redan hyrt en stuga i Dalarna kan jag komma dit. Jag tar med mattor, block, bolster och allt som behövs. Vardagsrum med undanflyttade möbler räcker. Populärt på lördagsmorgon innan den större möhippan drar igång.'
+        text: 'Har ni redan hyrt ett boende i Dalarna kan jag komma dit. Jag tar med mattor, block, bolster och allt som behövs. Vardagsrum med undanflyttade möbler räcker. Populärt på lördagsmorgon innan den större möhippan drar igång.'
       },
       {
         type: 'subheading',
@@ -113,7 +113,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'list',
         items: [
-          'Fredag eftermiddag: incheckning i stuga, gemensam middag, vin',
+          'Fredag eftermiddag: incheckning på boendet, gemensam middag, vin',
           'Lördag morgon: yoga på altanen (60 till 90 minuter)',
           'Lördag eftermiddag: bad, promenad eller utflykt. Valfritt.',
           'Lördag kväll: bastu, middag, rolig möhippa-lek',
@@ -158,7 +158,7 @@ export const blogPosts: BlogPost[] = [
         tableRows: [
           ['Altan-yoga i skogen', '60 min', '3 000 kr', 'Upp till 10 personer'],
           ['Altan-yoga, förlängt', '90 min', '3 800 kr', 'Upp till 10 personer'],
-          ['Yoga i er stuga', '60 till 90 min', 'från 3 000 kr', 'Upp till 12 personer'],
+          ['Yoga på ert boende', '60 till 90 min', 'från 3 000 kr', 'Upp till 12 personer'],
           ['Större grupper (10 till 20)', '90 min', 'från 4 500 kr', 'Större möhippor'],
           ['Yoga + bastu', '2,5 tim totalt', 'offert', 'Helgpaket'],
         ],
@@ -179,7 +179,7 @@ export const blogPosts: BlogPost[] = [
           'Klass helt anpassad för gruppens nivå. Inga förkunskaper krävs.',
           'Undervisning på engelska',
           'En kort briefing med bruden eller brudtärnan innan, så ni vet vad som händer och kan tipsa gänget',
-          'Flexibilitet med plats: altan, stuga, brygga eller skog',
+          'Flexibilitet med plats: altan, inomhus, brygga eller skog',
         ],
       },
       {
@@ -225,15 +225,15 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Kan ni ha det utomhus på vintern?',
-            a: 'Inte rekommenderat. Utomhusyoga funkar maj till september. Under höst och vinter håller vi klassen inomhus, i er stuga eller i en hyrd lokal.',
+            a: 'Inte rekommenderat. Utomhusyoga funkar maj till september. Under höst och vinter håller vi klassen inomhus, hos er eller i en hyrd lokal.',
           },
           {
             q: 'Vad händer om det regnar?',
-            a: 'Vi har alltid en backup-plan inomhus. Utomhus är förstahandsval, men om vädret inte samarbetar flyttar vi in i er stuga eller en annan närliggande lokal.',
+            a: 'Vi har alltid en backup-plan inomhus. Utomhus är förstahandsval, men om vädret inte samarbetar flyttar vi in hos er eller till en annan närliggande lokal.',
           },
           {
-            q: 'Kan ni komma till en stuga långt ut på landet?',
-            a: 'Nästan alltid. Jag är mobil och van vid att hitta avlägsna stugor. Resa över 30 minuter från min bas tillkommer enligt milersättning, specifieras på offerten.',
+            q: 'Kan ni komma till ett boende långt ut på landet?',
+            a: 'Nästan alltid. Jag är mobil och van vid att hitta avlägsna platser. Resa över 30 minuter från min bas tillkommer enligt milersättning, specifieras på offerten.',
           },
           {
             q: 'Hur långt i förväg behöver vi boka?',
@@ -259,7 +259,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal, om ni redan har stuga eller lokal, och om ni vill kombinera med andra aktiviteter. Jag svarar inom ett dygn med tillgänglighet och en konkret offert. Läs mer på tjänstesidan för [privata event](/tjanster/privata-event), eller bläddra bland fler [möhippa-aktiviteter i Dalarna](/blogg/mohippa-dalarna-aktiviteter).'
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal, om ni redan har ett boende eller lokal, och om ni vill kombinera med andra aktiviteter. Jag svarar inom ett dygn med tillgänglighet och en konkret offert. Läs mer på tjänstesidan för [privata event](/tjanster/privata-event), eller bläddra bland fler [möhippa-aktiviteter i Dalarna](/blogg/mohippa-dalarna-aktiviteter).'
       },
     ]
   },
@@ -376,11 +376,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Allt fler företag lägger sina konferenser och kickoffer i Dalarna, av en anledning. Det är slut på konferenscentrum med heltäckningsmatta och spotlights. Om ni redan tar teamet hit, till Romme, Sälen, Rättvik eller en stuga vid en sjö, så lägg in en yogaklass utomhus. En morgon på altanen med skogen runt om, gryningsljus och fågelljud gör mer för ett team än tre workshops om värderingar.'
+        text: 'Allt fler företag lägger sina konferenser och kickoffer i Dalarna, av en anledning. Det är slut på konferenscentrum med heltäckningsmatta och spotlights. Om ni redan tar teamet hit, till Romme, Sälen, Rättvik eller ett boende vid en sjö, så lägg in en yogaklass utomhus. En morgon på altanen med skogen runt om, gryningsljus och fågelljud gör mer för ett team än tre workshops om värderingar.'
       },
       {
         type: 'paragraph',
-        text: 'Jag kommer till er konferensanläggning, stuga eller friluftsområde. Utomhus när vädret tillåter, inomhus som backup. Resa från min stuga i Dalarna är ofta gratis eller minimal kostnad om ni är inom 30 minuter. Se också [yoga retreat Dalarna vs Stockholm](/blogg/yoga-retreat-dalarna-vs-stockholm) för mer om varför skogsmiljön gör skillnad.'
+        text: 'Jag kommer till er konferensanläggning, ert boende eller friluftsområde. Utomhus när vädret tillåter, inomhus som backup. Resa från min bas i Dalarna är ofta gratis eller minimal kostnad om ni är inom 30 minuter. Se också [yoga retreat Dalarna vs Stockholm](/blogg/yoga-retreat-dalarna-vs-stockholm) för mer om varför skogsmiljön gör skillnad.'
       },
       {
         type: 'heading',
@@ -1008,7 +1008,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Dalarna är en av de populäraste bröllopsdestinationerna i Sverige. Naturskönt, lugnt. Och jag finns runt hörnet med en altan omgiven av skog. Jag kan hålla yoga på er lokation, på stugan, eller utomhus.'
+        text: 'Dalarna är en av de populäraste bröllopsdestinationerna i Sverige. Naturskönt, lugnt. Och jag finns runt hörnet med en altan omgiven av skog. Jag kan hålla yoga på er lokation, hos mig på altanen, eller utomhus.'
       },
       {
         type: 'heading',
@@ -1093,7 +1093,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Ni kommer till stugan. Vi samlas på altanen där jag redan har mattor, block och bolster klara. Hönsen är oftast redan där, nyfikna men inte påträngande. Jag välkomnar, presenterar hönsen vid namn (de har namn), och vi börjar med 5 minuters andning på mattan.'
+        text: 'Ni kommer till mig. Vi samlas på altanen där jag redan har mattor, block och bolster klara. Hönsen är oftast redan där, nyfikna men inte påträngande. Jag välkomnar, presenterar hönsen vid namn (de har namn), och vi börjar med 5 minuters andning på mattan.'
       },
       {
         type: 'paragraph',
@@ -1158,7 +1158,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Stugan ligger i Dalarna, cirka 2,5 timmar från Stockholm med bil eller tåg. Närmaste större orter är Borlänge, Falun och Rättvik. Jag skickar detaljerade vägbeskrivningar när bokningen är bekräftad. Flera av mina gäster kombinerar hönsyoga med en övernattning i trakten. Det finns flera bra B&B och stugor att hyra i närheten.'
+        text: 'Altanen ligger i Dalarna, cirka 2,5 timmar från Stockholm med bil eller tåg. Närmaste större orter är Borlänge, Falun och Rättvik. Jag skickar detaljerade vägbeskrivningar när bokningen är bekräftad. Flera av mina gäster kombinerar hönsyoga med en övernattning i trakten. Det finns flera bra B&B och boenden att hyra i närheten.'
       },
       {
         type: 'heading',
@@ -1296,7 +1296,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'mohippa-dalarna-aktiviteter',
     title: 'Möhippa i Dalarna. 7 aktiviteter utöver det vanliga.',
-    metaDescription: 'Planerar du möhippa i Dalarna? 7 aktiviteter som funkar. Yoga i skogen, hönsyoga, SUP, vandring. Stuga + natur = minnesvärd helg.',
+    metaDescription: 'Planerar du möhippa i Dalarna? 7 aktiviteter som funkar. Yoga i skogen, hönsyoga, SUP, vandring. Boende + natur = minnesvärd helg.',
     publishDate: '2026-04-09',
     readingTime: '6 min',
     category: 'Events & Möhippa',
@@ -1310,7 +1310,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'paragraph',
-        text: 'Dalarna har blivit en av de populäraste möhippa-destinationerna. Stugorna, naturen, lugnet. Fler grupper väljer en helg här istället för en kväll i stan.'
+        text: 'Dalarna har blivit en av de populäraste möhippa-destinationerna. Naturen, lugnet, friheten. Fler grupper väljer en helg här istället för en kväll i stan.'
       },
       {
         type: 'paragraph',
@@ -1322,7 +1322,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Privat yogaklass i naturen. Utomhus, i skogen, fågelsång som soundtrack. Alla nivåer. Sätter stämningen för hela helgen. Jag kan komma till er stuga med all utrustning.'
+        text: 'Privat yogaklass i naturen. Utomhus, i skogen, fågelsång som soundtrack. Alla nivåer. Sätter stämningen för hela helgen. Jag kan komma till ert boende med all utrustning.'
       },
       {
         type: 'heading',
@@ -1330,7 +1330,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Yoga på altanen vid stugan, med höns som vandrar fritt runt mattorna. Det är en av de mest uppskattade upplevelserna jag erbjuder. Hönsen skapar en lätthet som gör att hela gruppen slappnar av.'
+        text: 'Yoga på altanen, med höns som vandrar fritt runt mattorna. Det är en av de mest uppskattade upplevelserna jag erbjuder. Hönsen skapar en lätthet som gör att hela gruppen slappnar av.'
       },
       {
         type: 'heading',
@@ -1346,11 +1346,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Många stugor i Dalarna har bastu. Har ni en sjö i närheten blir det ett naturligt inslag. Basta, dopp, upprepa.'
+        text: 'Många boenden i Dalarna har bastu. Har ni en sjö i närheten blir det ett naturligt inslag. Basta, dopp, upprepa.'
       },
       {
         type: 'heading',
-        text: '5. Matlagning på stugan'
+        text: '5. Matlagning hemma'
       },
       {
         type: 'paragraph',
@@ -1378,7 +1378,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Det bästa med en möhippa i Dalarna är att programmet kan vara enkelt. Stuga + natur + en eller två organiserade aktiviteter = en helg som alla minns. Vill ni ha yoga som en del av det? Hör av er på hello.yogawithcamilla@gmail.com.'
+        text: 'Det bästa med en möhippa i Dalarna är att programmet kan vara enkelt. Boende + natur + en eller två organiserade aktiviteter = en helg som alla minns. Vill ni ha yoga som en del av det? Hör av er på hello.yogawithcamilla@gmail.com.'
       }
     ]
   },
@@ -1437,9 +1437,9 @@ export const blogPosts: BlogPost[] = [
         items: [
           'Vill du koppla av totalt? → Dalarna. Naturen gör halva jobbet åt dig.',
           'Vill du ha en retreat utan övernattning? → Stockholm funkar bra som halv- eller heldagsupplägg.',
-          'Är ni en grupp (möhippa, företag)? → Dalarna med stuga ger den starkaste upplevelsen.',
+          'Är ni en grupp (möhippa, företag)? → Dalarna med eget boende ger den starkaste upplevelsen.',
           'Har du ont om tid? → Stockholm. Inga resor, flexibla tider.',
-          'Budget? → Dalarna kan vara billigare om ni delar en stuga. Stockholm kräver ofta salsuthyrning.'
+          'Budget? → Dalarna kan vara billigare om ni delar ett boende. Stockholm kräver ofta salsuthyrning.'
         ]
       },
       {
@@ -1703,7 +1703,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Håller ni konferens eller kickoff i Dalarna? Jag håller yoga på er konferensanläggning, i stuga, eller utomhus på altanen i skogen. En utomhusklass med gryningsljus och fågelljud slår de flesta konferenssalar i effekt, särskilt på dag två av en tredagars, när alla är stela av att sitta. Resa debiteras enligt faktiskt utlägg (tåg eller milersättning), ofta 1 500 till 2 500 kr extra.'
+        text: 'Håller ni konferens eller kickoff i Dalarna? Jag håller yoga på er konferensanläggning, ert boende, eller utomhus på altanen i skogen. En utomhusklass med gryningsljus och fågelljud slår de flesta konferenssalar i effekt, särskilt på dag två av en tredagars, när alla är stela av att sitta. Resa debiteras enligt faktiskt utlägg (tåg eller milersättning), ofta 1 500 till 2 500 kr extra.'
       },
       {
         type: 'heading',

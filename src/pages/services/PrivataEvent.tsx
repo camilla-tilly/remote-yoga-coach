@@ -3,7 +3,7 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 const relatedServices = [
   { label: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
   { label: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
-  { label: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
+  { label: 'Hönsyoga', href: '/tjanster/honsyoga' },
   { label: 'SUP Yoga Stockholm', href: '/tjanster/sup-yoga' },
 ];
 
@@ -36,14 +36,14 @@ const PrivataEvent = () => (
     heroImagePosition="center 35%"
     introHeading="Något annat än konferensrummet"
     introParagraphs={[
-      "Letar ni efter en annorlunda möhippa, en sommaravslutning med jobbet som faktiskt lämnar avtryck, en födelsedagsaktivitet eller bara en dag ihop? Jag sätter ihop privata event för grupper (möhippor, födelsedagar, kickoffs, teamdagar, AW-gäng och kompisgrupper) i Dalarna eller Stockholm. För bröllopshelger på landet i Dalarna håller jag även bröllopsyoga som en del av helgens aktiviteter.",
+      "Letar ni efter något annorlunda för gruppen? Jag sätter ihop privata event i Dalarna eller Stockholm: möhippor, födelsedagar, sommaravslutningar, kickoffs, teamdagar, AW-gäng och kompisgäng som bara vill göra något ihop. För bröllopshelger på landet i Dalarna håller jag även bröllopsyoga som en del av helgens aktiviteter.",
       "Upplägget är flexibelt. Det kan vara en stilla morgonklass, en längre halvdag med flera bitar, eller en hel dag ute i skogen. Jag formar det runt vad ni faktiskt vill ha ut av dagen, inte runt en färdig mall. Ingen yogaerfarenhet krävs, och klassen hålls på engelska.",
       "Jag är flexibel med datum och tider. Mejla mig så hittar vi något som passar er grupp."
     ]}
     highlights={[
       {
-        heading: "På stugan i Dalarna",
-        text: "Yoga på altanen vid stugan, omgiven av skog, tystnad och hönsen i bakgrunden. Plats för upp till 10 personer. Mattor och all utrustning ingår."
+        heading: "På altanen i Dalarna",
+        text: "Yoga på altanen, omgiven av skog, tystnad och hönsen i bakgrunden. Plats för upp till 10 personer. Mattor och all utrustning ingår."
       },
       {
         heading: "Jag kommer till er",
@@ -117,7 +117,7 @@ const PrivataEvent = () => (
       },
       {
         question: "Var håller ni eventen?",
-        answer: "I Dalarna: på altanen vid stugan, i er hyrda stuga, på ett hotell eller utomhus i skogen. I Stockholm: i en hyrd yogasal, på ert kontor, på ert hotell eller utomhus vid en lämplig plats. Jag kommer till er med allt som behövs."
+        answer: "I Dalarna: på altanen i skogen, i er hyrda lokal, på ett hotell eller utomhus i skogen. I Stockholm: i en hyrd yogasal, på ert kontor, på ert hotell eller utomhus vid en lämplig plats. Jag kommer till er med allt som behövs."
       },
       {
         question: "Vad behöver vi ta med oss?",

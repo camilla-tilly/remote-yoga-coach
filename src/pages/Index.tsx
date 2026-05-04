@@ -46,7 +46,7 @@ const Index = () => {
     <div className="min-h-screen bg-white relative overflow-x-hidden">
       <SEO
         title="Yoga med Camilla – Privat Yoga i Stockholm & Dalarna"
-        description="Privat yoga i Stockholm och Dalarna: möhippa, företagsyoga, SUP yoga och retreats. Bröllopsyoga för bröllopshelger i Dalarna. Certifierad yogalärare i en skogsstuga i Dalarna."
+        description="Privat yoga i Stockholm och Dalarna: möhippa, företagsyoga, SUP yoga och retreats. Bröllopsyoga för bröllopshelger i Dalarna. Certifierad yogalärare med yogaaltan i skogen i Dalarna."
         canonical="https://yogawithcamilla.se"
         structuredData={homepageStructuredData}
       />
