@@ -1089,7 +1089,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'heading',
-        text: 'Så här ser ett pass ut'
+        text: 'Så här ser en klass ut'
       },
       {
         type: 'paragraph',
@@ -1120,7 +1120,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Det passar mindre bra för personer som är rädda för fåglar eller djur i närheten, personer med allergier mot fjäderdjur, eller de som söker ett intensivt fysiskt träningspass (det här är mjukare och mer meditativt).'
+        text: 'Det passar mindre bra för personer som är rädda för fåglar eller djur i närheten, personer med allergier mot fjäderdjur, eller de som söker en intensiv fysisk träningsklass (det här är mjukare och mer meditativt).'
       },
       {
         type: 'heading',
@@ -1150,7 +1150,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Om det regnar flyttar vi till en annan dag, eller håller ett vanligt [utomhusyoga-pass](/blogg/outdoor-yoga-dalarna) utan hönsen under tak. Jag hör av mig kvällen innan om vi behöver flytta.'
+        text: 'Om det regnar flyttar vi till en annan dag, eller håller en vanlig [utomhusyoga-klass](/blogg/outdoor-yoga-dalarna) utan hönsen under tak. Jag hör av mig kvällen innan om vi behöver flytta.'
       },
       {
         type: 'heading',
@@ -1166,7 +1166,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Hönsyoga funkar utmärkt som del av en större helgupplevelse. Populära kombinationer: hönsyoga plus bastu plus middag, hönsyoga plus vandring till Styggforsen, eller för möhippor: hönsyoga plus en vanlig [yoga möhippa i Dalarna](/blogg/yoga-mohippa-dalarna) samma helg (två olika pass, två olika stämningar). Se också [möhippa i Dalarna, 7 aktiviteter](/blogg/mohippa-dalarna-aktiviteter).'
+        text: 'Hönsyoga funkar utmärkt som del av en större helgupplevelse. Populära kombinationer: hönsyoga plus bastu plus middag, hönsyoga plus vandring till Styggforsen, eller för möhippor: hönsyoga plus en vanlig [yoga möhippa i Dalarna](/blogg/yoga-mohippa-dalarna) samma helg (två olika klasser, två olika stämningar). Se också [möhippa i Dalarna, 7 aktiviteter](/blogg/mohippa-dalarna-aktiviteter).'
       },
       {
         type: 'heading',
@@ -1177,7 +1177,7 @@ export const blogPosts: BlogPost[] = [
         faqItems: [
           {
             q: 'Vad är hönsyoga?',
-            a: 'Ett riktigt yogapass på altanen i Dalarna där frigående höns vandrar omkring medan vi praktiserar. Lett av en certifierad yogalärare, 60 minuter, för blandad nivå. Svensk motsvarighet till amerikansk goat yoga, fast lugnare och mer naturligt.',
+            a: 'En riktig yogaklass på altanen i Dalarna där frigående höns vandrar omkring medan vi praktiserar. Ledd av en certifierad yogalärare, 60 minuter, för blandad nivå. Svensk motsvarighet till amerikansk goat yoga, fast lugnare och mer naturligt.',
           },
           {
             q: 'Vad kostar hönsyoga?',
@@ -1193,19 +1193,19 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Behöver jag vara rädd för hönsen?',
-            a: 'Nej. Hönsen är vana vid människor, de sprätter inte, de är lugna och orädda. Om någon deltagare är osäker kan jag hålla hönsen i deras hägn under passet. Bara säg till vid bokning.',
+            a: 'Nej. Hönsen är vana vid människor, de sprätter inte, de är lugna och orädda. Om någon deltagare är osäker kan jag hålla hönsen i deras hägn under klassen. Bara säg till vid bokning.',
           },
           {
             q: 'Finns hönsen året runt?',
-            a: 'Hönsyogasäsongen är maj till september. Under vinterhalvåret håller hönsen till inne och vi erbjuder inte passet då. Övriga [utomhusyoga](/blogg/outdoor-yoga-dalarna)-pass kan bokas året runt beroende på väder.',
+            a: 'Hönsyogasäsongen är maj till september. Under vinterhalvåret håller hönsen till inne och vi erbjuder inte klassen då. Övriga [utomhusyoga](/blogg/outdoor-yoga-dalarna)-klasser kan bokas året runt beroende på väder.',
           },
           {
             q: 'Är det hygieniskt?',
-            a: 'Ja. Altanen är stor och hönsen vistas där normalt. Mattorna läggs ut precis innan passet och rengörs efteråt. Hönsen håller sig till gräset bredvid, inte ovanpå mattorna.',
+            a: 'Ja. Altanen är stor och hönsen vistas där normalt. Mattorna läggs ut precis innan klassen och rengörs efteråt. Hönsen håller sig till gräset bredvid, inte ovanpå mattorna.',
           },
           {
             q: 'Kan barn vara med?',
-            a: 'Barn från cirka 10 år och uppåt som kan följa ett 60-minuters yogapass. Yngre barn blir oftast rastlösa och jagar hönsen, vilket inte är idealt för vare sig dem, er eller hönsen.',
+            a: 'Barn från cirka 10 år och uppåt som kan följa en 60-minuters yogaklass. Yngre barn blir oftast rastlösa och jagar hönsen, vilket inte är idealt för vare sig dem, er eller hönsen.',
           },
           {
             q: 'Hur många kan delta?',
@@ -1459,7 +1459,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'foretagsyoga-vad-ingar-och-kostar',
     title: 'Företagsyoga i Stockholm: priser, upplägg och vad som faktiskt ingår',
-    metaDescription: 'Komplett guide till företagsyoga i Stockholm. Priser från 1 000 kr/pass, format (morgon, lunch, event), vad som ingår, friskvårdsbidrag och svar på vanliga frågor.',
+    metaDescription: 'Komplett guide till företagsyoga i Stockholm. Priser från 1 000 kr/klass, format (morgon, lunch, event), vad som ingår, friskvårdsbidrag och svar på vanliga frågor.',
     publishDate: '2026-04-09',
     readingTime: '10 min',
     category: 'Företag & Konferens',
@@ -1480,7 +1480,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'callout',
-        text: 'Snabbversionen: Företagsyoga i Stockholm från 1 000 kr per pass (30 min). Jag kommer till ert kontor med mattor och block, leder passet, och ni behöver bara ett någorlunda fritt golvutrymme. Yoga är en godkänd friskvårdsaktivitet enligt Skatteverket. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för offert inom ett dygn.'
+        text: 'Snabbversionen: Företagsyoga i Stockholm från 1 000 kr per klass (30 min). Jag kommer till ert kontor med mattor och block, leder klassen, och ni behöver bara ett någorlunda fritt golvutrymme. Yoga är en godkänd friskvårdsaktivitet enligt Skatteverket. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för offert inom ett dygn.'
       },
       {
         type: 'heading',
@@ -1488,7 +1488,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Företagsyoga är yogaklasser som hålls på arbetsplatsen eller i samband med ett företagsevent. En certifierad yogalärare kommer till er med utrustning, leder ett pass anpassat efter gruppens nivå, och ni behöver inte tänka på något annat än att dyka upp. Det fungerar både som återkommande friskvård och som enstaka inslag på konferenser, kickoffer, sommaravslutningar eller after works.'
+        text: 'Företagsyoga är yogaklasser som hålls på arbetsplatsen eller i samband med ett företagsevent. En certifierad yogalärare kommer till er med utrustning, leder en klass anpassad efter gruppens nivå, och ni behöver inte tänka på något annat än att dyka upp. Det fungerar både som återkommande friskvård och som enstaka inslag på konferenser, kickoffer, sommaravslutningar eller after works.'
       },
       {
         type: 'paragraph',
@@ -1504,7 +1504,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Sen finns det något som är svårare att sätta siffror på, men lätt att känna i rummet efter ett pass. Folk pratar med varandra annorlunda. En tyst kvart där alla andas tillsammans sänker tempot på ett sätt som en pingisturnering inte gör. För ett team som suttit i Teams-möten hela dagen är det ofta precis det som saknas.'
+        text: 'Sen finns det något som är svårare att sätta siffror på, men lätt att känna i rummet efter en klass. Folk pratar med varandra annorlunda. En tyst kvart där alla andas tillsammans sänker tempot på ett sätt som en pingisturnering inte gör. För ett team som suttit i Teams-möten hela dagen är det ofta precis det som saknas.'
       },
       {
         type: 'heading',
@@ -1544,7 +1544,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'En engångsklass som del av en kickoff, konferens, sommaravslutning eller kundkväll. Längd och format skräddarsys. Allt från ett 20-minuters "andningspass" mellan föreläsningar, till en full 90-minuters outdoor-klass med efterföljande middag. Prissätts individuellt eftersom det beror på plats, antal deltagare och tidpunkt.'
+        text: 'En engångsklass som del av en kickoff, konferens, sommaravslutning eller kundkväll. Längd och format skräddarsys. Allt från en 20-minuters "andningsklass" mellan föreläsningar, till en full 90-minuters outdoor-klass med efterföljande middag. Prissätts individuellt eftersom det beror på plats, antal deltagare och tidpunkt.'
       },
       {
         type: 'subheading',
@@ -1564,11 +1564,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'table',
-        tableHead: ['Format', 'Längd', 'Pris per pass', 'Rekommenderat'],
+        tableHead: ['Format', 'Längd', 'Pris per klass', 'Rekommenderat'],
         tableRows: [
           ['Morgonyoga', '30 min', 'från 1 000 kr', 'Snabb reset, innan arbetsdagen'],
           ['Lunchyoga', '45 min', 'från 1 200 kr', 'Regelbundet, 1 gång per vecka'],
-          ['Fullängd', '60 min', 'från 1 500 kr', 'After work, djupare pass'],
+          ['Fullängd', '60 min', 'från 1 500 kr', 'After work, djupare klass'],
           ['Yin / restorativ', '75 min', 'från 1 800 kr', 'Fredagseftermiddagar, stressade team'],
           ['Event / konferens', '30 till 90 min', 'offert', 'Enstaka tillfällen, större grupper'],
         ],
@@ -1594,10 +1594,10 @@ export const blogPosts: BlogPost[] = [
         items: [
           '500-timmars certifierad yogalärare (Yoga Alliance)',
           'Yogamattor och block för upp till 20 deltagare',
-          'Passet anpassas efter gruppens nivå. Ingen förkunskap krävs.',
+          'Klassen anpassas efter gruppens nivå. Ingen förkunskap krävs.',
           'Undervisning på engelska',
           'Resa och uppriggning (jag är på plats 10 till 15 min innan start)',
-          'Uppföljning efter första passet för att finjustera upplägget',
+          'Uppföljning efter första klassen för att finjustera upplägget',
         ],
       },
       {
@@ -1619,11 +1619,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Första gången ni bokar: vi mejlar fram datum, form och antal. Några dagar innan skickar jag en kort anvisning till era deltagare (kläder, vad som är bra att veta, inget mer) som ni vidarebefordrar eller klistrar in i mötesinbjudan. Jag kommer 10 till 15 minuter innan start, flyttar undan det som behöver flyttas, lägger ut mattor. Leder passet. Plockar ihop efteråt. Ni gör ingenting.'
+        text: 'Första gången ni bokar: vi mejlar fram datum, form och antal. Några dagar innan skickar jag en kort anvisning till era deltagare (kläder, vad som är bra att veta, inget mer) som ni vidarebefordrar eller klistrar in i mötesinbjudan. Jag kommer 10 till 15 minuter innan start, flyttar undan det som behöver flyttas, lägger ut mattor. Leder klassen. Plockar ihop efteråt. Ni gör ingenting.'
       },
       {
         type: 'paragraph',
-        text: 'De flesta företag börjar med ett enstaka pass eller fyra veckors provperiod innan de går över till återkommande bokning. Det är rimligt. Man kan inte veta om det passar er kultur förrän ni testat.'
+        text: 'De flesta företag börjar med en enstaka klass eller fyra veckors provperiod innan de går över till återkommande bokning. Det är rimligt. Man kan inte veta om det passar er kultur förrän ni testat.'
       },
       {
         type: 'heading',
@@ -1667,7 +1667,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Hybridformatet funkar bra. Jag leder live på kontoret och resten följer via Zoom. Eller så bokar ni ett fast kontorspass och jag gör ett separat distanspass för remote-kollegor på en annan tid.'
+        text: 'Hybridformatet funkar bra. Jag leder live på kontoret och resten följer via Zoom. Eller så bokar ni en fast kontorsklass och jag gör en separat distansklass för remote-kollegor på en annan tid.'
       },
       {
         type: 'subheading',
@@ -1675,7 +1675,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Det räcker. Ett 30-minuterspass är designat för att vara koncentrerat. Ingen uppmjukning med pratstund, direkt in i andningen och rörelsen, avslutning med två minuter vila. Fungerar särskilt bra över lunchen när folk har tiden avsatt ändå.'
+        text: 'Det räcker. En 30-minutersklass är designad för att vara koncentrerad. Ingen uppmjukning med pratstund, direkt in i andningen och rörelsen, avslutning med två minuter vila. Fungerar särskilt bra över lunchen när folk har tiden avsatt ändå.'
       },
       {
         type: 'subheading',
@@ -1732,7 +1732,7 @@ export const blogPosts: BlogPost[] = [
         faqItems: [
           {
             q: 'Vad kostar företagsyoga i Stockholm?',
-            a: 'Företagsyoga hos mig kostar från 1 000 kr per 30-minuterspass vid regelbunden bokning på kontor i Stockholm. Ett 45-minuterspass kostar från 1 200 kr och ett 60-minuterspass från 1 500 kr. Konferens- och eventyoga prissätts individuellt. Alla priser exklusive moms.',
+            a: 'Företagsyoga hos mig kostar från 1 000 kr per 30-minutersklass vid regelbunden bokning på kontor i Stockholm. En 45-minutersklass kostar från 1 200 kr och en 60-minutersklass från 1 500 kr. Konferens- och eventyoga prissätts individuellt. Alla priser exklusive moms.',
           },
           {
             q: 'Hur många minst respektive max deltagare?',
@@ -1744,7 +1744,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Behöver deltagarna yoga-erfarenhet?',
-            a: 'Nej. Företagsyoga är designat för blandad nivå, inklusive personer som aldrig gjort yoga. Passet anpassas efter gruppen och inga avancerade positioner används. De flesta av mina företagskunder är team där majoriteten aldrig öppnat en yogamatta innan första passet.',
+            a: 'Nej. Företagsyoga är designat för blandad nivå, inklusive personer som aldrig gjort yoga. Klassen anpassas efter gruppen och inga avancerade positioner används. De flesta av mina företagskunder är team där majoriteten aldrig öppnat en yogamatta innan första klassen.',
           },
           {
             q: 'Vilken lokal behövs?',
@@ -1752,11 +1752,11 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Vad ska deltagarna ha på sig?',
-            a: 'Vanliga mjuka byxor och t-shirt. Inga speciella yogakläder krävs. Ombyte är valfritt. De flesta lunchyoga-deltagare byter om i 2 minuter innan och tillbaka efter, eller behåller samma kläder hela passet.',
+            a: 'Vanliga mjuka byxor och t-shirt. Inga speciella yogakläder krävs. Ombyte är valfritt. De flesta lunchyoga-deltagare byter om i 2 minuter innan och tillbaka efter, eller behåller samma kläder hela klassen.',
           },
           {
             q: 'Hur lång uppsägningstid har ni på återkommande bokningar?',
-            a: 'Två veckor. Man binder sig inte vid terminen. Vill ni pausa sommaren eller avsluta helt så räcker det med ett mejl 14 dagar innan nästa pass.',
+            a: 'Två veckor. Man binder sig inte vid terminen. Vill ni pausa sommaren eller avsluta helt så räcker det med ett mejl 14 dagar innan nästa klass.',
           },
           {
             q: 'Kan ni hålla klassen på engelska?',
@@ -1768,7 +1768,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Vad händer om jag eller deltagare är sjuka?',
-            a: 'Avbokning fram till 24 timmar innan passet är kostnadsfri. Enstaka frånvaro från deltagare i ett gruppupplägg påverkar inte priset. Ni betalar för klassen, inte per person.',
+            a: 'Avbokning fram till 24 timmar innan klassen är kostnadsfri. Enstaka frånvaro från deltagare i ett gruppupplägg påverkar inte priset. Ni betalar för klassen, inte per person.',
           },
         ],
       },
@@ -1799,7 +1799,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       { type: 'paragraph', text: 'Stockholm är en fantastisk stad för möhippa. Vatten överallt, bra restauranger, massor av alternativ. Men grejen är att många grupper fastnar i samma spår: prosecco-frukost, spa, och sedan ut på krogen. Inget fel med det. Men om ni vill ha en dag som faktiskt känns unik, en dag där bruden ser på er och säger "det här var exakt rätt", så lönar det sig att tänka ett varv till.' },
       { type: 'heading', text: '1. Privat SUP yoga och bastu vid Sickla Strand' },
-      { type: 'paragraph', text: 'Det här är vår absoluta favorit. Yoga på ett paddleboard låter lite galet, men det är precis det som gör det så bra för möhippa. Ni skrattar, ni utmanar er lagom, ingen behöver kunna yoga sedan tidigare. Vi håller ett privat pass vid Sickla Strand där ni balanserar, faller i, och har det roligaste på länge. Vinyasa eller yin, ni väljer stil.' },
+      { type: 'paragraph', text: 'Det här är vår absoluta favorit. Yoga på ett paddleboard låter lite galet, men det är precis det som gör det så bra för möhippa. Ni skrattar, ni utmanar er lagom, ingen behöver kunna yoga sedan tidigare. Vi håller en privat klass vid Sickla Strand där ni balanserar, faller i, och har det roligaste på länge. Vinyasa eller yin, ni väljer stil.' },
       { type: 'paragraph', text: 'Efteråt: bastu direkt vid vattnet. Varmt, lugnt, bara ni och utsikten. Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Klassen leds av mig, plats och utrustning kommer från min partner Smashing Balance. Mejla hello.yogawithcamilla@gmail.com för offert, eller läs mer på yogawithcamilla.se/tjanster/sup-yoga.' },
       { type: 'heading', text: '2. Skärgårdstur med egen båt' },
       { type: 'paragraph', text: 'Stockholms skärgård är ett av världens finaste naturområden och den ligger bokstavligen utanför dörren. Strandrederi hyr ut båtar med skeppare för dagen, ni packar mat och dryck, sätter kurs mot en ö, badar från klippor, grillar, sover i solen. Kanebo Event är alternativet för större grupper, de har båtar som tar upp till 110 gäster. För en snabbare variant med fartvind i håret, boka RIB Stockholm.' },
