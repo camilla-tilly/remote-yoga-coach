@@ -42,6 +42,11 @@ const dalarnaServices: ServiceCard[] = [
     description: 'Möhippa, bröllop eller firande. Skräddarsydd dag för gruppen på altanen i Dalarna.',
     href: '/tjanster/privata-event',
   },
+  {
+    title: 'Företagsyoga',
+    description: 'Yoga för konferenser, kickoffs och företagsevent. Falun, Borlänge, Mora, Leksand, Rättvik och omnejd.',
+    href: '/tjanster/foretagsyoga',
+  },
 ];
 
 const ServiceCard = ({ title, description, href, tag }: ServiceCard) => (

@@ -392,9 +392,14 @@ const ServicePageLayout = ({
                 <h2 className="font-cormorant font-semibold text-2xl md:text-3xl text-dalashala-earth mb-4 tracking-tight">
                   {softenAmp(englishKeywords.heading)}
                 </h2>
-                <p className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed mb-6">
-                  {englishKeywords.text}
-                </p>
+                {englishKeywords.text.split(/\n\n+/).map((para, i, arr) => (
+                  <p
+                    key={i}
+                    className={`font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed ${i === arr.length - 1 ? 'mb-6' : 'mb-4'}`}
+                  >
+                    {para}
+                  </p>
+                ))}
                 <Button
                   className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft transition-all duration-300 font-inter py-3 px-8 rounded-full uppercase tracking-[0.2em] text-sm font-semibold"
                   asChild

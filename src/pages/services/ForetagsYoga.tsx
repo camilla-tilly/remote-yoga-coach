@@ -68,7 +68,7 @@ const ForetagsYoga = () => (
       "Har ni egna yogamattor är det perfekt. Om jag behöver ta med utrustning diskuterar vi det separat, baserat på antal deltagare, avstånd och vad som behövs på plats.",
       "Vi pratar också igenom kläder innan. Ska klassen funka i det folk redan har på sig på kontoret, eller hinner ni byta om till träningskläder? Båda funkar, jag anpassar rörelserna efter det.",
       "I Stockholm kommer jag till er lokal, eller hjälper gärna till att hitta en lämplig yogasal. Regelbundna klasser på kontoret erbjuds endast i Stockholm. I Dalarna reser jag till Vansbro, Falun, Borlänge, Ludvika, Mora, Leksand och Rättvik, och området däremellan, för konferenser, kickoffs och företagsevent på er konferensanläggning eller utomhus.",
-      "Maila hello.yogawithcamilla@gmail.com med datum, antal deltagare, stad och typ av event för en offert."
+      "Maila hello.yogawithcamilla@gmail.com med datum, antal deltagare, plats och typ av event för en offert."
     ]}
     ctaHeading="Boka företagsyoga eller event"
     ctaText="Hör av dig med era önskemål och jag sätter ihop ett förslag som passar ert event."
@@ -95,14 +95,14 @@ const ForetagsYoga = () => (
       },
       {
         question: "Hur bokar vi?",
-        answer: "Maila hello.yogawithcamilla@gmail.com med datum, antal deltagare, stad och typ av event. Jag svarar med tillgänglighet och en offert inom 24 timmar."
+        answer: "Maila hello.yogawithcamilla@gmail.com med datum, antal deltagare, plats och typ av event. Jag återkommer till er med tillgänglighet och en offert."
       }
     ]}
     structuredData={structuredData}
     relatedServices={relatedServices}
     englishKeywords={{
       heading: "Corporate Yoga in English | Stockholm & Dalarna",
-      text: "Corporate yoga in Stockholm and conference, kickoff and event yoga in Dalarna, Sweden. Led in English by a 500-hour certified yoga teacher. Regular office classes available in Stockholm only. In Dalarna I run yoga sessions for conferences, kickoffs and team events. Email hello.yogawithcamilla@gmail.com to book."
+      text: "Led in English by a 500-hour certified yoga teacher.\n\nIn Stockholm: regular office yoga classes, plus yoga for conferences, kickoffs and AWs.\n\nIn Dalarna: yoga for conferences, kickoffs and corporate events. I travel to Vansbro, Falun, Borlänge, Ludvika, Mora, Leksand and Rättvik, and the surrounding area.\n\nEmail hello.yogawithcamilla@gmail.com with date, group size, location and event type for a quote."
     }}
   />
 );
