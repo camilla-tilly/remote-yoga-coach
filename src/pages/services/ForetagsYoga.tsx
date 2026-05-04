@@ -35,7 +35,7 @@ const ForetagsYoga = () => (
     introHeading="Ett andrum för teamet"
     introParagraphs={[
       "Jag erbjuder företagsyoga i Stockholm och Dalarna: konferenser, kickoffs, AWs och regelbundna klasser på kontoret. Klassen hålls på engelska.",
-      "Ge era anställda chansen att andas, sänka tempot och släppa spänningar från långa möten. Stressen sjunker, tankarna klarnar och fokus blir skarpare. En gemensam stund där ingen behöver prestera. Inga avancerade poser, inga prestationskrav.",
+      "Unna era anställda en stund att andas, sänka tempot och släppa spänningar från långa möten. Stressen sjunker, tankarna klarnar och fokus blir skarpare. En gemensam stund där ingen behöver prestera. Inga avancerade poser, inga prestationskrav.",
       "Ingen yogaerfarenhet krävs. Klassen anpassas efter gruppen."
     ]}
     highlights={[
@@ -61,9 +61,9 @@ const ForetagsYoga = () => (
       }
     ]}
     pricing={[
-      { label: 'Kontoret · 60 min', price: '2 100 kr/pass', note: 'Regelbunden yoga på kontoret, 1 gång/vecka månadsvis.' },
-      { label: 'Kontoret · 45 min', price: '1 800 kr/pass', note: 'Regelbunden yoga på kontoret, 1 gång/vecka månadsvis.' },
-      { label: 'Kontoret · 30 min', price: '1 600 kr/pass', note: 'Regelbunden yoga på kontoret, 1 gång/vecka månadsvis.' },
+      { label: 'Kontoret · 60 min', price: '2 100 kr/klass', note: 'Regelbunden yoga på kontoret, 1 gång/vecka månadsvis.' },
+      { label: 'Kontoret · 45 min', price: '1 800 kr/klass', note: 'Regelbunden yoga på kontoret, 1 gång/vecka månadsvis.' },
+      { label: 'Kontoret · 30 min', price: '1 600 kr/klass', note: 'Regelbunden yoga på kontoret, 1 gång/vecka månadsvis.' },
       { label: 'Konferens & event', price: 'kontakta för offert', note: 'Pris baseras på antal deltagare, längd och plats.' },
       { label: 'Kickoff & teambuilding', price: 'kontakta för offert', note: 'Skräddarsytt upplägg för er dag och er grupp.' },
     ]}
@@ -83,7 +83,7 @@ const ForetagsYoga = () => (
       },
       {
         question: "Vad kostar företagsyoga?",
-        answer: "Regelbundna klasser på kontoret kostar från 1 600 kr/pass (30 min), 1 800 kr (45 min) eller 2 100 kr (60 min). Om ni behöver att jag tar med utrustning diskuterar vi det separat, eftersom priset beror på antal deltagare, avstånd och vad som behövs på plats. Konferenser, kickoffs och event prissätts individuellt baserat på antal deltagare, längd och plats."
+        answer: "Regelbundna klasser på kontoret kostar från 1 600 kr/klass (30 min), 1 800 kr (45 min) eller 2 100 kr (60 min). Om ni behöver att jag tar med utrustning diskuterar vi det separat, eftersom priset beror på antal deltagare, avstånd och vad som behövs på plats. Konferenser, kickoffs och event prissätts individuellt baserat på antal deltagare, längd och plats."
       },
       {
         question: "Hur lång är en klass?",
