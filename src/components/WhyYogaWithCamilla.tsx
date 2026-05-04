@@ -7,11 +7,11 @@ const cards = [
   },
   {
     title: 'Naturen som studio',
-    body: 'Helst håller jag klasser utomhus. På altanen i Dalarna omgiven av gran, eller på SUP-bräda på Sicklasjön i Stockholm. Det är något med naturens stillhet och förundran som hjälper dig landa i dig själv igen.',
+    body: 'När det går håller jag klasser utomhus, på altanen i Dalarna eller på SUP-bräda på Sicklasjön i Stockholm. Naturens stillhet hjälper dig landa i dig själv igen.',
   },
   {
     title: 'På er plats',
-    body: 'Vill ni hellre att jag kommer till er? Säg bara var.',
+    body: 'Föredrar ni att jag kommer till er? Jag håller gärna klassen hos er, på den plats som passar tillfället bäst.',
   },
   {
     title: 'Ingen press, ingen bedömning',
