@@ -23,7 +23,7 @@ const structuredData = {
 const ForetagsYoga = () => (
   <ServicePageLayout
     seoTitle="Företagsyoga, Konferensyoga & Kickoff Stockholm & Dalarna | Yoga med Camilla"
-    seoDescription="Yoga för konferenser, kickoffs och regelbundna klasser på kontoret i Stockholm och Dalarna. Öka teamets energi och välmående. Ingen förkunskap krävs."
+    seoDescription="Företagsyoga i Stockholm: regelbundna klasser på kontoret samt konferenser och kickoffs. I Dalarna: yoga för konferenser, kickoffs och företagsevent. Ingen förkunskap krävs."
     canonical="https://yogawithcamilla.se/tjanster/foretagsyoga"
     ogImage="https://yogawithcamilla.se/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     breadcrumbLabel="Företagsyoga"
@@ -34,8 +34,8 @@ const ForetagsYoga = () => (
     heroImageAlt="Lugn och fokus, yoga för konferens och företagsevent"
     introHeading="Ett andrum för teamet"
     introParagraphs={[
-      "Jag erbjuder företagsyoga i Stockholm och Dalarna: konferenser, kickoffs, AWs och regelbundna klasser på kontoret. Klassen hålls på engelska.",
-      "Unna era anställda en stund att andas, sänka tempot och släppa spänningar från långa möten. Stressen sjunker, tankarna klarnar och fokus blir skarpare. En gemensam stund där ingen behöver prestera. Inga avancerade poser, inga prestationskrav.",
+      "I Stockholm erbjuder jag regelbunden yoga på kontoret samt konferenser, kickoffs och AWs. I Dalarna håller jag yoga för konferenser, kickoffs och företagsevent. Klassen hålls på engelska.",
+      "Unna era anställda en stund att andas, sänka tempot och släppa spänningar från långa möten. Stressen sjunker, tankarna klarnar och fokus blir skarpare. En gemensam stund där ingen behöver prestera.",
       "Ingen yogaerfarenhet krävs. Klassen anpassas efter gruppen."
     ]}
     highlights={[
@@ -49,15 +49,11 @@ const ForetagsYoga = () => (
       },
       {
         heading: "Regelbundna klasser",
-        text: "Återkommande yoga på ert kontor i Stockholm, veckovis eller varannan vecka."
+        text: "Återkommande yoga på ert kontor i Stockholm, veckovis eller varannan vecka. (Endast Stockholm.)"
       },
       {
         heading: "Teambuilding",
         text: "En gemensam yogaklass som faktiskt sänker tempot. Bra inslag på teamdagen, retreaten eller AW:n."
-      },
-      {
-        heading: "Konferens i Dalarna",
-        text: "Kombinera konferensen med yoga på altanen i Dalarna. Utomhus, i skogen."
       }
     ]}
     pricing={[
@@ -71,7 +67,7 @@ const ForetagsYoga = () => (
     detailsParagraphs={[
       "Klassen är vanligtvis 30–60 minuter. Ni behöver bara ha ett utrymme som är tillräckligt stort.",
       "Har ni egna yogamattor är det perfekt. Om jag behöver ta med utrustning diskuterar vi det separat, baserat på antal deltagare, avstånd och vad som behövs på plats.",
-      "I Stockholm kommer jag till er lokal, eller hjälper gärna till att hitta en lämplig yogasal. I Dalarna erbjuder jag företagsyoga i Falun, Borlänge och omnejd, på ert kontor, er konferensanläggning eller utomhus.",
+      "I Stockholm kommer jag till er lokal, eller hjälper gärna till att hitta en lämplig yogasal. Regelbundna klasser på kontoret erbjuds endast i Stockholm. I Dalarna håller jag yoga för konferenser, kickoffs och företagsevent i Falun, Borlänge och omnejd, på er konferensanläggning eller utomhus.",
       "Maila hello.yogawithcamilla@gmail.com med datum, antal deltagare, stad och typ av event för en offert."
     ]}
     ctaHeading="Boka företagsyoga eller event"
@@ -94,6 +90,10 @@ const ForetagsYoga = () => (
         answer: "Bara ett utrymme som är tillräckligt stort. Har ni egna yogamattor är det perfekt. Behöver ni att jag tar med utrustning kan vi prata om det utifrån gruppens storlek och plats."
       },
       {
+        question: "Erbjuder ni regelbunden företagsyoga i Dalarna?",
+        answer: "Nej, regelbundna klasser på kontoret erbjuds endast i Stockholm. I Dalarna håller jag yoga för konferenser, kickoffs och företagsevent, ofta i samband med en konferensdag eller teamdag."
+      },
+      {
         question: "Kan ni hålla yoga utomhus?",
         answer: "Ja, utomhusyoga funkar utmärkt för konferenser i Dalarna. Jag erbjuder klasser på altanen i skogen eller på er konferensanläggning."
       },
@@ -106,7 +106,7 @@ const ForetagsYoga = () => (
     relatedServices={relatedServices}
     englishKeywords={{
       heading: "Corporate Yoga in English | Stockholm & Dalarna",
-      text: "Corporate yoga, conference yoga and kickoff sessions in Stockholm and Dalarna, Sweden. Led in English by a 500-hour certified yoga teacher. Regular office classes, conference sessions, kickoffs and team-building events for corporate teams. Email hello.yogawithcamilla@gmail.com to book."
+      text: "Corporate yoga in Stockholm and conference, kickoff and event yoga in Dalarna, Sweden. Led in English by a 500-hour certified yoga teacher. Regular office classes available in Stockholm only. In Dalarna I run yoga sessions for conferences, kickoffs and team events. Email hello.yogawithcamilla@gmail.com to book."
     }}
   />
 );
