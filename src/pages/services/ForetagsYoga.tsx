@@ -35,7 +35,7 @@ const ForetagsYoga = () => (
     introHeading="Ett andrum för teamet"
     introParagraphs={[
       "Jag erbjuder företagsyoga i Stockholm och Dalarna: konferenser, kickoffs, AWs och regelbundna klasser på kontoret. Klassen hålls på engelska.",
-      "Yoga sänker tempot, lugnar andningen och släpper spänningar från långa möten. En gemensam stund där ingen behöver prestera, oavsett om det handlar om teambuilding, en paus mitt i konferensdagen eller en återkommande klass på kontoret. Inga avancerade poser, inga prestationskrav.",
+      "Yoga sänker tempot, lugnar andningen och släpper spänningar från långa möten. Mindre stress, klarare huvud och bättre fokus efteråt. En gemensam stund där ingen behöver prestera. Inga avancerade poser, inga prestationskrav.",
       "Ingen yogaerfarenhet krävs. Klassen anpassas efter gruppen."
     ]}
     highlights={[
