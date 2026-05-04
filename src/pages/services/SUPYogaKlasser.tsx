@@ -2,7 +2,7 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
   { label: 'Privat SUP Yoga (möhippa, team)', href: '/tjanster/sup-yoga' },
-  { label: 'Företagsyoga & Workshops', href: '/tjanster/foretagsyoga' },
+  { label: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
 ];
 
 const structuredData = {

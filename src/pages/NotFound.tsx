@@ -9,7 +9,7 @@ import { softenAmp } from '@/lib/amp';
 
 const topServices = [
   { name: 'Privata Event', href: '/tjanster/privata-event' },
-  { name: 'Företagsyoga & Workshops', href: '/tjanster/foretagsyoga' },
+  { name: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
   { name: 'SUP Yoga Stockholm', href: '/tjanster/sup-yoga' },
   { name: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
   { name: 'Hönsyoga i Dalarna', href: '/tjanster/honsyoga' },

@@ -1,7 +1,7 @@
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
-  { label: 'Företagsyoga & Workshops', href: '/tjanster/foretagsyoga' },
+  { label: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
   { label: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
   { label: 'Hönsyoga på Stugan', href: '/tjanster/honsyoga' },
   { label: 'SUP Yoga Stockholm', href: '/tjanster/sup-yoga' },

@@ -10,8 +10,8 @@ type ServiceCard = {
 
 const stockholmServices: ServiceCard[] = [
   {
-    title: 'Företagsyoga & Workshops',
-    description: 'Konferenser, kickoffs, teambuilding och tematiska workshops. Alla nivåer.',
+    title: 'Företagsyoga',
+    description: 'Konferenser, kickoffs, teambuilding och regelbundna klasser på kontoret. Alla nivåer.',
     href: '/tjanster/foretagsyoga',
   },
   {
