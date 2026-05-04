@@ -33,11 +33,11 @@ const structuredData = {
 const credentials = [
   {
     title: "500 timmars yoga-certifiering",
-    detail: "200h YTT vid Rishikul Yogshala, Rishikesh, Indien\n300h YTT vid Sampoorna Yoga Shala, Goa i Advanced Vinyasa Flow"
+    detail: "200h YTT på Rishikul Yogshala, Rishikesh, Indien\n300h YTT i Advanced Vinyasa Flow på Sampoorna Yoga Shala, Goa"
   },
   {
-    title: "Fitness & rörelsevetenskap",
-    detail: "Certificate III in Fitness, Australien\n7 år som internationellt certifierad Les Mills Bodypump-instruktör i Australien & Sverige (certifierad 2018)"
+    title: "Group fitness-instruktör",
+    detail: "Certificate III in Fitness, Australian Institute of Personal Trainers\n7 år som internationellt certifierad Les Mills Bodypump-instruktör i Australien & Sverige (certifierad 2018)"
   },
   {
     title: "Ultralöpning",
@@ -79,28 +79,39 @@ const OmMig = () => {
         </section>
 
         {/* ── Story ── */}
-        <section className="py-8 md:py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-5 gap-10 md:gap-12 items-start">
-              <div className="md:col-span-3 space-y-6">
-                <p className="font-inter text-lg md:text-xl leading-relaxed text-dalashala-earth">
-                  Jag heter Camilla. Jag är australiensisk, 500-timmar certifierad yogalärare och undervisar yoga i Stockholm och Dalarna. Jag har instruerat fitness i sju år som Les Mills-instruktör och sprungit fem ultramaraton, inklusive en pallplats. Rörelse har alltid varit en stor del av mitt liv.
-                </p>
-                <p className="font-inter text-lg md:text-xl leading-relaxed text-dalashala-earth/85">
-                  Rörelse, natur och mindfulness har alltid varit viktiga för mig. Yoga binder ihop dem. Det är där jag landar.
-                </p>
-                <p className="font-inter text-lg md:text-xl leading-relaxed text-dalashala-earth/85">
-                  Jag är baserad i Stockholm och undervisar även i Dalarna, där jag har en stuga med en stor altan som ibland förvandlas till yogashala.
-                </p>
+        <section className="py-8 md:py-16 px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
+              <div className="md:col-span-7 order-2 md:order-1">
+                <h2 className="font-fraunces text-3xl md:text-4xl text-dalashala-earth leading-[1.1] tracking-[-0.025em] mb-7" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 120, 'SOFT' 80" }}>
+                  Jag heter Camilla.
+                </h2>
+                <div className="space-y-5">
+                  <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85">
+                    Jag växte upp i Australien men har hittat hem i en stuga i Dalarna, med höns och en stor altan som ibland förvandlas till yogashala.
+                  </p>
+                  <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85">
+                    Rörelse, natur och mindfulness har alltid hängt ihop för mig. Det är i yogan allt landar.
+                  </p>
+                  <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85">
+                    Idag undervisar jag i Stockholm och Dalarna, både i studio och hemma på altanen.
+                  </p>
+                </div>
               </div>
-              <div className="md:col-span-2">
-                <div className="overflow-hidden rounded-2xl shadow-card border border-dalashala-meadow/40">
-                  <img
-                    src="/lovable-uploads/c1e6d7f9-3ac6-42af-ac83-3058516ff2ef.jpg"
-                    alt="Camilla i warrior pose på altanen i Dalarna"
-                    className="w-full h-full object-cover rounded-2xl"
-                    loading="lazy"
+              <div className="md:col-span-5 order-1 md:order-2">
+                <div className="relative">
+                  <div
+                    aria-hidden="true"
+                    className="absolute -inset-3 md:-inset-4 rounded-[1.75rem] bg-dalashala-meadow/25 -z-10 translate-x-2 translate-y-2 md:translate-x-3 md:translate-y-3"
                   />
+                  <div className="overflow-hidden rounded-2xl shadow-card border border-dalashala-meadow/40 aspect-[4/5]">
+                    <img
+                      src="/lovable-uploads/c1e6d7f9-3ac6-42af-ac83-3058516ff2ef.jpg"
+                      alt="Camilla i warrior pose på altanen i Dalarna"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
