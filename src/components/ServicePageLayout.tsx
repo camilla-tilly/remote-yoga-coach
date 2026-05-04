@@ -1,5 +1,6 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
@@ -36,6 +37,7 @@ interface ServicePageProps {
   heroImageAlt?: string;
   heroImagePosition?: string;
   heroImageAspect?: string;
+  heroGallery?: { src: string; alt: string; position?: string }[];
   gallery?: { src: string; alt: string; position?: string }[];
   introHeading: string;
   introParagraphs: string[];
@@ -70,6 +72,7 @@ const ServicePageLayout = ({
   heroImageAlt,
   heroImagePosition,
   heroImageAspect,
+  heroGallery,
   gallery,
   introHeading,
   introParagraphs,
@@ -199,8 +202,14 @@ const ServicePageLayout = ({
           </div>
         </section>
 
-        {/* Hero Image — full-bleed-ish, bigger, more cinematic */}
-        {heroImage && (
+        {/* Hero Gallery — click-through carousel */}
+        {heroGallery && heroGallery.length > 0 ? (
+          <HeroCarousel
+            images={heroGallery}
+            aspect={heroImageAspect || 'aspect-[16/10] md:aspect-[21/9]'}
+            fallbackAlt={heroHeading}
+          />
+        ) : heroImage && (
           <section className="px-4 mb-20 mt-4">
             <div className={`relative max-w-5xl mx-auto overflow-hidden rounded-[28px] shadow-card ring-1 ring-dalashala-meadow/50 ${heroImageAspect || 'aspect-[16/10] md:aspect-[21/9]'}`}>
               <img
@@ -462,6 +471,79 @@ const ServicePageLayout = ({
       <Footer />
       <ScrollToTop />
     </div>
+  );
+};
+
+interface HeroCarouselProps {
+  images: { src: string; alt: string; position?: string }[];
+  aspect: string;
+  fallbackAlt: string;
+}
+
+const HeroCarousel = ({ images, aspect, fallbackAlt }: HeroCarouselProps) => {
+  const [current, setCurrent] = useState(0);
+  const total = images.length;
+
+  const goTo = (i: number) => setCurrent(((i % total) + total) % total);
+  const goPrev = () => goTo(current - 1);
+  const goNext = () => goTo(current + 1);
+
+  return (
+    <section className="px-4 mb-20 mt-4">
+      <div className={`relative max-w-5xl mx-auto overflow-hidden rounded-[28px] shadow-card ring-1 ring-dalashala-meadow/50 ${aspect}`}>
+        {images.map((img, i) => (
+          <img
+            key={i}
+            src={img.src}
+            alt={img.alt || fallbackAlt}
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-out ${i === current ? 'opacity-100' : 'opacity-0'}`}
+            style={img.position ? { objectPosition: img.position } : undefined}
+            loading={i === 0 ? 'eager' : 'lazy'}
+            fetchpriority={i === 0 ? 'high' : undefined}
+            aria-hidden={i === current ? undefined : 'true'}
+          />
+        ))}
+
+        {/* Vignette */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 pointer-events-none"
+          style={{ background: 'linear-gradient(180deg, rgba(45,63,47,0) 60%, rgba(45,63,47,0.18) 100%)' }}
+        />
+
+        {/* Prev / Next buttons */}
+        <button
+          type="button"
+          onClick={goPrev}
+          aria-label="Föregående bild"
+          className="absolute left-3 md:left-5 top-1/2 -translate-y-1/2 z-10 h-10 w-10 md:h-12 md:w-12 rounded-full bg-white/85 backdrop-blur-sm text-dalashala-earth shadow-md flex items-center justify-center hover:bg-white transition-all"
+        >
+          <ChevronLeft className="h-5 w-5 md:h-6 md:w-6" />
+        </button>
+        <button
+          type="button"
+          onClick={goNext}
+          aria-label="Nästa bild"
+          className="absolute right-3 md:right-5 top-1/2 -translate-y-1/2 z-10 h-10 w-10 md:h-12 md:w-12 rounded-full bg-white/85 backdrop-blur-sm text-dalashala-earth shadow-md flex items-center justify-center hover:bg-white transition-all"
+        >
+          <ChevronRight className="h-5 w-5 md:h-6 md:w-6" />
+        </button>
+
+        {/* Dots */}
+        <div className="absolute bottom-4 md:bottom-5 left-0 right-0 flex justify-center gap-2 z-10">
+          {Array.from({ length: total }).map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => goTo(i)}
+              aria-label={`Gå till bild ${i + 1}`}
+              aria-current={i === current ? 'true' : undefined}
+              className={`h-2 rounded-full transition-all ${i === current ? 'w-6 bg-white' : 'w-2 bg-white/60 hover:bg-white/80'}`}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 
