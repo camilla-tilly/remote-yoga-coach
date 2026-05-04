@@ -91,7 +91,7 @@ const ForetagsYoga = () => (
       },
       {
         question: "Kan ni hålla yoga utomhus?",
-        answer: "Ja, utomhusyoga funkar utmärkt för konferenser i Dalarna. Jag erbjuder klasser på altanen i skogen eller på er konferensanläggning."
+        answer: "Ja. I Dalarna funkar utomhusyoga utmärkt, på altanen i skogen eller vid er konferensanläggning. I Stockholm kommer jag till er plats och håller klassen på gräsmattan eller en annan passande utomhusyta. Vill gruppen hellre ha yoga på vattnet kan vi i stället boka en SUP-yoga-session vid Sickla Strand."
       },
       {
         question: "Hur bokar vi?",

@@ -486,7 +486,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, ort, antal deltagare och placering i programmet. Jag återkommer inom 24 timmar med en konkret offert. För regelbunden yoga på kontoret utanför konferensen, se [företagsyoga](/tjanster/foretagsyoga). För fler team-aktiviteter i Stockholm, kolla in [7 teambuilding-aktiviteter i Stockholm](/blogg/teambuilding-aktiviteter-stockholm).'
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, ort, antal deltagare och placering i programmet. Jag återkommer med en konkret offert. För regelbunden yoga på kontoret utanför konferensen, se [företagsyoga](/tjanster/foretagsyoga). För fler team-aktiviteter i Stockholm, kolla in [7 teambuilding-aktiviteter i Stockholm](/blogg/teambuilding-aktiviteter-stockholm).'
       },
     ]
   },
@@ -1213,7 +1213,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Hur bokar man?',
-            a: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med önskat datum och antal. Jag svarar inom 24 timmar med tillgänglighet och offert. Bokning bekräftas mot Swish eller faktura.',
+            a: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med önskat datum och antal. Jag återkommer med tillgänglighet och offert. Bokning bekräftas mot Swish eller faktura.',
           },
         ],
       },
@@ -1712,8 +1712,8 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'list',
         items: [
-          '1. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum (eller önskad frekvens), ungefärligt antal deltagare, stad och format.',
-          '2. Jag svarar inom 24 timmar med tillgänglighet, förslag på upplägg och offert.',
+          '1. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum (eller önskad frekvens), ungefärligt antal deltagare, plats och format.',
+          '2. Jag återkommer med tillgänglighet, förslag på upplägg och offert.',
           '3. Ni bokar datum och jag skickar en kort anvisning till era deltagare att vidarebefordra.',
           '4. Jag kommer, leder, plockar ihop. Faktura skickas månadsvis.',
         ],
@@ -1778,7 +1778,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal deltagare, stad och typ av event. Jag svarar inom 24 timmar med tillgänglighet och offert. Ni kan också läsa mer på tjänstesidan för [företagsyoga](/tjanster/foretagsyoga) eller börja med en 30-minuters provklass om ni vill testa innan ni bestämmer er för ett längre upplägg.'
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal deltagare, plats och typ av event. Jag återkommer med tillgänglighet och offert. Ni kan också läsa mer på tjänstesidan för [företagsyoga](/tjanster/foretagsyoga) eller börja med en 30-minuters provklass om ni vill testa innan ni bestämmer er för ett längre upplägg.'
       },
     ]
   },
