@@ -11,7 +11,7 @@ const cards = [
   },
   {
     title: 'På er plats',
-    body: 'Föredrar ni att jag kommer till er? Jag tar med mattor och allt som behövs. Konferensrum, stuga eller trädgård, det går bra.',
+    body: 'Föredrar ni att jag kommer till er? Jag tar med mattor och allt som behövs.',
   },
   {
     title: 'Ingen press, ingen bedömning',
