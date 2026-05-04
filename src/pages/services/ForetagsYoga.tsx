@@ -60,8 +60,7 @@ const ForetagsYoga = () => (
       { label: 'Kontoret · 60 min', price: '2 100 kr/klass', note: 'Regelbunden yoga på kontoret, 1 gång/vecka månadsvis.' },
       { label: 'Kontoret · 45 min', price: '1 800 kr/klass', note: 'Regelbunden yoga på kontoret, 1 gång/vecka månadsvis.' },
       { label: 'Kontoret · 30 min', price: '1 600 kr/klass', note: 'Regelbunden yoga på kontoret, 1 gång/vecka månadsvis.' },
-      { label: 'Konferens & event', price: 'kontakta för offert', note: 'Pris baseras på antal deltagare, längd och plats.' },
-      { label: 'Kickoff & teambuilding', price: 'kontakta för offert', note: 'Skräddarsytt upplägg för er dag och er grupp.' },
+      { label: 'Konferens, kickoff & event', price: 'kontakta för offert', note: 'Pris baseras på antal deltagare, längd och plats.' },
     ]}
     detailsHeading="Format & praktisk information"
     detailsParagraphs={[
