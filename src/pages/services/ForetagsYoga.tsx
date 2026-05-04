@@ -90,10 +90,6 @@ const ForetagsYoga = () => (
         answer: "Bara ett utrymme som är tillräckligt stort. Har ni egna yogamattor är det perfekt. Behöver ni att jag tar med utrustning kan vi prata om det utifrån gruppens storlek och plats."
       },
       {
-        question: "Erbjuder ni regelbunden företagsyoga i Dalarna?",
-        answer: "Nej, regelbundna klasser på kontoret erbjuds endast i Stockholm. I Dalarna håller jag yoga för konferenser, kickoffs och företagsevent, ofta i samband med en konferensdag eller teamdag."
-      },
-      {
         question: "Kan ni hålla yoga utomhus?",
         answer: "Ja, utomhusyoga funkar utmärkt för konferenser i Dalarna. Jag erbjuder klasser på altanen i skogen eller på er konferensanläggning."
       },
