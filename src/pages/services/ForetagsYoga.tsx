@@ -64,10 +64,15 @@ const ForetagsYoga = () => (
     ]}
     detailsHeading="Format & praktisk information"
     detailsParagraphs={[
+      { subheading: "Allmänt" },
       "Ni väljer längd: 30, 45 eller 60 minuter. Ni behöver bara ha ett utrymme som är tillräckligt stort.",
       "Har ni egna yogamattor är det perfekt. Om jag behöver ta med utrustning diskuterar vi det separat, baserat på antal deltagare, avstånd och vad som behövs på plats.",
       "Vi pratar också igenom kläder innan. Ska klassen funka i det folk redan har på sig på kontoret, eller hinner ni byta om till träningskläder? Båda funkar, jag anpassar rörelserna efter det.",
-      "I Stockholm kommer jag till er lokal, eller hjälper gärna till att hitta en lämplig yogasal. Regelbundna klasser på kontoret erbjuds endast i Stockholm. I Dalarna reser jag till Vansbro, Falun, Borlänge, Ludvika, Mora, Leksand och Rättvik, och området däremellan, för konferenser, kickoffs och företagsevent på er konferensanläggning eller utomhus.",
+      { subheading: "Stockholm" },
+      "Jag kommer till er lokal, eller hjälper gärna till att hitta en lämplig yogasal. Regelbundna klasser på kontoret erbjuds endast i Stockholm.",
+      { subheading: "Dalarna" },
+      "Jag reser till Vansbro, Falun, Borlänge, Ludvika, Mora, Leksand och Rättvik, och området däremellan, för konferenser, kickoffs och företagsevent på er konferensanläggning eller utomhus.",
+      { subheading: "Boka" },
       "Maila hello.yogawithcamilla@gmail.com med datum, antal deltagare, plats och typ av event för en offert."
     ]}
     ctaHeading="Boka företagsyoga eller event"
@@ -91,7 +96,7 @@ const ForetagsYoga = () => (
       },
       {
         question: "Kan ni hålla yoga utomhus?",
-        answer: "Ja. I Dalarna funkar utomhusyoga utmärkt, på altanen i skogen eller vid er konferensanläggning. I Stockholm kommer jag till er plats och håller klassen på gräsmattan eller en annan passande utomhusyta. Vill gruppen hellre ha yoga på vattnet kan vi i stället boka en SUP-yoga-session vid Sickla Strand."
+        answer: "Ja, vi kan hålla utomhusyoga vid er plats eller SUP-yoga på vattnet vid Sickla Strand."
       },
       {
         question: "Hur bokar vi?",

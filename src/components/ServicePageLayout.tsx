@@ -42,7 +42,7 @@ interface ServicePageProps {
   highlights: ServiceHighlight[];
   pricing?: PricingTier[];
   detailsHeading?: string;
-  detailsParagraphs?: string[];
+  detailsParagraphs?: (string | { subheading: string })[];
   ctaHeading: string;
   ctaText: string;
   bookingHref?: string;
@@ -325,11 +325,17 @@ const ServicePageLayout = ({
                 <h2 className="font-cormorant font-semibold text-3xl md:text-4xl text-dalashala-earth mb-6 tracking-tight leading-snug">
                   {softenAmp(detailsHeading)}
                 </h2>
-                {detailsParagraphs.map((p, i) => (
-                  <p key={i} className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed mb-5 last:mb-0">
-                    {p}
-                  </p>
-                ))}
+                {detailsParagraphs.map((p, i) =>
+                  typeof p === 'string' ? (
+                    <p key={i} className="font-inter font-normal text-base md:text-lg text-dalashala-earth leading-relaxed mb-5 last:mb-0">
+                      {p}
+                    </p>
+                  ) : (
+                    <h3 key={i} className="font-cormorant font-semibold text-xl md:text-2xl text-dalashala-earth tracking-tight mt-2 mb-3 first:mt-0">
+                      {softenAmp(p.subheading)}
+                    </h3>
+                  )
+                )}
               </div>
             </section>
           )}
