@@ -115,7 +115,7 @@ const SUPYoga = () => (
       },
       {
         question: "Vad kostar det?",
-        answer: "Från 500 kr per person. Slutpriset beror på gruppstorlek, längd på passet och om ni vill ha tillval som extra bastutid. Ni får alltid en konkret offert innan ni bokar."
+        answer: "Från 500 kr per person. Slutpriset beror på gruppstorlek, längd på klassen och om ni vill ha tillval som extra bastutid. Ni får alltid en konkret offert innan ni bokar."
       },
       {
         question: "Hur stor grupp kan vi vara?",

@@ -35,8 +35,8 @@ const HonsYoga = () => (
     heroImagePosition="center bottom"
     introHeading="Yoga med sällskap"
     introParagraphs={[
-      "Jag har höns. De rör sig fritt på och runt altanen, ibland nära, ibland inte. Under yogapasset finns de där i bakgrunden.",
-      "Hönsyoga är ett vanligt yogapass utomhus på altanen, med hönsens närvaro som naturligt inslag. Samma upplägg som alla mina klasser: rörelse, andning, närvaro."
+      "Jag har höns. De rör sig fritt på och runt altanen, ibland nära, ibland inte. Under yogaklassen finns de där i bakgrunden.",
+      "Hönsyoga är en vanlig yogaklass utomhus på altanen, med hönsens närvaro som naturligt inslag. Samma upplägg som alla mina klasser: rörelse, andning, närvaro."
     ]}
     highlights={[
       {
@@ -53,7 +53,7 @@ const HonsYoga = () => (
       },
       {
         heading: "Privat bokning",
-        text: "Alla klasser är privatbokade. Du bokar passet för din grupp. Klassen hålls på engelska."
+        text: "Alla klasser är privatbokade. Du bokar klassen för din grupp. Klassen hålls på engelska."
       }
     ]}
     pricing={[
@@ -63,11 +63,11 @@ const HonsYoga = () => (
     detailsHeading="Praktisk information"
     detailsParagraphs={[
       "Hönsyoga hålls vid stugan i Dalarna, utomhus på altanen, väderförhållanden tillåtet. Säsongen är maj–september.",
-      "Hönsen rör sig fritt runt altanen under passet. De interagerar inte med deltagarna, men de är där.",
+      "Hönsen rör sig fritt runt altanen under klassen. De interagerar inte med deltagarna, men de är där.",
       "Skicka en förfrågan till hello.yogawithcamilla@gmail.com med önskat datum och antal deltagare, så återkommer jag med tillgänglighet och offert."
     ]}
     ctaHeading="Boka Hönsyoga"
-    ctaText="Hör av dig med datum och antal deltagare så fixar jag ett pass."
+    ctaText="Hör av dig med datum och antal deltagare så fixar jag en klass."
     structuredData={structuredData}
     relatedServices={relatedServices}
     englishKeywords={{

@@ -288,7 +288,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'callout',
-        text: 'Snabbversionen: Konferensyoga från 3 000 kr per 60-minuterspass i Stockholm och Dalarna. Passar 10 till 40 deltagare, ingen förkunskap krävs, jag tar med allt. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) så får ni en offert samma dag.'
+        text: 'Snabbversionen: Konferensyoga från 3 000 kr per 60-minutersklass i Stockholm och Dalarna. Passar 10 till 40 deltagare, ingen förkunskap krävs, jag tar med allt. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) så får ni en offert samma dag.'
       },
       {
         type: 'heading',
@@ -300,7 +300,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Det skiljer sig från vanlig [företagsyoga](/blogg/foretagsyoga-vad-ingar-och-kostar) på två sätt. Det är oftast ett engångspass, och innehållet är designat för blandad nivå i en grupp som sällan är uppvärmd. Människor som just klivit ur en PowerPoint och ska tillbaka till en lunch.'
+        text: 'Det skiljer sig från vanlig [företagsyoga](/blogg/foretagsyoga-vad-ingar-och-kostar) på två sätt. Det är oftast en engångsklass, och innehållet är designat för blandad nivå i en grupp som sällan är uppvärmd. Människor som just klivit ur en PowerPoint och ska tillbaka till en lunch.'
       },
       {
         type: 'heading',
@@ -329,7 +329,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Sätter tonen för dagen. Ett 45 till 60 minuters pass som bygger upp: andningsövningar, soluppgångshälsningar, lättare styrke- och balansövningar. Frivilligt men marknadsfört väl. Min erfarenhet: 40 till 70 procent av deltagarna kommer när det schemaläggs som en valbar punkt innan frukost. Gör dag ett betydligt mer uppvaknad.'
+        text: 'Sätter tonen för dagen. En 45 till 60 minuters klass som bygger upp: andningsövningar, soluppgångshälsningar, lättare styrke- och balansövningar. Frivilligt men marknadsfört väl. Min erfarenhet: 40 till 70 procent av deltagarna kommer när det schemaläggs som en valbar punkt innan frukost. Gör dag ett betydligt mer uppvaknad.'
       },
       {
         type: 'subheading',
@@ -345,7 +345,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Ett mjukare pass på sista eftermiddagen. Släpper intensiteten från dagarna innan. Yin- eller restorativ-stil med längre positioner, färre övningar, mer andning. Bra som avslutning innan hemresa eller middag. Folk lämnar konferensen med lugnet i kroppen istället för trötthet i huvudet.'
+        text: 'En mjukare klass på sista eftermiddagen. Släpper intensiteten från dagarna innan. Yin- eller restorativ-stil med längre positioner, färre övningar, mer andning. Bra som avslutning innan hemresa eller middag. Folk lämnar konferensen med lugnet i kroppen istället för trötthet i huvudet.'
       },
       {
         type: 'heading',
@@ -361,7 +361,7 @@ export const blogPosts: BlogPost[] = [
         tableRows: [
           ['Energizer / reset', '30 min', '2 000 kr', 'Upp till 25'],
           ['Standard konferensklass', '60 min', '3 000 kr', 'Upp till 25'],
-          ['Halvdagsupplägg (2 pass)', '2 x 45 min', '5 500 kr', 'Upp till 25'],
+          ['Halvdagsupplägg (2 klasser)', '2 x 45 min', '5 500 kr', 'Upp till 25'],
           ['Stor konferens (25 till 40 personer)', '60 min', 'offert', '25 till 40'],
           ['Outdoor-upplägg Dalarna', '60 till 90 min', 'från 4 000 kr plus resa', 'Upp till 20'],
         ],
@@ -432,7 +432,7 @@ export const blogPosts: BlogPost[] = [
           '2. Jag svarar samma dag eller nästa, med tillgänglighet och två till tre förslag på upplägg.',
           '3. Vi bokar datum och diskuterar lokal, format och eventuella anpassningar.',
           '4. Några dagar innan skickar jag en kort deltagarinfo ni kan klistra in i kallelsen.',
-          '5. Jag kommer, leder passet, plockar ihop. Faktura skickas efter utförd klass.',
+          '5. Jag kommer, leder klassen, plockar ihop. Faktura skickas efter utförd klass.',
         ],
       },
       {
@@ -444,7 +444,7 @@ export const blogPosts: BlogPost[] = [
         faqItems: [
           {
             q: 'Vad kostar konferensyoga?',
-            a: 'Ett 60 minuters standardpass kostar från 3 000 kr i Stockholm. En 30-minuters energizer från 2 000 kr. Halvdagsupplägg (två pass) från 5 500 kr. Större grupper (25 till 40 personer) och konferenser utanför Stockholm prissätts individuellt. Alla priser är exklusive moms.',
+            a: 'En 60 minuters standardklass kostar från 3 000 kr i Stockholm. En 30-minuters energizer från 2 000 kr. Halvdagsupplägg (två klasser) från 5 500 kr. Större grupper (25 till 40 personer) och konferenser utanför Stockholm prissätts individuellt. Alla priser är exklusive moms.',
           },
           {
             q: 'Hur långt i förväg behöver jag boka?',
@@ -544,7 +544,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Smashing Balance driver platsen och utrustningen, jag står för yogan. Det är ett samarbete: de gör vattnet möjligt, jag gör passet.'
+        text: 'Smashing Balance driver platsen och utrustningen, jag står för yogan. Det är ett samarbete: de gör vattnet möjligt, jag gör klassen.'
       },
       {
         type: 'heading',
@@ -556,7 +556,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Öppna klasser under säsongen. Du bokar en plats för dig själv eller en vän, dyker upp 10 till 15 minuter innan, och är på vattnet i 75 minuter. Vinyasa eller yin beroende på pass. Bastu vid sjön ingår.'
+        text: 'Öppna klasser under säsongen. Du bokar en plats för dig själv eller en vän, dyker upp 10 till 15 minuter innan, och är på vattnet i 75 minuter. Vinyasa eller yin beroende på klass. Bastu vid sjön ingår.'
       },
       {
         type: 'paragraph',
@@ -568,7 +568,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Skräddarsydd upplevelse för er grupp. Möhippa, team, födelsedag, vänner. Ni får brädorna för er själva, jag leder ett pass för just er, vi avslutar i bastun vid sjön. Vinyasa eller yin, ni väljer.'
+        text: 'Skräddarsydd upplevelse för er grupp. Möhippa, team, födelsedag, vänner. Ni får brädorna för er själva, jag leder en klass för just er, vi avslutar i bastun vid sjön. Vinyasa eller yin, ni väljer.'
       },
       {
         type: 'paragraph',
@@ -704,7 +704,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Vad kostar en enstaka klass?',
-            a: '350 kr per klass, inklusive bräda, paddel, flytväst och bastu efter passet. 150 kr om du tar med egen SUP. Klippkort (10 klasser) 1 000 kr, säsongspass 1 500 kr. Allt via Smashing Balance.',
+            a: '350 kr per klass, inklusive bräda, paddel, flytväst och bastu efter klassen. 150 kr om du tar med egen SUP. Klippkort (10 klasser) 1 000 kr, säsongspass 1 500 kr. Allt via Smashing Balance.',
           },
           {
             q: 'Vad kostar ett privat event?',
@@ -716,7 +716,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Ingår bastu?',
-            a: 'Ja, bastu vid sjön ingår i alla pass, både öppna klasser och privata event.',
+            a: 'Ja, bastu vid sjön ingår i alla klasser, både öppna klasser och privata event.',
           },
           {
             q: 'När är säsongen?',
@@ -724,7 +724,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Är SUP yoga säkert?',
-            a: 'Ja. Vattnet är lugnt, ankringspunkten är nära strand, flytväst finns tillgänglig och Smashing Balance ansvarar för säkerhetsutrustningen. Säkerhetsgenomgång hålls innan varje pass.',
+            a: 'Ja. Vattnet är lugnt, ankringspunkten är nära strand, flytväst finns tillgänglig och Smashing Balance ansvarar för säkerhetsutrustningen. Säkerhetsgenomgång hålls innan varje klass.',
           },
           {
             q: 'Kan små barn vara med?',
@@ -736,7 +736,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Vad händer vid dåligt väder?',
-            a: 'Vid hård vind (över 6 m/s), åska eller för kallt vatten flyttar vi passet. För öppna klasser får du info via Smashing Balance, för privata event blir du kontaktad senast kvällen innan.',
+            a: 'Vid hård vind (över 6 m/s), åska eller för kallt vatten flyttar vi klassen. För öppna klasser får du info via Smashing Balance, för privata event blir du kontaktad senast kvällen innan.',
           },
         ],
       },
@@ -782,7 +782,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'En öppen yoga-klass på paddleboard, ledd av mig, vid Sickla Strand i Nacka. Brädan är bredare och stabilare än en vanlig SUP. Du paddlar några minuter ut till ankringsplatsen, vi kör ett pass tillsammans, och paddlar in. Bastu vid sjön efteråt.',
+        text: 'En öppen yoga-klass på paddleboard, ledd av mig, vid Sickla Strand i Nacka. Brädan är bredare och stabilare än en vanlig SUP. Du paddlar några minuter ut till ankringsplatsen, vi kör en klass tillsammans, och paddlar in. Bastu vid sjön efteråt.',
       },
       {
         type: 'paragraph',
@@ -852,11 +852,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Vi paddlar några minuter ut till ankringsplatsen, ankrar brädorna och kör passet. Första delen är sittande och liggande positioner, sen bygger vi upp till knästående och stående för dem som vill. Avslutning i savasana. Sedan tillbaka in, in i bastun.',
+        text: 'Vi paddlar några minuter ut till ankringsplatsen, ankrar brädorna och kör klassen. Första delen är sittande och liggande positioner, sen bygger vi upp till knästående och stående för dem som vill. Avslutning i savasana. Sedan tillbaka in, in i bastun.',
       },
       {
         type: 'paragraph',
-        text: 'Hela passet inklusive paddling tar 75 minuter. Räkna med att vara på plats i ungefär två timmar med incheckning, omklädning och bastu efteråt.',
+        text: 'Hela klassen inklusive paddling tar 75 minuter. Räkna med att vara på plats i ungefär två timmar med incheckning, omklädning och bastu efteråt.',
       },
       {
         type: 'heading',
@@ -932,7 +932,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Vad ingår i priset?',
-            a: 'Bräda, paddel, flytväst, dry bag, omklädningsrum, lås till värdesaker och bastu vid sjön efter passet. Allt utom det du har på dig.',
+            a: 'Bräda, paddel, flytväst, dry bag, omklädningsrum, lås till värdesaker och bastu vid sjön efter klassen. Allt utom det du har på dig.',
           },
           {
             q: 'Får jag pengarna tillbaka om jag inte kan komma?',
@@ -1045,7 +1045,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'paragraph',
-        text: 'Jag har höns. De lever sina egna liv, rör sig fritt på altanen, och bryr sig inte nämnvärt om vad vi gör på mattorna. [Hönsyoga](/tjanster/honsyoga) är ett riktigt yogapass på altanen i Dalarna där mina höns strövar omkring medan vi praktiserar. Det är Sveriges svar på det amerikanska "goat yoga"-fenomenet. Fast mjukare, mindre jippo, och med djur som faktiskt hör hemma på en svensk gård.'
+        text: 'Jag har höns. De lever sina egna liv, rör sig fritt på altanen, och bryr sig inte nämnvärt om vad vi gör på mattorna. [Hönsyoga](/tjanster/honsyoga) är en riktig yogaklass på altanen i Dalarna där mina höns strövar omkring medan vi praktiserar. Det är Sveriges svar på det amerikanska "goat yoga"-fenomenet. Fast mjukare, mindre jippo, och med djur som faktiskt hör hemma på en svensk gård.'
       },
       {
         type: 'callout',
@@ -1057,7 +1057,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Ett riktigt yogapass. Rörelse, andning, närvaro. Lett av en 500-timmars certifierad lärare (jag). Det är inte en gimmick eller en Instagram-stunt. Det är ett ordentligt 60-minuterspass, fast det hålls utomhus på altanen, och hönsen är med.'
+        text: 'En riktig yogaklass. Rörelse, andning, närvaro. Lett av en 500-timmars certifierad lärare (jag). Det är inte en gimmick eller en Instagram-stunt. Det är en ordentlig 60-minutersklass, fast den hålls utomhus på altanen, och hönsen är med.'
       },
       {
         type: 'paragraph',

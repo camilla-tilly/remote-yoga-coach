@@ -37,7 +37,7 @@ const PrivataEvent = () => (
     introHeading="Något annat än konferensrummet"
     introParagraphs={[
       "Letar ni efter en annorlunda möhippa, en sommaravslutning med jobbet som faktiskt lämnar avtryck, en födelsedagsaktivitet eller bara en dag ihop? Jag sätter ihop privata event för grupper (möhippor, födelsedagar, kickoffs, teamdagar, AW-gäng och kompisgrupper) i Dalarna eller Stockholm. För bröllopshelger på landet i Dalarna håller jag även bröllopsyoga som en del av helgens aktiviteter.",
-      "Upplägget är flexibelt. Det kan vara ett stilla morgonpass, en längre halvdag med flera bitar, eller en hel dag ute i skogen. Jag formar det runt vad ni faktiskt vill ha ut av dagen, inte runt en färdig mall. Ingen yogaerfarenhet krävs, och klassen hålls på engelska.",
+      "Upplägget är flexibelt. Det kan vara en stilla morgonklass, en längre halvdag med flera bitar, eller en hel dag ute i skogen. Jag formar det runt vad ni faktiskt vill ha ut av dagen, inte runt en färdig mall. Ingen yogaerfarenhet krävs, och klassen hålls på engelska.",
       "Jag är flexibel med datum och tider. Mejla mig så hittar vi något som passar er grupp."
     ]}
     highlights={[
@@ -51,7 +51,7 @@ const PrivataEvent = () => (
       },
       {
         heading: "Formas efter gruppen",
-        text: "Lugnt och återhämtande, eller mer rörelse och flöde. Jag frågar innan, och anpassar passet efter nivå, energi och vad ni är sugna på den dagen."
+        text: "Lugnt och återhämtande, eller mer rörelse och flöde. Jag frågar innan, och anpassar klassen efter nivå, energi och vad ni är sugna på den dagen."
       },
       {
         heading: "Kombinera gärna",
@@ -60,7 +60,7 @@ const PrivataEvent = () => (
     ]}
     pricing={[
       {
-        label: "Yogapass för privatgrupp",
+        label: "Yogaklass för privatgrupp",
         price: "kontakta för pris",
         note: "60–90 min. All utrustning ingår."
       },
@@ -93,7 +93,7 @@ const PrivataEvent = () => (
     faq={[
       {
         question: "Behöver man kunna yoga för att delta?",
-        answer: "Nej. De allra flesta som kommer är nybörjare. Jag börjar från grunden och anpassar passet efter gruppen. Inga förkunskaper krävs, och det finns inga krav på att man ska vara vältränad."
+        answer: "Nej. De allra flesta som kommer är nybörjare. Jag börjar från grunden och anpassar klassen efter gruppen. Inga förkunskaper krävs, och det finns inga krav på att man ska vara vältränad."
       },
       {
         question: "Hur många kan delta?",

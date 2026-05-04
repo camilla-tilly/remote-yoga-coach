@@ -107,7 +107,7 @@ const SUPYogaVillkor = () => {
 
                 <Section title="Säkerhet och eget ansvar">
                   <p>Maxvikt 130 kg. Simkunnighet är ett krav för deltagande. Deltagande sker helt på egen risk. Yoga with Camilla och Smashing Balance ansvarar inte för personskada, sjukdom eller förlust av personliga tillhörigheter i samband med deltagande.</p>
-                  <p className="mt-2">Flytväst ingår och ska vara tillgänglig under hela passet. Board, paddel och flytväst tillhandahålls av Smashing Balance. Deltagaren ansvarar för tilldelad utrustning under passets gång. Vid förlust av eller skada på paddel debiteras deltagaren återanskaffningskostnaden (500 kr).</p>
+                  <p className="mt-2">Flytväst ingår och ska vara tillgänglig under hela klassen. Board, paddel och flytväst tillhandahålls av Smashing Balance. Deltagaren ansvarar för tilldelad utrustning under klassens gång. Vid förlust av eller skada på paddel debiteras deltagaren återanskaffningskostnaden (500 kr).</p>
                 </Section>
 
                 <Section title="Att ta med">
