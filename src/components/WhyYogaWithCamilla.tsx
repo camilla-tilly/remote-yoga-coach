@@ -11,11 +11,11 @@ const cards = [
   },
   {
     title: 'På er plats',
-    body: 'Föredrar ni att jag kommer till er? Jag tar med mattor och allt som behövs.',
+    body: 'Vill ni hellre att jag kommer till er? Säg bara var.',
   },
   {
     title: 'Ingen press, ingen bedömning',
-    body: 'Inga krav eller förväntningar. Lektionerna handlar om närvaro och självacceptans, inte perfekta poser. Kom som du är.',
+    body: 'Inga krav eller förväntningar. Klasserna handlar om närvaro och självacceptans, inte perfekta poser. Kom som du är.',
   },
 ];
 
