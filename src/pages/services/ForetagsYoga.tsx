@@ -64,9 +64,10 @@ const ForetagsYoga = () => (
     ]}
     detailsHeading="Format & praktisk information"
     detailsParagraphs={[
-      "Klassen är vanligtvis 30–60 minuter. Ni behöver bara ha ett utrymme som är tillräckligt stort.",
+      "Ni väljer längd: 30, 45 eller 60 minuter. Ni behöver bara ha ett utrymme som är tillräckligt stort.",
       "Har ni egna yogamattor är det perfekt. Om jag behöver ta med utrustning diskuterar vi det separat, baserat på antal deltagare, avstånd och vad som behövs på plats.",
-      "I Stockholm kommer jag till er lokal, eller hjälper gärna till att hitta en lämplig yogasal. Regelbundna klasser på kontoret erbjuds endast i Stockholm. I Dalarna håller jag yoga för konferenser, kickoffs och företagsevent i Falun, Borlänge och omnejd, på er konferensanläggning eller utomhus.",
+      "Vi pratar också igenom kläder innan. Ska klassen funka i det folk redan har på sig på kontoret, eller hinner ni byta om till träningskläder? Båda funkar, jag anpassar rörelserna efter det.",
+      "I Stockholm kommer jag till er lokal, eller hjälper gärna till att hitta en lämplig yogasal. Regelbundna klasser på kontoret erbjuds endast i Stockholm. I Dalarna reser jag till Vansbro, Falun, Borlänge, Ludvika, Mora, Leksand och Rättvik, och området däremellan, för konferenser, kickoffs och företagsevent på er konferensanläggning eller utomhus.",
       "Maila hello.yogawithcamilla@gmail.com med datum, antal deltagare, stad och typ av event för en offert."
     ]}
     ctaHeading="Boka företagsyoga eller event"
@@ -82,7 +83,7 @@ const ForetagsYoga = () => (
       },
       {
         question: "Hur lång är en klass?",
-        answer: "Vanligtvis 30, 45 eller 60 minuter. På kontoret är 30 eller 45 minuter populärast. Under en konferens passar ofta 60 minuter på morgonen eller efter lunch."
+        answer: "Vanligtvis 30, 45 eller 60 minuter. På kontoret är 30 eller 45 minuter populärast. Under en konferens passar ofta 60 minuter på morgonen eller som eftermiddagspaus."
       },
       {
         question: "Vad behöver vi ordna?",
