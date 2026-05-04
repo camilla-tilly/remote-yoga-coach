@@ -39,7 +39,7 @@ const WhyYogaWithCamilla = () => {
           </h2>
           <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
           <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/85 leading-relaxed max-w-xl mx-auto">
-            Ett lugnt, välkomnande rum för rörelse, andning och närvaro.
+            Lugn, välkomnande yoga med fokus på rörelse, andning och närvaro.
             I Dalarna och i Stockholm.
           </p>
         </div>
