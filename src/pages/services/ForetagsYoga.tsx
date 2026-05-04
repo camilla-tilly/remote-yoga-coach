@@ -35,7 +35,7 @@ const ForetagsYoga = () => (
     introHeading="Ett andrum för teamet"
     introParagraphs={[
       "Jag erbjuder företagsyoga i Stockholm och Dalarna: konferenser, kickoffs, AWs och regelbundna klasser på kontoret. Klassen hålls på engelska.",
-      "Yogan funkar bra som teambuilding, en gemensam paus under konferensdagen, eller som ett återkommande inslag i ert friskvårdsprogram. Inga avancerade poser, inga prestationskrav.",
+      "Yoga sänker tempot, lugnar andningen och släpper spänningar från långa möten. En gemensam stund där ingen behöver prestera, oavsett om det handlar om teambuilding, en paus mitt i konferensdagen eller en återkommande klass på kontoret. Inga avancerade poser, inga prestationskrav.",
       "Ingen yogaerfarenhet krävs. Klassen anpassas efter gruppen."
     ]}
     highlights={[
@@ -70,7 +70,7 @@ const ForetagsYoga = () => (
     detailsHeading="Format & praktisk information"
     detailsParagraphs={[
       "Klassen är vanligtvis 30–60 minuter. Ni behöver bara ha ett utrymme som är tillräckligt stort.",
-      "Om ni inte har egna mattor tar jag med utrustning (mattor och block) för upp till 20 deltagare. För det tillkommer en kostnad utöver klasspriset, baserad på antal deltagare och avstånd. Har ni egna mattor är det ingen extra kostnad.",
+      "Har ni egna yogamattor är det perfekt. Om jag behöver ta med utrustning diskuterar vi det separat, baserat på antal deltagare, avstånd och vad som behövs på plats.",
       "I Stockholm kommer jag till er lokal, eller hjälper gärna till att hitta en lämplig yogasal. I Dalarna erbjuder jag företagsyoga i Falun, Borlänge och omnejd, på ert kontor, er konferensanläggning eller utomhus.",
       "Maila hello.yogawithcamilla@gmail.com med datum, antal deltagare, stad och typ av event för en offert."
     ]}
@@ -83,7 +83,7 @@ const ForetagsYoga = () => (
       },
       {
         question: "Vad kostar företagsyoga?",
-        answer: "Regelbundna klasser på kontoret kostar från 1 600 kr/pass (30 min), 1 800 kr (45 min) eller 2 100 kr (60 min). Om ni inte har egna mattor tillkommer en kostnad för utrustning, baserad på antal deltagare och avstånd. Konferenser, kickoffs och event prissätts individuellt baserat på antal deltagare, längd och plats."
+        answer: "Regelbundna klasser på kontoret kostar från 1 600 kr/pass (30 min), 1 800 kr (45 min) eller 2 100 kr (60 min). Om ni behöver att jag tar med utrustning diskuterar vi det separat, eftersom priset beror på antal deltagare, avstånd och vad som behövs på plats. Konferenser, kickoffs och event prissätts individuellt baserat på antal deltagare, längd och plats."
       },
       {
         question: "Hur lång är en klass?",
@@ -91,7 +91,7 @@ const ForetagsYoga = () => (
       },
       {
         question: "Vad behöver vi ordna?",
-        answer: "Bara ett utrymme som är tillräckligt stort. Om ni har egna yogamattor är det perfekt. Annars tar jag med mattor och block för upp till 20 deltagare, mot en separat kostnad utöver klasspriset."
+        answer: "Bara ett utrymme som är tillräckligt stort. Har ni egna yogamattor är det perfekt. Behöver ni att jag tar med utrustning kan vi prata om det utifrån gruppens storlek och plats."
       },
       {
         question: "Kan ni hålla yoga utomhus?",
