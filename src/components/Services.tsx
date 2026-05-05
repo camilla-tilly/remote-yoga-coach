@@ -34,7 +34,7 @@ const dalarnaServices: ServiceCard[] = [
   },
   {
     title: 'Hönsyoga',
-    description: 'Yoga på altanen med hönsen runt. Mysiga läten från landsbygden medan vi praktiserar.',
+    description: 'Yoga på altanen med hönsen pickande runt mattorna. Goat yoga, fast nordisk och lugnare. Privatbokning, maj till september.',
     href: '/tjanster/honsyoga',
   },
   {
@@ -44,7 +44,7 @@ const dalarnaServices: ServiceCard[] = [
   },
   {
     title: 'Privata Event',
-    description: 'Möhippa, bröllop eller firande. Skräddarsydd dag för gruppen på altanen i Dalarna.',
+    description: 'Möhippa, födelsedag, bröllopshelg eller team. Halvdag eller heldag på altanen i Dalarna, yoga plus det ni vill lägga till. (Ja, hönsen är med.)',
     href: '/tjanster/privata-event',
   },
 ];

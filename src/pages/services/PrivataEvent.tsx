@@ -37,13 +37,14 @@ const PrivataEvent = () => (
     introHeading="Något annat än konferensrummet"
     introParagraphs={[
       "Letar ni efter något annorlunda för gruppen? Jag sätter ihop privata event i Dalarna eller Stockholm: möhippor, födelsedagar, sommaravslutningar, kickoffs, teamdagar, AW-gäng och kompisgäng som bara vill göra något ihop. För bröllopshelger på landet i Dalarna håller jag även bröllopsyoga som en del av helgens aktiviteter.",
+      "I Dalarna hålls eventen på altanen vid skogsstugan, med hönsen pickande runt mattorna under klassen. Det är ovanligt, och det är liksom det som är poängen. Det blir alltid den biten alla pratar om i gruppchatten efteråt.",
       "Upplägget är flexibelt. Det kan vara en stilla morgonklass, en längre halvdag med flera bitar, eller en hel dag ute i skogen. Jag formar det runt vad ni faktiskt vill ha ut av dagen, inte runt en färdig mall. Ingen yogaerfarenhet krävs, och klassen hålls på engelska.",
       "Jag är flexibel med datum och tider. Mejla mig så hittar vi något som passar er grupp."
     ]}
     highlights={[
       {
-        heading: "På altanen i Dalarna",
-        text: "Yoga på altanen, omgiven av skog, tystnad och hönsen i bakgrunden. Plats för upp till 10 personer. Mattor och all utrustning ingår."
+        heading: "Yoga med hönsen i Dalarna",
+        text: "Yoga på altanen mitt i skogen, med hönsen pickande runt mattorna. Jordnära, ovanligt, och något ingen annan kan erbjuda. Plats för upp till 10 personer, mattor och all utrustning ingår."
       },
       {
         heading: "Jag kommer till er",
