@@ -159,7 +159,7 @@ const SUPYoga = () => (
       },
       {
         question: "Hur stor grupp kan vi vara?",
-        answer: "Ideal storlek är 3 till 10 personer. Större grupper upp till 15 på förfrågan, beroende på utrustning och plats för det aktuella datumet."
+        answer: "Ideal storlek är 3 till 10 personer. Större grupper upp till 15 på förfrågan."
       },
       {
         question: "Behöver vi kunna yoga eller SUP?",
