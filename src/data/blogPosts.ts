@@ -104,7 +104,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Yoga fungerar som enskild aktivitet men kommer bäst till sin rätt när den placeras i ett helgupplägg. De mest populära kombinationerna:'
+        text: 'Yoga fungerar som enskild aktivitet men kommer bäst till sin rätt när den placeras i ett helgupplägg. Några upplägg som brukar funka:'
       },
       {
         type: 'subheading',
@@ -288,7 +288,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'callout',
-        text: 'Snabbversionen: Konferensyoga från 3 000 kr per 60-minutersklass i Stockholm och Dalarna. Passar 10 till 40 deltagare, ingen förkunskap krävs, jag tar med allt. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) så får ni en offert samma dag.'
+        text: 'Snabbversionen: Konferensyoga från 3 000 kr per 60-minutersklass i Stockholm och Dalarna. Passar 10 till 40 deltagare, ingen förkunskap krävs, jag tar med allt. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för offert.'
       },
       {
         type: 'heading',
@@ -429,7 +429,7 @@ export const blogPosts: BlogPost[] = [
         type: 'list',
         items: [
           '1. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, ort, antal deltagare och tänkt placering i programmet.',
-          '2. Jag svarar samma dag eller nästa, med tillgänglighet och två till tre förslag på upplägg.',
+          '2. Jag återkommer med tillgänglighet och två till tre förslag på upplägg.',
           '3. Vi bokar datum och diskuterar lokal, format och eventuella anpassningar.',
           '4. Några dagar innan skickar jag en kort deltagarinfo ni kan klistra in i kallelsen.',
           '5. Jag kommer, leder klassen, plockar ihop. Faktura skickas efter utförd klass.',
@@ -572,7 +572,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Från 500 kr per person, vanligtvis 3 till 10 personer (större grupper på förfrågan). Bokas direkt med mig på [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com), ni får offert samma dag. Se [Privat SUP Yoga](/tjanster/sup-yoga) för hela paketet.'
+        text: 'Från 500 kr per person, vanligtvis 3 till 10 personer (större grupper på förfrågan). Bokas direkt med mig på [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com), så återkommer jag med offert. Se [Privat SUP Yoga](/tjanster/sup-yoga) för hela paketet.'
       },
       {
         type: 'heading',
@@ -684,7 +684,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Var bokar jag ett privat event?',
-            a: 'Privata event för möhippa, team, födelsedag eller vänner bokas direkt med mig. Mejla hello.yogawithcamilla@gmail.com med datum och gruppstorlek så får ni offert samma dag.',
+            a: 'Privata event för möhippa, team, födelsedag eller vänner bokas direkt med mig. Mejla hello.yogawithcamilla@gmail.com med datum och gruppstorlek så återkommer jag med offert.',
           },
           {
             q: 'Vad är Smashing Balance?',
@@ -1008,7 +1008,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Dalarna är en av de populäraste bröllopsdestinationerna i Sverige. Naturskönt, lugnt. Och jag finns runt hörnet med en altan omgiven av skog. Jag kan hålla yoga på er lokation, hos mig på altanen, eller utomhus.'
+        text: 'Dalarna är en uppskattad bröllopsdestination. Naturskönt, lugnt. Och jag finns runt hörnet med en altan omgiven av skog. Jag kan hålla yoga på er lokation, hos mig på altanen, eller utomhus.'
       },
       {
         type: 'heading',
@@ -1310,7 +1310,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'paragraph',
-        text: 'Dalarna har blivit en av de populäraste möhippa-destinationerna. Naturen, lugnet, friheten. Fler grupper väljer en helg här istället för en kväll i stan.'
+        text: 'Allt fler grupper väljer Dalarna för möhippan. Naturen, lugnet, friheten. En helg här istället för en kväll i stan.'
       },
       {
         type: 'paragraph',

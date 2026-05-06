@@ -58,7 +58,7 @@ const SUPYoga = () => (
     introHeading="Yoga på brädan, bastu vid vattnet"
     introParagraphs={[
       "Mjuk vinyasa eller lugn yin på paddleboarden, anpassat efter gruppen, och bastu vid sjön efteråt. Det ingår alltid. Sen lägger ni till det ni vill: trail run i Nackareservatet ledd av mig, tennis med Lucas, vattencyklar, SUP-uthyrning eller fika på Elton's Café.",
-      "Mejla med datum, gruppstorlek och önskemål, så får ni offert samma dag."
+      "Mejla med datum, gruppstorlek och önskemål, så återkommer jag med offert."
     ]}
     audience={{
       eyebrow: "Perfekt för",
@@ -125,25 +125,25 @@ const SUPYoga = () => (
     detailsHeading="Praktisk information"
     detailsParagraphs={[
       "Plats: Sickla Strand, vid Elton's Café och Uthyrning. [Hitta hit på Google Maps](https://maps.app.goo.gl/ZqpkKJDtYha9BgbN9). Det finns parkering på plats.",
-      "Säsong: privata event går att boka från slutet av april till september. Datum utanför säsongen kan funka om vädret tillåter, fråga.",
+      "Säsong: privata event går att boka från slutet av april till september.",
       "Längd: vanligtvis 2 till 4 timmar inklusive yoga, bastu och eventuella tillval. Vi anpassar efter er.",
-      "Utrustning: brädor, paddel, flytväst och dry bag tillhandahålls av Smashing Balance på plats. Omklädningsrum finns. Ta med badkläder, handduk och träningskläder. Löparkläder och skor om ni lägger till trail run.",
+      "Utrustning: brädor, paddel, flytväst och dry bag tillhandahålls av Smashing Balance på plats. Omklädningsrum finns. Ta med badkläder och handduk. Träningskläder och skor om ni lägger till tennis eller trail run.",
       "Avbokning: vid avbokning senast 48 timmar innan får ni 50 procent tillbaka eller tillgodo i 30 dagar. Samma villkor gäller om vädret gör att vi måste flytta dagen.",
-      "Säkerhet och ansvar: deltagande sker på egen risk. Yoga with Camilla och Smashing Balance tar inget ansvar för personskada eller sjukdom i samband med deltagande. Deltagaren ansvarar för tilldelad utrustning under hela klassen. Vid förlust av eller skada på paddel debiteras deltagaren återanskaffningskostnaden (500 kr).",
-      "Undervisning på engelska, men jag pratar svenska om ni föredrar det. Ingen erfarenhet krävs, varken yoga eller SUP.",
-      "Bokning: mejla hello.yogawithcamilla@gmail.com med datum, gruppstorlek och önskat format. Ni får offert samma dag."
+      "Säkerhet och eget ansvar: simkunnighet är ett krav för deltagande. Deltagande sker helt på egen risk. Yoga with Camilla och Smashing Balance ansvarar inte för personskada, sjukdom eller förlust av personliga tillhörigheter i samband med deltagande.",
+      "Flytväst ingår och ska vara tillgänglig under hela klassen. Board, paddel och flytväst tillhandahålls av Smashing Balance. Deltagaren ansvarar för tilldelad utrustning under klassens gång. Vid förlust av eller skada på paddel debiteras deltagaren återanskaffningskostnaden (500 kr).",
+      "Undervisning på engelska. Ingen erfarenhet krävs, varken yoga eller SUP.",
+      "Bokning: mejla hello.yogawithcamilla@gmail.com med datum, gruppstorlek och önskat format."
     ]}
     ctaHeading="Boka ert privata event"
-    ctaText="Möhippa, team, födelsedag eller en eftermiddag med vänner. Mejla mig med datum, gruppstorlek och vad ni vill ha ut av dagen, så får ni offert samma dag. Letar du efter öppna veckoklasser istället? Se SUP Yoga Klasser."
+    ctaText="Möhippa, team, födelsedag eller en eftermiddag med vänner. Mejla mig med datum, gruppstorlek och vad ni vill ha ut av dagen, så återkommer jag med offert. Letar du efter öppna veckoklasser istället? Se SUP Yoga Klasser."
     bookingHref="mailto:hello.yogawithcamilla@gmail.com"
     bookingLabel="Mejla för offert"
-    termsHref="/tjanster/sup-yoga/villkor"
     structuredData={structuredData}
     relatedServices={relatedServices}
     faq={[
       {
         question: "Hur bokar vi ett privat event?",
-        answer: "Mejla hello.yogawithcamilla@gmail.com med datum, gruppstorlek och vad ni vill göra (möhippa, team, födelsedag, vänner). Ni får offert samma dag. Bokning bekräftas när depositionen är betald."
+        answer: "Mejla hello.yogawithcamilla@gmail.com med datum, gruppstorlek och vad ni vill göra (möhippa, team, födelsedag, vänner). Bokning bekräftas när full betalning är mottagen."
       },
       {
         question: "Vad ingår i grundpaketet?",
@@ -184,7 +184,7 @@ const SUPYoga = () => (
     ]}
     englishKeywords={{
       heading: "Private SUP Yoga, Sauna & More in Stockholm",
-      text: "Private events at Sickla Strand, Stockholm. SUP yoga on the lake plus a lakeside sauna are the base, and you can build out the day with trail running in Nacka nature reserve (led by me), tennis with Lucas, water bikes, SUP rentals or food at Elton's Café on site. Tailored packages for hen parties, team days, birthdays and friend groups. From 500 kr per person with a 1500 kr minimum per booking. Groups of 3 to 10 are ideal, up to 15 on request. All equipment provided. No experience needed, taught in English. Cancellation 48+ hours ahead gets 50% back or 30-day credit, same terms for weather cancellations.\n\nSafety and responsibility: participation is at the participant's own risk. Yoga with Camilla and Smashing Balance accept no responsibility for personal injury or illness in connection with participation. The participant is responsible for their allocated equipment throughout the class. Loss of or damage to a paddle will be charged at replacement cost (500 kr).\n\nEmail hello.yogawithcamilla@gmail.com with your dates, group size and what you'd like to do for a same-day quote."
+      text: "Private events at Sickla Strand, Stockholm. SUP yoga on the lake plus a lakeside sauna are the base, and you can build out the day with trail running in Nacka nature reserve (led by me), tennis with Lucas, water bikes, SUP rentals or food at Elton's Café on site. Tailored packages for hen parties, team days, birthdays and friend groups. From 500 kr per person with a 1500 kr minimum per booking. Groups of 3 to 10 are ideal, up to 15 on request. All equipment provided. No experience needed, taught in English. Cancellation 48+ hours ahead gets 50% back or 30-day credit, same terms for weather cancellations.\n\nSafety and own responsibility: swimming ability is required for participation. Participation is entirely at the participant's own risk. Yoga with Camilla and Smashing Balance accept no responsibility for personal injury, illness or loss of personal belongings in connection with participation.\n\nA buoyancy aid (PFD) is included and must be accessible throughout the class. Board, paddle and PFD are provided by Smashing Balance. The participant is responsible for their allocated equipment throughout the class. Loss of or damage to a paddle will be charged at replacement cost (500 kr).\n\nEmail hello.yogawithcamilla@gmail.com with your dates, group size and what you'd like to do for a same-day quote."
     }}
   />
 );

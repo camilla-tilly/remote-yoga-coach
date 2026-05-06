@@ -44,7 +44,7 @@ const PrivataEvent = () => (
     highlights={[
       {
         heading: "Yoga med hönsen i Dalarna",
-        text: "Yoga på altanen mitt i skogen, med hönsen pickande runt mattorna. Jordnära, ovanligt, och något ingen annan kan erbjuda. Plats för upp till 10 personer, mattor och all utrustning ingår."
+        text: "Yoga på altanen mitt i skogen, med hönsen pickande runt mattorna. Jordnära och ovanligt, svårt att hitta någon annanstans. Plats för upp till 10 personer, mattor och all utrustning ingår."
       },
       {
         heading: "Jag kommer till er",
