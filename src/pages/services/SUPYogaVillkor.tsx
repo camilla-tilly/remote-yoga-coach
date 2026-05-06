@@ -122,7 +122,7 @@ const SUPYogaVillkor = () => {
                 </Section>
 
                 <Section title="Kontakt" last>
-                  <p>[Email address]</p>
+                  <p><a href="mailto:hello.yogawithcamilla@gmail.com" className="underline">hello.yogawithcamilla@gmail.com</a></p>
                   <p>yogawithcamilla.se</p>
                 </Section>
               </>
@@ -170,7 +170,7 @@ const SUPYogaVillkor = () => {
                 </Section>
 
                 <Section title="Contact" last>
-                  <p>[Email address]</p>
+                  <p><a href="mailto:hello.yogawithcamilla@gmail.com" className="underline">hello.yogawithcamilla@gmail.com</a></p>
                   <p>yogawithcamilla.se</p>
                 </Section>
               </>
