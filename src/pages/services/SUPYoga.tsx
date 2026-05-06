@@ -92,7 +92,7 @@ const SUPYoga = () => (
         },
         {
           heading: "Trail run i Nacka",
-          text: "Guidad löpning i Nackareservatet, ledd av mig. Lugnt tempo eller lite mer rörelse, efter vad gruppen vill. Bra för grupper som vill röra sig mer.",
+          text: "Guidad löpning i Nackareservatet, ledd av mig. Ni väljer tempo och distans, lugn promenad-jogg eller lite mer fart. Bra för grupper som vill röra sig mer.",
           included: false
         },
         {
