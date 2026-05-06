@@ -21,7 +21,7 @@ const stockholmServices: ServiceCard[] = [
   },
   {
     title: 'SUP Yoga Klasser',
-    description: 'Öppna vinyasa- och yin-klasser på vattnet vid Sickla Strand varje vecka under säsong. Bastu ingår. Bokas via Smashing Balance.',
+    description: 'Öppna vinyasa- och yin-klasser på Sickla sjö varje vecka under säsong. Bastu ingår. Bokas via Smashing Balance.',
     href: '/tjanster/sup-yoga-klasser',
   },
 ];

@@ -95,7 +95,7 @@ const ForetagsYoga = () => (
       },
       {
         question: "Kan ni hålla yoga utomhus?",
-        answer: "Ja, vi kan hålla utomhusyoga vid er plats eller SUP-yoga på vattnet vid Sickla Strand."
+        answer: "Ja, vi kan hålla utomhusyoga vid er plats eller SUP-yoga på Sickla sjö."
       },
       {
         question: "Hur bokar vi?",
