@@ -1223,7 +1223,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum och antal, så får ni en konkret offert samma dag. Läs mer på [tjänstesidan för hönsyoga](/tjanster/honsyoga) eller titta på relaterade upplevelser: [utomhusyoga i Dalarna](/blogg/outdoor-yoga-dalarna) och [yoga möhippa i Dalarna](/blogg/yoga-mohippa-dalarna).'
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum och antal, så återkommer jag med en konkret offert. Läs mer på [tjänstesidan för hönsyoga](/tjanster/honsyoga) eller titta på relaterade upplevelser: [utomhusyoga i Dalarna](/blogg/outdoor-yoga-dalarna) och [yoga möhippa i Dalarna](/blogg/yoga-mohippa-dalarna).'
       },
     ]
   },
@@ -1811,7 +1811,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Bartendrr kommer till er lägenhet eller AirBnB med bar, glas, råvaror och is, och guidar gruppen genom två–tre signaturdrinkar. Ingen behöver ha skakat en drink förut. Funkar extra bra om någon i gänget ogillar yoga eller spa, alla är med på cocktails. Pairar bra med middag efteråt.' },
       { type: 'heading', text: '6. Spa med privat avdelning' },
       { type: 'paragraph', text: 'Stockholms Spa & Hälsostudio och Sparadiset erbjuder båda privata avdelningar ni kan boka för er grupp: jacuzzi, bastu, behandlingar, ingen främmande ni stöter på i omklädningsrummet. För en större upplevelse 50 minuter utanför stan har Smådalarö Gård Sveriges enda grupbehandlingsrum med plats för upp till 10 personer. Avslappnat, socialt och en fin finish på dagen, särskilt i kombination med yoga på morgonen.' },
-      { type: 'paragraph', text: 'SUP yoga och bastu bokar ni direkt via mig (yogawithcamilla.se/tjanster/sup-yoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så får ni en offert samma dag.' },
+      { type: 'paragraph', text: 'SUP yoga och bastu bokar ni direkt via mig (yogawithcamilla.se/tjanster/sup-yoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så återkommer jag med offert.' },
     ]
   },
   {
@@ -1874,7 +1874,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Exit Games i Gamla Stan kan köra upp till 44 personer samtidigt fördelade över flera rum, vilket är anledningen till att det funkar för ett helt team. Escape rooms sätter gruppen i ett läge där ni behöver kommunicera och lösa problem ihop, fast det är kul snarare än pressande. Håll rum på 4–6 personer.' },
       { type: 'heading', text: '7. Guidad promenad på Djurgården med picknick' },
       { type: 'paragraph', text: 'Det enklaste alternativet, men underskattat. Djurgården är en av Stockholms vackraste platser och den är gratis. En guidad promenad följt av en gemensam picknick på gräset är ett härligt sätt att fira sommaren utan att krångla till det. Bra backup-plan om budgeten är stram.' },
-      { type: 'paragraph', text: 'Två av aktiviteterna ovan bokar ni direkt via mig: SUP yoga och bastu (yogawithcamilla.se/tjanster/sup-yoga) och yoga för ert team (yogawithcamilla.se/tjanster/foretagsyoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så får ni en offert samma dag.' },
+      { type: 'paragraph', text: 'Två av aktiviteterna ovan bokar ni direkt via mig: SUP yoga och bastu (yogawithcamilla.se/tjanster/sup-yoga) och yoga för ert team (yogawithcamilla.se/tjanster/foretagsyoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så återkommer jag med offert.' },
     ]
   },
   {
@@ -1941,7 +1941,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'En privat yogaklass för teamet, på kontoret, i konferenslokalen eller utomhus. 60 minuter som bryter av och ger ny energi. Alla nivåer, ingen erfarenhet krävs.' },
       { type: 'heading', text: '7. Vinprovning med Nolea eller cocktailkurs med Bartendrr' },
       { type: 'paragraph', text: 'För vin: Nolea drivs av en WSET-3-sommelier och gör skräddarsydda företagsprovningar hemma på kontoret, i en vinkällare på Östermalm eller i en jägarstuga i Enskede. 1,5–2 timmar från runt 5 000 kr. För cocktails: Bartendrr kommer till er med bar, glas, råvaror och is och guidar teamet genom två–tre signaturdrinkar. Båda ger gruppen något att fokusera på så att samtalet får en anledning att hända.' },
-      { type: 'paragraph', text: 'Två av aktiviteterna ovan bokar ni direkt via mig: SUP yoga och bastu (yogawithcamilla.se/tjanster/sup-yoga) och yoga för teamet (yogawithcamilla.se/tjanster/foretagsyoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så får ni en offert samma dag.' },
+      { type: 'paragraph', text: 'Två av aktiviteterna ovan bokar ni direkt via mig: SUP yoga och bastu (yogawithcamilla.se/tjanster/sup-yoga) och yoga för teamet (yogawithcamilla.se/tjanster/foretagsyoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så återkommer jag med offert.' },
     ]
   },
   {
