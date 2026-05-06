@@ -13,6 +13,29 @@ interface ServiceHighlight {
   text: string;
 }
 
+interface AudienceItem {
+  heading: string;
+  text: string;
+}
+
+interface OfferingItem {
+  heading: string;
+  text: string;
+  included?: boolean;
+}
+
+interface AudienceSection {
+  eyebrow?: string;
+  heading?: string;
+  items: AudienceItem[];
+}
+
+interface OfferingsSection {
+  eyebrow?: string;
+  heading?: string;
+  items: OfferingItem[];
+}
+
 interface PricingTier {
   label: string;
   price: string; // e.g. "Från 350 kr/person" or "PRIS_PLACEHOLDER"
@@ -41,7 +64,9 @@ interface ServicePageProps {
   gallery?: { src: string; alt: string; position?: string }[];
   introHeading: string;
   introParagraphs: string[];
-  highlights: ServiceHighlight[];
+  highlights?: ServiceHighlight[];
+  audience?: AudienceSection;
+  offerings?: OfferingsSection;
   pricing?: PricingTier[];
   detailsHeading?: string;
   detailsParagraphs?: (string | { subheading: string })[];
@@ -77,6 +102,8 @@ const ServicePageLayout = ({
   introHeading,
   introParagraphs,
   highlights,
+  audience,
+  offerings,
   pricing,
   detailsHeading,
   detailsParagraphs,
@@ -268,25 +295,114 @@ const ServicePageLayout = ({
             </div>
           </section>
 
-          {/* Highlights Grid */}
-          <section className="px-4 mb-16">
-            <div className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
-              {highlights.map((h, i) => (
-                <div
-                  key={i}
-                  className="bg-white border border-dalashala-meadow/60 rounded-xl p-7 md:p-8 hover:border-dalashala-olive/60 transition-colors duration-300"
-                >
-                  <span className="block w-8 h-[2px] bg-dalashala-honey mb-4 rounded-full" aria-hidden="true" />
-                  <h3 className="font-cormorant font-semibold text-2xl md:text-[1.625rem] text-dalashala-earth mb-3 tracking-tight leading-snug">
-                    {softenAmp(h.heading)}
-                  </h3>
-                  <p className="font-inter font-normal text-base text-dalashala-earth leading-relaxed">
-                    {h.text}
-                  </p>
+          {/* Highlights Grid (legacy single-section) */}
+          {highlights && highlights.length > 0 && (
+            <section className="px-4 mb-16">
+              <div className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+                {highlights.map((h, i) => (
+                  <div
+                    key={i}
+                    className="bg-white border border-dalashala-meadow/60 rounded-xl p-7 md:p-8 hover:border-dalashala-olive/60 transition-colors duration-300"
+                  >
+                    <span className="block w-8 h-[2px] bg-dalashala-honey mb-4 rounded-full" aria-hidden="true" />
+                    <h3 className="font-cormorant font-semibold text-2xl md:text-[1.625rem] text-dalashala-earth mb-3 tracking-tight leading-snug">
+                      {softenAmp(h.heading)}
+                    </h3>
+                    <p className="font-inter font-normal text-base text-dalashala-earth leading-relaxed">
+                      {h.text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Audience Section — who it's for */}
+          {audience && audience.items.length > 0 && (
+            <section className="px-4 mb-14">
+              <div className="max-w-2xl mx-auto">
+                {(audience.eyebrow || audience.heading) && (
+                  <div className="text-center mb-8">
+                    {audience.eyebrow && (
+                      <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-3">
+                        {audience.eyebrow}
+                      </p>
+                    )}
+                    {audience.heading && (
+                      <h2 className="font-cormorant font-semibold text-3xl md:text-4xl text-dalashala-earth tracking-tight">
+                        {softenAmp(audience.heading)}
+                      </h2>
+                    )}
+                  </div>
+                )}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {audience.items.map((item, i) => (
+                    <div
+                      key={i}
+                      className="bg-dalashala-creamDeep/55 rounded-xl p-6 md:p-7 hover:bg-dalashala-creamDeep transition-colors duration-300"
+                    >
+                      <span className="block w-8 h-[2px] bg-dalashala-honey mb-3 rounded-full" aria-hidden="true" />
+                      <h3 className="font-cormorant font-semibold text-xl md:text-[1.375rem] text-dalashala-earth mb-2 tracking-tight leading-snug">
+                        {softenAmp(item.heading)}
+                      </h3>
+                      <p className="font-inter font-normal text-sm md:text-base text-dalashala-earth leading-relaxed">
+                        {item.text}
+                      </p>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          </section>
+              </div>
+            </section>
+          )}
+
+          {/* Offerings Section — what's included or can be added */}
+          {offerings && offerings.items.length > 0 && (
+            <section className="px-4 mb-16">
+              <div className="max-w-2xl mx-auto">
+                {(offerings.eyebrow || offerings.heading) && (
+                  <div className="text-center mb-8">
+                    {offerings.eyebrow && (
+                      <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-3">
+                        {offerings.eyebrow}
+                      </p>
+                    )}
+                    {offerings.heading && (
+                      <h2 className="font-cormorant font-semibold text-3xl md:text-4xl text-dalashala-earth tracking-tight">
+                        {softenAmp(offerings.heading)}
+                      </h2>
+                    )}
+                  </div>
+                )}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  {offerings.items.map((item, i) => (
+                    <div
+                      key={i}
+                      className="relative bg-white border border-dalashala-meadow/60 rounded-xl p-7 md:p-8 hover:border-dalashala-olive/60 transition-colors duration-300"
+                    >
+                      {item.included !== undefined && (
+                        <span
+                          className={`absolute top-4 right-4 font-inter text-[10px] uppercase tracking-[0.22em] font-semibold px-2.5 py-1 rounded-full ${
+                            item.included
+                              ? 'bg-dalashala-honey/25 text-dalashala-honeyDeep'
+                              : 'bg-dalashala-meadow/50 text-dalashala-olive'
+                          }`}
+                        >
+                          {item.included ? 'Ingår' : 'Tillval'}
+                        </span>
+                      )}
+                      <span className="block w-8 h-[2px] bg-dalashala-honey mb-4 rounded-full" aria-hidden="true" />
+                      <h3 className={`font-cormorant font-semibold text-2xl md:text-[1.625rem] text-dalashala-earth mb-3 tracking-tight leading-snug ${item.included !== undefined ? 'pr-20' : ''}`}>
+                        {softenAmp(item.heading)}
+                      </h3>
+                      <p className="font-inter font-normal text-base text-dalashala-earth leading-relaxed">
+                        {item.text}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
 
           {/* Pricing */}
           {pricing && pricing.length > 0 && (
@@ -320,9 +436,6 @@ const ServicePageLayout = ({
                     </div>
                   ))}
                 </div>
-                <p className="font-inter font-normal text-sm text-dalashala-earth/70 text-center mt-6">
-                  Alla priser är inklusive utrustning. Kontakta mig för skräddarsydd offert.
-                </p>
               </div>
             </section>
           )}
