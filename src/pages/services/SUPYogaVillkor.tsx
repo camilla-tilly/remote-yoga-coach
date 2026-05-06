@@ -42,7 +42,7 @@ const SUPYogaVillkor = () => {
             SUP Yoga · Sickla Strand
           </p>
           <h1 className="font-fraunces text-4xl md:text-5xl lg:text-6xl text-dalashala-earth mb-5 leading-[1.02] tracking-[-0.03em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
-            {lang === 'sv' ? 'Deltagarvillkor 2026' : 'Participant Terms \u0026 Conditions 2026'}
+            {lang === 'sv' ? 'Deltagarvillkor 2026' : <>Participant Terms <span className="amp">&amp;</span> Conditions 2026</>}
           </h1>
           <span className="block mx-auto w-16 h-[2px] bg-dalashala-earth/60 mb-6 rounded-full" aria-hidden="true" />
           <p className="font-inter text-base md:text-lg text-dalashala-earth/80 mb-8">
