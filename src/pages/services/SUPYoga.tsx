@@ -65,7 +65,7 @@ const SUPYoga = () => (
       items: [
         {
           heading: "Möhippa på vattnet",
-          text: "Yoga, skratt och bastu efteråt. Det mest populära paketet för möhippor i Stockholm sommartid."
+          text: "Yoga, skratt och bastu efteråt. En möhippa vid sjön i lugnt tempo, utan krångel."
         },
         {
           heading: "Team & sommaravslutning",
@@ -96,29 +96,40 @@ const SUPYoga = () => (
           included: false
         },
         {
-          heading: "Tennis, vattencyklar & SUP",
-          text: "Privatlektion i tennis med Lucas, vattencyklar för alla nivåer, eller SUP att paddla själva. Lägg till det som passar gruppen.",
+          heading: "Tennis med Lucas",
+          text: "Privatlektion i tennis med Lucas på plats. Bra om någon i gruppen vill röra sig mer eller prova något nytt.",
+          included: false
+        },
+        {
+          heading: "Vattencyklar",
+          text: "Vattencyklar för alla nivåer. Enkelt och kul, funkar även för dem som inte är vana vid vatten.",
+          included: false
+        },
+        {
+          heading: "SUP-uthyrning",
+          text: "SUP att paddla själva, för den som vill utforska sjön i egen takt efter eller före passet.",
           included: false
         },
         {
           heading: "Mat via Elton's Café",
-          text: "Fika eller lättare måltid på plats via Elton's. Skönt att slippa pusslet med att hitta lunch någon annanstans.",
+          text: "Fika eller en hel måltid hos Elton's, vid sjön. Allt på samma plats.",
           included: false
         }
       ]
     }}
     pricing={[
       { label: "SUP yoga + bastu (bas)", price: "från 500 kr / person", note: "Minsta totala pris 1500 kr per tillfälle. Slutpriset beror på gruppstorlek och längd. Bastu ingår alltid." },
-      { label: "Tillval", price: "kontakta för offert", note: "Säg vad ni vill ha med, till exempel trail run, tennis, vattencyklar, SUP-uthyrning eller mat via Elton's Café, så får ni offert på paketet." },
+      { label: "Tillval", price: "kontakta för offert" },
       { label: "Gruppstorlek", price: "3 till 15 personer", note: "Ideal storlek 3 till 10 personer. Större grupper upp till 15 på förfrågan." }
     ]}
     detailsHeading="Praktisk information"
     detailsParagraphs={[
-      "Plats: Sickla Strand, vid Elton's Café och Uthyrning, Nacka. Cirka 10 till 15 minuter från centrala Stockholm med tunnelbana eller buss. T-bana Sickla eller Hammarby Sjöstad. Det finns parkering på plats.",
+      "Plats: Sickla Strand, vid Elton's Café och Uthyrning. [Hitta hit på Google Maps](https://maps.app.goo.gl/ZqpkKJDtYha9BgbN9). Det finns parkering på plats.",
       "Säsong: privata event går att boka från slutet av april till september. Datum utanför säsongen kan funka om vädret tillåter, fråga.",
       "Längd: vanligtvis 2 till 4 timmar inklusive yoga, bastu och eventuella tillval. Vi anpassar efter er.",
       "Utrustning: brädor, paddel, flytväst och dry bag tillhandahålls av Smashing Balance på plats. Omklädningsrum finns. Ta med badkläder, handduk och träningskläder. Löparkläder och skor om ni lägger till trail run.",
       "Avbokning: vid avbokning senast 48 timmar innan får ni 50 procent tillbaka eller tillgodo i 30 dagar. Samma villkor gäller om vädret gör att vi måste flytta dagen.",
+      "Säkerhet och ansvar: deltagande sker på egen risk. Yoga with Camilla och Smashing Balance tar inget ansvar för personskada eller sjukdom i samband med deltagande. Deltagaren ansvarar för tilldelad utrustning under hela klassen. Vid förlust av eller skada på paddel debiteras deltagaren återanskaffningskostnaden (500 kr).",
       "Undervisning på engelska, men jag pratar svenska om ni föredrar det. Ingen erfarenhet krävs, varken yoga eller SUP.",
       "Bokning: mejla hello.yogawithcamilla@gmail.com med datum, gruppstorlek och önskat format. Ni får offert samma dag."
     ]}
@@ -140,7 +151,7 @@ const SUPYoga = () => (
       },
       {
         question: "Vad mer kan vi lägga till?",
-        answer: "Trail run i Nackareservatet (ledd av mig), tennis med Lucas, vattencyklar för alla nivåer, SUP-uthyrning för att paddla själva, och fika eller lättare måltid via Elton's Café på plats. Vi sätter ihop det som passar gruppen."
+        answer: "Trail run i Nackareservatet (ledd av mig), tennis med Lucas, vattencyklar för alla nivåer, SUP-uthyrning för att paddla själva, och fika eller en hel måltid hos Elton's Café vid sjön. Vi sätter ihop det som passar gruppen."
       },
       {
         question: "Vad kostar det?",
@@ -173,7 +184,7 @@ const SUPYoga = () => (
     ]}
     englishKeywords={{
       heading: "Private SUP Yoga, Sauna & More in Stockholm",
-      text: "Private events at Sickla Strand, Stockholm. SUP yoga on the lake plus a lakeside sauna are the base, and you can build out the day with trail running in Nacka nature reserve (led by me), tennis with Lucas, water bikes, SUP rentals or food at Elton's Café on site. Tailored packages for hen parties, team days, birthdays and friend groups. From 500 kr per person with a 1500 kr minimum per booking. Groups of 3 to 10 are ideal, up to 15 on request. All equipment provided. No experience needed, taught in English. Cancellation 48+ hours ahead gets 50% back or 30-day credit, same terms for weather cancellations. Email hello.yogawithcamilla@gmail.com with your dates, group size and what you'd like to do for a same-day quote."
+      text: "Private events at Sickla Strand, Stockholm. SUP yoga on the lake plus a lakeside sauna are the base, and you can build out the day with trail running in Nacka nature reserve (led by me), tennis with Lucas, water bikes, SUP rentals or food at Elton's Café on site. Tailored packages for hen parties, team days, birthdays and friend groups. From 500 kr per person with a 1500 kr minimum per booking. Groups of 3 to 10 are ideal, up to 15 on request. All equipment provided. No experience needed, taught in English. Cancellation 48+ hours ahead gets 50% back or 30-day credit, same terms for weather cancellations.\n\nSafety and responsibility: participation is at the participant's own risk. Yoga with Camilla and Smashing Balance accept no responsibility for personal injury or illness in connection with participation. The participant is responsible for their allocated equipment throughout the class. Loss of or damage to a paddle will be charged at replacement cost (500 kr).\n\nEmail hello.yogawithcamilla@gmail.com with your dates, group size and what you'd like to do for a same-day quote."
     }}
   />
 );
