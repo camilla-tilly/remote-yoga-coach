@@ -110,7 +110,7 @@ const SUPYoga = () => (
     pricing={[
       { label: "SUP yoga + bastu (bas)", price: "från 500 kr / person", note: "Minsta totala pris 1500 kr per tillfälle. Slutpriset beror på gruppstorlek och längd. Bastu ingår alltid." },
       { label: "Tillval", price: "kontakta för offert", note: "Säg vad ni vill ha med, till exempel trail run, tennis, vattencyklar, SUP-uthyrning eller mat via Elton's Café, så får ni offert på paketet." },
-      { label: "Gruppstorlek", price: "3 till 15 personer", note: "Ideal storlek 3 till 10. Upp till 15 går att lösa, fråga när ni mejlar." }
+      { label: "Gruppstorlek", price: "3 till 15 personer", note: "Ideal storlek 3 till 10 personer. Större grupper upp till 15 på förfrågan." }
     ]}
     detailsHeading="Praktisk information"
     detailsParagraphs={[
@@ -148,7 +148,7 @@ const SUPYoga = () => (
       },
       {
         question: "Hur stor grupp kan vi vara?",
-        answer: "Ideal storlek är 3 till 10 personer. Vi tar upp till 15 om utrustning och plats funkar för datumet, fråga när ni mejlar."
+        answer: "Ideal storlek är 3 till 10 personer. Större grupper upp till 15 på förfrågan, beroende på utrustning och plats för det aktuella datumet."
       },
       {
         question: "Behöver vi kunna yoga eller SUP?",
