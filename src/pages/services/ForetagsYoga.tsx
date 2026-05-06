@@ -41,7 +41,7 @@ const ForetagsYoga = () => (
     highlights={[
       {
         heading: "Konferensyoga",
-        text: "Yogapaus under konferensdagen: morgon, lunch eller eftermiddag."
+        text: "Yogapaus mitt i konferensdagen för att rensa huvudet och skärpa fokus."
       },
       {
         heading: "Kickoff & AW",
@@ -53,7 +53,7 @@ const ForetagsYoga = () => (
       },
       {
         heading: "Teambuilding",
-        text: "En gemensam yogaklass som faktiskt sänker tempot. Bra inslag på teamdagen, retreaten eller AW:n."
+        text: "En gemensam paus där ingen behöver prestera. Bygger närvaro istället för tempo."
       }
     ]}
     pricing={[
@@ -66,7 +66,7 @@ const ForetagsYoga = () => (
     detailsParagraphs={[
       { subheading: "Allmänt" },
       "Ni behöver bara ha ett utrymme som är tillräckligt stort. Har ni egna yogamattor är det perfekt; behöver jag ta med utrustning diskuterar vi det separat, baserat på antal deltagare, avstånd och vad som behövs på plats.",
-      "Vi pratar också igenom kläder innan. Ska klassen funka i det folk redan har på sig på kontoret, eller hinner ni byta om till träningskläder? Båda funkar, jag anpassar rörelserna efter det.",
+      "Säg till om gruppen vill byta om till träningskläder eller hellre köra direkt i det de har på sig. Jag formar klassen efter det.",
       { subheading: "Stockholm" },
       "Jag kommer till ert kontor eller er konferensanläggning, eller hjälper gärna till att hitta en lämplig yogasal. Vill ni hellre ha yoga på vattnet kan vi i stället boka en [SUP-yoga-session](/tjanster/sup-yoga) vid Sicklasjön. Regelbundna klasser på kontoret erbjuds endast i Stockholm.",
       { subheading: "Dalarna" },
