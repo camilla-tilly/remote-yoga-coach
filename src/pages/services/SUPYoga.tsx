@@ -136,7 +136,7 @@ const SUPYoga = () => (
       "Bokning: mejla hello.yogawithcamilla@gmail.com med datum, gruppstorlek och önskat format."
     ]}
     ctaHeading="Boka ert privata event"
-    ctaText="Möhippa, team, födelsedag eller en eftermiddag med vänner. Mejla mig med datum, gruppstorlek och vad ni vill ha ut av dagen, så återkommer jag med offert. Letar du efter öppna veckoklasser istället? Se SUP Yoga Klasser."
+    ctaText="Möhippa, team, födelsedag eller en dag med vänner. Mejla mig med datum, gruppstorlek och vad ni vill ha ut av dagen, så återkommer jag med offert. Letar du efter öppna veckoklasser istället? Se SUP Yoga Klasser."
     bookingHref="mailto:hello.yogawithcamilla@gmail.com"
     bookingLabel="Mejla för offert"
     structuredData={structuredData}
