@@ -71,7 +71,7 @@ const MiniRetreat = () => (
     ]}
     detailsHeading="Praktisk information"
     detailsParagraphs={[
-      "Vi är ca 4 timmar från Stockholm med tåg eller bil. Basläger på altanen, vandring och trail run i närliggande skogsmark. Tillgängligt på helger och enstaka vardagar.",
+      "Vi är ca 3,5 timmar från Stockholm med bil, eller 4 timmar med tåg och buss. Basläger på altanen, vandring och trail run i närliggande skogsmark. Tillgängligt på helger och enstaka vardagar.",
       "Ta med löparskor eller vandringsskor, bekväma kläder och vattenflaska. Yogamattor finns på plats.",
       "Maila hello.yogawithcamilla@gmail.com med datum, format och gruppstorlek."
     ]}
