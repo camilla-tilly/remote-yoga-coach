@@ -36,7 +36,7 @@ const MiniRetreat = () => (
     introHeading="Rörelse och yoga i naturen"
     introParagraphs={[
       "Du väljer upplägget: yoga och vandring i skogen, guidat löppass med återhämtningsyoga, eller en heldag med mindfulness och fika. Allt sker i Dalarna.",
-      "För enskilda eller grupp (max 10 personer), som halvdag eller heldag. Programmet anpassas efter er. Leds på engelska, alla nivåer."
+      "För grupper (max 10 personer), som halvdag eller heldag. Programmet anpassas efter er. Leds på engelska, alla nivåer."
     ]}
     highlights={[
       {
@@ -99,7 +99,7 @@ const MiniRetreat = () => (
     ]}
     englishKeywords={{
       heading: "Mini Yoga Retreat & Adventure Packages in Dalarna, Sweden",
-      text: "Customisable half-day and full-day retreats and adventure packages in Dalarna, Sweden. Combining hiking, trail running, chicken yoga and recovery yoga. Led in English by a 500-hour certified yoga teacher and ultramarathon runner. Available for solo retreats or small groups (up to 10). Ideal for those looking for a yoga retreat in Sweden, an outdoor adventure, or a restorative break from city life. Email hello.yogawithcamilla@gmail.com to plan your experience."
+      text: "Customisable half-day and full-day retreats and adventure packages in Dalarna, Sweden. Combining hiking, trail running, chicken yoga and recovery yoga. Led in English by a 500-hour certified yoga teacher and ultramarathon runner. Available for small groups (up to 10). Ideal for those looking for a yoga retreat in Sweden, an outdoor adventure, or a restorative break from city life. Email hello.yogawithcamilla@gmail.com to plan your experience."
     }}
   />
 );
