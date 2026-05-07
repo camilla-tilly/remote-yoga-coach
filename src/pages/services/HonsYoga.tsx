@@ -32,7 +32,7 @@ const HonsYoga = () => (
     heroSubtitle="Yoga på altanen med höns fritt strövande runt. En lugn, jordnära upplevelse i Dalarnas natur."
     heroImage="/images/IMG_3765.jpeg"
     heroImageAlt="Höns på yogamattan, hönsyoga i Dalarna"
-    heroImagePosition="center bottom"
+    heroImagePosition="center 65%"
     introHeading="Yoga med sällskap"
     introParagraphs={[
       "Jag har höns. De rör sig fritt på och runt altanen, ibland nära, ibland inte. Under yogaklassen finns de där, pickandes runt mattorna, ibland nyfikna, ibland helt oberörda.",
