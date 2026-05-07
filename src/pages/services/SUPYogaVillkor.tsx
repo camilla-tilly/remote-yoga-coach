@@ -107,7 +107,7 @@ const SUPYogaVillkor = () => {
 
                 <Section title="Säkerhet och eget ansvar">
                   <p>Maxvikt 130 kg. Simkunnighet är ett krav för deltagande. Deltagande sker helt på egen risk. Yoga with Camilla och Smashing Balance ansvarar inte för personskada, sjukdom eller förlust av personliga tillhörigheter i samband med deltagande.</p>
-                  <p className="mt-2">Flytväst ingår och ska vara tillgänglig under hela klassen. Board, paddel och flytväst tillhandahålls av Smashing Balance. Deltagaren ansvarar för tilldelad utrustning under klassens gång. Vid förlust av eller skada på paddel debiteras deltagaren återanskaffningskostnaden (500 kr).</p>
+                  <p className="mt-2">Flytväst ingår och ska vara tillgänglig under hela klassen. Om den används eller inte är deltagarens eget ansvar. Board, paddel och flytväst tillhandahålls av Smashing Balance. Deltagaren ansvarar för tilldelad utrustning under klassens gång. Vid förlust av eller skada på paddel debiteras deltagaren återanskaffningskostnaden (500 kr).</p>
                 </Section>
 
                 <Section title="Att ta med">
@@ -155,7 +155,7 @@ const SUPYogaVillkor = () => {
 
                 <Section title="Safety & Personal Responsibility">
                   <p>Maximum weight 130 kg. The ability to swim is a requirement. Participation is entirely at the participant's own risk. Yoga with Camilla and Smashing Balance accept no responsibility for personal injury, illness, or loss of personal belongings in connection with participation.</p>
-                  <p className="mt-2">A life jacket is included and must be kept accessible throughout the class. Board, paddle and life jacket are provided by Smashing Balance. The participant is responsible for their allocated equipment throughout the class. Loss of or damage to a paddle will be charged at replacement cost (500 kr).</p>
+                  <p className="mt-2">A life jacket is included and must be kept accessible throughout the class. Whether to wear it is the participant's own responsibility. Board, paddle and life jacket are provided by Smashing Balance. The participant is responsible for their allocated equipment throughout the class. Loss of or damage to a paddle will be charged at replacement cost (500 kr).</p>
                 </Section>
 
                 <Section title="What to Bring">
