@@ -148,7 +148,7 @@ const SUPYoga = () => (
       },
       {
         question: "Vad ingår i grundpaketet?",
-        answer: "SUP yoga ledd av mig vid Sickla Strand. Brädor, paddel, flytväst och dry bag finns på plats. Funkar bra som ett kort event på cirka 1 till 2 timmar."
+        answer: "SUP yoga ledd av mig vid Sickla Strand. Brädor, paddel, flytväst och dry bag finns på plats. Klassen är cirka 75 minuter inklusive paddling ut till flytbryggan och tillbaka."
       },
       {
         question: "Vad mer kan vi lägga till?",
