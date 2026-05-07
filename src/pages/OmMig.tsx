@@ -88,13 +88,13 @@ const OmMig = () => {
                 </h2>
                 <div className="space-y-5">
                   <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85">
-                    Jag växte upp i Australien men har hittat hem i skogen i Dalarna, med höns och en stor altan som ibland förvandlas till yogashala.
+                    Jag växte upp i Australien och bor idag i Stockholm. När jag kan drar jag upp till stugan i Dalarna, till hönsen och altanen som ibland förvandlas till yogashala.
                   </p>
                   <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85">
-                    Rörelse, natur och mindfulness har alltid hängt ihop för mig. Det är i yogan allt landar.
+                    Rörelse, natur och mindfulness har alltid hängt ihop för mig, och yogan är där allt möts.
                   </p>
                   <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85">
-                    Idag undervisar jag i Stockholm och Dalarna, både i studio och hemma på altanen.
+                    Jag undervisar mest i Stockholm, i studio och privat, och uppe i Dalarna när jag är där.
                   </p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ const OmMig = () => {
           <div className="max-w-3xl mx-auto">
             <blockquote className="border-l-2 border-dalashala-olive pl-8 md:pl-10">
               <p className="font-fraunces italic text-2xl md:text-[2rem] text-dalashala-earth leading-[1.35] tracking-[-0.01em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 100" }}>
-                Mina klasser är utmanande men inte bestraffande. Inga extrema poser, ingen tävling med grannen på mattan. Yoga som rörelse, andning och närvaro, oavsett om jag undervisar på altanen i Dalarna eller i en studio i Stockholm.
+                Mina klasser är utmanande men inte bestraffande. Inga extrema poser, ingen tävling med grannen på mattan. För mig handlar yoga om rörelse, andning och närvaro, oavsett om jag undervisar i en studio i Stockholm eller på altanen i Dalarna.
               </p>
               <footer className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mt-6 not-italic">
                 Min praktik
