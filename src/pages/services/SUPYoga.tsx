@@ -147,10 +147,6 @@ const SUPYoga = () => (
         answer: "Mejla hello.yogawithcamilla@gmail.com med datum, gruppstorlek och vad ni vill göra (möhippa, team, födelsedag, vänner). Bokning bekräftas när full betalning är mottagen."
       },
       {
-        question: "Vad ingår i grundpaketet?",
-        answer: "SUP yoga ledd av mig vid Sickla Strand. Brädor, paddel, flytväst och dry bag finns på plats. Klassen är cirka 75 minuter inklusive paddling ut till flytbryggan och tillbaka."
-      },
-      {
         question: "Vad mer kan vi lägga till?",
         answer: "Bastu vid sjön, trail run i Nackareservatet (ledd av mig), tennis med Lucas, vattencyklar för alla nivåer, SUP-uthyrning för att paddla själva, och fika eller en hel måltid hos Elton's Café vid sjön. Vi sätter ihop det som passar gruppen."
       },
