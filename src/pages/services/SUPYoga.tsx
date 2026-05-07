@@ -176,7 +176,7 @@ const SUPYoga = () => (
       },
       {
         question: "Vem är Smashing Balance?",
-        answer: "De driver platsen vid Sickla Strand: Elton's Café, bastun, SUP-uthyrningen och vattencyklarna. Jag undervisar yogan och trail run-passet, och är er kontaktperson när ni bokar privat event. Lucas är tennisproffs och leder tennistillvalet på plats."
+        answer: "De driver platsen vid Sickla Strand: Elton's Café, bastun, SUP-uthyrningen och vattencyklarna. Jag undervisar yogan och trail run-passet, och är er kontaktperson när ni bokar privat event."
       },
       {
         question: "Vad gäller vid avbokning eller dåligt väder?",
