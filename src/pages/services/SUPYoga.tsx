@@ -65,7 +65,7 @@ const SUPYoga = () => (
       items: [
         {
           heading: "Möhippa på vattnet",
-          text: "Yoga, skratt och bastu efteråt. En möhippa vid sjön i lugnt tempo, utan krångel."
+          text: "Yoga, skratt och bastu efteråt. En möhippa vid sjön i lugnt tempo."
         },
         {
           heading: "Team & sommaravslutning",
