@@ -65,7 +65,7 @@ const HonsYoga = () => (
     detailsHeading="Praktisk information"
     detailsParagraphs={[
       "Hönsyoga hålls utomhus på altanen i Dalarna, väderförhållanden tillåtet. Säsongen är maj till september.",
-      "Hönsen rör sig fritt runt altanen under klassen. De interagerar inte aktivt med deltagarna, men de är där, pickar runt, klamrar lite, gör hönsen.",
+      "Hönsen rör sig fritt runt altanen under klassen. De interagerar inte aktivt med deltagarna, men de är där i bakgrunden, pickar runt och kacklar lite.",
       "Skicka en förfrågan till hello.yogawithcamilla@gmail.com med önskat datum och antal deltagare, så återkommer jag med tillgänglighet och offert."
     ]}
     ctaHeading="Boka Hönsyoga"
@@ -83,7 +83,7 @@ const HonsYoga = () => (
       },
       {
         question: "Vad gör hönsen under klassen?",
-        answer: "Höns. De pickar runt, klamrar lite, går förbi mattorna, ibland sätter sig en bredvid någon. De interagerar inte aktivt, men de finns där som en naturlig del av platsen."
+        answer: "Höns. De pickar runt, kacklar lite, går förbi mattorna, ibland sätter sig en bredvid någon. De interagerar inte aktivt, men de finns där som en naturlig del av platsen."
       },
       {
         question: "När på året går det att boka?",
