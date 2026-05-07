@@ -58,7 +58,7 @@ const SUPYoga = () => (
     ]}
     introHeading="Yoga på brädan vid sjön"
     introParagraphs={[
-      "Mjuk vinyasa eller lugn yin på paddleboarden, anpassat efter gruppen. Det är basen. Sen lägger ni till det ni vill: bastu vid sjön, trail run i Nackareservatet ledd av mig, tennis med Lucas, vattencyklar, SUP-uthyrning eller fika på Elton's Café.",
+      "Mjuk vinyasa eller lugn yin på paddleboarden, anpassat efter gruppen. Sen lägger ni till det ni vill: bastu vid sjön, trail run i Nackareservatet ledd av mig, tennis med Lucas, vattencyklar, SUP-uthyrning eller fika på Elton's Café.",
       "Mejla med datum, gruppstorlek och önskemål, så återkommer jag med offert."
     ]}
     audience={{
