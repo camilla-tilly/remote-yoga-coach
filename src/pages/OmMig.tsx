@@ -217,13 +217,13 @@ const OmMig = () => {
             </h2>
             <div className="space-y-6 font-inter text-lg md:text-xl text-dalashala-earth/85 leading-relaxed">
               <p>
-                I'm Camilla, an Australian-born 500-hour certified yoga teacher based in Stockholm, Sweden, with regular classes in Dalarna. I teach vinyasa and yin yoga in English.
+                I'm Camilla, an Australian-born 500-hour certified yoga teacher based in Stockholm, Sweden, and I also teach in Dalarna. I teach vinyasa, yin, and hatha yoga in English.
               </p>
               <p>
-                Movement, nature, and mindfulness have always been important to me. I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, and my 300-hour advanced vinyasa training at Sampoorna Yoga Shala in Goa. I also have a background in fitness instruction as a Les Mills certified instructor (7 years, Australia and Sweden), and I've completed five ultramarathons, including a podium finish.
+                Movement, nature, and mindfulness have always been important to me. I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, and my 300-hour advanced vinyasa training at Sampoorna Yoga Shala in Goa, India. I also have a background in fitness instruction as a Les Mills certified instructor (7 years, Australia and Sweden), and I've completed five ultramarathons, including a podium finish.
               </p>
               <p>
-                My approach to yoga is simple: challenging but not punishing. I'm not interested in impressive poses or performance. I'm interested in what yoga becomes when it stops being another thing you have to do well.
+                My approach to yoga is simple: challenging but not punishing. I'm not interested in impressive poses or performance. For me, yoga is more about the mental and spiritual practice than the shapes the body makes.
               </p>
               <p>
                 I teach at WD Wellness in Vansbro, Hot Yoga Stockholm, Yogarummet Björkhagen, Brahma Yoga in Nacka, and as the SUP yoga teacher for Smashing Balance. I also take bookings for private lessons, corporate yoga, bachelorette yoga, wedding yoga, and yoga retreats across Stockholm and Dalarna.
