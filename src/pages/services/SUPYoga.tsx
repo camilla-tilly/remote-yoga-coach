@@ -102,7 +102,7 @@ const SUPYoga = () => (
         },
         {
           heading: "Vattencyklar",
-          text: "Vattencyklar för alla nivåer. Enkelt och kul, funkar även för dem som inte är vana vid vatten.",
+          text: "Enkelt och kul, funkar även för dem som inte är vana vid vatten.",
           included: false
         },
         {
