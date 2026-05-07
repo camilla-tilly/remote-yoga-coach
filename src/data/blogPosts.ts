@@ -188,7 +188,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Om Dalarna inte funkar, om det är för långt, för kort helg, eller om inte alla kan resa, gör jag samma sak i Stockholm. Jag kommer till er lägenhet, hyrd lokal eller en park i stan med all utrustning. Där funkar även [privat SUP yoga och bastu vid Sickla Strand](/tjanster/sup-yoga) (i samarbete med Smashing Balance) som en rolig möhippa-aktivitet. Mer idéer i [7 möhippa-aktiviteter i Stockholm](/blogg/mohippa-aktiviteter-stockholm).'
+        text: 'Om Dalarna inte funkar, om det är för långt, för kort helg, eller om inte alla kan resa, gör jag samma sak i Stockholm. Jag kommer till er lägenhet, hyrd lokal eller en park i stan med all utrustning. Där funkar även [privat SUP yoga vid Sickla Strand](/tjanster/sup-yoga) (i samarbete med Smashing Balance) som en rolig möhippa-aktivitet, med tillval som bastu och mer. Mer idéer i [7 möhippa-aktiviteter i Stockholm](/blogg/mohippa-aktiviteter-stockholm).'
       },
       {
         type: 'heading',
@@ -568,7 +568,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Skräddarsydd upplevelse för er grupp. Möhippa, team, födelsedag, vänner. Ni får brädorna för er själva, jag leder en klass för just er, vi avslutar i bastun vid sjön. Vinyasa eller yin, ni väljer.'
+        text: 'Skräddarsydd upplevelse för er grupp. Möhippa, team, födelsedag, vänner. Ni får brädorna för er själva, jag leder en klass för just er. Vinyasa eller yin, ni väljer. Lägg till bastu vid sjön, trail run i Nacka, tennis, vattencyklar eller mat på plats om ni vill bygga ut dagen.'
       },
       {
         type: 'paragraph',
@@ -603,7 +603,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Bastu vid sjön ingår i alla upplägg. Privata event kan faktureras till företag mot moms.'
+        text: 'Bastu vid sjön ingår i de öppna klasserna. För privata event är bastu ett tillval som offereras separat tillsammans med eventuella andra tillval. Privata event kan faktureras till företag mot moms.'
       },
       {
         type: 'heading',
@@ -712,11 +712,11 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Hur lång är en klass?',
-            a: 'Öppna klasser är 75 minuter inklusive paddling till och från ankringsplatsen. Privata event 2 till 4 timmar inklusive yoga, bastu och hängtid vid sjön.',
+            a: 'Öppna klasser är 75 minuter inklusive paddling till och från ankringsplatsen. Privata event 1 till 4 timmar, längden anpassas efter yoga och eventuella tillval.',
           },
           {
             q: 'Ingår bastu?',
-            a: 'Ja, bastu vid sjön ingår i alla klasser, både öppna klasser och privata event.',
+            a: 'Bastu vid sjön ingår i de öppna klasserna. För privata event är bastu ett tillval som ni lägger till i offerten om ni vill.',
           },
           {
             q: 'När är säsongen?',
@@ -746,7 +746,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Vill ni boka en privat grupp för möhippa, team eller födelsedag? Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal och om ni vill ha extra bastutid. Mer detaljer på [Privat SUP Yoga](/tjanster/sup-yoga). Vill du bara komma på en öppen veckoklass? Se schema och boka direkt på [Smashing Balance](https://smashingbalance.se/collections/sup-yoga), eller läs mer på [SUP yoga klasser Stockholm](/blogg/sup-yoga-klasser-stockholm).'
+        text: 'Vill ni boka en privat grupp för möhippa, team eller födelsedag? Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal och om ni vill lägga till bastu eller andra tillval. Mer detaljer på [Privat SUP Yoga](/tjanster/sup-yoga). Vill du bara komma på en öppen veckoklass? Se schema och boka direkt på [Smashing Balance](https://smashingbalance.se/collections/sup-yoga), eller läs mer på [SUP yoga klasser Stockholm](/blogg/sup-yoga-klasser-stockholm).'
       },
     ]
   },
@@ -1791,16 +1791,16 @@ export const blogPosts: BlogPost[] = [
     category: 'Events & Möhippa',
     excerpt: 'Ska ni fira möhippa i Stockholm och vill ha något mer minnesvärt än en bar-crawl? Här är 7 aktiviteter som funkar för hela gänget.',
     relatedServiceHref: '/tjanster/sup-yoga',
-    relatedServiceLabel: 'Boka SUP yoga & bastu',
+    relatedServiceLabel: 'Boka privat SUP yoga',
     relatedPosts: [
       { slug: 'yoga-mohippa-dalarna', label: 'Yoga möhippa i Dalarna' },
       { slug: 'mohippa-dalarna-aktiviteter', label: 'Möhippa i Dalarna, 7 aktiviteter' },
     ],
     content: [
       { type: 'paragraph', text: 'Stockholm är en fantastisk stad för möhippa. Vatten överallt, bra restauranger, massor av alternativ. Men grejen är att många grupper fastnar i samma spår: prosecco-frukost, spa, och sedan ut på krogen. Inget fel med det. Men om ni vill ha en dag som faktiskt känns unik, en dag där bruden ser på er och säger "det här var exakt rätt", så lönar det sig att tänka ett varv till.' },
-      { type: 'heading', text: '1. Privat SUP yoga och bastu vid Sickla Strand' },
+      { type: 'heading', text: '1. Privat SUP yoga vid Sickla Strand' },
       { type: 'paragraph', text: 'Det här är vår absoluta favorit. Yoga på ett paddleboard låter lite galet, men det är precis det som gör det så bra för möhippa. Ni skrattar, ni utmanar er lagom, ingen behöver kunna yoga sedan tidigare. Vi håller en privat klass vid Sickla Strand där ni balanserar, faller i, och har det roligaste på länge. Vinyasa eller yin, ni väljer stil.' },
-      { type: 'paragraph', text: 'Efteråt: bastu direkt vid vattnet. Varmt, lugnt, bara ni och utsikten. Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Klassen leds av mig, plats och utrustning kommer från Smashing Balance. Mejla hello.yogawithcamilla@gmail.com för offert, eller läs mer på yogawithcamilla.se/tjanster/sup-yoga.' },
+      { type: 'paragraph', text: 'Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Klassen leds av mig, plats och utrustning kommer från Smashing Balance. Lägg till bastu vid vattnet, trail run i Nacka, tennis eller mat på plats om ni vill bygga ut dagen. Mejla hello.yogawithcamilla@gmail.com för offert, eller läs mer på yogawithcamilla.se/tjanster/sup-yoga.' },
       { type: 'heading', text: '2. Skärgårdstur med egen båt' },
       { type: 'paragraph', text: 'Stockholms skärgård är ett av världens finaste naturområden och den ligger bokstavligen utanför dörren. Strandrederi hyr ut båtar med skeppare för dagen, ni packar mat och dryck, sätter kurs mot en ö, badar från klippor, grillar, sover i solen. Kanebo Event är alternativet för större grupper, de har båtar som tar upp till 110 gäster. För en snabbare variant med fartvind i håret, boka RIB Stockholm.' },
       { type: 'heading', text: '3. Matlagningskurs tillsammans' },
@@ -1811,27 +1811,27 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Bartendrr kommer till er lägenhet eller AirBnB med bar, glas, råvaror och is, och guidar gruppen genom två–tre signaturdrinkar. Ingen behöver ha skakat en drink förut. Funkar extra bra om någon i gänget ogillar yoga eller spa, alla är med på cocktails. Pairar bra med middag efteråt.' },
       { type: 'heading', text: '6. Spa med privat avdelning' },
       { type: 'paragraph', text: 'Stockholms Spa & Hälsostudio och Sparadiset erbjuder båda privata avdelningar ni kan boka för er grupp: jacuzzi, bastu, behandlingar, ingen främmande ni stöter på i omklädningsrummet. För en större upplevelse 50 minuter utanför stan har Smådalarö Gård Sveriges enda grupbehandlingsrum med plats för upp till 10 personer. Avslappnat, socialt och en fin finish på dagen, särskilt i kombination med yoga på morgonen.' },
-      { type: 'paragraph', text: 'SUP yoga och bastu bokar ni direkt via mig (yogawithcamilla.se/tjanster/sup-yoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så återkommer jag med offert.' },
+      { type: 'paragraph', text: 'Privat SUP yoga bokar ni direkt via mig (yogawithcamilla.se/tjanster/sup-yoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så återkommer jag med offert.' },
     ]
   },
   {
     slug: 'hen-party-ideas-stockholm',
     title: '5 Bachelorette Party Ideas in Stockholm',
-    metaDescription: 'Planning a bachelorette party in Stockholm? Here are 5 unforgettable bachelorette activities, from SUP yoga and sauna to archipelago boat trips and cooking classes.',
+    metaDescription: 'Planning a bachelorette party in Stockholm? Here are 5 unforgettable bachelorette activities, from private SUP yoga to archipelago boat trips and cooking classes.',
     publishDate: '2026-04-15',
     readingTime: '6 min',
     category: 'Events & Möhippa',
-    excerpt: 'Stockholm is genuinely one of the best cities in the world for a bachelorette party. Water everywhere, world-class spas, incredible food, and yes, yoga on paddleboards with a sauna waiting on shore.',
+    excerpt: 'Stockholm is genuinely one of the best cities in the world for a bachelorette party. Water everywhere, world-class spas, incredible food, and yes, yoga on paddleboards on a calm city lake.',
     relatedServiceHref: '/tjanster/sup-yoga',
-    relatedServiceLabel: 'Book SUP yoga & sauna',
+    relatedServiceLabel: 'Book private SUP yoga',
     relatedPosts: [
       { slug: 'mohippa-aktiviteter-stockholm', label: 'Möhippa i Stockholm, 7 aktiviteter' },
     ],
     content: [
       { type: 'paragraph', text: 'Stockholm is genuinely one of the best cities in the world for a bachelorette party. Water everywhere, world-class spas, cobblestone streets in Gamla Stan, and a food scene that keeps getting better. These are five of the best bachelorette party ideas in Stockholm right now.' },
-      { type: 'heading', text: '1. Private SUP yoga and sauna at Sickla Strand' },
-      { type: 'paragraph', text: 'This is the one. Yoga on paddleboards on a calm Stockholm lake, followed by a sauna on the water\'s edge. No experience needed. The boards are wide and stable, and the whole session is taught in English. Vinyasa or yin, you pick the style.' },
-      { type: 'paragraph', text: 'The private SUP yoga and sauna experience runs at Sickla Strand in Nacka, just outside central Stockholm. Usually 3 to 10 people, larger groups on request. From 500 kr per person. Led by me, with venue and equipment provided by Smashing Balance. All gear included.' },
+      { type: 'heading', text: '1. Private SUP yoga at Sickla Strand' },
+      { type: 'paragraph', text: 'This is the one. Yoga on paddleboards on a calm Stockholm lake. No experience needed. The boards are wide and stable, and the whole session is taught in English. Vinyasa or yin, you pick the style.' },
+      { type: 'paragraph', text: 'The private SUP yoga experience runs at Sickla Strand in Nacka, just outside central Stockholm. Usually 3 to 10 people, larger groups on request. From 500 kr per person. Led by me, with venue and equipment provided by Smashing Balance. All gear included. Add a lakeside sauna, trail running in Nacka, tennis or food on site if you want to build out the day.' },
       { type: 'heading', text: '2. Private archipelago boat tour with Strandrederi' },
       { type: 'paragraph', text: 'Stockholm\'s archipelago is 30,000 islands and the best way to see it as a group is on a private charter. Strandrederi rents skippered boats by the day, set up for groups with food and drink on board. For larger parties, Kanebo Event runs boats up to 110 guests. If you want adrenaline, RIB Stockholm will get you further out in less time: 2 hours to a full day.' },
       { type: 'heading', text: '3. Swedish cooking class at AVEQIA' },
@@ -1840,28 +1840,28 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Bartendrr will come to your Airbnb or hotel with a full bar, ingredients, ice and glassware, and walk the group through making two or three signature cocktails. Everyone gets to mix, shake, and stir, and by the end of two hours nobody is a stranger. Moyagi is the alternative if you want a venue rather than in-house. They combine cocktail craft with an Asian sharing menu.' },
       { type: 'heading', text: '5. Wine tasting with Grus Grus or Nolea' },
       { type: 'paragraph', text: 'Grus Grus Wine Bar in Gamla Stan runs 1-hour private tastings for groups of 6 to 10: you pick the theme, their sommelier picks the wines, and you actually get time to talk. For something more tailored, Nolea is run by a WSET-3 sommelier and will come to you: your Airbnb, a wine cellar in Östermalm, or a hunter\'s cabin in Enskede. From around 5 000 SEK. Good choice for a low-key close to the day.' },
-      { type: 'paragraph', text: 'SUP yoga and sauna is bookable directly through me (yogawithcamilla.se/tjanster/sup-yoga). Email hello.yogawithcamilla@gmail.com with your dates and group size for a same-day quote.' },
+      { type: 'paragraph', text: 'Private SUP yoga is bookable directly through me (yogawithcamilla.se/tjanster/sup-yoga). Email hello.yogawithcamilla@gmail.com with your dates and group size for a quote.' },
     ]
   },
   {
     slug: 'sommaravslutning-aktiviteter-stockholm',
     title: '7 idéer för sommaravslutning i Stockholm',
-    metaDescription: 'Planerar du sommaravslutning med jobbet i Stockholm? Här är 7 idéer, från SUP yoga och bastu till skärgårdsbåt och kajakpaddling.',
+    metaDescription: 'Planerar du sommaravslutning med jobbet i Stockholm? Här är 7 idéer, från privat SUP yoga till skärgårdsbåt och kajakpaddling.',
     publishDate: '2026-04-15',
     readingTime: '6 min',
     category: 'Företag & Konferens',
     excerpt: 'Sommaren är snart här och det är dags att belöna teamet. Här är 7 idéer för sommaravslutning i Stockholm, för grupper som vill göra något minnesvärt.',
     relatedServiceHref: '/tjanster/sup-yoga',
-    relatedServiceLabel: 'Boka SUP yoga & bastu för ert team',
+    relatedServiceLabel: 'Boka privat SUP yoga för ert team',
     relatedPosts: [
       { slug: 'konferensyoga-teambuilding', label: 'Konferensyoga, varför 60 minuter yoga slår teambuilding' },
       { slug: 'foretagsyoga-vad-ingar-och-kostar', label: 'Företagsyoga, vad ingår och kostar?' },
     ],
     content: [
       { type: 'paragraph', text: 'Sommaravslutningen är ett av årets viktigaste tillfällen för ett team. Inte för att det står i någon HR-handbok, utan för att det är en av få gånger ni faktiskt stannar upp tillsammans. Firar det ni gjort. Andas ut lite. Här är sju idéer som funkar.' },
-      { type: 'heading', text: '1. Privat SUP yoga och bastu vid Sickla Strand' },
-      { type: 'paragraph', text: 'Yoga på paddleboard vid Sickla Strand är en upplevelse som ingen glömmer. Ni börjar med en guidad yogasekvens på vattnet, vinyasa eller yin, sen värmer ni upp i en bastu med utsikt mot sjön. Avkopplande, roligt och lite utmanande på samma gång.' },
-      { type: 'paragraph', text: 'Ingen förkunskap krävs. Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Centralt i Sickla, enkelt att nå med tunnelbana. Klassen leds av mig, plats och utrustning kommer från Smashing Balance.' },
+      { type: 'heading', text: '1. Privat SUP yoga vid Sickla Strand' },
+      { type: 'paragraph', text: 'Yoga på paddleboard vid Sickla Strand är en upplevelse som ingen glömmer. En guidad yogasekvens på vattnet, vinyasa eller yin. Avkopplande, roligt och lite utmanande på samma gång.' },
+      { type: 'paragraph', text: 'Ingen förkunskap krävs. Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Centralt i Sickla, enkelt att nå med tunnelbana. Klassen leds av mig, plats och utrustning kommer från Smashing Balance. Lägg till bastu vid sjön, trail run i Nacka, tennis eller mat på plats om ni vill bygga ut dagen.' },
       { type: 'heading', text: '2. Skärgårdstur med charterbåt' },
       { type: 'paragraph', text: 'Stockholm har 30 000 öar och sommaren är den enda tiden på året man faktiskt ser dem. Strandrederi hyr ut skärgårdsbåtar med skeppare för hel- eller halvdag, bra för kickoffer och sommaravslutningar där ni vill ha mat, dryck och utrymme ombord. För större grupper kör Kanebo Event båtar som tar upp till 110 gäster. RIB Stockholm är alternativet om ni vill ha fart snarare än lugn, 2 timmar till hel dag.' },
       { type: 'heading', text: '3. Matlagning hos AVEQIA' },
@@ -1874,27 +1874,27 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Exit Games i Gamla Stan kan köra upp till 44 personer samtidigt fördelade över flera rum, vilket är anledningen till att det funkar för ett helt team. Escape rooms sätter gruppen i ett läge där ni behöver kommunicera och lösa problem ihop, fast det är kul snarare än pressande. Håll rum på 4–6 personer.' },
       { type: 'heading', text: '7. Guidad promenad på Djurgården med picknick' },
       { type: 'paragraph', text: 'Det enklaste alternativet, men underskattat. Djurgården är en av Stockholms vackraste platser och den är gratis. En guidad promenad följt av en gemensam picknick på gräset är ett härligt sätt att fira sommaren utan att krångla till det. Bra backup-plan om budgeten är stram.' },
-      { type: 'paragraph', text: 'Två av aktiviteterna ovan bokar ni direkt via mig: SUP yoga och bastu (yogawithcamilla.se/tjanster/sup-yoga) och yoga för ert team (yogawithcamilla.se/tjanster/foretagsyoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så återkommer jag med offert.' },
+      { type: 'paragraph', text: 'Två av aktiviteterna ovan bokar ni direkt via mig: privat SUP yoga (yogawithcamilla.se/tjanster/sup-yoga) och yoga för ert team (yogawithcamilla.se/tjanster/foretagsyoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så återkommer jag med offert.' },
     ]
   },
   {
     slug: 'summer-team-day-ideas-stockholm',
     title: '7 Summer Team Day Ideas in Stockholm',
-    metaDescription: 'Planning a summer team day in Stockholm? Here are 7 ideas, from SUP yoga and sauna to archipelago boat trips. Something for every team size and budget.',
+    metaDescription: 'Planning a summer team day in Stockholm? Here are 7 ideas, from private SUP yoga to archipelago boat trips. Something for every team size and budget.',
     publishDate: '2026-04-15',
     readingTime: '6 min',
     category: 'Företag & Konferens',
-    excerpt: 'Summer is the best time to take your team outside the office. Here are 7 team day ideas in Stockholm, from paddleboard yoga and a sauna to archipelago boat trips.',
+    excerpt: 'Summer is the best time to take your team outside the office. Here are 7 team day ideas in Stockholm, from paddleboard yoga to archipelago boat trips.',
     relatedServiceHref: '/tjanster/sup-yoga',
-    relatedServiceLabel: 'Book SUP yoga & sauna for your team',
+    relatedServiceLabel: 'Book private SUP yoga for your team',
     relatedPosts: [
       { slug: 'sommaravslutning-aktiviteter-stockholm', label: 'Sommaravslutning i Stockholm, 7 idéer' },
     ],
     content: [
       { type: 'paragraph', text: 'Summer in Stockholm is short, brilliant, and a little bit magic. The light stays until 10 pm. The water is warm enough to actually get in. And your team has probably been sitting in the same meeting room since January.' },
-      { type: 'heading', text: '1. Private SUP Yoga + Sauna at Sickla Strand' },
+      { type: 'heading', text: '1. Private SUP Yoga at Sickla Strand' },
       { type: 'paragraph', text: 'You start on paddleboards on the water, moving through a gentle vinyasa or yin flow led by me. No experience needed. Nobody falls in as often as they expect. And everybody laughs more than they thought they would.' },
-      { type: 'paragraph', text: 'After the session, you step into a sauna right by the water. Usually 3 to 10 people, larger groups on request. From 500 kr per person. Taught in English. Central Sickla location, easy to reach by tunnelbana. Yoga led by me, with venue and gear from Smashing Balance.' },
+      { type: 'paragraph', text: 'Usually 3 to 10 people, larger groups on request. From 500 kr per person. Taught in English. Central Sickla location, easy to reach by tunnelbana. Yoga led by me, with venue and gear from Smashing Balance. Add a lakeside sauna, trail running in Nacka, tennis or food on site if you want to build out the day.' },
       { type: 'heading', text: '2. Archipelago Boat Trip with Strandrederi or Kanebo Event' },
       { type: 'paragraph', text: 'Stockholm sits on one of the most beautiful archipelagos in the world (more than 30,000 islands, most of them empty) and you only see it properly from a boat. Strandrederi charters skippered boats for half or full days, set up for company kickoffs and summer parties with food and drink on board. For bigger groups, Kanebo Event operates boats up to 110 guests. If you want speed over calm, RIB Stockholm runs faster archipelago tours from 2 hours to a full day.' },
       { type: 'heading', text: '3. Cooking Class at AVEQIA' },
@@ -1907,28 +1907,28 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Exit Games in Gamla Stan can run up to 44 people at once across multiple rooms, which is why it works for a whole team rather than just a few people. You see quickly who leads under pressure, who thinks laterally, and who just reads the clues. Keep groups at 4 to 6 per room. Skip it if your team is bigger than 50.' },
       { type: 'heading', text: '7. Guided Summer Walk Through Stockholm' },
       { type: 'paragraph', text: 'The easiest option on the list but underrated. A good guide through Gamla Stan, the Södermalm cliffs, or the waterfront turns the parts of Stockholm people walk past every day into genuinely interesting stories. Cheap, flexible, and a reliable backup plan if weather shifts or budget is tight.' },
-      { type: 'paragraph', text: 'Two of the activities above are bookable directly through me: SUP yoga and sauna (yogawithcamilla.se/tjanster/sup-yoga) and yoga for your team (yogawithcamilla.se/tjanster/foretagsyoga). Email hello.yogawithcamilla@gmail.com with your dates and group size for a same-day quote.' },
+      { type: 'paragraph', text: 'Two of the activities above are bookable directly through me: private SUP yoga (yogawithcamilla.se/tjanster/sup-yoga) and yoga for your team (yogawithcamilla.se/tjanster/foretagsyoga). Email hello.yogawithcamilla@gmail.com with your dates and group size for a quote.' },
     ]
   },
   {
     slug: 'teambuilding-aktiviteter-stockholm',
     title: '7 teambuilding-aktiviteter i Stockholm som teamet faktiskt vill göra',
-    metaDescription: 'Letar du efter teambuilding i Stockholm som känns rolig på riktigt? Här är 7 aktiviteter, från SUP yoga och bastu till matlagning och kajak.',
+    metaDescription: 'Letar du efter teambuilding i Stockholm som känns rolig på riktigt? Här är 7 aktiviteter, från privat SUP yoga till matlagning och kajak.',
     publishDate: '2026-04-15',
     readingTime: '6 min',
     category: 'Företag & Konferens',
     excerpt: 'Bästa teambuilding i Stockholm handlar inte om att krypa under rep. Det handlar om att ge teamet en upplevelse de pratar om månader efteråt.',
     relatedServiceHref: '/tjanster/sup-yoga',
-    relatedServiceLabel: 'Boka SUP yoga & bastu som teambuilding',
+    relatedServiceLabel: 'Boka privat SUP yoga som teambuilding',
     relatedPosts: [
       { slug: 'konferensyoga-teambuilding', label: 'Konferensyoga, varför yoga slår teambuilding' },
       { slug: 'sommaravslutning-aktiviteter-stockholm', label: 'Sommaravslutning i Stockholm, 7 idéer' },
     ],
     content: [
       { type: 'paragraph', text: 'Bra teambuilding i Stockholm behöver inte vara krånglig. Den behöver inte vara dyr heller. Men den behöver vara något teamet faktiskt ser fram emot, inte något de klarar av för att de måste.' },
-      { type: 'heading', text: '1. Privat SUP yoga och bastu vid Sickla Strand' },
+      { type: 'heading', text: '1. Privat SUP yoga vid Sickla Strand' },
       { type: 'paragraph', text: 'Yoga på paddleboard kräver koncentration och balans, vilket betyder att alla i gruppen är helt närvarande. Ingen kollar telefonen. Ingen tänker på deadline. Alla fokuserar på att inte ramla i vattnet, och skrattar när någon gör det ändå.' },
-      { type: 'paragraph', text: 'Efteråt: bastu direkt vid vattnet, tid att prata på riktigt. Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Ingen erfarenhet krävs, centralt vid Sickla Strand och enkelt att nå med tunnelbana. Yoga ledd av mig, plats och utrustning via Smashing Balance.' },
+      { type: 'paragraph', text: 'Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Ingen erfarenhet krävs, centralt vid Sickla Strand och enkelt att nå med tunnelbana. Yoga ledd av mig, plats och utrustning via Smashing Balance. Lägg till bastu vid vattnet, trail run i Nacka, tennis eller mat på plats om ni vill bygga ut dagen och få tid att prata på riktigt.' },
       { type: 'heading', text: '2. Matlagning hos AVEQIA' },
       { type: 'paragraph', text: 'AVEQIA är det många Stockholmsföretag landar på och det finns en anledning. Grupper från 10 till 140 personer lagar en tre- eller fyrarätters meny tillsammans i privata köksrum, med kockar som guidar. Funkar både för folk som lagar mat varje dag och folk som bränner rostbrödet. Bra val om teamet är blandat och ni vill att alla är med utan att någon känner sig utlämnad.' },
       { type: 'heading', text: '3. Escape room hos Exit Games eller Fox in a Box' },
@@ -1941,28 +1941,28 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'En privat yogaklass för teamet, på kontoret, i konferenslokalen eller utomhus. 60 minuter som bryter av och ger ny energi. Alla nivåer, ingen erfarenhet krävs.' },
       { type: 'heading', text: '7. Vinprovning med Nolea eller cocktailkurs med Bartendrr' },
       { type: 'paragraph', text: 'För vin: Nolea drivs av en WSET-3-sommelier och gör skräddarsydda företagsprovningar hemma på kontoret, i en vinkällare på Östermalm eller i en jägarstuga i Enskede. 1,5–2 timmar från runt 5 000 kr. För cocktails: Bartendrr kommer till er med bar, glas, råvaror och is och guidar teamet genom två–tre signaturdrinkar. Båda ger gruppen något att fokusera på så att samtalet får en anledning att hända.' },
-      { type: 'paragraph', text: 'Två av aktiviteterna ovan bokar ni direkt via mig: SUP yoga och bastu (yogawithcamilla.se/tjanster/sup-yoga) och yoga för teamet (yogawithcamilla.se/tjanster/foretagsyoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så återkommer jag med offert.' },
+      { type: 'paragraph', text: 'Två av aktiviteterna ovan bokar ni direkt via mig: privat SUP yoga (yogawithcamilla.se/tjanster/sup-yoga) och yoga för teamet (yogawithcamilla.se/tjanster/foretagsyoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så återkommer jag med offert.' },
     ]
   },
   {
     slug: 'team-building-activities-stockholm',
     title: '7 Team Building Activities in Stockholm',
-    metaDescription: 'Looking for team building activities in Stockholm? Here are 7 ideas for corporate groups, from SUP yoga and sauna to cooking classes and city walks.',
+    metaDescription: 'Looking for team building activities in Stockholm? Here are 7 ideas for corporate groups, from private SUP yoga to cooking classes and city walks.',
     publishDate: '2026-04-15',
     readingTime: '6 min',
     category: 'Företag & Konferens',
-    excerpt: 'Planning a team day in Stockholm? Here are 7 team building activities that actually get people talking, including paddleboard yoga with a sauna.',
+    excerpt: 'Planning a team day in Stockholm? Here are 7 team building activities that actually get people talking, including paddleboard yoga on a calm city lake.',
     relatedServiceHref: '/tjanster/sup-yoga',
-    relatedServiceLabel: 'Book SUP yoga & sauna for team building',
+    relatedServiceLabel: 'Book private SUP yoga for team building',
     relatedPosts: [
       { slug: 'teambuilding-aktiviteter-stockholm', label: 'Teambuilding i Stockholm, 7 aktiviteter' },
       { slug: 'summer-team-day-ideas-stockholm', label: 'Summer team day ideas in Stockholm' },
     ],
     content: [
       { type: 'paragraph', text: 'Planning team building activities in Stockholm is easier than it sounds. The city has the lake, the archipelago, the old town, and enough creative venues to fill a whole conference season. The harder part is choosing something people will actually remember on Monday morning.' },
-      { type: 'heading', text: '1. Private SUP Yoga + Sauna at Sickla Strand' },
-      { type: 'paragraph', text: 'Paddleboard yoga at Sickla Strand followed by a sauna is one of the more interesting team options in Stockholm right now. It works for groups of 3 to 10 (larger on request), no experience needed, and runs in English, which matters if your team is international.' },
-      { type: 'paragraph', text: 'The yoga happens on the water, vinyasa or yin, led by me. People wobble, laugh, and end up helping each other balance within the first few minutes, which does more for group dynamics than most indoor exercises. The sauna afterwards gives everyone a chance to warm up and actually talk. Central location, easy to reach by tunnelbana. From 500 kr per person. Venue and gear provided by Smashing Balance.' },
+      { type: 'heading', text: '1. Private SUP Yoga at Sickla Strand' },
+      { type: 'paragraph', text: 'Paddleboard yoga at Sickla Strand is one of the more interesting team options in Stockholm right now. It works for groups of 3 to 10 (larger on request), no experience needed, and runs in English, which matters if your team is international.' },
+      { type: 'paragraph', text: 'The yoga happens on the water, vinyasa or yin, led by me. People wobble, laugh, and end up helping each other balance within the first few minutes, which does more for group dynamics than most indoor exercises. Central location, easy to reach by tunnelbana. From 500 kr per person. Venue and gear provided by Smashing Balance. Add a lakeside sauna, trail running in Nacka, tennis or food on site if you want to give the team time to warm up and actually talk afterwards.' },
       { type: 'heading', text: '2. Cooking Class at AVEQIA' },
       { type: 'paragraph', text: 'AVEQIA is the one most Stockholm companies end up booking, and there is a reason. Groups from 10 to 140 cook a three- or four-course menu together in private kitchen-dining rooms, guided by chefs. It works for people who cook every day and people who burn toast. Good option if your team is mixed and you want everyone included without anyone feeling exposed.' },
       { type: 'heading', text: '3. Escape Room at Exit Games or Fox in a Box' },
@@ -1975,7 +1975,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'A private yoga session at your office, conference venue, or outdoors works well as a morning opener, a lunch reset, or a closing session at the end of a conference day. 60 minutes, adapted for all levels, no equipment required from the team.' },
       { type: 'heading', text: '7. Wine Tasting with Nolea or a Cocktail Masterclass with Bartendrr' },
       { type: 'paragraph', text: 'For wine, Nolea is run by a WSET-3 sommelier and does tailored corporate tastings: in your office, in a wine cellar in Östermalm, or in a hunter\'s cabin in Enskede. Sessions run 1.5 to 2 hours from around 5 000 SEK. For cocktails, Bartendrr will come to your office with bar, equipment, ingredients and ice, and walk the team through making two or three signature drinks. Both formats give the group something to focus on so the conversation has a reason to happen.' },
-      { type: 'paragraph', text: 'Two of the activities above are bookable directly through me: SUP yoga and sauna (yogawithcamilla.se/tjanster/sup-yoga) and yoga for your team (yogawithcamilla.se/tjanster/foretagsyoga). Email hello.yogawithcamilla@gmail.com with your dates and group size for a same-day quote.' },
+      { type: 'paragraph', text: 'Two of the activities above are bookable directly through me: private SUP yoga (yogawithcamilla.se/tjanster/sup-yoga) and yoga for your team (yogawithcamilla.se/tjanster/foretagsyoga). Email hello.yogawithcamilla@gmail.com with your dates and group size for a quote.' },
     ]
   }
 ];
