@@ -41,9 +41,9 @@ const SUPYogaKlasser = () => (
     heroImagePosition="center center"
     introHeading="Öppna SUP yoga-klasser, vinyasa eller yin"
     introParagraphs={[
-      "Det här är de öppna klasserna jag undervisar varje vecka under säsongen. Du bokar en plats för dig själv, kommer 10 till 15 minuter innan för säkerhetsgenomgång, och är på vattnet i 75 minuter.",
-      "Klasserna hålls vid Sickla Strand, vid Elton's Café och Uthyrning, i samarbete med Smashing Balance som står för plats, brädor och bastu. Bastu vid sjön ingår i varje klass.",
-      "Bokning sker via Smashing Balance. Letar du efter ett privat event för möhippa, team eller födelsedag istället? Se Privat SUP Yoga."
+      "Varje vecka under säsongen håller jag öppna SUP yoga-klasser vid Sickla Strand. Du bokar din plats, kommer 10 till 15 minuter före för säkerhetsgenomgång och är sedan på vattnet i 75 minuter.",
+      "Klasserna hålls hos Elton's Café och Uthyrning. Smashing Balance driver platsen och står för brädor och bastu vid sjön, som ingår i varje klass.",
+      "Bokning görs hos Smashing Balance. Letar du istället efter ett privat event för möhippa, team eller födelsedag? Se Privat SUP Yoga."
     ]}
     highlights={[
       {
@@ -119,8 +119,8 @@ const SUPYogaKlasser = () => (
         answer: "Nej. Brädorna är breda och stabila, och klassen börjar alltid med en kort säkerhetsgenomgång på land. Ingen tidigare yoga eller SUP behövs."
       },
       {
-        question: "Vad händer om jag ramlar i vattnet?",
-        answer: "Det händer ibland och är en del av upplevelsen. Vattnet är rent och sommartid varmt. Du tar dig upp på brädan igen och klassen fortsätter."
+        question: "Ramlar man i vattnet?",
+        answer: "Tidigt på säsongen, medan vattnet fortfarande är kallt, håller jag klasserna enkla och vi gör få stående positioner. Det mesta sker sittande, på knä eller liggande på mage och rygg, så det är liten risk att du hamnar i vattnet. När det blir varmare lägger jag in fler stående poser. Skulle det hända så är vattnet rent, du tar dig upp på brädan igen och klassen fortsätter."
       },
       {
         question: "Vill ni boka för en hel grupp?",
