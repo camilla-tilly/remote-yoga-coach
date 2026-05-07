@@ -688,7 +688,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Vad är Smashing Balance?',
-            a: 'Vår partner som driver platsen vid Sickla Strand: brädorna, bastun, säkerhetsutrustningen, schemat för veckoklasserna. Jag undervisar yogan och håller hela upplevelsen.',
+            a: 'De driver platsen vid Sickla Strand: Elton\'s Café, bastun och SUP-uthyrningen. Jag undervisar de öppna veckoklasserna och håller hela upplevelsen vid privata event.',
           },
           {
             q: 'Behöver jag kunna paddla?',
