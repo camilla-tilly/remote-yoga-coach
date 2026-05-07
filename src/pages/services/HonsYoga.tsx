@@ -100,9 +100,7 @@ const HonsYoga = () => (
     ]}
     englishKeywords={{
       heading: "Chicken Yoga in Dalarna, Sweden: If You've Heard of Goat Yoga, You'll Love This",
-      body: "Yoga on the cabin deck with free-roaming chickens, a calm, grounded outdoor yoga experience in Dalarna, Sweden. If you've heard of goat yoga and liked the idea, this is a quieter, more Nordic take, set on the deck of a genuine Swedish forest cabin. Classes are led in English by a 500-hour certified yoga teacher. Suitable for all levels. Private bookings only, up to 10 people. Available May through September.",
-      ctaText: "Book chicken yoga in Dalarna",
-      ctaHref: "mailto:hello.yogawithcamilla@gmail.com"
+      text: "Yoga on the cabin deck with free-roaming chickens, a calm, grounded outdoor yoga experience in Dalarna, Sweden. If you've heard of goat yoga and liked the idea, this is a quieter, more Nordic take, set on the deck of a genuine Swedish forest cabin. Classes are led in English by a 500-hour certified yoga teacher. Suitable for all levels. Private bookings only, up to 10 people. Available May through September."
     }}
   />
 );
