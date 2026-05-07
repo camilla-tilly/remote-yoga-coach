@@ -11,8 +11,13 @@ type ServiceCard = {
 const stockholmServices: ServiceCard[] = [
   {
     title: 'Företagsyoga',
-    description: 'Konferenser, kickoffs, teambuilding och regelbundna klasser på kontoret. Alla nivåer.',
+    description: 'Konferenser, kickoffs, AWs, sommaravslutningar, teambuilding och regelbundna klasser på kontoret. Alla nivåer.',
     href: '/tjanster/foretagsyoga',
+  },
+  {
+    title: 'Privata Event & Yoga Retreat',
+    description: 'Möhippa, födelsedag, bröllopsyoga eller kompisgäng i Stockholm. Privat klass, ni väljer platsen.',
+    href: '/tjanster/privata-event',
   },
   {
     title: 'Privat SUP Yoga & Bastu',
@@ -29,7 +34,7 @@ const stockholmServices: ServiceCard[] = [
 const dalarnaServices: ServiceCard[] = [
   {
     title: 'Företagsyoga',
-    description: 'Yoga för konferenser, kickoffs och företagsevent. Falun, Borlänge, Mora, Leksand, Rättvik och omnejd.',
+    description: 'Konferenser, kickoffs, teambuilding och halvdag eller heldag i naturen. Falun, Borlänge, Mora, Leksand, Rättvik och omnejd.',
     href: '/tjanster/foretagsyoga',
   },
   {
@@ -38,13 +43,8 @@ const dalarnaServices: ServiceCard[] = [
     href: '/tjanster/honsyoga',
   },
   {
-    title: 'Mini Retreat & Upplevelser',
-    description: 'Retreat, adventure-paket eller trail run + yoga. Dag, heldag eller weekend i naturen.',
-    href: '/tjanster/mini-retreat',
-  },
-  {
-    title: 'Privata Event',
-    description: 'Möhippa, födelsedag, bröllopshelg eller team. Halvdag eller heldag på altanen i Dalarna, yoga plus det ni vill lägga till. (Ja, hönsen är med.)',
+    title: 'Privata Event & Yoga Retreat',
+    description: 'Möhippa, födelsedag, bröllopshelg eller kompisgäng. Halvdag och heldag yoga retreat med vandring, trail run och fika i Dalarnas natur. (Ja, hönsen är med.)',
     href: '/tjanster/privata-event',
   },
 ];

@@ -8,10 +8,9 @@ import { Button } from '@/components/ui/button';
 import { softenAmp } from '@/lib/amp';
 
 const topServices = [
-  { name: 'Privata Event', href: '/tjanster/privata-event' },
+  { name: 'Privata Event & Yoga Retreat', href: '/tjanster/privata-event' },
   { name: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
   { name: 'SUP Yoga Stockholm', href: '/tjanster/sup-yoga' },
-  { name: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
   { name: 'Hönsyoga i Dalarna', href: '/tjanster/honsyoga' },
 ];
 
@@ -40,7 +39,7 @@ const NotFound = () => {
     <div className="min-h-screen bg-white relative overflow-x-hidden">
       <SEO
         title="Sidan hittades inte – 404 | Yoga med Camilla"
-        description="Den här sidan finns inte längre eller har flyttats. Hitta privata yogaklasser, företagsyoga, SUP yoga och retreats i Stockholm och Dalarna."
+        description="Den här sidan finns inte längre eller har flyttats. Hitta privata yogaklasser, företagsyoga, SUP yoga, yoga retreats och hönsyoga i Stockholm och Dalarna."
       />
       <Navbar />
       <main className="pt-32 pb-20 px-4">

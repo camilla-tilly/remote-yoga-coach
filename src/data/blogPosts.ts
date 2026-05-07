@@ -1235,8 +1235,8 @@ export const blogPosts: BlogPost[] = [
     readingTime: '4 min',
     category: 'Yoga & Natur',
     excerpt: 'Dalarnas skog och luft är mer än en bakgrund. De är en del av praktiken.',
-    relatedServiceHref: '/tjanster/mini-retreat',
-    relatedServiceLabel: 'Se retreat & upplevelser i Dalarna',
+    relatedServiceHref: '/tjanster/privata-event',
+    relatedServiceLabel: 'Se yoga retreat & upplevelser i Dalarna',
     content: [
       {
         type: 'paragraph',
@@ -1282,8 +1282,8 @@ export const blogPosts: BlogPost[] = [
         type: 'list',
         items: [
           'Privat klass i naturen? Boka på altanen.',
-          'Dag-retreat? Se mini-retreat-sidan.',
-          'Grupp? Se äventyrpaket eller privata events.',
+          'Dag-retreat? Se Privata Event & Yoga Retreat.',
+          'Grupp? Se Privata Event & Yoga Retreat.',
           'Konferens i Dalarna? Utomhusyoga som konferensinslag.'
         ]
       },
@@ -1390,8 +1390,8 @@ export const blogPosts: BlogPost[] = [
     readingTime: '5 min',
     category: 'Retreats & Upplevelser',
     excerpt: 'Funderar du på yoga retreat men vet inte om du ska välja Dalarna eller Stockholm? Här jämför jag de två och hjälper dig välja.',
-    relatedServiceHref: '/tjanster/mini-retreat',
-    relatedServiceLabel: 'Boka mini retreat i Dalarna',
+    relatedServiceHref: '/tjanster/privata-event',
+    relatedServiceLabel: 'Boka yoga retreat i Dalarna',
     relatedPosts: [
       { slug: 'outdoor-yoga-dalarna', label: 'Utomhusyoga i Dalarna' },
     ],
@@ -1414,7 +1414,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Jag erbjuder mini-retreats i Dalarna: en halvdag eller heldag med yoga, andningsövningar och tid i naturen. Perfekt för dig som vill ha retreat-känslan utan att ta en hel vecka ledigt.'
+        text: 'Jag erbjuder yoga retreats i Dalarna: en halvdag eller heldag med yoga, andningsövningar, vandring eller trail run och tid i naturen. Perfekt för dig som vill ha retreat-känslan utan att ta en hel vecka ledigt.'
       },
       {
         type: 'heading',

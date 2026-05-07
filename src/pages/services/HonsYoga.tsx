@@ -1,9 +1,9 @@
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
-  { label: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
-  { label: 'Privata Event', href: '/tjanster/privata-event' },
+  { label: 'Privata Event & Yoga Retreat', href: '/tjanster/privata-event' },
   { label: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
+  { label: 'SUP Yoga Stockholm', href: '/tjanster/sup-yoga' },
 ];
 
 const structuredData = {
@@ -59,8 +59,8 @@ const HonsYoga = () => (
     ]}
     pricing={[
       { label: 'Privat klass (upp till 10 pers, 60 min)', price: 'kontakta för pris', note: 'Yogamattor ingår.' },
-      { label: 'Hönsyoga som möhippa eller födelsedag', price: 'kontakta för offert', note: 'Klassen plus fika, vandring, bastu eller annat. Se Privata Event för fler upplägg.' },
-      { label: 'Kombinera med mini-retreat', price: 'kontakta för offert', note: 'Lägg till hönsyoga som en del av ett längre retreatprogram.' },
+      { label: 'Hönsyoga som möhippa eller födelsedag', price: 'kontakta för offert', note: 'Klassen plus fika, vandring, bastu eller annat. Se Privata Event & Yoga Retreat för fler upplägg.' },
+      { label: 'Kombinera med yoga retreat', price: 'kontakta för offert', note: 'Lägg till hönsyoga som en del av en halvdag eller heldag i naturen.' },
     ]}
     detailsHeading="Praktisk information"
     detailsParagraphs={[

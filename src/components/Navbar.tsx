@@ -25,8 +25,7 @@ const locationGroups = [
     links: [
       { name: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
       { name: 'Hönsyoga', href: '/tjanster/honsyoga' },
-      { name: 'Mini Retreat & Upplevelser', href: '/tjanster/mini-retreat' },
-      { name: 'Privata Event', href: '/tjanster/privata-event' },
+      { name: 'Privata Event & Yoga Retreat', href: '/tjanster/privata-event' },
     ]
   },
 ];
