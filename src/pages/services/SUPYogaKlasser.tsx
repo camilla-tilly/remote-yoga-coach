@@ -96,7 +96,7 @@ const SUPYogaKlasser = () => (
     faq={[
       {
         question: "Var bokar jag?",
-        answer: "Klasserna bokas via vår partner Smashing Balance på smashingbalance.se/collections/sup-yoga. Där ser du aktuellt schema och alla biljettyper."
+        answer: "Klasserna bokas via Smashing Balance på smashingbalance.se/collections/sup-yoga. Där ser du aktuellt schema och alla biljettyper."
       },
       {
         question: "Hur lång är en klass?",
@@ -129,7 +129,7 @@ const SUPYogaKlasser = () => (
     ]}
     englishKeywords={{
       heading: "SUP Yoga Classes in Stockholm",
-      text: "Open SUP yoga classes every week at Sickla Strand, Stockholm. Vinyasa or yin on paddleboards, 75 minutes including paddling time, lakeside sauna included. Season runs late April through September 2026. Single class 350 kr (board and sauna included), 150 kr if you bring your own SUP, 10-class pass 1 000 kr, season pass 1 500 kr. All classes taught in English. No experience needed. Booking via our partner Smashing Balance at smashingbalance.se/collections/sup-yoga. Looking for a private group event for a hen party, team day or birthday instead? See the Private SUP Yoga page."
+      text: "Open SUP yoga classes every week at Sickla Strand, Stockholm. Vinyasa or yin on paddleboards, 75 minutes including paddling time, lakeside sauna included. Season runs late April through September 2026. Single class 350 kr (board and sauna included), 150 kr if you bring your own SUP, 10-class pass 1 000 kr, season pass 1 500 kr. All classes taught in English. No experience needed. Booking via Smashing Balance at smashingbalance.se/collections/sup-yoga. Looking for a private group event for a hen party, team day or birthday instead? See the Private SUP Yoga page."
     }}
   />
 );

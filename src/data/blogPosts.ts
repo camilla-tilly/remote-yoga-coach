@@ -544,7 +544,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Smashing Balance driver platsen och utrustningen, jag står för yogan. Det är ett samarbete: de gör vattnet möjligt, jag gör klassen.'
+        text: 'Smashing Balance driver platsen vid Sickla Strand: Elton\'s Café, bastun och SUP-uthyrningen. Jag undervisar yogan.'
       },
       {
         type: 'heading',
@@ -560,7 +560,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Enstaka klass 350 kr (bräda och bastu ingår), 150 kr om du tar med egen SUP, 10-klippkort 1 000 kr, säsongspass 2026 för 1 500 kr. Allt bokas via min partner Smashing Balance på [smashingbalance.se/collections/sup-yoga](https://smashingbalance.se/collections/sup-yoga). Mer detaljer på [SUP yoga klasser Stockholm](/blogg/sup-yoga-klasser-stockholm).'
+        text: 'Enstaka klass 350 kr (bräda och bastu ingår), 150 kr om du tar med egen SUP, 10-klippkort 1 000 kr, säsongspass 2026 för 1 500 kr. Allt bokas via Smashing Balance på [smashingbalance.se/collections/sup-yoga](https://smashingbalance.se/collections/sup-yoga). Mer detaljer på [SUP yoga klasser Stockholm](/blogg/sup-yoga-klasser-stockholm).'
       },
       {
         type: 'subheading',
@@ -680,7 +680,7 @@ export const blogPosts: BlogPost[] = [
         faqItems: [
           {
             q: 'Var bokar jag en enstaka klass?',
-            a: 'Veckoklasserna bokas via min partner Smashing Balance på smashingbalance.se/collections/sup-yoga. Där ser du aktuellt schema och alla biljettyper (enstaka klass, klippkort, säsongspass).',
+            a: 'Veckoklasserna bokas via Smashing Balance på smashingbalance.se/collections/sup-yoga. Där ser du aktuellt schema och alla biljettyper (enstaka klass, klippkort, säsongspass).',
           },
           {
             q: 'Var bokar jag ett privat event?',
@@ -688,7 +688,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Vad är Smashing Balance?',
-            a: 'De driver platsen vid Sickla Strand: Elton\'s Café, bastun och SUP-uthyrningen. Jag undervisar de öppna veckoklasserna och håller hela upplevelsen vid privata event.',
+            a: 'De driver platsen vid Sickla Strand: Elton\'s Café, bastun och SUP-uthyrningen. Jag undervisar de öppna veckoklasserna och är er kontaktperson när ni bokar privat event.',
           },
           {
             q: 'Behöver jag kunna paddla?',
@@ -912,7 +912,7 @@ export const blogPosts: BlogPost[] = [
         faqItems: [
           {
             q: 'Hur bokar jag en klass?',
-            a: 'Via vår partner Smashing Balance på smashingbalance.se/collections/sup-yoga. Där ser du aktuellt schema, väljer datum och biljettyp och betalar online.',
+            a: 'Via Smashing Balance på smashingbalance.se/collections/sup-yoga. Där ser du aktuellt schema, väljer datum och biljettyp och betalar online.',
           },
           {
             q: 'Vad kostar det?',
@@ -1800,7 +1800,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Stockholm är en fantastisk stad för möhippa. Vatten överallt, bra restauranger, massor av alternativ. Men grejen är att många grupper fastnar i samma spår: prosecco-frukost, spa, och sedan ut på krogen. Inget fel med det. Men om ni vill ha en dag som faktiskt känns unik, en dag där bruden ser på er och säger "det här var exakt rätt", så lönar det sig att tänka ett varv till.' },
       { type: 'heading', text: '1. Privat SUP yoga och bastu vid Sickla Strand' },
       { type: 'paragraph', text: 'Det här är vår absoluta favorit. Yoga på ett paddleboard låter lite galet, men det är precis det som gör det så bra för möhippa. Ni skrattar, ni utmanar er lagom, ingen behöver kunna yoga sedan tidigare. Vi håller en privat klass vid Sickla Strand där ni balanserar, faller i, och har det roligaste på länge. Vinyasa eller yin, ni väljer stil.' },
-      { type: 'paragraph', text: 'Efteråt: bastu direkt vid vattnet. Varmt, lugnt, bara ni och utsikten. Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Klassen leds av mig, plats och utrustning kommer från min partner Smashing Balance. Mejla hello.yogawithcamilla@gmail.com för offert, eller läs mer på yogawithcamilla.se/tjanster/sup-yoga.' },
+      { type: 'paragraph', text: 'Efteråt: bastu direkt vid vattnet. Varmt, lugnt, bara ni och utsikten. Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Klassen leds av mig, plats och utrustning kommer från Smashing Balance. Mejla hello.yogawithcamilla@gmail.com för offert, eller läs mer på yogawithcamilla.se/tjanster/sup-yoga.' },
       { type: 'heading', text: '2. Skärgårdstur med egen båt' },
       { type: 'paragraph', text: 'Stockholms skärgård är ett av världens finaste naturområden och den ligger bokstavligen utanför dörren. Strandrederi hyr ut båtar med skeppare för dagen, ni packar mat och dryck, sätter kurs mot en ö, badar från klippor, grillar, sover i solen. Kanebo Event är alternativet för större grupper, de har båtar som tar upp till 110 gäster. För en snabbare variant med fartvind i håret, boka RIB Stockholm.' },
       { type: 'heading', text: '3. Matlagningskurs tillsammans' },
@@ -1831,7 +1831,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Stockholm is genuinely one of the best cities in the world for a bachelorette party. Water everywhere, world-class spas, cobblestone streets in Gamla Stan, and a food scene that keeps getting better. These are five of the best bachelorette party ideas in Stockholm right now.' },
       { type: 'heading', text: '1. Private SUP yoga and sauna at Sickla Strand' },
       { type: 'paragraph', text: 'This is the one. Yoga on paddleboards on a calm Stockholm lake, followed by a sauna on the water\'s edge. No experience needed. The boards are wide and stable, and the whole session is taught in English. Vinyasa or yin, you pick the style.' },
-      { type: 'paragraph', text: 'The private SUP yoga and sauna experience runs at Sickla Strand in Nacka, just outside central Stockholm. Usually 3 to 10 people, larger groups on request. From 500 kr per person. Led by me, with venue and equipment provided by our partner Smashing Balance. All gear included.' },
+      { type: 'paragraph', text: 'The private SUP yoga and sauna experience runs at Sickla Strand in Nacka, just outside central Stockholm. Usually 3 to 10 people, larger groups on request. From 500 kr per person. Led by me, with venue and equipment provided by Smashing Balance. All gear included.' },
       { type: 'heading', text: '2. Private archipelago boat tour with Strandrederi' },
       { type: 'paragraph', text: 'Stockholm\'s archipelago is 30,000 islands and the best way to see it as a group is on a private charter. Strandrederi rents skippered boats by the day, set up for groups with food and drink on board. For larger parties, Kanebo Event runs boats up to 110 guests. If you want adrenaline, RIB Stockholm will get you further out in less time: 2 hours to a full day.' },
       { type: 'heading', text: '3. Swedish cooking class at AVEQIA' },
@@ -1861,7 +1861,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Sommaravslutningen är ett av årets viktigaste tillfällen för ett team. Inte för att det står i någon HR-handbok, utan för att det är en av få gånger ni faktiskt stannar upp tillsammans. Firar det ni gjort. Andas ut lite. Här är sju idéer som funkar.' },
       { type: 'heading', text: '1. Privat SUP yoga och bastu vid Sickla Strand' },
       { type: 'paragraph', text: 'Yoga på paddleboard vid Sickla Strand är en upplevelse som ingen glömmer. Ni börjar med en guidad yogasekvens på vattnet, vinyasa eller yin, sen värmer ni upp i en bastu med utsikt mot sjön. Avkopplande, roligt och lite utmanande på samma gång.' },
-      { type: 'paragraph', text: 'Ingen förkunskap krävs. Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Centralt i Sickla, enkelt att nå med tunnelbana. Klassen leds av mig, plats och utrustning kommer från min partner Smashing Balance.' },
+      { type: 'paragraph', text: 'Ingen förkunskap krävs. Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Centralt i Sickla, enkelt att nå med tunnelbana. Klassen leds av mig, plats och utrustning kommer från Smashing Balance.' },
       { type: 'heading', text: '2. Skärgårdstur med charterbåt' },
       { type: 'paragraph', text: 'Stockholm har 30 000 öar och sommaren är den enda tiden på året man faktiskt ser dem. Strandrederi hyr ut skärgårdsbåtar med skeppare för hel- eller halvdag, bra för kickoffer och sommaravslutningar där ni vill ha mat, dryck och utrymme ombord. För större grupper kör Kanebo Event båtar som tar upp till 110 gäster. RIB Stockholm är alternativet om ni vill ha fart snarare än lugn, 2 timmar till hel dag.' },
       { type: 'heading', text: '3. Matlagning hos AVEQIA' },
@@ -1894,7 +1894,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Summer in Stockholm is short, brilliant, and a little bit magic. The light stays until 10 pm. The water is warm enough to actually get in. And your team has probably been sitting in the same meeting room since January.' },
       { type: 'heading', text: '1. Private SUP Yoga + Sauna at Sickla Strand' },
       { type: 'paragraph', text: 'You start on paddleboards on the water, moving through a gentle vinyasa or yin flow led by me. No experience needed. Nobody falls in as often as they expect. And everybody laughs more than they thought they would.' },
-      { type: 'paragraph', text: 'After the session, you step into a sauna right by the water. Usually 3 to 10 people, larger groups on request. From 500 kr per person. Taught in English. Central Sickla location, easy to reach by tunnelbana. Yoga led by me, with venue and gear from our partner Smashing Balance.' },
+      { type: 'paragraph', text: 'After the session, you step into a sauna right by the water. Usually 3 to 10 people, larger groups on request. From 500 kr per person. Taught in English. Central Sickla location, easy to reach by tunnelbana. Yoga led by me, with venue and gear from Smashing Balance.' },
       { type: 'heading', text: '2. Archipelago Boat Trip with Strandrederi or Kanebo Event' },
       { type: 'paragraph', text: 'Stockholm sits on one of the most beautiful archipelagos in the world (more than 30,000 islands, most of them empty) and you only see it properly from a boat. Strandrederi charters skippered boats for half or full days, set up for company kickoffs and summer parties with food and drink on board. For bigger groups, Kanebo Event operates boats up to 110 guests. If you want speed over calm, RIB Stockholm runs faster archipelago tours from 2 hours to a full day.' },
       { type: 'heading', text: '3. Cooking Class at AVEQIA' },
@@ -1928,7 +1928,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Bra teambuilding i Stockholm behöver inte vara krånglig. Den behöver inte vara dyr heller. Men den behöver vara något teamet faktiskt ser fram emot, inte något de klarar av för att de måste.' },
       { type: 'heading', text: '1. Privat SUP yoga och bastu vid Sickla Strand' },
       { type: 'paragraph', text: 'Yoga på paddleboard kräver koncentration och balans, vilket betyder att alla i gruppen är helt närvarande. Ingen kollar telefonen. Ingen tänker på deadline. Alla fokuserar på att inte ramla i vattnet, och skrattar när någon gör det ändå.' },
-      { type: 'paragraph', text: 'Efteråt: bastu direkt vid vattnet, tid att prata på riktigt. Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Ingen erfarenhet krävs, centralt vid Sickla Strand och enkelt att nå med tunnelbana. Yoga ledd av mig, plats och utrustning via min partner Smashing Balance.' },
+      { type: 'paragraph', text: 'Efteråt: bastu direkt vid vattnet, tid att prata på riktigt. Vanligtvis 3 till 10 personer, större grupper på förfrågan. Från 500 kr per person. Ingen erfarenhet krävs, centralt vid Sickla Strand och enkelt att nå med tunnelbana. Yoga ledd av mig, plats och utrustning via Smashing Balance.' },
       { type: 'heading', text: '2. Matlagning hos AVEQIA' },
       { type: 'paragraph', text: 'AVEQIA är det många Stockholmsföretag landar på och det finns en anledning. Grupper från 10 till 140 personer lagar en tre- eller fyrarätters meny tillsammans i privata köksrum, med kockar som guidar. Funkar både för folk som lagar mat varje dag och folk som bränner rostbrödet. Bra val om teamet är blandat och ni vill att alla är med utan att någon känner sig utlämnad.' },
       { type: 'heading', text: '3. Escape room hos Exit Games eller Fox in a Box' },
@@ -1962,7 +1962,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Planning team building activities in Stockholm is easier than it sounds. The city has the lake, the archipelago, the old town, and enough creative venues to fill a whole conference season. The harder part is choosing something people will actually remember on Monday morning.' },
       { type: 'heading', text: '1. Private SUP Yoga + Sauna at Sickla Strand' },
       { type: 'paragraph', text: 'Paddleboard yoga at Sickla Strand followed by a sauna is one of the more interesting team options in Stockholm right now. It works for groups of 3 to 10 (larger on request), no experience needed, and runs in English, which matters if your team is international.' },
-      { type: 'paragraph', text: 'The yoga happens on the water, vinyasa or yin, led by me. People wobble, laugh, and end up helping each other balance within the first few minutes, which does more for group dynamics than most indoor exercises. The sauna afterwards gives everyone a chance to warm up and actually talk. Central location, easy to reach by tunnelbana. From 500 kr per person. Venue and gear provided by our partner Smashing Balance.' },
+      { type: 'paragraph', text: 'The yoga happens on the water, vinyasa or yin, led by me. People wobble, laugh, and end up helping each other balance within the first few minutes, which does more for group dynamics than most indoor exercises. The sauna afterwards gives everyone a chance to warm up and actually talk. Central location, easy to reach by tunnelbana. From 500 kr per person. Venue and gear provided by Smashing Balance.' },
       { type: 'heading', text: '2. Cooking Class at AVEQIA' },
       { type: 'paragraph', text: 'AVEQIA is the one most Stockholm companies end up booking, and there is a reason. Groups from 10 to 140 cook a three- or four-course menu together in private kitchen-dining rooms, guided by chefs. It works for people who cook every day and people who burn toast. Good option if your team is mixed and you want everyone included without anyone feeling exposed.' },
       { type: 'heading', text: '3. Escape Room at Exit Games or Fox in a Box' },
