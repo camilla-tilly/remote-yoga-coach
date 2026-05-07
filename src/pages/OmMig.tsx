@@ -88,7 +88,7 @@ const OmMig = () => {
                 </h2>
                 <div className="space-y-5">
                   <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85">
-                    Jag växte upp i Australien och bor idag i Stockholm. När jag kan drar jag upp till stugan i Dalarna, till hönsen och altanen som ibland förvandlas till yogashala.
+                    Jag växte upp i Australien och bor idag i Stockholm. Så ofta jag kan åker jag upp till stugan i Dalarna, till hönsen och altanen som ibland förvandlas till yogashala.
                   </p>
                   <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85">
                     Rörelse, natur och mindfulness har alltid hängt ihop för mig, och yogan är där allt möts.
