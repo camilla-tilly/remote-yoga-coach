@@ -1,5 +1,18 @@
 import { Link } from 'react-router-dom';
+import { Instagram } from 'lucide-react';
 import Logo from './Logo';
+
+const TikTokIcon = ({ size = 18 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.75a8.18 8.18 0 0 0 3.76.92V6.69Z"/>
+  </svg>
+);
+
+const YouTubeIcon = ({ size = 18 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/>
+  </svg>
+);
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -56,6 +69,37 @@ const Footer = () => {
               Kontakt
             </a>
           </nav>
+
+          {/* Social links */}
+          <div className="mt-10 flex items-center justify-center gap-5">
+            <a
+              href="https://www.instagram.com/yoga_with_camilla/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="w-11 h-11 flex items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 text-white/85 hover:text-white hover:bg-white/15 transition-colors"
+            >
+              <Instagram size={18} aria-hidden="true" />
+            </a>
+            <a
+              href="https://www.tiktok.com/@yoga_with_camilla"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+              className="w-11 h-11 flex items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 text-white/85 hover:text-white hover:bg-white/15 transition-colors"
+            >
+              <TikTokIcon size={18} />
+            </a>
+            <a
+              href="https://www.youtube.com/@camilla_yoga"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="w-11 h-11 flex items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 text-white/85 hover:text-white hover:bg-white/15 transition-colors"
+            >
+              <YouTubeIcon size={18} />
+            </a>
+          </div>
 
           {/* Hairline divider */}
           <span className="block w-24 h-px bg-white/15 mt-10" aria-hidden="true" />
