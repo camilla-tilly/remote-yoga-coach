@@ -44,7 +44,7 @@ const dalarnaServices: ServiceCard[] = [
   },
   {
     title: 'Privata Event & Yoga Retreat',
-    description: 'Möhippa, födelsedag, bröllopshelg eller kompisgäng. Halvdag och heldag yoga retreat med vandring, trail run och fika i Dalarnas natur. (Ja, hönsen är med.)',
+    description: 'Möhippa, födelsedag, bröllopshelg eller kompisgäng. Halvdag eller heldag yoga retreat med vandring eller löpning, fika och natur i Dalarna. Ni bygger dagen, jag formar schemat. (Ja, hönsen är med.)',
     href: '/tjanster/privata-event',
   },
 ];

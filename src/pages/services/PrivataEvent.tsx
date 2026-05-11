@@ -37,7 +37,7 @@ const PrivataEvent = () => (
     introParagraphs={[
       "Letar du efter något annorlunda? Jag sätter ihop privata event och yoga retreats i Dalarna och Stockholm. Möhippor, födelsedagar, bröllopshelger på landet, kompisgäng och familjesammankomster, samt halvdag och heldag retreats för en mindre grupp.",
       "I Dalarna hålls eventen på altanen vid skogsstugan, med hönsen pickande runt mattorna under klassen. Det är ovanligt, och det är liksom det som är poängen. Det blir alltid den biten alla pratar om i gruppchatten efteråt.",
-      "Upplägget är flexibelt. Det kan vara en stilla morgonklass, en längre halvdag med flera bitar, eller en hel dag ute i skogen med yoga, vandring eller trail run, fika och lunch. Jag formar det runt vad ni faktiskt vill ha ut av dagen, inte runt en färdig mall. Ingen yogaerfarenhet krävs, och klassen hålls på engelska.",
+      "Ni bygger upplägget, jag formar schemat. Berätta vad ni vill ha med (yoga, vandring, löpning för de som gillar det, fika, lunch, bastu, eller något annat), så sätter jag ihop ett förslag som passar er grupp och dag. Det kan vara en stilla morgonklass, en längre halvdag med flera bitar, eller en hel dag ute i skogen. Inget färdigt paket, inga måsten. Ingen yogaerfarenhet krävs, och klassen hålls på engelska.",
       "Jag är flexibel med datum och tider. Mejla mig så hittar vi något som passar."
     ]}
     highlights={[
