@@ -7,11 +7,11 @@ import { getBlogPost } from '@/data/blogPosts';
 import { Button } from '@/components/ui/button';
 import { softenAmp } from '@/lib/amp';
 
-// Parse inline markdown links [label](/path) and return React children.
-// Supports both internal links (starting with "/") and external (starting with "http").
+// Parse inline markdown: **bold** and [label](/path) links.
+// Supports internal links (starting with "/") and external (starting with "http").
 const renderInline = (text: string) => {
   const parts: (string | JSX.Element)[] = [];
-  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const regex = /\*\*([^*]+)\*\*|\[([^\]]+)\]\(([^)]+)\)/g;
   let lastIndex = 0;
   let match: RegExpExecArray | null;
   let key = 0;
@@ -19,29 +19,40 @@ const renderInline = (text: string) => {
     if (match.index > lastIndex) {
       parts.push(text.slice(lastIndex, match.index));
     }
-    const [, label, href] = match;
-    if (href.startsWith('/')) {
+    if (match[1] !== undefined) {
+      // **bold**
       parts.push(
-        <Link
-          key={`lnk-${key++}`}
-          to={href}
-          className="text-dalashala-darkBrown underline decoration-dalashala-tan hover:decoration-dalashala-darkBrown underline-offset-2"
-        >
-          {label}
-        </Link>
+        <strong key={`b-${key++}`} className="font-semibold text-dalashala-earth">
+          {match[1]}
+        </strong>
       );
     } else {
-      parts.push(
-        <a
-          key={`lnk-${key++}`}
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-dalashala-darkBrown underline decoration-dalashala-tan hover:decoration-dalashala-darkBrown underline-offset-2"
-        >
-          {label}
-        </a>
-      );
+      // [label](href)
+      const label = match[2];
+      const href = match[3];
+      if (href.startsWith('/')) {
+        parts.push(
+          <Link
+            key={`lnk-${key++}`}
+            to={href}
+            className="text-dalashala-darkBrown underline decoration-dalashala-tan hover:decoration-dalashala-darkBrown underline-offset-2"
+          >
+            {label}
+          </Link>
+        );
+      } else {
+        parts.push(
+          <a
+            key={`lnk-${key++}`}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-dalashala-darkBrown underline decoration-dalashala-tan hover:decoration-dalashala-darkBrown underline-offset-2"
+          >
+            {label}
+          </a>
+        );
+      }
     }
     lastIndex = regex.lastIndex;
   }
@@ -161,6 +172,7 @@ const BlogPostPage = () => {
         description={post.metaDescription}
         canonical={`https://yogawithcamilla.se/blogg/${post.slug}`}
         ogType="article"
+        ogImage={post.heroImage ? `https://yogawithcamilla.se${post.heroImage.src}` : undefined}
         structuredData={structuredData}
       />
       <Navbar />

@@ -29,7 +29,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'things-to-do-stockholm-summer',
     title: 'Things to Do in Stockholm This Summer: A Local\'s Guide for 2026',
-    metaDescription: 'A local\'s honest guide to Stockholm summer 2026. SUP yoga at sunset, archipelago islands, swimming spots, parks, and the things actually worth your time.',
+    metaDescription: 'A local\'s guide to Stockholm summer 2026. SUP yoga and sauna from 350 kr, free swimming spots, archipelago islands, Skansen, Djurgården, and the things actually worth your time.',
     publishDate: '2026-05-11',
     readingTime: '9 min',
     category: 'Stockholm & Travel',
@@ -113,7 +113,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'outdoor-water-activities-stockholm-summer',
     title: 'Outdoor & Water Activities in Stockholm: Summer 2026 Guide',
-    metaDescription: 'The best outdoor and water activities in Stockholm for summer 2026. SUP yoga, kayaking, wild swimming, trail running, sauna culture, and how to actually book them.',
+    metaDescription: 'The best outdoor and water activities in Stockholm for summer 2026. SUP yoga and sauna from 350 kr, kayaking, wild swimming, trail running, and how to actually book them.',
     publishDate: '2026-05-11',
     readingTime: '7 min',
     category: 'Stockholm & Travel',
@@ -122,6 +122,7 @@ export const blogPosts: BlogPost[] = [
     relatedServiceLabel: 'Book a SUP yoga class',
     tableOfContents: true,
     faqSchema: true,
+    heroImage: { src: '/images/sup-yoga-floating-dock.jpg', alt: 'SUP yoga and sauna at Sickla Strand, Stockholm' },
     relatedPosts: [
       { slug: 'things-to-do-stockholm-summer', label: 'Things to Do in Stockholm This Summer' },
       { slug: 'summer-team-day-ideas-stockholm', label: 'Summer Team Day Ideas in Stockholm' },
