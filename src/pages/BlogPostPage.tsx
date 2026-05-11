@@ -225,24 +225,14 @@ const BlogPostPage = () => {
                   const id = section.text ? slugify(section.text) : undefined;
                   const isFirstH2 = i === firstHeadingIndex;
                   return (
-                    <header
+                    <h2
                       key={i}
-                      className={`mb-8 ${isFirstH2 ? 'mt-14' : 'mt-20 md:mt-24'}`}
+                      id={id}
+                      className={`font-fraunces text-[2rem] md:text-[2.5rem] text-dalashala-earth scroll-mt-24 tracking-[-0.025em] leading-[1.08] mb-8 ${isFirstH2 ? 'mt-14' : 'mt-20 md:mt-24'}`}
+                      style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 60" }}
                     >
-                      {!isFirstH2 && (
-                        <span
-                          className="block w-10 h-px bg-dalashala-meadow/70 mb-6"
-                          aria-hidden="true"
-                        />
-                      )}
-                      <h2
-                        id={id}
-                        className="font-fraunces text-[2rem] md:text-[2.5rem] text-dalashala-earth scroll-mt-24 tracking-[-0.025em] leading-[1.08]"
-                        style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 60" }}
-                      >
-                        {section.text && softenAmp(section.text)}
-                      </h2>
-                    </header>
+                      {section.text && softenAmp(section.text)}
+                    </h2>
                   );
                 }
                 if (section.type === 'subheading') {
@@ -365,7 +355,7 @@ const BlogPostPage = () => {
                     key={i}
                     className={
                       isLeadParagraph
-                        ? "font-inter font-normal text-xl md:text-2xl text-dalashala-earth leading-[1.45] mb-10 first-letter:font-fraunces first-letter:float-left first-letter:text-[3.5rem] md:first-letter:text-[4.5rem] first-letter:leading-[0.85] first-letter:pr-3 first-letter:pt-1 first-letter:text-dalashala-earth"
+                        ? "font-inter font-normal text-xl md:text-2xl text-dalashala-earth leading-[1.45] mb-10"
                         : "font-inter font-normal text-lg md:text-xl text-dalashala-earth/90 leading-relaxed mb-7 last:mb-0"
                     }
                   >
@@ -378,9 +368,6 @@ const BlogPostPage = () => {
           {/* CTA to related service */}
           {post.relatedServiceHref && post.relatedServiceLabel && (
             <div className="border-t border-b border-dalashala-meadow/60 py-14 text-center my-14">
-              <p className="font-inter text-base md:text-lg text-dalashala-earth/80 mb-7">
-                Intresserad av att boka?
-              </p>
               <Button
                 className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 font-inter py-4 px-10 rounded-full uppercase tracking-[0.22em] text-sm font-semibold transition-all shadow-card"
                 asChild
