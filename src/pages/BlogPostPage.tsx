@@ -142,6 +142,18 @@ const BlogPostPage = () => {
         .map((s) => ({ id: slugify(s.text!), text: s.text! }))
     : [];
 
+  // Pre-compute indices for lead-element styling and H2 chapter numbering
+  const firstParagraphIndex = post.content.findIndex((s) => s.type === 'paragraph');
+  const firstCalloutIndex = post.content.findIndex((s) => s.type === 'callout');
+  const h2NumberByIndex: Record<number, number> = {};
+  let h2Counter = 0;
+  post.content.forEach((s, i) => {
+    if (s.type === 'heading') {
+      h2Counter += 1;
+      h2NumberByIndex[i] = h2Counter;
+    }
+  });
+
   return (
     <div className="min-h-screen bg-white relative overflow-x-hidden">
       <SEO
@@ -164,7 +176,7 @@ const BlogPostPage = () => {
         </div>
 
         {/* Article Header */}
-        <article className="max-w-[760px] mx-auto">
+        <article className="max-w-[680px] mx-auto">
           <div className="flex items-center gap-4 mb-6">
             <span className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold">
               {post.category}
@@ -208,22 +220,37 @@ const BlogPostPage = () => {
               {post.content.map((section, i) => {
                 if (section.type === 'heading') {
                   const id = section.text ? slugify(section.text) : undefined;
+                  const number = h2NumberByIndex[i];
+                  const isFirstH2 = number === 1;
                   return (
-                    <h2
+                    <header
                       key={i}
-                      id={id}
-                      className="font-fraunces text-[2rem] md:text-[2.5rem] text-dalashala-earth mt-14 mb-6 first:mt-0 scroll-mt-24 tracking-[-0.025em] leading-[1.08]"
-                      style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 60" }}
+                      className={`mb-8 ${isFirstH2 ? 'mt-14' : 'mt-20 md:mt-24'}`}
                     >
-                      {section.text && softenAmp(section.text)}
-                    </h2>
+                      {!isFirstH2 && (
+                        <span
+                          className="block w-10 h-px bg-dalashala-meadow/70 mb-6"
+                          aria-hidden="true"
+                        />
+                      )}
+                      <p className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mb-4">
+                        {String(number).padStart(2, '0')} — Kapitel
+                      </p>
+                      <h2
+                        id={id}
+                        className="font-fraunces text-[2rem] md:text-[2.5rem] text-dalashala-earth scroll-mt-24 tracking-[-0.025em] leading-[1.08]"
+                        style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 60" }}
+                      >
+                        {section.text && softenAmp(section.text)}
+                      </h2>
+                    </header>
                   );
                 }
                 if (section.type === 'subheading') {
                   return (
                     <h3
                       key={i}
-                      className="font-fraunces text-2xl md:text-[1.75rem] text-dalashala-earth mt-10 mb-4 tracking-[-0.02em] leading-snug"
+                      className="font-fraunces text-2xl md:text-[1.75rem] text-dalashala-earth mt-12 mb-3 tracking-[-0.02em] leading-snug"
                       style={{ fontWeight: 400, fontVariationSettings: "'opsz' 48, 'SOFT' 50" }}
                     >
                       {section.text && softenAmp(section.text)}
@@ -246,11 +273,17 @@ const BlogPostPage = () => {
                   );
                 }
                 if (section.type === 'callout' && section.text) {
+                  const isFirstCallout = i === firstCalloutIndex;
                   return (
                     <aside
                       key={i}
                       className="bg-dalashala-creamDeep/70 border-l-[3px] border-dalashala-earth rounded-r-xl px-6 py-5 my-8"
                     >
+                      {isFirstCallout && (
+                        <p className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mb-3">
+                          I korthet
+                        </p>
+                      )}
                       <p className="font-inter text-base md:text-lg text-dalashala-earth leading-relaxed">
                         {renderInline(section.text)}
                       </p>
@@ -333,10 +366,15 @@ const BlogPostPage = () => {
                     </dl>
                   );
                 }
+                const isLeadParagraph = i === firstParagraphIndex;
                 return (
                   <p
                     key={i}
-                    className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/90 leading-relaxed mb-6 last:mb-0"
+                    className={
+                      isLeadParagraph
+                        ? "font-inter font-normal text-xl md:text-2xl text-dalashala-earth leading-[1.45] mb-10 first-letter:font-fraunces first-letter:float-left first-letter:text-[3.5rem] md:first-letter:text-[4.5rem] first-letter:leading-[0.85] first-letter:pr-3 first-letter:pt-1 first-letter:text-dalashala-earth"
+                        : "font-inter font-normal text-lg md:text-xl text-dalashala-earth/90 leading-relaxed mb-7 last:mb-0"
+                    }
                   >
                     {section.text && renderInline(section.text)}
                   </p>
