@@ -72,6 +72,27 @@ const slugify = (text: string) =>
     .replace(/\s+/g, '-')
     .slice(0, 60);
 
+const postCopy = {
+  sv: {
+    back: '← Tillbaka till bloggen',
+    reading: 'läsning',
+    tocLabel: 'Innehåll',
+    related: 'Läs också',
+    siteName: 'Yoga med Camilla',
+    home: 'Hem',
+    blog: 'Blogg',
+  },
+  en: {
+    back: '← Back to blog',
+    reading: 'read',
+    tocLabel: 'Contents',
+    related: 'Read next',
+    siteName: 'Yoga with Camilla',
+    home: 'Home',
+    blog: 'Blog',
+  },
+} as const;
+
 const BlogPostPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const post = slug ? getBlogPost(slug) : undefined;
@@ -79,6 +100,9 @@ const BlogPostPage = () => {
   if (!post) {
     return <Navigate to="/blogg" replace />;
   }
+
+  const lang = post.language ?? 'sv';
+  const t = postCopy[lang];
 
   const structuredData: Record<string, unknown>[] = [
     {
@@ -95,7 +119,7 @@ const BlogPostPage = () => {
       },
       publisher: {
         '@type': 'Organization',
-        name: 'Yoga med Camilla',
+        name: t.siteName,
         url: 'https://yogawithcamilla.se',
       },
     },
@@ -106,13 +130,13 @@ const BlogPostPage = () => {
         {
           '@type': 'ListItem',
           position: 1,
-          name: 'Hem',
+          name: t.home,
           item: 'https://yogawithcamilla.se',
         },
         {
           '@type': 'ListItem',
           position: 2,
-          name: 'Blogg',
+          name: t.blog,
           item: 'https://yogawithcamilla.se/blogg',
         },
         {
@@ -159,7 +183,7 @@ const BlogPostPage = () => {
   return (
     <div className="min-h-screen bg-white relative overflow-x-hidden">
       <SEO
-        title={`${post.title} | Yoga med Camilla`}
+        title={`${post.title} | ${t.siteName}`}
         description={post.metaDescription}
         canonical={`https://yogawithcamilla.se/blogg/${post.slug}`}
         ogType="article"
@@ -174,7 +198,7 @@ const BlogPostPage = () => {
             to="/blogg"
             className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive hover:text-dalashala-earth transition-colors font-bold"
           >
-            ← Tillbaka till bloggen
+            {t.back}
           </Link>
         </div>
 
@@ -186,7 +210,7 @@ const BlogPostPage = () => {
             </span>
             <span className="w-8 h-px bg-dalashala-meadow" />
             <span className="font-inter text-sm text-dalashala-earth/70">
-              {post.readingTime} läsning
+              {post.readingTime} {t.reading}
             </span>
           </div>
 
@@ -199,11 +223,11 @@ const BlogPostPage = () => {
               {/* Table of Contents */}
               {tocHeadings.length > 2 && (
                 <nav
-                  aria-label="Innehåll"
+                  aria-label={t.tocLabel}
                   className="bg-dalashala-creamDeep/70 border border-dalashala-meadow/50 rounded-xl p-5 md:p-6 mb-10"
                 >
                   <p className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mb-4">
-                    Innehåll
+                    {t.tocLabel}
                   </p>
                   <ol className="space-y-2">
                     {tocHeadings.map((h, i) => (
@@ -381,7 +405,7 @@ const BlogPostPage = () => {
           {post.relatedPosts && post.relatedPosts.length > 0 && (
             <div className="mb-10">
               <p className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mb-5">
-                Läs också
+                {t.related}
               </p>
               <div className="flex flex-wrap gap-3">
                 {post.relatedPosts.map((rp) => (

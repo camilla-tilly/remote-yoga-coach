@@ -1,3 +1,5 @@
+export type BlogLanguage = 'sv' | 'en';
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -7,6 +9,7 @@ export interface BlogPost {
   category: string;
   excerpt: string;
   content: BlogSection[];
+  language?: BlogLanguage;
   relatedServiceHref?: string;
   relatedServiceLabel?: string;
   relatedPosts?: { slug: string; label: string }[];
@@ -261,6 +264,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'things-to-do-stockholm-summer',
+    language: 'en',
     title: 'Things to Do in Stockholm This Summer: A Local\'s Guide for 2026',
     metaDescription: 'A local\'s guide to Stockholm summer 2026. SUP yoga and sauna from 350 kr, free swimming spots, archipelago islands, Skansen, Djurgården, and the things actually worth your time.',
     publishDate: '2026-05-11',
@@ -345,6 +349,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'outdoor-water-activities-stockholm-summer',
+    language: 'en',
     title: 'Outdoor & Water Activities in Stockholm: Summer 2026 Guide',
     metaDescription: 'The best outdoor and water activities in Stockholm for summer 2026. SUP yoga and sauna from 350 kr, kayaking, wild swimming, trail running, and how to actually book them.',
     publishDate: '2026-05-11',
@@ -2263,6 +2268,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'hen-party-ideas-stockholm',
+    language: 'en',
     title: '5 Bachelorette Party Ideas in Stockholm',
     metaDescription: 'Planning a bachelorette in Stockholm? 5 ideas that absorb the mix of energies in a real group, from private SUP yoga and sauna to archipelago boats and cocktail masterclasses.',
     publishDate: '2026-04-15',
@@ -2327,6 +2333,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'summer-team-day-ideas-stockholm',
+    language: 'en',
     title: '7 Summer Team Day Ideas in Stockholm',
     metaDescription: 'Planning a summer team day in Stockholm? Here are 7 ideas, from private SUP yoga to archipelago boat trips. Something for every team size and budget.',
     publishDate: '2026-04-15',
@@ -2516,6 +2523,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'team-building-activities-stockholm',
+    language: 'en',
     title: 'Team Building Stockholm: 7 Activities Your Team Will Still Be Talking About (2026)',
     metaDescription: 'Team building in Stockholm: 7 activities that actually work, with prices, group sizes and when to skip each one. Yoga from 3 000 SEK, SUP yoga and sauna from 500 SEK per person.',
     publishDate: '2026-04-15',
@@ -2672,6 +2680,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'paddleboard-yoga-stockholm-sickla-strand',
+    language: 'en',
     title: 'Paddleboard Yoga in Stockholm: Drop-in Classes in English at Sickla Strand',
     metaDescription: 'Weekly drop-in SUP yoga classes in Stockholm at Sickla Strand. Taught in English by an Australian 500-hour certified teacher. Vinyasa or yin on a paddleboard, 75 min, sauna included. From 350 SEK.',
     publishDate: '2026-05-11',
@@ -2774,6 +2783,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'yoga-in-english-stockholm-expat-guide',
+    language: 'en',
     title: 'Yoga in English in Stockholm: An Expat\'s Guide to Finding Classes That Actually Stick',
     metaDescription: 'New to Stockholm and looking for yoga in English? A practical guide to finding classes that fit, what to ask, and how to build a practice that lasts longer than your first six months in the city.',
     publishDate: '2026-05-11',
@@ -2872,6 +2882,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'office-yoga-english-international-teams-stockholm',
+    language: 'en',
     title: 'Office Yoga in English for International Teams in Stockholm',
     metaDescription: 'Private office yoga in English for international teams in Stockholm. 60-minute classes at your office, conference, or offsite. Taught by an Australian 500-hour certified teacher. From 3 000 SEK per session.',
     publishDate: '2026-05-11',
@@ -2989,6 +3000,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'australian-yoga-teacher-stockholm-cabin-story',
+    language: 'en',
     title: 'Why an Australian Yoga Teacher Ended Up in a Swedish Cabin (and What That Means for Your Practice)',
     metaDescription: 'How an Australian 500-hour certified yoga teacher ended up teaching from a forest cabin in Dalarna and on the water in Stockholm, and what an Australian teaching philosophy actually changes about your practice.',
     publishDate: '2026-05-11',
@@ -3066,6 +3078,7 @@ export const blogPosts: BlogPost[] = [
 
   {
     slug: 'private-yoga-teacher-stockholm-english',
+    language: 'en',
     title: 'Booking a Private Yoga Teacher in Stockholm (in English): What to Ask, What to Pay, What to Skip',
     metaDescription: 'How to find and book a private yoga teacher in Stockholm who teaches in English. What to ask before you pay, what a fair price looks like, and the formats that actually work.',
     publishDate: '2026-05-11',
@@ -3171,6 +3184,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'yoga-sauna-stockholm-friday-afternoon',
+    language: 'en',
     title: 'Yoga and Sauna in Stockholm: A Different Kind of Friday Afternoon',
     metaDescription: 'Yoga on a paddleboard followed by a sauna at Sickla Strand in Stockholm. Why the combination works, who it\'s for, and how to book it as a drop-in class, a private event, or an after-work group activity.',
     publishDate: '2026-05-11',
@@ -3239,6 +3253,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'wedding-weekend-yoga-stockholm',
+    language: 'en',
     title: 'Wedding Weekend Yoga in Stockholm: A Calm Hour Before the Chaos',
     metaDescription: 'Private wedding yoga in Stockholm. A quiet hour for the wedding party or guests before the ceremony. Taught in English by an Australian 500-hour certified teacher. Book for your hen weekend, wedding morning, or a calming group activity.',
     publishDate: '2026-05-11',
@@ -3307,6 +3322,7 @@ export const blogPosts: BlogPost[] = [
 
   {
     slug: 'things-to-do-stockholm-weekend-yoga-on-water',
+    language: 'en',
     title: 'Visiting Stockholm for a Weekend? Skip One Museum and Do This Instead',
     metaDescription: 'An unusual thing to do in Stockholm that most visitors never find: paddleboard yoga on the water with a sauna at Sickla Strand. 10 minutes from central Stockholm, no experience needed, all in English.',
     publishDate: '2026-05-11',
@@ -3461,6 +3477,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'yoga-retreat-near-stockholm-dalarna-weekend',
+    language: 'en',
     title: 'Yoga Retreats Near Stockholm: A Weekend in Dalarna Without the Long-Haul Flight',
     metaDescription: 'A yoga retreat weekend near Stockholm: 3 hours by car or train to the forest cabin in Dalarna. Private group retreats with yoga, nature, and genuine Swedish countryside. Bookable year-round for small groups.',
     publishDate: '2026-05-11',

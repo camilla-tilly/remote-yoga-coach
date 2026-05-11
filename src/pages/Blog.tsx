@@ -1,10 +1,11 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import Logo from '@/components/Logo';
-import { blogPosts } from '@/data/blogPosts';
+import { blogPosts, type BlogLanguage } from '@/data/blogPosts';
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -19,14 +20,86 @@ const structuredData = {
   }
 };
 
+const copy = {
+  sv: {
+    eyebrow: 'Inspiration & Information',
+    heading: 'Blogg',
+    intro: 'Tankar om yoga, natur, events och välmående från altanen i Dalarna.',
+    featured: 'Utvald',
+    morePosts: 'Fler inlägg',
+    readArticle: 'Läs artikeln',
+    readMore: 'Läs mer',
+    reading: 'läsning',
+    toggleLabel: 'Språk',
+    seoTitle: 'Blogg – Yoga, Events & Välmående | Yoga med Camilla',
+    seoDescription: 'Artiklar om yoga för möhippa, bröllop, konferens och utomhusyoga i Dalarna och Stockholm. Tips och inspiration från yogalärare Camilla.',
+  },
+  en: {
+    eyebrow: 'Inspiration & Information',
+    heading: 'Blog',
+    intro: 'Notes on yoga, nature, events and slow living, from a forest cabin in Dalarna.',
+    featured: 'Featured',
+    morePosts: 'More posts',
+    readArticle: 'Read article',
+    readMore: 'Read more',
+    reading: 'read',
+    toggleLabel: 'Language',
+    seoTitle: 'Blog – Yoga, Events & Wellbeing | Yoga with Camilla',
+    seoDescription: 'Articles on yoga for hen parties, weddings, corporate events and outdoor yoga in Stockholm and Dalarna. Tips and inspiration from yoga teacher Camilla.',
+  },
+} as const;
+
+const categoryLabels: Record<BlogLanguage, Record<string, string>> = {
+  sv: {},
+  en: {
+    'Events & Möhippa': 'Events & Hen Party',
+    'Företag & Konferens': 'Corporate & Conference',
+    'Bröllop & Events': 'Weddings & Events',
+    'SUP Yoga': 'SUP Yoga',
+    'Yoga & Natur': 'Yoga & Nature',
+    'Retreats & Upplevelser': 'Retreats & Experiences',
+    'Yoga Retreat': 'Yoga Retreat',
+    'Stockholm & Travel': 'Stockholm & Travel',
+    'Expat & English': 'Expat & English',
+    'Personligt': 'Personal',
+  },
+};
+
 const Blog = () => {
-  const [leadPost, ...restPosts] = blogPosts;
+  const [language, setLanguage] = useState<BlogLanguage>('sv');
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const stored = window.localStorage.getItem('blogLanguage') as BlogLanguage | null;
+    if (stored === 'sv' || stored === 'en') {
+      setLanguage(stored);
+      return;
+    }
+    const browserLang = window.navigator.language?.toLowerCase() ?? '';
+    if (!browserLang.startsWith('sv')) {
+      setLanguage('en');
+    }
+  }, []);
+
+  const handleLanguageChange = (next: BlogLanguage) => {
+    setLanguage(next);
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem('blogLanguage', next);
+    }
+  };
+
+  const filteredPosts = blogPosts.filter((post) => (post.language ?? 'sv') === language);
+  const [leadPost, ...restPosts] = filteredPosts;
+  const t = copy[language];
+
+  const localizedCategory = (category: string) =>
+    categoryLabels[language][category] ?? category;
 
   return (
     <div className="min-h-screen bg-white relative overflow-x-hidden">
       <SEO
-        title="Blogg – Yoga, Events & Välmående | Yoga med Camilla"
-        description="Artiklar om yoga för möhippa, bröllop, konferens och utomhusyoga i Dalarna och Stockholm. Tips och inspiration från yogalärare Camilla."
+        title={t.seoTitle}
+        description={t.seoDescription}
         canonical="https://yogawithcamilla.se/blogg"
         structuredData={structuredData}
       />
@@ -39,15 +112,46 @@ const Blog = () => {
               <Logo size={48} variant="pine" className="rounded-xl shadow-card" />
             </div>
             <p className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-olive font-bold mb-8">
-              Inspiration &amp; Information
+              {t.eyebrow}
             </p>
             <h1 className="font-fraunces text-7xl md:text-8xl lg:text-[8rem] text-dalashala-earth tracking-[-0.03em] mb-8 leading-[0.95]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
-              Blogg
+              {t.heading}
             </h1>
             <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
             <p className="font-inter font-normal text-xl md:text-2xl text-dalashala-earth/85 max-w-xl mx-auto leading-relaxed">
-              Tankar om yoga, natur, events och välmående från altanen i Dalarna.
+              {t.intro}
             </p>
+
+            <div
+              role="tablist"
+              aria-label={t.toggleLabel}
+              className="mt-10 inline-flex items-center gap-1 p-1 rounded-full border border-dalashala-meadow/70 bg-dalashala-creamDeep/40"
+            >
+              <button
+                role="tab"
+                aria-selected={language === 'sv'}
+                onClick={() => handleLanguageChange('sv')}
+                className={`px-5 py-2 rounded-full font-inter text-xs uppercase tracking-[0.28em] font-bold transition-colors ${
+                  language === 'sv'
+                    ? 'bg-dalashala-earth text-white'
+                    : 'text-dalashala-earth/70 hover:text-dalashala-earth'
+                }`}
+              >
+                Svenska
+              </button>
+              <button
+                role="tab"
+                aria-selected={language === 'en'}
+                onClick={() => handleLanguageChange('en')}
+                className={`px-5 py-2 rounded-full font-inter text-xs uppercase tracking-[0.28em] font-bold transition-colors ${
+                  language === 'en'
+                    ? 'bg-dalashala-earth text-white'
+                    : 'text-dalashala-earth/70 hover:text-dalashala-earth'
+                }`}
+              >
+                English
+              </button>
+            </div>
           </div>
         </header>
 
@@ -72,10 +176,10 @@ const Blog = () => {
                 <div className={`p-10 md:p-14 lg:p-16 flex flex-col justify-center ${leadPost.heroImage ? 'md:col-span-3' : 'md:col-span-5'}`}>
                   <div className="flex items-center gap-4 mb-6">
                     <span className="font-inter text-[10px] uppercase tracking-[0.36em] text-white bg-dalashala-earth px-3.5 py-1 rounded-full font-bold">
-                      Utvald
+                      {t.featured}
                     </span>
                     <span className="font-inter text-[11px] uppercase tracking-[0.32em] text-dalashala-olive font-bold">
-                      {leadPost.category}
+                      {localizedCategory(leadPost.category)}
                     </span>
                   </div>
                   <h2 className="font-fraunces text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-dalashala-earth mb-6 leading-[1.02] tracking-[-0.025em] [word-spacing:0.05em] group-hover:text-dalashala-earthSoft transition-colors" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
@@ -86,7 +190,7 @@ const Blog = () => {
                   </p>
                   <div className="flex items-center gap-4 font-inter text-xs uppercase tracking-[0.24em] font-semibold">
                     <span className="inline-flex items-center gap-2 text-dalashala-earth group-hover:gap-3 transition-all">
-                      Läs artikeln
+                      {t.readArticle}
                       <span className="transition-transform group-hover:translate-x-1">→</span>
                     </span>
                     <span className="w-8 h-px bg-dalashala-meadow" />
@@ -104,7 +208,7 @@ const Blog = () => {
             <div className="flex items-center justify-center gap-6">
               <span className="flex-1 h-px bg-dalashala-meadow/70" aria-hidden="true" />
               <p className="font-inter text-xs uppercase tracking-[0.4em] text-dalashala-olive font-bold">
-                Fler inlägg
+                {t.morePosts}
               </p>
               <span className="flex-1 h-px bg-dalashala-meadow/70" aria-hidden="true" />
             </div>
@@ -122,11 +226,11 @@ const Blog = () => {
               >
                 <div className="flex items-center gap-4 mb-4">
                   <span className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold">
-                    {post.category}
+                    {localizedCategory(post.category)}
                   </span>
                   <span className="w-8 h-px bg-dalashala-meadow" />
                   <span className="font-inter text-sm text-dalashala-earth/80">
-                    {post.readingTime} läsning
+                    {post.readingTime} {t.reading}
                   </span>
                 </div>
                 <h2 className="font-fraunces text-[1.75rem] md:text-[2.25rem] lg:text-[2.5rem] text-dalashala-earth mb-4 group-hover:text-dalashala-earthSoft transition-colors leading-[1.06] tracking-[-0.02em] [word-spacing:0.04em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 60" }}>
@@ -136,7 +240,7 @@ const Blog = () => {
                   {post.excerpt}
                 </p>
                 <span className="inline-flex items-center gap-2 font-inter text-xs uppercase tracking-[0.24em] font-semibold text-dalashala-earth group-hover:gap-3 transition-all">
-                  Läs mer
+                  {t.readMore}
                   <span className="transition-transform group-hover:translate-x-1">→</span>
                 </span>
               </Link>
