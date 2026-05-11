@@ -68,11 +68,11 @@ const OmMig = () => {
             <p className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-olive font-bold mb-7">
               Om mig
             </p>
-            <h1 className="font-fraunces text-5xl md:text-6xl lg:text-[4.75rem] text-dalashala-earth leading-[0.98] mb-8 tracking-[-0.03em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
+            <h1 className="font-fraunces text-5xl md:text-6xl lg:text-[4.75rem] text-dalashala-earth leading-[0.98] mb-8 tracking-[-0.03em] text-balance" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
               Yogalärare i Dalarna<br className="hidden md:block" /> <span className="amp">&amp;</span> Stockholm
             </h1>
             <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
-            <p className="font-inter text-lg md:text-xl text-dalashala-earth/85 max-w-xl mx-auto leading-relaxed">
+            <p className="font-inter text-lg md:text-xl text-dalashala-earth/85 max-w-2xl mx-auto leading-relaxed text-pretty">
               Certifierad yogalärare, ursprungligen från Australien. Baserad i Stockholm, undervisar även i Dalarna.
             </p>
           </div>
@@ -83,17 +83,17 @@ const OmMig = () => {
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
               <div className="md:col-span-7 order-2 md:order-1">
-                <h2 className="font-fraunces text-3xl md:text-4xl text-dalashala-earth leading-[1.1] tracking-[-0.025em] mb-7" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 120, 'SOFT' 80" }}>
+                <h2 className="font-fraunces text-3xl md:text-4xl text-dalashala-earth leading-[1.1] tracking-[-0.025em] mb-7 text-balance" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 120, 'SOFT' 80" }}>
                   Jag heter Camilla.
                 </h2>
                 <div className="space-y-5">
-                  <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85">
+                  <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85 text-pretty">
                     Jag växte upp i Australien och bor idag i Stockholm. Så ofta jag kan åker jag upp till stugan i Dalarna, till hönsen och altanen som ibland förvandlas till yogashala.
                   </p>
-                  <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85">
+                  <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85 text-pretty">
                     Rörelse, natur och mindfulness har alltid hängt ihop för mig, och yoga är där allt möts.
                   </p>
-                  <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85">
+                  <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85 text-pretty">
                     Jag undervisar mest i Stockholm, i studio och privat, och uppe i Dalarna när jag är där.
                   </p>
                 </div>
@@ -122,7 +122,7 @@ const OmMig = () => {
         <section className="py-16 md:py-20 px-4">
           <div className="max-w-3xl mx-auto">
             <blockquote className="border-l-2 border-dalashala-olive pl-8 md:pl-10">
-              <p className="font-fraunces italic text-2xl md:text-[2rem] text-dalashala-earth leading-[1.35] tracking-[-0.01em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 100" }}>
+              <p className="font-fraunces italic text-2xl md:text-[2rem] text-dalashala-earth leading-[1.35] tracking-[-0.01em] text-pretty" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 100" }}>
                 Mina klasser är utmanande men inte bestraffande. Inga extrema poser, ingen tävling med grannen på mattan. För mig handlar yoga om rörelse, andning och närvaro, oavsett om jag undervisar i en studio i Stockholm eller på altanen i Dalarna.
               </p>
               <footer className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mt-6 not-italic">
@@ -139,7 +139,7 @@ const OmMig = () => {
               <p className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-olive font-bold mb-6">
                 Utbildning
               </p>
-              <h2 className="font-fraunces text-4xl md:text-5xl lg:text-[3.5rem] text-dalashala-earth tracking-[-0.025em] leading-[1.02]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
+              <h2 className="font-fraunces text-4xl md:text-5xl lg:text-[3.5rem] text-dalashala-earth tracking-[-0.025em] leading-[1.02] text-balance" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
                 Utbildning <span className="amp">&amp;</span> bakgrund
               </h2>
             </div>
@@ -149,7 +149,7 @@ const OmMig = () => {
                   <h3 className="font-inter text-xs text-dalashala-olive uppercase tracking-[0.3em] font-bold mb-5">
                     {softenAmp(cred.title)}
                   </h3>
-                  <p className="font-inter text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed whitespace-pre-line">
+                  <p className="font-inter text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed whitespace-pre-line text-pretty">
                     {cred.detail}
                   </p>
                 </div>
@@ -160,15 +160,15 @@ const OmMig = () => {
 
         {/* ── Where I teach ── */}
         <section className="py-16 md:py-20 px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-fraunces text-4xl md:text-5xl text-dalashala-earth mb-8 tracking-[-0.025em] leading-[1.02]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-fraunces text-4xl md:text-5xl text-dalashala-earth mb-8 tracking-[-0.025em] leading-[1.02] text-balance" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
               Var jag undervisar
             </h2>
             <span className="block mx-auto w-16 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
-            <p className="font-inter text-lg md:text-xl text-dalashala-earth/85 leading-relaxed mb-5">
+            <p className="font-inter text-lg md:text-xl text-dalashala-earth/85 leading-relaxed mb-5 text-pretty">
               Jag undervisar på <strong className="text-dalashala-earth font-semibold">WD Wellness i Vansbro</strong>, <strong className="text-dalashala-earth font-semibold">Hot Yoga Stockholm</strong>, <strong className="text-dalashala-earth font-semibold">Yogarummet Björkhagen</strong>, <strong className="text-dalashala-earth font-semibold">Brahma Yoga i Nacka</strong> och som SUP yoga-lärare för <strong className="text-dalashala-earth font-semibold">Smashing Balance</strong>.
             </p>
-            <p className="font-inter text-lg md:text-xl text-dalashala-earth/85 leading-relaxed">
+            <p className="font-inter text-lg md:text-xl text-dalashala-earth/85 leading-relaxed text-pretty">
               Jag tar också emot bokningar för företagsevent, möhippor, bröllop och gruppevent i Dalarna och Stockholm.
             </p>
           </div>
@@ -182,11 +182,11 @@ const OmMig = () => {
             style={{ background: 'radial-gradient(circle, #8AA48E 0%, transparent 70%)' }}
           />
           <div className="relative max-w-2xl mx-auto text-center">
-            <h2 className="font-fraunces text-4xl md:text-5xl lg:text-[3.5rem] text-white mb-6 tracking-[-0.025em] leading-[1]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
+            <h2 className="font-fraunces text-4xl md:text-5xl lg:text-[3.5rem] text-white mb-6 tracking-[-0.025em] leading-[1] text-balance" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
               Vill du yoga med mig?
             </h2>
             <span className="block mx-auto w-16 h-[2px] bg-white/50 mb-8 rounded-full" aria-hidden="true" />
-            <p className="font-inter text-lg md:text-xl text-white/85 mb-10 leading-relaxed max-w-lg mx-auto">
+            <p className="font-inter text-lg md:text-xl text-white/85 mb-10 leading-relaxed max-w-xl mx-auto text-pretty">
               Se mina tjänster eller hör av dig direkt, oavsett om det är ett bröllop, en konferens eller en morgonklass på altanen.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -212,10 +212,10 @@ const OmMig = () => {
             <p className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-olive font-bold mb-6">
               In English
             </p>
-            <h2 className="font-fraunces text-3xl md:text-4xl lg:text-[2.75rem] text-dalashala-earth mb-10 tracking-[-0.025em] leading-[1.06]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 60" }}>
+            <h2 className="font-fraunces text-3xl md:text-4xl lg:text-[2.75rem] text-dalashala-earth mb-10 tracking-[-0.025em] leading-[1.06] text-balance" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 60" }}>
               About Camilla, Yoga Teacher in Dalarna <span className="amp">&amp;</span> Stockholm, Sweden
             </h2>
-            <div className="space-y-6 font-inter text-lg md:text-xl text-dalashala-earth/85 leading-relaxed">
+            <div className="space-y-6 font-inter text-lg md:text-xl text-dalashala-earth/85 leading-relaxed [&>p]:text-pretty">
               <p>
                 I'm Camilla, an Australian-born 500-hour certified yoga teacher based in Stockholm, Sweden, and I also teach in Dalarna. I teach vinyasa, yin, and hatha yoga in English.
               </p>
