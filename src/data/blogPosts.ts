@@ -653,12 +653,12 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        type: 'heading',
-        text: 'Nästa steg'
+        type: 'subheading',
+        text: 'Boka konferensyoga'
       },
       {
-        type: 'paragraph',
-        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, ort, antal deltagare och placering i programmet. Jag återkommer med en konkret offert. För regelbunden yoga på kontoret utanför konferensen, se [företagsyoga](/tjanster/foretagsyoga). För fler team-aktiviteter i Stockholm, kolla in [7 teambuilding-aktiviteter i Stockholm](/blogg/teambuilding-aktiviteter-stockholm).'
+        type: 'callout',
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal deltagare och konferensort, så återkommer jag med upplägg och prisförslag. Mer info och paketpriser på [yogawithcamilla.se/tjanster/foretagsyoga](/tjanster/foretagsyoga). För fler team-aktiviteter i Stockholm, kolla in [7 teambuilding-aktiviteter i Stockholm](/blogg/teambuilding-aktiviteter-stockholm).'
       },
     ]
   },
@@ -1143,11 +1143,11 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'paragraph',
-        text: 'Bröllopstrender i Sverige rör sig mot meningsfulla upplevelser. Mindre pomp, mer närvaro. Vinprovning och karaoke är kvar. Men de kompletteras med aktiviteter som faktiskt ger något.'
+        text: 'Bröllop samlar människor som aldrig träffats och sätter dem i en situation som förväntas vara avslappnad. Det är det inte alltid. En yogaklass på bröllopsveckan ger dem något konkret att göra tillsammans, utan att det kräver prestation. Och utan att lämna ett tomrum som fylls med smalltalk.'
       },
       {
-        type: 'paragraph',
-        text: 'Yoga som bröllopsaktivitet är ett av de bästa exemplen.'
+        type: 'callout',
+        text: 'Snabbversionen: Bröllopsyoga i Dalarna och Stockholm från 3 000 kr. Jag tar med all utrustning. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, ort och antal gäster.'
       },
       {
         type: 'heading',
@@ -1155,24 +1155,59 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Bröllop samlar människor som aldrig träffats. Yoga är en naturlig brygga. Ingen behöver kunna något. Alla åldrar och nivåer funkar. Och det skapas en gemenskap redan från första andetaget.'
+        text: 'Yoga är en av få aktiviteter som funkar oavsett ålder och konditionsnivå. Brudens farmor och bröllopsparets träningsfrenetiska vänner kan ligga sida vid sida på mattan. Ingen tävlar, ingen känner sig utesluten. Det kräver ingen koordination, ingen teknik och inga rätt svar.'
       },
       {
         type: 'paragraph',
-        text: 'Sen det praktiska: bröllopsveckan är stressig. Oavsett planering finns nervositet i luften. En yogaklass på morgonen, eller kvällen innan, ger brudparet och gästerna det de behöver. Ett andetag.'
+        text: 'Det praktiska är också värt att nämna. Bröllopsveckan är stressig på ett sätt som är svårt att förklara för den som inte upplevt det. Oavsett hur noga allt är planerat finns en nervositet i luften som tar på krafterna. En yogaklass, oavsett om det är morgonen innan, kvällen efter vigseln eller mitt i helgens program, ger brudparet och gästerna ett tillfälle att faktiskt andas.'
+      },
+      {
+        type: 'heading',
+        text: 'Vem är det för?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det är sällan bröllopsyoga som gör folk till yoga-entusiaster. Det är kombinationen av att röra sig, andas och faktiskt ha tid att vara i kroppen som funkar på bröllop. Det behövs ingen erfarenhet. Jag anpassar klassen till gruppen, om det är blandade åldrar, folk med dålig rygg eller gäster som aldrig sett en yogamatta.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det fungerar också bra som aktivitet för gäster som inte dricker alkohol, inte är sugna på karaoke eller som helt enkelt behöver en paus från festens sociala krav. En yogaklass ger dem någonstans att ta vägen.'
       },
       {
         type: 'heading',
         text: 'Format som funkar'
       },
       {
-        type: 'list',
-        items: [
-          'Morgonyoga för brudparet. Bara ni två, 45 minuter, innan dagen drar igång.',
-          'Gäst-yoga dagen innan. Samla alla för att mötas och lugna ner sig.',
-          'Utomhusyoga efter middagen. För gästerna som stannar natten.',
-          'Yoga-bröllopsvecka i Dalarna. Yoga som återkommande inslag hela helgen.'
-        ]
+        type: 'subheading',
+        text: 'Morgonyoga för brudparet'
+      },
+      {
+        type: 'paragraph',
+        text: 'Bara ni två, 45 minuter, dagen eller morgonen innan ceremonin drar igång. Lugnt, privat, utan en enda att-göra-lista i rummet. Det är det format som brudparen pratar om efteråt.'
+      },
+      {
+        type: 'subheading',
+        text: 'Gästyoga under bröllopsveckan'
+      },
+      {
+        type: 'paragraph',
+        text: 'En klass för alla gäster, på dag 2 eller brunch-dagen. Samlar de som stannat natten, ger dem något att göra innan hemresan och skapar ett avslut på helgen som inte är ännu en frukostbuffé.'
+      },
+      {
+        type: 'subheading',
+        text: 'Utomhusyoga vid bröllopslokationen'
+      },
+      {
+        type: 'paragraph',
+        text: 'För sommarbröllop vid sjö, i trädgård eller på gård funkar utomhusyoga särskilt bra. Ingen lokal att ordna, bara ett plant underlag. Mattorna tar jag med.'
+      },
+      {
+        type: 'subheading',
+        text: 'Hel bröllopsvecka med yoga i Dalarna'
+      },
+      {
+        type: 'paragraph',
+        text: 'För par som firar i Dalarna med gäster som stannar hela helgen kan yoga vara ett återkommande inslag. Morgonyoga fredag, yoga för gästerna lördag, stilla avslutningsklass söndag. Jag planerar upplägget med er.'
       },
       {
         type: 'heading',
@@ -1180,7 +1215,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Dalarna är en uppskattad bröllopsdestination. Naturskönt, lugnt. Och jag finns runt hörnet med en altan omgiven av skog. Jag kan hålla yoga på er lokation, hos mig på altanen, eller utomhus.'
+        text: 'Dalarna är ett av Sveriges mest populära bröllopslandskap, och det finns goda skäl till det. Lugnt, vackert och lättare att hyra en hel gård eller villa för helgen. Jag bor och verkar i Dalarna och kan komma till er lokation, utomhus vid sjön eller inne på den gård ni hyrt. Resa är inkluderad om ni är inom 30 minuter från Leksand.'
       },
       {
         type: 'heading',
@@ -1188,12 +1223,16 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Jag kommer till er bröllopslokation med all utrustning. Eller hjälper till att boka en yogasal för en morgonsession.'
+        text: 'Jag tar med all utrustning till er bröllopslokation i Stockholm, mattor, block och allt som behövs. Ni behöver ett plant utrymme som rymmer en matta per person med lite marginal. Det räcker med ett konferensrum, ett tak eller en stor trädgård. Jag hjälper gärna till att hitta en lämplig yogasal om ni saknar lokal.'
       },
       {
-        type: 'paragraph',
-        text: 'Pris: från 3 000 kr. Maila hello.yogawithcamilla@gmail.com med bröllopsdatum, plats och vad ni funderar på.'
-      }
+        type: 'subheading',
+        text: 'Boka bröllopsyoga'
+      },
+      {
+        type: 'callout',
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med bröllopsdatum, plats och antal gäster. Jag leder bröllopsyoga i Dalarna och Stockholm och tar med all utrustning. Pris från 3 000 kr. Mer info på [yogawithcamilla.se/tjanster/privata-event](/tjanster/privata-event).'
+      },
     ]
   },
   {
@@ -1945,12 +1984,12 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        type: 'heading',
-        text: 'Nästa steg'
+        type: 'subheading',
+        text: 'Boka företagsyoga'
       },
       {
-        type: 'paragraph',
-        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal deltagare, plats och typ av event. Jag återkommer med tillgänglighet och offert. Ni kan också läsa mer på tjänstesidan för [företagsyoga](/tjanster/foretagsyoga) eller börja med en 30-minuters provklass om ni vill testa innan ni bestämmer er för ett längre upplägg.'
+        type: 'callout',
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal deltagare och om ni föredrar morgon, lunch eller eftermiddag. Jag återkommer med upplägg och pris. Mer info och paketpriser på [yogawithcamilla.se/tjanster/foretagsyoga](/tjanster/foretagsyoga).'
       },
     ]
   },
