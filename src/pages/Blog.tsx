@@ -78,7 +78,7 @@ const Blog = () => {
                       {leadPost.category}
                     </span>
                   </div>
-                  <h2 className="font-fraunces text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-dalashala-earth mb-6 leading-[1.02] tracking-[-0.025em] group-hover:text-dalashala-earthSoft transition-colors" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
+                  <h2 className="font-fraunces text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-dalashala-earth mb-6 leading-[1.02] tracking-[-0.025em] [word-spacing:0.05em] group-hover:text-dalashala-earthSoft transition-colors" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
                     {leadPost.title}
                   </h2>
                   <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/85 leading-relaxed mb-8">
@@ -129,7 +129,7 @@ const Blog = () => {
                     {post.readingTime} läsning
                   </span>
                 </div>
-                <h2 className="font-fraunces text-[1.75rem] md:text-[2.25rem] lg:text-[2.5rem] text-dalashala-earth mb-4 group-hover:text-dalashala-earthSoft transition-colors leading-[1.06] tracking-[-0.02em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 60" }}>
+                <h2 className="font-fraunces text-[1.75rem] md:text-[2.25rem] lg:text-[2.5rem] text-dalashala-earth mb-4 group-hover:text-dalashala-earthSoft transition-colors leading-[1.06] tracking-[-0.02em] [word-spacing:0.04em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 60" }}>
                   {post.title}
                 </h2>
                 <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/85 leading-relaxed mb-5 max-w-2xl">
