@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import SEO from '@/components/SEO';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { softenAmp } from '@/lib/amp';
+import { softenAmp, noWidow } from '@/lib/amp';
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -73,7 +73,7 @@ const OmMig = () => {
             </h1>
             <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
             <p className="font-inter text-lg md:text-xl text-dalashala-earth/85 max-w-2xl mx-auto leading-relaxed text-pretty">
-              Certifierad yogalärare, ursprungligen från Australien. Baserad i Stockholm, undervisar även i Dalarna.
+              {noWidow("Certifierad yogalärare, ursprungligen från Australien. Baserad i Stockholm, undervisar även i Dalarna.")}
             </p>
           </div>
         </section>
@@ -88,13 +88,13 @@ const OmMig = () => {
                 </h2>
                 <div className="space-y-5">
                   <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85 text-pretty">
-                    Jag växte upp i Australien och bor idag i Stockholm. Så ofta jag kan åker jag upp till stugan i Dalarna, till hönsen och altanen som ibland förvandlas till yogashala.
+                    {noWidow("Jag växte upp i Australien och bor idag i Stockholm. Så ofta jag kan åker jag upp till stugan i Dalarna, till hönsen och altanen som ibland förvandlas till yogashala.")}
                   </p>
                   <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85 text-pretty">
-                    Rörelse, natur och mindfulness har alltid hängt ihop för mig, och yoga är där allt möts.
+                    {noWidow("Rörelse, natur och mindfulness har alltid hängt ihop för mig, och yoga är där allt möts.")}
                   </p>
                   <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85 text-pretty">
-                    Jag undervisar mest i Stockholm, i studio och privat, och uppe i Dalarna när jag är där.
+                    {noWidow("Jag undervisar mest i Stockholm, i studio och privat, och uppe i Dalarna när jag är där.")}
                   </p>
                 </div>
               </div>
@@ -150,7 +150,7 @@ const OmMig = () => {
                     {softenAmp(cred.title)}
                   </h3>
                   <p className="font-inter text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed whitespace-pre-line text-pretty">
-                    {cred.detail}
+                    {cred.detail.split('\n').map(noWidow).join('\n')}
                   </p>
                 </div>
               ))}
@@ -169,7 +169,7 @@ const OmMig = () => {
               Jag undervisar på <strong className="text-dalashala-earth font-semibold">WD Wellness i Vansbro</strong>, <strong className="text-dalashala-earth font-semibold">Hot Yoga Stockholm</strong>, <strong className="text-dalashala-earth font-semibold">Yogarummet Björkhagen</strong>, <strong className="text-dalashala-earth font-semibold">Brahma Yoga i Nacka</strong> och som SUP yoga-lärare för <strong className="text-dalashala-earth font-semibold">Smashing Balance</strong>.
             </p>
             <p className="font-inter text-lg md:text-xl text-dalashala-earth/85 leading-relaxed text-pretty">
-              Jag tar också emot bokningar för företagsevent, möhippor, bröllop och gruppevent i Dalarna och Stockholm.
+              {noWidow("Jag tar också emot bokningar för företagsevent, möhippor, bröllop och gruppevent i Dalarna och Stockholm.")}
             </p>
           </div>
         </section>
@@ -187,7 +187,7 @@ const OmMig = () => {
             </h2>
             <span className="block mx-auto w-16 h-[2px] bg-white/50 mb-8 rounded-full" aria-hidden="true" />
             <p className="font-inter text-lg md:text-xl text-white/85 mb-10 leading-relaxed max-w-xl mx-auto text-pretty">
-              Se mina tjänster eller hör av dig direkt, oavsett om det är ett bröllop, en konferens eller en morgonklass på altanen.
+              {noWidow("Se mina tjänster eller hör av dig direkt, oavsett om det är ett bröllop, en konferens eller en morgonklass på altanen.")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -217,19 +217,19 @@ const OmMig = () => {
             </h2>
             <div className="space-y-6 font-inter text-lg md:text-xl text-dalashala-earth/85 leading-relaxed [&>p]:text-pretty">
               <p>
-                I'm Camilla, an Australian-born 500-hour certified yoga teacher based in Stockholm, Sweden, and I also teach in Dalarna. I teach vinyasa, yin, and hatha yoga in English.
+                {noWidow("I'm Camilla, an Australian-born 500-hour certified yoga teacher based in Stockholm, Sweden, and I also teach in Dalarna. I teach vinyasa, yin, and hatha yoga in English.")}
               </p>
               <p>
-                Movement, nature, and mindfulness have always been important to me. I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, and my 300-hour advanced vinyasa training at Sampoorna Yoga Shala in Goa, India. I also have a background in fitness instruction as a Les Mills certified instructor (7 years, Australia and Sweden), and I've completed five ultramarathons, including a podium finish.
+                {noWidow("Movement, nature, and mindfulness have always been important to me. I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, and my 300-hour advanced vinyasa training at Sampoorna Yoga Shala in Goa, India. I also have a background in fitness instruction as a Les Mills certified instructor (7 years, Australia and Sweden), and I've completed five ultramarathons, including a podium finish.")}
               </p>
               <p>
-                My approach to yoga is simple: challenging but not punishing. I'm not interested in impressive poses or performance. For me, yoga is more about the mental and spiritual practice than the shapes the body makes.
+                {noWidow("My approach to yoga is simple: challenging but not punishing. I'm not interested in impressive poses or performance. For me, yoga is more about the mental and spiritual practice than the shapes the body makes.")}
               </p>
               <p>
-                I teach at WD Wellness in Vansbro, Hot Yoga Stockholm, Yogarummet Björkhagen, Brahma Yoga in Nacka, and as the SUP yoga teacher for Smashing Balance. I also take bookings for private lessons, corporate yoga, bachelorette yoga, wedding yoga, and yoga retreats across Stockholm and Dalarna.
+                {noWidow("I teach at WD Wellness in Vansbro, Hot Yoga Stockholm, Yogarummet Björkhagen, Brahma Yoga in Nacka, and as the SUP yoga teacher for Smashing Balance. I also take bookings for private lessons, corporate yoga, bachelorette yoga, wedding yoga, and yoga retreats across Stockholm and Dalarna.")}
               </p>
               <p>
-                If you're a tourist looking for a yoga class in Dalarna, an expat in Stockholm searching for English-language yoga, or you simply found me on YouTube, you're welcome to get in touch.
+                {noWidow("If you're a tourist looking for a yoga class in Dalarna, an expat in Stockholm searching for English-language yoga, or you simply found me on YouTube, you're welcome to get in touch.")}
               </p>
             </div>
           </div>
