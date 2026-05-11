@@ -28,7 +28,7 @@ const ForetagsYoga = () => (
     ogImage="https://yogawithcamilla.se/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     breadcrumbLabel="Företagsyoga"
     heroTag="Företag, Konferens, Kickoff, AW & Teambuilding"
-    heroHeading="Företagsyoga"
+    heroHeading="Företagsyoga och teambuilding i Stockholm"
     heroSubtitle="Yoga för konferenser, kickoffs, AWs, sommaravslutningar, teambuilding och regelbundna klasser på kontoret. I Dalarna även halvdag och heldag i naturen. Alla kan delta, ingen erfarenhet krävs."
     heroImage="/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     heroImageAlt="Lugn och fokus, yoga för konferens och företagsevent"
@@ -70,6 +70,7 @@ const ForetagsYoga = () => (
       "Säg till om gruppen vill byta om till träningskläder eller hellre köra direkt i det de har på sig. Jag formar klassen efter det.",
       { subheading: "Stockholm" },
       "Jag kommer till ert kontor eller er konferensanläggning, eller hjälper gärna till att hitta en lämplig yogasal. Vill ni hellre ha yoga på vattnet kan vi i stället boka en [SUP-yoga-session](/tjanster/sup-yoga) vid Sicklasjön. Regelbundna klasser på kontoret erbjuds endast i Stockholm.",
+      "Funderar ni på fler alternativ för teamet? Guiden till [teambuilding i Stockholm](/blogg/teambuilding-aktiviteter-stockholm) går igenom sju aktiviteter med priser och vad som passar vem.",
       { subheading: "Dalarna" },
       "Jag reser till Vansbro, Falun, Borlänge, Ludvika, Mora, Leksand och Rättvik, och området däremellan, för konferenser, kickoffs, teambuilding och företagsevent på er konferensanläggning eller utomhus. För team som vill ut i naturen erbjuder jag även halvdag och heldag med yoga, vandring eller trail run, fika och lunch, med basläger på altanen vid skogsstugan.",
       { subheading: "Boka" },

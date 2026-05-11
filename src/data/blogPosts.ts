@@ -1866,7 +1866,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'För idéer till sommaravslutningar, kickoffer och teambuilding finns mer läsning i [7 idéer för sommaravslutning i Stockholm](/blogg/sommaravslutning-aktiviteter-stockholm) och [7 teambuilding-aktiviteter i Stockholm](/blogg/teambuilding-aktiviteter-stockholm).'
+        text: 'För idéer till sommaravslutningar, kickoffer och teambuilding finns mer läsning i [7 idéer för sommaravslutning i Stockholm](/blogg/sommaravslutning-aktiviteter-stockholm) och guiden till [teambuilding i Stockholm](/blogg/teambuilding-aktiviteter-stockholm).'
       },
       {
         type: 'heading',
@@ -2085,14 +2085,14 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'teambuilding-aktiviteter-stockholm',
-    title: 'Teambuilding i Stockholm: 7 aktiviteter teamet pratar om månader efteråt',
-    metaDescription: 'Letar du efter teambuilding i Stockholm? 7 aktiviteter som faktiskt funkar, med pris, gruppstorlek och när du ska skippa vilken. Skriven av en som ser bokningarna komma in.',
+    title: 'Teambuilding Stockholm: 7 aktiviteter teamet pratar om månader efteråt (2026)',
+    metaDescription: 'Teambuilding i Stockholm: 7 aktiviteter som faktiskt funkar, med pris, gruppstorlek och när du ska skippa vilken. Yoga från 3 000 kr, SUP yoga och bastu från 500 kr per person.',
     publishDate: '2026-04-15',
     readingTime: '10 min',
     category: 'Företag & Konferens',
     excerpt: 'Bästa teambuilding handlar inte om att krypa under rep. Det handlar om att ge teamet något att prata om månader efteråt. Här är de sju aktiviteter jag bokar och bokar om för Stockholmsföretag, med ärlig vägledning om vilken som passar er.',
-    relatedServiceHref: '/tjanster/sup-yoga',
-    relatedServiceLabel: 'Boka SUP yoga & bastu som teambuilding',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Boka yoga för teamet',
     tableOfContents: true,
     faqSchema: true,
     relatedPosts: [
@@ -2236,19 +2236,19 @@ export const blogPosts: BlogPost[] = [
         'För SUP yoga och bastu: läs mer på [SUP yoga-sidan](/tjanster/sup-yoga)',
         'För yoga på kontoret eller konferensen: läs mer på [företagsyoga-sidan](/tjanster/foretagsyoga), eller längre guide i [Konferensyoga, hela guiden för 2026](/blogg/konferensyoga-teambuilding)',
       ] },
-      { type: 'paragraph', text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal personer och tillfälle. Jag återkommer med offert och två till tre formatförslag att välja mellan.' },
+      { type: 'paragraph', text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com?subject=Teambuilding%20Stockholm%20offert) med datum, antal personer och tillfälle. Jag återkommer med offert och två till tre formatförslag att välja mellan.' },
     ]
   },
   {
     slug: 'team-building-activities-stockholm',
-    title: 'Team Building in Stockholm: 7 Activities Your Team Will Still Be Talking About Months Later',
-    metaDescription: 'Looking for team building in Stockholm? 7 activities that actually work, with prices, group sizes, and when to skip each one. Written by someone who sees the bookings come in.',
+    title: 'Team Building Stockholm: 7 Activities Your Team Will Still Be Talking About (2026)',
+    metaDescription: 'Team building in Stockholm: 7 activities that actually work, with prices, group sizes and when to skip each one. Yoga from 3 000 SEK, SUP yoga and sauna from 500 SEK per person.',
     publishDate: '2026-04-15',
     readingTime: '10 min',
     category: 'Företag & Konferens',
     excerpt: 'The best team building isn\'t about crawling under ropes. It\'s about giving your team something to talk about months later. Here are the seven activities I book and re-book for Stockholm companies, with honest guidance on which one fits you.',
-    relatedServiceHref: '/tjanster/sup-yoga',
-    relatedServiceLabel: 'Book SUP yoga & sauna for team building',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Book yoga for your team',
     tableOfContents: true,
     faqSchema: true,
     relatedPosts: [
@@ -2392,7 +2392,7 @@ export const blogPosts: BlogPost[] = [
         'For SUP yoga and sauna: more on the [SUP yoga page](/tjanster/sup-yoga)',
         'For yoga at the office or the conference: more on the [corporate yoga page](/tjanster/foretagsyoga), or the longer guide in [Conference yoga, the full guide for 2026](/blogg/konferensyoga-teambuilding)',
       ] },
-      { type: 'paragraph', text: 'Email [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) with date, number of people, and the occasion. I\'ll come back with a quote and two or three format options to choose from.' },
+      { type: 'paragraph', text: 'Email [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com?subject=Team%20Building%20Stockholm%20quote) with date, number of people, and the occasion. I\'ll come back with a quote and two or three format options to choose from.' },
     ]
   }
 ];
