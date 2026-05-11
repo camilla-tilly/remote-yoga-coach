@@ -22,8 +22,8 @@ const structuredData = {
 
 const ForetagsYoga = () => (
   <ServicePageLayout
-    seoTitle="Företagsyoga, Konferensyoga, Kickoff, AW & Teambuilding Stockholm & Dalarna | Yoga med Camilla"
-    seoDescription="Företagsyoga i Stockholm: regelbundna klasser på kontoret samt konferenser, kickoffs, AWs och sommaravslutningar. I Dalarna: yoga för konferenser, kickoffs, teambuilding och halvdag eller heldag i naturen med yoga, vandring och trail run."
+    seoTitle="Företagsyoga Stockholm · pris från 1 600 kr | Yoga med Camilla"
+    seoDescription="Företagsyoga på kontoret från 1 600 kr/klass. Konferens, kickoff, AW och sommaravslutning i Stockholm. Halvdag och heldag i naturen i Dalarna. Boka via mejl."
     canonical="https://yogawithcamilla.se/tjanster/foretagsyoga"
     ogImage="https://yogawithcamilla.se/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     breadcrumbLabel="Företagsyoga"

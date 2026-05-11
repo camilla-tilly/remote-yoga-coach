@@ -1669,8 +1669,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'foretagsyoga-vad-ingar-och-kostar',
-    title: 'Företagsyoga i Stockholm: priser, upplägg och vad som faktiskt ingår',
-    metaDescription: 'Komplett guide till företagsyoga i Stockholm. Priser från 1 000 kr/klass, format (morgon, lunch, event), vad som ingår, friskvårdsbidrag och svar på vanliga frågor.',
+    title: 'Vad kostar företagsyoga i Stockholm 2026?',
+    metaDescription: 'Företagsyoga i Stockholm från 1 600 kr per klass. Vad det kostar, vad som ingår, friskvårdsbidrag, format för konferens, kickoff och AW. Ärlig guide för HR och chefer.',
     publishDate: '2026-04-09',
     readingTime: '10 min',
     category: 'Företag & Konferens',
@@ -1691,7 +1691,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'callout',
-        text: 'Snabbversionen: Företagsyoga i Stockholm från 1 000 kr per klass (30 min). Jag kommer till ert kontor med mattor och block, leder klassen, och ni behöver bara ett någorlunda fritt golvutrymme. Yoga är en godkänd friskvårdsaktivitet enligt Skatteverket. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för offert inom ett dygn.'
+        text: 'Snabbversionen: Företagsyoga i Stockholm från 1 600 kr per klass (30 min) vid regelbunden bokning på kontoret. Jag kommer till ert kontor med mattor och block, leder klassen, och ni behöver bara ett någorlunda fritt golvutrymme. Yoga är en godkänd friskvårdsaktivitet enligt Skatteverket. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för en offert.'
       },
       {
         type: 'heading',
@@ -1777,10 +1777,10 @@ export const blogPosts: BlogPost[] = [
         type: 'table',
         tableHead: ['Format', 'Längd', 'Pris per klass', 'Rekommenderat'],
         tableRows: [
-          ['Morgonyoga', '30 min', 'från 1 000 kr', 'Snabb reset, innan arbetsdagen'],
-          ['Lunchyoga', '45 min', 'från 1 200 kr', 'Regelbundet, 1 gång per vecka'],
-          ['Fullängd', '60 min', 'från 1 500 kr', 'After work, djupare klass'],
-          ['Yin / restorativ', '75 min', 'från 1 800 kr', 'Fredagseftermiddagar, stressade team'],
+          ['Morgon eller lunch', '30 min', 'från 1 600 kr', 'Snabb reset, innan eller mitt i arbetsdagen'],
+          ['Lunchyoga', '45 min', 'från 1 800 kr', 'Regelbundet, 1 gång per vecka'],
+          ['Fullängd', '60 min', 'från 2 100 kr', 'After work, djupare klass'],
+          ['Yin / restorativ', '75 min', 'offert', 'Fredagseftermiddagar, stressade team'],
           ['Event / konferens', '30 till 90 min', 'offert', 'Enstaka tillfällen, större grupper'],
         ],
       },
@@ -1943,7 +1943,7 @@ export const blogPosts: BlogPost[] = [
         faqItems: [
           {
             q: 'Vad kostar företagsyoga i Stockholm?',
-            a: 'Företagsyoga hos mig kostar från 1 000 kr per 30-minutersklass vid regelbunden bokning på kontor i Stockholm. En 45-minutersklass kostar från 1 200 kr och en 60-minutersklass från 1 500 kr. Konferens- och eventyoga prissätts individuellt. Alla priser exklusive moms.',
+            a: 'Företagsyoga hos mig kostar från 1 600 kr per 30-minutersklass vid regelbunden bokning på kontor i Stockholm. En 45-minutersklass kostar från 1 800 kr och en 60-minutersklass från 2 100 kr. Konferens- och eventyoga prissätts individuellt. Alla priser exklusive moms.',
           },
           {
             q: 'Hur många minst respektive max deltagare?',

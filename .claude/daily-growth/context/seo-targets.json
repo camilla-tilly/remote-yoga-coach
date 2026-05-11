@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-09",
+  "last_updated": "2026-05-11",
   "source": ".claude/context/seo-strategy.md",
   "notes": "Anpassade keywords for Yoga med Camilla — privat yoga, events, natur & utomhusyoga. Inte ett yogastudio.",
   "tiers": {
@@ -10,7 +10,8 @@
         "yoga dalarna",
         "yoga mohippa",
         "privat yogaklass",
-        "yoga event"
+        "yoga event",
+        "sup yoga stockholm"
       ]
     },
     "tier2_services": {
@@ -18,14 +19,15 @@
       "keywords": [
         "foretagsyoga stockholm",
         "yoga brollop",
-        "SUP yoga stockholm",
         "mini retreat yoga dalarna",
         "privat yogalektion",
         "online yoga english",
         "yoga teambuilding",
         "konferensyoga",
         "yoga for foretag",
-        "brollopsyoga dalarna"
+        "brollopsyoga dalarna",
+        "teambuilding stockholm",
+        "teambuilding aktiviteter stockholm"
       ]
     },
     "tier3_specialized": {
@@ -40,21 +42,27 @@
         "privat yoga pris",
         "mohippa aktiviteter dalarna",
         "yoga retreat dalarna",
-        "foretagsyoga pris"
+        "foretagsyoga pris",
+        "mohippa rattvik",
+        "sup yoga sickla"
       ]
     }
   },
   "breakout_keywords": [
-    {"keyword": "honsyoga", "status": "breakout", "competition": "none", "priority": "A"},
-    {"keyword": "yoga mohippa dalarna", "status": "rising", "competition": "low", "priority": "A"},
-    {"keyword": "privat yoga pris", "status": "rising", "competition": "low", "priority": "A"},
+    {"keyword": "sup yoga stockholm", "status": "winning", "competition": "medium", "priority": "A", "evidence_28d": "12 clicks, 89 imp, pos 9.8 — top driver"},
+    {"keyword": "mohippa dalarna", "status": "winning", "competition": "low", "priority": "A", "evidence_28d": "3 clicks, 18 imp, 16.7% CTR, pos 9.0"},
+    {"keyword": "mohippa rattvik", "status": "rising", "competition": "low", "priority": "A", "evidence_28d": "0 clicks, 43 imp, pos 9.0 — geo-content needed"},
+    {"keyword": "yoga retreat dalarna", "status": "winning", "competition": "low", "priority": "B", "evidence_28d": "1 click, 19 imp, pos 9.3"},
+    {"keyword": "teambuilding stockholm", "status": "rising", "competition": "high", "priority": "B", "evidence_28d": "0 clicks, 186 imp, pos 47.6 — needs ranking improvement before CTR work"},
+    {"keyword": "teambuilding aktiviteter stockholm", "status": "rising", "competition": "medium", "priority": "B", "evidence_28d": "0 clicks, 31 imp, pos 29.5"},
+    {"keyword": "honsyoga", "status": "winning", "competition": "none", "priority": "A", "evidence_28d": "/tjanster/honsyoga: 2 clicks, 5 imp, 40% CTR"},
     {"keyword": "chicken yoga sweden", "status": "breakout", "competition": "none", "priority": "B"}
   ],
   "clusters": [
-    {"name": "event-yoga", "keywords": ["yoga mohippa", "mohippa yoga dalarna", "brollopsyoga", "yoga brollop stockholm", "mohippa aktiviteter"]},
+    {"name": "event-yoga", "keywords": ["yoga mohippa", "mohippa yoga dalarna", "brollopsyoga", "yoga brollop stockholm", "mohippa aktiviteter", "mohippa rattvik"]},
     {"name": "nature-yoga", "keywords": ["utomhusyoga dalarna", "honsyoga", "yoga retreat dalarna", "yoga stuga dalarna", "outdoor yoga sweden"]},
     {"name": "water-yoga", "keywords": ["SUP yoga stockholm", "SUP yoga sickla", "yoga pa vatten", "paddleboard yoga"]},
     {"name": "private-yoga", "keywords": ["privat yoga stockholm", "privat yogalektion", "privat yoga pris", "online yoga english"]},
-    {"name": "corporate-yoga", "keywords": ["foretagsyoga stockholm", "konferensyoga", "yoga teambuilding", "foretagsyoga pris", "yoga for foretag"]}
+    {"name": "corporate-yoga", "keywords": ["foretagsyoga stockholm", "konferensyoga", "yoga teambuilding", "foretagsyoga pris", "yoga for foretag", "teambuilding stockholm", "teambuilding aktiviteter stockholm"]}
   ]
 }
