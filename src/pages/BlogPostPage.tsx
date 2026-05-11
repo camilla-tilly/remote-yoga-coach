@@ -246,7 +246,7 @@ const BlogPostPage = () => {
                         />
                       )}
                       <p className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mb-4">
-                        {String(number).padStart(2, '0')} — Kapitel
+                        {String(number).padStart(2, '0')}
                       </p>
                       <h2
                         id={id}
