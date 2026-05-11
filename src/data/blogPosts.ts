@@ -27,6 +27,177 @@ export interface BlogSection {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'things-to-do-stockholm-summer',
+    title: 'Things to Do in Stockholm This Summer: A Local\'s Guide for 2026',
+    metaDescription: 'A local\'s honest guide to Stockholm summer 2026. SUP yoga at sunset, archipelago islands, swimming spots, parks, and the things actually worth your time.',
+    publishDate: '2026-05-11',
+    readingTime: '9 min',
+    category: 'Stockholm & Travel',
+    excerpt: 'Stockholm in summer is short, bright, and a little bit magic. The sun barely sets, the water turns swimmable, and the whole city moves outside. Here is what I would tell a friend visiting for the first time.',
+    relatedServiceHref: '/tjanster/sup-yoga-klasser',
+    relatedServiceLabel: 'Book a SUP yoga class',
+    tableOfContents: true,
+    faqSchema: true,
+    heroImage: { src: '/images/sup-yoga-floating-dock.jpg', alt: 'SUP yoga at Sickla Strand in Stockholm at sunset' },
+    relatedPosts: [
+      { slug: 'outdoor-water-activities-stockholm-summer', label: 'Outdoor & Water Activities in Stockholm' },
+      { slug: 'summer-team-day-ideas-stockholm', label: 'Summer Team Day Ideas in Stockholm' },
+      { slug: 'hen-party-ideas-stockholm', label: 'Bachelorette Party Ideas in Stockholm' },
+    ],
+    content: [
+      { type: 'paragraph', text: 'I moved to Sweden from Australia and I still find Stockholm summers a little unreal. The light stays until almost 11 pm. The water turns swimmable. The whole city moves outside, slowly, like everyone collectively remembered how to exhale. If you are visiting this summer, this is what I would tell a friend.' },
+      { type: 'paragraph', text: 'Nothing here is a checklist. You do not need to tick all twelve. You probably should not. Pick three or four and let the rest be a reason to come back.' },
+      { type: 'callout', text: 'Short on time? If you only do one thing in Stockholm this summer, do [SUP yoga and sauna at Sickla Strand](/tjanster/sup-yoga-klasser). It is the only activity on this list you cannot really do anywhere else, and it is the one most visitors message me about afterwards.' },
+
+      { type: 'heading', text: 'SUP yoga and sauna at Sickla Strand' },
+      { type: 'paragraph', text: 'Yoga on a paddleboard on a calm Stockholm lake, followed by a sauna right at the water\'s edge. Vinyasa or yin, depending on the week. Boards are wide and stable. No experience needed, in yoga or on a paddleboard. The whole class is taught in English, which matters if you are visiting.' },
+      { type: 'paragraph', text: 'This is the most Stockholm-summer thing I can think of. The lake is glassy in the early evening, the sauna is hot, and almost everyone ends up swimming between the two. I run [open drop-in classes](/tjanster/sup-yoga-klasser) all season from late April through September, single class 350 kr including board and sauna. If you are travelling as a group of 3 or more, [private SUP yoga events](/tjanster/sup-yoga) are usually a better fit, from 500 kr per person.' },
+      { type: 'paragraph', text: 'Sickla Strand is 10 to 15 minutes from central Stockholm by tunnelbana (Sickla or Hammarby Sjöstad station). Bring a swimsuit and a towel. Everything else is included.' },
+
+      { type: 'heading', text: 'Swim at a local badplats' },
+      { type: 'paragraph', text: 'Stockholm has free public swimming spots all through the city, and most tourists never use them. Långholmen is the classic, a small rocky island connected by bridge with grass, cliffs, and clean water. Smedsuddsbadet on Kungsholmen has a proper sandy beach and is good for families. Fredhäll is where locals go to drink wine on the cliffs at golden hour, less of a swimming destination, more of a sunset one.' },
+      { type: 'paragraph', text: 'All free. All reachable by tunnelbana or a 20 minute walk from the centre. The water is cleanest from late June through August.' },
+
+      { type: 'heading', text: 'Take the ferry to an archipelago island' },
+      { type: 'paragraph', text: 'Stockholm sits on 30,000 islands. You only see them properly from a boat. Three options depending on how much time you have.' },
+      { type: 'paragraph', text: 'Vaxholm is the easy one, 50 minutes by Waxholmsbolaget ferry from Strömkajen, and your SL travel card might already cover it. Old wooden houses, ice cream, a fortress. Half a day. Grinda is the middle option, 90 minutes out, smaller, with one inn and a lot of walking trails. A full day, ideally with a packed lunch. Sandhamn is the longest trip, 2 to 3 hours, and feels properly remote even though it is technically a day-trip from Stockholm.' },
+
+      { type: 'heading', text: 'Walk Djurgården at golden hour' },
+      { type: 'paragraph', text: 'Djurgården is a royal park, an island, and the closest thing Stockholm has to a forest you can walk to from the city centre. Most tourists do it at midday and miss the point. Go after 6 pm, when the tour buses have left. The light comes through the trees sideways and everything looks slightly impossible.' },
+      { type: 'paragraph', text: 'Walk from Djurgårdsbron toward Rosendal. Stop at Rosendals Trädgård for sourdough and something baked. Keep walking out to Blockhusudden if you have time. You can be back in town in 20 minutes.' },
+
+      { type: 'heading', text: 'Skansen, or Gröna Lund, or both' },
+      { type: 'paragraph', text: 'Both are on Djurgården, both are touristy, and both are worth it for different reasons. Skansen is an open-air museum where you walk through old Swedish houses, watch chickens (I have a soft spot), and learn things you did not plan to learn. Half a day. Gröna Lund is the city\'s amusement park, busiest at night, with summer concerts on a small stage. If you have kids or you like rollercoasters, Gröna. If you want to understand Sweden a bit, Skansen. If you have a full day, both, with lunch in between.' },
+
+      { type: 'heading', text: 'The Vasa Museum' },
+      { type: 'paragraph', text: 'A 17th century warship that sank in Stockholm harbour 20 minutes into its maiden voyage, then sat at the bottom for 333 years, then got pulled up almost intact. The museum is built around the ship. It is the most-visited museum in Scandinavia for a reason. Yes, it is on every tourist itinerary. Yes, go anyway. Allow 90 minutes.' },
+
+      { type: 'heading', text: 'Cycle Söder Mälarstrand to Långholmen to Reimersholme' },
+      { type: 'paragraph', text: 'A free, do-it-yourself bike loop along the south side of the water. Rent a bike for the day (Söder Cykel or the city bike share), start at Slussen, ride west along the waterfront, cross to Långholmen for a swim, keep going to Reimersholme for a coffee, loop back. About 2 hours including stops. This is what locals actually do on a Saturday afternoon in July.' },
+
+      { type: 'heading', text: 'Mariatorget for fika, Mosebacke for the view' },
+      { type: 'paragraph', text: 'A small Södermalm pocket worth half a day. Mariatorget is a leafy square with cafés and the kind of slow weekend energy people actually live for. Have fika at Greasy Spoon or Drop Coffee. Then walk 10 minutes uphill to Mosebacke Torg and step out onto the terrace at Södra Teatern. The view across the rooftops to Gamla Stan is the postcard one, and it is free.' },
+
+      { type: 'heading', text: 'Hike Nackareservatet' },
+      { type: 'paragraph', text: 'Stockholm\'s wild side, 15 minutes from the centre by bus. Pine forest, blueberry bushes, small lakes you can swim in, almost no other people. There are marked trails of 3 to 10 km. Start at Hellasgården, which also has a sauna and a swimming dock if you want to combine. I sometimes lead a trail run here as an add-on to [private SUP yoga days](/tjanster/sup-yoga), if that combination interests you.' },
+
+      { type: 'heading', text: 'A Sunday at Hornstulls Marknad' },
+      { type: 'paragraph', text: 'Sundays from late spring through summer, the waterfront at Hornstull turns into a flea market and street food strip. Vintage clothes, vinyl, secondhand books, ten different food trucks. Get a bowl of something, sit on the wall facing the water, watch the boats. The Södermalm version of a slow afternoon. Free entry.' },
+
+      { type: 'heading', text: 'Catch a 2026 summer event' },
+      { type: 'paragraph', text: 'A few dates worth planning around if your trip overlaps.' },
+      { type: 'list', items: [
+        '**Midsommar weekend, 19 to 20 June 2026.** The most Swedish thing you can witness. Most locals leave the city for the countryside, but Skansen runs a proper public midsommar celebration with flower crowns, the frog dance, and a maypole.',
+        '**Rosendal Garden Party, 12 to 14 June 2026.** Outdoor concerts on Djurgården in a garden setting, world-class lineup, smaller and gentler than a big festival.',
+        '**Stockholm Pride, 27 July to 1 August 2026.** The biggest Pride in Scandinavia. The parade on the Saturday is the centrepiece. The city is loud, joyful, and rainbow-painted for the whole week.',
+        '**Stockholm Culture Festival, mid-August.** Five days of free music, dance, theatre and food across the city centre. 600 events. Pace yourself.',
+        '**Baltic Sea Festival, 21 to 29 August 2026.** Classical music and conversations about the Baltic, at Berwaldhallen. Quieter, beautiful, ends the summer.',
+      ]},
+
+      { type: 'heading', text: 'A slow morning at a floating sauna' },
+      { type: 'paragraph', text: 'Stockholm has a small handful of floating saunas you can book by the hour. Hammarby Bastuförening on Hammarbykanalen is the most loved one. Bring a swimsuit and a towel, book a slot, alternate between the heat and a swim in the canal. If you have already done SUP yoga and sauna with me at Sickla, this is the city-centre version on a smaller scale.' },
+
+      { type: 'heading', text: 'If you only have one day' },
+      { type: 'paragraph', text: 'Honestly: do SUP yoga at sunset, swim afterwards, then have dinner outside on Södermalm. That is the entire summer in three hours, and you can [book it here](/tjanster/sup-yoga-klasser) or email me at hello.yogawithcamilla@gmail.com for [a private group experience](/tjanster/sup-yoga).' },
+
+      { type: 'faq', faqItems: [
+        { q: 'When is the best time to visit Stockholm in summer?', a: 'Mid-June through mid-August. Late June and July have the longest days (sun until 10 or 11 pm) and the warmest water. August is slightly quieter and locals are back from holiday.' },
+        { q: 'Do I need to speak Swedish to do these activities?', a: 'No. Almost everyone in Stockholm speaks fluent English. SUP yoga with me is taught in English, signage at museums and ferries is bilingual, and you will be completely fine.' },
+        { q: 'Is SUP yoga safe for total beginners?', a: 'Yes. The boards are wider and more stable than regular paddleboards. You do not need yoga experience or paddleboard experience. Most people in any given class are first-timers. You just need to be able to swim.' },
+        { q: 'How do I get around Stockholm without a car?', a: 'SL is the city transport system. Buy a 24-hour or 72-hour travel card and it covers tunnelbana (metro), buses, trams, and some commuter ferries (including Vaxholm). The metro covers everything in this guide except Nackareservatet, which is a short bus ride from Slussen.' },
+        { q: 'What should I wear for outdoor activities?', a: 'Layers. Even in July, Stockholm can drop 10 degrees between midday and evening. Bring a swimsuit, a light waterproof, and shoes you can walk a lot in. For SUP yoga, just a swimsuit and a towel, everything else is provided.' },
+        { q: 'Is Stockholm expensive in summer?', a: 'Yes, but most of this guide is free or low-cost. Swimming, walking, parks, the archipelago ferry to Vaxholm (if your travel card covers it), and Hornstulls Marknad are all free. The paid activities like SUP yoga (350 kr drop-in) and museums (around 200 kr) sit in the middle.' },
+      ]},
+    ]
+  },
+  {
+    slug: 'outdoor-water-activities-stockholm-summer',
+    title: 'Outdoor & Water Activities in Stockholm: Summer 2026 Guide',
+    metaDescription: 'The best outdoor and water activities in Stockholm for summer 2026. SUP yoga, kayaking, wild swimming, trail running, sauna culture, and how to actually book them.',
+    publishDate: '2026-05-11',
+    readingTime: '7 min',
+    category: 'Stockholm & Travel',
+    excerpt: 'Stockholm is built for outdoor summer. Water on every side, daylight until 11 pm, forest 15 minutes from the centre. Here are the activities I send visitors to first.',
+    relatedServiceHref: '/tjanster/sup-yoga-klasser',
+    relatedServiceLabel: 'Book a SUP yoga class',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'things-to-do-stockholm-summer', label: 'Things to Do in Stockholm This Summer' },
+      { slug: 'summer-team-day-ideas-stockholm', label: 'Summer Team Day Ideas in Stockholm' },
+      { slug: 'hen-party-ideas-stockholm', label: 'Bachelorette Party Ideas in Stockholm' },
+    ],
+    content: [
+      { type: 'paragraph', text: 'Stockholm is one of the easiest cities in the world to enjoy outdoors in summer. Water on every side. Forest you can reach by metro. Daylight until almost 11 pm in June and July. The locals are out on lakes, in saunas, and barefoot in parks from late May through September, and visitors are very welcome to join.' },
+      { type: 'paragraph', text: 'These are the outdoor and water activities I send visitors to first.' },
+
+      { type: 'heading', text: 'SUP yoga and sauna at Sickla Strand' },
+      { type: 'paragraph', text: 'Yoga on a paddleboard on a calm Stockholm lake, followed by a sauna at the water\'s edge. It is the most "Stockholm summer" experience I can think of, and the activity I built my whole season around.' },
+      { type: 'paragraph', text: 'A class starts on shore with a short briefing, then we paddle out to an anchor point and run a 45 to 50 minute flow on the boards. Vinyasa one week, yin the next, depending on weather and energy. Boards are wide and stable and very forgiving. You do not need yoga experience, you do not need paddleboard experience, you just need to be able to swim. The class is taught in English.' },
+      { type: 'paragraph', text: 'Afterwards: sauna by the water. Most people swim between the heat and the cool-down. This is the part visitors do not expect and end up loving the most.' },
+      { type: 'subheading', text: 'How to book' },
+      { type: 'paragraph', text: 'Two ways:' },
+      { type: 'list', items: [
+        '**Drop-in classes:** [Open SUP yoga classes](/tjanster/sup-yoga-klasser) run weekly through the season (late April through September). 350 kr per class including board and sauna. 1000 kr for a 10-class pass. Booking goes through Smashing Balance.',
+        '**Private events:** For groups of 3 or more, [private SUP yoga](/tjanster/sup-yoga) is usually a better fit. From 500 kr per person, sauna included, optional add-ons like trail running and food. Email hello.yogawithcamilla@gmail.com with your dates and group size for a quote.',
+      ]},
+      { type: 'paragraph', text: 'Sickla Strand is in Nacka, 10 to 15 minutes from central Stockholm by tunnelbana (Sickla or Hammarby Sjöstad). Bring a swimsuit and a towel.' },
+
+      { type: 'heading', text: 'Wild swimming at the city badplatser' },
+      { type: 'paragraph', text: 'Stockholm has free public swimming spots within walking distance of almost every neighbourhood. The water is properly swimmable from late June through August. A few worth seeking out.' },
+      { type: 'list', items: [
+        '**Långholmen.** A small island west of Södermalm with rocky swim spots, grass for sunbathing, and a beach on the western side. The classic.',
+        '**Smedsuddsbadet, Kungsholmen.** Proper sandy beach in the city, family-friendly, kiosk nearby.',
+        '**Fredhäll.** Cliffs on the north side of Kungsholmen, less of a swimming spot, more of a sunset one. Locals bring wine.',
+        '**Hellasgården, Nacka.** A lake, a sauna, and a swimming dock in the forest, 20 minutes from town. Pay a small entry fee, stay all day.',
+        '**Sätrabadet.** A 30 minute trip south, but a proper beach with shallow water, good for families travelling with small kids.',
+      ]},
+      { type: 'paragraph', text: 'All free except Hellasgården. None require booking.' },
+
+      { type: 'heading', text: 'Kayaking the city centre' },
+      { type: 'paragraph', text: 'Paddling a kayak through central Stockholm is one of the more surreal ways to see the city. You pass under Slussen, alongside Gamla Stan, out toward Djurgården. Some routes take you into the inner archipelago in a few hours.' },
+      { type: 'paragraph', text: 'Långholmen Kajak rents single and double kayaks by the hour or day, from the southern shore of Långholmen. They also run guided tours if you want company and route planning. Kajak & Uteliv at Tantolunden is the other obvious rental spot, slightly more central. Beginners are absolutely welcome, the water inside the city is calm.' },
+
+      { type: 'heading', text: 'Trail running in Nackareservatet' },
+      { type: 'paragraph', text: 'Stockholm\'s wild forest, 15 minutes from Slussen by bus. Pine, blueberry, small lakes, and around 50 km of marked trails. You can run 5 km, you can run a half marathon. The terrain is gentle by Swedish standards, with enough rocks and roots to keep it interesting.' },
+      { type: 'paragraph', text: 'Start at Hellasgården (bus 401 from Slussen). Loop one of the lake-circling trails. Finish with a sauna and a swim. This is the runner\'s version of a perfect Stockholm day.' },
+      { type: 'paragraph', text: 'If you are travelling as a group and want a guided version, I run [private trail runs as an add-on to SUP yoga days](/tjanster/sup-yoga), usually a gentle 5 to 7 km in Nackareservatet followed by the SUP and sauna at Sickla. The two sit in the same forest, 20 minutes apart by car.' },
+
+      { type: 'heading', text: 'Cycling routes' },
+      { type: 'paragraph', text: 'Stockholm is flatter than people expect and has good cycle paths along most waterfronts. Two routes worth doing if you have a half day.' },
+      { type: 'list', items: [
+        '**Djurgården loop.** From Djurgårdsbron, around the perimeter of the island, past Rosendal and Blockhusudden, back through Skansen. About 12 km, mostly traffic-free.',
+        '**Söder waterfront.** Slussen along Söder Mälarstrand to Långholmen, across to Reimersholme, back through Hornstull. About 8 km. Swimming stops built in.',
+      ]},
+      { type: 'paragraph', text: 'Rent a city bike for the day at any rental shop, or use the public bike share if you have time to sort out a temporary account.' },
+
+      { type: 'heading', text: 'Stand-up paddleboarding (just the paddling, no yoga)' },
+      { type: 'paragraph', text: 'If yoga is not your thing but the lake is calling, you can rent a regular paddleboard for an hour or a day. Sickla SUP rents from the same dock I use for the yoga classes. Hornsberg has rentals on the north side of Kungsholmen. The inner harbour is calm enough for first-timers.' },
+      { type: 'paragraph', text: 'A small note: if you have already paddled and liked it, the yoga version is the natural next step. Most of the people in my [drop-in classes](/tjanster/sup-yoga-klasser) had paddled once or twice before deciding to try the yoga version.' },
+
+      { type: 'heading', text: 'Floating saunas and sauna culture' },
+      { type: 'paragraph', text: 'Sauna is not just a Finnish thing, and the Swedes do their own quieter version of it. A few public and floating saunas worth booking.' },
+      { type: 'list', items: [
+        '**Hammarby Bastuförening.** A floating sauna on Hammarbykanalen, bookable by the hour, with a ladder straight into the water. The most loved one in town.',
+        '**Centralbadet.** A historic art nouveau bathhouse in the city centre, full spa experience with saunas, steam, and a pool.',
+        '**Hellasgården.** Forest sauna with a swimming dock on a lake.',
+        '**Sickla Strand (with me).** Sauna at the water\'s edge, included in every SUP yoga session.',
+      ]},
+      { type: 'paragraph', text: 'The Swedish way is: heat, cold water, heat again, then sit in silence afterwards. Not performance. Not even particularly social. Just a quiet reset.' },
+
+      { type: 'heading', text: 'If you only do one thing' },
+      { type: 'paragraph', text: 'Pick the one with water and sauna in the same hour. SUP yoga at Sickla Strand is the activity I keep landing on when visitors ask. [Book a drop-in class](/tjanster/sup-yoga-klasser) or email hello.yogawithcamilla@gmail.com for a [private group experience](/tjanster/sup-yoga).' },
+
+      { type: 'faq', faqItems: [
+        { q: 'Do I need experience for SUP yoga?', a: 'No. No yoga experience, no paddleboard experience. The boards are wide and stable. You just need to be able to swim. Most people in any given class are first-timers.' },
+        { q: 'Are these activities taught in English?', a: 'SUP yoga with me is in English. Most rental and guided activities in Stockholm operate in English by default in summer because so many visitors come through. Swedish is rarely needed.' },
+        { q: 'What if the weather is bad?', a: 'For SUP yoga: if there is lightning or strong wind I will reschedule or refund. Light rain we still run, with a warm sauna afterwards. For most other outdoor activities, summer rain in Stockholm passes quickly. A light waterproof solves most of it.' },
+        { q: 'How cold is the water?', a: 'In July and August, Stockholm lake water sits around 20°C, which is comfortable for swimming. In May and September it is colder (12 to 16°C). The sauna afterwards is what makes the cooler months still enjoyable.' },
+        { q: 'What is included in a SUP yoga class?', a: 'Board, paddle, life jacket if you want one, dry bag for your phone, sauna access, and the instruction itself. You only need to bring a swimsuit and a towel.' },
+      ]},
+    ]
+  },
+  {
     slug: 'yoga-mohippa-dalarna',
     title: 'Yoga möhippa i Dalarna: hela guiden från planering till eftersnack',
     metaDescription: 'Yoga möhippa i Dalarna: privat utomhusklass i skogen, stugupplägg, vad som ingår, priser från 3 000 kr, tips för att kombinera med andra aktiviteter.',
