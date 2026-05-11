@@ -27,6 +27,239 @@ export interface BlogSection {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'mohippa-rattvik-yoga-aktiviteter',
+    title: 'Möhippa i Rättvik: yoga, Siljan och vad som faktiskt är värt en helg',
+    metaDescription: 'Möhippa i Rättvik 2026: privat yoga från 3 000 kr, bad i Siljan, Vidablick, Dalhalla, bastu och boendetips. Ärlig guide för en helg som passar hela gänget.',
+    publishDate: '2026-05-11',
+    readingTime: '8 min',
+    category: 'Events & Möhippa',
+    excerpt: 'Rättvik är en av de få orterna där en möhippa kan vara både stillsam och rolig samtidigt. Siljan på ena sidan, skogen på den andra, och nog med saker att fylla en helg utan att stressa fram dem. Här är hur jag bygger upp en helg, och vad det kostar.',
+    relatedServiceHref: '/tjanster/privata-event',
+    relatedServiceLabel: 'Boka yoga möhippa',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'yoga-mohippa-dalarna', label: 'Yoga möhippa i Dalarna, hela guiden' },
+      { slug: 'mohippa-dalarna-aktiviteter', label: 'Möhippa i Dalarna, 7 aktiviteter' },
+      { slug: 'mohippa-aktiviteter-stockholm', label: '7 möhippa-aktiviteter i Stockholm' },
+      { slug: 'honsyoga-dalarna-goat-yoga-sverige', label: 'Hönsyoga i Dalarna' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Rättvik dyker upp på listan över möhippa-orter av en anledning. Det är tillräckligt långt från Stockholm för att kännas som en helg på riktigt, men inte så långt att halva gänget tappar lusten innan ni är framme. Siljan ligger framför fötterna. Skogen tar vid på baksidan. Och till skillnad från många klassiska möhippa-städer finns det aktiviteter som passar både kompisen som inte dricker och den som gärna vill dansa till midnatt. Här är hur jag bygger upp en möhippa-helg i Rättvik runt en [privat yogaklass](/tjanster/privata-event), vad det kostar, och vad ni faktiskt bör boka.'
+      },
+      {
+        type: 'callout',
+        text: 'Snabbversion: Privat yoga möhippa i Rättvik från 3 000 kr för 60 till 90 minuter. Jag tar med all utrustning och kommer till er stuga, ert hotell eller en plats vid Siljan. Passar för 4 till 20 deltagare. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum och antal för en offert.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför Rättvik funkar för möhippa'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det är två saker. Den första är platsen. Rättvik ligger längs Siljan, en av de få sjöar i Sverige som faktiskt känns som ett hav när du står vid stranden. Det innebär bad, paddling och promenader längs vattnet utan att ni behöver köra någon annanstans. Det är också omgivet av skog, så natur och stillhet är aldrig mer än fem minuter bort.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Den andra är blandningen. De flesta möhippa-orter är antingen partyhål eller spa-orter. Rättvik är något i mitten. Dalhalla, Classic Car Week om det är juli, kulturarvsstigen, restauranger med riktigt bra mat, men också tysta morgnar vid sjön och småskaliga upplevelser som inte kräver bokning. Det gör det enkelt att bygga en helg där brudens mamma är lika nöjd som hennes 24-åriga kollega.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad ni faktiskt kan göra i Rättvik'
+      },
+      {
+        type: 'subheading',
+        text: 'Vidablick och utsikten över Siljan'
+      },
+      {
+        type: 'paragraph',
+        text: 'Vidablick är ett 28 meter högt utsiktstorn ovanför Rättvik. Femton minuters promenad uppför, och hela Siljan ligger nedanför. Bra som första aktivitet på lördagsmorgonen om gruppen redan är på plats. Gratis, kort, alla klarar det.'
+      },
+      {
+        type: 'subheading',
+        text: 'Bad i Siljan'
+      },
+      {
+        type: 'paragraph',
+        text: 'Siljans-badet i centrala Rättvik har sandstrand och grunt vatten, vilket gör det till en av få platser i Dalarna där badet faktiskt är behagligt även för den som inte gillar kallt vatten. Långbryggan sträcker sig 628 meter ut i sjön och är värd promenaden bara för känslan. Juni till augusti är vattnet runt 18 till 22 grader.'
+      },
+      {
+        type: 'subheading',
+        text: 'Dalhalla'
+      },
+      {
+        type: 'paragraph',
+        text: 'Ett kalkstensbrott omvandlat till en av Europas mest spektakulära utomhusscener. Om er möhippa-helg sammanfaller med en konsert är det värt att kolla programmet. Annars går det att gå guidad tur på dagtid. Plats för en mer kulturell stund mellan resten av helgen.'
+      },
+      {
+        type: 'subheading',
+        text: 'Classic Car Week (juli)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Om möhippan är i juli är Rättvik nästan synonymt med Classic Car Week. Bilar överallt, mat på torget, musik, folkliv. Bra om gänget är på det humöret. Lite för mycket om ni hellre vill ha en stillsam helg. Boendet bör bokas i god tid.'
+      },
+      {
+        type: 'subheading',
+        text: 'Dalahäst, kulturarvsstigen och Gammelgården'
+      },
+      {
+        type: 'paragraph',
+        text: 'För gänget som gillar lite kultur. Nittsjö keramik, Gammelgården i Rättvik och kulturarvsstigen utmed Siljan ger en mjukare aktivitet på söndagen, mellan utcheckning och bilfärden hem.'
+      },
+      {
+        type: 'heading',
+        text: 'Hur yogan passar in'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det smartaste tillfället att boka [privat yoga](/tjanster/privata-event) är lördagsmorgonen. Gänget har anlänt på fredagen, en gemensam middag har ätits, och kanske några glas vin har druckits. Lördag morgon är tempot långt och naturligt mjukt. En 60- eller 90-minuters klass utomhus, vid sjön eller på altanen i er stuga, är ett sätt att starta helgens viktigaste dag som inte kostar någon energi men ger mycket tillbaka.'
+      },
+      {
+        type: 'subheading',
+        text: 'Utomhus vid Siljan'
+      },
+      {
+        type: 'paragraph',
+        text: 'En klass på en brygga eller en grön plätt vid Siljan blir lätt en av helgens starkaste minnen. Jag tar med mattor, block och bolster, så det enda ni behöver är en plats som funkar (tillgänglighet, någorlunda plan mark, någotsånär lugnt). Bästa månaderna är juni till augusti, men maj och september funkar också i bra väder.'
+      },
+      {
+        type: 'subheading',
+        text: 'På er hyrda stuga eller hotell'
+      },
+      {
+        type: 'paragraph',
+        text: 'De flesta möhippa-grupper i Rättvik hyr en stuga eller bokar in sig på Green Hotel eller Stiftsgården. Alla tre fungerar för en yogaklass inomhus om vädret inte håller. Vardagsrum med undanflyttade möbler räcker. Jag bekräftar i förväg att utrymmet är tillräckligt för antalet deltagare.'
+      },
+      {
+        type: 'heading',
+        text: 'Priser'
+      },
+      {
+        type: 'paragraph',
+        text: 'Privat yoga möhippa prissätts utifrån längd, antal deltagare och om jag behöver ta med extra utrustning. Resan från min stuga utanför Vansbro till Rättvik tillkommer som faktiskt utlägg, oftast 600 till 900 kr beroende på exakt plats.'
+      },
+      {
+        type: 'table',
+        tableHead: ['Format', 'Längd', 'Pris', 'Bra för'],
+        tableRows: [
+          ['Klassisk möhippa-klass', '60 min', 'från 3 000 kr', 'Grupper 4 till 12, gemensam start på lördagen'],
+          ['Längre yoga möhippa', '90 min', 'från 3 800 kr', 'Större grupper eller djupare klass med avslappning'],
+          ['Yoga plus mindfulness eller andning', '90 till 120 min', 'offert', 'För grupper som vill ha ett mer komplett upplägg'],
+          ['Helgyoga, två klasser', 'Två tillfällen', 'från 5 500 kr', 'Lördag morgon plus söndag morgon innan hemfärd'],
+        ],
+      },
+      {
+        type: 'paragraph',
+        text: 'Allt ovan inkluderar utrustning (mattor, block, bolster), planering med er i förväg och själva klassen. Inga dolda kostnader. Priser exklusive moms för företagsbokningar, inklusive moms för privata.'
+      },
+      {
+        type: 'heading',
+        text: 'Hur ni planerar helgen'
+      },
+      {
+        type: 'paragraph',
+        text: 'Två upplägg jag sett funka särskilt bra för möhippa i Rättvik:'
+      },
+      {
+        type: 'subheading',
+        text: 'Klassiskt helgupplägg'
+      },
+      {
+        type: 'list',
+        items: [
+          'Fredag eftermiddag: incheckning, gemensam middag på er stuga eller på Vidablicks krog, vin',
+          'Lördag morgon: yoga 60 till 90 minuter, gärna utomhus vid Siljan',
+          'Lördag eftermiddag: bad i Siljan, promenad på långbryggan, fika på torget',
+          'Lördag kväll: bastu, middag, brudens favoritlek',
+          'Söndag: lugn frukost, kort utflykt till Gammelgården eller Vidablick, hemresa',
+        ],
+      },
+      {
+        type: 'subheading',
+        text: 'Aktivt helgupplägg'
+      },
+      {
+        type: 'list',
+        items: [
+          'Fredag kväll: incheckning, middag, tidig kväll',
+          'Lördag morgon: yoga vid Siljan',
+          'Lördag förmiddag: paddling eller stand-up paddleboard på Siljan',
+          'Lördag eftermiddag: vandring eller cykel runt sjön, lunch på Tällberg',
+          'Lördag kväll: bastu, middag, hemmagjord möhippa-lek',
+          'Söndag: lugn morgon, hemresa',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Boende i Rättvik'
+      },
+      {
+        type: 'paragraph',
+        text: 'Grupper på 4 till 8 hyr oftast en stuga via Stuga.nu eller Airbnb, och det är min rekommendation. Det ger frihet att laga frukost tillsammans, ha en gemensam vardagsrum och inte behöva tänka på frukosttider. Större grupper bokar Green Hotel eller Stiftsgården, båda i centrala Rättvik. Boka tidigt om möhippan är i juni, juli eller augusti.'
+      },
+      {
+        type: 'heading',
+        text: 'Praktisk information'
+      },
+      {
+        type: 'paragraph',
+        text: 'Rättvik ligger ungefär 2,5 timmar från Stockholm med bil, 3 timmar med tåg via Borlänge. Närmaste flygplats är Mora-Siljan eller Dala-Airport (Borlänge). Jag reser från min stuga utanför Vansbro, cirka 1,5 timme bort, och resan ingår inte i grundpriset.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Om ni vill kombinera möhippan med en annan unik aktivitet i Dalarna är [hönsyoga](/tjanster/honsyoga) ett alternativ. Privat klass på altanen, med Bruno och Rosa som tysta åskådare. Många grupper kommer förbi på vägen till eller från Rättvik.'
+      },
+      {
+        type: 'heading',
+        text: 'Vanliga frågor'
+      },
+      {
+        type: 'faq',
+        faqItems: [
+          {
+            q: 'Vad kostar en möhippa-yogaklass i Rättvik?',
+            a: 'Från 3 000 kr för en 60-minutersklass och från 3 800 kr för en 90-minutersklass, exklusive resa från min stuga utanför Vansbro (oftast 600 till 900 kr beroende på exakt plats). All utrustning ingår, mattor, block och bolster.',
+          },
+          {
+            q: 'Var håller ni klassen i Rättvik?',
+            a: 'Det vanligaste är på er hyrda stuga eller på ert hotell, med möbler undanflyttade. Utomhus vid Siljan eller i skogen är fint från slutet av maj till mitten av september i bra väder. Vi pratar igenom platsen i förväg för att undvika underlag som är för ojämnt eller för mycket folk runt omkring.',
+          },
+          {
+            q: 'Hur många kan delta?',
+            a: 'Från 4 till 20 deltagare. Mindre grupper är inga problem. För grupper över 20 personer pratar vi i förväg om upplägg, eftersom det påverkar hur klassen leds och vilken plats som funkar.',
+          },
+          {
+            q: 'Behöver gänget yoga-erfarenhet?',
+            a: 'Nej. Möhippa-klasser är designade för blandad nivå, inklusive personer som aldrig öppnat en yogamatta. Inga avancerade positioner används. Klassen anpassas efter gruppen.',
+          },
+          {
+            q: 'När bör vi boka?',
+            a: 'För möhippor i juni till augusti rekommenderar jag att boka minst två till tre månader i förväg, både för min kalender och för boendet i Rättvik. Off-season (september till maj) är ofta mer flexibelt.',
+          },
+          {
+            q: 'Kan ni kombinera yogan med andra aktiviteter?',
+            a: 'Ja. Många grupper bokar yoga som en del av en längre helg och fyller på med bad i Siljan, paddling, Dalhalla-konsert eller en vandring. Jag kan hjälpa till att tipsa om vad som finns i området, även om jag bara levererar yogan.',
+          },
+          {
+            q: 'Vad händer om det regnar?',
+            a: 'Vi flyttar klassen inomhus till er stuga, ert hotell eller en annan inomhusplats vi pratar om i förväg. Inget extra kostar för det. Beslutet tar vi 24 till 48 timmar innan klassen utifrån väderprognosen.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Boka'
+      },
+      {
+        type: 'paragraph',
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal deltagare och var ni bor i Rättvik, så återkommer jag med ett konkret förslag. Allt om upplägg, priser och format finns också på sidan om [privata event och möhippa](/tjanster/privata-event).'
+      },
+    ]
+  },
+  {
     slug: 'things-to-do-stockholm-summer',
     title: 'Things to Do in Stockholm This Summer: A Local\'s Guide for 2026',
     metaDescription: 'A local\'s guide to Stockholm summer 2026. SUP yoga and sauna from 350 kr, free swimming spots, archipelago islands, Skansen, Djurgården, and the things actually worth your time.',
@@ -212,6 +445,7 @@ export const blogPosts: BlogPost[] = [
     faqSchema: true,
     relatedPosts: [
       { slug: 'mohippa-dalarna-aktiviteter', label: 'Möhippa i Dalarna, 7 aktiviteter' },
+      { slug: 'mohippa-rattvik-yoga-aktiviteter', label: 'Möhippa i Rättvik, yoga och Siljan' },
       { slug: 'mohippa-aktiviteter-stockholm', label: '7 möhippa-aktiviteter i Stockholm' },
       { slug: 'hen-party-ideas-stockholm', label: '6 Bachelorette Party Ideas in Stockholm' },
       { slug: 'honsyoga-dalarna-goat-yoga-sverige', label: 'Hönsyoga i Dalarna' },
@@ -431,7 +665,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal, om ni redan har ett boende eller lokal, och om ni vill kombinera med andra aktiviteter. Jag svarar inom ett dygn med tillgänglighet och en konkret offert. Läs mer på tjänstesidan för [privata event](/tjanster/privata-event), eller bläddra bland fler [möhippa-aktiviteter i Dalarna](/blogg/mohippa-dalarna-aktiviteter).'
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal, om ni redan har ett boende eller lokal, och om ni vill kombinera med andra aktiviteter. Jag återkommer med tillgänglighet och en konkret offert. Läs mer på tjänstesidan för [privata event](/tjanster/privata-event), bläddra bland fler [möhippa-aktiviteter i Dalarna](/blogg/mohippa-dalarna-aktiviteter), eller läs den geo-specifika guiden till [möhippa i Rättvik](/blogg/mohippa-rattvik-yoga-aktiviteter) om ni har siktet inställt på Siljan.'
       },
     ]
   },
@@ -1516,6 +1750,7 @@ export const blogPosts: BlogPost[] = [
     relatedServiceLabel: 'Boka privat event med yoga',
     relatedPosts: [
       { slug: 'yoga-mohippa-dalarna', label: 'Yoga möhippa i Dalarna' },
+      { slug: 'mohippa-rattvik-yoga-aktiviteter', label: 'Möhippa i Rättvik, yoga och Siljan' },
       { slug: 'yoga-retreat-dalarna-vs-stockholm', label: 'Retreat Dalarna vs Stockholm' },
     ],
     content: [
