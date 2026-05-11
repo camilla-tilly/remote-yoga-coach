@@ -67,7 +67,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'quote',
-        text: 'Det var inte yogan i sig. Det var att vi alla låg på mattan och skrattade samtidigt. Jag vet fortfarande inte vad som gjorde det så speciellt.',
+        text: 'Det var inte yoga i sig. Det var att vi alla låg på mattan och skrattade samtidigt. Jag vet fortfarande inte vad som gjorde det så speciellt.',
         author: 'Brudtärna, möhippa i Rättvik',
       },
       {
@@ -100,7 +100,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'heading',
-        text: 'Planera möhippa-helgen runt yogan'
+        text: 'Planera möhippa-helgen runt yogapasset'
       },
       {
         type: 'paragraph',
@@ -240,7 +240,7 @@ export const blogPosts: BlogPost[] = [
             a: 'Helgerna maj till september bokas ofta 2 till 4 månader i förväg. Andra perioder 4 till 8 veckor. Akuta bokningar går ibland att lösa med 1 till 2 veckors framförhållning beroende på datum.',
           },
           {
-            q: 'Kan vi kombinera yogan med andra aktiviteter samma helg?',
+            q: 'Kan vi kombinera yoga med andra aktiviteter samma helg?',
             a: 'Ja. Vanliga kombinationer: yoga plus bastu, yoga plus hönsyoga (ja, med riktiga höns. Se [hönsyoga](/blogg/honsyoga-dalarna-goat-yoga-sverige)), eller yoga plus vandring. Jag hjälper gärna till att koordinera om ni vill.',
           },
           {
@@ -419,7 +419,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Om programmet redan är packat och det enda "lediga" spåret är 20 minuter mellan två workshops, skippa yogan. Det blir stressigt, ingen hinner landa, och klassen blir en till punkt att bocka av istället för en paus. Boka hellre ett 45-minutersblock mellan kaffe och lunch.'
+        text: 'Om programmet redan är packat och det enda "lediga" spåret är 20 minuter mellan två workshops, skippa yoga. Det blir stressigt, ingen hinner landa, och klassen blir en till punkt att bocka av istället för en paus. Boka hellre ett 45-minutersblock mellan kaffe och lunch.'
       },
       {
         type: 'heading',
@@ -452,7 +452,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Behöver alla deltagare vara med?',
-            a: 'Nej. Det mest uppskattade upplägget är att yogan är frivillig på morgonen och obligatorisk på eftermiddagen. Ingen ska känna sig tvingad in på en matta. Det är okej att någon väljer att sitta på stol och göra mjukare rörelser istället.',
+            a: 'Nej. Det mest uppskattade upplägget är att yoga är frivilligt på morgonen och obligatoriskt på eftermiddagen. Ingen ska känna sig tvingad in på en matta. Det är okej att någon väljer att sitta på stol och göra mjukare rörelser istället.',
           },
           {
             q: 'Funkar det för ett team där ingen gjort yoga?',
@@ -544,7 +544,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Smashing Balance driver platsen vid Sickla Strand: Elton\'s Café, bastun och SUP-uthyrningen. Jag undervisar yogan.'
+        text: 'Smashing Balance driver platsen vid Sickla Strand: Elton\'s Café, bastun och SUP-uthyrningen. Jag undervisar yoga.'
       },
       {
         type: 'heading',
@@ -786,7 +786,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Klasserna hålls i samarbete med Smashing Balance, som driver platsen, brädorna, bastun och säkerhetsutrustningen. Jag står för yogan.',
+        text: 'Klasserna hålls i samarbete med Smashing Balance, som driver platsen, brädorna, bastun och säkerhetsutrustningen. Jag står för yoga.',
       },
       {
         type: 'heading',
@@ -1248,7 +1248,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'heading',
-        text: 'Vad naturen ger yogan'
+        text: 'Vad naturen ger yoga'
       },
       {
         type: 'paragraph',
@@ -1410,7 +1410,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'En yoga retreat i Dalarna är en naturupplevelse. Yoga på altanen omgiven av granskog, fågelsång istället för trafik, och en avskildhet som gör det enkelt att stänga av. Här handlar retreaten inte bara om yogan. Det är platsen i sig som gör jobbet.'
+        text: 'En yoga retreat i Dalarna är en naturupplevelse. Yoga på altanen omgiven av granskog, fågelsång istället för trafik, och en avskildhet som gör det enkelt att stänga av. Här handlar retreaten inte bara om yoga. Det är platsen i sig som gör jobbet.'
       },
       {
         type: 'paragraph',

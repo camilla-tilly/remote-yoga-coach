@@ -91,7 +91,7 @@ const OmMig = () => {
                     Jag växte upp i Australien och bor idag i Stockholm. Så ofta jag kan åker jag upp till stugan i Dalarna, till hönsen och altanen som ibland förvandlas till yogashala.
                   </p>
                   <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85">
-                    Rörelse, natur och mindfulness har alltid hängt ihop för mig, och yogan är där allt möts.
+                    Rörelse, natur och mindfulness har alltid hängt ihop för mig, och yoga är där allt möts.
                   </p>
                   <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85">
                     Jag undervisar mest i Stockholm, i studio och privat, och uppe i Dalarna när jag är där.
