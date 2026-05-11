@@ -153,17 +153,8 @@ const BlogPostPage = () => {
         .map((s) => ({ id: slugify(s.text!), text: s.text! }))
     : [];
 
-  // Pre-compute indices for lead-element styling and H2 chapter numbering
   const firstParagraphIndex = post.content.findIndex((s) => s.type === 'paragraph');
-  const firstCalloutIndex = post.content.findIndex((s) => s.type === 'callout');
-  const h2NumberByIndex: Record<number, number> = {};
-  let h2Counter = 0;
-  post.content.forEach((s, i) => {
-    if (s.type === 'heading') {
-      h2Counter += 1;
-      h2NumberByIndex[i] = h2Counter;
-    }
-  });
+  const firstHeadingIndex = post.content.findIndex((s) => s.type === 'heading');
 
   return (
     <div className="min-h-screen bg-white relative overflow-x-hidden">
@@ -232,8 +223,7 @@ const BlogPostPage = () => {
               {post.content.map((section, i) => {
                 if (section.type === 'heading') {
                   const id = section.text ? slugify(section.text) : undefined;
-                  const number = h2NumberByIndex[i];
-                  const isFirstH2 = number === 1;
+                  const isFirstH2 = i === firstHeadingIndex;
                   return (
                     <header
                       key={i}
@@ -245,9 +235,6 @@ const BlogPostPage = () => {
                           aria-hidden="true"
                         />
                       )}
-                      <p className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mb-4">
-                        {String(number).padStart(2, '0')}
-                      </p>
                       <h2
                         id={id}
                         className="font-fraunces text-[2rem] md:text-[2.5rem] text-dalashala-earth scroll-mt-24 tracking-[-0.025em] leading-[1.08]"
@@ -285,17 +272,11 @@ const BlogPostPage = () => {
                   );
                 }
                 if (section.type === 'callout' && section.text) {
-                  const isFirstCallout = i === firstCalloutIndex;
                   return (
                     <aside
                       key={i}
                       className="bg-dalashala-creamDeep/70 border-l-[3px] border-dalashala-earth rounded-r-xl px-6 py-5 my-8"
                     >
-                      {isFirstCallout && (
-                        <p className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mb-3">
-                          I korthet
-                        </p>
-                      )}
                       <p className="font-inter text-base md:text-lg text-dalashala-earth leading-relaxed">
                         {renderInline(section.text)}
                       </p>
@@ -429,15 +410,6 @@ const BlogPostPage = () => {
             </div>
           )}
 
-          {/* Back to blog */}
-          <div className="text-center">
-            <Link
-              to="/blogg"
-              className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive hover:text-dalashala-earth font-bold transition-colors"
-            >
-              ← Fler artiklar
-            </Link>
-          </div>
         </article>
       </main>
       <Footer />
