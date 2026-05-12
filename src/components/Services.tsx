@@ -26,7 +26,7 @@ const stockholmServices: ServiceCard[] = [
   },
   {
     title: 'Utomhusretreat Stockholm',
-    description: 'En halvdag vid vattnet för att sätta intention, landa i andningen och röra sig fritt. Outdoor yoga, journaling och yin yoga på paddleboard vid Sicklasjön.',
+    description: 'Hör fåglarna, känn solen och landa i kroppen. En halvdag vid Sicklasjön med outdoor yoga, journaling och yin yoga på paddleboard.',
     href: '/tjanster/utomhusretreat-stockholm',
   },
 ];
