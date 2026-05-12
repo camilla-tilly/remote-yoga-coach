@@ -19,13 +19,15 @@ export interface BlogPost {
 }
 
 export interface BlogSection {
-  type: 'paragraph' | 'heading' | 'subheading' | 'list' | 'faq' | 'callout' | 'quote' | 'table';
+  type: 'paragraph' | 'heading' | 'subheading' | 'list' | 'faq' | 'callout' | 'cta' | 'quote' | 'table';
   text?: string;
   items?: string[];
   faqItems?: { q: string; a: string }[];
   tableHead?: string[];
   tableRows?: string[][];
   author?: string;
+  ctaHref?: string;
+  ctaLabel?: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -2328,7 +2330,12 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Exit Games i Gamla Stan kan köra upp till 44 personer samtidigt fördelade över flera rum, vilket är anledningen till att det funkar för ett helt team. Escape rooms sätter gruppen i ett läge där ni behöver kommunicera och lösa problem ihop, fast det är kul snarare än pressande. Håll rum på 4–6 personer.' },
       { type: 'heading', text: '7. Guidad promenad på Djurgården med picknick' },
       { type: 'paragraph', text: 'Det enklaste alternativet, men underskattat. Djurgården är en av Stockholms vackraste platser och den är gratis. En guidad promenad följt av en gemensam picknick på gräset är ett härligt sätt att fira sommaren utan att krångla till det. Bra backup-plan om budgeten är stram.' },
-      { type: 'paragraph', text: 'Två av aktiviteterna ovan bokar ni direkt via mig: privat SUP yoga (yogawithcamilla.se/tjanster/sup-yoga) och yoga för ert team (yogawithcamilla.se/tjanster/foretagsyoga). Mejla hello.yogawithcamilla@gmail.com med datum och antal så återkommer jag med offert.' },
+      {
+        type: 'cta',
+        text: 'Två av aktiviteterna ovan bokar ni direkt via mig, [privat SUP yoga](/tjanster/sup-yoga) och [yoga för ert team](/tjanster/foretagsyoga). Skicka datum och antal så återkommer jag med offert.',
+        ctaHref: 'mailto:hello.yogawithcamilla@gmail.com?subject=Sommaravslutning%20i%20Stockholm',
+        ctaLabel: 'Mejla för offert',
+      },
     ]
   },
   {
@@ -2362,7 +2369,12 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Exit Games in Gamla Stan can run up to 44 people at once across multiple rooms, which is why it works for a whole team rather than just a few people. You see quickly who leads under pressure, who thinks laterally, and who just reads the clues. Keep groups at 4 to 6 per room. Skip it if your team is bigger than 50.' },
       { type: 'heading', text: '7. Guided Summer Walk Through Stockholm' },
       { type: 'paragraph', text: 'The easiest option on the list but underrated. A good guide through Gamla Stan, the Södermalm cliffs, or the waterfront turns the parts of Stockholm people walk past every day into genuinely interesting stories. Cheap, flexible, and a reliable backup plan if weather shifts or budget is tight.' },
-      { type: 'paragraph', text: 'Two of the activities above are bookable directly through me: private SUP yoga (yogawithcamilla.se/tjanster/sup-yoga) and yoga for your team (yogawithcamilla.se/tjanster/foretagsyoga). Email hello.yogawithcamilla@gmail.com with your dates and group size for a quote.' },
+      {
+        type: 'cta',
+        text: 'Two of the activities above are bookable directly through me, [private SUP yoga](/tjanster/sup-yoga) and [yoga for your team](/tjanster/foretagsyoga). Send your dates and group size and I will come back with a quote.',
+        ctaHref: 'mailto:hello.yogawithcamilla@gmail.com?subject=Summer%20team%20day%20in%20Stockholm',
+        ctaLabel: 'Email for a quote',
+      },
     ]
   },
   {

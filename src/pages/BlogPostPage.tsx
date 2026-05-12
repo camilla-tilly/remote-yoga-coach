@@ -297,6 +297,29 @@ const BlogPostPage = () => {
                     </aside>
                   );
                 }
+                if (section.type === 'cta' && section.text) {
+                  const href = section.ctaHref;
+                  const isExternal = href ? /^https?:\/\//.test(href) : false;
+                  return (
+                    <aside
+                      key={i}
+                      className="bg-dalashala-meadow/30 border border-dalashala-meadow rounded-2xl px-6 md:px-8 py-6 md:py-7 my-10"
+                    >
+                      <p className="font-inter text-base md:text-lg text-dalashala-earth leading-relaxed">
+                        {renderInline(section.text)}
+                      </p>
+                      {href && section.ctaLabel && (
+                        <a
+                          href={href}
+                          {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                          className="inline-block mt-5 bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-3 px-8 rounded-full uppercase tracking-[0.22em] text-xs md:text-sm font-semibold shadow-card"
+                        >
+                          {section.ctaLabel}
+                        </a>
+                      )}
+                    </aside>
+                  );
+                }
                 if (section.type === 'quote' && section.text) {
                   return (
                     <blockquote
