@@ -211,7 +211,7 @@ const ServicePageLayout = ({
             <p className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-olive font-bold mb-8">
               {heroTag}
             </p>
-            <h1 className="font-fraunces text-5xl md:text-[4.5rem] lg:text-[5.5rem] text-dalashala-earth mb-8 leading-[0.98] tracking-[-0.03em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
+            <h1 className="font-fraunces text-4xl md:text-[4.5rem] lg:text-[5.5rem] text-dalashala-earth mb-8 leading-[0.98] tracking-[-0.03em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
               {softenAmp(heroHeading)}
             </h1>
             <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />

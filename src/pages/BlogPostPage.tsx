@@ -214,7 +214,7 @@ const BlogPostPage = () => {
             </span>
           </div>
 
-          <h1 className="font-fraunces text-5xl md:text-6xl lg:text-[4.5rem] text-dalashala-earth mb-10 leading-[1] tracking-[-0.03em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
+          <h1 className="font-fraunces text-4xl md:text-6xl lg:text-[4.5rem] text-dalashala-earth mb-10 leading-[1] tracking-[-0.03em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
             {softenAmp(post.title)}
           </h1>
 
