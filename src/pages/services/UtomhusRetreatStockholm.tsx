@@ -9,8 +9,8 @@ const relatedServices = [
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Utomhusretreat Stockholm – Vinyasa, Journaling och Yin Yoga på SUP vid Sicklasjön",
-  "description": "Halfdagsretreat utomhus i Stockholm vid Sicklasjön. Vinyasa på gräset, fri rörelse, journaling och yin yoga på paddleboard. Från 800 kr per person, grupp 4 till 8 personer, maj till september.",
+  "name": "Utomhusretreat Stockholm – Outdoor Yoga, Journaling och Yin Yoga på SUP vid Sicklasjön",
+  "description": "Privat halvdagsretreat vid Sicklasjön i Stockholm för grupper om 4 till 8 personer. Outdoor yoga, guidad journaling och yin yoga på paddleboard. Perfekt för födelsedag, teamdag eller kompisgäng. Maj till september.",
   "provider": { "@type": "LocalBusiness", "name": "Yoga with Camilla", "url": "https://yogawithcamilla.se" },
   "areaServed": ["Stockholm"],
   "url": "https://yogawithcamilla.se/tjanster/utomhusretreat-stockholm",
@@ -18,115 +18,115 @@ const structuredData = {
     "@type": "OfferCatalog",
     "name": "Utomhusretreat Stockholm priser",
     "itemListElement": [
-      { "@type": "Offer", "name": "Gruppretreat (4 till 8 pers)", "price": "800", "priceCurrency": "SEK", "description": "Från 800 kr per person. Yogamatta, SUP-bräda, te och journaling-prompts ingår." }
+      { "@type": "Offer", "name": "Privat gruppretreat (4 till 8 pers)", "price": "800", "priceCurrency": "SEK", "description": "Från 800 kr per person. Yogamatta, SUP-bräda, te och journaling-prompts ingår." }
     ]
   }
 };
 
 const UtomhusRetreatStockholm = () => (
   <ServicePageLayout
-    seoTitle="Outdoor Yoga Retreat Stockholm | Sommarretreat vid Sicklasjön | Yoga with Camilla"
-    seoDescription="Halfdagsretreat utomhus i Stockholm. Vinyasa på gräset, fri rörelse, journaling och yin yoga på paddleboard vid Sicklasjön. Från 800 kr per person, grupp 4 till 8 personer. Maj till september 2026."
+    seoTitle="Outdoor Yoga Retreat Stockholm | Privat Halvdagsretreat vid Sicklasjön | Yoga with Camilla"
+    seoDescription="Privat halvdagsretreat vid Sicklasjön i Stockholm för grupper om 4 till 8 personer. Outdoor yoga, guidad journaling och yin yoga på paddleboard. För födelsedag, teamdag eller kompisgäng. Maj till september 2026."
     canonical="https://yogawithcamilla.se/tjanster/utomhusretreat-stockholm"
     ogImage="https://yogawithcamilla.se/images/utomhusretreat-stockholm.jpg"
     breadcrumbLabel="Utomhusretreat Stockholm"
-    heroTag="Halfdagsretreat · Stockholm · Sicklasjön"
+    heroTag="Privat Gruppretreat · Stockholm · Sicklasjön"
     heroHeading="Utomhusretreat i Stockholm"
-    heroSubtitle="Vinyasa på gräset, fri rörelse, journaling och yin yoga på paddleboard vid Sicklasjön. Tre timmar för att faktiskt landa i kroppen. Från 800 kr per person."
+    heroSubtitle="Inte en after work. Inte en spa-dag. En halvdag vid Sicklasjön där er grupp faktiskt landar i sig själva. Outdoor yoga, guidad journaling och yin yoga på paddleboard."
     heroImage="/images/utomhusretreat-stockholm.jpg"
     heroImageAlt="Grupp som gör yoga utomhus vid Sicklasjön i Stockholm"
     heroImageAspect="aspect-[4/5]"
     heroImagePosition="center center"
-    introHeading="Ett retreat som börjar på land och slutar på vattnet"
+    introHeading="Det här är för er som vill ge gruppen något att minnas"
     introParagraphs={[
-      "Vi börjar på gräset med en roterande vinyasa-flow för att landa i kroppen. Sedan går vi in i fri rörelse och skakning, ett sätt att släppa det som sitter fast utan att behöva analysera det. Däremellan finns stilla stunder med journaling och guidade reflektionsfrågor. Sen tar vi en te-paus vid sjön, paddlar ut och avslutar med yin yoga liggandes på paddleboard medan vattnet rör sig under er.",
-      "Retreatet passar för ett kompisgäng som vill ha en sommardag som inte liknar alla andra dagar, en födelsedag som betyder något, eller ett lag som behöver hitta tillbaka till varandra. Ingen yoga- eller SUP-erfarenhet krävs.",
-      "Vi håller till vid Sickla Strand i Nacka, cirka tio till femton minuter från city. Alla grupper är privata, fyra till åtta personer, och varje retreat anpassas efter er grupp."
+      "Du organiserar det här för att du vet att gruppen behöver något annat. Inte middag på restaurang, inte ett escape room. Något som faktiskt ger tillbaka. Det här är ett privat halvdagsretreat för fyra till åtta personer som vill ta en dag på allvar, utan att det behöver kännas pretentiöst eller svårt.",
+      "Vi börjar på land med outdoor yoga och fri rörelse, fötterna i marken och fåglarna i bakgrunden. Sedan sätter vi oss ner med journaling och guidade reflektionsfrågor, var och en för sig men tillsammans i rummet. Vi avslutar med te vid sjön, paddlar ut och kör yin yoga liggandes på paddleboard med vattnet rörandes under er. Tre timmar som faktiskt gör skillnad.",
+      "Funkar för en födelsedag som ska kännas som något. För ett team som vill ha en teamdag som inte liknar alla andra teamdagar. För ett kompisgäng som äntligen bokar det ni pratat om. Ingen yoga- eller SUP-erfarenhet krävs."
     ]}
     highlights={[
       {
-        heading: "Vinyasa på gräset",
-        text: "Vi börjar på land med en mjuk vinyasa-flow för att landa i kroppen och släppa det ni kom med. Mattor och plats tillhandahålls."
+        heading: "Outdoor yoga och fri rörelse",
+        text: "Vi värmer upp kroppen och släpper taget om veckan ni kom ifrån. Mjuk vinyasa-flow följt av fri rörelse, fötterna i marken, fåglarna i bakgrunden. Mattor ingår."
       },
       {
-        heading: "Fri rörelse och skakning",
-        text: "Inte dans, inte koreografi. Bara kroppen som får röra sig fritt och släppa lagrad spänning. Ovant i fem sekunder, befriande resten av tiden."
-      },
-      {
-        heading: "Journaling och reflektion",
-        text: "Guidade frågor att skriva till. Inget rätt eller fel, ingen som läser. Bara ni och papperet."
+        heading: "Guidad journaling",
+        text: "Guidade frågor att skriva till, individuellt men tillsammans i rummet. Inget presteras, inget redovisas. Det är tid för var och en att faktiskt landa."
       },
       {
         heading: "Te-paus vid sjön",
-        text: "En stund att andas, titta ut över vattnet och låta kroppen registrera att ni faktiskt är här."
+        text: "Innan vi paddlar ut tar vi ett andetag vid vattnet. Lite tystnad, lite prat. En naturlig övergång som kroppen behöver."
       },
       {
         heading: "Yin yoga på paddleboard",
-        text: "Vi paddlar ut till en lugn plats på Sicklasjön och avslutar med yin yoga liggandes på brädorna. Vattnet gungar lätt under er. Brädor, paddlar och flytvästar ingår."
+        text: "Vi paddlar ut till en lugn del av Sicklasjön och lägger oss ner på brädorna. Vattnet rör sig sakta under er. Det är svårt att inte landa helt."
+      },
+      {
+        heading: "Bara er grupp",
+        text: "Ni delar inte upplevelsen med någon annan. Det här är er dag, era samtal, ert tempo. Fyra till åtta personer, privat bokning."
       },
       {
         heading: "Allt ingår",
-        text: "Yogamatta, SUP-bräda, paddel, flytväst, te och journaling-prompts. Ni tar med er bara det ni vill bära med er hem."
+        text: "Yogamatta, SUP-bräda, paddel, flytväst, te och journaling-prompts. Ni tar med er bara det ni vill bära hem."
       }
     ]}
     pricing={[
-      { label: "Gruppretreat (4 till 8 pers)", price: "från 800 kr/pers", note: "Yogamatta, SUP-bräda, te och journaling-prompts ingår" },
-      { label: "Företag och team", price: "kontakta för offert", note: "Skräddarsytt för er grupp och era behov" }
+      { label: "Privat gruppretreat (4 till 8 pers)", price: "från 800 kr/pers", note: "Yogamatta, SUP-bräda, te och journaling-prompts ingår" },
+      { label: "Företag och team", price: "kontakta för offert", note: "Skräddarsytt upplägg efter er grupp och era behov" }
     ]}
     detailsHeading="Praktisk information"
     detailsParagraphs={[
       "Plats: Sickla Strand, Nacka. Cirka tio till femton minuter från Stockholms city. T-bana Sickla eller Hammarby Sjöstad. Parkering finns på plats.",
-      "Säsong: maj till september 2026. Utomhusretreat förutsätter rimligt väder. Vid regn eller stark vind hittar vi en lösning tillsammans.",
+      "Säsong: maj till september 2026. Utomhusretreat förutsätter rimligt väder. Vid kraftigt regn eller stark vind hittar vi en lösning tillsammans.",
       "Längd: cirka tre timmar totalt, inklusive paddling ut och tillbaka.",
       "Vad ingår: yogamatta, SUP-bräda, paddel, flytväst, te och guidade journaling-prompts.",
-      "Ta med: bekväma kläder i lager, badkläder under (om ni vill ha möjlighet att hoppa i), handduk och vattenflaska.",
+      "Ta med: bekväma kläder i lager, badkläder under (om ni vill kunna hoppa i), handduk och vattenflaska.",
       "Gruppstorlek: minst fyra och max åtta personer. Alla bokningar är privata.",
       "Språk: svenska eller engelska, ni väljer.",
-      "Bokning: kontakta mig direkt via formuläret nedan eller på hello.yogawithcamilla@gmail.com."
+      "Bokning: hör av dig direkt via knappen nedan eller på hello.yogawithcamilla@gmail.com."
     ]}
-    ctaHeading="Boka ett retreat för er grupp"
-    ctaText="Välj ett datum som passar och hör av dig. Jag anpassar retreatet efter er grupp, ert tempo och vad ni vill ha ut av dagen. Grupper om fyra till åtta personer, från 800 kr per person."
+    ctaHeading="Berätta om er grupp"
+    ctaText="Hör av dig och berätta lite om vilka ni är och vad ni letar efter. Jag anpassar dagen efter er och återkommer med tillgängliga datum. Grupper om fyra till åtta personer, maj till september."
     bookingHref="mailto:hello.yogawithcamilla@gmail.com?subject=Utomhusretreat%20Stockholm"
     bookingLabel="Skicka förfrågan →"
     structuredData={structuredData}
     relatedServices={relatedServices}
     faq={[
       {
-        question: "För vilka passar det här?",
-        answer: "För kompisgäng som vill ha en sommardag som faktiskt betyder något. Födelsedag, möhippa, en lördag ni har pratat om att boka men aldrig bokat. Passar också för team och arbetslag som vill ha något mer meningsfullt än en afterwork."
+        question: "Vem bokar det här?",
+        answer: "Vanligtvis någon som organiserar för de andra. En födelsedag för en kompis som inte vill ha en vanlig fest. En teamledare som vill ha ett alternativ till after work som faktiskt ger något. Ett kompisgäng som pratat om att göra något sådant här och äntligen gör det. Det de har gemensamt är att de vill ge gruppen en dag som faktiskt betyder något."
+      },
+      {
+        question: "Det låter lite alternativt. Är det det?",
+        answer: "Ja, lite. Det är inte ett vanligt yogapass och inte ett vanligt teambuilding-event. Det är ett privat halvdagsretreat vid vattnet som kombinerar rörelse, reflektion och natur. Om ni är nyfikna på det är ni förmodligen rätt grupp."
       },
       {
         question: "Behöver man ha yogaerfarenhet?",
-        answer: "Nej. Varken yoga- eller SUP-erfarenhet krävs. Allt förklaras på plats och anpassas efter gruppen."
+        answer: "Nej. Varken yoga- eller SUP-erfarenhet krävs. Allt förklaras på plats och anpassas efter gruppen. Brädorna är breda och stabila."
       },
       {
         question: "Vad händer om det regnar?",
-        answer: "Vid lätt regn kör vi ändå, det är del av sommarupplevelsen. Vid kraftigt regn eller stark vind som påverkar säkerheten på vattnet hittar vi en lösning tillsammans, antingen byter vi datum eller anpassar programmet."
+        answer: "Vid lätt regn kör vi ändå, det är del av sommarupplevelsen. Vid kraftigt regn eller stark vind som påverkar säkerheten på vattnet löser vi det tillsammans, antingen byter vi datum eller anpassar programmet."
       },
       {
         question: "Vad ingår i priset?",
-        answer: "Yogamatta, SUP-bräda, paddel, flytväst, te och guidade journaling-prompts. Ni tar med er bara det ni vill bära med er hem."
+        answer: "Yogamatta, SUP-bräda, paddel, flytväst, te och guidade journaling-prompts. Ni tar med er bara det ni vill bära hem."
       },
       {
         question: "Hur stor kan gruppen vara?",
-        answer: "Minst fyra och max åtta personer. Alla retreat är privata, ni delar inte grupp med andra."
-      },
-      {
-        question: "Vad kostar det?",
-        answer: "Från 800 kr per person. Exakt pris beror på gruppstorlek och eventuella tillägg. Hör av er så räknar vi ut vad det blir för er."
+        answer: "Minst fyra och max åtta personer. Alla retreat är privata, ni delar inte upplevelsen med någon annan grupp."
       },
       {
         question: "Passar det för ett företagsevent?",
-        answer: "Ja. Retreatet fungerar bra som sommaravslutning, kickoff eller teamdag. Kontakta mig för offert, jag anpassar upplägget efter er grupp och era önskemål."
+        answer: "Ja. Det funkar bra som sommaravslutning, kickoff eller teamdag, men det är inte ett vanligt teambuilding-upplägg. Det är en halvdag där folk faktiskt landar i sig själva, och det brukar göra mer för en grupp än de flesta aktiviteter som marknadsförs som teambuilding."
       },
       {
         question: "Hur bokar vi?",
-        answer: "Skicka ett mejl till hello.yogawithcamilla@gmail.com eller klicka på knappen ovan. Berätta hur många ni är och vilket datum eller vilken period ni tittar på, så återkommer jag med tillgängliga tider och bekräftelse."
+        answer: "Skicka ett mejl till hello.yogawithcamilla@gmail.com eller klicka på knappen ovan. Berätta hur många ni är och vilken period ni tittar på, så återkommer jag med tillgängliga datum."
       }
     ]}
     englishKeywords={{
-      heading: "Outdoor Yoga Retreat Stockholm — Half-Day at Sicklasjön",
-      text: "A half-day outdoor yoga retreat in Stockholm, Sweden. Vinyasa flow on grass, free movement and somatic shaking, guided journaling, a tea break by the lake, then yin yoga lying on stand-up paddleboards on Sicklasjön. All included: yoga mats, SUP boards and paddles, life vests, tea and journaling prompts. Private groups of 4–8 people, from 800 SEK per person. No yoga or SUP experience required. Perfect for a birthday, hen party, bachelorette, team day or summer staycation in Stockholm. Season: May to September 2026. Held in English or Swedish. Located at Sickla Strand, Nacka, 10–15 minutes from central Stockholm. Contact to book: hello.yogawithcamilla@gmail.com."
+      heading: "Outdoor Yoga Retreat Stockholm — Private Half-Day at Sicklasjön",
+      text: "A private half-day outdoor retreat in Stockholm, Sweden, for groups of 4–8 people. Outdoor yoga and free movement, guided journaling, a tea break by the lake, then yin yoga on stand-up paddleboards on Sicklasjön. Everything included: yoga mats, SUP boards and paddles, life vests, tea and journaling prompts. From 800 SEK per person. No yoga or SUP experience needed. Perfect for a birthday, hen party, team day or group of friends who want a day that actually means something. Season: May to September 2026. Held in English or Swedish. Located at Sickla Strand, Nacka, 10–15 minutes from central Stockholm. Contact to book: hello.yogawithcamilla@gmail.com."
     }}
   />
 );
