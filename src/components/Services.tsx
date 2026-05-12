@@ -15,11 +15,6 @@ const stockholmServices: ServiceCard[] = [
     href: '/tjanster/foretagsyoga',
   },
   {
-    title: 'Privata Event & Yoga Retreat',
-    description: 'Möhippa, födelsedag, bröllopsyoga eller kompisgäng i Stockholm. Privat klass, ni väljer platsen.',
-    href: '/tjanster/privata-event',
-  },
-  {
     title: 'Privat SUP Yoga & Bastu',
     description: 'Yoga på paddleboard plus bastu vid Sickla Strand. För möhippa, team eller födelsedag.',
     href: '/tjanster/sup-yoga',
