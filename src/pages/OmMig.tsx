@@ -33,7 +33,7 @@ const structuredData = {
 const credentials = [
   {
     title: "500 timmars yoga-certifiering",
-    detail: "200h YTT på Rishikul Yogshala, Rishikesh, Indien\n300h YTT i Advanced Vinyasa Flow på Sampoorna Yoga Shala, Goa"
+    detail: "200h YTT på Rishikul Yogshala, Rishikesh, Indien\n300h YTT i Advanced Vinyasa Flow på Sampoorna Yoga Shala, Goa, Indien"
   },
   {
     title: "Group fitness-instruktör",
@@ -229,7 +229,7 @@ const OmMig = () => {
                 {noWidow("I teach at WD Wellness in Vansbro, Hot Yoga Stockholm, Yogarummet Björkhagen, Brahma Yoga in Nacka, and as the SUP yoga teacher for Smashing Balance. I also take bookings for private lessons, corporate yoga, bachelorette yoga, wedding yoga, and yoga retreats across Stockholm and Dalarna.")}
               </p>
               <p>
-                {noWidow("If you're a tourist looking for a yoga class in Dalarna, an expat in Stockholm searching for English-language yoga, or you simply found me on YouTube, you're welcome to get in touch.")}
+                {noWidow("Whatever brought you here, you're welcome to get in touch.")}
               </p>
             </div>
           </div>
