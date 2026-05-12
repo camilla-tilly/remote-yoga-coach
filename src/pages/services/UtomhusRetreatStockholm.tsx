@@ -61,14 +61,6 @@ const UtomhusRetreatStockholm = () => (
         heading: "Yin yoga på paddleboard",
         text: "Vi paddlar ut till en lugn del av Sicklasjön och lägger oss ner på brädorna. Vattnet rör sig sakta under er. Det är svårt att inte landa helt."
       },
-      {
-        heading: "Bara er grupp",
-        text: "Ni delar inte upplevelsen med någon annan. Det här är er dag, era samtal, ert tempo. Fyra till åtta personer, privat bokning."
-      },
-      {
-        heading: "Allt ingår",
-        text: "Yogamatta, SUP-bräda, paddel, flytväst, te och journaling-prompts. Ni tar med er bara det ni vill bära hem."
-      }
     ]}
     pricing={[
       { label: "Privat gruppretreat (4 till 10 pers)", price: "från 800 kr/pers", note: "Yogamatta, SUP-bräda, te och journaling-prompts ingår" },
