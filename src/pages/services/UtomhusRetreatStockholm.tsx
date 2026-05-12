@@ -35,7 +35,7 @@ const UtomhusRetreatStockholm = () => (
     heroSubtitle="Inte en after work. Inte en spa-dag. En halvdag vid Sicklasjön där er grupp faktiskt landar i sig själva. Outdoor yoga, guidad journaling och yin yoga på paddleboard."
     heroImage="/images/utomhusretreat-stockholm.jpg"
     heroImageAlt="Grupp som gör yoga utomhus vid Sicklasjön i Stockholm"
-    heroImageAspect="aspect-[4/5]"
+    heroImageAspect="aspect-[3/2]"
     heroImagePosition="center center"
     introHeading="Det här är för er som vill ge gruppen något att minnas"
     introParagraphs={[
