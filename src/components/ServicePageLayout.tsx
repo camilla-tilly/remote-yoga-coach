@@ -65,6 +65,7 @@ interface ServicePageProps {
   introHeading: string;
   introParagraphs: string[];
   highlights?: ServiceHighlight[];
+  highlightsVariant?: 'grid' | 'timeline';
   audience?: AudienceSection;
   offerings?: OfferingsSection;
   pricing?: PricingTier[];
@@ -102,6 +103,7 @@ const ServicePageLayout = ({
   introHeading,
   introParagraphs,
   highlights,
+  highlightsVariant = 'grid',
   audience,
   offerings,
   pricing,
@@ -211,7 +213,7 @@ const ServicePageLayout = ({
             <p className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-olive font-bold mb-8">
               {heroTag}
             </p>
-            <h1 className="font-fraunces text-4xl md:text-[4.5rem] lg:text-[5.5rem] text-dalashala-earth mb-8 leading-[0.98] tracking-[-0.03em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
+            <h1 className="font-fraunces text-5xl md:text-[4.5rem] lg:text-[5.5rem] text-dalashala-earth mb-8 leading-[0.98] tracking-[-0.03em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
               {softenAmp(heroHeading)}
             </h1>
             <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
@@ -295,8 +297,8 @@ const ServicePageLayout = ({
             </div>
           </section>
 
-          {/* Highlights Grid (legacy single-section) */}
-          {highlights && highlights.length > 0 && (
+          {/* Highlights */}
+          {highlights && highlights.length > 0 && highlightsVariant === 'grid' && (
             <section className="px-4 mb-16">
               <div className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
                 {highlights.map((h, i) => (
@@ -311,6 +313,37 @@ const ServicePageLayout = ({
                     <p className="font-inter font-normal text-base text-dalashala-earth leading-relaxed">
                       {h.text}
                     </p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Highlights — Timeline / schedule variant */}
+          {highlights && highlights.length > 0 && highlightsVariant === 'timeline' && (
+            <section className="px-4 mb-16">
+              <div className="max-w-xl mx-auto">
+                {highlights.map((h, i) => (
+                  <div key={i} className="relative flex gap-6 pb-10 last:pb-0">
+                    {/* Line */}
+                    {i < highlights.length - 1 && (
+                      <span className="absolute left-[19px] top-10 bottom-0 w-px bg-dalashala-meadow/60" aria-hidden="true" />
+                    )}
+                    {/* Step number */}
+                    <div className="flex-shrink-0 w-10 h-10 rounded-full border border-dalashala-meadow bg-white flex items-center justify-center">
+                      <span className="font-inter text-xs font-semibold text-dalashala-olive tracking-wide">
+                        {i + 1}
+                      </span>
+                    </div>
+                    {/* Content */}
+                    <div className="pt-1.5 pb-2">
+                      <h3 className="font-cormorant font-semibold text-2xl md:text-[1.625rem] text-dalashala-earth mb-2 tracking-tight leading-snug">
+                        {softenAmp(h.heading)}
+                      </h3>
+                      <p className="font-inter font-normal text-base text-dalashala-earth/85 leading-relaxed">
+                        {h.text}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </div>

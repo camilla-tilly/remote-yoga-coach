@@ -43,6 +43,7 @@ const UtomhusRetreatStockholm = () => (
       "Vi börjar på land med outdoor yoga och fri rörelse, fötterna i marken och fåglarna i bakgrunden. Sedan sätter vi oss ner med journaling och guidade reflektionsfrågor, var och en för sig men tillsammans i rummet. Vi avslutar med te vid sjön, paddlar ut och kör yin yoga liggandes på paddleboard med vattnet rörandes under er. Tre timmar som faktiskt gör skillnad.",
       "Funkar för en födelsedag som ska kännas som något. För ett team som vill ha en teamdag som inte liknar alla andra teamdagar. För ett kompisgäng som äntligen bokar det ni pratat om. Ingen yoga- eller SUP-erfarenhet krävs."
     ]}
+    highlightsVariant="timeline"
     highlights={[
       {
         heading: "Outdoor yoga och fri rörelse",
