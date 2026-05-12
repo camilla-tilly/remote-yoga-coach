@@ -26,7 +26,7 @@ const stockholmServices: ServiceCard[] = [
   },
   {
     title: 'Utomhusretreat Stockholm',
-    description: 'Halfdagsretreat vid Sicklasjön. Vinyasa på gräset, fri rörelse, journaling och yin yoga på paddleboard. Från 800 kr per person.',
+    description: 'En halvdag vid vattnet för att sätta intention, landa i andningen och röra sig fritt. Vinyasa på gräset, journaling och yin yoga på paddleboard vid Sicklasjön.',
     href: '/tjanster/utomhusretreat-stockholm',
   },
 ];
