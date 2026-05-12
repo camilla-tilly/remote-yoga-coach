@@ -29,6 +29,11 @@ const stockholmServices: ServiceCard[] = [
     description: 'Öppna vinyasa- och yin-klasser på Sickla sjö varje vecka under säsong. Bastu ingår. Bokas via Smashing Balance.',
     href: '/tjanster/sup-yoga-klasser',
   },
+  {
+    title: 'Utomhusretreat Stockholm',
+    description: 'Halfdagsretreat vid Sicklasjön. Vinyasa på gräset, fri rörelse, journaling och yin yoga på paddleboard. Från 800 kr per person.',
+    href: '/tjanster/utomhusretreat-stockholm',
+  },
 ];
 
 const dalarnaServices: ServiceCard[] = [
