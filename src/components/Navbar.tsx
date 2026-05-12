@@ -18,6 +18,7 @@ const locationGroups = [
       { name: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
       { name: 'SUP Yoga (privat event)', href: '/tjanster/sup-yoga' },
       { name: 'SUP Yoga Klasser', href: '/tjanster/sup-yoga-klasser' },
+      { name: 'Utomhusretreat Stockholm', href: '/tjanster/utomhusretreat-stockholm' },
     ]
   },
   {
