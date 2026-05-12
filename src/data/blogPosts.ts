@@ -440,7 +440,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'yoga-mohippa-dalarna',
-    title: 'Yoga möhippa i Dalarna: hela guiden från planering till eftersnack',
+    title: 'Yoga möhippa i Dalarna: hela guiden',
     metaDescription: 'Yoga möhippa i Dalarna: privat utomhusklass i skogen, stugupplägg, vad som ingår, priser från 3 000 kr, tips för att kombinera med andra aktiviteter.',
     publishDate: '2026-03-01',
     readingTime: '9 min',
