@@ -75,6 +75,9 @@ const UtomhusRetreatStockholm = () => (
       "Ta med: bekväma kläder i lager, badkläder under (om ni vill kunna hoppa i), handduk och vattenflaska.",
       "Gruppstorlek: minst fyra och max tio personer. Alla bokningar är privata.",
       "Språk: svenska eller engelska, ni väljer.",
+      "Avbokning: vid avbokning senast 48 timmar innan får ni 50 procent tillbaka eller tillgodo i 30 dagar. Samma villkor gäller om vädret gör att vi måste flytta dagen.",
+      "Säkerhet och eget ansvar: simkunnighet är ett krav för deltagande. Deltagande sker helt på egen risk. Yoga with Camilla och Smashing Balance ansvarar inte för personskada, sjukdom eller förlust av personliga tillhörigheter i samband med deltagande.",
+      "Flytväst ingår och ska vara tillgänglig under hela SUP-passet. Om den används eller inte är deltagarens eget ansvar. Bräda, paddel och flytväst tillhandahålls av Smashing Balance. Deltagaren ansvarar för tilldelad utrustning under passens gång. Vid förlust av eller skada på paddel debiteras deltagaren återanskaffningskostnaden (500 kr).",
       "Bokning: hör av dig direkt via knappen nedan eller på hello.yogawithcamilla@gmail.com."
     ]}
     ctaHeading="Berätta om er grupp"
@@ -111,6 +114,10 @@ const UtomhusRetreatStockholm = () => (
       {
         question: "Passar det för ett företagsevent?",
         answer: "Ja. Det funkar bra som sommaravslutning, kickoff eller teamdag, men det är inte ett vanligt teambuilding-upplägg. Det är en halvdag där folk faktiskt landar i sig själva, och det brukar göra mer för en grupp än de flesta aktiviteter som marknadsförs som teambuilding."
+      },
+      {
+        question: "Vad gäller vid avbokning eller dåligt väder?",
+        answer: "Vid avbokning senast 48 timmar innan får ni 50 procent tillbaka eller tillgodo i 30 dagar. Samma villkor gäller om vädret gör att vi måste flytta dagen (hård vind, åska eller för kallt vatten). Ni blir kontaktade senast kvällen innan om vi behöver flytta."
       },
       {
         question: "Hur bokar vi?",
