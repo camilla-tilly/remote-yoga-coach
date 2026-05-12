@@ -59,7 +59,7 @@ const UtomhusRetreatStockholm = () => (
       },
       {
         heading: "Yin yoga på paddleboard",
-        text: "Vi paddlar ut till en lugn del av Sicklasjön och avslutar med yin yoga på brädorna. Här saktar vi ner allting ordentligt. Långa, hållna positioner med vattnet som rör sig sakta under er."
+        text: "Vi paddlar ut till en lugn del av Sicklasjön och avslutar med yin yoga på brädorna, där långa hållna positioner och vattnet som rör sig sakta under er låter kroppen och sinnet mjukna ner på djupet."
       },
     ]}
     pricing={[
