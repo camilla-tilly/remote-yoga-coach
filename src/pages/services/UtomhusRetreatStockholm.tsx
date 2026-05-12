@@ -47,7 +47,7 @@ const UtomhusRetreatStockholm = () => (
     highlights={[
       {
         heading: "Outdoor yoga och fri rörelse",
-        text: "Vi värmer upp kroppen och släpper taget om veckan ni kom ifrån. Mjuk vinyasa-flow följt av fri rörelse, fötterna i marken, fåglarna i bakgrunden. Mattor ingår."
+        text: "Vi värmer upp kroppen och släpper taget om veckan ni kom ifrån. Mjuk vinyasa-flow följt av fri rörelse, fötterna i marken, fåglarna i bakgrunden."
       },
       {
         heading: "Guidad journaling",
