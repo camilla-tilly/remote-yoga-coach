@@ -45,82 +45,14 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white relative overflow-x-hidden">
       <SEO
-        title="Yoga med Camilla – Privat Yoga i Stockholm & Dalarna"
-        description="Privat yoga i Stockholm och Dalarna: möhippa, företagsyoga, SUP yoga och retreats. Bröllopsyoga för bröllopshelger i Dalarna. Certifierad yogalärare med yogaaltan i skogen i Dalarna."
+        title="Yoga med Camilla – Företagsyoga i Stockholm"
+        description="Företagsyoga i Stockholm: konferenser, kickoffs, AWs, sommaravslutningar och teambuilding. Certifierad yogalärare, klassen hålls hos er. Boka via mejl."
         canonical="https://yogawithcamilla.se"
         structuredData={homepageStructuredData}
       />
       <Navbar />
       <main>
         <Hero />
-
-        {/* Photo strip: horizontal snap-scroll on mobile (big, immersive),
-            3-up grid on md+ (balanced triptych). */}
-        <section className="relative bg-dalashala-creamDeep py-14 md:py-20">
-          {/* Mobile: horizontal scroller — each photo fills ~80vw */}
-          <div className="md:hidden">
-            <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pl-4 pr-4 pb-2 scrollbar-none" style={{ scrollbarWidth: 'none' }}>
-              <div className="shrink-0 w-[82vw] aspect-[4/5] overflow-hidden rounded-2xl snap-center shadow-soft">
-                <img
-                  src="/images/IMG_8340.JPG"
-                  alt="Yoga på altanen i Dalarna"
-                  className="w-full h-full object-cover object-[50%_40%]"
-                  loading="lazy"
-                />
-              </div>
-              <div className="shrink-0 w-[82vw] aspect-[4/5] overflow-hidden rounded-2xl snap-center shadow-soft">
-                <img
-                  src="/images/IMG_4442.jpeg"
-                  alt="Utomhusyoga i Dalarna"
-                  className="w-full h-full object-cover object-center"
-                  loading="lazy"
-                />
-              </div>
-              <div className="shrink-0 w-[82vw] aspect-[4/5] overflow-hidden rounded-2xl snap-center shadow-soft">
-                <img
-                  src="/images/IMG_3367.jpeg"
-                  alt="Hönsyoga, yoga med höns på altanen"
-                  className="w-full h-full object-cover object-[50%_80%]"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            {/* Small swipe hint */}
-            <p className="mt-5 text-center font-inter text-[10px] uppercase tracking-[0.32em] text-dalashala-olive/80 font-semibold">
-              Swipe →
-            </p>
-          </div>
-
-          {/* md+: balanced triptych */}
-          <div className="hidden md:block max-w-6xl mx-auto px-6 md:px-8">
-            <div className="grid grid-cols-3 gap-5">
-              <div className="aspect-[4/5] overflow-hidden rounded-xl group">
-                <img
-                  src="/images/IMG_8340.JPG"
-                  alt="Yoga på altanen i Dalarna"
-                  className="w-full h-full object-cover object-[50%_40%] transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-              <div className="aspect-[4/5] overflow-hidden rounded-xl group">
-                <img
-                  src="/images/IMG_4442.jpeg"
-                  alt="Utomhusyoga i Dalarna"
-                  className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-              <div className="aspect-[4/5] overflow-hidden rounded-xl group">
-                <img
-                  src="/images/IMG_3367.jpeg"
-                  alt="Hönsyoga, yoga med höns på altanen"
-                  className="w-full h-full object-cover object-[50%_80%] transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
 
         <WhyYogaWithCamilla />
 

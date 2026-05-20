@@ -18,34 +18,12 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative w-full bg-white overflow-hidden"
+      className="relative w-full bg-dalashala-creamDeep overflow-hidden"
     >
-      {/* Aspect-locked on md+ so the illustration fills edge-to-edge with no crop
-          or side gutters. On mobile, falls back to a tall hero (80vh) with the
-          image cover-filling behind the headline. */}
-      <div className="relative w-full min-h-[80vh] md:min-h-0 md:aspect-[16/9]">
-        {/* Scandi watercolor illustration */}
-        <img
-          src="/hero.jpg"
-          alt=""
-          aria-hidden="true"
-          loading="eager"
-          fetchPriority="high"
-          decoding="async"
-          className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none"
-        />
-
-        {/* Soft cream wash to keep the headline crisp over the illustration */}
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 pointer-events-none"
-          style={{ background: 'linear-gradient(180deg, rgba(255,253,247,0.35) 0%, rgba(255,253,247,0.55) 50%, rgba(220,228,214,0.45) 100%)' }}
-        />
-
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center w-full max-w-5xl mx-auto px-4 sm:px-6 pt-16 md:pt-0">
-        {/* Eyebrow — tracked caps (kept — Camilla likes this treatment) */}
+      <div className="relative w-full min-h-[70vh] md:min-h-0 md:py-32 flex items-center">
+        <div className="relative z-10 flex flex-col items-center justify-center text-center w-full max-w-5xl mx-auto px-4 sm:px-6 pt-16 md:pt-0">
         <p className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-olive font-semibold mb-12 opacity-0 animate-fade-in" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
-          Stockholm &nbsp;·&nbsp; Dalarna
+          Stockholm
         </p>
 
         <p
@@ -56,15 +34,14 @@ const Hero = () => {
           Yoga with<br className="md:hidden" /> Camilla
         </p>
 
-        {/* Thin pine line */}
         <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/70 mb-10 rounded-full opacity-0 animate-fade-in" style={{ animationDelay: '500ms', animationFillMode: 'forwards' }} aria-hidden="true" />
 
         <h1
           ref={headingRef}
           className="font-inter text-xl md:text-[1.5rem] text-dalashala-earth/90 mb-16 md:mb-20 opacity-0 -translate-y-3 transition-all duration-1000 ease-out delay-300 font-normal leading-[1.55] max-w-2xl mx-auto"
         >
-          Privat yoga i Stockholm och Dalarna.<br />
-          På en SUP på Sickla Sjö, på skogsaltanen i Dalarna, eller där du är.
+          Företagsyoga i Stockholm.<br />
+          Konferenser, kickoffs, AWs och teambuilding, hos er.
         </h1>
 
         <div
@@ -72,16 +49,16 @@ const Hero = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 -translate-y-3 transition-all duration-1000 ease-out delay-500"
         >
           <a
-            href="#stockholm"
+            href="#services"
             className="inline-block bg-dalashala-earth text-white px-11 py-4 md:px-14 md:py-[1.125rem] text-sm uppercase tracking-[0.22em] rounded-full font-inter font-semibold hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap shadow-card"
           >
-            Stockholm
+            Se tjänster
           </a>
           <a
-            href="#dalarna"
+            href="#contact"
             className="inline-block border border-dalashala-earth bg-transparent text-dalashala-earth px-11 py-4 md:px-14 md:py-[1.125rem] text-sm uppercase tracking-[0.22em] rounded-full font-inter font-semibold hover:bg-dalashala-earth hover:text-white hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap"
           >
-            Dalarna
+            Kontakt
           </a>
         </div>
         </div>

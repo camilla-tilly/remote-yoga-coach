@@ -9,7 +9,7 @@ const structuredData = {
   "@type": "Person",
   "name": "Camilla",
   "jobTitle": "Certifierad Yogalärare",
-  "description": "Australiensisk yogalärare baserad i Stockholm med undervisar även i Dalarna. 500-timmar certifierad i vinyasa yoga.",
+  "description": "Australiensisk yogalärare baserad i Stockholm. 500-timmar certifierad i vinyasa yoga.",
   "url": "https://yogawithcamilla.se/om-mig",
   "sameAs": [
     "https://www.youtube.com/@camilla_yoga",
@@ -18,7 +18,7 @@ const structuredData = {
   ],
   "address": {
     "@type": "PostalAddress",
-    "addressRegion": "Dalarna",
+    "addressLocality": "Stockholm",
     "addressCountry": "SE"
   },
   "worksFor": [
@@ -53,8 +53,8 @@ const OmMig = () => {
   return (
     <>
       <SEO
-        title="Om Camilla | Yogalärare i Dalarna & Stockholm | Yoga with Camilla"
-        description="Australiensisk yogalärare baserad i Stockholm med undervisar även i Dalarna. 500-timmar certifierad. Yoga som självacceptans, inte självförbättring."
+        title="Om Camilla | Yogalärare i Stockholm | Yoga with Camilla"
+        description="Australiensisk yogalärare baserad i Stockholm. 500-timmar certifierad. Yoga som självacceptans, inte självförbättring."
         canonical="https://yogawithcamilla.se/om-mig"
         structuredData={structuredData}
       />
@@ -69,11 +69,11 @@ const OmMig = () => {
               Om mig
             </p>
             <h1 className="font-fraunces text-5xl md:text-6xl lg:text-[4.75rem] text-dalashala-earth leading-[0.98] mb-8 tracking-[-0.03em] text-balance" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
-              Yogalärare i Dalarna<br className="hidden md:block" /> <span className="amp">&amp;</span> Stockholm
+              Yogalärare i Stockholm
             </h1>
             <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
             <p className="font-inter text-lg md:text-xl text-dalashala-earth/85 max-w-2xl mx-auto leading-relaxed text-pretty">
-              {noWidow("Certifierad yogalärare, ursprungligen från Australien. Baserad i Stockholm, undervisar även i Dalarna.")}
+              {noWidow("Certifierad yogalärare, ursprungligen från Australien. Baserad i Stockholm.")}
             </p>
           </div>
         </section>
@@ -88,13 +88,10 @@ const OmMig = () => {
                 </h2>
                 <div className="space-y-5">
                   <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85 text-pretty">
-                    {noWidow("Jag växte upp i Australien och bor idag i Stockholm. Så ofta jag kan åker jag upp till stugan i Dalarna, till hönsen och altanen som ibland förvandlas till yogashala.")}
+                    {noWidow("Jag växte upp i Australien och bor idag i Stockholm. Rörelse, natur och mindfulness har alltid hängt ihop för mig, och yoga är där allt möts.")}
                   </p>
                   <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85 text-pretty">
-                    {noWidow("Rörelse, natur och mindfulness har alltid hängt ihop för mig, och yoga är där allt möts.")}
-                  </p>
-                  <p className="font-inter text-lg leading-relaxed text-dalashala-earth/85 text-pretty">
-                    {noWidow("Jag undervisar mest i Stockholm, i studio och privat, och uppe i Dalarna när jag är där.")}
+                    {noWidow("Jag undervisar i studio och privat i Stockholm, och tar emot bokningar för företagsevent, konferenser och kickoffs.")}
                   </p>
                 </div>
               </div>
@@ -107,7 +104,7 @@ const OmMig = () => {
                   <div className="overflow-hidden rounded-2xl shadow-card border border-dalashala-meadow/40 aspect-[4/5]">
                     <img
                       src="/lovable-uploads/c1e6d7f9-3ac6-42af-ac83-3058516ff2ef.jpg"
-                      alt="Camilla i warrior pose på altanen i Dalarna"
+                      alt="Camilla i warrior pose utomhus"
                       className="w-full h-full object-cover"
                       loading="lazy"
                     />
@@ -123,7 +120,7 @@ const OmMig = () => {
           <div className="max-w-3xl mx-auto">
             <blockquote className="border-l-2 border-dalashala-olive pl-8 md:pl-10">
               <p className="font-fraunces italic text-2xl md:text-[2rem] text-dalashala-earth leading-[1.35] tracking-[-0.01em] text-pretty" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 100" }}>
-                Mina klasser är utmanande men inte bestraffande. Inga extrema poser, ingen tävling med grannen på mattan. För mig handlar yoga om rörelse, andning och närvaro, oavsett om jag undervisar i en studio i Stockholm eller på altanen i Dalarna.
+                Mina klasser är utmanande men inte bestraffande. Inga extrema poser, ingen tävling med grannen på mattan. För mig handlar yoga om rörelse, andning och närvaro, oavsett om jag undervisar i en studio eller ute på en konferensanläggning.
               </p>
               <footer className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mt-6 not-italic">
                 Min praktik
@@ -166,10 +163,10 @@ const OmMig = () => {
             </h2>
             <span className="block mx-auto w-16 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
             <p className="font-inter text-lg md:text-xl text-dalashala-earth/85 leading-relaxed mb-5 text-pretty">
-              Jag undervisar på <strong className="text-dalashala-earth font-semibold">WD Wellness i Vansbro</strong>, <strong className="text-dalashala-earth font-semibold">Hot Yoga Stockholm</strong>, <strong className="text-dalashala-earth font-semibold">Yogarummet Björkhagen</strong>, <strong className="text-dalashala-earth font-semibold">Brahma Yoga i Nacka</strong> och som SUP yoga-lärare för <strong className="text-dalashala-earth font-semibold">Smashing Balance</strong>.
+              Jag undervisar på <strong className="text-dalashala-earth font-semibold">Hot Yoga Stockholm</strong>, <strong className="text-dalashala-earth font-semibold">Yogarummet Björkhagen</strong> och <strong className="text-dalashala-earth font-semibold">Brahma Yoga i Nacka</strong>.
             </p>
             <p className="font-inter text-lg md:text-xl text-dalashala-earth/85 leading-relaxed text-pretty">
-              {noWidow("Jag tar också emot bokningar för företagsevent, möhippor, bröllop och gruppevent i Dalarna och Stockholm.")}
+              {noWidow("Jag tar också emot bokningar för företagsevent, konferenser och kickoffs i Stockholm.")}
             </p>
           </div>
         </section>
@@ -213,11 +210,11 @@ const OmMig = () => {
               In English
             </p>
             <h2 className="font-fraunces text-3xl md:text-4xl lg:text-[2.75rem] text-dalashala-earth mb-10 tracking-[-0.025em] leading-[1.06] text-balance" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 60" }}>
-              About Camilla, Yoga Teacher in Dalarna <span className="amp">&amp;</span> Stockholm, Sweden
+              About Camilla, Yoga Teacher in Stockholm, Sweden
             </h2>
             <div className="space-y-6 font-inter text-lg md:text-xl text-dalashala-earth/85 leading-relaxed [&>p]:text-pretty">
               <p>
-                {noWidow("I'm Camilla, an Australian-born 500-hour certified yoga teacher based in Stockholm, Sweden, and I also teach in Dalarna. I teach vinyasa, yin, and hatha yoga in English.")}
+                {noWidow("I'm Camilla, an Australian-born 500-hour certified yoga teacher based in Stockholm, Sweden. I teach vinyasa, yin, and hatha yoga in English.")}
               </p>
               <p>
                 {noWidow("Movement, nature, and mindfulness have always been important to me. I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, and my 300-hour advanced vinyasa training at Sampoorna Yoga Shala in Goa, India. I also have a background in fitness instruction as a Les Mills certified instructor (7 years, Australia and Sweden), and I've completed five ultramarathons, including a podium finish.")}
@@ -226,7 +223,7 @@ const OmMig = () => {
                 {noWidow("My approach to yoga is simple: challenging but not punishing. I'm not interested in impressive poses or performance. For me, yoga is more about the mental and spiritual practice than the shapes the body makes.")}
               </p>
               <p>
-                {noWidow("I teach at WD Wellness in Vansbro, Hot Yoga Stockholm, Yogarummet Björkhagen, Brahma Yoga in Nacka, and as the SUP yoga teacher for Smashing Balance. I also take bookings for private lessons, corporate yoga, bachelorette yoga, wedding yoga, and yoga retreats across Stockholm and Dalarna.")}
+                {noWidow("I teach at Hot Yoga Stockholm, Yogarummet Björkhagen, and Brahma Yoga in Nacka. I also take bookings for corporate yoga, conferences, and kickoffs in Stockholm.")}
               </p>
               <p>
                 {noWidow("Whatever brought you here, you're welcome to get in touch.")}

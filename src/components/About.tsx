@@ -48,7 +48,7 @@ const About = () => {
               <div className="col-span-2 animate-when-visible" data-animation="fade-in-up">
                 <div className="columns-3 gap-6 text-xs md:text-sm font-eb-garamond leading-relaxed" style={{ columnFill: 'auto', height: '320px' }}>
                   <p className="mb-3">
-                    Hi, my name is Camilla and I am a 500 hour certified yoga teacher based in Stockholm, also teaching in Dalarna. Movement, nature, and mindfulness have always been important to me.
+                    Hi, my name is Camilla and I am a 500 hour certified yoga teacher based in Stockholm. Movement, nature, and mindfulness have always been important to me.
                   </p>
                   <p className="mb-3">
                     I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, followed by a 300-hour YTT at Sampoorna Yoga Shala, Goa in Advanced Vinyasa Flow. My background spans seven years as a Les Mills Bodypump instructor across gyms in Australia and Sweden.
@@ -60,7 +60,7 @@ const About = () => {
                     I have experience in Kadampa Buddhism meditation and Tranquil Wisdom Insight Meditation (TWIM), which deepen my understanding of mindfulness.
                   </p>
                   <p>
-                    I teach at WD Wellness in Vansbro, Hot Yoga Stockholm, Yogarummet Björkhagen, Brahma Yoga in Nacka, and as the SUP yoga teacher for Smashing Balance.
+                    I teach at Hot Yoga Stockholm, Yogarummet Björkhagen, and Brahma Yoga in Nacka.
                   </p>
                 </div>
               </div>
@@ -75,7 +75,7 @@ const About = () => {
                 
                 <div className="space-y-4 mb-6">
                   <p className="text-base md:text-lg font-eb-garamond">
-                    Hi, my name is Camilla and I am a 500 hour certified yoga teacher based in Stockholm, also teaching in Dalarna. Movement, nature, and mindfulness have always been important to me.
+                    Hi, my name is Camilla and I am a 500 hour certified yoga teacher based in Stockholm. Movement, nature, and mindfulness have always been important to me.
                   </p>
 
                   <p className="text-base md:text-lg font-eb-garamond">
@@ -91,7 +91,7 @@ const About = () => {
                   </p>
 
                   <p className="text-base md:text-lg font-eb-garamond">
-                    I teach at WD Wellness in Vansbro, Hot Yoga Stockholm, Yogarummet Björkhagen, Brahma Yoga in Nacka, and as the SUP yoga teacher for Smashing Balance.
+                    I teach at Hot Yoga Stockholm, Yogarummet Björkhagen, and Brahma Yoga in Nacka.
                   </p>
                 </div>
               </div>

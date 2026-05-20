@@ -6,8 +6,8 @@ const cards = [
     body: 'Varje klass är utformad efter er grupp och ert tillfälle. Möhippa, födelsedag, bröllop, konferens eller teamdag. Alla nivåer, alltid välkomna.',
   },
   {
-    title: 'Naturen som studio',
-    body: 'När det går håller jag klasser utomhus, på altanen i Dalarna eller på SUP-bräda på Sicklasjön i Stockholm. I naturens skönhet hittar vi tillbaka till oss själva.',
+    title: 'Utomhus när det passar',
+    body: 'Är ni på konferensanläggning med trädgård eller uteplats tar vi gärna ut mattorna. I naturens ro hittar vi tillbaka till oss själva.',
   },
   {
     title: 'På er plats',
@@ -40,7 +40,7 @@ const WhyYogaWithCamilla = () => {
           <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
           <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/85 leading-relaxed max-w-xl mx-auto">
             Lugn, välkomnande yoga med fokus på rörelse, andning och närvaro.
-            I Dalarna och i Stockholm.
+            Hos er i Stockholm.
           </p>
         </div>
 
