@@ -12,12 +12,6 @@ import Blog from "./pages/Blog";
 import BlogPostPage from "./pages/BlogPostPage";
 
 import ForetagsYoga from "./pages/services/ForetagsYoga";
-import SUPYoga from "./pages/services/SUPYoga";
-import SUPYogaKlasser from "./pages/services/SUPYogaKlasser";
-import SUPYogaVillkor from "./pages/services/SUPYogaVillkor";
-import HonsYoga from "./pages/services/HonsYoga";
-import PrivataEvent from "./pages/services/PrivataEvent";
-import UtomhusRetreatStockholm from "./pages/services/UtomhusRetreatStockholm";
 
 const queryClient = new QueryClient();
 
@@ -52,12 +46,6 @@ const App = () => (
 
           {/* Active Service Pages */}
           <Route path="/tjanster/foretagsyoga" element={<ForetagsYoga />} />
-          <Route path="/tjanster/sup-yoga" element={<SUPYoga />} />
-          <Route path="/tjanster/sup-yoga-klasser" element={<SUPYogaKlasser />} />
-          <Route path="/tjanster/sup-yoga/villkor" element={<SUPYogaVillkor />} />
-          <Route path="/tjanster/honsyoga" element={<HonsYoga />} />
-          <Route path="/tjanster/privata-event" element={<PrivataEvent />} />
-          <Route path="/tjanster/utomhusretreat-stockholm" element={<UtomhusRetreatStockholm />} />
 
           {/* Note: 301 redirects for old service URLs are handled at the Netlify edge
               via public/_redirects. Do NOT add client-side <Navigate> for those paths —

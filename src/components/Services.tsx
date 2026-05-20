@@ -1,90 +1,6 @@
 import { Link } from 'react-router-dom';
 import { softenAmp } from '@/lib/amp';
 
-type ServiceCard = {
-  title: string;
-  description: string;
-  href: string;
-  tag?: string;
-};
-
-const stockholmServices: ServiceCard[] = [
-  {
-    title: 'Företagsyoga',
-    description: 'Konferenser, kickoffs, AWs, sommaravslutningar, teambuilding och regelbundna klasser på kontoret. Alla nivåer.',
-    href: '/tjanster/foretagsyoga',
-  },
-  {
-    title: 'Privat SUP Yoga & Bastu',
-    description: 'Yoga på paddleboard plus bastu vid Sickla Strand. För möhippa, team eller födelsedag.',
-    href: '/tjanster/sup-yoga',
-  },
-  {
-    title: 'SUP Yoga Klasser',
-    description: 'Öppna vinyasa- och yin-klasser på Sickla sjö varje vecka under säsong. Bastu ingår. Bokas via Smashing Balance.',
-    href: '/tjanster/sup-yoga-klasser',
-  },
-  {
-    title: 'Utomhusretreat Stockholm',
-    description: 'Hör fåglarna, känn solen och landa i kroppen. En halvdag vid Sicklasjön med outdoor yoga, journaling och yin yoga på paddleboard.',
-    href: '/tjanster/utomhusretreat-stockholm',
-  },
-];
-
-const dalarnaServices: ServiceCard[] = [
-  {
-    title: 'Företagsyoga',
-    description: 'Konferenser, kickoffs, teambuilding och halvdag eller heldag i naturen. Falun, Borlänge, Mora, Leksand, Rättvik och omnejd.',
-    href: '/tjanster/foretagsyoga',
-  },
-  {
-    title: 'Hönsyoga',
-    description: 'Yoga på altanen med hönsen pickande runt mattorna. Goat yoga, fast nordisk och lugnare. Privatbokning, maj till september.',
-    href: '/tjanster/honsyoga',
-  },
-  {
-    title: 'Privata Event & Yoga Retreat',
-    description: 'Möhippa, födelsedag, bröllopshelg eller kompisgäng. Halvdag eller heldag yoga retreat med vandring eller löpning, fika och natur i Dalarna. Ni bygger dagen, jag formar schemat. (Ja, hönsen är med.)',
-    href: '/tjanster/privata-event',
-  },
-];
-
-const ServiceCard = ({ title, description, href, tag }: ServiceCard) => (
-  <Link
-    to={href}
-    className="group relative flex flex-col justify-between bg-white rounded-2xl p-8 md:p-9 border border-dalashala-meadow/60 hover:border-dalashala-earth/50 hover:-translate-y-1 hover:shadow-card transition-all duration-400"
-  >
-    {/* Tag — absolute top-right so heading alignment is consistent across all cards */}
-    {tag && (
-      <span className="absolute top-5 right-5 font-inter text-[9px] uppercase tracking-[0.28em] text-dalashala-olive font-bold">
-        {tag}
-      </span>
-    )}
-
-    <div>
-      <h3 className="font-fraunces text-[1.875rem] md:text-[2.125rem] text-dalashala-earth mb-4 group-hover:text-dalashala-earthSoft transition-colors leading-[1.05] tracking-[-0.02em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 48, 'SOFT' 50" }}>
-        {softenAmp(title)}
-      </h3>
-      <p className="font-inter font-normal text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed">
-        {description}
-      </p>
-    </div>
-    <span className="mt-8 inline-flex items-center gap-2 font-inter text-xs text-dalashala-earth uppercase tracking-[0.24em] font-semibold group-hover:gap-3 transition-all">
-      Läs mer
-      <span className="transition-transform group-hover:translate-x-1">→</span>
-    </span>
-  </Link>
-);
-
-const LocationHeader = ({ label }: { label: string }) => (
-  <div className="flex items-baseline gap-6 mb-12">
-    <h3 className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-earth font-bold whitespace-nowrap">
-      {label}
-    </h3>
-    <span className="flex-1 h-px bg-dalashala-meadow" />
-  </div>
-);
-
 const Services = () => {
   return (
     <section id="services" className="relative pt-24 md:pt-32 bg-white">
@@ -99,27 +15,29 @@ const Services = () => {
           </h2>
           <span className="block mx-auto w-16 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
           <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/85 leading-relaxed">
-            Privat yoga för grupper och individer, i stadsmiljö eller mitt i skogen.
+            Yoga för företag och team i Stockholm.
           </p>
         </div>
 
-        {/* Stockholm */}
         <div id="stockholm" className="mb-24 scroll-mt-24">
-          <LocationHeader label="Stockholm" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7">
-            {stockholmServices.map((s) => (
-              <ServiceCard key={s.href + s.title} {...s} />
-            ))}
-          </div>
-        </div>
-
-        {/* Dalarna */}
-        <div id="dalarna" className="mb-20 scroll-mt-24">
-          <LocationHeader label="Dalarna" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7">
-            {dalarnaServices.map((s) => (
-              <ServiceCard key={s.href + s.title} {...s} />
-            ))}
+          <div className="max-w-md mx-auto">
+            <Link
+              to="/tjanster/foretagsyoga"
+              className="group relative flex flex-col justify-between bg-white rounded-2xl p-8 md:p-9 border border-dalashala-meadow/60 hover:border-dalashala-earth/50 hover:-translate-y-1 hover:shadow-card transition-all duration-400"
+            >
+              <div>
+                <h3 className="font-fraunces text-[1.875rem] md:text-[2.125rem] text-dalashala-earth mb-4 group-hover:text-dalashala-earthSoft transition-colors leading-[1.05] tracking-[-0.02em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 48, 'SOFT' 50" }}>
+                  {softenAmp('Företagsyoga')}
+                </h3>
+                <p className="font-inter font-normal text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed">
+                  Konferenser, kickoffs, AWs, sommaravslutningar, teambuilding och regelbundna klasser på kontoret. Alla nivåer.
+                </p>
+              </div>
+              <span className="mt-8 inline-flex items-center gap-2 font-inter text-xs text-dalashala-earth uppercase tracking-[0.24em] font-semibold group-hover:gap-3 transition-all">
+                Läs mer
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </span>
+            </Link>
           </div>
         </div>
 

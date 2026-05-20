@@ -40,8 +40,8 @@ const Footer = () => {
           </h2>
           <span className="block w-16 h-[2px] bg-white/50 mt-2 rounded-full" aria-hidden="true" />
           <p className="font-inter font-normal text-lg md:text-xl text-white/85 max-w-md leading-relaxed mt-3">
-            Privat yoga i Stockholm och Dalarna.<br className="hidden sm:block" />
-            På en SUP på Sickla Sjö, på skogsaltanen i Dalarna, eller där du är.
+            Företagsyoga i Stockholm.<br className="hidden sm:block" />
+            Konferenser, kickoffs, AWs och teambuilding, hos er.
           </p>
 
           {/* Nav row — gentle horizontal list */}

@@ -7,11 +7,11 @@ const ImageGallery = () => {
       src: "/lovable-uploads/7c04e5d1-c06e-4e32-ac57-b9cc48438631.jpg",
       alt: "Outdoor yoga deck with pine trees",
       heading: "OUR SPACE",
-      subHeading: "a serene sanctuary in Dalarna"
+      subHeading: "a serene yoga space"
     },
     {
       src: "/lovable-uploads/94dcd753-bf5e-440c-ab83-7f80b68598b8.jpg",
-      alt: "Forest sunset in Dalarna",
+      alt: "Forest sunset",
       heading: "NATURE",
       subHeading: "Surrounded by Pristine Forests"
     },

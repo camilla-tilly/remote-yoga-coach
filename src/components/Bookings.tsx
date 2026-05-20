@@ -20,8 +20,8 @@ const Events = () => {
               <div className="bg-white p-3 md:p-4 rounded-2xl border border-dalashala-tan/20 shadow-sm h-full max-w-xl">
                 <div className="space-y-2">
                   <p className="font-eb-garamond text-xs md:text-sm">
-                    I offer specialized yoga sessions tailored for conferences, corporate events, and retreats throughout Dalarna. 
-                    These sessions are designed to energize participants, enhance focus, and create moments of mindfulness 
+                    I offer specialized yoga sessions tailored for conferences, corporate events, and retreats in Stockholm.
+                    These sessions are designed to energize participants, enhance focus, and create moments of mindfulness
                     during your event.
                   </p>
                   

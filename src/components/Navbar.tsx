@@ -11,24 +11,8 @@ import {
 import { Button } from './ui/button';
 import Logo from './Logo';
 
-const locationGroups = [
-  {
-    location: 'Stockholm',
-    links: [
-      { name: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
-      { name: 'SUP Yoga (privat event)', href: '/tjanster/sup-yoga' },
-      { name: 'SUP Yoga Klasser', href: '/tjanster/sup-yoga-klasser' },
-      { name: 'Utomhusretreat Stockholm', href: '/tjanster/utomhusretreat-stockholm' },
-    ]
-  },
-  {
-    location: 'Dalarna',
-    links: [
-      { name: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
-      { name: 'Hönsyoga', href: '/tjanster/honsyoga' },
-      { name: 'Privata Event & Yoga Retreat', href: '/tjanster/privata-event' },
-    ]
-  },
+const serviceLinks = [
+  { name: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
 ];
 
 const Navbar = () => {
@@ -120,26 +104,17 @@ const Navbar = () => {
                   />
                 </button>
                 {servicesOpen && (
-                  <div className="absolute top-full right-0 mt-3 bg-white border border-dalashala-meadow/40 rounded-xl shadow-card overflow-hidden z-50" style={{ width: '420px' }}>
-                    <div className="flex">
-                      {locationGroups.map((group, idx) => (
-                        <div key={group.location} className={cn('flex-1', idx === 0 && 'border-r border-dalashala-meadow/30')}>
-                          <p className="px-5 pt-5 pb-3 font-inter text-[10px] uppercase tracking-[0.28em] text-dalashala-olive font-medium">
-                            {group.location}
-                          </p>
-                          {group.links.map((link) => (
-                            <Link
-                              key={group.location + link.href + link.name}
-                              to={link.href}
-                              onClick={() => setServicesOpen(false)}
-                              className="block px-5 py-2 font-inter text-sm text-dalashala-earth hover:bg-dalashala-meadowLight/40 hover:text-dalashala-olive transition-colors"
-                            >
-                              {link.name}
-                            </Link>
-                          ))}
-                        </div>
-                      ))}
-                    </div>
+                  <div className="absolute top-full right-0 mt-3 bg-white border border-dalashala-meadow/40 rounded-xl shadow-card overflow-hidden z-50" style={{ minWidth: '200px' }}>
+                    {serviceLinks.map((link) => (
+                      <Link
+                        key={link.href}
+                        to={link.href}
+                        onClick={() => setServicesOpen(false)}
+                        className="block px-5 py-3 font-inter text-sm text-dalashala-earth hover:bg-dalashala-meadowLight/40 hover:text-dalashala-olive transition-colors"
+                      >
+                        {link.name}
+                      </Link>
+                    ))}
                   </div>
                 )}
               </div>
@@ -188,24 +163,19 @@ const Navbar = () => {
                     </DrawerClose>
                   </div>
                   <div className="flex flex-col items-center pb-6 px-4 space-y-1">
-                    {locationGroups.map((group) => (
-                      <div key={group.location} className="w-full">
-                        <p className="font-cinzel text-xs uppercase tracking-widest text-dalashala-mediumBrown font-bold pt-3 pb-1 text-center">
-                          {group.location}
-                        </p>
-                        {group.links.map((link) => (
-                          <DrawerClose key={group.location + link.href + link.name} asChild>
-                            <Link
-                              to={link.href}
-                              className="text-dalashala-darkBrown text-sm font-eb-garamond w-full text-center py-1.5 px-3 hover:text-dalashala-mediumBrown transition-colors block"
-                            >
-                              {link.name}
-                            </Link>
-                          </DrawerClose>
-                        ))}
-                        <div className="w-full border-t border-dalashala-tan/30 mt-2" />
-                      </div>
-                    ))}
+                    <div className="w-full">
+                      {serviceLinks.map((link) => (
+                        <DrawerClose key={link.href} asChild>
+                          <Link
+                            to={link.href}
+                            className="text-dalashala-darkBrown text-sm font-eb-garamond w-full text-center py-1.5 px-3 hover:text-dalashala-mediumBrown transition-colors block"
+                          >
+                            {link.name}
+                          </Link>
+                        </DrawerClose>
+                      ))}
+                      <div className="w-full border-t border-dalashala-tan/30 mt-2" />
+                    </div>
                     <div className="w-full border-t border-dalashala-tan/40 my-2" />
 
                     <DrawerClose asChild>
