@@ -18,8 +18,8 @@ const structuredData = {
 
 const ForetagsYoga = () => (
   <ServicePageLayout
-    seoTitle="Företagsyoga Stockholm · pris från 1 600 kr | Yoga med Camilla"
-    seoDescription="Företagsyoga på kontoret från 1 600 kr/klass. Konferens, kickoff, AW och sommaravslutning i Stockholm. Boka via mejl."
+    seoTitle="Företagsyoga Stockholm | Yoga med Camilla"
+    seoDescription="Företagsyoga i Stockholm anpassad efter era behov. Andningsworkshop, stolsyoga, full flow eller skräddarsytt. Konferens, kickoff, AW. Kontakta för offert."
     canonical="https://yogawithcamilla.se/tjanster/foretagsyoga"
     ogImage="https://yogawithcamilla.se/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     breadcrumbLabel="Företagsyoga"
@@ -36,23 +36,24 @@ const ForetagsYoga = () => (
     ]}
     highlights={[
       {
-        heading: "Konferensyoga",
-        text: "Yogapaus mitt i konferensdagen för att rensa huvudet och skärpa fokus."
+        heading: "Andningsworkshop",
+        text: "30 minuter fokus på andningstekniker. Inga mattor, inget ombyte. Passar perfekt som paus mitt i en konferensdag, ett möte eller en lång arbetsdag."
       },
       {
-        heading: "Kickoff, AW & sommaravslutning",
-        text: "Yoga som en del av kickoff-programmet, AW eller sommaravslutningen. Funkar bra som gemensam teamaktivitet där ingen behöver prestera."
+        heading: "Stolsyoga och kontorsyoga",
+        text: "Yoga anpassad för kontoret, på stolar eller stående. Ingen behöver byta om eller ha med sig något. Lätt att slot in i dagen."
       },
       {
-        heading: "Regelbundna klasser",
-        text: "Återkommande yoga på ert kontor i Stockholm, veckovis eller varannan vecka. (Endast Stockholm.)"
+        heading: "Full yogaklass med mattor",
+        text: "Traditionell klass med rörelser, flöde och avslappning. Ni behöver bara ett utrymme som rymmer en matta per person."
+      },
+      {
+        heading: "Skräddarsytt efter era behov",
+        text: "Fokus på prestation, mental hälsa, burnout-prevention eller energipåfyllning. Hör av er med era önskemål och vi hittar rätt format tillsammans."
       }
     ]}
     pricing={[
-      { label: 'Kontoret · 60 min', price: '2 100 kr/klass', note: 'Regelbunden yoga på kontoret, 1 gång/vecka månadsvis.' },
-      { label: 'Kontoret · 45 min', price: '1 800 kr/klass', note: 'Regelbunden yoga på kontoret, 1 gång/vecka månadsvis.' },
-      { label: 'Kontoret · 30 min', price: '1 600 kr/klass', note: 'Regelbunden yoga på kontoret, 1 gång/vecka månadsvis.' },
-      { label: 'Konferens, kickoff, AW & sommaravslutning', price: 'kontakta för offert', note: 'Pris baseras på antal deltagare, längd och plats.' },
+      { label: 'Alla format', price: 'kontakta för offert', note: 'Pris beror på format, längd, antal deltagare och plats.' },
     ]}
     detailsHeading="Format & praktisk information"
     detailsParagraphs={[
@@ -61,12 +62,12 @@ const ForetagsYoga = () => (
       "Säg till om gruppen vill byta om till träningskläder eller hellre köra direkt i det de har på sig. Jag formar klassen efter det.",
       { subheading: "Stockholm" },
       "Jag kommer till ert kontor eller er konferensanläggning, eller hjälper gärna till att hitta en lämplig yogasal. Regelbundna klasser på kontoret erbjuds i Stockholm.",
-      "Funderar ni på fler alternativ för teamet? Guiden till [teambuilding i Stockholm](/blogg/teambuilding-aktiviteter-stockholm) går igenom sju aktiviteter med priser och vad som passar vem.",
+      "Funderar ni på fler alternativ för teamet? Guiden till [teambuilding i Stockholm](/blogg/teambuilding-aktiviteter-stockholm) går igenom sju aktiviteter och vad som passar vem.",
       { subheading: "Boka" },
-      "Maila hello.yogawithcamilla@gmail.com med datum, antal deltagare, plats och typ av event för en offert."
+      "Maila hello.yogawithcamilla@gmail.com med era önskemål, antal deltagare, plats och datum för en offert."
     ]}
     ctaHeading="Boka företagsyoga eller event"
-    ctaText="Hör av dig med era önskemål och jag sätter ihop ett förslag som passar ert event."
+    ctaText="Hör av dig med era önskemål och jag sätter ihop ett förslag som passar ert team."
     faq={[
       {
         question: "Behöver deltagarna ha yogaerfarenhet?",
@@ -74,11 +75,11 @@ const ForetagsYoga = () => (
       },
       {
         question: "Vad kostar företagsyoga?",
-        answer: "Regelbundna klasser på kontoret prissätts efter längd, se prislistan ovan. Konferenser, kickoffs, AWs och sommaravslutningar prissätts individuellt baserat på antal deltagare, längd och plats. Behöver jag ta med utrustning diskuterar vi det separat."
+        answer: "Det beror på vad ni behöver. En kort andningsworkshop ser helt annorlunda ut mot en full yogaklass med mattor för 20 personer. Mejla med era önskemål så sätter jag ihop ett förslag."
       },
       {
         question: "Hur lång är en klass?",
-        answer: "På kontoret är 30 eller 45 minuter populärast. Under en konferens passar 60 minuter på morgonen eller som eftermiddagspaus."
+        answer: "Det beror på formatet. En andningsworkshop kan vara 30 minuter. En full yogaklass är oftast 45 till 60 minuter. Vi anpassar efter vad som passar er dag."
       },
       {
         question: "Vad behöver vi ordna?",
@@ -90,14 +91,14 @@ const ForetagsYoga = () => (
       },
       {
         question: "Hur bokar vi?",
-        answer: "Maila hello.yogawithcamilla@gmail.com med datum, antal deltagare, plats och typ av event. Jag återkommer till er med tillgänglighet och en offert."
+        answer: "Maila hello.yogawithcamilla@gmail.com med era önskemål, datum, antal deltagare och plats. Jag återkommer med tillgänglighet och en offert."
       }
     ]}
     structuredData={structuredData}
     relatedServices={relatedServices}
     englishKeywords={{
       heading: "Corporate Yoga in English | Stockholm",
-      text: "Led in English by a 500-hour certified yoga teacher.\n\nIn Stockholm: regular office yoga classes, plus yoga for conferences, kickoffs, after-works and summer send-offs.\n\nEmail hello.yogawithcamilla@gmail.com with date, group size, location and event type for a quote."
+      text: "Led in English by a 500-hour certified yoga teacher.\n\nIn Stockholm: office yoga, breathing workshops, chair yoga, conference sessions, kickoffs, after-works and summer send-offs. Every booking is tailored to your team's needs.\n\nEmail hello.yogawithcamilla@gmail.com with your wishes, date, group size and location for a quote."
     }}
   />
 );

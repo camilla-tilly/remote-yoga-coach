@@ -1911,12 +1911,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'foretagsyoga-vad-ingar-och-kostar',
-    title: 'Vad kostar företagsyoga i Stockholm 2026?',
-    metaDescription: 'Företagsyoga i Stockholm från 1 600 kr per klass. Vad det kostar, vad som ingår, friskvårdsbidrag, format för konferens, kickoff och AW. Ärlig guide för HR och chefer.',
+    title: 'Företagsyoga i Stockholm: format, upplägg och vad som passar ert team',
+    metaDescription: 'Företagsyoga i Stockholm anpassad efter era behov. Andningsworkshop, stolsyoga, full flow eller skräddarsytt. Vad ingår, hur ni bokar och vad ni behöver tänka på.',
     publishDate: '2026-04-09',
     readingTime: '10 min',
     category: 'Företag & Konferens',
-    excerpt: 'Allt du behöver veta innan ni bokar företagsyoga i Stockholm. Priser, format, friskvårdsbidrag, lokal, och de frågor alla HR-ansvariga ställer till mig först.',
+    excerpt: 'Allt du behöver veta innan ni bokar företagsyoga i Stockholm. Format, vad som ingår, friskvårdsbidrag, lokal, och de frågor alla HR-ansvariga ställer till mig först.',
     relatedServiceHref: '/tjanster/foretagsyoga',
     relatedServiceLabel: 'Boka företagsyoga',
     tableOfContents: true,
@@ -1929,11 +1929,11 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'paragraph',
-        text: 'Du har fått i uppdrag att hitta en friskvårdsaktivitet som faktiskt funkar. Eller så planeras en konferens och ni vill ha något bättre än ännu en workshop om "samarbete". [Företagsyoga](/tjanster/foretagsyoga) dyker upp som alternativ. Men vad kostar det egentligen, vad ingår, och funkar det för ett team där hälften aldrig lagt en yogamatta på golvet förut? Här är en rak genomgång. Inga yogafraser, bara det ni behöver för att fatta ett beslut.'
+        text: 'Du har fått i uppdrag att hitta en friskvårdsaktivitet som faktiskt funkar. Eller så planeras en konferens och ni vill ha något bättre än ännu en workshop om "samarbete". [Företagsyoga](/tjanster/foretagsyoga) dyker upp som alternativ. Men vad ingår egentligen, vilket format passar er, och funkar det för ett team där hälften aldrig lagt en yogamatta på golvet förut? Här är en rak genomgång. Inga yogafraser, bara det ni behöver för att fatta ett beslut.'
       },
       {
         type: 'callout',
-        text: 'Snabbversionen: Företagsyoga i Stockholm från 1 600 kr per klass (30 min) vid regelbunden bokning på kontoret. Jag kommer till ert kontor med mattor och block, leder klassen, och ni behöver bara ett någorlunda fritt golvutrymme. Yoga är en godkänd friskvårdsaktivitet enligt Skatteverket. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för en offert.'
+        text: 'Snabbversionen: Jag kommer till ert kontor eller event med utrustning, anpassar klassen och leder den. Ni behöver bara ett utrymme. Yoga är en godkänd friskvårdsaktivitet enligt Skatteverket. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för en offert.'
       },
       {
         type: 'heading',
@@ -2005,34 +2005,47 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'För team med kontor på flera orter eller remote-anställda. Jag leder live från ert Stockholmskontor medan distanskollegor följer med via Zoom eller Teams. Samma pris som på plats, ni behöver bara en kamera och en projektor.'
+        text: 'För team med kontor på flera orter eller remote-anställda. Jag leder live från ert Stockholmskontor medan distanskollegor följer med via Zoom eller Teams. Ni behöver bara en kamera och en projektor.'
       },
       {
         type: 'heading',
-        text: 'Priser'
+        text: 'Vilket format passar er?'
       },
       {
         type: 'paragraph',
-        text: 'Priser för regelbundna bokningar på kontor i Stockholm. Alla priser är exklusive moms. Resa till ert kontor i Stockholm ingår.'
+        text: 'Det finns inget standardupplägg. En del företag vill ha en andningsworkshop på 30 minuter utan mattor, perfekt att lägga in mitt i ett möte. Andra vill ha stolsyoga där ingen behöver byta om. Andra vill ha en full yogaklass med mattor och rörelse. Och ibland är det något helt annat: mental hälsa, burnout-prevention, energipåfyllning inför ett viktigt projekt. Hör av er med era önskemål och jag sätter ihop ett förslag.'
       },
       {
-        type: 'table',
-        tableHead: ['Format', 'Längd', 'Pris per klass', 'Rekommenderat'],
-        tableRows: [
-          ['Morgon eller lunch', '30 min', 'från 1 600 kr', 'Snabb reset, innan eller mitt i arbetsdagen'],
-          ['Lunchyoga', '45 min', 'från 1 800 kr', 'Regelbundet, 1 gång per vecka'],
-          ['Fullängd', '60 min', 'från 2 100 kr', 'After work, djupare klass'],
-          ['Yin / restorativ', '75 min', 'offert', 'Fredagseftermiddagar, stressade team'],
-          ['Event / konferens', '30 till 90 min', 'offert', 'Enstaka tillfällen, större grupper'],
-        ],
+        type: 'subheading',
+        text: 'Andningsworkshop'
       },
       {
         type: 'paragraph',
-        text: 'Priserna ovan gäller vid återkommande bokning, alltså minst en gång i veckan, månadsvis. Enstaka klasser och event prissätts individuellt eftersom det påverkas av plats, antal deltagare, tid på dygnet och om det innefattar kringtjänster (andningsworkshop, föreläsning, outdoor-miljö).'
+        text: 'Fokus på andningstekniker för stress, fokus och återhämtning. 30 minuter, inga mattor, ingen behöver byta om. Passar utmärkt som paus mitt i en konferensdag eller en intensiv vecka.'
+      },
+      {
+        type: 'subheading',
+        text: 'Stolsyoga och kontorsyoga'
       },
       {
         type: 'paragraph',
-        text: 'Rabatt ges vid terminsbokning (10 tillfällen eller fler) och större volymavtal. Hör av er med ungefärliga siffror så räknar jag.'
+        text: 'Yoga anpassad för kontoret, på stolar eller stående. Lätt att slot in i dagen utan att byta om eller ha med sig något. Fokus på det som stelnar av stillasittande: axlar, nacke, höfter.'
+      },
+      {
+        type: 'subheading',
+        text: 'Full yogaklass med mattor'
+      },
+      {
+        type: 'paragraph',
+        text: 'Traditionell klass med rörelser, flöde och avslappning. Jag tar med mattor och block. Ni behöver bara ett utrymme som rymmer en matta per person.'
+      },
+      {
+        type: 'subheading',
+        text: 'Skräddarsytt'
+      },
+      {
+        type: 'paragraph',
+        text: 'Kombinationer av ovanstående, outdoor-klass, retreat i Dalarna, hybrid med remote-kollegor via Zoom. Berätta vad ni behöver så hittar vi rätt form.'
       },
       {
         type: 'heading',
@@ -2040,7 +2053,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'subheading',
-        text: 'Ingår i priset'
+        text: 'Ingår'
       },
       {
         type: 'list',
@@ -2156,7 +2169,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Håller ni konferens eller kickoff i Dalarna? Jag håller yoga på er konferensanläggning, ert boende, eller utomhus på altanen i skogen. En utomhusklass med gryningsljus och fågelljud slår de flesta konferenssalar i effekt, särskilt på dag två av en tredagars, när alla är stela av att sitta. Resa debiteras enligt faktiskt utlägg (tåg eller milersättning), ofta 1 500 till 2 500 kr extra.'
+        text: 'Håller ni konferens eller kickoff i Dalarna? Jag håller yoga på er konferensanläggning, ert boende, eller utomhus på altanen i skogen. En utomhusklass med gryningsljus och fågelljud slår de flesta konferenssalar i effekt, särskilt på dag två av en tredagars, när alla är stela av att sitta. Resa utanför Stockholms kommun debiteras enligt faktiskt utlägg (tåg eller milersättning).'
       },
       {
         type: 'heading',
@@ -2185,7 +2198,7 @@ export const blogPosts: BlogPost[] = [
         faqItems: [
           {
             q: 'Vad kostar företagsyoga i Stockholm?',
-            a: 'Företagsyoga hos mig kostar från 1 600 kr per 30-minutersklass vid regelbunden bokning på kontor i Stockholm. En 45-minutersklass kostar från 1 800 kr och en 60-minutersklass från 2 100 kr. Konferens- och eventyoga prissätts individuellt. Alla priser exklusive moms.',
+            a: 'Det varierar beroende på format, längd och antal deltagare. En kort andningsworkshop ser helt annorlunda ut mot en full yogaklass med mattor för 20 personer. Kontakta mig med era önskemål så sätter jag ihop en offert.',
           },
           {
             q: 'Hur många minst respektive max deltagare?',
@@ -2231,7 +2244,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'callout',
-        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal deltagare och om ni föredrar morgon, lunch eller eftermiddag. Jag återkommer med upplägg och pris. Mer info och paketpriser på [yogawithcamilla.se/tjanster/foretagsyoga](/tjanster/foretagsyoga).'
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med era önskemål, datum och antal deltagare. Jag återkommer med ett förslag på upplägg och offert. Mer info på [yogawithcamilla.se/tjanster/foretagsyoga](/tjanster/foretagsyoga).'
       },
     ]
   },
