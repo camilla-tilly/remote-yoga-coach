@@ -76,7 +76,7 @@ const ForetagsYoga = () => (
       },
       {
         question: "Hur lång är en klass?",
-        answer: "Det beror på formatet. En andningsworkshop kan vara 20 till 30 minuter och passar lätt in i arbetsdagen. En full yogaklass är oftast 45 till 60 minuter. Vi anpassar efter vad som passar er dag."
+        answer: "Det beror på formatet. En andningsworkshop eller stolsyoga kan vara 20 till 30 minuter och passar lätt in i arbetsdagen. En full yogaklass är oftast 45 till 60 minuter. Vi anpassar efter vad som passar er dag."
       },
       {
         question: "Vad behöver vi ordna?",
