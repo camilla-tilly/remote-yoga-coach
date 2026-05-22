@@ -163,19 +163,16 @@ const Navbar = () => {
                     </DrawerClose>
                   </div>
                   <div className="flex flex-col items-center pb-6 px-4 space-y-1">
-                    <div className="w-full">
-                      {serviceLinks.map((link) => (
-                        <DrawerClose key={link.href} asChild>
-                          <Link
-                            to={link.href}
-                            className="text-dalashala-darkBrown text-sm font-eb-garamond w-full text-center py-1.5 px-3 hover:text-dalashala-mediumBrown transition-colors block"
-                          >
-                            {link.name}
-                          </Link>
-                        </DrawerClose>
-                      ))}
-                      <div className="w-full border-t border-dalashala-tan/30 mt-2" />
-                    </div>
+                    {serviceLinks.map((link) => (
+                      <DrawerClose key={link.href} asChild>
+                        <Link
+                          to={link.href}
+                          className="text-dalashala-darkBrown text-lg font-medium w-full text-center py-2 px-3 hover:text-dalashala-mediumBrown transition-colors block"
+                        >
+                          {link.name}
+                        </Link>
+                      </DrawerClose>
+                    ))}
                     <div className="w-full border-t border-dalashala-tan/40 my-2" />
 
                     <DrawerClose asChild>
