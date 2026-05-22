@@ -40,16 +40,16 @@ const ForetagsYoga = () => (
         text: "30 minuter fokus på andningstekniker. Inga mattor, inget ombyte. Passar perfekt som paus mitt i en konferensdag, ett möte eller en lång arbetsdag."
       },
       {
-        heading: "Stolsyoga och kontorsyoga",
-        text: "Yoga anpassad för kontoret, på stolar eller stående. Ingen behöver byta om eller ha med sig något. Lätt att slot in i dagen."
+        heading: "Ingen matta, inget ombyte",
+        text: "Yoga på stolar eller stående, direkt i kontorskläder. Noll förberedelse, passar in i vilket hål i schemat som helst."
       },
       {
         heading: "Full yogaklass med mattor",
         text: "Traditionell klass med rörelser, flöde och avslappning. Ni behöver bara ett utrymme som rymmer en matta per person."
       },
       {
-        heading: "Skräddarsytt efter era behov",
-        text: "Fokus på prestation, mental hälsa, burnout-prevention eller energipåfyllning. Hör av er med era önskemål och vi hittar rätt format tillsammans."
+        heading: "Yin och återhämtning",
+        text: "Lugna, långa positioner med fokus på att varva ner. Speciellt bra för stressade team eller perioder med hög belastning. Ingen ansträngning krävs."
       }
     ]}
     pricing={[
@@ -67,7 +67,7 @@ const ForetagsYoga = () => (
       "Maila hello.yogawithcamilla@gmail.com med era önskemål, antal deltagare, plats och datum för en offert."
     ]}
     ctaHeading="Boka företagsyoga eller event"
-    ctaText="Hör av dig med era önskemål och jag sätter ihop ett förslag som passar ert team."
+    ctaText="Vet ni inte vilket format som passar? Berätta vad teamet behöver just nu så hittar vi rätt form tillsammans."
     faq={[
       {
         question: "Behöver deltagarna ha yogaerfarenhet?",

@@ -2025,11 +2025,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'subheading',
-        text: 'Stolsyoga och kontorsyoga'
+        text: 'Ingen matta, inget ombyte'
       },
       {
         type: 'paragraph',
-        text: 'Yoga anpassad för kontoret, på stolar eller stående. Lätt att slot in i dagen utan att byta om eller ha med sig något. Fokus på det som stelnar av stillasittande: axlar, nacke, höfter.'
+        text: 'Yoga på stolar eller stående, direkt i kontorskläder. Noll förberedelse, passar in i vilket hål i schemat som helst. Fokus på det som stelnar av stillasittande: axlar, nacke, höfter.'
       },
       {
         type: 'subheading',
@@ -2041,11 +2041,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'subheading',
-        text: 'Skräddarsytt'
+        text: 'Yin och återhämtning'
       },
       {
         type: 'paragraph',
-        text: 'Kombinationer av ovanstående, outdoor-klass, retreat i Dalarna, hybrid med remote-kollegor via Zoom. Berätta vad ni behöver så hittar vi rätt form.'
+        text: 'Lugna, långa positioner med fokus på att varva ner. Speciellt bra för stressade team eller perioder med hög belastning. Ingen ansträngning krävs, och ofta de klasser folk minns mest.'
       },
       {
         type: 'heading',
