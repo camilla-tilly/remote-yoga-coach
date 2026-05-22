@@ -19,7 +19,6 @@ function ScrollToTopOnNav() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
     if (hash) {
-      // Allow the page to render, then scroll to the hash target
       setTimeout(() => {
         const el = document.getElementById(hash.slice(1));
         if (el) {
@@ -28,6 +27,14 @@ function ScrollToTopOnNav() {
       }, 100);
     } else {
       window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      // Second attempt after drawer close animation finishes on mobile
+      setTimeout(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }, 50);
     }
   }, [pathname, hash]);
   return null;
