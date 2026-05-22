@@ -52,9 +52,6 @@ const ForetagsYoga = () => (
         text: "Lugna, långa positioner med fokus på att varva ner. Speciellt bra för stressade team eller perioder med hög belastning. Ingen ansträngning krävs."
       }
     ]}
-    pricing={[
-      { label: 'Alla format', price: 'kontakta för offert', note: 'Pris beror på format, längd, antal deltagare och plats.' },
-    ]}
     detailsHeading="Format & praktisk information"
     detailsParagraphs={[
       { subheading: "Allmänt" },
