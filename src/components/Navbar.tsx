@@ -13,7 +13,9 @@ import Logo from './Logo';
 
 const serviceLinks = [
   { name: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
-  { name: 'SUP yoga', href: '/tjanster/sup-yoga' },
+  { name: 'SUP yoga – privata event', href: '/tjanster/sup-yoga' },
+  { name: 'SUP yoga – öppna klasser', href: '/tjanster/sup-yoga-klasser' },
+  { name: 'Privata event & retreat', href: '/tjanster/privata-event' },
 ];
 
 const Navbar = () => {
