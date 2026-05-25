@@ -28,7 +28,7 @@ const Hero = () => {
 
         <p
           ref={brandRef}
-          className="font-fraunces text-[3.75rem] sm:text-[5rem] md:text-[6.75rem] lg:text-[8rem] xl:text-[9rem] text-dalashala-earth mb-8 opacity-0 -translate-y-3 transition-all duration-1000 ease-out tracking-[-0.035em] leading-[0.92]"
+          className="font-fraunces text-[4.5rem] sm:text-[6rem] md:text-[8rem] lg:text-[9.5rem] xl:text-[11rem] text-dalashala-earth mb-8 opacity-0 -translate-y-3 transition-all duration-1000 ease-out tracking-[-0.035em] leading-[0.92]"
           style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}
         >
           Yoga with<br className="md:hidden" /> Camilla
