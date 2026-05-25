@@ -12,7 +12,7 @@ import Blog from "./pages/Blog";
 import BlogPostPage from "./pages/BlogPostPage";
 
 import ForetagsYoga from "./pages/services/ForetagsYoga";
-import SUPYoga from "./pages/services/SUPYoga";
+import SUPYoga from "./pages/services/SupYoga";
 import SUPYogaKlasser from "./pages/services/SUPYogaKlasser";
 import SUPYogaVillkor from "./pages/services/SUPYogaVillkor";
 import PrivataEvent from "./pages/services/PrivataEvent";
