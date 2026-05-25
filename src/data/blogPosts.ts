@@ -265,6 +265,211 @@ export const blogPosts: BlogPost[] = [
     ]
   },
   {
+    slug: 'vad-kostar-sup-yoga-stockholm',
+    title: 'Vad kostar SUP yoga i Stockholm 2026?',
+    metaDescription: 'Privat SUP yoga i Stockholm 2026 från 500 kr per person vid Sickla Strand. Vad det kostar, vad som ingår, tillval och gruppstorlek. Ärlig prisguide.',
+    publishDate: '2026-05-12',
+    readingTime: '7 min',
+    category: 'Events & Möhippa',
+    excerpt: 'Privat SUP yoga vid Sickla Strand från 500 kr per person, med minst 1500 kr per tillfälle. Här är vad det faktiskt kostar, vad som ingår och vad ni kan lägga till.',
+    relatedServiceHref: '/tjanster/sup-yoga',
+    relatedServiceLabel: 'Boka privat SUP yoga',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'mohippa-aktiviteter-stockholm', label: '7 möhippa-aktiviteter i Stockholm' },
+      { slug: 'teambuilding-aktiviteter-stockholm', label: '7 teambuilding-aktiviteter i Stockholm' },
+      { slug: 'foretagsyoga-vad-ingar-och-kostar', label: 'Vad kostar företagsyoga i Stockholm 2026?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Ni har bestämt er för att boka en SUP yoga-grej i Stockholm. Möhippa, kickoff, en födelsedag, eller bara en söndag med vänner som ni vill göra något annorlunda av. Frågan kommer snabbt: vad kostar det egentligen, vad ingår, och vad behöver ni veta innan ni skriver mejlet? Här är en rak genomgång av priset på [privat SUP yoga vid Sickla Strand](/tjanster/sup-yoga) i Stockholm 2026. Inga rea-fraser, inga dolda avgifter, bara siffror och vad ni får för dem.'
+      },
+      {
+        type: 'callout',
+        text: 'Snabbversionen: Privat SUP yoga och bastu vid Sickla Strand från 500 kr per person, med minst 1500 kr per tillfälle (motsvarar tre personer). Yoga på paddleboard och bastu vid sjön ingår alltid. Trail run i Nacka, tennis, vattencyklar och mat går att lägga till. För grupper på 3 till 10, upp till 15 på förfrågan. Säsong slutet av april till september. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för en konkret offert.'
+      },
+      {
+        type: 'heading',
+        text: 'Grundpriset, vad det är och vad det inkluderar'
+      },
+      {
+        type: 'paragraph',
+        text: 'Grundpriset för privat SUP yoga i Stockholm börjar på 500 kr per person, med ett lägsta totalpris på 1500 kr per tillfälle. Det betyder att om ni är tre personer betalar ni 1500 kr totalt. Är ni fler, räknas det per person upp till tio. Större grupper, upp till femton, går att boka på förfrågan och prissätts då lite annorlunda eftersom det påverkar både utrustning och upplägg.'
+      },
+      {
+        type: 'paragraph',
+        text: 'I grundpriset ingår två saker som alltid är med: själva SUP yoga-klassen på paddleboard, ledd av mig, och bastu vid sjön efteråt. All utrustning ingår. Brädor, paddlar, flytvästar och dry bags står på plats genom Smashing Balance, som driver Sickla Strand. Omklädningsrum med låsbara skåp finns. Bastun är vedeldad eller eldriven beroende på säsong, vid vattenkanten. Hoppa i, värm upp, repetera.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Klassen är 60 till 90 minuter beroende på vad ni vill, men hela bokningen brukar landa på 2 till 4 timmar inklusive bastu, ombyte och eventuella tillval. Klassen hålls på engelska. Ingen erfarenhet krävs, varken av yoga eller paddleboard. Brädorna är breda och stabila, och vi börjar alltid med en kort genomgång på land.'
+      },
+      {
+        type: 'heading',
+        text: 'Tillval och vad de kostar'
+      },
+      {
+        type: 'paragraph',
+        text: 'Bastun och yogan ingår alltid. Allt annat är frivilligt. Tillvalen prissätts individuellt eftersom de beror på leverantörer, gruppstorlek och tid på dagen. Det går alltså inte att ge ett fast pris i ett blogginlägg, men ni får en konkret summa i offerten. Det här är vad ni kan lägga till.'
+      },
+      {
+        type: 'subheading',
+        text: 'Trail run i Nacka'
+      },
+      {
+        type: 'paragraph',
+        text: 'Guidad löpning i Nackareservatet, ledd av mig. Ni väljer tempo och distans. Lugn promenad-jogg för gänget som inte springer i vardagen, eller lite mer fart för de som vill det. Bra om hälften av gruppen vill röra sig mer än bara på brädan. Cirka 45 till 60 minuter.'
+      },
+      {
+        type: 'subheading',
+        text: 'Tennis med Lucas'
+      },
+      {
+        type: 'paragraph',
+        text: 'Privatlektion i tennis med Lucas, tennisproffs vid Sickla. Bra om någon i gruppen vill prova något nytt eller om ni vill bygga in en aktivitet som inte är vattenbaserad. Klassisk lektionstid, 60 minuter.'
+      },
+      {
+        type: 'subheading',
+        text: 'Vattencyklar och SUP-uthyrning'
+      },
+      {
+        type: 'paragraph',
+        text: 'Vattencyklar är roliga och funkar för alla, även de som inte är vana vid vatten. SUP-uthyrning är för gruppen som vill paddla själva i egen takt, antingen före eller efter yogapasset. Båda bokas via Smashing Balance och läggs in i offerten.'
+      },
+      {
+        type: 'subheading',
+        text: 'Mat via Elton\'s Café'
+      },
+      {
+        type: 'paragraph',
+        text: 'Elton\'s Café ligger på Sickla Strand och driver platsen tillsammans med Smashing Balance. Ni kan lägga till fika efter bastun, eller en hel måltid. Allt på samma plats, så ni inte behöver flytta gruppen någon annanstans efteråt.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad som påverkar slutpriset'
+      },
+      {
+        type: 'paragraph',
+        text: 'Slutpriset i offerten bygger på tre saker. Gruppstorleken är den uppenbara: ju fler ni är, desto högre totalpris (men kostnaden per person sjunker när ni passerar minimibeloppet). Längden på klassen, 60 minuter eller 90 minuter, påverkar också, liksom eventuella tillval.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Tid på säsongen spelar mindre roll i sig, men juni till augusti är den mest efterfrågade perioden, så lediga datum är färre. Vissa tillval, framför allt tennis, beror på externa scheman och kan vara svårare att få till på kort varsel. Säsongen för privata SUP yoga-event är slutet av april till september, så bokar ni utanför det fönstret är det inte aktuellt.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför ett minimipris på 1500 kr'
+      },
+      {
+        type: 'paragraph',
+        text: 'En vanlig fråga: varför inte bara per person hela vägen? Anledningen är att resan, riggning av utrustning, bokning av brädor och tid på plats är ungefär samma oavsett om ni är två eller åtta. Minimibeloppet täcker den fasta kostnaden så att jag kan ta emot mindre grupper utan att behöva tacka nej. Två personer går att boka, men ni betalar då 1500 kr totalt, motsvarande 750 kr per person. För många små grupper är det ändå billigare än vad de räknat med.'
+      },
+      {
+        type: 'heading',
+        text: 'Format som passar olika grupper'
+      },
+      {
+        type: 'subheading',
+        text: 'Möhippa'
+      },
+      {
+        type: 'paragraph',
+        text: 'Den vanligaste anledningen folk bokar privat SUP yoga. Det passar både gänget som vill ha aktivitet och de som inte är vältränade. Brädorna är stabila, klassen anpassas, och bastun fungerar för alla. Ni kan lägga till lunch hos Elton\'s eller en kort trail run för dem som vill. Letar du efter [fler idéer för möhippa i Stockholm](/blogg/mohippa-aktiviteter-stockholm) finns det en längre guide.'
+      },
+      {
+        type: 'subheading',
+        text: 'Team och kickoff'
+      },
+      {
+        type: 'paragraph',
+        text: 'Funkar för team som vill ha något konkret att göra ihop utan att det blir tävlingsinriktat. Den tysta delen av yogan, plus bastun där folk pratar i lugnt tempo efteråt, brukar göra mer för gruppdynamiken än en hel dag med övningar. Bra som halvdags-kickoff eller som sommaravslutning. Mer om [teambuilding i Stockholm](/blogg/teambuilding-aktiviteter-stockholm) i en separat guide.'
+      },
+      {
+        type: 'subheading',
+        text: 'Födelsedag eller vänner'
+      },
+      {
+        type: 'paragraph',
+        text: 'En söndag med kompisarna som inte är en brunch. En 40-årsdag som behöver något lite mer än middag. Mindre grupper, ofta 4 till 6, som vill ha en lugn dag vid vattnet utan att resa någonstans. Bastun gör ofta hela dagen, även för de som inte är säkra på yogan från början.'
+      },
+      {
+        type: 'heading',
+        text: 'Företagsyoga eller event-yoga, vad är skillnaden'
+      },
+      {
+        type: 'paragraph',
+        text: 'SUP yoga är en engångsupplevelse vid vattnet. Det skiljer sig från återkommande [företagsyoga](/blogg/foretagsyoga-vad-ingar-och-kostar) på kontoret, som ligger närmare friskvård och kostar från 1 600 kr per klass. Båda kan vara företagsbokade, men logiken är olika: en SUP yoga-dag är en engångshändelse, medan företagsyoga är en pågående förmån. Om ni letar efter återkommande yoga på arbetsplatsen är det en annan offert.'
+      },
+      {
+        type: 'heading',
+        text: 'Praktisk information'
+      },
+      {
+        type: 'paragraph',
+        text: 'Plats: Sickla Strand, vid Elton\'s Café. Det finns parkering på plats, och tunnelbanan tar er till Sickla på 10 minuter från Slussen. Säsong: privata event går att boka från slutet av april till september. Längd: 2 till 4 timmar inklusive yoga, bastu och eventuella tillval. Klädsel: badkläder, handduk, träningskläder om ni lägger till tennis eller trail run. Brädor, paddel, flytväst och dry bag står på plats.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Avbokning: senast 48 timmar innan får ni 50 procent tillbaka eller tillgodo i 30 dagar. Samma villkor gäller om vädret gör att vi behöver flytta dagen (hård vind, åska, för kallt vatten). Ni får besked senast kvällen innan. Säkerhet: simkunnighet krävs för deltagande. Flytväst ingår och ska vara tillgänglig under hela klassen.'
+      },
+      {
+        type: 'heading',
+        text: 'När bör ni boka'
+      },
+      {
+        type: 'paragraph',
+        text: 'För juni till augusti, boka helst 4 till 8 veckor i förväg, särskilt om ni är fasta vid ett specifikt helgdatum. Möhippor och bröllopshelger ligger ofta i samma fönster och tar lediga lördagar snabbt. För maj och september är det enklare att hitta datum med kortare varsel, men då är vattentemperaturen lägre, vilket några i gänget kommer tänka på (bastun hjälper). Vardagar är nästan alltid möjliga att boka även med en till två veckors varsel.'
+      },
+      {
+        type: 'heading',
+        text: 'Vanliga frågor'
+      },
+      {
+        type: 'faq',
+        faqItems: [
+          {
+            q: 'Vad kostar SUP yoga i Stockholm 2026?',
+            a: 'Privat SUP yoga och bastu vid Sickla Strand kostar från 500 kr per person, med ett lägsta totalpris på 1500 kr per tillfälle (motsvarar tre personer). Tillval som trail run, tennis, vattencyklar eller mat prissätts utöver det.'
+          },
+          {
+            q: 'Vad ingår alltid i priset?',
+            a: 'SUP yoga-klassen ledd av Camilla och bastu vid sjön efteråt. All utrustning, brädor, paddlar, flytvästar och dry bags står på plats. Omklädningsrum med låsbara skåp finns på Sickla Strand.'
+          },
+          {
+            q: 'Hur stor grupp kan vi vara?',
+            a: 'Ideal storlek är 3 till 10 personer. Större grupper upp till 15 går att boka på förfrågan och prissätts då individuellt.'
+          },
+          {
+            q: 'Behöver vi kunna yoga eller SUP?',
+            a: 'Nej, ingen erfarenhet krävs. Brädorna är breda och stabila. Klassen börjar alltid med en kort säkerhetsgenomgång på land, och anpassas efter gruppens nivå.'
+          },
+          {
+            q: 'När är säsongen?',
+            a: 'Slutet av april till september. Juni till augusti är den mest efterfrågade perioden, så de helgerna fyller på snabbt. Maj och september funkar för grupper som inte minst vill ha varmt vatten.'
+          },
+          {
+            q: 'Vad händer vid dåligt väder?',
+            a: 'Vid hård vind, åska eller för kallt vatten flyttar vi dagen. Ni får besked senast kvällen innan. Samma avbokningsvillkor gäller, 50 procent tillbaka eller tillgodo i 30 dagar.'
+          },
+          {
+            q: 'Är klassen på svenska eller engelska?',
+            a: 'Engelska. Det funkar för svenska grupper också, ord som rör kroppsdelar och rörelser är lätta att följa. Engelsktalande deltagare är välkomna utan justering.'
+          },
+          {
+            q: 'Hur bokar vi?',
+            a: 'Mejla hello.yogawithcamilla@gmail.com med datum, gruppstorlek och vad ni vill ha ut av dagen. Ni får en konkret offert tillbaka. Bokning bekräftas när full betalning är mottagen.'
+          },
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'Letar ni efter öppna veckoklasser för enskilda platser istället, finns [SUP yoga klasser](/tjanster/sup-yoga-klasser) som drop-in. Vill ni ha en bredare överblick över paketet och se bilder från Sickla, finns allt på sidan om [privat SUP yoga](/tjanster/sup-yoga). Mejla annars direkt med datum och antal, så får ni siffror.'
+      },
+    ]
+  },
+  {
     slug: 'things-to-do-stockholm-summer',
     language: 'en',
     title: 'Things to Do in Stockholm This Summer: A Local\'s Guide for 2026',
@@ -2025,11 +2230,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'subheading',
-        text: 'Ingen matta, inget ombyte'
+        text: 'Stolsyoga och kontorsyoga'
       },
       {
         type: 'paragraph',
-        text: 'Yoga på stolar eller stående, direkt i kontorskläder. Noll förberedelse, passar in i vilket hål i schemat som helst. Fokus på det som stelnar av stillasittande: axlar, nacke, höfter.'
+        text: 'Yoga anpassad för kontoret, på stolar eller stående. Lätt att slot in i dagen utan att byta om eller ha med sig något. Fokus på det som stelnar av stillasittande: axlar, nacke, höfter.'
       },
       {
         type: 'subheading',
@@ -2041,11 +2246,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'subheading',
-        text: 'Yin och återhämtning'
+        text: 'Skräddarsytt'
       },
       {
         type: 'paragraph',
-        text: 'Lugna, långa positioner med fokus på att varva ner. Speciellt bra för stressade team eller perioder med hög belastning. Ingen ansträngning krävs, och ofta de klasser folk minns mest.'
+        text: 'Kombinationer av ovanstående, outdoor-klass, retreat i Dalarna, hybrid med remote-kollegor via Zoom. Berätta vad ni behöver så hittar vi rätt form.'
       },
       {
         type: 'heading',
@@ -2244,7 +2449,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'callout',
-        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med era önskemål, datum och antal deltagare. Jag återkommer med ett förslag på upplägg och offert. Mer info på [yogawithcamilla.se/tjanster/foretagsyoga](/tjanster/foretagsyoga).'
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal deltagare och vad ni har i åtanke. Jag återkommer med ett förslag på upplägg och offert. Mer info på [yogawithcamilla.se/tjanster/foretagsyoga](/tjanster/foretagsyoga).'
       },
     ]
   },

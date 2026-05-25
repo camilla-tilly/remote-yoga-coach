@@ -40,17 +40,20 @@ const ForetagsYoga = () => (
         text: "30 minuter fokus på andningstekniker. Inga mattor, inget ombyte. Passar perfekt som paus mitt i en konferensdag, ett möte eller en lång arbetsdag."
       },
       {
-        heading: "Ingen matta, inget ombyte",
-        text: "Yoga på stolar eller stående, direkt i kontorskläder. Noll förberedelse, passar in i vilket hål i schemat som helst."
+        heading: "Stolsyoga och kontorsyoga",
+        text: "Yoga anpassad för kontoret, på stolar eller stående. Ingen behöver byta om eller ha med sig något. Lätt att slot in i dagen."
       },
       {
         heading: "Full yogaklass med mattor",
         text: "Traditionell klass med rörelser, flöde och avslappning. Ni behöver bara ett utrymme som rymmer en matta per person."
       },
       {
-        heading: "Yin och återhämtning",
-        text: "Lugna, långa positioner med fokus på att varva ner. Speciellt bra för stressade team eller perioder med hög belastning. Ingen ansträngning krävs."
+        heading: "Skräddarsytt efter era behov",
+        text: "Fokus på prestation, mental hälsa, burnout-prevention eller energipåfyllning. Hör av er med era önskemål och vi hittar rätt format tillsammans."
       }
+    ]}
+    pricing={[
+      { label: 'Alla format', price: 'kontakta för offert', note: 'Pris beror på format, längd, antal deltagare och plats.' },
     ]}
     detailsHeading="Format & praktisk information"
     detailsParagraphs={[

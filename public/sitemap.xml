@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://yogawithcamilla.se/tjanster/sup-yoga</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -119,6 +119,12 @@
   <url>
     <loc>https://yogawithcamilla.se/blogg/foretagsyoga-vad-ingar-och-kostar</loc>
     <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yogawithcamilla.se/blogg/vad-kostar-sup-yoga-stockholm</loc>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

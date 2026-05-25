@@ -13,6 +13,7 @@ import Logo from './Logo';
 
 const serviceLinks = [
   { name: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
+  { name: 'SUP yoga', href: '/tjanster/sup-yoga' },
 ];
 
 const Navbar = () => {
