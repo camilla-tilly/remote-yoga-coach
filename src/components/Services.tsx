@@ -15,7 +15,7 @@ const Services = () => {
           </h2>
           <span className="block mx-auto w-16 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
           <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/85 leading-relaxed">
-            Yoga för företag, grupper och privata event i Stockholm.
+            Företagsyoga i Stockholm, hela året. SUP yoga för sommarens kickoffs och team events.
           </p>
         </div>
 
@@ -44,10 +44,10 @@ const Services = () => {
             >
               <div>
                 <h3 className="font-fraunces text-[1.875rem] md:text-[2.125rem] text-dalashala-earth mb-4 group-hover:text-dalashala-earthSoft transition-colors leading-[1.05] tracking-[-0.02em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 48, 'SOFT' 50" }}>
-                  SUP yoga
+                  SUP yoga — sommar & event
                 </h3>
                 <p className="font-inter font-normal text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed">
-                  Privat SUP yoga och bastu vid Sickla Strand. Möhippa, födelsedag, kickoff och privata grupper. Från 500 kr/person.
+                  Yoga på paddleboard och bastu vid Sickla Strand. Perfekt för sommarkickoff, AW och sommaravslutning. Privata event för team, från 500 kr/person.
                 </p>
               </div>
               <span className="mt-8 inline-flex items-center gap-2 font-inter text-xs text-dalashala-earth uppercase tracking-[0.24em] font-semibold group-hover:gap-3 transition-all">
@@ -67,7 +67,7 @@ const Services = () => {
             Ser du inte det du letar efter?
           </h3>
           <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/85 mb-10 max-w-lg mx-auto leading-relaxed">
-            Hör av dig, jag skräddarsyr gärna något för just er grupp, er dag och er plats.
+            Hör av dig om ni letar efter något skräddarsytt — ett återkommande upplägg för kontoret, ett engångstillfälle eller ett sommarevent för teamet.
           </p>
           <a
             href="#contact"
