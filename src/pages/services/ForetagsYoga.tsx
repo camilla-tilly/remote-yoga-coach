@@ -36,31 +36,31 @@ const ForetagsYoga = () => (
     ]}
     highlights={[
       {
-        heading: "Weekly Practice",
+        heading: "1 — Weekly Practice",
         text: "En session i veckan på Teams. Andning, meditation eller stolsyoga, 20 till 30 minuter. Kameran behöver inte vara på. Fungerar från skrivbordet eller ett tyst rum."
       },
       {
-        heading: "Embedded Wellness",
+        heading: "2 — Embedded Wellness",
         text: "Två sessioner i veckan på Teams plus ett besök på plats varje månad och ett uppföljningssamtal. Vana plus närvaro."
       },
       {
-        heading: "Full Program",
+        heading: "3 — Full Program",
         text: "Två sessioner i veckan på Teams, två besök på kontoret varje månad och uppföljning varannan vecka. Wellness som en verklig del av er kultur."
       }
     ]}
     pricing={[
       {
-        label: 'Weekly Practice',
+        label: '1 — Weekly Practice',
         price: '2 500 kr/mån',
         note: '1 session/vecka på Teams, 20–30 min. Andning, meditation eller stolsyoga.'
       },
       {
-        label: 'Embedded Wellness',
+        label: '2 — Embedded Wellness',
         price: '5 000 kr/mån',
         note: '2 sessioner/vecka på Teams + 1 besök på plats/mån + uppföljningssamtal.'
       },
       {
-        label: 'Full Program',
+        label: '3 — Full Program',
         price: '7 500 kr/mån',
         note: '2 sessioner/vecka på Teams + 2 besök/mån + uppföljning varannan vecka.'
       },
