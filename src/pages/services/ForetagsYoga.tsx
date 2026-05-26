@@ -28,7 +28,7 @@ const ForetagsYoga = () => (
     heroSubtitle="Andning, meditation och rörelse varje vecka, på Teams, från skrivbordet. Inget ombyte. Ingen utrustning. Bara ett återkommande andrum som faktiskt håller."
     heroImage="/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     heroImageAlt="Yoga och välmående för företag i Stockholm"
-    introHeading="Engångsevent ger engångsresultat"
+    introHeading="Stressen försvinner inte av sig själv"
     introParagraphs={[
       "De flesta satsningar på personalvård fastnar i samma mönster: ett event, lite entusiasm, sedan ingenting. Det är inte för att folk inte bryr sig. Det är för att ett event inte bygger en vana.",
       "Det som fungerar är repetition. Samma tid varje vecka, från skrivbordet. Ingen behöver åka någonstans, byta om eller förbereda sig. De loggar in, de gör det, de fortsätter sin dag.",
