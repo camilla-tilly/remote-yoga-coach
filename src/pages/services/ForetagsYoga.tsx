@@ -36,33 +36,33 @@ const ForetagsYoga = () => (
     ]}
     highlights={[
       {
-        heading: "Nivå 1: Andningspauser",
+        heading: "Weekly Practice",
         text: "En session i veckan på Teams. Andning, meditation eller stolsyoga, 20 till 30 minuter. Kameran behöver inte vara på. Fungerar från skrivbordet eller ett tyst rum."
       },
       {
-        heading: "Nivå 2: Andning och rörelse",
-        text: "Två sessioner i veckan på Teams, en andningspaus och en rörelse- eller stolsyoga-klass. Plus ett besök på plats varje månad och ett månadsvis uppföljningssamtal."
+        heading: "Embedded Wellness",
+        text: "Två sessioner i veckan på Teams plus ett besök på plats varje månad och ett uppföljningssamtal. Vana plus närvaro."
       },
       {
-        heading: "Nivå 3: Fullständigt program",
+        heading: "Full Program",
         text: "Två sessioner i veckan på Teams, två besök på kontoret varje månad och uppföljning varannan vecka. Wellness som en verklig del av er kultur."
       }
     ]}
     pricing={[
       {
-        label: 'Nivå 1',
+        label: 'Weekly Practice',
         price: '2 500 kr/mån',
-        note: 'Andningspauser. 1 session/vecka på Teams, 20–30 min.'
+        note: '1 session/vecka på Teams, 20–30 min. Andning, meditation eller stolsyoga.'
       },
       {
-        label: 'Nivå 2',
+        label: 'Embedded Wellness',
         price: '5 000 kr/mån',
-        note: 'Andning och rörelse. 2 sessioner/vecka på Teams + 1 besök på plats/mån.'
+        note: '2 sessioner/vecka på Teams + 1 besök på plats/mån + uppföljningssamtal.'
       },
       {
-        label: 'Nivå 3',
+        label: 'Full Program',
         price: '7 500 kr/mån',
-        note: 'Fullständigt program. 2 sessioner/vecka på Teams + 2 besök/mån + uppföljning.'
+        note: '2 sessioner/vecka på Teams + 2 besök/mån + uppföljning varannan vecka.'
       },
     ]}
     detailsHeading="Hur det fungerar"
