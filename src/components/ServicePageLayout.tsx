@@ -440,7 +440,7 @@ const ServicePageLayout = ({
           {/* Pricing */}
           {pricing && pricing.length > 0 && (
             <section className="px-4 mb-14">
-              <div className="max-w-2xl mx-auto">
+              <div className={pricing.length === 3 ? 'max-w-4xl mx-auto' : 'max-w-2xl mx-auto'}>
                 <div className="text-center mb-10">
                   <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-4">
                     Priser
@@ -449,7 +449,7 @@ const ServicePageLayout = ({
                     Välj det som passar
                   </h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className={`grid grid-cols-1 gap-5 ${pricing.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
                   {pricing.map((tier, i) => (
                     <div
                       key={i}

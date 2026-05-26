@@ -5,8 +5,8 @@ const relatedServices: { label: string; href: string }[] = [];
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Företagsyoga, Konferensyoga, Kickoff, AW, Sommaravslutning & Teambuilding i Stockholm",
-  "description": "Yoga för företag, konferenser, kickoffs, AWs, sommaravslutningar och teambuilding i Stockholm. Öka teamets energi, fokus och välmående med en professionell yogaklass skräddarsydd för er organisation.",
+  "name": "Företagsyoga och wellness-program för team i Stockholm",
+  "description": "Återkommande yoga och mindfulness för företag i Stockholm. Tre nivåer från 2 500 kr/månaden. Veckovisa Zoom-sessioner och besök på kontoret.",
   "provider": {
     "@type": "LocalBusiness",
     "name": "Yoga med Camilla",
@@ -18,87 +18,100 @@ const structuredData = {
 
 const ForetagsYoga = () => (
   <ServicePageLayout
-    seoTitle="Företagsyoga Stockholm | Yoga med Camilla"
-    seoDescription="Företagsyoga i Stockholm anpassad efter era behov. Andningsworkshop, stolsyoga, full flow eller skräddarsytt. Konferens, kickoff, AW. Kontakta för offert."
+    seoTitle="Företagsyoga Stockholm | Abonnemang från 2 500 kr/mån | Yoga med Camilla"
+    seoDescription="Återkommande yoga och andning för team i Stockholm. Inte ett engångsevent, en vana. Tre nivåer från 2 500 kr/mån. Zoom varje vecka, besök på kontoret ingår från nivå 2."
     canonical="https://yogawithcamilla.se/tjanster/foretagsyoga"
     ogImage="https://yogawithcamilla.se/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     breadcrumbLabel="Företagsyoga"
-    heroTag="Företag, Konferens, Kickoff, AW & Teambuilding"
-    heroHeading="Företagsyoga och teambuilding i Stockholm"
-    heroSubtitle="Yoga för konferenser, kickoffs, AWs, sommaravslutningar, teambuilding och regelbundna klasser på kontoret. Alla kan delta, ingen erfarenhet krävs."
+    heroTag="Företagsyoga och teamwellness i Stockholm"
+    heroHeading="En återkommande välmåendevana för ert team"
+    heroSubtitle="Andning, meditation och rörelse varje vecka, på Zoom, från skrivbordet. Inget ombyte. Ingen utrustning. Bara ett återkommande andrum som faktiskt håller."
     heroImage="/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
-    heroImageAlt="Lugn och fokus, yoga för konferens och företagsevent"
-    introHeading="Ett andrum för teamet"
+    heroImageAlt="Yoga och välmående för företag i Stockholm"
+    introHeading="Engångsevent ger engångsresultat"
     introParagraphs={[
-      "I Stockholm erbjuder jag regelbunden yoga på kontoret samt konferenser, kickoffs, AWs och sommaravslutningar. Klassen hålls på engelska.",
-      "Unna era anställda en stund att andas, sänka tempot och släppa spänningar från långa möten. Stressen sjunker, tankarna klarnar och fokus blir skarpare. En gemensam stund där ingen behöver prestera.",
-      "Ingen yogaerfarenhet krävs. Klassen anpassas efter gruppen."
+      "De flesta wellnesssatsningar på jobbet fastnar i samma mönster: ett event, lite entusiasm, sedan ingenting. Det är inte för att folk inte bryr sig. Det är för att ett event inte bygger en vana.",
+      "Det som fungerar är repetition. Samma tid varje vecka, från skrivbordet. Ingen behöver åka någonstans, byta om eller förbereda sig. De loggar in, de gör det, de fortsätter sin dag.",
+      "Jag leder andning, meditation och yoga för team i Stockholm, live på Zoom varje vecka. Klasserna hålls på engelska, perfekt för internationella team. Från nivå 2 ingår också besök på ert kontor varje månad."
     ]}
     highlights={[
       {
-        heading: "Andningsworkshop",
-        text: "30 minuter fokus på andningstekniker. Inga mattor, inget ombyte. Passar perfekt som paus mitt i en konferensdag, ett möte eller en lång arbetsdag."
+        heading: "Nivå 1: Andningspauser",
+        text: "En session i veckan på Zoom. Andning, meditation eller stolsyoga, 20 till 30 minuter. Kameran behöver inte vara på. Fungerar från skrivbordet eller ett tyst rum."
       },
       {
-        heading: "Stolsyoga och kontorsyoga",
-        text: "Yoga anpassad för kontoret, på stolar eller stående. Ingen behöver byta om eller ha med sig något. Lätt att slot in i dagen."
+        heading: "Nivå 2: Andning och rörelse",
+        text: "Två sessioner i veckan på Zoom, en andningspaus och en rörelse- eller stolsyoga-klass. Plus ett besök på plats varje månad och ett månadsvis uppföljningssamtal."
       },
       {
-        heading: "Full yogaklass med mattor",
-        text: "Traditionell klass med rörelser, flöde och avslappning. Ni behöver bara ett utrymme som rymmer en matta per person."
-      },
-      {
-        heading: "Skräddarsytt efter era behov",
-        text: "Fokus på prestation, mental hälsa, burnout-prevention eller energipåfyllning. Hör av er med era önskemål och vi hittar rätt format tillsammans."
+        heading: "Nivå 3: Fullständigt program",
+        text: "Två sessioner i veckan på Zoom, två besök på kontoret varje månad och uppföljning varannan vecka. Wellness som en verklig del av er kultur."
       }
     ]}
     pricing={[
-      { label: 'Alla format', price: 'kontakta för offert', note: 'Pris beror på format, längd, antal deltagare och plats.' },
+      {
+        label: 'Nivå 1: Andningspauser',
+        price: '2 500 kr/mån',
+        note: '1 session/vecka på Zoom. Andning, meditation eller stolsyoga, 20-30 min.'
+      },
+      {
+        label: 'Nivå 2: Andning och rörelse',
+        price: '5 000 kr/mån',
+        note: '2 sessioner/vecka på Zoom + 1 besök på plats/mån + uppföljningssamtal.'
+      },
+      {
+        label: 'Nivå 3: Fullständigt program',
+        price: '7 500 kr/mån',
+        note: '2 sessioner/vecka på Zoom + 2 besök/mån + uppföljning varannan vecka.'
+      },
     ]}
-    detailsHeading="Format & praktisk information"
+    detailsHeading="Hur det fungerar"
     detailsParagraphs={[
-      { subheading: "Allmänt" },
-      "Ni behöver bara ha ett utrymme som är tillräckligt stort. Har ni egna yogamattor är det perfekt. Behöver jag ta med utrustning tillkommer en avgift som vi kommer överens om i förväg, baserat på antal deltagare, avstånd och vad som behövs på plats.",
-      "Säg till om gruppen vill byta om till träningskläder eller hellre köra direkt i det de har på sig. Jag formar klassen efter det.",
-      { subheading: "Stockholm" },
-      "Jag kommer till ert kontor eller er konferensanläggning, eller hjälper gärna till att hitta en lämplig yogasal. Regelbundna klasser på kontoret erbjuds i Stockholm.",
-      "Funderar ni på fler alternativ för teamet? Guiden till [teambuilding i Stockholm](/blogg/teambuilding-aktiviteter-stockholm) går igenom sju aktiviteter och vad som passar vem.",
-      { subheading: "Boka" },
-      "Maila hello.yogawithcamilla@gmail.com med era önskemål, antal deltagare, plats och datum för en offert."
+      { subheading: "Kom igång" },
+      "Vi börjar med ett introduktionsmöte hos er, ungefär 45 minuter. Jag lär mig vad teamet behöver, ni lär känna mig, och vi sätter upp de återkommande tiderna som passar er arbetsdag.",
+      "Sedan kör vi. Samma tid varje vecka. Ni får en Zoom-länk i kalendern. De som vill är med, de som inte kan hoppar av den veckan och är med nästa.",
+      { subheading: "Online och på plats" },
+      "Alla tre nivåerna inkluderar veckovisa Zoom-sessioner på 20 till 30 minuter. Från nivå 2 ingår också att jag kommer till ert kontor varje månad. Besöken kan vara andningspaus, meditation, stolsyoga eller en full klass med mattor, beroende på vad ni vill och hur mycket utrymme ni har.",
+      { subheading: "Uppföljning" },
+      "Från nivå 2 ingår ett månadsvis uppföljningssamtal på 15 till 20 minuter med er kontaktperson, oftast HR. Vi pratar om vad som fungerar, vad vi justerar, och om teamet märker skillnad.",
+      { subheading: "Kickoffs och engångsevent" },
+      "Vill ni ha yoga till ett specifikt event som en kickoff, AW, konferens eller sommaravslutning bokas det separat. Maila med era önskemål, antal deltagare, plats och datum för en offert.",
+      { subheading: "Kontakt" },
+      "Maila hello.yogawithcamilla@gmail.com med era önskemål, antal anställda och var ni sitter. Jag sätter ihop ett förslag."
     ]}
-    ctaHeading="Boka företagsyoga eller event"
-    ctaText="Vet ni inte vilket format som passar? Berätta vad teamet behöver just nu så hittar vi rätt form tillsammans."
+    ctaHeading="Boka ett introduktionsmöte"
+    ctaText="Ett möte på 45 minuter. Jag lär mig vad ert team behöver och ni ser om det här är rätt för er."
     faq={[
       {
+        question: "Varför abonnemang och inte ett engångsevent?",
+        answer: "Engångsevent ger ett tillfälligt lyft, sedan är det bortglömt. Det som bygger verklig effekt är repetition. Samma tid varje vecka skapar en vana, och det är vanan som faktiskt minskar stress och förbättrar fokus över tid."
+      },
+      {
         question: "Behöver deltagarna ha yogaerfarenhet?",
-        answer: "Nej, klassen anpassas för alla nivåer. De flesta deltagare på företagsyoga är nybörjare, och det funkar utmärkt."
+        answer: "Nej. De flesta deltagare på företagssessioner är nybörjare. Formaten är utformade för att fungera för alla, inklusive de som aldrig gjort yoga."
       },
       {
-        question: "Vad kostar företagsyoga?",
-        answer: "Det beror på vad ni behöver. En kort andningsworkshop ser helt annorlunda ut mot en full yogaklass med mattor för 20 personer. Mejla med era önskemål så sätter jag ihop ett förslag."
+        question: "Vad behöver vi ha på kontoret?",
+        answer: "För Zoom-sessionerna behövs ingenting utöver en dator och ett tyst hörn om man vill ha det. För besök på plats behövs ett rum som är tillräckligt stort. Har ni egna yogamattor är det perfekt, men det krävs inte."
       },
       {
-        question: "Hur lång är en klass?",
-        answer: "Det beror på formatet. En andningsworkshop eller stolsyoga kan vara 20 till 30 minuter och passar lätt in i arbetsdagen. En full yogaklass är oftast 45 till 60 minuter. Vi anpassar efter vad som passar er dag."
+        question: "Hur lång är varje session?",
+        answer: "Zoom-sessionerna är 20 till 30 minuter. Besöken på plats är flexibla, 20 till 45 minuter beroende på format och vad som passar er dag."
       },
       {
-        question: "Vad behöver vi ordna?",
-        answer: "Bara ett utrymme som är tillräckligt stort. Har ni egna yogamattor är det perfekt. Behöver ni att jag tar med utrustning kan vi prata om det utifrån gruppens storlek och plats."
+        question: "Kan vi byta nivå?",
+        answer: "Ja. Många börjar på nivå 1 för att testa och uppgraderar när de sett att det fungerar för teamet. Vi justerar vid månadsskiftet."
       },
       {
-        question: "Kan ni hålla yoga utomhus?",
-        answer: "Ja, vi kan hålla utomhusyoga vid er plats om ni har en lämplig yta."
-      },
-      {
-        question: "Hur bokar vi?",
-        answer: "Maila hello.yogawithcamilla@gmail.com med era önskemål, datum, antal deltagare och plats. Jag återkommer med tillgänglighet och en offert."
+        question: "Hur bokar vi kickoff eller engångsevent?",
+        answer: "Maila hello.yogawithcamilla@gmail.com med era önskemål, datum, antal deltagare och plats. Engångsevent bokas separat från abonnemangen."
       }
     ]}
     structuredData={structuredData}
     relatedServices={relatedServices}
     englishKeywords={{
-      heading: "Corporate Yoga in English | Stockholm",
-      text: "Led in English by a 500-hour certified yoga teacher.\n\nIn Stockholm: office yoga, breathing workshops, chair yoga, conference sessions, kickoffs, after-works and summer send-offs. Every booking is tailored to your team's needs.\n\nEmail hello.yogawithcamilla@gmail.com with your wishes, date, group size and location for a quote."
+      heading: "Corporate Yoga & Wellness in English | Stockholm",
+      text: "Recurring weekly yoga and mindfulness for teams in Stockholm, led in English by a 500-hour certified teacher.\n\nThree subscription tiers from 2,500 SEK/month. Zoom sessions every week from your desk, in-person office visits included from tier 2. Ideal for international teams and companies with remote or hybrid setups.\n\nAlso available: one-off sessions for kickoffs, after-works, conferences, and summer send-offs.\n\nEmail hello.yogawithcamilla@gmail.com with your team size, location and needs."
     }}
   />
 );
