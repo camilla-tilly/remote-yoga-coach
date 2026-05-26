@@ -27,7 +27,7 @@ const ForetagsYogaEvent = () => (
     ogImage="https://yogawithcamilla.se/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     breadcrumbLabel="Företagsyoga — events"
     heroTag="Konferensyoga och event-yoga i Stockholm"
-    heroHeading="Yoga som fastnar. Inte ett avbockningsevent."
+    heroHeading="Konferensyoga och event-yoga i Stockholm."
     heroSubtitle="En yogaklass mitt i kickoffen, AW:n eller sommaravslutningen. Klassen anpassas efter er grupp och ert tillfälle. Jag tar med allt. Ni behöver bara ett utrymme."
     heroImage="/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     heroImageAlt="Yoga för kickoffs och företagsevent i Stockholm"
