@@ -2210,7 +2210,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'För team med kontor på flera orter eller remote-anställda. Jag leder live från ert Stockholmskontor medan distanskollegor följer med via Zoom eller Teams. Ni behöver bara en kamera och en projektor.'
+        text: 'För team med kontor på flera orter eller remote-anställda. Jag leder live från ert Stockholmskontor medan distanskollegor följer med via Teams. Ni behöver bara en kamera och en projektor.'
       },
       {
         type: 'heading',
@@ -2338,7 +2338,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Hybridformatet funkar bra. Jag leder live på kontoret och resten följer via Zoom. Eller så bokar ni en fast kontorsklass och jag gör en separat distansklass för remote-kollegor på en annan tid.'
+        text: 'Hybridformatet funkar bra. Jag leder live på kontoret och resten följer via Teams. Eller så bokar ni en fast kontorsklass och jag gör en separat distansklass för remote-kollegor på en annan tid.'
       },
       {
         type: 'subheading',
