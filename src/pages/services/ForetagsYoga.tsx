@@ -34,20 +34,7 @@ const ForetagsYoga = () => (
       "Det som fungerar är repetition. Samma tid varje vecka, från skrivbordet. Ingen behöver åka någonstans, byta om eller förbereda sig. De loggar in, de gör det, de fortsätter sin dag.",
       "Jag leder andning, meditation och yoga för team i Stockholm, live på Teams varje vecka. Klasserna hålls på engelska, perfekt för internationella team. Från nivå 2 ingår också besök på ert kontor varje månad."
     ]}
-    highlights={[
-      {
-        heading: "1 — Weekly Practice",
-        text: "En session i veckan på Teams. Andning, meditation eller stolsyoga, 20 till 30 minuter. Kameran behöver inte vara på. Fungerar från skrivbordet eller ett tyst rum."
-      },
-      {
-        heading: "2 — Embedded Wellness",
-        text: "Två sessioner i veckan på Teams plus ett besök på plats varje månad och ett uppföljningssamtal. Vana plus närvaro."
-      },
-      {
-        heading: "3 — Full Program",
-        text: "Två sessioner i veckan på Teams, två besök på kontoret varje månad och uppföljning varannan vecka. Wellness som en verklig del av er kultur."
-      }
-    ]}
+    pricingEyebrow="Abonnemang"
     pricing={[
       {
         label: '1 — Weekly Practice',

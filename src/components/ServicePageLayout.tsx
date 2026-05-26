@@ -69,6 +69,7 @@ interface ServicePageProps {
   audience?: AudienceSection;
   offerings?: OfferingsSection;
   pricing?: PricingTier[];
+  pricingEyebrow?: string;
   detailsHeading?: string;
   detailsParagraphs?: (string | { subheading: string })[];
   ctaHeading: string;
@@ -107,6 +108,7 @@ const ServicePageLayout = ({
   audience,
   offerings,
   pricing,
+  pricingEyebrow = 'Priser',
   detailsHeading,
   detailsParagraphs,
   ctaHeading,
@@ -443,7 +445,7 @@ const ServicePageLayout = ({
               <div className="max-w-2xl mx-auto">
                 <div className="text-center mb-10">
                   <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-4">
-                    Priser
+                    {pricingEyebrow}
                   </p>
                   <h2 className="font-cormorant font-semibold text-3xl md:text-4xl text-dalashala-earth tracking-tight">
                     Välj det som passar
