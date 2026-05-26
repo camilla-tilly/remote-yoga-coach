@@ -30,7 +30,7 @@ const ForetagsYoga = () => (
     heroImageAlt="Yoga och välmående för företag i Stockholm"
     introHeading="Engångsevent ger engångsresultat"
     introParagraphs={[
-      "De flesta wellnesssatsningar på jobbet fastnar i samma mönster: ett event, lite entusiasm, sedan ingenting. Det är inte för att folk inte bryr sig. Det är för att ett event inte bygger en vana.",
+      "De flesta satsningar på personalvård fastnar i samma mönster: ett event, lite entusiasm, sedan ingenting. Det är inte för att folk inte bryr sig. Det är för att ett event inte bygger en vana.",
       "Det som fungerar är repetition. Samma tid varje vecka, från skrivbordet. Ingen behöver åka någonstans, byta om eller förbereda sig. De loggar in, de gör det, de fortsätter sin dag.",
       "Jag leder andning, meditation och yoga för team i Stockholm, live på Teams varje vecka. Klasserna hålls på engelska, perfekt för internationella team. Från nivå 2 ingår också besök på ert kontor varje månad."
     ]}
@@ -50,19 +50,19 @@ const ForetagsYoga = () => (
     ]}
     pricing={[
       {
-        label: 'Nivå 1: Andningspauser',
+        label: 'Nivå 1',
         price: '2 500 kr/mån',
-        note: '1 session/vecka på Teams. Andning, meditation eller stolsyoga, 20-30 min.'
+        note: 'Andningspauser. 1 session/vecka på Teams, 20–30 min.'
       },
       {
-        label: 'Nivå 2: Andning och rörelse',
+        label: 'Nivå 2',
         price: '5 000 kr/mån',
-        note: '2 sessioner/vecka på Teams + 1 besök på plats/mån + uppföljningssamtal.'
+        note: 'Andning och rörelse. 2 sessioner/vecka på Teams + 1 besök på plats/mån.'
       },
       {
-        label: 'Nivå 3: Fullständigt program',
+        label: 'Nivå 3',
         price: '7 500 kr/mån',
-        note: '2 sessioner/vecka på Teams + 2 besök/mån + uppföljning varannan vecka.'
+        note: 'Fullständigt program. 2 sessioner/vecka på Teams + 2 besök/mån + uppföljning.'
       },
     ]}
     detailsHeading="Hur det fungerar"
