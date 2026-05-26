@@ -400,7 +400,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'SUP yoga är en engångsupplevelse vid vattnet. Det skiljer sig från återkommande [företagsyoga](/blogg/foretagsyoga-vad-ingar-och-kostar) på kontoret, som ligger närmare friskvård och kostar från 1 600 kr per klass. Båda kan vara företagsbokade, men logiken är olika: en SUP yoga-dag är en engångshändelse, medan företagsyoga är en pågående förmån. Om ni letar efter återkommande yoga på arbetsplatsen är det en annan offert.'
+        text: 'SUP yoga är en engångsupplevelse vid vattnet. Det skiljer sig från återkommande [företagsyoga](/blogg/foretagsyoga-vad-ingar-och-kostar), som är ett löpande abonnemang med veckovisa Teams-sessioner från skrivbordet. Båda kan vara företagsbokade, men logiken är olika: en SUP yoga-dag är en engångshändelse, medan företagsyoga är en pågående förmån. Om ni letar efter återkommande yoga är det en annan offert.'
       },
       {
         type: 'heading',
@@ -2138,7 +2138,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'callout',
-        text: 'Snabbversionen: Jag kommer till ert kontor eller event med utrustning, anpassar klassen och leder den. Ni behöver bara ett utrymme. Yoga är en godkänd friskvårdsaktivitet enligt Skatteverket. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för en offert.'
+        text: 'Snabbversionen: Sessionerna hålls live på Teams, direkt från skrivbordet. Inget ombyte, inga mattor, ingen transport. Vi börjar med ett möte hos er för att förstå vad teamet behöver, sedan kör vi varje vecka därifrån. Yoga är en godkänd friskvårdsaktivitet enligt Skatteverket. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för en offert.'
       },
       {
         type: 'heading',
@@ -2146,7 +2146,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Företagsyoga är yogaklasser som hålls på arbetsplatsen eller i samband med ett företagsevent. En certifierad yogalärare kommer till er med utrustning, leder en klass anpassad efter gruppens nivå, och ni behöver inte tänka på något annat än att dyka upp. Det fungerar både som återkommande friskvård och som enstaka inslag på konferenser, kickoffer, sommaravslutningar eller after works.'
+        text: 'Företagsyoga är återkommande andning, meditation och rörelse för team, lett av en certifierad yogalärare. Det sker live på Teams direkt från skrivbordet, utan utrustning, ombyte eller transport. Sessionerna är 20 till 30 minuter och är designade för att passa in i en arbetsdag utan att störa den. Utöver det löpande programmet kan man också boka enstaka inslag till kickoffer, konferenser, sommaravslutningar eller after works.'
       },
       {
         type: 'paragraph',
@@ -2170,47 +2170,31 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'De vanligaste uppläggen. Välj det som passar er vecka bäst, eller kombinera dem.'
+        text: 'Alla löpande sessioner sker på Teams, direkt från skrivbordet. Välj det format som passar teamet bäst, eller kombinera dem.'
       },
       {
         type: 'subheading',
-        text: 'Morgonyoga (07:30 till 08:30)'
+        text: 'Andning och meditation (20 till 30 min, Teams)'
       },
       {
         type: 'paragraph',
-        text: 'Funkar för team som startar dagen gemensamt. 30 till 60 minuter yoga innan arbetet sätter igång. Passar särskilt om ni har kontorsyoga som återkommande friskvårdsförmån och vill att folk kan räkna in det i arbetsdagen utan att behöva boka om möten.'
+        text: 'Den vanligaste sessionstypen. Fokus på andningstekniker, guidat mindfulness eller enkel rörelsemeditation. Fungerar direkt från skrivbordet eller ett tyst hörn. Kameran behöver inte vara på. Passar som paus mitt på dagen eller i starten av en mötesvecka.'
       },
       {
         type: 'subheading',
-        text: 'Lunchyoga (12:00 till 12:45)'
+        text: 'Skrivbordsrörelse och stretching (20 till 30 min, Teams)'
       },
       {
         type: 'paragraph',
-        text: 'Det enklaste att införa. 45 minuter över lunchen, inklusive ombyte. Klassen är mjukare eftersom folk går tillbaka till skrivbordet efteråt. Fokus på axlar, höfter och rygg som stelnar av stillasittande. Populärast bland mina fasta företagskunder.'
+        text: 'Yoga och rörelse anpassad för att göras vid skrivbordet eller stående. Fokus på det som stelnar av stillasittande: axlar, nacke, höfter. Ingen utrustning, inget ombyte. Fungerar för alla, oavsett om de aldrig gjort yoga förut.'
       },
       {
         type: 'subheading',
-        text: 'Eftermiddags- eller after work-yoga (16:00 till 17:30)'
+        text: 'Kickoffs och event (engångstillfällen, på plats)'
       },
       {
         type: 'paragraph',
-        text: 'Perfekt som markering mellan arbete och kväll. 60 minuter som är tyngre på stretching, långa positioner och andningsarbete. Fungerar extra bra på fredagar, och som återkommande upplägg för team med långa skärmveckor.'
-      },
-      {
-        type: 'subheading',
-        text: 'Konferens- och event-yoga'
-      },
-      {
-        type: 'paragraph',
-        text: 'En engångsklass som del av en kickoff, konferens, sommaravslutning eller kundkväll. Längd och format skräddarsys. Allt från en 20-minuters "andningsklass" mellan föreläsningar, till en full 90-minuters outdoor-klass med efterföljande middag. Prissätts individuellt eftersom det beror på plats, antal deltagare och tidpunkt.'
-      },
-      {
-        type: 'subheading',
-        text: 'Hybrid (live plus inspelat)'
-      },
-      {
-        type: 'paragraph',
-        text: 'För team med kontor på flera orter eller remote-anställda. Jag leder live från ert Stockholmskontor medan distanskollegor följer med via Teams. Ni behöver bara en kamera och en projektor.'
+        text: 'Vill ni ha yoga som del av en kickoff, konferens, sommaravslutning eller kundkväll? Det bokas separat och hålls på plats hos er eller på en extern lokal. Längd och format skräddarsys. Allt från en 20-minuters andningsklass mellan föreläsningar till en full klass med mattor och avslappning. Prissätts individuellt.'
       },
       {
         type: 'heading',
@@ -2250,39 +2234,26 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Kombinationer av ovanstående, outdoor-klass, retreat i Dalarna, hybrid med remote-kollegor via Zoom. Berätta vad ni behöver så hittar vi rätt form.'
+        text: 'Kombinationer av ovanstående, outdoor-klass på ett kickoff, retreat i Dalarna. Berätta vad ni behöver så hittar vi rätt form.'
       },
       {
         type: 'heading',
-        text: 'Vad ingår, och vad ingår inte'
-      },
-      {
-        type: 'subheading',
-        text: 'Ingår'
+        text: 'Vad ingår'
       },
       {
         type: 'list',
         items: [
           '500-timmars certifierad yogalärare (Yoga Alliance)',
-          'Yogamattor och block för upp till 20 deltagare',
+          'Live sessioner på Teams, 20 till 30 minuter per gång',
           'Klassen anpassas efter gruppens nivå. Ingen förkunskap krävs.',
-          'Undervisning på engelska',
-          'Resa och uppriggning (jag är på plats 10 till 15 min innan start)',
-          'Uppföljning efter första klassen för att finjustera upplägget',
+          'Undervisning på engelska, perfekt för internationella team',
+          'Introduktionsmöte på plats hos er (45 min) för att förstå teamets behov',
+          'Uppföljningssamtal ingår från nivå 2',
         ],
       },
       {
-        type: 'subheading',
-        text: 'Ingår inte'
-      },
-      {
-        type: 'list',
-        items: [
-          'Egen lokal eller lokalhyra. Ni står för utrymmet.',
-          'Handdukar eller vatten till deltagare',
-          'Specialutrustning för yin / restorativ (bolster) över 10 personer. Tillkommer om ni vill ha det.',
-          'Resa utanför Stockholms kommun (Dalarna, övriga Sverige). Tillkommer enligt faktisk kostnad.',
-        ],
+        type: 'paragraph',
+        text: 'Deltagarna behöver ingenting utöver en dator och internetuppkoppling. Inga mattor, inget ombyte, ingen lokal.'
       },
       {
         type: 'heading',
@@ -2290,23 +2261,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Första gången ni bokar: vi mejlar fram datum, form och antal. Några dagar innan skickar jag en kort anvisning till era deltagare (kläder, vad som är bra att veta, inget mer) som ni vidarebefordrar eller klistrar in i mötesinbjudan. Jag kommer 10 till 15 minuter innan start, flyttar undan det som behöver flyttas, lägger ut mattor. Leder klassen. Plockar ihop efteråt. Ni gör ingenting.'
+        text: 'Vi börjar med ett möte hos er, 45 minuter. Jag lär mig vad teamet behöver, ni lär känna mig, och vi sätter upp de återkommande tiderna som passar er arbetsdag. Sedan skickar ni ut en Teams-länk i kalendern. Deltagarna loggar in vid sina datorer, klassen börjar, klassen slutar. De fortsätter sin dag. Ni gör ingenting mer.'
       },
       {
         type: 'paragraph',
-        text: 'De flesta företag börjar med en enstaka klass eller fyra veckors provperiod innan de går över till återkommande bokning. Det är rimligt. Man kan inte veta om det passar er kultur förrän ni testat.'
-      },
-      {
-        type: 'heading',
-        text: 'Lokalen: krav och vad som faktiskt funkar'
-      },
-      {
-        type: 'paragraph',
-        text: 'Ni behöver ett utrymme som rymmer en matta per person med armlängd emellan. För 10 personer räcker ett konferensrum på 25 till 30 kvm där borden kan flyttas åt sidan. För 20 personer ett större rum eller öppet lounge-utrymme. Takterrass eller innergård på sommaren är fantastiskt. Jag tar med yttermattor om underlaget är ojämnt.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Saker som ofta fungerar bra: tomma konferensrum, matsalar, receptionsytor efter stängning, takterrasser, wellness-rum. Saker som inte fungerar: rum under 15 kvm, golv med fast matta (svettigt och svårt att städa), utrymmen med mötesbord som är fastskruvade.'
+        text: 'Många team börjar med fyra veckors provperiod innan de bestämmer sig för vilken nivå som passar. Det är rimligt. Man kan inte veta om formatet funkar för er kultur förrän ni testat.'
       },
       {
         type: 'heading',
@@ -2338,7 +2297,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Hybridformatet funkar bra. Jag leder live på kontoret och resten följer via Teams. Eller så bokar ni en fast kontorsklass och jag gör en separat distansklass för remote-kollegor på en annan tid.'
+        text: 'Det är precis vad det här formatet är byggt för. Alla följer med via Teams, oavsett om de sitter på kontoret eller hemma. Ingen behöver vara på samma plats.'
       },
       {
         type: 'subheading',
@@ -2354,7 +2313,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Företagsyoga som tjänst på plats faktureras i regel med 25 procent moms, eftersom det är en tjänst som företaget köper, inte en tränings- eller idrottsanläggning. Fråga er redovisningskonsult om hur ni bokför det. Alla mina offerter specificerar momsen separat.'
+        text: 'Företagsyoga som återkommande abonnemang faktureras i regel med 25 procent moms, eftersom det är en tjänst som företaget köper, inte en tränings- eller idrottsanläggning. Fråga er redovisningskonsult om hur ni bokför det. Alla mina offerter specificerar momsen separat.'
       },
       {
         type: 'heading',
@@ -2370,11 +2329,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'heading',
-        text: 'Företagsyoga i Dalarna och på konferenser'
+        text: 'Kickoffs och konferenser i Dalarna'
       },
       {
         type: 'paragraph',
-        text: 'Håller ni konferens eller kickoff i Dalarna? Jag håller yoga på er konferensanläggning, ert boende, eller utomhus på altanen i skogen. En utomhusklass med gryningsljus och fågelljud slår de flesta konferenssalar i effekt, särskilt på dag två av en tredagars, när alla är stela av att sitta. Resa utanför Stockholms kommun debiteras enligt faktiskt utlägg (tåg eller milersättning).'
+        text: 'Håller ni kickoff eller konferens i Dalarna? Det är ett av de vanligaste tilläggen. Jag håller yoga utomhus på er konferensanläggning eller boende. En klass med gryningsljus och fågelljud på dag två av en tredagars, när alla är stela av att sitta, sitter kvar länge efter. Bokas separat som engångstillfälle. Resa utanför Stockholm debiteras enligt faktiskt utlägg.'
       },
       {
         type: 'heading',
@@ -2383,10 +2342,10 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'list',
         items: [
-          '1. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum (eller önskad frekvens), ungefärligt antal deltagare, plats och format.',
-          '2. Jag återkommer med tillgänglighet, förslag på upplägg och offert.',
-          '3. Ni bokar datum och jag skickar en kort anvisning till era deltagare att vidarebefordra.',
-          '4. Jag kommer, leder, plockar ihop. Faktura skickas månadsvis.',
+          '1. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med antal anställda, var ni sitter och vad ni har i åtanke.',
+          '2. Jag återkommer med förslag på nivå och upplägg.',
+          '3. Vi träffas hos er för ett 45-minutersmöte. Ni lär känna mig, vi sätter tiderna.',
+          '4. Ni lägger in den återkommande Teams-länken i allas kalendrar. Vi kör.',
         ],
       },
       {
@@ -2418,12 +2377,8 @@ export const blogPosts: BlogPost[] = [
             a: 'Nej. Företagsyoga är designat för blandad nivå, inklusive personer som aldrig gjort yoga. Klassen anpassas efter gruppen och inga avancerade positioner används. De flesta av mina företagskunder är team där majoriteten aldrig öppnat en yogamatta innan första klassen.',
           },
           {
-            q: 'Vilken lokal behövs?',
-            a: 'Ett utrymme som rymmer en yogamatta per person med armlängd emellan. För 10 personer räcker ett rum på 25 till 30 kvm. Konferensrum med undanflyttade bord, tomma loungeytor, matsalar eller takterrass funkar lika bra.',
-          },
-          {
-            q: 'Vad ska deltagarna ha på sig?',
-            a: 'Vanliga mjuka byxor och t-shirt. Inga speciella yogakläder krävs. Ombyte är valfritt. De flesta lunchyoga-deltagare byter om i 2 minuter innan och tillbaka efter, eller behåller samma kläder hela klassen.',
+            q: 'Vad behöver deltagarna ha?',
+            a: 'Ingenting utöver en dator och internetuppkoppling. Alla sessioner är på Teams direkt från skrivbordet. Inga mattor, inget ombyte, ingen lokal behövs.',
           },
           {
             q: 'Hur lång uppsägningstid har ni på återkommande bokningar?',

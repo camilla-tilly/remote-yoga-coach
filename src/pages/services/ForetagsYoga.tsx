@@ -18,8 +18,8 @@ const structuredData = {
 
 const ForetagsYoga = () => (
   <ServicePageLayout
-    seoTitle="Företagsyoga Stockholm | Abonnemang från 2 500 kr/mån | Yoga med Camilla"
-    seoDescription="Återkommande yoga och andning för team i Stockholm. Inte ett engångsevent, en vana. Tre nivåer från 2 500 kr/mån. Teams varje vecka, från skrivbordet. Inget ombyte, ingen förflyttning."
+    seoTitle="Företagsyoga Stockholm | Yoga med Camilla"
+    seoDescription="Återkommande yoga och andning för team i Stockholm. Inte ett engångsevent, en vana. Tre nivåer från 2 500 kr/mån. Teams varje vecka, direkt från skrivbordet."
     canonical="https://yogawithcamilla.se/tjanster/foretagsyoga"
     ogImage="https://yogawithcamilla.se/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     breadcrumbLabel="Företagsyoga"
@@ -32,24 +32,38 @@ const ForetagsYoga = () => (
     introParagraphs={[
       "De flesta satsningar på personalvård fastnar i samma mönster: ett event, lite entusiasm, sedan ingenting. Det är inte för att folk inte bryr sig. Det är för att ett event inte bygger en vana.",
       "Det som fungerar är repetition. Samma tid varje vecka, från skrivbordet. Ingen behöver åka någonstans, byta om eller förbereda sig. De loggar in, de gör det, de fortsätter sin dag.",
-      "Jag leder andning, meditation och yoga för team i Stockholm, live på Teams varje vecka. Klasserna hålls på engelska, perfekt för internationella team."
+      "Jag leder andning, meditation och rörelse för team i Stockholm, live på Teams varje vecka. Klasserna hålls på engelska, perfekt för internationella team."
+    ]}
+    highlights={[
+      {
+        heading: "1 — Weekly Practice",
+        text: "Två sessioner andning eller meditation i veckan på Teams, 20 till 30 minuter. Kameran behöver inte vara på. Fungerar från skrivbordet eller ett tyst rum."
+      },
+      {
+        heading: "2 — Embedded Wellness",
+        text: "En session andning eller meditation plus en session rörelse och stretching i veckan, allt på Teams. Plus ett månadsvis uppföljningssamtal."
+      },
+      {
+        heading: "3 — Full Program",
+        text: "Två sessioner andning eller meditation i veckan plus en till två rörelse- och stretchingsessioner, allt på Teams. Uppföljning varannan vecka."
+      }
     ]}
     pricingEyebrow="Abonnemang"
     pricing={[
       {
         label: '1 — Weekly Practice',
         price: '2 500 kr/mån',
-        note: '1 session/vecka på Teams, 20–30 min. Andning, meditation eller stolsyoga.'
+        note: '2 sessioner/vecka på Teams. Andning eller meditation, 20–30 min.'
       },
       {
         label: '2 — Embedded Wellness',
-        price: '5 000 kr/mån',
-        note: '2 sessioner/vecka på Teams, 20–30 min. Andning, meditation eller stolsyoga + månadsvis uppföljningssamtal.'
+        price: '4 500 kr/mån',
+        note: '1x andning/meditation + 1x rörelse och stretching/vecka på Teams + månadsvis uppföljning.'
       },
       {
         label: '3 — Full Program',
-        price: '7 500 kr/mån',
-        note: '2 sessioner/vecka på Teams, 20–30 min. Andning, meditation eller stolsyoga + uppföljning varannan vecka.'
+        price: '6 500 kr/mån',
+        note: '2x andning/meditation + 1–2x rörelse och stretching/vecka på Teams + uppföljning varannan vecka.'
       },
     ]}
     detailsHeading="Hur det fungerar"
