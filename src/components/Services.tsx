@@ -15,22 +15,39 @@ const Services = () => {
           </h2>
           <span className="block mx-auto w-16 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
           <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/85 leading-relaxed">
-            Företagsyoga i Stockholm, hela året. SUP yoga för sommarens kickoffs och team events.
+            Företagsyoga i Stockholm, veckovis på abonnemang eller som engångstillfälle för kickoffs och event.
           </p>
         </div>
 
         <div id="stockholm" className="mb-24 scroll-mt-24">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <Link
               to="/tjanster/foretagsyoga"
               className="group relative flex flex-col justify-between bg-white rounded-2xl p-8 md:p-9 border border-dalashala-meadow/60 hover:border-dalashala-earth/50 hover:-translate-y-1 hover:shadow-card transition-all duration-400"
             >
               <div>
                 <h3 className="font-fraunces text-[1.875rem] md:text-[2.125rem] text-dalashala-earth mb-4 group-hover:text-dalashala-earthSoft transition-colors leading-[1.05] tracking-[-0.02em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 48, 'SOFT' 50" }}>
-                  {softenAmp('Företagsyoga')}
+                  Yoga på abonnemang
                 </h3>
                 <p className="font-inter font-normal text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed">
-                  Konferenser, kickoffs, AWs, sommaravslutningar, teambuilding och regelbundna klasser på kontoret. Alla nivåer.
+                  Veckovisa Teams-sessioner direkt från skrivbordet. Andning, meditation och rörelse. Tre nivåer från 2 500 kr/mån.
+                </p>
+              </div>
+              <span className="mt-8 inline-flex items-center gap-2 font-inter text-xs text-dalashala-earth uppercase tracking-[0.24em] font-semibold group-hover:gap-3 transition-all">
+                Läs mer
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </span>
+            </Link>
+            <Link
+              to="/tjanster/foretagsyoga-event"
+              className="group relative flex flex-col justify-between bg-white rounded-2xl p-8 md:p-9 border border-dalashala-meadow/60 hover:border-dalashala-earth/50 hover:-translate-y-1 hover:shadow-card transition-all duration-400"
+            >
+              <div>
+                <h3 className="font-fraunces text-[1.875rem] md:text-[2.125rem] text-dalashala-earth mb-4 group-hover:text-dalashala-earthSoft transition-colors leading-[1.05] tracking-[-0.02em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 48, 'SOFT' 50" }}>
+                  {softenAmp('Kickoffs & event')}
+                </h3>
+                <p className="font-inter font-normal text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed">
+                  Yoga för kickoffs, AWs, konferenser och sommaravslutningar. Jag tar med allt. Kontakta för offert.
                 </p>
               </div>
               <span className="mt-8 inline-flex items-center gap-2 font-inter text-xs text-dalashala-earth uppercase tracking-[0.24em] font-semibold group-hover:gap-3 transition-all">

@@ -12,6 +12,7 @@ import Blog from "./pages/Blog";
 import BlogPostPage from "./pages/BlogPostPage";
 
 import ForetagsYoga from "./pages/services/ForetagsYoga";
+import ForetagsYogaEvent from "./pages/services/ForetagsYogaEvent";
 import SUPYoga from "./pages/services/SupYoga";
 import SUPYogaKlasser from "./pages/services/SUPYogaKlasser";
 import SUPYogaVillkor from "./pages/services/SUPYogaVillkor";
@@ -57,6 +58,7 @@ const App = () => (
 
           {/* Active Service Pages */}
           <Route path="/tjanster/foretagsyoga" element={<ForetagsYoga />} />
+          <Route path="/tjanster/foretagsyoga-event" element={<ForetagsYogaEvent />} />
           <Route path="/tjanster/sup-yoga" element={<SUPYoga />} />
           <Route path="/tjanster/sup-yoga-klasser" element={<SUPYogaKlasser />} />
           <Route path="/tjanster/sup-yoga/villkor" element={<SUPYogaVillkor />} />

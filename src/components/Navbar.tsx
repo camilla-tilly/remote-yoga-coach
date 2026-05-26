@@ -12,7 +12,8 @@ import { Button } from './ui/button';
 import Logo from './Logo';
 
 const serviceLinks = [
-  { name: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
+  { name: 'Företagsyoga — abonnemang', href: '/tjanster/foretagsyoga' },
+  { name: 'Företagsyoga — events & kickoffs', href: '/tjanster/foretagsyoga-event' },
   { name: 'SUP yoga – privata event', href: '/tjanster/sup-yoga' },
   { name: 'SUP yoga – öppna klasser', href: '/tjanster/sup-yoga-klasser' },
 ];
