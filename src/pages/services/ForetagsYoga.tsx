@@ -6,7 +6,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Företagsyoga och wellness-program för team i Stockholm",
-  "description": "Återkommande yoga och mindfulness för företag i Stockholm. Tre nivåer från 2 500 kr/månaden. Veckovisa Teams-sessioner och besök på kontoret.",
+  "description": "Återkommande yoga och mindfulness för företag i Stockholm. Tre nivåer från 2 500 kr/månaden. Veckovisa Teams-sessioner från skrivbordet, inget ombyte och ingen förflyttning.",
   "provider": {
     "@type": "LocalBusiness",
     "name": "Yoga med Camilla",
@@ -19,7 +19,7 @@ const structuredData = {
 const ForetagsYoga = () => (
   <ServicePageLayout
     seoTitle="Företagsyoga Stockholm | Abonnemang från 2 500 kr/mån | Yoga med Camilla"
-    seoDescription="Återkommande yoga och andning för team i Stockholm. Inte ett engångsevent, en vana. Tre nivåer från 2 500 kr/mån. Teams varje vecka, besök på kontoret ingår från nivå 2."
+    seoDescription="Återkommande yoga och andning för team i Stockholm. Inte ett engångsevent, en vana. Tre nivåer från 2 500 kr/mån. Teams varje vecka, från skrivbordet. Inget ombyte, ingen förflyttning."
     canonical="https://yogawithcamilla.se/tjanster/foretagsyoga"
     ogImage="https://yogawithcamilla.se/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     breadcrumbLabel="Företagsyoga"
@@ -32,7 +32,7 @@ const ForetagsYoga = () => (
     introParagraphs={[
       "De flesta satsningar på personalvård fastnar i samma mönster: ett event, lite entusiasm, sedan ingenting. Det är inte för att folk inte bryr sig. Det är för att ett event inte bygger en vana.",
       "Det som fungerar är repetition. Samma tid varje vecka, från skrivbordet. Ingen behöver åka någonstans, byta om eller förbereda sig. De loggar in, de gör det, de fortsätter sin dag.",
-      "Jag leder andning, meditation och yoga för team i Stockholm, live på Teams varje vecka. Klasserna hålls på engelska, perfekt för internationella team. Från nivå 2 ingår också besök på ert kontor varje månad."
+      "Jag leder andning, meditation och yoga för team i Stockholm, live på Teams varje vecka. Klasserna hålls på engelska, perfekt för internationella team."
     ]}
     pricingEyebrow="Abonnemang"
     pricing={[
@@ -44,12 +44,12 @@ const ForetagsYoga = () => (
       {
         label: '2 — Embedded Wellness',
         price: '5 000 kr/mån',
-        note: '2 sessioner/vecka på Teams + 1 besök på plats/mån + uppföljningssamtal.'
+        note: '2 sessioner/vecka på Teams, 20–30 min. Andning, meditation eller stolsyoga + månadsvis uppföljningssamtal.'
       },
       {
         label: '3 — Full Program',
         price: '7 500 kr/mån',
-        note: '2 sessioner/vecka på Teams + 2 besök/mån + uppföljning varannan vecka.'
+        note: '2 sessioner/vecka på Teams, 20–30 min. Andning, meditation eller stolsyoga + uppföljning varannan vecka.'
       },
     ]}
     detailsHeading="Hur det fungerar"
@@ -57,8 +57,8 @@ const ForetagsYoga = () => (
       { subheading: "Kom igång" },
       "Vi börjar med ett introduktionsmöte hos er, ungefär 45 minuter. Jag lär mig vad teamet behöver, ni lär känna mig, och vi sätter upp de återkommande tiderna som passar er arbetsdag.",
       "Sedan kör vi. Samma tid varje vecka. Ni får en Teams-länk i kalendern. De som vill är med, de som inte kan hoppar av den veckan och är med nästa.",
-      { subheading: "Online och på plats" },
-      "Alla tre nivåerna inkluderar veckovisa Teams-sessioner på 20 till 30 minuter. Från nivå 2 ingår också att jag kommer till ert kontor varje månad. Besöken kan vara andningspaus, meditation, stolsyoga eller en full klass med mattor, beroende på vad ni vill och hur mycket utrymme ni har.",
+      { subheading: "Online, via Teams" },
+      "Alla tre nivåerna körs på Teams, 20 till 30 minuter per session. Ni loggar in från skrivbordet, ett konferensrum eller hemma. Inget ombyte, inga mattor, ingen förflyttning. Vill ni ha ett andningsstopp eller meditation direkt på kontoret vid något enskilt tillfälle går det att ordna för format som inte kräver matta, säg till när ni bokar.",
       { subheading: "Uppföljning" },
       "Från nivå 2 ingår ett månadsvis uppföljningssamtal på 15 till 20 minuter med er kontaktperson, oftast HR. Vi pratar om vad som fungerar, vad vi justerar, och om teamet märker skillnad.",
       { subheading: "Kickoffs och engångsevent" },
@@ -79,11 +79,11 @@ const ForetagsYoga = () => (
       },
       {
         question: "Vad behöver vi ha på kontoret?",
-        answer: "För Teams-sessionerna behövs ingenting utöver en dator och ett tyst hörn om man vill ha det. För besök på plats behövs ett rum som är tillräckligt stort. Har ni egna yogamattor är det perfekt, men det krävs inte."
+        answer: "Ingenting. Sessionerna hålls på Teams och fungerar från skrivbordet eller ett tyst hörn. Inget ombyte, inga mattor, ingen utrustning."
       },
       {
         question: "Hur lång är varje session?",
-        answer: "Teams-sessionerna är 20 till 30 minuter. Besöken på plats är flexibla, 20 till 45 minuter beroende på format och vad som passar er dag."
+        answer: "20 till 30 minuter. Lagom för att passa in i en arbetsdag utan att kännas som ett avbrott."
       },
       {
         question: "Kan vi byta nivå?",
@@ -98,7 +98,7 @@ const ForetagsYoga = () => (
     relatedServices={relatedServices}
     englishKeywords={{
       heading: "Corporate Yoga & Wellness in English | Stockholm",
-      text: "Recurring weekly yoga and mindfulness for teams in Stockholm, led in English by a 500-hour certified teacher.\n\nThree subscription tiers from 2,500 SEK/month. Teams sessions every week from your desk, in-person office visits included from tier 2. Ideal for international teams and companies with remote or hybrid setups.\n\nAlso available: one-off sessions for kickoffs, after-works, conferences, and summer send-offs.\n\nEmail hello.yogawithcamilla@gmail.com with your team size, location and needs."
+      text: "Recurring weekly yoga and mindfulness for teams in Stockholm, led in English by a 500-hour certified teacher.\n\nThree subscription tiers from 2,500 SEK/month. Sessions run on Teams, 20–30 minutes, straight from the desk. No changing, no equipment, no travel. We start with a one-off intro meeting at your office, then everything is online. Ideal for international teams and companies with remote or hybrid setups.\n\nAlso available: one-off sessions for kickoffs, after-works, conferences, and summer send-offs.\n\nEmail hello.yogawithcamilla@gmail.com with your team size, location and needs."
     }}
   />
 );
