@@ -24,7 +24,7 @@ const ForetagsYoga = () => (
     ogImage="https://yogawithcamilla.se/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     breadcrumbLabel="Företagsyoga"
     heroTag="Företagsyoga och teamwellness i Stockholm"
-    heroHeading="En återkommande välmåendevana för ert team"
+    heroHeading="En återkommande vana för ert team"
     heroSubtitle="Andning, meditation och rörelse varje vecka, på Teams, från skrivbordet. Inget ombyte. Ingen utrustning. Bara ett återkommande andrum som faktiskt håller."
     heroImage="/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     heroImageAlt="Yoga och välmående för företag i Stockholm"
