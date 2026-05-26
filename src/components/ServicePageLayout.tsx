@@ -440,7 +440,7 @@ const ServicePageLayout = ({
           {/* Pricing */}
           {pricing && pricing.length > 0 && (
             <section className="px-4 mb-14">
-              <div className={pricing.length === 3 ? 'max-w-4xl mx-auto' : 'max-w-2xl mx-auto'}>
+              <div className="max-w-2xl mx-auto">
                 <div className="text-center mb-10">
                   <p className="font-inter text-xs md:text-sm uppercase tracking-[0.32em] text-dalashala-olive font-medium mb-4">
                     Priser
@@ -449,26 +449,59 @@ const ServicePageLayout = ({
                     Välj det som passar
                   </h2>
                 </div>
-                <div className={`grid grid-cols-1 gap-5 ${pricing.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
-                  {pricing.map((tier, i) => (
-                    <div
-                      key={i}
-                      className="bg-white border border-dalashala-meadow/60 rounded-xl p-7 md:p-8 text-center hover:border-dalashala-olive/60 transition-colors duration-300"
-                    >
-                      <p className="font-inter text-xs uppercase tracking-[0.28em] text-dalashala-honeyDeep font-semibold mb-3">
-                        {tier.label}
-                      </p>
-                      <p className="font-cormorant font-semibold text-3xl md:text-[2rem] text-dalashala-earth mb-2 tracking-tight">
-                        {tier.price}
-                      </p>
-                      {tier.note && (
-                        <p className="font-inter font-normal text-sm text-dalashala-earth/80">
-                          {tier.note}
+                {pricing.length === 3 ? (
+                  // Stacked tiered layout — shows progression clearly
+                  <div className="flex flex-col gap-3">
+                    {pricing.map((tier, i) => {
+                      const accentColor = i === 0 ? 'border-l-dalashala-meadow' : i === 1 ? 'border-l-dalashala-olive' : 'border-l-dalashala-earth';
+                      const bgColor = i === 0 ? 'bg-white' : i === 1 ? 'bg-dalashala-creamDeep/30' : 'bg-dalashala-creamDeep/60';
+                      return (
+                        <div
+                          key={i}
+                          className={`${bgColor} ${accentColor} border border-dalashala-meadow/50 border-l-4 rounded-xl px-6 py-5 flex items-center justify-between gap-4`}
+                        >
+                          <div className="flex-1 min-w-0">
+                            <p className="font-inter text-xs uppercase tracking-[0.28em] text-dalashala-honeyDeep font-semibold mb-1">
+                              {tier.label}
+                            </p>
+                            {tier.note && (
+                              <p className="font-inter font-normal text-sm text-dalashala-earth/75 leading-relaxed">
+                                {tier.note}
+                              </p>
+                            )}
+                          </div>
+                          <div className="shrink-0 text-right">
+                            <p className="font-cormorant font-semibold text-2xl md:text-[1.75rem] text-dalashala-earth tracking-tight whitespace-nowrap">
+                              {tier.price}
+                            </p>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                ) : (
+                  // Default grid layout for 1–2 tiers
+                  <div className={`grid grid-cols-1 gap-5 ${pricing.length === 2 ? 'md:grid-cols-2' : ''}`}>
+                    {pricing.map((tier, i) => (
+                      <div
+                        key={i}
+                        className="bg-white border border-dalashala-meadow/60 rounded-xl p-7 md:p-8 text-center hover:border-dalashala-olive/60 transition-colors duration-300"
+                      >
+                        <p className="font-inter text-xs uppercase tracking-[0.28em] text-dalashala-honeyDeep font-semibold mb-3">
+                          {tier.label}
                         </p>
-                      )}
-                    </div>
-                  ))}
-                </div>
+                        <p className="font-cormorant font-semibold text-3xl md:text-[2rem] text-dalashala-earth mb-2 tracking-tight">
+                          {tier.price}
+                        </p>
+                        {tier.note && (
+                          <p className="font-inter font-normal text-sm text-dalashala-earth/80">
+                            {tier.note}
+                          </p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </section>
           )}
