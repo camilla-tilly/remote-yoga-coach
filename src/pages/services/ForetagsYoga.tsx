@@ -34,20 +34,6 @@ const ForetagsYoga = () => (
       "Det som fungerar är repetition. Samma tid varje vecka, från skrivbordet. Ingen behöver åka någonstans, byta om eller förbereda sig. De loggar in, de gör det, de fortsätter sin dag.",
       "Jag leder andning, meditation och rörelse för team i Stockholm, live på Teams varje vecka. Klasserna hålls på engelska, perfekt för internationella team."
     ]}
-    highlights={[
-      {
-        heading: "1 — Weekly Practice",
-        text: "Två sessioner andning eller meditation i veckan på Teams, 20 till 30 minuter. Kameran behöver inte vara på. Fungerar från skrivbordet eller ett tyst rum."
-      },
-      {
-        heading: "2 — Embedded Wellness",
-        text: "En session andning eller meditation plus en session rörelse och stretching i veckan, allt på Teams. Plus ett månadsvis uppföljningssamtal."
-      },
-      {
-        heading: "3 — Full Program",
-        text: "Två sessioner andning eller meditation i veckan plus en till två rörelse- och stretchingsessioner, allt på Teams. Uppföljning varannan vecka."
-      }
-    ]}
     pricingEyebrow="Abonnemang"
     pricing={[
       {
