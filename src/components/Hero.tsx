@@ -38,11 +38,13 @@ const Hero = () => {
 
         <h1
           ref={headingRef}
-          className="font-inter text-xl md:text-[1.5rem] text-dalashala-earth/90 mb-16 md:mb-20 opacity-0 -translate-y-3 transition-all duration-1000 ease-out delay-300 font-normal leading-[1.55] max-w-2xl mx-auto"
+          className="font-inter text-xl md:text-[1.5rem] text-dalashala-earth/90 mb-6 md:mb-8 opacity-0 -translate-y-3 transition-all duration-1000 ease-out delay-300 font-normal leading-[1.55] max-w-2xl mx-auto"
         >
-          Företagsyoga i Stockholm.<br />
-          Konferenser, kickoffs, AWs och teambuilding, hos er.
+          Fokus, lugn och teamenergi — helt på era villkor.
         </h1>
+        <p className="font-inter text-base md:text-lg text-dalashala-earth/75 mb-16 md:mb-20 opacity-0 -translate-y-3 transition-all duration-1000 ease-out delay-300 max-w-2xl mx-auto leading-relaxed">
+          Tre vägar att arbeta med oss: veckovisa Teams-sessioner, workshops för kickoffs och event, och SUP yoga på Sickla sjö.
+        </p>
 
         <div
           ref={buttonRef}

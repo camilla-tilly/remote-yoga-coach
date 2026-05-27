@@ -8,14 +8,14 @@ const Services = () => {
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-center mb-20">
           <p className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-olive font-bold mb-7">
-            Tjänster
+            Företagsyoga
           </p>
           <h2 className="font-fraunces text-5xl md:text-6xl lg:text-7xl text-dalashala-earth mb-8 leading-[0.98] tracking-[-0.03em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
-            Vad jag erbjuder
+            Tre vägar att arbeta med oss
           </h2>
           <span className="block mx-auto w-16 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
           <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/85 leading-relaxed">
-            Företagsyoga i Stockholm, veckovis på abonnemang eller som engångstillfälle för kickoffs och event.
+            Oavsett om ni behöver regelbundna sessioner för fokus och lugn, en workshop för ett event, eller ett sommarevent för teamet.
           </p>
         </div>
 
@@ -27,10 +27,10 @@ const Services = () => {
             >
               <div>
                 <h3 className="font-fraunces text-[1.875rem] md:text-[2.125rem] text-dalashala-earth mb-4 group-hover:text-dalashala-earthSoft transition-colors leading-[1.05] tracking-[-0.02em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 48, 'SOFT' 50" }}>
-                  Yoga på abonnemang
+                  Veckovisa Teams-sessioner
                 </h3>
                 <p className="font-inter font-normal text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed">
-                  Veckovisa Teams-sessioner direkt från skrivbordet. Andning, meditation och rörelse. Tre nivåer från 2 500 kr/mån.
+                  2–4 sessioner per vecka direkt från kontoret. Andning, meditation och rörelse som bygger fokus och lugn. Passar in i arbetsdagen. Tre nivåer från 2 500 kr/mån.
                 </p>
               </div>
               <span className="mt-8 inline-flex items-center gap-2 font-inter text-xs text-dalashala-earth uppercase tracking-[0.24em] font-semibold group-hover:gap-3 transition-all">
@@ -44,10 +44,10 @@ const Services = () => {
             >
               <div>
                 <h3 className="font-fraunces text-[1.875rem] md:text-[2.125rem] text-dalashala-earth mb-4 group-hover:text-dalashala-earthSoft transition-colors leading-[1.05] tracking-[-0.02em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 48, 'SOFT' 50" }}>
-                  {softenAmp('Kickoffs & event')}
+                  Workshops för event
                 </h3>
                 <p className="font-inter font-normal text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed">
-                  Yoga för kickoffs, AWs, konferenser och sommaravslutningar. Jag tar med allt. Kontakta för offert.
+                  Anpassad yoga för kickoffs, AWs, konferenser och möten. Andningsövningar, stolsyoga eller full yoga — helt skräddarsytt för er grupp. 30 minuter till flera timmar. Kontakta för offert.
                 </p>
               </div>
               <span className="mt-8 inline-flex items-center gap-2 font-inter text-xs text-dalashala-earth uppercase tracking-[0.24em] font-semibold group-hover:gap-3 transition-all">
@@ -61,10 +61,10 @@ const Services = () => {
             >
               <div>
                 <h3 className="font-fraunces text-[1.875rem] md:text-[2.125rem] text-dalashala-earth mb-4 group-hover:text-dalashala-earthSoft transition-colors leading-[1.05] tracking-[-0.02em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 48, 'SOFT' 50" }}>
-                  {softenAmp('SUP yoga — sommar & event')}
+                  SUP yoga på Sickla sjö
                 </h3>
                 <p className="font-inter font-normal text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed">
-                  Yoga på paddleboard och bastu vid Sickla Strand. Perfekt för sommarkickoff, AW och sommaravslutning. Privata event för team, från 500 kr/person.
+                  Yoga på paddleboard vid Stockholms vackraste sjö. Perfekt för sommarkickoff, AW eller teamavslutning. Alla nivåer välkomna. Från 500 kr/person.
                 </p>
               </div>
               <span className="mt-8 inline-flex items-center gap-2 font-inter text-xs text-dalashala-earth uppercase tracking-[0.24em] font-semibold group-hover:gap-3 transition-all">
