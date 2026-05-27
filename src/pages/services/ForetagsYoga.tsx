@@ -39,17 +39,17 @@ const ForetagsYoga = () => (
       {
         label: '1 — Weekly Practice',
         price: '2 500 kr/mån',
-        note: '2 sessioner/vecka på Teams. Andning eller meditation, 20–30 min.'
+        note: '2 sessioner/månad på Teams. Andning eller meditation, 20–30 min.'
       },
       {
         label: '2 — Embedded Wellness',
         price: '4 500 kr/mån',
-        note: '1x andning/meditation + 1x rörelse och stretching/vecka på Teams + månadsvis uppföljning.'
+        note: '1x andning/meditation + 1x rörelse och stretching/månad på Teams + månadvis uppföljning.'
       },
       {
         label: '3 — Full Program',
         price: '6 500 kr/mån',
-        note: '2x andning/meditation + 1–2x rörelse och stretching/vecka på Teams + uppföljning varannan vecka.'
+        note: '2x andning/meditation + 1–2x rörelse och stretching/månad på Teams + uppföljning varannan månad.'
       },
     ]}
     detailsHeading="Hur det fungerar"
