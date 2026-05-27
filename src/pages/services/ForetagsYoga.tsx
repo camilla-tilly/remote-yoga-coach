@@ -6,7 +6,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Företagsyoga och wellness-program för team i Stockholm",
-  "description": "Återkommande yoga och mindfulness för företag i Stockholm. Tre nivåer från 2 500 kr/månaden. Veckovisa Teams-sessioner från skrivbordet, inget ombyte och ingen förflyttning.",
+  "description": "Återkommande yoga och mindfulness för företag i Stockholm. Två nivåer från 3 500 kr/mån. Veckovisa Teams-sessioner från skrivbordet, inget ombyte och ingen förflyttning.",
   "provider": {
     "@type": "LocalBusiness",
     "name": "Yoga med Camilla",
@@ -19,7 +19,7 @@ const structuredData = {
 const ForetagsYoga = () => (
   <ServicePageLayout
     seoTitle="Företagsyoga Stockholm | Yoga med Camilla"
-    seoDescription="Återkommande yoga och andning för team i Stockholm. Inte ett engångsevent, en vana. Tre nivåer från 2 500 kr/mån. Teams varje vecka, direkt från skrivbordet."
+    seoDescription="Återkommande yoga och andning för team i Stockholm. Inte ett engångsevent, en vana. Två nivåer från 3 500 kr/mån. Teams varje vecka, direkt från skrivbordet."
     canonical="https://yogawithcamilla.se/tjanster/foretagsyoga"
     ogImage="https://yogawithcamilla.se/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     breadcrumbLabel="Företagsyoga"
@@ -53,7 +53,7 @@ const ForetagsYoga = () => (
       "Vi börjar med ett introduktionsmöte hos er, ungefär 45 minuter. Jag lär mig vad teamet behöver, ni lär känna mig, och vi sätter upp de återkommande tiderna som passar er arbetsdag.",
       "Sedan kör vi. Samma tid varje vecka. Ni får en Teams-länk i kalendern. De som vill är med, de som inte kan hoppar av den veckan och är med nästa.",
       { subheading: "Online, via Teams" },
-      "Alla tre nivåerna körs på Teams, 20 till 30 minuter per session. Ni loggar in från skrivbordet, ett konferensrum eller hemma. Inget ombyte, inga mattor, ingen förflyttning. Vill ni ha ett andningsstopp eller meditation direkt på kontoret vid något enskilt tillfälle går det att ordna för format som inte kräver matta, säg till när ni bokar.",
+      "Båda nivåerna körs på Teams, 20 till 30 minuter per session. Ni loggar in från skrivbordet, ett konferensrum eller hemma. Inget ombyte, inga mattor, ingen förflyttning. Vill ni ha ett andningsstopp eller meditation direkt på kontoret vid något enskilt tillfälle går det att ordna för format som inte kräver matta, säg till när ni bokar.",
       { subheading: "Uppföljning" },
       "Från nivå 2 ingår ett månadsvis uppföljningssamtal på 15 till 20 minuter med er kontaktperson, oftast HR. Vi pratar om vad som fungerar, vad vi justerar, och om teamet märker skillnad.",
       { subheading: "Kickoffs och engångsevent" },
@@ -93,7 +93,7 @@ const ForetagsYoga = () => (
     relatedServices={relatedServices}
     englishKeywords={{
       heading: "Corporate Yoga & Wellness in English | Stockholm",
-      text: "Recurring weekly yoga and mindfulness for teams in Stockholm, led in English by a 500-hour certified teacher.\n\nThree subscription tiers from 2,500 SEK/month. Sessions run on Teams, 20–30 minutes, straight from the desk. No changing, no equipment, no travel. We start with a one-off intro meeting at your office, then everything is online. Ideal for international teams and companies with remote or hybrid setups.\n\nAlso available: one-off sessions for kickoffs, after-works, conferences, and summer send-offs.\n\nEmail hello.yogawithcamilla@gmail.com with your team size, location and needs."
+      text: "Recurring weekly yoga and mindfulness for teams in Stockholm, led in English by a 500-hour certified teacher.\n\nTwo subscription tiers from 3,500 SEK/month. Sessions run on Teams, 20–30 minutes, straight from the desk. No changing, no equipment, no travel. We start with a one-off intro meeting at your office, then everything is online. Ideal for international teams and companies with remote or hybrid setups.\n\nAlso available: one-off sessions for kickoffs, after-works, conferences, and summer send-offs.\n\nEmail hello.yogawithcamilla@gmail.com with your team size, location and needs."
     }}
   />
 );
