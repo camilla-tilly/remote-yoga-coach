@@ -23,7 +23,7 @@ const ForetagsYoga = () => (
     canonical="https://yogawithcamilla.se/tjanster/foretagsyoga"
     ogImage="https://yogawithcamilla.se/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     breadcrumbLabel="Företagsyoga"
-    heroTag="Företagsyoga och teamwellness i Stockholm"
+    heroTag="Företagsyoga och privata yoga event i Stockholm"
     heroHeading="Bättre fokus. Lägre stress. Varje vecka."
     heroSubtitle="Andning, meditation och rörelse varje vecka, på Teams, från skrivbordet. Inget ombyte. Ingen utrustning. Bara ett återkommande andrum som faktiskt håller."
     heroImage="/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
@@ -42,7 +42,7 @@ const ForetagsYoga = () => (
         note: '1 session/vecka på Teams. Andning eller meditation, 20–30 min.'
       },
       {
-        label: '2 — Embedded Wellness',
+        label: '2 — Integrated Practice',
         price: '5 900 kr/mån',
         note: '2 sessioner/vecka på Teams. 1x andning/meditation + 1x rörelse och stretching + månadvis uppföljning.'
       },
