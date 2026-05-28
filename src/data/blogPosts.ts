@@ -1,269 +1,5 @@
 export type BlogLanguage = 'sv' | 'en';
 
-export interface BlogPost {
-  slug: string;
-  title: string;
-  metaDescription: string;
-  publishDate: string;
-  readingTime: string;
-  category: string;
-  excerpt: string;
-  content: BlogSection[];
-  language?: BlogLanguage;
-  relatedServiceHref?: string;
-  relatedServiceLabel?: string;
-  relatedPosts?: { slug: string; label: string }[];
-  heroImage?: { src: string; alt: string };
-  tableOfContents?: boolean;
-  faqSchema?: boolean;
-}
-
-export interface BlogSection {
-  type: 'paragraph' | 'heading' | 'subheading' | 'list' | 'faq' | 'callout' | 'cta' | 'quote' | 'table';
-  text?: string;
-  items?: string[];
-  faqItems?: { q: string; a: string }[];
-  tableHead?: string[];
-  tableRows?: string[][];
-  author?: string;
-  ctaHref?: string;
-  ctaLabel?: string;
-}
-
-export const blogPosts: BlogPost[] = [
-  {
-    slug: 'mohippa-rattvik-yoga-aktiviteter',
-    title: 'Möhippa i Rättvik: yoga, Siljan och vad som faktiskt är värt en helg',
-    metaDescription: 'Möhippa i Rättvik 2026: privat yoga från 3 000 kr, bad i Siljan, Vidablick, Dalhalla, bastu och boendetips. Ärlig guide för en helg som passar hela gänget.',
-    publishDate: '2026-05-11',
-    readingTime: '8 min',
-    category: 'Events & Möhippa',
-    excerpt: 'Rättvik är en av de få orterna där en möhippa kan vara både stillsam och rolig samtidigt. Siljan på ena sidan, skogen på den andra, och nog med saker att fylla en helg utan att stressa fram dem. Här är hur jag bygger upp en helg, och vad det kostar.',
-    relatedServiceHref: '/tjanster/privata-event',
-    relatedServiceLabel: 'Boka yoga möhippa',
-    tableOfContents: true,
-    faqSchema: true,
-    relatedPosts: [
-      { slug: 'yoga-mohippa-dalarna', label: 'Yoga möhippa i Dalarna, hela guiden' },
-      { slug: 'mohippa-dalarna-aktiviteter', label: 'Möhippa i Dalarna, 7 aktiviteter' },
-      { slug: 'mohippa-aktiviteter-stockholm', label: '7 möhippa-aktiviteter i Stockholm' },
-      { slug: 'honsyoga-dalarna-goat-yoga-sverige', label: 'Hönsyoga i Dalarna' },
-    ],
-    content: [
-      {
-        type: 'paragraph',
-        text: 'Rättvik dyker upp på listan över möhippa-orter av en anledning. Det är tillräckligt långt från Stockholm för att kännas som en helg på riktigt, men inte så långt att halva gänget tappar lusten innan ni är framme. Siljan ligger framför fötterna. Skogen tar vid på baksidan. Och till skillnad från många klassiska möhippa-städer finns det aktiviteter som passar både kompisen som inte dricker och den som gärna vill dansa till midnatt. Här är hur jag bygger upp en möhippa-helg i Rättvik runt en [privat yogaklass](/tjanster/privata-event), vad det kostar, och vad ni faktiskt bör boka.'
-      },
-      {
-        type: 'callout',
-        text: 'Snabbversion: Privat yoga möhippa i Rättvik från 3 000 kr för 60 till 90 minuter. Jag tar med all utrustning och kommer till er stuga, ert hotell eller en plats vid Siljan. Passar för 4 till 20 deltagare. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum och antal för en offert.'
-      },
-      {
-        type: 'heading',
-        text: 'Varför Rättvik funkar för möhippa'
-      },
-      {
-        type: 'paragraph',
-        text: 'Det är två saker. Den första är platsen. Rättvik ligger längs Siljan, en av de få sjöar i Sverige som faktiskt känns som ett hav när du står vid stranden. Det innebär bad, paddling och promenader längs vattnet utan att ni behöver köra någon annanstans. Det är också omgivet av skog, så natur och stillhet är aldrig mer än fem minuter bort.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Den andra är blandningen. De flesta möhippa-orter är antingen partyhål eller spa-orter. Rättvik är något i mitten. Dalhalla, Classic Car Week om det är juli, kulturarvsstigen, restauranger med riktigt bra mat, men också tysta morgnar vid sjön och småskaliga upplevelser som inte kräver bokning. Det gör det enkelt att bygga en helg där brudens mamma är lika nöjd som hennes 24-åriga kollega.'
-      },
-      {
-        type: 'heading',
-        text: 'Vad ni faktiskt kan göra i Rättvik'
-      },
-      {
-        type: 'subheading',
-        text: 'Vidablick och utsikten över Siljan'
-      },
-      {
-        type: 'paragraph',
-        text: 'Vidablick är ett 28 meter högt utsiktstorn ovanför Rättvik. Femton minuters promenad uppför, och hela Siljan ligger nedanför. Bra som första aktivitet på lördagsmorgonen om gruppen redan är på plats. Gratis, kort, alla klarar det.'
-      },
-      {
-        type: 'subheading',
-        text: 'Bad i Siljan'
-      },
-      {
-        type: 'paragraph',
-        text: 'Siljans-badet i centrala Rättvik har sandstrand och grunt vatten, vilket gör det till en av få platser i Dalarna där badet faktiskt är behagligt även för den som inte gillar kallt vatten. Långbryggan sträcker sig 628 meter ut i sjön och är värd promenaden bara för känslan. Juni till augusti är vattnet runt 18 till 22 grader.'
-      },
-      {
-        type: 'subheading',
-        text: 'Dalhalla'
-      },
-      {
-        type: 'paragraph',
-        text: 'Ett kalkstensbrott omvandlat till en av Europas mest spektakulära utomhusscener. Om er möhippa-helg sammanfaller med en konsert är det värt att kolla programmet. Annars går det att gå guidad tur på dagtid. Plats för en mer kulturell stund mellan resten av helgen.'
-      },
-      {
-        type: 'subheading',
-        text: 'Classic Car Week (juli)'
-      },
-      {
-        type: 'paragraph',
-        text: 'Om möhippan är i juli är Rättvik nästan synonymt med Classic Car Week. Bilar överallt, mat på torget, musik, folkliv. Bra om gänget är på det humöret. Lite för mycket om ni hellre vill ha en stillsam helg. Boendet bör bokas i god tid.'
-      },
-      {
-        type: 'subheading',
-        text: 'Dalahäst, kulturarvsstigen och Gammelgården'
-      },
-      {
-        type: 'paragraph',
-        text: 'För gänget som gillar lite kultur. Nittsjö keramik, Gammelgården i Rättvik och kulturarvsstigen utmed Siljan ger en mjukare aktivitet på söndagen, mellan utcheckning och bilfärden hem.'
-      },
-      {
-        type: 'heading',
-        text: 'Hur yogan passar in'
-      },
-      {
-        type: 'paragraph',
-        text: 'Det smartaste tillfället att boka [privat yoga](/tjanster/privata-event) är lördagsmorgonen. Gänget har anlänt på fredagen, en gemensam middag har ätits, och kanske några glas vin har druckits. Lördag morgon är tempot långt och naturligt mjukt. En 60- eller 90-minuters klass utomhus, vid sjön eller på altanen i er stuga, är ett sätt att starta helgens viktigaste dag som inte kostar någon energi men ger mycket tillbaka.'
-      },
-      {
-        type: 'subheading',
-        text: 'Utomhus vid Siljan'
-      },
-      {
-        type: 'paragraph',
-        text: 'En klass på en brygga eller en grön plätt vid Siljan blir lätt en av helgens starkaste minnen. Jag tar med mattor, block och bolster, så det enda ni behöver är en plats som funkar (tillgänglighet, någorlunda plan mark, någotsånär lugnt). Bästa månaderna är juni till augusti, men maj och september funkar också i bra väder.'
-      },
-      {
-        type: 'subheading',
-        text: 'På er hyrda stuga eller hotell'
-      },
-      {
-        type: 'paragraph',
-        text: 'De flesta möhippa-grupper i Rättvik hyr en stuga eller bokar in sig på Green Hotel eller Stiftsgården. Alla tre fungerar för en yogaklass inomhus om vädret inte håller. Vardagsrum med undanflyttade möbler räcker. Jag bekräftar i förväg att utrymmet är tillräckligt för antalet deltagare.'
-      },
-      {
-        type: 'heading',
-        text: 'Priser'
-      },
-      {
-        type: 'paragraph',
-        text: 'Privat yoga möhippa prissätts utifrån längd, antal deltagare och om jag behöver ta med extra utrustning. Resan från min stuga utanför Vansbro till Rättvik tillkommer som faktiskt utlägg, oftast 600 till 900 kr beroende på exakt plats.'
-      },
-      {
-        type: 'table',
-        tableHead: ['Format', 'Längd', 'Pris', 'Bra för'],
-        tableRows: [
-          ['Klassisk möhippa-klass', '60 min', 'från 3 000 kr', 'Grupper 4 till 12, gemensam start på lördagen'],
-          ['Längre yoga möhippa', '90 min', 'från 3 800 kr', 'Större grupper eller djupare klass med avslappning'],
-          ['Yoga plus mindfulness eller andning', '90 till 120 min', 'offert', 'För grupper som vill ha ett mer komplett upplägg'],
-          ['Helgyoga, två klasser', 'Två tillfällen', 'från 5 500 kr', 'Lördag morgon plus söndag morgon innan hemfärd'],
-        ],
-      },
-      {
-        type: 'paragraph',
-        text: 'Allt ovan inkluderar utrustning (mattor, block, bolster), planering med er i förväg och själva klassen. Inga dolda kostnader. Priser exklusive moms för företagsbokningar, inklusive moms för privata.'
-      },
-      {
-        type: 'heading',
-        text: 'Hur ni planerar helgen'
-      },
-      {
-        type: 'paragraph',
-        text: 'Två upplägg jag sett funka särskilt bra för möhippa i Rättvik:'
-      },
-      {
-        type: 'subheading',
-        text: 'Klassiskt helgupplägg'
-      },
-      {
-        type: 'list',
-        items: [
-          'Fredag eftermiddag: incheckning, gemensam middag på er stuga eller på Vidablicks krog, vin',
-          'Lördag morgon: yoga 60 till 90 minuter, gärna utomhus vid Siljan',
-          'Lördag eftermiddag: bad i Siljan, promenad på långbryggan, fika på torget',
-          'Lördag kväll: bastu, middag, brudens favoritlek',
-          'Söndag: lugn frukost, kort utflykt till Gammelgården eller Vidablick, hemresa',
-        ],
-      },
-      {
-        type: 'subheading',
-        text: 'Aktivt helgupplägg'
-      },
-      {
-        type: 'list',
-        items: [
-          'Fredag kväll: incheckning, middag, tidig kväll',
-          'Lördag morgon: yoga vid Siljan',
-          'Lördag förmiddag: paddling eller stand-up paddleboard på Siljan',
-          'Lördag eftermiddag: vandring eller cykel runt sjön, lunch på Tällberg',
-          'Lördag kväll: bastu, middag, hemmagjord möhippa-lek',
-          'Söndag: lugn morgon, hemresa',
-        ],
-      },
-      {
-        type: 'heading',
-        text: 'Boende i Rättvik'
-      },
-      {
-        type: 'paragraph',
-        text: 'Grupper på 4 till 8 hyr oftast en stuga via Stuga.nu eller Airbnb, och det är min rekommendation. Det ger frihet att laga frukost tillsammans, ha en gemensam vardagsrum och inte behöva tänka på frukosttider. Större grupper bokar Green Hotel eller Stiftsgården, båda i centrala Rättvik. Boka tidigt om möhippan är i juni, juli eller augusti.'
-      },
-      {
-        type: 'heading',
-        text: 'Praktisk information'
-      },
-      {
-        type: 'paragraph',
-        text: 'Rättvik ligger ungefär 2,5 timmar från Stockholm med bil, 3 timmar med tåg via Borlänge. Närmaste flygplats är Mora-Siljan eller Dala-Airport (Borlänge). Jag reser från min stuga utanför Vansbro, cirka 1,5 timme bort, och resan ingår inte i grundpriset.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Om ni vill kombinera möhippan med en annan unik aktivitet i Dalarna är [hönsyoga](/tjanster/honsyoga) ett alternativ. Privat klass på altanen, med Bruno och Rosa som tysta åskådare. Många grupper kommer förbi på vägen till eller från Rättvik.'
-      },
-      {
-        type: 'heading',
-        text: 'Vanliga frågor'
-      },
-      {
-        type: 'faq',
-        faqItems: [
-          {
-            q: 'Vad kostar en möhippa-yogaklass i Rättvik?',
-            a: 'Från 3 000 kr för en 60-minutersklass och från 3 800 kr för en 90-minutersklass, exklusive resa från min stuga utanför Vansbro (oftast 600 till 900 kr beroende på exakt plats). All utrustning ingår, mattor, block och bolster.',
-          },
-          {
-            q: 'Var håller ni klassen i Rättvik?',
-            a: 'Det vanligaste är på er hyrda stuga eller på ert hotell, med möbler undanflyttade. Utomhus vid Siljan eller i skogen är fint från slutet av maj till mitten av september i bra väder. Vi pratar igenom platsen i förväg för att undvika underlag som är för ojämnt eller för mycket folk runt omkring.',
-          },
-          {
-            q: 'Hur många kan delta?',
-            a: 'Från 4 till 20 deltagare. Mindre grupper är inga problem. För grupper över 20 personer pratar vi i förväg om upplägg, eftersom det påverkar hur klassen leds och vilken plats som funkar.',
-          },
-          {
-            q: 'Behöver gänget yoga-erfarenhet?',
-            a: 'Nej. Möhippa-klasser är designade för blandad nivå, inklusive personer som aldrig öppnat en yogamatta. Inga avancerade positioner används. Klassen anpassas efter gruppen.',
-          },
-          {
-            q: 'När bör vi boka?',
-            a: 'För möhippor i juni till augusti rekommenderar jag att boka minst två till tre månader i förväg, både för min kalender och för boendet i Rättvik. Off-season (september till maj) är ofta mer flexibelt.',
-          },
-          {
-            q: 'Kan ni kombinera yogan med andra aktiviteter?',
-            a: 'Ja. Många grupper bokar yoga som en del av en längre helg och fyller på med bad i Siljan, paddling, Dalhalla-konsert eller en vandring. Jag kan hjälpa till att tipsa om vad som finns i området, även om jag bara levererar yogan.',
-          },
-          {
-            q: 'Vad händer om det regnar?',
-            a: 'Vi flyttar klassen inomhus till er stuga, ert hotell eller en annan inomhusplats vi pratar om i förväg. Inget extra kostar för det. Beslutet tar vi 24 till 48 timmar innan klassen utifrån väderprognosen.',
-          },
-        ],
-      },
-      {
-        type: 'heading',
-        text: 'Boka'
-      },
-      {
-        type: 'paragraph',
-        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal deltagare och var ni bor i Rättvik, så återkommer jag med ett konkret förslag. Allt om upplägg, priser och format finns också på sidan om [privata event och möhippa](/tjanster/privata-event).'
-      },
-    ]
-  },
   {
     slug: 'vad-kostar-sup-yoga-stockholm',
     title: 'Vad kostar SUP yoga i Stockholm 2026?',
@@ -644,247 +380,9 @@ export const blogPosts: BlogPost[] = [
     ]
   },
   {
-    slug: 'yoga-mohippa-dalarna',
-    title: 'Yoga möhippa i Dalarna: hela guiden',
-    metaDescription: 'Yoga möhippa i Dalarna: privat utomhusklass i skogen, stugupplägg, vad som ingår, priser från 3 000 kr, tips för att kombinera med andra aktiviteter.',
-    publishDate: '2026-03-01',
-    readingTime: '9 min',
-    category: 'Events & Möhippa',
-    excerpt: 'Det mest inkluderande möhippa-formatet i Dalarna. En privat yogaklass på altanen i skogen, för grupper där mamman inte dricker, kompisen inte springer, och kollegan har ryggont. Här är hela guiden.',
-    relatedServiceHref: '/tjanster/privata-event',
-    relatedServiceLabel: 'Boka yoga möhippa',
-    tableOfContents: true,
-    faqSchema: true,
-    relatedPosts: [
-      { slug: 'mohippa-dalarna-aktiviteter', label: 'Möhippa i Dalarna, 7 aktiviteter' },
-      { slug: 'mohippa-rattvik-yoga-aktiviteter', label: 'Möhippa i Rättvik, yoga och Siljan' },
-      { slug: 'mohippa-aktiviteter-stockholm', label: '7 möhippa-aktiviteter i Stockholm' },
-      { slug: 'hen-party-ideas-stockholm', label: '6 Bachelorette Party Ideas in Stockholm' },
-      { slug: 'honsyoga-dalarna-goat-yoga-sverige', label: 'Hönsyoga i Dalarna' },
-    ],
-    content: [
-      {
-        type: 'paragraph',
-        text: 'De flesta möhippor ser ungefär likadana ut. Restaurang, bar, kanske en aktivitet som hälften av gänget inte riktigt vill göra. [Yoga möhippa i Dalarna](/tjanster/privata-event) är alternativet. En privat klass för hela gruppen, utomhus i skogen eller på er hyrda boendeplats. Alla kan delta, oavsett nivå, ålder eller hur fysisk man känner för att vara. Här är hela guiden: varför det funkar, vad det kostar, och hur ni planerar helgen runt det.'
-      },
-      {
-        type: 'callout',
-        text: 'Snabbversion: Privat yoga möhippa i Dalarna från 3 000 kr. 60 eller 90 minuter utomhus eller inomhus. All utrustning ingår. Passar för 4 till 20 deltagare. Kombineras ofta med en helg på landet och andra aktiviteter. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum och antal för offert.'
-      },
-      {
-        type: 'heading',
-        text: 'Varför yoga funkar som möhippa'
-      },
-      {
-        type: 'paragraph',
-        text: 'Möhippans dilemma är alltid detsamma. Gruppen är aldrig homogen. Det finns brudens mamma som inte dricker. Systern som just fött barn och är trött. Kollegan med ryggbesvär. Barndomskompisen som inte är lika inkörd i gänget som de andra. En vanlig möhippa-aktivitet, som padel, vinprovning eller karaoke, delar upp gruppen i de som är bekväma och de som låtsas vara det.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Yoga löser det på ett sätt jag sett gång på gång. Alla kan delta. Ingen behöver prestera. Och när gruppen rör sig och andas tillsammans händer något som middagsbord med placeringskort sällan lyckas med. En slags gemenskap som släpps loss innan alkoholen, inte på grund av den. Brudens närmaste krets brukar bli förvånad över hur sammansvetsat det känns efteråt.'
-      },
-      {
-        type: 'quote',
-        text: 'Det var inte yogan i sig. Det var att vi alla låg på mattan och skrattade samtidigt. Jag vet fortfarande inte vad som gjorde det så speciellt.',
-        author: 'Brudtärna, möhippa i Rättvik',
-      },
-      {
-        type: 'heading',
-        text: 'Var vi håller klassen i Dalarna'
-      },
-      {
-        type: 'subheading',
-        text: 'Utomhus på altanen'
-      },
-      {
-        type: 'paragraph',
-        text: 'Min favoritmiljö och den vanligaste platsen. En stor altan omgiven av granar och lövträd, fågelljud, ibland hönsen i bakgrunden. Det är en miljö som skapar ett annat mindset direkt. Borta från stan. Inne i något stillare. Fungerar maj till september beroende på väder.'
-      },
-      {
-        type: 'subheading',
-        text: 'På er hyrda boendeplats'
-      },
-      {
-        type: 'paragraph',
-        text: 'Har ni redan hyrt ett boende i Dalarna kan jag komma dit. Jag tar med mattor, block, bolster och allt som behövs. Vardagsrum med undanflyttade möbler räcker. Populärt på lördagsmorgon innan den större möhippan drar igång.'
-      },
-      {
-        type: 'subheading',
-        text: 'Utomhus vid sjö, skog eller berg'
-      },
-      {
-        type: 'paragraph',
-        text: 'Om ni vill ha en specifik plats, till exempel en brygga vid Siljan, en glänta i skogen eller en klippa med utsikt, går det oftast att lösa. Kräver bara att vi pratar i förväg för att hitta något som är praktiskt (tillgänglighet, underlag, avstånd till parkering).'
-      },
-      {
-        type: 'heading',
-        text: 'Planera möhippa-helgen runt yogan'
-      },
-      {
-        type: 'paragraph',
-        text: 'Yoga fungerar som enskild aktivitet men kommer bäst till sin rätt när den placeras i ett helgupplägg. Några upplägg som brukar funka:'
-      },
-      {
-        type: 'subheading',
-        text: 'Klassiskt Dalarna-helgupplägg'
-      },
-      {
-        type: 'list',
-        items: [
-          'Fredag eftermiddag: incheckning på boendet, gemensam middag, vin',
-          'Lördag morgon: yoga på altanen (60 till 90 minuter)',
-          'Lördag eftermiddag: bad, promenad eller utflykt. Valfritt.',
-          'Lördag kväll: bastu, middag, rolig möhippa-lek',
-          'Söndag: lugn frukost, utchecka',
-        ],
-      },
-      {
-        type: 'subheading',
-        text: 'Aktivt upplägg'
-      },
-      {
-        type: 'list',
-        items: [
-          'Lördag morgon: yoga',
-          'Lördag eftermiddag: vandring till Styggforsen eller liknande',
-          'Lördag kväll: grillmiddag och lekar',
-        ],
-      },
-      {
-        type: 'subheading',
-        text: 'Lyx-upplägg'
-      },
-      {
-        type: 'list',
-        items: [
-          'Lördag morgon: yoga + bastu',
-          'Lördag eftermiddag: spa eller massage (bokas separat)',
-          'Lördag kväll: tre-rätters middag med dryckespaket',
-        ],
-      },
-      {
-        type: 'paragraph',
-        text: 'Fler idéer i [Möhippa i Dalarna, 7 aktiviteter](/blogg/mohippa-dalarna-aktiviteter).'
-      },
-      {
-        type: 'heading',
-        text: 'Priser'
-      },
-      {
-        type: 'table',
-        tableHead: ['Format', 'Längd', 'Pris från', 'Passar för'],
-        tableRows: [
-          ['Altan-yoga i skogen', '60 min', '3 000 kr', 'Upp till 10 personer'],
-          ['Altan-yoga, förlängt', '90 min', '3 800 kr', 'Upp till 10 personer'],
-          ['Yoga på ert boende', '60 till 90 min', 'från 3 000 kr', 'Upp till 12 personer'],
-          ['Större grupper (10 till 20)', '90 min', 'från 4 500 kr', 'Större möhippor'],
-          ['Yoga + bastu', '2,5 tim totalt', 'offert', 'Helgpaket'],
-        ],
-      },
-      {
-        type: 'paragraph',
-        text: 'Alla priser är exklusive moms. Inkluderar resa inom 30 minuter från min bas. Längre resa tillkommer enligt faktiskt utlägg (milersättning). Rabatt ges vid bokning av två klasser samma helg (exempelvis fredag kväll + lördag morgon).'
-      },
-      {
-        type: 'heading',
-        text: 'Vad ingår'
-      },
-      {
-        type: 'list',
-        items: [
-          'Privat klass för er grupp, ingen annan med',
-          'Alla mattor, block och bolster som behövs (jag tar med för upp till 20)',
-          'Klass helt anpassad för gruppens nivå. Inga förkunskaper krävs.',
-          'Undervisning på engelska',
-          'En kort briefing med bruden eller brudtärnan innan, så ni vet vad som händer och kan tipsa gänget',
-          'Flexibilitet med plats: altan, inomhus, brygga eller skog',
-        ],
-      },
-      {
-        type: 'heading',
-        text: 'Yoga möhippa i Stockholm istället'
-      },
-      {
-        type: 'paragraph',
-        text: 'Om Dalarna inte funkar, om det är för långt, för kort helg, eller om inte alla kan resa, gör jag samma sak i Stockholm. Jag kommer till er lägenhet, hyrd lokal eller en park i stan med all utrustning. Där funkar även [privat SUP yoga vid Sickla Strand](/tjanster/sup-yoga) (i samarbete med Smashing Balance) som en rolig möhippa-aktivitet, med tillval som bastu och mer. Mer idéer i [7 möhippa-aktiviteter i Stockholm](/blogg/mohippa-aktiviteter-stockholm).'
-      },
-      {
-        type: 'heading',
-        text: 'Bokning och planering, steg för steg'
-      },
-      {
-        type: 'list',
-        items: [
-          '6 till 8 veckor innan: mejla med datum, antal och ungefärlig plats. Jag bokar in datum.',
-          '3 till 4 veckor innan: bekräfta exakt antal och plats, vi finjusterar format.',
-          '1 vecka innan: jag skickar en kort deltagarinfo (kläder, plats, tider) att vidarebefordra.',
-          'Dagen innan: vädercheck om vi ska vara utomhus. Backup-plan om vädret inte samarbetar.',
-          'Själva dagen: jag är på plats 15 minuter innan start.',
-        ],
-      },
-      {
-        type: 'heading',
-        text: 'Vanliga frågor om yoga möhippa i Dalarna'
-      },
-      {
-        type: 'faq',
-        faqItems: [
-          {
-            q: 'Hur mycket kostar en yoga möhippa?',
-            a: 'Från 3 000 kr för en privat 60-minutersklass för upp till 10 personer i Dalarna. 90 minuter från 3 800 kr. Större grupper och kombinationspaket (yoga + bastu) prissätts individuellt.',
-          },
-          {
-            q: 'Hur många kan vara med?',
-            a: 'Allt från 4 till 20 personer. Det vanligaste är 8 till 12. Vid grupper över 15 krävs mer plats och vi pratar om lokal tillsammans.',
-          },
-          {
-            q: 'Passar yoga möhippa för en grupp där ingen gjort yoga?',
-            a: 'Ja. Det är till och med vanligast. Klassen är designad för nybörjare och blandad nivå. Inga avancerade positioner, ingen prestationskultur. Jag förklarar allt från grunden.',
-          },
-          {
-            q: 'Kan ni ha det utomhus på vintern?',
-            a: 'Inte rekommenderat. Utomhusyoga funkar maj till september. Under höst och vinter håller vi klassen inomhus, hos er eller i en hyrd lokal.',
-          },
-          {
-            q: 'Vad händer om det regnar?',
-            a: 'Vi har alltid en backup-plan inomhus. Utomhus är förstahandsval, men om vädret inte samarbetar flyttar vi in hos er eller till en annan närliggande lokal.',
-          },
-          {
-            q: 'Kan ni komma till ett boende långt ut på landet?',
-            a: 'Nästan alltid. Jag är mobil och van vid att hitta avlägsna platser. Resa över 30 minuter från min bas tillkommer enligt milersättning, specifieras på offerten.',
-          },
-          {
-            q: 'Hur långt i förväg behöver vi boka?',
-            a: 'Helgerna maj till september bokas ofta 2 till 4 månader i förväg. Andra perioder 4 till 8 veckor. Akuta bokningar går ibland att lösa med 1 till 2 veckors framförhållning beroende på datum.',
-          },
-          {
-            q: 'Kan vi kombinera yogan med andra aktiviteter samma helg?',
-            a: 'Ja. Vanliga kombinationer: yoga plus bastu, yoga plus hönsyoga (ja, med riktiga höns. Se [hönsyoga](/blogg/honsyoga-dalarna-goat-yoga-sverige)), eller yoga plus vandring. Jag hjälper gärna till att koordinera om ni vill.',
-          },
-          {
-            q: 'Vad ska gruppen ha på sig?',
-            a: 'Mjuka, bekväma kläder man kan röra sig i. Leggings, mjukis, t-shirt funkar. Inga speciella yogakläder behövs. Om vi är utomhus, tänk på att det kan vara lite kyligare än inomhus, ta med ett extra lager.',
-          },
-          {
-            q: 'Kan bruden få en överraskning?',
-            a: 'Självklart. Jag jobbar ofta med brudtärnan som kontakt och bruden vet ingenting om upplägget förrän vi börjar. Mycket uppskattat när det är en brud som inte brukar få stilla stunder annars.',
-          },
-        ],
-      },
-      {
-        type: 'heading',
-        text: 'Nästa steg'
-      },
-      {
-        type: 'paragraph',
-        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, antal, om ni redan har ett boende eller lokal, och om ni vill kombinera med andra aktiviteter. Jag återkommer med tillgänglighet och en konkret offert. Läs mer på tjänstesidan för [privata event](/tjanster/privata-event), bläddra bland fler [möhippa-aktiviteter i Dalarna](/blogg/mohippa-dalarna-aktiviteter), eller läs den geo-specifika guiden till [möhippa i Rättvik](/blogg/mohippa-rattvik-yoga-aktiviteter) om ni har siktet inställt på Siljan.'
-      },
-    ]
-  },
-  {
     slug: 'konferensyoga-teambuilding',
     title: 'Konferensyoga och yoga som teambuilding: hela guiden för 2026',
-    metaDescription: 'Konferensyoga i Stockholm och Dalarna. Upplägg, priser från 3 000 kr, och varför 60 min yoga slår ännu en teambuilding. Här är hela guiden.',
+    metaDescription: 'Konferensyoga i Stockholm. Upplägg, priser från 3 000 kr, och varför 60 min yoga slår ännu en teambuilding. Här är hela guiden.',
     publishDate: '2026-03-08',
     readingTime: '9 min',
     category: 'Företag & Konferens',
@@ -897,7 +395,6 @@ export const blogPosts: BlogPost[] = [
       { slug: 'foretagsyoga-vad-ingar-och-kostar', label: 'Företagsyoga, vad ingår och kostar?' },
       { slug: 'sommaravslutning-aktiviteter-stockholm', label: '6 idéer för sommaravslutning i Stockholm' },
       { slug: 'teambuilding-aktiviteter-stockholm', label: '7 teambuilding-aktiviteter i Stockholm' },
-      { slug: 'yoga-retreat-dalarna-vs-stockholm', label: 'Yoga retreat Dalarna vs Stockholm' },
     ],
     content: [
       {
@@ -906,7 +403,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'callout',
-        text: 'Snabbversionen: Konferensyoga från 3 000 kr per 60-minutersklass i Stockholm och Dalarna. Passar 10 till 40 deltagare, ingen förkunskap krävs, jag tar med allt. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för offert.'
+        text: 'Snabbversionen: Konferensyoga från 3 000 kr per 60-minutersklass i Stockholm. Passar 10 till 40 deltagare, ingen förkunskap krävs, jag tar med allt. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för offert.'
       },
       {
         type: 'heading',
@@ -981,7 +478,7 @@ export const blogPosts: BlogPost[] = [
           ['Standard konferensklass', '60 min', '3 000 kr', 'Upp till 25'],
           ['Halvdagsupplägg (2 klasser)', '2 x 45 min', '5 500 kr', 'Upp till 25'],
           ['Stor konferens (25 till 40 personer)', '60 min', 'offert', '25 till 40'],
-          ['Outdoor-upplägg Dalarna', '60 till 90 min', 'från 4 000 kr plus resa', 'Upp till 20'],
+          
         ],
       },
       {
@@ -990,15 +487,15 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'heading',
-        text: 'Konferensyoga i Dalarna: en annan sorts konferens'
+        text: 'Konferensyoga: en annan sorts konferens'
       },
       {
         type: 'paragraph',
-        text: 'Allt fler företag lägger sina konferenser och kickoffer i Dalarna, av en anledning. Det är slut på konferenscentrum med heltäckningsmatta och spotlights. Om ni redan tar teamet hit, till Romme, Sälen, Rättvik eller ett boende vid en sjö, så lägg in en yogaklass utomhus. En morgon på altanen med skogen runt om, gryningsljus och fågelljud gör mer för ett team än tre workshops om värderingar.'
+        text: 'En morgon utomhus med gryningsljus och lugn miljö gör mer för ett team än flera inomhusworkshops.'
       },
       {
         type: 'paragraph',
-        text: 'Jag kommer till er konferensanläggning, ert boende eller friluftsområde. Utomhus när vädret tillåter, inomhus som backup. Resa från min bas i Dalarna är ofta gratis eller minimal kostnad om ni är inom 30 minuter. Se också [yoga retreat Dalarna vs Stockholm](/blogg/yoga-retreat-dalarna-vs-stockholm) för mer om varför skogsmiljön gör skillnad.'
+        text: 'Jag kommer till er konferensanläggning, ert boende eller friluftsområde. Utomhus när vädret tillåter, inomhus som backup. '
       },
       {
         type: 'heading',
@@ -1066,7 +563,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Hur långt i förväg behöver jag boka?',
-            a: 'Gärna 3 till 6 veckor innan för konferenser i Stockholm, 6 till 8 veckor för Dalarna och andra orter. Akuta bokningar går ofta att lösa med 1 till 2 veckors framförhållning beroende på datum.',
+            a: 'Gärna 3 till 6 veckor innan för konferenser i Stockholm, 6 till 8 veckor för andra orter. Akuta bokningar går ofta att lösa med 1 till 2 veckors framförhållning beroende på datum.',
           },
           {
             q: 'Behöver alla deltagare vara med?',
@@ -1086,7 +583,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             q: 'Vad händer om det regnar på en outdoor-klass?',
-            a: 'Vi flyttar inomhus. Det finns alltid en backup-plan bokad. Om vädret är en känd faktor (exempelvis i Dalarna i november) rekommenderar jag direkt inomhusformat.',
+            a: 'Vi flyttar inomhus. Det finns alltid en backup-plan bokad. Om vädret är en känd faktor rekommenderar jag direkt inomhusformat.',
           },
           {
             q: 'Hur stor grupp kan du ta?',
@@ -1579,7 +1076,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'yoga-brollopsaktivitet',
     title: 'Yoga som bröllopsaktivitet. Fler svenska par gör det.',
-    metaDescription: 'Yoga som bröllopsaktivitet i Dalarna och Stockholm. Inkluderande, lugnt, minnesvärt. Jag kommer till er med allt. Från 3 000 kr.',
+    metaDescription: 'Yoga som bröllopsaktivitet i Stockholm. Inkluderande, lugnt, minnesvärt. Jag kommer till er med allt. Från 3 000 kr.',
     publishDate: '2026-03-20',
     readingTime: '4 min',
     category: 'Bröllop & Events',
@@ -1593,7 +1090,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'callout',
-        text: 'Snabbversionen: Bröllopsyoga i Dalarna och Stockholm från 3 000 kr. Jag tar med all utrustning. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, ort och antal gäster.'
+        text: 'Snabbversionen: Bröllopsyoga i Stockholm från 3 000 kr. Jag tar med all utrustning. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum, ort och antal gäster.'
       },
       {
         type: 'heading',
@@ -1649,19 +1146,19 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'subheading',
-        text: 'Hel bröllopsvecka med yoga i Dalarna'
+        text: ''
       },
       {
         type: 'paragraph',
-        text: 'För par som firar i Dalarna med gäster som stannar hela helgen kan yoga vara ett återkommande inslag. Morgonyoga fredag, yoga för gästerna lördag, stilla avslutningsklass söndag. Jag planerar upplägget med er.'
+        text: ''
       },
       {
         type: 'heading',
-        text: 'Bröllopsyoga i Dalarna'
+        text: 'Bröllopsyoga i Stockholm'
       },
       {
         type: 'paragraph',
-        text: 'Dalarna är ett av Sveriges mest populära bröllopslandskap, och det finns goda skäl till det. Lugnt, vackert och lättare att hyra en hel gård eller villa för helgen. Jag bor och verkar i Dalarna och kan komma till er lokation, utomhus vid sjön eller inne på den gård ni hyrt. Resa är inkluderad om ni är inom 30 minuter från Leksand.'
+        text: 'Stockholm och omgivningar är perfekt för bröllopsfirande. Jag kan komma till er lokation och anpassa upplägget efter er vision.'
       },
       {
         type: 'heading',
@@ -1677,441 +1174,8 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'callout',
-        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med bröllopsdatum, plats och antal gäster. Jag leder bröllopsyoga i Dalarna och Stockholm och tar med all utrustning. Pris från 3 000 kr. Mer info på [yogawithcamilla.se/tjanster/privata-event](/tjanster/privata-event).'
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med bröllopsdatum, plats och antal gäster. Jag leder bröllopsyoga i Stockholm och tar med all utrustning. Pris från 3 000 kr. Mer info på [yogawithcamilla.se/tjanster/privata-event](/tjanster/privata-event).'
       },
-    ]
-  },
-  {
-    slug: 'honsyoga-dalarna-goat-yoga-sverige',
-    title: 'Hönsyoga i Dalarna: Sveriges motsvarighet till goat yoga (fast bättre)',
-    metaDescription: 'Hönsyoga i Dalarna på altanen med mina höns runt mattorna. Vad det är, hur det skiljer sig från goat yoga, priser från 2 500 kr, och hur du bokar för grupp eller möhippa.',
-    publishDate: '2026-03-24',
-    readingTime: '8 min',
-    category: 'Yoga & Natur',
-    excerpt: 'Yoga på altanen i skogen med mina höns vandrande runt mattorna. Sveriges enda hönsyoga, bokbar maj till september. Här är hela guiden: vad det är, varför det funkar, och hur ni bokar för grupp eller möhippa.',
-    relatedServiceHref: '/tjanster/honsyoga',
-    relatedServiceLabel: 'Boka hönsyoga i Dalarna',
-    tableOfContents: true,
-    faqSchema: true,
-    relatedPosts: [
-      { slug: 'outdoor-yoga-dalarna', label: 'Utomhusyoga i Dalarna' },
-      { slug: 'yoga-mohippa-dalarna', label: 'Yoga möhippa i Dalarna' },
-      { slug: 'mohippa-dalarna-aktiviteter', label: 'Möhippa i Dalarna, 7 aktiviteter' },
-      { slug: 'yoga-retreat-dalarna-vs-stockholm', label: 'Yoga retreat Dalarna vs Stockholm' },
-    ],
-    content: [
-      {
-        type: 'paragraph',
-        text: 'Jag har höns. De lever sina egna liv, rör sig fritt på altanen, och bryr sig inte nämnvärt om vad vi gör på mattorna. [Hönsyoga](/tjanster/honsyoga) är en riktig yogaklass på altanen i Dalarna där mina höns strövar omkring medan vi praktiserar. Det är Sveriges svar på det amerikanska "goat yoga"-fenomenet. Fast mjukare, mindre jippo, och med djur som faktiskt hör hemma på en svensk gård.'
-      },
-      {
-        type: 'callout',
-        text: 'Snabbinfo: Hönsyoga i Dalarna, 60 minuter, max 6 deltagare. Privat bokning från 2 500 kr. Säsong maj till september. Passar för grupper, möhippor, par, företag på kickoff. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för datum och offert.'
-      },
-      {
-        type: 'heading',
-        text: 'Vad hönsyoga faktiskt är'
-      },
-      {
-        type: 'paragraph',
-        text: 'En riktig yogaklass. Rörelse, andning, närvaro. Lett av en 500-timmars certifierad lärare (jag). Det är inte en gimmick eller en Instagram-stunt. Det är en ordentlig 60-minutersklass, fast den hålls utomhus på altanen, och hönsen är med.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Hönsen interagerar inte aktivt med er. De vandrar runt, pickar, kacklar lite åt varandra. Ibland kliver någon över en matta. En gång satte sig en av dem på min rygg mitt under en nedåtgående hunden. Det är ovanligt, men det händer. Och deras närvaro skapar en mjukhet som en yogasal aldrig kan.'
-      },
-      {
-        type: 'heading',
-        text: 'Hönsyoga vs goat yoga: vad skillnaden är'
-      },
-      {
-        type: 'paragraph',
-        text: 'Goat yoga startade i USA runt 2016 och blev viralt för att getter klättrar på ryggarna av folk under nedåtgående hunden. Det är ofta högt tempo, hög volym, mycket fotografering. Roligt, men mer spektakel än yoga.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Hönsyoga är motsatsen. Hönsen är mindre invasiva. De går sin egen takt. Ni får lugnet i att ha djurliv runt er utan att bli avbrutna. Det är yoga med djur, inte cirkus. För folk som vill ha naturens mjukhet, inte nyhetsvärdet.'
-      },
-      {
-        type: 'heading',
-        text: 'Varför det funkar: det som händer i kroppen när djur är med'
-      },
-      {
-        type: 'paragraph',
-        text: 'Djur tar oss in i nuet nästan omedelbart. Det är svårt att oroa sig för morgondagen när en höna precis har trampat över din matta och funderar på om din vattenflaska är ätbar. Uppmärksamheten flyttar sig utåt, och det är precis vad yoga försöker åstadkomma: en paus från det inre pratet.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Därtill kommer att ni är utomhus. Tid i naturen, särskilt skogsmiljö, har i flera studier kopplats till lägre stressmarkörer och förbättrat humör (det som japanerna kallar "shinrin-yoku", skogsbad). Vi är inte i en klinisk miljö, vi gör ingen vetenskaplig studie, men kombinationen av utomhus, skog, djurliv och rörelse är svår att matcha.'
-      },
-      {
-        type: 'heading',
-        text: 'Så här ser en klass ut'
-      },
-      {
-        type: 'paragraph',
-        text: 'Ni kommer till mig. Vi samlas på altanen där jag redan har mattor, block och bolster klara. Hönsen är oftast redan där, nyfikna men inte påträngande. Jag välkomnar, presenterar hönsen vid namn (de har namn), och vi börjar med 5 minuters andning på mattan.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Sen en mjuk uppmjukning. Någonstans mellan 25 och 35 minuter rörelse, vinyasa-inspirerat men utan komplicerade sekvenser. Fokus på öppna höfter, ryggens rörlighet och balans. De sista 10 minuterna är långa mjuka positioner och savasana. Hönsen vandrar som vanligt, och ingen märker när de kommer och går.'
-      },
-      {
-        type: 'quote',
-        text: 'Jag trodde det skulle vara knasigt. Men när en höna satte sig bredvid mig i savasana kände jag något jag inte känt sedan barndomen.',
-        author: 'Deltagare, privat bokning augusti 2025',
-      },
-      {
-        type: 'heading',
-        text: 'Vem passar hönsyoga för'
-      },
-      {
-        type: 'list',
-        items: [
-          'Grupper som vill ha en annorlunda upplevelse i Dalarna: möhippor, födelsedagar, nära vänner',
-          'Företagsgrupper på kickoff eller konferens i regionen som vill bryta mönstret',
-          'Par eller familjer som söker något ovanligt att göra tillsammans',
-          'Yogautövare som är nyfikna på att praktisera utomhus med djur',
-          'Absoluta nybörjare. Hönsen tar bort prestationskänslan.',
-        ],
-      },
-      {
-        type: 'paragraph',
-        text: 'Det passar mindre bra för personer som är rädda för fåglar eller djur i närheten, personer med allergier mot fjäderdjur, eller de som söker en intensiv fysisk träningsklass (det här är mjukare och mer meditativt).'
-      },
-      {
-        type: 'heading',
-        text: 'Priser'
-      },
-      {
-        type: 'table',
-        tableHead: ['Upplägg', 'Deltagare', 'Pris från', 'Passar för'],
-        tableRows: [
-          ['Privat par', '2 personer', '2 500 kr', 'Dejt, årsdag'],
-          ['Liten grupp', '3 till 4 personer', '3 000 kr', 'Vänner, familj'],
-          ['Större grupp', '5 till 6 personer', '3 500 kr', 'Möhippa, födelsedag'],
-          ['Kombination med annat', '2 till 6 personer', 'offert', 'Yoga plus stugpaket'],
-        ],
-      },
-      {
-        type: 'paragraph',
-        text: 'Priserna inkluderar 60 minuter yoga, all utrustning, och en kort fika efteråt på altanen (kaffe, te, hembakat). Alla priser exklusive moms.'
-      },
-      {
-        type: 'heading',
-        text: 'Säsong och praktiska detaljer'
-      },
-      {
-        type: 'paragraph',
-        text: 'Hönsyoga är en utomhusaktivitet och säsongen är maj till och med september. I september kan det vara svalt på morgonen, så då brukar vi börja senare på dagen. Höst och vinter: tyvärr ingen hönsyoga eftersom hönsen har inomhusperiod och altanen inte är uppvärmd.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Om det regnar flyttar vi till en annan dag, eller håller en vanlig [utomhusyoga-klass](/blogg/outdoor-yoga-dalarna) utan hönsen under tak. Jag hör av mig kvällen innan om vi behöver flytta.'
-      },
-      {
-        type: 'heading',
-        text: 'Hur ni hittar hit'
-      },
-      {
-        type: 'paragraph',
-        text: 'Altanen ligger i Dalarna, cirka 2,5 timmar från Stockholm med bil eller tåg. Närmaste större orter är Borlänge, Falun och Rättvik. Jag skickar detaljerade vägbeskrivningar när bokningen är bekräftad. Flera av mina gäster kombinerar hönsyoga med en övernattning i trakten. Det finns flera bra B&B och boenden att hyra i närheten.'
-      },
-      {
-        type: 'heading',
-        text: 'Kombinera med andra aktiviteter'
-      },
-      {
-        type: 'paragraph',
-        text: 'Hönsyoga funkar utmärkt som del av en större helgupplevelse. Populära kombinationer: hönsyoga plus bastu plus middag, hönsyoga plus vandring till Styggforsen, eller för möhippor: hönsyoga plus en vanlig [yoga möhippa i Dalarna](/blogg/yoga-mohippa-dalarna) samma helg (två olika klasser, två olika stämningar). Se också [möhippa i Dalarna, 7 aktiviteter](/blogg/mohippa-dalarna-aktiviteter).'
-      },
-      {
-        type: 'heading',
-        text: 'Vanliga frågor om hönsyoga'
-      },
-      {
-        type: 'faq',
-        faqItems: [
-          {
-            q: 'Vad är hönsyoga?',
-            a: 'En riktig yogaklass på altanen i Dalarna där frigående höns vandrar omkring medan vi praktiserar. Ledd av en certifierad yogalärare, 60 minuter, för blandad nivå. Svensk motsvarighet till amerikansk goat yoga, fast lugnare och mer naturligt.',
-          },
-          {
-            q: 'Vad kostar hönsyoga?',
-            a: 'Från 2 500 kr för ett privat par, 3 000 kr för 3 till 4 personer, 3 500 kr för 5 till 6 personer. Priserna inkluderar 60 minuter yoga, all utrustning och en kort fika efteråt.',
-          },
-          {
-            q: 'Finns det goat yoga i Sverige?',
-            a: 'Det finns något liknande i Sverige, men det är ovanligt och ofta säsongsbegränsat. Hönsyoga hos mig i Dalarna är den närmaste svenska motsvarigheten till den amerikanska trenden.',
-          },
-          {
-            q: 'Sitter hönsen på en?',
-            a: 'Ibland. Oftast inte. Mina höns är nyfikna men inte påträngande. Någon gång ibland kliver någon på en rygg under en position. Det är inte regel utan undantag. De är generellt mer intresserade av att picka i gräset.',
-          },
-          {
-            q: 'Behöver jag vara rädd för hönsen?',
-            a: 'Nej. Hönsen är vana vid människor, de sprätter inte, de är lugna och orädda. Om någon deltagare är osäker kan jag hålla hönsen i deras hägn under klassen. Bara säg till vid bokning.',
-          },
-          {
-            q: 'Finns hönsen året runt?',
-            a: 'Hönsyogasäsongen är maj till september. Under vinterhalvåret håller hönsen till inne och vi erbjuder inte klassen då. Övriga [utomhusyoga](/blogg/outdoor-yoga-dalarna)-klasser kan bokas året runt beroende på väder.',
-          },
-          {
-            q: 'Är det hygieniskt?',
-            a: 'Ja. Altanen är stor och hönsen vistas där normalt. Mattorna läggs ut precis innan klassen och rengörs efteråt. Hönsen håller sig till gräset bredvid, inte ovanpå mattorna.',
-          },
-          {
-            q: 'Kan barn vara med?',
-            a: 'Barn från cirka 10 år och uppåt som kan följa en 60-minuters yogaklass. Yngre barn blir oftast rastlösa och jagar hönsen, vilket inte är idealt för vare sig dem, er eller hönsen.',
-          },
-          {
-            q: 'Hur många kan delta?',
-            a: 'Max 6 personer per bokning. Det är en bekväm gränsstorlek för altanen och det är viktigt för djurens välmående att det inte blir för många människor samtidigt.',
-          },
-          {
-            q: 'Hur bokar man?',
-            a: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med önskat datum och antal. Jag återkommer med tillgänglighet och offert. Bokning bekräftas mot Swish eller faktura.',
-          },
-        ],
-      },
-      {
-        type: 'heading',
-        text: 'Nästa steg'
-      },
-      {
-        type: 'paragraph',
-        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum och antal, så återkommer jag med en konkret offert. Läs mer på [tjänstesidan för hönsyoga](/tjanster/honsyoga) eller titta på relaterade upplevelser: [utomhusyoga i Dalarna](/blogg/outdoor-yoga-dalarna) och [yoga möhippa i Dalarna](/blogg/yoga-mohippa-dalarna).'
-      },
-    ]
-  },
-  {
-    slug: 'outdoor-yoga-dalarna',
-    title: 'Utomhusyoga i Dalarna. Varför naturen gör praktiken bättre.',
-    metaDescription: 'Utomhusyoga i Dalarna på altanen i skogen. Yoga i naturen ger något inomhusstudios inte kan. Privat bokning för grupper och events.',
-    publishDate: '2026-03-25',
-    readingTime: '4 min',
-    category: 'Yoga & Natur',
-    excerpt: 'Dalarnas skog och luft är mer än en bakgrund. De är en del av praktiken.',
-    relatedServiceHref: '/tjanster/privata-event',
-    relatedServiceLabel: 'Se yoga retreat & upplevelser i Dalarna',
-    content: [
-      {
-        type: 'paragraph',
-        text: 'Det finns fina yogastudios i Sverige. Och sen finns det att stå på altanen i Dalarna med granskogens doft, fågelsång och morgonljus som silar genom träden. Ingen studio kan kopiera det.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Utomhusyoga är en annan upplevelse. Inte för att det är svårare. För att det är riktigare.'
-      },
-      {
-        type: 'heading',
-        text: 'Vad naturen ger yogan'
-      },
-      {
-        type: 'paragraph',
-        text: 'Forskningen är tydlig. Tid utomhus sänker kortisolet, aktiverar det parasympatiska nervsystemet och ökar närvaro. Exakt det yoga strävar mot. Kombinationen är inte bara estetisk. Den är funktionell.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Utomhus är det svårare att fastna i huvudet. Vinden. Fåglarna. Känslan av trä under fötterna. Allt ger nervsystemet något att jobba med. Du tvingas vara här, nu.'
-      },
-      {
-        type: 'heading',
-        text: 'Altanen i Dalarna'
-      },
-      {
-        type: 'paragraph',
-        text: 'En stor altan omgiven av granskog. Utsikt över det öppna landskapet. Yoga här alla årstider utom regn. Även höst- och vintermorgnarna har sin magi.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Det är basen för privata klasser, möhippor, retreats och äventyrpaket. Gäster nämner platsen som det de minns mest.'
-      },
-      {
-        type: 'heading',
-        text: 'Vem passar det?'
-      },
-      {
-        type: 'paragraph',
-        text: 'Alla. Anpassas för alla nivåer och alla kroppar. Enda skillnaden är kontexten. Och den spelar roll.'
-      },
-      {
-        type: 'list',
-        items: [
-          'Privat klass i naturen? Boka på altanen.',
-          'Dag-retreat? Se Privata Event & Yoga Retreat.',
-          'Grupp? Se Privata Event & Yoga Retreat.',
-          'Konferens i Dalarna? Utomhusyoga som konferensinslag.'
-        ]
-      },
-      {
-        type: 'paragraph',
-        text: 'Maila hello.yogawithcamilla@gmail.com för att boka utomhusyoga i Dalarna.'
-      }
-    ]
-  },
-  {
-    slug: 'mohippa-dalarna-aktiviteter',
-    title: 'Möhippa i Dalarna. 7 aktiviteter utöver det vanliga.',
-    metaDescription: 'Planerar du möhippa i Dalarna? 7 aktiviteter som funkar. Yoga i skogen, hönsyoga, SUP, vandring. Boende + natur = minnesvärd helg.',
-    publishDate: '2026-04-09',
-    readingTime: '6 min',
-    category: 'Events & Möhippa',
-    excerpt: 'Dalarna är perfekt för möhippor som vill bort från stan. 7 aktiviteter som gör helgen minnesvärd som faktiskt funkar.',
-    relatedServiceHref: '/tjanster/privata-event',
-    relatedServiceLabel: 'Boka privat event med yoga',
-    relatedPosts: [
-      { slug: 'yoga-mohippa-dalarna', label: 'Yoga möhippa i Dalarna' },
-      { slug: 'mohippa-rattvik-yoga-aktiviteter', label: 'Möhippa i Rättvik, yoga och Siljan' },
-      { slug: 'yoga-retreat-dalarna-vs-stockholm', label: 'Retreat Dalarna vs Stockholm' },
-    ],
-    content: [
-      {
-        type: 'paragraph',
-        text: 'Allt fler grupper väljer Dalarna för möhippan. Naturen, lugnet, friheten. En helg här istället för en kväll i stan.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Men vad gör man egentligen? Här är 7 aktiviteter som funkar. Testade och uppskattade.'
-      },
-      {
-        type: 'heading',
-        text: '1. Yoga på altanen'
-      },
-      {
-        type: 'paragraph',
-        text: 'Privat yogaklass i naturen. Utomhus, i skogen, fågelsång som soundtrack. Alla nivåer. Sätter stämningen för hela helgen. Jag kan komma till ert boende med all utrustning.'
-      },
-      {
-        type: 'heading',
-        text: '2. Hönsyoga'
-      },
-      {
-        type: 'paragraph',
-        text: 'Yoga på altanen, med höns som vandrar fritt runt mattorna. Det är en av de mest uppskattade upplevelserna jag erbjuder. Hönsen skapar en lätthet som gör att hela gruppen slappnar av.'
-      },
-      {
-        type: 'heading',
-        text: '3. Vandring med picknicklunch'
-      },
-      {
-        type: 'paragraph',
-        text: 'Dalarna har vandringsleder för alla nivåer. Packa en korglunch, ta en halvdagsvandring och njut av utsikten. Enkel logistik, noll kostnad (förutom maten), och en aktivitet som alla kan hantera.'
-      },
-      {
-        type: 'heading',
-        text: '4. Bastubad vid sjön'
-      },
-      {
-        type: 'paragraph',
-        text: 'Många boenden i Dalarna har bastu. Har ni en sjö i närheten blir det ett naturligt inslag. Basta, dopp, upprepa.'
-      },
-      {
-        type: 'heading',
-        text: '5. Matlagning hemma'
-      },
-      {
-        type: 'paragraph',
-        text: 'Skippa restaurangen och laga mat tillsammans istället. Köp lokala råvaror, duka fint och gör middagen till en del av upplevelsen. Det blir både billigare och mer personligt.'
-      },
-      {
-        type: 'heading',
-        text: '6. Paddling eller kanot'
-      },
-      {
-        type: 'paragraph',
-        text: 'Dalarna har gott om sjöar och åar. Hyr kanoter för en halvdag på vattnet. Lugnt tempo, bra för samtal och skratt. Ingen erfarenhet krävs.'
-      },
-      {
-        type: 'heading',
-        text: '7. Trail run + yoga-kombo'
-      },
-      {
-        type: 'paragraph',
-        text: 'För den aktiva gruppen: löptur i skogen följt av yogaklass. Jag erbjuder trail run + yoga som paket. Perfekt om gruppen gillar att röra på sig.'
-      },
-      {
-        type: 'heading',
-        text: 'Planera er möhippa i Dalarna'
-      },
-      {
-        type: 'paragraph',
-        text: 'Det bästa med en möhippa i Dalarna är att programmet kan vara enkelt. Boende + natur + en eller två organiserade aktiviteter = en helg som alla minns. Vill ni ha yoga som en del av det? Hör av er på hello.yogawithcamilla@gmail.com.'
-      }
-    ]
-  },
-  {
-    slug: 'yoga-retreat-dalarna-vs-stockholm',
-    title: 'Yoga retreat i Dalarna vs Stockholm. Var ska du boka?',
-    metaDescription: 'Yoga retreat i Dalarna vs Stockholm. Natur vs stad, pris, upplevelse. Tips från en yogalärare som erbjuder båda.',
-    publishDate: '2026-04-09',
-    readingTime: '5 min',
-    category: 'Retreats & Upplevelser',
-    excerpt: 'Funderar du på yoga retreat men vet inte om du ska välja Dalarna eller Stockholm? Här jämför jag de två och hjälper dig välja.',
-    relatedServiceHref: '/tjanster/privata-event',
-    relatedServiceLabel: 'Boka yoga retreat i Dalarna',
-    relatedPosts: [
-      { slug: 'outdoor-yoga-dalarna', label: 'Utomhusyoga i Dalarna' },
-    ],
-    content: [
-      {
-        type: 'paragraph',
-        text: 'Du vill ha ett avbrott. Tid för dig själv, yoga, natur, och kanske några timmars tystnad utan att behöva förklara varför. Du har landat i att en retreat vore det perfekta. Men var?'
-      },
-      {
-        type: 'paragraph',
-        text: 'Dalarna och Stockholm erbjuder helt olika retreat-upplevelser. Här jämför jag de två så att du kan välja det som faktiskt passar dig.'
-      },
-      {
-        type: 'heading',
-        text: 'Dalarna: skogen, lugnet och tystnaden'
-      },
-      {
-        type: 'paragraph',
-        text: 'En yoga retreat i Dalarna är en naturupplevelse. Yoga på altanen omgiven av granskog, fågelsång istället för trafik, och en avskildhet som gör det enkelt att stänga av. Här handlar retreaten inte bara om yogan. Det är platsen i sig som gör jobbet.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Jag erbjuder yoga retreats i Dalarna: en halvdag eller heldag med yoga, andningsövningar, vandring eller trail run och tid i naturen. Perfekt för dig som vill ha retreat-känslan utan att ta en hel vecka ledigt.'
-      },
-      {
-        type: 'heading',
-        text: 'Stockholm: tillgänglighet och stad'
-      },
-      {
-        type: 'paragraph',
-        text: 'En retreat i Stockholm passar dig som inte vill resa. Du kan ha yoga på morgonen och vara hemma till middag. Det är bekvämt, och det finns bra lokaler och parker att praktisera i.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Nackdelen? Du får aldrig samma avskildhet. Stadsmiljön är kvar runt hörnet, och den mentala brytningen blir inte lika stark som när du åker bort.'
-      },
-      {
-        type: 'heading',
-        text: 'Vad passar dig?'
-      },
-      {
-        type: 'list',
-        items: [
-          'Vill du koppla av totalt? → Dalarna. Naturen gör halva jobbet åt dig.',
-          'Vill du ha en retreat utan övernattning? → Stockholm funkar bra som halv- eller heldagsupplägg.',
-          'Är ni en grupp (möhippa, företag)? → Dalarna med eget boende ger den starkaste upplevelsen.',
-          'Har du ont om tid? → Stockholm. Inga resor, flexibla tider.',
-          'Budget? → Dalarna kan vara billigare om ni delar ett boende. Stockholm kräver ofta salsuthyrning.'
-        ]
-      },
-      {
-        type: 'heading',
-        text: 'Min rekommendation'
-      },
-      {
-        type: 'paragraph',
-        text: 'Om du har möjlighet att ta dig till Dalarna, gör det. Kombinationen av yoga och natur ger en effekt som en stadsretreat inte riktigt matchar. Men om tid eller logistik gör det svårt, så erbjuder jag privata yogaklasser i Stockholm som ger retreat-känsla utan resan.'
-      },
-      {
-        type: 'paragraph',
-        text: 'Kontakta hello.yogawithcamilla@gmail.com med dina önskemål. Jag sätter ihop ett förslag som funkar för dig.'
-      }
     ]
   },
   {
@@ -2234,7 +1298,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Kombinationer av ovanstående, outdoor-klass på ett kickoff, retreat i Dalarna. Berätta vad ni behöver så hittar vi rätt form.'
+        text: 'Kombinationer av ovanstående, outdoor-klass på ett kickoff, eller specialanpassad session. Berätta vad ni behöver så hittar vi rätt form.'
       },
       {
         type: 'heading',
@@ -2321,7 +1385,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Yoga funkar som egen återkommande aktivitet, men många bokar den som del av större event. Populära kombinationer: yoga plus gemensam lunch (halvdagsevent), yoga plus [SUP yoga vid Sickla](/tjanster/sup-yoga) (sommaravslutning med vatten), yoga plus skogspromenad plus middag (konferens i Dalarna).'
+        text: 'Yoga funkar som egen återkommande aktivitet, men många bokar den som del av större event. Populära kombinationer: yoga plus gemensam lunch (halvdagsevent), yoga plus [SUP yoga vid Sickla](/tjanster/sup-yoga) (sommaravslutning med vatten), eller annan kombination ni önskar.'
       },
       {
         type: 'paragraph',
@@ -2329,11 +1393,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'heading',
-        text: 'Kickoffs och konferenser i Dalarna'
+        text: 'Kickoffs och konferenser i Stockholm'
       },
       {
         type: 'paragraph',
-        text: 'Håller ni kickoff eller konferens i Dalarna? Det är ett av de vanligaste tilläggen. Jag håller yoga utomhus på er konferensanläggning eller boende. En klass med gryningsljus och fågelljud på dag två av en tredagars, när alla är stela av att sitta, sitter kvar länge efter. Bokas separat som engångstillfälle. Resa utanför Stockholm debiteras enligt faktiskt utlägg.'
+        text: 'Håller ni kickoff eller konferens? Yoga är ett populärt tillägg på dag två när energin behöver peppas upp. Jag håller yoga på er konferensanläggning eller boende. En klass med bra musik och rörelse på dag två av en tredagars, när alla är stela av att sitta, sitter kvar länge efter. Bokas separat som engångstillfälle.'
       },
       {
         type: 'heading',
@@ -2419,8 +1483,6 @@ export const blogPosts: BlogPost[] = [
     relatedServiceHref: '/tjanster/sup-yoga',
     relatedServiceLabel: 'Boka privat SUP yoga',
     relatedPosts: [
-      { slug: 'yoga-mohippa-dalarna', label: 'Yoga möhippa i Dalarna' },
-      { slug: 'mohippa-dalarna-aktiviteter', label: 'Möhippa i Dalarna, 7 aktiviteter' },
     ],
     content: [
       { type: 'paragraph', text: 'Stockholm är en fantastisk stad för möhippa, men också en lätt stad att slentrian-planera. Prosecco-frukost, spa, krogen, hem. Inget fel med formatet, men gänget kommer minnas det som vilken helg som helst. Det som gör en möhippa minnesvärd är sällan budgeten eller bilden på Instagram. Det är att ni gör något tillsammans som har en gemensam fokuspunkt, så det är okej att en är gravid, en är hungover och en flugit in samma morgon. Här är sex aktiviteter i Stockholm som funkar oavsett mix.' },
@@ -2885,7 +1947,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'A yoga class on a paddleboard, led by me, at Sickla Strand in Nacka. The boards are wider and more stable than a standard SUP, so balance is much easier than it looks from the dock. You paddle out a few minutes to the anchor spot, we run the class on the water, and you paddle back in. Sauna by the lake afterwards.' },
       { type: 'paragraph', text: 'I run the yoga. Smashing Balance runs the venue, the boards, the sauna and the safety equipment. Everything you need is on site.' },
       { type: 'heading', text: 'Why I teach in English' },
-      { type: 'paragraph', text: 'I\'m Australian. I moved to Sweden a few years ago and now teach yoga from a forest cabin in Dalarna and on the water at Sickla Strand. All my classes are taught in English by default, the cues are in English, the corrections are in English, and the small talk after class is in English too.' },
+      { type: 'paragraph', text: 'I\'m Australian. I moved to Sweden a few years ago and now teach yoga on the water at Sickla Strand in Stockholm. All my classes are taught in English by default, the cues are in English, the corrections are in English, and the small talk after class is in English too.' },
       { type: 'paragraph', text: 'If you\'re an expat who hasn\'t quite found a yoga rhythm in Stockholm, or you\'re visiting and want to do something that isn\'t a museum or a cinnamon bun, this is built for you. You don\'t need to translate cat-cow.' },
       { type: 'heading', text: 'Two styles: vinyasa or yin' },
       { type: 'subheading', text: 'Vinyasa SUP yoga' },
@@ -3183,7 +2245,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'australian-yoga-teacher-stockholm-cabin-story',
     language: 'en',
     title: 'Why an Australian Yoga Teacher Ended Up in a Swedish Cabin (and What That Means for Your Practice)',
-    metaDescription: 'How an Australian 500-hour certified yoga teacher ended up teaching from a forest cabin in Dalarna and on the water in Stockholm, and what an Australian teaching philosophy actually changes about your practice.',
+    metaDescription: 'How an Australian 500-hour certified yoga teacher ended up teaching in Stockholm, and what an Australian teaching philosophy actually changes about your practice.',
     publishDate: '2026-05-11',
     readingTime: '7 min',
     category: 'Personligt',
@@ -3199,14 +2261,14 @@ export const blogPosts: BlogPost[] = [
       { slug: 'team-building-activities-stockholm', label: 'Team building in Stockholm, 7 activities' },
     ],
     content: [
-      { type: 'paragraph', text: 'The short version: I\'m Australian, I\'m 500-hour certified, I now live in a forest cabin in Dalarna with chickens, and I teach yoga in Stockholm and across Sweden. The longer version explains why that combination matters more for your practice than it sounds like it should.' },
+      { type: 'paragraph', text: 'The short version: I\'m Australian, I\'m 500-hour certified, and I teach yoga in Stockholm and across Sweden. The longer version explains why that combination matters more for your practice than it sounds like it should.' },
       { type: 'heading', text: 'How I got here' },
       { type: 'paragraph', text: 'I grew up on the east coast of Australia, where yoga isn\'t a special thing. People do it on the beach in the morning. There\'s a class in the back of every gym. Nobody talks about it the way it gets talked about online, with the candles and the captions. It\'s just something you do, like swimming or walking.' },
       { type: 'paragraph', text: 'I did my first 200-hour teacher training in my twenties, mostly because I wanted to understand what was happening in my own body when I practised, not because I planned to teach. The teaching part came later, slowly. I taught small classes on weekends. I did a 500-hour at a school I respected. I started building a practice that other people could trust.' },
       { type: 'paragraph', text: 'Then I met a Swede. The way these things go.' },
-      { type: 'heading', text: 'Why a cabin in a forest in Dalarna' },
+      { type: 'heading', text: 'Where I teach' },
       { type: 'paragraph', text: 'I moved to Sweden a few years ago. I tried Stockholm first, because that\'s where the work was, and it was fine. Good food. Reliable trains. Polite people. But I missed space. The kind of space you don\'t get in any city, regardless of which country it\'s in.' },
-      { type: 'paragraph', text: 'We found a cabin in Dalarna, three hours north of the city, surrounded by trees. Not a renovated farmhouse with a Pinterest mood-board, an actual cabin, with a wood stove and chickens we now keep. It\'s quiet in a way I forgot was possible. I teach yoga on the deck in summer, in a heated space inside in winter, and the chickens wander around during the warmer half of the year.' },
+      { type: 'paragraph', text: 'I teach yoga primarily in Stockholm, at Sickla Strand on the water, and work with clients across the city for corporate events and private sessions.' },
       { type: 'paragraph', text: 'I still teach in Stockholm regularly, weekly SUP yoga at Sickla Strand, corporate yoga at offices around town, private events. The two locations together are the thing I offer that nobody else can: an Australian yoga teacher who lives between a Swedish forest and a Stockholm waterfront.' },
       { type: 'heading', text: 'What an Australian teaching style actually changes' },
       { type: 'paragraph', text: 'Yoga is global enough that "where the teacher is from" can sound like a marketing line. It\'s not nothing, though. A few things shift when you train and teach in the Australian context:' },
@@ -3225,9 +2287,9 @@ export const blogPosts: BlogPost[] = [
       { type: 'list', items: [
         '[SUP yoga drop-in classes](/tjanster/sup-yoga-klasser) at Sickla Strand in Stockholm, weekly from late April to September',
         '[Private SUP yoga and sauna](/tjanster/sup-yoga) for groups, hen parties, team days, birthdays, also at Sickla Strand',
-        '[Corporate yoga](/tjanster/foretagsyoga) at offices, conferences, and offsites across Stockholm and Dalarna',
-        '[Private events and retreats](/tjanster/privata-event) in Dalarna (cabin deck, chickens, forest) and Stockholm (any venue you book or one I suggest)',
-        '[Hönsyoga](/tjanster/honsyoga) in Dalarna, which is yoga with chickens roaming around, and yes that\'s a real service and yes people book it',
+        '[Corporate yoga](/tjanster/foretagsyoga) at offices, conferences, and offsites in Stockholm',
+        '[Private events](/tjanster/privata-event) in Stockholm (any venue you book or one I suggest)',
+        
       ] },
       { type: 'paragraph', text: 'Online private and small-group sessions over Zoom for clients outside Stockholm or for travel weeks.' },
       { type: 'heading', text: 'What I don\'t do' },
@@ -3242,12 +2304,12 @@ export const blogPosts: BlogPost[] = [
       { type: 'heading', text: 'Frequently asked questions' },
       { type: 'faq', faqItems: [
         { q: 'Are you actually Australian or is that branding?', a: 'Actually Australian. Born and raised on the east coast. I still sound like it. The accent doesn\'t fade in Stockholm winters as much as you\'d think.' },
-        { q: 'Where in Sweden are you based?', a: 'I live in a cabin in Dalarna, three hours north of Stockholm. I teach weekly in Stockholm at Sickla Strand and travel into the city regularly for private and corporate bookings. Most clients book me in Stockholm. Dalarna is where I live and where the retreat and cabin-based offerings happen.' },
+        { q: 'Where in Sweden are you based?', a: 'I teach in Stockholm, based at Sickla Strand on the water. I work with clients across the city for corporate events, private sessions, and group classes.' },
         { q: 'Do you teach in English?', a: 'All my classes run in English by default. I\'m Australian, English is my first language. A few Swedish phrases sprinkled in if it fits the group, but the class is in English from start to finish.' },
         { q: 'What style of yoga do you teach?', a: 'A mix of vinyasa and yin, depending on the format and the group. Vinyasa for movement, yin for stillness, often both in the same class. No extreme poses, no hot room. Closer to "challenging but not punishing" than "yoga as fitness goal".' },
-        { q: 'Do you have a studio?', a: 'No. I teach at clients\' venues, on the water at Sickla Strand (in partnership with Smashing Balance), and at the cabin in Dalarna for retreats and private events. Means I can be more flexible, no studio overhead, no class card system to navigate.' },
-        { q: 'Are the chickens part of yoga or is that a side hobby?', a: 'Both. They live with us at the cabin. They\'re part of the lifestyle, but they\'ve also turned into [hönsyoga](/tjanster/honsyoga), which is a private offering for groups in Dalarna. Hens wandering around while we practise. It works better than it sounds.' },
-        { q: 'Can I take a private class with you?', a: 'Yes, 1-on-1 and small group, in Stockholm, in Dalarna, or over Zoom. Email with what you\'re looking for and your schedule constraints.' },
+        { q: 'Do you have a studio?', a: 'No. I teach at clients\' venues and on the water at Sickla Strand (in partnership with Smashing Balance). Means I can be more flexible, no studio overhead, no class card system to navigate.' },
+        
+        { q: 'Can I take a private class with you?', a: 'Yes, 1-on-1 and small group, in Stockholm, or over Zoom. Email with what you\'re looking for and your schedule constraints.' },
         { q: 'I just want to try one class to see if you\'re a fit. What\'s the easiest entry point?', a: 'Drop-in SUP yoga at Sickla Strand from late April to September. Single class, no commitment, you\'ll see how I teach in 75 minutes. Booked through Smashing Balance.' },
       ] },
       { type: 'heading', text: 'If you want to get in touch' },
@@ -3346,7 +2408,7 @@ export const blogPosts: BlogPost[] = [
         '1-on-1 in person in Stockholm',
         'Small group at your home or a venue you choose',
         '1-on-1 and small group over Zoom for travel weeks or remote clients',
-        'Occasional private events, hen parties, birthdays, weekend retreats in Stockholm or Dalarna, via [Private Events](/tjanster/privata-event)',
+        'Occasional private events, hen parties, birthdays, weekend retreats in Stockholm, via [Private Events](/tjanster/privata-event)',
       ] },
       { type: 'heading', text: 'Frequently asked questions' },
       { type: 'faq', faqItems: [
@@ -3455,7 +2517,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'A wedding morning has a particular energy. The event is real, the details are locked, nothing can be changed now. The person getting married is simultaneously calm and not. Their closest people are slightly buzzing. Everyone has a lot to say and nothing useful left to do.' },
       { type: 'paragraph', text: 'An hour of yoga is a specific and useful thing to do with that energy. Not exercise, not another brunch. A quiet container that uses the body to slow the mind before the day takes over.' },
       { type: 'paragraph', text: 'This is the format I run for wedding parties in Stockholm, and what you need to know to book it.' },
-      { type: 'callout', text: 'The short version: a private yoga session for the wedding party or wedding guests, in Stockholm or Dalarna, taught in English. Works for the morning before the ceremony, the evening before the wedding day, or as part of a hen weekend. Contact [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) with date and group size.' },
+      { type: 'callout', text: 'The short version: a private yoga session for the wedding party or wedding guests, in Stockholm, taught in English. Works for the morning before the ceremony, the evening before the wedding day, or as part of a hen weekend. Contact [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) with date and group size.' },
       { type: 'heading', text: 'Why yoga before a wedding works' },
       { type: 'paragraph', text: 'Yoga before a big event does something that most activities don\'t. It asks the body to be still, to breathe, to release the places where stress lands physically, the shoulders, the jaw, the chest, without requiring you to talk about any of it.' },
       { type: 'paragraph', text: 'Most of the wedding party will have slept less than usual. Some will be jet-lagged if they\'ve flown in. Everyone will be in a slightly elevated state. A 60-minute slow session in the morning gets the body into the day properly, without tiring it out. You\'ll photograph better. You\'ll be more present. The edges come off.' },
@@ -3479,23 +2541,23 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'The session is private, just your group. I bring mats and blocks for up to 20 people. The space can be the accommodation (a large living room or terrace works), a conference room at the wedding hotel, a park or garden, or a hired space in Stockholm.' },
       { type: 'paragraph', text: 'Duration is usually 60 minutes. Style is gentle to medium, depending on what the group needs. No experience necessary. If there are people in the group who have never done yoga, that\'s fine, the session is shaped for them too.' },
       { type: 'paragraph', text: 'The class runs in English by default. If the group is all Swedish-speaking, I can run it in Swedish. Most wedding party bookings are bilingual, so English is usually the right call.' },
-      { type: 'heading', text: 'Stockholm or Dalarna' },
-      { type: 'paragraph', text: 'Both work. Stockholm: at the venue, the hotel, or outdoors in summer. Dalarna: at the [forest cabin](/tjanster/privata-event) with the deck, the forest, and, yes, the chickens. The Dalarna option works well if the wedding is in the region or if the couple wants something distinctly Swedish for an international group. It\'s an hour from Stockholm by car, two by train.' },
+      { type: 'heading', text: 'Stockholm' },
+      { type: 'paragraph', text: 'At the venue, the hotel, or outdoors in summer. I work with couples to find a space that works for the group and the style of the event.' },
       { type: 'heading', text: 'Pricing' },
-      { type: 'paragraph', text: 'Private yoga session for a wedding party starts from 3 500 SEK for up to 15 people in Stockholm. Larger groups, longer sessions, or Dalarna travel cost are quoted separately. Combined hen weekend packages with SUP yoga and sauna are available from 500 SEK per person. Email for a custom quote.' },
+      { type: 'paragraph', text: 'Private yoga session for a wedding party starts from 3 500 SEK for up to 15 people in Stockholm. Larger groups, longer sessions are quoted separately. Combined hen weekend packages with SUP yoga and sauna are available from 500 SEK per person. Email for a custom quote.' },
       { type: 'heading', text: 'Frequently asked questions' },
       { type: 'faq', faqItems: [
         { q: 'Is the class in English?', a: 'Yes. I\'m Australian, English is my first language. The class runs in English by default. I can also teach in Swedish if the whole group prefers.' },
         { q: 'Do the participants need yoga experience?', a: 'No. The session is designed to be accessible to people who have never done yoga as well as to those who practise regularly. Tell me the range when you book and I\'ll pitch the session appropriately.' },
-        { q: 'Where do you teach the session?', a: 'Wherever makes sense. The hotel, the wedding venue, the accommodation where the party is staying, an outdoor space, or a space I suggest in Stockholm or Dalarna.' },
+        { q: 'Where do you teach the session?', a: 'Wherever makes sense. The hotel, the wedding venue, the accommodation where the party is staying, an outdoor space, or a space I suggest in Stockholm.' },
         { q: 'How many people can join?', a: 'Up to 20 comfortably if there is enough floor space. For smaller groups of 5 to 10, the session tends to be more intimate and more tailored.' },
         { q: 'How long before the ceremony should we schedule it?', a: 'At least 2 to 3 hours before the ceremony. People need time to shower, change, and eat afterwards. 09:00 for a 14:00 ceremony is a good template.' },
         { q: 'Can we combine yoga with the sauna at Sickla Strand?', a: 'Yes, as a private group booking. SUP yoga on the water followed by the sauna is one of the most popular hen party formats I run. Works well for the day before the wedding rather than the morning of.' },
-        { q: 'Do you do destination weddings outside Stockholm?', a: 'I teach in Stockholm and Dalarna. For weddings elsewhere in Sweden, get in touch and I\'ll see if it works with the dates.' },
+        { q: 'Do you do destination weddings outside Stockholm?', a: 'I teach in Stockholm. For weddings elsewhere in Sweden, get in touch and I\'ll see if it works with the dates.' },
         { q: 'How far in advance should we book?', a: '4 to 8 weeks ahead is ideal. Last-minute bookings within 2 weeks are sometimes possible but I can\'t guarantee availability.' },
       ] },
       { type: 'heading', text: 'Book it' },
-      { type: 'paragraph', text: 'Email [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) with the date, group size, and where you\'re based (Stockholm, Dalarna, or elsewhere). I\'ll come back with a format suggestion and a quote. See also the [private events page](/tjanster/privata-event) for the full range of private and group offerings.' },
+      { type: 'paragraph', text: 'Email [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) with the date, group size, and location. I\'ll come back with a format suggestion and a quote. See also the [private events page](/tjanster/privata-event) for the full range of private and group offerings.' },
     ]
   },
 
@@ -3656,88 +2718,1664 @@ export const blogPosts: BlogPost[] = [
       { type: 'paragraph', text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med ett par rader om vad du söker och din ungefärliga tillgänglighet. Jag svarar med ett formatförslag och ett konkret pris.' },
     ]
   },
+  // Corporate Yoga Blog Posts - Swedish
   {
-    slug: 'yoga-retreat-near-stockholm-dalarna-weekend',
-    language: 'en',
-    title: 'Yoga Retreats Near Stockholm: A Weekend in Dalarna Without the Long-Haul Flight',
-    metaDescription: 'A yoga retreat weekend near Stockholm: 3 hours by car or train to the forest cabin in Dalarna. Private group retreats with yoga, nature, and genuine Swedish countryside. Bookable year-round for small groups.',
-    publishDate: '2026-05-11',
-    readingTime: '8 min',
-    category: 'Yoga Retreat',
-    excerpt: 'You don\'t need to fly to Bali for a yoga retreat. There is a forest cabin 3 hours from Stockholm, with a yoga deck, Swedish nature, and no other guests. This is the alternative for people who want the retreat effect without the itinerary.',
-    relatedServiceHref: '/tjanster/privata-event',
-    relatedServiceLabel: 'Book a private retreat in Dalarna',
+    slug: 'yoga-sommaravslutning-företag',
+    title: 'Yoga till sommaravslutning för företag: starta sommaren tillsammans',
+    metaDescription: 'Yoga till sommaravslutning för team i Stockholm. Andning, stretching och grounding innan sommarpausen. Från 2 000 kr. Boka enkelt.',
+    publishDate: '2026-05-28',
+    readingTime: '6 min',
+    category: 'Företag & Konferens',
+    language: 'sv',
+    excerpt: 'Sommaravslutningen är det perfekta tillfället att ge teamet ett andningshål innan sommarpausen. Yoga gör det möjligt utan att det känns för långt eller formellt. Här är hur det fungerar.',
+    relatedServiceHref: '/tjanster/foretagsyoga-event',
+    relatedServiceLabel: 'Boka yoga till sommaravslutning',
     tableOfContents: true,
     faqSchema: true,
+    heroImage: { src: '/lovable-uploads/summer-yoga-forest.jpg', alt: 'Yoga vid skogen på sommaravslutning' },
     relatedPosts: [
-      { slug: 'yoga-retreat-dalarna-vs-stockholm', label: 'Yoga retreat Dalarna vs Stockholm (svenska)' },
-      { slug: 'yoga-in-english-stockholm-expat-guide', label: 'Yoga in English in Stockholm, an expat\'s guide' },
-      { slug: 'australian-yoga-teacher-stockholm-cabin-story', label: 'Why an Australian yoga teacher ended up in a Swedish cabin' },
-      { slug: 'wedding-weekend-yoga-stockholm', label: 'Wedding weekend yoga in Stockholm' },
+      { slug: 'foretagsyoga-kickoff-nystart', label: 'Yoga till kickoff och nystart' },
+      { slug: 'yoga-konferens-teambuilding', label: 'Yoga på konferens: wellness breaks' },
+      { slug: 'foretagsyoga-vad-ingar-och-kostar', label: 'Företagsyoga för återkommande wellness' },
     ],
     content: [
-      { type: 'paragraph', text: 'A yoga retreat should do one thing: give you two or three days where the only job is to practise, rest, eat, and be somewhere that isn\'t your normal life. Most retreats that do this are in Portugal, Bali, or the south of Spain. Which means flights, time zones, and the coordination of a small operation.' },
-      { type: 'paragraph', text: 'There is a simpler version three hours from Stockholm.' },
-      { type: 'callout', text: 'A private retreat at a forest cabin in Dalarna. Yoga on the deck or inside, Swedish nature, small groups of 2 to 10. Taught in English by an Australian 500-hour certified teacher. Bookable year-round. Contact [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) with dates and group size.' },
-      { type: 'heading', text: 'Where it is' },
-      { type: 'paragraph', text: 'A cabin in Dalarna, the forested region in central Sweden that most Swedes think of when they think of genuine Swedish countryside. Three hours from Stockholm by car, roughly two and a half by train to Borlänge and then a short drive. The kind of place where nothing happens and that\'s the point.' },
-      { type: 'paragraph', text: 'The cabin has a deck for outdoor yoga, a large indoor space for when the weather doesn\'t cooperate, forest on three sides, and chickens. The chickens are free-ranging and occasionally attend yoga. It sounds like a gimmick. It isn\'t. There is something specific about practising with animals nearby that does something to the room.' },
-      { type: 'heading', text: 'What the retreat format looks like' },
-      { type: 'paragraph', text: 'The format is built around your group, not a fixed programme. But a typical weekend looks something like this:' },
-      { type: 'list', items: [
-        'Friday evening: arrival, a short 30-minute session to land in the space, dinner together',
-        'Saturday morning: 75-minute yoga session on the deck (or inside), breakfast',
-        'Saturday afternoon: walk in the forest, Falun copper mine if the group wants a cultural detour, or simply time with no schedule',
-        'Saturday evening: 60-minute yin session, dinner, fire pit if the season allows',
-        'Sunday morning: 60-minute yoga session, breakfast, departure',
-      ] },
-      { type: 'paragraph', text: 'Three yoga sessions over two days. Time to eat, sleep, be outside, and do nothing else. That\'s the retreat. Accommodation is separate and arranged by the group, there are several options in the area at different price points, from a second cabin near mine to a hotel in Falun or Rättvik.' },
-      { type: 'heading', text: 'Who it\'s for' },
-      { type: 'list', items: [
-        'A small group of friends who want a proper shared experience without flying somewhere',
-        'Expats in Stockholm who want to see actual Swedish countryside and do yoga in it',
-        'A couple or a few people who want individual attention in a beautiful setting',
-        'A hen party or birthday group who wants something quieter and more memorable than a standard city weekend',
-        'A team of two to five who want to genuinely disconnect and reset together',
-      ] },
-      { type: 'heading', text: 'What makes it different from a Bali or Portugal retreat' },
-      { type: 'paragraph', text: 'Nothing, if you want the warm weather, the large group energy, and the Instagram backdrop. But a few things Dalarna does differently:' },
-      { type: 'list', items: [
-        'It\'s private. You\'re not sharing the space with 30 people you\'ve never met',
-        'Three hours from Stockholm, not seven or eleven',
-        'Swedish summer light is genuinely extraordinary. You don\'t need to travel far to find something that doesn\'t look like home',
-        'Swedish winter has a case for retreats too: snow, cold air, complete stillness. A different quality of quiet',
-        'The teacher is the same person you found, with the same practice, not a rotation of instructors',
-      ] },
-      { type: 'heading', text: 'How much it costs' },
-      { type: 'paragraph', text: 'The yoga teaching is priced separately from accommodation. Yoga for a private group retreat weekend (Friday evening to Sunday morning, three sessions) starts from 6 500 SEK for groups up to 8. Accommodation runs separately and depends entirely on what the group books.' },
-      { type: 'paragraph', text: 'For comparison: a typical 3-night retreat in Portugal or Bali, flights included, runs 15 000 to 30 000 SEK per person. A Dalarna weekend with accommodation runs roughly 3 000 to 5 000 SEK per person total for a group of 4 to 6, including yoga teaching.' },
-      { type: 'heading', text: 'The Dalarna context' },
-      { type: 'paragraph', text: 'Dalarna is the Swedish region that holds Midsommar, the most Swedish of all Swedish celebrations. The Dala horse comes from here. Falun copper mine is a UNESCO World Heritage site. The region is known for its red cottages, frozen lakes in winter, wildflowers in summer, and a pace that makes Stockholm feel genuinely rushed.' },
-      { type: 'paragraph', text: 'For expats based in Stockholm, it\'s also the part of Sweden most worth seeing that isn\'t the city. A retreat weekend is a practical way to get there.' },
-      { type: 'heading', text: 'Seasons' },
-      { type: 'paragraph', text: 'The retreat works year-round:' },
-      { type: 'list', items: [
-        'Summer (May to September): outdoor yoga on the deck, forest walks, long light evenings',
-        'Autumn (September to October): dramatic light, turning colours, quiet trails',
-        'Winter (November to March): snow, extreme stillness, indoor yoga by the fire, cold-air walks',
-        'Spring (April to May): the forest coming back, chickens at their most enthusiastic',
-      ] },
-      { type: 'heading', text: 'How to book' },
-      { type: 'paragraph', text: 'Email [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) with your preferred dates, group size, and a line about what you\'re looking for from the weekend. I\'ll come back with a format suggestion, accommodation options in the area, and a teaching quote.' },
-      { type: 'paragraph', text: 'For the full picture of private events and retreats in both Stockholm and Dalarna, the [Private Events page](/tjanster/privata-event) has more detail. The Swedish-language retreat comparison post at [Yoga retreat Dalarna vs Stockholm](/blogg/yoga-retreat-dalarna-vs-stockholm) covers the practical differences.' },
-      { type: 'heading', text: 'Frequently asked questions' },
-      { type: 'faq', faqItems: [
-        { q: 'Is the retreat in English?', a: 'Yes. I\'m Australian, English is my first language and all sessions are taught in English by default.' },
-        { q: 'How do I get to Dalarna from Stockholm without a car?', a: 'Train from Stockholm to Borlänge or Falun takes about 2 to 2.5 hours. From there a short drive, taxi, or pickup can be arranged. Many groups coming from Stockholm book one car between them.' },
-        { q: 'Where do we stay?', a: 'Accommodation is arranged separately. I can suggest options nearby, from a second cabin in the area to hotels in Falun or Rättvik. Price varies widely depending on what the group wants.' },
-        { q: 'How many people can join?', a: 'Retreats work well for 2 to 10 people. For larger groups the cabin gets crowded. Above 10, a different venue would be needed and the format changes.' },
-        { q: 'Is yoga experience required?', a: 'No. The sessions are tailored to whoever comes. Complete beginners and experienced practitioners in the same group is common.' },
-        { q: 'Can we come in winter?', a: 'Yes, winter retreats are genuinely excellent in Dalarna. Cold, quiet, dramatic. Outdoor yoga is weather-dependent but indoor sessions work well. The sauna-and-snow walk combination is worth planning around.' },
-        { q: 'Do the chickens always show up to yoga?', a: 'Often. They\'re free-ranging and the deck is their territory. I haven\'t found a way to keep them out and stopped trying. They\'re part of the experience.' },
-        { q: 'Can this be a hen party or birthday retreat?', a: 'Yes, a popular format. Quieter and more personal than a city weekend, and people talk about it for longer. See also the [wedding weekend yoga](/blogg/wedding-weekend-yoga-stockholm) post for the Stockholm-based version.' },
-        { q: 'Is there anything else to do in Dalarna besides yoga?', a: 'Yes. Falun copper mine (UNESCO), Lake Siljan and Rättvik, hiking in the forest, cycling, swimming in summer, cross-country skiing in winter. A weekend retreat can include one activity outside the cabin without it feeling rushed.' },
-      ] },
+      {
+        type: 'paragraph',
+        text: 'Sommaravslutningen är ofta stressad. Deadlines innan semestern, folk som redan är med tanken på stranden, och mycket som behöver avslutas snabbt. En 30-minuterssession yoga och andning blir inte bara en paus. Det blir ett sätt att säga "vi tar hand om er innan ni går" och ge hjärnorna en chans att faktiskt slappna av innan sommarpausen börjar.'
+      },
+      {
+        type: 'callout',
+        text: 'Snabbversion: Yoga till sommaravslutning från 2 000 kr för grupper på 6 till 15 personer. Format: andning, stretching och meditation anpassat till er tid och plats. Kan köras på kontoret, i er mötesal eller utomhus. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med datum och antal deltagare för en offert.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför yoga till sommaravslutning fungerar'
+      },
+      {
+        type: 'paragraph',
+        text: 'Två anledningar. Den första är att det faktiskt låter teamet slappna av innan de går, istället för att springa till stranden med spänd axel. Den andra är att en kort session yoga blir en gemensam upplevelse som säger "vi bryr oss om din välbefinnande" utan att det låter för mycket som corporate wellness-prat.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad som ingår'
+      },
+      {
+        type: 'list',
+        items: [
+          'Andningsövningar och meditation som faktiskt gör skillnad på 10 minuter',
+          'Stretching fokuserat på axlar, nacke och rygg (där skrivbordsarbete sätter stress)',
+          'Grounding och avslappning',
+          'Sessionen hålls på er plats, inget ombyte eller yogamatta behövs',
+          'Kan vara 20, 30 eller 45 minuter beroende på er tid',
+        ],
+      },
+      {
+        type: 'subheading',
+        text: 'Formaten'
+      },
+      {
+        type: 'paragraph',
+        text: 'Tre möjligheter:'
+      },
+      {
+        type: 'list',
+        items: [
+          '**Andningsbrytning** (20–30 min): fokus på andning och avslappning, ingen matta behövs, kan göras i casual kläder.',
+          '**Stretching & grounding** (30–45 min): stretching för skrivbordskropp plus andning. Inget yoga-background krävs.',
+          '**Fullständig yoga** (45–60 min): klassisk yoga med mattor. Vi sätter upp på kontoret eller i er mötesal.',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Praktiskt'
+      },
+      {
+        type: 'paragraph',
+        text: 'Sessionen körs på er plats i Stockholm. Det enda vi behöver är ett lugnt utrymme utan för många störningar och cirka 10 minuter innan för setup. Kan köras både inomhus och utomhus.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Bra timing: en fredagsmorgon eller tidig eftermiddag innan weekendplanen kickar igång. Många väljer att köra det ca en timme innan sommaravslutningen avslutas formellt, som ett sätt att markera övergången från arbete till semester.'
+      },
+      {
+        type: 'heading',
+        text: 'Pris'
+      },
+      {
+        type: 'paragraph',
+        text: 'Från 2 000 kr för små sessioner. Priset beror på gruppstorlek, längd och format. Alla priser är exklusive moms för företagsbokningar. Mejla för en konkret offert baserat på er grupp och önskemål.'
+      },
+      {
+        type: 'heading',
+        text: 'Vanliga frågor'
+      },
+      {
+        type: 'faq',
+        faqItems: [
+          {
+            q: 'Behöver vi yoga-erfarenhet?',
+            a: 'Nej. Sommaravslutningsgrupper är alltid blandat erfarna och nybörjare. Sessionen anpassas så att alla kan vara med.',
+          },
+          {
+            q: 'Hur länge tar det?',
+            a: '20 till 60 minuter beroende på format. Vi diskuterar vad som passar bäst utifrån er agenda och tempo.',
+          },
+          {
+            q: 'Vad behöver vi ha på plats?',
+            a: 'För andningsformat ingenting. För stretching och yoga behöver vi ett större utrymme utan möbler i vägen. Jag tar med mattor och allt utrustning.',
+          },
+          {
+            q: 'Kan vi köra det utomhus?',
+            a: 'Ja, utomhus fungerar bra i bra väder. En plats utan för mycket brus och någotsånär plan mark räcker.',
+          },
+          {
+            q: 'Hur många kan delta?',
+            a: 'Från 4 till cirka 20 personer fungerar bra. Större grupper går att diskutera, men påverkar hur sessionen leds.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Boka'
+      },
+      {
+        type: 'paragraph',
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med era önskemål: datum, tid, antal deltagare och vilken längd som passar. Jag återkommer med ett konkret förslag och pris.',
+      },
+    ]
+  },
+  {
+    slug: 'yoga-sommaravslutning-företag-en',
+    title: 'Corporate yoga for summer team closures: ease into the break together',
+    metaDescription: 'Corporate yoga for summer closure in Stockholm. Breathing, stretching and grounding before the summer break. From 2 000 SEK. Easy to book.',
+    publishDate: '2026-05-28',
+    readingTime: '6 min',
+    category: 'Företag & Konferens',
+    language: 'en',
+    excerpt: 'Summer closure is often rushed. A yoga session before the break gives your team exactly what they need: a moment to breathe before they disappear for two months. It takes 30 minutes and changes the mood.',
+    relatedServiceHref: '/tjanster/foretagsyoga-event',
+    relatedServiceLabel: 'Book summer closure yoga',
+    tableOfContents: true,
+    faqSchema: true,
+    heroImage: { src: '/lovable-uploads/summer-yoga-forest.jpg', alt: 'Yoga in the forest at summer closure' },
+    relatedPosts: [
+      { slug: 'foretagsyoga-kickoff-nystart-en', label: 'Yoga for kick-off and team launch' },
+      { slug: 'yoga-konferens-teambuilding-en', label: 'Yoga at conferences: wellness breaks' },
+      { slug: 'foretagsyoga-recurring-practice-en', label: 'Recurring corporate yoga: habit-building' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Summer closures are usually hectic. Deadlines before the break, people already mentally on the beach, and a lot that needs wrapping up fast. A 30-minute yoga and breathing session isn\'t just a pause. It\'s a way of saying "we care about you before you go" and giving everyone\'s nervous system an actual chance to settle before the summer break starts.'
+      },
+      {
+        type: 'callout',
+        text: 'Quick version: Yoga for summer closure from 2 000 SEK for groups of 6 to 15. Format: breathing, stretching and grounding tailored to your time and space. Can be run at the office, in a meeting room or outdoors. Email [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) with your date and group size for a quote.'
+      },
+      {
+        type: 'heading',
+        text: 'Why summer closure yoga works'
+      },
+      {
+        type: 'paragraph',
+        text: 'Two reasons. First, it actually lets your team relax before they leave, instead of running to the beach with tense shoulders. Second, a short yoga session becomes a shared experience that says "we care about your wellbeing" without sounding like corporate wellness talk.'
+      },
+      {
+        type: 'heading',
+        text: 'What\'s included'
+      },
+      {
+        type: 'list',
+        items: [
+          'Breathing exercises and meditation that make a real difference in 10 minutes',
+          'Stretching focused on shoulders, neck and back (where desk work creates tension)',
+          'Grounding and proper relaxation',
+          'The session runs at your space, no changing or yoga mats needed',
+          'Can be 20, 30 or 45 minutes depending on your schedule',
+        ],
+      },
+      {
+        type: 'subheading',
+        text: 'The formats'
+      },
+      {
+        type: 'paragraph',
+        text: 'Three options:'
+      },
+      {
+        type: 'list',
+        items: [
+          '**Breathing break** (20–30 min): focus on breathing and relaxation, no mat needed, works in normal clothes.',
+          '**Stretching & grounding** (30–45 min): stretching for a desk body plus breathing. No yoga background required.',
+          '**Full yoga** (45–60 min): traditional yoga with mats. We set up at your office or meeting room.',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Practical details'
+      },
+      {
+        type: 'paragraph',
+        text: 'The session runs at your location in Stockholm. All we need is a quiet space without too many interruptions and about 10 minutes before for setup. Works indoors or outdoors.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Good timing: Friday morning or early afternoon before weekend plans kick in. Many teams run this about an hour before the formal closure, as a way to mark the shift from work to vacation.'
+      },
+      {
+        type: 'heading',
+        text: 'Price'
+      },
+      {
+        type: 'paragraph',
+        text: 'From 2 000 SEK for small sessions. Price depends on group size, length and format. All prices exclude VAT for corporate bookings. Email for a concrete quote based on your group and needs.'
+      },
+      {
+        type: 'heading',
+        text: 'Frequently asked questions'
+      },
+      {
+        type: 'faq',
+        faqItems: [
+          {
+            q: 'Do we need yoga experience?',
+            a: 'No. Summer closure groups are always mixed, experienced and beginners. The session adjusts so everyone can participate.',
+          },
+          {
+            q: 'How long does it take?',
+            a: '20 to 60 minutes depending on format. We discuss what fits best based on your agenda and pace.',
+          },
+          {
+            q: 'What do we need to provide?',
+            a: 'For breathing format, nothing. For stretching and yoga we need a larger space with furniture moved. I bring mats and all equipment.',
+          },
+          {
+            q: 'Can we do this outdoors?',
+            a: 'Yes, outdoors works well in good weather. A space without too much noise and roughly even ground is enough.',
+          },
+          {
+            q: 'How many people can join?',
+            a: 'From 4 to around 20 people works well. Larger groups can be discussed but affect how the session is led.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Book now'
+      },
+      {
+        type: 'paragraph',
+        text: 'Email [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) with your wishes: date, time, number of participants and what length works. I\'ll come back with a concrete proposal and price.',
+      },
+    ]
+  },
+  {
+    slug: 'foretagsyoga-kickoff-nystart',
+    title: 'Yoga till kickoff: fokus och energi innan stora lanseringar',
+    metaDescription: 'Yoga och andning till kickoff för företag. Starta projektet lugnt och fokuserat. För team i Stockholm. Från 2 500 kr. Boka yoga-event enkelt.',
+    publishDate: '2026-05-28',
+    readingTime: '6 min',
+    category: 'Företag & Konferens',
+    language: 'sv',
+    excerpt: 'En kickoff kan vara kaotisk. Presentation efter presentation, mycket energi men ofta spänd. Yoga innan eller under kickoff gör något enkelt: den sätter fokus och lugn i rummet innan det stora börjar.',
+    relatedServiceHref: '/tjanster/foretagsyoga-event',
+    relatedServiceLabel: 'Boka yoga till kickoff',
+    tableOfContents: true,
+    faqSchema: true,
+    heroImage: { src: '/lovable-uploads/kickoff-yoga-team.jpg', alt: 'Yoga session before team kickoff' },
+    relatedPosts: [
+      { slug: 'yoga-sommaravslutning-företag', label: 'Yoga till sommaravslutning' },
+      { slug: 'yoga-konferens-teambuilding', label: 'Yoga på konferens' },
+      { slug: 'foretagsyoga-vad-ingar-och-kostar', label: 'Återkommande företagsyoga' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'En kickoff kan vara fullt av energi men också kaotisk. Många presentationer, mycket snack, och hjärnorna på högvarv redan innan det verkliga arbetet börjar. En yoga- eller andningssession före eller under kickoff gör något enkelt: det sätter fokus och lugn i rummet. Det betyder att folk faktiskt kan ta in det du säger när du börjar prata.'
+      },
+      {
+        type: 'callout',
+        text: 'Snabbversion: Yoga eller andning till kickoff från 2 500 kr för grupper på 6 till 20 personer. Format: andning för fokus, grounding innan start, eller kort stretching-break under dagen. På er plats. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för en offert.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför andning före en kickoff gör skillnad'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det finns forskning på det här. Lugn andning sänker stressnivåerna och förbättrar fokus. Praktiska termer: folk kan faktiskt höra och ta in information bättre när de inte är i full spänning. Och en gruppövning tillsammans skapa ett sammanhang innan presentationerna börjar.'
+      },
+      {
+        type: 'heading',
+        text: 'Tre sätt att integrera yoga i en kickoff'
+      },
+      {
+        type: 'subheading',
+        text: 'Före kickoff-dagen (30 minuter)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Dagen innan eller dagen själv innan allt börjar. En session fokuserad på andning, grounding och fokus. Sätter tonen för dagen. Bra om kickoff börjar på förmiddagen.'
+      },
+      {
+        type: 'subheading',
+        text: 'Som break mitt i kickoff-dagen (20 minuter)'
+      },
+      {
+        type: 'paragraph',
+        text: 'En kort andningsövning eller stretching mellan presentationer eller workshoppar. Resettar fokus när energin börjar falla. Många teams tycker det är perfekt två timmar in i dagen.'
+      },
+      {
+        type: 'subheading',
+        text: 'Efter kickoff-presentationer (45 minuter)'
+      },
+      {
+        type: 'paragraph',
+        text: 'En längre yoga- eller andningsövning för avslappning efter intensiva presentationer. Fungerar bra innan team-middag eller nästa aktivitet, så folk kan faktiskt ta in vad de hört.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad som fungerar'
+      },
+      {
+        type: 'list',
+        items: [
+          'Folk behöver inte yoga-erfarenhet. Det är andning, inte advanced yoga.',
+          'Kan köras på er kickoff-plats. Behöver bara ett lugnt rum.',
+          'Ungefär 15 minuters andning gör större skillnad än många tror.',
+          'Groupet sammanhållning förbättras när ni gör något tillsammans före presentationerna.',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Pris och bokning'
+      },
+      {
+        type: 'paragraph',
+        text: 'Från 2 500 kr beroende på längd, format och gruppstorlek. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med kickoff-datum, antal deltagare och vad som passar er dag bäst.'
+      },
+      {
+        type: 'heading',
+        text: 'Vanliga frågor'
+      },
+      {
+        type: 'faq',
+        faqItems: [
+          {
+            q: 'Behöver vi yoga-bakgrund?',
+            a: 'Nej. Fokus på andning och grounding, inte yoga-positioner. Alla kan vara med.',
+          },
+          {
+            q: 'Hur lång tid tar det?',
+            a: 'Från 20 minuter för en andningsbreak till 45 minuter för en fullständig session. Vi anpassar efter er dag.',
+          },
+          {
+            q: 'Kan det vara på kickoff-platsen?',
+            a: 'Ja. Vi behöver bara ett lugnt utrymme. Kan vara ett hotellrum, konferenssal eller utomhus.',
+          },
+          {
+            q: 'Vad är bästa tidpunkten?',
+            a: 'Före allt börjar (sätter fokus) eller som break mitt i dagen (resettar energi). Vi diskuterar med er.',
+          },
+        ],
+      },
+    ]
+  },
+  {
+    slug: 'foretagsyoga-kickoff-nystart-en',
+    title: 'Corporate yoga for kick-off: focus and clarity before the big launch',
+    metaDescription: 'Yoga and breathing for corporate kickoff. Start your project calm and focused. Stockholm teams. From 2 500 SEK. Book easily.',
+    publishDate: '2026-05-28',
+    readingTime: '6 min',
+    category: 'Företag & Konferens',
+    language: 'en',
+    excerpt: 'A kickoff can be chaotic. Presentation after presentation, high energy but often tense. Yoga before or during kickoff does one simple thing: it settles focus and calm in the room before it all starts.',
+    relatedServiceHref: '/tjanster/foretagsyoga-event',
+    relatedServiceLabel: 'Book kickoff yoga',
+    tableOfContents: true,
+    faqSchema: true,
+    heroImage: { src: '/lovable-uploads/kickoff-yoga-team.jpg', alt: 'Yoga session before team kickoff' },
+    relatedPosts: [
+      { slug: 'yoga-sommaravslutning-företag-en', label: 'Yoga for summer closures' },
+      { slug: 'yoga-konferens-teambuilding-en', label: 'Yoga at conferences' },
+      { slug: 'foretagsyoga-recurring-practice-en', label: 'Recurring corporate yoga' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'A kickoff can be full of energy but also chaotic. Many presentations, lots of talk, and brains already in overdrive before the real work starts. A yoga or breathing session before or during a kickoff does one simple thing: it creates focus and calm in the room. That means people can actually absorb what you\'re saying when you start talking.'
+      },
+      {
+        type: 'callout',
+        text: 'Quick version: Yoga or breathing for kickoff from 2 500 SEK for groups of 6 to 20. Format: breathing for focus, grounding before start, or a short stretching break during the day. At your location. Email [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) for a quote.'
+      },
+      {
+        type: 'heading',
+        text: 'Why breathing before a kickoff makes a difference'
+      },
+      {
+        type: 'paragraph',
+        text: 'There\'s research on this. Calm breathing lowers stress levels and improves focus. In practical terms: people can actually hear and take in information better when they\'re not in full tension. And a group breathing practice together creates a shared context before presentations begin.'
+      },
+      {
+        type: 'heading',
+        text: 'Three ways to integrate yoga into a kickoff'
+      },
+      {
+        type: 'subheading',
+        text: 'Before kickoff day (30 minutes)'
+      },
+      {
+        type: 'paragraph',
+        text: 'The day before or the morning of before everything starts. A session focused on breathing, grounding and focus. Sets the tone for the day. Good if kickoff starts mid-morning.'
+      },
+      {
+        type: 'subheading',
+        text: 'As a break mid-kickoff (20 minutes)'
+      },
+      {
+        type: 'paragraph',
+        text: 'A quick breathing exercise or stretching between presentations or workshops. Resets focus when energy starts to dip. Many teams find this perfect about two hours in.'
+      },
+      {
+        type: 'subheading',
+        text: 'After kickoff presentations (45 minutes)'
+      },
+      {
+        type: 'paragraph',
+        text: 'A longer yoga or breathing session for relaxation after intense presentations. Works well before team dinner or next activity, so people can actually process what they\'ve heard.'
+      },
+      {
+        type: 'heading',
+        text: 'What works'
+      },
+      {
+        type: 'list',
+        items: [
+          'No yoga experience needed. It\'s breathing, not advanced yoga.',
+          'Can be run at your kickoff location. Just needs a quiet space.',
+          'About 15 minutes of breathing makes more difference than you\'d think.',
+          'Group cohesion improves when you do something together before presentations.',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Price and booking'
+      },
+      {
+        type: 'paragraph',
+        text: 'From 2 500 SEK depending on length, format and group size. Email [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) with your kickoff date, number of participants and what works best for your schedule.'
+      },
+      {
+        type: 'heading',
+        text: 'Frequently asked questions'
+      },
+      {
+        type: 'faq',
+        faqItems: [
+          {
+            q: 'Do we need yoga background?',
+            a: 'No. Focus on breathing and grounding, not yoga positions. Everyone can participate.',
+          },
+          {
+            q: 'How long does it take?',
+            a: 'From 20 minutes for a breathing break to 45 minutes for a full session. We adapt to your schedule.',
+          },
+          {
+            q: 'Can it be at the kickoff location?',
+            a: 'Yes. We just need a quiet space. Can be a hotel room, conference room or outdoors.',
+          },
+          {
+            q: 'What\'s the best timing?',
+            a: 'Before everything starts (sets focus) or as a break mid-day (resets energy). We discuss with you.',
+          },
+        ],
+      },
+    ]
+  },
+  {
+    slug: 'yoga-konferens-teambuilding',
+    title: 'Yoga på konferens: wellness breaks som faktiskt fungerar',
+    metaDescription: 'Yoga och andning på konferens för fokus och energi. Wellness breaks mellan sessioner. 30 minuter som resettar hjärnan. Stockholm.',
+    publishDate: '2026-05-28',
+    readingTime: '7 min',
+    category: 'Företag & Konferens',
+    language: 'sv',
+    excerpt: 'Konferenser är långa. Efter lunch blir fokus otåligt. En 30-minuters yoga-break är inte bara wellness-prat. Det är ett faktiskt reset för hjärnan innan nästa session.',
+    relatedServiceHref: '/tjanster/foretagsyoga-event',
+    relatedServiceLabel: 'Boka yoga till konferens',
+    tableOfContents: true,
+    faqSchema: true,
+    heroImage: { src: '/lovable-uploads/conference-yoga-break.jpg', alt: 'Yoga wellness break på konferens' },
+    relatedPosts: [
+      { slug: 'yoga-sommaravslutning-företag', label: 'Yoga till sommaravslutning' },
+      { slug: 'foretagsyoga-kickoff-nystart', label: 'Yoga till kickoff' },
+      { slug: 'foretagsyoga-vad-ingar-och-kostar', label: 'Återkommande företagsyoga' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Konferenser är långa. Många timmar i samma sal, många presentationer, mycket snut. Efter lunch sjunker fokus och energi. En wellness break på 30 minuter yoga och andning är inte bara fint att ha. Det är ett faktiskt reset för hjärnan före nästa session, och folk sitter upp igen istället för att slumra i stolarna.'
+      },
+      {
+        type: 'callout',
+        text: 'Snabbversion: Yoga på konferens från 3 000 kr för grupper på 8 till 30 personer. Format: andning och stretching utan matta, eller fullständig yoga med mattor. 30 till 45 minuter mellan sessioner. Kan köras på konferensplatsen. Mejla för offert.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför wellness break under konferens gör skillnad'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det enklaste exemplet: efter två timmar i samma rum börjar hjärnan att vandra. En 30-minuters yoga-break resettar uppmärksamheten. Folk kommer tillbaka från stretchningen faktiskt vilande, inte trött. Och när en konferens är två dagar lång, påverkar ett reset på dagen två hur mycket folk faktiskt tar med sig av dag två.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad som fungerar på konferenser'
+      },
+      {
+        type: 'subheading',
+        text: 'Kort andnings-break (20 minuter)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Perfekt efter lunch eller mellan två tyngre sessioner. Ingen matta behövs. Folk kan göra det i casual kläder. Fokus: andning, stretching för axlar och nacke, kort meditation.'
+      },
+      {
+        type: 'subheading',
+        text: 'Stretching och grounding (30 minuter)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Ett steg upp från andningen. Stretching för den skrivbordskropp som suttit still två timmar, plus grounding för att faktiskt vara närvarande. Ingen matta behövs, kan göras i vanliga kläder.'
+      },
+      {
+        type: 'subheading',
+        text: 'Fullständig yoga (45 minuter)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Om konferensplatsen och schemat tillåter. Mattor tas fram, och folk gör klassisk yoga för återhämtning och fokus. Bra om det är en dedikerad yoga-sal och folk kan ta några minuter att gå dit.'
+      },
+      {
+        type: 'heading',
+        text: 'Praktiska detaljer'
+      },
+      {
+        type: 'list',
+        items: [
+          'Sessionen körs på konferensplatsen (hotellsal, konferenscentrum, utomhus)',
+          'Kan anpassas till er schedule när som helst på dagen',
+          'Ingen yoga-bakgrund behövs',
+          'Inget ombyte eller speciell utrustning för andnings- och stretchingformat',
+          'Fullständig yoga kräver mattor, som jag tar med',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Priser och storlekar'
+      },
+      {
+        type: 'paragraph',
+        text: 'Från 3 000 kr beroende på format, längd och gruppstorlek. Grupper från 8 till 30 personer. Kontakta oss för ett konkret pris utifrån er konferensschema och behov.'
+      },
+      {
+        type: 'heading',
+        text: 'Vanliga frågor'
+      },
+      {
+        type: 'faq',
+        faqItems: [
+          {
+            q: 'Vad är bästa tiden för en yoga-break?',
+            a: 'Efter lunch när fokus börjar sjunka, eller mellan två tyngre sessioner. Vi anpassar till er schema.',
+          },
+          {
+            q: 'Behöver folk yoga-erfarenhet?',
+            a: 'Nej. Andnings- och stretching-format är designat för blandat erfarna och nybörjare.',
+          },
+          {
+            q: 'Kan vi köra det på konferensplatsen?',
+            a: 'Ja. Vi behöver bara ett lugnt utrymme, gärna närmare konferenssalarna så folk inte går långt.',
+          },
+          {
+            q: 'Hur många kan delta?',
+            a: 'Från 8 till cirka 30. Större grupper kan diskuteras men påverkar hur sessionen fungerar.',
+          },
+          {
+            q: 'Kan vi kombinera med andra aktiviteter?',
+            a: 'Ja. Många konferenser lägger yoga-break tillsammans med mingel, fika eller utomhusaktivitet.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Boka'
+      },
+      {
+        type: 'paragraph',
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med konferensdatum, antal deltagare, längd ni föredrar, och vilken tid på dagen som passar bäst.',
+      },
+    ]
+  },
+  {
+    slug: 'yoga-konferens-teambuilding-en',
+    title: 'Corporate yoga at conferences: wellness breaks that actually work',
+    metaDescription: 'Yoga and breathing at corporate conferences. Wellness breaks for focus and energy. 30 minutes resets your brain. Stockholm teams.',
+    publishDate: '2026-05-28',
+    readingTime: '7 min',
+    category: 'Företag & Konferens',
+    language: 'en',
+    excerpt: 'Conferences are long. After lunch, focus gets restless. A 30-minute yoga break isn\'t just wellness talk. It\'s an actual reset for your brain before the next session.',
+    relatedServiceHref: '/tjanster/foretagsyoga-event',
+    relatedServiceLabel: 'Book conference yoga',
+    tableOfContents: true,
+    faqSchema: true,
+    heroImage: { src: '/lovable-uploads/conference-yoga-break.jpg', alt: 'Yoga wellness break at conference' },
+    relatedPosts: [
+      { slug: 'yoga-sommaravslutning-företag-en', label: 'Yoga for summer closures' },
+      { slug: 'foretagsyoga-kickoff-nystart-en', label: 'Yoga for kickoff' },
+      { slug: 'foretagsyoga-recurring-practice-en', label: 'Recurring corporate yoga' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Conferences are long. Many hours in the same room, many presentations, lots of sitting. After lunch, focus and energy drop. A 30-minute yoga and breathing break isn\'t just nice to have. It\'s an actual reset for your brain before the next session, and people sit up again instead of dozing off.'
+      },
+      {
+        type: 'callout',
+        text: 'Quick version: Yoga at conference from 3 000 SEK for groups of 8 to 30. Format: breathing and stretching without mats, or full yoga with mats. 30 to 45 minutes between sessions. Can be run at the conference location. Email for a quote.'
+      },
+      {
+        type: 'heading',
+        text: 'Why a wellness break at conference makes a difference'
+      },
+      {
+        type: 'paragraph',
+        text: 'Simple example: after two hours in the same room, your brain starts to wander. A 30-minute yoga break resets your attention. People come back from stretching actually rested, not tired. And when a conference is two days long, a reset on day two affects how much people actually take home from day two.'
+      },
+      {
+        type: 'heading',
+        text: 'What works at conferences'
+      },
+      {
+        type: 'subheading',
+        text: 'Short breathing break (20 minutes)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Perfect after lunch or between two heavy sessions. No mat needed. People can do it in casual clothes. Focus: breathing, stretching for shoulders and neck, short meditation.'
+      },
+      {
+        type: 'subheading',
+        text: 'Stretching and grounding (30 minutes)'
+      },
+      {
+        type: 'paragraph',
+        text: 'A step up from breathing. Stretching for the desk body that\'s been sitting still for two hours, plus grounding to actually be present. No mat needed, works in regular clothes.'
+      },
+      {
+        type: 'subheading',
+        text: 'Full yoga (45 minutes)'
+      },
+      {
+        type: 'paragraph',
+        text: 'If the conference location and schedule allows. Mats are brought out, and people do traditional yoga for recovery and focus. Good if there\'s a dedicated yoga room and people can take a few minutes to get there.'
+      },
+      {
+        type: 'heading',
+        text: 'Practical details'
+      },
+      {
+        type: 'list',
+        items: [
+          'Session runs at the conference location (hotel room, conference center, outdoors)',
+          'Can be scheduled at any time that works for your program',
+          'No yoga background needed',
+          'No changing or special equipment needed for breathing and stretching format',
+          'Full yoga requires mats, which I bring',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Pricing and group sizes'
+      },
+      {
+        type: 'paragraph',
+        text: 'From 3 000 SEK depending on format, length and group size. Groups from 8 to 30. Contact us for a concrete price based on your conference schedule and needs.'
+      },
+      {
+        type: 'heading',
+        text: 'Frequently asked questions'
+      },
+      {
+        type: 'faq',
+        faqItems: [
+          {
+            q: 'What\'s the best time for a yoga break?',
+            a: 'After lunch when focus starts to drop, or between two heavy sessions. We adapt to your schedule.',
+          },
+          {
+            q: 'Do people need yoga experience?',
+            a: 'No. Breathing and stretching formats are designed for mixed experience levels.',
+          },
+          {
+            q: 'Can we run it at the conference location?',
+            a: 'Yes. We just need a quiet space, preferably close to the conference rooms so people don\'t have to walk far.',
+          },
+          {
+            q: 'How many people can participate?',
+            a: 'From 8 to around 30. Larger groups can be discussed but affect how the session works.',
+          },
+          {
+            q: 'Can we combine it with other activities?',
+            a: 'Yes. Many conferences put yoga breaks together with mingling, fika or outdoor activities.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Book'
+      },
+      {
+        type: 'paragraph',
+        text: 'Email [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) with your conference dates, number of participants, preferred length, and what time of day works best.',
+      },
+    ]
+  },
+  {
+    slug: 'foretagsyoga-vad-ingar-och-kostar',
+    title: 'Företagsyoga som vana: varför återkommande yoga slår engångsevents',
+    metaDescription: 'Företagsyoga om och how it works: två nivåer från 3 500 kr/mån. Återkommande yoga bygger vana istället för engångshöjdpunkter. För team i Stockholm.',
+    publishDate: '2026-05-28',
+    readingTime: '8 min',
+    category: 'Företag & Konferens',
+    language: 'sv',
+    excerpt: 'Ett yogaevent ger ett tillfälligt lyft. Sen är det slut. Det som bygger verklig förändring är repetition. Samma tid varje vecka bygger en vana som faktiskt håller, och det är vanan som minskar stress och förbättrar fokus.',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Boka återkommande företagsyoga',
+    tableOfContents: true,
+    faqSchema: true,
+    heroImage: { src: '/lovable-uploads/corporate-yoga-teams.jpg', alt: 'Återkommande yoga för team och wellness' },
+    relatedPosts: [
+      { slug: 'yoga-sommaravslutning-företag', label: 'Yoga till sommaravslutning' },
+      { slug: 'foretagsyoga-kickoff-nystart', label: 'Yoga till kickoff' },
+      { slug: 'yoga-konferens-teambuilding', label: 'Yoga på konferens' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'De flesta företag som bokar yoga bokar ett engångsevent. En möhippa, en kickoff, en konferens. Det är bra. Men sedan? Då är yogan slut och allt går tillbaka till normalt. Ett event ger ett tillfälligt lyft, sedan är det bortglömt. Det som faktiskt bygger en hållbar förändring är något helt annat: repetition. Samma tid varje vecka på samma plats skapar en vana. Och det är vanan, inte eventen, som faktiskt minskar stress och förbättrar fokus över tid.'
+      },
+      {
+        type: 'callout',
+        text: 'Snabbversion: Företagsyoga från 3 500 kr/mån för **1 — Weekly Practice** (1 session/vecka) eller 5 900 kr/mån för **2 — Integrated Practice** (2 sessioner/vecka + månadlig uppföljning). Live på Teams, 20–30 minuter, från skrivbordet. Inget ombyte, ingen utrustning, bara ett återkommande andrum som håller. Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) för ett introduktionsmöte.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför vanan fungerar bättre än engångseventet'
+      },
+      {
+        type: 'paragraph',
+        text: 'En neurobiologisk poäng: hjärnan bygger nya vägar genom repetition, inte genom engångserfarelser. Ett yogaevent kan kännas bra i stunden. Men det skapar ingen ny väg för hur kroppen handskas med stress. En weekly practice däremot, samma tid varje vecka, börjar att bygga en faktisk förändring i hur nervösa systemet fungerar efter några veckor.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Praktisk poäng: folk glömmer engångsevent. De är kul i stunden men sedan är det bort. En weekly practice på samma tid varje vecka blir en del av ritualerna. Det är förutsägbar, det är väntat, och det blir en vana som folk faktiskt uppskattar när det väl är etablerat.'
+      },
+      {
+        type: 'heading',
+        text: 'De två nivåerna'
+      },
+      {
+        type: 'subheading',
+        text: '1 — Weekly Practice (3 500 kr/mån)'
+      },
+      {
+        type: 'paragraph',
+        text: 'En session i veckan på Teams. 20 till 30 minuter. Fokus på andning eller meditation. Perfekt för team som vill testa utan att ta för mycket plats i budgeten, eller team som redan har mycket annat wellness-program på gång.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Upplägg: vi börjar med ett 45-minuters introduktionsmöte hos er, där jag lär mig vad teamet behöver och ni träffar mig. Sedan samma tid varje vecka på Teams, från skrivbordet. De som vill är med, de som inte kan hoppar av den veckan och är med nästa.'
+      },
+      {
+        type: 'subheading',
+        text: '2 — Integrated Practice (5 900 kr/mån)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Två sessioner i veckan. En fokuserad på andning och meditation (som Weekly Practice), en fokuserad på rörelse och stretching. Plus ett månadligt uppföljningssamtal på 15–20 minuter med er HR-person eller kontaktperson.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det här nivån är för team som märker att de behöver mer stöd, eller team som redan är på vägen och vill fördjupa. Uppföljningssamtalen gör det möjligt att anpassa efter hur det faktiskt går, istället för att bara köra samma format varje vecka.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför det fungerar på Teams'
+      },
+      {
+        type: 'list',
+        items: [
+          'Ingen behöver åka någonstans. Folk kan logga in från skrivbordet, hemma eller ett konferensrum.',
+          'Inget ombyte, ingen utrustning, ingen förflyttning.',
+          'Samma tid varje vecka gör det enkelt att boka in i kalendern och komma ihåg.',
+          'Folk som är hemma eller på annan plats kan fortfarande vara med.',
+          'Sessioner på engelska är möjligt för internationella team.',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Hur det fungerar i praktiken'
+      },
+      {
+        type: 'paragraph',
+        text: 'Introduktionsmöte på er plats (45 min). Vi träffas IRL, jag ser teamet och kontoret, och vi bestämmer vilken tid som passar bäst för återkommande sessionerna. Sedan Teams-sessioner varje vecka på samma tid.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Varje session är 20 till 30 minuter. Inget material behövs. Folk kan göra det från skrivbordet eller ett tyst hörn. Kan kombineras med engångsevent om ni vill, typ yoga till en sommaravslutning eller kickoff.'
+      },
+      {
+        type: 'heading',
+        text: 'Priser'
+      },
+      {
+        type: 'table',
+        tableHead: ['Nivå', 'Sessions/vecka', 'Längd', 'Pris', 'Bra för'],
+        tableRows: [
+          ['1 — Weekly Practice', '1', '20–30 min', '3 500 kr/mån', 'Team som vill testa, eller små budgetar'],
+          ['2 — Integrated Practice', '2', '20–30 min + månadlig uppföljning', '5 900 kr/mån', 'Team som vill större effekt och support'],
+        ],
+      },
+      {
+        type: 'paragraph',
+        text: 'Båda nivåerna inkluderar introduktionsmöte, alla sessioner på Teams, och möjlighet att byta nivå vid månadsskiftet. Priser exklusive moms för företag.'
+      },
+      {
+        type: 'heading',
+        text: 'Vanliga frågor'
+      },
+      {
+        type: 'faq',
+        faqItems: [
+          {
+            q: 'Hur lång tid innan vi märker skillnad?',
+            a: 'Några veckor. Det går inte att förvänta sig en stor förändring på två veckor. Men efter fyra till sex veckor av regelbundenhet märker folk att fokus är bättre, att nacken är mindre spänd, och att det är något att se fram emot.',
+          },
+          {
+            q: 'Vad om folk inte kan komma på en given vecka?',
+            a: 'Det är helt ok. De hoppas av den veckan och är med nästa. Vi bygger en vana, inte en strikt närvaro-lista. En del veckor är bara fyra deltagare, andra är tio.',
+          },
+          {
+            q: 'Behöver vi yoga-erfarenhet?',
+            a: 'Nej. De flesta deltagare på företagssessioner är nybörjare. Formaten är utformade för att fungera för alla.',
+          },
+          {
+            q: 'Kan vi byta nivå?',
+            a: 'Ja. Många börjar på nivå 1 för att testa och går upp till nivå 2 när de sett att det fungerar för teamet. Vi justerar vid månadsskiftet.',
+          },
+          {
+            q: 'Kan vi köra det för remote-team?',
+            a: 'Ja. Faktiskt en av de stora fördelarna med Teams-format. Alla loggar in från sin plats.',
+          },
+          {
+            q: 'Kan vi kombinera med engångsevent?',
+            a: 'Ja. Många team har både en weekly practice och bokar yoga till en specifik kickoff eller sommaravslutning. Vi diskuterar det när ni mailar.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Boka introduktionsmöte'
+      },
+      {
+        type: 'paragraph',
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) med info om teamet (antal, olika nivåer yoga-erfarenhet), vilken tid på dagen som passar bäst, och en grov idé om budget om ni har en. Jag återkommer med några möjliga tider för introduktionsmötet och en kort beskrivning av hur vi skulle kunna jobba tillsammans.'
+      },
+    ]
+  },
+  {
+    slug: 'foretagsyoga-recurring-practice-en',
+    title: 'Recurring corporate yoga: why habit-building beats one-off events',
+    metaDescription: 'Corporate yoga subscription: build a real practice over time. Two tiers from 3 500 SEK/month. Weekly teams yoga on video. Stockholm.',
+    publishDate: '2026-05-28',
+    readingTime: '8 min',
+    category: 'Företag & Konferens',
+    language: 'en',
+    excerpt: 'A one-off yoga event gives a temporary lift. Then it\'s over. What builds real change is repetition. Same time every week builds a habit that actually lasts, and it\'s the habit that lowers stress and improves focus.',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Book recurring corporate yoga',
+    tableOfContents: true,
+    faqSchema: true,
+    heroImage: { src: '/lovable-uploads/corporate-yoga-teams.jpg', alt: 'Recurring yoga for team wellness' },
+    relatedPosts: [
+      { slug: 'yoga-sommaravslutning-företag-en', label: 'Yoga for summer closures' },
+      { slug: 'foretagsyoga-kickoff-nystart-en', label: 'Yoga for kickoff' },
+      { slug: 'yoga-konferens-teambuilding-en', label: 'Yoga at conferences' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Most companies that book yoga book a one-off event. A bachelorette, a kickoff, a conference. That\'s good. But then? Yoga is over and everything goes back to normal. A one-off event gives a temporary boost, then it\'s forgotten. What actually builds lasting change is something completely different: repetition. Same time every week in the same place creates a habit. And it\'s the habit, not the events, that actually lowers stress and improves focus over time.'
+      },
+      {
+        type: 'callout',
+        text: 'Quick version: Corporate yoga from 3 500 SEK/month for **1 — Weekly Practice** (1 session/week) or 5 900 SEK/month for **2 — Integrated Practice** (2 sessions/week + monthly check-in). Live on Teams, 20–30 minutes, from your desk. No changing, no equipment, just a recurring breathing room that actually lasts. Email [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) for an intro meeting.'
+      },
+      {
+        type: 'heading',
+        text: 'Why habit works better than one-off events'
+      },
+      {
+        type: 'paragraph',
+        text: 'A neurobiology point: your brain builds new pathways through repetition, not through one-time experiences. A yoga event can feel good in the moment. But it doesn\'t create a new way for your body to handle stress. A weekly practice, on the other hand, same time every week, starts to build real change in how your nervous system functions within a few weeks.'
+      },
+      {
+        type: 'paragraph',
+        text: 'A practical point: people forget one-off events. They\'re fun in the moment but then they\'re gone. A weekly practice at the same time every week becomes part of the rituals. It\'s predictable, it\'s expected, and it becomes a habit that people actually look forward to once it\'s established.'
+      },
+      {
+        type: 'heading',
+        text: 'The two tiers'
+      },
+      {
+        type: 'subheading',
+        text: '1 — Weekly Practice (3 500 SEK/month)'
+      },
+      {
+        type: 'paragraph',
+        text: 'One session a week on Teams. 20 to 30 minutes. Focus on breathing or meditation. Perfect for teams wanting to test without committing much budget, or teams who already have other wellness programs in place.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Setup: we start with a 45-minute intro meeting at your office, where I learn what your team needs and you meet me. Then same time every week on Teams, from your desk. Those who want to attend do. Those who can\'t that week skip and join the next.'
+      },
+      {
+        type: 'subheading',
+        text: '2 — Integrated Practice (5 900 SEK/month)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Two sessions a week. One focused on breathing and meditation (like Weekly Practice), one focused on movement and stretching. Plus a monthly 15–20 minute check-in call with your HR contact or team lead.'
+      },
+      {
+        type: 'paragraph',
+        text: 'This tier is for teams that notice they need more support, or teams already on a wellness journey wanting to deepen. The check-ins make it possible to adjust based on what\'s actually working, instead of just running the same format every week.'
+      },
+      {
+        type: 'heading',
+        text: 'Why it works on Teams'
+      },
+      {
+        type: 'list',
+        items: [
+          'No one needs to travel. People can join from their desk, home or a conference room.',
+          'No changing, no equipment, no moving around.',
+          'Same time every week makes it easy to book in the calendar and remember.',
+          'People who are remote or in other locations can still participate.',
+          'Sessions in English available for international teams.',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'How it works in practice'
+      },
+      {
+        type: 'paragraph',
+        text: 'Intro meeting at your office (45 min). We meet IRL, I see your team and workspace, and we settle on the best time for recurring sessions. Then Teams sessions every week at the same time.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Each session is 20 to 30 minutes. No materials needed. People can do it from their desk or a quiet corner. Can be combined with one-off events if you want, like yoga at a summer closure or kickoff.'
+      },
+      {
+        type: 'heading',
+        text: 'Pricing'
+      },
+      {
+        type: 'table',
+        tableHead: ['Tier', 'Sessions/week', 'Length', 'Price', 'Best for'],
+        tableRows: [
+          ['1 — Weekly Practice', '1', '20–30 min', '3 500 SEK/month', 'Teams testing, or smaller budgets'],
+          ['2 — Integrated Practice', '2', '20–30 min + monthly check-in', '5 900 SEK/month', 'Teams wanting bigger impact and support'],
+        ],
+      },
+      {
+        type: 'paragraph',
+        text: 'Both tiers include intro meeting, all sessions on Teams, and ability to change tiers at month end. Prices exclude VAT for corporate bookings.'
+      },
+      {
+        type: 'heading',
+        text: 'Frequently asked questions'
+      },
+      {
+        type: 'faq',
+        faqItems: [
+          {
+            q: 'How long before we notice a difference?',
+            a: 'A few weeks. Don\'t expect big change in two weeks. But after four to six weeks of regularity, people notice better focus, less tense necks, and something to look forward to.',
+          },
+          {
+            q: 'What if people can\'t make a given week?',
+            a: 'Totally fine. They skip that week and join the next. We\'re building a habit, not a strict attendance sheet. Some weeks there are four people, others ten.',
+          },
+          {
+            q: 'Do we need yoga experience?',
+            a: 'No. Most corporate session participants are beginners. The formats are designed to work for everyone.',
+          },
+          {
+            q: 'Can we change tiers?',
+            a: 'Yes. Many start on tier 1 to test and move to tier 2 once they see it works for the team. We adjust at month end.',
+          },
+          {
+            q: 'Can we run this for a remote team?',
+            a: 'Yes. Actually one of the big advantages of Teams format. Everyone logs in from their location.',
+          },
+          {
+            q: 'Can we combine with one-off events?',
+            a: 'Yes. Many teams have both a weekly practice and book yoga for a specific kickoff or summer closure. We discuss this when you email.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Book an intro meeting'
+      },
+      {
+        type: 'paragraph',
+        text: 'Email [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) with info about your team (size, mix of yoga experience), best time of day, and a rough budget idea if you have one. I\'ll come back with a few possible times for the intro meeting and a short description of how we could work together.',
+      },
+    ]
+  },
+  // Thought Leadership: Creativity & Mindfulness - Swedish & English
+  {
+    slug: 'meditation-kreativitet-innovation-arbetsplats',
+    title: 'Meditation för kreativitet: vetenskapen bakom innovative team',
+    metaDescription: 'Meditation ökar kreativitet och innovativ problemlösning. Forskning visar hur andning och mindfulness aktiverar det kreativa hjärnan. För ledare och HR.',
+    publishDate: '2026-05-28',
+    readingTime: '7 min',
+    category: 'Företag & Konferens',
+    language: 'sv',
+    excerpt: 'Ett team som är stressat och överväldigat är ett team som inte kan tänka kreativt. Men det finns vetenskapen bakom hur man resettar hjärnan för innovation.',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Starta återkommande meditation för teamet',
+    tableOfContents: true,
+    faqSchema: true,
+    heroImage: { src: '/lovable-uploads/creative-team-meditation.jpg', alt: 'Kreativt teamwork genom meditation' },
+    relatedPosts: [
+      { slug: 'andning-fokus-arbetsplats', label: 'Andning för fokus och concentration' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Det är onsdag eftermiddag. Ett team sitter i ett möte för att brainstorma nästa campaigns idéer. Det de behöver är divergent tänkande, flexibilitet, insikt. Det de får är lågt blodsocker, notification-fatigue och mental tröttheten från sex timmars back-to-back möten. Kreativiteten flödar inte. Och det finns ett vetenskapligt skäl till varför.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Hjärnan under stress arbetar inte som en kreativ hjärna. Den går i överlevnadsläge. Men det finns något enkelt som resettar det: andning och meditation. Och forskningen visar att det fungerar faktiskt.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad hjärnan gör när den är kreativ'
+      },
+      {
+        type: 'paragraph',
+        text: 'Kreativitet är inte magi. Det är ett specifikt kognitiv process som aktiverar vissa delar av hjärnan. En studie publicerad i Frontiers in Psychology visade att divergent tänkande, den förmågan att generera flera lösningar på ett problem, är nödvändig för kreativt arbete. Och denna förmåga kan tränas med rätt teknik.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Vad forskningen visar är att meditation, speciellt öppen meditation där hjärnan får vandra fritt, aktiverar något kallat Default Mode Network. Det är den delen av hjärnan som är ansvarig för kreativa insikter. När du tvingar hjärnan att fokusera helt på en sak, och aldrig låter den vandra, slår du av din kreativitet.'
+      },
+      {
+        type: 'heading',
+        text: 'Forskningen på meditation och kreativitet'
+      },
+      {
+        type: 'paragraph',
+        text: 'En studie från University of California fann att meditörer som praktiserade öppen meditation presterade betydligt bättre på kreativitetstester än kontrollgruppen. Ju mer du mediterar, desto bättre blir du på att generera nya idéer.'
+      },
+      {
+        type: 'paragraph',
+        text: 'En annan viktig discovery: långtidsmeditörer visade högre nivåer av något som kallas gyrification i hjärnan. Det är i princip att hjärnan blir bättre på att bearbeta information på nya sätt. Ju mer du tränar meditationen, desto mer förändras hjärnans struktur för att stöda kreativt tänkande.'
+      },
+      {
+        type: 'subheading',
+        text: 'Andning påverkar idéernas originalitet'
+      },
+      {
+        type: 'paragraph',
+        text: 'En studie visade något överraskande: långsammare andningsfrekvens under meditation var korrelerad med större originalitet i idéerna som genererades. Det betyder att när du andas långsamt och medvetet under meditation, skapas faktiskt mer kreativa lösningar. Det är inte bara att sitta ner och tänka, det är hur du andas som spelar roll.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför stress dödar kreativitet'
+      },
+      {
+        type: 'paragraph',
+        text: 'Under stress producerar kroppen kortisol, stresshormonen. Kortisol är bra för flykt-eller-fight-respons, men det är dåligt för kreativt problemlösning. En högstressad hjärna kan inte komma upp med innovativa lösningar för att den är helt fokuserad på att överleva mötet eller deadline.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Meditation reducerar kortisol. Och när kortisol sjunker tillåter hjärnan sig själv att gå in i något som kallas flow state, en mental stat där idéerna flödar naturligt utan motstånd. Det är i flow state som bästa idéerna kommer.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad det betyder på arbetsplatsen'
+      },
+      {
+        type: 'paragraph',
+        text: 'En studie med 45 HR-chefer fann att de som fick åtta veckors meditationsträning rapporterade inte bara mindre stress, utan de visade också media stora effekter på kreativitet och större effekter på entrepreneurial self-efficacy. Med andra ord, en kort meditation kan faktiskt förbättra din förmåga att tänka innovativt.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Praktiska scenarier: Ett team som börjar sitt möte med tio minuters andningsövning kommer in med mer lugn hjärna. En morgon andningsövning innan du startar din arbetsdag resettar ditt Default Mode Network för dagen. Och regelbundna meditationssessioner under året tränar din hjärnans kreativa muskler.'
+      },
+      {
+        type: 'heading',
+        text: 'Tidslinjen för resultat'
+      },
+      {
+        type: 'list',
+        items: [
+          'Efter några andningsövningar: Du märker omedelbar lugn, bättre fokus för möten',
+          'Efter 2-3 veckor regelbunden meditation: Din hjärna börjar visa funktionella förbättringar, mer flexibilitet i problemlösning',
+          'Efter 8 veckor: Deltagare rapporterar märkbar förbättring i kreativitet och stressnivåer',
+          'Efter långtidspraktik: Strukturella förändringar i hjärnan som stödjer kreativ tänkande',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Vad ledare och HR bör veta'
+      },
+      {
+        type: 'paragraph',
+        text: 'Om du investerar i ett team, investera i deras kreativitet. Ett team med tillgång till regelbundna meditationssessioner är inte bara mindre stressad, det är faktiskt mer innovativt. Forskningen är klar på den här punkten.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det behöver inte vara långt eller komplicerat. Även 10-15 minuters daglig andningsmeditatio kan aktivera de kreativa delarna av hjärnan. Det är en av få wellness-investeringar som faktiskt har vetenskaplig grund att förbättra det arbete du behöver från teamet.'
+      },
+      {
+        type: 'heading',
+        text: 'Källor'
+      },
+      {
+        type: 'list',
+        items: [
+          '[Mindful creativity: the influence of mindfulness meditation on creative thinking](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3887545/), Frontiers in Psychology',
+          '[The Neuropsychological Connection Between Creativity and Meditation](https://www.researchgate.net/publication/253976833_The_Neuropsychological_Connection_Between_Creativity_and_Meditation)',
+          '[Creativity is Enhanced by Long-Term Mindfulness Training](https://scottbarrykaufman.com/wp-content/uploads/2016/12/Berkovich-Ohana-et-al.-in-press-Mindfulness-and-Creativity.pdf)',
+          '[Mind wandering in creative problem-solving](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0231946), PLOS One',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Vanliga frågor'
+      },
+      {
+        type: 'faq',
+        faqItems: [
+          {
+            q: 'Hur länge måste vi meditiera för att se resultat?',
+            a: 'Redan efter några sessioner märker folk lugn och bättre fokus. Efter 2-3 veckor av regelbunden meditation börjar du se resultat på kreativitet och problemlösning. Långtidspraxis bygger hela hjärnans struktur för kreativitet.',
+          },
+          {
+            q: 'Passar detta för alla typer av teamarbete?',
+            a: 'Ja. Forskningen visar att meditation förbättrar både divergent tänkande och konvergent tänkande. Allt kreativt arbete drar nytta av det.',
+          },
+          {
+            q: 'Kan vi börja innan ett brainstormingmöte?',
+            a: 'Ja. En 10-15 minuters andningsövning innan ett möte resettar hjärnan för kreativ tänkande och minskar stress som blockerar idéer.',
+          },
+          {
+            q: 'Vad är skillnaden mellan meditation och andning?',
+            a: 'Andningsövningar är fokuserad andning som resettar nervösa systemet snabbt. Meditation är längre praktik som tränar hjärnan långsiktigt. Tillsammans är de kraftfullast.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Nästa steg'
+      },
+      {
+        type: 'paragraph',
+        text: 'Om detta resonerar med ditt team, kan du starta på två sätt: ett engångsevent, en workshop eller kickoff-meditation som resettar fokus och kreativitet före ett stort projekt. Eller regelbundna sessioner, samma tid varje vecka, som tränar hjärnans kreativa förmåga över tid. Båda fungerar. Det viktigaste är att börja.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) om du vill diskutera vad som passar ditt team bäst, antingen ett event eller regelbundna sessioner för kreativitet och innovation.'
+      },
+    ]
+  },
+  {
+    slug: 'meditation-creativity-innovation-workplace-en',
+    title: 'Meditation for creativity: the science behind innovative teams',
+    metaDescription: 'Meditation increases creativity and innovative problem-solving. Research shows how breathing and mindfulness activate the creative brain. For leaders and HR.',
+    publishDate: '2026-05-28',
+    readingTime: '7 min',
+    category: 'Företag & Konferens',
+    language: 'en',
+    excerpt: 'A team that is stressed and overwhelmed is a team that cannot think creatively. But there is science behind how to reset the brain for innovation.',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Start recurring meditation for your team',
+    tableOfContents: true,
+    faqSchema: true,
+    heroImage: { src: '/lovable-uploads/creative-team-meditation.jpg', alt: 'Creative teamwork through meditation' },
+    relatedPosts: [
+      { slug: 'breathing-focus-concentration-en', label: 'Breathing for focus and concentration' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'It\'s Wednesday afternoon. A team is sitting in a brainstorming meeting for next campaign ideas. What they need is divergent thinking, flexibility, insight. What they get is low blood sugar, notification fatigue, and mental exhaustion from six hours of back-to-back meetings. Creativity doesn\'t flow. And there\'s a scientific reason why.'
+      },
+      {
+        type: 'paragraph',
+        text: 'The brain under stress doesn\'t work like a creative brain. It goes into survival mode. But there\'s something simple that resets it: breathing and meditation. And the research shows it actually works.'
+      },
+      {
+        type: 'heading',
+        text: 'What the brain does when it\'s creative'
+      },
+      {
+        type: 'paragraph',
+        text: 'Creativity isn\'t magic. It\'s a specific cognitive process that activates certain parts of the brain. A study published in Frontiers in Psychology showed that divergent thinking, the ability to generate multiple solutions to a problem, is necessary for creative work. And this ability can be trained with the right technique.'
+      },
+      {
+        type: 'paragraph',
+        text: 'What research shows is that meditation, especially open meditation where the brain is allowed to wander freely, activates something called the Default Mode Network. That\'s the part of the brain responsible for creative insights. When you force the brain to focus entirely on one thing and never let it wander, you turn off your creativity.'
+      },
+      {
+        type: 'heading',
+        text: 'The research on meditation and creativity'
+      },
+      {
+        type: 'paragraph',
+        text: 'A study from the University of California found that meditators who practiced open meditation performed significantly better on creativity tests than the control group. The more you meditate, the better you become at generating new ideas.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Another important discovery: long-time meditators showed higher levels of something called gyrification in the brain. It\'s basically the brain becoming better at processing information in new ways. The more you train meditation, the more the brain\'s structure changes to support creative thinking.'
+      },
+      {
+        type: 'subheading',
+        text: 'Breathing affects the originality of ideas'
+      },
+      {
+        type: 'paragraph',
+        text: 'One study showed something surprising: slower breathing frequency during meditation was correlated with greater originality in the ideas generated. This means that when you breathe slowly and consciously during meditation, more creative solutions are actually created. It\'s not just about sitting down and thinking, it\'s how you breathe that matters.'
+      },
+      {
+        type: 'heading',
+        text: 'Why stress kills creativity'
+      },
+      {
+        type: 'paragraph',
+        text: 'Under stress, the body produces cortisol, the stress hormone. Cortisol is good for fight-or-flight response, but it\'s bad for creative problem-solving. A highly stressed brain cannot come up with innovative solutions because it\'s completely focused on surviving the meeting or deadline.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Meditation reduces cortisol. And when cortisol drops, the brain allows itself to enter something called flow state, a mental state where ideas flow naturally without resistance. It\'s in flow state that the best ideas come.'
+      },
+      {
+        type: 'heading',
+        text: 'What it means in the workplace'
+      },
+      {
+        type: 'paragraph',
+        text: 'A study with 45 HR managers found that those who received eight weeks of meditation training reported not only less stress, but also showed medium effects on creativity and larger effects on entrepreneurial self-efficacy. In other words, brief meditation can actually improve your ability to think innovatively.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Practical scenarios: A team that starts its meeting with ten minutes of breathing exercises enters with a calmer brain. A morning breathing exercise before you start your workday resets your Default Mode Network for the day. And regular meditation sessions throughout the year train your brain\'s creative muscles.'
+      },
+      {
+        type: 'heading',
+        text: 'Timeline for results'
+      },
+      {
+        type: 'list',
+        items: [
+          'After a few breathing exercises: You notice immediate calm, better focus for meetings',
+          'After 2-3 weeks of regular meditation: Your brain starts showing functional improvements, more flexibility in problem-solving',
+          'After 8 weeks: People report noticeable improvement in creativity and stress levels',
+          'After long-term practice: Structural changes in the brain that support creative thinking',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'What leaders and HR need to know'
+      },
+      {
+        type: 'paragraph',
+        text: 'If you invest in a team, invest in their creativity. A team with access to regular meditation sessions is not only less stressed, it is actually more innovative. The research is clear on that point.'
+      },
+      {
+        type: 'paragraph',
+        text: 'It doesn\'t need to be long or complicated. Even 10-15 minutes of daily breathing meditation can activate the creative parts of your brain. It\'s one of the few wellness investments that actually has scientific grounds to improve the work you need from your team.'
+      },
+      {
+        type: 'heading',
+        text: 'Sources'
+      },
+      {
+        type: 'list',
+        items: [
+          '[Mindful creativity: the influence of mindfulness meditation on creative thinking](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3887545/), Frontiers in Psychology',
+          '[The Neuropsychological Connection Between Creativity and Meditation](https://www.researchgate.net/publication/253976833_The_Neuropsychological_Connection_Between_Creativity_and_Meditation)',
+          '[Creativity is Enhanced by Long-Term Mindfulness Training](https://scottbarrykaufman.com/wp-content/uploads/2016/12/Berkovich-Ohana-et-al.-in-press-Mindfulness-and-Creativity.pdf)',
+          '[Mind wandering in creative problem-solving](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0231946), PLOS One',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Frequently asked questions'
+      },
+      {
+        type: 'faq',
+        faqItems: [
+          {
+            q: 'How long do we need to meditate to see results?',
+            a: 'Already after a few sessions people notice calm and better focus. After 2-3 weeks of regular meditation you start seeing results in creativity and problem-solving. Long-term practice builds your entire brain structure for creativity.',
+          },
+          {
+            q: 'Does this work for all types of team work?',
+            a: 'Yes. Research shows meditation improves both divergent thinking and convergent thinking. All creative work benefits from it.',
+          },
+          {
+            q: 'Can we start before a brainstorming meeting?',
+            a: 'Yes. A 10-15 minute breathing exercise before a meeting resets your brain for creative thinking and reduces stress that blocks ideas.',
+          },
+          {
+            q: 'What is the difference between meditation and breathing?',
+            a: 'Breathing exercises are focused breathing that resets the nervous system quickly. Meditation is longer practice that trains the brain long-term. Together they are most powerful.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Next steps'
+      },
+      {
+        type: 'paragraph',
+        text: 'If this resonates with your team, you can start in two ways: a one-off event, a workshop or kick-off meditation that resets focus and creativity before a big project. Or regular sessions, same time every week, that train your brain\'s creative abilities over time. Both work. The most important thing is to start.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Email [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) if you want to discuss what works best for your team, either an event or regular sessions for creativity and innovation.'
+      },
+    ]
+  },
+  {
+    slug: 'andning-fokus-arbetsplats',
+    title: 'Andning för fokus: hur meditation förbättrar concentration på arbetet',
+    metaDescription: 'Andningsövningar ökar fokus och concentration. Vetenskapen bakom hur andning tränar hjärnan för bätter arbetsprestation. För ledare, HR och team.',
+    publishDate: '2026-05-28',
+    readingTime: '7 min',
+    category: 'Företag & Konferens',
+    language: 'sv',
+    excerpt: 'Fokus är mer sällsynt än någonsin. Men forskning visar att andning faktiskt kan träna din hjärnans förmåga att fokusera.',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Starta andningsmeditatio för fokus',
+    tableOfContents: true,
+    faqSchema: true,
+    heroImage: { src: '/lovable-uploads/focus-breathing-work.jpg', alt: 'Andning och fokus på arbetsplatsen' },
+    relatedPosts: [
+      { slug: 'meditation-kreativitet-innovation-arbetsplats', label: 'Meditation för kreativitet' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Du är mitt i ett viktigt projekt. Det finns tusen notifications på dina sociala medier, din inbox har 247 unread emails, och någon har just laddat ett påminnelse om ett möte i 15 minuter. Du försöker fokusera på uppgiften framför dig. Men din hjärna kan inte. Det är inte svaghet. Det är att dina nervsystem är helt överaktiverad.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Forskningen visar något enkelt: andning kan faktiskt träna din hjärnans förmåga att fokusera, och detta kan ske mycket snabbare än du tror.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför fokus är biologiskt svårt just nu'
+      },
+      {
+        type: 'paragraph',
+        text: 'Vår hjärna är inte designad för att göra en sak åt gången i 8 timmar. Den är designad för att överväga många saker, för att vara alert för fara, för att vandra mellan idéer. Men i en modern arbetsplats kräver vi att den fokuserar helt på en sak, ofta för länge, ofta under stress.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Utan verktyg för att träna fokus degenererar det. Studier visar att en genomsnittlig person nu fokuserar helt på något under 8 minuter före distraktion. Det är inte dåligt fokus. Det är ett avbrott i uppmärksamheten som är mycket normal givet hur vi omprogrammerad vår hjärna genom teknologi och notifikationer.'
+      },
+      {
+        type: 'heading',
+        text: 'Forskningen på andning och fokus'
+      },
+      {
+        type: 'paragraph',
+        text: 'Neuro biologiskt sett aktiverar långsam, medveten andning något kallat parasympatiskt nervösa systemet. Det är motsatsen till fight-or-flight. Det är rest-and-digest. Och när du är i detta tillståndet kan din hjärna faktiskt fokusera på uppgiften framför dig istället för att skanna för fara.'
+      },
+      {
+        type: 'paragraph',
+        text: 'En studie från Cambridge fann att bara 12 träningssessioner av andningsövningar var tillräcklig för att signifikant öka arbetsminnets kapacitet, vilket är det minne som behövs för att fokusera och lösa komplexa uppgifter. Arbetsminnes kapacitet är en av de direkta faktorerna för fokus.'
+      },
+      {
+        type: 'subheading',
+        text: 'Meditation förändrar hjärnans struktur för fokus'
+      },
+      {
+        type: 'paragraph',
+        text: 'Neuroimaging-studier visar att mindfulness meditation leder till strukturella förändringar i hjärnan, speciellt ökad grå vit i områdena som styr uppmärksamhet och impulskontroll. Med andra ord: meditation gör att din hjärna faktiskt blir bättre på att fokusera. Det är inte bara en mental övning, hjärnan bygger faktisk nya vägar för att stödja fokus.'
+      },
+      {
+        type: 'heading',
+        text: 'Tidslinjen för förbättring'
+      },
+      {
+        type: 'paragraph',
+        text: 'En viktig studie visar att det tar omkring 2 till 3 veckor av regelbunden andningsmeditatio innan du märker funktionella förbättringar. Det är inte lång tid. Och resultaten märks snabbt.'
+      },
+      {
+        type: 'list',
+        items: [
+          'Efter en andningsövning: Omedelbar lugn, bätter fokus för nästa uppgift eller möte',
+          'Efter några dagar av regelbundenhet: Du märker att du kan fokusera längre före första distraktionen',
+          'Efter 2-3 veckor: Du märker signifikant bättre fokus, mindre impulsiv respons på notifications',
+          'Efter 8 veckor: Större genomslag på arbetsminne, möjlighet att hantera mer komplexa uppgifter',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Varför fokus är ett arbetsprestandaproblem, inte bara ett personligt problem'
+      },
+      {
+        type: 'paragraph',
+        text: 'För HR och ledare är det viktigt att förstå: fokus är inte en personlighetstrait. Det är en förmåga som kan tränas. Ett team med bätter fokus är ett team som löser problem snabbare, gör færre misstag, och är mindre utmattade i slutet av dagen.'
+      },
+      {
+        type: 'heading',
+        text: 'Andning som ett verktyg under arbetspasset'
+      },
+      {
+        type: 'paragraph',
+        text: 'Du behöver inte meditera två timmar per dag för att få resultat. Även ett litet 5-10 minuters andningsövning i mitten av dagen kan resettas fokus tillräcklig för att du ska kunna arbeta bätter resten av dagen.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Praktiska tillämpningar: innan ett viktigt projekt eller deadline, en 10 minuters andning resettar fokus. Efter lunch när energin sjunker, en andningsövning öppnar fokus igen. Om du känner att du inte kan koncentrera dig, tar ofta 3-5 minuters andning för att dra tillbaka uppmärksamheten från externa distraktioner.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad ledare och HR kan göra'
+      },
+      {
+        type: 'paragraph',
+        text: 'Om ditt team förklarar att de inte kan fokusera, eller att de är utmattade av alla distraktioner, kan du erbjuda något enkelt: en daglig andningsövning på samma tid varje dag. Efter tre veckor kommer du att märka att teamet inte bara är lugnare, utan också mer effektivt. Fokus förbättras. Och det kostar väldigt lite.'
+      },
+      {
+        type: 'heading',
+        text: 'Källor'
+      },
+      {
+        type: 'list',
+        items: [
+          '[How Mindfulness Changes Your Brain for Discipline](https://www.themindfulnessapp.com/articles/how-mindfulness-changes-your-brain-for-discipline)',
+          '[The connection between mindfulness and improved focus and concentration](https://www.grandrisingbehavioralhealth.com/blog/the-connection-between-mindfulness-and-improved-focus-and-concentration)',
+          '[Change in Brainstem Gray Matter Concentration Following a Mindfulness-Based Intervention](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927233/)',
+          '[Effects of a Focused Breathing Mindfulness Exercise on Attention, Memory, and Mood](https://www.cambridge.org/core/journals/behaviour-change/article/effects-of-a-focused-breathing-mindfulness-exercise-on-attention-memory-and-mood-the-importance-of-task-characteristics/43CA1245B506F4B96BF5B9B0EF157067)',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Vanliga frågor'
+      },
+      {
+        type: 'faq',
+        faqItems: [
+          {
+            q: 'Hur lång tid måste vi andningsmediera för att förbättra fokus?',
+            a: 'Redan efter en session märker folk bätter fokus. Efter 2-3 veckor av regelbundenhet visar sig funktionella förbättringar. Det finns ingen lång träning nödvändig.',
+          },
+          {
+            q: 'Kan detta kombineras med ordinärt arbete?',
+            a: 'Ja. En kort andningsövning på morgonen eller mellan möten resettar fokus utan att ta mycket tid från arbetet. Det är faktiskt tidseffektivt.',
+          },
+          {
+            q: 'Vilken typ av andningsövning är bäst för fokus?',
+            a: 'Långsam, djup andning aktiverar parasympatisk nervöst system. Fokuserad andning där du räknar andningscykler är särskilt effektiv för att träna uppmärksamhet.',
+          },
+          {
+            q: 'Passar detta för alla eller bara vissa?',
+            a: 'Det fungerar för nästan alla. Forskningen visar att även människor med ADHD och uppmärksamhetsproblem drar nytta av andningsövningar.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Nästa steg för ditt team'
+      },
+      {
+        type: 'paragraph',
+        text: 'Om fokus är ett problem för ditt team, börja enkelt. En daglig andningsövning på samma tid varje dag, två veckor. Observera vad som händer med fokus, energi och arbetsprestation.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Mejla [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) om du vill diskutera ett andningsövningsprogram speciellt designat för ditt teams fokus behov.'
+      },
+    ]
+  },
+  {
+    slug: 'breathing-focus-concentration-en',
+    title: 'Breathing for focus: how meditation improves concentration at work',
+    metaDescription: 'Breathing exercises increase focus and concentration. Science behind how breathing trains your brain for better work performance. For leaders and HR.',
+    publishDate: '2026-05-28',
+    readingTime: '7 min',
+    category: 'Företag & Konferens',
+    language: 'en',
+    excerpt: 'Focus is rarer than ever. But the research shows that breathing can actually train your brain\'s ability to focus.',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Start breathing meditation for focus',
+    tableOfContents: true,
+    faqSchema: true,
+    heroImage: { src: '/lovable-uploads/focus-breathing-work.jpg', alt: 'Breathing and focus at work' },
+    relatedPosts: [
+      { slug: 'meditation-creativity-innovation-workplace-en', label: 'Meditation for creativity' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'You\'re in the middle of an important project. There are a thousand notifications on your social media, your inbox has 247 unread emails, and someone just sent a reminder about a meeting in 15 minutes. You\'re trying to focus on the task in front of you. But your brain can\'t. It\'s not weakness. It\'s that your nervous system is completely overactivated.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Research shows something simple: breathing can actually train your brain\'s ability to focus, and this can happen much faster than you think.'
+      },
+      {
+        type: 'heading',
+        text: 'Why focus is biologically difficult right now'
+      },
+      {
+        type: 'paragraph',
+        text: 'Our brains are not designed to do one thing for 8 hours at a time. They\'re designed to consider many things, to be alert for danger, to wander between ideas. But in a modern workplace we demand it focus entirely on one thing, often for too long, often under stress.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Without tools to train focus it degenerates. Studies show the average person now focuses completely on something for 8 minutes before distraction. That\'s not bad focus. It\'s an interruption of attention that\'s very normal given how we\'ve reprogrammed our brain through technology and notifications.'
+      },
+      {
+        type: 'heading',
+        text: 'The research on breathing and focus'
+      },
+      {
+        type: 'paragraph',
+        text: 'Neurobiologically speaking, slow, conscious breathing activates something called the parasympathetic nervous system. It\'s the opposite of fight-or-flight. It\'s rest-and-digest. And when you\'re in this state your brain can actually focus on the task in front of you instead of scanning for danger.'
+      },
+      {
+        type: 'paragraph',
+        text: 'A study from Cambridge found that just 12 sessions of breathing training was enough to significantly increase working memory, the memory needed to focus and solve complex tasks. Working memory capacity is one of the direct factors in focus.'
+      },
+      {
+        type: 'subheading',
+        text: 'Meditation changes your brain structure for focus'
+      },
+      {
+        type: 'paragraph',
+        text: 'Neuroimaging studies show that mindfulness meditation leads to structural changes in the brain, especially increased gray matter in areas that control attention and impulse control. In other words, meditation actually makes your brain better at focusing. It\'s not just a mental exercise, the brain literally builds new pathways to support focus.'
+      },
+      {
+        type: 'heading',
+        text: 'Timeline for improvement'
+      },
+      {
+        type: 'paragraph',
+        text: 'An important study shows that it takes around 2 to 3 weeks of regular breathing meditation before you notice functional improvements. That\'s not a long time. And results are noticed quickly.'
+      },
+      {
+        type: 'list',
+        items: [
+          'After a breathing exercise: Immediate calm, better focus for next task or meeting',
+          'After a few days of regularity: You notice you can focus longer before first distraction',
+          'After 2-3 weeks: You notice significantly better focus, less impulsive response to notifications',
+          'After 8 weeks: Major improvement in working memory, ability to handle more complex tasks',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Why focus is a work performance problem, not just a personal problem'
+      },
+      {
+        type: 'paragraph',
+        text: 'For HR and leaders it\'s important to understand: focus is not a personality trait. It\'s an ability that can be trained. A team with better focus is a team that solves problems faster, makes fewer mistakes, and is less exhausted at the end of the day.'
+      },
+      {
+        type: 'heading',
+        text: 'Breathing as a tool during the work day'
+      },
+      {
+        type: 'paragraph',
+        text: 'You don\'t need to meditate for two hours a day to see results. Even a small 5-10 minute breathing exercise in the middle of the day can reset focus enough for you to work better for the rest of the day.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Practical applications: before an important project or deadline, 10 minutes of breathing resets focus. After lunch when energy drops, a breathing exercise restores focus again. If you feel you cannot concentrate, usually takes just 3-5 minutes of breathing to pull attention back from external distractions.'
+      },
+      {
+        type: 'heading',
+        text: 'What leaders and HR can do'
+      },
+      {
+        type: 'paragraph',
+        text: 'If your team reports that they can\'t focus, or that they\'re exhausted by all the distractions, you can offer something simple: a daily breathing exercise at the same time each day. After three weeks you\'ll notice your team is not only calmer, but also more efficient. Focus improves. And it costs very little.'
+      },
+      {
+        type: 'heading',
+        text: 'Sources'
+      },
+      {
+        type: 'list',
+        items: [
+          '[How Mindfulness Changes Your Brain for Discipline](https://www.themindfulnessapp.com/articles/how-mindfulness-changes-your-brain-for-discipline)',
+          '[The connection between mindfulness and improved focus and concentration](https://www.grandrisingbehavioralhealth.com/blog/the-connection-between-mindfulness-and-improved-focus-and-concentration)',
+          '[Change in Brainstem Gray Matter Concentration Following a Mindfulness-Based Intervention](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927233/)',
+          '[Effects of a Focused Breathing Mindfulness Exercise on Attention, Memory, and Mood](https://www.cambridge.org/core/journals/behaviour-change/article/effects-of-a-focused-breathing-mindfulness-exercise-on-attention-memory-and-mood-the-importance-of-task-characteristics/43CA1245B506F4B96BF5B9B0EF157067)',
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Frequently asked questions'
+      },
+      {
+        type: 'faq',
+        faqItems: [
+          {
+            q: 'How long do we need to breathe meditate to improve focus?',
+            a: 'Already after one session people notice better focus. After 2-3 weeks of regularity functional improvements show. No long-term training is necessary.',
+          },
+          {
+            q: 'Can this be combined with regular work?',
+            a: 'Yes. A short breathing exercise in the morning or between meetings resets focus without taking much time from work. It\'s actually time-efficient.',
+          },
+          {
+            q: 'What type of breathing exercise is best for focus?',
+            a: 'Slow, deep breathing activates the parasympathetic nervous system. Focused breathing where you count breath cycles is especially effective for training attention.',
+          },
+          {
+            q: 'Does this work for everyone or just some?',
+            a: 'It works for almost everyone. Research shows that even people with ADHD and attention problems benefit from breathing exercises.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        text: 'Next steps for your team'
+      },
+      {
+        type: 'paragraph',
+        text: 'If focus is a problem for your team, start simple. A daily breathing exercise at the same time each day, for two weeks. Observe what happens to focus, energy, and work performance.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Email [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) if you want to discuss a breathing exercise program specially designed for your team\'s focus needs.'
+      },
     ]
   }
 ];

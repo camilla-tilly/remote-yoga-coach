@@ -11,7 +11,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Blog",
   "name": "Yoga med Camilla – Blogg",
-  "description": "Artiklar om yoga, events, möhippa, bröllop, SUP yoga och utomhusyoga i Dalarna och Stockholm.",
+  "description": "Artiklar om yoga, events, möhippa, bröllop, SUP yoga och utomhusyoga i Stockholm.",
   "url": "https://yogawithcamilla.se/blogg",
   "publisher": {
     "@type": "Person",
@@ -24,7 +24,7 @@ const copy = {
   sv: {
     eyebrow: 'Inspiration & Information',
     heading: 'Blogg',
-    intro: 'Tankar om yoga, natur, events och välmående från altanen i Dalarna.',
+    intro: 'Tankar om yoga, natur, events och välmående i Stockholm.',
     featured: 'Utvald',
     morePosts: 'Fler inlägg',
     readArticle: 'Läs artikeln',
@@ -32,12 +32,12 @@ const copy = {
     reading: 'läsning',
     toggleLabel: 'Språk',
     seoTitle: 'Blogg – Yoga, Events & Välmående | Yoga med Camilla',
-    seoDescription: 'Artiklar om yoga för möhippa, bröllop, konferens och utomhusyoga i Dalarna och Stockholm. Tips och inspiration från yogalärare Camilla.',
+    seoDescription: 'Artiklar om yoga för möhippa, bröllop, konferens och utomhusyoga i Stockholm. Tips och inspiration från yogalärare Camilla.',
   },
   en: {
     eyebrow: 'Inspiration & Information',
     heading: 'Blog',
-    intro: 'Notes on yoga, nature, events and slow living, from a forest cabin in Dalarna.',
+    intro: 'Notes on yoga, nature, events and slow living in Stockholm.',
     featured: 'Featured',
     morePosts: 'More posts',
     readArticle: 'Read article',
@@ -45,7 +45,7 @@ const copy = {
     reading: 'read',
     toggleLabel: 'Language',
     seoTitle: 'Blog – Yoga, Events & Wellbeing | Yoga with Camilla',
-    seoDescription: 'Articles on yoga for hen parties, weddings, corporate events and outdoor yoga in Stockholm and Dalarna. Tips and inspiration from yoga teacher Camilla.',
+    seoDescription: 'Articles on yoga for hen parties, weddings, corporate events and outdoor yoga in Stockholm. Tips and inspiration from yoga teacher Camilla.',
   },
 } as const;
 

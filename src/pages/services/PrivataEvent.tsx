@@ -9,49 +9,49 @@ const relatedServices = [
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Privata Event & Yoga Retreat: Möhippa, Födelsedag, Bröllopsyoga & Mini Retreat i Dalarna och Stockholm",
-  "description": "Privata event och yoga retreats i Dalarna och Stockholm: möhippa, födelsedag, bröllopsyoga, kompisgäng, familjesammankomster och halvdag eller heldag yoga retreat med vandring, trail run, fika och lunch i Dalarnas natur.",
+  "name": "Privata Event & Yoga Retreat: Möhippa, Födelsedag & Bröllopsyoga i Stockholm",
+  "description": "Privata event och yoga retreats i Stockholm: möhippa, födelsedag, bröllopsyoga, kompisgäng, familjesammankomster och halvdag eller heldag yoga retreat med vandring och fika.",
   "provider": {
     "@type": "LocalBusiness",
     "name": "Yoga med Camilla",
     "url": "https://yogawithcamilla.se"
   },
-  "areaServed": ["Stockholm", "Dalarna"],
+  "areaServed": ["Stockholm"],
   "url": "https://yogawithcamilla.se/tjanster/privata-event"
 };
 
 const PrivataEvent = () => (
   <ServicePageLayout
-    seoTitle="Privata Event & Yoga Retreat | Möhippa, Bröllopsyoga & Mini Retreat Dalarna | Yoga med Camilla"
-    seoDescription="Privata yogaevent i Stockholm och Dalarna, och yoga retreat i Dalarnas natur. Möhippa, födelsedag, bröllopsyoga, halvdag och heldag retreat med vandring och trail run. Mejla för offert."
+    seoTitle="Privata Event & Yoga Retreat | Möhippa, Bröllopsyoga & Mini Retreat Stockholm | Yoga med Camilla"
+    seoDescription="Privata yogaevent i Stockholm. Möhippa, födelsedag, bröllopsyoga, halvdag och heldag yoga retreat. Mejla för offert."
     canonical="https://yogawithcamilla.se/tjanster/privata-event"
     ogImage="https://yogawithcamilla.se/images/IMG_5788.JPG"
     breadcrumbLabel="Privata Event & Yoga Retreat"
-    heroTag="Privata Event & Yoga Retreat i Stockholm & Dalarna"
+    heroTag="Privata Event & Yoga Retreat i Stockholm"
     heroHeading="Privata event och yoga retreat"
-    heroSubtitle="Möhippa, födelsedag, bröllopshelg eller en heldag ute i skogen. En riktig paus från allt annat, för er grupp."
+    heroSubtitle="Möhippa, födelsedag, bröllopshelg eller en halvdag ute i förorten. En riktig paus från allt annat, för er grupp."
     heroImage="/images/IMG_5788.JPG"
     heroImageAlt="Yoga utomhus, privat event med Camilla"
     heroImagePosition="center 35%"
     introHeading="Något annat än vardagen"
     introParagraphs={[
-      "Letar du efter något annorlunda? Jag sätter ihop privata event och yoga retreats i Dalarna och Stockholm. Möhippor, födelsedagar, bröllopshelger på landet, kompisgäng och familjesammankomster, samt halvdag och heldag retreats för en mindre grupp.",
-      "I Dalarna hålls eventen på altanen vid skogsstugan, med hönsen pickande runt mattorna under klassen. Det är ovanligt, och det är liksom det som är poängen. Det blir alltid den biten alla pratar om i gruppchatten efteråt.",
-      "Ni bygger upplägget, jag formar schemat. Berätta vad ni vill ha med (yoga, vandring, löpning för de som gillar det, fika, lunch, bastu, eller något annat), så sätter jag ihop ett förslag som passar er grupp och dag. Det kan vara en stilla morgonklass, en längre halvdag med flera bitar, eller en hel dag ute i skogen. Inget färdigt paket, inga måsten. Ingen yogaerfarenhet krävs, och klassen hålls på engelska.",
+      "Letar du efter något annorlunda? Jag sätter ihop privata event och yoga retreats i Stockholm. Möhippor, födelsedagar, bröllopshelger, kompisgäng och familjesammankomster, samt halvdag och heldag retreats för en mindre grupp.",
+      "Jag kommer till er lägenhet, hyrd lokal, eller en lämplig plats utomhus i Stockholm med all utrustning. Vi kan ha klassen hemma, på ett hotell, i en hyrd salslokal, eller en park eller naturområde i eller omkring Stockholm.",
+      "Ni bygger upplägget, jag formar schemat. Berätta vad ni vill ha med (yoga, vandring, löpning för de som gillar det, fika, lunch, bastu, eller något annat), så sätter jag ihop ett förslag som passar er grupp och dag. Det kan vara en stilla morgonklass, en längre halvdag med flera bitar, eller en dag med rörelse och vila. Inget färdigt paket, inga måsten. Ingen yogaerfarenhet krävs, och klassen hålls på engelska.",
       "Jag är flexibel med datum och tider. Mejla mig så hittar vi något som passar."
     ]}
     highlights={[
       {
-        heading: "Yoga med hönsen i Dalarna",
-        text: "Yoga på altanen mitt i skogen, med hönsen pickande runt mattorna. Jordnära och ovanligt, svårt att hitta någon annanstans. Plats för upp till 10 personer, mattor och all utrustning ingår."
+        heading: "Yoga hemma hos er eller på en plats ni väljer",
+        text: "I er lägenhet, ett hotell, en hyrd salslokal, eller en park i Stockholm. Jag tar med mattor, block och allt som behövs. Flexibelt och enkelt."
       },
       {
-        heading: "Halvdag eller heldag i naturen",
-        text: "Yoga retreat i Dalarna: yoga, vandring eller trail run, mindfulness, fika och lunch. Halvdag (ca 3 till 4 timmar) eller hel dag, med basläger på altanen och naturen runt omkring. För grupper upp till 10."
+        heading: "Halvdag eller heldag yoga retreat",
+        text: "Yoga, vandring eller rörelse, mindfulness, fika och paus. Halvdag (ca 3 till 4 timmar) eller hel dag, efter vad som passar er grupp. För grupper upp till 10."
       },
       {
         heading: "Jag kommer till er",
-        text: "Ni väljer platsen, inomhus eller utomhus, i Dalarna eller Stockholm. Jag är flexibel och reser med mattor, block och allt som behövs."
+        text: "Ni väljer platsen och tidpunkten i Stockholm. Jag är flexibel och tar med allt som behövs. Dörr-till-dörr enkelt."
       },
       {
         heading: "Formas efter gruppen",
@@ -61,28 +61,23 @@ const PrivataEvent = () => (
     pricing={[
       {
         label: "Yogaklass för privatgrupp",
-        price: "kontakta för pris",
+        price: "från 2 500 kr",
         note: "60 till 90 min. All utrustning ingår."
       },
       {
-        label: "Halvdag yoga retreat i Dalarna",
-        price: "kontakta för offert",
-        note: "Yoga, vandring eller trail run, mindfulness och fika. Ca 3 till 4 timmar."
+        label: "Halvdag yoga retreat",
+        price: "från 4 000 kr",
+        note: "Yoga, vandring, mindfulness och fika. Ca 3 till 4 timmar."
       },
       {
-        label: "Heldag yoga retreat i Dalarna",
-        price: "kontakta för offert",
-        note: "Längre yogapass, vandring eller trail run, mindfulness, fika och lunch."
+        label: "Heldag yoga retreat",
+        price: "från 6 500 kr",
+        note: "Längre yogapass, vandring, mindfulness, fika och lunch."
       },
       {
         label: "Event med flera bitar",
         price: "kontakta för offert",
         note: "Skräddarsytt upplägg för möhippa, bröllopshelg eller större dag."
-      },
-      {
-        label: "Stockholm",
-        price: "kontakta för offert",
-        note: "Salsuthyrning eller utomhusplats kan ordnas. Resa ingår i offerten."
       }
     ]}
     detailsHeading="Perfekt för"
@@ -107,11 +102,11 @@ const PrivataEvent = () => (
       },
       {
         question: "Funkar det som möhippa-aktivitet?",
-        answer: "Ja, möhippa-yoga är en av de vanligaste bokningarna. Privat klass för hela gruppen på altanen i Dalarna, i en hyrd lokal i Stockholm, eller utomhus. Kan kombineras med SUP yoga vid Sickla sjö. Ingen yogaerfarenhet krävs."
+        answer: "Ja, möhippa-yoga är en av de vanligaste bokningarna. Privat klass för hela gruppen hemma hos er, i en hyrd lokal, eller utomhus i Stockholm. Kan kombineras med SUP yoga vid Sickla sjö. Ingen yogaerfarenhet krävs."
       },
       {
         question: "Kan ni ha yoga på bröllopet?",
-        answer: "Ja, för bröllopshelger på landet i Dalarna. Bröllopsyoga passar morgonen av bröllopsdagen, kvällen innan eller dagen efter. En lugn stund för brudparet och gästerna, 45 till 90 minuter. Jag kommer till er bröllopslokation i Dalarna med all utrustning."
+        answer: "Ja. Bröllopsyoga passar morgonen av bröllopsdagen, kvällen innan eller dagen efter. En lugn stund för brudparet och gästerna, 45 till 90 minuter. Jag kommer till er bröllopslokation i Stockholm med all utrustning."
       },
       {
         question: "Yoga som födelsedagsaktivitet?",
@@ -119,19 +114,19 @@ const PrivataEvent = () => (
       },
       {
         question: "Hur stor grupp kan boka yoga retreat?",
-        answer: "Yoga retreats i Dalarna bokas för grupper, max 10 personer. Programmet anpassas efter er och innehåller yoga, andning, vandring eller trail run, fika och tid i naturen."
+        answer: "Yoga retreats bokas för grupper, max 10 personer. Programmet anpassas efter er och innehåller yoga, andning, vandring, fika och tid för vila."
       },
       {
         question: "Vad ingår på en halvdag eller heldag retreat?",
-        answer: "Halvdag (ca 3 till 4 timmar) innehåller yoga, vandring eller trail run, mindfulness och fika. Heldag innehåller längre yogapass, vandring eller trail run, mindfulness, fika och lunch. Specialkost ordnas på förhand."
+        answer: "Halvdag (ca 3 till 4 timmar) innehåller yoga, vandring, mindfulness och fika. Heldag innehåller längre yogapass, vandring, mindfulness, fika och lunch. Specialkost ordnas på förhand."
       },
       {
         question: "När på året går det att boka?",
-        answer: "Året runt. Utomhusyoga och retreats i Dalarna funkar bäst från maj till september, på altanen eller i skogen. Övrig tid håller vi klassen inomhus. I Stockholm fungerar event året runt i hyrda salar eller på er plats."
+        answer: "Året runt. Utomhusaktiviteter funkar bäst från maj till september. Övrig tid kan vi hålla klassen inomhus eller välja andra aktiviteter. Event fungerar året runt i Stockholm."
       },
       {
         question: "Var håller ni eventen och retreats?",
-        answer: "I Dalarna: basläger på altanen i skogen, vandring och trail run i närliggande skogsmark, eller i er hyrda lokal eller på ett hotell. I Stockholm: i en hyrd yogasal, på er plats eller utomhus vid en lämplig plats. Jag kommer med allt som behövs."
+        answer: "I Stockholm: hemma hos er, i en hyrd yogasal, på er plats eller utomhus vid en lämplig plats (park, naturreservat). Jag kommer med allt som behövs."
       },
       {
         question: "Vad behöver vi ta med oss?",
@@ -147,8 +142,8 @@ const PrivataEvent = () => (
       }
     ]}
     englishKeywords={{
-      heading: "Private Events & Yoga Retreats in Sweden: Bachelorette, Birthday & Wedding Yoga in Stockholm & Dalarna, Mini Yoga Retreats in Dalarna",
-      text: "Looking for a different kind of bachelorette party, birthday celebration or yoga retreat in Sweden? I put together private events for groups in Dalarna and Stockholm: bachelorette parties, birthdays, friend gatherings and family reunions. For countryside wedding weekends in Dalarna I also offer wedding yoga as part of the weekend's activities (the morning of, the evening before, or the day after). I run half-day and full-day yoga retreats in Dalarna too, combining yoga, hiking, trail running, fika and lunch, for small groups up to 10. Dalarna is roughly 3.5 hours from Stockholm by car, or 4 hours by train and bus. The setup is flexible and tailored to what you actually want from the day. No yoga experience needed, all equipment provided, and teaching is in English. Email me at hello.yogawithcamilla@gmail.com with your preferred dates, group size, location and any requests, and I'll come back with a tailored plan."
+      heading: "Private Events & Yoga Retreats in Stockholm: Bachelorette, Birthday & Wedding Yoga",
+      text: "Looking for a different kind of bachelorette party, birthday celebration or yoga retreat in Stockholm? I put together private events for groups in Stockholm: bachelorette parties, birthdays, friend gatherings, family reunions and wedding events. I offer wedding yoga as part of wedding weekends (the morning of, the evening before, or the day after). I also run half-day and full-day yoga retreats combining yoga, walking, mindfulness, fika and lunch, for small groups up to 10. The setup is flexible and tailored to what you actually want from the day. No yoga experience needed, all equipment provided, and teaching is in English. Email me at hello.yogawithcamilla@gmail.com with your preferred dates, group size, location and any requests, and I'll come back with a tailored plan."
     }}
   />
 );

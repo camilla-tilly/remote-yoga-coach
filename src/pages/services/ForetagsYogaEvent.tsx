@@ -15,14 +15,14 @@ const structuredData = {
     "name": "Yoga med Camilla",
     "url": "https://yogawithcamilla.se"
   },
-  "areaServed": ["Stockholm", "Dalarna"],
+  "areaServed": ["Stockholm"],
   "url": "https://yogawithcamilla.se/tjanster/foretagsyoga-event"
 };
 
 const ForetagsYogaEvent = () => (
   <ServicePageLayout
     seoTitle="Konferensyoga & kickoff-yoga Stockholm | Yoga med Camilla"
-    seoDescription="Yoga för kickoffs, AWs, konferenser och sommaravslutningar i Stockholm och Dalarna. Certifierad yogalärare med utrustning. Kontakta för offert."
+    seoDescription="Yoga för kickoffs, AWs, konferenser och sommaravslutningar i Stockholm. Certifierad yogalärare med utrustning. Kontakta för offert."
     canonical="https://yogawithcamilla.se/tjanster/foretagsyoga-event"
     ogImage="https://yogawithcamilla.se/lovable-uploads/ec37a165-71d0-4960-bff7-48058352d12b.jpg"
     breadcrumbLabel="Företagsyoga — events"
@@ -71,7 +71,7 @@ const ForetagsYogaEvent = () => (
       { subheading: "Format och längd" },
       "Allt från 20-minuters andningsklass till 90-minuters full klass med mattor och avslappning. Vanligast är 45 till 60 minuter. Formatet väljer vi tillsammans baserat på vad som passar er dag.",
       { subheading: "Var" },
-      "Kontoret, konferensanläggningen, takterrassen, utomhus. Jag tar med utrustning. Ni behöver bara ett utrymme. För konferenser i Dalarna debiteras resa enligt faktiskt utlägg.",
+      "Kontoret, konferensanläggningen, takterrassen, eller utomhus. Jag tar med utrustning. Ni behöver bara ett utrymme.",
       { subheading: "Återkommande abonnemang" },
       "Letar ni efter veckovisa sessioner för teamet, inte ett engångstillfälle? Det är ett annat upplägg. Läs mer om [Företagsyoga på abonnemang](/tjanster/foretagsyoga)."
     ]}
@@ -99,10 +99,6 @@ const ForetagsYogaEvent = () => (
         answer: "Ja, alltid. Jag är från Australien och undervisar på engelska som standard."
       },
       {
-        question: "Kan ni komma till Dalarna eller annan ort?",
-        answer: "Ja. Konferenser och kickoffs i Dalarna är ett av de vanligaste tilläggen. Resa utanför Stockholm debiteras enligt faktiskt utlägg."
-      },
-      {
         question: "Är yoga en godkänd friskvårdsförmån?",
         answer: "Ja. Yoga finns på Skatteverkets lista över godkända friskvårdsaktiviteter. Prata med er HR eller ekonomiansvarig om hur ni vill hantera det."
       }
@@ -111,7 +107,7 @@ const ForetagsYogaEvent = () => (
     relatedServices={relatedServices}
     englishKeywords={{
       heading: "Corporate Yoga for Events & Conferences | Stockholm",
-      text: "One-off yoga sessions for company kickoffs, after-works, conferences, and summer send-offs in Stockholm and Dalarna.\n\nAll formats available: breathing workshop (30 min, no mats), chair yoga (no equipment needed), full yoga class with mats. Led in English by a 500-hour certified teacher. I bring everything — you just need a space.\n\nEmail hello.yogawithcamilla@gmail.com with your date, headcount, location, and any preferences. I'll come back with format options and a quote."
+      text: "One-off yoga sessions for company kickoffs, after-works, conferences, and summer send-offs in Stockholm.\n\nAll formats available: breathing workshop (30 min, no mats), chair yoga (no equipment needed), full yoga class with mats. Led in English by a 500-hour certified teacher. I bring everything — you just need a space.\n\nEmail hello.yogawithcamilla@gmail.com with your date, headcount, location, and any preferences. I'll come back with format options and a quote."
     }}
   />
 );
