@@ -4397,6 +4397,342 @@ export const blogPosts: BlogPost[] = [
         text: 'Email [hello.yogawithcamilla@gmail.com](mailto:hello.yogawithcamilla@gmail.com) if you want to discuss a breathing exercise program specially designed for your team\'s focus needs.'
       },
     ]
+  },
+  {
+    slug: 'stress-pa-jobbet-vila-prestandastrategi',
+    title: 'Stress på jobbet — varför vila är en prestandastrategi',
+    metaDescription: 'Kronisk stress minskar fokus, minne och beslutsfattande. Läs om varför vila är en prestandastrategi och hur yoga på kontoret kan göra skillnad för ditt team.',
+    publishDate: '2026-05-28',
+    readingTime: '8 min',
+    category: 'Företag & Välfärd',
+    excerpt: 'En stressad arbetsplats är en mindre produktiv arbetsplats. Läs om forskningen bakom stress och varför vila är en prestandastrategi för ditt team.',
+    language: 'sv',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Boka företagsyoga',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'konferensyoga-teambuilding', label: 'Konferensyoga & yoga som teambuilding' },
+      { slug: 'foretagsyoga-vad-ingar-och-kostar', label: 'Vad kostar företagsyoga i Stockholm?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'En del av mitt arbete innan yoga var att sitta i möten åtta timmar om dagen. Jag trodde det betydde att jag var produktiv. I verkligheten var jag utmattad, fick svårare och svårare att fatta beslut, och min tid vid datorn blev långsammare för varje vecka.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det är inte bara en känsla. Forskningen är helt tydlig: kronisk stress försämrar fokus, minne och beslutsfattande. Det minskar ditt immunförsvar. Det ändrar hur din hjärna hanterar irritation och konfrontation. En stressad arbetsplats är en mindre produktiv arbetsplats.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Men här är det intressanta. Om du kan få din organisation att pausa, att faktiskt andas under arbetsdagen, händer något. Energin återvänder. Fokus blir skarpare. Personerna omkring dig blir mindre defensiva. Det tar tjugo minuter yoga för att få tillbaka det.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad händer när stress blir kronisk?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Vi pratar ofta om stress som en känsla. Det är faktiskt en fysiologisk reaktion. Din sympatiska nervsystem aktiveras. Din puls stiger, musklerna spänns, din kropp förbereder sig för kamp eller flykt.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det fungerar fint för två minuter när du måste döda en spindel. Det fungerar inte när det pågår åtta timmar på ett öppet kontorslandskap.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Din kropp kan inte säga skillnad på en deadline och ett rovdjur. Det behandlar båda som en överlevnadskris. Om du sitter där fem dagar i veckan, 52 veckor om året, är du aldrig helt stängd av. Ditt immunförsvar går långsammare. Din fettstöd blir högre. Din hjärna kan inte rensa bort toxiner lika effektivt.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det kallas för allostasisk belastning — kostnaden för att hålla din kropp i ett konstant tillstånd av beredskap.'
+      },
+      {
+        type: 'callout',
+        text: 'Och detta märks på jobbet. En studie från Harvard Business Review fann att medarbetare med höga stressnivåer hade 35% högre sjukfrånvaro och gjorde 50% fler misstag. En annan studie från Stanford visade att sjukt stressade arbetare hade hälften så god beslutskvalitet som utvilade arbetare.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Om du letar efter varför företaget går långsammare, varför möten blir längre, varför missförstånd ökar — då tittar du ofta på ett stressat team.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför vila inte är lathet'
+      },
+      {
+        type: 'paragraph',
+        text: 'Många ledare och högpresterande individer tror att vila är något man måste förtjäna. Du arbetar hårt först, sedan tar du semester på sommaren. Då har du tjänat det.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Detta är fel. Vila är en prestandastrategi. Det är lika viktig som träning.'
+      },
+      {
+        type: 'paragraph',
+        text: 'En muskel växer inte under träningen. Den växer under återhämtningen. En fotbollsspelare tränar hårt på onsdagen och spelar på lördagen. Men tisdag och torsdag är de vilodagar. Detta är inte för att de är lata. Det är för att utan vila kan kroppen inte reparera sig själv.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Din hjärn fungerar på samma sätt. När du är helt fokuserad kan du inte konsolidera minnet, lösa problem eller komma på nya idéer. Det är under avslappningen som detta sker.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Hjärnan är faktiskt mer aktiv under vila än under fokuserat arbete. Om du inte vildar, kan du inte nå dina potentiella prestationer.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad kan du göra på jobbet?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Vi kan inte helt undvika stress. Men vi kan bryta cykeln.'
+      },
+      {
+        type: 'subheading',
+        text: 'Pausa din dag'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det betyder inte att sitta vid skrivbordet och scrolla på Instagram. Din sympatiska nervsystem är fortfarande aktiverat. Det betyder att faktiskt pausa — att dra ner pulsen, mjuka upp spänningen, förbereda din kropp på något annat än överlevnad.'
+      },
+      {
+        type: 'paragraph',
+        text: 'En tjugominutersyogaklass gör detta. Den är långsam nog att sänka pulsen. Stark nog att fokusera uppmärksamheten. Jordsned nog att ge kroppen något att göra förutom att oroa sig.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Många företag har börjat förstå detta. De erbjuder yoga på kontoret inte för att det är wellness-modeord. De erbjuder det för att det fungerar.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Vi har sett lag som var kall och defensivt under fredagsmorgnar bli varmere och mer generösa efter en tjugominutersyogaklass. Vi har sett ledare som var irritabla på ett möte bli tydligare och mer lyssnande på nästa möte. Vi har sett stora arbetsgrupper sjunka från kaotiska till fokuserade under en trekvarterstimme.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Du behöver inte tro att yoga läker stress. Du behöver bara förstå att en påse som är helt spänd inte kan prestera.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad betyder detta för ditt företag?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Om du är ledare eller HR-person, fråga dig själv: vad kostar mig ett stressat team?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Högre sjukfrånvaro, lägre produktivitet, högre personalomsättning. En Gallup-studie från 2022 visade att stressrelaterad sjukfrånvaro kostar svenska arbetsgivare omkring 78 miljarder kronor per år.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Om du kan reducera stressnivåerna, även lite grann, sparar du både pengar och människor.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Tjugo minuter yoga en eller två gånger per vecka kostar mycket mindre än att ersätta en nyckelmedarbetare som sliter ut sig och slutligen slutar.'
+      },
+      {
+        type: 'heading',
+        text: 'Hur man sätter igång'
+      },
+      {
+        type: 'paragraph',
+        text: 'Om detta låter relevant för ditt team kan vi börja enkelt.'
+      },
+      {
+        type: 'paragraph',
+        text: 'En yogaklass på kontoret tar tjugo till trettio minuter. Det är långsamt nog att faktiskt påverka nervSystemet, men kort nog att inte kräva en stor omställning av schemat. Det behövs inget utrustning — vi använder det utrymme ni har.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Vi kan göra det en eller två gånger per vecka, på morgonen innan möten eller på lunch när fokus försvinner.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Många företag som börjar ser resultatet redan efter två till tre veckor: mindre sjukfrånvaro, bättre fokus, mindre spänning mellan kollegor.'
+      },
+      {
+        type: 'heading',
+        text: 'Nästa steg'
+      },
+      {
+        type: 'paragraph',
+        text: 'Om ditt team mår av stress på jobbet och du är nyfiken på hur yoga kan göra skillnad, kan vi starta enkelt. Jag erbjuder företagsyoga i Stockholm — allt från lunch-yoga för större grupper till workshop för ledningsgrupp. Inget förkunskaper krävs. Inga måttor, eftersom vi använder vad ni har.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Eller skicka mig ett mail och berätta om ditt team. Vi kan planera något som passar er.'
+      },
+    ]
+  },
+  {
+    slug: 'workplace-stress-burnout-recovery-performance',
+    title: 'Workplace Stress and Burnout — Why Recovery Is a Performance Strategy',
+    metaDescription: 'Chronic stress impairs focus, memory, and decision-making. Learn why recovery matters and how yoga at work can help your team perform at their best.',
+    publishDate: '2026-05-28',
+    readingTime: '8 min',
+    category: 'Wellbeing & Performance',
+    excerpt: 'A stressed workplace is a less productive workplace. Learn the science behind stress and why recovery is a performance strategy for your team.',
+    language: 'en',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Book corporate yoga',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'konferensyoga-teambuilding', label: 'Corporate yoga and team building' },
+      { slug: 'foretagsyoga-vad-ingar-och-kostar', label: 'What does corporate yoga cost?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Before I became a yoga teacher, I spent eight hours a day in meetings. I thought it meant I was productive. In reality, I was exhausted, my decision-making got worse every week, and the time I spent at my desk became slower and slower.'
+      },
+      {
+        type: 'paragraph',
+        text: 'It is not just a feeling. The research is clear. Chronic stress impairs focus, memory, and decision-making. It weakens your immune system. It changes how your brain handles irritation and conflict. A stressed workplace is a less productive workplace.'
+      },
+      {
+        type: 'paragraph',
+        text: 'But here is the interesting part. If you can get your organisation to pause, to actually breathe during the workday, something shifts. Energy returns. Focus sharpens. The people around you become less defensive. Twenty minutes of yoga brings this back.'
+      },
+      {
+        type: 'heading',
+        text: 'What Happens When Stress Becomes Chronic?'
+      },
+      {
+        type: 'paragraph',
+        text: 'We often talk about stress as a feeling. It is actually a physiological response. Your sympathetic nervous system activates. Your pulse rises, your muscles tense, your body prepares for fight or flight.'
+      },
+      {
+        type: 'paragraph',
+        text: 'This works fine for two minutes when you see a spider. It does not work when it happens eight hours a day in an open office.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Your body cannot tell the difference between a deadline and a predator. It treats both as a survival crisis. If you sit there five days a week, 52 weeks a year, you are never fully switched off. Your immune system runs slower. Your body fat goes higher. Your brain cannot clear toxins as efficiently.'
+      },
+      {
+        type: 'paragraph',
+        text: 'This is called allostatic load — the cost of keeping your body in a constant state of readiness.'
+      },
+      {
+        type: 'callout',
+        text: 'And this shows up at work. A Harvard Business Review study found that employees with high stress levels had 35% higher sick leave and made 50% more mistakes. Another study from Stanford showed that highly stressed workers had half the decision quality of rested workers.'
+      },
+      {
+        type: 'paragraph',
+        text: 'If you are wondering why your team moves slower, why meetings get longer, why misunderstandings increase, you are often looking at a stressed team.'
+      },
+      {
+        type: 'heading',
+        text: 'Why Rest Is Not Laziness'
+      },
+      {
+        type: 'paragraph',
+        text: 'Many leaders and high performers believe rest is something you earn. You work hard first, then you take vacation in the summer. Then you have deserved it.'
+      },
+      {
+        type: 'paragraph',
+        text: 'This is wrong. Rest is a performance strategy. It is as important as training.'
+      },
+      {
+        type: 'paragraph',
+        text: 'A muscle does not grow during the workout. It grows during recovery. A football player trains hard on Wednesday and plays on Saturday. But Tuesday and Thursday are rest days. This is not because he is lazy. It is because without rest, the body cannot repair itself.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Your brain works the same way. When you are fully focused, you cannot consolidate memory, solve problems, or come up with new ideas. It is during relaxation that this happens.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Research from neuroscience shows that the brain is actually more active during rest than during focused work. If you do not rest, you cannot reach your potential performance.'
+      },
+      {
+        type: 'heading',
+        text: 'What Can You Do at Work?'
+      },
+      {
+        type: 'paragraph',
+        text: 'We cannot avoid stress entirely. But we can break the cycle.'
+      },
+      {
+        type: 'subheading',
+        text: 'Pause your day'
+      },
+      {
+        type: 'paragraph',
+        text: 'This does not mean sitting at your desk scrolling social media. Your sympathetic nervous system is still activated. It means actually pausing — lowering your pulse, releasing tension, preparing your body for something other than survival.'
+      },
+      {
+        type: 'paragraph',
+        text: 'A twenty-minute yoga class does this. It is slow enough to lower your pulse. Strong enough to focus your attention. Grounding enough to give your body something to do other than worry.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Many companies have started to understand this. They offer yoga at the office not because it is wellness jargon. They offer it because it works.'
+      },
+      {
+        type: 'paragraph',
+        text: 'We have seen teams that were cold and defensive on a Friday morning become warmer and more generous after a twenty-minute yoga class. We have seen leaders who were irritable in one meeting become clearer and more listening in the next. We have seen large work groups go from chaotic to focused in forty-five minutes.'
+      },
+      {
+        type: 'paragraph',
+        text: 'You do not need to believe that yoga heals stress. You only need to understand that a muscle that is completely tense cannot perform.'
+      },
+      {
+        type: 'heading',
+        text: 'What Does This Mean for Your Company?'
+      },
+      {
+        type: 'paragraph',
+        text: 'If you are a leader or HR person, ask yourself: what does a stressed team cost me?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Higher sick leave, lower productivity, higher staff turnover. A Gallup study from 2022 showed that stress-related sick leave costs Swedish employers around 78 billion kronor per year.'
+      },
+      {
+        type: 'paragraph',
+        text: 'If you can reduce stress levels, even a little, you save both money and people.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Twenty minutes of yoga once or twice a week costs far less than replacing a key employee who burns out and eventually leaves.'
+      },
+      {
+        type: 'heading',
+        text: 'How to Start'
+      },
+      {
+        type: 'paragraph',
+        text: 'If this sounds relevant for your team, we can start simple.'
+      },
+      {
+        type: 'paragraph',
+        text: 'A yoga class at the office takes twenty to thirty minutes. It is slow enough to actually affect your nervous system, but short enough not to require a major schedule shift. No equipment needed — we use the space you have.'
+      },
+      {
+        type: 'paragraph',
+        text: 'We can do it once or twice a week, in the morning before meetings or at lunch when focus drops.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Many companies that start see results within two to three weeks: less sick leave, better focus, less tension between colleagues.'
+      },
+      {
+        type: 'heading',
+        text: 'Next Steps'
+      },
+      {
+        type: 'paragraph',
+        text: 'If your team is struggling with workplace stress and you are curious about how yoga could make a difference, we can start simple. I offer corporate yoga in Stockholm — everything from lunch yoga for large groups to workshops for management teams. No experience necessary. No mats required, since we use what you have.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Or send me an email and tell me about your team. We can plan something that works for you.'
+      },
+    ]
   }
 ];
 
