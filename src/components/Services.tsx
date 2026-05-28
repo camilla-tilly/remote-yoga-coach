@@ -30,7 +30,7 @@ const Services = () => {
                   Veckovisa yoga-sessioner
                 </h3>
                 <p className="font-inter font-normal text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed">
-                  1–2 sessioner per vecka på kontoret eller via Teams. Andning, meditation och rörelse som bygger fokus och lugn. Passar in i arbetsdagen. Två nivåer från 3 500 kr/mån.
+                  1–2 sessioner per vecka via Teams. Andning, meditation och rörelse som bygger fokus och lugn. Passar in i arbetsdagen. In-person på kontoret möjligt på begäran. Två nivåer från 3 500 kr/mån.
                 </p>
               </div>
               <span className="mt-8 inline-flex items-center gap-2 font-inter text-xs text-dalashala-earth uppercase tracking-[0.24em] font-semibold group-hover:gap-3 transition-all">
