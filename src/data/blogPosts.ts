@@ -1,5 +1,24 @@
 export type BlogLanguage = 'sv' | 'en';
 
+export interface BlogPost {
+  slug: string;
+  title: string;
+  metaDescription: string;
+  publishDate: string;
+  readingTime: string;
+  category: string;
+  excerpt: string;
+  language?: BlogLanguage;
+  relatedServiceHref?: string;
+  relatedServiceLabel?: string;
+  tableOfContents?: boolean;
+  faqSchema?: boolean;
+  relatedPosts: Array<{ slug: string; label: string }>;
+  content: Array<any>;
+  heroImage?: { src: string; alt: string };
+}
+
+export const blogPosts: BlogPost[] = [
   {
     slug: 'vad-kostar-sup-yoga-stockholm',
     title: 'Vad kostar SUP yoga i Stockholm 2026?',
@@ -1083,6 +1102,7 @@ export type BlogLanguage = 'sv' | 'en';
     excerpt: 'Fler brudpar väljer yoga som en del av bröllopsveckan. Inkluderande, lugnt, och gästerna pratar faktiskt om det efteråt.',
     relatedServiceHref: '/tjanster/privata-event',
     relatedServiceLabel: 'Boka privat event med yoga',
+    relatedPosts: [],
     content: [
       {
         type: 'paragraph',
