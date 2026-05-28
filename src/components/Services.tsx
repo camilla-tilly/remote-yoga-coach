@@ -15,7 +15,7 @@ const Services = () => {
           </h2>
           <span className="block mx-auto w-16 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
           <p className="font-inter font-normal text-lg md:text-xl text-dalashala-earth/85 leading-relaxed">
-            Oavsett om ni behöver regelbundna sessioner för fokus och lugn, en workshop för ett event, eller ett sommarevent för teamet.
+            Företagsyoga och meditation på abonnemang. Privat yogaklasser till kickoffs och event. SUP yoga på Sickla sjö.
           </p>
         </div>
 
@@ -27,10 +27,10 @@ const Services = () => {
             >
               <div>
                 <h3 className="font-fraunces text-[1.875rem] md:text-[2.125rem] text-dalashala-earth mb-4 group-hover:text-dalashala-earthSoft transition-colors leading-[1.05] tracking-[-0.02em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 48, 'SOFT' 50" }}>
-                  Veckovisa yoga-sessioner
+                  Närvaropaket
                 </h3>
                 <p className="font-inter font-normal text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed">
-                  1–2 sessioner per vecka via Teams. Andning, meditation och rörelse som bygger fokus och lugn. Passar in i arbetsdagen. In-person på kontoret möjligt på begäran. Två nivåer från 3 500 kr/mån.
+                  Veckovisa företagsyoga och meditationssessioner på Teams. 1–2 sessioner per vecka från ditt skrivbord. Två nivåer från 3 500 kr/mån.
                 </p>
               </div>
               <span className="mt-8 inline-flex items-center gap-2 font-inter text-xs text-dalashala-earth uppercase tracking-[0.24em] font-semibold group-hover:gap-3 transition-all">
@@ -44,7 +44,7 @@ const Services = () => {
             >
               <div>
                 <h3 className="font-fraunces text-[1.875rem] md:text-[2.125rem] text-dalashala-earth mb-4 group-hover:text-dalashala-earthSoft transition-colors leading-[1.05] tracking-[-0.02em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 48, 'SOFT' 50" }}>
-                  Workshops för event
+                  Privat yogaklasser för event
                 </h3>
                 <p className="font-inter font-normal text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed">
                   Anpassad yoga för kickoffs, AWs, konferenser och möten. Andningsövningar, stolsyoga eller full yoga — helt skräddarsytt för er grupp. 30 minuter till flera timmar. Kontakta för offert.
