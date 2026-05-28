@@ -43,7 +43,7 @@ const Hero = () => {
           Fokus, lugn och teamenergi — helt på era villkor.
         </h1>
         <p className="font-inter text-base md:text-lg text-dalashala-earth/75 mb-16 md:mb-20 opacity-0 -translate-y-3 transition-all duration-1000 ease-out delay-300 max-w-2xl mx-auto leading-relaxed">
-          Tre vägar att arbeta med oss: veckovisa Teams-sessioner, workshops för kickoffs och event, och SUP yoga på Sickla sjö.
+          Tre vägar att arbeta med mig: veckovisa Teams-sessioner, workshops för kickoffs och event, och SUP yoga på Sickla sjö.
         </p>
 
         <div
