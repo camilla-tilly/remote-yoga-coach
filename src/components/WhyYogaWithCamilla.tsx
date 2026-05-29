@@ -6,12 +6,12 @@ const cards = [
     body: 'Varje klass är utformad efter er grupp och ert tillfälle. Möhippa, födelsedag, bröllop, konferens eller teamdag. Alla nivåer, alltid välkomna.',
   },
   {
-    title: 'Utomhus när det passar',
-    body: 'Är ni på konferensanläggning med trädgård eller uteplats tar vi gärna ut mattorna. I naturens ro hittar vi tillbaka till oss själva.',
+    title: 'Flexibelt format',
+    body: 'Online på Teams eller Zoom, på er plats i Stockholm, eller utomhus om ni är på konferensanläggning. Du väljer vad som passar bäst.',
   },
   {
-    title: 'På er plats',
-    body: 'Föredrar ni att jag kommer till er? Jag håller gärna klassen hos er, på den plats som passar tillfället bäst.',
+    title: 'Veckovisa eller engångs',
+    body: 'Regelbundna sessioner som bygger vanemönster och ny närvaro. Eller engångstillfällen för events, workshops och helger. Båda fungerar.',
   },
   {
     title: 'Ingen press, ingen bedömning',

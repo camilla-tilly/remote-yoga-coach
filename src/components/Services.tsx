@@ -44,10 +44,10 @@ const Services = () => {
             >
               <div>
                 <h3 className="font-fraunces text-[1.875rem] md:text-[2.125rem] text-dalashala-earth mb-4 group-hover:text-dalashala-earthSoft transition-colors leading-[1.05] tracking-[-0.02em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 48, 'SOFT' 50" }}>
-                  Privat yogaklasser för event
+                  Event och workshops
                 </h3>
                 <p className="font-inter font-normal text-base md:text-[1.0625rem] text-dalashala-earth/85 leading-relaxed">
-                  Anpassad yoga för kickoffs, AWs, konferenser och möten. Andningsövningar, stolsyoga eller full yoga — helt skräddarsytt för er grupp. 30 minuter till flera timmar. Kontakta för offert.
+                  Anpassad yoga för kickoffs, AWs, konferenser och möten. Online, på plats eller utomhus. Andningsövningar, stolsyoga eller full yoga — helt skräddarsytt. 30 minuter till flera timmar. Kontakta för offert.
                 </p>
               </div>
               <span className="mt-8 inline-flex items-center gap-2 font-inter text-xs text-dalashala-earth uppercase tracking-[0.24em] font-semibold group-hover:gap-3 transition-all">

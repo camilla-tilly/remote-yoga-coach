@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Plan Dashboard 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #faf9f7 0%, #f5f3f0 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+            color: #3d4a48;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #faf9f7;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border: 1px solid #ede9e5;
+        }
+
+        .header h1 {
+            color: #3d4a48;
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header p {
+            color: #8a8a7f;
+            font-size: 16px;
+        }
+
+        .filters {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid #d4ccc3;
+            background: #faf9f7;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            color: #3d4a48;
+        }
+
+        .filter-btn.active {
+            background: #7a9b8e;
+            color: white;
+            border-color: #7a9b8e;
+        }
+
+        .filter-btn:hover {
+            border-color: #7a9b8e;
+        }
+
+        .phases-container {
+            display: block;
+            margin-bottom: 40px;
+        }
+
+        .phase {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .phase:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .phase-header {
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .phase-1 .phase-header { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+        .phase-2 .phase-header { background: linear-gradient(135deg, #f39c12, #d68910); }
+        .phase-3 .phase-header { background: linear-gradient(135deg, #3498db, #2980b9); }
+        .phase-4 .phase-header { background: linear-gradient(135deg, #9b59b6, #8e44ad); }
+        .phase-5 .phase-header { background: linear-gradient(135deg, #1abc9c, #16a085); }
+
+        .phase-progress {
+            width: 100%;
+            height: 4px;
+            background: #ecf0f1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: white;
+            transition: width 0.3s ease;
+        }
+
+        .phase-content {
+            padding: 20px;
+        }
+
+        .phase-dates {
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .task-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .task {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px;
+            background: #faf9f7;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            border: 1px solid #ede9e5;
+        }
+
+        .task.completed {
+            background: #f0f4f2;
+            opacity: 0.7;
+        }
+
+        .task input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-top: 2px;
+            cursor: pointer;
+            accent-color: #7a9b8e;
+            flex-shrink: 0;
+        }
+
+        .task-text {
+            flex-grow: 1;
+        }
+
+        .task-label {
+            font-weight: 500;
+            color: #2c3e50;
+            font-size: 14px;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .task-note {
+            font-size: 12px;
+            color: #95a5a6;
+            line-height: 1.4;
+        }
+
+        .task.completed .task-label {
+            text-decoration: line-through;
+            color: #7f8c8d;
+        }
+
+        .task-priority {
+            font-size: 11px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            background: #fff3cd;
+            color: #856404;
+            font-weight: 600;
+            white-space: nowrap;
+            margin-left: 8px;
+        }
+
+        .task-sequence {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            font-weight: bold;
+            font-size: 12px;
+            margin-right: 8px;
+            flex-shrink: 0;
+        }
+
+        .task-when {
+            font-size: 12px;
+            color: #a67c52;
+            font-weight: 600;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .time-group {
+            margin-bottom: 32px;
+            padding: 20px;
+            background: #faf9f7;
+            border-left: 4px solid #a9a9a9;
+            border-radius: 4px;
+        }
+
+        .time-group.week-1 {
+            border-left-color: #a67c52;
+            background: #f9f5f1;
+        }
+
+        .time-group.week-2 {
+            border-left-color: #b8956a;
+            background: #faf8f5;
+        }
+
+        .time-group.week-3 {
+            border-left-color: #7a9b8e;
+            background: #f4f7f6;
+        }
+
+        .time-group.week-4 {
+            border-left-color: #8fb08f;
+            background: #f6f8f6;
+        }
+
+        .time-group.week-5 {
+            border-left-color: #9b9b7a;
+            background: #f7f7f3;
+        }
+
+        .time-group-header {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 16px;
+            color: #2c3e50;
+        }
+
+        .stats {
+            background: #faf9f7;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+            border: 1px solid #ede9e5;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 20px;
+            background: #f4f3f0;
+            border-radius: 8px;
+            border: 1px solid #e8e4df;
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #7a9b8e;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #8a8a7f;
+            margin-top: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 12px;
+        }
+
+        .reset-btn {
+            padding: 10px 20px;
+            background: #a67c52;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+
+        .reset-btn:hover {
+            background: #8f6644;
+        }
+
+        .milestone {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #f39c12;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-size: 13px;
+            color: #333;
+        }
+
+        .milestone strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .phases-container {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Strategic Plan Dashboard</h1>
+            <p>Yoga with Camilla — Stockholm Corporate + Australia Expansion (May–December 2026)</p>
+        </div>
+
+        <div class="stats">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalTasks">0</div>
+                    <div class="stat-label">Total Tasks</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="completedTasks">0</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="overallProgress">0%</div>
+                    <div class="stat-label">Overall Progress</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="remainingTasks">0</div>
+                    <div class="stat-label">To Go</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 20px;">
+            <button class="reset-btn" onclick="resetAllTasks()">Reset All Progress</button>
+        </div>
+
+        <div class="phases-container" id="phasesContainer"></div>
+
+        <div class="footer">
+            <p>📝 Progress is saved automatically to your browser. Last updated: <span id="lastUpdated">Now</span></p>
+            <p>💡 Bookmark this page or save it locally to access anytime.</p>
+        </div>
+    </div>
+
+    <script>
+        const phasesData = [
+            {
+                id: 'phase1',
+                name: 'Phase 1: Pipeline Ignition',
+                dates: 'May 29–31',
+                description: 'Launch corporate outreach before summer planning locks',
+                tasks: [
+                    { id: 't1-1', label: 'Build target list', note: '25–30 Stockholm companies with HR contact names', week: 'Thu May 28, 7–8pm', priority: 'URGENT' },
+                    { id: 't1-2', label: 'Send cold email blast', note: '15–20 emails Friday morning. Subject: "Summer team wellness?"', week: 'Fri May 29, 9–11am', priority: 'URGENT' },
+                    { id: 't1-3', label: 'Audit corporate blog posts', note: 'Check all 19 "Företag & Konferens" posts. Links working? CTAs clear?', week: 'Fri May 29, 1–3pm', priority: 'HIGH' },
+                    { id: 't1-4', label: 'Clean LinkedIn profile', note: 'Remove/hide Dalarna experience. Verify website link.', week: 'Fri May 29, 4–5pm', priority: 'HIGH' }
+                ]
+            },
+            {
+                id: 'phase2',
+                name: 'Phase 2: Heavy Corporate Sprint',
+                dates: 'June 1–15',
+                description: 'Book 5–8 summer events + build autumn pipeline',
+                tasks: [
+                    { id: 't2-1', label: 'Follow up warm leads', note: 'Reply to emails, book 3–5 intro calls. Pitch: recurring Teams + summer event.', week: 'Week of June 2–6', priority: 'URGENT' },
+                    { id: 't2-2', label: 'Create 3 new landing pages', note: 'Summer team day (in-office), in-office yoga + equipment, recurring Teams details.', week: 'Week of June 2–8', priority: 'HIGH' },
+                    { id: 't2-3', label: 'Write 2–3 new blog posts', note: 'Summer team day benefits, in-office vs Teams yoga, paddleboard team building.', week: 'Week of June 2–10', priority: 'HIGH' },
+                    { id: 't2-4', label: 'LinkedIn content blitz', note: 'Post Tue + Fri each week. Themes: summer, stress, team cohesion.', week: 'Week of June 2–15', priority: 'MEDIUM' },
+                    { id: 't2-5', label: 'Submit to Google Search Console', note: 'Sitemap + core pages. Check indexing on corporate service pages.', week: 'Week of June 5–8', priority: 'MEDIUM' },
+                    { id: 't2-6', label: 'Close early summer events', note: 'Goal: 3–5 summer events booked for June–August delivery.', week: 'Week of June 10–15', priority: 'URGENT' }
+                ]
+            },
+            {
+                id: 'phase3',
+                name: 'Phase 3: Delivery + Australia Planning',
+                dates: 'June 16 – Aug 25',
+                description: 'Deliver summer events + research Australia market (Swedes on vacation)',
+                tasks: [
+                    { id: 't3-1', label: 'Deliver summer events', note: 'Teams sessions + in-office days + paddleboard outings. Track what works.', week: 'June 16 – Aug 25', priority: 'URGENT' },
+                    { id: 't3-2', label: 'Collect testimonials + case studies', note: 'Email clients after each event: request 1-min testimonial for LinkedIn.', week: 'After each event', priority: 'HIGH' },
+                    { id: 't3-3', label: 'Publish post-summer insights', note: '2–3 blog posts: summer yoga ROI, paddleboard insights, autumn comeback.', week: 'Week of Aug 15–25', priority: 'MEDIUM' },
+                    { id: 't3-4', label: 'Research Sydney market', note: '20–30 yoga studios, 10–15 SUP/paddleboard, 20–30 corporate offices.', week: 'Week of June 16 – July 10', priority: 'HIGH' },
+                    { id: 't3-5', label: 'Position for Australia', note: 'How does Stockholm model translate to Sydney? Recurring? In-studio?', week: 'Week of July 10–20', priority: 'MEDIUM' },
+                    { id: 't3-6', label: 'Prep autumn pitch', note: 'Create 1-pager: summer results + autumn offerings.', week: 'Week of Aug 20–25', priority: 'MEDIUM' }
+                ]
+            },
+            {
+                id: 'phase4',
+                name: 'Phase 4: Autumn Ramp + Australia Outreach',
+                dates: 'Late Aug – Sept 30',
+                description: 'Kickoff/conference season + begin Australia partnership building',
+                tasks: [
+                    { id: 't4-1', label: 'Launch autumn corporate outreach', note: 'New target companies: kickoff yoga, conference workshops, recurring Teams.', week: 'Week of Aug 26–31', priority: 'URGENT' },
+                    { id: 't4-2', label: 'Refresh website for autumn', note: 'Homepage pivot + new pages: kickoff yoga, conference, paddleboard.', week: 'Week of Aug 20–31', priority: 'HIGH' },
+                    { id: 't4-3', label: 'LinkedIn pivot to autumn', note: 'Post Tue + Fri: autumn energy, post-vacation, case studies.', week: 'Week of Sept 1–30', priority: 'MEDIUM' },
+                    { id: 't4-4', label: 'Autumn blog content', note: '2–3 posts: kickoff yoga checklist, conference wellness benefits.', week: 'Week of Sept 1–15', priority: 'MEDIUM' },
+                    { id: 't4-5', label: 'Close autumn deals', note: 'Goal: 5–8 kickoff/conference events booked for Sept–Oct.', week: 'Week of Sept 5–25', priority: 'URGENT' },
+                    { id: 't4-6', label: 'Begin Australia outreach', note: 'Send 30–40 emails: studios, paddleboard, offices.', week: 'Week of Sept 1–10', priority: 'HIGH' },
+                    { id: 't4-7', label: 'Book Australia intro calls', note: 'Goal: 5–10 calls. Learn market. Plant seeds.', week: 'Week of Sept 10–20', priority: 'HIGH' },
+                    { id: 't4-8', label: 'Finalize Australia visit', note: 'Confirm dates, book flights. Plan which studios, companies, demos.', week: 'Week of Sept 15–30', priority: 'URGENT' }
+                ]
+            },
+            {
+                id: 'phase5',
+                name: 'Phase 5: Australia Expansion',
+                dates: 'Oct – Dec',
+                description: 'Australia visit + trial offerings + 2027 planning',
+                tasks: [
+                    { id: 't5-1', label: 'Conduct Australia visit', note: '2-week trip: studio meetings, paddleboard demos, corporate presentations.', week: 'Nov or Dec (TBD)', priority: 'URGENT' },
+                    { id: 't5-2', label: 'Trial Australian offerings', note: 'Recurring Teams for Sydney? In-person? Paddleboard partnerships?', week: 'Post-visit (ongoing)', priority: 'HIGH' },
+                    { id: 't5-3', label: 'Maintain Stockholm winter events', note: 'Holiday yoga events, New Year corporate packages, paddleboard.', week: 'Oct – Dec (ongoing)', priority: 'MEDIUM' },
+                    { id: 't5-4', label: 'Plan 2027 expansion', note: 'Australia model finalized. Stockholm refined. 2027 strategy.', week: 'Dec 1–15', priority: 'HIGH' }
+                ]
+            }
+        ];
+
+        function loadProgress() {
+            const saved = localStorage.getItem('strategicPlanProgress');
+            return saved ? JSON.parse(saved) : {};
+        }
+
+        function saveProgress() {
+            const progress = {};
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                progress[checkbox.id] = checkbox.checked;
+            });
+            localStorage.setItem('strategicPlanProgress', JSON.stringify(progress));
+            updateStats();
+            updateLastUpdated();
+        }
+
+        function renderPhases() {
+            const container = document.getElementById('phasesContainer');
+            const progress = loadProgress();
+
+            // Flatten all tasks with their sequence number
+            let taskSequence = 1;
+            const allTasks = [];
+
+            // Define time groups
+            const timeGroups = [
+                {
+                    id: 'week-1',
+                    name: 'This Week (May 28–31)',
+                    color: 'week-1'
+                },
+                {
+                    id: 'week-2',
+                    name: 'Week of June 2–6',
+                    color: 'week-2'
+                },
+                {
+                    id: 'week-3',
+                    name: 'Week of June 9–15',
+                    color: 'week-3'
+                },
+                {
+                    id: 'week-4',
+                    name: 'June 16 – August 25',
+                    color: 'week-4'
+                },
+                {
+                    id: 'week-5',
+                    name: 'Late August – December',
+                    color: 'week-5'
+                }
+            ];
+
+            // Map tasks to time groups
+            const tasksByTime = {
+                'week-1': [],
+                'week-2': [],
+                'week-3': [],
+                'week-4': [],
+                'week-5': []
+            };
+
+            phasesData.forEach(phase => {
+                phase.tasks.forEach(task => {
+                    if (task.week.includes('May 28') || task.week.includes('May 29')) {
+                        tasksByTime['week-1'].push({...task, sequence: taskSequence++});
+                    } else if (task.week.includes('June 2') || task.week.includes('June 5') || task.week.includes('June 8')) {
+                        tasksByTime['week-2'].push({...task, sequence: taskSequence++});
+                    } else if (task.week.includes('June 10') || task.week.includes('June 15')) {
+                        tasksByTime['week-3'].push({...task, sequence: taskSequence++});
+                    } else if (task.week.includes('June 16') || task.week.includes('July') || task.week.includes('Aug') && !task.week.includes('Late Aug')) {
+                        tasksByTime['week-4'].push({...task, sequence: taskSequence++});
+                    } else {
+                        tasksByTime['week-5'].push({...task, sequence: taskSequence++});
+                    }
+                });
+            });
+
+            // Render time groups
+            let html = '';
+            timeGroups.forEach(group => {
+                const tasksInGroup = tasksByTime[group.id];
+                if (tasksInGroup.length > 0) {
+                    html += `<div class="time-group ${group.color}">
+                        <div class="time-group-header">${group.name}</div>
+                        <div class="task-list">`;
+
+                    tasksInGroup.forEach(task => {
+                        html += `
+                            <label class="task ${progress[task.id] ? 'completed' : ''}">
+                                <input
+                                    type="checkbox"
+                                    id="${task.id}"
+                                    ${progress[task.id] ? 'checked' : ''}
+                                    onchange="saveProgress()"
+                                >
+                                <div class="task-text">
+                                    <span class="task-when">${task.sequence}. ${task.week}</span>
+                                    <span class="task-label">${task.label}</span>
+                                    <div class="task-note">${task.note}</div>
+                                </div>
+                            </label>
+                        `;
+                    });
+
+                    html += `</div></div>`;
+                }
+            });
+
+            container.innerHTML = html;
+        }
+
+        function updateStats() {
+            const progress = loadProgress();
+            const allTasks = phasesData.flatMap(p => p.tasks);
+            const completed = allTasks.filter(t => progress[t.id]).length;
+            const total = allTasks.length;
+            const overallPercent = total > 0 ? Math.round((completed / total) * 100) : 0;
+
+            document.getElementById('totalTasks').textContent = total;
+            document.getElementById('completedTasks').textContent = completed;
+            document.getElementById('overallProgress').textContent = overallPercent + '%';
+            document.getElementById('remainingTasks').textContent = total - completed;
+        }
+
+        function updateLastUpdated() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+            document.getElementById('lastUpdated').textContent = timeString;
+        }
+
+        function resetAllTasks() {
+            if (confirm('Are you sure? This will reset all progress.')) {
+                localStorage.removeItem('strategicPlanProgress');
+                renderPhases();
+                updateStats();
+                updateLastUpdated();
+            }
+        }
+
+        // Initialize
+        renderPhases();
+        updateStats();
+        updateLastUpdated();
+    </script>
+</body>
+</html>
