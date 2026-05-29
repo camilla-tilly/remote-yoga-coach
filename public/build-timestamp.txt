@@ -1,0 +1,2 @@
+Build timestamp: 2026-05-29T14:30:00Z
+Updates included: Stockholm positioning, tagline update, vägar→sätt changes
