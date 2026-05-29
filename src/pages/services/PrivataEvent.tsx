@@ -1,9 +1,9 @@
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 const relatedServices = [
-  { label: 'Hönsyoga', href: '/tjanster/honsyoga' },
   { label: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
   { label: 'SUP Yoga Stockholm', href: '/tjanster/sup-yoga' },
+  { label: 'SUP Yoga klasser', href: '/tjanster/sup-yoga-klasser' },
 ];
 
 const structuredData = {
@@ -82,9 +82,9 @@ const PrivataEvent = () => (
     ]}
     detailsHeading="Perfekt för"
     detailsParagraphs={[
-      "Möhippa som passar både aktiva gäng och de som hellre tar det lugnt. Bröllopshelger på landet i Dalarna, en lugn stund för brudparet och gästerna morgonen av bröllopsdagen, kvällen innan eller dagen efter. Födelsedagsfirande, ett annorlunda sätt att fira för den som har allt.",
+      "Möhippa som passar både aktiva gäng och de som hellre tar det lugnt. Bröllopshelger i Stockholm, en lugn stund för brudparet och gästerna morgonen av bröllopsdagen, kvällen innan eller dagen efter. Födelsedagsfirande, ett annorlunda sätt att fira för den som har allt.",
       "Kompisgäng som bara vill hitta på något ihop och behöver en anledning. Familjesammankomster och återträffar, något stillsamt för grupper som inte ses ofta.",
-      "Yoga retreat för en mindre grupp. En halvdag eller heldag ute i skogen i Dalarna, med yoga, andning, vandring eller trail run, fika och tid att bara vara. Vi är ca 3,5 timmar från Stockholm med bil, eller 4 timmar med tåg och buss. Ni behöver inte ta en hel vecka ledigt för att få retreat-känslan.",
+      "Yoga retreat för en mindre grupp. En halvdag eller heldag i Stockholm med omnejd, med yoga, andning, vandring, fika och tid att bara vara. Ni behöver inte ta en hel vecka ledigt för att få retreat-känslan.",
       "Det är en av de där aktiviteterna som funkar för de flesta. Man behöver inte vara vältränad, inte ha gjort yoga förut, och det finns inga extrema eller imponerande poser på menyn. Det är medvetet. Det handlar om att landa, röra sig lite, och få en paus från allt annat."
     ]}
     ctaHeading="Boka ditt event eller din retreat"

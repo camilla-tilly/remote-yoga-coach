@@ -1,4 +1,4 @@
-# Consolidated service page redirects (301)
+# Consolidated service page redirects (301) — point everything to live Stockholm routes
 /tjanster/private-events      /tjanster/privata-event     301
 /tjanster/mohippa-yoga        /tjanster/privata-event     301
 /tjanster/brollopsyoga        /tjanster/privata-event     301
@@ -9,11 +9,22 @@
 /tjanster/online-yoga         /                           301
 /tjanster/adventure-paket     /tjanster/privata-event     301
 /tjanster/trail-run-yoga      /tjanster/privata-event     301
-/tjanster/yoga-dalarna-turister /tjanster/honsyoga        301
 /tjanster/privatlektioner     /tjanster/privata-event     301
 
-# Removed blog posts (301 to most relevant commercial page)
-/blogg/vad-kostar-privat-yoga-stockholm /tjanster/privata-event 301
+# Removed Dalarna-specific service pages (Stockholm pivot, May 2026)
+/tjanster/honsyoga                  /                       301
+/tjanster/yoga-dalarna-turister     /                       301
+/tjanster/utomhusretreat-stockholm  /tjanster/sup-yoga      301
+
+# Removed blog posts (301 to most relevant live page) — preserves backlink equity
+/blogg/vad-kostar-privat-yoga-stockholm   /tjanster/privata-event                       301
+/blogg/yoga-mohippa-dalarna               /blogg/mohippa-aktiviteter-stockholm          301
+/blogg/mohippa-dalarna-aktiviteter        /blogg/mohippa-aktiviteter-stockholm          301
+/blogg/mohippa-rattvik-yoga-aktiviteter   /blogg/mohippa-aktiviteter-stockholm          301
+/blogg/honsyoga-dalarna-goat-yoga-sverige /blogg                                        301
+/blogg/outdoor-yoga-dalarna               /blogg/outdoor-water-activities-stockholm-summer 301
+/blogg/yoga-retreat-dalarna-vs-stockholm  /blogg/yoga-sauna-stockholm-friday-afternoon  301
+/blogg/yoga-retreat-near-stockholm-dalarna-weekend /blogg/yoga-sauna-stockholm-friday-afternoon 301
 
 # SPA fallback (must be last)
 /*    /index.html   200
