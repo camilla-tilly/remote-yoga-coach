@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strategic Plan Dashboard 2026</title>
+    <title>Yoga with Camilla — Strategic Plan 2026</title>
     <style>
         * {
             margin: 0;
@@ -12,601 +12,715 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #faf9f7 0%, #f5f3f0 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fafafa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #f4d47f 0%, #e8c050 100%);
             padding: 40px 20px;
-            min-height: 100vh;
-            color: #3d4a48;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #666;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 30px;
-            background: #faf9f7;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            border: 1px solid #ede9e5;
-        }
-
-        .header h1 {
-            color: #3d4a48;
-            font-size: 32px;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .header p {
-            color: #8a8a7f;
-            font-size: 16px;
-        }
-
-        .filters {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .filter-btn {
-            padding: 10px 20px;
-            border: 2px solid #d4ccc3;
-            background: #faf9f7;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            color: #3d4a48;
-        }
-
-        .filter-btn.active {
-            background: #7a9b8e;
-            color: white;
-            border-color: #7a9b8e;
-        }
-
-        .filter-btn:hover {
-            border-color: #7a9b8e;
-        }
-
-        .phases-container {
-            display: block;
-            margin-bottom: 40px;
+            padding: 40px 20px;
         }
 
         .phase {
             background: white;
-            border-radius: 12px;
+            margin-bottom: 40px;
+            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .phase:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
 
         .phase-header {
-            padding: 20px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            background: #f9f9f9;
+            padding: 24px;
+            border-left: 4px solid #f4d47f;
         }
 
-        .phase-1 .phase-header { background: linear-gradient(135deg, #e74c3c, #c0392b); }
-        .phase-2 .phase-header { background: linear-gradient(135deg, #f39c12, #d68910); }
-        .phase-3 .phase-header { background: linear-gradient(135deg, #3498db, #2980b9); }
-        .phase-4 .phase-header { background: linear-gradient(135deg, #9b59b6, #8e44ad); }
-        .phase-5 .phase-header { background: linear-gradient(135deg, #1abc9c, #16a085); }
-
-        .phase-progress {
-            width: 100%;
-            height: 4px;
-            background: #ecf0f1;
-            position: relative;
-            overflow: hidden;
+        .phase-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
         }
 
-        .progress-bar {
-            height: 100%;
-            background: white;
-            transition: width 0.3s ease;
-        }
-
-        .phase-content {
-            padding: 20px;
-        }
-
-        .phase-dates {
-            font-size: 12px;
-            color: #7f8c8d;
-            margin-bottom: 15px;
+        .phase-goal {
+            font-size: 14px;
+            color: #666;
             font-style: italic;
         }
 
-        .task-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
+        .phase-content {
+            padding: 24px;
         }
 
-        .task {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th {
+            background: #f5f5f5;
             padding: 12px;
-            background: #faf9f7;
-            border-radius: 8px;
-            transition: all 0.2s ease;
-            border: 1px solid #ede9e5;
-        }
-
-        .task.completed {
-            background: #f0f4f2;
-            opacity: 0.7;
-        }
-
-        .task input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
-            margin-top: 2px;
-            cursor: pointer;
-            accent-color: #7a9b8e;
-            flex-shrink: 0;
-        }
-
-        .task-text {
-            flex-grow: 1;
-        }
-
-        .task-label {
-            font-weight: 500;
-            color: #2c3e50;
-            font-size: 14px;
-            margin-bottom: 4px;
-            display: block;
-        }
-
-        .task-note {
-            font-size: 12px;
-            color: #95a5a6;
-            line-height: 1.4;
-        }
-
-        .task.completed .task-label {
-            text-decoration: line-through;
-            color: #7f8c8d;
-        }
-
-        .task-priority {
-            font-size: 11px;
-            padding: 3px 8px;
-            border-radius: 4px;
-            background: #fff3cd;
-            color: #856404;
+            text-align: left;
             font-weight: 600;
-            white-space: nowrap;
-            margin-left: 8px;
-        }
-
-        .task-sequence {
-            display: inline-block;
-            background: #2c3e50;
-            color: white;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 24px;
-            font-weight: bold;
-            font-size: 12px;
-            margin-right: 8px;
-            flex-shrink: 0;
-        }
-
-        .task-when {
-            font-size: 12px;
-            color: #a67c52;
-            font-weight: 600;
-            margin-bottom: 6px;
-            display: block;
-        }
-
-        .time-group {
-            margin-bottom: 32px;
-            padding: 20px;
-            background: #faf9f7;
-            border-left: 4px solid #a9a9a9;
-            border-radius: 4px;
-        }
-
-        .time-group.week-1 {
-            border-left-color: #a67c52;
-            background: #f9f5f1;
-        }
-
-        .time-group.week-2 {
-            border-left-color: #b8956a;
-            background: #faf8f5;
-        }
-
-        .time-group.week-3 {
-            border-left-color: #7a9b8e;
-            background: #f4f7f6;
-        }
-
-        .time-group.week-4 {
-            border-left-color: #8fb08f;
-            background: #f6f8f6;
-        }
-
-        .time-group.week-5 {
-            border-left-color: #9b9b7a;
-            background: #f7f7f3;
-        }
-
-        .time-group-header {
-            font-weight: bold;
-            font-size: 16px;
-            margin-bottom: 16px;
-            color: #2c3e50;
-        }
-
-        .stats {
-            background: #faf9f7;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            margin-bottom: 30px;
-            border: 1px solid #ede9e5;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-        }
-
-        .stat-card {
-            text-align: center;
-            padding: 20px;
-            background: #f4f3f0;
-            border-radius: 8px;
-            border: 1px solid #e8e4df;
-        }
-
-        .stat-number {
-            font-size: 32px;
-            font-weight: bold;
-            color: #7a9b8e;
-        }
-
-        .stat-label {
-            font-size: 12px;
-            color: #8a8a7f;
-            margin-top: 8px;
+            font-size: 13px;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            color: #666;
+            border-bottom: 1px solid #ddd;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+
+        tr:hover {
+            background: #fafafa;
+        }
+
+        .task-name {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .status {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .unlock {
+            background: #f0f7ff;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin-top: 16px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #333;
+        }
+
+        .dashboard {
+            background: #f9f9f9;
+            padding: 24px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            border: 1px solid #eee;
+        }
+
+        .dashboard h2 {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .dashboard pre {
+            background: white;
+            padding: 16px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-size: 12px;
+            line-height: 1.8;
+            border: 1px solid #eee;
+        }
+
+        .key-insight {
+            background: #fffaeb;
+            border-left: 4px solid #ffc107;
+            padding: 16px;
+            margin-top: 16px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #333;
+        }
+
+        .tracking {
+            margin-top: 40px;
+        }
+
+        .tracking h2 {
+            font-size: 22px;
+            margin-bottom: 24px;
+            color: #333;
+        }
+
+        .milestone {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f4d47f;
+        }
+
+        .milestone h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .milestone ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .milestone li {
+            padding: 6px 0;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .milestone li:before {
+            content: "☐ ";
+            margin-right: 8px;
+            color: #999;
+        }
+
+        .key-dates {
+            margin-top: 40px;
+        }
+
+        .key-dates table {
+            margin-top: 20px;
         }
 
         .footer {
             text-align: center;
             padding: 20px;
-            color: #7f8c8d;
+            color: #999;
             font-size: 12px;
+            border-top: 1px solid #eee;
+            margin-top: 40px;
         }
 
-        .reset-btn {
-            padding: 10px 20px;
-            background: #a67c52;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 500;
-            transition: background 0.3s ease;
-        }
-
-        .reset-btn:hover {
-            background: #8f6644;
-        }
-
-        .milestone {
-            background: #fff3cd;
-            padding: 15px;
-            border-left: 4px solid #f39c12;
+        .sub-phase {
+            background: #f9f9f9;
+            margin-top: 24px;
+            padding: 16px;
             border-radius: 4px;
-            margin-bottom: 15px;
-            font-size: 13px;
+            border-left: 4px solid #e8c050;
+        }
+
+        .sub-phase-title {
+            font-weight: 600;
+            margin-bottom: 12px;
             color: #333;
         }
 
-        .milestone strong {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        @media (max-width: 768px) {
-            .phases-container {
-                grid-template-columns: 1fr;
-            }
-
-            .header h1 {
-                font-size: 24px;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+        .sub-phase-note {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 12px;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Strategic Plan Dashboard</h1>
-            <p>Yoga with Camilla — Stockholm Corporate + Australia Expansion (May–December 2026)</p>
-        </div>
+    <header>
+        <h1>Yoga with Camilla</h1>
+        <p class="subtitle">Strategic Plan: May–December 2026</p>
+        <p class="subtitle">Stockholm Corporate + Australia Expansion</p>
+    </header>
 
-        <div class="stats">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number" id="totalTasks">0</div>
-                    <div class="stat-label">Total Tasks</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" id="completedTasks">0</div>
-                    <div class="stat-label">Completed</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" id="overallProgress">0%</div>
-                    <div class="stat-label">Overall Progress</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" id="remainingTasks">0</div>
-                    <div class="stat-label">To Go</div>
+    <div class="container">
+        <!-- PHASE 1 -->
+        <div class="phase">
+            <div class="phase-header">
+                <div class="phase-title">PHASE 1: THIS WEEK (June 2–7)</div>
+                <div class="phase-goal">Goal: Confirm SUP bookings + position for June cold push</div>
+            </div>
+            <div class="phase-content">
+                <p style="margin-bottom: 16px; font-size: 13px; color: #666;"><strong>Strategy:</strong> Lead with SUP yoga as the door opener. Recurring Teams/in-office comes after they've had an experience.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Timeline</th>
+                            <th>Status</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="task-name">Confirm + schedule inbound SUP bookings</td>
+                            <td>June 2–3</td>
+                            <td class="status">⬜</td>
+                            <td>Lock in 2–3 dates/times/payments. These are your proof of concept.</td>
+                        </tr>
+                        <tr>
+                            <td class="task-name">Build target list (SUP-first positioning)</td>
+                            <td>June 2–3</td>
+                            <td class="status">⬜</td>
+                            <td>15–20 Stockholm companies: tech, consulting, finance, media. Strategy: SUP pitch (experience) not meditation pitch (wellness).</td>
+                        </tr>
+                        <tr>
+                            <td class="task-name">Draft SUP cold email template</td>
+                            <td>June 3</td>
+                            <td class="status">⬜</td>
+                            <td>Subject: "Team on the water this summer?" NOT generic wellness language—experience + team cohesion.</td>
+                        </tr>
+                        <tr>
+                            <td class="task-name">Create basic SUP landing page</td>
+                            <td>June 3–4</td>
+                            <td class="status">⬜</td>
+                            <td>1 hero page: "Team SUP Experience on Stockholm's Lakes". What's included, testimonial placeholder, CTA.</td>
+                        </tr>
+                        <tr>
+                            <td class="task-name">LinkedIn profile + first post</td>
+                            <td>June 4</td>
+                            <td class="status">⬜</td>
+                            <td>Headline/bio emphasize: SUP + team building + performance. Write 1 post about why teams love summer experiences.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="unlock">
+                    <strong>What unlocks:</strong> 3–5 confirmed SUP dates + cold email launch ready for June 5–7.
                 </div>
             </div>
         </div>
 
-        <div style="text-align: center; margin-bottom: 20px;">
-            <button class="reset-btn" onclick="resetAllTasks()">Reset All Progress</button>
+        <!-- PHASE 2 -->
+        <div class="phase">
+            <div class="phase-header">
+                <div class="phase-title">PHASE 2: JUNE 1–15</div>
+                <div class="phase-goal">Goal: Book 5–8 SUP events (lead magnet) + plant autumn recurring seeds</div>
+            </div>
+            <div class="phase-content">
+                <p style="margin-bottom: 16px; font-size: 13px; color: #666;"><strong>Calendar awareness:</strong> Week of June 9 is Swedish midsummer buildup. Close deals by June 12.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Timeline</th>
+                            <th>Status</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="task-name">Lock existing SUP leads</td>
+                            <td>June 2–5</td>
+                            <td class="status">⬜</td>
+                            <td>Confirm dates, secure payment, get testimonials. This is your proof of concept.</td>
+                        </tr>
+                        <tr>
+                            <td class="task-name">Cold email to target list: SUP-first pitch</td>
+                            <td>June 3–7</td>
+                            <td class="status">⬜</td>
+                            <td>10–15 emails. Subject: "Team on the water this summer?" Lead with SUP + location.</td>
+                        </tr>
+                        <tr>
+                            <td class="task-name">Create 1 hero landing page</td>
+                            <td>June 1–8</td>
+                            <td class="status">⬜</td>
+                            <td>SUP Team Experience: date, location, what to expect, CTA. Link from cold emails here.</td>
+                        </tr>
+                        <tr>
+                            <td class="task-name">LinkedIn pivot: SUP + performance voice</td>
+                            <td>June 2–14</td>
+                            <td class="status">⬜</td>
+                            <td>Post 2x/week: Tue + Fri. Themes: team cohesion via experience, why summer resets matter, paddleboard as team building.</td>
+                        </tr>
+                        <tr>
+                            <td class="task-name">Email warm HR contacts who've added you</td>
+                            <td>June 3–8</td>
+                            <td class="status">⬜</td>
+                            <td>Personal email: "Booking SUP sessions for teams in June/July. Thought of you."</td>
+                        </tr>
+                        <tr>
+                            <td class="task-name">SEO: index what you have</td>
+                            <td>June 5–8</td>
+                            <td class="status">⬜</td>
+                            <td>Submit sitemap to Google Search Console. Make sure SUP + corporate yoga pages are indexable.</td>
+                        </tr>
+                        <tr>
+                            <td class="task-name">Close early SUP events</td>
+                            <td>June 10–15</td>
+                            <td class="status">⬜</td>
+                            <td>Goal: 3–5 SUP bookings locked + paid by June 15.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="unlock">
+                    <strong>What unlocks:</strong> Summer events locked in (revenue secured) • Landing pages indexed by Google • Pipeline for autumn kickoffs started
+                </div>
+            </div>
         </div>
 
-        <div class="phases-container" id="phasesContainer"></div>
+        <!-- PHASE 3 -->
+        <div class="phase">
+            <div class="phase-header">
+                <div class="phase-title">PHASE 3: JUNE 16 — AUGUST 25</div>
+                <div class="phase-goal">Goal: Delivery + Australia Planning</div>
+            </div>
+            <div class="phase-content">
+                <p style="margin-bottom: 16px; font-size: 13px; color: #666;"><strong>Calendar context:</strong> Midsummer (June 19) → Swedes on vacation most of June 20–Aug 20 → Back Aug 21+. Sales intensity: LOWER. Planning intensity: HIGHER.</p>
+
+                <div class="sub-phase">
+                    <div class="sub-phase-title">A. CORPORATE DELIVERY (June 16 – Aug 25) — SUP IS YOUR PROOF</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Task</th>
+                                <th>Timeline</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="task-name">Deliver booked SUP events</td>
+                                <td>Ongoing</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                            <tr>
+                                <td class="task-name">Collect testimonials after each SUP event</td>
+                                <td>After each event</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                            <tr>
+                                <td class="task-name">Soft pitch autumn recurring during SUP events</td>
+                                <td>During delivery</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                            <tr>
+                                <td class="task-name">LinkedIn case study content</td>
+                                <td>June–Aug</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                            <tr>
+                                <td class="task-name">Prep autumn pitch (after summer proof)</td>
+                                <td>Late Aug</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="sub-phase">
+                    <div class="sub-phase-title">B. AUSTRALIA PLANNING (June 16 – Aug 25) — PARALLEL TRACK</div>
+                    <div class="sub-phase-note">When to start: Mid-June, when Swedish workload drops. Ramp up end of July.</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Task</th>
+                                <th>Timeline</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="task-name">Research phase: Sydney studios, SUP companies, corporate offices</td>
+                                <td>June 16 – July 10</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                            <tr>
+                                <td class="task-name">Positioning strategy: How does Stockholm model translate to Sydney?</td>
+                                <td>July 10–20</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                            <tr>
+                                <td class="task-name">Messaging prep: Draft email templates for studios, paddleboard, offices</td>
+                                <td>July 20–31</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                            <tr>
+                                <td class="task-name">Plan Australia visit: Dates? Nov/Dec? Which cities?</td>
+                                <td>July–Aug</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="unlock">
+                    <strong>What unlocks:</strong> Summer revenue collected + case studies ready • Australia contact list ready • Autumn pitch ready for launch mid-August
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 4 -->
+        <div class="phase">
+            <div class="phase-header">
+                <div class="phase-title">PHASE 4: LATE AUGUST – SEPTEMBER 30</div>
+                <div class="phase-goal">Goal: Autumn Ramp + Australia Outreach</div>
+            </div>
+            <div class="phase-content">
+                <p style="margin-bottom: 16px; font-size: 13px; color: #666;"><strong>Calendar context:</strong> Aug 21+ people back to work → Kickoff season starts → Conference season planning → Back-to-school energy</p>
+
+                <div class="sub-phase">
+                    <div class="sub-phase-title">A. STOCKHOLM AUTUMN PUSH</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Task</th>
+                                <th>Timeline</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="task-name">Launch autumn outreach using summer case studies</td>
+                                <td>Aug 26–31</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                            <tr>
+                                <td class="task-name">Refresh website: shift to "autumn team performance"</td>
+                                <td>Aug 20–31</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                            <tr>
+                                <td class="task-name">LinkedIn pivot: autumn energy, case studies, testimonials</td>
+                                <td>Sept 1–30</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                            <tr>
+                                <td class="task-name">Blog: autumn content (kickoff, conference, post-summer)</td>
+                                <td>Sept 1–15</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                            <tr>
+                                <td class="task-name">Close autumn deals</td>
+                                <td>Sept 5–25</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="sub-phase">
+                    <div class="sub-phase-title">B. AUSTRALIA LAUNCH</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Task</th>
+                                <th>Timeline</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="task-name">Begin outreach: 30–40 emails to studios, paddleboard, offices</td>
+                                <td>Sept 1–10</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                            <tr>
+                                <td class="task-name">Book intro calls: 5–10 calls with studios/companies</td>
+                                <td>Sept 10–20</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                            <tr>
+                                <td class="task-name">Finalize Australia visit: confirm dates, book flights, plan itinerary</td>
+                                <td>Sept 15–30</td>
+                                <td class="status">⬜</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="unlock">
+                    <strong>What unlocks:</strong> Autumn Stockholm pipeline full (3+ months revenue) • Australia initial relationships built • Visit planned and bookings starting
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 5 -->
+        <div class="phase">
+            <div class="phase-header">
+                <div class="phase-title">PHASE 5: OCTOBER – DECEMBER</div>
+                <div class="phase-goal">Goal: Australia Expansion + Stockholm Winter</div>
+            </div>
+            <div class="phase-content">
+                <p style="margin-bottom: 16px; font-size: 13px; color: #666;"><strong>Stockholm:</strong> Maintain recurring + holiday events • <strong>Australia:</strong> Deepen relationships, trial offerings, set up for 2027</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Timeline</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="task-name">Australia visit: Studio meetings, paddleboard demos, corporate presentations</td>
+                            <td>Nov or Dec (2 weeks)</td>
+                            <td class="status">⬜</td>
+                        </tr>
+                        <tr>
+                            <td class="task-name">Trial Australian offerings: recurring Teams? In-person? Paddleboard partnerships?</td>
+                            <td>Post-visit</td>
+                            <td class="status">⬜</td>
+                        </tr>
+                        <tr>
+                            <td class="task-name">Stockholm winter events: Holiday yoga, New Year corporate packages</td>
+                            <td>Oct–Dec</td>
+                            <td class="status">⬜</td>
+                        </tr>
+                        <tr>
+                            <td class="task-name">2027 planning: Australia model finalized. New year strategy locked.</td>
+                            <td>Dec 1–15</td>
+                            <td class="status">⬜</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- DASHBOARD -->
+        <div class="dashboard">
+            <h2>DASHBOARD: What Feeds What</h2>
+            <pre>THIS WEEK (June 2–7)
+ ↓
+ Confirm inbound SUP bookings + build cold target list
+ ↓
+JUNE 1–15: SUP REVENUE + Cold email launch
+ ↓
+ 5–8 SUP events booked ← Cold emails (SUP-first pitch)
+ ↓
+JUNE 16–AUG 25: Deliver SUP + collect proof
+ ↓
+ Testimonials + photos ← Australia contacts built
+ ↓
+ "After SUP success, let's talk autumn recurring"
+ ↓
+LATE AUG–SEPT: Warm autumn pitch + Australia outreach
+ ↓
+ Autumn pipeline full (recurring teams) ← Australia relationships live
+ ↓
+OCT–DEC: Recurring delivery + Australia visit
+ ↓
+ 2027: 2-market model live (SUP + recurring in Stockholm + Sydney)</pre>
+
+            <div class="key-insight">
+                <strong>KEY INSIGHT:</strong> SUP is not a side offering—it's your door opener. Every SUP client is a warm lead for autumn recurring yoga. Every SUP testimonial is social proof that makes your method work.
+            </div>
+        </div>
+
+        <!-- KEY DATES -->
+        <div class="key-dates">
+            <h2>Key Dates to Block</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>What</th>
+                        <th>Why</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>June 2–7</strong></td>
+                        <td>Phase 1: SUP setup</td>
+                        <td>Lock inbound, build target list</td>
+                        <td>Confirm 2–3 SUP bookings</td>
+                    </tr>
+                    <tr>
+                        <td><strong>June 9–15</strong></td>
+                        <td>Close summer SUP deals</td>
+                        <td>Midsummer buildup (June 19)</td>
+                        <td>3–5 booked + paid</td>
+                    </tr>
+                    <tr>
+                        <td><strong>June 16–Aug 20</strong></td>
+                        <td>Delivery season</td>
+                        <td>Swedes on holiday</td>
+                        <td>Execute + build Australia plan</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Aug 21–Sept 5</strong></td>
+                        <td>Back to work</td>
+                        <td>Autumn kickoff season starts</td>
+                        <td>Launch autumn sales</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sept 1–30</strong></td>
+                        <td>Australia contact phase</td>
+                        <td>Build relationships before visit</td>
+                        <td>30+ emails + 5–10 calls</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nov/Dec</strong></td>
+                        <td>Australia visit</td>
+                        <td>In-person meetings + demos</td>
+                        <td>2-week trip</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- TRACKING -->
+        <div class="tracking">
+            <h2>Tracking: What Success Looks Like</h2>
+
+            <div class="milestone">
+                <h3>By End of June</h3>
+                <ul>
+                    <li>5–8 SUP events booked + confirmed (these are your revenue + proof)</li>
+                    <li>1 SUP landing page live + driving cold email traffic</li>
+                    <li>1–2 LinkedIn posts published (SUP + team performance voice)</li>
+                    <li>10–15 cold emails sent (SUP-first positioning)</li>
+                    <li>2+ testimonials from booked SUP clients</li>
+                </ul>
+            </div>
+
+            <div class="milestone">
+                <h3>By End of August</h3>
+                <ul>
+                    <li>All booked SUP events delivered + photographed</li>
+                    <li>5+ client testimonials collected (SUP feedback)</li>
+                    <li>3–5 warm conversations started about autumn recurring yoga (post-SUP)</li>
+                    <li>30+ Australia contacts identified</li>
+                    <li>Australia research complete (studios, companies, market positioning)</li>
+                </ul>
+            </div>
+
+            <div class="milestone">
+                <h3>By End of September</h3>
+                <ul>
+                    <li>5–8 autumn events booked (mix of SUP + recurring Teams/in-person yoga)</li>
+                    <li>10+ Australia intro calls completed</li>
+                    <li>Australia positioning finalized (how SUP + recurring model translates to Sydney)</li>
+                    <li>Visit dates + itinerary confirmed</li>
+                </ul>
+            </div>
+
+            <div class="milestone">
+                <h3>By End of December</h3>
+                <ul>
+                    <li>20+ summer/autumn events delivered (SUP + recurring mix)</li>
+                    <li>Australia visit complete</li>
+                    <li>2–3 Australian partnerships/trials started (likely SUP-first here too)</li>
+                    <li>2027 expansion plan finalized (SUP + recurring model for both markets)</li>
+                </ul>
+            </div>
+        </div>
 
         <div class="footer">
-            <p>📝 Progress is saved automatically to your browser. Last updated: <span id="lastUpdated">Now</span></p>
-            <p>💡 Bookmark this page or save it locally to access anytime.</p>
+            <p>Last updated: June 2, 2026 | Strategic Plan: May–December 2026</p>
         </div>
     </div>
-
-    <script>
-        const phasesData = [
-            {
-                id: 'phase1',
-                name: 'Phase 1: Pipeline Ignition',
-                dates: 'May 29–31',
-                description: 'Launch corporate outreach before summer planning locks',
-                tasks: [
-                    { id: 't1-1', label: 'Build target list', note: '25–30 Stockholm companies with HR contact names', week: 'Thu May 28, 7–8pm', priority: 'URGENT' },
-                    { id: 't1-2', label: 'Send cold email blast', note: '15–20 emails Friday morning. Subject: "Summer team wellness?"', week: 'Fri May 29, 9–11am', priority: 'URGENT' },
-                    { id: 't1-3', label: 'Audit corporate blog posts', note: 'Check all 19 "Företag & Konferens" posts. Links working? CTAs clear?', week: 'Fri May 29, 1–3pm', priority: 'HIGH' },
-                    { id: 't1-4', label: 'Clean LinkedIn profile', note: 'Remove/hide Dalarna experience. Verify website link.', week: 'Fri May 29, 4–5pm', priority: 'HIGH' }
-                ]
-            },
-            {
-                id: 'phase2',
-                name: 'Phase 2: Heavy Corporate Sprint',
-                dates: 'June 1–15',
-                description: 'Book 5–8 summer events + build autumn pipeline',
-                tasks: [
-                    { id: 't2-1', label: 'Follow up warm leads', note: 'Reply to emails, book 3–5 intro calls. Pitch: recurring Teams + summer event.', week: 'Week of June 2–6', priority: 'URGENT' },
-                    { id: 't2-2', label: 'Create 3 new landing pages', note: 'Summer team day (in-office), in-office yoga + equipment, recurring Teams details.', week: 'Week of June 2–8', priority: 'HIGH' },
-                    { id: 't2-3', label: 'Write 2–3 new blog posts', note: 'Summer team day benefits, in-office vs Teams yoga, paddleboard team building.', week: 'Week of June 2–10', priority: 'HIGH' },
-                    { id: 't2-4', label: 'LinkedIn content blitz', note: 'Post Tue + Fri each week. Themes: summer, stress, team cohesion.', week: 'Week of June 2–15', priority: 'MEDIUM' },
-                    { id: 't2-5', label: 'Submit to Google Search Console', note: 'Sitemap + core pages. Check indexing on corporate service pages.', week: 'Week of June 5–8', priority: 'MEDIUM' },
-                    { id: 't2-6', label: 'Close early summer events', note: 'Goal: 3–5 summer events booked for June–August delivery.', week: 'Week of June 10–15', priority: 'URGENT' }
-                ]
-            },
-            {
-                id: 'phase3',
-                name: 'Phase 3: Delivery + Australia Planning',
-                dates: 'June 16 – Aug 25',
-                description: 'Deliver summer events + research Australia market (Swedes on vacation)',
-                tasks: [
-                    { id: 't3-1', label: 'Deliver summer events', note: 'Teams sessions + in-office days + paddleboard outings. Track what works.', week: 'June 16 – Aug 25', priority: 'URGENT' },
-                    { id: 't3-2', label: 'Collect testimonials + case studies', note: 'Email clients after each event: request 1-min testimonial for LinkedIn.', week: 'After each event', priority: 'HIGH' },
-                    { id: 't3-3', label: 'Publish post-summer insights', note: '2–3 blog posts: summer yoga ROI, paddleboard insights, autumn comeback.', week: 'Week of Aug 15–25', priority: 'MEDIUM' },
-                    { id: 't3-4', label: 'Research Sydney market', note: '20–30 yoga studios, 10–15 SUP/paddleboard, 20–30 corporate offices.', week: 'Week of June 16 – July 10', priority: 'HIGH' },
-                    { id: 't3-5', label: 'Position for Australia', note: 'How does Stockholm model translate to Sydney? Recurring? In-studio?', week: 'Week of July 10–20', priority: 'MEDIUM' },
-                    { id: 't3-6', label: 'Prep autumn pitch', note: 'Create 1-pager: summer results + autumn offerings.', week: 'Week of Aug 20–25', priority: 'MEDIUM' }
-                ]
-            },
-            {
-                id: 'phase4',
-                name: 'Phase 4: Autumn Ramp + Australia Outreach',
-                dates: 'Late Aug – Sept 30',
-                description: 'Kickoff/conference season + begin Australia partnership building',
-                tasks: [
-                    { id: 't4-1', label: 'Launch autumn corporate outreach', note: 'New target companies: kickoff yoga, conference workshops, recurring Teams.', week: 'Week of Aug 26–31', priority: 'URGENT' },
-                    { id: 't4-2', label: 'Refresh website for autumn', note: 'Homepage pivot + new pages: kickoff yoga, conference, paddleboard.', week: 'Week of Aug 20–31', priority: 'HIGH' },
-                    { id: 't4-3', label: 'LinkedIn pivot to autumn', note: 'Post Tue + Fri: autumn energy, post-vacation, case studies.', week: 'Week of Sept 1–30', priority: 'MEDIUM' },
-                    { id: 't4-4', label: 'Autumn blog content', note: '2–3 posts: kickoff yoga checklist, conference wellness benefits.', week: 'Week of Sept 1–15', priority: 'MEDIUM' },
-                    { id: 't4-5', label: 'Close autumn deals', note: 'Goal: 5–8 kickoff/conference events booked for Sept–Oct.', week: 'Week of Sept 5–25', priority: 'URGENT' },
-                    { id: 't4-6', label: 'Begin Australia outreach', note: 'Send 30–40 emails: studios, paddleboard, offices.', week: 'Week of Sept 1–10', priority: 'HIGH' },
-                    { id: 't4-7', label: 'Book Australia intro calls', note: 'Goal: 5–10 calls. Learn market. Plant seeds.', week: 'Week of Sept 10–20', priority: 'HIGH' },
-                    { id: 't4-8', label: 'Finalize Australia visit', note: 'Confirm dates, book flights. Plan which studios, companies, demos.', week: 'Week of Sept 15–30', priority: 'URGENT' }
-                ]
-            },
-            {
-                id: 'phase5',
-                name: 'Phase 5: Australia Expansion',
-                dates: 'Oct – Dec',
-                description: 'Australia visit + trial offerings + 2027 planning',
-                tasks: [
-                    { id: 't5-1', label: 'Conduct Australia visit', note: '2-week trip: studio meetings, paddleboard demos, corporate presentations.', week: 'Nov or Dec (TBD)', priority: 'URGENT' },
-                    { id: 't5-2', label: 'Trial Australian offerings', note: 'Recurring Teams for Sydney? In-person? Paddleboard partnerships?', week: 'Post-visit (ongoing)', priority: 'HIGH' },
-                    { id: 't5-3', label: 'Maintain Stockholm winter events', note: 'Holiday yoga events, New Year corporate packages, paddleboard.', week: 'Oct – Dec (ongoing)', priority: 'MEDIUM' },
-                    { id: 't5-4', label: 'Plan 2027 expansion', note: 'Australia model finalized. Stockholm refined. 2027 strategy.', week: 'Dec 1–15', priority: 'HIGH' }
-                ]
-            }
-        ];
-
-        function loadProgress() {
-            const saved = localStorage.getItem('strategicPlanProgress');
-            return saved ? JSON.parse(saved) : {};
-        }
-
-        function saveProgress() {
-            const progress = {};
-            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-                progress[checkbox.id] = checkbox.checked;
-            });
-            localStorage.setItem('strategicPlanProgress', JSON.stringify(progress));
-            updateStats();
-            updateLastUpdated();
-        }
-
-        function renderPhases() {
-            const container = document.getElementById('phasesContainer');
-            const progress = loadProgress();
-
-            // Flatten all tasks with their sequence number
-            let taskSequence = 1;
-            const allTasks = [];
-
-            // Define time groups
-            const timeGroups = [
-                {
-                    id: 'week-1',
-                    name: 'This Week (May 28–31)',
-                    color: 'week-1'
-                },
-                {
-                    id: 'week-2',
-                    name: 'Week of June 2–6',
-                    color: 'week-2'
-                },
-                {
-                    id: 'week-3',
-                    name: 'Week of June 9–15',
-                    color: 'week-3'
-                },
-                {
-                    id: 'week-4',
-                    name: 'June 16 – August 25',
-                    color: 'week-4'
-                },
-                {
-                    id: 'week-5',
-                    name: 'Late August – December',
-                    color: 'week-5'
-                }
-            ];
-
-            // Map tasks to time groups
-            const tasksByTime = {
-                'week-1': [],
-                'week-2': [],
-                'week-3': [],
-                'week-4': [],
-                'week-5': []
-            };
-
-            phasesData.forEach(phase => {
-                phase.tasks.forEach(task => {
-                    if (task.week.includes('May 28') || task.week.includes('May 29')) {
-                        tasksByTime['week-1'].push({...task, sequence: taskSequence++});
-                    } else if (task.week.includes('June 2') || task.week.includes('June 5') || task.week.includes('June 8')) {
-                        tasksByTime['week-2'].push({...task, sequence: taskSequence++});
-                    } else if (task.week.includes('June 10') || task.week.includes('June 15')) {
-                        tasksByTime['week-3'].push({...task, sequence: taskSequence++});
-                    } else if (task.week.includes('June 16') || task.week.includes('July') || task.week.includes('Aug') && !task.week.includes('Late Aug')) {
-                        tasksByTime['week-4'].push({...task, sequence: taskSequence++});
-                    } else {
-                        tasksByTime['week-5'].push({...task, sequence: taskSequence++});
-                    }
-                });
-            });
-
-            // Render time groups
-            let html = '';
-            timeGroups.forEach(group => {
-                const tasksInGroup = tasksByTime[group.id];
-                if (tasksInGroup.length > 0) {
-                    html += `<div class="time-group ${group.color}">
-                        <div class="time-group-header">${group.name}</div>
-                        <div class="task-list">`;
-
-                    tasksInGroup.forEach(task => {
-                        html += `
-                            <label class="task ${progress[task.id] ? 'completed' : ''}">
-                                <input
-                                    type="checkbox"
-                                    id="${task.id}"
-                                    ${progress[task.id] ? 'checked' : ''}
-                                    onchange="saveProgress()"
-                                >
-                                <div class="task-text">
-                                    <span class="task-when">${task.sequence}. ${task.week}</span>
-                                    <span class="task-label">${task.label}</span>
-                                    <div class="task-note">${task.note}</div>
-                                </div>
-                            </label>
-                        `;
-                    });
-
-                    html += `</div></div>`;
-                }
-            });
-
-            container.innerHTML = html;
-        }
-
-        function updateStats() {
-            const progress = loadProgress();
-            const allTasks = phasesData.flatMap(p => p.tasks);
-            const completed = allTasks.filter(t => progress[t.id]).length;
-            const total = allTasks.length;
-            const overallPercent = total > 0 ? Math.round((completed / total) * 100) : 0;
-
-            document.getElementById('totalTasks').textContent = total;
-            document.getElementById('completedTasks').textContent = completed;
-            document.getElementById('overallProgress').textContent = overallPercent + '%';
-            document.getElementById('remainingTasks').textContent = total - completed;
-        }
-
-        function updateLastUpdated() {
-            const now = new Date();
-            const timeString = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
-            document.getElementById('lastUpdated').textContent = timeString;
-        }
-
-        function resetAllTasks() {
-            if (confirm('Are you sure? This will reset all progress.')) {
-                localStorage.removeItem('strategicPlanProgress');
-                renderPhases();
-                updateStats();
-                updateLastUpdated();
-            }
-        }
-
-        // Initialize
-        renderPhases();
-        updateStats();
-        updateLastUpdated();
-    </script>
 </body>
 </html>
