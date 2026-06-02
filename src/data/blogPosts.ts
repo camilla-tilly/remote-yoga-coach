@@ -4737,214 +4737,348 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'sup-yoga-teamdag-efter-sommar',
     language: 'sv',
-    title: 'SUP yoga som teamdag efter sommaren i Stockholm',
-    metaDescription: 'SUP yoga för lag efter sommaren i Stockholm. Teambuilding på vattnet, tillgänglig för alla, ingen erfarenhet krävd. Boka privat grupp från 500 kr per person.',
+    title: 'SUP yoga som teamdag efter sommaren — ett val som knyter ihop gruppen',
+    metaDescription: 'SUP yoga för team efter sommaren i Stockholm. Praktisk guide för HR och teamledare: vad som ingår, kostnad från 500 kr per person, gruppstorlek 3–10, och hur det fungerar.',
     publishDate: '2026-06-02',
-    readingTime: '6 min',
+    readingTime: '7 min',
     category: 'Teambuilding & Events',
-    excerpt: 'Sommaren är över. Alla är tillbaka. SUP yoga knyter ihop laget utan att behöva ta det för allvarligt. Tillgängligt för alla, ingen erfarenhet krävd.',
+    excerpt: 'En alt­ernativ teamdag som faktiskt knyter ihop gruppen. Här är vad SUP yoga på vattnet kostar, vad som ingår, och varför det fungerar för lag.',
     relatedServiceHref: '/tjanster/sup-yoga',
     relatedServiceLabel: 'Boka privat SUP yoga',
     relatedPosts: [
-      { slug: 'teambuilding-aktiviteter-stockholm', label: 'Andra teambuilding-aktiviteter i Stockholm' },
       { slug: 'vad-kostar-sup-yoga-stockholm', label: 'Vad kostar SUP yoga i Stockholm?' },
+      { slug: 'stress-pa-jobbet-vila-prestandastrategi', label: 'Varför vila är en prestandastrategi' },
       { slug: 'foretagsyoga-vad-ingar-och-kostar', label: 'Företagsyoga för lag' },
     ],
     content: [
       {
         type: 'paragraph',
-        text: 'Sommaren är över. Alla är tillbaka i stan. Energin är lite låg, och ni behöver något som faktiskt knyter ihop teamet, inte bara en till afterwork på en bar.'
+        text: 'Den klassiska teamdagen fungerar inte längre. Det är en till lunch någonstans, eller drinkar på en bar, och folk är med för att de måste. Det knyter inte ihop gruppen, det skapar inte något minne, och två veckor senare är det glömt.'
       },
       {
         type: 'paragraph',
-        text: 'SUP yoga är det mötet mellan vatten, rörelse och lugn som ni inte visste att ni behövde.'
+        text: 'SUP yoga (yoga på paddleboard) är något annat. Det är en aktivitet som tvingar gruppen att vara helt närvarande, tillsammans, utan möten eller telefon. Och det fungerar faktiskt.'
       },
       {
         type: 'heading',
-        text: 'Varför SUP yoga för team?'
+        text: 'Vad händer under en SUP yoga-session?'
       },
       {
         type: 'paragraph',
-        text: 'Det finns en anledning till att det fungerar så bra för grupper: det tvingar alla till samma hastighet. Du kan inte maila från en paddleboard. Du kan inte spola förbi en övning för att "vara produktiv". Det är bara du, paddlan, och vattnet under dig.'
+        text: 'Gruppen träffas vid Sickla Strand i Stockholm, vid Elton\'s Café och Smashing Balance. Här finns allt på ett ställe: omklädningsrum med låsbara skåp, bastu, paddleboard-utrustning och mat om ni vill det.'
       },
       {
         type: 'paragraph',
-        text: 'Och det är nästan omöjligt att ta sig själv för allvarligt när du försöker balansera på en planka i Mälaren.'
+        text: 'Vi börjar på land med en kort säkerhetsgenomgång och introduktion (ingen erfarenhet behövs). Sedan paddlar gruppen ut till en flytbrygga på sjön och gör 45—60 minuter yoga på brädorna. Ni väljer själva om ni vill mjuk vinyasa (mer rörelse) eller lugn yin (mer avslappning). Det anpassas helt efter gruppens nivå och energi den dagen.'
       },
       {
         type: 'paragraph',
-        text: 'SUP yoga är också väldigt tillgängligt. Du behöver inte kunna yoga. Du behöver inte kunna paddla. Många av de som kommer är helt nya på båda. Det är okej. Övningarna är möjliga för alla nivåer, och det handlar inte om att kunna stå på huvudet på paddelbrädan.'
+        text: 'Efter yogapasset: bastu. Det ingår alltid. Vedeldad eller eldriven bastu vid vattenkanten, möjlighet att hoppa i sjön mellan varven, och tid att vila och småprata.'
       },
       {
         type: 'heading',
-        text: 'Vad får ni ut av det?'
-      },
-      {
-        type: 'subheading',
-        text: 'En break från rutinen'
+        text: 'Varför det fungerar för team'
       },
       {
         type: 'paragraph',
-        text: 'Du är på vattnet, det blåser, det är vackert. Din hjärna slutar planera nästa möte.'
+        text: 'Det finns några anledningar till att SUP yoga slår andra teamdagar på prestation:'
       },
       {
         type: 'subheading',
-        text: 'Något att minnas tillsammans'
+        text: 'Ingen möjlighet att undvika närvaro'
       },
       {
         type: 'paragraph',
-        text: 'Inte bara ett möte som glöms bort nästa vecka. Det här är något som folk kommer att prata om på kontoret i höst.'
+        text: 'Du kan inte maila från en paddleboard. Du kan inte checka Slack. Du kan inte välja att inte delta från jobbet. Det tvingar hela gruppen att vara i samma aktivitet, samtidigt.'
       },
       {
         type: 'subheading',
-        text: 'En känsla av att kunna'
+        text: 'Det skapar ett minnesvärt ögonblick'
       },
       {
         type: 'paragraph',
-        text: 'Många tror att de inte kan yoga, eller att de inte är "utomhustypen". SUP yoga bevisar motsatsen. Du gör något du inte trodde att du kunde.'
+        text: 'Folk kommer att prata om detta på kontoret veckor senare. "Kommer du ihåg när vi gjorde yoga på sjön och någon nästan tappade balansen?" Det blir ett delat minne för gruppen, inte bara en dag som glöms.'
       },
       {
         type: 'subheading',
-        text: 'Faktisk vila'
+        text: 'Det är verklig vilsamt'
       },
       {
         type: 'paragraph',
-        text: 'Yoga är inte bara rörelse. Det här handlar om att ge kroppen och sinnet ett verkligt paus från det konstanta "go go go" vi alla lever i.'
+        text: 'En till bar-kväll är inte vilsamt för ett stressat team. En timme på vattnet med fokus, andning och bastu efteråt — det faktiskt sänker pulsen och minskar spänning.'
+      },
+      {
+        type: 'subheading',
+        text: 'Det bygger förtroende'
+      },
+      {
+        type: 'paragraph',
+        text: 'Många människor tror att de "inte kan yoga" eller att de inte är "utomhustyper". SUP yoga bevisar att de kan det. Det bygger självförtroende och öppenhet inom gruppen.'
       },
       {
         type: 'heading',
-        text: 'Hur fungerar det praktiskt?'
+        text: 'Praktisk information för beslutsfattare'
+      },
+      {
+        type: 'subheading',
+        text: 'Pris'
       },
       {
         type: 'paragraph',
-        text: 'Vi träffas vid en strand nära Stockholm (vanligt är Sickla Strand eller liknande). Det tar ungefär 30 till 60 minuter yogapass, och det passar allt från 4 personer till större grupper. Vi börjar med enkla paddlings- och balansövningar, bygger in yoga lite och lite. Det avslutas ofta med att alla ligger på sin paddleboard och tittar på himlen medan musik spelas.'
+        text: 'Från 500 kr per person för yoga och bastu tillsammans, med ett lägsta totalpris på 1 500 kr per tillfälle (motsvarar 3 personer). Exakt pris beror på gruppstorlek och längd (se nedan).'
+      },
+      {
+        type: 'subheading',
+        text: 'Gruppstorlek'
       },
       {
         type: 'paragraph',
-        text: 'Det är enkelt. Det är tillgängligt. Det är varmt utan att vara stressigt.'
+        text: 'Ideal storlek är 3 till 10 personer. Grupper upp till 15 går att boka på förfrågan.'
+      },
+      {
+        type: 'subheading',
+        text: 'Tidsåtgång'
       },
       {
         type: 'paragraph',
-        text: 'All utrustning ingår. Brädor, paddlar, flytvästar och omklädningsrum finns på plats. Många grupper lägger till bastu efter yogapasset, eller en kort trail run i Nacka för den gruppen som vill röra sig mer.'
+        text: 'Vanligtvis 2 till 4 timmar totalt: säkerhetsgenomgång på land (15 min), paddla ut (15 min), yoga (45—60 min), bastu (30—60 min), plus byteskläder och vila. Vi anpassar helt efter er.'
+      },
+      {
+        type: 'subheading',
+        text: 'Plats och infrastruktur'
+      },
+      {
+        type: 'paragraph',
+        text: 'Sickla Strand, Nacka. Parkering på plats. 10—15 minuter från centrala Stockholm med tunnelbana (Sickla eller Hammarby Sjöstad).'
+      },
+      {
+        type: 'subheading',
+        text: 'Säsong'
+      },
+      {
+        type: 'paragraph',
+        text: 'Privata event går att boka från slutet av april till september.'
       },
       {
         type: 'heading',
-        text: 'Boka er SUP yoga dag'
+        text: 'Vad ingår och vad är tillval'
       },
       {
         type: 'paragraph',
-        text: 'Kontakta mig för en offert och vi hittar ett datum och en plats som passar er grupp. Vi kan planera det denna höst eller redan nu före sommaren nästa år. Alla är välkomna, oavsett erfarenhet.'
+        text: 'Yoga på paddleboard och bastu ingår alltid. Al­lt övrigt är tillval och sätts ihop efter vad gruppen vill:'
+      },
+      {
+        type: 'list',
+        items: [
+          '**Trail run i Nacka** — guidad löpning i Nackareservatet ledd av mig, tempo och distans efter er grupp',
+          '**Tennis med Lucas** — privatlektion i tennis med tennisprofi på plats, bra om någon vill något helt annat',
+          '**Vattencyklar** — roliga för alla nivåer, även folk som inte är vana vid vatten',
+          '**SUP-uthyrning** — paddleboard att paddla själv innan eller efter yogapasset',
+          '**Mat via Elton\'s Café** — fika eller en hel måltid på plats vid sjön'
+        ]
+      },
+      {
+        type: 'heading',
+        text: 'Säkerhet och ansvar'
       },
       {
         type: 'paragraph',
-        text: 'Mejla hello.yogawithcamilla@gmail.com eller använd kontaktformuläret på denna sida för att få en konkret offert för er grupp.'
+        text: 'Simkunnighet är obligatorisk för deltagande. Flytväst ingår och måste vara tillgänglig. Instruktör är certifierad yogalärare (mig) med erfaren­het av grupper. All utrustning tillhandahålls av Smashing Balance. 48-timmarers avbokningspolicy: 50 procent tillbaka eller tillgodo i 30 dagar.'
+      },
+      {
+        type: 'heading',
+        text: 'Hur man bokar'
+      },
+      {
+        type: 'paragraph',
+        text: 'Mejla hello.yogawithcamilla@gmail.com med:'
+      },
+      {
+        type: 'list',
+        items: [
+          'Önskat datum eller tidsperiod',
+          'Gruppstorlek',
+          'Om ni vill mjuk vinyasa eller lugn yin yoga (eller lämnar det till mig)',
+          'Vilka tillval ni är intresserade av (trail run, tennis, vattencyklar, mat)'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'Jag återkommer med en konkret offert inom 24 timmar.'
       },
     ]
   },
   {
     slug: 'sup-yoga-team-day-after-summer',
     language: 'en',
-    title: 'SUP Yoga as a Team Day Activity After Summer in Stockholm',
-    metaDescription: 'SUP yoga for teams after summer in Stockholm. Team building on water, accessible to all levels, no experience needed. Private group bookings from 500 kr per person.',
+    title: 'SUP Yoga as a Team Day — A Decision-Maker\'s Guide',
+    metaDescription: 'SUP yoga team building in Stockholm: what\'s included, pricing from 500 kr per person, group size 3–10, and how it works. For HR leaders and team managers.',
     publishDate: '2026-06-02',
-    readingTime: '6 min',
-    category: 'Teambuilding & Events',
-    excerpt: 'Summer is over. Everyone is back. SUP yoga brings the team together without needing to take it too seriously. Accessible to all, no experience required.',
+    readingTime: '7 min',
+    category: 'Team Building & Wellbeing',
+    excerpt: 'An alternative team day that actually builds connection. What SUP yoga costs, what\'s included, and why it works better than the standard outing.',
     relatedServiceHref: '/tjanster/sup-yoga',
     relatedServiceLabel: 'Book private SUP yoga',
     relatedPosts: [
-      { slug: 'outdoor-water-activities-stockholm-summer', label: 'Other outdoor activities in Stockholm' },
+      { slug: 'outdoor-water-activities-stockholm-summer', label: 'Summer activities in Stockholm' },
+      { slug: 'workplace-stress-burnout-recovery-performance', label: 'Why recovery is a performance strategy' },
       { slug: 'vad-kostar-sup-yoga-stockholm', label: 'SUP yoga pricing in Stockholm' },
-      { slug: 'teambuilding-aktiviteter-stockholm', label: 'Other team building activities' },
     ],
     content: [
       {
         type: 'paragraph',
-        text: 'Summer is over. Everyone is back in the city. Energy is a bit low, and you need something that actually brings the team together, not just another drinks night at a bar.'
+        text: 'The standard team outing does not work anymore. It is another lunch somewhere, or drinks at a bar, and people attend because they have to. It does not build team cohesion, create lasting memory, and two weeks later it is forgotten.'
       },
       {
         type: 'paragraph',
-        text: 'SUP yoga is where water, movement, and calm meet in a way you did not know you needed.'
+        text: 'SUP yoga (yoga on paddleboards) is different. It is an activity that requires the entire group to be fully present together, with no meetings, no phones, and no way out. And it actually works.'
       },
       {
         type: 'heading',
-        text: 'Why SUP yoga for teams?'
+        text: 'What Happens During a SUP Yoga Session'
       },
       {
         type: 'paragraph',
-        text: 'There is a reason it works so well in groups: it forces everyone to the same pace. You cannot email from a paddleboard. You cannot skip through an exercise to "be productive." It is just you, the paddle, and the water beneath you.'
+        text: 'Your team meets at Sickla Strand in Stockholm, at Elton\'s Café and Smashing Balance. Everything you need is in one place: changing rooms with lockable cabinets, sauna, paddleboard equipment, and food if you want it.'
       },
       {
         type: 'paragraph',
-        text: 'And it is almost impossible to take yourself seriously when you are trying to balance on a board in Mälaren.'
+        text: 'We start on shore with a brief safety talk and introduction (no experience needed). The group then paddles out to a floating platform on the lake for 45–60 minutes of yoga on the boards. You choose whether you want gentle, movement-focused vinyasa or calm, grounding yin yoga. This is fully customized to your group\'s level and energy that day.'
       },
       {
         type: 'paragraph',
-        text: 'SUP yoga is also very accessible. You do not need to know yoga. You do not need to know how to paddle. Many who come have never done either. That is fine. The movements work for all levels, and it is not about being able to stand on your head on the board.'
+        text: 'After yoga: sauna. It is always included. Wood-fired or electric sauna at the water\'s edge, the option to swim between rounds, and time to rest and reconnect as a group.'
       },
       {
         type: 'heading',
-        text: 'What do you get out of it?'
-      },
-      {
-        type: 'subheading',
-        text: 'A break from routine'
+        text: 'Why It Works for Teams'
       },
       {
         type: 'paragraph',
-        text: 'You are on the water, there is a breeze, it is beautiful. Your brain stops planning the next meeting.'
+        text: 'SUP yoga outperforms standard team days on a few key metrics:'
       },
       {
         type: 'subheading',
-        text: 'Something to remember together'
+        text: 'Full presence is not optional'
       },
       {
         type: 'paragraph',
-        text: 'Not just a meeting that is forgotten the next week. This is something people will talk about at the office this autumn.'
+        text: 'You cannot email from a paddleboard. You cannot check Slack. You cannot opt out and work. It forces the entire group into one shared activity at the same time.'
       },
       {
         type: 'subheading',
-        text: 'A sense of what you are capable of'
+        text: 'It creates a shared memory'
       },
       {
         type: 'paragraph',
-        text: 'Many people think they cannot do yoga, or that they are not "outdoor types." SUP yoga proves the opposite. You do something you did not think you could.'
+        text: 'People will reference this moment weeks later. "Remember when someone almost lost balance on the board?" It becomes a shared story for your team, not just a day that fades.'
       },
       {
         type: 'subheading',
-        text: 'Real rest'
+        text: 'It is actually restorative'
       },
       {
         type: 'paragraph',
-        text: 'Yoga is not just movement. This is about giving your body and mind a genuine pause from the constant "go go go" we all live in.'
+        text: 'Another bar night is not restorative for a stressed team. An hour on the water with breath work and sauna after it genuinely lowers heart rate and reduces tension.'
+      },
+      {
+        type: 'subheading',
+        text: 'It builds confidence'
+      },
+      {
+        type: 'paragraph',
+        text: 'Many people believe they "cannot do yoga" or are "not outdoorsy." SUP yoga proves them wrong. It builds self-efficacy and openness within the team.'
       },
       {
         type: 'heading',
-        text: 'How does it work in practice?'
+        text: 'Practical Details for Decision-Makers'
+      },
+      {
+        type: 'subheading',
+        text: 'Pricing'
       },
       {
         type: 'paragraph',
-        text: 'We meet at a beach near Stockholm (usually Sickla Strand or similar). It takes about 30 to 60 minutes of yoga, and it works for groups from 4 people to larger teams. We start with simple paddling and balance exercises, build in yoga gradually. It usually ends with everyone lying on their board watching the sky while music plays.'
+        text: 'From 500 SEK per person for yoga and sauna combined, with a minimum total of 1,500 SEK per event (equals 3 people). Final price depends on group size and duration.'
+      },
+      {
+        type: 'subheading',
+        text: 'Group size'
       },
       {
         type: 'paragraph',
-        text: 'It is simple. It is accessible. It is warm without being stressful.'
+        text: 'Ideal: 3–10 people. Groups up to 15 can be arranged on request.'
+      },
+      {
+        type: 'subheading',
+        text: 'Time commitment'
       },
       {
         type: 'paragraph',
-        text: 'All equipment is included. Boards, paddles, life jackets, and changing facilities are on site. Many groups add a sauna after the yoga, or a short trail run in Nacka for anyone who wants to move more.'
+        text: 'Typically 2–4 hours total: safety briefing on shore (15 min), paddle out (15 min), yoga (45–60 min), sauna (30–60 min), plus changing and rest. We adjust entirely to your timeline.'
+      },
+      {
+        type: 'subheading',
+        text: 'Location and logistics'
+      },
+      {
+        type: 'paragraph',
+        text: 'Sickla Strand, Nacka. Parking on site. 10–15 minutes from central Stockholm by subway (Sickla or Hammarby Sjöstad stations).'
+      },
+      {
+        type: 'subheading',
+        text: 'Season'
+      },
+      {
+        type: 'paragraph',
+        text: 'Private events available late April through September.'
       },
       {
         type: 'heading',
-        text: 'Book your SUP yoga day'
+        text: 'What\'s Included vs. Add-Ons'
       },
       {
         type: 'paragraph',
-        text: 'Get in touch for a quote and we will find a date and location that works for your group. We can plan it this autumn or already prepare for next summer. Everyone is welcome, regardless of experience.'
+        text: 'Yoga on paddleboards and sauna are always included. Everything else is built to order:'
+      },
+      {
+        type: 'list',
+        items: [
+          '**Trail running in Nacka nature reserve** — guided run led by me, pace and distance adapted to your group',
+          '**Tennis with Lucas** — private lesson with tennis professional on site, good if anyone wants a completely different activity',
+          '**Water bikes** — fun for all levels, even people unfamiliar with water',
+          '**SUP rentals** — paddleboard time to explore the lake independently before or after yoga',
+          '**Food via Elton\'s Café** — snacks or full meal on site by the water'
+        ]
+      },
+      {
+        type: 'heading',
+        text: 'Safety & Responsibility'
       },
       {
         type: 'paragraph',
-        text: 'Email hello.yogawithcamilla@gmail.com or use the contact form on this page to get a quote for your group.'
+        text: 'Swimming ability is required. Life jacket included and must be accessible. Instructor is a certified yoga teacher with group experience. All equipment provided by Smashing Balance. 48-hour cancellation policy: 50% refund or 30-day credit.'
+      },
+      {
+        type: 'heading',
+        text: 'How to Book'
+      },
+      {
+        type: 'paragraph',
+        text: 'Email hello.yogawithcamilla@gmail.com with:'
+      },
+      {
+        type: 'list',
+        items: [
+          'Preferred date or date range',
+          'Group size',
+          'Yoga preference: gentle vinyasa (more movement) or calm yin (more grounding), or let me decide',
+          'Any add-ons of interest (trail run, tennis, water bikes, food)'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'I will return with a detailed quote within 24 hours.'
       },
     ]
   }
