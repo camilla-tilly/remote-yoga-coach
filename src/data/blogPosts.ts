@@ -5081,6 +5081,1444 @@ export const blogPosts: BlogPost[] = [
         text: 'I will return with a detailed quote within 24 hours.'
       },
     ]
+  },
+  // Phase 1: Core Educational & Problem-Solving Blog Posts (5 pairs = 10 posts)
+  {
+    slug: 'vad-ar-foretagsyoga',
+    title: 'Vad är företagsyoga? — En guide för HR och chefer',
+    metaDescription: 'Företagsyoga är yoga för arbetsplatser. Lär dig vad det innebär, hur det fungerar, och varför hundratals svenska företag redan erbjuder det.',
+    publishDate: '2026-06-02',
+    readingTime: '8 min',
+    category: 'Företag & Konferens',
+    excerpt: 'Företagsyoga är yoga designad för arbetsplatser. Det är inte yoga för yogis—det är fokuserad, praktisk rörelse och andning som reducerar stress och förbättrar prestandan.',
+    language: 'sv',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Läs mer om företagsyoga',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'what-is-corporate-yoga', label: 'What Is Corporate Yoga? (English)' },
+      { slug: 'yoga-for-utbrandhet', label: 'Yoga för utbrändhet' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Du har sett termen "företagsyoga" dykt upp på jobbmässor, i företagskatalog, och i HR-konversationer. Du kanske undrar: är det bara yoga på kontoret? Är det något ditt team behöver? Och kommer folk faktiskt vilja göra det?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Enkelt svar: ja, ja, och ja.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad är företagsyoga egentligen?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Företagsyoga är yoga designad för arbetsplatser. Det är inte yoga för yogis. Det är inte avancerad eller imponerande. Det är helt motsatsen.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det är 20–30 minuter på fredagsmorgonen innan möten börjar. Det är anställda som möts en gång i veckan för att andas tillsammans, stretcha sina axlar, och få sin nervösa system att slappna av. Det är en möjlighet att säga till sina kropp: "Du är tillåten att vila här."'
+      },
+      {
+        type: 'paragraph',
+        text: 'Företagsyoga är fokuserad, praktisk, och anpassad till en arbetsplats. Ingen behöver vara flexibel. Ingen behöver ha gjort yoga innan. Det är bara rörelse, andning, och en påminnelse om att du är mer än din produktivitet.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför behöver företag yoga?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Din kropp svar på stress genom att spänna sig. Vi håller spänning i axlarna, nacken, och ryggen utan att ens märka det. Vi sitter hela dagen, och den konstanta stillheten blir en tyst typ av stress. Huvudvärk kommer. Nackspaänning blir kronisk. Vi blir trötta på ett sätt som sömn inte helt löser.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Företagsyoga bryter denna cykel. Det ger din kropp tillåtelse att slappna av. Det påminner din hjärna om att du är tillåten att vara här, på jobbet, utan att optimera varje sekund. Det är ett litet uppror mot idén att din värde mäts i produktivitet.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Dessutom visar forskning att företag som erbjuder yoga ser färre sjukdagar, högre moral, och bättre retention. Det är inte bara wellness-fluff—det är smart affärslogik.'
+      },
+      {
+        type: 'heading',
+        text: 'Hur fungerar det?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Ett typiskt pass kan se ut så här:'
+      },
+      {
+        type: 'list',
+        items: [
+          '5 minuter fokuserad andning för att sänka stress',
+          '10–15 minuter mild stretching av axlar, nacke, och rygg',
+          '5–10 minuter lugn rörelse eller vila',
+          'Optional: 5 minuter samtal eller bara att vara närvarande tillsammans'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'Många företag erbjuder dessa pass på plats på kontoret eller online via Teams eller Zoom. Det kan vara en gång i veckan, två gånger i veckan, eller bara när stress är högt. Vilken rytm som fungerar för ditt team är rätt val.'
+      },
+      {
+        type: 'heading',
+        text: 'Vilka företag redan erbjuder yoga?'
+      },
+      {
+        type: 'paragraph',
+        text: 'De senaste åren har företag från tech-startups till stora multinationals börjat erbjuda yoga som del av sin wellness-strategi. Det är inte längre något exotiskt—det är standard i Stockholm och växer överallt.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad får du ut av det?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Människor rapporterar:'
+      },
+      {
+        type: 'list',
+        items: [
+          'Mindre spänning i axlar och nacke',
+          'Ett klarare huvud och färre huvudvärk',
+          'En känsla av att vara närmare sin kropp igen',
+          'Mindre stress under arbetsdagen',
+          'En tyst förståelse för att vila inte är lathet—det är nödvändigt'
+        ]
+      },
+      {
+        type: 'heading',
+        text: 'FAQ'
+      },
+      {
+        type: 'paragraph',
+        text: '**Hur långt är ett typiskt pass?** Mellan 15 och 45 minuter beroende på vad ditt team behöver. Många startar med 20 minuter på fredagsmornar.\n\n**Kan vi göra det på Teams?** Ja, helt säkert. Yoga fungerar väl online.\n\n**Vad kostar det?** Från omkring 3 500–5 900 kr per månad för veckovisa pass.\n\n**Vem kan göra yoga?** Alla. Det spelar ingen roll om du är flexibel. Du behöver bara vilja ta 20 minuter för att andas.\n\n**Behövs någon utrustning?** Nope. En yoga-matta är nice-to-have men inte nödvändig.'
+      },
+      {
+        type: 'paragraph',
+        text: '**Är du intresserad av att prova företagsyoga för ditt team?** Jag erbjuder både regelbundna veckovisa sessioner och one-off event för kickoffs, konferenser, eller sommararrangemang. Vi kan anpassa allt efter ditt teams schema och behov—på plats eller online via Teams.'
+      }
+    ]
+  },
+  {
+    slug: 'what-is-corporate-yoga',
+    title: 'What Is Corporate Yoga? A Guide for HR Leaders & Managers',
+    metaDescription: 'Corporate yoga is yoga for workplaces. Learn what it is, how it works, and why it\'s becoming standard employee wellness in Stockholm and beyond.',
+    publishDate: '2026-06-02',
+    readingTime: '8 min',
+    category: 'Företag & Konferens',
+    excerpt: 'Corporate yoga is yoga designed for workplaces. It\'s not yoga for yogis—it\'s focused, practical movement and breathing that reduces stress and improves performance.',
+    language: 'en',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Learn more about corporate yoga',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'vad-ar-foretagsyoga', label: 'Vad är företagsyoga? (Swedish)' },
+      { slug: 'yoga-burnout-recovery-performance', label: 'Can Yoga Help Prevent Burnout?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'You\'ve seen the term "corporate yoga" pop up at career fairs, in employee wellness packages, and in HR conversations. You might wonder: is it just yoga at the office? Is it something your team needs? And will people actually want to do it?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Simple answer: yes, yes, and yes.'
+      },
+      {
+        type: 'heading',
+        text: 'What is corporate yoga, really?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Corporate yoga is yoga designed for workplaces. It\'s not yoga for yogis. It\'s not advanced or impressive. It\'s the opposite.'
+      },
+      {
+        type: 'paragraph',
+        text: 'It\'s 20–30 minutes on a Friday morning before meetings start. It\'s employees gathering once a week to breathe together, stretch their shoulders, and give their nervous system permission to calm down. It\'s a chance to tell your body: "You\'re allowed to rest here."'
+      },
+      {
+        type: 'paragraph',
+        text: 'Corporate yoga is focused, practical, and adapted to a workplace. Nobody needs to be flexible. Nobody needs to have done yoga before. It\'s just movement, breathing, and a reminder that you are more than your productivity.'
+      },
+      {
+        type: 'heading',
+        text: 'Why do companies need yoga?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Your body responds to stress by tensing up. We hold tension in our shoulders, necks, and backs without even noticing. We sit all day, and that constant stillness becomes a quiet kind of stress. Headaches arrive. Neck tension becomes chronic. We become tired in a way that sleep doesn\'t quite fix.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Corporate yoga breaks this cycle. It gives your body permission to relax. It reminds your brain that you\'re allowed to be here, at work, without optimizing every second. It\'s a small rebellion against the idea that your worth is measured in productivity.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Plus, research shows that companies offering yoga see fewer sick days, higher morale, and better retention. It\'s not just wellness fluff—it\'s smart business.'
+      },
+      {
+        type: 'heading',
+        text: 'How does it work?'
+      },
+      {
+        type: 'paragraph',
+        text: 'A typical session might look like this:'
+      },
+      {
+        type: 'list',
+        items: [
+          '5 minutes of focused breathing to lower stress',
+          '10–15 minutes of gentle stretching for shoulders, neck, and back',
+          '5–10 minutes of calm movement or rest',
+          'Optional: 5 minutes of reflection or simply being present together'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'Many companies offer these sessions at the office or online via Teams or Zoom. It might be once a week, twice a week, or whenever stress peaks. Whatever rhythm works for your team is the right choice.'
+      },
+      {
+        type: 'heading',
+        text: 'Which companies already offer yoga?'
+      },
+      {
+        type: 'paragraph',
+        text: 'In recent years, companies from tech startups to major multinationals have begun offering yoga as part of their wellness strategy. It\'s no longer exotic—it\'s becoming standard in Stockholm and growing everywhere.'
+      },
+      {
+        type: 'heading',
+        text: 'What do you get out of it?'
+      },
+      {
+        type: 'paragraph',
+        text: 'People report:'
+      },
+      {
+        type: 'list',
+        items: [
+          'Less tension in shoulders and neck',
+          'A clearer head and fewer headaches',
+          'A feeling of being more connected to their body',
+          'Less stress during the workday',
+          'A quiet understanding that rest isn\'t laziness—it\'s necessary'
+        ]
+      },
+      {
+        type: 'heading',
+        text: 'FAQ'
+      },
+      {
+        type: 'paragraph',
+        text: '**How long is a typical session?** Between 15 and 45 minutes, depending on what your team needs. Many start with 20 minutes on Friday mornings.\n\n**Can we do it on Teams?** Absolutely. Yoga works well online.\n\n**What does it cost?** From around 3,500–5,900 SEK per month for weekly sessions.\n\n**Who can do yoga?** Everyone. It doesn\'t matter if you\'re flexible. You just need to show up for 20 minutes and breathe.\n\n**Do we need any equipment?** Nope. A yoga mat is nice-to-have but not necessary.'
+      },
+      {
+        type: 'paragraph',
+        text: '**Interested in trying corporate yoga for your team?** I offer both regular weekly sessions and one-off events for kickoffs, conferences, or summer closures. I can tailor everything to your team\'s schedule and needs—on-site or online via Teams.'
+      }
+    ]
+  },
+  {
+    slug: 'vad-ar-foretagsmeditiation',
+    title: 'Vad är företagsmeditiation? — Fokus och lugn på jobbet',
+    metaDescription: 'Företagsmeditiation hjälper anställda att slappna av och fokusera. Lär dig skillnaden mellan yoga och meditation, och hur det fungerar på arbetsplatsen.',
+    publishDate: '2026-06-02',
+    readingTime: '7 min',
+    category: 'Företag & Konferens',
+    excerpt: 'Meditation på jobbet är andningsövningar och guidad stillhet. Kort, praktisk, och vetenskapligt bevisat att reducera stress och förbättra fokus.',
+    language: 'sv',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Läs mer om yoga och meditation',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'what-is-workplace-meditation', label: 'What Is Workplace Meditation? (English)' },
+      { slug: 'vad-ar-foretagsyoga', label: 'Vad är företagsyoga?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Meditiation är ett ord som kan få människor att skrämma upp. De tänker på munkar i grottor eller yogis på bergstopp. Men företagsmeditiation är något helt annat—och mycket mer praktiskt.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det är två minuter med slutna ögon innan mötet. Det är en guided andningsövning när stressen stiger. Det är en möjlighet att pausera hjärnan mitt i arbetsdagen.'
+      },
+      {
+        type: 'heading',
+        text: 'Skilnaden mellan yoga och meditiation'
+      },
+      {
+        type: 'paragraph',
+        text: 'Många tror att yoga och meditiation är samma sak. De är inte.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Yoga är rörelse—stretching, andning, och förflyttning av din kropp genom utrymme. Det är aktivt. Meditiation är vila—fokusering, andning, och en mentalt fokusering på en sak. Det är lugn.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Företagsmeditiation är kort, guidad, och fokuserad. Inte transcendental meditation där du sitter i timmar. Det är andningsövningar, guidemede visualiseringar, och body scans som tar 5–15 minuter.'
+      },
+      {
+        type: 'heading',
+        text: 'Hur fungerar det?'
+      },
+      {
+        type: 'paragraph',
+        text: 'En typisk session kan se ut så här:'
+      },
+      {
+        type: 'list',
+        items: [
+          'Du sitter bekvämt (på stol, matta, eller vart du vill)',
+          'Instruktören guidar dig genom en andningsöving eller visualisering',
+          'Du fokuserar på dina andningar, eller en mantra, eller känslan av att vara här',
+          'Sessionen slutar lugnt'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'Det är inte magiskt. Det är neurovetenskap. Din nervösa system har två lägen: stress (sympatisk) och vila (parasympatisk). Meditiation växler dig från stress till vila.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför behöver arbetsplatser meditiation?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Arbetsplatser är stressiga. Mejl, möten, deadlines, och förväntningar skapar en konstant buzz av aktivitet. Din hjärna aldrig helt av. Din kropp aldrig helt slappnar av.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Meditiation bryter denna cykel. Även två minuter av guidad andning kan sänka din pulsslagsfrekvens, minska kortisolnivåer, och ge din hjärna en paus.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Forskning visar att medarbetare som praktiserar meditiation är mer fokuserade och produktiva, har mindre ångest och depression, sover bättre, och är mindre benägna att sluta från sitt jobb.'
+      },
+      {
+        type: 'heading',
+        text: 'FAQ'
+      },
+      {
+        type: 'paragraph',
+        text: '**Hur länge tar en meditiation session?** Från 2 minuter upp till 20 minuter. De flesta företag startar med 10–15 minuter.\n\n**Kan vi göra det på Teams?** Ja, helt perfekt. Meditiation fungerar faktiskt bättre online än yoga.\n\n**Vad kostar det?** Meditiation är ofta en del av ett större wellness-paket, eller kan bokas separat. Ungefär samma som yoga.\n\n**Fungerar det verkligen?** Ja. Forskningen är klar: meditiation reducerar stress och förbättrar fokus.'
+      },
+      {
+        type: 'paragraph',
+        text: '**Är du intresserad av att introducera meditiation på din arbetsplats?** Jag erbjuder både korta pausmeditationer och längre guidemedde sessioner. Vi kan skapa ett program som passar ditt teams schema.'
+      }
+    ]
+  },
+  {
+    slug: 'what-is-workplace-meditation',
+    title: 'What Is Workplace Meditation? Guided Breathing for Focus & Calm',
+    metaDescription: 'Workplace meditation helps employees manage stress and improve focus. Discover how 10-minute guided sessions reduce anxiety and boost productivity.',
+    publishDate: '2026-06-02',
+    readingTime: '7 min',
+    category: 'Expat & English',
+    excerpt: 'Meditation at work is breathing exercises and guided stillness. Short, practical, and scientifically proven to reduce stress and improve focus.',
+    language: 'en',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Learn more about yoga & meditation',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'vad-ar-foretagsmeditiation', label: 'Vad är företagsmeditiation? (Swedish)' },
+      { slug: 'what-is-corporate-yoga', label: 'What Is Corporate Yoga?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Meditation is a word that can make people nervous. They think of monks in caves or yogis on mountaintops. But workplace meditation is something completely different—and much more practical.'
+      },
+      {
+        type: 'paragraph',
+        text: 'It\'s two minutes with your eyes closed before a meeting. It\'s a guided breathing exercise when stress rises. It\'s a chance to pause your brain in the middle of your workday.'
+      },
+      {
+        type: 'heading',
+        text: 'The difference between yoga and meditation'
+      },
+      {
+        type: 'paragraph',
+        text: 'Many people think yoga and meditation are the same thing. They\'re not.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Yoga is movement—stretching, breathing, and moving your body through space. It\'s active. Meditation is rest—focus, breathing, and mental concentration on one thing. It\'s calm.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Workplace meditation is short, guided, and focused. Not transcendental meditation where you sit for hours. It\'s breathing exercises, guided visualizations, and body scans that take 5–15 minutes.'
+      },
+      {
+        type: 'heading',
+        text: 'How does it work?'
+      },
+      {
+        type: 'paragraph',
+        text: 'A typical session might look like this:'
+      },
+      {
+        type: 'list',
+        items: [
+          'You sit comfortably (on a chair, mat, or wherever you want)',
+          'An instructor guides you through a breathing exercise or visualization',
+          'You focus on your breath, or a mantra, or the sensation of being here',
+          'The session ends peacefully'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'It\'s not magic. It\'s neuroscience. Your nervous system has two modes: stress (sympathetic) and rest (parasympathetic). Meditation switches you from stress to rest.'
+      },
+      {
+        type: 'heading',
+        text: 'Why do workplaces need meditation?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Workplaces are stressful. Emails, meetings, deadlines, and expectations create a constant buzz of activity. Your brain never fully turns off. Your body never fully relaxes.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Meditation breaks this cycle. Even two minutes of guided breathing can lower your heart rate, decrease cortisol levels, and give your brain a rest.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Research shows that employees who practice meditation are more focused and productive, have less anxiety and depression, sleep better, and are less likely to leave their job.'
+      },
+      {
+        type: 'heading',
+        text: 'FAQ'
+      },
+      {
+        type: 'paragraph',
+        text: '**How long is a meditation session?** From 2 minutes to 20 minutes. Most companies start with 10–15 minutes.\n\n**Can we do it on Teams?** Yes, absolutely. Meditation actually works better online than yoga.\n\n**What does it cost?** Meditation is often part of a larger wellness package, or can be booked separately. About the same as yoga.\n\n**Does it actually work?** Yes. The research is clear: meditation reduces stress and improves focus.'
+      },
+      {
+        type: 'paragraph',
+        text: '**Interested in introducing meditation at your workplace?** I offer both short pause meditations and longer guided sessions. We can create a program that fits your team\'s schedule.'
+      }
+    ]
+  },
+  {
+    slug: 'yoga-for-utbrandhet',
+    title: 'Yoga för utbrändhet — Kan det verkligen hjälpa?',
+    metaDescription: 'Utbrändhet är reellt, och yoga kan vara del av lösningen. Läs om hur yoga påverkar nervös systemet och varför återhämtning är en prestandastrategi.',
+    publishDate: '2026-06-02',
+    readingTime: '9 min',
+    category: 'Företag & Konferens',
+    excerpt: 'Yoga kan inte fixa utbrändhet, men det kan vara en kritisk del av att komma tillbaka från det. Läs om nervös system, återhämtning, och vilken yoga som faktiskt hjälper.',
+    language: 'sv',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Läs mer om yoga för återhämtning',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'yoga-burnout-recovery-performance', label: 'Can Yoga Help Prevent Burnout? (English)' },
+      { slug: 'aterhämtning-prestanda-strategi', label: 'Varför är återhämtning viktigt?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Utbrändhet är inte en myt. Det är en reell, medicinskt erkänd tillstånd där din kropp och hjärna är helt uttömda efter långvarig stress. Du kan vara deprimerad, helt utan energi, eller både och.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Du kanske undrar: kan yoga verkligen lösa något som allvarligt? Enkelt svar: yoga kan inte "fixa" utbrändhet. Men det kan vara en kritisk del av att komma tillbaka från det.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad är utbrändhet egentligen?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Utbrändhet är när din allostatiska belastning—mängden stress din kropp kan hantera—överskrids under lång tid. Det är inte en dålig dag. Det är månader eller år av överbelastning.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Symptom inkluderar: totalt trötthet som sömn inte löser, likgiltighet för saker du brukade älska, kronisk irritabilitet eller ångest, fysiska symptom, och en känsla av att bara ha ingenting kvar att ge.'
+      },
+      {
+        type: 'heading',
+        text: 'Hur påverkar stress din nervösa system?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Din nervösa system har två lägen: Sympatisk (Stress) - fight, flight, or freeze. Din hjärta slår snabbare, din andning är grund, din kropp är beredd på fara. Och Parasympatisk (Vila) - rest and digest. Din hjärta lugnar ner, din andning blir djup, din kropp läker och återhämtar sig.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Utbränd är när din kropp är fast i sympatisk läge. Du kan inte slappna av. Du kan inte vila. Du kan inte läka.'
+      },
+      {
+        type: 'heading',
+        text: 'Hur hjälper yoga?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Yoga—särskilt yogaövningar fokuserade på andning och stillhet—växlar din nervösa system från sympatisk till parasympatisk. Det gör det genom: andning (långsam, djup andning signalerar säkerhet), rörelse (mild stretching löser spänning), och stillhet (vila är tillåten).'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det är inte psykologiskt. Det är fysiologisk. Din vagala nerv svarar direkt på andningsmönster och rörelse.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad kan yoga inte göra?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Yoga kan inte fixa dålig ledning eller en psykotoxisk arbetsplats. Det kan inte ersätta terapi eller medicinsk behandling. Om utbrändhet kommer från ett giftigt arbetsmiljö, behöver du också förändra arbetsplatsen—eller lämna den. Men yoga kan vara en värdefull del av att komma tillbaka när allt annat är på plats.'
+      },
+      {
+        type: 'heading',
+        text: 'FAQ'
+      },
+      {
+        type: 'paragraph',
+        text: '**Hur ofta behöver jag göra yoga?** 4–5 gånger per vecka, minst. Några veckor innan du märker skillnaden.\n\n**Kan jag göra yoga hemma?** Ja, helt bra. Många föredrar det när de är utbrända.\n\n**Vilken typ av yoga är bäst?** Lugn yoga fokuserad på andning, inte Power Yoga.\n\n**Ersätter yoga terapi?** Nej. Använd båda.\n\n**Hur lång tid innan jag känner mig bättre?** Några veckor för förändring. Några månader för att återhämta sig riktigt.'
+      }
+    ]
+  },
+  {
+    slug: 'yoga-burnout-recovery-performance',
+    title: 'Can Yoga Help Prevent Burnout? Recovery as a Performance Strategy',
+    metaDescription: 'Burnout is serious. Learn how yoga supports nervous system recovery and why treating recovery as a strategic investment boosts performance.',
+    publishDate: '2026-06-02',
+    readingTime: '9 min',
+    category: 'Expat & English',
+    excerpt: 'Yoga can\'t fix burnout, but it can be a critical part of coming back from it. Learn about the nervous system, recovery, and which yoga actually helps.',
+    language: 'en',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Learn more about yoga for recovery',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'yoga-for-utbrandhet', label: 'Yoga för utbrändhet (Swedish)' },
+      { slug: 'recovery-performance-strategy-science', label: 'Why Recovery Matters for Performance' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Burnout is not a myth. It\'s a real, medically recognized condition where your body and brain are completely exhausted from prolonged stress. You might be depressed, utterly depleted, or both.'
+      },
+      {
+        type: 'paragraph',
+        text: 'You might wonder: can yoga really solve something as serious as burnout? Simple answer: yoga can\'t "fix" burnout. But it can be a critical part of coming back from it.'
+      },
+      {
+        type: 'heading',
+        text: 'What is burnout, really?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Burnout is when your allostatic load—the amount of stress your body can handle—is exceeded over a long period. It\'s not a bad day. It\'s months or years of overload.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Symptoms include: total exhaustion that sleep doesn\'t fix, apathy for things you used to love, chronic irritability or anxiety, physical symptoms, and a feeling of having nothing left to give.'
+      },
+      {
+        type: 'heading',
+        text: 'How does stress affect your nervous system?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Your nervous system has two modes: Sympathetic (Stress) - fight, flight, or freeze. Your heart pounds, breathing is shallow, body is ready for danger. And Parasympathetic (Rest) - rest and digest. Heart slows, breathing deepens, body heals.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Burnout is when your body gets stuck in sympathetic mode. You can\'t relax. You can\'t rest. You can\'t heal.'
+      },
+      {
+        type: 'heading',
+        text: 'How does yoga help?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Yoga—particularly yoga practices focused on breathing and stillness—switches your nervous system from sympathetic to parasympathetic. It does this through: breathing (slow, deep breathing signals safety), movement (gentle stretching releases tension), and stillness (rest is allowed).'
+      },
+      {
+        type: 'paragraph',
+        text: 'It\'s not psychological. It\'s physiological. Your vagus nerve responds directly to breathing patterns and movement.'
+      },
+      {
+        type: 'heading',
+        text: 'What yoga can\'t do'
+      },
+      {
+        type: 'paragraph',
+        text: 'Yoga can\'t fix bad leadership or a toxic workplace. It can\'t replace therapy or medical treatment. If burnout comes from a toxic work environment, you need to change the workplace—or leave it. But yoga can be a valuable part of coming back when everything else is in place.'
+      },
+      {
+        type: 'heading',
+        text: 'FAQ'
+      },
+      {
+        type: 'paragraph',
+        text: '**How often do I need yoga?** 4–5 times per week, minimum. A few weeks before you notice a shift.\n\n**Can I do it at home?** Yes. Many prefer it when burned out.\n\n**What type of yoga is best?** Gentle yoga focused on breathing, not Power Yoga.\n\n**Does yoga replace therapy?** No. Use both.\n\n**How long before I feel better?** A few weeks to notice a shift. A few months to truly recover.'
+      }
+    ]
+  },
+  {
+    slug: 'forebygga-utbrandhet-jobbet',
+    title: 'Hur förebygger man utbrändhet på jobbet? — 7 praktiska steg',
+    metaDescription: 'Förebygga utbrändhet innan det händer. Lär dig vad arbetsgivare kan göra, från pauskultur till yoga och återhämtning.',
+    publishDate: '2026-06-02',
+    readingTime: '10 min',
+    category: 'Företag & Konferens',
+    excerpt: 'Utbrändhet är något du förebygger innan det händer. Här är 7 praktiska steg för ledare och HR-chefer för att skapa en mer hållbar arbetskultur.',
+    language: 'sv',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Läs mer om företagsyoga',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'prevent-workplace-burnout-7-strategies', label: 'How to Prevent Workplace Burnout? (English)' },
+      { slug: 'yoga-for-utbrandhet', label: 'Yoga för utbrändhet' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Utbrändhet är något du förebygger innan det händer. Inte efteråt. Det verkar uppenbart, men många företag väntar tills en nyckelperson kollapsar innan de börjar ta mental hälsa på allvar. Det är för sent då.'
+      },
+      {
+        type: 'heading',
+        text: '7 praktiska steg för att förebygga utbrändhet'
+      },
+      {
+        type: 'subheading',
+        text: '1. Skapa en pauskultur (inte bara på papper)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Många företag säger "ta en paus när du behöver det" men signalerna säger något annat. Skydda lunchtider, stäng av mejl efter 17:00, normalisera semester utan skuld, förbyd möten på vissa tider.'
+      },
+      {
+        type: 'subheading',
+        text: '2. Ge människor autonomi'
+      },
+      {
+        type: 'paragraph',
+        text: 'Stress ökar när folk inte kan kontrollera sitt eget arbete. Låt folk bestämma hur de arbetar, minimera onödiga möten, lita på dina anställda, ge flexibilitet.'
+      },
+      {
+        type: 'subheading',
+        text: '3. Reducera bullriga möten'
+      },
+      {
+        type: 'paragraph',
+        text: 'Möten är produktivitetsmördare. Halvera möten, gör dem kortare, ha mötesfria dagar, gör så många asynkrona som möjligt.'
+      },
+      {
+        type: 'subheading',
+        text: '4. Introducera rörelse och andning'
+      },
+      {
+        type: 'paragraph',
+        text: 'Erbjud veckovisa yoga- eller meditationssessioner under arbetstid, gör det frivilligt men normaliserat, kombinera med lugn miljö.'
+      },
+      {
+        type: 'subheading',
+        text: '5. Kolla in på människor—särskilt de högt fungerade'
+      },
+      {
+        type: 'paragraph',
+        text: 'De högt fungerade skapar ofta sitt eget utbrändhet. Ha regelbundna 1-on-1 samtal, fråga hur de mår verkligen, märk överbelastning, normalisera att prata om stress.'
+      },
+      {
+        type: 'subheading',
+        text: '6. Bygg förutsägbarhet in i schemat'
+      },
+      {
+        type: 'paragraph',
+        text: 'Osäkerhet ökar stress. Kommunicera ändringar tidigt, ge tid att anpassa, minska ständig omorganisering, ha tydliga karriärvägar.'
+      },
+      {
+        type: 'subheading',
+        text: '7. Normalisera att säga nej'
+      },
+      {
+        type: 'paragraph',
+        text: 'Om folk aldrig kan säga nej tar de på sig för mycket. Uppmuntra chefer att säga nej, minska "one more thing"-kulturen, visa att du själv säger nej, måla arbetsbelastning.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför yoga och meditiation är en del av lösningen'
+      },
+      {
+        type: 'paragraph',
+        text: 'Yoga och meditiation kan inte fixa dålig ledning. Men de kan ge medarbetare verktyg, signalera att företaget bryr sig, skapa en kultur där återhämtning normaliseras, och ge nervösa systemet paus.'
+      },
+      {
+        type: 'heading',
+        text: 'FAQ'
+      },
+      {
+        type: 'paragraph',
+        text: '**Vad om vi inte kan göra alla dessa ändringar?** Börja med pauskultur och yoga.\n\n**Hur lång tid innan resultat?** En till två månader.\n\n**Vad om utbrändhet redan finns?** Allt det här plus stöd för påverkade.\n\n**Är detta bara HR?** Nej. Ledarskap måste köpa in det.'
+      }
+    ]
+  },
+  {
+    slug: 'prevent-workplace-burnout-7-strategies',
+    title: 'How to Prevent Workplace Burnout — 7 Practical Strategies for HR',
+    metaDescription: 'Burnout prevention starts with company culture. Explore 7 evidence-based strategies, including wellness programs, to create a sustainable workplace.',
+    publishDate: '2026-06-02',
+    readingTime: '10 min',
+    category: 'Expat & English',
+    excerpt: 'Burnout is something you prevent before it happens. Here are 7 practical steps for leaders and HR to create a more sustainable work culture.',
+    language: 'en',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Learn more about corporate yoga',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'forebygga-utbrandhet-jobbet', label: 'Hur förebygger man utbrändhet? (Swedish)' },
+      { slug: 'yoga-burnout-recovery-performance', label: 'Can Yoga Help Prevent Burnout?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Burnout is something you prevent before it happens. Not after. It seems obvious, but many companies wait until a key person collapses before they take mental health seriously. By then, it\'s too late.'
+      },
+      {
+        type: 'heading',
+        text: '7 practical steps to prevent burnout'
+      },
+      {
+        type: 'subheading',
+        text: '1. Create a real pause culture (not just on paper)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Many companies say "take a break when you need it" but signals say otherwise. Protect lunch hours, turn off email after 5 PM, normalize vacation, ban meetings at certain times.'
+      },
+      {
+        type: 'subheading',
+        text: '2. Give people autonomy'
+      },
+      {
+        type: 'paragraph',
+        text: 'Stress increases when people can\'t control their work. Let people decide how they work, minimize unnecessary meetings, trust employees, give flexibility.'
+      },
+      {
+        type: 'subheading',
+        text: '3. Reduce meeting overload'
+      },
+      {
+        type: 'paragraph',
+        text: 'Meetings are productivity killers. Cut meetings in half, make them shorter, create meeting-free days, make as many asynchronous as possible.'
+      },
+      {
+        type: 'subheading',
+        text: '4. Introduce movement and breathing'
+      },
+      {
+        type: 'paragraph',
+        text: 'Offer weekly yoga or meditation sessions during work time, make it voluntary but normalized, pair with quiet spaces and calm environments.'
+      },
+      {
+        type: 'subheading',
+        text: '5. Check in with people—especially the high performers'
+      },
+      {
+        type: 'paragraph',
+        text: 'High performers often create their own burnout. Have regular 1-on-1s, ask how they\'re really doing, notice overload, normalize talking about stress.'
+      },
+      {
+        type: 'subheading',
+        text: '6. Build predictability into the schedule'
+      },
+      {
+        type: 'paragraph',
+        text: 'Uncertainty increases stress. Communicate changes early, give time to adapt, reduce constant reorganizing, have clear career paths.'
+      },
+      {
+        type: 'subheading',
+        text: '7. Normalize saying no'
+      },
+      {
+        type: 'paragraph',
+        text: 'If people never say no, they take on too much. Encourage managers to say no, reduce "one more thing" culture, model it yourself, visualize workload.'
+      },
+      {
+        type: 'heading',
+        text: 'Why yoga and meditation are part of the solution'
+      },
+      {
+        type: 'paragraph',
+        text: 'Yoga and meditation can\'t fix bad leadership. But they can give employees tools, signal that the company cares, create a culture where recovery is normalized, and give the nervous system a break.'
+      },
+      {
+        type: 'heading',
+        text: 'FAQ'
+      },
+      {
+        type: 'paragraph',
+        text: '**What if we can\'t make all changes?** Start with pause culture and yoga.\n\n**How long before results?** One to two months.\n\n**What if burnout already exists?** All of this plus support for affected people.\n\n**Is this just HR?** No. Leadership needs to buy in.'
+      }
+    ]
+  },
+  {
+    slug: 'aterhämtning-prestanda-strategi',
+    title: 'Varför är återhämtning viktig för prestationen? — Vetenskap bakom vilokultur',
+    metaDescription: 'Återhämtning är inte fadd—det är en prestandastrategi. Läs om allostastisk belastning, adaptiv kapacitet, och varför vila ökar produktiviteten.',
+    publishDate: '2026-06-02',
+    readingTime: '10 min',
+    category: 'Företag & Konferens',
+    excerpt: 'Människor som tar tid för återhämtning presterar faktiskt bättre. Läs om nervös systemvetenskap och varför vila är en investering, inte en lyxus.',
+    language: 'sv',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Läs mer om yoga för prestanda',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'recovery-performance-strategy-science', label: 'Why Recovery Matters for Performance (English)' },
+      { slug: 'yoga-for-utbrandhet', label: 'Yoga för utbrändhet' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Det finns en myt som lever på många arbetsplatser: att mer arbete = bättre resultat. Det är inte sant. Människor som tar tid för återhämtning presterar bättre, är mer kreativa, gör bättre beslut, och stannar längre än de som aldrig vilar.'
+      },
+      {
+        type: 'heading',
+        text: 'Allostatisk belastning: vetenskap bakom vila'
+      },
+      {
+        type: 'paragraph',
+        text: 'Din kropp är designad för att hantera stress—under en kort tid. Men om stenen aldrig går bort—om du aldrig får vila—kommer din kropp aldrig att återhämta sig. Kortisolnivåer förblir höga. Inflammation ökar. Din hjärna och kropp börjar slitas ner. Denna konstanta belastning kallas allostatisk belastning.'
+      },
+      {
+        type: 'heading',
+        text: 'Anpassning och återhämtningscykler'
+      },
+      {
+        type: 'paragraph',
+        text: 'Din kropp behöver anpassningscykler: ansträngning (du arbetar, stressar), återhämtning (du vilar, sover, din kropp läker). Upprepa detta, du blir bättre. Ta bort återhämtningen, du blir uttömd.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför "hustle culture" inte fungerar'
+      },
+      {
+        type: 'paragraph',
+        text: 'Du har sett memes om 4 timmar sömn eller 4 AM-vakningar. Det är lögniskt. Studier visar att folk med 5 timmar sömn eller mindre gör dåliga beslut, uttömda arbetare är mindre produktiva, kreativitet kräver vila, och långvarig stress minskar IQ.'
+      },
+      {
+        type: 'heading',
+        text: 'Vilken återhämtning faktiskt behövs'
+      },
+      {
+        type: 'paragraph',
+        text: 'Äkta återhämtning kräver: tillräcklig sömn (7–9 timmar varje natt), fysisk rörelse (yoga, promenader), mental vila (utan arbetet), social närvaro, tid i naturen, och andning/stillhet.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför företag inte tar det på allvar'
+      },
+      {
+        type: 'paragraph',
+        text: 'De som prioriterar "alltid-på"-kultur får ofta värsta långsiktiga resultat. Du tjänar veckor av extra produktivitet och förlorar folk till utbrändhet. Företag som prioriterar återhämtning ser högre retention och överraskande nog, bättre resultat.'
+      },
+      {
+        type: 'heading',
+        text: 'Praktisk guide: återhämtning som strategi'
+      },
+      {
+        type: 'list',
+        items: [
+          'Skydda pauspauser—förbjud möten under lunch, mejl efter 17:00',
+          'Uppmuntra sömn—prata om sömnens vikt, gör det okej att inte jobba på kvällarna',
+          'Normalisera rörelse—erbjud yoga/meditation, uppmuntra promenader',
+          'Reducera konstant uppkoppling—no email policy, mötesfria dagar',
+          'Mäta resultat—sjukfrånvaro före/efter, fråga hur folk mår'
+        ]
+      },
+      {
+        type: 'heading',
+        text: 'FAQ'
+      },
+      {
+        type: 'paragraph',
+        text: '**Betyder detta mindre arbete?** Nej. Det betyder smartare arbete—med vila inbyggd.\n\n**Är det bara för höga-stresjobben?** Nej. Alla jobben blir bättre.\n\n**Vad om chefen inte köper in?** Börja själv. Ta pauser, sov, andas. Visa resultaten.\n\n**Hur länge innan resultat?** En till två månader. Sex månader innan kultursförändring.'
+      }
+    ]
+  },
+  {
+    slug: 'recovery-performance-strategy-science',
+    title: 'Why Recovery Is a Performance Strategy — The Science of Sustainable Productivity',
+    metaDescription: 'Recovery is not a luxury. Learn why nervous system rest increases productivity, focus, and long-term performance in high-functioning teams.',
+    publishDate: '2026-06-02',
+    readingTime: '10 min',
+    category: 'Expat & English',
+    excerpt: 'People who take time to recover actually perform better. Learn about nervous system science and why rest is an investment, not a luxury.',
+    language: 'en',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Learn more about yoga for performance',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'aterhämtning-prestanda-strategi', label: 'Varför är återhämtning viktigt? (Swedish)' },
+      { slug: 'yoga-burnout-recovery-performance', label: 'Can Yoga Help Prevent Burnout?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'There\'s a myth that lives on many workplaces: more work = better results. It\'s not true. People who take time to recover perform better, are more creative, make better decisions, and stay in their jobs longer than those who never rest.'
+      },
+      {
+        type: 'heading',
+        text: 'Allostatic load: the science of why rest is necessary'
+      },
+      {
+        type: 'paragraph',
+        text: 'Your body is designed to handle stress—for a short time. But if the threat never goes away—if you never get to rest—your body never recovers. Cortisol levels stay high. Inflammation increases. Your brain and body start to wear down. This constant pressure is called allostatic load.'
+      },
+      {
+        type: 'heading',
+        text: 'Adaptation and recovery cycles'
+      },
+      {
+        type: 'paragraph',
+        text: 'Your body needs adaptation cycles: stress (you work, push yourself), recovery (you rest, sleep, heal). Repeat this, you get better. Remove recovery, you get depleted.'
+      },
+      {
+        type: 'heading',
+        text: 'Why "hustle culture" is the opposite of performance'
+      },
+      {
+        type: 'paragraph',
+        text: 'You\'ve seen memes about 4 hours of sleep or 4 AM wake-ups. It\'s a lie. Studies show people with 5 hours or less sleep make fewer right decisions, exhausted workers are less productive, creativity requires rest, and prolonged stress temporarily lowers IQ.'
+      },
+      {
+        type: 'heading',
+        text: 'What real recovery actually looks like'
+      },
+      {
+        type: 'paragraph',
+        text: 'True recovery requires: adequate sleep (7–9 hours every night), physical movement (yoga, walks), mental rest (no work thoughts), social presence, time in nature, and breathing/stillness.'
+      },
+      {
+        type: 'heading',
+        text: 'Why many companies don\'t prioritize recovery'
+      },
+      {
+        type: 'paragraph',
+        text: 'Those who value "always-on" culture often get the worst long-term results. It\'s a false economy: you gain a few weeks of extra productivity and lose people to burnout. Companies that prioritize recovery see higher retention and, surprisingly, better results.'
+      },
+      {
+        type: 'heading',
+        text: 'Practical guide: recovery as performance strategy'
+      },
+      {
+        type: 'list',
+        items: [
+          'Protect lunch breaks—ban meetings, no emails after 5 PM',
+          'Encourage sleep as priority—talk about sleep, make it okay to not work evenings',
+          'Normalize movement and breathing—offer yoga/meditation, encourage walks',
+          'Reduce constant connection—no email after 5 PM, meeting-free days',
+          'Measure results—track sick days, ask how people are doing'
+        ]
+      },
+      {
+        type: 'heading',
+        text: 'FAQ'
+      },
+      {
+        type: 'paragraph',
+        text: '**Does this mean work less?** Not necessarily. It means work smarter—with rest built in.\n\n**Is this only for high-stress jobs?** No. Even low-stress jobs improve.\n\n**What if my boss doesn\'t buy in?** Start with yourself. Take breaks, sleep, breathe. Show the results.\n\n**How long before results?** One to two months. Six months before obvious culture shift.'
+      }
+    ]
+  },
+  // Phase 2: B2B Decision-Maker & Program-Specific Blog Posts (5 pairs = 10 posts)
+  {
+    slug: 'yoga-teambuilding-funkar',
+    title: 'Yoga för teambuilding — Funkar det verkligen? (Ja, här är varför)',
+    metaDescription: 'Teambuilding genom yoga är inte bara nice-to-have. Läs om hur gemensam yoga ökar psykologisk säkerhet, förtroende och sammanhållning.',
+    publishDate: '2026-06-03',
+    readingTime: '7 min',
+    category: 'Företag & Konferens',
+    excerpt: 'Yoga för teambuilding funkar. Det skapar något få andra aktiviteter skapar: en gemensam, sårbar, icke-konkurrerande upplevelse.',
+    language: 'sv',
+    relatedServiceHref: '/tjanster/foretagsyoga-event',
+    relatedServiceLabel: 'Boka yoga för teambuilding',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'yoga-team-building-does-it-work', label: 'Does Yoga Help Team Building? (English)' },
+      { slug: 'varfor-erbjuda-yoga-anstallda', label: 'Varför erbjuda yoga till anställda?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Du har hört talas om yoga som teambuilding. Du kanske tror det är en av dessa wellness-saker som är nice-to-have men inte faktiskt gör någon skillnad. Du tar fel.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad gör bra teambuilding egentligen?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Bra teambuilding skapar tre saker: psykologisk säkerhet, tillit, och gemensam upplevelse. Yoga skapar alla tre.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför yoga skapar djupare anslutning'
+      },
+      {
+        type: 'paragraph',
+        text: 'Yoga är ingen konkurrenssport. Det finns ingen vinnare eller förlorare. Alla är på samma nivå. Det bygger verklig tillit.'
+      },
+      {
+        type: 'heading',
+        text: 'FAQ'
+      },
+      {
+        type: 'paragraph',
+        text: '**Hur långt är en session?** 30-45 minuter.\n\n**Vad kostar det?** Från omkring 2 500-4 000 kr.\n\n**Kommer folk vilja göra det?** Ja. De flesta uppskattar gemensam aktivitet.'
+      }
+    ]
+  },
+  {
+    slug: 'yoga-team-building-does-it-work',
+    title: 'Does Yoga Help Team Building? Yes — Here\'s the Psychology',
+    metaDescription: 'Yoga team-building isn\'t just wellness fluff. Learn why shared practice increases psychological safety, trust, and genuine team cohesion.',
+    publishDate: '2026-06-03',
+    readingTime: '7 min',
+    category: 'Expat & English',
+    excerpt: 'Yoga for team-building works. It creates something few other activities create: a shared, vulnerable, non-competitive experience.',
+    language: 'en',
+    relatedServiceHref: '/tjanster/foretagsyoga-event',
+    relatedServiceLabel: 'Book yoga for team-building',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'yoga-teambuilding-funkar', label: 'Yoga för teambuilding (Swedish)' },
+      { slug: 'why-offer-yoga-employees-hr', label: 'Why Offer Yoga to Employees?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'You\'ve heard about yoga for team-building. You might think it\'s one of those wellness things that\'s nice-to-have but doesn\'t actually make a difference. You\'re wrong.'
+      },
+      {
+        type: 'heading',
+        text: 'What does good team-building actually do?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Good team-building creates three things: psychological safety, trust, and shared experience. Yoga creates all three.'
+      },
+      {
+        type: 'heading',
+        text: 'Why yoga creates deeper connection'
+      },
+      {
+        type: 'paragraph',
+        text: 'Yoga is not competitive. There\'s no winner or loser. Everyone is on the same level. That vulnerability builds real trust.'
+      },
+      {
+        type: 'heading',
+        text: 'FAQ'
+      },
+      {
+        type: 'paragraph',
+        text: '**How long is a session?** 30-45 minutes.\n\n**What does it cost?** From around 2,500-4,000 SEK.\n\n**Will people actually want to do it?** Yes. Most people appreciate shared activity.'
+      }
+    ]
+  },
+  {
+    slug: 'varfor-erbjuda-yoga-anstallda',
+    title: 'Varför erbjuda yoga till anställda? — Business case för HR',
+    metaDescription: 'Yoga för anställda är en investering i hälsa, retention, och produktivitet. Läs om ROI, studier, och vad framtagna företag redan gör.',
+    publishDate: '2026-06-03',
+    readingTime: '8 min',
+    category: 'Företag & Konferens',
+    excerpt: 'Yoga för anställda är smart business. Det reducerar sjukfrånvaro, ökar retention, och förbättrar produktivitet.',
+    language: 'sv',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Läs mer om företagsyoga',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'why-offer-yoga-employees-hr', label: 'Why Offer Yoga to Employees? (English)' },
+      { slug: 'yoga-teambuilding-funkar', label: 'Yoga för teambuilding' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Du funderar på om yoga för anställda är värt kostnaden. Är det bara en nice-to-have wellness-grej, eller är det faktiskt en smart investering? Enkelt svar: det är en smart investering.'
+      },
+      {
+        type: 'heading',
+        text: 'Business casen för yoga'
+      },
+      {
+        type: 'paragraph',
+        text: 'Retention: 10-20% högre retention. Sjukfrånvaro: 20-30% färre sjukdagar. Produktivitet: 15% mer produktiv. Moral: högre jobbtillfredsställelse.'
+      },
+      {
+        type: 'heading',
+        text: 'ROI räknandet'
+      },
+      {
+        type: 'paragraph',
+        text: 'Kostnad: 5 000 kr per månad. Sparande från minskad sjukfrånvaro: redan break-even. Sparande från bättre retention: flera gånger över kostnaden.'
+      },
+      {
+        type: 'heading',
+        text: 'FAQ'
+      },
+      {
+        type: 'paragraph',
+        text: '**Hur implementerar man det?** Börja med en försöksperiod på 3-4 veckor.\n\n**Måste alla delta?** Nej, gör det frivilligt.\n\n**Vilken yoga är bäst?** Lugn, fokuserad yoga.'
+      }
+    ]
+  },
+  {
+    slug: 'why-offer-yoga-employees-hr',
+    title: 'Why Offer Yoga to Employees? The Business Case for Wellness',
+    metaDescription: 'Employee yoga programs reduce turnover, sick days, and stress while boosting morale. Learn the business case and how to get started.',
+    publishDate: '2026-06-03',
+    readingTime: '8 min',
+    category: 'Expat & English',
+    excerpt: 'Yoga for employees is smart business. It reduces sick days, increases retention, and improves productivity.',
+    language: 'en',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Learn more about corporate yoga',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'varfor-erbjuda-yoga-anstallda', label: 'Varför erbjuda yoga? (Swedish)' },
+      { slug: 'yoga-team-building-does-it-work', label: 'Does Yoga Help Team Building?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'You\'re wondering if employee yoga is worth the cost. Is it just a nice-to-have wellness thing, or is it actually a smart investment? Simple answer: it\'s a smart investment.'
+      },
+      {
+        type: 'heading',
+        text: 'The business case for yoga'
+      },
+      {
+        type: 'paragraph',
+        text: 'Retention: 10-20% higher retention. Sick days: 20-30% fewer sick days. Productivity: 15% more productive. Morale: higher job satisfaction.'
+      },
+      {
+        type: 'heading',
+        text: 'ROI calculation'
+      },
+      {
+        type: 'paragraph',
+        text: 'Cost: 5,000 SEK per month. Savings from reduced sick days: already break-even. Savings from better retention: many times over the cost.'
+      },
+      {
+        type: 'heading',
+        text: 'FAQ'
+      },
+      {
+        type: 'paragraph',
+        text: '**How do I implement it?** Start with a 3-4 week trial.\n\n**Does everyone have to participate?** No, make it voluntary.\n\n**What type of yoga is best?** Calm, focused yoga.'
+      }
+    ]
+  },
+  {
+    slug: 'yoga-digital-trotthet-skarmtid',
+    title: 'Yoga för digital trötthet och skärmtid — Arbetsplatsens nya utmaning',
+    metaDescription: 'Skärmtid skapar fysisk och mental trötthet. Lär dig hur yoga hjälper mot nack-, skuldror-, och ögonbesvär — plus mentalt återhämtning.',
+    publishDate: '2026-06-03',
+    readingTime: '7 min',
+    category: 'Företag & Konferens',
+    excerpt: 'Digital trötthet är verkligt. Nackspaänning, ögonbesvär, mental dimma. Yoga hjälper mot allt.',
+    language: 'sv',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Läs mer om yoga för skärmarbetare',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'yoga-screen-fatigue-workplace', label: 'Yoga for Screen Fatigue (English)' },
+      { slug: 'yoga-teambuilding-funkar', label: 'Yoga för teambuilding' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Du sitter vid skärmen 6, 7, eller 8 timmar per dag. Din nacke gör ont. Dina ögon är trötta. Din hjärna känner sig dimmig. Det heter digital trötthet och det är verkligt.'
+      },
+      {
+        type: 'heading',
+        text: 'Vad är digital trötthet?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det är en kombination av ögonbesvär, nackspaänning, mentalt tröghet, och sömnproblem.'
+      },
+      {
+        type: 'heading',
+        text: 'Hur yoga hjälper'
+      },
+      {
+        type: 'paragraph',
+        text: 'För ögonen: ögonrörelse. För nacken: nack-sträckning. För hjärnan: stilla rörelse. För sömnappetiten: reducerad stimulering.'
+      },
+      {
+        type: 'heading',
+        text: 'Praktiska lösningar'
+      },
+      {
+        type: 'paragraph',
+        text: 'Micro-breaks med yoga varje timme, lunch yoga, eller veckovisa sessioner.'
+      }
+    ]
+  },
+  {
+    slug: 'yoga-screen-fatigue-workplace',
+    title: 'Yoga for Screen Fatigue — Relieving Digital Burnout at Work',
+    metaDescription: 'Digital fatigue—eye strain, neck tension, mental exhaustion—is real. Discover how workplace yoga combats screen fatigue and restores focus.',
+    publishDate: '2026-06-03',
+    readingTime: '7 min',
+    category: 'Expat & English',
+    excerpt: 'Digital fatigue is real. Neck tension, eye strain, mental fog. Yoga helps with all of it.',
+    language: 'en',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Learn more about yoga for screen workers',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'yoga-digital-trotthet-skarmtid', label: 'Yoga för digital trötthet (Swedish)' },
+      { slug: 'yoga-team-building-does-it-work', label: 'Does Yoga Help Team Building?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'You\'re staring at a screen 6, 7, or 8 hours a day. Your neck hurts. Your eyes are tired. Your brain feels foggy. It\'s called digital fatigue and it\'s real.'
+      },
+      {
+        type: 'heading',
+        text: 'What is digital fatigue?'
+      },
+      {
+        type: 'paragraph',
+        text: 'It\'s a combination of eye strain, neck tension, mental fog, and sleep problems.'
+      },
+      {
+        type: 'heading',
+        text: 'How yoga helps'
+      },
+      {
+        type: 'paragraph',
+        text: 'For eyes: eye movement. For neck: neck stretching. For brain: stillness. For sleep: reduced stimulation.'
+      },
+      {
+        type: 'heading',
+        text: 'Practical solutions'
+      },
+      {
+        type: 'paragraph',
+        text: 'Micro-breaks with yoga every hour, lunch yoga, or weekly sessions.'
+      }
+    ]
+  },
+  {
+    slug: 'yoga-konferenser-event-agenda',
+    title: 'Yoga för konferenser och event — Agenda planning guide',
+    metaDescription: 'Konferensyoga höjer energi och närvaro under eventen. Lär dig när, hur långt, och hur du integrerar yoga i ditt konferensschema.',
+    publishDate: '2026-06-03',
+    readingTime: '7 min',
+    category: 'Företag & Konferens',
+    excerpt: 'Yoga på konferenser bryter monotonin och höjer energin. Här är en guide för hur du planerar det.',
+    language: 'sv',
+    relatedServiceHref: '/tjanster/foretagsyoga-event',
+    relatedServiceLabel: 'Boka yoga för event',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'yoga-conferences-events-planning', label: 'Yoga at Conferences (English)' },
+      { slug: 'hur-ofta-yoga-foretagsresultat', label: 'Hur ofta behövs yoga?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Du planerar en konferens. Du funderar på yoga. Men var i schemat? Hur länge? Här är en guide.'
+      },
+      {
+        type: 'heading',
+        text: 'Varför yoga på konferenser funkar'
+      },
+      {
+        type: 'paragraph',
+        text: 'Konferenser är långtråkiga. En yoga-session bryter detta och höjer energin eller lugnar folk beroende på vad du behöver.'
+      },
+      {
+        type: 'heading',
+        text: 'Var i schemat?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Första morgon för energi, lunch för mental paus, eftermiddag för andra wind, eller slutet för att lugna folk.'
+      },
+      {
+        type: 'heading',
+        text: 'Längd'
+      },
+      {
+        type: 'paragraph',
+        text: '5-10 minuter micro-yoga, 15-20 minuter lunch yoga, eller 30-45 minuter längre session. De flesta konferenser går för 20-30 minuter.'
+      }
+    ]
+  },
+  {
+    slug: 'yoga-conferences-events-planning',
+    title: 'Yoga at Conferences — Planning Guide for Event Organizers',
+    metaDescription: 'Conference yoga boosts attendee energy and presence. Learn when to schedule it, how long to run, and how to integrate it seamlessly into your agenda.',
+    publishDate: '2026-06-03',
+    readingTime: '7 min',
+    category: 'Expat & English',
+    excerpt: 'Yoga at conferences breaks the monotony and boosts energy. Here\'s a guide for planning it.',
+    language: 'en',
+    relatedServiceHref: '/tjanster/foretagsyoga-event',
+    relatedServiceLabel: 'Book yoga for events',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'yoga-konferenser-event-agenda', label: 'Yoga för konferenser (Swedish)' },
+      { slug: 'how-often-corporate-yoga-results', label: 'How Often Should Companies Offer Yoga?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'You\'re planning a conference. You\'re thinking about yoga. But when in the schedule? How long? Here\'s a guide.'
+      },
+      {
+        type: 'heading',
+        text: 'Why yoga at conferences works'
+      },
+      {
+        type: 'paragraph',
+        text: 'Conferences are draining. A yoga session breaks this and boosts energy or calms people depending on what you need.'
+      },
+      {
+        type: 'heading',
+        text: 'Where in the schedule?'
+      },
+      {
+        type: 'paragraph',
+        text: 'First thing for energy, lunch for mental break, afternoon for second wind, or end to calm people.'
+      },
+      {
+        type: 'heading',
+        text: 'Duration'
+      },
+      {
+        type: 'paragraph',
+        text: '5-10 minutes micro-yoga, 15-20 minutes lunch yoga, or 30-45 minutes longer session. Most conferences run 20-30 minutes.'
+      }
+    ]
+  },
+  {
+    slug: 'hur-ofta-yoga-foretagsresultat',
+    title: 'Hur ofta behövs företagsyoga för resultat? — Frekvens & format',
+    metaDescription: 'Vecklig yoga ger resultat. Läs om optimala frekvenser, format (Teams eller på plats), och vad forskning säger om yoga-vanor.',
+    publishDate: '2026-06-03',
+    readingTime: '8 min',
+    category: 'Företag & Konferens',
+    excerpt: 'Det tar cirka 66 dagar att bygga en vana. Veckovisa yoga-sessioner är den optimala frekvensen för att se resultat.',
+    language: 'sv',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Starta veckovisa yoga-sessioner',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'how-often-corporate-yoga-results', label: 'How Often Should Companies Offer Yoga? (English)' },
+      { slug: 'yoga-for-utbrandhet', label: 'Yoga för utbrändhet' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Du funderar på yoga på jobbet. Hur ofta måste folk göra det för att det ska fungera? Svaret: det beror på vad du vill ha för resultat.'
+      },
+      {
+        type: 'heading',
+        text: 'Vanebildning och yoga'
+      },
+      {
+        type: 'paragraph',
+        text: 'Det tar ungefär 66 dagar att bygga en ny vana. Det är två månader. En gång i veckan under två månader, och folk börjar vilja yoga.'
+      },
+      {
+        type: 'heading',
+        text: 'Veckovisa sessioner (bästa frekvensen)'
+      },
+      {
+        type: 'paragraph',
+        text: 'En till två gånger i veckan, 20-30 minuter. Resultat efter 4-6 veckor. Du ser reducerad stress, bättre fokus, och folk förväntar sig yoga som en vana.'
+      },
+      {
+        type: 'heading',
+        text: 'Remote vs. on-site'
+      },
+      {
+        type: 'paragraph',
+        text: 'Remote via Teams: högre deltagande. On-site: större team-building. Bäst? Mix av båda.'
+      }
+    ]
+  },
+  {
+    slug: 'how-often-corporate-yoga-results',
+    title: 'How Often Should Companies Offer Yoga? Frequency, Format & Results',
+    metaDescription: 'Weekly yoga creates measurable results. Learn the science of habit formation, optimal frequency, and how to structure a sustainable program.',
+    publishDate: '2026-06-03',
+    readingTime: '8 min',
+    category: 'Expat & English',
+    excerpt: 'It takes about 66 days to build a habit. Weekly yoga sessions are the optimal frequency for seeing results.',
+    language: 'en',
+    relatedServiceHref: '/tjanster/foretagsyoga',
+    relatedServiceLabel: 'Start weekly yoga sessions',
+    tableOfContents: true,
+    faqSchema: true,
+    relatedPosts: [
+      { slug: 'hur-ofta-yoga-foretagsresultat', label: 'Hur ofta behövs yoga? (Swedish)' },
+      { slug: 'yoga-burnout-recovery-performance', label: 'Can Yoga Help Prevent Burnout?' },
+    ],
+    content: [
+      {
+        type: 'paragraph',
+        text: 'You\'re thinking about yoga at work. How often does it need to happen for it to actually work? The answer: it depends on what results you want.'
+      },
+      {
+        type: 'heading',
+        text: 'Habit formation and yoga'
+      },
+      {
+        type: 'paragraph',
+        text: 'It takes about 66 days to build a new habit. That\'s two months. Once a week for two months, and people actually start wanting yoga.'
+      },
+      {
+        type: 'heading',
+        text: 'Weekly sessions (the best frequency)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Once to twice per week, 20-30 minutes. Results visible after 4-6 weeks. You see reduced stress, better focus, and people expecting yoga as a habit.'
+      },
+      {
+        type: 'heading',
+        text: 'Remote vs. on-site'
+      },
+      {
+        type: 'paragraph',
+        text: 'Remote via Teams: higher participation. On-site: greater team-building. Best? Mix of both.'
+      }
+    ]
   }
 ];
 
