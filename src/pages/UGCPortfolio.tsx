@@ -8,155 +8,42 @@ const UGCPortfolio = () => {
   const [activeCategory, setActiveCategory] = useState("all");
 
   const categories = [
-    { id: "all", label: "All work" },
-    { id: "beauty", label: "Beauty & Skincare" },
-    { id: "wellness", label: "Wellness & Yoga" },
-    { id: "outdoor", label: "Outdoor & Sport" },
-    { id: "lifestyle", label: "Lifestyle & Home" },
+    { id: "all", label: "All" },
+    { id: "beauty", label: "Beauty" },
+    { id: "wellness", label: "Wellness" },
+    { id: "outdoor", label: "Outdoor" },
+    { id: "lifestyle", label: "Lifestyle" },
   ];
 
   const portfolioItems = [
-    // Beauty & Skincare
-    {
-      id: 1,
-      category: "beauty",
-      type: "image",
-      alt: "La Bruket skincare product styling",
-      placeholder: "Beauty product flat lay - La Bruket",
-    },
-    {
-      id: 2,
-      category: "beauty",
-      type: "image",
-      alt: "Product integration - skincare in natural light",
-      placeholder: "Skincare product in use",
-    },
-    // Wellness & Yoga
-    {
-      id: 3,
-      category: "wellness",
-      type: "image",
-      alt: "Lululemon yoga pants in practice",
-      placeholder: "Yoga apparel - Lululemon",
-    },
-    {
-      id: 4,
-      category: "wellness",
-      type: "image",
-      alt: "Yoga mat high-engagement content",
-      placeholder: "Yoga mat (viral TikTok - high engagement)",
-    },
-    {
-      id: 5,
-      category: "wellness",
-      type: "image",
-      alt: "Yoga lifestyle content",
-      placeholder: "Wellness lifestyle moment",
-    },
-    // Outdoor & Sport
-    {
-      id: 6,
-      category: "outdoor",
-      type: "image",
-      alt: "Running gear and outdoor equipment",
-      placeholder: "Outdoor sport gear flat lay",
-    },
-    {
-      id: 7,
-      category: "outdoor",
-      type: "image",
-      alt: "Outdoor lifestyle integration",
-      placeholder: "Outdoor living - hammock",
-    },
-    // Lifestyle & Home
-    {
-      id: 8,
-      category: "lifestyle",
-      type: "image",
-      alt: "Iris Hantverk dry brush lifestyle",
-      placeholder: "Home wellness product",
-    },
-    {
-      id: 8,
-      category: "lifestyle",
-      type: "image",
-      alt: "Nordic home styling",
-      placeholder: "Lifestyle home moment",
-    },
-    // Add more items as needed
+    { id: 1, category: "beauty", span: "md:col-span-1 md:row-span-1", placeholder: "La Bruket product" },
+    { id: 2, category: "beauty", span: "md:col-span-1 md:row-span-1", placeholder: "Skincare moment" },
+    { id: 3, category: "wellness", span: "md:col-span-1 md:row-span-2", placeholder: "Lululemon yoga" },
+    { id: 4, category: "wellness", span: "md:col-span-2 md:row-span-1", placeholder: "Viral yoga mat (TikTok)" },
+    { id: 5, category: "wellness", span: "md:col-span-1 md:row-span-1", placeholder: "Wellness lifestyle" },
+    { id: 6, category: "outdoor", span: "md:col-span-1 md:row-span-1", placeholder: "Sport gear" },
+    { id: 7, category: "outdoor", span: "md:col-span-1 md:row-span-1", placeholder: "Hammock moment" },
+    { id: 8, category: "lifestyle", span: "md:col-span-2 md:row-span-1", placeholder: "Home wellness" },
+    { id: 9, category: "lifestyle", span: "md:col-span-1 md:row-span-1", placeholder: "Lifestyle moment" },
   ];
 
   const videoExamples = [
-    {
-      id: 1,
-      title: "Product Integration",
-      category: "Skincare",
-      placeholder: "Video placeholder - product demo",
-    },
-    {
-      id: 2,
-      title: "Lifestyle Moment",
-      category: "Wellness",
-      placeholder: "Video placeholder - lifestyle integration",
-    },
-    {
-      id: 3,
-      title: "Natural Styling",
-      category: "Beauty",
-      placeholder: "Video placeholder - beauty product",
-    },
-    {
-      id: 4,
-      title: "Outdoor Integration",
-      category: "Sport",
-      placeholder: "Video placeholder - outdoor gear",
-    },
-  ];
-
-  const workflow = [
-    {
-      step: 1,
-      title: "Brief & Consultation",
-      description: "We discuss your brand, goals, product, and vision. Some clients have a specific brief; others prefer creative freedom.",
-    },
-    {
-      step: 2,
-      title: "Concept & Styling",
-      description: "I develop the concept, mood, and styling aligned with your brand and my Nordic aesthetic.",
-    },
-    {
-      step: 3,
-      title: "Filming & Editing",
-      description: "Content is filmed and edited to your specifications. I focus on authentic, natural integration.",
-    },
-    {
-      step: 4,
-      title: "Revisions",
-      description: "One round of adjustments if needed to ensure you're completely happy.",
-    },
-    {
-      step: 5,
-      title: "Final Delivery",
-      description: "Ready-to-use content delivered across your channels.",
-    },
-  ];
-
-  const testimonials = [
-    {
-      quote: "Camilla creates content that feels effortlessly authentic. Her styling and eye for detail transformed how we present our products.",
-      author: "Brand Partner",
-    },
-    {
-      quote: "Working with Camilla was seamless. She understood our vision immediately and delivered content that exceeded expectations.",
-      author: "Brand Client",
-    },
+    { id: 1, label: "Product demo", category: "Skincare" },
+    { id: 2, label: "Lifestyle", category: "Wellness" },
+    { id: 3, label: "Beauty integration", category: "Beauty" },
+    { id: 4, label: "Outdoor moment", category: "Sport" },
   ];
 
   const brands = [
-    { name: "La Bruket" },
-    { name: "Iris Hantverk" },
-    { name: "Buddha Stones" },
-    { name: "Silverwind" },
+    "La Bruket",
+    "Iris Hantverk",
+    "Buddha Stones",
+    "Silverwind",
+  ];
+
+  const testimonials = [
+    "Camilla creates content that feels effortlessly authentic. Her eye for detail transformed how we present our products.",
+    "Working with Camilla was seamless. She understood our vision and delivered content that exceeded expectations.",
   ];
 
   const filteredItems = activeCategory === "all"
@@ -167,241 +54,140 @@ const UGCPortfolio = () => {
     <>
       <SEO
         title="UGC Portfolio - Camilla"
-        description="Authentic lifestyle and yoga content for beauty, wellness, and outdoor brands. Nordic nature aesthetic."
+        description="Authentic lifestyle and yoga UGC for Nordic brands. Organic, natural content creation."
         canonical="/ugc-portfolio"
       />
       <ScrollToTop />
       <Navbar />
 
       <main className="min-h-screen bg-white">
-        {/* Hero Section */}
-        <section className="pt-24 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl sm:text-6xl font-cormorant font-semibold mb-6 text-dalashala-earth leading-tight">
-                Authentic UGC for Nordic Brands
-              </h1>
-              <p className="text-lg mb-4 text-dalashala-earth/90">
-                Hi, I'm Camilla. I create organic, lifestyle-focused content that integrates your products naturally into real moments.
-              </p>
-              <p className="text-lg mb-8 text-dalashala-earth/90">
-                My style: never talking-head, always authentic. Whether you have a specific brief or want creative freedom, I bring a Nordic aesthetic and genuine connection to everything I create.
-              </p>
-              <ul className="space-y-3 mb-8 text-dalashala-earth/85">
-                <li className="flex items-start gap-3">
-                  <span className="text-eucalyptus mt-1">✓</span>
-                  <span>Organic, natural product integration</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-eucalyptus mt-1">✓</span>
-                  <span>Nordic nature aesthetic and styling</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-eucalyptus mt-1">✓</span>
-                  <span>Both directed briefs and creative freedom</span>
-                </li>
-              </ul>
-            </div>
-            <div className="bg-muted rounded-lg h-96 flex items-center justify-center border border-border">
-              <div className="text-center">
-                <p className="text-muted-foreground">Profile photo placeholder</p>
-                <p className="text-sm text-muted-foreground mt-2">(Camilla photo here)</p>
+        {/* Minimal Hero */}
+        <section className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+          <h1 className="text-4xl sm:text-5xl font-cormorant font-semibold mb-4 text-dalashala-earth">
+            UGC Portfolio
+          </h1>
+          <p className="text-lg text-dalashala-earth/80 max-w-2xl mx-auto mb-2">
+            Organic lifestyle content for beauty, wellness, and outdoor brands
+          </p>
+          <p className="text-base text-dalashala-earth/70 max-w-2xl mx-auto">
+            Never talking-head. Always authentic. Nordic aesthetic.
+          </p>
+        </section>
+
+        {/* Masonry Portfolio Grid */}
+        <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-20">
+          {/* Filter Buttons */}
+          <div className="flex justify-center gap-2 mb-12 flex-wrap">
+            {categories.map((cat) => (
+              <button
+                key={cat.id}
+                onClick={() => setActiveCategory(cat.id)}
+                className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
+                  activeCategory === cat.id
+                    ? "bg-dalashala-earth text-white"
+                    : "bg-white border border-dalashala-earth/20 text-dalashala-earth hover:border-dalashala-earth/40"
+                }`}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Masonry Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[280px]">
+            {filteredItems.map((item) => (
+              <div
+                key={item.id}
+                className={`${item.span} bg-muted rounded-2xl overflow-hidden flex items-center justify-center border border-dalashala-earth/10 hover:border-dalashala-earth/30 transition-all hover:shadow-sm cursor-pointer group`}
+              >
+                <div className="text-center px-4">
+                  <p className="text-sm text-dalashala-earth/70 font-medium mb-1">
+                    {item.category.charAt(0).toUpperCase() + item.category.slice(1)}
+                  </p>
+                  <p className="text-base font-medium text-dalashala-earth">
+                    {item.placeholder}
+                  </p>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </section>
 
-        {/* What I Create */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl sm:text-5xl font-cormorant font-semibold mb-16 text-dalashala-earth text-center">
-              What I Create
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {categories.slice(1).map((cat) => (
-                <div key={cat.id} className="bg-white rounded-lg overflow-hidden border border-border hover:border-eucalyptus transition-colors">
-                  <div className="bg-muted h-48 flex items-center justify-center">
-                    <p className="text-muted-foreground text-center">Image placeholder<br/>{cat.label}</p>
+        {/* Video Section */}
+        <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-20">
+          <h2 className="text-2xl font-cormorant font-semibold mb-10 text-dalashala-earth">
+            Video Content
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            {videoExamples.map((video) => (
+              <div
+                key={video.id}
+                className="bg-muted rounded-2xl h-64 flex items-center justify-center border border-dalashala-earth/10 hover:border-dalashala-earth/30 transition-all group cursor-pointer relative overflow-hidden"
+              >
+                <div className="absolute inset-0 flex flex-col items-center justify-center group-hover:bg-black/5 transition-colors">
+                  <div className="w-14 h-14 bg-white/80 rounded-full flex items-center justify-center mb-3 group-hover:bg-white transition-colors">
+                    <span className="text-dalashala-earth text-xl">▶</span>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-cormorant font-semibold mb-2 text-dalashala-earth">
-                      {cat.label}
-                    </h3>
-                    <p className="text-dalashala-earth/80 text-sm">
-                      {cat.id === "beauty" && "Skincare routines, product integrations, and aesthetic flat lays that feel naturally curated."}
-                      {cat.id === "wellness" && "Yoga apparel, wellness products, and lifestyle moments that inspire mindful living."}
-                      {cat.id === "outdoor" && "Outdoor gear, sport equipment, and adventure moments in the Nordic forest."}
-                      {cat.id === "lifestyle" && "Home styling, daily rituals, and mindful living moments integrated with beautiful products."}
-                    </p>
-                  </div>
+                  <p className="text-xs text-dalashala-earth/60 font-medium mb-1">{video.category}</p>
+                  <p className="text-sm font-medium text-dalashala-earth">{video.label}</p>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </section>
 
-        {/* Portfolio Grid */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl sm:text-5xl font-cormorant font-semibold mb-12 text-dalashala-earth text-center">
-              Featured Work
-            </h2>
-
-            {/* Category Filter */}
-            <div className="flex flex-wrap justify-center gap-3 mb-16">
-              {categories.map((cat) => (
-                <button
-                  key={cat.id}
-                  onClick={() => setActiveCategory(cat.id)}
-                  className={`px-6 py-2 rounded-full transition-all ${
-                    activeCategory === cat.id
-                      ? "bg-eucalyptus text-white"
-                      : "bg-muted text-dalashala-earth hover:bg-muted/80"
-                  }`}
-                >
-                  {cat.label}
-                </button>
-              ))}
-            </div>
-
-            {/* Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredItems.map((item) => (
-                <div
-                  key={item.id}
-                  className="bg-muted rounded-lg overflow-hidden border border-border hover:border-eucalyptus transition-colors h-64"
-                >
-                  <div className="w-full h-full flex items-center justify-center">
-                    <p className="text-muted-foreground text-center px-4">
-                      {item.placeholder}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Video Examples */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl sm:text-5xl font-cormorant font-semibold mb-16 text-dalashala-earth text-center">
-              Video Examples
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {videoExamples.map((video) => (
-                <div key={video.id} className="bg-white rounded-lg overflow-hidden border border-border">
-                  <div className="bg-muted h-64 flex items-center justify-center relative">
-                    <div className="text-center">
-                      <p className="text-muted-foreground mb-4">{video.placeholder}</p>
-                      <div className="w-16 h-16 bg-eucalyptus/20 rounded-full flex items-center justify-center mx-auto">
-                        <span className="text-eucalyptus text-2xl">▶</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <p className="text-sm text-eucalyptus font-medium mb-1">{video.category}</p>
-                    <h3 className="text-lg font-cormorant font-semibold text-dalashala-earth">
-                      {video.title}
-                    </h3>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Brands I've Worked With */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-cormorant font-semibold mb-16 text-dalashala-earth text-center">
-              Brands I've Worked With
-            </h2>
-            <div className="flex flex-wrap justify-center gap-8">
-              {brands.map((brand) => (
-                <div
-                  key={brand.name}
-                  className="w-32 h-32 bg-muted rounded-lg border border-border flex items-center justify-center hover:border-eucalyptus transition-colors"
-                >
-                  <p className="text-center text-muted-foreground font-medium">
-                    {brand.name}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* How I Work */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl sm:text-5xl font-cormorant font-semibold mb-16 text-dalashala-earth text-center">
-              How I Work
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-              {workflow.map((item) => (
-                <div key={item.step} className="bg-white rounded-lg p-6 border border-border hover:border-eucalyptus transition-colors">
-                  <div className="w-12 h-12 bg-eucalyptus/10 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-eucalyptus font-cormorant font-semibold text-lg">
-                      {item.step}
-                    </span>
-                  </div>
-                  <h3 className="font-cormorant font-semibold mb-3 text-dalashala-earth">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-dalashala-earth/75 leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
-            </div>
+        {/* Brands */}
+        <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-20">
+          <h2 className="text-2xl font-cormorant font-semibold mb-10 text-dalashala-earth">
+            Brands
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {brands.map((brand) => (
+              <div
+                key={brand}
+                className="bg-white border border-dalashala-earth/15 rounded-xl px-6 py-8 text-center hover:border-dalashala-earth/30 transition-all flex items-center justify-center min-h-[120px]"
+              >
+                <p className="font-medium text-dalashala-earth text-sm">{brand}</p>
+              </div>
+            ))}
           </div>
         </section>
 
         {/* Testimonials */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl sm:text-5xl font-cormorant font-semibold mb-16 text-dalashala-earth text-center">
-              What Clients Say
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {testimonials.map((testimonial, index) => (
-                <div
-                  key={index}
-                  className="bg-muted/50 rounded-lg p-8 border border-border"
-                >
-                  <p className="text-dalashala-earth mb-6 leading-relaxed italic">
-                    "{testimonial.quote}"
-                  </p>
-                  <p className="font-cormorant font-semibold text-dalashala-earth">
-                    {testimonial.author}
-                  </p>
-                </div>
-              ))}
-            </div>
+        <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-20">
+          <h2 className="text-2xl font-cormorant font-semibold mb-10 text-dalashala-earth">
+            What Clients Say
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {testimonials.map((quote, idx) => (
+              <div
+                key={idx}
+                className="bg-white border border-dalashala-earth/15 rounded-xl p-8 hover:border-dalashala-earth/30 transition-all"
+              >
+                <p className="text-dalashala-earth/85 leading-relaxed text-sm">
+                  "{quote}"
+                </p>
+              </div>
+            ))}
           </div>
         </section>
 
-        {/* CTA & Contact */}
-        <section className="py-24 px-4 sm:px-6 lg:px-8 bg-eucalyptus text-white">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl sm:text-5xl font-cormorant font-semibold mb-6">
-              Let's Create Together
+        {/* Simple CTA */}
+        <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-24">
+          <div className="bg-eucalyptus text-white rounded-2xl px-8 py-16 text-center">
+            <h2 className="text-3xl font-cormorant font-semibold mb-4">
+              Let's Work Together
             </h2>
-            <p className="text-lg mb-12 opacity-95">
-              Whether you're looking for organic product integration, lifestyle content, or yoga-focused UGC, I'd love to chat about your brand.
+            <p className="text-white/90 mb-8 max-w-2xl mx-auto">
+              Have a brief or want creative freedom? Let's chat about your brand.
             </p>
-            <div className="space-y-4">
-              <a
-                href="mailto:hello@yogawithcamilla.se"
-                className="inline-block px-8 py-4 bg-white text-eucalyptus font-cormorant font-semibold rounded-lg hover:bg-muted transition-colors"
-              >
-                Email Me
-              </a>
-              <p className="text-sm opacity-90">
-                Stockholm, Sweden
-              </p>
-            </div>
+            <a
+              href="mailto:hello@yogawithcamilla.se"
+              className="inline-block px-6 py-3 bg-white text-eucalyptus font-medium rounded-lg hover:bg-white/90 transition-colors"
+            >
+              Email Me
+            </a>
+            <p className="text-white/70 text-sm mt-6">Stockholm, Sweden</p>
           </div>
         </section>
       </main>
