@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import OmMig from "./pages/OmMig";
 import Blog from "./pages/Blog";
 import BlogPostPage from "./pages/BlogPostPage";
+import UGCPortfolio from "./pages/UGCPortfolio";
 
 import ForetagsYoga from "./pages/services/ForetagsYoga";
 import ForetagsYogaEvent from "./pages/services/ForetagsYogaEvent";
@@ -56,6 +57,9 @@ const App = () => (
         <Routes>
           {/* Home */}
           <Route path="/" element={<Index />} />
+
+          {/* UGC Portfolio */}
+          <Route path="/ugc-portfolio" element={<UGCPortfolio />} />
 
           {/* Active Service Pages */}
           <Route path="/tjanster/foretagsyoga" element={<ForetagsYoga />} />
