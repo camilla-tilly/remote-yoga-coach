@@ -155,8 +155,8 @@ const UGCPortfolio = () => {
   const brands = [
     { name: "La Bruket" },
     { name: "Iris Hantverk" },
-    { name: "Yoga Brand 1" },
-    { name: "Yoga Brand 2" },
+    { name: "Buddha Stones" },
+    { name: "Silverwind" },
   ];
 
   const filteredItems = activeCategory === "all"
