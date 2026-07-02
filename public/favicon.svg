@@ -1,16 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Rounded pine square, matches the brand's pine-deep palette -->
-  <rect x="0" y="0" width="64" height="64" rx="14" fill="#2D3F2F"/>
-  <!-- Om glyph, centred. Uses system Devanagari fonts with wide fallbacks
-       so browsers render the character correctly in the favicon slot. -->
-  <text
-    x="32"
-    y="46"
-    text-anchor="middle"
-    font-size="42"
-    font-family="'Noto Sans Devanagari', 'Tiro Devanagari Hindi', 'Segoe UI', 'Apple Color Emoji', system-ui, serif"
-    fill="#FFFFFF"
-  >ॐ</text>
-  <!-- Honey accent bar, echoes the site dividers -->
-  <rect x="26" y="55" width="12" height="2" rx="1" fill="#C89553"/>
+  <!-- Remote Yoga Coach — hand-balanced cairn: three flat, gently offset
+       stones on a warm clay tile. -->
+  <rect x="0" y="0" width="64" height="64" rx="16" fill="#B67A5E"/>
+  <ellipse cx="32" cy="44" rx="15" ry="5.2" fill="#FFFFFF"/>
+  <ellipse cx="29.5" cy="33" rx="11" ry="4.5" fill="#F5EFE7"/>
+  <ellipse cx="34.5" cy="23" rx="7.5" ry="3.8" fill="#FFFFFF" fill-opacity="0.9"/>
 </svg>

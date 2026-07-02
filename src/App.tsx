@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,18 +6,15 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import OmMig from "./pages/OmMig";
+import About from "./pages/About";
+import Pricing from "./pages/Pricing";
+import Demo from "./pages/Demo";
 import Blog from "./pages/Blog";
 import BlogPostPage from "./pages/BlogPostPage";
-import UGCPortfolio from "./pages/UGCPortfolio";
-
-import ForetagsYoga from "./pages/services/ForetagsYoga";
-import ForetagsYogaEvent from "./pages/services/ForetagsYogaEvent";
-import PrivataEvent from "./pages/services/PrivataEvent";
-import SUPYoga from "./pages/services/SupYoga";
-import SUPYogaKlasser from "./pages/services/SUPYogaKlasser";
-import SUPYogaVillkor from "./pages/services/SUPYogaVillkor";
-
+import TeamWellness from "./pages/services/TeamWellness";
+import MindfulnessAtWork from "./pages/guides/MindfulnessAtWork";
+import RemoteWorkBurnout from "./pages/guides/RemoteWorkBurnout";
+import DeskYoga from "./pages/guides/DeskYoga";
 
 const queryClient = new QueryClient();
 
@@ -36,7 +32,6 @@ function ScrollToTopOnNav() {
       window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
       document.documentElement.scrollTop = 0;
       document.body.scrollTop = 0;
-      // Second attempt after drawer close animation finishes on mobile
       setTimeout(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
         document.documentElement.scrollTop = 0;
@@ -58,28 +53,24 @@ const App = () => (
           {/* Home */}
           <Route path="/" element={<Index />} />
 
-          {/* UGC Portfolio */}
-          <Route path="/ugc-portfolio" element={<UGCPortfolio />} />
+          {/* Services */}
+          <Route path="/services/team-wellness" element={<TeamWellness />} />
 
-          {/* Active Service Pages */}
-          <Route path="/tjanster/foretagsyoga" element={<ForetagsYoga />} />
-          <Route path="/tjanster/foretagsyoga-event" element={<ForetagsYogaEvent />} />
-          <Route path="/tjanster/privata-event" element={<PrivataEvent />} />
-          <Route path="/tjanster/sup-yoga" element={<SUPYoga />} />
-          <Route path="/tjanster/sup-yoga-klasser" element={<SUPYogaKlasser />} />
-          <Route path="/tjanster/sup-yoga/villkor" element={<SUPYogaVillkor />} />
+          {/* Pillar guides */}
+          <Route path="/guides/mindfulness-at-work" element={<MindfulnessAtWork />} />
+          <Route path="/guides/remote-work-burnout" element={<RemoteWorkBurnout />} />
+          <Route path="/guides/desk-yoga" element={<DeskYoga />} />
 
-
-          {/* Note: 301 redirects for old service URLs are handled at the Netlify edge
-              via public/_redirects. Do NOT add client-side <Navigate> for those paths —
-              it creates a redirect chain that Google reports as "Redirect error". */}
+          {/* Pricing & booking */}
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/demo" element={<Demo />} />
 
           {/* About */}
-          <Route path="/om-mig" element={<OmMig />} />
+          <Route path="/about" element={<About />} />
 
           {/* Blog */}
-          <Route path="/blogg" element={<Blog />} />
-          <Route path="/blogg/:slug" element={<BlogPostPage />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
 
           {/* 404 */}
           <Route path="*" element={<NotFound />} />

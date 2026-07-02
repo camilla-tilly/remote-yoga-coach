@@ -87,7 +87,7 @@ const postCopy = {
     reading: 'read',
     tocLabel: 'Contents',
     related: 'Read next',
-    siteName: 'Yoga with Camilla',
+    siteName: 'Remote Yoga Coach',
     home: 'Home',
     blog: 'Blog',
   },
@@ -98,10 +98,10 @@ const BlogPostPage = () => {
   const post = slug ? getBlogPost(slug) : undefined;
 
   if (!post) {
-    return <Navigate to="/blogg" replace />;
+    return <Navigate to="/blog" replace />;
   }
 
-  const lang = post.language ?? 'sv';
+  const lang = post.language ?? 'en';
   const t = postCopy[lang];
 
   const structuredData: Record<string, unknown>[] = [
@@ -111,16 +111,16 @@ const BlogPostPage = () => {
       headline: post.title,
       description: post.metaDescription,
       datePublished: post.publishDate,
-      url: `https://yogawithcamilla.se/blogg/${post.slug}`,
+      url: `https://remoteyogacoach.com/blog/${post.slug}`,
       author: {
         '@type': 'Person',
         name: 'Camilla',
-        url: 'https://yogawithcamilla.se',
+        url: 'https://remoteyogacoach.com',
       },
       publisher: {
         '@type': 'Organization',
         name: t.siteName,
-        url: 'https://yogawithcamilla.se',
+        url: 'https://remoteyogacoach.com',
       },
     },
     {
@@ -131,19 +131,19 @@ const BlogPostPage = () => {
           '@type': 'ListItem',
           position: 1,
           name: t.home,
-          item: 'https://yogawithcamilla.se',
+          item: 'https://remoteyogacoach.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: t.blog,
-          item: 'https://yogawithcamilla.se/blogg',
+          item: 'https://remoteyogacoach.com/blog',
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: post.title,
-          item: `https://yogawithcamilla.se/blogg/${post.slug}`,
+          item: `https://remoteyogacoach.com/blog/${post.slug}`,
         },
       ],
     },
@@ -181,13 +181,13 @@ const BlogPostPage = () => {
   const firstHeadingIndex = post.content.findIndex((s) => s.type === 'heading');
 
   return (
-    <div className="min-h-screen bg-white relative overflow-x-hidden">
+    <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title={`${post.title} | ${t.siteName}`}
         description={post.metaDescription}
-        canonical={`https://yogawithcamilla.se/blogg/${post.slug}`}
+        canonical={`https://remoteyogacoach.com/blog/${post.slug}`}
         ogType="article"
-        ogImage={post.heroImage ? `https://yogawithcamilla.se${post.heroImage.src}` : undefined}
+        ogImage={post.heroImage ? `https://remoteyogacoach.com${post.heroImage.src}` : undefined}
         structuredData={structuredData}
       />
       <Navbar />
@@ -195,7 +195,7 @@ const BlogPostPage = () => {
         {/* Breadcrumb */}
         <div className="max-w-[860px] mx-auto mb-8">
           <Link
-            to="/blogg"
+            to="/blog"
             className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive hover:text-dalashala-earth transition-colors font-bold"
           >
             {t.back}
@@ -434,7 +434,7 @@ const BlogPostPage = () => {
                 {post.relatedPosts.map((rp) => (
                   <Link
                     key={rp.slug}
-                    to={`/blogg/${rp.slug}`}
+                    to={`/blog/${rp.slug}`}
                     className="font-inter text-sm font-semibold uppercase tracking-[0.18em] bg-white border border-dalashala-meadow/80 text-dalashala-earth px-5 py-3 rounded-full hover:border-dalashala-earth hover:bg-dalashala-earth hover:text-white transition-all"
                   >
                     {rp.label}

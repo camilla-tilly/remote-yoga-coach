@@ -1,0 +1,48 @@
+import type { BlogPost } from '../blogTypes';
+
+const post: BlogPost = {
+  slug: "neck-and-shoulder-stretches-desk-workers",
+  title: "Neck and shoulder stretches for desk workers (that actually help)",
+  metaDescription: "Six neck and shoulder stretches you can do at your desk to ease the tension that builds from a day at the screen. No equipment, takes three minutes.",
+  publishDate: "2026-07-29",
+  readingTime: "5 min",
+  category: "Desk yoga",
+  excerpt: "The neck and shoulders are where desk work goes to hibernate. Six stretches you can do at your desk in about three minutes to undo the tension.",
+  language: "en",
+  relatedServiceHref: "/services/team-wellness",
+  relatedServiceLabel: "See how a team version works",
+  tableOfContents: false,
+  relatedPosts: [
+    { slug: "chair-yoga-at-your-desk", label: "Chair yoga at your desk: 8 poses" },
+    { slug: "desk-yoga-5-minute-routine", label: "Desk yoga: a 5-minute routine between calls" },
+    { slug: "breathing-exercises-for-work-stress", label: "Breathing exercises for work stress" },
+  ],
+  content: [
+    { type: "paragraph", text: "The neck and shoulders are where desk work goes to hibernate. Hours of leaning toward a screen, shoulders creeping up toward the ears, head drifting forward, and by mid-afternoon there's a tight band across the top of your back that no amount of rolling your chair around fixes. Around 80% of office workers report neck or back pain, so if that's you, you're in a large club." },
+    { type: "paragraph", text: "Here are six stretches you can do right at your desk in about three minutes. Move slowly, breathe, and ease off the moment anything feels sharp. This should feel like relief." },
+    { type: "heading", text: "A note before you start" },
+    { type: "paragraph", text: "Sit tall, both feet on the floor, and take a couple of slow breaths. Tension releases far better on a long exhale than through force, so let each stretch settle on the out-breath rather than pushing into it." },
+    { type: "subheading", text: "1. Ear-to-shoulder neck release" },
+    { type: "paragraph", text: "Let your right ear drop toward your right shoulder. Don't pull, just let the weight of your head create the stretch down the left side of your neck. Three slow breaths. For a little more, rest your right hand gently on your head (no pulling). Switch sides." },
+    { type: "subheading", text: "2. Half-circle neck roll" },
+    { type: "paragraph", text: "Drop your chin toward your chest and slowly roll your head in a half-circle to the right, then back to centre, then to the left. Avoid rolling the head all the way back. Three slow passes. Wonderful for the stiffness that builds along the base of the skull." },
+    { type: "subheading", text: "3. Shoulder rolls" },
+    { type: "paragraph", text: "Lift both shoulders up toward your ears, then roll them back and down, drawing the shoulder blades together. Five backward, then five forward. This actively undoes the hunch." },
+    { type: "subheading", text: "4. Cross-body shoulder stretch" },
+    { type: "paragraph", text: "Bring your right arm straight across your chest. Use your left hand to gently draw it closer, feeling the stretch across the back of the right shoulder. Three breaths, then switch. The direct fix for shoulders tight from mousing and typing." },
+    { type: "subheading", text: "5. Chest and front-of-shoulder opener" },
+    { type: "paragraph", text: "Sit tall and clasp your hands behind your back, or hold the back edges of your chair. Gently draw your shoulder blades together and lift your chest. Three breaths. Desk work shortens the front of the chest, which drags the shoulders forward, and this counters it." },
+    { type: "subheading", text: "6. Levator scapulae stretch (the \"tech neck\" one)" },
+    { type: "paragraph", text: "Turn your head about 45 degrees to the right, as if looking toward your right pocket, and let your chin drop toward your chest. You'll feel a stretch down the back-left of your neck, the muscle that takes the brunt of looking down at screens. Three breaths, then switch." },
+    { type: "heading", text: "Why stretching once isn't the point" },
+    { type: "paragraph", text: "A single round helps for an hour. The real win is little and often. Desk tension rebuilds as soon as you go back to the screen, so a quick three-minute round a couple of times a day does far more than one long stretch session. Tie it to something you already do, the top of each hour, or every coffee, so it doesn't depend on you remembering." },
+    { type: "heading", text: "And fix the setup, while you're here" },
+    { type: "paragraph", text: "Stretching treats the symptom; your setup is often the cause. Two quick wins: get the top of your screen roughly at eye level so you're not looking down all day, and keep your shoulders relaxed with elbows at about 90 degrees. Small changes, big difference to how much tension builds in the first place." },
+    { type: "heading", text: "Do it together" },
+    { type: "paragraph", text: "A short, guided session once a week, chair-based stretches and a little breathing, done as a team, keeps the habit alive in a way solo stretching rarely manages, because the time's already held and you're not relying on willpower. For desk-bound remote teams it's a simple, genuinely useful few minutes. See how a team version works, or [book a pilot](/demo)." },
+    { type: "cta", text: "A short, guided session once a week keeps the habit alive for the whole team, no willpower required.", ctaHref: "/services/team-wellness", ctaLabel: "See how a team version works" },
+    { type: "callout", text: "Health note: gentle mobility, not medical advice. Persistent or severe neck pain is worth getting checked by a professional." },
+  ],
+};
+
+export default post;
