@@ -76,6 +76,7 @@ const Compare = () => {
         description="An honest comparison of live team wellbeing sessions, wellbeing apps and EAPs on the metric that matters: whether your team actually uses it. A wellbeing app alternative that gets used."
         canonical="https://remoteyogacoach.com/compare"
         ogType="article"
+        ogImage="https://remoteyogacoach.com/og/compare.png"
         structuredData={structuredData}
       />
       <Navbar />

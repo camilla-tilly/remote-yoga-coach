@@ -8,20 +8,26 @@ import doWorkplaceWellnessAppsWork from './posts/do-workplace-wellness-apps-work
 import fiveMinuteDeskMeditation from './posts/5-minute-desk-meditation';
 import neckAndShoulderStretchesDeskWorkers from './posts/neck-and-shoulder-stretches-desk-workers';
 import corporateWellnessIdeasRemoteTeams from './posts/corporate-wellness-ideas-remote-teams';
+import corporateMindfulnessSessionsWhatToExpect from './posts/corporate-mindfulness-sessions-what-to-expect';
+import teamWellbeingSubscriptionVsWorkshops from './posts/team-wellbeing-subscription-vs-workshops';
+import runWellbeingSessionOverTeams from './posts/run-wellbeing-session-over-teams';
 
 export type { BlogPost, BlogLanguage, BlogContentBlock } from './blogTypes';
 
-// The cost guide leads (featured on the hub); the rest follow in publishing order.
+// The cost guide leads (featured on the hub); buyer-intent posts follow, then the rest.
 export const blogPosts: BlogPost[] = [
   howMuchDoesCorporateYogaCost,
+  teamWellbeingSubscriptionVsWorkshops,
+  corporateMindfulnessSessionsWhatToExpect,
+  runWellbeingSessionOverTeams,
+  preventBurnoutDistributedTeam,
+  corporateWellnessIdeasRemoteTeams,
+  doWorkplaceWellnessAppsWork,
   chairYogaAtYourDesk,
   deskYoga5MinuteRoutine,
-  preventBurnoutDistributedTeam,
   breathingExercisesForWorkStress,
-  doWorkplaceWellnessAppsWork,
   fiveMinuteDeskMeditation,
   neckAndShoulderStretchesDeskWorkers,
-  corporateWellnessIdeasRemoteTeams,
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

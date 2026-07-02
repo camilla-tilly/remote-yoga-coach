@@ -34,14 +34,16 @@ const SEO = ({ title, description, canonical, ogImage, ogType = 'website', struc
     setMeta('meta[property="og:type"]', 'content', ogType);
     setMeta('meta[property="og:url"]', 'content', canonical || window.location.href);
 
-    if (ogImage) {
-      setMeta('meta[property="og:image"]', 'content', ogImage);
-    }
+    // Always set an image so client-side navigation never inherits a stale
+    // per-page card; fall back to the branded site default.
+    const image = ogImage || 'https://remoteyogacoach.com/og/default.png';
+    setMeta('meta[property="og:image"]', 'content', image);
 
     // Twitter card
     setMeta('meta[name="twitter:card"]', 'content', 'summary_large_image');
     setMeta('meta[name="twitter:title"]', 'content', title);
     setMeta('meta[name="twitter:description"]', 'content', description);
+    setMeta('meta[name="twitter:image"]', 'content', image);
 
     // Canonical
     let canonicalEl = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;

@@ -71,6 +71,7 @@ const Guides = () => {
         title="Wellbeing Guides for HR and People Leaders | Remote Yoga Coach"
         description="Plain-English guides on distributed-team wellbeing: the cost of burnout and its ROI, remote burnout prevention, workplace mindfulness, and desk yoga for office workers."
         canonical="https://remoteyogacoach.com/guides"
+        ogImage="https://remoteyogacoach.com/og/guides.png"
         structuredData={structuredData}
       />
       <Navbar />
