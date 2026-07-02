@@ -303,8 +303,12 @@ const DeskYoga = () => {
                 has to remember, decide or perform. Cameras stay off for anyone who prefers it, recordings cover the
                 other time zones, and within a few weeks it becomes the meeting people quietly protect. That is the
                 design of our{' '}
+                <Link to="/services/chair-yoga-for-teams" className="text-clay underline underline-offset-4 hover:text-white">
+                  virtual chair yoga for teams
+                </Link>
+                , and of{' '}
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-white">
-                  Weekly Reset programme
+                  The Weekly Reset
                 </Link>
                 , which combines chair yoga with breathing and a short meditation, and reports attendance and
                 pre-post stress honestly so you can see whether it earns its slot.

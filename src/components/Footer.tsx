@@ -36,6 +36,8 @@ const Footer = () => {
             <span aria-hidden="true" className="text-white/30">·</span>
             <Link to="/services/team-wellness" className="hover:text-white transition-colors">How it works</Link>
             <span aria-hidden="true" className="text-white/30">·</span>
+            <Link to="/services/chair-yoga-for-teams" className="hover:text-white transition-colors">Chair yoga</Link>
+            <span aria-hidden="true" className="text-white/30">·</span>
             <Link to="/pricing" className="hover:text-white transition-colors">Pricing</Link>
             <span aria-hidden="true" className="text-white/30">·</span>
             <Link to="/blog" className="hover:text-white transition-colors">Blog</Link>

@@ -115,9 +115,12 @@ const Index = () => {
                 </div>
               ))}
             </div>
-            <p className="mt-14 text-center">
+            <p className="mt-14 text-center flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-3">
               <Link to="/services/team-wellness" className="text-clay hover:text-clayDark font-semibold uppercase text-sm tracking-wider">
                 See how a session runs →
+              </Link>
+              <Link to="/services/chair-yoga-for-teams" className="text-clay hover:text-clayDark font-semibold uppercase text-sm tracking-wider">
+                Chair yoga for teams →
               </Link>
             </p>
           </div>

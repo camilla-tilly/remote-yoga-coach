@@ -12,6 +12,7 @@ import Demo from "./pages/Demo";
 import Blog from "./pages/Blog";
 import BlogPostPage from "./pages/BlogPostPage";
 import TeamWellness from "./pages/services/TeamWellness";
+import ChairYogaForTeams from "./pages/services/ChairYogaForTeams";
 import MindfulnessAtWork from "./pages/guides/MindfulnessAtWork";
 import RemoteWorkBurnout from "./pages/guides/RemoteWorkBurnout";
 import DeskYoga from "./pages/guides/DeskYoga";
@@ -55,6 +56,7 @@ const App = () => (
 
           {/* Services */}
           <Route path="/services/team-wellness" element={<TeamWellness />} />
+          <Route path="/services/chair-yoga-for-teams" element={<ChairYogaForTeams />} />
 
           {/* Pillar guides */}
           <Route path="/guides/mindfulness-at-work" element={<MindfulnessAtWork />} />
