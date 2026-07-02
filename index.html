@@ -25,6 +25,9 @@
 
     <!-- Canonical is set per-page by src/components/SEO.tsx -->
 
+    <!-- Blog feed + AI site map -->
+    <link rel="alternate" type="application/rss+xml" title="Remote Yoga Coach, Blog" href="https://remoteyogacoach.com/rss.xml" />
+
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="mask-icon" href="/favicon.svg" color="#C97A5C">
     <link rel="apple-touch-icon" href="/favicon.svg">
@@ -35,22 +38,69 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..600,0..100&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
 
-    <!-- Organization Structured Data -->
+    <!-- Entity Structured Data: Organization + WebSite + Service -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Remote Yoga Coach",
-      "description": "Live breathing, meditation and chair-yoga sessions for distributed and hybrid teams, delivered online across UK, European and Australian time zones.",
-      "url": "https://remoteyogacoach.com",
-      "email": "hello@remoteyogacoach.com",
-      "areaServed": ["GB", "EU", "AU", "Worldwide"],
-      "founder": {
-        "@type": "Person",
-        "name": "Camilla",
-        "jobTitle": "Corporate Wellness Coach",
-        "description": "500-hour certified yoga teacher specialising in live wellbeing sessions for distributed teams."
-      }
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://remoteyogacoach.com/#organization",
+          "name": "Remote Yoga Coach",
+          "url": "https://remoteyogacoach.com",
+          "logo": { "@type": "ImageObject", "url": "https://remoteyogacoach.com/favicon.svg" },
+          "image": "https://remoteyogacoach.com/og/default.png",
+          "description": "Live breathing, meditation and chair-yoga sessions for distributed and hybrid teams, delivered online across UK, European and Australian time zones.",
+          "email": "hello@remoteyogacoach.com",
+          "areaServed": ["GB", "EU", "AU", "Worldwide"],
+          "knowsAbout": [
+            "corporate wellbeing",
+            "employee wellbeing",
+            "workplace mindfulness",
+            "burnout prevention",
+            "chair yoga for teams",
+            "remote team wellbeing",
+            "meditation at work"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "email": "hello@remoteyogacoach.com",
+            "availableLanguage": "English"
+          },
+          "founder": {
+            "@type": "Person",
+            "@id": "https://remoteyogacoach.com/#camilla",
+            "name": "Camilla",
+            "jobTitle": "Corporate Wellness Coach",
+            "description": "500-hour certified yoga teacher specialising in live wellbeing sessions for distributed teams.",
+            "knowsAbout": ["corporate wellbeing", "workplace mindfulness", "chair yoga", "burnout prevention"]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://remoteyogacoach.com/#website",
+          "url": "https://remoteyogacoach.com",
+          "name": "Remote Yoga Coach",
+          "description": "Live wellbeing sessions for remote and hybrid teams, breathing, meditation and chair yoga on Teams.",
+          "publisher": { "@id": "https://remoteyogacoach.com/#organization" },
+          "inLanguage": "en-GB"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://remoteyogacoach.com/#service",
+          "name": "The Weekly Reset, corporate wellbeing for remote teams",
+          "serviceType": "Corporate wellbeing sessions for distributed teams",
+          "provider": { "@id": "https://remoteyogacoach.com/#organization" },
+          "areaServed": ["GB", "EU", "AU", "Worldwide"],
+          "description": "Live weekly breathing, meditation and chair-yoga sessions for remote and hybrid teams on Teams or Zoom, with attendance and wellbeing reporting.",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "GBP",
+            "description": "Monthly subscription by team size, from a four-week paid pilot."
+          }
+        }
+      ]
     }
     </script>
   </head>

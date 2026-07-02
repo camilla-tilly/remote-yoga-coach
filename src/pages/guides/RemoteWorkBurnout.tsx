@@ -9,6 +9,7 @@ import {
   GuideProse,
   GuideList,
   GuideTOC,
+  KeyTakeaways,
   SpokeCard,
   GuideFAQ,
   GuideCTA,
@@ -111,6 +112,12 @@ const RemoteWorkBurnout = () => {
               and people leaders who carry that risk: what burnout actually is, why remote conditions feed it, how to
               spot it across a distributed team before it costs you someone, and what genuinely reduces it.
             </p>
+            <KeyTakeaways items={[
+              'Burnout is chronic workplace stress plus insufficient recovery; the WHO calls it an occupational phenomenon, not a personal failing.',
+              'Remote and hybrid teams are at higher risk: isolation, blurred boundaries, always-on culture and the lost commute.',
+              'Spot it remotely through patterns, not faces: cameras-off creep, slower and shorter replies, dropping optional calls, and productive overwork.',
+              'Prevention is structural (manager training, clear boundaries, real breaks) plus a recurring recovery habit the team keeps.',
+            ]} />
             <GuideTOC items={tocItems} />
           </div>
         </section>

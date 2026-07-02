@@ -9,6 +9,7 @@ import {
   GuideProse,
   GuideList,
   GuideTOC,
+  KeyTakeaways,
   SpokeCard,
   GuideFAQ,
   GuideCTA,
@@ -111,6 +112,12 @@ const CostOfBurnout = () => {
               move it from a nice-to-have to a cost-avoidance case, and a simple way to prove the return on your own
               team.
             </p>
+            <KeyTakeaways items={[
+              'Poor mental health costs UK employers about £51bn a year, roughly £2,646 per affected employee, and about 89% of that cost is invisible presenteeism.',
+              'Workplace mental health spend returns about £4.70 per £1, up to £6.30 when it is preventive and organisation-wide.',
+              'Prevention is the cheap option: EAPs reach 3 to 5% of staff and apps drop off, while a year of sessions costs a fraction of one burnout resignation.',
+              'Build the case on cost-avoidance plus replacement cost plus documented ROI, then prove it on your own team with a measured pilot.',
+            ]} />
             <GuideTOC items={tocItems} />
           </div>
         </section>

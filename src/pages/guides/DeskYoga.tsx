@@ -9,6 +9,7 @@ import {
   GuideProse,
   GuideList,
   GuideTOC,
+  KeyTakeaways,
   SpokeCard,
   GuideFAQ,
   GuideCTA,
@@ -110,6 +111,12 @@ const DeskYoga = () => {
               between meetings, needs no mat, no changing, and no flexibility whatsoever. This guide covers the
               movements, a five-minute routine, and how to make it stick for a whole team.
             </p>
+            <KeyTakeaways items={[
+              'Desk yoga and chair yoga are gentle seated movements you do in work clothes in a few minutes; no mat, no flexibility, no experience.',
+              'Around 80% of office workers report neck or back discomfort from sitting; frequent short movement beats one gym session.',
+              'Pair the movement with slow breathing to reach the nervous system, not just the muscles.',
+              'Individually people rarely keep it up; a live weekly session is what makes it stick for a whole team.',
+            ]} />
             <GuideTOC items={tocItems} />
           </div>
         </section>

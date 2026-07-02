@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 /**
@@ -34,6 +34,20 @@ export const GuideList = ({ items }: { items: Array<[string, string]> }) => (
       </li>
     ))}
   </ul>
+);
+
+export const KeyTakeaways = ({ items }: { items: string[] }) => (
+  <div className="mt-8 rounded-xl border border-sage-light bg-cream/60 p-6 md:p-7">
+    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">Key takeaways</p>
+    <ul className="space-y-3">
+      {items.map((t, i) => (
+        <li key={i} className="flex gap-3 text-charcoal/80 text-[15px] md:text-[16px] leading-relaxed">
+          <Check className="text-clay shrink-0 mt-1" size={15} strokeWidth={2.5} />
+          <span>{t}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
 );
 
 export const GuideTOC = ({ items }: { items: Array<{ href: string; label: string }> }) => (

@@ -10,6 +10,7 @@ import {
   GuideProse,
   GuideList,
   GuideTOC,
+  KeyTakeaways,
   SpokeCard,
   GuideFAQ,
   GuideCTA,
@@ -112,6 +113,12 @@ const MindfulnessAtWork = () => {
               team, if it is run as a habit rather than handed out as an app nobody opens. This guide covers what it
               is, whether it genuinely works, and how to build it into a distributed team.
             </p>
+            <KeyTakeaways items={[
+              'Mindfulness at work is a trainable attention-and-breathing skill, not a belief system; even a single guided session measurably lowers stress.',
+              'It only helps a team as a habit: short and weekly beats rare and long.',
+              'Live guided sessions drive the participation that apps (3 to 5% sustained use) do not.',
+              'Measure it with attendance and pre and post wellbeing, not app downloads.',
+            ]} />
             <GuideTOC items={tocItems} />
           </div>
         </section>
