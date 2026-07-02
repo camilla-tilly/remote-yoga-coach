@@ -13,10 +13,13 @@ import Blog from "./pages/Blog";
 import BlogPostPage from "./pages/BlogPostPage";
 import TeamWellness from "./pages/services/TeamWellness";
 import ChairYogaForTeams from "./pages/services/ChairYogaForTeams";
+import CorporateWellbeingRemoteTeams from "./pages/services/CorporateWellbeingRemoteTeams";
 import MindfulnessAtWork from "./pages/guides/MindfulnessAtWork";
 import RemoteWorkBurnout from "./pages/guides/RemoteWorkBurnout";
 import DeskYoga from "./pages/guides/DeskYoga";
 import CostOfBurnout from "./pages/guides/CostOfBurnout";
+import Guides from "./pages/Guides";
+import Compare from "./pages/Compare";
 
 const queryClient = new QueryClient();
 
@@ -58,12 +61,15 @@ const App = () => (
           {/* Services */}
           <Route path="/services/team-wellness" element={<TeamWellness />} />
           <Route path="/services/chair-yoga-for-teams" element={<ChairYogaForTeams />} />
+          <Route path="/services/corporate-wellbeing-for-remote-teams" element={<CorporateWellbeingRemoteTeams />} />
 
           {/* Pillar guides */}
           <Route path="/guides/mindfulness-at-work" element={<MindfulnessAtWork />} />
           <Route path="/guides/remote-work-burnout" element={<RemoteWorkBurnout />} />
           <Route path="/guides/desk-yoga" element={<DeskYoga />} />
           <Route path="/guides/cost-of-employee-burnout" element={<CostOfBurnout />} />
+          <Route path="/guides" element={<Guides />} />
+          <Route path="/compare" element={<Compare />} />
 
           {/* Pricing & booking */}
           <Route path="/pricing" element={<Pricing />} />

@@ -13,6 +13,7 @@ import Logo from './Logo';
 
 const navLinks = [
   { name: 'How it works', href: '/services/team-wellness' },
+  { name: 'Guides', href: '/guides' },
   { name: 'Pricing', href: '/pricing' },
   { name: 'Blog', href: '/blog' },
   { name: 'About', href: '/about' },

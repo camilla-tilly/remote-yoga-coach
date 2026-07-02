@@ -2,6 +2,35 @@ import { Link } from 'react-router-dom';
 import { Linkedin } from 'lucide-react';
 import Logo from './Logo';
 
+const columns: Array<{ heading: string; links: Array<{ label: string; to?: string; href?: string }> }> = [
+  {
+    heading: 'Services',
+    links: [
+      { label: 'How it works', to: '/services/team-wellness' },
+      { label: 'Chair yoga for teams', to: '/services/chair-yoga-for-teams' },
+      { label: 'Wellbeing for remote teams', to: '/services/corporate-wellbeing-for-remote-teams' },
+      { label: 'Pricing', to: '/pricing' },
+    ],
+  },
+  {
+    heading: 'Resources',
+    links: [
+      { label: 'Guides', to: '/guides' },
+      { label: 'Compare vs apps & EAPs', to: '/compare' },
+      { label: 'What burnout costs', to: '/guides/cost-of-employee-burnout' },
+      { label: 'Blog', to: '/blog' },
+    ],
+  },
+  {
+    heading: 'Company',
+    links: [
+      { label: 'About', to: '/about' },
+      { label: 'Book a pilot', to: '/demo' },
+      { label: 'hello@remoteyogacoach.com', href: 'mailto:hello@remoteyogacoach.com' },
+    ],
+  },
+];
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -11,7 +40,7 @@ const Footer = () => {
       <div
         aria-hidden="true"
         className="absolute -top-32 -right-24 w-[520px] h-[520px] rounded-full opacity-[0.14] blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, #C97A5C 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, #B67A5E 0%, transparent 70%)' }}
       />
       <div
         aria-hidden="true"
@@ -19,63 +48,64 @@ const Footer = () => {
         style={{ background: 'radial-gradient(circle, #8B9D7D 0%, transparent 70%)' }}
       />
 
-      <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
-        <div className="flex flex-col items-center text-center gap-5">
-          <Logo size={60} variant="clay" className="rounded-2xl ring-1 ring-white/15" />
-          <h2 className="font-fraunces text-4xl md:text-5xl text-white tracking-[-0.02em] mt-3 leading-[1]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
-            Remote Yoga Coach
-          </h2>
-          <span className="block w-16 h-[2px] bg-clay/70 mt-2 rounded-full" aria-hidden="true" />
-          <p className="font-inter font-normal text-lg md:text-xl text-white/85 max-w-md leading-relaxed mt-3">
-            Live breathing, meditation and chair-yoga sessions your distributed team actually shows up for. On Teams, camera optional.
-          </p>
-
-          {/* Nav row */}
-          <nav className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 font-inter text-xs uppercase tracking-[0.3em] text-white/80 font-semibold">
-            <Link to="/" className="hover:text-white transition-colors">Home</Link>
-            <span aria-hidden="true" className="text-white/30">·</span>
-            <Link to="/services/team-wellness" className="hover:text-white transition-colors">How it works</Link>
-            <span aria-hidden="true" className="text-white/30">·</span>
-            <Link to="/services/chair-yoga-for-teams" className="hover:text-white transition-colors">Chair yoga</Link>
-            <span aria-hidden="true" className="text-white/30">·</span>
-            <Link to="/pricing" className="hover:text-white transition-colors">Pricing</Link>
-            <span aria-hidden="true" className="text-white/30">·</span>
-            <Link to="/blog" className="hover:text-white transition-colors">Blog</Link>
-            <span aria-hidden="true" className="text-white/30">·</span>
-            <Link to="/about" className="hover:text-white transition-colors">About</Link>
-            <span aria-hidden="true" className="text-white/30">·</span>
-            <a href="mailto:hello@remoteyogacoach.com" className="hover:text-white transition-colors">Contact</a>
-          </nav>
-
-          {/* Guides row */}
-          <nav aria-label="Guides" className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-inter text-[13px] text-white/65">
-            <span className="uppercase tracking-[0.25em] text-[10px] font-semibold text-white/45">Guides</span>
-            <Link to="/guides/remote-work-burnout" className="hover:text-white transition-colors">Remote work burnout</Link>
-            <span aria-hidden="true" className="text-white/25">·</span>
-            <Link to="/guides/cost-of-employee-burnout" className="hover:text-white transition-colors">What burnout costs</Link>
-            <span aria-hidden="true" className="text-white/25">·</span>
-            <Link to="/guides/mindfulness-at-work" className="hover:text-white transition-colors">Mindfulness at work</Link>
-            <span aria-hidden="true" className="text-white/25">·</span>
-            <Link to="/guides/desk-yoga" className="hover:text-white transition-colors">Desk yoga</Link>
-          </nav>
-
-          {/* LinkedIn only, B2B */}
-          <div className="mt-10 flex items-center justify-center gap-5">
+      <div className="relative max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8 py-16 md:py-20">
+        <div className="grid gap-12 md:grid-cols-12">
+          {/* Brand */}
+          <div className="md:col-span-5">
+            <Link to="/" className="inline-flex items-center gap-3 group" aria-label="Remote Yoga Coach, home">
+              <Logo size={44} variant="clay" className="rounded-xl ring-1 ring-white/15" />
+              <span className="font-fraunces text-2xl text-white tracking-tight" style={{ fontWeight: 500 }}>
+                Remote Yoga Coach
+              </span>
+            </Link>
+            <p className="font-inter text-[15px] text-white/70 leading-relaxed mt-5 max-w-sm">
+              Live breathing, meditation and chair-yoga sessions your distributed team actually shows up for. On
+              Teams, camera optional, with reporting you can take to leadership.
+            </p>
             <a
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="w-11 h-11 flex items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 text-white/85 hover:text-white hover:bg-white/15 transition-colors"
+              className="mt-7 w-11 h-11 inline-flex items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 text-white/85 hover:text-white hover:bg-white/15 transition-colors"
             >
               <Linkedin size={18} aria-hidden="true" />
             </a>
           </div>
 
-          <span className="block w-24 h-px bg-white/15 mt-10" aria-hidden="true" />
+          {/* Link columns */}
+          <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
+            {columns.map((col) => (
+              <nav key={col.heading} aria-label={col.heading}>
+                <p className="font-inter text-[11px] uppercase tracking-[0.28em] text-white/45 font-semibold mb-4">
+                  {col.heading}
+                </p>
+                <ul className="space-y-2.5">
+                  {col.links.map((l) => (
+                    <li key={l.label}>
+                      {l.to ? (
+                        <Link to={l.to} className="font-inter text-[14px] text-white/75 hover:text-white transition-colors leading-snug">
+                          {l.label}
+                        </Link>
+                      ) : (
+                        <a href={l.href} className="font-inter text-[14px] text-white/75 hover:text-white transition-colors leading-snug break-words">
+                          {l.label}
+                        </a>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            ))}
+          </div>
+        </div>
 
-          <p className="font-inter text-[11px] uppercase tracking-[0.3em] text-white/50 font-medium">
+        <div className="mt-14 pt-8 border-t border-white/12 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="font-inter text-[11px] uppercase tracking-[0.3em] text-white/45 font-medium">
             &copy; {currentYear} Remote Yoga Coach
+          </p>
+          <p className="font-inter text-[12px] text-white/45">
+            Live across UK, European and Australian time zones.
           </p>
         </div>
       </div>
