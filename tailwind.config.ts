@@ -63,40 +63,50 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Yoga with Camilla palette — Clean Scandi / fresh pine needles theme.
-				// White backgrounds, pine + eucalyptus greens, minimal accents.
-				// Legacy token names remain as aliases so existing markup works;
-				// their values shift to the new Scandi palette.
+				// Remote Yoga Coach palette — warm, minimal, corporate-friendly.
+				// Warm clay (primary CTA), sage green (secondary), off-white bg,
+				// charcoal text, warm cream bands. The `dalashala` namespace is a
+				// legacy alias kept so all existing markup re-themes automatically;
+				// its values now point at the RYC palette.
+				clay: '#B67A5E',
+				clayDark: '#9F674D',
+				clayLight: '#CE9A82',
+				charcoal: '#4A423A',
+				heading: '#64513E',
+				offwhite: '#FAFAF8',
+				cream: '#F5EFE7',
+				sage: {
+					DEFAULT: '#8B9D7D',
+					dark: '#7A8C6D',
+					light: '#DCE4D6',
+				},
 				dalashala: {
-					// Legacy names (remapped to Scandi pine)
-					beige: '#FFFFFF',       // Pure white (primary bg)
-					lightBeige: '#FAFAF7',  // Barely-off-white for card fills
-					darkBrown: '#2D3F2F',   // Pine deep (primary text)
-					mediumBrown: '#5D7A60', // Eucalyptus mid (links, buttons)
-					tan: '#C7D3C0',         // Pale fresh sage (borders)
-					// New semantic names
-					cream: '#FFFFFF',
-					creamLight: '#FAFAF7',
-					creamDeep: '#F0F2EC',   // Palest sage wash for contrast bands
-					earth: '#2D3F2F',       // Pine deep
-					earthSoft: '#4A6B4E',   // Fresh pine (secondary headings)
-					olive: '#5D7A60',       // Eucalyptus
-					oliveLight: '#8AA48E',  // Mossy mint (hover)
-					meadow: '#C7D3C0',
-					meadowLight: '#E1E7DC',
-					sage: '#9EB39F',
+					// Legacy names → RYC palette
+					beige: '#FAFAF8',       // off-white (primary bg)
+					lightBeige: '#F5EFE7',  // warm cream for card fills
+					darkBrown: '#4A423A',   // soft warm brown (primary text)
+					mediumBrown: '#B67A5E', // muted terracotta (links, buttons)
+					tan: '#DCE4D6',         // light sage (borders)
+					// Semantic names
+					cream: '#FAFAF8',
+					creamLight: '#F5EFE7',
+					creamDeep: '#F5EFE7',   // warm cream contrast bands
+					earth: '#4A423A',       // soft warm brown (headings, primary text)
+					earthSoft: '#63564A',   // warm brown (gradient start)
+					olive: '#B67A5E',       // muted terracotta (buttons, links, accent)
+					oliveLight: '#CE9A82',  // lighter terracotta (hover)
+					meadow: '#DCE4D6',      // light sage (borders)
+					meadowLight: '#E8EDE3', // palest sage
+					sage: '#8B9D7D',
 					sageLight: '#DCE4D6',
-					// Honey / gold accents neutralised — Camilla read the warm yellow
-					// as jarring against the fresh-pine palette. Legacy `honey*`
-					// tokens remap to pine/sage tones so any stray reference renders
-					// on-palette rather than saturated-gold.
-					honey: '#4A6B4E',       // was warm honey → fresh pine
-					honeyDeep: '#2D3F2F',   // was deeper amber → pine deep
-					honeyLight: '#E1E7DC',  // was pale honey wash → pale sage
-					saffron: '#5D7A60',
-					saffronDeep: '#2D3F2F',
-					saffronLight: '#DCE4D6',
-					gold: '#5D7A60',
+					// Warm accents → terracotta tones
+					honey: '#B67A5E',
+					honeyDeep: '#9F674D',
+					honeyLight: '#F5EFE7',
+					saffron: '#B67A5E',
+					saffronDeep: '#9F674D',
+					saffronLight: '#F5EFE7',
+					gold: '#B67A5E',
 				}
 			},
 			fontFamily: {
@@ -121,20 +131,20 @@ export default {
 				'saffron-glow': '0 0 0 1px rgba(138, 164, 142, 0.4), 0 6px 20px -8px rgba(45, 63, 47, 0.15)',
 			},
 			backgroundImage: {
-				// Clean, near-white washes. No warm cream.
-				'cream-gradient': 'linear-gradient(180deg, #FFFFFF 0%, #FAFAF7 50%, #F0F2EC 100%)',
-				'cream-radial': 'radial-gradient(ellipse at top, #FFFFFF 0%, #FAFAF7 60%, #F0F2EC 100%)',
-				'sage-gradient': 'linear-gradient(135deg, #DCE4D6 0%, #9EB39F 100%)',
-				'olive-gradient': 'linear-gradient(135deg, #8AA48E 0%, #5D7A60 100%)',
-				// earth-gradient / forest-gradient: solid deep pine for dark sections
-				'earth-gradient': 'linear-gradient(135deg, #4A6B4E 0%, #2D3F2F 100%)',
-				'forest-gradient': 'linear-gradient(135deg, #4A6B4E 0%, #2D3F2F 100%)',
-				'forest-deep-gradient': 'linear-gradient(160deg, #2D3F2F 0%, #1A2B1D 100%)',
-				'sage-fade': 'linear-gradient(180deg, rgba(158, 179, 159, 0) 0%, rgba(158, 179, 159, 0.18) 100%)',
-				// Legacy saffron names point at neutral pine tones now
-				'saffron-glow': 'radial-gradient(ellipse 60% 60% at 50% 50%, rgba(158, 179, 159, 0.18) 0%, rgba(158, 179, 159, 0) 70%)',
-				'saffron-gradient': 'linear-gradient(135deg, #4A6B4E 0%, #2D3F2F 100%)',
-				'meadow-fade': 'linear-gradient(180deg, rgba(199, 211, 192, 0) 0%, rgba(199, 211, 192, 0.2) 100%)',
+				// Warm off-white washes.
+				'cream-gradient': 'linear-gradient(180deg, #FFFFFF 0%, #FAFAF8 50%, #F5EFE7 100%)',
+				'cream-radial': 'radial-gradient(ellipse at top, #FFFFFF 0%, #FAFAF8 60%, #F5EFE7 100%)',
+				'sage-gradient': 'linear-gradient(135deg, #DCE4D6 0%, #8B9D7D 100%)',
+				'olive-gradient': 'linear-gradient(135deg, #CE9A82 0%, #B67A5E 100%)',
+				// earth-gradient / forest-gradient: soft warm brown for dark sections
+				'earth-gradient': 'linear-gradient(135deg, #574C42 0%, #3E362E 100%)',
+				'forest-gradient': 'linear-gradient(135deg, #574C42 0%, #3E362E 100%)',
+				'forest-deep-gradient': 'linear-gradient(160deg, #3E362E 0%, #2A231D 100%)',
+				'sage-fade': 'linear-gradient(180deg, rgba(139, 157, 125, 0) 0%, rgba(139, 157, 125, 0.18) 100%)',
+				// Legacy saffron names → terracotta tones
+				'saffron-glow': 'radial-gradient(ellipse 60% 60% at 50% 50%, rgba(182, 122, 94, 0.16) 0%, rgba(182, 122, 94, 0) 70%)',
+				'saffron-gradient': 'linear-gradient(135deg, #CE9A82 0%, #B67A5E 100%)',
+				'meadow-fade': 'linear-gradient(180deg, rgba(220, 228, 214, 0) 0%, rgba(220, 228, 214, 0.2) 100%)',
 				'grain': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.18 0 0 0 0 0.25 0 0 0 0 0.19 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
 			},
 			borderRadius: {

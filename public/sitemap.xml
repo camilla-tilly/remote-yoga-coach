@@ -3,286 +3,124 @@
 
   <!-- Home -->
   <url>
-    <loc>https://yogawithcamilla.se/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://remoteyogacoach.com/</loc>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- About -->
+  <!-- Services -->
   <url>
-    <loc>https://yogawithcamilla.se/om-mig</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://remoteyogacoach.com/services/team-wellness</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Pillar guides -->
+  <url>
+    <loc>https://remoteyogacoach.com/guides/mindfulness-at-work</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://remoteyogacoach.com/guides/remote-work-burnout</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://remoteyogacoach.com/guides/desk-yoga</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Pricing and booking -->
+  <url>
+    <loc>https://remoteyogacoach.com/pricing</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://remoteyogacoach.com/demo</loc>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Service Pages (live in App.tsx routes) -->
+  <!-- About -->
   <url>
-    <loc>https://yogawithcamilla.se/tjanster/foretagsyoga</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://remoteyogacoach.com/about</loc>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/tjanster/foretagsyoga-event</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/tjanster/privata-event</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/tjanster/sup-yoga</loc>
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/tjanster/sup-yoga-klasser</loc>
-    <lastmod>2026-04-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
 
   <!-- Blog index -->
   <url>
-    <loc>https://yogawithcamilla.se/blogg</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://remoteyogacoach.com/blog</loc>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Corporate yoga blog posts -->
+  <!-- Blog posts -->
   <url>
-    <loc>https://yogawithcamilla.se/blogg/foretagsyoga-vad-ingar-och-kostar</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/teambuilding-aktiviteter-stockholm</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/team-building-activities-stockholm</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://remoteyogacoach.com/blog/breathing-exercises-for-work-stress</loc>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yogawithcamilla.se/blogg/konferensyoga-teambuilding</loc>
-    <lastmod>2026-03-08</lastmod>
+    <loc>https://remoteyogacoach.com/blog/how-much-does-corporate-yoga-cost</loc>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yogawithcamilla.se/blogg/yoga-konferens-teambuilding</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://remoteyogacoach.com/blog/chair-yoga-at-your-desk</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yogawithcamilla.se/blogg/yoga-konferens-teambuilding-en</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://remoteyogacoach.com/blog/prevent-burnout-distributed-team</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yogawithcamilla.se/blogg/foretagsyoga-kickoff-nystart</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://remoteyogacoach.com/blog/desk-yoga-5-minute-routine</loc>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yogawithcamilla.se/blogg/foretagsyoga-kickoff-nystart-en</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://remoteyogacoach.com/blog/5-minute-desk-meditation</loc>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yogawithcamilla.se/blogg/foretagsyoga-recurring-practice-en</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://remoteyogacoach.com/blog/corporate-wellness-ideas-remote-teams</loc>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yogawithcamilla.se/blogg/yoga-sommaravslutning-företag</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://remoteyogacoach.com/blog/neck-and-shoulder-stretches-desk-workers</loc>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yogawithcamilla.se/blogg/yoga-sommaravslutning-företag-en</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://remoteyogacoach.com/blog/do-workplace-wellness-apps-work</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/sommaravslutning-aktiviteter-stockholm</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/summer-team-day-ideas-stockholm</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/office-yoga-english-international-teams-stockholm</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Workplace stress / wellbeing -->
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/stress-pa-jobbet-vila-prestandastrategi</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/workplace-stress-burnout-recovery-performance</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/andning-fokus-arbetsplats</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/breathing-focus-concentration-en</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/meditation-kreativitet-innovation-arbetsplats</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/meditation-creativity-innovation-workplace-en</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Private events (möhippa, bröllop, födelsedag) -->
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/mohippa-aktiviteter-stockholm</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/hen-party-ideas-stockholm</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/yoga-brollopsaktivitet</loc>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/wedding-weekend-yoga-stockholm</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- SUP yoga / water -->
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/sup-yoga-stockholm</loc>
-    <lastmod>2026-04-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/sup-yoga-klasser-stockholm</loc>
-    <lastmod>2026-04-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/vad-kostar-sup-yoga-stockholm</loc>
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/paddleboard-yoga-stockholm-sickla-strand</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/outdoor-water-activities-stockholm-summer</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/things-to-do-stockholm-weekend-yoga-on-water</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Stockholm tourism / summer / lifestyle (Stockholm-focused) -->
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/things-to-do-stockholm-summer</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/yoga-sauna-stockholm-friday-afternoon</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/australian-yoga-teacher-stockholm-cabin-story</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Private yoga (Stockholm) -->
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/private-yoga-teacher-stockholm-english</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/privatlektion-yoga-engelska-stockholm</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yogawithcamilla.se/blogg/yoga-in-english-stockholm-expat-guide</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
 </urlset>

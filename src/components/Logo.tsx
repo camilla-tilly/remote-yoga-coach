@@ -1,27 +1,30 @@
 interface LogoProps {
   size?: number;
   className?: string;
-  variant?: 'pine' | 'white' | 'outline';
+  variant?: 'clay' | 'white' | 'outline';
   showAccent?: boolean;
   'aria-hidden'?: boolean;
 }
 
 /**
- * Om brand mark — mirrors the favicon design (rounded pine square,
- * white Om glyph, optional honey accent bar). Reusable across Navbar,
- * Footer, and anywhere the brand mark helps anchor the page.
+ * Remote Yoga Coach brand mark — a hand-balanced cairn: three flat, gently
+ * offset stones stacked into a warm clay tile. Calm, grounded, "in balance",
+ * with no lifestyle or spiritual iconography. Reusable across Navbar, Footer,
+ * and anywhere the brand mark helps anchor the page.
  */
 const Logo = ({
   size = 40,
   className = '',
-  variant = 'pine',
-  showAccent = true,
+  variant = 'clay',
   ...rest
 }: LogoProps) => {
   const palette = {
-    pine: { bg: '#2D3F2F', fg: '#FFFFFF', accent: '#9EB39F' },
-    white: { bg: '#FFFFFF', fg: '#2D3F2F', accent: '#5D7A60' },
-    outline: { bg: 'transparent', fg: '#2D3F2F', accent: '#5D7A60' },
+    // Warm clay tile, cream stones.
+    clay: { bg: '#B67A5E', stroke: 'none', stones: ['#FFFFFF', '#F5EFE7', '#FFFFFF'] as const },
+    // Light tile, earth-tone stones.
+    white: { bg: '#FFFFFF', stroke: 'none', stones: ['#B67A5E', '#8B9D7D', '#3B322B'] as const },
+    // Transparent tile with a soft sage edge, earth-tone stones.
+    outline: { bg: 'transparent', stroke: '#DCE4D6', stones: ['#B67A5E', '#8B9D7D', '#3B322B'] as const },
   }[variant];
 
   return (
@@ -38,24 +41,17 @@ const Logo = ({
         y={variant === 'outline' ? 0.75 : 0}
         width={variant === 'outline' ? 62.5 : 64}
         height={variant === 'outline' ? 62.5 : 64}
-        rx="14"
+        rx="16"
         fill={palette.bg}
-        stroke={variant === 'outline' ? palette.fg : 'none'}
+        stroke={palette.stroke}
         strokeWidth={variant === 'outline' ? 1.5 : 0}
       />
-      <text
-        x="32"
-        y="46"
-        textAnchor="middle"
-        fontSize="42"
-        fontFamily="'Noto Sans Devanagari', 'Tiro Devanagari Hindi', 'Segoe UI', 'Apple Color Emoji', system-ui, serif"
-        fill={palette.fg}
-      >
-        ॐ
-      </text>
-      {showAccent && (
-        <rect x="26" y="55" width="12" height="2" rx="1" fill={palette.accent} />
-      )}
+      {/* Bottom stone (widest, the base) */}
+      <ellipse cx="32" cy="44" rx="15" ry="5.2" fill={palette.stones[0]} />
+      {/* Middle stone, nudged left */}
+      <ellipse cx="29.5" cy="33" rx="11" ry="4.5" fill={palette.stones[1]} />
+      {/* Top stone, nudged right */}
+      <ellipse cx="34.5" cy="23" rx="7.5" ry="3.8" fill={palette.stones[2]} opacity={variant === 'clay' ? 0.9 : 1} />
     </svg>
   );
 };
