@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Focus, Wind, BatteryCharging, CalendarCheck, Video, LineChart } from 'lucide-react';
+import { Wind, CalendarCheck, Video, LineChart } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
@@ -21,9 +21,9 @@ const structuredData = {
 };
 
 const benefits = [
-  { icon: Focus, title: 'Sharper focus', text: 'A short reset clears the mental clutter, so people come back to work present and clear-headed.' },
-  { icon: Wind, title: 'Steady under pressure', text: 'Simple breathing tools your team can reach for before the big meeting, the hard call, the busy afternoon.' },
-  { icon: BatteryCharging, title: 'Energy that lasts', text: 'Less screen fatigue and afternoon slump, more left in the tank by the end of the day.' },
+  { icon: CalendarCheck, title: 'Wellbeing they actually use', text: 'A live slot in the calendar gets real attendance, not the 3 to 5 percent an app or EAP settles at.' },
+  { icon: Wind, title: 'Lower burnout risk', text: 'Recovery built into the working week, the preventive habit that protects retention instead of reacting after someone leaves.' },
+  { icon: LineChart, title: 'Proof, not hope', text: 'Attendance and pre and post stress reported every month, so you can show your budget-holder it works.' },
 ];
 
 const steps = [
@@ -36,8 +36,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
-        title="Remote Yoga Coach – Live wellbeing for distributed teams"
-        description="The Weekly Reset: short live breathing and chair-yoga sessions that keep distributed teams focused, steady and energised. On Teams, camera optional. Book a pilot."
+        title="Corporate Wellbeing for Remote Teams | Remote Yoga Coach"
+        description="Live wellbeing sessions your distributed team actually attends, and you can measure. Breathing, meditation and chair yoga on Teams for HR and people leaders. Book a pilot."
         canonical="https://remoteyogacoach.com"
         structuredData={structuredData}
       />
@@ -54,9 +54,10 @@ const Index = () => {
               The weekly reset{' '}
               <span className="text-clay">your team looks forward to.</span>
             </h1>
-            <p className="mt-7 text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-[560px] mx-auto">
-              Short live breathing and chair-yoga sessions for distributed teams. On Teams, camera optional.
-              A calm weekly habit that keeps everyone focused and steady.
+            <p className="mt-7 text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-[580px] mx-auto">
+              Live breathing, meditation and chair-yoga sessions your distributed team actually turns up for, and that
+              you can measure. On Teams, camera optional. Built for HR and people leaders who are done paying for
+              apps nobody opens.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
@@ -78,10 +79,11 @@ const Index = () => {
           <div className="max-w-[1000px] mx-auto px-5">
             <div className="text-center max-w-[560px] mx-auto">
               <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
-                A calmer team is a sharper team
+                A wellbeing benefit that earns its budget
               </h2>
               <p className="mt-5 text-charcoal/70 text-lg leading-relaxed">
-                Thirty minutes a week your whole team can feel, and we rarely use all of it, so there is breathing space before the next meeting.
+                Thirty minutes a week that people actually attend, that lowers burnout risk, and that comes with the
+                reporting to prove it. Not another perk that lands flat.
               </p>
             </div>
 

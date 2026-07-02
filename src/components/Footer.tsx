@@ -50,9 +50,11 @@ const Footer = () => {
           {/* Guides row */}
           <nav aria-label="Guides" className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-inter text-[13px] text-white/65">
             <span className="uppercase tracking-[0.25em] text-[10px] font-semibold text-white/45">Guides</span>
-            <Link to="/guides/mindfulness-at-work" className="hover:text-white transition-colors">Mindfulness at work</Link>
-            <span aria-hidden="true" className="text-white/25">·</span>
             <Link to="/guides/remote-work-burnout" className="hover:text-white transition-colors">Remote work burnout</Link>
+            <span aria-hidden="true" className="text-white/25">·</span>
+            <Link to="/guides/cost-of-employee-burnout" className="hover:text-white transition-colors">What burnout costs</Link>
+            <span aria-hidden="true" className="text-white/25">·</span>
+            <Link to="/guides/mindfulness-at-work" className="hover:text-white transition-colors">Mindfulness at work</Link>
             <span aria-hidden="true" className="text-white/25">·</span>
             <Link to="/guides/desk-yoga" className="hover:text-white transition-colors">Desk yoga</Link>
           </nav>

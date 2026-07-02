@@ -107,10 +107,10 @@ const MindfulnessAtWork = () => {
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed">
               Mindfulness has a marketing problem. The word conjures beanbags, retreats and people who seem to have
-              far more spare time than you do. Underneath the branding sits something much more useful: a trainable
-              skill that helps busy, screen-tired people think clearly, stress less and stop carrying work around all
-              evening. This guide covers what it is, what the research actually shows, and how to practise it, alone
-              at your desk and together as a team.
+              far more spare time than your team does. Underneath the branding sits something a people leader can
+              actually use: a trainable skill, backed by real evidence, that lowers stress and sharpens focus across a
+              team, if it is run as a habit rather than handed out as an app nobody opens. This guide covers what it
+              is, whether it genuinely works, and how to build it into a distributed team.
             </p>
             <GuideTOC items={tocItems} />
           </div>

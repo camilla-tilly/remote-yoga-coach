@@ -106,10 +106,10 @@ const RemoteWorkBurnout = () => {
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed">
               In an office, burnout leaves a trail someone eventually notices. In a distributed team it hides behind
-              tidy Slack messages and a green status dot, and often surfaces only as a resignation letter or a long
-              sick note. This guide is for managers, HR and anyone who suspects it might be describing them: what
-              burnout actually is, why remote conditions feed it, how to spot it at a distance, and what genuinely
-              reduces the risk.
+              tidy Slack messages and a green status dot, and by the time it surfaces it is a resignation letter or a
+              long sick note, and the cost of replacing the person who wrote it. This guide is for the managers, HR
+              and people leaders who carry that risk: what burnout actually is, why remote conditions feed it, how to
+              spot it across a distributed team before it costs you someone, and what genuinely reduces it.
             </p>
             <GuideTOC items={tocItems} />
           </div>

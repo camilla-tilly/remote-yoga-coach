@@ -42,8 +42,8 @@ const TeamWellness = () => {
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
-        title="Team wellness for distributed teams | Remote Yoga Coach"
-        description="Live online corporate wellbeing for remote teams: The Weekly Reset, breathing, meditation and chair yoga on Teams, camera optional, with honest reporting. Book a pilot."
+        title="Corporate Wellbeing Sessions for Remote Teams | Remote Yoga Coach"
+        description="Live corporate wellbeing for distributed teams: The Weekly Reset, breathing, meditation and chair yoga on Teams, camera optional, with attendance and stress reporting. Book a pilot."
         canonical="https://remoteyogacoach.com/services/team-wellness"
         structuredData={structuredData}
       />

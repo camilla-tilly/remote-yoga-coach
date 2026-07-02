@@ -16,6 +16,7 @@ import ChairYogaForTeams from "./pages/services/ChairYogaForTeams";
 import MindfulnessAtWork from "./pages/guides/MindfulnessAtWork";
 import RemoteWorkBurnout from "./pages/guides/RemoteWorkBurnout";
 import DeskYoga from "./pages/guides/DeskYoga";
+import CostOfBurnout from "./pages/guides/CostOfBurnout";
 
 const queryClient = new QueryClient();
 
@@ -62,6 +63,7 @@ const App = () => (
           <Route path="/guides/mindfulness-at-work" element={<MindfulnessAtWork />} />
           <Route path="/guides/remote-work-burnout" element={<RemoteWorkBurnout />} />
           <Route path="/guides/desk-yoga" element={<DeskYoga />} />
+          <Route path="/guides/cost-of-employee-burnout" element={<CostOfBurnout />} />
 
           {/* Pricing & booking */}
           <Route path="/pricing" element={<Pricing />} />

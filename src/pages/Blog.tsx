@@ -62,19 +62,19 @@ const Blog = () => {
             <div className="grid gap-5 md:grid-cols-3">
               {[
                 {
-                  to: '/guides/mindfulness-at-work',
-                  label: 'Mindfulness at work',
-                  description: 'Meditation at work, focus practices and team exercises. The complete guide.',
-                },
-                {
                   to: '/guides/remote-work-burnout',
                   label: 'Remote work burnout',
-                  description: 'Signs, causes and prevention for distributed teams.',
+                  description: 'Signs, causes and prevention for distributed teams, for managers and HR.',
                 },
                 {
-                  to: '/guides/desk-yoga',
-                  label: 'Desk yoga and chair yoga',
-                  description: 'Movement for office bodies: stretches, routines and team habits.',
+                  to: '/guides/cost-of-employee-burnout',
+                  label: 'What burnout costs',
+                  description: 'The real cost of burnout and the ROI of fixing it. The business case.',
+                },
+                {
+                  to: '/guides/mindfulness-at-work',
+                  label: 'Mindfulness at work',
+                  description: 'Does workplace mindfulness work, and how to run it as a team habit.',
                 },
               ].map((g) => (
                 <Link
