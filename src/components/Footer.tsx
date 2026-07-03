@@ -45,7 +45,7 @@ const Footer = () => {
       <div
         aria-hidden="true"
         className="absolute -bottom-32 -left-20 w-[520px] h-[520px] rounded-full opacity-[0.12] blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, #8B9D7D 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, #CE9A82 0%, transparent 70%)' }}
       />
 
       <div className="relative max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8 py-16 md:py-20">

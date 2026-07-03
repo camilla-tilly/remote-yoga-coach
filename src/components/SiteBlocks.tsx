@@ -70,12 +70,58 @@ export const GlowField = ({ tone = 'warm' }: { tone?: 'warm' | 'sage' }) => (
   <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
     <div
       className="absolute -top-24 -right-16 w-[440px] h-[440px] rounded-full opacity-[0.10] blur-3xl animate-drift"
-      style={{ background: `radial-gradient(circle, ${tone === 'warm' ? '#B67A5E' : '#8B9D7D'} 0%, transparent 70%)` }}
+      style={{ background: `radial-gradient(circle, ${tone === 'sage' ? '#CE9A82' : '#B67A5E'} 0%, transparent 70%)` }}
     />
     <div
       className="absolute -bottom-28 -left-20 w-[420px] h-[420px] rounded-full opacity-[0.09] blur-3xl animate-drift"
-      style={{ background: `radial-gradient(circle, ${tone === 'warm' ? '#8B9D7D' : '#B67A5E'} 0%, transparent 70%)`, animationDelay: '3s' }}
+      style={{ background: 'radial-gradient(circle, #CE9A82 0%, transparent 70%)', animationDelay: '3s' }}
     />
+  </div>
+);
+
+/* ------------------------------------------------------------------ *
+ * HeroArt — a warm, branded "breathing rings" banner. Stands in as a
+ * hero image: concentric arcs rising like a calm dawn, in clay tones.
+ * ------------------------------------------------------------------ */
+export const HeroArt = ({ className = '' }: { className?: string }) => (
+  <div
+    className={`relative w-full overflow-hidden rounded-[28px] border border-sage-light ${className}`}
+    style={{ background: 'linear-gradient(135deg, #F7F1EA 0%, #EFDFD0 55%, #E7CDB8 100%)' }}
+  >
+    <svg viewBox="0 0 640 300" className="w-full h-auto block" role="img" aria-label="Concentric rings rising like a calm dawn">
+      <defs>
+        <radialGradient id="haSun" cx="50%" cy="100%" r="80%">
+          <stop offset="0%" stopColor="#C88A64" />
+          <stop offset="100%" stopColor="#B67A5E" />
+        </radialGradient>
+      </defs>
+      {/* concentric arcs, fading outward */}
+      {[
+        { r: 260, o: 0.13 },
+        { r: 210, o: 0.2 },
+        { r: 160, o: 0.28 },
+        { r: 110, o: 0.4 },
+        { r: 60, o: 0.55 },
+      ].map(({ r, o }) => (
+        <path
+          key={r}
+          d={`M ${320 - r} 300 A ${r} ${r} 0 0 1 ${320 + r} 300`}
+          fill="none"
+          stroke="#B67A5E"
+          strokeOpacity={o}
+          strokeWidth="2.5"
+          strokeLinecap="round"
+        />
+      ))}
+      {/* soft sun */}
+      <path d="M 280 300 A 40 40 0 0 1 360 300 Z" fill="url(#haSun)" fillOpacity="0.9" />
+      {/* scattered calm particles */}
+      {[
+        [120, 90, 3], [500, 70, 4], [430, 150, 2.5], [200, 175, 2.5], [560, 190, 3], [95, 205, 2.5],
+      ].map(([cx, cy, rr], i) => (
+        <circle key={i} cx={cx} cy={cy} r={rr} fill="#B67A5E" fillOpacity="0.28" />
+      ))}
+    </svg>
   </div>
 );
 

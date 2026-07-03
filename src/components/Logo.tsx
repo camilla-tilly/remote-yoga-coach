@@ -22,9 +22,9 @@ const Logo = ({
     // Warm clay tile, cream stones.
     clay: { bg: '#B67A5E', stroke: 'none', stones: ['#FFFFFF', '#F5EFE7', '#FFFFFF'] as const },
     // Light tile, earth-tone stones.
-    white: { bg: '#FFFFFF', stroke: 'none', stones: ['#B67A5E', '#8B9D7D', '#3B322B'] as const },
+    white: { bg: '#FFFFFF', stroke: 'none', stones: ['#B67A5E', '#A98D78', '#3B322B'] as const },
     // Transparent tile with a soft sage edge, earth-tone stones.
-    outline: { bg: 'transparent', stroke: '#DCE4D6', stones: ['#B67A5E', '#8B9D7D', '#3B322B'] as const },
+    outline: { bg: 'transparent', stroke: '#E9E0D4', stones: ['#B67A5E', '#A98D78', '#3B322B'] as const },
   }[variant];
 
   return (

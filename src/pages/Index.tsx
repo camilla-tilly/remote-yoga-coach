@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
-import { Reveal, GlowField, ComparisonTable, Eyebrow } from '@/components/SiteBlocks';
+import { Reveal, GlowField, ComparisonTable, Eyebrow, HeroArt } from '@/components/SiteBlocks';
 
 const faqs: Array<[string, string]> = [
   ['Who is this actually for?', 'People and culture leaders, team leads and founders at remote-first and hybrid companies, roughly 10 to 100 people, who want a wellbeing habit the whole team keeps rather than another perk that lands flat.'],
@@ -96,6 +96,7 @@ const Index = () => {
             <p className="mt-8 text-charcoal/50 text-sm">
               Live across UK, European and Australian time zones. Every session recorded.
             </p>
+            <HeroArt className="mt-14 max-w-[720px] mx-auto" />
           </div>
         </section>
 

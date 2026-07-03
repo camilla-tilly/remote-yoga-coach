@@ -76,9 +76,9 @@ export default {
 				offwhite: '#FAFAF8',
 				cream: '#F5EFE7',
 				sage: {
-					DEFAULT: '#8B9D7D',
-					dark: '#7A8C6D',
-					light: '#DCE4D6',
+					DEFAULT: '#A98D78',
+					dark: '#96806D',
+					light: '#E9E0D4',
 				},
 				dalashala: {
 					// Legacy names → RYC palette
@@ -86,7 +86,7 @@ export default {
 					lightBeige: '#F5EFE7',  // warm cream for card fills
 					darkBrown: '#4A423A',   // soft warm brown (primary text)
 					mediumBrown: '#B67A5E', // muted terracotta (links, buttons)
-					tan: '#DCE4D6',         // light sage (borders)
+					tan: '#E9E0D4',         // light sage (borders)
 					// Semantic names
 					cream: '#FAFAF8',
 					creamLight: '#F5EFE7',
@@ -95,10 +95,10 @@ export default {
 					earthSoft: '#63564A',   // warm brown (gradient start)
 					olive: '#B67A5E',       // muted terracotta (buttons, links, accent)
 					oliveLight: '#CE9A82',  // lighter terracotta (hover)
-					meadow: '#DCE4D6',      // light sage (borders)
-					meadowLight: '#E8EDE3', // palest sage
-					sage: '#8B9D7D',
-					sageLight: '#DCE4D6',
+					meadow: '#E9E0D4',      // light sage (borders)
+					meadowLight: '#EFE7DB', // palest sage
+					sage: '#A98D78',
+					sageLight: '#E9E0D4',
 					// Warm accents → terracotta tones
 					honey: '#B67A5E',
 					honeyDeep: '#9F674D',
@@ -134,7 +134,7 @@ export default {
 				// Warm off-white washes.
 				'cream-gradient': 'linear-gradient(180deg, #FFFFFF 0%, #FAFAF8 50%, #F5EFE7 100%)',
 				'cream-radial': 'radial-gradient(ellipse at top, #FFFFFF 0%, #FAFAF8 60%, #F5EFE7 100%)',
-				'sage-gradient': 'linear-gradient(135deg, #DCE4D6 0%, #8B9D7D 100%)',
+				'sage-gradient': 'linear-gradient(135deg, #E9E0D4 0%, #A98D78 100%)',
 				'olive-gradient': 'linear-gradient(135deg, #CE9A82 0%, #B67A5E 100%)',
 				// earth-gradient / forest-gradient: soft warm brown for dark sections
 				'earth-gradient': 'linear-gradient(135deg, #574C42 0%, #3E362E 100%)',
