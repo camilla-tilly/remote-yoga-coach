@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
+import { CoachPhoto } from '@/components/SiteBlocks';
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -60,6 +61,11 @@ const About = () => {
 
         <section className="py-20 md:py-28">
           <div className="max-w-[620px] mx-auto px-5 space-y-8 text-charcoal/80 text-lg md:text-xl leading-relaxed">
+            <CoachPhoto
+              src="/coach-camilla.jpg"
+              alt="Camilla, a 500-hour certified yoga teacher, seated in meditation"
+              className="w-full max-w-[260px] mx-auto"
+            />
             <p>
               I'm Camilla, a 500-hour certified yoga teacher. That is the advanced level of training, double the
               standard 200-hour certification, so the sessions are grounded in real teaching rather than a weekend

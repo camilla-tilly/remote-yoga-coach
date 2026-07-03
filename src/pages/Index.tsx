@@ -195,7 +195,11 @@ const Index = () => {
         {/* MEET YOUR COACH */}
         <section className="bg-cream py-20 md:py-28">
           <div className="max-w-[1000px] mx-auto px-5 grid gap-10 md:gap-14 md:grid-cols-[minmax(0,300px)_1fr] items-center">
-            <CoachPhoto className="w-full max-w-[300px] mx-auto md:mx-0" />
+            <CoachPhoto
+              src="/coach-camilla.jpg"
+              alt="Camilla, a 500-hour certified yoga teacher, seated in meditation"
+              className="w-full max-w-[300px] mx-auto md:mx-0"
+            />
             <div>
               <Eyebrow>Meet your coach</Eyebrow>
               <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
