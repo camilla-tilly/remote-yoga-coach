@@ -99,7 +99,7 @@ const ChairYogaForTeams = () => {
               For companies and remote teams
             </span>
             <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
-              Virtual chair yoga <span className="text-clay">your whole team can actually do.</span>
+              Virtual chair yoga your whole team can actually do.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[640px] mx-auto">
               Live, guided chair-yoga sessions for distributed and hybrid teams, on Teams or Zoom. Gentle seated

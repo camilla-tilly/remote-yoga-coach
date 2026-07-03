@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import { Wind, CalendarCheck, Video, LineChart, ArrowRight } from 'lucide-react';
+import { CalendarCheck, Video, LineChart, ArrowRight, Leaf, Repeat, Sun } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
-import { Reveal, GlowField, StatBand, ComparisonTable, Eyebrow } from '@/components/SiteBlocks';
+import { Reveal, GlowField, ComparisonTable, Eyebrow } from '@/components/SiteBlocks';
 
 const faqs: Array<[string, string]> = [
   ['Who is this actually for?', 'People and culture leaders, team leads and founders at remote-first and hybrid companies, roughly 10 to 100 people, who want a wellbeing habit the whole team keeps rather than another perk that lands flat.'],
@@ -34,9 +34,9 @@ const structuredData = {
 };
 
 const benefits = [
-  { icon: CalendarCheck, title: 'Wellbeing they actually use', text: 'A live slot in the calendar gets real attendance, not the 3 to 5 percent an app or EAP settles at.' },
-  { icon: Wind, title: 'Lower burnout risk', text: 'Recovery built into the working week, the preventive habit that protects retention instead of reacting after someone leaves.' },
-  { icon: LineChart, title: 'Proof, not hope', text: 'Attendance and pre and post stress reported every month, so you can show your budget-holder it works.' },
+  { icon: Leaf, title: 'Calmer, clearer heads', text: 'A short weekly reset clears the mental clutter, so people come back present and focused, not frazzled.' },
+  { icon: Repeat, title: 'A habit that sticks', text: 'Live and scheduled, with the same coach each week, it becomes the thirty minutes the team looks forward to.' },
+  { icon: Sun, title: 'Energy through the week', text: 'Less screen fatigue and afternoon slump, and a little more left in the tank by Friday.' },
 ];
 
 const steps = [
@@ -74,8 +74,7 @@ const Index = () => {
               The Weekly Reset
             </span>
             <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-6xl leading-[1.08] tracking-tight">
-              The weekly reset{' '}
-              <span className="text-clay">your team looks forward to.</span>
+              The weekly reset your team looks forward to.
             </h1>
             <p className="mt-7 text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-[580px] mx-auto">
               Live breathing, meditation and chair-yoga sessions your distributed team actually turns up for, and that
@@ -100,30 +99,17 @@ const Index = () => {
           </div>
         </section>
 
-        {/* STAT BAND — the problem, in numbers */}
-        <StatBand
-          variant="dark"
-          eyebrow="Why perks keep failing"
-          heading="Passive wellbeing is money spent, not used"
-          items={[
-            { value: '3 to 5%', label: 'of staff ever use their EAP, and a quarter do not know it exists' },
-            { value: '~12%', label: 'typical uptake of a gym benefit, the already-active use it' },
-            { value: '£4.70', label: 'returned for every £1 invested in workplace mental health (Deloitte)' },
-          ]}
-          footnote="Sources: Deloitte UK Mental Health & Employers, Personnel Today, HSE."
-        />
-
-        {/* BENEFITS — buyer outcomes */}
+        {/* WHY IT HELPS — soft, benefit-led */}
         <section className="py-24 md:py-32">
           <div className="max-w-[1000px] mx-auto px-5">
             <div className="text-center max-w-[560px] mx-auto">
-              <Eyebrow>What you get</Eyebrow>
+              <Eyebrow>Why it helps</Eyebrow>
               <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
-                A wellbeing benefit that earns its budget
+                A calmer team, a sharper week
               </h2>
               <p className="mt-5 text-charcoal/70 text-lg leading-relaxed">
-                Thirty minutes a week that people actually attend, that lowers burnout risk, and that comes with the
-                reporting to prove it. Not another perk that lands flat.
+                Thirty minutes together, once a week. Camera optional, one link to join. Small enough to keep, big
+                enough to feel by Friday.
               </p>
             </div>
 

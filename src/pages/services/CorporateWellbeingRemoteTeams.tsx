@@ -97,7 +97,7 @@ const CorporateWellbeingRemoteTeams = () => {
           <div className="relative max-w-[820px] mx-auto px-5 text-center">
             <Eyebrow>Corporate wellbeing, distributed teams</Eyebrow>
             <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
-              Wellbeing for a remote team <span className="text-clay">that actually reaches everyone.</span>
+              Wellbeing for a remote team that actually reaches everyone.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[660px] mx-auto">
               A live weekly wellbeing session for your whole distributed team, on Teams or Zoom. Breathing, meditation
@@ -139,7 +139,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* STAT BAND */}
         <StatBand
-          variant="dark"
+          variant="cream"
           eyebrow="The stakes"
           heading="Why remote wellbeing is worth getting right"
           items={[

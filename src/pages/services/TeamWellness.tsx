@@ -54,7 +54,7 @@ const TeamWellness = () => {
         <section className="bg-cream-soft pt-36 pb-20 md:pt-44 md:pb-24">
           <div className="max-w-[820px] mx-auto px-5 text-center">
             <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
-              The weekly reset <span className="text-clay">your team looks forward to.</span>
+              The weekly reset your team looks forward to.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[660px] mx-auto">
               Live 30-minute breathing, meditation and chair-yoga sessions for distributed teams, on Teams,

@@ -88,7 +88,7 @@ const Compare = () => {
           <div className="relative max-w-[820px] mx-auto px-5 text-center">
             <Eyebrow>The honest comparison</Eyebrow>
             <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
-              Live sessions, apps and EAPs, <span className="text-clay">on the metric that matters</span>
+              Live sessions, apps and EAPs, on the metric that matters
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[640px] mx-auto">
               Every wellbeing tool looks good in a pitch deck. The only question that matters is whether your team
