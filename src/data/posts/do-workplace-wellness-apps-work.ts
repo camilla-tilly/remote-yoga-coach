@@ -10,7 +10,7 @@ const post: BlogPost = {
   excerpt: "Wellbeing apps look like an easy win: low cost, instant rollout. So why does hardly anyone use them a year in? A look at the engagement data, and what works better.",
   language: "en",
   relatedServiceHref: "/pricing",
-  relatedServiceLabel: "See our transparent pricing",
+  relatedServiceLabel: "See my transparent pricing",
   tableOfContents: true,
   relatedPosts: [
     { slug: "how-much-does-corporate-yoga-cost", label: "How much does corporate yoga cost?" },
@@ -120,13 +120,13 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "We run live, 30-minute breathing and chair-yoga sessions your whole team joins on Teams, scheduled, guided, camera optional, and we report on attendance and wellbeing so you can see it working. It's the \"class\" alongside whatever \"library\" you already have. See how it works at [our team wellbeing service](/services/team-wellness), or book a pilot at [our demo page](/demo) and watch the attendance for yourself."
+      text: "I run live, 30-minute breathing and chair-yoga sessions your whole team joins on Teams, scheduled, guided, camera optional, and I report on attendance and wellbeing so you can see it working. It's the \"class\" alongside whatever \"library\" you already have. See how it works at [my team wellbeing service](/services/team-wellness), or book a pilot at [my demo page](/demo) and watch the attendance for yourself."
     },
     {
       type: "cta",
       text: "Transparent pricing, no long lock-ins. See exactly what a live, recurring session costs for your team.",
       ctaHref: "/pricing",
-      ctaLabel: "See our pricing"
+      ctaLabel: "See my pricing"
     },
     {
       type: "callout",

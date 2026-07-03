@@ -163,7 +163,7 @@ const CostOfBurnout = () => {
               </p>
               <p>
                 That is why headcount-level wellbeing metrics miss it entirely. The cost is already being paid, every
-                week, in output nobody is measuring. Our guide to{' '}
+                week, in output nobody is measuring. My guide to{' '}
                 <Link to="/guides/remote-work-burnout" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   remote work burnout
                 </Link>{' '}
@@ -239,7 +239,7 @@ const CostOfBurnout = () => {
                 Preventive habits are both cheaper and more effective because they reach everyone, before the crisis,
                 on a schedule. And the method has evidence behind it: a review of 28 studies found that a single
                 session of yoga, meditation or breathing reduced stress reactivity in 71 percent of physiological
-                measures. Run weekly, that becomes recovery built into the calendar rather than hoped for. We unpack
+                measures. Run weekly, that becomes recovery built into the calendar rather than hoped for. I unpack
                 what does and does not work in{' '}
                 <Link to="/blog/do-workplace-wellness-apps-work" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   do workplace wellness apps actually work?
@@ -269,7 +269,7 @@ const CostOfBurnout = () => {
             />
             <GuideProse>
               <p>
-                That last step is the whole point of how we run things. A four-week pilot of a live weekly session
+                That last step is the whole point of how I run things. A four-week pilot of a live weekly session
                 ends in a one-page report you can take straight to the budget-holder. See{' '}
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   how the programme works

@@ -11,7 +11,7 @@ import { GuideFAQ } from '@/components/GuideLayout';
 const faqItems: Array<[string, string]> = [
   [
     'What is corporate wellbeing for a remote team?',
-    'A structured wellbeing programme delivered live and online to a distributed workforce, rather than in an office. Ours is a recurring weekly session of breathing, meditation and chair yoga on Teams or Zoom, led by the same coach, with attendance and wellbeing reporting. No room to book, no travel, every location joins as an equal.',
+    'A structured wellbeing programme delivered live and online to a distributed workforce, rather than in an office. It is a recurring weekly session of breathing, meditation and chair yoga on Teams or Zoom, led by the same coach, with attendance and wellbeing reporting. No room to book, no travel, every location joins as an equal.',
   ],
   [
     'How is a team wellbeing subscription different from a one-off workshop?',

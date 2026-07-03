@@ -12,7 +12,7 @@ const post: BlogPost = {
     'Almost nobody publishes their prices. This guide fixes that: what corporate yoga actually costs in 2026, in-person and online, per session and per month, so you can budget before you pick up the phone.',
   language: 'en',
   relatedServiceHref: '/pricing',
-  relatedServiceLabel: 'See our transparent pricing',
+  relatedServiceLabel: 'See my transparent pricing',
   tableOfContents: true,
   relatedPosts: [
     { slug: 'do-workplace-wellness-apps-work', label: 'Do workplace wellness apps actually work?' },
@@ -99,13 +99,13 @@ const post: BlogPost = {
     { type: 'heading', text: 'See exactly what it costs' },
     {
       type: 'paragraph',
-      text: 'We publish our prices, including a flat monthly fee for your whole team and a four-week pilot you can try first. [See the full pricing](/pricing), or [book a pilot](/demo) and see it work with your own team, credited to your first month if you continue.',
+      text: 'I publish my prices, including a flat monthly fee for your whole team and a four-week pilot you can try first. [See the full pricing](/pricing), or [book a pilot](/demo) and see it work with your own team, credited to your first month if you continue.',
     },
     {
       type: 'cta',
-      text: 'Curious what it would cost for your team? Our pricing is public, with a four-week pilot you can try first.',
+      text: 'Curious what it would cost for your team? My pricing is public, with a four-week pilot you can try first.',
       ctaHref: '/pricing',
-      ctaLabel: 'See our pricing',
+      ctaLabel: 'See my pricing',
     },
     {
       type: 'callout',

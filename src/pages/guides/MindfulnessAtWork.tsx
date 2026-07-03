@@ -184,7 +184,7 @@ const MindfulnessAtWork = () => {
               <p>
                 One honest caveat: mindfulness is not a cure for a broken workload, a toxic manager or chronic
                 understaffing. It helps people recover, focus and respond rather than react. If the underlying
-                problem is structural, it needs a structural fix too. Our guide to{' '}
+                problem is structural, it needs a structural fix too. My guide to{' '}
                 <Link to="/guides/remote-work-burnout" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   remote work burnout
                 </Link>{' '}
@@ -379,7 +379,7 @@ const MindfulnessAtWork = () => {
             />
             <GuideProse>
               <p>
-                This is exactly how our{' '}
+                This is exactly how my{' '}
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   Weekly Reset programme
                 </Link>{' '}

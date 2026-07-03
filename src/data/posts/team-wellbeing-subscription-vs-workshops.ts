@@ -35,7 +35,7 @@ const post: BlogPost = {
       '**A programme, not a sampler.** Sessions build on each other instead of being disconnected tasters.',
       '**Measurement over time.** You can actually see attendance and wellbeing move across weeks, not guess from a single feedback form.',
     ] },
-    { type: 'paragraph', text: 'That is the model behind our [wellbeing subscription for remote teams](/services/corporate-wellbeing-for-remote-teams): a recurring weekly session, the same coach, with reporting you can take to leadership.' },
+    { type: 'paragraph', text: 'That is the model behind my [wellbeing subscription for remote teams](/services/corporate-wellbeing-for-remote-teams): a recurring weekly session, the same coach, with reporting you can take to leadership.' },
     { type: 'heading', text: 'The cost comparison' },
     { type: 'paragraph', text: 'On a per-session sticker price, a one-off can look cheaper. Per unit of actual change, it rarely is, because most of what you pay for evaporates. A rough shape of the trade-off:' },
     { type: 'table', tableHead: ['', 'One-off workshop', 'Weekly subscription'], tableRows: [
@@ -51,7 +51,7 @@ const post: BlogPost = {
     { type: 'faq', faqItems: [
       { q: 'Is a wellbeing subscription better than a one-off workshop?', a: 'For ongoing team wellbeing, yes, because results come from the weekly rhythm, not any single session. For a specific one-time occasion, a one-off workshop can be the right call. Many teams start with a pilot and convert if it lands.' },
       { q: 'How much does a team wellbeing subscription cost?', a: 'It is priced as a flat monthly fee by team size rather than per person, so the cost per employee stays low as you grow. Every engagement starts with a four-week paid pilot credited to your first month.' },
-      { q: 'How long before a subscription shows results?', a: 'Attendance patterns are visible within the first few weeks; the wellbeing effect builds over a couple of months as the habit forms. That is why we report attendance and pre and post wellbeing from the start.' },
+      { q: 'How long before a subscription shows results?', a: 'Attendance patterns are visible within the first few weeks; the wellbeing effect builds over a couple of months as the habit forms. That is why I report attendance and pre and post wellbeing from the start.' },
       { q: 'Can we try it before subscribing?', a: 'Yes. A four-week pilot runs a complete mini-programme so you can see attendance and results with your own team before committing to an ongoing subscription.' },
     ] },
   ],

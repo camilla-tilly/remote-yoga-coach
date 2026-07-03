@@ -84,7 +84,7 @@ const post: BlogPost = {
       type: "list",
       items: [
         "The one-off wellbeing day. A single afternoon of talks and free smoothies does not touch a workload that resumes in full on Monday. It can even backfire, signalling that wellbeing is a one-day event rather than how the team works.",
-        "The app nobody opens. A meditation or wellbeing app gets rolled out, downloaded by a keen few, then quietly forgotten. Access is not the same as use, and use is not the same as habit. There is more on this in our piece on whether workplace wellness apps actually work at [/blog/do-workplace-wellness-apps-work](/blog/do-workplace-wellness-apps-work).",
+        "The app nobody opens. A meditation or wellbeing app gets rolled out, downloaded by a keen few, then quietly forgotten. Access is not the same as use, and use is not the same as habit. There is more on this in my piece on whether workplace wellness apps actually work at [/blog/do-workplace-wellness-apps-work](/blog/do-workplace-wellness-apps-work).",
         "Leaning on the EAP. Employee assistance programmes matter and should exist, but typical uptake sits around 3 to 5 percent. An EAP is a safety net for people already in crisis, not a preventive measure. If it is the whole strategy, most people are unprotected."
       ]
     },
@@ -127,7 +127,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "This reframes wellbeing from a soft cost to a straightforward risk-and-return calculation, which is the language a budget conversation actually runs on. For how the numbers work on the spend side, see our breakdown of [how much corporate yoga costs](/blog/how-much-does-corporate-yoga-cost)."
+      text: "This reframes wellbeing from a soft cost to a straightforward risk-and-return calculation, which is the language a budget conversation actually runs on. For how the numbers work on the spend side, see my breakdown of [how much corporate yoga costs](/blog/how-much-does-corporate-yoga-cost)."
     },
     {
       type: "heading",
@@ -149,7 +149,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "If you want the mechanics of how a recurring reset fits a distributed team, our [team wellness page](/services/team-wellness) walks through what a weekly session looks like in practice."
+      text: "If you want the mechanics of how a recurring reset fits a distributed team, my [team wellness page](/services/team-wellness) walks through what a weekly session looks like in practice."
     },
     {
       type: "callout",

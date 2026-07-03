@@ -181,7 +181,7 @@ const ChairYogaForTeams = () => {
                 That is the whole difference between a benefit that is bought and a benefit that is used.
               </p>
               <p>
-                If you want the self-guided version to share alongside it, our{' '}
+                If you want the self-guided version to share alongside it, my{' '}
                 <Link to="/guides/desk-yoga" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   desk yoga and chair yoga guide
                 </Link>{' '}

@@ -236,7 +236,7 @@ export const ComparisonTable = ({
                     {c}
                   </span>
                   {i === highlightIndex && (
-                    <span className="mt-1.5 inline-block text-[10px] font-semibold uppercase tracking-widest text-clay">You, with us</span>
+                    <span className="mt-1.5 inline-block text-[10px] font-semibold uppercase tracking-widest text-clay">You, with me</span>
                   )}
                 </th>
               ))}
@@ -268,7 +268,7 @@ export const ComparisonTable = ({
           >
             <p className={`font-fraunces font-semibold text-lg ${colI === highlightIndex ? 'text-clay' : 'text-heading'}`}>
               {c}
-              {colI === highlightIndex && <span className="ml-2 text-[10px] font-semibold uppercase tracking-widest align-middle">You, with us</span>}
+              {colI === highlightIndex && <span className="ml-2 text-[10px] font-semibold uppercase tracking-widest align-middle">You, with me</span>}
             </p>
             <ul className="mt-3 space-y-2">
               {rows.map((r) => (

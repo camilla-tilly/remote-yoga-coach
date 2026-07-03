@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Reveal, GlowField, Eyebrow } from '@/components/SiteBlocks';
 
 const faqs: Array<[string, string]> = [
-  ['Do people need their cameras on?', 'No. Camera-off is welcome, and we say so at the start of every session.'],
+  ['Do people need their cameras on?', 'No. Camera-off is welcome, and I say so at the start of every session.'],
   ['Will people actually attend?', 'That is what the pilot is for. Live, scheduled sessions out-attend apps and EAPs, because the hardest part, starting, is already done. You see the real numbers in your report.'],
   ['What if people join late or miss one?', 'Sessions are built to drop into, and every one is recorded, so anyone can catch up or join from another time zone.'],
   ['We already have an app or an EAP. Why add this?', 'Those are libraries and crisis lines: useful, but passive. The Weekly Reset is the live, weekly layer with a real person, which is what actually drives participation. It complements what you have.'],
@@ -199,7 +199,7 @@ const Pricing = () => {
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
               Poor mental health costs UK employers around 2,646 pounds per affected employee a year, and workplace
               mental health spend returns about 4.70 pounds for every 1 pound (Deloitte). A year of these sessions
-              costs a fraction of a single burnout resignation. If you need to make that case internally, we wrote it
+              costs a fraction of a single burnout resignation. If you need to make that case internally, I wrote it
               up for you.
             </p>
             <p className="mt-6">

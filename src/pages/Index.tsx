@@ -41,7 +41,7 @@ const benefits = [
 
 const steps = [
   { icon: CalendarCheck, title: 'Start with a pilot', text: 'A four-week trial, credited to your first month if you continue.' },
-  { icon: Video, title: 'We set a weekly slot', text: 'Same time, same coach, one link. I run it, your team just shows up.' },
+  { icon: Video, title: 'I set a weekly slot', text: 'Same time, same coach, one link. I run it, your team just shows up.' },
   { icon: LineChart, title: 'You see it working', text: 'Simple reporting on attendance and how people feel, before and after.' },
 ];
 

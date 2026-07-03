@@ -226,7 +226,7 @@ const RemoteWorkBurnout = () => {
             <GuideProse>
               <p>
                 One of these means little. A cluster in the same person across a few weeks deserves a private,
-                gentle check-in, not a performance conversation. The full playbook for managers is in our post on{' '}
+                gentle check-in, not a performance conversation. The full playbook for managers is in my post on{' '}
                 <Link to="/blog/prevent-burnout-distributed-team" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   preventing burnout in a distributed team
                 </Link>
@@ -330,7 +330,7 @@ const RemoteWorkBurnout = () => {
             />
             <GuideProse>
               <p>
-                The rhythm layer is exactly what our{' '}
+                The rhythm layer is exactly what my{' '}
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   Weekly Reset programme
                 </Link>{' '}

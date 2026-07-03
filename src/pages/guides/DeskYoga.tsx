@@ -280,7 +280,7 @@ const DeskYoga = () => {
                 <Link to="/blog/5-minute-desk-meditation" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   five-minute desk meditation
                 </Link>
-                . The movement and the stillness are two doors into the same room; our{' '}
+                . The movement and the stillness are two doors into the same room; my{' '}
                 <Link to="/guides/mindfulness-at-work" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   mindfulness at work guide
                 </Link>{' '}
@@ -309,7 +309,7 @@ const DeskYoga = () => {
                 team calendar, a link to click, and a coach who leads the movement, the same face every week. Nobody
                 has to remember, decide or perform. Cameras stay off for anyone who prefers it, recordings cover the
                 other time zones, and within a few weeks it becomes the meeting people quietly protect. That is the
-                design of our{' '}
+                design of my{' '}
                 <Link to="/services/chair-yoga-for-teams" className="text-clay underline underline-offset-4 hover:text-white">
                   virtual chair yoga for teams
                 </Link>
