@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
-import { Reveal, GlowField, ComparisonTable, Eyebrow, HeroArt } from '@/components/SiteBlocks';
+import { Reveal, GlowField, ComparisonTable, Eyebrow, HeroArt, CoachPhoto, Testimonials } from '@/components/SiteBlocks';
 
 const faqs: Array<[string, string]> = [
   ['Who is this actually for?', 'People and culture leaders, team leads and founders at remote-first and hybrid companies, roughly 10 to 100 people, who want a wellbeing habit the whole team keeps rather than another perk that lands flat.'],
@@ -32,6 +32,12 @@ const structuredData = {
     },
   ],
 };
+
+// Real client quotes go here once the first pilots wrap. Until then this
+// array stays empty and the testimonials section renders nothing (no
+// placeholder quotes ever ship). Shape:
+//   { quote: 'A specific result and how it felt.', name: 'Jane Doe', role: 'Head of People, Acme', photo: '/testimonials/jane.jpg' }
+const testimonials: Array<{ quote: string; name: string; role?: string; photo?: string }> = [];
 
 const benefits = [
   { icon: Leaf, title: 'Calmer, clearer heads', text: 'A short weekly reset clears the mental clutter, so people come back present and focused, not frazzled.' },
@@ -186,8 +192,41 @@ const Index = () => {
           </div>
         </section>
 
+        {/* MEET YOUR COACH */}
+        <section className="bg-cream py-20 md:py-28">
+          <div className="max-w-[1000px] mx-auto px-5 grid gap-10 md:gap-14 md:grid-cols-[minmax(0,300px)_1fr] items-center">
+            <CoachPhoto className="w-full max-w-[300px] mx-auto md:mx-0" />
+            <div>
+              <Eyebrow>Meet your coach</Eyebrow>
+              <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
+                One familiar face, every week
+              </h2>
+              <div className="mt-5 space-y-4 text-charcoal/75 text-lg leading-relaxed">
+                <p>
+                  I'm Camilla, a 500-hour certified yoga teacher. I run every session myself, the same familiar face
+                  each week, because the relationship is what makes people actually show up.
+                </p>
+                <p>
+                  Before teaching full time I worked across a 10,000-person corporate, a startup, a consultancy and
+                  government, so the sessions are built around real office life, not an ideal version of it.
+                </p>
+              </div>
+              <p className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-charcoal/60">
+                <span>500-hour certified teacher</span>
+                <span>Live on Teams and Zoom</span>
+                <span>UK, EU and AU hours</span>
+              </p>
+              <p className="mt-7">
+                <Link to="/about" className="inline-flex items-center gap-1.5 text-clay hover:text-clayDark font-semibold uppercase text-sm tracking-wider">
+                  More about how I work <ArrowRight size={15} />
+                </Link>
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* BUILD THE CASE — resources teaser */}
-        <section className="bg-cream py-20 md:py-24">
+        <section className="py-20 md:py-24">
           <div className="max-w-[900px] mx-auto px-5">
             <div className="max-w-[620px]">
               <Eyebrow>Build the case</Eyebrow>
@@ -227,6 +266,9 @@ const Index = () => {
             </p>
           </div>
         </section>
+
+        {/* TESTIMONIALS — hidden until real quotes exist */}
+        <Testimonials items={testimonials} />
 
         {/* FAQ */}
         <section className="py-20 md:py-28">

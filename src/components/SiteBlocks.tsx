@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Check, X, Minus } from 'lucide-react';
+import { Check, X, Minus, UserRound } from 'lucide-react';
 
 /**
  * Shared marketing building blocks for Remote Yoga Coach.
@@ -124,6 +124,83 @@ export const HeroArt = ({ className = '' }: { className?: string }) => (
     </svg>
   </div>
 );
+
+/* ------------------------------------------------------------------ *
+ * CoachPhoto — portrait frame. Pass `src` to show the real photo;
+ * without it, a warm branded placeholder stands in (swap-ready).
+ * ------------------------------------------------------------------ */
+export const CoachPhoto = ({
+  src,
+  alt = 'Camilla, your coach',
+  className = '',
+}: {
+  src?: string;
+  alt?: string;
+  className?: string;
+}) => (
+  <div className={`relative overflow-hidden rounded-[24px] border border-sage-light aspect-[4/5] ${className}`}>
+    {src ? (
+      <img src={src} alt={alt} className="w-full h-full object-cover" loading="lazy" />
+    ) : (
+      <div
+        className="w-full h-full flex flex-col items-center justify-center gap-4"
+        style={{ background: 'linear-gradient(160deg, #F7F1EA 0%, #EAD7C6 100%)' }}
+      >
+        <UserRound className="text-clay/45" size={72} strokeWidth={1.25} />
+        <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-clay/60">A photo of Camilla</span>
+      </div>
+    )}
+  </div>
+);
+
+/* ------------------------------------------------------------------ *
+ * Testimonials — renders nothing until real quotes exist, so no
+ * placeholder ever ships live. Each item: quote, name, optional role
+ * and photo (a monogram stands in when there is no photo).
+ * ------------------------------------------------------------------ */
+export const Testimonials = ({
+  items,
+  eyebrow = 'Proof',
+  heading = 'What teams say',
+}: {
+  items: Array<{ quote: string; name: string; role?: string; photo?: string }>;
+  eyebrow?: string;
+  heading?: string;
+}) => {
+  if (!items || items.length === 0) return null;
+  return (
+    <section className="bg-cream py-20 md:py-24">
+      <div className="max-w-[1040px] mx-auto px-5">
+        <div className="text-center max-w-[560px] mx-auto mb-12">
+          <Eyebrow>{eyebrow}</Eyebrow>
+          <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">{heading}</h2>
+        </div>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {items.map((t, i) => (
+            <Reveal key={i} delay={i * 80}>
+              <figure className="h-full flex flex-col bg-white rounded-2xl border border-sage-light p-7">
+                <blockquote className="font-fraunces text-heading text-lg leading-relaxed flex-1">“{t.quote}”</blockquote>
+                <figcaption className="mt-6 flex items-center gap-3">
+                  {t.photo ? (
+                    <img src={t.photo} alt={t.name} className="w-11 h-11 rounded-full object-cover" loading="lazy" />
+                  ) : (
+                    <span className="w-11 h-11 rounded-full bg-clay/[0.12] flex items-center justify-center font-fraunces font-semibold text-clay">
+                      {t.name.charAt(0)}
+                    </span>
+                  )}
+                  <span className="text-[14px] leading-tight">
+                    <span className="block font-semibold text-charcoal">{t.name}</span>
+                    {t.role && <span className="block text-charcoal/55">{t.role}</span>}
+                  </span>
+                </figcaption>
+              </figure>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 /* ------------------------------------------------------------------ *
  * Section heading kit.
