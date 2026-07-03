@@ -63,7 +63,7 @@ const About = () => {
           <div className="max-w-[620px] mx-auto px-5 space-y-8 text-charcoal/80 text-lg md:text-xl leading-relaxed">
             <CoachPhoto
               src="/coach-camilla.jpg"
-              alt="Camilla, a 500-hour certified yoga teacher, seated in meditation"
+              alt="Camilla, a certified yoga teacher for remote teams"
               className="w-full max-w-[260px] mx-auto"
             />
             <p>

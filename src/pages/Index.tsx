@@ -195,7 +195,7 @@ const Index = () => {
           <div className="max-w-[1000px] mx-auto px-5 grid gap-10 md:gap-14 md:grid-cols-[minmax(0,300px)_1fr] items-center">
             <CoachPhoto
               src="/coach-camilla.jpg"
-              alt="Camilla, a 500-hour certified yoga teacher, seated in meditation"
+              alt="Camilla, a certified yoga teacher for remote teams"
               className="w-full max-w-[300px] mx-auto md:mx-0"
             />
             <div>
