@@ -205,19 +205,19 @@ const Index = () => {
               </h2>
               <div className="mt-5 space-y-4 text-charcoal/75 text-lg leading-relaxed">
                 <p>
-                  I'm Camilla, and I hold a 500-hour yoga teacher certification, the advanced level and double the
-                  standard 200-hour training. The sessions are grounded in proper training, not a weekend course.
+                  I'm Camilla, a certified yoga teacher with 500 hours of training, in physical movement, breathing
+                  techniques and meditation. I run every session myself, the same familiar face each week, because
+                  the relationship is what makes people actually show up.
                 </p>
                 <p>
-                  I run every session myself, the same familiar face each week, because the relationship is what
-                  makes people actually show up. Before teaching full time I worked across a 10,000-person corporate,
-                  a startup, a consultancy and government, so the sessions are built around real office life.
+                  Before teaching full time I worked across a 10,000-person corporate, a startup, a consultancy and
+                  government, so the sessions are built around real office life.
                 </p>
               </div>
               <div className="mt-7 flex flex-wrap gap-2.5">
                 {[
-                  '500-hour certified teacher (advanced)',
-                  'Breathing, meditation and chair yoga',
+                  '500 hours of yoga training',
+                  'Movement, breathing and meditation',
                   'Live on Teams and Zoom',
                   'UK, EU and AU hours',
                 ].map((c) => (
