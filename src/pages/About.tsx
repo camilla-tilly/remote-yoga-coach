@@ -5,13 +5,43 @@ import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  mainEntity: {
+    '@type': 'Person',
+    name: 'Camilla',
+    jobTitle: 'Corporate wellness coach and yoga teacher',
+    description:
+      '500-hour certified yoga teacher delivering live wellbeing sessions, breathing, meditation and chair yoga, for remote and distributed teams.',
+    url: 'https://remoteyogacoach.com/about',
+    knowsAbout: [
+      'corporate wellbeing',
+      'workplace mindfulness',
+      'meditation',
+      'breathing exercises',
+      'pranayama',
+      'chair yoga',
+      'burnout prevention',
+      'remote team wellbeing',
+    ],
+    hasCredential: {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'Yoga Teacher Training',
+      name: '500-hour Yoga Teacher Training (advanced)',
+    },
+    worksFor: { '@type': 'Organization', name: 'Remote Yoga Coach', url: 'https://remoteyogacoach.com' },
+  },
+};
+
 const About = () => {
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="About | Remote Yoga Coach"
-        description="Remote Yoga Coach is a 500-hour certified teacher delivering live, human wellbeing sessions for distributed teams, not a generic app. Personalised, live, and measurable."
+        description="Camilla is a 500-hour certified yoga teacher (advanced level) delivering live breathing, meditation and chair-yoga sessions for remote and distributed teams. Real training, real human, measurable."
         canonical="https://remoteyogacoach.com/about"
+        structuredData={structuredData}
       />
       <Navbar />
 
@@ -54,7 +84,37 @@ const About = () => {
           </div>
         </section>
 
+        {/* TRAINING AND CREDENTIALS */}
         <section className="bg-cream py-16 md:py-20">
+          <div className="max-w-[620px] mx-auto px-5">
+            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">Training and credentials</h2>
+            <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
+              My qualification is a 500-hour yoga teacher certification, the advanced level and double the standard
+              200-hour training. My teaching focuses on the practices that fit a workday: breathing and pranayama,
+              meditation and mindfulness, and gentle chair-based movement anyone can do at a desk, no experience
+              needed.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-2.5">
+              {[
+                '500-hour certified yoga teacher',
+                'Advanced level (double the 200-hour standard)',
+                'Breathing and meditation',
+                'Chair and accessible yoga',
+                'Workplace wellbeing',
+              ].map((c) => (
+                <span
+                  key={c}
+                  className="inline-flex items-center gap-2 rounded-full border border-sage-light bg-white px-3.5 py-1.5 text-[13px] font-medium text-charcoal/75"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-clay" aria-hidden="true" />
+                  {c}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 md:py-20">
           <div className="max-w-[820px] mx-auto px-5">
             <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight text-center">Why live and human</h2>
             <div className="mt-12 grid gap-6 sm:grid-cols-3">
