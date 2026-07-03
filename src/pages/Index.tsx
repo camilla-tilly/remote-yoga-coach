@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
-import { Reveal, GlowField, ComparisonTable, Eyebrow, HeroArt, CoachPhoto, Testimonials } from '@/components/SiteBlocks';
+import { Reveal, GlowField, ComparisonTable, Eyebrow, CoachPhoto, Testimonials } from '@/components/SiteBlocks';
 
 const faqs: Array<[string, string]> = [
   ['Who is this actually for?', 'People and culture leaders, team leads and founders at remote-first and hybrid companies, roughly 10 to 100 people, who want a wellbeing habit the whole team keeps rather than another perk that lands flat.'],
@@ -82,10 +82,9 @@ const Index = () => {
             <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-6xl leading-[1.08] tracking-tight">
               The weekly reset your team looks forward to.
             </h1>
-            <p className="mt-7 text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-[580px] mx-auto">
-              Live breathing, meditation and chair-yoga sessions your distributed team actually turns up for, and that
-              you can measure. On Teams, camera optional. Built for HR and people leaders who are done paying for
-              apps nobody opens.
+            <p className="mt-7 text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-[560px] mx-auto">
+              Live breathing, meditation and chair-yoga sessions your whole team actually turns up for. On Teams,
+              camera optional, with the reporting to prove it works, not another app nobody opens.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
@@ -102,7 +101,6 @@ const Index = () => {
             <p className="mt-8 text-charcoal/50 text-sm">
               Live across UK, European and Australian time zones. Every session recorded.
             </p>
-            <HeroArt className="mt-14 max-w-[720px] mx-auto" />
           </div>
         </section>
 

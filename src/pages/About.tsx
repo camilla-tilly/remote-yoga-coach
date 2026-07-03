@@ -67,25 +67,14 @@ const About = () => {
               className="w-full max-w-[260px] mx-auto"
             />
             <p>
-              I'm Camilla, a 500-hour certified yoga teacher. That is the advanced level of training, double the
-              standard 200-hour certification, so the sessions are grounded in real teaching rather than a weekend
-              course. I work with distributed and hybrid teams to build one small, steady habit that keeps people
-              focused and energised through the week.
+              I'm Camilla, a 500-hour certified yoga teacher. Before teaching full time I worked across a
+              10,000-person corporate, a startup, a consultancy and government, so the sessions are built around real
+              office life, not an ideal version of it.
             </p>
             <p>
-              Before teaching full time, I worked across a 10,000-person corporate, a startup, a consultancy, and
-              government. I know how a workday actually feels and what makes a new habit stick when everyone is busy, so
-              the sessions are built around real office life, not an ideal version of it.
-            </p>
-            <p>
-              The Weekly Reset is a simple idea: a scheduled moment with a real person, not another app to work through
-              alone. When the session is already in the calendar and the coach is the same familiar face each week,
-              showing up stops being a decision.
-            </p>
-            <p>
-              Sessions are made to be easy to say yes to. Chair-based, camera optional, no activewear, nothing anyone
-              has to be flexible or fit to do. The goal isn't an impressive practice, it's a habit your whole team can
-              actually keep.
+              The Weekly Reset is a simple idea: a scheduled moment with a real person, not another app to work
+              through alone. Chair-based, camera optional, nothing anyone has to be fit or flexible to do. Not an
+              impressive practice, just a habit your whole team can keep.
             </p>
           </div>
         </section>

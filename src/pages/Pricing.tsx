@@ -27,17 +27,17 @@ const pilotPrice = { GBP: '£249', EUR: '€289' };
 
 const tiers = [
   {
-    name: 'Starter', best: 'Small teams up to 25', sessions: '2 per month',
+    name: 'Breathe', best: 'Small teams up to 25', sessions: '2 per month',
     workshop: false, reporting: 'Quarterly', tz: 'Single slot',
     price: { GBP: '£329', EUR: '€379' }, per: 'per month', highlight: false,
   },
   {
-    name: 'Growth', best: 'Teams up to 50', sessions: '4 per month (weekly)',
+    name: 'Reset', best: 'Teams up to 50', sessions: '4 per month (weekly)',
     workshop: true, reporting: 'Quarterly', tz: 'Flexible',
     price: { GBP: '£549', EUR: '€639' }, per: 'per month', highlight: true,
   },
   {
-    name: 'Enterprise', best: '50+ / multi-timezone', sessions: '4+ per month',
+    name: 'Flourish', best: '50+ / multi-timezone', sessions: '4+ per month',
     workshop: true, reporting: 'Monthly + multi-team', tz: 'Multiple slots',
     price: { GBP: 'from £899', EUR: 'from €1,049' }, per: 'per month', highlight: false,
   },
@@ -50,7 +50,7 @@ const Pricing = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Pricing | Team Wellbeing Subscriptions | Remote Yoga Coach"
-        description="Simple, transparent pricing for corporate wellbeing. A flat monthly fee for your whole team, not a per-person app charge. Starter, Growth and Enterprise tiers, plus a 4-week paid pilot."
+        description="Simple, transparent pricing for corporate wellbeing. A flat monthly fee for your whole team, not a per-person app charge. Three team tiers plus a four-week paid pilot."
         canonical="https://remoteyogacoach.com/pricing"
         structuredData={structuredData}
       />
@@ -174,7 +174,7 @@ const Pricing = () => {
                         <Button className={`w-full font-semibold uppercase text-sm tracking-wider rounded-md py-6 ${
                           t.highlight ? 'bg-clay hover:bg-clayDark text-white' : 'bg-white border border-sage text-charcoal hover:bg-sage-light/40'
                         }`}>
-                          {t.name === 'Enterprise' ? 'Talk about Enterprise' : 'Book a pilot'}
+                          {t.name === 'Flourish' ? 'Talk it through' : 'Book a pilot'}
                         </Button>
                       </Link>
                     </div>
