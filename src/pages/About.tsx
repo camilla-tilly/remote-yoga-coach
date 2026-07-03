@@ -31,8 +31,10 @@ const About = () => {
         <section className="py-20 md:py-28">
           <div className="max-w-[620px] mx-auto px-5 space-y-8 text-charcoal/80 text-lg md:text-xl leading-relaxed">
             <p>
-              I'm Camilla, a 500-hour certified yoga teacher. I work with distributed and hybrid teams to build one
-              small, steady habit that keeps people focused and energised through the week.
+              I'm Camilla, a 500-hour certified yoga teacher. That is the advanced level of training, double the
+              standard 200-hour certification, so the sessions are grounded in real teaching rather than a weekend
+              course. I work with distributed and hybrid teams to build one small, steady habit that keeps people
+              focused and energised through the week.
             </p>
             <p>
               Before teaching full time, I worked across a 10,000-person corporate, a startup, a consultancy, and

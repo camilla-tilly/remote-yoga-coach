@@ -203,19 +203,31 @@ const Index = () => {
               </h2>
               <div className="mt-5 space-y-4 text-charcoal/75 text-lg leading-relaxed">
                 <p>
-                  I'm Camilla, a 500-hour certified yoga teacher. I run every session myself, the same familiar face
-                  each week, because the relationship is what makes people actually show up.
+                  I'm Camilla, and I hold a 500-hour yoga teacher certification, the advanced level and double the
+                  standard 200-hour training. The sessions are grounded in proper training, not a weekend course.
                 </p>
                 <p>
-                  Before teaching full time I worked across a 10,000-person corporate, a startup, a consultancy and
-                  government, so the sessions are built around real office life, not an ideal version of it.
+                  I run every session myself, the same familiar face each week, because the relationship is what
+                  makes people actually show up. Before teaching full time I worked across a 10,000-person corporate,
+                  a startup, a consultancy and government, so the sessions are built around real office life.
                 </p>
               </div>
-              <p className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-charcoal/60">
-                <span>500-hour certified teacher</span>
-                <span>Live on Teams and Zoom</span>
-                <span>UK, EU and AU hours</span>
-              </p>
+              <div className="mt-7 flex flex-wrap gap-2.5">
+                {[
+                  '500-hour certified teacher (advanced)',
+                  'Breathing, meditation and chair yoga',
+                  'Live on Teams and Zoom',
+                  'UK, EU and AU hours',
+                ].map((c) => (
+                  <span
+                    key={c}
+                    className="inline-flex items-center gap-2 rounded-full border border-sage-light bg-white px-3.5 py-1.5 text-[13px] font-medium text-charcoal/75"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-clay" aria-hidden="true" />
+                    {c}
+                  </span>
+                ))}
+              </div>
               <p className="mt-7">
                 <Link to="/about" className="inline-flex items-center gap-1.5 text-clay hover:text-clayDark font-semibold uppercase text-sm tracking-wider">
                   More about how I work <ArrowRight size={15} />
