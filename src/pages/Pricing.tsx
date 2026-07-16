@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Check, Minus, ArrowRight } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
@@ -28,17 +28,17 @@ const pilotPrice = { GBP: '£249', EUR: '€289' };
 const tiers = [
   {
     name: 'Breathe', best: 'Small teams up to 25', sessions: '2 per month',
-    workshop: false, reporting: 'Quarterly', tz: 'Single slot',
+    reporting: 'Quarterly',
     price: { GBP: '£329', EUR: '€379' }, per: 'per month', highlight: false,
   },
   {
     name: 'Reset', best: 'Teams up to 50', sessions: '4 per month (weekly)',
-    workshop: true, reporting: 'Quarterly', tz: 'Flexible',
+    reporting: 'Quarterly',
     price: { GBP: '£549', EUR: '€639' }, per: 'per month', highlight: true,
   },
   {
     name: 'Flourish', best: '50+ / multi-timezone', sessions: '4+ per month',
-    workshop: true, reporting: 'Monthly + multi-team', tz: 'Multiple slots',
+    reporting: 'Quarterly',
     price: { GBP: 'from £899', EUR: 'from €1,049' }, per: 'per month', highlight: false,
   },
 ];
@@ -160,14 +160,7 @@ const Pricing = () => {
                     <ul className="space-y-3 text-[15px] text-charcoal/80 flex-1">
                       <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>{t.sessions} live sessions</span></li>
                       <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>All sessions recorded</span></li>
-                      <li className="flex gap-2.5">
-                        {t.workshop
-                          ? <Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} />
-                          : <Minus className="text-charcoal/30 shrink-0 mt-0.5" size={16} strokeWidth={2.5} />}
-                        <span>Quarterly themed workshop</span>
-                      </li>
                       <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>{t.reporting} wellbeing reporting</span></li>
-                      <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>{t.tz} time-zone scheduling</span></li>
                     </ul>
                     <div className="mt-7">
                       <Link to="/demo">
