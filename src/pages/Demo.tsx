@@ -26,12 +26,12 @@ const Demo = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // TODO (launch): wire to Netlify Forms → Zapier → Google Sheet + confirmation
-    // email (hello@remoteyogacoach.com). For now this shows a confirmation and the
+    // email (camilla@remoteyogacoach.com). For now this shows a confirmation and the
     // captured enquiry can be emailed via the mailto fallback below.
     setSubmitted(true);
   };
 
-  const mailtoHref = `mailto:hello@remoteyogacoach.com?subject=${encodeURIComponent(
+  const mailtoHref = `mailto:camilla@remoteyogacoach.com?subject=${encodeURIComponent(
     `Pilot enquiry, ${form.company || 'team'}`
   )}&body=${encodeURIComponent(
     `Company: ${form.company}\nName: ${form.name}\nEmail: ${form.email}\nTeam size: ${form.teamSize}\nTime zone(s): ${form.timezones}\nPreferred day(s): ${form.days}\nMain challenge: ${form.challenge}\n\n${form.message}`
@@ -130,7 +130,7 @@ const Demo = () => {
                   Book a pilot
                 </Button>
                 <p className="text-center text-charcoal/50 text-sm">
-                  Prefer email? <a href="mailto:hello@remoteyogacoach.com" className="text-clay hover:text-clayDark">hello@remoteyogacoach.com</a>
+                  Prefer email? <a href="mailto:camilla@remoteyogacoach.com" className="text-clay hover:text-clayDark">camilla@remoteyogacoach.com</a>
                 </p>
               </form>
             )}

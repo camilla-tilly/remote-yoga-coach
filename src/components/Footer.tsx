@@ -26,7 +26,7 @@ const columns: Array<{ heading: string; links: Array<{ label: string; to?: strin
     links: [
       { label: 'About', to: '/about' },
       { label: 'Book a pilot', to: '/demo' },
-      { label: 'hello@remoteyogacoach.com', href: 'mailto:hello@remoteyogacoach.com' },
+      { label: 'camilla@remoteyogacoach.com', href: 'mailto:camilla@remoteyogacoach.com' },
     ],
   },
 ];
