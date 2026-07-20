@@ -68,8 +68,8 @@ const About = () => {
             />
             <p>
               I'm Camilla, a 500-hour certified yoga teacher. Before teaching full time I worked across a
-              10,000-person corporate, a startup, a consultancy and government, so the sessions are built around real
-              office life, not an ideal version of it.
+              10,000-person multinational company, a startup, a consultancy and in government, so the sessions are
+              built around real office life, not an ideal version of it.
             </p>
             <p>
               The Weekly Reset is a simple idea: a scheduled moment with a real person, not another app to work

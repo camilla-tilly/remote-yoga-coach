@@ -12,6 +12,7 @@ import { Button } from './ui/button';
 import Logo from './Logo';
 
 const navLinks = [
+  { name: 'Home', href: '/' },
   { name: 'How it works', href: '/services/team-wellness' },
   { name: 'Resources', href: '/guides' },
   { name: 'Pricing', href: '/pricing' },

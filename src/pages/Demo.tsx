@@ -72,7 +72,7 @@ const Demo = () => {
                 </div>
                 <h2 className="font-fraunces font-semibold text-heading text-2xl mt-5">Thanks, that's in.</h2>
                 <p className="mt-3 text-charcoal/75 leading-relaxed">
-                  I'll be in touch to confirm your pilot dates.
+                  I'll be in touch.
                 </p>
               </div>
             ) : (
