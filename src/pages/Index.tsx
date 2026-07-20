@@ -65,7 +65,7 @@ const Index = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Corporate Wellbeing for Remote Teams | Remote Yoga Coach"
-        description="Live wellbeing sessions your distributed team actually attends, and you can measure. Breathing, meditation and chair yoga on Teams for HR and people leaders. Book a pilot."
+        description="Live wellbeing sessions your distributed team actually attends, and you can measure. Breathing, meditation and chair yoga on Teams for HR and people leaders. Get in touch."
         canonical="https://remoteyogacoach.com"
         structuredData={structuredData}
       />
@@ -89,7 +89,7 @@ const Index = () => {
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a pilot
+                  Get in touch
                 </Button>
               </Link>
               <Link to="/pricing">
@@ -310,13 +310,13 @@ const Index = () => {
               Give your team a reset
             </h2>
             <p className="mt-6 text-charcoal/70 text-lg leading-relaxed max-w-[480px] mx-auto">
-              Start with a four-week pilot, credited to your first month if you continue. See it work with your own
-              team, with your own numbers.
+              Tell me about your team and I'll help you work out what fits, whether that's a conversation first or a
+              four-week pilot when you're ready.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a pilot
+                  Get in touch
                 </Button>
               </Link>
               <Link to="/pricing">

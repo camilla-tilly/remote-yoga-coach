@@ -77,7 +77,7 @@ const Navbar = () => {
             ))}
             <Link to="/demo">
               <Button className="bg-clay hover:bg-clayDark text-white font-inter font-semibold uppercase text-xs tracking-wider rounded-md px-5">
-                Book a pilot
+                Get in touch
               </Button>
             </Link>
           </div>
@@ -118,7 +118,7 @@ const Navbar = () => {
                   <DrawerClose asChild>
                     <Link to="/demo" className="w-full px-3">
                       <Button className="w-full bg-clay hover:bg-clayDark text-white font-inter font-semibold uppercase text-sm tracking-wider rounded-md py-6">
-                        Book a pilot
+                        Get in touch
                       </Button>
                     </Link>
                   </DrawerClose>

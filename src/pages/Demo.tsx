@@ -40,7 +40,7 @@ const Demo = () => {
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
-        title="Book a pilot | Remote Yoga Coach"
+        title="Get in touch | Remote Yoga Coach"
         description="Book a four-week pilot of The Weekly Reset for your team: one full programme ending in a one-page wellbeing report, credited to your first month if you continue."
         canonical="https://remoteyogacoach.com/demo"
       />
@@ -50,11 +50,11 @@ const Demo = () => {
         <section className="bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
           <div className="max-w-[720px] mx-auto px-5 text-center">
             <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
-              Book a pilot
+              Get in touch
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[560px] mx-auto">
-              A four-week pilot of The Weekly Reset for your team, credited to your first month if you continue. Tell me
-              a little about your team, or just ask a question, and I'll be in touch.
+              Tell me a bit about your team and what you're after, whether you'd just like to talk it through, or
+              you're ready to start a four-week pilot. I'll get back to you.
             </p>
           </div>
         </section>

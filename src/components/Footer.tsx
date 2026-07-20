@@ -25,7 +25,7 @@ const columns: Array<{ heading: string; links: Array<{ label: string; to?: strin
     heading: 'Company',
     links: [
       { label: 'About', to: '/about' },
-      { label: 'Book a pilot', to: '/demo' },
+      { label: 'Get in touch', to: '/demo' },
     ],
   },
 ];
