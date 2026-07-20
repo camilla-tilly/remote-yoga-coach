@@ -6,9 +6,6 @@ import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 
-const challenges = ['Stress', 'Focus', 'Retention', 'Team culture', 'Not sure yet'];
-const teamSizes = ['Up to 25', '26–50', '50+'];
-
 const inputClass =
   'w-full rounded-md border border-sage-light bg-white px-4 py-3 text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:border-clay focus:ring-1 focus:ring-clay text-[15px]';
 const labelClass = 'block text-sm font-semibold text-charcoal mb-1.5';
@@ -16,8 +13,7 @@ const labelClass = 'block text-sm font-semibold text-charcoal mb-1.5';
 const Demo = () => {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({
-    company: '', name: '', email: '', teamSize: teamSizes[0],
-    timezones: '', days: '', challenge: challenges[0], message: '',
+    name: '', email: '', company: '', message: '',
   });
 
   const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
@@ -90,49 +86,23 @@ const Demo = () => {
                 </p>
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div>
-                    <label htmlFor="company" className={labelClass}>Company name <span className="font-normal text-charcoal/50">(optional)</span></label>
-                    <input id="company" name="company" value={form.company} onChange={set('company')} className={inputClass} placeholder="Acme Ltd" />
-                  </div>
-                  <div>
                     <label htmlFor="name" className={labelClass}>Your name</label>
                     <input id="name" name="name" required value={form.name} onChange={set('name')} className={inputClass} placeholder="Alex Smith" />
                   </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className={labelClass}>Work email</label>
-                  <input id="email" name="email" type="email" required value={form.email} onChange={set('email')} className={inputClass} placeholder="alex@acme.com" />
-                </div>
-
-                <div className="grid sm:grid-cols-2 gap-5">
                   <div>
-                    <label htmlFor="teamSize" className={labelClass}>Team size</label>
-                    <select id="teamSize" name="teamSize" value={form.teamSize} onChange={set('teamSize')} className={inputClass}>
-                      {teamSizes.map((s) => <option key={s}>{s}</option>)}
-                    </select>
-                  </div>
-                  <div>
-                    <label htmlFor="challenge" className={labelClass}>Main challenge</label>
-                    <select id="challenge" name="challenge" value={form.challenge} onChange={set('challenge')} className={inputClass}>
-                      {challenges.map((c) => <option key={c}>{c}</option>)}
-                    </select>
-                  </div>
-                </div>
-
-                <div className="grid sm:grid-cols-2 gap-5">
-                  <div>
-                    <label htmlFor="timezones" className={labelClass}>Time zone(s)</label>
-                    <input id="timezones" name="timezones" value={form.timezones} onChange={set('timezones')} className={inputClass} placeholder="e.g. UK + CET" />
-                  </div>
-                  <div>
-                    <label htmlFor="days" className={labelClass}>Preferred day(s)</label>
-                    <input id="days" name="days" value={form.days} onChange={set('days')} className={inputClass} placeholder="e.g. Tuesdays" />
+                    <label htmlFor="email" className={labelClass}>Work email</label>
+                    <input id="email" name="email" type="email" required value={form.email} onChange={set('email')} className={inputClass} placeholder="alex@acme.com" />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="message" className={labelClass}>Anything else? <span className="font-normal text-charcoal/50">(optional)</span></label>
-                  <textarea id="message" name="message" rows={4} value={form.message} onChange={set('message')} className={inputClass} placeholder="Tell me a little about your team." />
+                  <label htmlFor="company" className={labelClass}>Company <span className="font-normal text-charcoal/50">(optional)</span></label>
+                  <input id="company" name="company" value={form.company} onChange={set('company')} className={inputClass} placeholder="Acme Ltd" />
+                </div>
+
+                <div>
+                  <label htmlFor="message" className={labelClass}>How can I help?</label>
+                  <textarea id="message" name="message" required rows={5} value={form.message} onChange={set('message')} className={inputClass} placeholder="A line about your team, or your question." />
                 </div>
 
                 <Button type="submit" className="w-full bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md py-6">
