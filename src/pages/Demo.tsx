@@ -23,19 +23,23 @@ const Demo = () => {
   const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
     setForm((f) => ({ ...f, [k]: e.target.value }));
 
+  const encode = (data: Record<string, string>) =>
+    Object.keys(data)
+      .map((k) => encodeURIComponent(k) + '=' + encodeURIComponent(data[k]))
+      .join('&');
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO (launch): wire to Netlify Forms → Zapier → Google Sheet + confirmation
-    // email (camilla@remoteyogacoach.com). For now this shows a confirmation and the
-    // captured enquiry can be emailed via the mailto fallback below.
-    setSubmitted(true);
+    // Netlify Forms: POST the fields; Netlify captures the submission and emails
+    // it to the inbox set under Site settings -> Forms -> notifications.
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'pilot-enquiry', ...form }),
+    })
+      .then(() => setSubmitted(true))
+      .catch(() => setSubmitted(true));
   };
-
-  const mailtoHref = `mailto:camilla@remoteyogacoach.com?subject=${encodeURIComponent(
-    `Pilot enquiry, ${form.company || 'team'}`
-  )}&body=${encodeURIComponent(
-    `Company: ${form.company}\nName: ${form.name}\nEmail: ${form.email}\nTeam size: ${form.teamSize}\nTime zone(s): ${form.timezones}\nPreferred day(s): ${form.days}\nMain challenge: ${form.challenge}\n\n${form.message}`
-  )}`;
 
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
@@ -68,43 +72,48 @@ const Demo = () => {
                 </div>
                 <h2 className="font-fraunces font-semibold text-heading text-2xl mt-5">Thanks, that's in.</h2>
                 <p className="mt-3 text-charcoal/75 leading-relaxed">
-                  I'll be in touch to confirm your pilot dates. If you'd rather send the details
-                  straight to my inbox, use the button below.
+                  I'll be in touch to confirm your pilot dates.
                 </p>
-                <a href={mailtoHref} className="inline-block mt-6">
-                  <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                    Email the details
-                  </Button>
-                </a>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form
+                name="pilot-enquiry"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                onSubmit={handleSubmit}
+                className="space-y-5"
+              >
+                <input type="hidden" name="form-name" value="pilot-enquiry" />
+                <p className="hidden">
+                  <label>Leave this field empty: <input name="bot-field" /></label>
+                </p>
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div>
                     <label htmlFor="company" className={labelClass}>Company name</label>
-                    <input id="company" required value={form.company} onChange={set('company')} className={inputClass} placeholder="Acme Ltd" />
+                    <input id="company" name="company" required value={form.company} onChange={set('company')} className={inputClass} placeholder="Acme Ltd" />
                   </div>
                   <div>
                     <label htmlFor="name" className={labelClass}>Your name</label>
-                    <input id="name" required value={form.name} onChange={set('name')} className={inputClass} placeholder="Alex Smith" />
+                    <input id="name" name="name" required value={form.name} onChange={set('name')} className={inputClass} placeholder="Alex Smith" />
                   </div>
                 </div>
 
                 <div>
                   <label htmlFor="email" className={labelClass}>Work email</label>
-                  <input id="email" type="email" required value={form.email} onChange={set('email')} className={inputClass} placeholder="alex@acme.com" />
+                  <input id="email" name="email" type="email" required value={form.email} onChange={set('email')} className={inputClass} placeholder="alex@acme.com" />
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div>
                     <label htmlFor="teamSize" className={labelClass}>Team size</label>
-                    <select id="teamSize" value={form.teamSize} onChange={set('teamSize')} className={inputClass}>
+                    <select id="teamSize" name="teamSize" value={form.teamSize} onChange={set('teamSize')} className={inputClass}>
                       {teamSizes.map((s) => <option key={s}>{s}</option>)}
                     </select>
                   </div>
                   <div>
                     <label htmlFor="challenge" className={labelClass}>Main challenge</label>
-                    <select id="challenge" value={form.challenge} onChange={set('challenge')} className={inputClass}>
+                    <select id="challenge" name="challenge" value={form.challenge} onChange={set('challenge')} className={inputClass}>
                       {challenges.map((c) => <option key={c}>{c}</option>)}
                     </select>
                   </div>
@@ -113,25 +122,22 @@ const Demo = () => {
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div>
                     <label htmlFor="timezones" className={labelClass}>Time zone(s)</label>
-                    <input id="timezones" value={form.timezones} onChange={set('timezones')} className={inputClass} placeholder="e.g. UK + CET" />
+                    <input id="timezones" name="timezones" value={form.timezones} onChange={set('timezones')} className={inputClass} placeholder="e.g. UK + CET" />
                   </div>
                   <div>
                     <label htmlFor="days" className={labelClass}>Preferred day(s)</label>
-                    <input id="days" value={form.days} onChange={set('days')} className={inputClass} placeholder="e.g. Tuesdays" />
+                    <input id="days" name="days" value={form.days} onChange={set('days')} className={inputClass} placeholder="e.g. Tuesdays" />
                   </div>
                 </div>
 
                 <div>
                   <label htmlFor="message" className={labelClass}>Anything else? <span className="font-normal text-charcoal/50">(optional)</span></label>
-                  <textarea id="message" rows={4} value={form.message} onChange={set('message')} className={inputClass} placeholder="Tell me a little about your team." />
+                  <textarea id="message" name="message" rows={4} value={form.message} onChange={set('message')} className={inputClass} placeholder="Tell me a little about your team." />
                 </div>
 
                 <Button type="submit" className="w-full bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md py-6">
                   Book a pilot
                 </Button>
-                <p className="text-center text-charcoal/50 text-sm">
-                  Prefer email? <a href="mailto:camilla@remoteyogacoach.com" className="text-clay hover:text-clayDark">camilla@remoteyogacoach.com</a>
-                </p>
               </form>
             )}
           </div>

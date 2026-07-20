@@ -51,7 +51,6 @@
           "logo": { "@type": "ImageObject", "url": "https://remoteyogacoach.com/favicon.svg" },
           "image": "https://remoteyogacoach.com/og/default.png",
           "description": "Live breathing, meditation and chair-yoga sessions for distributed and hybrid teams, delivered online across UK, European and Australian time zones.",
-          "email": "hello@remoteyogacoach.com",
           "areaServed": ["GB", "EU", "AU", "Worldwide"],
           "knowsAbout": [
             "corporate wellbeing",
@@ -65,7 +64,7 @@
           "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "sales",
-            "email": "hello@remoteyogacoach.com",
+            "url": "https://remoteyogacoach.com/demo",
             "availableLanguage": "English"
           },
           "founder": {
@@ -106,6 +105,19 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- Static copy of the contact form so Netlify detects "pilot-enquiry" at build time.
+         The live form is the React one on /demo; this hidden one is only for detection. -->
+    <form name="pilot-enquiry" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="company" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="teamSize" />
+      <input type="text" name="challenge" />
+      <input type="text" name="timezones" />
+      <input type="text" name="days" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
