@@ -23,7 +23,7 @@ const structuredData = {
       serviceType: 'Corporate wellbeing sessions for distributed teams',
       name: 'The Weekly Reset',
       provider: { '@type': 'Organization', name: 'Remote Yoga Coach', url: 'https://remoteyogacoach.com' },
-      areaServed: ['GB', 'EU', 'AU', 'Worldwide'],
+      areaServed: ['GB', 'EU', 'AU'],
       description: 'Live 30-minute breathing, meditation and chair-yoga sessions for remote and hybrid teams, delivered on Teams, with attendance and wellbeing reporting.',
     },
     {
@@ -210,8 +210,8 @@ const Index = () => {
                   the relationship is what makes people actually show up.
                 </p>
                 <p>
-                  Before teaching full time I worked across a 10,000-person corporate, a startup, a consultancy and
-                  government, so the sessions are built around real office life.
+                  Before teaching full time I worked across a 10,000-person multinational company, a startup, a
+                  consultancy and in government, so the sessions are built around real office life.
                 </p>
               </div>
               <div className="mt-7 flex flex-wrap gap-2.5">

@@ -12,7 +12,7 @@ const structuredData = {
   "serviceType": "Online corporate wellbeing sessions for remote teams",
   "name": "The Weekly Reset, team wellness",
   "provider": { "@type": "Organization", "name": "Remote Yoga Coach", "url": "https://remoteyogacoach.com" },
-  "areaServed": ["GB", "EU", "AU", "Worldwide"],
+  "areaServed": ["GB", "EU", "AU"],
   "description": "Live breathing, meditation and chair-yoga sessions for distributed and hybrid teams on Teams, with honest wellbeing reporting."
 };
 

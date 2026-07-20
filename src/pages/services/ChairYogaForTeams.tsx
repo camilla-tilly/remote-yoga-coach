@@ -42,7 +42,7 @@ const structuredData = {
       serviceType: 'Virtual chair yoga classes for companies and remote teams',
       name: 'Chair yoga for teams',
       provider: { '@type': 'Organization', name: 'Remote Yoga Coach', url: 'https://remoteyogacoach.com' },
-      areaServed: ['GB', 'EU', 'AU', 'Worldwide'],
+      areaServed: ['GB', 'EU', 'AU'],
       description:
         'Live virtual chair yoga sessions for companies and distributed teams on Teams or Zoom: gentle seated movement, breathing and a short reset, camera optional, no experience needed.',
     },

@@ -43,7 +43,7 @@ const structuredData = {
       serviceType: 'Corporate wellbeing subscription for remote and distributed teams',
       name: 'Corporate wellbeing for remote teams',
       provider: { '@type': 'Organization', name: 'Remote Yoga Coach', url: 'https://remoteyogacoach.com' },
-      areaServed: ['GB', 'EU', 'AU', 'Worldwide'],
+      areaServed: ['GB', 'EU', 'AU'],
       description:
         'Live weekly wellbeing sessions for distributed and hybrid teams on Teams or Zoom: breathing, meditation and chair yoga, camera optional, with attendance and wellbeing reporting.',
       offers: { '@type': 'Offer', priceCurrency: 'GBP', description: 'Monthly subscription by team size, from a four-week paid pilot.' },

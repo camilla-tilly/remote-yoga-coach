@@ -63,7 +63,7 @@ const Pricing = () => {
           <div className="relative max-w-[760px] mx-auto px-5 text-center">
             <Eyebrow>Pricing</Eyebrow>
             <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
-              Simple, transparent pricing. No "request a quote" runaround.
+              Simple, transparent pricing.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[560px] mx-auto">
               Here is exactly what The Weekly Reset costs. A flat monthly fee for your whole team, not a per-person app charge.

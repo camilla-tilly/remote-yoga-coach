@@ -58,7 +58,7 @@ const Demo = () => {
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[560px] mx-auto">
               A four-week pilot of The Weekly Reset for your team, credited to your first month if you continue. Tell me
-              a little about your team and I'll be in touch to set it up.
+              a little about your team, or just ask a question, and I'll be in touch.
             </p>
           </div>
         </section>
@@ -90,8 +90,8 @@ const Demo = () => {
                 </p>
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div>
-                    <label htmlFor="company" className={labelClass}>Company name</label>
-                    <input id="company" name="company" required value={form.company} onChange={set('company')} className={inputClass} placeholder="Acme Ltd" />
+                    <label htmlFor="company" className={labelClass}>Company name <span className="font-normal text-charcoal/50">(optional)</span></label>
+                    <input id="company" name="company" value={form.company} onChange={set('company')} className={inputClass} placeholder="Acme Ltd" />
                   </div>
                   <div>
                     <label htmlFor="name" className={labelClass}>Your name</label>
