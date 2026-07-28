@@ -80,7 +80,7 @@ const Index = () => {
               The Weekly Reset
             </span>
             <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-6xl leading-[1.08] tracking-tight">
-              The weekly reset your team looks forward to.
+              The wellbeing habit your remote team actually keeps.
             </h1>
             <p className="mt-7 text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-[560px] mx-auto">
               Live breathing, meditation and chair-yoga sessions your whole team actually turns up for. On Teams,
@@ -164,7 +164,7 @@ const Index = () => {
         <section className="py-24 md:py-32">
           <div className="max-w-[1000px] mx-auto px-5">
             <div className="text-center">
-              <Eyebrow>How it works</Eyebrow>
+              <Eyebrow>Getting started</Eyebrow>
               <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
                 One link to run. Zero admin for you.
               </h2>
