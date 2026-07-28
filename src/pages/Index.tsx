@@ -5,7 +5,47 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
-import { Reveal, GlowField, ComparisonTable, Eyebrow, CoachPhoto, Testimonials } from '@/components/SiteBlocks';
+import { Reveal, GlowField, ComparisonTable, CoachPhoto, Testimonials } from '@/components/SiteBlocks';
+
+/**
+ * SoftLabel — a calmer replacement for the shared uppercase Eyebrow on the
+ * landing page. Sentence case, gentle tracking, lighter weight: it whispers a
+ * section label instead of shouting it. Kept local to the home page so the
+ * quieter treatment doesn't ripple into the shared component.
+ */
+const SoftLabel = ({ children }: { children: React.ReactNode }) => (
+  <span className="inline-block text-[13px] font-medium tracking-[0.02em] text-sage mb-4">
+    {children}
+  </span>
+);
+
+/**
+ * BreatheMark — a faint, hand-drawn "breathing rings" motif: concentric arcs
+ * rising like a slow dawn. A soft place for the eye to rest above the hero
+ * headline. Purely decorative; uses currentColor so it follows the palette.
+ */
+const BreatheMark = ({ className = '' }: { className?: string }) => (
+  <svg
+    width="76"
+    height="42"
+    viewBox="0 0 76 42"
+    fill="none"
+    aria-hidden="true"
+    className={className}
+  >
+    {[34, 26, 18, 10].map((r, i) => (
+      <path
+        key={r}
+        d={`M ${38 - r} 40 A ${r} ${r} 0 0 1 ${38 + r} 40`}
+        stroke="currentColor"
+        strokeOpacity={0.2 + i * 0.14}
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    ))}
+    <circle cx="38" cy="40" r="3.5" fill="currentColor" fillOpacity="0.9" />
+  </svg>
+);
 
 const faqs: Array<[string, string]> = [
   ['Who is this actually for?', 'People and culture leaders, team leads and founders at remote-first and hybrid companies, roughly 10 to 100 people, who want a wellbeing habit the whole team keeps rather than another perk that lands flat.'],
@@ -76,10 +116,14 @@ const Index = () => {
         <section className="relative overflow-hidden bg-cream-soft pt-40 pb-28 md:pt-48 md:pb-36">
           <GlowField tone="warm" />
           <div className="relative max-w-[820px] mx-auto px-5 text-center">
-            <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-sage mb-6">
+            <BreatheMark className="mx-auto mb-7 text-clay" />
+            <span className="inline-block text-[13px] font-medium tracking-[0.06em] text-sage mb-6">
               The Weekly Reset
             </span>
-            <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-6xl leading-[1.08] tracking-tight">
+            <h1
+              className="font-fraunces font-normal text-heading text-[2.4rem] md:text-[3.4rem] leading-[1.12] tracking-[-0.01em]"
+              style={{ fontVariationSettings: '"SOFT" 40, "opsz" 144' }}
+            >
               The wellbeing habit your remote team actually keeps.
             </h1>
             <p className="mt-7 text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-[560px] mx-auto">
@@ -88,12 +132,12 @@ const Index = () => {
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] tracking-normal rounded-full px-8 py-6">
                   Get in touch
                 </Button>
               </Link>
               <Link to="/pricing">
-                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-medium text-[15px] tracking-normal rounded-full px-8 py-6">
                   See pricing
                 </Button>
               </Link>
@@ -108,8 +152,8 @@ const Index = () => {
         <section className="py-24 md:py-32">
           <div className="max-w-[1000px] mx-auto px-5">
             <div className="text-center max-w-[560px] mx-auto">
-              <Eyebrow>Why it helps</Eyebrow>
-              <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
+              <SoftLabel>Why it helps</SoftLabel>
+              <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl leading-[1.15]" style={{ fontVariationSettings: '"SOFT" 40' }}>
                 A calmer team, a sharper week
               </h2>
               <p className="mt-5 text-charcoal/70 text-lg leading-relaxed">
@@ -124,7 +168,7 @@ const Index = () => {
                   <div className="w-12 h-12 rounded-xl bg-cream flex items-center justify-center mx-auto">
                     <b.icon className="text-clay" size={24} strokeWidth={1.75} />
                   </div>
-                  <h3 className="font-fraunces font-semibold text-heading text-xl mt-5">{b.title}</h3>
+                  <h3 className="font-fraunces font-medium text-heading text-xl mt-5">{b.title}</h3>
                   <p className="text-charcoal/70 text-[15px] leading-relaxed mt-2">{b.text}</p>
                 </Reveal>
               ))}
@@ -136,8 +180,8 @@ const Index = () => {
         <section className="bg-cream py-24 md:py-32">
           <div className="max-w-[900px] mx-auto px-5">
             <div className="text-center max-w-[620px] mx-auto mb-12">
-              <Eyebrow>Where it fits</Eyebrow>
-              <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
+              <SoftLabel>Where it fits</SoftLabel>
+              <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl leading-[1.15]" style={{ fontVariationSettings: '"SOFT" 40' }}>
                 Not another app. The layer they were missing.
               </h2>
               <p className="mt-5 text-charcoal/70 text-lg leading-relaxed">
@@ -153,7 +197,7 @@ const Index = () => {
               />
             </Reveal>
             <p className="mt-8 text-center">
-              <Link to="/compare" className="inline-flex items-center gap-1.5 text-clay hover:text-clayDark font-semibold uppercase text-sm tracking-wider">
+              <Link to="/compare" className="inline-flex items-center gap-1.5 text-clay hover:text-clayDark font-medium text-[15px]">
                 See the full comparison <ArrowRight size={15} />
               </Link>
             </p>
@@ -164,26 +208,26 @@ const Index = () => {
         <section className="py-24 md:py-32">
           <div className="max-w-[1000px] mx-auto px-5">
             <div className="text-center">
-              <Eyebrow>Getting started</Eyebrow>
-              <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
+              <SoftLabel>Getting started</SoftLabel>
+              <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl leading-[1.15]" style={{ fontVariationSettings: '"SOFT" 40' }}>
                 One link to run. Zero admin for you.
               </h2>
             </div>
             <div className="mt-16 grid gap-10 sm:grid-cols-3">
               {steps.map((s, i) => (
                 <Reveal key={s.title} delay={i * 90} className="text-center">
-                  <span className="text-sm font-semibold text-clay tracking-wider">0{i + 1}</span>
+                  <span className="text-sm font-medium text-clay/80 tracking-[0.05em]">0{i + 1}</span>
                   <s.icon className="text-sage mt-4 mx-auto" size={28} strokeWidth={1.5} />
-                  <h3 className="font-fraunces font-semibold text-heading text-xl mt-4">{s.title}</h3>
+                  <h3 className="font-fraunces font-medium text-heading text-xl mt-4">{s.title}</h3>
                   <p className="text-charcoal/70 text-[15px] leading-relaxed mt-2">{s.text}</p>
                 </Reveal>
               ))}
             </div>
             <p className="mt-14 text-center flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-3">
-              <Link to="/services/team-wellness" className="text-clay hover:text-clayDark font-semibold uppercase text-sm tracking-wider">
+              <Link to="/services/team-wellness" className="text-clay hover:text-clayDark font-medium text-[15px]">
                 See how a session runs →
               </Link>
-              <Link to="/services/chair-yoga-for-teams" className="text-clay hover:text-clayDark font-semibold uppercase text-sm tracking-wider">
+              <Link to="/services/chair-yoga-for-teams" className="text-clay hover:text-clayDark font-medium text-[15px]">
                 Chair yoga for teams →
               </Link>
             </p>
@@ -199,8 +243,8 @@ const Index = () => {
               className="w-full max-w-[300px] mx-auto md:mx-0"
             />
             <div>
-              <Eyebrow>Meet your coach</Eyebrow>
-              <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
+              <SoftLabel>Meet your coach</SoftLabel>
+              <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl leading-[1.15]" style={{ fontVariationSettings: '"SOFT" 40' }}>
                 One familiar face, every week
               </h2>
               <div className="mt-5 space-y-4 text-charcoal/75 text-lg leading-relaxed">
@@ -231,7 +275,7 @@ const Index = () => {
                 ))}
               </div>
               <p className="mt-7">
-                <Link to="/about" className="inline-flex items-center gap-1.5 text-clay hover:text-clayDark font-semibold uppercase text-sm tracking-wider">
+                <Link to="/about" className="inline-flex items-center gap-1.5 text-clay hover:text-clayDark font-medium text-[15px]">
                   More about how I work <ArrowRight size={15} />
                 </Link>
               </p>
@@ -243,8 +287,8 @@ const Index = () => {
         <section className="py-20 md:py-24">
           <div className="max-w-[900px] mx-auto px-5">
             <div className="max-w-[620px]">
-              <Eyebrow>Build the case</Eyebrow>
-              <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
+              <SoftLabel>Build the case</SoftLabel>
+              <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl leading-[1.15]" style={{ fontVariationSettings: '"SOFT" 40' }}>
                 Everything you need to take it to leadership
               </h2>
               <p className="mt-5 text-charcoal/70 text-lg leading-relaxed">
@@ -263,10 +307,10 @@ const Index = () => {
                     to={g.to}
                     className="group block h-full bg-white rounded-2xl border border-sage-light hover:border-clay/60 p-6 transition-colors"
                   >
-                    <p className="font-inter text-[10px] uppercase tracking-[0.28em] text-sage font-bold mb-3">Guide</p>
-                    <h3 className="font-fraunces font-semibold text-heading text-xl leading-snug group-hover:text-clay transition-colors">{g.label}</h3>
+                    <p className="font-inter text-[11px] tracking-[0.1em] text-sage font-semibold mb-3">Guide</p>
+                    <h3 className="font-fraunces font-medium text-heading text-xl leading-snug group-hover:text-clay transition-colors">{g.label}</h3>
                     <p className="text-charcoal/70 text-[15px] leading-relaxed mt-2">{g.text}</p>
-                    <span className="mt-4 inline-flex items-center gap-1.5 text-clay text-xs font-semibold uppercase tracking-wider">
+                    <span className="mt-4 inline-flex items-center gap-1.5 text-clay text-[13px] font-medium">
                       Read <ArrowRight size={13} className="transition-transform group-hover:translate-x-0.5" />
                     </span>
                   </Link>
@@ -274,7 +318,7 @@ const Index = () => {
               ))}
             </div>
             <p className="mt-8">
-              <Link to="/guides" className="inline-flex items-center gap-1.5 text-clay hover:text-clayDark font-semibold uppercase text-sm tracking-wider">
+              <Link to="/guides" className="inline-flex items-center gap-1.5 text-clay hover:text-clayDark font-medium text-[15px]">
                 All guides <ArrowRight size={15} />
               </Link>
             </p>
@@ -288,13 +332,13 @@ const Index = () => {
         <section className="py-20 md:py-28">
           <div className="max-w-[760px] mx-auto px-5">
             <div className="text-center mb-12">
-              <Eyebrow>Questions HR asks</Eyebrow>
-              <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">Before you book</h2>
+              <SoftLabel>Questions HR asks</SoftLabel>
+              <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl leading-[1.15]" style={{ fontVariationSettings: '"SOFT" 40' }}>Before you book</h2>
             </div>
-            <dl className="divide-y divide-sage-light border-y border-sage-light">
+            <dl className="divide-y divide-sage-light/60">
               {faqs.map(([q, a]) => (
-                <div key={q} className="py-6">
-                  <dt className="font-fraunces font-semibold text-heading text-lg leading-snug">{q}</dt>
+                <div key={q} className="py-7">
+                  <dt className="font-fraunces font-medium text-heading text-lg leading-snug">{q}</dt>
                   <dd className="mt-2.5 text-charcoal/75 text-[16px] leading-relaxed">{a}</dd>
                 </div>
               ))}
@@ -306,7 +350,8 @@ const Index = () => {
         <section className="relative overflow-hidden bg-cream-soft-b py-28 md:py-36">
           <GlowField tone="sage" />
           <div className="relative max-w-[680px] mx-auto px-5 text-center">
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-5xl leading-tight">
+            <BreatheMark className="mx-auto mb-6 text-clay" />
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-5xl leading-[1.12]" style={{ fontVariationSettings: '"SOFT" 40, "opsz" 144' }}>
               Give your team a reset
             </h2>
             <p className="mt-6 text-charcoal/70 text-lg leading-relaxed max-w-[480px] mx-auto">
@@ -315,12 +360,12 @@ const Index = () => {
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] tracking-normal rounded-full px-8 py-6">
                   Get in touch
                 </Button>
               </Link>
               <Link to="/pricing">
-                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-medium text-[15px] tracking-normal rounded-full px-8 py-6">
                   See pricing
                 </Button>
               </Link>
