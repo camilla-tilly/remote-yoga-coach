@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { CalendarCheck, Video, LineChart, ArrowRight, Leaf, Repeat, Sun } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Logo from '@/components/Logo';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
@@ -116,7 +117,7 @@ const Index = () => {
         <section className="relative overflow-hidden bg-cream-soft pt-40 pb-28 md:pt-48 md:pb-36">
           <GlowField tone="warm" />
           <div className="relative max-w-[820px] mx-auto px-5 text-center">
-            <BreatheMark className="mx-auto mb-7 text-clay" />
+            <Logo size={58} className="mx-auto mb-7" aria-hidden={true} />
             <span className="inline-block text-[13px] font-medium tracking-[0.06em] text-sage mb-6">
               The Weekly Reset
             </span>
@@ -124,7 +125,7 @@ const Index = () => {
               className="font-fraunces font-normal text-heading text-[2.4rem] md:text-[3.4rem] leading-[1.12] tracking-[-0.01em]"
               style={{ fontVariationSettings: '"SOFT" 40, "opsz" 144' }}
             >
-              The wellbeing habit your remote team actually keeps.
+              The wellbeing habit your team actually keeps.
             </h1>
             <p className="mt-7 text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-[560px] mx-auto">
               Live breathing, meditation and chair-yoga sessions your whole team actually turns up for. On Teams,
