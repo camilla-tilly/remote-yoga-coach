@@ -9,11 +9,11 @@ import { Button } from '@/components/ui/button';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "serviceType": "Online corporate wellbeing sessions for remote teams",
+  "serviceType": "Online corporate wellbeing sessions for remote and hybrid teams",
   "name": "The Weekly Reset, team wellness",
   "provider": { "@type": "Organization", "name": "Remote Yoga Coach", "url": "https://remoteyogacoach.com" },
   "areaServed": ["GB", "EU", "AU"],
-  "description": "Live breathing, meditation and chair-yoga sessions for distributed and hybrid teams on Teams, with honest wellbeing reporting."
+  "description": "Live breathing, meditation and chair-yoga sessions for remote, hybrid and in-office teams on Teams or Zoom, with honest wellbeing reporting."
 };
 
 const arc = [
@@ -42,8 +42,8 @@ const TeamWellness = () => {
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
-        title="Corporate Wellbeing Sessions for Remote Teams | Remote Yoga Coach"
-        description="Live corporate wellbeing for distributed teams: The Weekly Reset, breathing, meditation and chair yoga on Teams, camera optional, with attendance and stress reporting. Book a pilot."
+        title="Corporate Wellbeing Sessions for Remote and Hybrid Teams | Remote Yoga Coach"
+        description="Live corporate wellbeing for remote, hybrid and in-office teams: The Weekly Reset, breathing, meditation and chair yoga on Teams or Zoom, camera optional, with attendance and stress reporting. Book a pilot."
         canonical="https://remoteyogacoach.com/services/team-wellness"
         structuredData={structuredData}
       />
@@ -54,12 +54,13 @@ const TeamWellness = () => {
         <section className="bg-cream-soft pt-36 pb-20 md:pt-44 md:pb-24">
           <div className="max-w-[820px] mx-auto px-5 text-center">
             <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
-              The weekly reset your team looks forward to.
+              The weekly reset your remote and hybrid team looks forward to.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[660px] mx-auto">
-              Live 30-minute breathing, meditation and chair-yoga sessions for distributed teams, on Teams,
-              no activewear, no commute, camera optional. The same coach every week, building a real habit instead of
-              another app login nobody opens.
+              Live 30-minute breathing, meditation and chair-yoga sessions on Teams or Zoom,
+              no activewear, no commute, camera optional. Sessions are live on screen, so they work for any team that
+              spends its day on a screen, whether fully remote, hybrid, or together in an office. The same coach every
+              week, building a real habit instead of another app login nobody opens.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
@@ -121,6 +122,10 @@ const TeamWellness = () => {
               Challenging but never punishing. No headstands, no "advanced" poses, nothing anyone has to be flexible or
               fit to do. Just a reliable reset that fits a lunch break or a meeting slot.
             </p>
+            <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
+              Every session suits every body and every level. Cameras can stay off, there is nothing to download, no
+              equipment and no changing of clothes, and there is always a seated option.
+            </p>
           </div>
         </section>
 
@@ -165,6 +170,32 @@ const TeamWellness = () => {
               Sessions are delivered in English, online, across UK and European time zones (and Australian hours for
               part of the year). Suitable for international and distributed teams anywhere.
             </p>
+          </div>
+        </section>
+
+        {/* ONE-OFF / TEAM EVENT */}
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[820px] mx-auto px-5">
+            <SectionHeading eyebrow="One-off sessions">A virtual session for a team event</SectionHeading>
+            <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
+              If a full programme feels like a big first step, you can book a single live session for a moment your
+              team is already gathering around: a virtual kickoff, an all-hands, an online offsite, or a virtual lunch
+              and learn. It runs live on Teams or Zoom, wherever each person already is, with the same breathing,
+              meditation and gentle chair yoga as the weekly sessions.
+            </p>
+            <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
+              Think of a one-off as a low-commitment way to try it. It is an easy door-opener and a wellbeing session
+              for a team event, not the main offering. The Weekly Reset, the recurring weekly habit, is where the real
+              change happens, and a single session is the simplest way to feel what that would be like before you
+              commit.
+            </p>
+            <div className="mt-9">
+              <Link to="/demo">
+                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                  Ask about a one-off
+                </Button>
+              </Link>
+            </div>
           </div>
         </section>
 

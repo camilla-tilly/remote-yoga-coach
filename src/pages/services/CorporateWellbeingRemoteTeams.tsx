@@ -22,6 +22,10 @@ const faqItems: Array<[string, string]> = [
     'Yes, this is what the live online format is built for. Sessions run across UK and European hours, with Australian hours for part of the year, and every session is recorded so colleagues in other time zones are never left out of the habit.',
   ],
   [
+    'We are a hybrid team, some in the office and some at home. Does this still work?',
+    'Yes, this is built for exactly that. Because every session is live on Teams or Zoom, it does not matter who is in the office and who is at home that day. Everyone joins the same session from wherever they already are, which gives a hybrid team one shared weekly moment and an easy way to stay connected and focused without coordinating a room or any travel.',
+  ],
+  [
     'How many people can join?',
     'From small teams of around 10 up to 100 or more. Smaller teams get a single weekly slot; larger or multi-region teams get multiple slots so nobody has to join at an antisocial hour. Camera-off is welcome throughout.',
   ],
@@ -46,7 +50,7 @@ const structuredData = {
       areaServed: ['GB', 'EU', 'AU'],
       description:
         'Live weekly wellbeing sessions for distributed and hybrid teams on Teams or Zoom: breathing, meditation and chair yoga, camera optional, with attendance and wellbeing reporting.',
-      offers: { '@type': 'Offer', priceCurrency: 'GBP', description: 'Monthly subscription by team size, from a four-week paid pilot.' },
+      offers: { '@type': 'Offer', priceCurrency: 'EUR', description: 'Monthly subscription by team size, from a four-week paid pilot.' },
     },
     {
       '@type': 'FAQPage',
@@ -82,8 +86,8 @@ const CorporateWellbeingRemoteTeams = () => {
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
-        title="Corporate Wellbeing for Remote Teams | Remote Yoga Coach"
-        description="A live weekly wellbeing subscription for distributed and hybrid teams. Breathing, meditation and chair yoga on Teams, camera optional, with reporting. Book a four-week pilot."
+        title="Corporate Wellbeing for Remote and Hybrid Teams | Remote Yoga Coach"
+        description="A live weekly wellbeing subscription for remote, hybrid and in-office teams that spend the day on screen. Breathing, meditation and chair yoga on Teams or Zoom, camera optional, with reporting. Book a four-week pilot."
         canonical="https://remoteyogacoach.com/services/corporate-wellbeing-for-remote-teams"
         ogImage="https://remoteyogacoach.com/og/corporate-wellbeing-remote-teams.png"
         structuredData={structuredData}
@@ -97,12 +101,12 @@ const CorporateWellbeingRemoteTeams = () => {
           <div className="relative max-w-[820px] mx-auto px-5 text-center">
             <Eyebrow>Corporate wellbeing, distributed teams</Eyebrow>
             <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
-              Wellbeing for a remote team that actually reaches everyone.
+              Wellbeing for remote and hybrid teams that reaches everyone on screen.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[660px] mx-auto">
-              A live weekly wellbeing session for your whole distributed team, on Teams or Zoom. Breathing, meditation
-              and chair yoga, led by the same coach, camera optional, recorded for every time zone. A recurring habit
-              people keep, with the reporting to prove it, not another app licence nobody opens.
+              A live weekly wellbeing session for your whole team, remote, hybrid or in the office, on Teams or Zoom.
+              Breathing, meditation and chair yoga, led by the same coach, camera optional, recorded for every time
+              zone. A recurring habit people keep, with the reporting to prove it, not another app licence nobody opens.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
@@ -198,8 +202,34 @@ const CorporateWellbeingRemoteTeams = () => {
           </div>
         </section>
 
-        {/* WHO IT'S FOR */}
+        {/* HYBRID TEAMS */}
         <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5">
+            <SectionHeading eyebrow="Hybrid teams">One shared moment to keep a hybrid team connected</SectionHeading>
+            <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
+              <p>
+                Hybrid is the hardest shape to hold together. Some of the team is in the office, some is at home, and
+                the days rarely line up, so the little moments that used to build belonging quietly disappear. A live
+                weekly session gives everyone one fixed point in the week they share, wherever they happen to be that
+                day. It is a simple way to keep a hybrid team connected and to keep a hybrid team focused, without
+                asking anyone to travel or coordinate a room.
+              </p>
+              <p>
+                Because it is the same time, the same coach and the same small ritual each week, it becomes a moment of
+                connection people recognise across a distributed or hybrid team, not another meeting. Sessions are live
+                on Teams or Zoom, so they work for any team that spends its day on a screen, whether fully remote,
+                hybrid, or together in an office. The session comes to wherever each person already is.
+              </p>
+              <p>
+                Every session suits every body and every level. Cameras can stay off, there is nothing to download, no
+                equipment and no changing of clothes, and there is always a seated option.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* WHO IT'S FOR */}
+        <section className="bg-cream py-20 md:py-24">
           <div className="max-w-[760px] mx-auto px-5">
             <SectionHeading eyebrow="Who it's for">People leaders at remote-first companies</SectionHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
@@ -223,7 +253,7 @@ const CorporateWellbeingRemoteTeams = () => {
         </section>
 
         {/* FAQ */}
-        <section className="bg-cream py-20 md:py-24">
+        <section className="py-20 md:py-24">
           <div className="max-w-[760px] mx-auto px-5">
             <SectionHeading eyebrow="FAQ">Common questions</SectionHeading>
             <GuideFAQ items={faqItems} />

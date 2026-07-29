@@ -76,6 +76,7 @@ const structuredData = {
 
 const tocItems = [
   { href: '#what-it-is', label: 'What desk yoga and chair yoga are' },
+  { href: '#office-yoga', label: 'Office yoga and workplace yoga, defined' },
   { href: '#why-bodies-ache', label: 'Why office bodies ache' },
   { href: '#movements', label: 'The movements, area by area' },
   { href: '#five-minutes', label: 'The five-minute routine between calls' },
@@ -88,8 +89,8 @@ const DeskYoga = () => {
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
-        title="Desk Yoga and Chair Yoga at Work: The Guide | Remote Yoga Coach"
-        description="Why office bodies ache, the desk yoga and chair yoga movements that help, a 5-minute routine between calls, and how to make movement a real team habit."
+        title="Office Yoga, Desk Yoga and Chair Yoga at Work: The Guide | Remote Yoga Coach"
+        description="What office yoga is, why workplace bodies ache, the desk yoga and chair yoga movements that help, a 5-minute routine between calls, and how to make movement a real team habit."
         canonical="https://remoteyogacoach.com/guides/desk-yoga"
         ogType="article"
         structuredData={structuredData}
@@ -102,13 +103,14 @@ const DeskYoga = () => {
           <div className="max-w-[820px] mx-auto px-5">
             <GuideEyebrow>Guide</GuideEyebrow>
             <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
-              Desk yoga and chair yoga at work: the complete guide
+              Office yoga, desk yoga and chair yoga at work: the complete guide
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed">
               Your body was not consulted when work moved onto screens. Around 80 percent of office workers report
               neck or back discomfort, and the remote workday, with its back-to-back calls and three-metre commute,
-              has quietly made it worse. Desk yoga is the practical answer: gentle, effective movement that fits
-              between meetings, needs no mat, no changing, and no flexibility whatsoever. This guide covers the
+              has quietly made it worse. Office yoga is the practical answer, and desk yoga and chair yoga are the
+              two forms it usually takes: gentle, effective movement that fits between meetings, needs no mat, no
+              changing, and no flexibility whatsoever. This guide covers what workplace yoga actually means, the
               movements, a five-minute routine, and how to make it stick for a whole team.
             </p>
             <KeyTakeaways items={[
@@ -143,6 +145,35 @@ const DeskYoga = () => {
                 One position worth stating plainly, because it shapes everything we teach: there are no advanced
                 poses here, and that is deliberate, not a limitation. The point of movement at work is to feel
                 better at 4pm, not to perform.
+              </p>
+            </GuideProse>
+          </div>
+        </section>
+
+        {/* OFFICE YOGA DEFINED */}
+        <section className="bg-cream py-16 md:py-20">
+          <div className="max-w-[760px] mx-auto px-5">
+            <GuideHeading id="office-yoga" eyebrow="The terms">Office yoga and workplace yoga, defined</GuideHeading>
+            <GuideProse>
+              <p>
+                Office yoga, sometimes called workplace yoga, is simply yoga adapted to the working day: short,
+                low-effort movement and breathing you can do in the clothes you turned up in, without a mat or a
+                studio. It is the umbrella term. Desk yoga and chair yoga are the two forms it usually takes.
+              </p>
+              <p>
+                Desk yoga is office yoga done in and around your workstation, a mix of seated movements and a few
+                standing ones aimed at the aches screen work creates. Chair yoga is the seated core of it, using the
+                chair itself as support, which makes it the most accessible entry point and the easiest thing to run
+                for a whole team at once. When people search for office yoga or workplace yoga, this is what they are
+                after: something that fits the day rather than competing with it.
+              </p>
+              <p>
+                Done live and remotely, workplace yoga travels wherever the team does. If you want office yoga your
+                distributed team can join from anywhere, my{' '}
+                <Link to="/services/chair-yoga-for-teams" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  virtual chair yoga for teams
+                </Link>{' '}
+                is built exactly for that.
               </p>
             </GuideProse>
           </div>

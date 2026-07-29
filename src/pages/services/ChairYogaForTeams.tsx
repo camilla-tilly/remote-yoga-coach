@@ -9,6 +9,10 @@ import { GuideFAQ } from '@/components/GuideLayout';
 
 const faqItems: Array<[string, string]> = [
   [
+    'Is this office yoga, workplace yoga or chair yoga?',
+    'They are the same thing here. Office yoga and workplace yoga are umbrella terms for yoga done during the workday, and what I run is chair yoga: the seated, gentle version that needs no mat and no changing of clothes. It is live on Teams or Zoom, camera optional, and works from any desk, whether your team is remote, hybrid or in an office.',
+  ],
+  [
     'What is a virtual chair yoga session for a company?',
     'A live, guided session over Teams or Zoom in which a coach leads your team through gentle seated and standing movement, simple breathing and a short reset, usually 15 to 30 minutes. Everyone joins from their own desk, in normal work clothes, camera optional. No mats, no changing, no experience needed.',
   ],
@@ -39,12 +43,12 @@ const structuredData = {
   '@graph': [
     {
       '@type': 'Service',
-      serviceType: 'Virtual chair yoga classes for companies and remote teams',
-      name: 'Chair yoga for teams',
+      serviceType: 'Virtual office yoga and chair yoga classes for companies and remote teams',
+      name: 'Office yoga and chair yoga for teams',
       provider: { '@type': 'Organization', name: 'Remote Yoga Coach', url: 'https://remoteyogacoach.com' },
       areaServed: ['GB', 'EU', 'AU'],
       description:
-        'Live virtual chair yoga sessions for companies and distributed teams on Teams or Zoom: gentle seated movement, breathing and a short reset, camera optional, no experience needed.',
+        'Live virtual office yoga and chair yoga sessions for companies and distributed teams on Teams or Zoom: gentle seated movement, breathing and a short reset, camera optional, no experience needed.',
     },
     {
       '@type': 'FAQPage',
@@ -84,8 +88,8 @@ const ChairYogaForTeams = () => {
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
-        title="Virtual Chair Yoga for Companies and Teams | Remote Yoga Coach"
-        description="Live virtual chair yoga for companies and remote teams on Teams or Zoom. Gentle desk-friendly movement, camera optional, no experience needed. Book a four-week pilot."
+        title="Virtual Office Yoga and Chair Yoga for Teams | Remote Yoga Coach"
+        description="Live virtual office yoga and chair yoga for companies and remote teams on Teams or Zoom. Workplace yoga that is gentle and desk-friendly, camera optional, no experience needed. Book a four-week pilot."
         canonical="https://remoteyogacoach.com/services/chair-yoga-for-teams"
         structuredData={structuredData}
       />
@@ -99,10 +103,10 @@ const ChairYogaForTeams = () => {
               For companies and remote teams
             </span>
             <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
-              Virtual chair yoga your whole team can actually do.
+              Virtual office yoga and chair yoga your whole team can actually do.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[640px] mx-auto">
-              Live, guided chair-yoga sessions for distributed and hybrid teams, on Teams or Zoom. Gentle seated
+              Live, guided workplace yoga for distributed and hybrid teams, on Teams or Zoom. Gentle seated
               movement, simple breathing and a short reset, in normal work clothes, camera optional. No mats, no
               changing, no experience, nothing anyone has to be fit or flexible to join.
             </p>
@@ -117,6 +121,38 @@ const ChairYogaForTeams = () => {
                   See pricing
                 </Button>
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* DEFINITIONS */}
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5">
+            <SectionHeading eyebrow="Quick definitions">Office yoga, desk yoga and chair yoga: what's the difference?</SectionHeading>
+            <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
+              <p>
+                <span className="text-charcoal font-medium">Office yoga and workplace yoga</span> are umbrella terms
+                for yoga done during the workday, wherever the team happens to be. They cover any format built to fit
+                around meetings and desk work, from a few minutes of stretching to a full guided session.
+              </p>
+              <p>
+                <span className="text-charcoal font-medium">Desk yoga</span> is the narrowest of the three: gentle
+                movements done at, or right beside, a desk. It is designed to loosen the neck, shoulders, wrists and
+                back between tasks, without anyone leaving their workstation.
+              </p>
+              <p>
+                <span className="text-charcoal font-medium">Chair yoga</span> is seated and gentle, with a standing
+                option. It needs no mat and no changing of clothes, and it came from adaptive yoga, so it assumes a
+                range of bodies and levels rather than the flexible few. It is the version I run for teams.
+              </p>
+              <p>
+                Sessions are live on Teams or Zoom, so they work for any team that spends its day on a screen, whether
+                fully remote, hybrid, or together in an office. The session comes to wherever each person already is.
+              </p>
+              <p>
+                Every session suits every body and every level. Cameras can stay off, there is nothing to download, no
+                equipment and no changing of clothes, and there is always a seated option.
+              </p>
             </div>
           </div>
         </section>

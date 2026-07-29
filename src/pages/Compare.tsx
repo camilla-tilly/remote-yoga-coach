@@ -28,6 +28,22 @@ const faqItems: Array<[string, string]> = [
     'What about cost? Apps look cheaper per head.',
     'Per licence, yes. Per person who actually benefits, rarely, because most app licences go unused. A live session priced per team, with high real attendance, often costs less per engaged employee than an app almost nobody opens.',
   ],
+  [
+    'Is this a Calm for Business alternative?',
+    'It is the live layer those apps are missing, not a like-for-like swap. Calm for Business and Headspace for Work are strong on-demand libraries, but they are passive: staff have to start on their own, and usage drops fast. I run a live weekly session on Teams or Zoom, led by me, a 500-hour certified yoga teacher, with camera optional and every session recorded. If you want a Calm for Business alternative that people actually attend, keep the app as the between-sessions library and add the live session as the weekly class.',
+  ],
+  [
+    'Is this a Headspace for Work alternative?',
+    'In the same way, yes. As a Headspace for Work alternative, the difference is a real, familiar human leading the practice at a set time each week, which removes the hardest part, starting. Attendance and repeat attendance are tracked, with a short wellbeing check reported in a one-page summary, so you can see the engagement an app dashboard cannot show.',
+  ],
+  [
+    'Is this an EAP alternative?',
+    'Not for crisis support, and I would never position it that way. An EAP is a reactive safety net and should stay. But if you are looking for an EAP alternative to actually build everyday wellbeing, rather than wait for a problem to form, that is what a live weekly session does. It is preventive and stigma-free: nobody has to admit anything, everyone just joins.',
+  ],
+  [
+    'App vs live sessions, which do teams actually use?',
+    'On the wellbeing app vs live sessions question, the honest answer is live sessions, by a wide margin on real participation. Apps win on library depth and per-licence price, but most licences go unused. A live session led by a real person, at a fixed weekly time, holds attendance because the starting step is handled for people. The two work best together: the app on demand, the live session as the habit.',
+  ],
 ];
 
 const structuredData = {
@@ -72,7 +88,7 @@ const Compare = () => {
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
-        title="Live Wellbeing Sessions vs Apps vs EAPs | Remote Yoga Coach"
+        title="Live Wellbeing Sessions vs Apps vs EAPs: A Wellbeing App and EAP Alternative | Remote Yoga Coach"
         description="An honest comparison of live team wellbeing sessions, wellbeing apps and EAPs on the metric that matters: whether your team actually uses it. A wellbeing app alternative that gets used."
         canonical="https://remoteyogacoach.com/compare"
         ogType="article"
@@ -166,6 +182,31 @@ const Compare = () => {
               <Link to="/blog/do-workplace-wellness-apps-work" className="text-clay underline underline-offset-4 hover:text-clayDark">
                 do workplace wellness apps actually work?
               </Link>
+            </p>
+          </div>
+        </section>
+
+        {/* THE ALTERNATIVE */}
+        <section className="py-16 md:py-20">
+          <div className="max-w-[760px] mx-auto px-5">
+            <Eyebrow>The alternative you are searching for</Eyebrow>
+            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">
+              A Calm for Business, Headspace for Work and EAP alternative that gets used
+            </h2>
+            <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
+              If you are searching for a Calm for Business alternative or a Headspace for Work alternative, you are
+              usually not looking for a better content library. You are looking for the piece those apps leave out: a
+              real person, at a fixed time, that people actually turn up to. That is the whole wellbeing app vs live
+              sessions difference. The app waits to be opened. A live weekly session is led, so the hardest part,
+              starting, is already handled.
+            </p>
+            <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
+              As an EAP alternative the framing is different again. An EAP is a crisis safety net and should stay in
+              place. What it does not do is build the everyday habit that keeps people well before a problem forms.
+              A live weekly session, led by me, a 500-hour certified yoga teacher, on Teams or Zoom with camera
+              optional and every session recorded, is the preventive, human layer that sits in front of both the app
+              and the EAP. Keep them, and add the layer that finally drives attendance across the lot. Attendance and
+              a short wellbeing check are reported in a one-page summary, so the engagement is something you can see.
             </p>
           </div>
         </section>

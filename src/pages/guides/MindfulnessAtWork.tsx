@@ -90,7 +90,7 @@ const MindfulnessAtWork = () => {
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
-        title="Mindfulness at Work: Guide for Remote Teams | Remote Yoga Coach"
+        title="Mindfulness at Work: Guide for Remote and Hybrid Teams | Remote Yoga Coach"
         description="What mindfulness at work really means, the evidence behind meditation at work, exercises for individuals and teams, and how to build a habit your team keeps."
         canonical="https://remoteyogacoach.com/guides/mindfulness-at-work"
         ogType="article"

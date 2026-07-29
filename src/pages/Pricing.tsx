@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Check, ArrowRight } from 'lucide-react';
 import Navbar from '@/components/Navbar';
@@ -17,35 +16,69 @@ const faqs: Array<[string, string]> = [
   ['Can you work across time zones?', 'Yes. Sessions run across UK and European hours, with Australian hours for part of the year, plus recordings for everyone else.'],
 ];
 
-const structuredData = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
-};
-
-const pilotPrice = { GBP: '£249', EUR: '€289' };
+const pilotPrice = '€289';
 
 const tiers = [
   {
     name: 'Breathe', best: 'Small teams up to 25', sessions: '2 per month',
     reporting: 'Quarterly',
-    price: { GBP: '£329', EUR: '€379' }, per: 'per month', highlight: false,
+    price: '€379', priceValue: '379', per: 'per month', highlight: false,
   },
   {
     name: 'Reset', best: 'Teams up to 50', sessions: '4 per month (weekly)',
     reporting: 'Quarterly',
-    price: { GBP: '£549', EUR: '€639' }, per: 'per month', highlight: true,
+    price: '€639', priceValue: '639', per: 'per month', highlight: true,
   },
   {
     name: 'Flourish', best: '50+ / multi-timezone', sessions: '4+ per month',
     reporting: 'Quarterly',
-    price: { GBP: 'from £899', EUR: 'from €1,049' }, per: 'per month', highlight: false,
+    price: 'from €1,049', priceValue: '1049', per: 'per month', highlight: false,
   },
 ];
 
-const Pricing = () => {
-  const [currency, setCurrency] = useState<'GBP' | 'EUR'>('GBP');
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'FAQPage',
+      mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
+    },
+    {
+      '@type': 'Service',
+      name: 'The Weekly Reset, live team wellbeing subscription',
+      serviceType: 'Corporate wellbeing sessions for remote and hybrid teams',
+      provider: { '@type': 'Organization', name: 'Remote Yoga Coach', url: 'https://remoteyogacoach.com' },
+      areaServed: 'Worldwide',
+      url: 'https://remoteyogacoach.com/pricing',
+      offers: [
+        {
+          '@type': 'Offer',
+          name: '4-Week Pilot',
+          price: '289',
+          priceCurrency: 'EUR',
+          description: 'A four-week paid pilot, credited to your first month if you continue.',
+          url: 'https://remoteyogacoach.com/pricing',
+        },
+        ...tiers.map((t) => ({
+          '@type': 'Offer',
+          name: t.name,
+          priceCurrency: 'EUR',
+          price: t.priceValue,
+          priceSpecification: {
+            '@type': 'UnitPriceSpecification',
+            price: t.priceValue,
+            priceCurrency: 'EUR',
+            unitText: 'MONTH',
+          },
+          description: `${t.best}, ${t.sessions} live sessions per month.`,
+          url: 'https://remoteyogacoach.com/pricing',
+        })),
+      ],
+    },
+  ],
+};
 
+const Pricing = () => {
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
@@ -66,23 +99,8 @@ const Pricing = () => {
               Simple, transparent pricing.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[560px] mx-auto">
-              Here is exactly what The Weekly Reset costs. A flat monthly fee for your whole team, not a per-person app charge.
+              Here is exactly what The Weekly Reset costs. A corporate wellbeing subscription billed as a flat monthly fee for your whole team, not a per-person app charge.
             </p>
-            <div className="mt-8 inline-flex items-center rounded-full border border-sage-light bg-white p-1">
-              {(['GBP', 'EUR'] as const).map((c) => (
-                <button
-                  key={c}
-                  type="button"
-                  onClick={() => setCurrency(c)}
-                  aria-pressed={currency === c}
-                  className={`px-6 py-2 rounded-full text-sm font-semibold tracking-wide transition ${
-                    currency === c ? 'bg-clay text-white' : 'text-charcoal/60 hover:text-charcoal'
-                  }`}
-                >
-                  {c === 'GBP' ? '£ GBP' : '€ EUR'}
-                </button>
-              ))}
-            </div>
           </div>
         </section>
 
@@ -96,7 +114,7 @@ const Pricing = () => {
                   <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clayLight mb-4">Start here</span>
                   <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
                     <h2 className="font-fraunces font-semibold text-2xl md:text-3xl">The 4-Week Pilot</h2>
-                    <span className="font-fraunces font-semibold text-2xl md:text-3xl text-clayLight">{pilotPrice[currency]}</span>
+                    <span className="font-fraunces font-semibold text-2xl md:text-3xl text-clayLight">{pilotPrice}</span>
                   </div>
                   <p className="mt-4 text-white/80 leading-relaxed">One complete four-week programme, so you can see it work before you commit:</p>
                   <ul className="mt-5 space-y-2.5">
@@ -113,7 +131,7 @@ const Pricing = () => {
                     ))}
                   </ul>
                   <p className="mt-5 text-white/70 text-sm leading-relaxed">
-                    If you continue within 14 days, the {pilotPrice[currency]} is credited to your first month. Up to 50 participants.
+                    If you continue within 14 days, the {pilotPrice} is credited to your first month. Up to 50 participants.
                   </p>
                   <div className="mt-7">
                     <Link to="/demo">
@@ -154,7 +172,7 @@ const Pricing = () => {
                     <h3 className="font-fraunces font-semibold text-heading text-2xl">{t.name}</h3>
                     <p className="text-charcoal/60 text-sm mt-1">{t.best}</p>
                     <div className="mt-5 mb-6">
-                      <p className="font-fraunces font-semibold text-heading text-2xl leading-tight">{t.price[currency]}</p>
+                      <p className="font-fraunces font-semibold text-heading text-2xl leading-tight">{t.price}</p>
                       <p className="text-charcoal/60 text-sm">{t.per}</p>
                     </div>
                     <ul className="space-y-3 text-[15px] text-charcoal/80 flex-1">
