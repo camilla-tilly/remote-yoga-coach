@@ -1,0 +1,56 @@
+import type { BlogPost } from '../blogTypes';
+
+const post: BlogPost = {
+  slug: "tech-neck-exercises-desk",
+  title: "Tech neck: gentle exercises to undo desk and screen posture",
+  metaDescription: "What tech neck really is, why it builds up over a desk day, and gentle seated exercises to release your neck, shoulders and upper back. No equipment needed.",
+  publishDate: "2026-07-29",
+  readingTime: "6 min",
+  category: "Desk yoga",
+  excerpt: "Tech neck is the forward-head, rounded-shoulder posture that creeps in from looking down at screens all day. Here is what it is, why it builds up, and a set of gentle seated exercises to undo it, done little and often.",
+  language: "en",
+  relatedServiceHref: "/services/chair-yoga-for-teams",
+  relatedServiceLabel: "Chair yoga for teams",
+  tableOfContents: true,
+  faqSchema: true,
+  relatedPosts: [
+    { slug: "neck-and-shoulder-stretches-desk-workers", label: "Neck and shoulder stretches for desk workers" },
+    { slug: "chair-yoga-at-your-desk", label: "Chair yoga at your desk" },
+  ],
+  content: [
+    { type: "paragraph", text: "If your neck feels stiff and your shoulders sit somewhere up near your ears by the afternoon, that is what people mean by tech neck. The short version: it is the forward-head, rounded-shoulder posture that builds up from looking down at screens, and the fix is gentle movement done little and often. Below I explain what tech neck actually is, why a desk day feeds it, and a set of seated exercises you can do without any equipment to release your neck, shoulders and upper back." },
+    { type: "paragraph", text: "I am a 500-hour certified yoga teacher, and this is the kind of practical, gentle movement I coach live with remote teams. Nothing here is fancy. It is meant to feel like relief." },
+    { type: "heading", text: "What people mean by tech neck" },
+    { type: "paragraph", text: "Tech neck is not a medical diagnosis, it is a plain-language name for a posture. Picture how you sit when you read your phone or lean in to check something on a monitor: the head drifts forward of the shoulders, the chin pokes out, the upper back rounds, and the shoulders roll in toward each other. Hold that shape for hours and the muscles down the back of the neck and across the top of the shoulders end up doing quiet, constant work to hold your head up." },
+    { type: "paragraph", text: "That is why the tension tends to land in the same places every time: the base of the skull, the sides of the neck, and the band across the top of the back between the shoulder blades. It is posture, not weakness, and posture is something you can gently unwind." },
+    { type: "heading", text: "Why it builds up over a desk day" },
+    { type: "paragraph", text: "The problem is rarely one bad moment. It is the accumulation. You settle in for a focused block of work, you stop noticing your body, and the forward-head shape becomes the default without you deciding on it. The longer you hold still in that position, the more the front of the chest shortens and the more the back of the neck has to brace. By mid-afternoon it has quietly compounded into that familiar tight collar of tension." },
+    { type: "callout", text: "The muscles are not injured by good posture going missing for an hour. They stiffen from staying in one shape for a long time. So the antidote is not a single heroic stretch, it is regular, small changes of position through the day." },
+    { type: "heading", text: "Gentle tech neck exercises you can do at your desk" },
+    { type: "paragraph", text: "Sit tall, both feet on the floor, and take two slow breaths before you begin. Let each movement settle on a long exhale rather than forcing it. Move slowly, keep it gentle, and stop straight away if anything feels sharp rather than releasing. If a movement is uncomfortable, skip it." },
+    { type: "list", items: [
+      "Chin nods: keep your face soft and slowly draw your chin back and slightly down, as if making a gentle double chin, then release. This eases the head back over the shoulders. Repeat slowly five or six times, no force.",
+      "Ear-to-shoulder release: let your right ear drop toward your right shoulder and let the weight of your head do the work, no pulling. Three slow breaths down the left side of the neck, then switch sides.",
+      "Chin-to-chest turn (the classic tech neck one): turn your head about 45 degrees to the right, as if looking toward your right pocket, then let your chin drop toward your chest. You should feel a gentle stretch down the back-left of the neck. Three breaths, then switch.",
+      "Shoulder rolls: lift both shoulders up toward your ears, then roll them back and down, drawing the shoulder blades gently together. Five slow rolls backward. This directly undoes the round-shouldered hunch.",
+      "Chest opener: sit tall and clasp your hands behind your back, or hold the back edges of your chair. Gently draw the shoulder blades together and lift the chest a little. Three slow breaths. This lengthens the front of the chest that desk posture shortens.",
+      "Upper-back reset: interlace your fingers, turn the palms away from you, and reach forward at chest height, letting the upper back round softly and the shoulder blades spread. Three breaths, then release. A quiet stretch for the band between the shoulders.",
+    ] },
+    { type: "paragraph", text: "The whole set takes two or three minutes. None of it should feel like effort. If your neck pain from desk work is persistent, severe, or comes with anything unusual like numbness or dizziness, please stop and see a professional. Gentle mobility is not a substitute for proper care, and I do not offer diagnosis." },
+    { type: "heading", text: "Little and often beats one big stretch" },
+    { type: "paragraph", text: "A single round helps for an hour or so, then the tension quietly rebuilds as you go back to the screen. That is the nature of posture at work: it drifts back to the default. So the real win is little and often. A two-minute round a few times through the day does far more than one long session, because you keep resetting before the tension has a chance to fully set in." },
+    { type: "paragraph", text: "The trick is to stop relying on memory and tie the movements to something you already do. The top of each hour, every time you refill your water, or between calls. When the cue is automatic, the habit sticks." },
+    { type: "heading", text: "It works even better as a whole-team habit" },
+    { type: "paragraph", text: "Undoing tech neck on your own comes down to willpower, and willpower is exactly what runs low on a busy day. That is why a short, guided session done together tends to hold where solo stretching slips. I run these live on Teams or Zoom, the same coach each week, camera optional, and every session recorded so anyone who missed it can follow along later. It is gentle chair yoga, breathing and a little meditation, and because the time is already held in the calendar, nobody has to remember to do it. If you want a version your desk-bound team actually keeps up, take a look at my [chair yoga for teams](/services/chair-yoga-for-teams) and it runs on a flat monthly subscription in EUR." },
+    { type: "cta", text: "A short, guided session once a week keeps the tech neck habit alive for the whole team, no willpower required. Book a demo and see how it runs live on screen.", ctaHref: "/demo", ctaLabel: "Book a demo" },
+    { type: "faq", faqItems: [
+      { q: "What exactly is tech neck?", a: "It is a plain-language name for the forward-head, rounded-shoulder posture that builds up from looking down at screens. It is not a medical diagnosis. The head drifts forward of the shoulders and the chin pokes out, which leaves the back of the neck and the top of the shoulders working constantly to hold the head up." },
+      { q: "How often should I do these tech neck exercises?", a: "Little and often works best. A gentle two or three minute round a few times across the day does more than one long session, because desk tension rebuilds as soon as you return to the screen. Tie the movements to an existing habit, like the top of each hour, so you do not have to rely on remembering." },
+      { q: "Can these exercises fix neck pain from a desk day?", a: "They can ease the everyday stiffness that comes from holding one posture for hours, and regular movement helps keep it from building up. They are gentle mobility, not medical treatment. If your neck pain is persistent, severe, or comes with anything unusual, stop and see a professional." },
+      { q: "Do I need any equipment or space?", a: "No. Everything here is seated, done at your desk, with no equipment. You just need a chair and a couple of quiet minutes. Keep the movements slow and gentle, and ease off the moment anything feels sharp." },
+    ] },
+    { type: "callout", text: "Health note: this is gentle mobility, not medical advice. Keep every movement slow and comfortable, stop if anything hurts, and see a professional for persistent or severe neck pain." },
+  ],
+};
+
+export default post;
