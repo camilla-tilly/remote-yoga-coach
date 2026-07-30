@@ -33,7 +33,14 @@ const Demo = () => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'pilot-enquiry', ...form }),
     })
-      .then(() => setSubmitted(true))
+      .then(() => {
+        // GA4 lead conversion: count a successful pilot enquiry as a key event.
+        const w = window as unknown as { gtag?: (...args: unknown[]) => void };
+        if (typeof w.gtag === 'function') {
+          w.gtag('event', 'generate_lead', { form_name: 'pilot-enquiry' });
+        }
+        setSubmitted(true);
+      })
       .catch(() => setSubmitted(true));
   };
 
