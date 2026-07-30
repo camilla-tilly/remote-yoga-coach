@@ -57,8 +57,8 @@ const TeamWellness = () => {
               The weekly reset your remote and hybrid team looks forward to.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[660px] mx-auto">
-              Live 30-minute breathing, meditation and chair-yoga sessions on Teams or Zoom,
-              no activewear, no commute, camera optional. Sessions are live on screen, so they work for any team that
+              Live 30-minute meditation, breathing or chair-yoga classes on Teams or Zoom, choose one, alternate,
+              or combine them, no activewear, no commute, camera optional. Sessions are live on screen, so they work for any team that
               spends its day on a screen, whether fully remote, hybrid, or together in an office. The same coach every
               week, building a real habit instead of another app login nobody opens.
             </p>

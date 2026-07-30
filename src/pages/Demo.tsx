@@ -113,7 +113,7 @@ const Demo = () => {
                 </div>
 
                 <Button type="submit" className="w-full bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md py-6">
-                  Book a pilot
+                  Get in touch
                 </Button>
               </form>
             )}

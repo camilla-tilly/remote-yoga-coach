@@ -128,9 +128,9 @@ const Index = () => {
               The wellbeing habit your team actually keeps.
             </h1>
             <p className="mt-7 text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-[560px] mx-auto">
-              Live breathing, meditation and chair-yoga sessions your whole team actually turns up for, whether they
-              work remotely, hybrid, or from an office. On Teams, camera optional, with the reporting to prove it
-              works, not another app nobody opens.
+              Live meditation, breathing and chair-yoga classes, choose one, alternate, or combine them, that your
+              whole team actually turns up for, whether they work remotely, hybrid, or from an office. On Teams,
+              camera optional, with the reporting to prove it works, not another app nobody opens.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">

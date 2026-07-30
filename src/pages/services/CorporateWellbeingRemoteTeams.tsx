@@ -104,9 +104,10 @@ const CorporateWellbeingRemoteTeams = () => {
               Wellbeing for remote and hybrid teams that reaches everyone on screen.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[660px] mx-auto">
-              A live weekly wellbeing session for your whole team, remote, hybrid or in the office, on Teams or Zoom.
-              Breathing, meditation and chair yoga, led by the same coach, camera optional, recorded for every time
-              zone. A recurring habit people keep, with the reporting to prove it, not another app licence nobody opens.
+              A live weekly wellbeing class for your whole team, remote, hybrid or in the office, on Teams or Zoom.
+              A meditation class, a breathing class, or a chair yoga class, choose one, alternate, or combine them,
+              led by the same coach, camera optional, recorded for every time zone. A recurring habit people keep,
+              with the reporting to prove it, not another app licence nobody opens.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
