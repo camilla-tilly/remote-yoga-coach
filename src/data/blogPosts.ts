@@ -16,6 +16,10 @@ import keepHybridTeamFocused from './posts/keep-hybrid-team-focused';
 import howToMeditateAtWork from './posts/how-to-meditate-at-work';
 import techNeckExercisesDesk from './posts/tech-neck-exercises-desk';
 import buildAStrongRemoteTeam from './posts/build-a-strong-remote-team';
+import wellbeingLunchAndLearnIdeas from './posts/wellbeing-lunch-and-learn-ideas';
+import managerBurnoutSigns from './posts/manager-burnout-signs';
+import calmHeadspaceVsLiveSessions from './posts/calm-headspace-vs-live-sessions';
+import employeeWellbeingIdeasSmallBudget from './posts/employee-wellbeing-ideas-small-budget';
 
 export type { BlogPost, BlogLanguage, BlogContentBlock } from './blogTypes';
 
@@ -30,6 +34,10 @@ export const blogPosts: BlogPost[] = [
   buildAStrongRemoteTeam,
   howToMeditateAtWork,
   techNeckExercisesDesk,
+  wellbeingLunchAndLearnIdeas,
+  managerBurnoutSigns,
+  calmHeadspaceVsLiveSessions,
+  employeeWellbeingIdeasSmallBudget,
   preventBurnoutDistributedTeam,
   corporateWellnessIdeasRemoteTeams,
   doWorkplaceWellnessAppsWork,
