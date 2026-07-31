@@ -345,6 +345,11 @@ const Index = () => {
                 </div>
               ))}
             </dl>
+            <p className="mt-10 text-center">
+              <Link to="/faq" className="inline-flex items-center gap-1.5 text-clay hover:text-clayDark font-medium text-[15px]">
+                See all questions <ArrowRight size={15} />
+              </Link>
+            </p>
           </div>
         </section>
 

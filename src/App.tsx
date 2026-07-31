@@ -20,6 +20,7 @@ import DeskYoga from "./pages/guides/DeskYoga";
 import CostOfBurnout from "./pages/guides/CostOfBurnout";
 import Guides from "./pages/Guides";
 import Compare from "./pages/Compare";
+import Faq from "./pages/Faq";
 
 const queryClient = new QueryClient();
 
@@ -77,6 +78,7 @@ const App = () => (
 
           {/* About */}
           <Route path="/about" element={<About />} />
+          <Route path="/faq" element={<Faq />} />
 
           {/* Blog */}
           <Route path="/blog" element={<Blog />} />
