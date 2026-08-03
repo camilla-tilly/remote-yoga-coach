@@ -7,6 +7,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Reveal, GlowField, ComparisonTable, CoachPhoto, Testimonials } from '@/components/SiteBlocks';
+import ReviewsBanner from '@/components/ReviewsBanner';
 
 /**
  * SoftLabel — a calmer replacement for the shared uppercase Eyebrow on the
@@ -236,6 +237,9 @@ const Index = () => {
           </div>
         </section>
 
+        {/* REVIEWS BANNER */}
+        <ReviewsBanner />
+
         {/* MEET YOUR COACH */}
         <section className="bg-cream py-20 md:py-28">
           <div className="max-w-[1000px] mx-auto px-5 grid gap-10 md:gap-14 md:grid-cols-[minmax(0,300px)_1fr] items-center">
@@ -257,7 +261,8 @@ const Index = () => {
                 </p>
                 <p>
                   Before teaching full time I worked across a 10,000-person multinational company, a startup, a
-                  consultancy and in government, so the sessions are built around real office life.
+                  consultancy and in government, so the sessions are built around real office life, whether your team
+                  is fully remote, hybrid, or all together in person.
                 </p>
               </div>
               <div className="mt-7 flex flex-wrap gap-2.5">
