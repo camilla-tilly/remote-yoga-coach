@@ -149,7 +149,7 @@ const Faq = () => (
   <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
     <SEO
       title="Frequently Asked Questions | Remote Yoga Coach"
-      description="Answers to common questions about live meditation, breathing and chair yoga classes for remote and hybrid teams: how sessions work on Teams or Zoom, pricing, cameras, recordings, time zones and getting started."
+      description="Common questions on live meditation, breathing and chair yoga classes for remote and hybrid teams: how sessions run, pricing, cameras, recordings and time zones."
       canonical="https://remoteyogacoach.com/faq"
       structuredData={structuredData}
     />

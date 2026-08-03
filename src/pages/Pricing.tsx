@@ -83,7 +83,7 @@ const Pricing = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Pricing | Team Wellbeing Subscriptions | Remote Yoga Coach"
-        description="Simple, transparent pricing for corporate wellbeing. A flat monthly fee for your whole team, not a per-person app charge. Three team tiers plus a four-week paid pilot."
+        description="Simple, transparent pricing for corporate wellbeing: a flat monthly fee for your whole team, not a per-person app charge. Three tiers plus a four-week pilot."
         canonical="https://remoteyogacoach.com/pricing"
         structuredData={structuredData}
       />

@@ -48,7 +48,7 @@ const Demo = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Get in touch | Remote Yoga Coach"
-        description="Book a four-week pilot of The Weekly Reset for your team: one full programme ending in a one-page wellbeing report, credited to your first month if you continue."
+        description="Book a four-week pilot of The Weekly Reset for your team: a full programme ending in a one-page wellbeing report, credited to your first month if you continue."
         canonical="https://remoteyogacoach.com/demo"
       />
       <Navbar />

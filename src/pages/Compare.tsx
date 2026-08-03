@@ -88,8 +88,8 @@ const Compare = () => {
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
-        title="Live Wellbeing Sessions vs Apps vs EAPs: A Wellbeing App and EAP Alternative | Remote Yoga Coach"
-        description="An honest comparison of live team wellbeing sessions, wellbeing apps and EAPs on the metric that matters: whether your team actually uses it. A wellbeing app alternative that gets used."
+        title="Live Wellbeing Sessions vs Apps and EAPs | Remote Yoga Coach"
+        description="An honest comparison of live team wellbeing sessions, wellbeing apps and EAPs on the metric that matters: whether your team actually uses it."
         canonical="https://remoteyogacoach.com/compare"
         ogType="article"
         ogImage="https://remoteyogacoach.com/og/compare.png"
@@ -195,7 +195,7 @@ const Compare = () => {
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
               If you are searching for a{' '}
-              <Link to="/blog/calm-headspace-vs-live-sessions" className="text-clay underline underline-offset-4 hover:text-clayDark">
+              <Link to="/blog/do-workplace-wellness-apps-work" className="text-clay underline underline-offset-4 hover:text-clayDark">
                 Calm for Business alternative or a Headspace for Work alternative
               </Link>
               , you are

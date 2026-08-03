@@ -107,8 +107,8 @@ const Index = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Corporate Wellbeing for Remote and Hybrid Teams | Remote Yoga Coach"
-        description="Live wellbeing sessions your remote or hybrid team actually attends, and you can measure. Office yoga, breathing, meditation and chair yoga on Teams for HR and people leaders. Get in touch."
-        canonical="https://remoteyogacoach.com"
+        description="Live office yoga, meditation, breathing and chair yoga for remote and hybrid teams on Teams or Zoom. Sessions your team actually attends, and you can measure."
+        canonical="https://remoteyogacoach.com/"
         structuredData={structuredData}
       />
       <Navbar />
@@ -227,6 +227,9 @@ const Index = () => {
               ))}
             </div>
             <p className="mt-14 text-center flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-3">
+              <Link to="/services/corporate-wellbeing-for-remote-teams" className="text-clay hover:text-clayDark font-medium text-[15px]">
+                Wellbeing for remote and hybrid teams →
+              </Link>
               <Link to="/services/team-wellness" className="text-clay hover:text-clayDark font-medium text-[15px]">
                 See how a session runs →
               </Link>

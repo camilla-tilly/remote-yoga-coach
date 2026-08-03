@@ -77,10 +77,10 @@ const NotFound = () => {
           </div>
           <div className="text-center mt-10">
             <Link
-              to="/blogg"
+              to="/blog"
               className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive hover:text-dalashala-earth font-bold underline underline-offset-4 transition-colors"
             >
-              Läs bloggen →
+              Read the blog →
             </Link>
           </div>
         </section>

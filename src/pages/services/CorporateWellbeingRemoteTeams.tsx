@@ -86,8 +86,8 @@ const CorporateWellbeingRemoteTeams = () => {
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
-        title="Corporate Wellbeing for Remote and Hybrid Teams | Remote Yoga Coach"
-        description="A live weekly wellbeing subscription for remote, hybrid and in-office teams that spend the day on screen. Breathing, meditation and chair yoga on Teams or Zoom, camera optional, with reporting. Book a four-week pilot."
+        title="Weekly Wellbeing Sessions for Remote and Hybrid Teams | Remote Yoga Coach"
+        description="A live weekly wellbeing subscription for remote, hybrid and in-office teams. Breathing, meditation and chair yoga on Teams or Zoom, camera optional, with reporting. Book a four-week pilot."
         canonical="https://remoteyogacoach.com/services/corporate-wellbeing-for-remote-teams"
         ogImage="https://remoteyogacoach.com/og/corporate-wellbeing-remote-teams.png"
         structuredData={structuredData}
