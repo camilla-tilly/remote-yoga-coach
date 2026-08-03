@@ -16,6 +16,9 @@ import keepHybridTeamFocused from './posts/keep-hybrid-team-focused';
 import howToMeditateAtWork from './posts/how-to-meditate-at-work';
 import techNeckExercisesDesk from './posts/tech-neck-exercises-desk';
 import buildAStrongRemoteTeam from './posts/build-a-strong-remote-team';
+import corporateWellbeingForTechTeams from './posts/corporate-wellbeing-for-tech-teams';
+import howToStartACorporateWellbeingProgramme from './posts/how-to-start-a-corporate-wellbeing-programme';
+import improveTeamMoraleRemoteTeam from './posts/improve-team-morale-remote-team';
 
 export type { BlogPost, BlogLanguage, BlogContentBlock } from './blogTypes';
 
@@ -28,6 +31,9 @@ export const blogPosts: BlogPost[] = [
   officeYogaForRemoteTeams,
   keepHybridTeamFocused,
   buildAStrongRemoteTeam,
+  corporateWellbeingForTechTeams,
+  howToStartACorporateWellbeingProgramme,
+  improveTeamMoraleRemoteTeam,
   howToMeditateAtWork,
   techNeckExercisesDesk,
   preventBurnoutDistributedTeam,
