@@ -18,6 +18,11 @@ const reviews: Review[] = [
     name: 'Anonymous',
   },
   { quote: 'Wonderful practice, especially all the balance poses. Thank you.', name: 'Nina' },
+  { quote: 'This was lovely. Thank you for sharing.', name: 'Kris' },
+  {
+    quote: 'As a tennis coach, I need to be more consistent with yoga. Thanks for the reminder.',
+    name: 'A tennis coach',
+  },
 ];
 
 const ReviewsBanner = () => {
