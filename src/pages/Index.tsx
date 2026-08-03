@@ -188,13 +188,13 @@ const Index = () => {
                 Not another app. The layer they were missing.
               </h2>
               <p className="mt-5 text-charcoal/70 text-lg leading-relaxed">
-                Apps and EAPs are libraries and crisis lines. Useful, but passive. A live weekly session is the human,
-                habit-forming layer that makes the rest get used.
+                A wellbeing app is a library, and an employee assistance programme (EAP) is a crisis line. Both useful,
+                but passive. A live weekly session is the human, habit-forming layer that makes the rest get used.
               </p>
             </div>
             <Reveal>
               <ComparisonTable
-                columns={['Live weekly sessions', 'Wellbeing app', 'EAP']}
+                columns={['Live weekly sessions', 'Wellbeing app', 'EAP helpline']}
                 rows={comparisonRows as unknown as Array<{ label: string; values: Array<boolean | 'partial' | string> }>}
                 highlightIndex={0}
               />
