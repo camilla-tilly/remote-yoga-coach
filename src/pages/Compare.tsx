@@ -194,7 +194,11 @@ const Compare = () => {
               A Calm for Business, Headspace for Work and EAP alternative that gets used
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-              If you are searching for a Calm for Business alternative or a Headspace for Work alternative, you are
+              If you are searching for a{' '}
+              <Link to="/blog/calm-headspace-vs-live-sessions" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                Calm for Business alternative or a Headspace for Work alternative
+              </Link>
+              , you are
               usually not looking for a better content library. You are looking for the piece those apps leave out: a
               real person, at a fixed time, that people actually turn up to. That is the whole wellbeing app vs live
               sessions difference. The app waits to be opened. A live weekly session is led, so the hardest part,

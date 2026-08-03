@@ -150,7 +150,11 @@ const TeamWellness = () => {
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The proof</span>
             <h2 className="font-fraunces font-semibold text-3xl md:text-4xl leading-tight">You'll see whether it's working</h2>
             <p className="mt-6 text-white/80 text-lg leading-relaxed">
-              Unlike an app you can't measure, every programme comes with simple, honest reporting: how many of your
+              Unlike{' '}
+              <Link to="/compare" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                an app you can't measure
+              </Link>
+              , every programme comes with simple, honest reporting: how many of your
               team attend, how many come back, and how they rate their stress and energy before and after. At the end
               of a pilot you get a one-page report you can take straight to your budget-holder.
             </p>
@@ -196,6 +200,30 @@ const TeamWellness = () => {
                 </Button>
               </Link>
             </div>
+          </div>
+        </section>
+
+        {/* RELATED READING */}
+        <section className="py-16 md:py-20">
+          <div className="max-w-[760px] mx-auto px-5">
+            <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-sage mb-4">Related reading</span>
+            <ul className="space-y-2 text-lg leading-relaxed">
+              <li>
+                <Link to="/guides/mindfulness-at-work" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  Mindfulness at work: a practical guide
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog/how-to-meditate-at-work" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  How to meditate at work
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog/corporate-wellness-ideas-remote-teams" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  Corporate wellness ideas for remote teams
+                </Link>
+              </li>
+            </ul>
           </div>
         </section>
 

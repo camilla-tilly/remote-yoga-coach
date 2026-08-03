@@ -106,7 +106,11 @@ const ChairYogaForTeams = () => {
               Virtual office yoga and chair yoga your whole team can actually do.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[640px] mx-auto">
-              Live, guided workplace yoga for distributed and hybrid teams, on Teams or Zoom. Gentle seated
+              Live, guided{' '}
+              <Link to="/blog/office-yoga-for-remote-teams" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                workplace yoga for distributed and hybrid teams
+              </Link>
+              , on Teams or Zoom. Gentle seated
               movement, simple breathing and a short reset, in normal work clothes, camera optional. No mats, no
               changing, no experience, nothing anyone has to be fit or flexible to join.
             </p>
@@ -172,8 +176,11 @@ const ChairYogaForTeams = () => {
               </p>
               <p>
                 Because it is seated, gentle and demands nothing athletic, participation holds up across ages, sizes
-                and fitness levels. That matters when roughly 80 percent of office workers report neck or back
-                discomfort from sitting: the people who most need to move are exactly the ones an intense class
+                and fitness levels. That matters when roughly 80 percent of office workers report{' '}
+                <Link to="/blog/tech-neck-exercises-desk" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  neck or back discomfort
+                </Link>{' '}
+                from sitting: the people who most need to move are exactly the ones an intense class
                 scares off. A short weekly session of seated mobility reaches them instead of skipping them.
               </p>
             </div>

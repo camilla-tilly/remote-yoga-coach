@@ -131,7 +131,11 @@ const CorporateWellbeingRemoteTeams = () => {
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
                 Wellbeing is harder to deliver when the team is spread across cities and time zones, and it matters
-                more. Remote and hybrid workers report burnout at higher rates than office-based colleagues, driven by
+                more. Remote and hybrid workers{' '}
+                <Link to="/guides/remote-work-burnout" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  report burnout at higher rates
+                </Link>{' '}
+                than office-based colleagues, driven by
                 isolation, blurred boundaries and always-on messaging. Meanwhile the usual fixes assume an office: a
                 room, a fixed hour, a local instructor.
               </p>
@@ -212,7 +216,11 @@ const CorporateWellbeingRemoteTeams = () => {
                 Hybrid is the hardest shape to hold together. Some of the team is in the office, some is at home, and
                 the days rarely line up, so the little moments that used to build belonging quietly disappear. A live
                 weekly session gives everyone one fixed point in the week they share, wherever they happen to be that
-                day. It is a simple way to keep a hybrid team connected and to keep a hybrid team focused, without
+                day. It is a simple way to keep a hybrid team connected and to{' '}
+                <Link to="/blog/keep-hybrid-team-focused" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  keep a hybrid team focused
+                </Link>
+                , without
                 asking anyone to travel or coordinate a room.
               </p>
               <p>
