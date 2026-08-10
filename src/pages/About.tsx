@@ -84,17 +84,18 @@ const About = () => {
           <div className="max-w-[620px] mx-auto px-5">
             <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">Training and credentials</h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-              I have 500 hours of yoga teacher training, covering physical movement, breathing and pranayama,
-              meditation and mindfulness, and gentle chair-based movement anyone can do at a desk. These are the
-              practices that fit a workday, no experience needed.
+              I have 500 hours of yoga teacher training in movement, breathwork and meditation, plus a Certificate III
+              in Fitness from Australia covering anatomy and safe movement for all levels. That combination means I
+              understand how bodies actually work, so I can keep every session genuinely accessible, adaptable to any
+              body at a desk, no experience or equipment needed.
             </p>
             <div className="mt-7 flex flex-wrap gap-2.5">
               {[
-                '500 hours of yoga training',
-                'Physical movement and breathwork',
+                '500 hours of yoga teacher training',
+                'Certificate III in Fitness (Australia)',
+                'Movement and breathwork',
                 'Meditation and mindfulness',
-                'Chair and accessible yoga',
-                'Workplace wellbeing',
+                'Anatomy and safe movement',
               ].map((c) => (
                 <span
                   key={c}
