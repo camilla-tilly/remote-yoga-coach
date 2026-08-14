@@ -87,7 +87,9 @@ const About = () => {
               I have 500 hours of yoga teacher training in movement, breathwork and meditation, plus a Certificate III
               in Fitness from Australia covering anatomy and safe movement for all levels. That combination means I
               understand how bodies actually work, so I can keep every session genuinely accessible, adaptable to any
-              body at a desk, no experience or equipment needed.
+              body at a desk, no experience or equipment needed. My meditation and breathing work also draws on
+              traditional yogic training in pranayama, Yoga Nidra and mantra, so those parts of a session stay
+              grounded in the tradition they come from.
             </p>
             <div className="mt-7 flex flex-wrap gap-2.5">
               {[
