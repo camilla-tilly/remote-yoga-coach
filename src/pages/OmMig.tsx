@@ -214,7 +214,7 @@ const OmMig = () => {
             </h2>
             <div className="space-y-6 font-inter text-lg md:text-xl text-dalashala-earth/85 leading-relaxed [&>p]:text-pretty">
               <p>
-                {noWidow("I'm Camilla, an Australian-born 500-hour certified yoga teacher based in Stockholm, Sweden. I teach vinyasa, yin, and hatha yoga in English.")}
+                {noWidow("I'm Camilla, an Australian-born 500-hour certified yoga teacher based in Stockholm, Sweden. I teach vinyasa and hatha yoga in English.")}
               </p>
               <p>
                 {noWidow("Movement, nature, and mindfulness have always been important to me. I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, and my 300-hour advanced vinyasa training at Sampoorna Yoga Shala in Goa, India. I also have a background in fitness instruction as a Les Mills certified instructor (7 years, Australia and Sweden), and I've completed five ultramarathons, including a podium finish.")}
