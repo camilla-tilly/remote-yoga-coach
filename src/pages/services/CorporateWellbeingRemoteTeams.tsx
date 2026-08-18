@@ -50,7 +50,7 @@ const structuredData = {
       areaServed: ['GB', 'EU', 'AU'],
       description:
         'Live weekly wellbeing sessions for distributed and hybrid teams on Teams or Zoom: breathing, meditation and chair yoga, camera optional, with attendance and wellbeing reporting.',
-      offers: { '@type': 'Offer', priceCurrency: 'EUR', description: 'Monthly subscription by team size, from a four-week paid pilot.' },
+      offers: { '@type': 'Offer', priceCurrency: 'SEK', description: 'Monthly subscription by team size, from a four-week paid pilot.' },
     },
     {
       '@type': 'FAQPage',

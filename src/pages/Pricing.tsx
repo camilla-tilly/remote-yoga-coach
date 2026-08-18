@@ -16,23 +16,23 @@ const faqs: Array<[string, string]> = [
   ['Can you work across time zones?', 'Yes. Sessions run across UK and European hours, with Australian hours for part of the year, plus recordings for everyone else.'],
 ];
 
-const pilotPrice = '€289';
+const pilotPrice = '2,490 kr';
 
 const tiers = [
   {
-    name: 'Breathe', best: 'Small teams up to 25', sessions: '2 per month',
+    name: 'Starter', best: 'Small teams up to 25', sessions: '2 per month',
     reporting: 'Quarterly',
-    price: '€379', priceValue: '379', per: 'per month', highlight: false,
+    price: '2,990 kr', priceValue: '2990', per: 'per month', highlight: false,
   },
   {
-    name: 'Reset', best: 'Teams up to 50', sessions: '4 per month (weekly)',
+    name: 'Weekly', best: 'Teams up to 50', sessions: '4 per month (weekly)',
     reporting: 'Quarterly',
-    price: '€639', priceValue: '639', per: 'per month', highlight: true,
+    price: '4,990 kr', priceValue: '4990', per: 'per month', highlight: true,
   },
   {
-    name: 'Flourish', best: '50+ / multi-timezone', sessions: '4+ per month',
+    name: 'Enterprise', best: '50+ / multi-timezone', sessions: '4+ per month',
     reporting: 'Quarterly',
-    price: 'from €1,049', priceValue: '1049', per: 'per month', highlight: false,
+    price: 'from 8,900 kr', priceValue: '8900', per: 'per month', highlight: false,
   },
 ];
 
@@ -54,20 +54,20 @@ const structuredData = {
         {
           '@type': 'Offer',
           name: '4-Week Pilot',
-          price: '289',
-          priceCurrency: 'EUR',
+          price: '2490',
+          priceCurrency: 'SEK',
           description: 'A four-week paid pilot, credited to your first month if you continue.',
           url: 'https://remoteyogacoach.com/pricing',
         },
         ...tiers.map((t) => ({
           '@type': 'Offer',
           name: t.name,
-          priceCurrency: 'EUR',
+          priceCurrency: 'SEK',
           price: t.priceValue,
           priceSpecification: {
             '@type': 'UnitPriceSpecification',
             price: t.priceValue,
-            priceCurrency: 'EUR',
+            priceCurrency: 'SEK',
             unitText: 'MONTH',
           },
           description: `${t.best}, ${t.sessions} live sessions per month.`,
@@ -152,7 +152,7 @@ const Pricing = () => {
             <div className="text-center max-w-[620px] mx-auto">
               <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">Monthly subscriptions</h2>
               <p className="mt-4 text-charcoal/70 leading-relaxed">
-                A flat monthly fee, priced per team not per person. Cancel or change tier any time.
+                A flat monthly fee, priced per team not per person, and shown excl. VAT. Cancel or change tier any time.
               </p>
             </div>
 
@@ -185,7 +185,7 @@ const Pricing = () => {
                         <Button className={`w-full font-semibold uppercase text-sm tracking-wider rounded-md py-6 ${
                           t.highlight ? 'bg-clay hover:bg-clayDark text-white' : 'bg-white border border-sage text-charcoal hover:bg-sage-light/40'
                         }`}>
-                          {t.name === 'Flourish' ? 'Talk it through' : 'Book a pilot'}
+                          {t.name === 'Enterprise' ? 'Talk it through' : 'Book a pilot'}
                         </Button>
                       </Link>
                     </div>

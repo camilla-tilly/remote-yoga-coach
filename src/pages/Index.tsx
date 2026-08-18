@@ -12,7 +12,7 @@ import SEO from '@/components/SEO';
  * editorial image-led layout. Ported with inline styles + oklch to reproduce the
  * design faithfully without touching the shared Tailwind theme (which another
  * chat is mid-edit on). Content and SEO are Camilla's real, verified copy:
- * three separate classes, 30-minute sessions, EUR pricing, Teams or Zoom, real
+ * three separate classes, 30-minute sessions, SEK pricing, Teams or Zoom, real
  * review quotes, real bio. No fabricated stats, credentials, or client logos.
  */
 
@@ -85,9 +85,9 @@ const reviews: Array<{ quote: string; name: string; span: number; size: number }
 ];
 
 const tiers = [
-  { name: 'Breathe', price: '€379', per: '/mo', body: 'Small teams up to 25. Two live sessions a month, quarterly reporting.', highlight: false },
-  { name: 'Reset', price: '€639', per: '/mo', body: 'Teams up to 50. A live session every week, quarterly reporting.', highlight: true },
-  { name: 'Flourish', price: 'from €1,049', per: '/mo', body: '50+ or multi-time-zone. Four or more sessions a month, quarterly reporting.', highlight: false },
+  { name: 'Starter', price: '2,990 kr', per: '/mo', body: 'Small teams up to 25. Two live sessions a month, quarterly reporting.', highlight: false },
+  { name: 'Weekly', price: '4,990 kr', per: '/mo', body: 'Teams up to 50. A live session every week, quarterly reporting.', highlight: true },
+  { name: 'Enterprise', price: 'from 8,900 kr', per: '/mo', body: '50+ or multi-time-zone. Four or more sessions a month, quarterly reporting.', highlight: false },
 ];
 
 const eyebrow: React.CSSProperties = {
@@ -281,7 +281,7 @@ const Index = () => {
           ))}
         </div>
         <p style={{ marginTop: 22, fontSize: 15.5, color: c.text3 }}>
-          Every engagement starts with a four-week paid pilot at €289, credited to your first month.{' '}
+          Every engagement starts with a four-week paid pilot at 2,490 kr, credited to your first month.{' '}
           <Link className="ryc-underline" to="/pricing" style={{ color: c.terracotta }}>See full pricing →</Link>
         </p>
       </section>

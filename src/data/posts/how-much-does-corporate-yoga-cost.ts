@@ -76,7 +76,7 @@ const post: BlogPost = {
     { type: 'heading', text: 'What per employee really works out as' },
     {
       type: 'paragraph',
-      text: 'Because online sessions are usually priced as a flat fee for the whole team rather than per person, the per-employee cost drops fast as your team grows. A flat €639 per month across a 40-person team is under €16 per person per month, for a live, coached session every week. The bigger your team, the better live sessions look on a per-head basis.',
+      text: 'Because online sessions are usually priced as a flat fee for the whole team rather than per person, the per-employee cost drops fast as your team grows. A flat 4,990 kr per month across a 40-person team is about 125 kr per person per month, for a live, coached session every week. The bigger your team, the better live sessions look on a per-head basis.',
     },
     {
       type: 'paragraph',
