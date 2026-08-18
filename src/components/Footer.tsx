@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { Linkedin } from 'lucide-react';
-import Logo from './Logo';
 
 const columns: Array<{ heading: string; links: Array<{ label: string; to?: string; href?: string }> }> = [
   {
@@ -39,27 +38,27 @@ const Footer = () => {
       <div
         aria-hidden="true"
         className="absolute -top-32 -right-24 w-[520px] h-[520px] rounded-full opacity-[0.14] blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, #B67A5E 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, #8f5033 0%, transparent 70%)' }}
       />
       <div
         aria-hidden="true"
         className="absolute -bottom-32 -left-20 w-[520px] h-[520px] rounded-full opacity-[0.12] blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, #CE9A82 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, #ad6e52 0%, transparent 70%)' }}
       />
 
       <div className="relative max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8 py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-12">
           {/* Brand */}
           <div className="md:col-span-5">
-            <Link to="/" className="inline-flex items-center gap-3 group" aria-label="Remote Yoga Coach, home">
-              <Logo size={44} variant="clay" className="rounded-xl ring-1 ring-white/15" />
+            <Link to="/" className="inline-flex items-baseline gap-2.5 group" aria-label="Remote Yoga Coach, home">
+              <span className="w-3 h-3 rounded-full bg-clay inline-block relative top-[1px]" aria-hidden="true" />
               <span className="font-fraunces text-2xl text-white tracking-tight" style={{ fontWeight: 500 }}>
                 Remote Yoga Coach
               </span>
             </Link>
             <p className="font-inter text-[15px] text-white/70 leading-relaxed mt-5 max-w-sm">
-              Live breathing, meditation and chair-yoga sessions your distributed team actually shows up for. On
-              Teams, camera optional, with reporting you can take to leadership.
+              Live breathing, meditation and chair-yoga classes your distributed team actually shows up for. On
+              Teams or Zoom, camera optional, with reporting you can take to leadership.
             </p>
             <a
               href="https://www.linkedin.com/"
