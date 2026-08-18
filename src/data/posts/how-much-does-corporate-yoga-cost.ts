@@ -94,16 +94,16 @@ const post: BlogPost = {
     { type: 'heading', text: 'What to actually budget' },
     {
       type: 'paragraph',
-      text: 'For most distributed teams of 10–50, a realistic 2026 budget for a **live, online, weekly** programme is **£330–£550 per month** (€380–€640), often with a discount for paying annually. A short paid pilot, a few hundred pounds for four weeks, is the low-risk way to test it before committing.',
+      text: 'For most distributed teams of 10–50, a realistic 2026 budget for a **live, online, weekly** programme is **£330–£550 per month** (€380–€640), often with a discount for paying annually. A single taster session, one live 30-minute class, is the low-risk way to test it before committing.',
     },
     { type: 'heading', text: 'See exactly what it costs' },
     {
       type: 'paragraph',
-      text: 'I publish my prices, including a flat monthly fee for your whole team and a four-week pilot you can try first. [See the full pricing](/pricing), or [book a pilot](/demo) and see it work with your own team, credited to your first month if you continue.',
+      text: 'I publish my prices, including a flat monthly fee for your whole team and a single taster session you can try first. [See the full pricing](/pricing), or [book a taster](/demo) and see it work with your own team, credited to your first month if you continue.',
     },
     {
       type: 'cta',
-      text: 'Curious what it would cost for your team? My pricing is public, with a four-week pilot you can try first.',
+      text: 'Curious what it would cost for your team? My pricing is public, with a single taster session you can try first.',
       ctaHref: '/pricing',
       ctaLabel: 'See my pricing',
     },

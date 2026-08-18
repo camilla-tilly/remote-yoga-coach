@@ -46,13 +46,13 @@ const post: BlogPost = {
     ] },
     { type: 'paragraph', text: 'Because a subscription is priced per team rather than per person, the cost per employee also falls as the team grows, the opposite of per-seat app licensing. For the wider pricing picture, see [how much corporate wellbeing costs](/blog/how-much-does-corporate-yoga-cost).' },
     { type: 'heading', text: 'When a one-off still makes sense' },
-    { type: 'paragraph', text: 'This is not an argument that workshops are bad. If you have a one-time occasion, a team day, a specific event, an awareness week, a single well-run session is a lovely thing to do. Just do not expect it to move the needle on ongoing stress. For that, you need the rhythm. A sensible path is to run a one-off, see how the team responds, and convert it into a subscription if it lands, which is exactly what a [four-week pilot](/demo) is for.' },
-    { type: 'cta', text: 'Want to test the habit before committing to it? A four-week pilot runs a full mini-programme and ends in a one-page report of attendance and wellbeing.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
+    { type: 'paragraph', text: 'This is not an argument that workshops are bad. If you have a one-time occasion, a team day, a specific event, an awareness week, a single well-run session is a lovely thing to do. Just do not expect it to move the needle on ongoing stress. For that, you need the rhythm. A sensible path is to run a one-off, see how the team responds, and convert it into a subscription if it lands, which is exactly what a [taster session](/demo) is for.' },
+    { type: 'cta', text: 'Want to test the habit before committing to it? A single taster session lets your team try it, then once it is a weekly habit you get attendance and wellbeing reporting.', ctaHref: '/demo', ctaLabel: 'Book a taster' },
     { type: 'faq', faqItems: [
-      { q: 'Is a wellbeing subscription better than a one-off workshop?', a: 'For ongoing team wellbeing, yes, because results come from the weekly rhythm, not any single session. For a specific one-time occasion, a one-off workshop can be the right call. Many teams start with a pilot and convert if it lands.' },
-      { q: 'How much does a team wellbeing subscription cost?', a: 'It is priced as a flat monthly fee by team size rather than per person, so the cost per employee stays low as you grow. Every engagement starts with a four-week paid pilot credited to your first month.' },
+      { q: 'Is a wellbeing subscription better than a one-off workshop?', a: 'For ongoing team wellbeing, yes, because results come from the weekly rhythm, not any single session. For a specific one-time occasion, a one-off workshop can be the right call. Many teams start with a taster session and convert if it lands.' },
+      { q: 'How much does a team wellbeing subscription cost?', a: 'It is priced as a flat monthly fee by session frequency rather than per person, so the cost per employee stays low as you grow. Every engagement starts with a single taster session credited to your first month.' },
       { q: 'How long before a subscription shows results?', a: 'Attendance patterns are visible within the first few weeks; the wellbeing effect builds over a couple of months as the habit forms. That is why I report attendance and pre and post wellbeing from the start.' },
-      { q: 'Can we try it before subscribing?', a: 'Yes. A four-week pilot runs a complete mini-programme so you can see attendance and results with your own team before committing to an ongoing subscription.' },
+      { q: 'Can we try it before subscribing?', a: 'Yes. A single taster session, one live 30-minute class, lets your team try it before committing to an ongoing subscription.' },
     ] },
   ],
 };

@@ -269,8 +269,9 @@ const CostOfBurnout = () => {
             />
             <GuideProse>
               <p>
-                That last step is the whole point of how I run things. A four-week pilot of a live weekly session
-                ends in a one-page report you can take straight to the budget-holder. See{' '}
+                That last step is the whole point of how I run things. Start with a single taster session, then
+                once it is a weekly habit the attendance and wellbeing reporting gives you a report you can take
+                straight to the budget-holder. See{' '}
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   how the programme works
                 </Link>{' '}
@@ -325,7 +326,7 @@ const CostOfBurnout = () => {
 
         <GuideCTA
           heading="Prove the return on your own team"
-          text="A four-week pilot of live weekly wellbeing sessions, ending in a one-page report of attendance and pre and post stress you can take straight to your budget-holder."
+          text="A single taster session of live weekly wellbeing, then once it is a weekly habit the attendance and pre and post stress reporting gives you something concrete to take straight to your budget-holder."
         />
       </main>
 

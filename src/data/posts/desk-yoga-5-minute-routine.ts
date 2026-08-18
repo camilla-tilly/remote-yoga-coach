@@ -141,13 +141,13 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "If your team is distributed and you would like this to become a shared habit rather than something everyone tries to remember alone, there is a guided weekly version that runs online for the whole team. You can [see how a team version works](/services/team-wellness) or [book a pilot](/demo) to try it first.",
+      text: "If your team is distributed and you would like this to become a shared habit rather than something everyone tries to remember alone, there is a guided weekly version that runs online for the whole team. You can [see how a team version works](/services/team-wellness) or [book a taster](/demo) to try it first.",
     },
     {
       type: "cta",
       text: "Curious whether a short weekly session would land with your team? Try one before you commit to anything.",
       ctaHref: "/demo",
-      ctaLabel: "Book a pilot",
+      ctaLabel: "Book a taster",
     },
     {
       type: "callout",

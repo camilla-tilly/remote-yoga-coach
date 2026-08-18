@@ -145,7 +145,7 @@ const post: BlogPost = {
       type: "cta",
       text: "A recurring live team reset is one clear, preventive habit you can put on the calendar this month. See how a weekly team reset works, or try one with your team first.",
       ctaHref: "/demo",
-      ctaLabel: "Book a pilot"
+      ctaLabel: "Book a taster"
     },
     {
       type: "paragraph",

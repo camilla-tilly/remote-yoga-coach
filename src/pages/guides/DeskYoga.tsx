@@ -388,7 +388,7 @@ const DeskYoga = () => {
 
         <GuideCTA
           heading="Give your team a weekly movement habit"
-          text="A four-week pilot of The Weekly Reset: live chair yoga, breathing and meditation on Teams, camera optional, in normal work clothes, ending in a one-page report."
+          text="A single taster session of The Weekly Reset: live chair yoga, breathing and meditation on Teams, camera optional, in normal work clothes. Once it is a weekly habit, the ongoing subscription gives you the attendance and wellbeing reporting."
         />
       </main>
 

@@ -232,13 +232,13 @@ const Compare = () => {
               Add the layer your stack is missing
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              A four-week pilot of live weekly sessions, ending in a one-page report of real attendance and wellbeing,
-              so you can see the participation for yourself.
+              A single taster session so your team can try it, then once it is a weekly habit the attendance and
+              wellbeing reporting shows you the participation for yourself.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a pilot
+                  Book a taster
                 </Button>
               </Link>
               <Link to="/pricing">

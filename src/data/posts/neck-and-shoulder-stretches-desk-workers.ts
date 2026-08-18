@@ -39,7 +39,7 @@ const post: BlogPost = {
     { type: "heading", text: "And fix the setup, while you're here" },
     { type: "paragraph", text: "Stretching treats the symptom; your setup is often the cause. Two quick wins: get the top of your screen roughly at eye level so you're not looking down all day, and keep your shoulders relaxed with elbows at about 90 degrees. Small changes, big difference to how much tension builds in the first place." },
     { type: "heading", text: "Do it together" },
-    { type: "paragraph", text: "A short, guided session once a week, chair-based stretches and a little breathing, done as a team, keeps the habit alive in a way solo stretching rarely manages, because the time's already held and you're not relying on willpower. For desk-bound remote teams it's a simple, genuinely useful few minutes. See how a team version works, or [book a pilot](/demo)." },
+    { type: "paragraph", text: "A short, guided session once a week, chair-based stretches and a little breathing, done as a team, keeps the habit alive in a way solo stretching rarely manages, because the time's already held and you're not relying on willpower. For desk-bound remote teams it's a simple, genuinely useful few minutes. See how a team version works, or [book a taster](/demo)." },
     { type: "cta", text: "A short, guided session once a week keeps the habit alive for the whole team, no willpower required.", ctaHref: "/services/team-wellness", ctaLabel: "See how a team version works" },
     { type: "callout", text: "Health note: gentle mobility, not medical advice. Persistent or severe neck pain is worth getting checked by a professional." },
   ],

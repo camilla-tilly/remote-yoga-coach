@@ -69,25 +69,25 @@ const sessions = [
 
 const steps = [
   ['01', 'A 20-minute call', 'Team size, time zones, what people are actually complaining about. That is all I need.'],
-  ['02', 'A pilot session', 'One session, one calendar link, paid as a one-off. You see who joins and how they react before you commit to anything.'],
+  ['02', 'A taster session', 'One session, one calendar link, paid as a one-off. You see who joins and how they react before you commit to anything.'],
   ['03', 'A weekly slot', 'Same time every week, recurring invite, gentle reminder the morning of. Habits need a fixed hour.'],
   ['04', 'A number you can forward', 'Monthly attendance and a short pulse survey. Something concrete for the budget conversation.'],
 ];
 
-// Real client quotes, verbatim, first names only. The 20-year quote spans 2 columns.
-const reviews: Array<{ quote: string; name: string; span: number; size: number }> = [
-  { quote: 'I have done yoga for 20 years and never done this. I really enjoyed it, and feel really stretched out.', name: 'Anonymous', span: 2, size: 23 },
-  { quote: 'You have such a soothing voice.', name: 'Kris', span: 1, size: 19 },
-  { quote: 'Thanks for this beautiful flow. I felt great afterwards.', name: 'Susanne', span: 1, size: 19 },
-  { quote: 'Wonderful practice, especially all the balance poses. Thank you.', name: 'Nina', span: 1, size: 19 },
-  { quote: 'This felt amazing. Thank you, Camilla.', name: 'Miles', span: 1, size: 19 },
-  { quote: 'This was lovely. Thank you for sharing.', name: 'Kris', span: 1, size: 19 },
+// Real client quotes, verbatim, first names only. Card layout with varied spans/sizes.
+const reviews: Array<{ quote: string; name: string; span: number; size: number; sand?: boolean }> = [
+  { quote: 'I have done yoga for 20 years and never done this. I really enjoyed it, and feel really stretched out.', name: 'Anonymous', span: 2, size: 34, sand: true },
+  { quote: 'You have such a soothing voice.', name: 'Kris', span: 1, size: 26 },
+  { quote: 'Thanks for this beautiful flow. I felt great afterwards.', name: 'Susanne', span: 1, size: 26 },
+  { quote: 'Wonderful practice, especially all the balance poses. Thank you.', name: 'Nina', span: 2, size: 30 },
+  { quote: 'This felt amazing. Thank you, Camilla.', name: 'Miles', span: 2, size: 30 },
+  { quote: 'This was lovely. Thank you for sharing.', name: 'Kris', span: 1, size: 26 },
 ];
 
 const tiers = [
-  { name: 'Starter', price: '2,990 kr', per: '/mo', body: 'Small teams up to 25. Two live sessions a month, quarterly reporting.', highlight: false },
-  { name: 'Weekly', price: '4,990 kr', per: '/mo', body: 'Teams up to 50. A live session every week, quarterly reporting.', highlight: true },
-  { name: 'Enterprise', price: 'from 8,900 kr', per: '/mo', body: '50+ or multi-time-zone. Four or more sessions a month, quarterly reporting.', highlight: false },
+  { name: 'Starter', price: '2,990 kr', per: '/mo', body: 'Two live sessions a month. Any team size, quarterly reporting.', highlight: false },
+  { name: 'Weekly', price: '4,990 kr', per: '/mo', body: 'One live session every week. Any team size, quarterly reporting.', highlight: true },
+  { name: 'Enterprise', price: 'from 8,900 kr', per: '/mo', body: 'Two or more a week, or across time zones. Any team size.', highlight: false },
 ];
 
 const eyebrow: React.CSSProperties = {
@@ -155,7 +155,7 @@ const Index = () => {
               Live breathing, meditation and chair yoga that fits inside the working day. Office, remote or hybrid. No mats, no changing, no awkward silence.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 34 }}>
-              <Link className="ryc-btn-primary" to="/demo" style={{ display: 'inline-flex', alignItems: 'center', height: 54, padding: '0 28px', borderRadius: 999, background: c.terracotta, color: c.onDark, fontWeight: 600, fontSize: 16 }}>Book a pilot session</Link>
+              <Link className="ryc-btn-primary" to="/demo" style={{ display: 'inline-flex', alignItems: 'center', height: 54, padding: '0 28px', borderRadius: 999, background: c.terracotta, color: c.onDark, fontWeight: 600, fontSize: 16 }}>Book a taster session</Link>
               <a className="ryc-btn-outline" href="#sessions" style={{ display: 'inline-flex', alignItems: 'center', height: 54, padding: '0 26px', borderRadius: 999, border: `1px solid oklch(0.84 0.02 76)`, color: c.text, fontSize: 16 }}>See the sessions</a>
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 26, marginTop: 34, fontSize: 14.5, color: c.text3 }}>
@@ -166,7 +166,7 @@ const Index = () => {
           </div>
           <div style={{ position: 'relative' }}>
             <div className="ryc-hero-img" style={{ height: 520, borderRadius: '260px 260px 18px 18px', overflow: 'hidden', border: `1px solid ${c.rule}`, background: 'oklch(0.94 0.018 76)' }}>
-              <img src="/images/hero-camilla.jpg" alt="Camilla, a certified yoga teacher, against a sandstone wall in Stockholm" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              <img src="/images/hero-camilla.jpg" alt="Camilla, a certified yoga teacher, against a sandstone wall in Stockholm" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center bottom', display: 'block' }} />
             </div>
           </div>
         </div>
@@ -246,15 +246,15 @@ const Index = () => {
 
       {/* PROOF */}
       <section id="proof" className="ryc-pad" style={{ maxWidth: 1200, margin: '0 auto', padding: '96px 40px 0' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 0.8fr)', gap: 60, alignItems: 'end', borderTop: `1px solid ${c.rule}`, paddingTop: 28, marginBottom: 40 }}>
-          <h2 style={{ ...h2Style, fontSize: 'clamp(28px, 3.2vw, 40px)', lineHeight: 1.06, maxWidth: '26ch' }}>What people say about practising with me</h2>
-          <p style={{ fontSize: 15.5, lineHeight: 1.6, color: c.text3, margin: 0, maxWidth: '40ch' }}>Typed into the chat in the minutes after a live session. Short, unedited, first names only.</p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 0.8fr)', gap: 60, alignItems: 'end', borderTop: `1px solid ${c.rule}`, paddingTop: 28, marginBottom: 44 }}>
+          <h2 style={{ ...h2Style, fontSize: 'clamp(30px, 3.6vw, 46px)', lineHeight: 1.05, maxWidth: '24ch' }}>What people say about practising with me</h2>
+          <p style={{ fontSize: 16.5, lineHeight: 1.6, color: 'oklch(0.45 0.02 60)', margin: 0, maxWidth: '38ch' }}>Typed into the chat window in the minutes after a live session. Six of them, short, unedited, and every one from someone who had just finished practising. This is the whole list.</p>
         </div>
-        <div className="ryc-proof-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: '4px 40px' }}>
+        <div className="ryc-proof-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 20 }}>
           {reviews.map((r, i) => (
-            <div key={i} style={{ gridColumn: `span ${r.span}`, display: 'flex', flexDirection: 'column', gap: 14, borderTop: `1px solid ${c.rule}`, padding: '22px 0 4px' }}>
-              <blockquote style={{ fontFamily: serif, fontWeight: 400, fontSize: r.size, lineHeight: 1.35, letterSpacing: '-0.01em', margin: 0, color: 'oklch(0.26 0.02 60)' }}>&ldquo;{r.quote}&rdquo;</blockquote>
-              <div style={{ fontFamily: mono, fontSize: 11.5, letterSpacing: '0.1em', textTransform: 'uppercase', color: c.muted }}>{r.name}</div>
+            <div key={i} style={{ gridColumn: `span ${r.span}`, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: 22, background: r.sand ? 'oklch(0.955 0.016 60)' : 'oklch(0.985 0.01 76)', border: `1px solid ${r.sand ? 'oklch(0.9 0.018 60)' : 'oklch(0.88 0.02 76)'}`, borderRadius: 10, padding: '32px 30px' }}>
+              <blockquote style={{ fontFamily: serif, fontWeight: 400, fontSize: r.size, lineHeight: 1.3, letterSpacing: '-0.01em', margin: 0, color: 'oklch(0.24 0.02 60)' }}>&ldquo;{r.quote}&rdquo;</blockquote>
+              <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: '0.1em', textTransform: 'uppercase', color: r.sand ? 'oklch(0.46 0.04 45)' : 'oklch(0.5 0.02 60)' }}>{r.name}</div>
             </div>
           ))}
         </div>
@@ -281,7 +281,7 @@ const Index = () => {
           ))}
         </div>
         <p style={{ marginTop: 22, fontSize: 15.5, color: c.text3 }}>
-          Every engagement starts with a four-week paid pilot at 2,490 kr, credited to your first month.{' '}
+          Every engagement starts with a single taster session at 1,490 kr, credited to your first month.{' '}
           <Link className="ryc-underline" to="/pricing" style={{ color: c.terracotta }}>See full pricing →</Link>
         </p>
       </section>
@@ -294,7 +294,7 @@ const Index = () => {
             <p style={{ fontSize: 18, lineHeight: 1.6, color: c.text2, margin: '22px 0 0', maxWidth: '42ch' }}>One paid session, no contract, nothing to sign. If your team shrugs at it, we both learned something in half an hour.</p>
           </div>
           <div style={{ background: c.card, border: `1px solid ${c.borderSoft}`, borderRadius: 12, padding: '30px 28px', display: 'grid', gap: 16 }}>
-            <Link className="ryc-btn-primary" to="/demo" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', height: 54, borderRadius: 999, background: c.terracotta, color: c.onDark, fontWeight: 600, fontSize: 16 }}>Book a pilot</Link>
+            <Link className="ryc-btn-primary" to="/demo" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', height: 54, borderRadius: 999, background: c.terracotta, color: c.onDark, fontWeight: 600, fontSize: 16 }}>Book a taster</Link>
             <div style={{ display: 'grid', gap: 10, fontSize: 14.5, color: c.text2 }}>
               <span>No app to install</span>
               <span>Runs in your calendar</span>

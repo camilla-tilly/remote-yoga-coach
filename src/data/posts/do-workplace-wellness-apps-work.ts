@@ -120,7 +120,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "I run live, 30-minute breathing and chair-yoga sessions your whole team joins on Teams, scheduled, guided, camera optional, and I report on attendance and wellbeing so you can see it working. It's the \"class\" alongside whatever \"library\" you already have. See how it works at [my team wellbeing service](/services/team-wellness), or book a pilot at [my demo page](/demo) and watch the attendance for yourself."
+      text: "I run live, 30-minute breathing and chair-yoga sessions your whole team joins on Teams, scheduled, guided, camera optional, and I report on attendance and wellbeing so you can see it working. It's the \"class\" alongside whatever \"library\" you already have. See how it works at [my team wellbeing service](/services/team-wellness), or book a taster at [my demo page](/demo) and watch the attendance for yourself."
     },
     {
       type: "cta",

@@ -87,7 +87,7 @@ const groups: Array<{ heading: string; items: Array<[string, string]> }> = [
       ],
       [
         'Can we try it before committing?',
-        'Yes. There is a four-week paid pilot: one complete programme ending in a one-page wellbeing report, and if you continue, the pilot fee is credited to your first month.',
+        'Yes. There is a single taster session, one live 30-minute class, and if you continue, the taster fee is credited to your first month. Once it is a weekly habit, the ongoing subscription gives you the attendance and wellbeing reporting.',
       ],
       [
         'Can we book a one-off session, like a lunch and learn?',

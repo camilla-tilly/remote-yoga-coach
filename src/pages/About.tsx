@@ -133,12 +133,12 @@ const About = () => {
           <div className="max-w-[680px] mx-auto px-5 text-center">
             <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">See it for your team</h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              Start with a four-week pilot, credited to your first month if you continue.
+              Start with a single taster session, credited to your first month if you continue.
             </p>
             <div className="mt-9">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a pilot
+                  Book a taster
                 </Button>
               </Link>
             </div>

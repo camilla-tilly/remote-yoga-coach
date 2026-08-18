@@ -38,6 +38,9 @@ const SEO = ({ title, description, canonical, ogImage, ogType = 'website', struc
     // per-page card; fall back to the branded site default.
     const image = ogImage || 'https://remoteyogacoach.com/og/default.png';
     setMeta('meta[property="og:image"]', 'content', image);
+    setMeta('meta[property="og:image:width"]', 'content', '1200');
+    setMeta('meta[property="og:image:height"]', 'content', '630');
+    setMeta('meta[property="og:image:alt"]', 'content', title);
 
     // Twitter card
     setMeta('meta[name="twitter:card"]', 'content', 'summary_large_image');

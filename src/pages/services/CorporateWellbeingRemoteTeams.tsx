@@ -31,11 +31,11 @@ const faqItems: Array<[string, string]> = [
   ],
   [
     'How do we know it is working?',
-    'Every programme reports attendance, repeat attendance and a short wellbeing check before and after sessions. At the end of the four-week pilot you get a one-page summary you can take straight to leadership.',
+    'Every programme reports attendance, repeat attendance and a short wellbeing check before and after sessions. Once it is a weekly habit you get a quarterly summary you can take straight to leadership.',
   ],
   [
     'What does corporate wellbeing for a remote team cost?',
-    'A flat monthly subscription by team size, not a per-person app charge, so the cost per person stays low. Pricing is public, and every engagement starts with a four-week paid pilot credited to your first month if you continue.',
+    'A flat monthly subscription by session frequency, not a per-person app charge, so the cost per person stays low. Pricing is public, and every engagement starts with a single taster session credited to your first month if you continue.',
   ],
 ];
 
@@ -50,7 +50,7 @@ const structuredData = {
       areaServed: ['GB', 'EU', 'AU'],
       description:
         'Live weekly wellbeing sessions for distributed and hybrid teams on Teams or Zoom: breathing, meditation and chair yoga, camera optional, with attendance and wellbeing reporting.',
-      offers: { '@type': 'Offer', priceCurrency: 'SEK', description: 'Monthly subscription by team size, from a four-week paid pilot.' },
+      offers: { '@type': 'Offer', priceCurrency: 'SEK', description: 'Monthly subscription by session frequency, from a single taster session.' },
     },
     {
       '@type': 'FAQPage',
@@ -87,7 +87,7 @@ const CorporateWellbeingRemoteTeams = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Weekly Wellbeing Sessions for Remote and Hybrid Teams | Remote Yoga Coach"
-        description="A live weekly wellbeing subscription for remote, hybrid and in-office teams. Breathing, meditation and chair yoga on Teams or Zoom, camera optional, with reporting. Book a four-week pilot."
+        description="A live weekly wellbeing subscription for remote, hybrid and in-office teams. Breathing, meditation and chair yoga on Teams or Zoom, camera optional, with reporting. Book a taster session."
         canonical="https://remoteyogacoach.com/services/corporate-wellbeing-for-remote-teams"
         ogImage="https://remoteyogacoach.com/og/corporate-wellbeing-remote-teams.png"
         structuredData={structuredData}
@@ -112,7 +112,7 @@ const CorporateWellbeingRemoteTeams = () => {
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a pilot
+                  Book a taster
                 </Button>
               </Link>
               <Link to="/pricing">
@@ -277,13 +277,13 @@ const CorporateWellbeingRemoteTeams = () => {
               Give your distributed team a habit that sticks
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              Start with a four-week pilot of live weekly sessions, ending in a one-page report of attendance and
-              wellbeing, credited to your first month if you continue.
+              Start with a single taster session, then once it is a weekly habit the attendance and wellbeing
+              reporting gives you something concrete to take to leadership. Credited to your first month if you continue.
             </p>
             <div className="mt-9">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a pilot
+                  Book a taster
                 </Button>
               </Link>
             </div>

@@ -9,28 +9,28 @@ import { Reveal, GlowField, Eyebrow } from '@/components/SiteBlocks';
 
 const faqs: Array<[string, string]> = [
   ['Do people need their cameras on?', 'No. Camera-off is welcome, and I say so at the start of every session.'],
-  ['Will people actually attend?', 'That is what the pilot is for. Live, scheduled sessions out-attend apps and EAPs, because the hardest part, starting, is already done. You see the real numbers in your report.'],
+  ['Will people actually attend?', 'That is what a taster session is for. Live, scheduled sessions out-attend apps and EAPs, because the hardest part, starting, is already done, and once it is a weekly habit you see the numbers in your reporting.'],
   ['What if people join late or miss one?', 'Sessions are built to drop into, and every one is recorded, so anyone can catch up or join from another time zone.'],
   ['We already have an app or an EAP. Why add this?', 'Those are libraries and crisis lines: useful, but passive. The Weekly Reset is the live, weekly layer with a real person, which is what actually drives participation. It complements what you have.'],
   ['How do you measure it?', 'Attendance and repeat attendance, tracked automatically, plus a short wellbeing check at the start and end. You get a one-page summary.'],
   ['Can you work across time zones?', 'Yes. Sessions run across UK and European hours, with Australian hours for part of the year, plus recordings for everyone else.'],
 ];
 
-const pilotPrice = '2,490 kr';
+const pilotPrice = '1,490 kr';
 
 const tiers = [
   {
-    name: 'Starter', best: 'Small teams up to 25', sessions: '2 per month',
+    name: 'Starter', best: 'Two live sessions a month', sessions: '2 per month',
     reporting: 'Quarterly',
     price: '2,990 kr', priceValue: '2990', per: 'per month', highlight: false,
   },
   {
-    name: 'Weekly', best: 'Teams up to 50', sessions: '4 per month (weekly)',
+    name: 'Weekly', best: 'One live session every week', sessions: '4 per month (weekly)',
     reporting: 'Quarterly',
     price: '4,990 kr', priceValue: '4990', per: 'per month', highlight: true,
   },
   {
-    name: 'Enterprise', best: '50+ / multi-timezone', sessions: '4+ per month',
+    name: 'Enterprise', best: 'Two or more a week, or across time zones', sessions: '8+ per month',
     reporting: 'Quarterly',
     price: 'from 8,900 kr', priceValue: '8900', per: 'per month', highlight: false,
   },
@@ -53,10 +53,10 @@ const structuredData = {
       offers: [
         {
           '@type': 'Offer',
-          name: '4-Week Pilot',
-          price: '2490',
+          name: 'Taster session',
+          price: '1490',
           priceCurrency: 'SEK',
-          description: 'A four-week paid pilot, credited to your first month if you continue.',
+          description: 'A single 30-minute live session, credited to your first month if you continue.',
           url: 'https://remoteyogacoach.com/pricing',
         },
         ...tiers.map((t) => ({
@@ -70,7 +70,7 @@ const structuredData = {
             priceCurrency: 'SEK',
             unitText: 'MONTH',
           },
-          description: `${t.best}, ${t.sessions} live sessions per month.`,
+          description: `${t.best}. Flat monthly fee, any team size, on Teams or Zoom.`,
           url: 'https://remoteyogacoach.com/pricing',
         })),
       ],
@@ -83,7 +83,7 @@ const Pricing = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Pricing | Team Wellbeing Subscriptions | Remote Yoga Coach"
-        description="Simple, transparent pricing for corporate wellbeing: a flat monthly fee for your whole team, not a per-person app charge. Three tiers plus a four-week pilot."
+        description="Simple, transparent pricing for corporate wellbeing: a flat monthly fee for your whole team, not a per-person app charge. Three tiers plus a single taster session."
         canonical="https://remoteyogacoach.com/pricing"
         structuredData={structuredData}
       />
@@ -113,16 +113,16 @@ const Pricing = () => {
                 <div className="relative">
                   <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clayLight mb-4">Start here</span>
                   <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                    <h2 className="font-fraunces font-semibold text-2xl md:text-3xl">The 4-Week Pilot</h2>
+                    <h2 className="font-fraunces font-semibold text-2xl md:text-3xl">A taster session</h2>
                     <span className="font-fraunces font-semibold text-2xl md:text-3xl text-clayLight">{pilotPrice}</span>
                   </div>
-                  <p className="mt-4 text-white/80 leading-relaxed">One complete four-week programme, so you can see it work before you commit:</p>
+                  <p className="mt-4 text-white/80 leading-relaxed">One 30-minute live session, so your team can try it before you commit to anything:</p>
                   <ul className="mt-5 space-y-2.5">
                     {[
-                      '4 weekly live sessions (30 minutes, breathing + chair yoga + meditation)',
-                      'Every session recorded',
-                      'A one-page report at the end: attendance, engagement, and before/after wellbeing',
-                      'A ready-to-send kickoff message for your team',
+                      'A live 30-minute session, breathing, chair yoga or meditation, your pick',
+                      'Runs on Teams or Zoom, camera optional, any team size',
+                      'The recording afterwards, to share with anyone who missed it',
+                      'No setup, no contract, nothing to sign',
                     ].map((item) => (
                       <li key={item} className="flex gap-3 text-white/90 text-[15px]">
                         <Check className="text-clayLight shrink-0 mt-0.5" size={17} strokeWidth={2.5} />
@@ -131,12 +131,12 @@ const Pricing = () => {
                     ))}
                   </ul>
                   <p className="mt-5 text-white/70 text-sm leading-relaxed">
-                    If you continue within 14 days, the {pilotPrice} is credited to your first month. Up to 50 participants.
+                    If you go ahead, the {pilotPrice} is credited to your first month.
                   </p>
                   <div className="mt-7">
                     <Link to="/demo">
                       <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                        Book your pilot
+                        Book a taster session
                       </Button>
                     </Link>
                   </div>
@@ -176,7 +176,7 @@ const Pricing = () => {
                       <p className="text-charcoal/60 text-sm">{t.per}</p>
                     </div>
                     <ul className="space-y-3 text-[15px] text-charcoal/80 flex-1">
-                      <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>{t.sessions} live sessions</span></li>
+                      <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>Any team size, unlimited attendees</span></li>
                       <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>All sessions recorded</span></li>
                       <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>{t.reporting} wellbeing reporting</span></li>
                     </ul>
@@ -185,7 +185,7 @@ const Pricing = () => {
                         <Button className={`w-full font-semibold uppercase text-sm tracking-wider rounded-md py-6 ${
                           t.highlight ? 'bg-clay hover:bg-clayDark text-white' : 'bg-white border border-sage text-charcoal hover:bg-sage-light/40'
                         }`}>
-                          {t.name === 'Enterprise' ? 'Talk it through' : 'Book a pilot'}
+                          {t.name === 'Enterprise' ? 'Talk it through' : 'Book a taster'}
                         </Button>
                       </Link>
                     </div>
@@ -262,13 +262,12 @@ const Pricing = () => {
           <div className="relative max-w-[680px] mx-auto px-5 text-center">
             <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">See it before you commit</h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              Start with the four-week pilot: one full programme ending in a one-page report, credited to your first
-              month if you continue.
+              Start with a single taster session: one live class, credited to your first month if you continue.
             </p>
             <div className="mt-9">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a pilot
+                  Book a taster
                 </Button>
               </Link>
             </div>

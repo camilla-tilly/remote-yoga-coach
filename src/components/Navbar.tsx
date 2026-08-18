@@ -73,7 +73,7 @@ const Navbar = () => {
             ))}
             <Link to="/demo">
               <Button className="bg-[#392a23] hover:bg-clay text-offwhite font-inter font-medium text-sm tracking-normal rounded-full px-5 h-11">
-                Book a pilot
+                Book a taster
               </Button>
             </Link>
           </div>
@@ -114,7 +114,7 @@ const Navbar = () => {
                   <DrawerClose asChild>
                     <Link to="/demo" className="w-full px-3">
                       <Button className="w-full bg-[#392a23] hover:bg-clay text-offwhite font-inter font-medium text-sm tracking-normal rounded-full py-6">
-                        Book a pilot
+                        Book a taster
                       </Button>
                     </Link>
                   </DrawerClose>

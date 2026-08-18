@@ -63,7 +63,7 @@ const post: BlogPost = {
       "Do it with other people. Breathing together, guided, once a week makes it stick far faster than going it alone, which is the whole idea behind a short live team session."
     ] },
     { type: "heading", text: "Want this as a team habit?" },
-    { type: "paragraph", text: "One person breathing better helps that person. A whole team that shares a short, guided reset each week builds something steadier together, and people are far more likely to keep a habit that's already in the calendar than one they have to start on their own. If your team is remote or hybrid, that's exactly what a live weekly session is for: a few minutes of guided breathing and gentle movement everyone joins from wherever they are. You can also [book a pilot](/demo)." },
+    { type: "paragraph", text: "One person breathing better helps that person. A whole team that shares a short, guided reset each week builds something steadier together, and people are far more likely to keep a habit that's already in the calendar than one they have to start on their own. If your team is remote or hybrid, that's exactly what a live weekly session is for: a few minutes of guided breathing and gentle movement everyone joins from wherever they are. You can also [book a taster](/demo)." },
     { type: "cta", text: "See how a team version works, a short live weekly reset your whole team joins from wherever they are.", ctaHref: "/services/team-wellness", ctaLabel: "See how a team version works" },
     { type: "callout", text: "Health note: these are general wellbeing techniques, not medical advice. If breathing exercises ever make you feel dizzy or anxious, return to normal breathing and stop." }
   ]

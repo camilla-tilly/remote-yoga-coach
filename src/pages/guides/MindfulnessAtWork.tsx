@@ -388,7 +388,7 @@ const MindfulnessAtWork = () => {
                 <Link to="/pricing" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   pricing page
                 </Link>
-                , and every engagement starts with a four-week pilot.
+                , and every engagement starts with a single taster session.
               </p>
             </GuideProse>
           </div>
@@ -419,7 +419,7 @@ const MindfulnessAtWork = () => {
 
         <GuideCTA
           heading="Give your team a weekly mindfulness habit"
-          text="A four-week pilot of The Weekly Reset: live breathing, meditation and chair yoga on Teams, camera optional, ending in a one-page report you can take to your budget-holder."
+          text="A single taster session of The Weekly Reset: live breathing, meditation and chair yoga on Teams, camera optional. Once it is a weekly habit, the ongoing subscription gives you attendance and wellbeing reporting you can take to your budget-holder."
         />
       </main>
 

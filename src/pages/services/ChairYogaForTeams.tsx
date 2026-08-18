@@ -30,7 +30,7 @@ const faqItems: Array<[string, string]> = [
   ],
   [
     'How much does chair yoga for a team cost?',
-    'It is priced as a monthly subscription by team size and session frequency, not per class, so a weekly habit stays affordable per person. Pricing is public on the pricing page, and every engagement starts with a four-week pilot so you can see attendance and results before committing.',
+    'It is priced as a monthly subscription by session frequency, not per class, so a weekly habit stays affordable per person. Pricing is public on the pricing page, and every engagement starts with a single taster session so you can see how it lands before committing.',
   ],
   [
     'Can remote and hybrid teams do chair yoga together?',
@@ -89,7 +89,7 @@ const ChairYogaForTeams = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Virtual Office Yoga and Chair Yoga for Teams | Remote Yoga Coach"
-        description="Live virtual office yoga and chair yoga for companies and remote teams on Teams or Zoom. Workplace yoga that is gentle and desk-friendly, camera optional, no experience needed. Book a four-week pilot."
+        description="Live virtual office yoga and chair yoga for companies and remote teams on Teams or Zoom. Workplace yoga that is gentle and desk-friendly, camera optional, no experience needed. Book a taster session."
         canonical="https://remoteyogacoach.com/services/chair-yoga-for-teams"
         structuredData={structuredData}
       />
@@ -117,7 +117,7 @@ const ChairYogaForTeams = () => {
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a pilot
+                  Book a taster
                 </Button>
               </Link>
               <Link to="/pricing">
@@ -245,8 +245,8 @@ const ChairYogaForTeams = () => {
             <h2 className="font-fraunces font-semibold text-3xl md:text-4xl leading-tight">You will see whether it is working</h2>
             <p className="mt-6 text-white/80 text-lg leading-relaxed">
               Every programme comes with simple, honest reporting: how many of your team attend, how many keep coming
-              back, and how they rate their stress and energy before and after. At the end of a four-week pilot you
-              get a one-page report you can take straight to your budget-holder, no guesswork about whether it earned
+              back, and how they rate their stress and energy before and after. Once it is a weekly habit you
+              get a report you can take straight to your budget-holder, no guesswork about whether it earned
               its slot.
             </p>
           </div>
@@ -288,13 +288,13 @@ const ChairYogaForTeams = () => {
               Try chair yoga with your team
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              A four-week pilot of live weekly chair yoga, ending in a one-page report, credited to your first month
+              A single taster session of live chair yoga, credited to your first month
               if you continue. See it work with your own team before committing.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a pilot
+                  Book a taster
                 </Button>
               </Link>
               <Link to="/pricing">

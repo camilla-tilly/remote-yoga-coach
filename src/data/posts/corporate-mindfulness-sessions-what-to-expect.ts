@@ -47,7 +47,7 @@ const post: BlogPost = {
       'A simple summary you can put in front of leadership.',
     ] },
     { type: 'paragraph', text: 'If people keep coming back of their own accord, that is your clearest signal. Voluntary repeat attendance is the metric an app dashboard can never fake.' },
-    { type: 'cta', text: 'Curious what a live, measured session looks like with your own team? A four-week pilot ends in a one-page report of attendance and before-and-after wellbeing.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
+    { type: 'cta', text: 'Curious what a live, measured session looks like with your own team? Start with a single taster session, then once it is a weekly habit you get attendance and before-and-after wellbeing reporting.', ctaHref: '/demo', ctaLabel: 'Book a taster' },
     { type: 'faq', faqItems: [
       { q: 'How long should a corporate mindfulness session be?', a: '15 to 30 minutes is the sweet spot for a recurring workplace session, long enough to reset, short enough to fit a lunch break or a gap between meetings.' },
       { q: 'Do employees need any experience?', a: 'None. A good session assumes everyone is a beginner, uses plain language, and never asks anyone to perform. Camera-off is welcome throughout.' },

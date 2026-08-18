@@ -91,7 +91,7 @@ const post: BlogPost = {
     },
     {
       type: 'paragraph',
-      text: 'They can also [book a pilot](/demo) to try it before committing to a subscription.',
+      text: 'They can also [book a taster](/demo) to try it before committing to a subscription.',
     },
     {
       type: 'callout',
