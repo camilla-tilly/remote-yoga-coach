@@ -33,8 +33,8 @@ const builtFor = [
 
 const SectionHeading = ({ eyebrow, children }: { eyebrow?: string; children: React.ReactNode }) => (
   <>
-    {eyebrow && <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-sage mb-4">{eyebrow}</span>}
-    <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">{children}</h2>
+    {eyebrow && <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">{eyebrow}</span>}
+    <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">{children}</h2>
   </>
 );
 
@@ -53,7 +53,7 @@ const TeamWellness = () => {
         {/* HERO */}
         <section className="bg-cream-soft pt-36 pb-20 md:pt-44 md:pb-24">
           <div className="max-w-[820px] mx-auto px-5 text-center">
-            <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
+            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               The weekly reset your remote and hybrid team looks forward to.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[660px] mx-auto">
@@ -112,7 +112,7 @@ const TeamWellness = () => {
                     <Check className="text-clay" size={15} strokeWidth={2.5} />
                   </span>
                   <p className="text-charcoal/80 text-[16px] leading-relaxed">
-                    <span className="font-fraunces font-semibold text-heading text-lg">{title}</span>
+                    <span className="font-fraunces font-normal text-heading text-lg">{title}</span>
                     {': '}{text}
                   </p>
                 </li>
@@ -136,7 +136,7 @@ const TeamWellness = () => {
             <div className="mt-10 grid gap-8 sm:grid-cols-2">
               {builtFor.map(([title, text]) => (
                 <div key={title}>
-                  <h3 className="font-fraunces font-semibold text-heading text-xl">{title}</h3>
+                  <h3 className="font-fraunces font-normal text-heading text-xl">{title}</h3>
                   <p className="text-charcoal/70 text-[15px] leading-relaxed mt-1.5">{text}</p>
                 </div>
               ))}
@@ -148,7 +148,7 @@ const TeamWellness = () => {
         <section className="bg-charcoal text-white py-20 md:py-24">
           <div className="max-w-[760px] mx-auto px-5">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The proof</span>
-            <h2 className="font-fraunces font-semibold text-3xl md:text-4xl leading-tight">You'll see whether it's working</h2>
+            <h2 className="font-fraunces font-normal text-3xl md:text-4xl leading-tight">You'll see whether it's working</h2>
             <p className="mt-6 text-white/80 text-lg leading-relaxed">
               Unlike{' '}
               <Link to="/compare" className="text-clay underline underline-offset-4 hover:text-clayDark">
@@ -206,7 +206,7 @@ const TeamWellness = () => {
         {/* RELATED READING */}
         <section className="py-16 md:py-20">
           <div className="max-w-[760px] mx-auto px-5">
-            <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-sage mb-4">Related reading</span>
+            <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">Related reading</span>
             <ul className="space-y-2 text-lg leading-relaxed">
               <li>
                 <Link to="/guides/mindfulness-at-work" className="text-clay underline underline-offset-4 hover:text-clayDark">
@@ -230,7 +230,7 @@ const TeamWellness = () => {
         {/* CTA */}
         <section className="bg-cream-soft-b py-24 md:py-28">
           <div className="max-w-[680px] mx-auto px-5 text-center">
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">Start with a pilot</h2>
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">Start with a pilot</h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               A single pilot session of The Weekly Reset for your team, credited to your first
               month if you continue. See it work with your own team before committing to a subscription.

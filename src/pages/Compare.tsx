@@ -103,7 +103,7 @@ const Compare = () => {
           <GlowField tone="warm" />
           <div className="relative max-w-[820px] mx-auto px-5 text-center">
             <Eyebrow>The honest comparison</Eyebrow>
-            <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
+            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Live sessions, apps and EAPs, on the metric that matters
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[640px] mx-auto">
@@ -134,7 +134,7 @@ const Compare = () => {
         <section className="py-14 md:py-18">
           <div className="max-w-[760px] mx-auto px-5">
             <Eyebrow>The app</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               A great library nobody visits
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
@@ -151,7 +151,7 @@ const Compare = () => {
         <section className="bg-cream py-14 md:py-20">
           <div className="max-w-[760px] mx-auto px-5">
             <Eyebrow>The EAP</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               A crisis line, not a habit
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
@@ -167,7 +167,7 @@ const Compare = () => {
         <section className="py-16 md:py-20">
           <div className="max-w-[760px] mx-auto px-5">
             <Eyebrow>The point</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               This is the missing layer, not a replacement
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
@@ -190,7 +190,7 @@ const Compare = () => {
         <section className="py-16 md:py-20">
           <div className="max-w-[760px] mx-auto px-5">
             <Eyebrow>The alternative you are searching for</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               A Calm for Business, Headspace for Work and EAP alternative that gets used
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
@@ -219,7 +219,7 @@ const Compare = () => {
         <section className="bg-cream py-16 md:py-20">
           <div className="max-w-[760px] mx-auto px-5">
             <Eyebrow>FAQ</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">Common questions</h2>
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">Common questions</h2>
             <GuideFAQ items={faqItems} />
           </div>
         </section>
@@ -228,7 +228,7 @@ const Compare = () => {
         <section className="relative overflow-hidden bg-cream-soft-b py-24 md:py-28">
           <GlowField tone="sage" />
           <div className="relative max-w-[680px] mx-auto px-5 text-center">
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">
               Add the layer your stack is missing
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">

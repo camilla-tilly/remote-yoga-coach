@@ -102,7 +102,7 @@ const DeskYoga = () => {
         <section className="bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
           <div className="max-w-[820px] mx-auto px-5">
             <GuideEyebrow>Guide</GuideEyebrow>
-            <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
+            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Office yoga, desk yoga and chair yoga at work: the complete guide
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed">
@@ -325,7 +325,7 @@ const DeskYoga = () => {
         <section className="bg-charcoal text-white py-16 md:py-20">
           <div className="max-w-[760px] mx-auto px-5">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">For teams</span>
-            <h2 id="team-habit" className="scroll-mt-28 font-fraunces font-semibold text-3xl md:text-4xl leading-tight">
+            <h2 id="team-habit" className="scroll-mt-28 font-fraunces font-normal text-3xl md:text-4xl leading-tight">
               Making it a team habit
             </h2>
             <div className="mt-6 space-y-5 text-white/80 text-lg leading-relaxed">

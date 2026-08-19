@@ -69,7 +69,7 @@ const structuredData = {
 const SectionHeading = ({ eyebrow, children }: { eyebrow?: string; children: React.ReactNode }) => (
   <>
     {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-    <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">{children}</h2>
+    <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">{children}</h2>
   </>
 );
 
@@ -100,7 +100,7 @@ const CorporateWellbeingRemoteTeams = () => {
           <GlowField tone="warm" />
           <div className="relative max-w-[820px] mx-auto px-5 text-center">
             <Eyebrow>Corporate wellbeing, distributed teams</Eyebrow>
-            <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
+            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Wellbeing for remote and hybrid teams that reaches everyone on screen.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[660px] mx-auto">
@@ -170,7 +170,7 @@ const CorporateWellbeingRemoteTeams = () => {
                       <Check className="text-clay" size={15} strokeWidth={2.5} />
                     </span>
                     <p className="text-charcoal/80 text-[15px] leading-relaxed">
-                      <span className="font-fraunces font-semibold text-heading text-lg block mb-0.5">{title}</span>
+                      <span className="font-fraunces font-normal text-heading text-lg block mb-0.5">{title}</span>
                       {text}
                     </p>
                   </div>
@@ -272,7 +272,7 @@ const CorporateWellbeingRemoteTeams = () => {
         <section className="relative overflow-hidden bg-cream-soft-b py-24 md:py-28">
           <GlowField tone="sage" />
           <div className="relative max-w-[680px] mx-auto px-5 text-center">
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">
               Give your distributed team a habit that sticks
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">

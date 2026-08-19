@@ -79,8 +79,8 @@ const included = [
 
 const SectionHeading = ({ eyebrow, children }: { eyebrow?: string; children: React.ReactNode }) => (
   <>
-    {eyebrow && <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-sage mb-4">{eyebrow}</span>}
-    <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">{children}</h2>
+    {eyebrow && <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">{eyebrow}</span>}
+    <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">{children}</h2>
   </>
 );
 
@@ -99,10 +99,10 @@ const ChairYogaForTeams = () => {
         {/* HERO */}
         <section className="bg-cream-soft pt-36 pb-20 md:pt-44 md:pb-24">
           <div className="max-w-[820px] mx-auto px-5 text-center">
-            <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-sage mb-6">
+            <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-6">
               For companies and remote teams
             </span>
-            <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
+            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Virtual office yoga and chair yoga your whole team can actually do.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[640px] mx-auto">
@@ -198,7 +198,7 @@ const ChairYogaForTeams = () => {
                     <Check className="text-clay" size={15} strokeWidth={2.5} />
                   </span>
                   <p className="text-charcoal/80 text-[15px] leading-relaxed">
-                    <span className="font-fraunces font-semibold text-heading text-lg block mb-0.5">{title}</span>
+                    <span className="font-fraunces font-normal text-heading text-lg block mb-0.5">{title}</span>
                     {text}
                   </p>
                 </li>
@@ -242,7 +242,7 @@ const ChairYogaForTeams = () => {
         <section className="bg-charcoal text-white py-20 md:py-24">
           <div className="max-w-[760px] mx-auto px-5">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The proof</span>
-            <h2 className="font-fraunces font-semibold text-3xl md:text-4xl leading-tight">You will see whether it is working</h2>
+            <h2 className="font-fraunces font-normal text-3xl md:text-4xl leading-tight">You will see whether it is working</h2>
             <p className="mt-6 text-white/80 text-lg leading-relaxed">
               Every programme comes with simple, honest reporting: how many of your team attend and how many keep coming
               back. Once it is a weekly habit you
@@ -275,8 +275,8 @@ const ChairYogaForTeams = () => {
         {/* FAQ */}
         <section className="bg-cream py-20 md:py-24">
           <div className="max-w-[760px] mx-auto px-5">
-            <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-sage mb-4">FAQ</span>
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">Common questions</h2>
+            <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">FAQ</span>
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">Common questions</h2>
             <GuideFAQ items={faqItems} />
           </div>
         </section>
@@ -284,7 +284,7 @@ const ChairYogaForTeams = () => {
         {/* CTA */}
         <section className="bg-cream-soft-b py-24 md:py-28">
           <div className="max-w-[680px] mx-auto px-5 text-center">
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">
               Try chair yoga with your team
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">

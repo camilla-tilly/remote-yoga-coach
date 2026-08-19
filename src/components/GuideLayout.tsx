@@ -9,13 +9,13 @@ import { Button } from '@/components/ui/button';
  */
 
 export const GuideEyebrow = ({ children }: { children: React.ReactNode }) => (
-  <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-sage mb-4">{children}</span>
+  <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">{children}</span>
 );
 
 export const GuideHeading = ({ id, eyebrow, children }: { id?: string; eyebrow?: string; children: React.ReactNode }) => (
   <div id={id} className="scroll-mt-28">
     {eyebrow && <GuideEyebrow>{eyebrow}</GuideEyebrow>}
-    <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">{children}</h2>
+    <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">{children}</h2>
   </div>
 );
 
@@ -28,7 +28,7 @@ export const GuideList = ({ items }: { items: Array<[string, string]> }) => (
     {items.map(([title, text]) => (
       <li key={title} className="bg-white rounded-lg border border-sage-light p-5">
         <p className="text-charcoal/80 text-[16px] leading-relaxed">
-          <span className="font-fraunces font-semibold text-heading text-lg">{title}</span>
+          <span className="font-fraunces font-normal text-heading text-lg">{title}</span>
           {'. '}{text}
         </p>
       </li>
@@ -52,12 +52,12 @@ export const KeyTakeaways = ({ items }: { items: string[] }) => (
 
 export const GuideTOC = ({ items }: { items: Array<{ href: string; label: string }> }) => (
   <nav aria-label="On this page" className="mt-10 bg-cream rounded-xl border border-sage-light p-6 md:p-8">
-    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sage mb-4">In this guide</p>
+    <p className="font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">In this guide</p>
     <ol className="space-y-2.5">
       {items.map((item, i) => (
         <li key={item.href}>
           <a href={item.href} className="group inline-flex items-baseline gap-3 text-charcoal/80 hover:text-clay transition-colors">
-            <span className="font-fraunces font-semibold text-clay/70 text-sm">{String(i + 1).padStart(2, '0')}</span>
+            <span className="font-fraunces font-normal text-clay/70 text-sm">{String(i + 1).padStart(2, '0')}</span>
             <span className="text-[16px] leading-relaxed group-hover:underline underline-offset-4">{item.label}</span>
           </a>
         </li>
@@ -71,7 +71,7 @@ export const SpokeCard = ({ to, label, description }: { to: string; label: strin
     to={to}
     className="group block bg-white rounded-lg border border-sage-light hover:border-clay/60 p-5 transition-colors"
   >
-    <p className="font-fraunces font-semibold text-heading text-lg leading-snug group-hover:text-clay transition-colors">{label}</p>
+    <p className="font-fraunces font-normal text-heading text-lg leading-snug group-hover:text-clay transition-colors">{label}</p>
     <p className="text-charcoal/70 text-[15px] leading-relaxed mt-1.5">{description}</p>
     <span className="mt-3 inline-flex items-center gap-1.5 text-clay text-xs font-semibold uppercase tracking-wider">
       Read the full post <ArrowRight size={13} className="transition-transform group-hover:translate-x-0.5" />
@@ -83,7 +83,7 @@ export const GuideFAQ = ({ items }: { items: Array<[string, string]> }) => (
   <div className="mt-8 divide-y divide-sage-light border-y border-sage-light">
     {items.map(([q, a]) => (
       <div key={q} className="py-6">
-        <h3 className="font-fraunces font-semibold text-heading text-xl leading-snug">{q}</h3>
+        <h3 className="font-fraunces font-normal text-heading text-xl leading-snug">{q}</h3>
         <p className="mt-2.5 text-charcoal/75 text-[16px] leading-relaxed">{a}</p>
       </div>
     ))}
@@ -101,7 +101,7 @@ export const GuideCTA = ({
 }) => (
   <section className="bg-cream-soft-b py-24 md:py-28">
     <div className="max-w-[680px] mx-auto px-5 text-center">
-      <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">{heading}</h2>
+      <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">{heading}</h2>
       <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">{text}</p>
       <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
         <Link to="/demo">
@@ -123,7 +123,7 @@ export const RelatedGuides = ({ guides }: { guides: Array<{ to: string; label: s
   <section className="py-16 md:py-20">
     <div className="max-w-[900px] mx-auto px-5">
       <GuideEyebrow>Keep reading</GuideEyebrow>
-      <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">The other guides</h2>
+      <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">The other guides</h2>
       <div className="mt-8 grid gap-5 sm:grid-cols-2">
         {guides.map((g) => (
           <SpokeCard key={g.to} to={g.to} label={g.label} description={g.description} />

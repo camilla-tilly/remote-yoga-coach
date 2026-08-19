@@ -82,7 +82,7 @@ const Guides = () => {
           <GlowField tone="warm" />
           <div className="relative max-w-[820px] mx-auto px-5 text-center">
             <Eyebrow>Guides</Eyebrow>
-            <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
+            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Everything you need to make the case for team wellbeing
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[640px] mx-auto">
@@ -102,8 +102,8 @@ const Guides = () => {
             >
               <GlowField tone="warm" />
               <div className="relative">
-                <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clayLight mb-4">{lead.kicker}</span>
-                <h2 className="font-fraunces font-semibold text-2xl md:text-4xl leading-tight max-w-[600px] group-hover:text-clayLight transition-colors">
+                <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clayLight mb-4">{lead.kicker}</span>
+                <h2 className="font-fraunces font-normal text-2xl md:text-4xl leading-tight max-w-[600px] group-hover:text-clayLight transition-colors">
                   {lead.title}
                 </h2>
                 <p className="mt-5 text-white/75 text-lg leading-relaxed max-w-[560px]">{lead.description}</p>
@@ -125,7 +125,7 @@ const Guides = () => {
                   className="group flex flex-col h-full bg-white rounded-2xl border border-sage-light hover:border-clay/60 p-7 transition-colors"
                 >
                   <span className="text-[10px] font-semibold uppercase tracking-[0.28em] text-sage mb-3">{g.kicker}</span>
-                  <h3 className="font-fraunces font-semibold text-heading text-xl leading-snug group-hover:text-clay transition-colors">
+                  <h3 className="font-fraunces font-normal text-heading text-xl leading-snug group-hover:text-clay transition-colors">
                     {g.title}
                   </h3>
                   <p className="text-charcoal/70 text-[15px] leading-relaxed mt-3 flex-1">{g.description}</p>
@@ -141,7 +141,7 @@ const Guides = () => {
         {/* CTA */}
         <section className="bg-cream py-16 md:py-20">
           <div className="max-w-[680px] mx-auto px-5 text-center">
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               Ready to see it with your own team?
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
