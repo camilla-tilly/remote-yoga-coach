@@ -237,13 +237,13 @@ const RemoteWorkBurnout = () => {
         </section>
 
         {/* COST */}
-        <section className="bg-charcoal text-white py-16 md:py-20">
+        <section className="bg-cream py-16 md:py-20">
           <div className="max-w-[760px] mx-auto px-5">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The numbers</span>
             <h2 id="cost" className="scroll-mt-28 font-fraunces font-normal text-3xl md:text-4xl leading-tight">
               What burnout costs
             </h2>
-            <div className="mt-6 space-y-5 text-white/80 text-lg leading-relaxed">
+            <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
                 For anyone who needs to make the business case internally, the research does the arguing. Deloitte
                 puts the cost of poor mental health to UK employers at 51 billion pounds a year, around 2,646 pounds

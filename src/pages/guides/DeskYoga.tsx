@@ -322,13 +322,13 @@ const DeskYoga = () => {
         </section>
 
         {/* TEAM HABIT */}
-        <section className="bg-charcoal text-white py-16 md:py-20">
+        <section className="bg-cream py-16 md:py-20">
           <div className="max-w-[760px] mx-auto px-5">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">For teams</span>
             <h2 id="team-habit" className="scroll-mt-28 font-fraunces font-normal text-3xl md:text-4xl leading-tight">
               Making it a team habit
             </h2>
-            <div className="mt-6 space-y-5 text-white/80 text-lg leading-relaxed">
+            <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
                 Here is the honest problem with everything above: individually, people do not do it. Not because
                 they disagree, but because a stretch break requires self-initiation a dozen times a day, and busy

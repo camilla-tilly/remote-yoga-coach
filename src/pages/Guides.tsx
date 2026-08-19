@@ -98,16 +98,16 @@ const Guides = () => {
           <div className="max-w-[900px] mx-auto">
             <Link
               to={lead.to}
-              className="group block rounded-[24px] bg-charcoal text-white p-9 md:p-12 relative overflow-hidden"
+              className="group block rounded-[24px] bg-cream border border-sage-light p-9 md:p-12 relative overflow-hidden"
             >
               <GlowField tone="warm" />
               <div className="relative">
-                <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clayLight mb-4">{lead.kicker}</span>
-                <h2 className="font-fraunces font-normal text-2xl md:text-4xl leading-tight max-w-[600px] group-hover:text-clayLight transition-colors">
+                <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">{lead.kicker}</span>
+                <h2 className="font-fraunces font-normal text-2xl md:text-4xl leading-tight max-w-[600px] group-hover:text-clay transition-colors">
                   {lead.title}
                 </h2>
-                <p className="mt-5 text-white/75 text-lg leading-relaxed max-w-[560px]">{lead.description}</p>
-                <span className="mt-6 inline-flex items-center gap-2 text-clayLight font-medium text-[15px]">
+                <p className="mt-5 text-charcoal/70 text-lg leading-relaxed max-w-[560px]">{lead.description}</p>
+                <span className="mt-6 inline-flex items-center gap-2 text-clay font-medium text-[15px]">
                   Read the guide <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                 </span>
               </div>

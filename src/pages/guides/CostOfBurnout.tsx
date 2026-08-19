@@ -174,13 +174,13 @@ const CostOfBurnout = () => {
         </section>
 
         {/* ONE NUMBER */}
-        <section className="bg-charcoal text-white py-16 md:py-20">
+        <section className="bg-cream py-16 md:py-20">
           <div className="max-w-[760px] mx-auto px-5">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The clincher</span>
             <h2 id="one-number" className="scroll-mt-28 font-fraunces font-normal text-3xl md:text-4xl leading-tight">
               The one number that ends the debate
             </h2>
-            <div className="mt-6 space-y-5 text-white/80 text-lg leading-relaxed">
+            <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
                 If a room is unmoved by industry billions, bring it down to one person. Replacing an employee who
                 leaves commonly costs six to nine months of their salary once you count recruitment, onboarding, lost

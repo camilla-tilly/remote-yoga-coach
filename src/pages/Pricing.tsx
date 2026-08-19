@@ -108,15 +108,15 @@ const Pricing = () => {
         <section className="pt-14 pb-8">
           <div className="max-w-[720px] mx-auto px-5">
             <Reveal>
-              <div className="relative overflow-hidden bg-charcoal text-white rounded-2xl p-8 md:p-10">
+              <div className="relative overflow-hidden bg-cream border border-sage-light rounded-2xl p-8 md:p-10">
                 <GlowField tone="warm" />
                 <div className="relative">
-                  <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clayLight mb-4">Start here</span>
+                  <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">Start here</span>
                   <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
                     <h2 className="font-fraunces font-normal text-2xl md:text-3xl">A pilot session</h2>
-                    <span className="font-fraunces font-normal text-2xl md:text-3xl text-clayLight">{pilotPrice}</span>
+                    <span className="font-fraunces font-normal text-2xl md:text-3xl text-clay">{pilotPrice}</span>
                   </div>
-                  <p className="mt-4 text-white/80 leading-relaxed">One 30-minute live session, so your team can try it before you commit to anything:</p>
+                  <p className="mt-4 text-charcoal/75 leading-relaxed">One 30-minute live session, so your team can try it before you commit to anything:</p>
                   <ul className="mt-5 space-y-2.5">
                     {[
                       'A live 30-minute session, breathing, chair yoga or meditation, your pick',
@@ -124,13 +124,13 @@ const Pricing = () => {
                       'The recording afterwards, to share with anyone who missed it',
                       'No setup, no contract, nothing to sign',
                     ].map((item) => (
-                      <li key={item} className="flex gap-3 text-white/90 text-[15px]">
-                        <Check className="text-clayLight shrink-0 mt-0.5" size={17} strokeWidth={2.5} />
+                      <li key={item} className="flex gap-3 text-charcoal/85 text-[15px]">
+                        <Check className="text-clay shrink-0 mt-0.5" size={17} strokeWidth={2.5} />
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
-                  <p className="mt-5 text-white/70 text-sm leading-relaxed">
+                  <p className="mt-5 text-charcoal/65 text-sm leading-relaxed">
                     If you go ahead, the {pilotPrice} is credited to your first month.
                   </p>
                   <div className="mt-7">

@@ -311,13 +311,13 @@ const MindfulnessAtWork = () => {
         </section>
 
         {/* WHY APPS FAIL */}
-        <section className="bg-charcoal text-white py-16 md:py-20">
+        <section className="bg-cream py-16 md:py-20">
           <div className="max-w-[760px] mx-auto px-5">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The honest bit</span>
             <h2 id="why-apps-fail" className="scroll-mt-28 font-fraunces font-normal text-3xl md:text-4xl leading-tight">
               Why the app alone never sticks
             </h2>
-            <div className="mt-6 space-y-5 text-white/80 text-lg leading-relaxed">
+            <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
                 Most companies have already tried mindfulness once: they bought app licences. Then usage followed the
                 curve everyone who has run one of these programmes recognises. A spike of downloads in week one, a

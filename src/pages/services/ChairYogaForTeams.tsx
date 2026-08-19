@@ -239,11 +239,11 @@ const ChairYogaForTeams = () => {
         </section>
 
         {/* MEASUREMENT */}
-        <section className="bg-charcoal text-white py-20 md:py-24">
+        <section className="bg-cream py-20 md:py-24">
           <div className="max-w-[760px] mx-auto px-5">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The proof</span>
             <h2 className="font-fraunces font-normal text-3xl md:text-4xl leading-tight">You will see whether it is working</h2>
-            <p className="mt-6 text-white/80 text-lg leading-relaxed">
+            <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               Every programme comes with simple, honest reporting: how many of your team attend and how many keep coming
               back. Once it is a weekly habit you
               get a report you can take straight to your budget-holder, no guesswork about whether it earned

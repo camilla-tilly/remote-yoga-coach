@@ -145,11 +145,11 @@ const TeamWellness = () => {
         </section>
 
         {/* MEASUREMENT */}
-        <section className="bg-charcoal text-white py-20 md:py-24">
+        <section className="bg-cream py-20 md:py-24">
           <div className="max-w-[760px] mx-auto px-5">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The proof</span>
             <h2 className="font-fraunces font-normal text-3xl md:text-4xl leading-tight">You'll see whether it's working</h2>
-            <p className="mt-6 text-white/80 text-lg leading-relaxed">
+            <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               Unlike{' '}
               <Link to="/compare" className="text-clay underline underline-offset-4 hover:text-clayDark">
                 an app you can't measure
