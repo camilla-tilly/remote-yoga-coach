@@ -19,12 +19,14 @@ import buildAStrongRemoteTeam from './posts/build-a-strong-remote-team';
 import corporateWellbeingForTechTeams from './posts/corporate-wellbeing-for-tech-teams';
 import howToStartACorporateWellbeingProgramme from './posts/how-to-start-a-corporate-wellbeing-programme';
 import improveTeamMoraleRemoteTeam from './posts/improve-team-morale-remote-team';
+import meditationBreathingOrChairYogaForYourTeam from './posts/meditation-breathing-or-chair-yoga-for-your-team';
 
 export type { BlogPost, BlogLanguage, BlogContentBlock } from './blogTypes';
 
 // The cost guide leads (featured on the hub); buyer-intent posts follow, then the rest.
 export const blogPosts: BlogPost[] = [
   howMuchDoesCorporateYogaCost,
+  meditationBreathingOrChairYogaForYourTeam,
   teamWellbeingSubscriptionVsWorkshops,
   corporateMindfulnessSessionsWhatToExpect,
   runWellbeingSessionOverTeams,
