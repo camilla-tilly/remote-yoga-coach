@@ -80,7 +80,7 @@ const Guides = () => {
         {/* HERO */}
         <section className="relative overflow-hidden bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
           <GlowField tone="warm" />
-          <div className="relative max-w-[820px] mx-auto px-5 text-center">
+          <div className="relative max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <Eyebrow>Guides</Eyebrow>
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Everything you need to make the case for team wellbeing
@@ -98,7 +98,7 @@ const Guides = () => {
           <div className="max-w-[900px] mx-auto">
             <Link
               to={lead.to}
-              className="group block rounded-[24px] bg-cream border border-sage-light p-9 md:p-12 relative overflow-hidden"
+              className="group block rounded-[24px] bg-cream border border-sage-light hover:border-clay p-9 md:p-12 relative overflow-hidden"
             >
               <GlowField tone="warm" />
               <div className="relative">
@@ -140,7 +140,7 @@ const Guides = () => {
 
         {/* CTA */}
         <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[680px] mx-auto px-5 text-center">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               Ready to see it with your own team?
             </h2>

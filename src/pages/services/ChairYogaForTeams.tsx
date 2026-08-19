@@ -98,7 +98,7 @@ const ChairYogaForTeams = () => {
       <main>
         {/* HERO */}
         <section className="bg-cream-soft pt-36 pb-20 md:pt-44 md:pb-24">
-          <div className="max-w-[820px] mx-auto px-5 text-center">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-6">
               For companies and remote teams
             </span>
@@ -131,7 +131,7 @@ const ChairYogaForTeams = () => {
 
         {/* DEFINITIONS */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Quick definitions">Office yoga, desk yoga and chair yoga: what's the difference?</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -163,7 +163,7 @@ const ChairYogaForTeams = () => {
 
         {/* WHY CHAIR YOGA */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Why chair yoga">Movement a whole workforce will keep</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -189,11 +189,11 @@ const ChairYogaForTeams = () => {
 
         {/* WHAT'S INCLUDED */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[820px] mx-auto px-5">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="What a session includes">One weekly slot, run for you</SectionHeading>
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">
               {included.map(([title, text]) => (
-                <li key={title} className="flex gap-4 bg-white rounded-lg border border-sage-light p-5">
+                <li key={title} className="flex gap-4 bg-card rounded-lg border border-sage-light p-5">
                   <span className="shrink-0 mt-1 w-6 h-6 rounded-full bg-clay/10 flex items-center justify-center">
                     <Check className="text-clay" size={15} strokeWidth={2.5} />
                   </span>
@@ -209,7 +209,7 @@ const ChairYogaForTeams = () => {
 
         {/* WHY IT STICKS */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Why it sticks">Live and scheduled beats an app or a handout</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -240,7 +240,7 @@ const ChairYogaForTeams = () => {
 
         {/* MEASUREMENT */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The proof</span>
             <h2 className="font-fraunces font-normal text-3xl md:text-4xl leading-tight">You will see whether it is working</h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
@@ -254,7 +254,7 @@ const ChairYogaForTeams = () => {
 
         {/* WHO IT'S FOR */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Who it's for">Built for distributed teams</SectionHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               People and culture leaders, team leads and founders at remote-first and hybrid companies who want a
@@ -274,16 +274,40 @@ const ChairYogaForTeams = () => {
 
         {/* FAQ */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">FAQ</span>
             <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">Common questions</h2>
             <GuideFAQ items={faqItems} />
           </div>
         </section>
 
+        {/* RELATED READING */}
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+            <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">Related reading</span>
+            <ul className="space-y-2 text-lg leading-relaxed">
+              <li>
+                <Link to="/guides/desk-yoga" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  Desk yoga and chair yoga at work
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog/chair-yoga-at-your-desk" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  Chair yoga at your desk: 8 poses
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog/tech-neck-exercises-desk" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  Tech neck: gentle exercises
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="bg-cream-soft-b py-24 md:py-28">
-          <div className="max-w-[680px] mx-auto px-5 text-center">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">
               Try chair yoga with your team
             </h2>

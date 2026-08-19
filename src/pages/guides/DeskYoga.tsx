@@ -100,7 +100,7 @@ const DeskYoga = () => {
       <main>
         {/* HERO */}
         <section className="bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
-          <div className="max-w-[820px] mx-auto px-5">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideEyebrow>Guide</GuideEyebrow>
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Office yoga, desk yoga and chair yoga at work: the complete guide
@@ -124,8 +124,8 @@ const DeskYoga = () => {
         </section>
 
         {/* WHAT IT IS */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="what-it-is" eyebrow="The basics">What desk yoga and chair yoga are</GuideHeading>
             <GuideProse>
               <p>
@@ -151,8 +151,8 @@ const DeskYoga = () => {
         </section>
 
         {/* OFFICE YOGA DEFINED */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="office-yoga" eyebrow="The terms">Office yoga and workplace yoga, defined</GuideHeading>
             <GuideProse>
               <p>
@@ -180,8 +180,8 @@ const DeskYoga = () => {
         </section>
 
         {/* WHY BODIES ACHE */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream border-t border-sage-light py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="why-bodies-ache" eyebrow="The problem">Why office bodies ache</GuideHeading>
             <GuideProse>
               <p>
@@ -204,8 +204,8 @@ const DeskYoga = () => {
         </section>
 
         {/* MOVEMENTS */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="movements" eyebrow="The toolkit">The movements, area by area</GuideHeading>
             <GuideProse>
               <p>
@@ -258,8 +258,8 @@ const DeskYoga = () => {
         </section>
 
         {/* FIVE MINUTES */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="five-minutes" eyebrow="Between calls">The five-minute routine between calls</GuideHeading>
             <GuideProse>
               <p>
@@ -290,8 +290,8 @@ const DeskYoga = () => {
         </section>
 
         {/* BREATHING */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="breathing" eyebrow="The multiplier">Add the breath and it becomes yoga</GuideHeading>
             <GuideProse>
               <p>
@@ -322,8 +322,8 @@ const DeskYoga = () => {
         </section>
 
         {/* TEAM HABIT */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">For teams</span>
             <h2 id="team-habit" className="scroll-mt-28 font-fraunces font-normal text-3xl md:text-4xl leading-tight">
               Making it a team habit
@@ -364,8 +364,8 @@ const DeskYoga = () => {
         </section>
 
         {/* FAQ */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream border-t border-sage-light py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="faq" eyebrow="FAQ">Frequently asked questions</GuideHeading>
             <GuideFAQ items={faqItems} />
           </div>

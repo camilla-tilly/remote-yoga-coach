@@ -101,7 +101,7 @@ const MindfulnessAtWork = () => {
       <main>
         {/* HERO */}
         <section className="bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
-          <div className="max-w-[820px] mx-auto px-5">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideEyebrow>Guide</GuideEyebrow>
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Mindfulness at work: the complete guide for remote and hybrid teams
@@ -124,8 +124,8 @@ const MindfulnessAtWork = () => {
         </section>
 
         {/* WHAT IT IS */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="what-it-is" eyebrow="The basics">What mindfulness at work actually means</GuideHeading>
             <GuideProse>
               <p>
@@ -151,8 +151,8 @@ const MindfulnessAtWork = () => {
         </section>
 
         {/* EVIDENCE */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="evidence" eyebrow="The research">What the evidence says</GuideHeading>
             <GuideProse>
               <p>
@@ -195,8 +195,8 @@ const MindfulnessAtWork = () => {
         </section>
 
         {/* MEDITATION AT WORK */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="meditation-at-work" eyebrow="Practice">Meditation at work: five ways to start</GuideHeading>
             <GuideProse>
               <p>
@@ -244,8 +244,8 @@ const MindfulnessAtWork = () => {
         </section>
 
         {/* FOCUS */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="focus" eyebrow="Attention">Mindfulness for focus at work</GuideHeading>
             <GuideProse>
               <p>
@@ -272,8 +272,8 @@ const MindfulnessAtWork = () => {
         </section>
 
         {/* TEAM EXERCISES */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="team-exercises" eyebrow="Together">Mindfulness exercises for teams</GuideHeading>
             <GuideProse>
               <p>
@@ -311,8 +311,8 @@ const MindfulnessAtWork = () => {
         </section>
 
         {/* WHY APPS FAIL */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The honest bit</span>
             <h2 id="why-apps-fail" className="scroll-mt-28 font-fraunces font-normal text-3xl md:text-4xl leading-tight">
               Why the app alone never sticks
@@ -345,8 +345,8 @@ const MindfulnessAtWork = () => {
         </section>
 
         {/* REMOTE TEAMS */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="remote-teams" eyebrow="For HR and team leads">Bringing mindfulness to a remote team</GuideHeading>
             <GuideProse>
               <p>
@@ -395,8 +395,8 @@ const MindfulnessAtWork = () => {
         </section>
 
         {/* FAQ */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="faq" eyebrow="FAQ">Frequently asked questions</GuideHeading>
             <GuideFAQ items={faqItems} />
           </div>

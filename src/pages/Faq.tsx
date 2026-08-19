@@ -157,7 +157,7 @@ const Faq = () => (
 
     <main>
       <section className="bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
-        <div className="max-w-[760px] mx-auto px-5 text-center">
+        <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8 text-center">
           <GuideEyebrow>FAQ</GuideEyebrow>
           <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
             Frequently asked questions
@@ -170,7 +170,7 @@ const Faq = () => (
       </section>
 
       <section className="py-16 md:py-20">
-        <div className="max-w-[760px] mx-auto px-5 space-y-14">
+        <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8 space-y-14">
           {groups.map((g) => (
             <div key={g.heading}>
               <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">{g.heading}</h2>

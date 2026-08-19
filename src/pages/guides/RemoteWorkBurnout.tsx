@@ -100,7 +100,7 @@ const RemoteWorkBurnout = () => {
       <main>
         {/* HERO */}
         <section className="bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
-          <div className="max-w-[820px] mx-auto px-5">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideEyebrow>Guide</GuideEyebrow>
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Remote work burnout: signs, causes and prevention for distributed teams
@@ -123,8 +123,8 @@ const RemoteWorkBurnout = () => {
         </section>
 
         {/* WHAT IT IS */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="what-burnout-is" eyebrow="Definition">What burnout is, and what it is not</GuideHeading>
             <GuideProse>
               <p>
@@ -149,8 +149,8 @@ const RemoteWorkBurnout = () => {
         </section>
 
         {/* WHY REMOTE */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="why-remote" eyebrow="The conditions">Why remote teams are at higher risk</GuideHeading>
             <GuideProse>
               <p>
@@ -189,8 +189,8 @@ const RemoteWorkBurnout = () => {
         </section>
 
         {/* SIGNS */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="signs" eyebrow="Early warning">The signs, including the ones you can spot on Slack</GuideHeading>
             <GuideProse>
               <p>
@@ -237,8 +237,8 @@ const RemoteWorkBurnout = () => {
         </section>
 
         {/* COST */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The numbers</span>
             <h2 id="cost" className="scroll-mt-28 font-fraunces font-normal text-3xl md:text-4xl leading-tight">
               What burnout costs
@@ -262,8 +262,8 @@ const RemoteWorkBurnout = () => {
         </section>
 
         {/* WHAT FAILS */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="what-fails" eyebrow="Honest audit">What does not work</GuideHeading>
             <GuideProse>
               <p>
@@ -295,8 +295,8 @@ const RemoteWorkBurnout = () => {
         </section>
 
         {/* PREVENTION */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="prevention" eyebrow="What works">Prevention that holds up</GuideHeading>
             <GuideProse>
               <p>
@@ -347,8 +347,8 @@ const RemoteWorkBurnout = () => {
         </section>
 
         {/* RECOVERY */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="recovery" eyebrow="If it is already here">If someone is already burning out</GuideHeading>
             <GuideProse>
               <p>
@@ -388,8 +388,8 @@ const RemoteWorkBurnout = () => {
         </section>
 
         {/* FAQ */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="faq" eyebrow="FAQ">Frequently asked questions</GuideHeading>
             <GuideFAQ items={faqItems} />
           </div>

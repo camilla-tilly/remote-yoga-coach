@@ -100,7 +100,7 @@ const CostOfBurnout = () => {
       <main>
         {/* HERO */}
         <section className="bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
-          <div className="max-w-[820px] mx-auto px-5">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideEyebrow>Guide for HR and leaders</GuideEyebrow>
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               What employee burnout costs, and the ROI of fixing it
@@ -123,8 +123,8 @@ const CostOfBurnout = () => {
         </section>
 
         {/* HEADLINE */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="headline" eyebrow="The number">The headline number</GuideHeading>
             <GuideProse>
               <p>
@@ -146,8 +146,8 @@ const CostOfBurnout = () => {
         </section>
 
         {/* INVISIBLE */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="invisible" eyebrow="Where it hides">Why most of the cost is invisible</GuideHeading>
             <GuideProse>
               <p>
@@ -174,8 +174,8 @@ const CostOfBurnout = () => {
         </section>
 
         {/* ONE NUMBER */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream border-t border-sage-light py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The clincher</span>
             <h2 id="one-number" className="scroll-mt-28 font-fraunces font-normal text-3xl md:text-4xl leading-tight">
               The one number that ends the debate
@@ -198,8 +198,8 @@ const CostOfBurnout = () => {
         </section>
 
         {/* RETURN */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="return" eyebrow="The return">What the return actually looks like</GuideHeading>
             <GuideProse>
               <p>
@@ -225,8 +225,8 @@ const CostOfBurnout = () => {
         </section>
 
         {/* PREVENTION */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="prevention" eyebrow="Efficiency">Why prevention is the cheap option</GuideHeading>
             <GuideProse>
               <p>
@@ -250,8 +250,8 @@ const CostOfBurnout = () => {
         </section>
 
         {/* BUSINESS CASE */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="business-case" eyebrow="Make the case">Building the business case</GuideHeading>
             <GuideProse>
               <p>
@@ -302,8 +302,8 @@ const CostOfBurnout = () => {
         </section>
 
         {/* FAQ */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="faq" eyebrow="FAQ">Frequently asked questions</GuideHeading>
             <GuideFAQ items={faqItems} />
           </div>

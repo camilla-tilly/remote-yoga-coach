@@ -98,7 +98,7 @@ const CorporateWellbeingRemoteTeams = () => {
         {/* HERO */}
         <section className="relative overflow-hidden bg-cream-soft pt-36 pb-20 md:pt-44 md:pb-24">
           <GlowField tone="warm" />
-          <div className="relative max-w-[820px] mx-auto px-5 text-center">
+          <div className="relative max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <Eyebrow>Corporate wellbeing, distributed teams</Eyebrow>
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Wellbeing for remote and hybrid teams that reaches everyone on screen.
@@ -126,7 +126,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* THE PROBLEM */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="The problem">Distributed teams are the hardest to reach, and the most at risk</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -160,7 +160,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* WHAT'S INCLUDED */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[900px] mx-auto px-5">
+          <div className="max-w-[900px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="What you get">A wellbeing subscription built for distributed teams</SectionHeading>
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
               {included.map(([title, text], i) => (
@@ -182,7 +182,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* SUBSCRIPTION VS ONE-OFF */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Why a subscription">A habit, not a one-off event</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -208,7 +208,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* HYBRID TEAMS */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Hybrid teams">One shared moment to keep a hybrid team connected</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -238,7 +238,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* WHO IT'S FOR */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Who it's for">People leaders at remote-first companies</SectionHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               HR and people leaders, team leads and founders at remote-first and hybrid companies, tech, consulting,
@@ -262,7 +262,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* FAQ */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="FAQ">Common questions</SectionHeading>
             <GuideFAQ items={faqItems} />
           </div>
@@ -271,7 +271,7 @@ const CorporateWellbeingRemoteTeams = () => {
         {/* CTA */}
         <section className="relative overflow-hidden bg-cream-soft-b py-24 md:py-28">
           <GlowField tone="sage" />
-          <div className="relative max-w-[680px] mx-auto px-5 text-center">
+          <div className="relative max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">
               Give your distributed team a habit that sticks
             </h2>

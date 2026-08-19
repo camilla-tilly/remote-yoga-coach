@@ -93,7 +93,7 @@ const Pricing = () => {
         {/* HERO */}
         <section className="relative overflow-hidden bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
           <GlowField tone="warm" />
-          <div className="relative max-w-[760px] mx-auto px-5 text-center">
+          <div className="relative max-w-[760px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <Eyebrow>Pricing</Eyebrow>
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Simple, transparent pricing.
@@ -106,7 +106,7 @@ const Pricing = () => {
 
         {/* THE PILOT */}
         <section className="pt-14 pb-8">
-          <div className="max-w-[720px] mx-auto px-5">
+          <div className="max-w-[720px] mx-auto px-5 sm:px-6 md:px-8">
             <Reveal>
               <div className="relative overflow-hidden bg-cream border border-sage-light rounded-2xl p-8 md:p-10">
                 <GlowField tone="warm" />
@@ -148,7 +148,7 @@ const Pricing = () => {
 
         {/* SUBSCRIPTIONS */}
         <section className="py-16 md:py-20">
-          <div className="max-w-[1040px] mx-auto px-5">
+          <div className="max-w-[1040px] mx-auto px-5 sm:px-6 md:px-8">
             <div className="text-center max-w-[620px] mx-auto">
               <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">Monthly subscriptions</h2>
               <p className="mt-4 text-charcoal/70 leading-relaxed">
@@ -202,7 +202,7 @@ const Pricing = () => {
 
         {/* ROI CONTEXT */}
         <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>Put it in context</Eyebrow>
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               Cheaper than the problem it prevents
@@ -223,7 +223,7 @@ const Pricing = () => {
 
         {/* INCLUDED EVERYWHERE */}
         <section className="py-16 md:py-20">
-          <div className="max-w-[720px] mx-auto px-5">
+          <div className="max-w-[720px] mx-auto px-5 sm:px-6 md:px-8">
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">What's included in every tier</h2>
             <ul className="mt-6 space-y-3">
               {[
@@ -243,7 +243,7 @@ const Pricing = () => {
 
         {/* FAQ */}
         <section className="bg-cream py-16 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight text-center">Questions HR asks</h2>
             <dl className="mt-10 space-y-8">
               {faqs.map(([q, a]) => (
@@ -259,7 +259,7 @@ const Pricing = () => {
         {/* CTA */}
         <section className="relative overflow-hidden bg-cream-soft-b py-24 md:py-28">
           <GlowField tone="sage" />
-          <div className="relative max-w-[680px] mx-auto px-5 text-center">
+          <div className="relative max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">See it before you commit</h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               Start with a single pilot session: one live class, credited to your first month if you continue.

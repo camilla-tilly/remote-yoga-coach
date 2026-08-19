@@ -55,7 +55,7 @@ const Demo = () => {
 
       <main>
         <section className="bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
-          <div className="max-w-[720px] mx-auto px-5 text-center">
+          <div className="max-w-[720px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Get in touch
             </h1>
@@ -67,7 +67,7 @@ const Demo = () => {
         </section>
 
         <section className="py-16 md:py-20">
-          <div className="max-w-[640px] mx-auto px-5">
+          <div className="max-w-[640px] mx-auto px-5 sm:px-6 md:px-8">
             {submitted ? (
               <div className="bg-cream border border-sage-light rounded-2xl p-10 text-center">
                 <div className="w-14 h-14 rounded-full bg-sage/20 flex items-center justify-center mx-auto">
