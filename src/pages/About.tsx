@@ -86,8 +86,8 @@ const About = () => {
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
               I have 500 hours of yoga teacher training in movement, breathwork and meditation, plus a Certificate III
               in Fitness from Australia covering anatomy and safe movement for all levels. That combination means I
-              understand how bodies actually work, so I can keep every session genuinely accessible, adaptable to any
-              body at a desk, no experience or equipment needed. My meditation and breathing work also draws on training
+              understand how bodies actually work, so I can keep every session genuinely accessible, no experience or
+              equipment needed. My meditation and breathing work also draws on training
               in the Hindu yogic tradition, in mantra, breathing techniques and meditation, so those parts of a
               session stay grounded in the tradition they come from.
             </p>
@@ -137,7 +137,7 @@ const About = () => {
             </p>
             <div className="mt-9">
               <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-6">
                   Book a pilot
                 </Button>
               </Link>

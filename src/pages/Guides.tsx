@@ -107,7 +107,7 @@ const Guides = () => {
                   {lead.title}
                 </h2>
                 <p className="mt-5 text-white/75 text-lg leading-relaxed max-w-[560px]">{lead.description}</p>
-                <span className="mt-6 inline-flex items-center gap-2 text-clayLight font-semibold uppercase text-sm tracking-wider">
+                <span className="mt-6 inline-flex items-center gap-2 text-clayLight font-medium text-[15px]">
                   Read the guide <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                 </span>
               </div>
@@ -150,7 +150,7 @@ const Guides = () => {
             <div className="mt-8">
               <Link
                 to="/demo"
-                className="inline-flex items-center gap-2 bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-4 transition-colors"
+                className="inline-flex items-center gap-2 bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-4 transition-colors"
               >
                 Book a pilot <ArrowRight size={16} />
               </Link>

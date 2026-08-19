@@ -52,7 +52,7 @@ const NotFound = () => {
             Den här sidan finns inte längre eller har flyttats. Kanske hittar du det du letar efter bland mina tjänster nedan, eller så går du tillbaka till startsidan.
           </p>
           <Button
-            className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-4 px-10 rounded-full uppercase tracking-[0.22em] text-sm font-semibold shadow-card"
+            className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-4 px-10 rounded-full uppercase tracking-[0.22em] text-sm font-semibold"
             asChild
           >
             <Link to="/">Till startsidan</Link>

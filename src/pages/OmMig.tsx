@@ -101,7 +101,7 @@ const OmMig = () => {
                     aria-hidden="true"
                     className="absolute -inset-3 md:-inset-4 rounded-[1.75rem] bg-dalashala-meadow/25 -z-10 translate-x-2 translate-y-2 md:translate-x-3 md:translate-y-3"
                   />
-                  <div className="overflow-hidden rounded-2xl shadow-card border border-dalashala-meadow/40 aspect-[4/5]">
+                  <div className="overflow-hidden rounded-2xl border border-dalashala-meadow/40 aspect-[4/5]">
                     <img
                       src="/lovable-uploads/c1e6d7f9-3ac6-42af-ac83-3058516ff2ef.jpg"
                       alt="Camilla i warrior pose utomhus"
@@ -189,7 +189,7 @@ const OmMig = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/#services"
-                className="font-inter text-sm font-semibold uppercase tracking-[0.22em] px-10 py-4 rounded-full bg-white text-dalashala-earth hover:-translate-y-0.5 transition-all shadow-card"
+                className="font-inter text-sm font-semibold uppercase tracking-[0.22em] px-10 py-4 rounded-full bg-white text-dalashala-earth hover:-translate-y-0.5 transition-all"
               >
                 Se alla tjänster
               </Link>

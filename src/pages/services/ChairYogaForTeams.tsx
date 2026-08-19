@@ -116,12 +116,12 @@ const ChairYogaForTeams = () => {
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-6">
                   Book a pilot
                 </Button>
               </Link>
               <Link to="/pricing">
-                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-medium text-[15px] rounded-full px-8 py-6">
                   See pricing
                 </Button>
               </Link>
@@ -258,8 +258,8 @@ const ChairYogaForTeams = () => {
             <SectionHeading eyebrow="Who it's for">Built for distributed teams</SectionHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               People and culture leaders, team leads and founders at remote-first and hybrid companies who want a
-              wellbeing habit the whole team actually keeps, not another perk that lands flat. Teams of roughly 10 to
-              100 across tech, consulting, sustainability and distributed organisations.
+              wellbeing habit the whole team actually keeps, not another perk that lands flat. Teams across tech,
+              consulting, sustainability and distributed organisations.
             </p>
             <p className="mt-5 text-charcoal/60 text-base leading-relaxed">
               Sessions run in English, online, across UK and European time zones, with Australian hours for part of
@@ -293,12 +293,12 @@ const ChairYogaForTeams = () => {
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-6">
                   Book a pilot
                 </Button>
               </Link>
               <Link to="/pricing">
-                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-medium text-[15px] rounded-full px-8 py-6">
                   See pricing
                 </Button>
               </Link>

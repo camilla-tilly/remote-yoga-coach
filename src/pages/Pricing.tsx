@@ -135,7 +135,7 @@ const Pricing = () => {
                   </p>
                   <div className="mt-7">
                     <Link to="/demo">
-                      <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                      <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-6">
                         Book a pilot session
                       </Button>
                     </Link>
@@ -161,7 +161,7 @@ const Pricing = () => {
                 <Reveal key={t.name} delay={i * 80} className="h-full">
                   <div
                     className={`rounded-2xl border p-7 flex flex-col h-full ${
-                      t.highlight ? 'border-clay bg-cream shadow-card relative' : 'border-sage-light bg-white'
+                      t.highlight ? 'border-clay bg-cream relative' : 'border-sage-light bg-white'
                     }`}
                   >
                     {t.highlight && (
@@ -182,7 +182,7 @@ const Pricing = () => {
                     </ul>
                     <div className="mt-7">
                       <Link to="/demo">
-                        <Button className={`w-full font-semibold uppercase text-sm tracking-wider rounded-md py-6 ${
+                        <Button className={`w-full font-medium text-[15px] rounded-full py-6 ${
                           t.highlight ? 'bg-clay hover:bg-clayDark text-white' : 'bg-white border border-sage text-charcoal hover:bg-sage-light/40'
                         }`}>
                           {t.name === 'Enterprise' ? 'Talk it through' : 'Book a pilot'}
@@ -214,7 +214,7 @@ const Pricing = () => {
               up for you.
             </p>
             <p className="mt-6">
-              <Link to="/guides/cost-of-employee-burnout" className="inline-flex items-center gap-1.5 text-clay hover:text-clayDark font-semibold uppercase text-sm tracking-wider">
+              <Link to="/guides/cost-of-employee-burnout" className="inline-flex items-center gap-1.5 text-clay hover:text-clayDark font-medium text-[15px]">
                 What employee burnout costs <ArrowRight size={15} />
               </Link>
             </p>
@@ -266,7 +266,7 @@ const Pricing = () => {
             </p>
             <div className="mt-9">
               <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-6">
                   Book a pilot
                 </Button>
               </Link>

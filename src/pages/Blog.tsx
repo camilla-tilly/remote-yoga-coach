@@ -102,7 +102,7 @@ const Blog = () => {
           <section className="px-4 mb-20">
             <Link
               to={`/blog/${leadPost.slug}`}
-              className="group block max-w-5xl mx-auto relative overflow-hidden rounded-[28px] bg-cream border border-sage-light hover:border-clay/60 shadow-card hover:shadow-card-hover transition-all duration-500"
+              className="group block max-w-5xl mx-auto relative overflow-hidden rounded-[28px] bg-cream border border-sage-light hover:border-clay/60 hover:shadow-card-hover transition-all duration-500"
             >
               <div className="p-10 md:p-14 lg:p-16 flex flex-col justify-center">
                 <div className="flex items-center gap-4 mb-6">

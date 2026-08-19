@@ -223,7 +223,7 @@ const ServicePageLayout = ({
               {heroSubtitle}
             </p>
             <Button
-              className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-[1.125rem] px-12 rounded-full uppercase tracking-[0.22em] text-sm font-semibold shadow-card"
+              className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-[1.125rem] px-12 rounded-full uppercase tracking-[0.22em] text-sm font-semibold"
               asChild
             >
               <a href={bookingHref || 'mailto:hello.yogawithcamilla@gmail.com'} target={bookingHref ? '_blank' : undefined} rel={bookingHref ? 'noopener noreferrer' : undefined}>
@@ -242,7 +242,7 @@ const ServicePageLayout = ({
           />
         ) : heroImage && (
           <section className="px-4 mb-20 mt-4">
-            <div className={`relative max-w-5xl mx-auto overflow-hidden rounded-[28px] shadow-card ring-1 ring-dalashala-meadow/50 ${heroImageAspect || 'aspect-[16/10] md:aspect-[21/9]'}`}>
+            <div className={`relative max-w-5xl mx-auto overflow-hidden rounded-[28px] ring-1 ring-dalashala-meadow/50 ${heroImageAspect || 'aspect-[16/10] md:aspect-[21/9]'}`}>
               <img
                 src={heroImage}
                 alt={heroImageAlt || heroHeading}
@@ -702,7 +702,7 @@ const HeroCarousel = ({ images, aspect, fallbackAlt }: HeroCarouselProps) => {
 
   return (
     <section className="px-4 mb-20 mt-4">
-      <div className={`relative max-w-5xl mx-auto overflow-hidden rounded-[28px] shadow-card ring-1 ring-dalashala-meadow/50 ${aspect}`}>
+      <div className={`relative max-w-5xl mx-auto overflow-hidden rounded-[28px] ring-1 ring-dalashala-meadow/50 ${aspect}`}>
         {images.map((img, i) => (
           <img
             key={i}

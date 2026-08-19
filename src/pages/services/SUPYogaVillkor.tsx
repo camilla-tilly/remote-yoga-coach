@@ -75,7 +75,7 @@ const SUPYogaVillkor = () => {
         </section>
 
         {/* T&C Content */}
-        <div className="max-w-2xl mx-auto bg-white rounded-2xl border border-dalashala-meadow/60 shadow-soft px-6 py-10 md:px-12 md:py-12 font-inter text-dalashala-earth">
+        <div className="max-w-2xl mx-auto bg-white rounded-2xl border border-dalashala-meadow/60 px-6 py-10 md:px-12 md:py-12 font-inter text-dalashala-earth">
 
             {lang === 'sv' ? (
               <>

@@ -88,7 +88,7 @@ const Services = () => {
           </p>
           <a
             href="#contact"
-            className="inline-block font-inter text-sm font-semibold uppercase tracking-[0.22em] bg-dalashala-earth text-white px-12 py-[1.125rem] rounded-full hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 shadow-card"
+            className="inline-block font-inter text-sm font-semibold uppercase tracking-[0.22em] bg-dalashala-earth text-white px-12 py-[1.125rem] rounded-full hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300"
           >
             Kontakta mig
           </a>

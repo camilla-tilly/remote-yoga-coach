@@ -112,7 +112,7 @@ const Demo = () => {
                   <textarea id="message" name="message" required rows={5} value={form.message} onChange={set('message')} className={inputClass} placeholder="A line about your team, or your question." />
                 </div>
 
-                <Button type="submit" className="w-full bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md py-6">
+                <Button type="submit" className="w-full bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full py-6">
                   Get in touch
                 </Button>
               </form>

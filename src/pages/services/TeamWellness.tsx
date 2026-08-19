@@ -64,12 +64,12 @@ const TeamWellness = () => {
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-6">
                   Book a pilot
                 </Button>
               </Link>
               <Link to="/pricing">
-                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-medium text-[15px] rounded-full px-8 py-6">
                   See pricing
                 </Button>
               </Link>
@@ -167,7 +167,7 @@ const TeamWellness = () => {
             <SectionHeading eyebrow="Who it's for">A wellbeing habit people actually keep</SectionHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               People and culture leaders, team leads and founders at remote-first and hybrid companies, tech,
-              consulting, sustainability and distributed teams of roughly 10–100, who want a wellbeing habit that
+              consulting, sustainability and distributed teams that want a wellbeing habit that
               people actually keep.
             </p>
             <p className="mt-5 text-charcoal/60 text-base leading-relaxed">
@@ -195,7 +195,7 @@ const TeamWellness = () => {
             </p>
             <div className="mt-9">
               <Link to="/demo">
-                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-medium text-[15px] rounded-full px-8 py-6">
                   Ask about a one-off
                 </Button>
               </Link>
@@ -237,7 +237,7 @@ const TeamWellness = () => {
             </p>
             <div className="mt-9">
               <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-6">
                   Book a pilot
                 </Button>
               </Link>
