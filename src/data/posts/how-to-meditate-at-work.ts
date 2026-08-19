@@ -94,7 +94,7 @@ const post: BlogPost = {
       type: "cta",
       text: "Want to see how a live, guided weekly meditation lands with your team? Try a session and feel the difference for yourself.",
       ctaHref: "/demo",
-      ctaLabel: "Book a taster session"
+      ctaLabel: "Book a pilot session"
     },
     {
       type: "faq",

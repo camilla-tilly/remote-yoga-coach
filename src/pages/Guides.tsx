@@ -145,14 +145,14 @@ const Guides = () => {
               Ready to see it with your own team?
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-              Every guide points the same way: a live weekly habit, measured honestly. Start with a single taster session.
+              Every guide points the same way: a live weekly habit, measured honestly. Start with a single pilot session.
             </p>
             <div className="mt-8">
               <Link
                 to="/demo"
                 className="inline-flex items-center gap-2 bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-4 transition-colors"
               >
-                Book a taster <ArrowRight size={16} />
+                Book a pilot <ArrowRight size={16} />
               </Link>
             </div>
           </div>

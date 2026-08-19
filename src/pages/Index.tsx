@@ -68,10 +68,10 @@ const sessions = [
 ];
 
 const steps = [
-  ['01', 'A 20-minute call', 'Team size, time zones, what people are actually complaining about. That is all I need.'],
-  ['02', 'A taster session', 'One session, one calendar link, paid as a one-off. You see who joins and how they react before you commit to anything.'],
+  ['01', 'A 20-minute call', 'Time zones, and what people are actually complaining about. That is all I need.'],
+  ['02', 'A pilot session', 'One session, one calendar link, paid as a one-off. You see who joins and how they react before you commit to anything.'],
   ['03', 'A weekly slot', 'Same time every week, recurring invite, gentle reminder the morning of. Habits need a fixed hour.'],
-  ['04', 'A number you can forward', 'Monthly attendance and a short pulse survey. Something concrete for the budget conversation.'],
+  ['04', 'A number you can forward', 'Monthly attendance you can actually see. Something concrete for the budget conversation.'],
 ];
 
 // Real client quotes, verbatim, first names only. Card layout with varied spans/sizes.
@@ -85,9 +85,9 @@ const reviews: Array<{ quote: string; name: string; span: number; size: number; 
 ];
 
 const tiers = [
-  { name: 'Starter', price: '2,990 kr', per: '/mo', body: 'Two live sessions a month. Any team size, quarterly reporting.', highlight: false },
-  { name: 'Weekly', price: '4,990 kr', per: '/mo', body: 'One live session every week. Any team size, quarterly reporting.', highlight: true },
-  { name: 'Enterprise', price: 'from 8,900 kr', per: '/mo', body: 'Two or more a week, or across time zones. Any team size.', highlight: false },
+  { name: 'Starter', price: '2,990 kr', per: '/mo', body: 'Two live sessions a month, with quarterly reporting.', highlight: false },
+  { name: 'Weekly', price: '4,990 kr', per: '/mo', body: 'One live session every week, with quarterly reporting.', highlight: true },
+  { name: 'Enterprise', price: 'from 8,900 kr', per: '/mo', body: 'Two or more a week, or across time zones.', highlight: false },
 ];
 
 const eyebrow: React.CSSProperties = {
@@ -155,14 +155,12 @@ const Index = () => {
               Live breathing, meditation and chair yoga that fits inside the working day. Office, remote or hybrid. No mats, no changing, no awkward silence.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 34 }}>
-              <Link className="ryc-btn-primary" to="/demo" style={{ display: 'inline-flex', alignItems: 'center', height: 54, padding: '0 28px', borderRadius: 999, background: c.terracotta, color: c.onDark, fontWeight: 600, fontSize: 16 }}>Book a taster session</Link>
+              <Link className="ryc-btn-primary" to="/demo" style={{ display: 'inline-flex', alignItems: 'center', height: 54, padding: '0 28px', borderRadius: 999, background: c.terracotta, color: c.onDark, fontWeight: 600, fontSize: 16 }}>Book a pilot session</Link>
               <a className="ryc-btn-outline" href="#sessions" style={{ display: 'inline-flex', alignItems: 'center', height: 54, padding: '0 26px', borderRadius: 999, border: `1px solid oklch(0.84 0.02 76)`, color: c.text, fontSize: 16 }}>See the sessions</a>
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 26, marginTop: 34, fontSize: 14.5, color: c.text3 }}>
               <span>No app to install</span>
-              <span>Runs in your calendar</span>
-              <span>Cancel any month</span>
-            </div>
+              <span>Runs in your calendar</span>            </div>
           </div>
           <div style={{ position: 'relative' }}>
             <div className="ryc-hero-img" style={{ height: 520, borderRadius: '260px 260px 18px 18px', overflow: 'hidden', border: `1px solid ${c.rule}`, background: 'oklch(0.94 0.018 76)' }}>
@@ -227,11 +225,9 @@ const Index = () => {
             <div style={{ ...eyebrow, marginBottom: 22 }}>A real person, live, every week</div>
             <h2 style={{ ...h2Style, fontSize: 'clamp(30px, 3.4vw, 46px)', lineHeight: 1.06, maxWidth: '20ch' }}>I&rsquo;m Camilla. I&rsquo;ve sat in the meetings too.</h2>
             <div style={{ display: 'grid', gap: 18, marginTop: 26, maxWidth: '54ch' }}>
-              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>Before I taught full time I worked in a 10,000-person multinational, a startup, a consultancy and government. I know what a Thursday afternoon feels like. That is who I build these sessions for, not for people with an hour and a spare room.</p>
+              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>Before I taught full time I worked in a large multinational, a startup, a consultancy and government. I know what a Thursday afternoon feels like. That is who I build these sessions for, not for people with an hour and a spare room.</p>
               <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>So the Weekly Reset is deliberately unimpressive. Done in a chair, in work clothes, camera off if you like. Nobody has to be fit, flexible, or any good at it. It is a habit, not a practice, and habits only work if they are easy to keep.</p>
-              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>I am a 500-hour certified yoga teacher with a Certificate III in Fitness covering anatomy and safe movement, so I can adapt anything to any body at a desk. The breathing and meditation come from training in the Hindu yogic tradition, and I teach them as what they are rather than as a productivity hack.</p>
-              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>One coach, every week, learning your team&rsquo;s names. That is the whole product.</p>
-            </div>
+              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>I am a 500-hour certified yoga teacher with a Certificate III in Fitness covering anatomy and safe movement. The breathing and meditation come from training in the Hindu yogic tradition, and I teach them as what they are rather than as a productivity hack.</p>            </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 30 }}>
               {['500 hours of yoga training', 'Movement, breathing and meditation', 'Live on Teams and Zoom', 'UK, EU and AU hours'].map((p) => (
                 <span key={p} style={{ fontFamily: mono, fontSize: 12, color: c.text2, border: `1px solid oklch(0.86 0.02 76)`, borderRadius: 999, padding: '9px 16px', whiteSpace: 'nowrap' }}>{p}</span>
@@ -248,7 +244,7 @@ const Index = () => {
       <section id="proof" className="ryc-pad" style={{ maxWidth: 1200, margin: '0 auto', padding: '96px 40px 0' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 0.8fr)', gap: 60, alignItems: 'end', borderTop: `1px solid ${c.rule}`, paddingTop: 28, marginBottom: 44 }}>
           <h2 style={{ ...h2Style, fontSize: 'clamp(30px, 3.6vw, 46px)', lineHeight: 1.05, maxWidth: '24ch' }}>What people say about practising with me</h2>
-          <p style={{ fontSize: 16.5, lineHeight: 1.6, color: 'oklch(0.45 0.02 60)', margin: 0, maxWidth: '38ch' }}>Typed into the chat window in the minutes after a live session. Six of them, short, unedited, and every one from someone who had just finished practising. This is the whole list.</p>
+          <p style={{ fontSize: 16.5, lineHeight: 1.6, color: 'oklch(0.45 0.02 60)', margin: 0, maxWidth: '38ch' }}>A few unedited comments from people I have taught, first names only, and not all of them from corporate sessions.</p>
         </div>
         <div className="ryc-proof-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 20 }}>
           {reviews.map((r, i) => (
@@ -264,7 +260,7 @@ const Index = () => {
       <section id="pricing" className="ryc-pad" style={{ maxWidth: 1200, margin: '0 auto', padding: '96px 40px 0' }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 40, borderTop: `1px solid ${c.rule}`, paddingTop: 28, marginBottom: 44, flexWrap: 'wrap' }}>
           <h2 style={{ ...h2Style, fontSize: 'clamp(30px, 3.4vw, 44px)' }}>Simple, per month</h2>
-          <span style={{ fontSize: 15.5, color: c.text3 }}>Flat monthly fee, unlimited attendees. Cancel with a month&rsquo;s notice.</span>
+          <span style={{ fontSize: 15.5, color: c.text3 }}>A flat monthly fee, per month.</span>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))', gap: 20 }}>
           {tiers.map((t) => (
@@ -281,7 +277,7 @@ const Index = () => {
           ))}
         </div>
         <p style={{ marginTop: 22, fontSize: 15.5, color: c.text3 }}>
-          Every engagement starts with a single taster session at 1,490 kr, credited to your first month.{' '}
+          Every engagement starts with a single pilot session at 1,490 kr, credited to your first month.{' '}
           <Link className="ryc-underline" to="/pricing" style={{ color: c.terracotta }}>See full pricing →</Link>
         </p>
       </section>
@@ -291,15 +287,13 @@ const Index = () => {
         <div className="ryc-pilot-panel ryc-pilot-grid" style={{ background: c.softPanel, borderRadius: 18, padding: '72px 56px', display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 0.85fr)', gap: 56, alignItems: 'center' }}>
           <div>
             <h2 style={{ ...h2Style, fontSize: 'clamp(32px, 4vw, 52px)', lineHeight: 1.05, maxWidth: '18ch' }}>Try one session. See who shows up.</h2>
-            <p style={{ fontSize: 18, lineHeight: 1.6, color: c.text2, margin: '22px 0 0', maxWidth: '42ch' }}>One paid session, no contract, nothing to sign. If your team shrugs at it, we both learned something in half an hour.</p>
+            <p style={{ fontSize: 18, lineHeight: 1.6, color: c.text2, margin: '22px 0 0', maxWidth: '42ch' }}>One paid session, no contract, nothing to sign.</p>
           </div>
           <div style={{ background: c.card, border: `1px solid ${c.borderSoft}`, borderRadius: 12, padding: '30px 28px', display: 'grid', gap: 16 }}>
-            <Link className="ryc-btn-primary" to="/demo" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', height: 54, borderRadius: 999, background: c.terracotta, color: c.onDark, fontWeight: 600, fontSize: 16 }}>Book a taster</Link>
+            <Link className="ryc-btn-primary" to="/demo" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', height: 54, borderRadius: 999, background: c.terracotta, color: c.onDark, fontWeight: 600, fontSize: 16 }}>Book a pilot</Link>
             <div style={{ display: 'grid', gap: 10, fontSize: 14.5, color: c.text2 }}>
               <span>No app to install</span>
-              <span>Runs in your calendar</span>
-              <span>Cancel any month</span>
-            </div>
+              <span>Runs in your calendar</span>            </div>
             <span style={{ fontSize: 13.5, color: c.text3 }}>No newsletter, no sequence.</span>
           </div>
         </div>

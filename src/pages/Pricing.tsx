@@ -9,10 +9,10 @@ import { Reveal, GlowField, Eyebrow } from '@/components/SiteBlocks';
 
 const faqs: Array<[string, string]> = [
   ['Do people need their cameras on?', 'No. Camera-off is welcome, and I say so at the start of every session.'],
-  ['Will people actually attend?', 'That is what a taster session is for. Live, scheduled sessions out-attend apps and EAPs, because the hardest part, starting, is already done, and once it is a weekly habit you see the numbers in your reporting.'],
+  ['Will people actually attend?', 'That is what a pilot session is for. Live, scheduled sessions out-attend apps and EAPs, because the hardest part, starting, is already done, and once it is a weekly habit you see the numbers in your reporting.'],
   ['What if people join late or miss one?', 'Sessions are built to drop into, and every one is recorded, so anyone can catch up or join from another time zone.'],
   ['We already have an app or an EAP. Why add this?', 'Those are libraries and crisis lines: useful, but passive. The Weekly Reset is the live, weekly layer with a real person, which is what actually drives participation. It complements what you have.'],
-  ['How do you measure it?', 'Attendance and repeat attendance, tracked automatically, plus a short wellbeing check at the start and end. You get a one-page summary.'],
+  ['How do you measure it?', 'Attendance and repeat attendance, tracked automatically. You get a simple summary.'],
   ['Can you work across time zones?', 'Yes. Sessions run across UK and European hours, with Australian hours for part of the year, plus recordings for everyone else.'],
 ];
 
@@ -53,7 +53,7 @@ const structuredData = {
       offers: [
         {
           '@type': 'Offer',
-          name: 'Taster session',
+          name: 'Pilot session',
           price: '1490',
           priceCurrency: 'SEK',
           description: 'A single 30-minute live session, credited to your first month if you continue.',
@@ -70,7 +70,7 @@ const structuredData = {
             priceCurrency: 'SEK',
             unitText: 'MONTH',
           },
-          description: `${t.best}. Flat monthly fee, any team size, on Teams or Zoom.`,
+          description: `${t.best}. Flat monthly fee, on Teams or Zoom.`,
           url: 'https://remoteyogacoach.com/pricing',
         })),
       ],
@@ -83,7 +83,7 @@ const Pricing = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Pricing | Team Wellbeing Subscriptions | Remote Yoga Coach"
-        description="Simple, transparent pricing for corporate wellbeing: a flat monthly fee for your whole team, not a per-person app charge. Three tiers plus a single taster session."
+        description="Simple, transparent pricing for corporate wellbeing: a flat monthly fee for your whole team, not a per-person app charge. Three tiers plus a single pilot session."
         canonical="https://remoteyogacoach.com/pricing"
         structuredData={structuredData}
       />
@@ -113,14 +113,14 @@ const Pricing = () => {
                 <div className="relative">
                   <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clayLight mb-4">Start here</span>
                   <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                    <h2 className="font-fraunces font-semibold text-2xl md:text-3xl">A taster session</h2>
+                    <h2 className="font-fraunces font-semibold text-2xl md:text-3xl">A pilot session</h2>
                     <span className="font-fraunces font-semibold text-2xl md:text-3xl text-clayLight">{pilotPrice}</span>
                   </div>
                   <p className="mt-4 text-white/80 leading-relaxed">One 30-minute live session, so your team can try it before you commit to anything:</p>
                   <ul className="mt-5 space-y-2.5">
                     {[
                       'A live 30-minute session, breathing, chair yoga or meditation, your pick',
-                      'Runs on Teams or Zoom, camera optional, any team size',
+                      'Runs on Teams or Zoom, camera optional',
                       'The recording afterwards, to share with anyone who missed it',
                       'No setup, no contract, nothing to sign',
                     ].map((item) => (
@@ -136,7 +136,7 @@ const Pricing = () => {
                   <div className="mt-7">
                     <Link to="/demo">
                       <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                        Book a taster session
+                        Book a pilot session
                       </Button>
                     </Link>
                   </div>
@@ -152,7 +152,7 @@ const Pricing = () => {
             <div className="text-center max-w-[620px] mx-auto">
               <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">Monthly subscriptions</h2>
               <p className="mt-4 text-charcoal/70 leading-relaxed">
-                A flat monthly fee, priced per team not per person, and shown excl. VAT. Cancel or change tier any time.
+                A flat monthly fee, shown excl. VAT.
               </p>
             </div>
 
@@ -176,16 +176,16 @@ const Pricing = () => {
                       <p className="text-charcoal/60 text-sm">{t.per}</p>
                     </div>
                     <ul className="space-y-3 text-[15px] text-charcoal/80 flex-1">
-                      <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>Any team size, unlimited attendees</span></li>
+                      <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>The same coach every week</span></li>
                       <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>All sessions recorded</span></li>
-                      <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>{t.reporting} wellbeing reporting</span></li>
+                      <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>{t.reporting} attendance reporting</span></li>
                     </ul>
                     <div className="mt-7">
                       <Link to="/demo">
                         <Button className={`w-full font-semibold uppercase text-sm tracking-wider rounded-md py-6 ${
                           t.highlight ? 'bg-clay hover:bg-clayDark text-white' : 'bg-white border border-sage text-charcoal hover:bg-sage-light/40'
                         }`}>
-                          {t.name === 'Enterprise' ? 'Talk it through' : 'Book a taster'}
+                          {t.name === 'Enterprise' ? 'Talk it through' : 'Book a pilot'}
                         </Button>
                       </Link>
                     </div>
@@ -262,12 +262,12 @@ const Pricing = () => {
           <div className="relative max-w-[680px] mx-auto px-5 text-center">
             <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">See it before you commit</h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              Start with a single taster session: one live class, credited to your first month if you continue.
+              Start with a single pilot session: one live class, credited to your first month if you continue.
             </p>
             <div className="mt-9">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a taster
+                  Book a pilot
                 </Button>
               </Link>
             </div>

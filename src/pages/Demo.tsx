@@ -48,7 +48,7 @@ const Demo = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Get in touch | Remote Yoga Coach"
-        description="Book a single taster session of The Weekly Reset for your team: one live 30-minute class, credited to your first month if you continue."
+        description="Book a single pilot session of The Weekly Reset for your team: one live 30-minute class, credited to your first month if you continue."
         canonical="https://remoteyogacoach.com/demo"
       />
       <Navbar />
@@ -61,7 +61,7 @@ const Demo = () => {
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[560px] mx-auto">
               Tell me a bit about your team and what you're after, whether you'd just like to talk it through, or
-              you're ready to book a taster session. I'll get back to you.
+              you're ready to book a pilot session. I'll get back to you.
             </p>
           </div>
         </section>

@@ -373,7 +373,7 @@ const MindfulnessAtWork = () => {
                 ],
                 [
                   'Measured beats hoped-for',
-                  'Track attendance, return rate and self-rated stress and energy before and after. If it works, you will be able to show your budget-holder. If it does not, you deserve to know.',
+                  'Track attendance and return rate. If it works, you will be able to show your budget-holder. If it does not, you deserve to know.',
                 ],
               ]}
             />
@@ -388,7 +388,7 @@ const MindfulnessAtWork = () => {
                 <Link to="/pricing" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   pricing page
                 </Link>
-                , and every engagement starts with a single taster session.
+                , and every engagement starts with a single pilot session.
               </p>
             </GuideProse>
           </div>
@@ -419,7 +419,7 @@ const MindfulnessAtWork = () => {
 
         <GuideCTA
           heading="Give your team a weekly mindfulness habit"
-          text="A single taster session of The Weekly Reset: live breathing, meditation and chair yoga on Teams, camera optional. Once it is a weekly habit, the ongoing subscription gives you attendance and wellbeing reporting you can take to your budget-holder."
+          text="A single pilot session of The Weekly Reset: live breathing, meditation and chair yoga on Teams, camera optional. Once it is a weekly habit, the ongoing subscription gives you attendance and wellbeing reporting you can take to your budget-holder."
         />
       </main>
 

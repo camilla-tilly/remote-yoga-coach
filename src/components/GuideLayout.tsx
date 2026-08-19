@@ -93,7 +93,7 @@ export const GuideFAQ = ({ items }: { items: Array<[string, string]> }) => (
 export const GuideCTA = ({
   heading,
   text,
-  buttonLabel = 'Book a taster',
+  buttonLabel = 'Book a pilot',
 }: {
   heading: string;
   text: string;

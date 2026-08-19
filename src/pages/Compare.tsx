@@ -22,7 +22,7 @@ const faqItems: Array<[string, string]> = [
   ],
   [
     'How do you prove the live session gets more engagement?',
-    'Attendance and repeat attendance are tracked automatically, alongside a short wellbeing check before and after. Unlike an app dashboard that shows a few opens, you get real participation numbers for your own team in a one-page report.',
+    'Attendance and repeat attendance are tracked automatically. Unlike an app dashboard that shows a few opens, you get real participation numbers for your own team in a simple report.',
   ],
   [
     'What about cost? Apps look cheaper per head.',
@@ -34,7 +34,7 @@ const faqItems: Array<[string, string]> = [
   ],
   [
     'Is this a Headspace for Work alternative?',
-    'In the same way, yes. As a Headspace for Work alternative, the difference is a real, familiar human leading the practice at a set time each week, which removes the hardest part, starting. Attendance and repeat attendance are tracked, with a short wellbeing check reported in a one-page summary, so you can see the engagement an app dashboard cannot show.',
+    'In the same way, yes. As a Headspace for Work alternative, the difference is a real, familiar human leading the practice at a set time each week, which removes the hardest part, starting. Attendance and repeat attendance are tracked and reported in a simple summary, so you can see the engagement an app dashboard cannot show.',
   ],
   [
     'Is this an EAP alternative?',
@@ -210,7 +210,7 @@ const Compare = () => {
               A live weekly session, led by me, a 500-hour certified yoga teacher, on Teams or Zoom with camera
               optional and every session recorded, is the preventive, human layer that sits in front of both the app
               and the EAP. Keep them, and add the layer that finally drives attendance across the lot. Attendance and
-              a short wellbeing check are reported in a one-page summary, so the engagement is something you can see.
+              repeat attendance are reported in a simple summary, so the engagement is something you can see.
             </p>
           </div>
         </section>
@@ -232,13 +232,13 @@ const Compare = () => {
               Add the layer your stack is missing
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              A single taster session so your team can try it, then once it is a weekly habit the attendance and
+              A single pilot session so your team can try it, then once it is a weekly habit the attendance and
               wellbeing reporting shows you the participation for yourself.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a taster
+                  Book a pilot
                 </Button>
               </Link>
               <Link to="/pricing">

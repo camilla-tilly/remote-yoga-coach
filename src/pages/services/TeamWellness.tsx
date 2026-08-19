@@ -43,7 +43,7 @@ const TeamWellness = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Corporate Wellbeing Sessions for Remote and Hybrid Teams | Remote Yoga Coach"
-        description="Live corporate wellbeing for remote, hybrid and in-office teams: The Weekly Reset, breathing, meditation and chair yoga on Teams or Zoom, camera optional, with attendance and stress reporting. Book a taster."
+        description="Live corporate wellbeing for remote, hybrid and in-office teams: The Weekly Reset, breathing, meditation and chair yoga on Teams or Zoom, camera optional, with attendance and stress reporting. Book a pilot."
         canonical="https://remoteyogacoach.com/services/team-wellness"
         structuredData={structuredData}
       />
@@ -65,7 +65,7 @@ const TeamWellness = () => {
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a taster
+                  Book a pilot
                 </Button>
               </Link>
               <Link to="/pricing">
@@ -155,7 +155,7 @@ const TeamWellness = () => {
                 an app you can't measure
               </Link>
               , every programme comes with simple, honest reporting: how many of your
-              team attend, how many come back, and how they rate their stress and energy before and after. At the end
+              team attend and how many come back. At the end
               of each quarter you get a report you can take straight to your budget-holder.
             </p>
           </div>
@@ -230,15 +230,15 @@ const TeamWellness = () => {
         {/* CTA */}
         <section className="bg-cream-soft-b py-24 md:py-28">
           <div className="max-w-[680px] mx-auto px-5 text-center">
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">Start with a taster</h2>
+            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">Start with a pilot</h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              A single taster session of The Weekly Reset for your team, credited to your first
+              A single pilot session of The Weekly Reset for your team, credited to your first
               month if you continue. See it work with your own team before committing to a subscription.
             </p>
             <div className="mt-9">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a taster
+                  Book a pilot
                 </Button>
               </Link>
             </div>

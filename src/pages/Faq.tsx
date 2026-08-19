@@ -37,7 +37,7 @@ const groups: Array<{ heading: string; items: Array<[string, string]> }> = [
     items: [
       [
         'Who is this for?',
-        'HR and people leaders, team leads and founders who want a wellbeing habit their team actually keeps. It suits remote-first, hybrid and in-office teams of roughly 10 to 100 people.',
+        'HR and people leaders, team leads and founders who want a wellbeing habit their team actually keeps. It suits remote-first, hybrid and in-office teams.',
       ],
       [
         'Does it work for a hybrid or in-office team, not just fully remote?',
@@ -79,15 +79,15 @@ const groups: Array<{ heading: string; items: Array<[string, string]> }> = [
     items: [
       [
         'How much does it cost?',
-        'Pricing is a flat monthly subscription in euros, priced per team rather than per person, so the cost per head falls as your team grows. You can see the current tiers on the pricing page.',
+        'Pricing is a flat monthly subscription, priced by session frequency. You can see the current tiers on the pricing page.',
       ],
       [
-        'Is it priced per person or per team?',
+        'How is it priced?',
         'Per team. You pay one flat monthly fee for your whole team, not a per-seat licence, so adding people does not add cost.',
       ],
       [
         'Can we try it before committing?',
-        'Yes. There is a single taster session, one live 30-minute class, and if you continue, the taster fee is credited to your first month. Once it is a weekly habit, the ongoing subscription gives you the attendance and wellbeing reporting.',
+        'Yes. There is a single pilot session, one live 30-minute class, and if you continue, the pilot fee is credited to your first month. Once it is a weekly habit, the ongoing subscription gives you the attendance and wellbeing reporting.',
       ],
       [
         'Can we book a one-off session, like a lunch and learn?',
@@ -116,7 +116,7 @@ const groups: Array<{ heading: string; items: Array<[string, string]> }> = [
       ],
       [
         'How do you measure whether it is working?',
-        'I report attendance and repeat attendance, tracked automatically, plus a short wellbeing check at the start and end, summarised in a one-page report for leadership.',
+        'I report attendance and repeat attendance, tracked automatically, summarised in a simple report for leadership.',
       ],
     ],
   },

@@ -104,7 +104,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Solo desk meditation is a great daily tool. A guided version with your team, once a week, is what turns it from a nice idea into a habit, because someone else is holding the time and you're doing it together. For remote and hybrid teams, that shared five or fifteen minutes can also be a rare moment of calm connection. You can [book a taster](/demo) to try one."
+      text: "Solo desk meditation is a great daily tool. A guided version with your team, once a week, is what turns it from a nice idea into a habit, because someone else is holding the time and you're doing it together. For remote and hybrid teams, that shared five or fifteen minutes can also be a rare moment of calm connection. You can [book a pilot](/demo) to try one."
     },
     {
       type: "cta",

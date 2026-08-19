@@ -118,7 +118,7 @@ const post: BlogPost = {
     },
     {
       type: "cta",
-      text: "If your tech team is running hot but nobody is saying so, a short recurring reset is a low-risk place to start. Book a taster and see who turns up.",
+      text: "If your tech team is running hot but nobody is saying so, a short recurring reset is a low-risk place to start. Book a pilot and see who turns up.",
       ctaHref: "/demo",
       ctaLabel: "Book a demo",
     },

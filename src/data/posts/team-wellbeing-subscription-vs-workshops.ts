@@ -32,7 +32,7 @@ const post: BlogPost = {
     { type: 'list', items: [
       '**A protected slot.** Same time each week, in the calendar, so it becomes a habit rather than a thing someone has to organise each time.',
       '**The same coach.** Familiarity builds the gentle accountability and trust that a rotating cast of one-off facilitators cannot.',
-      '**A programme, not a sampler.** Sessions build on each other instead of being disconnected tasters.',
+      '**A programme, not a sampler.** Sessions build on each other instead of being disconnected pilots.',
       '**Measurement over time.** You can actually see attendance and wellbeing move across weeks, not guess from a single feedback form.',
     ] },
     { type: 'paragraph', text: 'That is the model behind my [wellbeing subscription for remote teams](/services/corporate-wellbeing-for-remote-teams): a recurring weekly session, the same coach, with reporting you can take to leadership.' },
@@ -46,13 +46,13 @@ const post: BlogPost = {
     ] },
     { type: 'paragraph', text: 'Because a subscription is priced per team rather than per person, the cost per employee also falls as the team grows, the opposite of per-seat app licensing. For the wider pricing picture, see [how much corporate wellbeing costs](/blog/how-much-does-corporate-yoga-cost).' },
     { type: 'heading', text: 'When a one-off still makes sense' },
-    { type: 'paragraph', text: 'This is not an argument that workshops are bad. If you have a one-time occasion, a team day, a specific event, an awareness week, a single well-run session is a lovely thing to do. Just do not expect it to move the needle on ongoing stress. For that, you need the rhythm. A sensible path is to run a one-off, see how the team responds, and convert it into a subscription if it lands, which is exactly what a [taster session](/demo) is for.' },
-    { type: 'cta', text: 'Want to test the habit before committing to it? A single taster session lets your team try it, then once it is a weekly habit you get attendance and wellbeing reporting.', ctaHref: '/demo', ctaLabel: 'Book a taster' },
+    { type: 'paragraph', text: 'This is not an argument that workshops are bad. If you have a one-time occasion, a team day, a specific event, an awareness week, a single well-run session is a lovely thing to do. Just do not expect it to move the needle on ongoing stress. For that, you need the rhythm. A sensible path is to run a one-off, see how the team responds, and convert it into a subscription if it lands, which is exactly what a [pilot session](/demo) is for.' },
+    { type: 'cta', text: 'Want to test the habit before committing to it? A single pilot session lets your team try it, then once it is a weekly habit you get attendance and wellbeing reporting.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
     { type: 'faq', faqItems: [
-      { q: 'Is a wellbeing subscription better than a one-off workshop?', a: 'For ongoing team wellbeing, yes, because results come from the weekly rhythm, not any single session. For a specific one-time occasion, a one-off workshop can be the right call. Many teams start with a taster session and convert if it lands.' },
-      { q: 'How much does a team wellbeing subscription cost?', a: 'It is priced as a flat monthly fee by session frequency rather than per person, so the cost per employee stays low as you grow. Every engagement starts with a single taster session credited to your first month.' },
+      { q: 'Is a wellbeing subscription better than a one-off workshop?', a: 'For ongoing team wellbeing, yes, because results come from the weekly rhythm, not any single session. For a specific one-time occasion, a one-off workshop can be the right call. Many teams start with a pilot session and convert if it lands.' },
+      { q: 'How much does a team wellbeing subscription cost?', a: 'It is priced as a flat monthly fee by session frequency rather than per person, so the cost per employee stays low as you grow. Every engagement starts with a single pilot session credited to your first month.' },
       { q: 'How long before a subscription shows results?', a: 'Attendance patterns are visible within the first few weeks; the wellbeing effect builds over a couple of months as the habit forms. That is why I report attendance and pre and post wellbeing from the start.' },
-      { q: 'Can we try it before subscribing?', a: 'Yes. A single taster session, one live 30-minute class, lets your team try it before committing to an ongoing subscription.' },
+      { q: 'Can we try it before subscribing?', a: 'Yes. A single pilot session, one live 30-minute class, lets your team try it before committing to an ongoing subscription.' },
     ] },
   ],
 };

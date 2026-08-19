@@ -119,7 +119,7 @@ const post: BlogPost = {
       items: [
         "Participation: what share of the whole team takes part, not just the keen few.",
         "Repeat participation: do people come back?",
-        "A simple before/after wellbeing check: even a quick pulse survey beats a login count.",
+        "A simple sense of before and after: even asking people how it felt beats a login count.",
         "Renewal: when it is time to decide again, do people want to keep it?",
       ],
     },
@@ -137,7 +137,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "That is exactly the offer behind a live weekly reset: a 30-minute breathing and chair-yoga session your distributed team joins together, guided by the same coach each week, with simple reporting so you can see it working. It is the recurring, human habit the research keeps pointing to. See how it works on my [team wellness page](/services/team-wellness), or book a taster at my [demo](/demo) and see the attendance for yourself.",
+      text: "That is exactly the offer behind a live weekly reset: a 30-minute breathing and chair-yoga session your distributed team joins together, guided by the same coach each week, with simple reporting so you can see it working. It is the recurring, human habit the research keeps pointing to. See how it works on my [team wellness page](/services/team-wellness), or book a pilot at my [demo](/demo) and see the attendance for yourself.",
     },
     {
       type: "cta",

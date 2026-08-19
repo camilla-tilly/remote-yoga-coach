@@ -70,11 +70,11 @@ export const GlowField = ({ tone = 'warm' }: { tone?: 'warm' | 'sage' }) => (
   <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
     <div
       className="absolute -top-24 -right-16 w-[440px] h-[440px] rounded-full opacity-[0.10] blur-3xl animate-drift"
-      style={{ background: `radial-gradient(circle, ${tone === 'sage' ? '#CE9A82' : '#B67A5E'} 0%, transparent 70%)` }}
+      style={{ background: `radial-gradient(circle, ${tone === 'sage' ? '#ad6e52' : '#8f5033'} 0%, transparent 70%)` }}
     />
     <div
       className="absolute -bottom-28 -left-20 w-[420px] h-[420px] rounded-full opacity-[0.09] blur-3xl animate-drift"
-      style={{ background: 'radial-gradient(circle, #CE9A82 0%, transparent 70%)', animationDelay: '3s' }}
+      style={{ background: 'radial-gradient(circle, #ad6e52 0%, transparent 70%)', animationDelay: '3s' }}
     />
   </div>
 );
@@ -178,7 +178,7 @@ export const Testimonials = ({
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((t, i) => (
             <Reveal key={i} delay={i * 80}>
-              <figure className="h-full flex flex-col bg-white rounded-2xl border border-sage-light p-7">
+              <figure className="h-full flex flex-col bg-card rounded-[10px] border border-sage-light p-7">
                 <blockquote className="font-fraunces text-heading text-lg leading-relaxed flex-1">“{t.quote}”</blockquote>
                 <figcaption className="mt-6 flex items-center gap-3">
                   {t.photo ? (
@@ -207,8 +207,8 @@ export const Testimonials = ({
  * ------------------------------------------------------------------ */
 export const Eyebrow = ({ children, tone = 'sage' }: { children: React.ReactNode; tone?: 'sage' | 'clay' | 'light' }) => (
   <span
-    className={`inline-block text-xs font-semibold uppercase tracking-[0.25em] mb-4 ${
-      tone === 'clay' ? 'text-clay' : tone === 'light' ? 'text-clay' : 'text-sage'
+    className={`inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] mb-5 ${
+      tone === 'light' ? 'text-clayLight' : 'text-clay'
     }`}
   >
     {children}
@@ -239,7 +239,7 @@ export const StatBand = ({
         {(eyebrow || heading) && (
           <div className="text-center max-w-[640px] mx-auto mb-12">
             {eyebrow && (
-              <span className={`inline-block text-xs font-semibold uppercase tracking-[0.25em] mb-4 ${dark ? 'text-clayLight' : 'text-sage'}`}>
+              <span className={`inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] mb-5 ${dark ? 'text-clayLight' : 'text-clay'}`}>
                 {eyebrow}
               </span>
             )}

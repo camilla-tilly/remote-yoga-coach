@@ -68,7 +68,7 @@ const About = () => {
             />
             <p>
               I'm Camilla, a 500-hour certified yoga teacher. Before teaching full time I worked across a
-              10,000-person multinational company, a startup, a consultancy and in government, so the sessions are
+              large multinational company, a startup, a consultancy and in government, so the sessions are
               built around real office life, not an ideal version of it.
             </p>
             <p>
@@ -116,7 +116,7 @@ const About = () => {
             <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight text-center">Why live and human</h2>
             <div className="mt-12 grid gap-6 sm:grid-cols-3">
               {[
-                ['Continuity', "The same coach every week, learning your team's names and needs. The relationship is the whole point."],
+                ['Continuity', 'The same coach every week, someone your team gets to know. The relationship is the whole point.'],
                 ['Accessibility', 'Camera-off, chair-based, no equipment. Everyone can join, wherever they work.'],
                 ['Honesty', 'Real attendance numbers and plainly-stated results, never inflated claims.'],
               ].map(([title, text]) => (
@@ -133,12 +133,12 @@ const About = () => {
           <div className="max-w-[680px] mx-auto px-5 text-center">
             <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">See it for your team</h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              Start with a single taster session, credited to your first month if you continue.
+              Start with a single pilot session, credited to your first month if you continue.
             </p>
             <div className="mt-9">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a taster
+                  Book a pilot
                 </Button>
               </Link>
             </div>

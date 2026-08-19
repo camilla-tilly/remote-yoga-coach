@@ -27,15 +27,15 @@ const faqItems: Array<[string, string]> = [
   ],
   [
     'How many people can join?',
-    'From small teams of around 10 up to 100 or more. Smaller teams get a single weekly slot; larger or multi-region teams get multiple slots so nobody has to join at an antisocial hour. Camera-off is welcome throughout.',
+    'Everyone on the team joins the same live session, and camera-off is welcome throughout. For teams spread across several regions I can run more than one weekly slot, so nobody has to join at an antisocial hour.',
   ],
   [
     'How do we know it is working?',
-    'Every programme reports attendance, repeat attendance and a short wellbeing check before and after sessions. Once it is a weekly habit you get a quarterly summary you can take straight to leadership.',
+    'Every programme reports attendance and repeat attendance. Once it is a weekly habit you get a quarterly summary you can take straight to leadership.',
   ],
   [
     'What does corporate wellbeing for a remote team cost?',
-    'A flat monthly subscription by session frequency, not a per-person app charge, so the cost per person stays low. Pricing is public, and every engagement starts with a single taster session credited to your first month if you continue.',
+    'A flat monthly subscription by session frequency, not a per-person app charge. Pricing is public, and every engagement starts with a single pilot session credited to your first month if you continue.',
   ],
 ];
 
@@ -50,7 +50,7 @@ const structuredData = {
       areaServed: ['GB', 'EU', 'AU'],
       description:
         'Live weekly wellbeing sessions for distributed and hybrid teams on Teams or Zoom: breathing, meditation and chair yoga, camera optional, with attendance and wellbeing reporting.',
-      offers: { '@type': 'Offer', priceCurrency: 'SEK', description: 'Monthly subscription by session frequency, from a single taster session.' },
+      offers: { '@type': 'Offer', priceCurrency: 'SEK', description: 'Monthly subscription by session frequency, from a single pilot session.' },
     },
     {
       '@type': 'FAQPage',
@@ -87,7 +87,7 @@ const CorporateWellbeingRemoteTeams = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Weekly Wellbeing Sessions for Remote and Hybrid Teams | Remote Yoga Coach"
-        description="A live weekly wellbeing subscription for remote, hybrid and in-office teams. Breathing, meditation and chair yoga on Teams or Zoom, camera optional, with reporting. Book a taster session."
+        description="A live weekly wellbeing subscription for remote, hybrid and in-office teams. Breathing, meditation and chair yoga on Teams or Zoom, camera optional, with reporting. Book a pilot session."
         canonical="https://remoteyogacoach.com/services/corporate-wellbeing-for-remote-teams"
         ogImage="https://remoteyogacoach.com/og/corporate-wellbeing-remote-teams.png"
         structuredData={structuredData}
@@ -112,7 +112,7 @@ const CorporateWellbeingRemoteTeams = () => {
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a taster
+                  Book a pilot
                 </Button>
               </Link>
               <Link to="/pricing">
@@ -192,8 +192,7 @@ const CorporateWellbeingRemoteTeams = () => {
               </p>
               <p>
                 That is why this is a subscription, not a booking. A protected weekly slot, the same coach, a
-                programme that builds over time. And because it is priced per team rather than per person, the cost
-                per employee stays low as you grow. See{' '}
+                programme that builds over time, priced as a flat monthly fee. See{' '}
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   how a session runs
                 </Link>{' '}
@@ -243,7 +242,7 @@ const CorporateWellbeingRemoteTeams = () => {
             <SectionHeading eyebrow="Who it's for">People leaders at remote-first companies</SectionHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               HR and people leaders, team leads and founders at remote-first and hybrid companies, tech, consulting,
-              sustainability and distributed teams of roughly 10 to 100, who want a wellbeing habit the whole team
+              sustainability and distributed teams that want a wellbeing habit the whole team
               actually keeps. Delivered in English, online, across UK and European time zones, with Australian hours
               for part of the year.
             </p>
@@ -277,13 +276,13 @@ const CorporateWellbeingRemoteTeams = () => {
               Give your distributed team a habit that sticks
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              Start with a single taster session, then once it is a weekly habit the attendance and wellbeing
+              Start with a single pilot session, then once it is a weekly habit the attendance and wellbeing
               reporting gives you something concrete to take to leadership. Credited to your first month if you continue.
             </p>
             <div className="mt-9">
               <Link to="/demo">
                 <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
-                  Book a taster
+                  Book a pilot
                 </Button>
               </Link>
             </div>
