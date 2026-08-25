@@ -267,7 +267,7 @@ const Index = () => {
       <section id="pricing" className="ryc-pad" style={{ maxWidth: 1200, margin: '0 auto', padding: '96px 40px 0' }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 40, borderTop: `1px solid ${c.rule}`, paddingTop: 28, marginBottom: 44, flexWrap: 'wrap' }}>
           <h2 style={{ ...h2Style, fontSize: 'clamp(30px, 3.4vw, 44px)' }}>Simple, per month</h2>
-          <span style={{ fontSize: 15.5, color: c.text3 }}>A flat monthly fee, per month.</span>
+          <span style={{ fontSize: 15.5, color: c.text3 }}>A flat monthly fee, priced by how often you meet, not which class you pick.</span>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))', gap: 20 }}>
           {tiers.map((t) => (

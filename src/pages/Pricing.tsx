@@ -9,6 +9,7 @@ import { Reveal, GlowField, Eyebrow } from '@/components/SiteBlocks';
 
 const faqs: Array<[string, string]> = [
   ['Do people need their cameras on?', 'No. Camera-off is welcome, and I say so at the start of every session.'],
+  ['Do we have to choose one type of class?', 'No. Every plan includes all three, meditation, breathing and chair yoga. Your team can settle on one, alternate between them, or mix them week to week, depending on what people need. The plan you choose only sets how often we meet, it does not lock you to a single class.'],
   ['Will people actually attend?', 'That is what a pilot session is for. Live, scheduled sessions out-attend apps and EAPs, because the hardest part, starting, is already done, and once it is a weekly habit you see the numbers in your reporting.'],
   ['What if people join late or miss one?', 'Sessions are built to drop into, and every one is recorded, so anyone can catch up or join from another time zone.'],
   ['We already have an app or an EAP. Why add this?', 'Those are libraries and crisis lines: useful, but passive. The Weekly Reset is the live, weekly layer with a real person, which is what actually drives participation. It complements what you have.'],
@@ -152,7 +153,9 @@ const Pricing = () => {
             <div className="text-center max-w-[620px] mx-auto">
               <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">Monthly subscriptions</h2>
               <p className="mt-4 text-charcoal/70 leading-relaxed">
-                A flat monthly fee, shown excl. VAT.
+                Every plan includes all three classes, meditation, breathing and chair yoga, to pick from or mix week
+                to week. The plans differ only by how often we meet, not by which class you choose. A flat monthly fee,
+                excl. VAT.
               </p>
             </div>
 
