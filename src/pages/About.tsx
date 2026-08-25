@@ -89,7 +89,7 @@ const About = () => {
               understand how bodies actually work, so I can keep every session genuinely accessible, no experience or
               equipment needed. My meditation and breathing work also draws on training
               in the Hindu yogic tradition, in mantra, breathing techniques and meditation, so those parts of a
-              session stay grounded in the tradition they come from. I'm an ultra runner too, so I understand pushing
+              session stay grounded in the tradition they come from. I'm an ultra runner too, with six ultra marathons behind me, so I understand pushing
               hard, and why a real reset matters as much as the effort.
             </p>
             <div className="mt-7 flex flex-wrap gap-2.5">
