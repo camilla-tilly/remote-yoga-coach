@@ -19,6 +19,7 @@ import buildAStrongRemoteTeam from './posts/build-a-strong-remote-team';
 import corporateWellbeingForTechTeams from './posts/corporate-wellbeing-for-tech-teams';
 import howToStartACorporateWellbeingProgramme from './posts/how-to-start-a-corporate-wellbeing-programme';
 import improveTeamMoraleRemoteTeam from './posts/improve-team-morale-remote-team';
+import wellbeingInRemoteOnboarding from './posts/wellbeing-in-remote-onboarding';
 
 export type { BlogPost, BlogLanguage, BlogContentBlock } from './blogTypes';
 
@@ -44,6 +45,7 @@ export const blogPosts: BlogPost[] = [
   breathingExercisesForWorkStress,
   fiveMinuteDeskMeditation,
   neckAndShoulderStretchesDeskWorkers,
+  wellbeingInRemoteOnboarding,
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>
