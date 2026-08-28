@@ -19,7 +19,7 @@ import buildAStrongRemoteTeam from './posts/build-a-strong-remote-team';
 import corporateWellbeingForTechTeams from './posts/corporate-wellbeing-for-tech-teams';
 import howToStartACorporateWellbeingProgramme from './posts/how-to-start-a-corporate-wellbeing-programme';
 import improveTeamMoraleRemoteTeam from './posts/improve-team-morale-remote-team';
-import friskvardsbidragDigitalYogaDistansteam from './posts/friskvardsbidrag-digital-yoga-distansteam';
+import naturaformanYogaForHelaTeamet from './posts/naturaforman-yoga-for-hela-teamet';
 import halsaHybridarbeteDistansteam from './posts/halsa-hybridarbete-distansteam';
 import kontorsyogaPaDistansForklaring from './posts/kontorsyoga-pa-distans-forklaring';
 
@@ -47,7 +47,7 @@ export const blogPosts: BlogPost[] = [
   breathingExercisesForWorkStress,
   fiveMinuteDeskMeditation,
   neckAndShoulderStretchesDeskWorkers,
-  friskvardsbidragDigitalYogaDistansteam,
+  naturaformanYogaForHelaTeamet,
   halsaHybridarbeteDistansteam,
   kontorsyogaPaDistansForklaring,
 ];

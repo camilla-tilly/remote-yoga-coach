@@ -16,7 +16,7 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
-    { slug: 'friskvardsbidrag-digital-yoga-distansteam', label: 'Räknas digital yoga som friskvårdsbidrag?' },
+    { slug: 'naturaforman-yoga-for-hela-teamet', label: 'Naturaförmån: yoga för hela teamet utan att röra friskvårdsbidraget' },
     { slug: 'halsa-hybridarbete-distansteam', label: 'Hybridarbete och psykisk hälsa: så håller du teamet friskt på distans' },
   ],
   content: [
