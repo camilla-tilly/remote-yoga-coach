@@ -19,6 +19,7 @@ import buildAStrongRemoteTeam from './posts/build-a-strong-remote-team';
 import corporateWellbeingForTechTeams from './posts/corporate-wellbeing-for-tech-teams';
 import howToStartACorporateWellbeingProgramme from './posts/how-to-start-a-corporate-wellbeing-programme';
 import improveTeamMoraleRemoteTeam from './posts/improve-team-morale-remote-team';
+import improveWellbeingProgrammeAttendance from './posts/improve-wellbeing-programme-attendance';
 
 export type { BlogPost, BlogLanguage, BlogContentBlock } from './blogTypes';
 
@@ -33,6 +34,7 @@ export const blogPosts: BlogPost[] = [
   buildAStrongRemoteTeam,
   corporateWellbeingForTechTeams,
   howToStartACorporateWellbeingProgramme,
+  improveWellbeingProgrammeAttendance,
   improveTeamMoraleRemoteTeam,
   howToMeditateAtWork,
   techNeckExercisesDesk,
