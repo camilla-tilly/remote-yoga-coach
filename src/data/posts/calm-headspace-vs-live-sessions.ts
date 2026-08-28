@@ -88,7 +88,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "I run these as a 500-hour certified yoga teacher, live on Teams or Zoom, with the same coach every week so it becomes a habit people recognise. Camera is always optional, every session is recorded for anyone who misses it, and I report attendance and a short wellbeing check so you can actually see whether it is landing. It is a flat monthly subscription in euros, so the cost doesn't balloon with headcount."
+      text: "I run these as a 500-hour certified yoga teacher, live on Teams or Zoom, with the same coach every week so it becomes a habit people recognise. Camera is always optional, every session is recorded for anyone who misses it, and I report attendance and a short wellbeing check so you can actually see whether it is landing. It is a flat monthly subscription priced per team, so the cost doesn't balloon with headcount."
     },
     {
       type: "callout",

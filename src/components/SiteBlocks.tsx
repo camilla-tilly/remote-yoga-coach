@@ -70,11 +70,11 @@ export const GlowField = ({ tone = 'warm' }: { tone?: 'warm' | 'sage' }) => (
   <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
     <div
       className="absolute -top-24 -right-16 w-[440px] h-[440px] rounded-full opacity-[0.10] blur-3xl animate-drift"
-      style={{ background: `radial-gradient(circle, ${tone === 'sage' ? '#CE9A82' : '#B67A5E'} 0%, transparent 70%)` }}
+      style={{ background: `radial-gradient(circle, ${tone === 'sage' ? '#ad6e52' : '#8f5033'} 0%, transparent 70%)` }}
     />
     <div
       className="absolute -bottom-28 -left-20 w-[420px] h-[420px] rounded-full opacity-[0.09] blur-3xl animate-drift"
-      style={{ background: 'radial-gradient(circle, #CE9A82 0%, transparent 70%)', animationDelay: '3s' }}
+      style={{ background: 'radial-gradient(circle, #ad6e52 0%, transparent 70%)', animationDelay: '3s' }}
     />
   </div>
 );
@@ -173,18 +173,18 @@ export const Testimonials = ({
       <div className="max-w-[1040px] mx-auto px-5">
         <div className="text-center max-w-[560px] mx-auto mb-12">
           <Eyebrow>{eyebrow}</Eyebrow>
-          <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">{heading}</h2>
+          <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">{heading}</h2>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((t, i) => (
             <Reveal key={i} delay={i * 80}>
-              <figure className="h-full flex flex-col bg-white rounded-2xl border border-sage-light p-7">
+              <figure className="h-full flex flex-col bg-card rounded-[10px] border border-sage-light p-7">
                 <blockquote className="font-fraunces text-heading text-lg leading-relaxed flex-1">“{t.quote}”</blockquote>
                 <figcaption className="mt-6 flex items-center gap-3">
                   {t.photo ? (
                     <img src={t.photo} alt={t.name} className="w-11 h-11 rounded-full object-cover" loading="lazy" />
                   ) : (
-                    <span className="w-11 h-11 rounded-full bg-clay/[0.12] flex items-center justify-center font-fraunces font-semibold text-clay">
+                    <span className="w-11 h-11 rounded-full bg-clay/[0.12] flex items-center justify-center font-fraunces font-normal text-clay">
                       {t.name.charAt(0)}
                     </span>
                   )}
@@ -207,8 +207,8 @@ export const Testimonials = ({
  * ------------------------------------------------------------------ */
 export const Eyebrow = ({ children, tone = 'sage' }: { children: React.ReactNode; tone?: 'sage' | 'clay' | 'light' }) => (
   <span
-    className={`inline-block text-xs font-semibold uppercase tracking-[0.25em] mb-4 ${
-      tone === 'clay' ? 'text-clay' : tone === 'light' ? 'text-clay' : 'text-sage'
+    className={`inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] mb-5 ${
+      tone === 'light' ? 'text-clayLight' : 'text-clay'
     }`}
   >
     {children}
@@ -239,12 +239,12 @@ export const StatBand = ({
         {(eyebrow || heading) && (
           <div className="text-center max-w-[640px] mx-auto mb-12">
             {eyebrow && (
-              <span className={`inline-block text-xs font-semibold uppercase tracking-[0.25em] mb-4 ${dark ? 'text-clayLight' : 'text-sage'}`}>
+              <span className={`inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] mb-5 ${dark ? 'text-clayLight' : 'text-clay'}`}>
                 {eyebrow}
               </span>
             )}
             {heading && (
-              <h2 className={`font-fraunces font-semibold text-2xl md:text-4xl leading-tight ${dark ? 'text-white' : 'text-heading'}`}>
+              <h2 className={`font-fraunces font-normal text-2xl md:text-4xl leading-tight ${dark ? 'text-white' : 'text-heading'}`}>
                 {heading}
               </h2>
             )}
@@ -253,7 +253,7 @@ export const StatBand = ({
         <div className={`grid gap-8 sm:gap-6 ${items.length === 4 ? 'sm:grid-cols-2 lg:grid-cols-4' : 'sm:grid-cols-3'}`}>
           {items.map((s, i) => (
             <Reveal key={s.label} delay={i * 80} className="text-center">
-              <p className={`font-fraunces font-semibold text-4xl md:text-5xl leading-none ${dark ? 'text-clayLight' : 'text-clay'}`}>
+              <p className={`font-fraunces font-normal text-4xl md:text-5xl leading-none ${dark ? 'text-clayLight' : 'text-clay'}`}>
                 {s.value}
               </p>
               <p className={`mt-3 text-[15px] leading-relaxed ${dark ? 'text-white/75' : 'text-charcoal/70'}`}>{s.label}</p>
@@ -306,7 +306,7 @@ export const ComparisonTable = ({
                   className={`p-5 text-center align-bottom ${i === highlightIndex ? 'bg-clay/[0.06]' : 'bg-cream'}`}
                 >
                   <span
-                    className={`font-fraunces font-semibold text-lg leading-tight block ${
+                    className={`font-fraunces font-normal text-lg leading-tight block ${
                       i === highlightIndex ? 'text-clay' : 'text-heading'
                     }`}
                   >
@@ -343,7 +343,7 @@ export const ComparisonTable = ({
             key={c}
             className={`rounded-xl border p-5 ${colI === highlightIndex ? 'border-clay bg-clay/[0.05]' : 'border-sage-light bg-white'}`}
           >
-            <p className={`font-fraunces font-semibold text-lg ${colI === highlightIndex ? 'text-clay' : 'text-heading'}`}>
+            <p className={`font-fraunces font-normal text-lg ${colI === highlightIndex ? 'text-clay' : 'text-heading'}`}>
               {c}
               {colI === highlightIndex && <span className="ml-2 text-[10px] font-semibold uppercase tracking-widest align-middle">You, with me</span>}
             </p>

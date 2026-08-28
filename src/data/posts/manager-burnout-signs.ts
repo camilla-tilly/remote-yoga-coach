@@ -146,7 +146,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "You can see how a weekly session fits a remote or hybrid team on my [corporate wellbeing for remote and hybrid teams](/services/corporate-wellbeing-for-remote-teams) page, including the flat monthly subscription in euros and the short attendance and wellbeing report you get back."
+      text: "You can see how a weekly session fits a remote or hybrid team on my [corporate wellbeing for remote and hybrid teams](/services/corporate-wellbeing-for-remote-teams) page, including the flat monthly subscription priced per team and the short attendance and wellbeing report you get back."
     },
     {
       type: "callout",

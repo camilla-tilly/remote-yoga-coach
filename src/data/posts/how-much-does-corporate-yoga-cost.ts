@@ -76,7 +76,7 @@ const post: BlogPost = {
     { type: 'heading', text: 'What per employee really works out as' },
     {
       type: 'paragraph',
-      text: 'Because online sessions are usually priced as a flat fee for the whole team rather than per person, the per-employee cost drops fast as your team grows. A flat €639 per month across a 40-person team is under €16 per person per month, for a live, coached session every week. The bigger your team, the better live sessions look on a per-head basis.',
+      text: 'Because online sessions are usually priced as a flat fee for the whole team rather than per person, the per-employee cost drops fast as your team grows. A flat 4,990 kr per month across a 40-person team is about 125 kr per person per month, for a live, coached session every week. The bigger your team, the better live sessions look on a per-head basis.',
     },
     {
       type: 'paragraph',
@@ -94,16 +94,16 @@ const post: BlogPost = {
     { type: 'heading', text: 'What to actually budget' },
     {
       type: 'paragraph',
-      text: 'For most distributed teams of 10–50, a realistic 2026 budget for a **live, online, weekly** programme is **£330–£550 per month** (€380–€640), often with a discount for paying annually. A short paid pilot, a few hundred pounds for four weeks, is the low-risk way to test it before committing.',
+      text: 'For most distributed teams of 10–50, a realistic 2026 budget for a **live, online, weekly** programme is **£330–£550 per month** (€380–€640), often with a discount for paying annually. A single pilot session, one live 30-minute class, is the low-risk way to test it before committing.',
     },
     { type: 'heading', text: 'See exactly what it costs' },
     {
       type: 'paragraph',
-      text: 'I publish my prices, including a flat monthly fee for your whole team and a four-week pilot you can try first. [See the full pricing](/pricing), or [book a pilot](/demo) and see it work with your own team, credited to your first month if you continue.',
+      text: 'I publish my prices, including a flat monthly fee for your whole team and a single pilot session you can try first. [See the full pricing](/pricing), or [book a pilot](/demo) and see it work with your own team, credited to your first month if you continue.',
     },
     {
       type: 'cta',
-      text: 'Curious what it would cost for your team? My pricing is public, with a four-week pilot you can try first.',
+      text: 'Curious what it would cost for your team? My pricing is public, with a single pilot session you can try first.',
       ctaHref: '/pricing',
       ctaLabel: 'See my pricing',
     },

@@ -4,10 +4,10 @@
 
 Key facts:
 - Format: live, online, 15 to 30 minute sessions on Teams or Zoom. The same coach every week. Camera optional, no equipment, no experience needed.
-- Audience: HR, people and culture leaders, team leads and founders at remote-first and hybrid companies of roughly 10 to 100 people (tech, consulting, sustainability, distributed teams).
+- Audience: HR, people and culture leaders, team leads and founders at remote-first and hybrid companies (tech, consulting, sustainability, distributed teams).
 - Coverage: delivered in English across UK and European time zones, with Australian hours for part of the year. Every session recorded for other time zones.
-- Model: a flat monthly subscription priced by team size (not per person), starting with a four-week paid pilot that is credited to the first month.
-- Pricing (EUR): 4-week pilot €289; Breathe €379 (teams up to 25); Reset €639 (teams up to 50, weekly); Flourish from €1,049 (50+ or multi-timezone) per month. Roughly two months free with annual billing.
+- Model: a flat monthly subscription priced by session frequency (not per person), starting with a single pilot session that is credited to the first month.
+- Pricing (SEK, ex VAT): single pilot session 1,490 kr (credited to first month); Starter 2,990 kr (twice a month); Weekly 4,990 kr (weekly); Enterprise from 8,900 kr (more than weekly or across time zones) per month, a flat monthly fee. Roughly two months free with annual billing.
 - Differentiator: a live, familiar human coach builds the habit and accountability that passive wellbeing apps and reactive EAPs cannot. Positioned as the missing live layer, not a replacement for existing tools.
 - Measurement: every programme reports attendance, repeat attendance and pre/post wellbeing, summarised in a one-page report for leadership.
 - Contact: hello@remoteyogacoach.com. Book a pilot at https://remoteyogacoach.com/demo
@@ -16,7 +16,7 @@ Key facts:
 - [Corporate wellbeing for remote teams](https://remoteyogacoach.com/services/corporate-wellbeing-for-remote-teams): the core offer, a live weekly wellbeing subscription for distributed and hybrid teams.
 - [How it works, The Weekly Reset](https://remoteyogacoach.com/services/team-wellness): what a live session involves, its structure, and why it fits distributed teams.
 - [Office yoga and chair yoga for teams](https://remoteyogacoach.com/services/chair-yoga-for-teams): live virtual office yoga and chair yoga for companies, gentle seated movement any workforce can do at a desk, whether remote, hybrid or in an office.
-- [Pricing](https://remoteyogacoach.com/pricing): transparent monthly tiers and the four-week paid pilot.
+- [Pricing](https://remoteyogacoach.com/pricing): transparent monthly tiers and the single pilot session.
 - [Compare: live sessions vs apps vs EAPs](https://remoteyogacoach.com/compare): how live wellbeing sessions differ from wellbeing apps and employee assistance programmes on the metric that matters, whether teams actually use it.
 
 ## Guides
@@ -29,13 +29,24 @@ Key facts:
 - [How much does corporate yoga cost?](https://remoteyogacoach.com/blog/how-much-does-corporate-yoga-cost)
 - [Team wellbeing subscription vs one-off workshops](https://remoteyogacoach.com/blog/team-wellbeing-subscription-vs-workshops)
 - [Corporate mindfulness sessions: what to actually expect](https://remoteyogacoach.com/blog/corporate-mindfulness-sessions-what-to-expect)
-- [How to run a wellbeing session over Teams](https://remoteyogacoach.com/blog/run-wellbeing-session-over-teams)
+- [How to run a wellbeing session over Teams or Zoom](https://remoteyogacoach.com/blog/run-wellbeing-session-over-teams)
 - [How to prevent burnout in a distributed team](https://remoteyogacoach.com/blog/prevent-burnout-distributed-team)
-- [Corporate wellness ideas that actually work for remote teams](https://remoteyogacoach.com/blog/corporate-wellness-ideas-remote-teams)
+- [Corporate wellness ideas that work for remote and hybrid teams](https://remoteyogacoach.com/blog/corporate-wellness-ideas-remote-teams)
 - [Do workplace wellness apps actually work?](https://remoteyogacoach.com/blog/do-workplace-wellness-apps-work)
+- [Office yoga for remote and hybrid teams: what it actually is](https://remoteyogacoach.com/blog/office-yoga-for-remote-teams)
+- [How to keep a hybrid team focused and connected](https://remoteyogacoach.com/blog/keep-hybrid-team-focused)
+- [Building a strong, connected remote team (beyond perks)](https://remoteyogacoach.com/blog/build-a-strong-remote-team)
+- [How to meditate at work: a simple desk practice](https://remoteyogacoach.com/blog/how-to-meditate-at-work)
+- [Tech neck: gentle exercises to undo desk and screen posture](https://remoteyogacoach.com/blog/tech-neck-exercises-desk)
+- [Chair yoga at your desk: 8 poses for office workers](https://remoteyogacoach.com/blog/chair-yoga-at-your-desk)
+- [Desk yoga for office workers: a 5-minute routine between calls](https://remoteyogacoach.com/blog/desk-yoga-5-minute-routine)
+- [A 5-minute meditation you can do at your desk](https://remoteyogacoach.com/blog/5-minute-desk-meditation)
+- [Breathing exercises for work stress: 4 techniques](https://remoteyogacoach.com/blog/breathing-exercises-for-work-stress)
+- [Neck and shoulder stretches for desk workers](https://remoteyogacoach.com/blog/neck-and-shoulder-stretches-desk-workers)
 
 ## More
 - [All guides](https://remoteyogacoach.com/guides)
 - [Blog](https://remoteyogacoach.com/blog)
+- [Frequently asked questions](https://remoteyogacoach.com/faq)
 - [About](https://remoteyogacoach.com/about)
 - [Book a pilot](https://remoteyogacoach.com/demo)

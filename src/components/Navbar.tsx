@@ -9,7 +9,6 @@ import {
   DrawerClose
 } from '@/components/ui/drawer';
 import { Button } from './ui/button';
-import Logo from './Logo';
 
 const navLinks = [
   { name: 'Home', href: '/' },
@@ -17,6 +16,7 @@ const navLinks = [
   { name: 'Resources', href: '/guides' },
   { name: 'Pricing', href: '/pricing' },
   { name: 'Blog', href: '/blog' },
+  { name: 'FAQ', href: '/faq' },
   { name: 'About', href: '/about' },
 ];
 
@@ -48,13 +48,9 @@ const Navbar = () => {
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 mx-auto max-w-[1200px]">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5 group" aria-label="Remote Yoga Coach, home">
-            <Logo
-              size={34}
-              variant="clay"
-              className="rounded-lg transition-transform duration-300 group-hover:-rotate-3"
-            />
-            <p className="text-lg sm:text-xl md:text-2xl font-fraunces font-semibold text-charcoal whitespace-nowrap tracking-tight">
+          <Link to="/" className="flex items-baseline gap-2.5 group" aria-label="Remote Yoga Coach, home">
+            <span className="w-[11px] h-[11px] rounded-full bg-clay inline-block relative top-[1px]" aria-hidden="true" />
+            <p className="text-xl md:text-[22px] font-fraunces font-normal text-heading whitespace-nowrap tracking-[-0.01em]">
               Remote Yoga Coach
             </p>
           </Link>
@@ -76,8 +72,8 @@ const Navbar = () => {
               </Link>
             ))}
             <Link to="/demo">
-              <Button className="bg-clay hover:bg-clayDark text-white font-inter font-semibold uppercase text-xs tracking-wider rounded-md px-5">
-                Get in touch
+              <Button className="bg-[#392a23] hover:bg-clay text-offwhite font-inter font-medium text-sm tracking-normal rounded-full px-5 h-11">
+                Book a pilot
               </Button>
             </Link>
           </div>
@@ -117,8 +113,8 @@ const Navbar = () => {
                   <div className="w-full border-t border-sage-light/60 my-3" />
                   <DrawerClose asChild>
                     <Link to="/demo" className="w-full px-3">
-                      <Button className="w-full bg-clay hover:bg-clayDark text-white font-inter font-semibold uppercase text-sm tracking-wider rounded-md py-6">
-                        Get in touch
+                      <Button className="w-full bg-[#392a23] hover:bg-clay text-offwhite font-inter font-medium text-sm tracking-normal rounded-full py-6">
+                        Book a pilot
                       </Button>
                     </Link>
                   </DrawerClose>

@@ -102,7 +102,7 @@ const Blog = () => {
           <section className="px-4 mb-20">
             <Link
               to={`/blog/${leadPost.slug}`}
-              className="group block max-w-5xl mx-auto relative overflow-hidden rounded-[28px] bg-cream border border-sage-light hover:border-clay/60 shadow-card hover:shadow-card-hover transition-all duration-500"
+              className="group block max-w-5xl mx-auto relative overflow-hidden rounded-[28px] bg-cream border border-sage-light hover:border-clay/60 hover:shadow-card-hover transition-all duration-500"
             >
               <div className="p-10 md:p-14 lg:p-16 flex flex-col justify-center">
                 <div className="flex items-center gap-4 mb-6">
@@ -150,7 +150,7 @@ const Blog = () => {
               <Link
                 key={post.slug}
                 to={`/blog/${post.slug}`}
-                className="block py-10 md:py-12 group hover:pl-2 transition-[padding] duration-300"
+                className="block py-10 md:py-12 group hover:pl-2 hover:bg-cream/60 rounded-lg transition-[padding,background-color] duration-300"
               >
                 <div className="flex items-center gap-4 mb-4">
                   <span className="font-inter text-xs uppercase tracking-[0.28em] text-sage font-bold">

@@ -92,7 +92,7 @@ const CostOfBurnout = () => {
         description="The real cost of employee burnout to employers, why most of it is invisible, the documented ROI of wellbeing spend, and how to build the business case for prevention."
         canonical="https://remoteyogacoach.com/guides/cost-of-employee-burnout"
         ogType="article"
-        ogImage="https://remoteyogacoach.com/og/cost-of-employee-burnout.png"
+        ogImage="https://remoteyogacoach.com/og/cost-of-employee-burnout.png?v=2"
         structuredData={structuredData}
       />
       <Navbar />
@@ -100,9 +100,9 @@ const CostOfBurnout = () => {
       <main>
         {/* HERO */}
         <section className="bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
-          <div className="max-w-[820px] mx-auto px-5">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideEyebrow>Guide for HR and leaders</GuideEyebrow>
-            <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
+            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               What employee burnout costs, and the ROI of fixing it
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed">
@@ -123,8 +123,8 @@ const CostOfBurnout = () => {
         </section>
 
         {/* HEADLINE */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="headline" eyebrow="The number">The headline number</GuideHeading>
             <GuideProse>
               <p>
@@ -146,8 +146,8 @@ const CostOfBurnout = () => {
         </section>
 
         {/* INVISIBLE */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="invisible" eyebrow="Where it hides">Why most of the cost is invisible</GuideHeading>
             <GuideProse>
               <p>
@@ -174,13 +174,13 @@ const CostOfBurnout = () => {
         </section>
 
         {/* ONE NUMBER */}
-        <section className="bg-charcoal text-white py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream border-t border-sage-light py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The clincher</span>
-            <h2 id="one-number" className="scroll-mt-28 font-fraunces font-semibold text-3xl md:text-4xl leading-tight">
+            <h2 id="one-number" className="scroll-mt-28 font-fraunces font-normal text-3xl md:text-4xl leading-tight">
               The one number that ends the debate
             </h2>
-            <div className="mt-6 space-y-5 text-white/80 text-lg leading-relaxed">
+            <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
                 If a room is unmoved by industry billions, bring it down to one person. Replacing an employee who
                 leaves commonly costs six to nine months of their salary once you count recruitment, onboarding, lost
@@ -198,8 +198,8 @@ const CostOfBurnout = () => {
         </section>
 
         {/* RETURN */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="return" eyebrow="The return">What the return actually looks like</GuideHeading>
             <GuideProse>
               <p>
@@ -225,8 +225,8 @@ const CostOfBurnout = () => {
         </section>
 
         {/* PREVENTION */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="prevention" eyebrow="Efficiency">Why prevention is the cheap option</GuideHeading>
             <GuideProse>
               <p>
@@ -250,8 +250,8 @@ const CostOfBurnout = () => {
         </section>
 
         {/* BUSINESS CASE */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="business-case" eyebrow="Make the case">Building the business case</GuideHeading>
             <GuideProse>
               <p>
@@ -269,8 +269,9 @@ const CostOfBurnout = () => {
             />
             <GuideProse>
               <p>
-                That last step is the whole point of how I run things. A four-week pilot of a live weekly session
-                ends in a one-page report you can take straight to the budget-holder. See{' '}
+                That last step is the whole point of how I run things. Start with a single pilot session, then
+                once it is a weekly habit the attendance and wellbeing reporting gives you a report you can take
+                straight to the budget-holder. See{' '}
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   how the programme works
                 </Link>{' '}
@@ -301,8 +302,8 @@ const CostOfBurnout = () => {
         </section>
 
         {/* FAQ */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="faq" eyebrow="FAQ">Frequently asked questions</GuideHeading>
             <GuideFAQ items={faqItems} />
           </div>
@@ -325,7 +326,7 @@ const CostOfBurnout = () => {
 
         <GuideCTA
           heading="Prove the return on your own team"
-          text="A four-week pilot of live weekly wellbeing sessions, ending in a one-page report of attendance and pre and post stress you can take straight to your budget-holder."
+          text="A single pilot session of live weekly wellbeing, then once it is a weekly habit the attendance and pre and post stress reporting gives you something concrete to take straight to your budget-holder."
         />
       </main>
 

@@ -104,7 +104,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "That said, the honest truth is that a one-off session feels lovely and then fades. Wellbeing that changes anything comes from rhythm, the same short reset at the same time each week, with the same coach, so it becomes a habit rather than an event. That is the idea behind The Weekly Reset: a recurring live session your remote team joins together, on a flat monthly subscription in EUR, with attendance and a short wellbeing check reported back so you can see it working. A lunch and learn is simply the easiest door into it. You can read how the recurring version works on my [team wellness page](/services/team-wellness), or start with a single session and judge it on the day.",
+      text: "That said, the honest truth is that a one-off session feels lovely and then fades. Wellbeing that changes anything comes from rhythm, the same short reset at the same time each week, with the same coach, so it becomes a habit rather than an event. That is the idea behind The Weekly Reset: a recurring live session your remote team joins together, on a flat monthly subscription priced per team, with attendance and a short wellbeing check reported back so you can see it working. A lunch and learn is simply the easiest door into it. You can read how the recurring version works on my [team wellness page](/services/team-wellness), or start with a single session and judge it on the day.",
     },
     {
       type: "cta",

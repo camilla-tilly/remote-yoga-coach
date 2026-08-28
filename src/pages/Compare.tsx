@@ -22,7 +22,7 @@ const faqItems: Array<[string, string]> = [
   ],
   [
     'How do you prove the live session gets more engagement?',
-    'Attendance and repeat attendance are tracked automatically, alongside a short wellbeing check before and after. Unlike an app dashboard that shows a few opens, you get real participation numbers for your own team in a one-page report.',
+    'Attendance and repeat attendance are tracked automatically. Unlike an app dashboard that shows a few opens, you get real participation numbers for your own team in a simple report.',
   ],
   [
     'What about cost? Apps look cheaper per head.',
@@ -34,7 +34,7 @@ const faqItems: Array<[string, string]> = [
   ],
   [
     'Is this a Headspace for Work alternative?',
-    'In the same way, yes. As a Headspace for Work alternative, the difference is a real, familiar human leading the practice at a set time each week, which removes the hardest part, starting. Attendance and repeat attendance are tracked, with a short wellbeing check reported in a one-page summary, so you can see the engagement an app dashboard cannot show.',
+    'In the same way, yes. As a Headspace for Work alternative, the difference is a real, familiar human leading the practice at a set time each week, which removes the hardest part, starting. Attendance and repeat attendance are tracked and reported in a simple summary, so you can see the engagement an app dashboard cannot show.',
   ],
   [
     'Is this an EAP alternative?',
@@ -88,11 +88,11 @@ const Compare = () => {
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
-        title="Live Wellbeing Sessions vs Apps vs EAPs: A Wellbeing App and EAP Alternative | Remote Yoga Coach"
-        description="An honest comparison of live team wellbeing sessions, wellbeing apps and EAPs on the metric that matters: whether your team actually uses it. A wellbeing app alternative that gets used."
+        title="Live Wellbeing Sessions vs Apps and EAPs | Remote Yoga Coach"
+        description="An honest comparison of live team wellbeing sessions, wellbeing apps and EAPs on the metric that matters: whether your team actually uses it."
         canonical="https://remoteyogacoach.com/compare"
         ogType="article"
-        ogImage="https://remoteyogacoach.com/og/compare.png"
+        ogImage="https://remoteyogacoach.com/og/compare.png?v=2"
         structuredData={structuredData}
       />
       <Navbar />
@@ -101,9 +101,9 @@ const Compare = () => {
         {/* HERO */}
         <section className="relative overflow-hidden bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
           <GlowField tone="warm" />
-          <div className="relative max-w-[820px] mx-auto px-5 text-center">
+          <div className="relative max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <Eyebrow>The honest comparison</Eyebrow>
-            <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
+            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Live sessions, apps and EAPs, on the metric that matters
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[640px] mx-auto">
@@ -116,7 +116,7 @@ const Compare = () => {
 
         {/* THE TABLE */}
         <section className="py-16 md:py-20">
-          <div className="max-w-[820px] mx-auto px-5">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
             <Reveal>
               <ComparisonTable
                 columns={['Live weekly sessions', 'Wellbeing app', 'EAP']}
@@ -132,9 +132,9 @@ const Compare = () => {
 
         {/* THE APP */}
         <section className="py-14 md:py-18">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The app</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               A great library nobody visits
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
@@ -149,9 +149,9 @@ const Compare = () => {
 
         {/* THE EAP */}
         <section className="bg-cream py-14 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The EAP</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               A crisis line, not a habit
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
@@ -165,9 +165,9 @@ const Compare = () => {
 
         {/* NOT EITHER/OR */}
         <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The point</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               This is the missing layer, not a replacement
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
@@ -188,13 +188,17 @@ const Compare = () => {
 
         {/* THE ALTERNATIVE */}
         <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The alternative you are searching for</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               A Calm for Business, Headspace for Work and EAP alternative that gets used
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-              If you are searching for a Calm for Business alternative or a Headspace for Work alternative, you are
+              If you are searching for a{' '}
+              <Link to="/blog/do-workplace-wellness-apps-work" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                Calm for Business alternative or a Headspace for Work alternative
+              </Link>
+              , you are
               usually not looking for a better content library. You are looking for the piece those apps leave out: a
               real person, at a fixed time, that people actually turn up to. That is the whole wellbeing app vs live
               sessions difference. The app waits to be opened. A live weekly session is led, so the hardest part,
@@ -206,16 +210,16 @@ const Compare = () => {
               A live weekly session, led by me, a 500-hour certified yoga teacher, on Teams or Zoom with camera
               optional and every session recorded, is the preventive, human layer that sits in front of both the app
               and the EAP. Keep them, and add the layer that finally drives attendance across the lot. Attendance and
-              a short wellbeing check are reported in a one-page summary, so the engagement is something you can see.
+              repeat attendance are reported in a simple summary, so the engagement is something you can see.
             </p>
           </div>
         </section>
 
         {/* FAQ */}
         <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>FAQ</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">Common questions</h2>
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">Common questions</h2>
             <GuideFAQ items={faqItems} />
           </div>
         </section>
@@ -223,22 +227,22 @@ const Compare = () => {
         {/* CTA */}
         <section className="relative overflow-hidden bg-cream-soft-b py-24 md:py-28">
           <GlowField tone="sage" />
-          <div className="relative max-w-[680px] mx-auto px-5 text-center">
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
+          <div className="relative max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">
               Add the layer your stack is missing
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              A four-week pilot of live weekly sessions, ending in a one-page report of real attendance and wellbeing,
-              so you can see the participation for yourself.
+              A single pilot session so your team can try it, then once it is a weekly habit the attendance and
+              wellbeing reporting shows you the participation for yourself.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-6">
                   Book a pilot
                 </Button>
               </Link>
               <Link to="/pricing">
-                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-medium text-[15px] rounded-full px-8 py-6">
                   See pricing
                 </Button>
               </Link>

@@ -63,62 +63,65 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Remote Yoga Coach palette — warm, minimal, corporate-friendly.
-				// Warm clay (primary CTA), sage green (secondary), off-white bg,
-				// charcoal text, warm cream bands. The `dalashala` namespace is a
-				// legacy alias kept so all existing markup re-themes automatically;
-				// its values now point at the RYC palette.
-				clay: '#B67A5E',
-				clayDark: '#9F674D',
-				clayLight: '#CE9A82',
-				charcoal: '#4A423A',
-				heading: '#64513E',
-				offwhite: '#FAFAF8',
-				cream: '#F5EFE7',
+				// Remote Yoga Coach palette — redesign (Aug 2026).
+				// Warm-paper background, terracotta accent, deep warm-brown text,
+				// sand tinted bands. Hex values converted from the design's oklch
+				// tokens (design_handoff_remote_yoga_coach). The `dalashala`
+				// namespace is a legacy alias kept so all existing markup re-themes
+				// automatically; its values now point at the redesign palette.
+				clay: '#8f5033',       // terracotta accent (links, buttons)
+				clayDark: '#723c23',   // terracotta hover
+				clayLight: '#ad6e52',  // lighter terracotta
+				charcoal: '#50453d',   // body text (warm brown)
+				heading: '#261d16',    // headings / primary text (deep warm brown)
+				offwhite: '#f9f2e9',   // warm paper (primary bg)
+				cream: '#efe4d6',      // sand (tinted bands, card fills)
 				sage: {
-					DEFAULT: '#A98D78',
-					dark: '#96806D',
-					light: '#E9E0D4',
+					DEFAULT: '#7e7269',  // muted warm taupe (secondary text, labels)
+					dark: '#6c6158',
+					light: '#dfd6c9',    // hairline / border
 				},
 				dalashala: {
-					// Legacy names → RYC palette
-					beige: '#FAFAF8',       // off-white (primary bg)
-					lightBeige: '#F5EFE7',  // warm cream for card fills
-					darkBrown: '#4A423A',   // soft warm brown (primary text)
-					mediumBrown: '#B67A5E', // muted terracotta (links, buttons)
-					tan: '#E9E0D4',         // light sage (borders)
+					// Legacy names → redesign palette
+					beige: '#f9f2e9',       // warm paper (primary bg)
+					lightBeige: '#efe4d6',  // sand for card fills
+					darkBrown: '#50453d',   // body text
+					mediumBrown: '#8f5033', // terracotta (links, buttons)
+					tan: '#dfd6c9',         // border
 					// Semantic names
-					cream: '#FAFAF8',
-					creamLight: '#F5EFE7',
-					creamDeep: '#F5EFE7',   // warm cream contrast bands
-					earth: '#4A423A',       // soft warm brown (headings, primary text)
-					earthSoft: '#63564A',   // warm brown (gradient start)
-					olive: '#B67A5E',       // muted terracotta (buttons, links, accent)
-					oliveLight: '#CE9A82',  // lighter terracotta (hover)
-					meadow: '#E9E0D4',      // light sage (borders)
-					meadowLight: '#EFE7DB', // palest sage
-					sage: '#A98D78',
-					sageLight: '#E9E0D4',
+					cream: '#f9f2e9',
+					creamLight: '#efe4d6',
+					creamDeep: '#ebe0d4',   // sand contrast bands
+					earth: '#261d16',       // headings, primary text
+					earthSoft: '#50453d',   // body / gradient start
+					olive: '#8f5033',       // terracotta (buttons, links, accent)
+					oliveLight: '#ad6e52',  // lighter terracotta (hover)
+					meadow: '#dfd6c9',      // border
+					meadowLight: '#e7ddd0', // palest sand
+					sage: '#7e7269',
+					sageLight: '#dfd6c9',
 					// Warm accents → terracotta tones
-					honey: '#B67A5E',
-					honeyDeep: '#9F674D',
-					honeyLight: '#F5EFE7',
-					saffron: '#B67A5E',
-					saffronDeep: '#9F674D',
-					saffronLight: '#F5EFE7',
-					gold: '#B67A5E',
+					honey: '#8f5033',
+					honeyDeep: '#723c23',
+					honeyLight: '#efe4d6',
+					saffron: '#8f5033',
+					saffronDeep: '#723c23',
+					saffronLight: '#efe4d6',
+					gold: '#8f5033',
 				}
 			},
 			fontFamily: {
-				// Scandi pairing: Fraunces (characterful variable display serif) + Inter (body/UI).
-				// Legacy keys alias to Fraunces so existing markup picks up the new face.
-				'cormorant': ['Fraunces', 'Georgia', 'serif'],
-				'fraunces': ['Fraunces', 'Georgia', 'serif'],
-				'inter': ['Inter', 'system-ui', 'sans-serif'],
-				'cinzel-decorative': ['Fraunces', 'Georgia', 'serif'],
-				'cinzel': ['Fraunces', 'Georgia', 'serif'],
-				'montserrat': ['Inter', 'system-ui', 'sans-serif'],
-				'eb-garamond': ['Fraunces', 'Georgia', 'serif'],
+				// Redesign pairing: Newsreader (editorial serif, headings/display) +
+				// Karla (body/UI) + IBM Plex Mono (eyebrows, labels). Legacy keys alias
+				// to Newsreader/Karla so existing markup picks up the new faces.
+				'cormorant': ['Newsreader', 'Georgia', 'serif'],
+				'fraunces': ['Newsreader', 'Georgia', 'serif'],
+				'inter': ['Karla', 'system-ui', 'sans-serif'],
+				'cinzel-decorative': ['Newsreader', 'Georgia', 'serif'],
+				'cinzel': ['Newsreader', 'Georgia', 'serif'],
+				'montserrat': ['Karla', 'system-ui', 'sans-serif'],
+				'eb-garamond': ['Newsreader', 'Georgia', 'serif'],
+				'mono': ['IBM Plex Mono', 'ui-monospace', 'monospace'],
 			},
 			boxShadow: {
 				'soft': '0 2px 12px -2px rgba(45, 63, 47, 0.05), 0 1px 3px -1px rgba(45, 63, 47, 0.04)',
@@ -131,20 +134,20 @@ export default {
 				'saffron-glow': '0 0 0 1px rgba(138, 164, 142, 0.4), 0 6px 20px -8px rgba(45, 63, 47, 0.15)',
 			},
 			backgroundImage: {
-				// Warm off-white washes.
-				'cream-gradient': 'linear-gradient(180deg, #FFFFFF 0%, #FAFAF8 50%, #F5EFE7 100%)',
-				'cream-radial': 'radial-gradient(ellipse at top, #FFFFFF 0%, #FAFAF8 60%, #F5EFE7 100%)',
-				'sage-gradient': 'linear-gradient(135deg, #E9E0D4 0%, #A98D78 100%)',
-				'olive-gradient': 'linear-gradient(135deg, #CE9A82 0%, #B67A5E 100%)',
-				// earth-gradient / forest-gradient: soft warm brown for dark sections
-				'earth-gradient': 'linear-gradient(135deg, #574C42 0%, #3E362E 100%)',
-				'forest-gradient': 'linear-gradient(135deg, #574C42 0%, #3E362E 100%)',
-				'forest-deep-gradient': 'linear-gradient(160deg, #3E362E 0%, #2A231D 100%)',
-				'sage-fade': 'linear-gradient(180deg, rgba(139, 157, 125, 0) 0%, rgba(139, 157, 125, 0.18) 100%)',
+				// Warm paper washes.
+				'cream-gradient': 'linear-gradient(180deg, #FFFFFF 0%, #f9f2e9 50%, #efe4d6 100%)',
+				'cream-radial': 'radial-gradient(ellipse at top, #FFFFFF 0%, #f9f2e9 60%, #efe4d6 100%)',
+				'sage-gradient': 'linear-gradient(135deg, #ebe0d4 0%, #ad6e52 100%)',
+				'olive-gradient': 'linear-gradient(135deg, #ad6e52 0%, #8f5033 100%)',
+				// earth-gradient / forest-gradient: deep warm brown for dark sections
+				'earth-gradient': 'linear-gradient(135deg, #46382f 0%, #2a201a 100%)',
+				'forest-gradient': 'linear-gradient(135deg, #46382f 0%, #2a201a 100%)',
+				'forest-deep-gradient': 'linear-gradient(160deg, #2a201a 0%, #1c150f 100%)',
+				'sage-fade': 'linear-gradient(180deg, rgba(126, 114, 105, 0) 0%, rgba(126, 114, 105, 0.16) 100%)',
 				// Legacy saffron names → terracotta tones
-				'saffron-glow': 'radial-gradient(ellipse 60% 60% at 50% 50%, rgba(182, 122, 94, 0.16) 0%, rgba(182, 122, 94, 0) 70%)',
-				'saffron-gradient': 'linear-gradient(135deg, #CE9A82 0%, #B67A5E 100%)',
-				'meadow-fade': 'linear-gradient(180deg, rgba(220, 228, 214, 0) 0%, rgba(220, 228, 214, 0.2) 100%)',
+				'saffron-glow': 'radial-gradient(ellipse 60% 60% at 50% 50%, rgba(143, 80, 51, 0.14) 0%, rgba(143, 80, 51, 0) 70%)',
+				'saffron-gradient': 'linear-gradient(135deg, #ad6e52 0%, #8f5033 100%)',
+				'meadow-fade': 'linear-gradient(180deg, rgba(223, 214, 201, 0) 0%, rgba(223, 214, 201, 0.25) 100%)',
 				'grain': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.18 0 0 0 0 0.25 0 0 0 0 0.19 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
 			},
 			borderRadius: {

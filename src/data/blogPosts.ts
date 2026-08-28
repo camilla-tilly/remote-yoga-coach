@@ -20,6 +20,9 @@ import wellbeingLunchAndLearnIdeas from './posts/wellbeing-lunch-and-learn-ideas
 import managerBurnoutSigns from './posts/manager-burnout-signs';
 import calmHeadspaceVsLiveSessions from './posts/calm-headspace-vs-live-sessions';
 import employeeWellbeingIdeasSmallBudget from './posts/employee-wellbeing-ideas-small-budget';
+import corporateWellbeingForTechTeams from './posts/corporate-wellbeing-for-tech-teams';
+import howToStartACorporateWellbeingProgramme from './posts/how-to-start-a-corporate-wellbeing-programme';
+import improveTeamMoraleRemoteTeam from './posts/improve-team-morale-remote-team';
 
 export type { BlogPost, BlogLanguage, BlogContentBlock } from './blogTypes';
 
@@ -32,6 +35,9 @@ export const blogPosts: BlogPost[] = [
   officeYogaForRemoteTeams,
   keepHybridTeamFocused,
   buildAStrongRemoteTeam,
+  corporateWellbeingForTechTeams,
+  howToStartACorporateWellbeingProgramme,
+  improveTeamMoraleRemoteTeam,
   howToMeditateAtWork,
   techNeckExercisesDesk,
   wellbeingLunchAndLearnIdeas,
