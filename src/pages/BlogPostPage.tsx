@@ -78,7 +78,7 @@ const postCopy = {
     reading: 'läsning',
     tocLabel: 'Innehåll',
     related: 'Läs också',
-    siteName: 'Yoga med Camilla',
+    siteName: 'Remote Yoga Coach',
     home: 'Hem',
     blog: 'Blogg',
   },
@@ -188,6 +188,8 @@ const BlogPostPage = () => {
         canonical={`https://remoteyogacoach.com/blog/${post.slug}`}
         ogType="article"
         ogImage={post.heroImage ? `https://remoteyogacoach.com${post.heroImage.src}` : undefined}
+        ogLocale={lang === 'sv' ? 'sv_SE' : 'en_GB'}
+        lang={lang}
         structuredData={structuredData}
       />
       <Navbar />

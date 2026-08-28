@@ -19,6 +19,9 @@ import buildAStrongRemoteTeam from './posts/build-a-strong-remote-team';
 import corporateWellbeingForTechTeams from './posts/corporate-wellbeing-for-tech-teams';
 import howToStartACorporateWellbeingProgramme from './posts/how-to-start-a-corporate-wellbeing-programme';
 import improveTeamMoraleRemoteTeam from './posts/improve-team-morale-remote-team';
+import friskvardsbidragDigitalYogaDistansteam from './posts/friskvardsbidrag-digital-yoga-distansteam';
+import halsaHybridarbeteDistansteam from './posts/halsa-hybridarbete-distansteam';
+import kontorsyogaPaDistansForklaring from './posts/kontorsyoga-pa-distans-forklaring';
 
 export type { BlogPost, BlogLanguage, BlogContentBlock } from './blogTypes';
 
@@ -44,6 +47,9 @@ export const blogPosts: BlogPost[] = [
   breathingExercisesForWorkStress,
   fiveMinuteDeskMeditation,
   neckAndShoulderStretchesDeskWorkers,
+  friskvardsbidragDigitalYogaDistansteam,
+  halsaHybridarbeteDistansteam,
+  kontorsyogaPaDistansForklaring,
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

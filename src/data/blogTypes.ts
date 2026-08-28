@@ -1,4 +1,4 @@
-export type BlogLanguage = 'en';
+export type BlogLanguage = 'en' | 'sv';
 
 export interface BlogContentBlock {
   type: 'paragraph' | 'heading' | 'subheading' | 'list' | 'callout' | 'cta' | 'quote' | 'table' | 'faq';
