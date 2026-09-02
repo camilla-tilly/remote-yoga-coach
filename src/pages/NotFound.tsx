@@ -5,10 +5,12 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
-import { softenAmp } from '@/lib/amp';
 
-const topServices = [
-  { name: 'Företagsyoga', href: '/tjanster/foretagsyoga' },
+const topPages = [
+  { name: 'Wellbeing for your team', href: '/services/team-wellness' },
+  { name: 'Chair yoga for teams', href: '/services/chair-yoga-for-teams' },
+  { name: 'Corporate wellbeing for remote teams', href: '/services/corporate-wellbeing-for-remote-teams' },
+  { name: 'Pricing', href: '/pricing' },
 ];
 
 const NotFound = () => {
@@ -33,54 +35,53 @@ const NotFound = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white relative overflow-x-hidden">
+    <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
-        title="Sidan hittades inte – 404 | Yoga med Camilla"
-        description="Den här sidan finns inte längre eller har flyttats. Hitta företagsyoga i Stockholm."
+        title="Page not found (404) | Remote Yoga Coach"
+        description="This page does not exist or has moved. Find live wellbeing sessions for remote and hybrid teams."
       />
       <Navbar />
       <main className="pt-32 pb-20 px-4">
         <section className="max-w-2xl mx-auto text-center mb-16">
-          <p className="font-inter text-sm md:text-base uppercase tracking-[0.42em] text-dalashala-olive font-bold mb-7">
-            404
-          </p>
-          <h1 className="font-fraunces text-5xl md:text-6xl lg:text-7xl text-dalashala-earth mb-8 leading-[1.02] tracking-[-0.03em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
-            Sidan hittades inte
+          <p className="font-mono text-xs uppercase tracking-[0.28em] text-clay mb-6">404</p>
+          <h1
+            className="font-fraunces font-normal text-heading text-4xl md:text-5xl lg:text-6xl mb-7 leading-[1.05] tracking-[-0.025em]"
+          >
+            Page not found
           </h1>
-          <span className="block mx-auto w-20 h-[2px] bg-dalashala-earth/60 mb-8 rounded-full" aria-hidden="true" />
-          <p className="font-inter text-lg md:text-xl text-dalashala-earth/85 mb-10 leading-relaxed">
-            Den här sidan finns inte längre eller har flyttats. Kanske hittar du det du letar efter bland mina tjänster nedan, eller så går du tillbaka till startsidan.
+          <p className="font-inter text-lg text-charcoal/75 mb-9 leading-relaxed">
+            This page does not exist or has moved. You might find what you are looking for below, or head back to
+            the home page.
           </p>
           <Button
-            className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-4 px-10 rounded-full uppercase tracking-[0.22em] text-sm font-semibold"
+            className="bg-clay text-white hover:bg-clayDark hover:-translate-y-0.5 transition-all duration-300 font-inter py-4 px-9 rounded-full text-sm font-semibold"
             asChild
           >
-            <Link to="/">Till startsidan</Link>
+            <Link to="/">Back to home</Link>
           </Button>
         </section>
 
         <section className="max-w-3xl mx-auto">
-          <p className="font-inter text-xs md:text-sm uppercase tracking-[0.42em] text-dalashala-olive font-bold text-center mb-8">
-            Populära tjänster
+          <p className="font-mono text-xs uppercase tracking-[0.28em] text-clay text-center mb-8">
+            Popular pages
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {topServices.map((s) => (
+            {topPages.map((p) => (
               <Link
-                key={s.href}
-                to={s.href}
-                className="bg-white rounded-xl border border-dalashala-meadow/60 px-6 py-5 font-fraunces text-lg md:text-xl text-dalashala-earth hover:border-dalashala-earth/50 hover:shadow-card hover:-translate-y-0.5 transition-all text-center"
-                style={{ fontWeight: 400, fontVariationSettings: "'opsz' 24, 'SOFT' 40" }}
+                key={p.href}
+                to={p.href}
+                className="bg-white rounded-2xl border border-sage-light px-6 py-5 font-fraunces text-lg md:text-xl text-heading hover:border-clay/60 hover:-translate-y-0.5 transition-all text-center"
               >
-                {softenAmp(s.name)}
+                {p.name}
               </Link>
             ))}
           </div>
           <div className="text-center mt-10">
             <Link
               to="/blog"
-              className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive hover:text-dalashala-earth font-bold underline underline-offset-4 transition-colors"
+              className="font-inter text-xs uppercase tracking-[0.28em] text-clay hover:text-clayDark font-semibold underline underline-offset-4 transition-colors"
             >
-              Read the blog →
+              Read the blog
             </Link>
           </div>
         </section>
