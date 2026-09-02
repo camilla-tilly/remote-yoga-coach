@@ -2,9 +2,9 @@ import type { BlogPost } from '../blogTypes';
 
 const post: BlogPost = {
   slug: 'how-much-does-corporate-yoga-cost',
-  title: 'How much does corporate yoga actually cost? A 2026 guide for UK and European teams',
+  title: 'Office yoga prices: what corporate yoga costs in 2026',
   metaDescription:
-    'What corporate yoga really costs in 2026, per session, per month and per employee, for UK and European teams, plus how online pricing compares.',
+    'Office yoga prices explained: what corporate yoga and wellbeing sessions cost in 2026, per session, per month and per employee, in person and online.',
   publishDate: '2026-06-10',
   readingTime: '6 min',
   category: 'Cost and proof',
@@ -22,7 +22,7 @@ const post: BlogPost = {
   content: [
     {
       type: 'paragraph',
-      text: "If you've started looking into yoga or wellbeing sessions for your team, you've probably hit the same wall everyone does: almost nobody publishes their prices. You fill in a contact form, wait for a callback, and still can't tell whether you're looking at a few hundred pounds or a few thousand.",
+      text: "If you've started looking into office yoga prices for your team, you've probably hit the same wall everyone does: almost nobody publishes them. You fill in a contact form, wait for a callback, and still can't tell whether you're looking at a few hundred a month or a few thousand.",
     },
     {
       type: 'paragraph',
