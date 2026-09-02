@@ -11,16 +11,48 @@ story and day-in-the-life material.** Camilla set this split herself. Do not
 draft day-in-the-life or personal-journey content for LinkedIn: that now lives
 on Instagram.
 
-So a LinkedIn post should usually do one of these:
-
-- Show the class itself, what actually happens in a meditation, breathing or
-  chair yoga session, ideally as a talk-to-camera or filmed-class video.
-- Make the value of the class concrete for a team.
-- Say plainly how to book or get in touch.
-
 The problem this fixes: a stranger could read her last five posts and still not
-know she runs weekly wellbeing sessions for teams, or how to get one. Clarity
-about the offering is the priority now.
+know she runs weekly wellbeing sessions for teams, or how to get one.
+
+**But that does NOT mean every post sells.** Camilla is clear, and she is right,
+that a feed which always asks for something stops earning attention, and that her
+social does better when she is not constantly selling. The resolution is that the
+PROFILE carries the selling. Her headline already reads "Workplace meditation and
+yoga for remote and hybrid teams", so anyone moved by a post is one click from
+knowing what she offers. That frees individual posts to be genuinely good.
+
+## The weekly cycle
+
+One post a week, rotating through four types. The routine picks the type from the
+ISO week number, so it rotates on its own. Three of the four ask for nothing.
+
+**Week 1, opinion.** A real stance on work, rest, recovery or wellbeing culture.
+No ask at all. Ends on a genuine question she actually wants answered. This is
+the comments post.
+
+**Week 2, show the class.** Video: talk-to-camera or filmed class footage. What
+actually happens in a meditation, breathing or chair yoga session. Soft close, no
+hard pitch. This is the demonstration post, and it is where the offering becomes
+visible rather than described.
+
+**Week 3, practical.** Something a manager or an individual can use that same
+day. Three breathing techniques before a hard meeting, a sixty-second desk reset,
+how to run a session people actually attend. Written to be saved and shared. No
+ask.
+
+**Week 4, the offer.** Plainly: this is what I run, this is who it is for, this
+is how to book. The ONLY week with a hard call to action.
+
+That is three non-selling posts to one selling post, which matches how she wants
+to show up, while still making the offering unmistakable across a month.
+
+## What earns saves, shares and comments
+
+She has asked for this specifically. What works: a clear stance rather than a
+balanced survey; naming an experience people recognise but have not put words to;
+practical lists worth keeping; and an honest admission, which is her strongest
+natural mode. What does not: rhetorical questions she does not care about,
+engagement bait, and anything that reads as a pitch wearing a question mark.
 
 **Video is explicitly wanted.** Talk-to-camera and filmed class footage are both
 in scope. An earlier version of the routine banned these formats. That rule is
@@ -109,9 +141,8 @@ not force either register.
 - **The ultra running is real and it performs well, but at most one post in
   three may touch it**, and always as a lens on something else. She does not want
   to be boxed in as the running person.
-- **Every post should leave the offering clearer than it found it**, even the
-  reflective ones. This replaces the earlier rule that most posts should sell
-  nothing, which described her old feed and is no longer the strategy.
+- **Only the week 4 post carries a hard call to action.** Weeks 1 to 3 ask for
+  nothing. The profile does the selling the rest of the time.
 - **Keep the ultra running and the personal material to a supporting role.** It
   is evidence that she practises what she teaches, not the subject. Most of that
   now belongs on Instagram.
