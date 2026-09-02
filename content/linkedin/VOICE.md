@@ -160,6 +160,21 @@ capitals for emphasis ("A LOT"), and yoga vocabulary used unselfconsciously
 ("a practice in learning to witness the fluctuations of the mind, rather than
 getting too involved with them").
 
+**Write it the way she would SAY it, out loud, to one person sitting across from
+her.** This is the single most useful test, and she has applied it repeatedly.
+Read the draft aloud: if a sentence is not something a person says in
+conversation, rewrite it.
+
+Essay scaffolding she has specifically rejected, all of which are written-only
+constructions: "What changed was...", "That was the shift for me", "So I have
+been wondering what it looks like to...", "For me that is...". Speech handles
+those turns differently and more simply: "Then I started...", "So I took...",
+"That's when...", "What if we did it the other way?", "Mine is...".
+
+**Use contractions.** Her own posts do ("you don't feel like it", "I still can't
+believe", "the one who doesn't slow down"). Fully uncontracted prose reads
+formal and written, which is the opposite of what she wants.
+
 **She is not a literary writer and drafts should not try to be.** Phrases like
 "the quiet assumption", "goes quietly missing" or "bolted on once you are
 wrecked" are not her. Plainer is more like her, and it is also easier to read.
