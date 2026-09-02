@@ -118,6 +118,13 @@ the offering rather than to personal reflection pieces.
 The drafts written so far open with a **thesis about teams** and close with a
 **soft pitch to HR**. That is a B2B consultant's voice. It is not hers.
 
+**Do not be accusatory towards companies.** Turn observations into questions she
+is asking herself and inviting the reader to sit with: is there anything in your
+week that helps you recover regularly, are you the first to drop it when work
+gets busy, is it treated as a nice extra or as part of how the work gets done.
+That lands the same point without lecturing an HR audience about their own
+workplace.
+
 Camilla opens with **something that actually happened to her**, or with an
 admission. The insight arrives late, often understated, and frequently she does
 not resolve it at all. Most of her posts sell nothing and ask for nothing.
@@ -144,9 +151,12 @@ drafts so far. Real example: "In some sessions I feel no sense of peace at all,
 only how overwhelmingly busy my mind really is." Never smooth this out into a
 tidy takeaway.
 
-**Bulleted reflections are a signature.** A short setup, then "Here are a few
-reflections:", then bullets using the • character, each two to four lines. Use
-this structure for roughly one post in three.
+**No bullet points. Prose only.** Camilla ruled this out on 2026-09-02: she
+wants short standalone paragraphs of one or two sentences with a blank line
+between them, which is how LinkedIn actually reads. Note the tension, since her
+best post did use bullets, so the structure of a list still works, it just has to
+be written as separate short paragraphs rather than marked with bullet
+characters. Never use the • character.
 
 **A question can be the whole frame.** She sometimes leads with the question
 rather than saving it for the end: "is this something I need to change, or
