@@ -21,30 +21,73 @@ PROFILE carries the selling. Her headline already reads "Workplace meditation an
 yoga for remote and hybrid teams", so anyone moved by a post is one click from
 knowing what she offers. That frees individual posts to be genuinely good.
 
+## What her posts actually did (measured 2026-09-02)
+
+| Post | Reactions | Comments | Words | Media |
+|---|---|---|---|---|
+| 6th ultra marathon, with reflections | **97** | **33** | 255 | image |
+| "I still can't believe I get to call this work" | 56 | 2 | 69 | image |
+| A House SUP yoga class | 23 | 0 | 60 | image |
+| Yin-yang at work | 11 | 0 | 70 | image |
+| "I find it hard to meditate alone" | 9 | 0 | 250 | text |
+
+Read this carefully, because the obvious conclusion is the wrong one.
+
+**The ultra post did not win because it was about running.** It won because it
+was long, personal, specific, structured into numbered reflections, carried real
+figures ("44 participants, and just six of them were women"), and ended on a
+question with an edge that people wanted to argue with. Thirty-three comments
+against two for the next best post is not a topic effect, it is a form effect.
+
+**Her two most workplace-relevant posts were her worst.** Yin-yang at work got
+11, the meditation course got 9. Both were abstract, and the meditation one was
+her only text-only post. So the lesson is not "post less about work". It is that
+the work posts were short, general and asked nothing sharp, while the winner was
+long, concrete and provocative.
+
+**Every post except the worst one carried an image.** Text-only came last. Always
+attach media.
+
+The strategy is therefore: **apply the ultra post's FORM to work subjects.**
+
 ## The weekly cycle
 
-One post a week, rotating through four types. The routine picks the type from the
-ISO week number, so it rotates on its own. Three of the four ask for nothing.
+One post a week, rotating through four types. The routine derives the type from
+the ISO week number so it advances on its own. Three of the four ask for nothing.
 
-**Week 1, opinion.** A real stance on work, rest, recovery or wellbeing culture.
-No ask at all. Ends on a genuine question she actually wants answered. This is
-the comments post.
+**OPINION.** The ultra post's form, aimed at work. Long, 200 to 250 words. Opens
+with something that actually happened to her. Numbered or bulleted reflections.
+At least one concrete number or specific detail. Ends on a question with a real
+edge, something a people leader might disagree with. No ask. This is the comments
+post and it is the most important one.
 
-**Week 2, show the class.** Video: talk-to-camera or filmed class footage. What
-actually happens in a meditation, breathing or chair yoga session. Soft close, no
-hard pitch. This is the demonstration post, and it is where the offering becomes
-visible rather than described.
+**SHOW THE WORK.** B-roll of a class or her own practice. **NOT talking to
+camera:** Camilla does not want to do talking-head video and that is settled. The
+footage runs silent or on ambient sound and the written post carries the meaning,
+which suits LinkedIn since most video there is watched muted. What actually
+happens in a meditation, breathing or chair yoga session. Soft close, no pitch.
 
-**Week 3, practical.** Something a manager or an individual can use that same
-day. Three breathing techniques before a hard meeting, a sixty-second desk reset,
-how to run a session people actually attend. Written to be saved and shared. No
-ask.
+**PRACTICAL.** Something a manager or an individual can use that same day. Three
+breathing techniques before a hard meeting, a sixty-second desk reset. Written to
+be saved. No ask. Always with an image.
 
-**Week 4, the offer.** Plainly: this is what I run, this is who it is for, this
-is how to book. The ONLY week with a hard call to action.
+**THE OFFER.** Plainly: what she runs, who it is for, how to book. The ONLY week
+with a hard call to action.
 
-That is three non-selling posts to one selling post, which matches how she wants
-to show up, while still making the offering unmistakable across a month.
+## On video and music
+
+No talking to camera. B-roll only. Do not suggest a soundtrack: LinkedIn has no
+licensed music library the way Instagram does, so commercial music on a LinkedIn
+video risks being muted or taken down and is not licensed for that use. Natural
+or ambient sound, or silence, with the text doing the work.
+
+## On the ultra running
+
+It measurably outperforms everything else, so it is not banned. But engagement
+from her personal network is not the same as an HR buyer, and she has said she
+does not want to be boxed in as the running person. Use the form every week and
+the subject rarely: at most one post in four may be ultra-adjacent, and even then
+it should land on something about work.
 
 ## What earns saves, shares and comments
 
@@ -54,9 +97,9 @@ practical lists worth keeping; and an honest admission, which is her strongest
 natural mode. What does not: rhetorical questions she does not care about,
 engagement bait, and anything that reads as a pitch wearing a question mark.
 
-**Video is explicitly wanted.** Talk-to-camera and filmed class footage are both
-in scope. An earlier version of the routine banned these formats. That rule is
-withdrawn.
+**Video: b-roll only, never talking to camera.** Camilla has ruled out
+talking-head video and that is settled. Filmed class and practice footage is
+welcome, and she already has b-roll. See the video and music section above.
 
 Two calibrations so the feed still earns attention:
 
