@@ -23,6 +23,7 @@ import employeeWellbeingIdeasSmallBudget from './posts/employee-wellbeing-ideas-
 import corporateWellbeingForTechTeams from './posts/corporate-wellbeing-for-tech-teams';
 import howToStartACorporateWellbeingProgramme from './posts/how-to-start-a-corporate-wellbeing-programme';
 import improveTeamMoraleRemoteTeam from './posts/improve-team-morale-remote-team';
+import wellbeingInRemoteOnboarding from './posts/wellbeing-in-remote-onboarding';
 import meditationBreathingOrChairYogaForYourTeam from './posts/meditation-breathing-or-chair-yoga-for-your-team';
 import howToMeasureWellbeingProgrammeRoi from './posts/how-to-measure-wellbeing-programme-roi';
 
@@ -56,6 +57,7 @@ export const blogPosts: BlogPost[] = [
   breathingExercisesForWorkStress,
   fiveMinuteDeskMeditation,
   neckAndShoulderStretchesDeskWorkers,
+  wellbeingInRemoteOnboarding,
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>
