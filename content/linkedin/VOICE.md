@@ -108,9 +108,10 @@ One post a week, rotating through four types. The routine derives the type from
 nothing.
 
 **OPINION** — the winning form aimed at work. Opens with something that actually
-happened to her, usually an admission. At least one concrete detail. Questions
-turned on the reader. Ends on a real question. No ask. This is the comments post
-and the most important one.
+happened to her, usually an admission. One short paragraph per thought. At least
+one concrete detail. A question turned on the reader, placed in the MIDDLE.
+Closes on a reflection, not a question. No ask. This is the comments post and the
+most important one.
 
 **SHOW THE WORK** — b-roll of a class or her own practice. What actually happens
 in a meditation, breathing or chair yoga session. Soft close, no pitch.
@@ -132,6 +133,40 @@ already has b-roll.
 Instagram does, so commercial music risks being muted or taken down and is not
 licensed for that use. Natural sound or silence, with the text doing the work.
 Most LinkedIn video is watched muted anyway.
+
+## 6b. The structure of her best post, copy this
+
+Her 6th-ultra post (97 reactions, 33 comments) reads like this, and it is the
+template:
+
+1. A plain opening line that sets up the piece, then a colon introducing what
+   follows. "Over the weekend I completed my 6th ultra marathon. Here are a few
+   reflections:"
+2. Then ONE SHORT PARAGRAPH PER THOUGHT, blank line between. No bullets, no
+   markers. Each stands alone and could almost be read in any order.
+3. A real question in the middle, not at the end. "Why is this such a male
+   dominated sport?" followed immediately by the numbers that provoked it.
+4. A close that is reflective and forward-looking, NOT a question and NOT a call
+   to action. Hers ended: "Flow, the feeling of true presence, losing track of
+   time and becoming completely absorbed in what you are doing, is a feeling I
+   continue to chase."
+
+Sentence-level habits from that post: short declaratives that land on their own
+("Mindset is everything." "Distance running is a skill anyone can learn."),
+teacherly explanation ("It is about building a habit, and committing to yourself
+to run (a lot), even on the days when you don't feel like it"), concrete numbers
+(44 participants, six women, 30 percent, the last 10 kms), parenthetical asides,
+capitals for emphasis ("A LOT"), and yoga vocabulary used unselfconsciously
+("a practice in learning to witness the fluctuations of the mind, rather than
+getting too involved with them").
+
+**She is not a literary writer and drafts should not try to be.** Phrases like
+"the quiet assumption", "goes quietly missing" or "bolted on once you are
+wrecked" are not her. Plainer is more like her, and it is also easier to read.
+
+**How she earns trust as a source:** by teaching something real from her own
+practice, with specifics, and by being honest about what she has not mastered.
+Never by asserting authority or citing credentials.
 
 ## 7. How she actually writes
 
