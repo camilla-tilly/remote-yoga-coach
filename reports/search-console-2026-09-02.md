@@ -143,11 +143,35 @@ returns the identical 7,652-byte shell with the title
 `Corporate Wellbeing for Remote and Hybrid Teams | Remote Yoga Coach`, so a 200
 proves nothing here.
 
-`main` is at `0bdd971` and matches `origin/main`, so the commits are pushed.
+The commits are pushed to `origin/main`.
 **The Netlify build has not shipped since roughly 2026-08-19.** Eight posts —
 about six weeks of the Wednesday blog routine — are producing zero SEO value,
 and will keep doing so until the deploy is fixed. Worth checking the Netlify
 dashboard for failed builds.
+
+**Update, later the same run.** A merge commit (`3633dec`, 11:02 today,
+"blog: publish the Swedish posts and make the hub browsable") landed on `main`
+while this report was being written. The gap is now wider, not narrower:
+
+| | Repo | Live |
+|---|---|---|
+| Sitemap URLs | **46** | **35** |
+| Blog posts | **31** | **20** |
+
+The served bundle is still `/assets/index-Dgjwk5uz.js` — byte-identical to
+before — so that merge has not deployed either. **Eleven posts are now written
+and unshipped.**
+
+Two things in that commit need Camilla's eye. First, it adds **three
+Swedish-language posts** to Remote Yoga Coach (`naturaförmån` /
+friskvårdsbidraget, hybridarbete och psykisk hälsa, kontorsyoga på distans).
+RYC is the English-language international B2B business and is meant to stay
+separate from Yoga with Camilla and the Swedish consumer offering; the commit
+message argues they are Swedish entry points for Swedish queries, which is a
+reasonable case, but it is a positioning decision, not a routine one. Second,
+the commit notes those posts were written on 28 August and "never opened as a
+PR and so never shipped" — the same failure mode as the deploy problem above,
+one step earlier in the chain.
 
 ### Search Console indexing status
 
