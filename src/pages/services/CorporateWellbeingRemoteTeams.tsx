@@ -27,15 +27,15 @@ const faqItems: Array<[string, string]> = [
   ],
   [
     'How many people can join?',
-    'From small teams of around 10 up to 100 or more. Smaller teams get a single weekly slot; larger or multi-region teams get multiple slots so nobody has to join at an antisocial hour. Camera-off is welcome throughout.',
+    'Everyone on the team joins the same live session, and camera-off is welcome throughout. For teams spread across several regions I can run more than one weekly slot, so nobody has to join at an antisocial hour.',
   ],
   [
     'How do we know it is working?',
-    'Every programme reports attendance, repeat attendance and a short wellbeing check before and after sessions. At the end of the four-week pilot you get a one-page summary you can take straight to leadership.',
+    'Every programme reports attendance and repeat attendance. Once it is a weekly habit you get a quarterly summary you can take straight to leadership.',
   ],
   [
     'What does corporate wellbeing for a remote team cost?',
-    'A flat monthly subscription by team size, not a per-person app charge, so the cost per person stays low. Pricing is public, and every engagement starts with a four-week paid pilot credited to your first month if you continue.',
+    'A flat monthly subscription by session frequency, not a per-person app charge. Pricing is public, and every engagement starts with a single pilot session credited to your first month if you continue.',
   ],
 ];
 
@@ -50,7 +50,7 @@ const structuredData = {
       areaServed: ['GB', 'EU', 'AU'],
       description:
         'Live weekly wellbeing sessions for distributed and hybrid teams on Teams or Zoom: breathing, meditation and chair yoga, camera optional, with attendance and wellbeing reporting.',
-      offers: { '@type': 'Offer', priceCurrency: 'EUR', description: 'Monthly subscription by team size, from a four-week paid pilot.' },
+      offers: { '@type': 'Offer', priceCurrency: 'SEK', description: 'Monthly subscription by session frequency, from a single pilot session.' },
     },
     {
       '@type': 'FAQPage',
@@ -69,7 +69,7 @@ const structuredData = {
 const SectionHeading = ({ eyebrow, children }: { eyebrow?: string; children: React.ReactNode }) => (
   <>
     {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-    <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">{children}</h2>
+    <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">{children}</h2>
   </>
 );
 
@@ -87,9 +87,9 @@ const CorporateWellbeingRemoteTeams = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Weekly Wellbeing Sessions for Remote and Hybrid Teams | Remote Yoga Coach"
-        description="A live weekly wellbeing subscription for remote, hybrid and in-office teams. Breathing, meditation and chair yoga on Teams or Zoom, camera optional, with reporting. Book a four-week pilot."
+        description="A live weekly wellbeing subscription for remote, hybrid and in-office teams. Breathing, meditation and chair yoga on Teams or Zoom, camera optional, with reporting. Book a pilot session."
         canonical="https://remoteyogacoach.com/services/corporate-wellbeing-for-remote-teams"
-        ogImage="https://remoteyogacoach.com/og/corporate-wellbeing-remote-teams.png"
+        ogImage="https://remoteyogacoach.com/og/corporate-wellbeing-remote-teams.png?v=2"
         structuredData={structuredData}
       />
       <Navbar />
@@ -98,9 +98,9 @@ const CorporateWellbeingRemoteTeams = () => {
         {/* HERO */}
         <section className="relative overflow-hidden bg-cream-soft pt-36 pb-20 md:pt-44 md:pb-24">
           <GlowField tone="warm" />
-          <div className="relative max-w-[820px] mx-auto px-5 text-center">
+          <div className="relative max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <Eyebrow>Corporate wellbeing, distributed teams</Eyebrow>
-            <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
+            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Wellbeing for remote and hybrid teams that reaches everyone on screen.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[660px] mx-auto">
@@ -111,12 +111,12 @@ const CorporateWellbeingRemoteTeams = () => {
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-6">
                   Book a pilot
                 </Button>
               </Link>
               <Link to="/pricing">
-                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-medium text-[15px] rounded-full px-8 py-6">
                   See pricing
                 </Button>
               </Link>
@@ -126,7 +126,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* THE PROBLEM */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="The problem">Distributed teams are the hardest to reach, and the most at risk</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -160,7 +160,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* WHAT'S INCLUDED */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[900px] mx-auto px-5">
+          <div className="max-w-[900px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="What you get">A wellbeing subscription built for distributed teams</SectionHeading>
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
               {included.map(([title, text], i) => (
@@ -170,7 +170,7 @@ const CorporateWellbeingRemoteTeams = () => {
                       <Check className="text-clay" size={15} strokeWidth={2.5} />
                     </span>
                     <p className="text-charcoal/80 text-[15px] leading-relaxed">
-                      <span className="font-fraunces font-semibold text-heading text-lg block mb-0.5">{title}</span>
+                      <span className="font-fraunces font-normal text-heading text-lg block mb-0.5">{title}</span>
                       {text}
                     </p>
                   </div>
@@ -182,7 +182,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* SUBSCRIPTION VS ONE-OFF */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Why a subscription">A habit, not a one-off event</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -192,8 +192,7 @@ const CorporateWellbeingRemoteTeams = () => {
               </p>
               <p>
                 That is why this is a subscription, not a booking. A protected weekly slot, the same coach, a
-                programme that builds over time. And because it is priced per team rather than per person, the cost
-                per employee stays low as you grow. See{' '}
+                programme that builds over time, priced as a flat monthly fee. See{' '}
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   how a session runs
                 </Link>{' '}
@@ -209,7 +208,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* HYBRID TEAMS */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Hybrid teams">One shared moment to keep a hybrid team connected</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -239,11 +238,11 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* WHO IT'S FOR */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Who it's for">People leaders at remote-first companies</SectionHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               HR and people leaders, team leads and founders at remote-first and hybrid companies, tech, consulting,
-              sustainability and distributed teams of roughly 10 to 100, who want a wellbeing habit the whole team
+              sustainability and distributed teams that want a wellbeing habit the whole team
               actually keeps. Delivered in English, online, across UK and European time zones, with Australian hours
               for part of the year.
             </p>
@@ -263,7 +262,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* FAQ */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="FAQ">Common questions</SectionHeading>
             <GuideFAQ items={faqItems} />
           </div>
@@ -272,17 +271,17 @@ const CorporateWellbeingRemoteTeams = () => {
         {/* CTA */}
         <section className="relative overflow-hidden bg-cream-soft-b py-24 md:py-28">
           <GlowField tone="sage" />
-          <div className="relative max-w-[680px] mx-auto px-5 text-center">
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
+          <div className="relative max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">
               Give your distributed team a habit that sticks
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              Start with a four-week pilot of live weekly sessions, ending in a one-page report of attendance and
-              wellbeing, credited to your first month if you continue.
+              Start with a single pilot session, then once it is a weekly habit the attendance and wellbeing
+              reporting gives you something concrete to take to leadership. Credited to your first month if you continue.
             </p>
             <div className="mt-9">
               <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-6">
                   Book a pilot
                 </Button>
               </Link>

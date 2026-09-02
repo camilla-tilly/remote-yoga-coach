@@ -5,49 +5,49 @@
 
 @layer base {
   :root {
-    /* Off-white #FAFAF8 background */
-    --background: 60 20% 98%;
-    /* Charcoal #2C2C2A — primary text */
-    --foreground: 30 12% 26%;
+    /* Warm paper #f9f2e9 background */
+    --background: 34 57% 95%;
+    /* Deep warm brown #261d16 — primary text */
+    --foreground: 26 27% 12%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 30 12% 26%;
+    --card: 33 85% 97%;
+    --card-foreground: 26 27% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 30 12% 26%;
+    --popover: 33 85% 97%;
+    --popover-foreground: 26 27% 12%;
 
-    /* Warm clay #C97A5C primary */
-    --primary: 19 38% 54%;
-    --primary-foreground: 0 0% 100%;
+    /* Terracotta #8f5033 primary */
+    --primary: 19 47% 38%;
+    --primary-foreground: 34 67% 95%;
 
-    /* Sage green #8B9D7D secondary */
-    --secondary: 27 22% 57%;
-    --secondary-foreground: 30 12% 26%;
+    /* Muted warm taupe #7e7269 secondary */
+    --secondary: 26 9% 45%;
+    --secondary-foreground: 34 67% 95%;
 
-    --muted: 34 40% 93%;
-    --muted-foreground: 40 6% 40%;
+    --muted: 34 44% 89%;
+    --muted-foreground: 26 9% 45%;
 
-    /* Accent: light sage #DCE4D6 */
-    --accent: 34 33% 87%;
-    --accent-foreground: 30 12% 26%;
+    /* Accent: sand #efe4d6 */
+    --accent: 34 44% 89%;
+    --accent-foreground: 26 27% 12%;
 
     --destructive: 3 50% 56%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 34 33% 87%;
-    --input: 94 18% 90%;
-    --ring: 19 38% 54%;
+    --border: 35 26% 83%;
+    --input: 35 26% 83%;
+    --ring: 19 47% 38%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 60 20% 98%;
-    --sidebar-foreground: 30 12% 26%;
-    --sidebar-primary: 19 38% 54%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 34 33% 87%;
-    --sidebar-accent-foreground: 30 12% 26%;
-    --sidebar-border: 34 33% 87%;
-    --sidebar-ring: 19 38% 54%;
+    --sidebar-background: 34 57% 95%;
+    --sidebar-foreground: 26 27% 12%;
+    --sidebar-primary: 19 47% 38%;
+    --sidebar-primary-foreground: 34 67% 95%;
+    --sidebar-accent: 34 44% 89%;
+    --sidebar-accent-foreground: 26 27% 12%;
+    --sidebar-border: 35 26% 83%;
+    --sidebar-ring: 19 47% 38%;
   }
 }
 
@@ -66,16 +66,16 @@
     letter-spacing: 0.005em;
   }
 
-  /* Main headings — bolder for clear hierarchy against subheads + body */
+  /* Editorial headings — Newsreader at regular weight, hierarchy from size not
+     boldness, deep warm brown. Matches the redesign's light display serif. */
   h1, h2 {
-    @apply font-cormorant font-semibold;
-    letter-spacing: -0.015em;
+    @apply font-cormorant font-normal text-heading;
+    letter-spacing: -0.02em;
   }
 
-  /* Subheadings — medium weight, not as heavy as H1/H2 */
   h3, h4 {
-    @apply font-cormorant font-medium;
-    letter-spacing: -0.01em;
+    @apply font-cormorant font-normal text-heading;
+    letter-spacing: -0.015em;
   }
 
   p {
@@ -86,7 +86,7 @@
      Swap it for Inter's cleaner, classic & glyph and tone it down so it
      reads as a quiet connector at display size. */
   .amp {
-    font-family: Inter, system-ui, sans-serif;
+    font-family: Karla, system-ui, sans-serif;
     font-size: 0.78em;
     font-weight: 300;
     opacity: 0.75;
@@ -173,15 +173,15 @@
 
   /* Section background treatments — pure white with barely-there sage wash */
   .bg-cream-soft {
-    background-image: radial-gradient(ellipse 90% 70% at 50% 0%, #FFFFFF 0%, #FAFAF8 55%, #F5EFE7 100%);
+    background-image: radial-gradient(ellipse 90% 70% at 50% 0%, #fefcf8 0%, #f9f2e9 55%, #efe4d6 100%);
   }
   .bg-cream-soft-b {
-    background-image: radial-gradient(ellipse 90% 70% at 50% 100%, #FFFFFF 0%, #FAFAF8 55%, #F5EFE7 100%);
+    background-image: radial-gradient(ellipse 90% 70% at 50% 100%, #fefcf8 0%, #f9f2e9 55%, #efe4d6 100%);
   }
 
-  /* Legacy alias — mapped to a warm cream wash so old markup stays on-palette */
+  /* Legacy alias — mapped to a warm sand wash so old markup stays on-palette */
   .bg-saffron-soft {
-    background-color: #F5EFE7;
+    background-color: #efe4d6;
   }
 
   /* Thin horizontal hairline — replaces dotted and decorative dividers */

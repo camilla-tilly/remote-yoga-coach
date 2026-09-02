@@ -312,7 +312,7 @@ const BlogPostPage = () => {
                         <a
                           href={href}
                           {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                          className="inline-block mt-5 bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-3 px-8 rounded-full uppercase tracking-[0.22em] text-xs md:text-sm font-semibold shadow-card"
+                          className="inline-block mt-5 bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-3 px-8 rounded-full uppercase tracking-[0.22em] text-xs md:text-sm font-semibold"
                         >
                           {section.ctaLabel}
                         </a>
@@ -416,7 +416,7 @@ const BlogPostPage = () => {
           {post.relatedServiceHref && post.relatedServiceLabel && (
             <div className="border-t border-b border-dalashala-meadow/60 py-14 text-center my-14">
               <Button
-                className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 font-inter py-4 px-10 rounded-full uppercase tracking-[0.22em] text-sm font-semibold transition-all shadow-card"
+                className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 font-inter py-4 px-10 rounded-full uppercase tracking-[0.22em] text-sm font-semibold transition-all"
                 asChild
               >
                 <Link to={post.relatedServiceHref}>{post.relatedServiceLabel}</Link>

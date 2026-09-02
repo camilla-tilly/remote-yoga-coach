@@ -119,7 +119,7 @@ const post: BlogPost = {
       items: [
         "Participation: what share of the whole team takes part, not just the keen few.",
         "Repeat participation: do people come back?",
-        "A simple before/after wellbeing check: even a quick pulse survey beats a login count.",
+        "A simple sense of before and after: even asking people how it felt beats a login count.",
         "Renewal: when it is time to decide again, do people want to keep it?",
       ],
     },

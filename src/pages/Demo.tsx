@@ -48,32 +48,32 @@ const Demo = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Get in touch | Remote Yoga Coach"
-        description="Book a four-week pilot of The Weekly Reset for your team: a full programme ending in a one-page wellbeing report, credited to your first month if you continue."
+        description="Book a single pilot session of The Weekly Reset for your team: one live 30-minute class, credited to your first month if you continue."
         canonical="https://remoteyogacoach.com/demo"
       />
       <Navbar />
 
       <main>
         <section className="bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
-          <div className="max-w-[720px] mx-auto px-5 text-center">
-            <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
+          <div className="max-w-[720px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Get in touch
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[560px] mx-auto">
               Tell me a bit about your team and what you're after, whether you'd just like to talk it through, or
-              you're ready to start a four-week pilot. I'll get back to you.
+              you're ready to book a pilot session. I'll get back to you.
             </p>
           </div>
         </section>
 
         <section className="py-16 md:py-20">
-          <div className="max-w-[640px] mx-auto px-5">
+          <div className="max-w-[640px] mx-auto px-5 sm:px-6 md:px-8">
             {submitted ? (
               <div className="bg-cream border border-sage-light rounded-2xl p-10 text-center">
                 <div className="w-14 h-14 rounded-full bg-sage/20 flex items-center justify-center mx-auto">
                   <Check className="text-sage" size={28} strokeWidth={2.5} />
                 </div>
-                <h2 className="font-fraunces font-semibold text-heading text-2xl mt-5">Thanks, that's in.</h2>
+                <h2 className="font-fraunces font-normal text-heading text-2xl mt-5">Thanks, that's in.</h2>
                 <p className="mt-3 text-charcoal/75 leading-relaxed">
                   I'll be in touch.
                 </p>
@@ -112,7 +112,7 @@ const Demo = () => {
                   <textarea id="message" name="message" required rows={5} value={form.message} onChange={set('message')} className={inputClass} placeholder="A line about your team, or your question." />
                 </div>
 
-                <Button type="submit" className="w-full bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md py-6">
+                <Button type="submit" className="w-full bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full py-6">
                   Get in touch
                 </Button>
               </form>

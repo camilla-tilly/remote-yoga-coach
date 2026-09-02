@@ -30,7 +30,7 @@ const faqItems: Array<[string, string]> = [
   ],
   [
     'How much does chair yoga for a team cost?',
-    'It is priced as a monthly subscription by team size and session frequency, not per class, so a weekly habit stays affordable per person. Pricing is public on the pricing page, and every engagement starts with a four-week pilot so you can see attendance and results before committing.',
+    'It is priced as a monthly subscription by session frequency, not per class, so a weekly habit stays affordable. Pricing is public on the pricing page, and every engagement starts with a single pilot session so you can see how it lands before committing.',
   ],
   [
     'Can remote and hybrid teams do chair yoga together?',
@@ -79,8 +79,8 @@ const included = [
 
 const SectionHeading = ({ eyebrow, children }: { eyebrow?: string; children: React.ReactNode }) => (
   <>
-    {eyebrow && <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-sage mb-4">{eyebrow}</span>}
-    <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">{children}</h2>
+    {eyebrow && <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">{eyebrow}</span>}
+    <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">{children}</h2>
   </>
 );
 
@@ -89,7 +89,7 @@ const ChairYogaForTeams = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Virtual Office Yoga and Chair Yoga for Teams | Remote Yoga Coach"
-        description="Live virtual office yoga and chair yoga for companies and remote teams on Teams or Zoom. Workplace yoga that is gentle and desk-friendly, camera optional, no experience needed. Book a four-week pilot."
+        description="Live virtual office yoga and chair yoga for companies and remote teams on Teams or Zoom. Workplace yoga that is gentle and desk-friendly, camera optional, no experience needed. Book a pilot session."
         canonical="https://remoteyogacoach.com/services/chair-yoga-for-teams"
         structuredData={structuredData}
       />
@@ -98,11 +98,11 @@ const ChairYogaForTeams = () => {
       <main>
         {/* HERO */}
         <section className="bg-cream-soft pt-36 pb-20 md:pt-44 md:pb-24">
-          <div className="max-w-[820px] mx-auto px-5 text-center">
-            <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-sage mb-6">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+            <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-6">
               For companies and remote teams
             </span>
-            <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
+            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Virtual office yoga and chair yoga your whole team can actually do.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[640px] mx-auto">
@@ -116,12 +116,12 @@ const ChairYogaForTeams = () => {
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-6">
                   Book a pilot
                 </Button>
               </Link>
               <Link to="/pricing">
-                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-medium text-[15px] rounded-full px-8 py-6">
                   See pricing
                 </Button>
               </Link>
@@ -131,7 +131,7 @@ const ChairYogaForTeams = () => {
 
         {/* DEFINITIONS */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Quick definitions">Office yoga, desk yoga and chair yoga: what's the difference?</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -163,7 +163,7 @@ const ChairYogaForTeams = () => {
 
         {/* WHY CHAIR YOGA */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Why chair yoga">Movement a whole workforce will keep</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -189,16 +189,16 @@ const ChairYogaForTeams = () => {
 
         {/* WHAT'S INCLUDED */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[820px] mx-auto px-5">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="What a session includes">One weekly slot, run for you</SectionHeading>
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">
               {included.map(([title, text]) => (
-                <li key={title} className="flex gap-4 bg-white rounded-lg border border-sage-light p-5">
+                <li key={title} className="flex gap-4 bg-card rounded-lg border border-sage-light p-5">
                   <span className="shrink-0 mt-1 w-6 h-6 rounded-full bg-clay/10 flex items-center justify-center">
                     <Check className="text-clay" size={15} strokeWidth={2.5} />
                   </span>
                   <p className="text-charcoal/80 text-[15px] leading-relaxed">
-                    <span className="font-fraunces font-semibold text-heading text-lg block mb-0.5">{title}</span>
+                    <span className="font-fraunces font-normal text-heading text-lg block mb-0.5">{title}</span>
                     {text}
                   </p>
                 </li>
@@ -209,7 +209,7 @@ const ChairYogaForTeams = () => {
 
         {/* WHY IT STICKS */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Why it sticks">Live and scheduled beats an app or a handout</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -239,14 +239,14 @@ const ChairYogaForTeams = () => {
         </section>
 
         {/* MEASUREMENT */}
-        <section className="bg-charcoal text-white py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+        <section className="bg-cream py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The proof</span>
-            <h2 className="font-fraunces font-semibold text-3xl md:text-4xl leading-tight">You will see whether it is working</h2>
-            <p className="mt-6 text-white/80 text-lg leading-relaxed">
-              Every programme comes with simple, honest reporting: how many of your team attend, how many keep coming
-              back, and how they rate their stress and energy before and after. At the end of a four-week pilot you
-              get a one-page report you can take straight to your budget-holder, no guesswork about whether it earned
+            <h2 className="font-fraunces font-normal text-3xl md:text-4xl leading-tight">You will see whether it is working</h2>
+            <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
+              Every programme comes with simple, honest reporting: how many of your team attend and how many keep coming
+              back. Once it is a weekly habit you
+              get a report you can take straight to your budget-holder, no guesswork about whether it earned
               its slot.
             </p>
           </div>
@@ -254,12 +254,12 @@ const ChairYogaForTeams = () => {
 
         {/* WHO IT'S FOR */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Who it's for">Built for distributed teams</SectionHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               People and culture leaders, team leads and founders at remote-first and hybrid companies who want a
-              wellbeing habit the whole team actually keeps, not another perk that lands flat. Teams of roughly 10 to
-              100 across tech, consulting, sustainability and distributed organisations.
+              wellbeing habit the whole team actually keeps, not another perk that lands flat. Teams across tech,
+              consulting, sustainability and distributed organisations.
             </p>
             <p className="mt-5 text-charcoal/60 text-base leading-relaxed">
               Sessions run in English, online, across UK and European time zones, with Australian hours for part of
@@ -274,31 +274,55 @@ const ChairYogaForTeams = () => {
 
         {/* FAQ */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
-            <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-sage mb-4">FAQ</span>
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">Common questions</h2>
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+            <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">FAQ</span>
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">Common questions</h2>
             <GuideFAQ items={faqItems} />
+          </div>
+        </section>
+
+        {/* RELATED READING */}
+        <section className="py-20 md:py-24">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+            <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">Related reading</span>
+            <ul className="space-y-2 text-lg leading-relaxed">
+              <li>
+                <Link to="/guides/desk-yoga" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  Desk yoga and chair yoga at work
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog/chair-yoga-at-your-desk" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  Chair yoga at your desk: 8 poses
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog/tech-neck-exercises-desk" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  Tech neck: gentle exercises
+                </Link>
+              </li>
+            </ul>
           </div>
         </section>
 
         {/* CTA */}
         <section className="bg-cream-soft-b py-24 md:py-28">
-          <div className="max-w-[680px] mx-auto px-5 text-center">
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">
               Try chair yoga with your team
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              A four-week pilot of live weekly chair yoga, ending in a one-page report, credited to your first month
+              A single pilot session of live chair yoga, credited to your first month
               if you continue. See it work with your own team before committing.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-6">
                   Book a pilot
                 </Button>
               </Link>
               <Link to="/pricing">
-                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-semibold uppercase text-sm tracking-wider rounded-md px-8 py-6">
+                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-medium text-[15px] rounded-full px-8 py-6">
                   See pricing
                 </Button>
               </Link>

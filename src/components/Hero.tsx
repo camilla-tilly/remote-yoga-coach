@@ -52,7 +52,7 @@ const Hero = () => {
         >
           <a
             href="#services"
-            className="inline-block bg-dalashala-earth text-white px-11 py-4 md:px-14 md:py-[1.125rem] text-sm uppercase tracking-[0.22em] rounded-full font-inter font-semibold hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap shadow-card"
+            className="inline-block bg-dalashala-earth text-white px-11 py-4 md:px-14 md:py-[1.125rem] text-sm uppercase tracking-[0.22em] rounded-full font-inter font-semibold hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap"
           >
             Se tjänster
           </a>
