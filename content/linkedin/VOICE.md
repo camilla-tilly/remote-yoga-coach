@@ -101,6 +101,28 @@ or as part of how the work gets done?*
 
 Same point, no lecture.
 
+## 4b. How to end a post so people actually reply
+
+Two rules learned while drafting with her on 2026-09-02.
+
+**Never instruct the reader how to feel.** "So be honest with yourself", "take a
+moment to think about", "ask yourself honestly" all read as preachy. State the
+observation flat and let them draw the conclusion. "Which makes me think most of
+us don't actually have anything non-negotiable" is a sharper accusation than any
+instruction, and it delivers softer.
+
+**End on a question people can answer with a WIN, not a confession.** This is the
+difference between likes and comments. Asking "is rest the first thing you
+cancel?" requires someone to admit a failing in public, under their own name,
+where colleagues can see. People think it and do not post it. Asking "what's the
+one thing you manage to protect, even in a bad week?" is answerable with
+something they are pleased about, and every reply naming a Sunday run or a
+protected morning proves her point for her.
+
+Her own evidence: the ultra post took 33 comments off "Why is this such a male
+dominated sport?", a question about something EXTERNAL that let people opine and
+look thoughtful. Her posts asking people to look inward got zero comments.
+
 ## 5. The weekly cycle
 
 One post a week, rotating through four types. The routine derives the type from
