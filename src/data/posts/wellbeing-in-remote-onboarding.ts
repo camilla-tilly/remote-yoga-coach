@@ -16,6 +16,7 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
+    { slug: 'manager-burnout-signs', label: 'Manager burnout' },
     { slug: 'how-to-start-a-corporate-wellbeing-programme', label: 'How to start a corporate wellbeing programme' },
     { slug: 'keep-hybrid-team-focused', label: 'How to keep a hybrid team focused and connected' },
   ],
@@ -99,6 +100,7 @@ const post: BlogPost = {
       ctaHref: '/demo',
       ctaLabel: 'Book a demo session'
     },
+    { type: 'callout', text: 'For the wider context behind all of this, I keep a [guide to remote work burnout](/guides/remote-work-burnout) covering what actually causes it and what helps.' },
     {
       type: 'faq',
       faqItems: [

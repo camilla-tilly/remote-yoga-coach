@@ -14,6 +14,8 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
+    { slug: "wellbeing-lunch-and-learn-ideas", label: "Virtual wellbeing lunch and learn ideas for remot..." },
+    { slug: "improve-team-morale-remote-team", label: "How to improve team morale on a remote team" },
     { slug: "prevent-burnout-distributed-team", label: "Preventing burnout in a distributed team" },
     { slug: "keep-hybrid-team-focused", label: "How to keep a hybrid team focused" },
   ],
@@ -122,6 +124,7 @@ const post: BlogPost = {
       ctaHref: "/demo",
       ctaLabel: "Book a demo",
     },
+    { type: "callout", text: "My [remote work burnout guide](/guides/remote-work-burnout) sets out the underlying pattern, if you want the cause rather than the symptom." },
     {
       type: "faq",
       faqItems: [

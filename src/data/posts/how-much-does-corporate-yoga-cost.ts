@@ -101,6 +101,7 @@ const post: BlogPost = {
       type: 'paragraph',
       text: 'I publish my prices, including a flat monthly fee for your whole team and a single pilot session you can try first. [See the full pricing](/pricing), or [book a pilot](/demo) and see it work with your own team, credited to your first month if you continue.',
     },
+    { type: 'callout', text: 'The [cost of employee burnout guide](/guides/cost-of-employee-burnout) has the numbers side, useful if you need to justify the spend to someone else.' },
     {
       type: 'cta',
       text: 'Curious what it would cost for your team? My pricing is public, with a single pilot session you can try first.',

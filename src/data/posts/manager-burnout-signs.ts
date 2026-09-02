@@ -14,6 +14,7 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
+    { slug: "wellbeing-in-remote-onboarding", label: "How to build wellbeing into remote employee onboa..." },
     { slug: "prevent-burnout-distributed-team", label: "Preventing burnout in a distributed team" },
     { slug: "keep-hybrid-team-focused", label: "How to keep a hybrid team focused" }
   ],
@@ -152,6 +153,7 @@ const post: BlogPost = {
       type: "callout",
       text: "A note on the serious end. If you, or a manager you lead, are dealing with persistent low mood, exhaustion that does not lift, or symptoms that are affecting daily life, please treat that as a reason to speak to a doctor or a mental health professional. Shared habits help protect against the slow slide toward burnout, but they are not a substitute for proper care when someone is already struggling."
     },
+    { type: "callout", text: "My [remote work burnout guide](/guides/remote-work-burnout) sets out the underlying pattern, if you want the cause rather than the symptom." },
     {
       type: "faq",
       faqItems: [

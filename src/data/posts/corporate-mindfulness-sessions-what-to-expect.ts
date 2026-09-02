@@ -16,6 +16,7 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
+    { slug: 'meditation-breathing-or-chair-yoga-for-your-team', label: 'Meditation, breathing or chair yoga' },
     { slug: 'do-workplace-wellness-apps-work', label: 'Do workplace wellness apps actually work?' },
     { slug: 'corporate-wellness-ideas-remote-teams', label: 'Corporate wellness ideas that actually work' },
     { slug: 'how-much-does-corporate-yoga-cost', label: 'How much does corporate yoga cost?' },

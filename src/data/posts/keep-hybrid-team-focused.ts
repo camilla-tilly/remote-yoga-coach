@@ -16,6 +16,7 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
+    { slug: 'improve-wellbeing-programme-attendance', label: 'Why wellbeing programme attendance drops, and how...' },
     { slug: 'corporate-wellness-ideas-remote-teams', label: 'Corporate wellness ideas for remote teams' },
     { slug: 'prevent-burnout-distributed-team', label: 'Preventing burnout in a distributed team' },
   ],
@@ -59,6 +60,7 @@ const post: BlogPost = {
     { type: 'cta', text: 'Want to see how a shared weekly moment lands with your own hybrid team? I can run a live session so you can watch it work before committing to anything.', ctaHref: '/demo', ctaLabel: 'Book a live demo session' },
     { type: 'heading', text: 'Start small and let the rhythm build' },
     { type: 'paragraph', text: 'You do not need to redesign how your team works to hold it together. Pick one focus habit, write decisions down, and one connection habit, a shared weekly moment, and give them a few weeks. Hybrid work wellbeing is not a grand programme, it is a handful of small rituals that treat the person at home and the person in the office as exactly equal. Do that consistently and the focus and connection you were worried about tend to look after themselves.' },
+    { type: 'callout', text: 'For the wider context behind all of this, I keep a [guide to remote work burnout](/guides/remote-work-burnout) covering what actually causes it and what helps.' },
     { type: 'faq', faqItems: [
       { q: 'Why is it harder to keep a hybrid team focused than a fully remote one?', a: 'A hybrid team runs two realities at once: people in the office pick things up in passing, while people at home only see what is written down or said on a call. That gap is where focus slips. Writing decisions down and defaulting to async for status closes most of it.' },
       { q: 'How do you keep a hybrid team connected when only some people are in the office?', a: 'Design deliberate non-task moments rather than relying on accidental office chat, and make sure the remote half is never a spectator. One reliable approach is a shared weekly moment everyone joins the same way on screen, so the office and home divide disappears for that time.' },

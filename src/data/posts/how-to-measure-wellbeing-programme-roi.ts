@@ -16,6 +16,7 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
+    { slug: 'calm-headspace-vs-live-sessions', label: 'Calm and Headspace for Business vs live sessions' },
     { slug: 'how-to-start-a-corporate-wellbeing-programme', label: 'How to start a corporate wellbeing programme' },
     { slug: 'team-wellbeing-subscription-vs-workshops', label: 'Team wellbeing subscription vs one-off workshops' },
   ],
@@ -49,6 +50,7 @@ const post: BlogPost = {
     ] },
     { type: 'paragraph', text: 'None of this requires expensive tooling. A simple spreadsheet with attendance per week and the wellbeing check readings is enough to tell an honest story, and an honest story is what actually survives scrutiny at renewal time.' },
     { type: 'cta', text: 'Want real numbers before your next budget conversation? A four-week pilot comes with attendance and wellbeing check reporting built in, so you have evidence, not a guess, before you commit.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
+    { type: 'callout', text: 'If you are building the business case, my [guide to the cost of employee burnout](/guides/cost-of-employee-burnout) sets out what the problem costs before you spend anything fixing it.' },
     { type: 'faq', faqItems: [
       { q: 'What is the ROI of a workplace wellbeing programme?', a: 'There is no single trustworthy figure that applies to every organisation, and any number that cannot be traced back to your own team should be treated with caution. A more honest approach is to track attendance and a short wellbeing check over several weeks and let those internal numbers make the case.' },
       { q: 'How do you measure wellbeing programme success without hard financial data?', a: 'Use two proxies you fully control: the attendance trend, which shows whether people keep choosing to show up, and a short before and after wellbeing check. Together they give a credible picture without requiring a financial study.' },

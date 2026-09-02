@@ -13,6 +13,7 @@ const post: BlogPost = {
   relatedServiceLabel: "See my transparent pricing",
   tableOfContents: true,
   relatedPosts: [
+    { slug: "employee-wellbeing-ideas-small-budget", label: "Employee wellbeing ideas on a small budget" },
     { slug: "how-much-does-corporate-yoga-cost", label: "How much does corporate yoga cost?" },
     { slug: "corporate-wellness-ideas-remote-teams", label: "Corporate wellness ideas that actually work" },
     { slug: "prevent-burnout-distributed-team", label: "How to prevent burnout in a distributed team" }
@@ -122,6 +123,7 @@ const post: BlogPost = {
       type: "paragraph",
       text: "I run live, 30-minute breathing and chair-yoga sessions your whole team joins on Teams, scheduled, guided, camera optional, and I report on attendance and wellbeing so you can see it working. It's the \"class\" alongside whatever \"library\" you already have. See how it works at [my team wellbeing service](/services/team-wellness), or book a pilot at [my demo page](/demo) and watch the attendance for yourself."
     },
+    { type: "callout", text: "The [cost of employee burnout guide](/guides/cost-of-employee-burnout) has the numbers side, useful if you need to justify the spend to someone else." },
     {
       type: "cta",
       text: "Transparent pricing, no long lock-ins. See exactly what a live, recurring session costs for your team.",

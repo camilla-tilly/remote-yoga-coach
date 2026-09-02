@@ -15,6 +15,7 @@ const post: BlogPost = {
   relatedServiceLabel: 'See how a team version works',
   tableOfContents: false,
   relatedPosts: [
+    { slug: 'tech-neck-exercises-desk', label: 'Tech neck' },
     { slug: 'desk-yoga-5-minute-routine', label: 'Desk yoga: a 5-minute routine between calls' },
     { slug: 'neck-and-shoulder-stretches-desk-workers', label: 'Neck and shoulder stretches for desk workers' },
     { slug: 'breathing-exercises-for-work-stress', label: 'Breathing exercises for work stress' },
@@ -83,6 +84,7 @@ const post: BlogPost = {
       type: 'paragraph',
       text: 'Stretching alone helps. Doing it together, at the same time, with someone guiding you, helps more, because the hardest part of any wellbeing habit is starting, and a scheduled session does that for you. That is the idea behind a live weekly reset: a short, guided chair-yoga and breathing session your whole team joins from wherever they are, camera optional.',
     },
+    { type: 'callout', text: 'If you want the fuller picture, I keep a longer [guide to desk yoga](/guides/desk-yoga) that pulls the practical routines together in one place.' },
     {
       type: 'cta',
       text: 'If your desk-bound team could use that, it might be worth mentioning to whoever looks after wellbeing where you work.',

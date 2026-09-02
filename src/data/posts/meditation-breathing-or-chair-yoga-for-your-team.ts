@@ -16,6 +16,7 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
+    { slug: 'corporate-mindfulness-sessions-what-to-expect', label: 'Corporate mindfulness sessions' },
     { slug: 'run-wellbeing-session-over-teams', label: 'How to run a wellbeing session over Teams' },
     { slug: 'office-yoga-for-remote-teams', label: 'Office yoga for remote and hybrid teams' },
   ],
@@ -53,6 +54,7 @@ const post: BlogPost = {
     { type: 'heading', text: 'How to decide for your own team' },
     { type: 'paragraph', text: 'If you are still unsure, the simplest approach is to think about which problem is loudest right now, physical stiffness, mental overload, or acute stress, and start there. You are not committing to it forever. The class type is easy to change from one month to the next once you see how the team responds.' },
     { type: 'cta', text: 'Not sure which class type fits your team? Book a demo and I will run a short live session, meditation, breathing or chair yoga, so you can see how it feels before deciding.', ctaHref: '/demo', ctaLabel: 'Book a demo session' },
+    { type: 'callout', text: 'My [mindfulness at work guide](/guides/mindfulness-at-work) covers the wider picture, including what makes a practice stick past the first fortnight.' },
     { type: 'faq', faqItems: [
       { q: 'Are meditation, breathing and chair yoga the same session?', a: 'No. They are three separate class types. Meditation is a guided, seated session focused on attention and calm. Breathing is built entirely around breath technique. Chair yoga is gentle, seated movement done from an ordinary chair. A team can pick one, alternate between them, or combine all three.' },
       { q: 'Which class type should we start with?', a: 'It depends on what the team needs most right now. Physically stiff, desk-bound teams often start with chair yoga. Teams under heavy deadline pressure tend to get more from breathing. Distributed teams struggling to switch off often prefer meditation. None of these are permanent choices.' },

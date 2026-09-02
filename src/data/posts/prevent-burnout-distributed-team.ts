@@ -141,6 +141,7 @@ const post: BlogPost = {
       type: "paragraph",
       text: "Because it is live and recurring, it reaches the people an app never would, the ones too depleted to opt in on their own. That is what makes it preventive rather than reactive."
     },
+    { type: "callout", text: "For the wider context behind all of this, I keep a [guide to remote work burnout](/guides/remote-work-burnout) covering what actually causes it and what helps." },
     {
       type: "cta",
       text: "A recurring live team reset is one clear, preventive habit you can put on the calendar this month. See how a weekly team reset works, or try one with your team first.",

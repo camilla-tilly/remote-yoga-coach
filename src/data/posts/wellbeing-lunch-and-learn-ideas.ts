@@ -14,6 +14,7 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
+    { slug: "manager-burnout-signs", label: "Manager burnout" },
     { slug: "corporate-wellness-ideas-remote-teams", label: "Corporate wellness ideas for remote teams" },
     { slug: "run-wellbeing-session-over-teams", label: "How to run a wellbeing session over Teams" },
   ],
@@ -112,6 +113,7 @@ const post: BlogPost = {
       ctaHref: "/demo",
       ctaLabel: "Book a session",
     },
+    { type: "callout", text: "My [remote work burnout guide](/guides/remote-work-burnout) sets out the underlying pattern, if you want the cause rather than the symptom." },
     {
       type: "faq",
       faqItems: [

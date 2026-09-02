@@ -16,6 +16,7 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
+    { slug: 'improve-team-morale-remote-team', label: 'How to improve team morale on a remote team' },
     { slug: 'how-to-start-a-corporate-wellbeing-programme', label: 'How to start a corporate wellbeing programme' },
     { slug: 'team-wellbeing-subscription-vs-workshops', label: 'Team wellbeing subscription vs one-off workshops' },
   ],
@@ -44,6 +45,7 @@ const post: BlogPost = {
     { type: 'paragraph', text: 'Resist the urge to build a dashboard for this. Attendance over several weeks is the signal that matters, because people only keep choosing to show up to something that is doing them some good. Look at the trend rather than any single week. A dip during a busy sprint is normal and tells you little on its own. A slow climb as the new slot and format settle in is what you are hoping to see.' },
     { type: 'paragraph', text: 'A short, optional pulse check every few weeks adds useful context without turning the programme into another thing people have to complete. I report attendance and a short wellbeing check alongside every session I run, so a team lead can see the trend without having to chase it themselves.' },
     { type: 'cta', text: 'If attendance has been sliding, seeing the format in action is often the fastest way to tell what needs to change. Book a demo session and I will run a live class with your team so you can watch how people actually respond.', ctaHref: '/demo', ctaLabel: 'Book a demo session' },
+    { type: 'callout', text: 'My [remote work burnout guide](/guides/remote-work-burnout) sets out the underlying pattern, if you want the cause rather than the symptom.' },
     { type: 'faq', faqItems: [
       { q: 'Why does attendance at a wellbeing programme drop over time?', a: 'Usually friction rather than lost interest: an inconsistent time slot, a single format that does not suit the whole team, or no visible sign that joining is genuinely fine rather than something to skip for real work. Fixing that friction tends to matter more than promoting the programme harder.' },
       { q: 'Does making a session optional or camera-off hurt attendance?', a: 'No, the opposite in my experience. Camera optional removes one of the biggest reasons people hesitate to join a live call, and it does not stop anyone from taking part fully.' },

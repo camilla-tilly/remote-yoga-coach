@@ -13,6 +13,7 @@ const post: BlogPost = {
   relatedServiceLabel: "See how a team version works",
   tableOfContents: false,
   relatedPosts: [
+    { slug: "how-to-meditate-at-work", label: "How to meditate at work" },
     { slug: "breathing-exercises-for-work-stress", label: "Breathing exercises for work stress" },
     { slug: "chair-yoga-at-your-desk", label: "Chair yoga at your desk: 8 poses" },
     { slug: "desk-yoga-5-minute-routine", label: "Desk yoga: a 5-minute routine between calls" }
@@ -106,6 +107,7 @@ const post: BlogPost = {
       type: "paragraph",
       text: "Solo desk meditation is a great daily tool. A guided version with your team, once a week, is what turns it from a nice idea into a habit, because someone else is holding the time and you're doing it together. For remote and hybrid teams, that shared five or fifteen minutes can also be a rare moment of calm connection. You can [book a pilot](/demo) to try one."
     },
+    { type: "callout", text: "If this is the direction you want to take, my [guide to mindfulness at work](/guides/mindfulness-at-work) goes deeper into building it into a normal working week." },
     {
       type: "cta",
       text: "See how a guided weekly meditation works for your team.",

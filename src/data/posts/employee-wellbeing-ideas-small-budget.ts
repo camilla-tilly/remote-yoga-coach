@@ -14,6 +14,8 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
+    { slug: "how-to-measure-wellbeing-programme-roi", label: "How to measure the ROI of a team wellbeing programme" },
+    { slug: "calm-headspace-vs-live-sessions", label: "Calm and Headspace for Business vs live sessions" },
     { slug: "corporate-wellness-ideas-remote-teams", label: "Corporate wellness ideas for remote teams" },
     { slug: "how-much-does-corporate-yoga-cost", label: "How much does corporate yoga cost?" },
   ],
@@ -122,6 +124,7 @@ const post: BlogPost = {
       type: "paragraph",
       text: "Do the near-free habits well, and add one recurring paid session when you can. That combination gives a small budget the best return I know of, because it is built on the one thing that actually moves wellbeing: showing up, together, again next week.",
     },
+    { type: "callout", text: "If you are building the business case, my [guide to the cost of employee burnout](/guides/cost-of-employee-burnout) sets out what the problem costs before you spend anything fixing it." },
     {
       type: "faq",
       faqItems: [

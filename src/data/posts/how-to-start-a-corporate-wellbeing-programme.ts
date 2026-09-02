@@ -16,6 +16,7 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
+    { slug: 'corporate-wellbeing-for-tech-teams', label: 'Corporate wellbeing for tech teams' },
     { slug: 'corporate-wellness-ideas-remote-teams', label: 'Corporate wellness ideas for remote teams' },
     { slug: 'team-wellbeing-subscription-vs-workshops', label: 'Team wellbeing subscription vs one-off workshops' },
   ],
@@ -59,6 +60,7 @@ const post: BlogPost = {
     { type: 'heading', text: 'Step six: iterate, do not overhaul' },
     { type: 'paragraph', text: 'Once the pilot has run, adjust rather than reinvent. Maybe the slot moves half an hour to dodge a standing meeting. Maybe the team asks to rotate between the breathing class and chair yoga. Maybe a second team wants in. These are small, evidence-led tweaks, and they are exactly how a programme grows roots. The mistake is to declare the first version a failure and swap the whole thing out before the habit has had time to form. Give consistency a chance to do its quiet work.' },
     { type: 'cta', text: 'If you want to test the habit before committing, a single pilot session runs one live class with your team so you can see how people respond in real conditions.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
+    { type: 'callout', text: 'My [remote work burnout guide](/guides/remote-work-burnout) sets out the underlying pattern, if you want the cause rather than the symptom.' },
     { type: 'faq', faqItems: [
       { q: 'How do I start a corporate wellbeing programme from scratch?', a: 'Define one clear goal, choose one consistent habit that supports it, secure light leadership backing, and run a small pilot with a single team before scaling. Starting narrow and repeatable beats launching a broad list of perks that fade within a week.' },
       { q: 'What is the simplest first building block for an employee wellbeing programme?', a: 'A recurring live session in a fixed weekly slot. It turns wellbeing from something people have to remember into something already in the calendar, led by the same coach each week, so a habit can form rather than a one-off moment.' },

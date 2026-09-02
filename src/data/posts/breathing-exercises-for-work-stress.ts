@@ -13,6 +13,7 @@ const post: BlogPost = {
   relatedServiceLabel: "See how a team version works",
   tableOfContents: false,
   relatedPosts: [
+    { slug: "how-to-meditate-at-work", label: "How to meditate at work" },
     { slug: "5-minute-desk-meditation", label: "A 5-minute meditation you can do at your desk" },
     { slug: "chair-yoga-at-your-desk", label: "Chair yoga at your desk: 8 poses" },
     { slug: "prevent-burnout-distributed-team", label: "How to prevent burnout in a distributed team" }
@@ -64,6 +65,7 @@ const post: BlogPost = {
     ] },
     { type: "heading", text: "Want this as a team habit?" },
     { type: "paragraph", text: "One person breathing better helps that person. A whole team that shares a short, guided reset each week builds something steadier together, and people are far more likely to keep a habit that's already in the calendar than one they have to start on their own. If your team is remote or hybrid, that's exactly what a live weekly session is for: a few minutes of guided breathing and gentle movement everyone joins from wherever they are. You can also [book a pilot](/demo)." },
+    { type: "callout", text: "My [mindfulness at work guide](/guides/mindfulness-at-work) covers the wider picture, including what makes a practice stick past the first fortnight." },
     { type: "cta", text: "See how a team version works, a short live weekly reset your whole team joins from wherever they are.", ctaHref: "/services/team-wellness", ctaLabel: "See how a team version works" },
     { type: "callout", text: "Health note: these are general wellbeing techniques, not medical advice. If breathing exercises ever make you feel dizzy or anxious, return to normal breathing and stop." }
   ]

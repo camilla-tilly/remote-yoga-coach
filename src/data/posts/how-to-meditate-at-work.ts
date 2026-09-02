@@ -14,6 +14,8 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
+    { slug: "meditation-breathing-or-chair-yoga-for-your-team", label: "Meditation, breathing or chair yoga" },
+    { slug: "corporate-mindfulness-sessions-what-to-expect", label: "Corporate mindfulness sessions" },
     { slug: "5-minute-desk-meditation", label: "A 5-minute desk meditation" },
     { slug: "breathing-exercises-for-work-stress", label: "Breathing exercises for work stress" }
   ],
@@ -96,6 +98,7 @@ const post: BlogPost = {
       ctaHref: "/demo",
       ctaLabel: "Book a pilot session"
     },
+    { type: "callout", text: "If this is the direction you want to take, my [guide to mindfulness at work](/guides/mindfulness-at-work) goes deeper into building it into a normal working week." },
     {
       type: "faq",
       faqItems: [

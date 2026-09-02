@@ -143,6 +143,7 @@ const post: BlogPost = {
       type: "paragraph",
       text: "If your team is distributed and you would like this to become a shared habit rather than something everyone tries to remember alone, there is a guided weekly version that runs online for the whole team. You can [see how a team version works](/services/team-wellness) or [book a pilot](/demo) to try it first.",
     },
+    { type: "callout", text: "There is more detail in my [desk yoga guide](/guides/desk-yoga) if you want the whole approach rather than a single routine." },
     {
       type: "cta",
       text: "Curious whether a short weekly session would land with your team? Try one before you commit to anything.",

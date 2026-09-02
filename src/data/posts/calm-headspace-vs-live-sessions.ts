@@ -14,6 +14,8 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
+    { slug: "how-to-measure-wellbeing-programme-roi", label: "How to measure the ROI of a team wellbeing programme" },
+    { slug: "employee-wellbeing-ideas-small-budget", label: "Employee wellbeing ideas on a small budget" },
     { slug: "do-workplace-wellness-apps-work", label: "Do workplace wellness apps actually work?" },
     { slug: "team-wellbeing-subscription-vs-workshops", label: "Team wellbeing subscription vs one-off workshops" }
   ],
@@ -124,6 +126,7 @@ const post: BlogPost = {
       type: "paragraph",
       text: "Judge any option on use, not features. Ask what share of the team actually turns up, whether the same people keep coming back, and whether you can point to anything that shows it is working. On those three questions, a held weekly slot with a real person tends to beat a library left on a shelf, and the two can happily run side by side."
     },
+    { type: "callout", text: "If you are building the business case, my [guide to the cost of employee burnout](/guides/cost-of-employee-burnout) sets out what the problem costs before you spend anything fixing it." },
     {
       type: "faq",
       faqItems: [

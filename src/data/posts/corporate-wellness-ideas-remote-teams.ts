@@ -13,6 +13,7 @@ const post: BlogPost = {
   relatedServiceLabel: "See my transparent pricing",
   tableOfContents: true,
   relatedPosts: [
+    { slug: "wellbeing-lunch-and-learn-ideas", label: "Virtual wellbeing lunch and learn ideas for remot..." },
     { slug: "do-workplace-wellness-apps-work", label: "Do workplace wellness apps actually work?" },
     { slug: "prevent-burnout-distributed-team", label: "How to prevent burnout in a distributed team" },
     { slug: "how-much-does-corporate-yoga-cost", label: "How much does corporate yoga cost?" },
@@ -139,6 +140,7 @@ const post: BlogPost = {
       type: "paragraph",
       text: "That is exactly the offer behind a live weekly reset: a 30-minute breathing and chair-yoga session your distributed team joins together, guided by the same coach each week, with simple reporting so you can see it working. It is the recurring, human habit the research keeps pointing to. See how it works on my [team wellness page](/services/team-wellness), or book a pilot at my [demo](/demo) and see the attendance for yourself.",
     },
+    { type: "callout", text: "For the wider context behind all of this, I keep a [guide to remote work burnout](/guides/remote-work-burnout) covering what actually causes it and what helps." },
     {
       type: "cta",
       text: "Live, recurring, and short: the shape of remote wellbeing that people actually turn up for. See what it costs for your team.",

@@ -16,6 +16,7 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
+    { slug: 'tech-neck-exercises-desk', label: 'Tech neck' },
     { slug: 'chair-yoga-at-your-desk', label: 'Chair yoga at your desk' },
     { slug: 'desk-yoga-5-minute-routine', label: 'A 5-minute desk yoga routine' },
   ],
@@ -52,6 +53,7 @@ const post: BlogPost = {
     { type: 'paragraph', text: 'You do not need a wellbeing strategy or a budget review to begin. The simplest starting point is one short session a week, at the same time, so it becomes a small fixture people can rely on rather than another thing to organise. Pick a slot that dodges the usual meeting crush, invite the whole team, and make it genuinely optional. Attendance grows when people choose it, not when they are told to show up.' },
     { type: 'paragraph', text: 'On my side it runs as a flat monthly subscription in euros, priced per team rather than per person, and I report attendance and a short wellbeing check so you can see how it is landing. The easiest way to find out whether it suits your team is to try a session and see who comes back.' },
     { type: 'cta', text: 'Curious what virtual office yoga would feel like for your team? Book a demo session and I will run a short, seated practice live on your own call, no preparation needed.', ctaHref: '/demo', ctaLabel: 'Book a demo session' },
+    { type: 'callout', text: 'There is more detail in my [desk yoga guide](/guides/desk-yoga) if you want the whole approach rather than a single routine.' },
     { type: 'faq', faqItems: [
       { q: 'What is office yoga?', a: 'Office yoga, sometimes called workplace yoga, is yoga done during the workday wherever the team is, rather than a studio class people travel to. It is usually gentle and seated so anyone can join in work clothes without changing or moving furniture.' },
       { q: 'How is office yoga different from chair yoga and desk yoga?', a: 'Office yoga is the umbrella term for any yoga at work. Chair yoga describes the seated method, done from an ordinary chair with no mat needed. Desk yoga is the short, self-led version you do solo at your own desk. When I run office yoga for a team, I deliver it as chair yoga so everyone can take part on the same call.' },

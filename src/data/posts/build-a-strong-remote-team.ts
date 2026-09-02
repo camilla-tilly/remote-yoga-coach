@@ -14,6 +14,8 @@ const post: BlogPost = {
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
+    { slug: "wellbeing-in-remote-onboarding", label: "How to build wellbeing into remote employee onboa..." },
+    { slug: "corporate-wellbeing-for-tech-teams", label: "Corporate wellbeing for tech teams" },
     { slug: "corporate-wellness-ideas-remote-teams", label: "Corporate wellness ideas for remote teams" },
     { slug: "run-wellbeing-session-over-teams", label: "How to run a wellbeing session over Teams" },
   ],
@@ -100,6 +102,7 @@ const post: BlogPost = {
       ctaHref: "/demo",
       ctaLabel: "Book a demo session",
     },
+    { type: "callout", text: "For the wider context behind all of this, I keep a [guide to remote work burnout](/guides/remote-work-burnout) covering what actually causes it and what helps." },
     {
       type: "faq",
       faqItems: [
