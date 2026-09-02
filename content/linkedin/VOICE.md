@@ -68,6 +68,14 @@ perspective worth listening to: how to chase a big goal in a way that lasts.
 Never present the running as a separate hobby, and never cite the marathon count
 as a credential.
 
+**The frame is the balance of effort and ease, and listening to your body rather
+than overriding it.** That is the sthira sukha idea and it is authentically hers
+as a teacher. Do NOT frame it as endurance or limits: she explicitly rejected
+"how far you can go without breaking" as too extreme, and it made her sound like
+an endurance athlete rather than a yoga teacher. Avoid "push through", "grind",
+"limits", "breaking point" and similar. It is worth asserting that ease is not a
+soft idea, so the frame does not read as passive.
+
 **Her strongest recurring theme**, in her own words: the irony of people working
 on things that genuinely matter, often on sustainability itself, while working in
 a way that is not remotely sustainable. Impact-driven people running themselves
