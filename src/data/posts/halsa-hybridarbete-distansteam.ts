@@ -11,8 +11,8 @@ const post: BlogPost = {
   excerpt:
     'Isoleringen i ett distribuerat team syns sällan i siffrorna förrän det redan gått långt. Här är de tidiga varningstecknen svenska HR- och people-ansvariga bör bevaka, och varför en liten, återkommande vana slår ännu en friskvårdsdag.',
   language: 'sv',
-  relatedServiceHref: '/services/team-wellness',
-  relatedServiceLabel: 'Läs mer om Veckoresetet',
+  relatedServiceHref: '/foretagsyoga-distans',
+  relatedServiceLabel: 'Företagsyoga på distans',
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [

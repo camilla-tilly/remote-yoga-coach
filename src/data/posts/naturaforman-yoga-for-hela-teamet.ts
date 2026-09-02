@@ -11,8 +11,8 @@ const post: BlogPost = {
   excerpt:
     'Friskvårdsbidraget är inte det enda sättet att erbjuda friskvård skattefritt. Naturaförmån, samma kategori som en förmånscykel, låter arbetsgivaren boka och betala en återkommande teamaktivitet direkt, utan tak på 5 000 kr och utan att röra någons personliga bidrag.',
   language: 'sv',
-  relatedServiceHref: '/pricing',
-  relatedServiceLabel: 'Se priser och boka ett pilotpass',
+  relatedServiceHref: '/foretagsyoga-distans',
+  relatedServiceLabel: 'Företagsyoga på distans',
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [

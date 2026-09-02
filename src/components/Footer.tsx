@@ -15,7 +15,7 @@ const columns: Array<{ heading: string; links: Array<{ label: string; to?: strin
     heading: 'Resources',
     links: [
       { label: 'Guides', to: '/guides' },
-      { label: 'Compare vs apps & EAPs', to: '/compare' },
+      { label: 'Compare vs apps and EAPs', to: '/compare' },
       { label: 'What burnout costs', to: '/guides/cost-of-employee-burnout' },
       { label: 'Blog', to: '/blog' },
     ],

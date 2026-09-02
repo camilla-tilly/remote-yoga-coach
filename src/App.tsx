@@ -12,6 +12,7 @@ import Demo from "./pages/Demo";
 import Blog from "./pages/Blog";
 import BlogPostPage from "./pages/BlogPostPage";
 import TeamWellness from "./pages/services/TeamWellness";
+import ForetagsyogaDistans from "./pages/ForetagsyogaDistans";
 import ChairYogaForTeams from "./pages/services/ChairYogaForTeams";
 import CorporateWellbeingRemoteTeams from "./pages/services/CorporateWellbeingRemoteTeams";
 import MindfulnessAtWork from "./pages/guides/MindfulnessAtWork";
@@ -61,6 +62,7 @@ const App = () => (
 
           {/* Services */}
           <Route path="/services/team-wellness" element={<TeamWellness />} />
+          <Route path="/foretagsyoga-distans" element={<ForetagsyogaDistans />} />
           <Route path="/services/chair-yoga-for-teams" element={<ChairYogaForTeams />} />
           <Route path="/services/corporate-wellbeing-for-remote-teams" element={<CorporateWellbeingRemoteTeams />} />
 

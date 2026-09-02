@@ -11,8 +11,8 @@ const post: BlogPost = {
   excerpt:
     'Ingen matta, inget ombyte, inget "jag är inte flexibel nog". Kontorsyoga på distans är enklare än det låter. Här är vad det faktiskt innebär, och hur ett pass ser ut i praktiken.',
   language: 'sv',
-  relatedServiceHref: '/services/chair-yoga-for-teams',
-  relatedServiceLabel: 'Läs mer om stolyoga för team',
+  relatedServiceHref: '/foretagsyoga-distans',
+  relatedServiceLabel: 'Företagsyoga på distans',
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
