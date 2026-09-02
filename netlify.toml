@@ -7,6 +7,23 @@
   command = "npm run build"
   publish = "dist"
 
+  # Build-credit saver. This team is on the Netlify free plan and has already
+  # exhausted its monthly allowance once, which silently paused production
+  # deploys for about a week.
+  #
+  # Two of the three weekly routines only write markdown that the website never
+  # renders: `content/linkedin/` (post drafts Camilla copies out by hand) and
+  # `reports/` (the weekly SEO reports). Rebuilding the whole site for those,
+  # including prerendering every route in headless Chrome, spends a build for no
+  # change to a single published page.
+  #
+  # Netlify's contract here is inverted: exit 0 CANCELS the build, non-zero runs
+  # it. So this asks "is there any change outside reports/ and content/?" and
+  # cancels when the answer is no. If CACHED_COMMIT_REF is unset, as on a first
+  # or manually triggered build, git errors, exits non-zero, and the build runs,
+  # which is the safe direction to fail.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)reports' ':(exclude)content'"
+
 [build.environment]
   NODE_VERSION = "20"
   # Puppeteer needs a real Chrome to prerender. Without this it resolves to a
