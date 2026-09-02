@@ -11,7 +11,7 @@
   # exhausted its monthly allowance once, which silently paused production
   # deploys for about a week.
   #
-  # Two of the three weekly routines only write markdown that the website never
+  # Two of the three weekly routines only write markdown the website never
   # renders: `content/linkedin/` (post drafts Camilla copies out by hand) and
   # `reports/` (the weekly SEO reports). Rebuilding the whole site for those,
   # including prerendering every route in headless Chrome, spends a build for no
@@ -30,3 +30,13 @@
   # cache path that does not survive the build image and prerendering silently
   # does nothing.
   PUPPETEER_CACHE_DIR = "/opt/build/cache/puppeteer"
+
+# No deploy previews. The routines push straight to main and nothing opens pull
+# requests any more, so a preview build is a full site build, prerendering
+# included, for a copy of the site nobody opens. It also produced a netlify[bot]
+# notification email on every draft PR.
+#
+# `exit 0` cancels the build, so it shows as skipped rather than failed. Delete
+# this block if pull request previews are ever wanted again.
+[context.deploy-preview]
+  ignore = "exit 0"
