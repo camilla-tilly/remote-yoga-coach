@@ -1,0 +1,15 @@
+# Pins the production build in version control so it cannot drift in the
+# Netlify UI. `npm run build` is the FULL build: RSS, then vite build, then the
+# prerender step. `build:spa` is vite only and ships an app shell with no
+# per-page titles, meta or JSON-LD, which is invisible to social scrapers and
+# badly handicaps indexing. Production must always run `npm run build`.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+  # Puppeteer needs a real Chrome to prerender. Without this it resolves to a
+  # cache path that does not survive the build image and prerendering silently
+  # does nothing.
+  PUPPETEER_CACHE_DIR = "/opt/build/cache/puppeteer"

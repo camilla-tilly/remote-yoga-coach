@@ -87,6 +87,17 @@ async function run() {
   await server.httpServer.close();
 
   console.log(`[prerender] done: ${ok} ok, ${failed} failed`);
+  if (ok === 0) {
+    console.error(
+      '\n[prerender] ####################################################\n' +
+        '[prerender] #  WARNING: NOT ONE ROUTE WAS PRERENDERED.         #\n' +
+        '[prerender] #  Every URL will ship the generic app shell, so   #\n' +
+        '[prerender] #  crawlers and link previews see the same title   #\n' +
+        '[prerender] #  and description on every page. The deploy is    #\n' +
+        '[prerender] #  still going out, but the SEO on it is inert.    #\n' +
+        '[prerender] ####################################################\n'
+    );
+  }
   // Don't fail the deploy over prerendering: the SPA still works client-side.
   // A failed route just falls back to the generic index.html via Netlify's SPA rule.
   process.exit(0);
@@ -94,6 +105,14 @@ async function run() {
 
 run().catch((err) => {
   console.error('[prerender] fatal:', err);
+  console.error(
+    '\n[prerender] ####################################################\n' +
+      '[prerender] #  PRERENDERING DID NOT RUN AT ALL.                #\n' +
+      '[prerender] #  The deploy will still succeed, but every page   #\n' +
+      '[prerender] #  ships identical title/meta/JSON-LD to crawlers. #\n' +
+      '[prerender] #  Fix this before trusting any SEO reporting.     #\n' +
+      '[prerender] ####################################################\n'
+  );
   // Non-fatal: keep the build/deploy green even if prerendering can't run.
   process.exit(0);
 });
