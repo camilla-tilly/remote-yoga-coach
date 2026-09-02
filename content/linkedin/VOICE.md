@@ -86,11 +86,10 @@ Turn observations into questions she is asking herself and inviting the reader
 to sit with, rather than statements about what workplaces get wrong. The
 audience is HR, and telling them their own workplace is broken does not land.
 
-The pattern that works: *is there anything in your week that helps you recover,
-regularly, and not just once things have already got bad? If there is, are you
-the first person to drop it the moment work gets busy? And where your team has
-something in place, is it treated as a nice extra, or as a real part of how the
-work gets done?*
+The pattern that works: *is there anything in your week that is actually
+restful, on purpose, and often enough to count? If there is, are you the first
+person to drop it the moment things get busy? And is it treated as a nice extra,
+or as part of how the work gets done?*
 
 Same point, no lecture.
 
@@ -166,11 +165,11 @@ ending a line. Never 🚀 💡 ✅ or anything that reads as engagement bait.
   studio teaching, her training, and her own practice.
 - **No invented statistics or studies.**
 - **No prices.** The site prices in SEK; point to /pricing at most.
-- **Ultra running:** it measurably outperforms, but engagement from her personal
-  network is not an HR buyer and she does not want to be boxed in as the running
-  person. Use the form every week, the subject rarely: at most one post in four,
-  and it must land on something about work. Do not cite the marathon count as a
-  credential.
+- **Ultra running:** it is half of her positioning (see section 3b), so it may
+  appear regularly as part of who she is and where her perspective comes from.
+  But it is never the SUBJECT of a post: at most one post in four leans on it,
+  and even then it must land on something about work. Never cite the marathon
+  count as a credential.
 - **No AI-tells:** no "in today's fast-paced world", "game-changer", "unlock",
   "dive in", "let's be honest", "the truth is".
 - At most 0 to 3 hashtags.
