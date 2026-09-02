@@ -44,6 +44,55 @@ short, abstract and asked nothing sharp. **Her only text-only post came last.**
 
 So: apply that form to work subjects, and always attach media.
 
+## 2b. THE REFERENCE POST, use this as the model
+
+Written with Camilla on 2026-09-02 over roughly fifteen passes, with her
+rejecting each draft until it sounded like her. This is the closest thing to a
+definitive sample of her voice. When in doubt, imitate this.
+
+> You're not stressed. You're exhausted.
+>
+> For years I trained seven days a week, no days off. I was tired all the time, but if I wasn't training I felt like I wasn't getting anywhere.
+>
+> Then I started following a proper plan for my first ultra, Ultravasan (running the Vasaloppet). It had rest days built into it, and I began taking a full day off each week. I discovered that these 'off' days actually enabled me to do more during my 'on' days. Check yourself before you wreck yourself, if you will.
+>
+> I think a lot of us work the way I used to train: push until we're shattered.
+>
+> What if we did it the other way? Something small, regular and non-negotiable, to find new energy before we've used it all up.
+>
+> Most of us like that idea right up until the week gets intense, and then it's the first thing to go. How is it for you? When things get stressful, is rest the first thing you cancel?
+
+168 words. What makes it work:
+
+**Hard hook, soft body.** The opening is a claim strong enough to stop a scroll.
+Everything after it is gentle. Those are two different jobs and they need two
+different registers.
+
+**The hook is generous, not accusing.** This is the subtle bit. "You're not
+stressed. You're exhausted." tells people their situation is more legitimate than
+they had been calling it. That is completely different from the usual LinkedIn
+formula, "you don't have an X problem, you have a Y problem", which accuses. Test
+any hook against this: does the claim flatter the reader's difficulty, or blame
+them for it?
+
+**The presumption in "you" resolves in the very next line**, because paragraph
+two is her own failure. A hard hook is only earned if what follows is confession
+rather than advice.
+
+**One concrete anchor, no boasting.** Ultravasan does all the credibility work in
+three words, for a Swedish audience, without a distance or a time or a finish
+position.
+
+**A joke where it could get earnest.** "Check yourself before you wreck
+yourself, if you will" arrives immediately after the most sincere sentence and
+stops the post tipping into worthy. "If you will" is drier than "basically".
+
+**Plain, spoken, contracted throughout.** Weren't, wasn't, we're. Short
+sentences. No literary phrasing anywhere.
+
+**She stays inside the problem.** "A lot of us", "most of us", "the way I used to
+train". She never stands outside and diagnoses.
+
 ## 3. Format
 
 **No bullet points. Prose only.** Short standalone paragraphs of one or two
@@ -94,6 +143,10 @@ Turn observations into questions she is asking herself and inviting the reader
 to sit with, rather than statements about what workplaces get wrong. The
 audience is HR, and telling them their own workplace is broken does not land.
 
+The exception is a GENEROUS claim about the reader, as in the reference post's
+hook. Saying someone is more depleted than they realised is sympathetic. Saying
+their company is doing it wrong, or that they lack discipline, is not.
+
 The pattern that works: *is there anything in your week that is actually
 restful, on purpose, and often enough to count? If there is, are you the first
 person to drop it the moment things get busy? And is it treated as a nice extra,
@@ -112,7 +165,10 @@ us don't actually have anything non-negotiable" is a sharper accusation than any
 instruction, and it delivers softer.
 
 **End on a question people can answer with a WIN, not a confession.** This is the
-difference between likes and comments. Asking "is rest the first thing you
+difference between likes and comments. NOTE: Camilla deliberately overrode this
+in the reference post above, ending on "is rest the first thing you cancel?"
+because she wanted the edge. That is a live trade-off she is aware of, not an
+oversight. Offer the open version once, then follow her call. Asking "is rest the first thing you
 cancel?" requires someone to admit a failing in public, under their own name,
 where colleagues can see. People think it and do not post it. Asking "what's the
 one thing you manage to protect, even in a bad week?" is answerable with
