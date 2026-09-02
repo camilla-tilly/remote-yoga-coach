@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "Tech and startup teams burn out quietly long before anyone says so. Here is why builder culture is prone to it, and what a recurring live reset actually changes.",
   publishDate: "2026-08-03",
   readingTime: "6 min",
-  category: "Wellbeing programmes",
+  category: "Remote teams and burnout",
   excerpt: "Tech and startup teams rarely burn out loudly. It shows up as slower thinking, shorter tempers, and people going quiet. Here is why builder culture is prone to it, and what actually helps.",
   language: "en",
   relatedServiceHref: "/services/corporate-wellbeing-for-remote-teams",

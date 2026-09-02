@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "Swag and one-off socials do not build a strong remote team. Here is what actually creates connection and belonging on a distributed team, and how a recurring live wellbeing session helps.",
   publishDate: "2026-07-29",
   readingTime: "6 min",
-  category: "Wellbeing programmes",
+  category: "Remote teams and burnout",
   excerpt: "Perks and the occasional virtual social do not make a distributed team feel close. Real remote team cohesion comes from shared rituals, low-pressure moments together, and people being seen as people. Here is how to build that.",
   language: "en",
   relatedServiceHref: "/services/corporate-wellbeing-for-remote-teams",

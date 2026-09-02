@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "Burnout hides in distributed teams. How to recognise the warning signs remotely, what does not work, and the preventive habits that actually help, for managers and HR.",
   publishDate: "2026-07-01",
   readingTime: "6 min",
-  category: "Burnout",
+  category: "Remote teams and burnout",
   excerpt: "Burnout in a distributed team hides, nobody looks tired on Slack. Here is how to spot the warning signs remotely and the preventive habits that actually reduce the risk.",
   language: "en",
   relatedServiceHref: "/services/team-wellness",

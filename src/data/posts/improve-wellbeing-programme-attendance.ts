@@ -7,7 +7,7 @@ const post: BlogPost = {
     'Wellbeing programme attendance rarely falls because people stop caring. It usually comes down to friction: an inconsistent slot, a format that does not suit everyone, or no visible sign that joining is genuinely fine. Here is how to fix it.',
   publishDate: '2026-08-28',
   readingTime: '6 min',
-  category: 'Wellbeing programmes',
+  category: 'Remote teams and burnout',
   excerpt:
     'A wellbeing programme with falling attendance is not usually a sign that people stopped caring. It is almost always friction: the slot moves, the format does not suit the whole team, or nobody can tell whether joining is genuinely fine. Here is what to fix, in order.',
   language: 'en',

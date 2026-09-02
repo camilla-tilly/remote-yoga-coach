@@ -7,7 +7,7 @@ const post: BlogPost = {
     'A practical guide to running a virtual wellbeing session for a remote team over Teams or Zoom: setup, the session arc, getting people to show up, and the norms that make it work.',
   publishDate: '2026-07-05',
   readingTime: '6 min',
-  category: 'How-to',
+  category: 'Remote teams and burnout',
   excerpt:
     'Running a wellbeing session for a distributed team over Teams or Zoom is easier than it looks, and works better than in person. Here is exactly how to do it well.',
   language: 'en',

@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "Most remote wellness ideas lists are full of things nobody does twice. What actually drives participation for distributed teams, and how to tell the difference.",
   publishDate: "2026-08-05",
   readingTime: "6 min",
-  category: "Wellbeing programmes",
+  category: "Remote teams and burnout",
   excerpt: "Most remote wellness ideas are one-offs a few keen people do once. Here are the principles that separate wellbeing that sticks from what quietly dies, and the ideas that hold up.",
   language: "en",
   relatedServiceHref: "/pricing",

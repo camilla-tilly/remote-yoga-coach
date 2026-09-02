@@ -7,7 +7,7 @@ const post: BlogPost = {
     'What a corporate mindfulness session actually involves, what happens in one, how often to run them, and how to tell if it is working. A plain guide for HR and people leaders.',
   publishDate: '2026-07-03',
   readingTime: '6 min',
-  category: 'Mindfulness',
+  category: 'Meditation and breathing',
   excerpt:
     'Thinking about corporate mindfulness sessions but not sure what you are actually buying? Here is exactly what happens in one, what it is not, and how to tell if it works.',
   language: 'en',

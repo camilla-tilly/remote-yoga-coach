@@ -7,7 +7,7 @@ const post: BlogPost = {
     'Office yoga and workplace yoga are umbrella terms for yoga done during the workday, wherever your team sits. Here is what a live, on-screen session actually looks like.',
   publishDate: '2026-07-29',
   readingTime: '6 min',
-  category: 'Desk yoga',
+  category: 'Desk and posture',
   excerpt:
     'Office yoga is not a studio class squeezed into a meeting room. It is gentle, seated yoga done during the workday, wherever the team happens to be. Here is what it is and how it works on screen.',
   language: 'en',

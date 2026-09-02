@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "Six neck and shoulder stretches you can do at your desk to ease the tension that builds from a day at the screen. No equipment, takes three minutes.",
   publishDate: "2026-07-29",
   readingTime: "5 min",
-  category: "Desk yoga",
+  category: "Desk and posture",
   excerpt: "The neck and shoulders are where desk work goes to hibernate. Six stretches you can do at your desk in about three minutes to undo the tension.",
   language: "en",
   relatedServiceHref: "/services/team-wellness",

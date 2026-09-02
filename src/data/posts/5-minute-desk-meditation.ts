@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "A simple 5-minute desk meditation for the gap between meetings, no app, no cushion, camera off. Reset your focus and steady your stress in five minutes flat.",
   publishDate: "2026-07-22",
   readingTime: "4 min",
-  category: "Meditation",
+  category: "Meditation and breathing",
   excerpt: "You don't need a quiet room or twenty spare minutes to meditate at work. Here is a five-minute desk meditation for the gap between meetings, camera off.",
   language: "en",
   relatedServiceHref: "/services/team-wellness",

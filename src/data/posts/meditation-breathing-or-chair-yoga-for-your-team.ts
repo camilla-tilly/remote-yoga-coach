@@ -7,7 +7,7 @@ const post: BlogPost = {
     'Meditation, breathing and chair yoga are three separate class types, not one blended session. Here is how I help HR and people leaders pick the right one, or mix all three.',
   publishDate: '2026-08-19',
   readingTime: '6 min',
-  category: 'Getting started',
+  category: 'Meditation and breathing',
   excerpt:
     'I run three separate class types: meditation, breathing and chair yoga. Teams often ask which one to book first. Here is how I help them decide, and why most end up alternating between all three.',
   language: 'en',

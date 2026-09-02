@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "Practical virtual lunch and learn ideas for remote teams. Why the usual talking-head webinar falls flat, and what a genuinely restorative wellbeing session looks like.",
   publishDate: "2026-07-30",
   readingTime: "6 min",
-  category: "Wellbeing programmes",
+  category: "Remote teams and burnout",
   excerpt: "A wellbeing lunch and learn is meant to give people a break, not another webinar to sit through. Here is what tends to fall flat, and a simpler idea that actually lands over the lunch hour.",
   language: "en",
   relatedServiceHref: "/services/team-wellness",

@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "A fair Calm for Business and Headspace for Work alternative comparison. Great apps, but a library only helps those who open it. Why a live session wins on use.",
   publishDate: "2026-07-30",
   readingTime: "6 min",
-  category: "Wellbeing programmes",
+  category: "Cost and proof",
   excerpt: "Calm and Headspace for Business are genuinely good apps. The catch is participation: a library only helps the people disciplined enough to open it. Here is the honest comparison, and where a live session fits.",
   language: "en",
   relatedServiceHref: "/services/team-wellness",

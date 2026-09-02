@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "What tech neck really is, why it builds up over a desk day, and gentle seated exercises to release your neck, shoulders and upper back. No equipment needed.",
   publishDate: "2026-07-29",
   readingTime: "6 min",
-  category: "Desk yoga",
+  category: "Desk and posture",
   excerpt: "Tech neck is the forward-head, rounded-shoulder posture that creeps in from looking down at screens all day. Here is what it is, why it builds up, and a set of gentle seated exercises to undo it, done little and often.",
   language: "en",
   relatedServiceHref: "/services/chair-yoga-for-teams",

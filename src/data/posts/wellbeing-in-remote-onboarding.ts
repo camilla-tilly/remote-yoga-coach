@@ -7,7 +7,7 @@ const post: BlogPost = {
     "Most remote onboarding checklists cover laptops and logins but skip wellbeing entirely. Here is how to fold a wellbeing habit into a new starter's first weeks, without adding another task to their list.",
   publishDate: '2026-08-26',
   readingTime: '6 min',
-  category: 'Wellbeing programmes',
+  category: 'Remote teams and burnout',
   excerpt:
     'A remote onboarding checklist usually covers kit, logins and a calendar full of introductions. Wellbeing rarely makes the list. Here is a simple way to build it in from week one, without adding another task for a new starter to remember.',
   language: 'en',

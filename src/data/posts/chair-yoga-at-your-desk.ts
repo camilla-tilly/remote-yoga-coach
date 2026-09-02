@@ -7,7 +7,7 @@ const post: BlogPost = {
     '8 simple chair yoga poses you can do at your desk, no mat, no changing, no looking odd in the office. A 5-minute reset for tense shoulders and a stiff back.',
   publishDate: '2026-06-17',
   readingTime: '5 min',
-  category: 'Chair yoga',
+  category: 'Desk and posture',
   excerpt:
     'Around 80% of office workers report neck or back pain. Here are eight gentle chair yoga poses you can do at your desk in about five minutes, no mat and no changing required.',
   language: 'en',

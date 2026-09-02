@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "A practical guide to meditation at work: a short, no-equipment desk meditation you can do between meetings, plus how to get past the two obstacles that stop most people.",
   publishDate: "2026-07-29",
   readingTime: "5 min",
-  category: "Meditation",
+  category: "Meditation and breathing",
   excerpt: "You don't need an app, a cushion, or a quiet room to meditate at work. Here is a simple desk meditation for a complete beginner, plus how to actually keep it up.",
   language: "en",
   relatedServiceHref: "/services/team-wellness",

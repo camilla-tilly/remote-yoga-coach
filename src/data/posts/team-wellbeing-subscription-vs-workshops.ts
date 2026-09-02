@@ -7,7 +7,7 @@ const post: BlogPost = {
     'One-off wellbeing workshops feel efficient but fade fast. Here is how a team wellbeing subscription compares on results and cost, and when a one-off still makes sense.',
   publishDate: '2026-07-04',
   readingTime: '6 min',
-  category: 'Programmes',
+  category: 'Cost and proof',
   excerpt:
     'A one-off wellbeing workshop is a nice afternoon. A subscription is a habit. Here is the honest comparison on results and cost, and when each is the right call.',
   language: 'en',

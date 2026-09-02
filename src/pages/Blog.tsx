@@ -1,3 +1,4 @@
+import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -19,8 +20,38 @@ const structuredData = {
   }
 };
 
+const ALL = 'All posts';
+
 const Blog = () => {
-  const [leadPost, ...restPosts] = blogPosts;
+  const [active, setActive] = useState(ALL);
+
+  // Categories in a deliberate reading order, widest topic first, Swedish last.
+  const categories = useMemo(() => {
+    const order = [
+      'Remote teams and burnout',
+      'Desk and posture',
+      'Meditation and breathing',
+      'Cost and proof',
+      'På svenska',
+    ];
+    const present = new Set(blogPosts.map((p) => p.category));
+    return [ALL, ...order.filter((c) => present.has(c))];
+  }, []);
+
+  const counts = useMemo(() => {
+    const c: Record<string, number> = { [ALL]: blogPosts.length };
+    blogPosts.forEach((p) => {
+      c[p.category] = (c[p.category] || 0) + 1;
+    });
+    return c;
+  }, []);
+
+  const filtering = active !== ALL;
+  const visible = filtering ? blogPosts.filter((p) => p.category === active) : blogPosts;
+
+  // The featured card only makes sense on the unfiltered view.
+  const leadPost = filtering ? null : visible[0];
+  const restPosts = filtering ? visible : visible.slice(1);
 
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
@@ -97,6 +128,39 @@ const Blog = () => {
           </div>
         </section>
 
+        {/* Category filter */}
+        <section className="px-4 mb-14">
+          <div className="max-w-5xl mx-auto">
+            <div className="flex items-center justify-center gap-6 mb-7">
+              <span className="flex-1 h-px bg-sage-light" aria-hidden="true" />
+              <p className="font-inter text-xs uppercase tracking-[0.32em] text-sage font-bold">Browse by topic</p>
+              <span className="flex-1 h-px bg-sage-light" aria-hidden="true" />
+            </div>
+            <div className="flex flex-wrap justify-center gap-2.5" role="group" aria-label="Filter posts by topic">
+              {categories.map((cat) => {
+                const isActive = cat === active;
+                return (
+                  <button
+                    key={cat}
+                    type="button"
+                    onClick={() => setActive(cat)}
+                    aria-pressed={isActive}
+                    className={
+                      'font-inter text-xs uppercase tracking-[0.18em] font-semibold px-4 py-2.5 rounded-full border transition-all ' +
+                      (isActive
+                        ? 'bg-clay text-white border-clay'
+                        : 'bg-white text-charcoal/75 border-sage-light hover:border-clay/60 hover:text-heading')
+                    }
+                  >
+                    {cat}
+                    <span className={isActive ? 'ml-2 text-white/70' : 'ml-2 text-charcoal/45'}>{counts[cat]}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
         {/* Lead post */}
         {leadPost && (
           <section className="px-4 mb-20">
@@ -137,7 +201,9 @@ const Blog = () => {
           <div className="max-w-[860px] mx-auto px-4 mb-12">
             <div className="flex items-center justify-center gap-6">
               <span className="flex-1 h-px bg-sage-light" aria-hidden="true" />
-              <p className="font-inter text-xs uppercase tracking-[0.32em] text-sage font-bold">More posts</p>
+              <p className="font-inter text-xs uppercase tracking-[0.32em] text-sage font-bold">
+                {filtering ? `${restPosts.length} ${restPosts.length === 1 ? 'post' : 'posts'} in ${active}` : 'More posts'}
+              </p>
               <span className="flex-1 h-px bg-sage-light" aria-hidden="true" />
             </div>
           </div>

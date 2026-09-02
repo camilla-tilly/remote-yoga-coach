@@ -7,7 +7,7 @@ const post: BlogPost = {
     'What corporate yoga really costs in 2026, per session, per month and per employee, for UK and European teams, plus how online pricing compares.',
   publishDate: '2026-06-10',
   readingTime: '6 min',
-  category: 'Cost and pricing',
+  category: 'Cost and proof',
   excerpt:
     'Almost nobody publishes their prices. This guide fixes that: what corporate yoga actually costs in 2026, in-person and online, per session and per month, so you can budget before you pick up the phone.',
   language: 'en',

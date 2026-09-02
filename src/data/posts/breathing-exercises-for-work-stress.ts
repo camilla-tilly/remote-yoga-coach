@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "Four simple breathing exercises you can do at your desk, before a meeting, a presentation or a difficult call, to steady your nerves in under two minutes.",
   publishDate: "2026-07-08",
   readingTime: "5 min",
-  category: "Breathing",
+  category: "Meditation and breathing",
   excerpt: "When work stress spikes, your breath is the fastest lever you have. Four techniques you can use at your desk, before a meeting or a hard call, in under two minutes.",
   language: "en",
   relatedServiceHref: "/services/team-wellness",

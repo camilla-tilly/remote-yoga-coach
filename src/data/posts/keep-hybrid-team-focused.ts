@@ -7,7 +7,7 @@ const post: BlogPost = {
     'Hybrid teams lose focus and connection in the gaps between office and home. Here are practical habits a manager can put in place, and one shared weekly anchor that reaches everyone equally.',
   publishDate: '2026-07-29',
   readingTime: '6 min',
-  category: 'Wellbeing programmes',
+  category: 'Remote teams and burnout',
   excerpt:
     'When some of your team is in the office and some at home, focus and connection slip in the gaps. Here are the practical habits that hold a hybrid team together, and the one shared moment that reaches everyone the same way.',
   language: 'en',

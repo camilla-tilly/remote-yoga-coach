@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "Wellbeing apps look like an easy win, but the engagement numbers tell a harder story. What the data shows, and what works better for distributed teams.",
   publishDate: "2026-07-15",
   readingTime: "6 min",
-  category: "Wellbeing programmes",
+  category: "Cost and proof",
   excerpt: "Wellbeing apps look like an easy win: low cost, instant rollout. So why does hardly anyone use them a year in? A look at the engagement data, and what works better.",
   language: "en",
   relatedServiceHref: "/pricing",

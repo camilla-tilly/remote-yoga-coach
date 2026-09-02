@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "What actually lifts morale on a distributed team: being seen as a person, shared rituals, realistic workloads and honest recognition, not forced fun or perks.",
   publishDate: "2026-08-03",
   readingTime: "6 min",
-  category: "Wellbeing programmes",
+  category: "Remote teams and burnout",
   excerpt: "Forced fun and perks rarely move morale on a remote team. What does: people feeling seen, shared rituals, realistic workloads and honest recognition. Here is the practical version, and one small habit that helps.",
   language: "en",
   relatedServiceHref: "/services/corporate-wellbeing-for-remote-teams",

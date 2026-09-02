@@ -6,13 +6,16 @@ interface SEOProps {
   canonical?: string;
   ogImage?: string;
   ogType?: string;
+  ogLocale?: string;
+  lang?: string;
   structuredData?: object;
 }
 
-const SEO = ({ title, description, canonical, ogImage, ogType = 'website', structuredData }: SEOProps) => {
+const SEO = ({ title, description, canonical, ogImage, ogType = 'website', ogLocale = 'en_GB', lang = 'en', structuredData }: SEOProps) => {
   useEffect(() => {
     // Title
     document.title = title;
+    document.documentElement.lang = lang;
 
     // Meta description
     const setMeta = (selector: string, attr: string, value: string) => {
@@ -32,6 +35,7 @@ const SEO = ({ title, description, canonical, ogImage, ogType = 'website', struc
     setMeta('meta[property="og:title"]', 'content', title);
     setMeta('meta[property="og:description"]', 'content', description);
     setMeta('meta[property="og:type"]', 'content', ogType);
+    setMeta('meta[property="og:locale"]', 'content', ogLocale);
     setMeta('meta[property="og:url"]', 'content', canonical || window.location.href);
 
     // Always set an image so client-side navigation never inherits a stale
@@ -67,7 +71,7 @@ const SEO = ({ title, description, canonical, ogImage, ogType = 'website', struc
       script.textContent = JSON.stringify(structuredData);
       document.head.appendChild(script);
     }
-  }, [title, description, canonical, ogImage, ogType, structuredData]);
+  }, [title, description, canonical, ogImage, ogType, ogLocale, lang, structuredData]);
 
   return null;
 };

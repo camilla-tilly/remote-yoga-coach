@@ -7,7 +7,7 @@ const post: BlogPost = {
     'A practical way to measure whether a team wellbeing programme is working, using attendance and a wellbeing check you can actually trust, without inventing a return figure.',
   publishDate: '2026-08-12',
   readingTime: '6 min',
-  category: 'Wellbeing programmes',
+  category: 'Cost and proof',
   excerpt:
     'You can honestly track two things about a wellbeing programme: attendance and a simple wellbeing check. Here is how to use those two numbers to build a business case, instead of reaching for a return figure you cannot actually stand behind.',
   language: 'en',

@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "Managers burn out quietly and often last. The signs of manager burnout to watch for in yourself and in a manager you lead, why it cascades to the team, and practical, non-heroic habits that help.",
   publishDate: "2026-07-30",
   readingTime: "6 min",
-  category: "Burnout",
+  category: "Remote teams and burnout",
   excerpt: "Managers carry their own load and the emotional weight of the team, so leadership burnout hides in plain sight. Here are the signs to watch for, why it spreads, and the low-pressure habits that protect both the manager and the people they lead.",
   language: "en",
   relatedServiceHref: "/services/corporate-wellbeing-for-remote-teams",

@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "A 5-minute desk yoga routine for the gap between calls, no equipment, no changing, camera off. Reset your body and focus between back-to-back meetings.",
   publishDate: "2026-06-24",
   readingTime: "4 min",
-  category: "Desk yoga",
+  category: "Desk and posture",
   excerpt: "You have five minutes between calls, not fifty. Here is a quick, no-equipment desk yoga routine to reset your body and your focus without leaving your seat.",
   language: "en",
   relatedServiceHref: "/services/team-wellness",

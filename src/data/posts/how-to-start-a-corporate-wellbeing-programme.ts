@@ -7,7 +7,7 @@ const post: BlogPost = {
     'A practical, step-by-step guide to starting a corporate wellbeing programme from scratch. How to set up an employee wellbeing programme that people actually use, built on one consistent habit rather than a scattering of perks.',
   publishDate: '2026-08-03',
   readingTime: '7 min',
-  category: 'Wellbeing programmes',
+  category: 'Remote teams and burnout',
   excerpt:
     'If you are the person tasked with starting a wellbeing programme and you are not sure where to begin, here is the honest version. Define one goal, pick one consistent habit, and prove it with a small pilot before you scale.',
   language: 'en',

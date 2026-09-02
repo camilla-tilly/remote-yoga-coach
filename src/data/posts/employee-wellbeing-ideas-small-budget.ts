@@ -6,7 +6,7 @@ const post: BlogPost = {
   metaDescription: "Practical, low-cost employee wellbeing ideas that actually work, plus the one paid option that keeps per-person cost low as your team grows.",
   publishDate: "2026-07-30",
   readingTime: "6 min",
-  category: "Wellbeing programmes",
+  category: "Cost and proof",
   excerpt: "Most wellbeing on a budget comes down to a few honest, near-free habits done consistently. Here are the low-cost ideas I would start with, and the single paid option that gives a small budget the most leverage.",
   language: "en",
   relatedServiceHref: "/services/team-wellness",
