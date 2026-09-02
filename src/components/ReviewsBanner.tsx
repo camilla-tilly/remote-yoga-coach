@@ -32,7 +32,7 @@ const ReviewsBanner = () => {
   return (
     <section className="bg-cream py-16 md:py-24 overflow-hidden" aria-label="What people say about practising with Camilla">
       <div className="max-w-[780px] mx-auto px-5 text-center">
-        <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-sage mb-8">
+        <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-8">
           What people say about practising with me
         </span>
 

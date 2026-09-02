@@ -9,6 +9,7 @@ import { Reveal, GlowField, Eyebrow } from '@/components/SiteBlocks';
 
 const faqs: Array<[string, string]> = [
   ['Do people need their cameras on?', 'No. Camera-off is welcome, and I say so at the start of every session.'],
+  ['Do we have to choose one type of class?', 'No. Every plan includes all three, meditation, breathing and chair yoga. Your team can settle on one, alternate between them, or mix them week to week, depending on what people need. The plan you choose only sets how often we meet, it does not lock you to a single class.'],
   ['Will people actually attend?', 'That is what a pilot session is for. Live, scheduled sessions out-attend apps and EAPs, because the hardest part, starting, is already done, and once it is a weekly habit you see the numbers in your reporting.'],
   ['What if people join late or miss one?', 'Sessions are built to drop into, and every one is recorded, so anyone can catch up or join from another time zone.'],
   ['We already have an app or an EAP. Why add this?', 'Those are libraries and crisis lines: useful, but passive. The Weekly Reset is the live, weekly layer with a real person, which is what actually drives participation. It complements what you have.'],
@@ -93,9 +94,9 @@ const Pricing = () => {
         {/* HERO */}
         <section className="relative overflow-hidden bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
           <GlowField tone="warm" />
-          <div className="relative max-w-[760px] mx-auto px-5 text-center">
+          <div className="relative max-w-[760px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <Eyebrow>Pricing</Eyebrow>
-            <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
+            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Simple, transparent pricing.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[560px] mx-auto">
@@ -106,17 +107,17 @@ const Pricing = () => {
 
         {/* THE PILOT */}
         <section className="pt-14 pb-8">
-          <div className="max-w-[720px] mx-auto px-5">
+          <div className="max-w-[720px] mx-auto px-5 sm:px-6 md:px-8">
             <Reveal>
-              <div className="relative overflow-hidden bg-charcoal text-white rounded-2xl p-8 md:p-10">
+              <div className="relative overflow-hidden bg-cream border border-sage-light rounded-2xl p-8 md:p-10">
                 <GlowField tone="warm" />
                 <div className="relative">
-                  <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clayLight mb-4">Start here</span>
+                  <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">Start here</span>
                   <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                    <h2 className="font-fraunces font-semibold text-2xl md:text-3xl">A pilot session</h2>
-                    <span className="font-fraunces font-semibold text-2xl md:text-3xl text-clayLight">{pilotPrice}</span>
+                    <h2 className="font-fraunces font-normal text-2xl md:text-3xl">A pilot session</h2>
+                    <span className="font-fraunces font-normal text-2xl md:text-3xl text-clay">{pilotPrice}</span>
                   </div>
-                  <p className="mt-4 text-white/80 leading-relaxed">One 30-minute live session, so your team can try it before you commit to anything:</p>
+                  <p className="mt-4 text-charcoal/75 leading-relaxed">One 30-minute live session, so your team can try it before you commit to anything:</p>
                   <ul className="mt-5 space-y-2.5">
                     {[
                       'A live 30-minute session, breathing, chair yoga or meditation, your pick',
@@ -124,13 +125,13 @@ const Pricing = () => {
                       'The recording afterwards, to share with anyone who missed it',
                       'No setup, no contract, nothing to sign',
                     ].map((item) => (
-                      <li key={item} className="flex gap-3 text-white/90 text-[15px]">
-                        <Check className="text-clayLight shrink-0 mt-0.5" size={17} strokeWidth={2.5} />
+                      <li key={item} className="flex gap-3 text-charcoal/85 text-[15px]">
+                        <Check className="text-clay shrink-0 mt-0.5" size={17} strokeWidth={2.5} />
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
-                  <p className="mt-5 text-white/70 text-sm leading-relaxed">
+                  <p className="mt-5 text-charcoal/65 text-sm leading-relaxed">
                     If you go ahead, the {pilotPrice} is credited to your first month.
                   </p>
                   <div className="mt-7">
@@ -148,11 +149,13 @@ const Pricing = () => {
 
         {/* SUBSCRIPTIONS */}
         <section className="py-16 md:py-20">
-          <div className="max-w-[1040px] mx-auto px-5">
+          <div className="max-w-[1040px] mx-auto px-5 sm:px-6 md:px-8">
             <div className="text-center max-w-[620px] mx-auto">
-              <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">Monthly subscriptions</h2>
+              <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">Monthly subscriptions</h2>
               <p className="mt-4 text-charcoal/70 leading-relaxed">
-                A flat monthly fee, shown excl. VAT.
+                Every plan includes all three classes, meditation, breathing and chair yoga, to pick from or mix week
+                to week. The plans differ only by how often we meet, not by which class you choose. A flat monthly fee,
+                excl. VAT.
               </p>
             </div>
 
@@ -169,10 +172,10 @@ const Pricing = () => {
                         Most popular
                       </span>
                     )}
-                    <h3 className="font-fraunces font-semibold text-heading text-2xl">{t.name}</h3>
+                    <h3 className="font-fraunces font-normal text-heading text-2xl">{t.name}</h3>
                     <p className="text-charcoal/60 text-sm mt-1">{t.best}</p>
                     <div className="mt-5 mb-6">
-                      <p className="font-fraunces font-semibold text-heading text-2xl leading-tight">{t.price}</p>
+                      <p className="font-fraunces font-normal text-heading text-2xl leading-tight">{t.price}</p>
                       <p className="text-charcoal/60 text-sm">{t.per}</p>
                     </div>
                     <ul className="space-y-3 text-[15px] text-charcoal/80 flex-1">
@@ -202,9 +205,9 @@ const Pricing = () => {
 
         {/* ROI CONTEXT */}
         <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>Put it in context</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               Cheaper than the problem it prevents
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
@@ -223,8 +226,8 @@ const Pricing = () => {
 
         {/* INCLUDED EVERYWHERE */}
         <section className="py-16 md:py-20">
-          <div className="max-w-[720px] mx-auto px-5">
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">What's included in every tier</h2>
+          <div className="max-w-[720px] mx-auto px-5 sm:px-6 md:px-8">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">What's included in every tier</h2>
             <ul className="mt-6 space-y-3">
               {[
                 'The same named coach every week, continuity is the whole point',
@@ -243,12 +246,12 @@ const Pricing = () => {
 
         {/* FAQ */}
         <section className="bg-cream py-16 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5">
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight text-center">Questions HR asks</h2>
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight text-center">Questions HR asks</h2>
             <dl className="mt-10 space-y-8">
               {faqs.map(([q, a]) => (
                 <div key={q} className="border-b border-sage-light pb-7">
-                  <dt className="font-fraunces font-semibold text-heading text-lg">{q}</dt>
+                  <dt className="font-fraunces font-normal text-heading text-lg">{q}</dt>
                   <dd className="mt-2 text-charcoal/75 leading-relaxed">{a}</dd>
                 </div>
               ))}
@@ -259,8 +262,8 @@ const Pricing = () => {
         {/* CTA */}
         <section className="relative overflow-hidden bg-cream-soft-b py-24 md:py-28">
           <GlowField tone="sage" />
-          <div className="relative max-w-[680px] mx-auto px-5 text-center">
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">See it before you commit</h2>
+          <div className="relative max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">See it before you commit</h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               Start with a single pilot session: one live class, credited to your first month if you continue.
             </p>

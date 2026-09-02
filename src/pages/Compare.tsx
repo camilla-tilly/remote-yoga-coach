@@ -92,7 +92,7 @@ const Compare = () => {
         description="An honest comparison of live team wellbeing sessions, wellbeing apps and EAPs on the metric that matters: whether your team actually uses it."
         canonical="https://remoteyogacoach.com/compare"
         ogType="article"
-        ogImage="https://remoteyogacoach.com/og/compare.png"
+        ogImage="https://remoteyogacoach.com/og/compare.png?v=2"
         structuredData={structuredData}
       />
       <Navbar />
@@ -101,9 +101,9 @@ const Compare = () => {
         {/* HERO */}
         <section className="relative overflow-hidden bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
           <GlowField tone="warm" />
-          <div className="relative max-w-[820px] mx-auto px-5 text-center">
+          <div className="relative max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <Eyebrow>The honest comparison</Eyebrow>
-            <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
+            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Live sessions, apps and EAPs, on the metric that matters
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[640px] mx-auto">
@@ -116,7 +116,7 @@ const Compare = () => {
 
         {/* THE TABLE */}
         <section className="py-16 md:py-20">
-          <div className="max-w-[820px] mx-auto px-5">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
             <Reveal>
               <ComparisonTable
                 columns={['Live weekly sessions', 'Wellbeing app', 'EAP']}
@@ -132,9 +132,9 @@ const Compare = () => {
 
         {/* THE APP */}
         <section className="py-14 md:py-18">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The app</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               A great library nobody visits
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
@@ -149,9 +149,9 @@ const Compare = () => {
 
         {/* THE EAP */}
         <section className="bg-cream py-14 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The EAP</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               A crisis line, not a habit
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
@@ -165,9 +165,9 @@ const Compare = () => {
 
         {/* NOT EITHER/OR */}
         <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The point</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               This is the missing layer, not a replacement
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
@@ -188,9 +188,9 @@ const Compare = () => {
 
         {/* THE ALTERNATIVE */}
         <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The alternative you are searching for</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               A Calm for Business, Headspace for Work and EAP alternative that gets used
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
@@ -217,9 +217,9 @@ const Compare = () => {
 
         {/* FAQ */}
         <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>FAQ</Eyebrow>
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">Common questions</h2>
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">Common questions</h2>
             <GuideFAQ items={faqItems} />
           </div>
         </section>
@@ -227,8 +227,8 @@ const Compare = () => {
         {/* CTA */}
         <section className="relative overflow-hidden bg-cream-soft-b py-24 md:py-28">
           <GlowField tone="sage" />
-          <div className="relative max-w-[680px] mx-auto px-5 text-center">
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">
+          <div className="relative max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">
               Add the layer your stack is missing
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">

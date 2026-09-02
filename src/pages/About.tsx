@@ -48,8 +48,8 @@ const About = () => {
 
       <main>
         <section className="bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
-          <div className="max-w-[760px] mx-auto px-5 text-center">
-            <h1 className="font-fraunces font-semibold text-heading text-4xl md:text-5xl leading-[1.1] tracking-tight">
+          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               A real person, live, every week.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[600px] mx-auto">
@@ -60,7 +60,7 @@ const About = () => {
         </section>
 
         <section className="py-20 md:py-28">
-          <div className="max-w-[620px] mx-auto px-5 space-y-8 text-charcoal/80 text-lg md:text-xl leading-relaxed">
+          <div className="max-w-[620px] mx-auto px-5 sm:px-6 md:px-8 space-y-8 text-charcoal/80 text-lg md:text-xl leading-relaxed">
             <CoachPhoto
               src="/coach-camilla.jpg"
               alt="Camilla, a certified yoga teacher for remote teams"
@@ -81,15 +81,16 @@ const About = () => {
 
         {/* TRAINING AND CREDENTIALS */}
         <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[620px] mx-auto px-5">
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight">Training and credentials</h2>
+          <div className="max-w-[620px] mx-auto px-5 sm:px-6 md:px-8">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">Training and credentials</h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
               I have 500 hours of yoga teacher training in movement, breathwork and meditation, plus a Certificate III
               in Fitness from Australia covering anatomy and safe movement for all levels. That combination means I
               understand how bodies actually work, so I can keep every session genuinely accessible, no experience or
               equipment needed. My meditation and breathing work also draws on training
               in the Hindu yogic tradition, in mantra, breathing techniques and meditation, so those parts of a
-              session stay grounded in the tradition they come from.
+              session stay grounded in the tradition they come from. I'm an ultra runner too, with six ultra marathons behind me, so I understand pushing
+              hard, and why a real reset matters as much as the effort.
             </p>
             <div className="mt-7 flex flex-wrap gap-2.5">
               {[
@@ -98,6 +99,7 @@ const About = () => {
                 'Movement and breathwork',
                 'Meditation and mindfulness',
                 'Anatomy and safe movement',
+                'Ultra runner',
               ].map((c) => (
                 <span
                   key={c}
@@ -112,16 +114,16 @@ const About = () => {
         </section>
 
         <section className="py-16 md:py-20">
-          <div className="max-w-[820px] mx-auto px-5">
-            <h2 className="font-fraunces font-semibold text-heading text-2xl md:text-3xl leading-tight text-center">Why live and human</h2>
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight text-center">Why live and human</h2>
             <div className="mt-12 grid gap-6 sm:grid-cols-3">
               {[
                 ['Continuity', 'The same coach every week, someone your team gets to know. The relationship is the whole point.'],
                 ['Accessibility', 'Camera-off, chair-based, no equipment. Everyone can join, wherever they work.'],
                 ['Honesty', 'Real attendance numbers and plainly-stated results, never inflated claims.'],
               ].map(([title, text]) => (
-                <div key={title} className="rounded-2xl border border-heading/10 bg-offwhite p-8 text-center">
-                  <h3 className="font-fraunces font-semibold text-heading text-xl">{title}</h3>
+                <div key={title} className="rounded-[12px] border border-sage-light bg-card p-8 text-center">
+                  <h3 className="font-fraunces font-normal text-heading text-xl">{title}</h3>
                   <p className="text-charcoal/70 text-[15px] leading-relaxed mt-3">{text}</p>
                 </div>
               ))}
@@ -130,8 +132,8 @@ const About = () => {
         </section>
 
         <section className="bg-cream-soft-b py-24 md:py-28">
-          <div className="max-w-[680px] mx-auto px-5 text-center">
-            <h2 className="font-fraunces font-semibold text-heading text-3xl md:text-4xl leading-tight">See it for your team</h2>
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">See it for your team</h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               Start with a single pilot session, credited to your first month if you continue.
             </p>

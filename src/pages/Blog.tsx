@@ -150,7 +150,7 @@ const Blog = () => {
               <Link
                 key={post.slug}
                 to={`/blog/${post.slug}`}
-                className="block py-10 md:py-12 group hover:pl-2 transition-[padding] duration-300"
+                className="block py-10 md:py-12 group hover:pl-2 hover:bg-cream/60 rounded-lg transition-[padding,background-color] duration-300"
               >
                 <div className="flex items-center gap-4 mb-4">
                   <span className="font-inter text-xs uppercase tracking-[0.28em] text-sage font-bold">

@@ -105,6 +105,12 @@
 
   <!-- Blog posts -->
   <url>
+    <loc>https://remoteyogacoach.com/blog/how-to-measure-wellbeing-programme-roi</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://remoteyogacoach.com/blog/team-wellbeing-subscription-vs-workshops</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -203,6 +209,30 @@
   <url>
     <loc>https://remoteyogacoach.com/blog/tech-neck-exercises-desk</loc>
     <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://remoteyogacoach.com/blog/wellbeing-lunch-and-learn-ideas</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://remoteyogacoach.com/blog/manager-burnout-signs</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://remoteyogacoach.com/blog/calm-headspace-vs-live-sessions</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://remoteyogacoach.com/blog/employee-wellbeing-ideas-small-budget</loc>
+    <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

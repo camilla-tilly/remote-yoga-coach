@@ -54,16 +54,19 @@ const sessions = [
     kind: 'Chair yoga',
     title: 'Desk reset',
     body: 'Chair yoga for shoulders, neck and hips. Done in work clothes, at the desk they are already sitting at.',
+    to: '/services/chair-yoga-for-teams',
   },
   {
     kind: 'Breathing',
     title: 'Breathing break',
     body: 'Slot it before the all-hands or after a hard call. Cameras off, and it still works.',
+    to: '/blog/breathing-exercises-for-work-stress',
   },
   {
     kind: 'Meditation',
     title: 'Guided meditation',
     body: 'A quiet middle of the day. Good for teams spread over three time zones and two continents.',
+    to: '/guides/mindfulness-at-work',
   },
 ];
 
@@ -128,6 +131,8 @@ const Index = () => {
         .ryc-btn-outline { transition: border-color .18s ease, color .18s ease; }
         .ryc-btn-outline:hover { border-color: ${c.terracotta}; color: ${c.terracotta}; }
         .ryc-underline:hover { text-decoration: underline; text-underline-offset: 4px; }
+        .ryc-card { transition: border-color .18s ease, transform .18s ease; }
+        .ryc-card:hover { border-color: ${c.terracotta}; transform: translateY(-2px); }
         @media (max-width: 900px) {
           .ryc-nav-links { display: none !important; }
           .ryc-hero-grid, .ryc-how-grid, .ryc-coach-grid, .ryc-pilot-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
@@ -178,11 +183,13 @@ const Index = () => {
         </div>
         <div className="ryc-sessions-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 16 }}>
           {sessions.map((s) => (
-            <div key={s.title} style={{ background: c.card, border: `1px solid ${c.rule}`, borderRadius: 8, padding: '34px 30px 36px' }}>
-              <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: '0.04em', textTransform: 'uppercase', color: c.terracotta, marginBottom: 20 }}>{s.kind}</div>
-              <h3 style={{ fontFamily: serif, fontWeight: 400, fontSize: 25, margin: '0 0 12px', color: c.text }}>{s.title}</h3>
-              <p style={{ fontSize: 15.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>{s.body}</p>
-            </div>
+            <Link key={s.title} to={s.to} style={{ textDecoration: 'none', color: 'inherit', display: 'block', height: '100%' }}>
+              <div className="ryc-card" style={{ background: c.card, border: `1px solid ${c.rule}`, borderRadius: 8, padding: '34px 30px 36px' }}>
+                <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: '0.04em', textTransform: 'uppercase', color: c.terracotta, marginBottom: 20 }}>{s.kind}</div>
+                <h3 style={{ fontFamily: serif, fontWeight: 400, fontSize: 25, margin: '0 0 12px', color: c.text }}>{s.title}</h3>
+                <p style={{ fontSize: 15.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>{s.body}</p>
+              </div>
+            </Link>
           ))}
         </div>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px 28px', marginTop: 26, fontSize: 14.5 }}>
@@ -260,20 +267,22 @@ const Index = () => {
       <section id="pricing" className="ryc-pad" style={{ maxWidth: 1200, margin: '0 auto', padding: '96px 40px 0' }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 40, borderTop: `1px solid ${c.rule}`, paddingTop: 28, marginBottom: 44, flexWrap: 'wrap' }}>
           <h2 style={{ ...h2Style, fontSize: 'clamp(30px, 3.4vw, 44px)' }}>Simple, per month</h2>
-          <span style={{ fontSize: 15.5, color: c.text3 }}>A flat monthly fee, per month.</span>
+          <span style={{ fontSize: 15.5, color: c.text3 }}>A flat monthly fee, priced by how often you meet, not which class you pick.</span>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))', gap: 20 }}>
           {tiers.map((t) => (
-            <div key={t.name} style={{ background: c.card, border: t.highlight ? `1.5px solid ${c.terracotta}` : `1px solid ${c.rule}`, borderRadius: 10, padding: '34px 30px', position: 'relative' }}>
-              {t.highlight && (
-                <span style={{ position: 'absolute', top: -11, left: 28, background: c.terracotta, color: c.onDark, fontFamily: mono, fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '4px 10px', borderRadius: 999, whiteSpace: 'nowrap' }}>Most popular</span>
-              )}
-              <h3 style={{ fontFamily: serif, fontWeight: 400, fontSize: 24, margin: 0, color: c.text }}>{t.name}</h3>
-              <div style={{ fontFamily: serif, fontSize: 40, lineHeight: 1, margin: '20px 0 6px', color: c.text, whiteSpace: 'nowrap' }}>
-                {t.price}<span style={{ fontFamily: sans, fontSize: 15, color: c.text3 }}> {t.per}</span>
+            <Link key={t.name} to="/pricing" style={{ textDecoration: 'none', color: 'inherit', display: 'block', height: '100%' }}>
+              <div className="ryc-card" style={{ background: c.card, border: t.highlight ? `1.5px solid ${c.terracotta}` : `1px solid ${c.rule}`, borderRadius: 10, padding: '34px 30px', position: 'relative' }}>
+                {t.highlight && (
+                  <span style={{ position: 'absolute', top: -11, left: 28, background: c.terracotta, color: c.onDark, fontFamily: mono, fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '4px 10px', borderRadius: 999, whiteSpace: 'nowrap' }}>Most popular</span>
+                )}
+                <h3 style={{ fontFamily: serif, fontWeight: 400, fontSize: 24, margin: 0, color: c.text }}>{t.name}</h3>
+                <div style={{ fontFamily: serif, fontSize: 40, lineHeight: 1, margin: '20px 0 6px', color: c.text, whiteSpace: 'nowrap' }}>
+                  {t.price}<span style={{ fontFamily: sans, fontSize: 15, color: c.text3 }}> {t.per}</span>
+                </div>
+                <p style={{ fontSize: 15.5, lineHeight: 1.6, color: c.text2, margin: '14px 0 0' }}>{t.body}</p>
               </div>
-              <p style={{ fontSize: 15.5, lineHeight: 1.6, color: c.text2, margin: '14px 0 0' }}>{t.body}</p>
-            </div>
+            </Link>
           ))}
         </div>
         <p style={{ marginTop: 22, fontSize: 15.5, color: c.text3 }}>

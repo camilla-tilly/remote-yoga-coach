@@ -41,7 +41,7 @@ const credentials = [
   },
   {
     title: "Ultralöpning",
-    detail: "5 ultramaraton genomförda, inklusive en pallplats"
+    detail: "6 ultramaraton genomförda, inklusive en pallplats"
   },
   {
     title: "Meditation & mindfulness",
@@ -217,7 +217,7 @@ const OmMig = () => {
                 {noWidow("I'm Camilla, an Australian-born 500-hour certified yoga teacher based in Stockholm, Sweden. I teach vinyasa and hatha yoga in English.")}
               </p>
               <p>
-                {noWidow("Movement, nature, and mindfulness have always been important to me. I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, and my 300-hour advanced vinyasa training at Sampoorna Yoga Shala in Goa, India. I also have a background in fitness instruction as a Les Mills certified instructor (7 years, Australia and Sweden), and I've completed five ultramarathons, including a podium finish.")}
+                {noWidow("Movement, nature, and mindfulness have always been important to me. I completed my 200-hour YTT at Rishikul Yogshala in Rishikesh, India, and my 300-hour advanced vinyasa training at Sampoorna Yoga Shala in Goa, India. I also have a background in fitness instruction as a Les Mills certified instructor (7 years, Australia and Sweden), and I've completed six ultramarathons, including a podium finish.")}
               </p>
               <p>
                 {noWidow("My approach to yoga is simple: challenging but not punishing. I'm not interested in impressive poses or performance. For me, yoga is more about the mental and spiritual practice than the shapes the body makes.")}
