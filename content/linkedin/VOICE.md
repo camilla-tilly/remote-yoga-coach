@@ -60,6 +60,26 @@ performer by a distance.
 **Length:** roughly 200 to 250 words for the opinion posts, shorter is fine for
 the others.
 
+## 3b. Positioning, and words to avoid
+
+**She is BOTH a yoga teacher AND an ultra runner, and the combination is the
+point.** Neither on its own is as interesting. Together they give her one
+perspective worth listening to: how to chase a big goal in a way that lasts.
+Never present the running as a separate hobby, and never cite the marathon count
+as a credential.
+
+**Her strongest recurring theme**, in her own words: the irony of people working
+on things that genuinely matter, often on sustainability itself, while working in
+a way that is not remotely sustainable. Impact-driven people running themselves
+into the ground. This names something her audience recognises in themselves, and
+it is hers rather than generic wellbeing commentary.
+
+**Say "rest", not "recovery" or "recharging".** She finds those jargonish. Plain
+words throughout.
+
+**Never argue against ambition.** Big goals are not the problem. The problem is
+the assumption that the only route to them is going until something gives.
+
 ## 4. Do not lecture companies
 
 Turn observations into questions she is asking herself and inviting the reader
