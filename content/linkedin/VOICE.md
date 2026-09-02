@@ -4,6 +4,40 @@ Built on 2026-09-02 from her five most recent LinkedIn posts. This is the
 reference for the weekly drafting routine. Where this file and the generic voice
 rules disagree, this file wins.
 
+## What LinkedIn is for (decided 2026-09-02)
+
+**LinkedIn demonstrates the business offering. Instagram carries the founder
+story and day-in-the-life material.** Camilla set this split herself. Do not
+draft day-in-the-life or personal-journey content for LinkedIn: that now lives
+on Instagram.
+
+So a LinkedIn post should usually do one of these:
+
+- Show the class itself, what actually happens in a meditation, breathing or
+  chair yoga session, ideally as a talk-to-camera or filmed-class video.
+- Make the value of the class concrete for a team.
+- Say plainly how to book or get in touch.
+
+The problem this fixes: a stranger could read her last five posts and still not
+know she runs weekly wellbeing sessions for teams, or how to get one. Clarity
+about the offering is the priority now.
+
+**Video is explicitly wanted.** Talk-to-camera and filmed class footage are both
+in scope. An earlier version of the routine banned these formats. That rule is
+withdrawn.
+
+Two calibrations so the feed still earns attention:
+
+- **Open with something useful, not with the pitch.** "Here is what I do with a
+  team's shoulders after four hours of meetings" earns the watch. "Book a session
+  with me" does not. The call to action belongs at the end, once the post has
+  given something.
+- **Put a hard "here is how to contact me" on roughly one post in three**, not
+  every one, so the feed does not train people to scroll past.
+
+Everything below still describes HOW she writes. It now applies to posts about
+the offering rather than to personal reflection pieces.
+
 ## The single biggest correction
 
 The drafts written so far open with a **thesis about teams** and close with a
@@ -75,8 +109,12 @@ not force either register.
 - **The ultra running is real and it performs well, but at most one post in
   three may touch it**, and always as a lens on something else. She does not want
   to be boxed in as the running person.
-- **Not every post sells.** At least one draft each week should ask for nothing
-  at all. Her best-performing posts have no call to action whatsoever.
+- **Every post should leave the offering clearer than it found it**, even the
+  reflective ones. This replaces the earlier rule that most posts should sell
+  nothing, which described her old feed and is no longer the strategy.
+- **Keep the ultra running and the personal material to a supporting role.** It
+  is evidence that she practises what she teaches, not the subject. Most of that
+  now belongs on Instagram.
 
 ## Recurring themes that are genuinely hers
 
