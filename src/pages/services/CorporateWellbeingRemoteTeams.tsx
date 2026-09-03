@@ -89,7 +89,7 @@ const CorporateWellbeingRemoteTeams = () => {
         title="Weekly Wellbeing Sessions for Remote and Hybrid Teams | Remote Yoga Coach"
         description="A live weekly wellbeing subscription for remote, hybrid and in-office teams. Breathing, meditation and chair yoga on Teams or Zoom, camera optional, with reporting. Book a pilot session."
         canonical="https://remoteyogacoach.com/services/corporate-wellbeing-for-remote-teams"
-        ogImage="https://remoteyogacoach.com/og/corporate-wellbeing-remote-teams.png?v=2"
+        ogImage="https://remoteyogacoach.com/og/corporate-wellbeing-remote-teams.png?v=3"
         structuredData={structuredData}
       />
       <Navbar />

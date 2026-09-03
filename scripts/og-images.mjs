@@ -18,8 +18,9 @@ const cards = [
     name: 'default',
     variant: 'light',
     eyebrow: 'For HR and people leaders',
-    title: 'Corporate wellbeing for',
-    accent: 'remote teams',
+    title: 'A stronger team,',
+    accent: 'half an hour',
+    tail: 'at a time.',
   },
   {
     name: 'guides',
@@ -51,7 +52,7 @@ const cards = [
   },
 ];
 
-const html = ({ variant, eyebrow, title, accent }) => {
+const html = ({ variant, eyebrow, title, accent, tail }) => {
   const dark = variant === 'dark';
   const bg = dark ? '#3E362E' : '#F5EFE7';
   const ink = dark ? '#FFFFFF' : '#64513E';
@@ -88,7 +89,7 @@ const html = ({ variant, eyebrow, title, accent }) => {
   <div class="row"><div class="mark"><span></span></div><div class="brand">Remote Yoga Coach</div></div>
   <div class="mid">
     <div class="eyebrow">${eyebrow}</div>
-    <div class="title">${title} <span class="accent">${accent}</span></div>
+    <div class="title">${title} <span class="accent">${accent}</span>${tail ? ' ' + tail : ''}</div>
   </div>
   <div class="foot"><div class="url">remoteyogacoach.com</div><div class="tag">Live, on Teams. Camera optional.</div></div>
 </div></body></html>`;

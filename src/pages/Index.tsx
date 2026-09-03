@@ -153,7 +153,7 @@ const Index = () => {
         <div className="ryc-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.05fr) minmax(0, 0.95fr)', gap: 64, alignItems: 'center' }}>
           <div>
             <div style={{ ...eyebrow, marginBottom: 26 }}>Live on Teams or Zoom&nbsp;&nbsp;·&nbsp;&nbsp;camera optional</div>
-            <h1 style={{ fontFamily: serif, fontWeight: 400, fontSize: 'clamp(32px, 3.5vw, 50px)', lineHeight: 1.14, letterSpacing: '-0.012em', margin: 0, maxWidth: '20ch', textWrap: 'balance' }}>
+            <h1 style={{ fontFamily: serif, fontWeight: 400, fontSize: 'clamp(36px, 4.1vw, 58px)', lineHeight: 1.12, letterSpacing: '-0.014em', margin: 0, maxWidth: '20ch', textWrap: 'balance' }}>
               A stronger team, <span style={{ color: c.terracotta }}>half&nbsp;an&nbsp;hour</span> at a time.
             </h1>
             <p style={{ fontSize: 19.5, lineHeight: 1.6, color: c.text2, margin: '30px 0 0', maxWidth: '48ch' }}>

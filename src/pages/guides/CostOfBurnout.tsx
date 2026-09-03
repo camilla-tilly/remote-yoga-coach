@@ -92,7 +92,7 @@ const CostOfBurnout = () => {
         description="The real cost of employee burnout to employers, why most of it is invisible, the documented ROI of wellbeing spend, and how to build the business case for prevention."
         canonical="https://remoteyogacoach.com/guides/cost-of-employee-burnout"
         ogType="article"
-        ogImage="https://remoteyogacoach.com/og/cost-of-employee-burnout.png?v=2"
+        ogImage="https://remoteyogacoach.com/og/cost-of-employee-burnout.png?v=3"
         structuredData={structuredData}
       />
       <Navbar />
