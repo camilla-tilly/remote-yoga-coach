@@ -1,9 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Remote Yoga Coach, hand-balanced cairn: three flat, gently offset
-       stones on a clay tile. Colour is the site's clay token (#8f5033) so the
-       mark matches every button and link. -->
-  <rect x="0" y="0" width="64" height="64" rx="16" fill="#8f5033"/>
-  <ellipse cx="32" cy="44" rx="15" ry="5.2" fill="#FFFFFF"/>
-  <ellipse cx="29.5" cy="33" rx="11" ry="4.5" fill="#F5EFE7"/>
-  <ellipse cx="34.5" cy="23" rx="7.5" ry="3.8" fill="#FFFFFF" fill-opacity="0.9"/>
+  <!-- Remote Yoga Coach. The mark is the dot used beside the wordmark in the
+       navbar on every page: a clay dot on warm paper. Kept on a tile so it
+       reads as an intentional icon at favicon size. -->
+  <rect x="0" y="0" width="64" height="64" rx="16" fill="#f9f2e9"/>
+  <circle cx="32" cy="32" r="13" fill="#8f5033"/>
 </svg>
