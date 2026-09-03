@@ -179,6 +179,28 @@ Her own evidence: the ultra post took 33 comments off "Why is this such a male
 dominated sport?", a question about something EXTERNAL that let people opine and
 look thoughtful. Her posts asking people to look inward got zero comments.
 
+## 4c. Golden Hour and other B2C work: one post, never a series
+
+Camilla also runs consumer classes in Stockholm under Yoga with Camilla, such as
+the Golden Hour morning pop-up in autumn 2026. LinkedIn is positioned around
+corporate wellness for an HR and manager audience, so a consumer class advert
+converts badly there AND quietly repositions her as a local class teacher rather
+than someone companies book.
+
+The rule: a B2C thing can appear on LinkedIn only as evidence for an observation
+about working life, never as an offer. The class details go at the very bottom
+as a footnote, in one or two lines. If it cannot carry a genuine insight about
+how people work, it does not go on LinkedIn at all.
+
+And it is a ONE-POST subject. At most one follow-up once a season is underway,
+with something she has learnt from teaching it. A recurring B2C thread erodes the
+positioning, which is the whole reason she is on LinkedIn.
+
+Worked example: the Golden Hour post argues that an evening class loses to the
+day because the day has had eleven hours to go wrong, while a seven o'clock one
+holds because nothing has overrun yet. That is a scheduling observation any HR
+person recognises. The class is the footnote.
+
 ## 5. The weekly cycle
 
 One post a week, rotating through four types. The routine derives the type from
