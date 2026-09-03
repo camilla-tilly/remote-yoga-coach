@@ -58,9 +58,9 @@ const TeamWellness = () => {
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[660px] mx-auto">
               Live 30-minute meditation, breathing or chair-yoga classes on Teams or Zoom, choose one, alternate,
-              or combine them, no activewear, no commute, camera optional. Sessions are live on screen, so they work for any team that
-              spends its day on a screen, whether fully remote, hybrid, or together in an office. The same coach every
-              week, building a real habit instead of another app login nobody opens.
+              or combine them, no activewear, no commute, camera optional. For teams that are fully remote, hybrid,
+              or together in an office. The same coach every week, building a real habit instead of another app
+              login nobody opens.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
@@ -122,10 +122,6 @@ const TeamWellness = () => {
               Challenging but never punishing. No headstands, no "advanced" poses, nothing anyone has to be flexible or
               fit to do. Just a reliable reset that fits a lunch break or a meeting slot.
             </p>
-            <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-              Every session suits every body and every level. Cameras can stay off, there is nothing to download, no
-              equipment and no changing of clothes, and there is always a seated option.
-            </p>
           </div>
         </section>
 
@@ -166,9 +162,8 @@ const TeamWellness = () => {
           <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Who it's for">A wellbeing habit people actually keep</SectionHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              People and culture leaders, team leads and founders at remote-first and hybrid companies, tech,
-              consulting, sustainability and distributed teams that want a wellbeing habit that
-              people actually keep.
+              People and culture leaders, team leads and founders at remote-first and hybrid companies. Tech,
+              consulting, sustainability and distributed teams.
             </p>
             <p className="mt-5 text-charcoal/60 text-base leading-relaxed">
               Sessions are delivered in English, online, across UK and European time zones (and Australian hours for
@@ -188,10 +183,8 @@ const TeamWellness = () => {
               meditation and gentle chair yoga as the weekly sessions.
             </p>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-              Think of a one-off as a low-commitment way to try it. It is an easy door-opener and a wellbeing session
-              for a team event, not the main offering. The Weekly Reset, the recurring weekly habit, is where the real
-              change happens, and a single session is the simplest way to feel what that would be like before you
-              commit.
+              A one-off is the simplest way to feel what it is like before committing. The Weekly Reset, the
+              recurring weekly habit, is where the real change happens.
             </p>
             <div className="mt-9">
               <Link to="/demo">

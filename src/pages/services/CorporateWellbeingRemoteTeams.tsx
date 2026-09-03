@@ -105,9 +105,8 @@ const CorporateWellbeingRemoteTeams = () => {
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[660px] mx-auto">
               A live weekly wellbeing class for your whole team, remote, hybrid or in the office, on Teams or Zoom.
-              A meditation class, a breathing class, or a chair yoga class, choose one, alternate, or combine them,
-              led by the same coach, camera optional, recorded for every time zone. A recurring habit people keep,
-              with the reporting to prove it, not another app licence nobody opens.
+              Meditation, breathing or chair yoga, led by the same coach, camera optional. A recurring habit
+              people keep, with the reporting to prove it, not another app licence nobody opens.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
@@ -223,14 +222,8 @@ const CorporateWellbeingRemoteTeams = () => {
                 asking anyone to travel or coordinate a room.
               </p>
               <p>
-                Because it is the same time, the same coach and the same small ritual each week, it becomes a moment of
-                connection people recognise across a distributed or hybrid team, not another meeting. Sessions are live
-                on Teams or Zoom, so they work for any team that spends its day on a screen, whether fully remote,
-                hybrid, or together in an office. The session comes to wherever each person already is.
-              </p>
-              <p>
-                Every session suits every body and every level. Cameras can stay off, there is nothing to download, no
-                equipment and no changing of clothes, and there is always a seated option.
+                Same time, same coach, same small ritual each week, so it becomes a moment of connection people
+                recognise across a distributed or hybrid team, not another meeting.
               </p>
             </div>
           </div>
@@ -241,10 +234,9 @@ const CorporateWellbeingRemoteTeams = () => {
           <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Who it's for">People leaders at remote-first companies</SectionHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              HR and people leaders, team leads and founders at remote-first and hybrid companies, tech, consulting,
-              sustainability and distributed teams that want a wellbeing habit the whole team
-              actually keeps. Delivered in English, online, across UK and European time zones, with Australian hours
-              for part of the year.
+              HR and people leaders, team leads and founders at remote-first and hybrid companies. Tech, consulting,
+              sustainability and distributed teams. Delivered in English, online, across UK and European time zones,
+              with Australian hours for part of the year.
             </p>
             <p className="mt-5 text-charcoal/60 text-base leading-relaxed">
               Deciding whether it is worth it? Read{' '}
@@ -276,8 +268,8 @@ const CorporateWellbeingRemoteTeams = () => {
               Give your distributed team a habit that sticks
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              Start with a single pilot session, then once it is a weekly habit the attendance and wellbeing
-              reporting gives you something concrete to take to leadership. Credited to your first month if you continue.
+              Start with a single pilot session, credited to your first month if you continue. Once it is a weekly
+              habit, the reporting gives you something concrete to take to leadership.
             </p>
             <div className="mt-9">
               <Link to="/demo">

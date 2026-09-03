@@ -173,8 +173,7 @@ const Compare = () => {
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
               The strongest wellbeing stack is all three doing what each does well: the app as the on-demand library,
               the EAP as the safety net, and a live weekly session as the human, habit-forming layer that finally
-              drives participation across the lot. If you only have passive tools, this is the piece that makes them
-              get used. See{' '}
+              drives participation across the lot. See{' '}
               <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                 how a session runs
               </Link>{' '}
@@ -198,19 +197,15 @@ const Compare = () => {
               <Link to="/blog/do-workplace-wellness-apps-work" className="text-clay underline underline-offset-4 hover:text-clayDark">
                 Calm for Business alternative or a Headspace for Work alternative
               </Link>
-              , you are
-              usually not looking for a better content library. You are looking for the piece those apps leave out: a
-              real person, at a fixed time, that people actually turn up to. That is the whole wellbeing app vs live
-              sessions difference. The app waits to be opened. A live weekly session is led, so the hardest part,
-              starting, is already handled.
+              , you are usually not looking for a better content library. You are looking for the piece those apps
+              leave out: a real person, at a fixed time, that people actually turn up to. That is the wellbeing app
+              vs live sessions difference in one line: the app waits to be opened, a live session is led.
             </p>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-              As an EAP alternative the framing is different again. An EAP is a crisis safety net and should stay in
-              place. What it does not do is build the everyday habit that keeps people well before a problem forms.
-              A live weekly session, led by me, a 500-hour certified yoga teacher, on Teams or Zoom with camera
-              optional and every session recorded, is the preventive, human layer that sits in front of both the app
-              and the EAP. Keep them, and add the layer that finally drives attendance across the lot. Attendance and
-              repeat attendance are reported in a simple summary, so the engagement is something you can see.
+              As an EAP alternative the framing is different. An EAP is a crisis safety net and should stay. What it
+              does not do is build the everyday habit that keeps people well before a problem forms. That is a live
+              weekly session, led by me, a 500-hour certified yoga teacher, on Teams or Zoom, camera optional,
+              recorded, with attendance reported in a simple summary.
             </p>
           </div>
         </section>
@@ -232,8 +227,8 @@ const Compare = () => {
               Add the layer your stack is missing
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              A single pilot session so your team can try it, then once it is a weekly habit the attendance and
-              wellbeing reporting shows you the participation for yourself.
+              A single pilot session so your team can try it. Once it is a weekly habit, the reporting shows you
+              the participation for yourself.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">

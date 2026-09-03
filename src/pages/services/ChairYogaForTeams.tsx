@@ -111,8 +111,8 @@ const ChairYogaForTeams = () => {
                 workplace yoga for distributed and hybrid teams
               </Link>
               , on Teams or Zoom. Gentle seated
-              movement, simple breathing and a short reset, in normal work clothes, camera optional. No mats, no
-              changing, no experience, nothing anyone has to be fit or flexible to join.
+              movement, simple breathing and a short reset, in normal work clothes, camera optional. Nothing anyone
+              has to be fit or flexible to join.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
@@ -147,15 +147,8 @@ const ChairYogaForTeams = () => {
               <p>
                 <span className="text-charcoal font-medium">Chair yoga</span> is seated and gentle, with a standing
                 option. It needs no mat and no changing of clothes, and it came from adaptive yoga, so it assumes a
-                range of bodies and levels rather than the flexible few. It is the version I run for teams.
-              </p>
-              <p>
-                Sessions are live on Teams or Zoom, so they work for any team that spends its day on a screen, whether
-                fully remote, hybrid, or together in an office. The session comes to wherever each person already is.
-              </p>
-              <p>
-                Every session suits every body and every level. Cameras can stay off, there is nothing to download, no
-                equipment and no changing of clothes, and there is always a seated option.
+                range of bodies and levels rather than the flexible few. It is the version I run for teams, live on
+                Teams or Zoom, whether yours is fully remote, hybrid, or together in an office.
               </p>
             </div>
           </div>
@@ -167,21 +160,19 @@ const ChairYogaForTeams = () => {
             <SectionHeading eyebrow="Why chair yoga">Movement a whole workforce will keep</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
-                Most corporate fitness perks are built for the people who least need them. A gym benefit rewards the
-                already-active, a lunchtime bootcamp filters out anyone who does not want to change clothes and
-                sweat at work. Uptake settles around 12 percent, and the other 88 percent quietly opt out.
+                Most corporate fitness perks are built for the people who least need them. A gym benefit rewards
+                the already-active. Uptake settles around 12 percent, and the other 88 percent quietly opt out.
               </p>
               <p className="text-charcoal font-medium">
                 Chair yoga is the opposite. It was designed for every body in the room.
               </p>
               <p>
-                Because it is seated, gentle and demands nothing athletic, participation holds up across ages, sizes
-                and fitness levels. That matters when roughly 80 percent of office workers report{' '}
+                Seated, gentle and nothing athletic, so participation holds up across ages, sizes and fitness
+                levels. That matters when roughly 80 percent of office workers report{' '}
                 <Link to="/blog/tech-neck-exercises-desk" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   neck or back discomfort
                 </Link>{' '}
-                from sitting: the people who most need to move are exactly the ones an intense class
-                scares off. A short weekly session of seated mobility reaches them instead of skipping them.
+                from sitting: the people who most need to move are the ones an intense class scares off.
               </p>
             </div>
           </div>
@@ -214,25 +205,23 @@ const ChairYogaForTeams = () => {
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
                 You could send your team a chair-yoga PDF or a meditation-app licence. Most companies already have,
-                and watched usage collapse within weeks. The reason is not the content, which is usually fine. It is
-                that passive tools ask busy, tired people to start on their own, at the exact moments their willpower
-                is lowest, and they almost never do.
+                and watched usage collapse within weeks. The content is usually fine. The problem is that passive
+                tools ask busy, tired people to start on their own, and they almost never do.
               </p>
               <p>
-                A live session in the calendar removes that step entirely. People click one link and someone else
-                leads. Within a few weeks it stops being a task and becomes the moment the team quietly protects.
-                That is the whole difference between a benefit that is bought and a benefit that is used.
+                A live session in the calendar removes that step. People click one link and someone else leads.
+                Within a few weeks it stops being a task and becomes the moment the team quietly protects.
               </p>
               <p>
-                If you want the self-guided version to share alongside it, my{' '}
+                To share alongside it, my{' '}
                 <Link to="/guides/desk-yoga" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   desk yoga and chair yoga guide
                 </Link>{' '}
-                covers the movements in full, and the{' '}
+                covers the movements in full and the{' '}
                 <Link to="/blog/chair-yoga-at-your-desk" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   8-pose chair yoga routine
                 </Link>{' '}
-                works as a handout. The live weekly session is what turns knowing about it into doing it.
+                works as a handout.
               </p>
             </div>
           </div>
@@ -244,10 +233,9 @@ const ChairYogaForTeams = () => {
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The proof</span>
             <h2 className="font-fraunces font-normal text-3xl md:text-4xl leading-tight">You will see whether it is working</h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              Every programme comes with simple, honest reporting: how many of your team attend and how many keep coming
-              back. Once it is a weekly habit you
-              get a report you can take straight to your budget-holder, no guesswork about whether it earned
-              its slot.
+              Every programme comes with simple, honest reporting: how many of your team attend, and how many keep
+              coming back. Once it is a weekly habit you get a one-page summary you can take straight to your
+              budget-holder.
             </p>
           </div>
         </section>
@@ -263,7 +251,7 @@ const ChairYogaForTeams = () => {
             </p>
             <p className="mt-5 text-charcoal/60 text-base leading-relaxed">
               Sessions run in English, online, across UK and European time zones, with Australian hours for part of
-              the year. Suitable for international and distributed teams anywhere. It sits naturally alongside{' '}
+              the year. It sits alongside{' '}
               <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                 The Weekly Reset
               </Link>
@@ -312,8 +300,7 @@ const ChairYogaForTeams = () => {
               Try chair yoga with your team
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              A single pilot session of live chair yoga, credited to your first month
-              if you continue. See it work with your own team before committing.
+              A single pilot session of live chair yoga, credited to your first month if you continue.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
