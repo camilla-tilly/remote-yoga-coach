@@ -8,6 +8,8 @@ import {
   GuideHeading,
   GuideProse,
   GuideList,
+  PullQuote,
+  NumberedSteps,
   GuideTOC,
   KeyTakeaways,
   SpokeCard,
@@ -124,7 +126,7 @@ const CostOfBurnout = () => {
 
         {/* HEADLINE */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="headline" eyebrow="The number">The headline number</GuideHeading>
             <GuideProse>
               <p>
@@ -147,13 +149,13 @@ const CostOfBurnout = () => {
 
         {/* INVISIBLE */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="invisible" eyebrow="Where it hides">Why most of the cost is invisible</GuideHeading>
             <GuideProse>
-              <p>
-                Here is the part that gets missed in the budget meeting. The expensive form of burnout is not the
-                person who is off sick. It is the person still logging on.
-              </p>
+              <p>Here is the part that gets missed in the budget meeting.</p>
+              <PullQuote>
+                The expensive form of burnout is not the person who is off sick. It is the person still logging on.
+              </PullQuote>
               <p>
                 Around 89 percent of the cost of poor mental health comes from presenteeism, not absence, people at
                 their desks but depleted. They ship slower work, make more mistakes, stop offering ideas, and hold
@@ -174,12 +176,9 @@ const CostOfBurnout = () => {
         </section>
 
         {/* ONE NUMBER */}
-        <section className="bg-cream border-t border-sage-light py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
-            <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The clincher</span>
-            <h2 id="one-number" className="scroll-mt-28 font-fraunces font-normal text-3xl md:text-4xl leading-tight">
-              The one number that ends the debate
-            </h2>
+        <section className="py-20 md:py-24">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
+            <GuideHeading id="one-number" eyebrow="The clincher" size="md">The one number that ends the debate</GuideHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
                 If a room is unmoved by industry billions, bring it down to one person. Replacing an employee who
@@ -199,7 +198,7 @@ const CostOfBurnout = () => {
 
         {/* RETURN */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="return" eyebrow="The return">What the return actually looks like</GuideHeading>
             <GuideProse>
               <p>
@@ -226,7 +225,7 @@ const CostOfBurnout = () => {
 
         {/* PREVENTION */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="prevention" eyebrow="Efficiency">Why prevention is the cheap option</GuideHeading>
             <GuideProse>
               <p>
@@ -251,7 +250,7 @@ const CostOfBurnout = () => {
 
         {/* BUSINESS CASE */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="business-case" eyebrow="Make the case">Building the business case</GuideHeading>
             <GuideProse>
               <p>
@@ -259,7 +258,7 @@ const CostOfBurnout = () => {
                 works for the CEO who signs off and the finance approver who scrutinises it.
               </p>
             </GuideProse>
-            <GuideList
+            <NumberedSteps
               items={[
                 ['Lead with cost-avoidance', 'Open on the money already leaking: about 2,646 pounds per affected employee, most of it invisible presenteeism. This is a number you are paying now, not a new expense.'],
                 ['Attach it to one departure', 'Translate it into the replacement cost of a single resignation, six to nine months of salary. Prevention costs a fraction of that.'],
@@ -303,7 +302,7 @@ const CostOfBurnout = () => {
 
         {/* FAQ */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="faq" eyebrow="FAQ">Frequently asked questions</GuideHeading>
             <GuideFAQ items={faqItems} />
           </div>

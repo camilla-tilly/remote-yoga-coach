@@ -1,7 +1,7 @@
 export type BlogLanguage = 'en' | 'sv';
 
 export interface BlogContentBlock {
-  type: 'paragraph' | 'heading' | 'subheading' | 'list' | 'callout' | 'cta' | 'quote' | 'table' | 'faq';
+  type: 'paragraph' | 'heading' | 'subheading' | 'list' | 'callout' | 'cta' | 'quote' | 'table' | 'faq' | 'image';
   text?: string;
   items?: string[];
   author?: string;
@@ -10,6 +10,7 @@ export interface BlogContentBlock {
   tableHead?: string[];
   tableRows?: string[][];
   faqItems?: Array<{ q: string; a: string }>;
+  image?: { src: string; alt: string; caption?: string };
 }
 
 export interface BlogPost {

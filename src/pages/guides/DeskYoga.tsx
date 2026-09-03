@@ -9,6 +9,9 @@ import {
   GuideProse,
   GuideList,
   GuideTOC,
+  DefinitionList,
+  PullQuote,
+  NumberedSteps,
   KeyTakeaways,
   SpokeCard,
   GuideFAQ,
@@ -125,7 +128,7 @@ const DeskYoga = () => {
 
         {/* WHAT IT IS */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="what-it-is" eyebrow="The basics">What desk yoga and chair yoga are</GuideHeading>
             <GuideProse>
               <p>
@@ -143,29 +146,37 @@ const DeskYoga = () => {
               </p>
               <p>
                 One position worth stating plainly, because it shapes everything we teach: there are no advanced
-                poses here, and that is deliberate, not a limitation. The point of movement at work is to feel
-                better at 4pm, not to perform.
+                poses here, and that is deliberate, not a limitation.
               </p>
+              <PullQuote>The point of movement at work is to feel better at 4pm, not to perform.</PullQuote>
             </GuideProse>
           </div>
         </section>
 
         {/* OFFICE YOGA DEFINED */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="office-yoga" eyebrow="The terms">Office yoga and workplace yoga, defined</GuideHeading>
+            <DefinitionList
+              items={[
+                [
+                  'Office yoga, sometimes called workplace yoga,',
+                  'is simply yoga adapted to the working day: short, low-effort movement and breathing you can do in the clothes you turned up in, without a mat or a studio. It is the umbrella term. Desk yoga and chair yoga are the two forms it usually takes.',
+                ],
+                [
+                  'Desk yoga',
+                  'is office yoga done in and around your workstation, a mix of seated movements and a few standing ones aimed at the aches screen work creates.',
+                ],
+                [
+                  'Chair yoga',
+                  'is the seated core of it, using the chair itself as support, which makes it the most accessible entry point and the easiest thing to run for a whole team at once.',
+                ],
+              ]}
+            />
             <GuideProse>
               <p>
-                Office yoga, sometimes called workplace yoga, is simply yoga adapted to the working day: short,
-                low-effort movement and breathing you can do in the clothes you turned up in, without a mat or a
-                studio. It is the umbrella term. Desk yoga and chair yoga are the two forms it usually takes.
-              </p>
-              <p>
-                Desk yoga is office yoga done in and around your workstation, a mix of seated movements and a few
-                standing ones aimed at the aches screen work creates. Chair yoga is the seated core of it, using the
-                chair itself as support, which makes it the most accessible entry point and the easiest thing to run
-                for a whole team at once. When people search for office yoga or workplace yoga, this is what they are
-                after: something that fits the day rather than competing with it.
+                When people search for office yoga or workplace yoga, this is what they are after: something that
+                fits the day rather than competing with it.
               </p>
               <p>
                 Done live and remotely, workplace yoga travels wherever the team does. If you want office yoga your
@@ -180,8 +191,8 @@ const DeskYoga = () => {
         </section>
 
         {/* WHY BODIES ACHE */}
-        <section className="bg-cream border-t border-sage-light py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="why-bodies-ache" eyebrow="The problem">Why office bodies ache</GuideHeading>
             <GuideProse>
               <p>
@@ -194,10 +205,13 @@ const DeskYoga = () => {
               </p>
               <p>
                 The fix is not a perfect chair or heroic posture. Research on sedentary work points somewhere much
-                less glamorous: variety and frequency. The best posture is the next posture. Short, regular movement
-                breaks, every 30 to 45 minutes, outperform a single gym session bolted onto a motionless day. That
-                is the entire logic of desk yoga: many small doses, built into the day where the stiffness actually
-                happens.
+                less glamorous: variety and frequency.
+              </p>
+              <PullQuote>The best posture is the next posture.</PullQuote>
+              <p>
+                Short, regular movement breaks, every 30 to 45 minutes, outperform a single gym session bolted onto
+                a motionless day. That is the entire logic of desk yoga: many small doses, built into the day where
+                the stiffness actually happens.
               </p>
             </GuideProse>
           </div>
@@ -205,7 +219,7 @@ const DeskYoga = () => {
 
         {/* MOVEMENTS */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="movements" eyebrow="The toolkit">The movements, area by area</GuideHeading>
             <GuideProse>
               <p>
@@ -259,7 +273,7 @@ const DeskYoga = () => {
 
         {/* FIVE MINUTES */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="five-minutes" eyebrow="Between calls">The five-minute routine between calls</GuideHeading>
             <GuideProse>
               <p>
@@ -267,7 +281,7 @@ const DeskYoga = () => {
                 covers the whole body without leaving the desk area, roughly one minute per station:
               </p>
             </GuideProse>
-            <GuideList
+            <NumberedSteps
               items={[
                 ['Minute one', 'Six slow breaths, shoulders rolling back and down on every exhale. Arrive in the gap instead of refreshing the inbox.'],
                 ['Minute two', 'Neck half-circles and blind-spot rotations, slow, both directions.'],
@@ -291,7 +305,7 @@ const DeskYoga = () => {
 
         {/* BREATHING */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="breathing" eyebrow="The multiplier">Add the breath and it becomes yoga</GuideHeading>
             <GuideProse>
               <p>
@@ -323,11 +337,8 @@ const DeskYoga = () => {
 
         {/* TEAM HABIT */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
-            <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">For teams</span>
-            <h2 id="team-habit" className="scroll-mt-28 font-fraunces font-normal text-3xl md:text-4xl leading-tight">
-              Making it a team habit
-            </h2>
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
+            <GuideHeading id="team-habit" eyebrow="For teams" size="md">Making it a team habit</GuideHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
                 Here is the honest problem with everything above: individually, people do not do it. Not because
@@ -341,11 +352,11 @@ const DeskYoga = () => {
                 has to remember, decide or perform. Cameras stay off for anyone who prefers it, recordings cover the
                 other time zones, and within a few weeks it becomes the meeting people quietly protect. That is the
                 design of my{' '}
-                <Link to="/services/chair-yoga-for-teams" className="text-clay underline underline-offset-4 hover:text-white">
+                <Link to="/services/chair-yoga-for-teams" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   virtual chair yoga for teams
                 </Link>
                 , and of{' '}
-                <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-white">
+                <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   The Weekly Reset
                 </Link>
                 , which combines chair yoga with breathing and a short meditation, and reports attendance and
@@ -355,7 +366,7 @@ const DeskYoga = () => {
             <div className="mt-8">
               <Link
                 to="/blog/how-much-does-corporate-yoga-cost"
-                className="inline-flex items-center gap-2 text-clay font-semibold text-sm uppercase tracking-wider hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 text-clay font-semibold text-sm uppercase tracking-wider hover:text-clayDark transition-colors"
               >
                 Read: how much does corporate yoga cost? →
               </Link>
@@ -364,8 +375,8 @@ const DeskYoga = () => {
         </section>
 
         {/* FAQ */}
-        <section className="bg-cream border-t border-sage-light py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+        <section className="py-20 md:py-24">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="faq" eyebrow="FAQ">Frequently asked questions</GuideHeading>
             <GuideFAQ items={faqItems} />
           </div>

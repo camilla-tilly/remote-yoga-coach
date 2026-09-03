@@ -10,6 +10,7 @@ import {
   GuideProse,
   GuideList,
   GuideTOC,
+  PullQuote,
   KeyTakeaways,
   SpokeCard,
   GuideFAQ,
@@ -125,7 +126,7 @@ const MindfulnessAtWork = () => {
 
         {/* WHAT IT IS */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="what-it-is" eyebrow="The basics">What mindfulness at work actually means</GuideHeading>
             <GuideProse>
               <p>
@@ -152,7 +153,7 @@ const MindfulnessAtWork = () => {
 
         {/* EVIDENCE */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="evidence" eyebrow="The research">What the evidence says</GuideHeading>
             <GuideProse>
               <p>
@@ -196,7 +197,7 @@ const MindfulnessAtWork = () => {
 
         {/* MEDITATION AT WORK */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="meditation-at-work" eyebrow="Practice">Meditation at work: five ways to start</GuideHeading>
             <GuideProse>
               <p>
@@ -245,7 +246,7 @@ const MindfulnessAtWork = () => {
 
         {/* FOCUS */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="focus" eyebrow="Attention">Mindfulness for focus at work</GuideHeading>
             <GuideProse>
               <p>
@@ -273,7 +274,7 @@ const MindfulnessAtWork = () => {
 
         {/* TEAM EXERCISES */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="team-exercises" eyebrow="Together">Mindfulness exercises for teams</GuideHeading>
             <GuideProse>
               <p>
@@ -312,11 +313,8 @@ const MindfulnessAtWork = () => {
 
         {/* WHY APPS FAIL */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
-            <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The honest bit</span>
-            <h2 id="why-apps-fail" className="scroll-mt-28 font-fraunces font-normal text-3xl md:text-4xl leading-tight">
-              Why the app alone never sticks
-            </h2>
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
+            <GuideHeading id="why-apps-fail" eyebrow="The honest bit" size="md">Why the app alone never sticks</GuideHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
                 Most companies have already tried mindfulness once: they bought app licences. Then usage followed the
@@ -328,7 +326,10 @@ const MindfulnessAtWork = () => {
               <p>
                 The problem is not the apps, which are often excellent libraries. The problem is that a library asks
                 the busiest, most tired people to initiate practice alone, unprompted, in the exact moments when
-                their willpower is lowest. A scheduled live session in the calendar removes that hardest step.
+                their willpower is lowest.
+              </p>
+              <PullQuote>A scheduled live session in the calendar removes that hardest step.</PullQuote>
+              <p>
                 People click a link and someone else takes it from there. The app can then do what it does well:
                 support between sessions.
               </p>
@@ -336,7 +337,7 @@ const MindfulnessAtWork = () => {
             <div className="mt-8">
               <Link
                 to="/blog/do-workplace-wellness-apps-work"
-                className="inline-flex items-center gap-2 text-clay font-semibold text-sm uppercase tracking-wider hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 text-clay font-semibold text-sm uppercase tracking-wider hover:text-clayDark transition-colors"
               >
                 Read: do workplace wellness apps actually work? →
               </Link>
@@ -346,7 +347,7 @@ const MindfulnessAtWork = () => {
 
         {/* REMOTE TEAMS */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="remote-teams" eyebrow="For HR and team leads">Bringing mindfulness to a remote team</GuideHeading>
             <GuideProse>
               <p>
@@ -396,7 +397,7 @@ const MindfulnessAtWork = () => {
 
         {/* FAQ */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="faq" eyebrow="FAQ">Frequently asked questions</GuideHeading>
             <GuideFAQ items={faqItems} />
           </div>

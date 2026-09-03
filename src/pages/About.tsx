@@ -5,6 +5,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { CoachPhoto } from '@/components/SiteBlocks';
+import { PullQuote } from '@/components/GuideLayout';
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -60,12 +61,13 @@ const About = () => {
         </section>
 
         <section className="py-20 md:py-28">
-          <div className="max-w-[620px] mx-auto px-5 sm:px-6 md:px-8 space-y-8 text-charcoal/80 text-lg md:text-xl leading-relaxed">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 md:grid md:grid-cols-[220px_1fr] md:gap-10 md:items-start">
             <CoachPhoto
               src="/coach-camilla.jpg"
               alt="Camilla, a certified yoga teacher for remote teams"
-              className="w-full max-w-[260px] mx-auto"
+              className="w-full max-w-[220px] mx-auto md:mx-0 mb-8 md:mb-0"
             />
+            <div className="space-y-6 text-charcoal/80 text-lg leading-relaxed">
             <p>
               I'm Camilla, a 500-hour certified yoga teacher. Before teaching full time I worked across a
               large multinational company, a startup, a consultancy and in government, so the sessions are
@@ -76,24 +78,33 @@ const About = () => {
               through alone. Chair-based, camera optional, nothing anyone has to be fit or flexible to do. Not an
               impressive practice, just a habit your whole team can keep.
             </p>
+            </div>
           </div>
         </section>
 
         {/* TRAINING AND CREDENTIALS */}
         <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[620px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">Training and credentials</h2>
-            <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-              I have 500 hours of yoga teacher training in movement, breathwork and meditation, plus a Certificate III
-              in Fitness from Australia covering anatomy and safe movement for all levels. That combination means I
-              understand how bodies actually work, so I can keep every session genuinely accessible, no experience or
-              equipment needed. My meditation and breathing work draws on extensive
-              experience across three traditions, Kadampa Buddhism meditation, Tranquil Wisdom Insight Meditation,
-              and the Hindu yogic tradition of mantra, breathing techniques and meditation. I have done retreats in
-              all three and teach these styles, so the breathwork and stillness in a session is grounded in the
-              traditions it comes from. I'm an ultra runner too, with six ultra marathons behind me, so I understand pushing
-              hard, and why a real reset matters as much as the effort.
-            </p>
+            <div className="mt-5 space-y-5 text-charcoal/75 text-lg leading-relaxed">
+              <p>
+                I have 500 hours of yoga teacher training in movement, breathwork and meditation, plus a Certificate III
+                in Fitness from Australia covering anatomy and safe movement for all levels. That combination means I
+                understand how bodies actually work, so I can keep every session genuinely accessible, no experience or
+                equipment needed.
+              </p>
+              <p>
+                My meditation and breathing work draws on extensive
+                experience across three traditions, Kadampa Buddhism meditation, Tranquil Wisdom Insight Meditation,
+                and the Hindu yogic tradition of mantra, breathing techniques and meditation. I have done retreats in
+                all three and teach these styles, so the breathwork and stillness in a session is grounded in the
+                traditions it comes from.
+              </p>
+              <PullQuote>
+                I'm an ultra runner too, with six ultra marathons behind me, so I understand pushing hard, and why a
+                real reset matters as much as the effort.
+              </PullQuote>
+            </div>
             <div className="mt-7 flex flex-wrap gap-2.5">
               {[
                 '500 hours of yoga teacher training',

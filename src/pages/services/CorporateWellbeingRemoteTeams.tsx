@@ -6,7 +6,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Reveal, GlowField, StatBand, Eyebrow } from '@/components/SiteBlocks';
-import { GuideFAQ } from '@/components/GuideLayout';
+import { GuideFAQ, PullQuote } from '@/components/GuideLayout';
 
 const faqItems: Array<[string, string]> = [
   [
@@ -125,7 +125,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* THE PROBLEM */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="The problem">Distributed teams are the hardest to reach, and the most at risk</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -138,9 +138,9 @@ const CorporateWellbeingRemoteTeams = () => {
                 isolation, blurred boundaries and always-on messaging. Meanwhile the usual fixes assume an office: a
                 room, a fixed hour, a local instructor.
               </p>
-              <p className="text-charcoal font-medium">
+              <PullQuote>
                 So most distributed teams fall back on passive tools, and passive tools do not get used.
-              </p>
+              </PullQuote>
             </div>
           </div>
         </section>
@@ -181,7 +181,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* SUBSCRIPTION VS ONE-OFF */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Why a subscription">A habit, not a one-off event</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -207,7 +207,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* HYBRID TEAMS */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Hybrid teams">One shared moment to keep a hybrid team connected</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -231,7 +231,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* WHO IT'S FOR */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Who it's for">People leaders at remote-first companies</SectionHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               HR and people leaders, team leads and founders at remote-first and hybrid companies. Tech, consulting,
@@ -254,7 +254,7 @@ const CorporateWellbeingRemoteTeams = () => {
 
         {/* FAQ */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="FAQ">Common questions</SectionHeading>
             <GuideFAQ items={faqItems} />
           </div>

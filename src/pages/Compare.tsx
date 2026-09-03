@@ -5,7 +5,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Reveal, GlowField, ComparisonTable, Eyebrow } from '@/components/SiteBlocks';
-import { GuideFAQ } from '@/components/GuideLayout';
+import { GuideFAQ, PullQuote } from '@/components/GuideLayout';
 
 const faqItems: Array<[string, string]> = [
   [
@@ -131,8 +131,8 @@ const Compare = () => {
         </section>
 
         {/* THE APP */}
-        <section className="py-14 md:py-18">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+        <section className="py-14 md:py-20">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The app</Eyebrow>
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               A great library nobody visits
@@ -149,7 +149,7 @@ const Compare = () => {
 
         {/* THE EAP */}
         <section className="bg-cream py-14 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The EAP</Eyebrow>
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               A crisis line, not a habit
@@ -165,7 +165,7 @@ const Compare = () => {
 
         {/* NOT EITHER/OR */}
         <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The point</Eyebrow>
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               This is the missing layer, not a replacement
@@ -186,8 +186,8 @@ const Compare = () => {
         </section>
 
         {/* THE ALTERNATIVE */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+        <section className="bg-cream py-16 md:py-20">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The alternative you are searching for</Eyebrow>
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               A Calm for Business, Headspace for Work and EAP alternative that gets used
@@ -198,9 +198,12 @@ const Compare = () => {
                 Calm for Business alternative or a Headspace for Work alternative
               </Link>
               , you are usually not looking for a better content library. You are looking for the piece those apps
-              leave out: a real person, at a fixed time, that people actually turn up to. That is the wellbeing app
-              vs live sessions difference in one line: the app waits to be opened, a live session is led.
+              leave out: a real person, at a fixed time, that people actually turn up to.
             </p>
+            <PullQuote>
+              That is the wellbeing app vs live sessions difference in one line: the app waits to be opened, a live
+              session is led.
+            </PullQuote>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
               As an EAP alternative the framing is different. An EAP is a crisis safety net and should stay. What it
               does not do is build the everyday habit that keeps people well before a problem forms. That is a live
@@ -212,9 +215,9 @@ const Compare = () => {
 
         {/* FAQ */}
         <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>FAQ</Eyebrow>
-            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">Common questions</h2>
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">Common questions</h2>
             <GuideFAQ items={faqItems} />
           </div>
         </section>

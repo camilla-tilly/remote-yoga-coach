@@ -253,7 +253,7 @@ export const StatBand = ({
         <div className={`grid gap-8 sm:gap-6 ${items.length === 4 ? 'sm:grid-cols-2 lg:grid-cols-4' : 'sm:grid-cols-3'}`}>
           {items.map((s, i) => (
             <Reveal key={s.label} delay={i * 80} className="text-center">
-              <p className={`font-fraunces font-normal text-4xl md:text-5xl leading-none ${dark ? 'text-clayLight' : 'text-clay'}`}>
+              <p className={`font-fraunces font-normal text-3xl md:text-4xl leading-none ${dark ? 'text-clayLight' : 'text-clay'}`}>
                 {s.value}
               </p>
               <p className={`mt-3 text-[15px] leading-relaxed ${dark ? 'text-white/75' : 'text-charcoal/70'}`}>{s.label}</p>

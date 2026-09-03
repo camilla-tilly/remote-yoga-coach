@@ -6,6 +6,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Reveal, GlowField, Eyebrow } from '@/components/SiteBlocks';
+import { GuideFAQ, ProseList } from '@/components/GuideLayout';
 
 const faqs: Array<[string, string]> = [
   ['Do people need their cameras on?', 'No. Camera-off is welcome, and I say so at the start of every session.'],
@@ -94,7 +95,7 @@ const Pricing = () => {
         {/* HERO */}
         <section className="relative overflow-hidden bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
           <GlowField tone="warm" />
-          <div className="relative max-w-[760px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+          <div className="relative max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <Eyebrow>Pricing</Eyebrow>
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Simple, transparent pricing.
@@ -205,16 +206,19 @@ const Pricing = () => {
 
         {/* ROI CONTEXT */}
         <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>Put it in context</Eyebrow>
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               Cheaper than the problem it prevents
             </h2>
-            <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-              Poor mental health costs UK employers around 2,646 pounds per affected employee a year, and workplace
-              mental health spend returns about 4.70 pounds for every 1 pound (Deloitte). A year of these sessions
-              costs a fraction of a single burnout resignation. If you need to make that case internally, I wrote it
-              up for you.
+            <ProseList
+              items={[
+                'Poor mental health costs UK employers around 2,646 pounds per affected employee a year, and workplace mental health spend returns about 4.70 pounds for every 1 pound (Deloitte).',
+                'A year of these sessions costs a fraction of a single burnout resignation.',
+              ]}
+            />
+            <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
+              If you need to make that case internally, I wrote it up for you.
             </p>
             <p className="mt-6">
               <Link to="/guides/cost-of-employee-burnout" className="inline-flex items-center gap-1.5 text-clay hover:text-clayDark font-medium text-[15px]">
@@ -246,16 +250,9 @@ const Pricing = () => {
 
         {/* FAQ */}
         <section className="bg-cream py-16 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight text-center">Questions HR asks</h2>
-            <dl className="mt-10 space-y-8">
-              {faqs.map(([q, a]) => (
-                <div key={q} className="border-b border-sage-light pb-7">
-                  <dt className="font-fraunces font-normal text-heading text-lg">{q}</dt>
-                  <dd className="mt-2 text-charcoal/75 leading-relaxed">{a}</dd>
-                </div>
-              ))}
-            </dl>
+            <GuideFAQ items={faqs as Array<[string, string]>} />
           </div>
         </section>
 

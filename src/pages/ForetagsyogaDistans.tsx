@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
+import { GuideFAQ, ProseList, PullQuote } from '@/components/GuideLayout';
 
 const faq: Array<[string, string]> = [
   [
@@ -148,7 +149,7 @@ const ForetagsyogaDistans = () => {
 
         {/* PROBLEM */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[720px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Varför det ofta inte fastnar">
               De flesta friskvårdssatsningar rinner ut i sanden
             </SectionHeading>
@@ -160,9 +161,9 @@ const ForetagsyogaDistans = () => {
               </p>
               <p>
                 Det som håller är något som redan står i kalendern, på en bestämd tid, som ingen behöver komma
-                ihåg att boka eller känna dåligt samvete över att hoppa över. Det är hela idén här: en fast punkt
-                i veckan där någon faktiskt håller i det.
+                ihåg att boka eller känna dåligt samvete över att hoppa över.
               </p>
+              <PullQuote>Det är hela idén här: en fast punkt i veckan där någon faktiskt håller i det.</PullQuote>
             </div>
           </div>
         </section>
@@ -188,18 +189,17 @@ const ForetagsyogaDistans = () => {
 
         {/* NATURAFÖRMÅN */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[720px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Naturaförmån">Hela teamet, utan att röra friskvårdsbidraget</SectionHeading>
             <div className="mt-7 space-y-5 text-lg text-charcoal/75 leading-relaxed">
-              <p>
-                När arbetsgivaren erbjuder yoga och mindfulness till hela teamet på lika villkor kan det ofta
-                hanteras som en naturaförmån. Det betyder att den enskilda medarbetaren inte behöver lägga sitt
-                eget friskvårdsbidrag på det, och att bidraget kan gå till något annat.
-              </p>
-              <p>
-                Det är också skillnaden mellan en förmån som några få utnyttjar och något hela teamet gör
-                tillsammans. Stäm alltid av det konkreta upplägget med er ekonomifunktion eller revisor först.
-              </p>
+              <ProseList
+                items={[
+                  'När arbetsgivaren erbjuder yoga och mindfulness till hela teamet på lika villkor kan det ofta hanteras som en naturaförmån.',
+                  'Det betyder att den enskilda medarbetaren inte behöver lägga sitt eget friskvårdsbidrag på det, och att bidraget kan gå till något annat.',
+                  'Det är också skillnaden mellan en förmån som några få utnyttjar och något hela teamet gör tillsammans.',
+                ]}
+              />
+              <PullQuote>Stäm alltid av det konkreta upplägget med er ekonomifunktion eller revisor först.</PullQuote>
               <p>
                 <Link
                   to="/blog/naturaforman-yoga-for-hela-teamet"
@@ -215,7 +215,7 @@ const ForetagsyogaDistans = () => {
 
         {/* WHAT IS INCLUDED */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[720px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Så funkar det">Vad som ingår</SectionHeading>
             <ul className="mt-8 space-y-4">
               {included.map((item) => (
@@ -237,7 +237,7 @@ const ForetagsyogaDistans = () => {
 
         {/* ABOUT */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[720px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Vem håller i passen">Jag gör det själv, varje vecka</SectionHeading>
             <div className="mt-7 space-y-5 text-lg text-charcoal/75 leading-relaxed">
               <p>
@@ -256,16 +256,9 @@ const ForetagsyogaDistans = () => {
 
         {/* FAQ */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Vanliga frågor">Det ni brukar undra över</SectionHeading>
-            <dl className="mt-9 divide-y divide-sage-light border-y border-sage-light">
-              {faq.map(([q, a]) => (
-                <div key={q} className="py-7">
-                  <dt className="font-fraunces text-xl md:text-2xl text-heading leading-snug mb-3">{q}</dt>
-                  <dd className="text-lg text-charcoal/75 leading-relaxed">{a}</dd>
-                </div>
-              ))}
-            </dl>
+            <GuideFAQ items={faq as Array<[string, string]>} />
           </div>
         </section>
 

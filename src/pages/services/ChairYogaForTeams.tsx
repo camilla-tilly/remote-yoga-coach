@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
-import { GuideFAQ } from '@/components/GuideLayout';
+import { Section } from '@/components/Section';
+import { GuideFAQ, GuideHeading, DefinitionList, PullQuote } from '@/components/GuideLayout';
 
 const faqItems: Array<[string, string]> = [
   [
@@ -77,13 +78,6 @@ const included = [
   ['One link to run it', 'You set the slot once. I take it from there. Zero admin for whoever organises it.'],
 ];
 
-const SectionHeading = ({ eyebrow, children }: { eyebrow?: string; children: React.ReactNode }) => (
-  <>
-    {eyebrow && <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">{eyebrow}</span>}
-    <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">{children}</h2>
-  </>
-);
-
 const ChairYogaForTeams = () => {
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
@@ -97,8 +91,7 @@ const ChairYogaForTeams = () => {
 
       <main>
         {/* HERO */}
-        <section className="bg-cream-soft pt-36 pb-20 md:pt-44 md:pb-24">
-          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+        <Section width="hero" tone="top" size="hero" center>
             <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-6">
               For companies and remote teams
             </span>
@@ -126,46 +119,38 @@ const ChairYogaForTeams = () => {
                 </Button>
               </Link>
             </div>
-          </div>
-        </section>
+        </Section>
 
-        {/* DEFINITIONS */}
-        <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
-            <SectionHeading eyebrow="Quick definitions">Office yoga, desk yoga and chair yoga: what's the difference?</SectionHeading>
-            <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
-              <p>
-                <span className="text-charcoal font-medium">Office yoga and workplace yoga</span> are umbrella terms
-                for yoga done during the workday, wherever the team happens to be. They cover any format built to fit
-                around meetings and desk work, from a few minutes of stretching to a full guided session.
-              </p>
-              <p>
-                <span className="text-charcoal font-medium">Desk yoga</span> is the narrowest of the three: gentle
-                movements done at, or right beside, a desk. It is designed to loosen the neck, shoulders, wrists and
-                back between tasks, without anyone leaving their workstation.
-              </p>
-              <p>
-                <span className="text-charcoal font-medium">Chair yoga</span> is seated and gentle, with a standing
-                option. It needs no mat and no changing of clothes, and it came from adaptive yoga, so it assumes a
-                range of bodies and levels rather than the flexible few. It is the version I run for teams, live on
-                Teams or Zoom, whether yours is fully remote, hybrid, or together in an office.
-              </p>
-            </div>
-          </div>
-        </section>
+        {/* DEFINITIONS -- three definitions that were already a table, set as one. */}
+        <Section tone="cream">
+          <GuideHeading eyebrow="Quick definitions">Office yoga, desk yoga and chair yoga: what's the difference?</GuideHeading>
+          <DefinitionList
+            items={[
+              [
+                'Office yoga and workplace yoga',
+                'are umbrella terms for yoga done during the workday, wherever the team happens to be. They cover any format built to fit around meetings and desk work, from a few minutes of stretching to a full guided session.',
+              ],
+              [
+                'Desk yoga',
+                'is the narrowest of the three: gentle movements done at, or right beside, a desk. It is designed to loosen the neck, shoulders, wrists and back between tasks, without anyone leaving their workstation.',
+              ],
+              [
+                'Chair yoga',
+                'is seated and gentle, with a standing option. It needs no mat and no changing of clothes, and it came from adaptive yoga, so it assumes a range of bodies and levels rather than the flexible few. It is the version I run for teams, live on Teams or Zoom, whether yours is fully remote, hybrid, or together in an office.',
+              ],
+            ]}
+          />
+        </Section>
 
         {/* WHY CHAIR YOGA */}
-        <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
-            <SectionHeading eyebrow="Why chair yoga">Movement a whole workforce will keep</SectionHeading>
-            <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
+        <Section>
+          <GuideHeading eyebrow="Why chair yoga">Movement a whole workforce will keep</GuideHeading>
+          <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
                 Most corporate fitness perks are built for the people who least need them. A gym benefit rewards
                 the already-active. Uptake settles around 12 percent, and the other 88 percent quietly opt out.
               </p>
-              <p className="text-charcoal font-medium">
-                Chair yoga is the opposite. It was designed for every body in the room.
-              </p>
+              <PullQuote>Chair yoga is the opposite. It was designed for every body in the room.</PullQuote>
               <p>
                 Seated, gentle and nothing athletic, so participation holds up across ages, sizes and fitness
                 levels. That matters when roughly 80 percent of office workers report{' '}
@@ -174,14 +159,12 @@ const ChairYogaForTeams = () => {
                 </Link>{' '}
                 from sitting: the people who most need to move are the ones an intense class scares off.
               </p>
-            </div>
           </div>
-        </section>
+        </Section>
 
         {/* WHAT'S INCLUDED */}
-        <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
-            <SectionHeading eyebrow="What a session includes">One weekly slot, run for you</SectionHeading>
+        <Section width="hero" tone="cream">
+          <GuideHeading eyebrow="What a session includes">One weekly slot, run for you</GuideHeading>
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">
               {included.map(([title, text]) => (
                 <li key={title} className="flex gap-4 bg-card rounded-lg border border-sage-light p-5">
@@ -195,13 +178,11 @@ const ChairYogaForTeams = () => {
                 </li>
               ))}
             </ul>
-          </div>
-        </section>
+        </Section>
 
         {/* WHY IT STICKS */}
-        <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
-            <SectionHeading eyebrow="Why it sticks">Live and scheduled beats an app or a handout</SectionHeading>
+        <Section>
+          <GuideHeading eyebrow="Why it sticks">Live and scheduled beats an app or a handout</GuideHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
                 You could send your team a chair-yoga PDF or a meditation-app licence. Most companies already have,
@@ -224,26 +205,21 @@ const ChairYogaForTeams = () => {
                 works as a handout.
               </p>
             </div>
-          </div>
-        </section>
+        </Section>
 
         {/* MEASUREMENT */}
-        <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
-            <span className="inline-block text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">The proof</span>
-            <h2 className="font-fraunces font-normal text-3xl md:text-4xl leading-tight">You will see whether it is working</h2>
+        <Section tone="cream">
+          <GuideHeading eyebrow="The proof" size="md">You will see whether it is working</GuideHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               Every programme comes with simple, honest reporting: how many of your team attend, and how many keep
               coming back. Once it is a weekly habit you get a one-page summary you can take straight to your
               budget-holder.
             </p>
-          </div>
-        </section>
+        </Section>
 
         {/* WHO IT'S FOR */}
-        <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
-            <SectionHeading eyebrow="Who it's for">Built for distributed teams</SectionHeading>
+        <Section>
+          <GuideHeading eyebrow="Who it's for">Built for distributed teams</GuideHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               People and culture leaders, team leads and founders at remote-first and hybrid companies who want a
               wellbeing habit the whole team actually keeps, not another perk that lands flat. Teams across tech,
@@ -257,21 +233,16 @@ const ChairYogaForTeams = () => {
               </Link>
               , which blends chair yoga with breathing and meditation in one recurring session.
             </p>
-          </div>
-        </section>
+        </Section>
 
         {/* FAQ */}
-        <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
-            <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">FAQ</span>
-            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">Common questions</h2>
-            <GuideFAQ items={faqItems} />
-          </div>
-        </section>
+        <Section tone="cream">
+          <GuideHeading eyebrow="FAQ">Common questions</GuideHeading>
+          <GuideFAQ items={faqItems} />
+        </Section>
 
         {/* RELATED READING */}
-        <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+        <Section>
             <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">Related reading</span>
             <ul className="space-y-2 text-lg leading-relaxed">
               <li>
@@ -290,12 +261,10 @@ const ChairYogaForTeams = () => {
                 </Link>
               </li>
             </ul>
-          </div>
-        </section>
+        </Section>
 
         {/* CTA */}
-        <section className="bg-cream-soft-b py-24 md:py-28">
-          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+        <Section tone="bottom" size="cta" center>
             <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">
               Try chair yoga with your team
             </h2>
@@ -314,8 +283,7 @@ const ChairYogaForTeams = () => {
                 </Button>
               </Link>
             </div>
-          </div>
-        </section>
+        </Section>
       </main>
 
       <Footer />

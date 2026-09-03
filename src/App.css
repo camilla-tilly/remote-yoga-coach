@@ -152,13 +152,21 @@ footer {
   }
 }
 
-/* Reduce spacing between sections */
-section + section {
+/* Legacy rule: it silently adds 8px (12px from md up) on top of whatever
+   padding a section already declares, on every page. That made vertical rhythm
+   unpredictable and impossible to reason about from the component alone.
+
+   Rather than delete it -- which would shift the homepage, which is deliberately
+   out of scope for this pass -- it now bows out wherever the shared <Section>
+   component is used. Section emits data-section, so its padding is exactly what
+   the `size` prop says it is, while every page still on raw <section> keeps the
+   spacing it has today. */
+section:not([data-section]) + section:not([data-section]) {
   padding-top: 0.5rem;
 }
 
 @media (min-width: 768px) {
-  section + section {
+  section:not([data-section]) + section:not([data-section]) {
     padding-top: 0.75rem;
   }
 }

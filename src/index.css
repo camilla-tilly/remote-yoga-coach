@@ -102,6 +102,47 @@
 }
 
 @layer components {
+  /* Step numerals for NumberedSteps. A CSS counter rather than a <span>, so the
+     numbers are presentation: they never enter textContent, never land in a
+     copy diff, and screen readers get the list's own numbering instead of
+     hearing "zero one" before every item. */
+  .numbered-steps {
+    counter-reset: step;
+  }
+  .numbered-steps > li {
+    counter-increment: step;
+  }
+  /* The FAQ open/close marker, for the same reason as the step numerals: it is
+     a control, not content. As a <span> it landed in the page's text and glued
+     itself to the answer that followed -- "...how long should it be?+ 15 to 30
+     minutes..." -- which is nonsense to anything reading the page as text. */
+  .faq-item > summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #8f5033;
+    transition: transform 0.2s ease;
+  }
+  .faq-item[open] > summary::after {
+    transform: rotate(45deg);
+  }
+
+  .numbered-steps > li::before {
+    content: counter(step, decimal-leading-zero);
+    flex-shrink: 0;
+    padding-top: 0.125rem;
+    font-family: Newsreader, Georgia, serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    color: rgb(143 80 51 / 0.7);
+  }
+
   .container-section {
     @apply max-w-[720px] mx-auto px-4 sm:px-6 lg:px-8 py-5 md:py-6 lg:py-8;
   }

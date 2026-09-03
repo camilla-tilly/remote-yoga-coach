@@ -13,7 +13,6 @@ const guides = [
     title: 'What employee burnout costs, and the ROI of fixing it',
     description:
       'The real cost of burnout to an employer, why most of it is invisible, the documented return on wellbeing spend, and how to build the case for your budget-holder.',
-    read: '8 min',
   },
   {
     to: '/guides/remote-work-burnout',
@@ -21,7 +20,6 @@ const guides = [
     title: 'Remote work burnout: signs, causes and prevention',
     description:
       'Why distributed teams burn out quietly, the warning signs you can spot from a distance, what it costs, and the prevention that actually holds up.',
-    read: '9 min',
   },
   {
     to: '/guides/mindfulness-at-work',
@@ -29,7 +27,6 @@ const guides = [
     title: 'Mindfulness at work: does it work for teams?',
     description:
       'What workplace mindfulness really is, what the evidence shows, and how to run meditation and breathing as a team habit rather than an app nobody opens.',
-    read: '9 min',
   },
   {
     to: '/guides/desk-yoga',
@@ -37,7 +34,6 @@ const guides = [
     title: 'Desk yoga and chair yoga at work',
     description:
       'Why office bodies ache, the seated movements that help, a five-minute routine between calls, and how to make it a habit a whole team keeps.',
-    read: '7 min',
   },
 ];
 

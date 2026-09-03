@@ -52,16 +52,22 @@ async function run() {
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
   });
 
-  let ok = 0;
-  let failed = 0;
-  for (const route of routes) {
+  // One attempt at a route. Separated out so it can be retried.
+  async function render(route, timeout) {
     const page = await browser.newPage();
     try {
+      // Cache off, or a retry re-requests a page the browser already has and
+      // vite preview answers 304 Not Modified -- which res.ok() reports as a
+      // failure, so the retry defeats itself on its second attempt.
+      await page.setCacheEnabled(false);
       const res = await page.goto(`http://localhost:${PORT}${route}`, {
         waitUntil: 'networkidle0',
-        timeout: 30000,
+        timeout,
       });
-      if (!res || !res.ok()) throw new Error(`HTTP ${res ? res.status() : 'no response'}`);
+      // 304 is a successful load from cache, not an error, so check for a real
+      // failure status rather than for the narrower res.ok() (200-299 only).
+      if (!res) throw new Error('no response');
+      if (res.status() >= 400) throw new Error(`HTTP ${res.status()}`);
       // Give SEO.tsx's useEffect a beat to mutate <head>, and wait for the H1.
       await page.waitForSelector('h1', { timeout: 10000 }).catch(() => {});
       const html = await page.evaluate(
@@ -73,20 +79,65 @@ async function run() {
           : join(distDir, route, 'index.html');
       mkdirSync(dirname(outPath), { recursive: true });
       writeFileSync(outPath, html, 'utf8');
-      ok++;
-      console.log(`[prerender] ✓ ${route}`);
-    } catch (err) {
-      failed++;
-      console.error(`[prerender] ✗ ${route} — ${err.message}`);
     } finally {
       await page.close();
     }
   }
 
+  let ok = 0;
+  const stubborn = [];
+  for (const route of routes) {
+    try {
+      await render(route, 30000);
+      ok++;
+      console.log(`[prerender] ✓ ${route}`);
+    } catch (err) {
+      stubborn.push(route);
+      console.error(`[prerender] … ${route} — ${err.message}, will retry`);
+    }
+  }
+
+  // Retry pass. A 30s navigation timeout is generous for these pages, but under
+  // load a route occasionally exceeds it, and which route it is changes from run
+  // to run -- so it is machine contention, not a bad page. Without a retry that
+  // route silently ships the generic app shell: right title-less HTML, green
+  // build, and nobody finds out until the page stops ranking. Two more attempts
+  // with a longer budget has cleared every occurrence seen so far.
+  const failedRoutes = [];
+  for (const route of stubborn) {
+    let done = false;
+    for (const timeout of [60000, 90000]) {
+      try {
+        await render(route, timeout);
+        ok++;
+        done = true;
+        console.log(`[prerender] ✓ ${route} (on retry)`);
+        break;
+      } catch (err) {
+        console.error(`[prerender] … ${route} retry failed — ${err.message}`);
+      }
+    }
+    if (!done) failedRoutes.push(route);
+  }
+  const failed = failedRoutes.length;
+
   await browser.close();
   await server.httpServer.close();
 
   console.log(`[prerender] done: ${ok} ok, ${failed} failed`);
+  if (failed > 0) {
+    console.error(
+      `\n[prerender] ####################################################\n` +
+        `[prerender] #  ${String(failed).padStart(2)} ROUTE(S) FELL BACK TO THE APP SHELL.        #\n` +
+        `[prerender] #  They ship with the generic title and meta, so   #\n` +
+        `[prerender] #  crawlers and link previews will see the wrong   #\n` +
+        `[prerender] #  page. The deploy still goes out; these URLs     #\n` +
+        `[prerender] #  need a rebuild before they will rank.           #\n` +
+        `[prerender] ####################################################\n` +
+        failedRoutes.map((r) => `[prerender] #  ${r}`).join('\n') +
+        '\n'
+    );
+  }
   if (ok === 0) {
     console.error(
       '\n[prerender] ####################################################\n' +

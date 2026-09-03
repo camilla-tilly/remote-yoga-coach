@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
+import { GuideHeading, PullQuote, NumberedSteps } from '@/components/GuideLayout';
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -79,7 +80,7 @@ const TeamWellness = () => {
 
         {/* PROBLEM */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="The problem">HR knows this one</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
@@ -88,10 +89,10 @@ const TeamWellness = () => {
                 only 3–5% of people ever touch. Meanwhile work-related stress is at a record high, and remote employees
                 report loneliness at nearly double the rate of office-based staff.
               </p>
-              <p className="text-charcoal font-medium">
+              <PullQuote>
                 The issue isn't that people don't want to feel better. It's that passive tools ask them to start on
                 their own, and busy, screen-tired people rarely do.
-              </p>
+              </PullQuote>
             </div>
           </div>
         </section>
@@ -105,19 +106,7 @@ const TeamWellness = () => {
               join. Over a few weeks, it becomes the moment the team looks forward to. Every session follows the same
               simple arc:
             </p>
-            <ul className="mt-8 space-y-4">
-              {arc.map(([title, text]) => (
-                <li key={title} className="flex gap-5 bg-card rounded-[10px] border border-sage-light p-6 md:p-7">
-                  <span className="shrink-0 mt-1 w-6 h-6 rounded-full bg-clay/10 flex items-center justify-center">
-                    <Check className="text-clay" size={15} strokeWidth={2.5} />
-                  </span>
-                  <p className="text-charcoal/80 text-[16px] leading-relaxed">
-                    <span className="font-fraunces font-normal text-heading text-lg">{title}</span>
-                    {': '}{text}
-                  </p>
-                </li>
-              ))}
-            </ul>
+            <NumberedSteps items={arc as Array<[string, string]>} separator=": " />
             <p className="mt-8 text-charcoal/75 text-lg leading-relaxed">
               Challenging but never punishing. No headstands, no "advanced" poses, nothing anyone has to be flexible or
               fit to do. Just a reliable reset that fits a lunch break or a meeting slot.
@@ -142,9 +131,8 @@ const TeamWellness = () => {
 
         {/* MEASUREMENT */}
         <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
-            <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-5">The proof</span>
-            <h2 className="font-fraunces font-normal text-3xl md:text-4xl leading-tight">You'll see whether it's working</h2>
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
+            <GuideHeading eyebrow="The proof" size="md">You'll see whether it's working</GuideHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               Unlike{' '}
               <Link to="/compare" className="text-clay underline underline-offset-4 hover:text-clayDark">
@@ -159,7 +147,7 @@ const TeamWellness = () => {
 
         {/* WHO IT'S FOR */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Who it's for">A wellbeing habit people actually keep</SectionHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               People and culture leaders, team leads and founders at remote-first and hybrid companies. Tech,
@@ -198,7 +186,7 @@ const TeamWellness = () => {
 
         {/* RELATED READING */}
         <section className="py-20 md:py-24">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">Related reading</span>
             <ul className="space-y-2 text-lg leading-relaxed">
               <li>

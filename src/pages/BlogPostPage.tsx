@@ -6,6 +6,7 @@ import SEO from '@/components/SEO';
 import { getBlogPost } from '@/data/blogPosts';
 import { Button } from '@/components/ui/button';
 import { softenAmp } from '@/lib/amp';
+import { GuideFAQ, Figure } from '@/components/GuideLayout';
 
 // Parse inline markdown: **bold** and [label](/path) links.
 // Supports internal links (starting with "/") and external (starting with "http").
@@ -35,7 +36,7 @@ const renderInline = (text: string) => {
           <Link
             key={`lnk-${key++}`}
             to={href}
-            className="text-dalashala-darkBrown underline decoration-dalashala-tan hover:decoration-dalashala-darkBrown underline-offset-2"
+            className="text-clay underline decoration-clay/40 hover:decoration-clay underline-offset-2"
           >
             {label}
           </Link>
@@ -47,7 +48,7 @@ const renderInline = (text: string) => {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-dalashala-darkBrown underline decoration-dalashala-tan hover:decoration-dalashala-darkBrown underline-offset-2"
+            className="text-clay underline decoration-clay/40 hover:decoration-clay underline-offset-2"
           >
             {label}
           </a>
@@ -170,11 +171,31 @@ const BlogPostPage = () => {
     }
   }
 
-  // Build table of contents from H2 headings
+  // One id map for the whole post, shared by the headings and the contents
+  // list. slugify() truncates and strips punctuation, so two headings can
+  // easily collide; de-duplicating in a single pass is what guarantees every
+  // contents link lands somewhere and no id appears twice.
+  const headingIds = new Map<number, string>();
+  {
+    const seen = new Map<string, number>();
+    post.content.forEach((s, i) => {
+      if ((s.type !== 'heading' && s.type !== 'subheading') || !s.text) return;
+      const base = slugify(s.text);
+      const n = (seen.get(base) ?? 0) + 1;
+      seen.set(base, n);
+      headingIds.set(i, n === 1 ? base : `${base}-${n}`);
+    });
+  }
+
+  // Top-level sections only. Listing subheadings as well was tried and reversed:
+  // it repeated each one's text on the page and turned a 7-entry contents box
+  // into a 12-entry one, which is more to read past, not less. Subheadings keep
+  // their ids, so they remain linkable from anywhere.
   const tocHeadings = post.tableOfContents
     ? post.content
-        .filter((s) => s.type === 'heading' && s.text)
-        .map((s) => ({ id: slugify(s.text!), text: s.text! }))
+        .map((s, i) => ({ s, i }))
+        .filter(({ s }) => s.type === 'heading' && s.text)
+        .map(({ s, i }) => ({ id: headingIds.get(i)!, text: s.text!, sub: false }))
     : [];
 
   const firstParagraphIndex = post.content.findIndex((s) => s.type === 'paragraph');
@@ -205,7 +226,7 @@ const BlogPostPage = () => {
         </div>
 
         {/* Article Header */}
-        <article className="max-w-[680px] mx-auto">
+        <article className="max-w-[620px] mx-auto">
           <div className="flex items-center gap-4 mb-6">
             <span className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold">
               {post.category}
@@ -220,10 +241,17 @@ const BlogPostPage = () => {
             {softenAmp(post.title)}
           </h1>
 
+          {/* heroImage was typed on BlogPost and wired to the OG tag, but never
+              actually shown on the page. No post sets it yet, so this stays
+              inert until there is a photo worth putting there. */}
+          {post.heroImage && (
+            <Figure src={post.heroImage.src} alt={post.heroImage.alt} ratio="3/2" className="mt-0 mb-10" />
+          )}
+
           {/* Article Content */}
           <div className="mb-12">
               {/* Table of Contents */}
-              {tocHeadings.length > 2 && (
+              {tocHeadings.length > 1 && (
                 <nav
                   aria-label={t.tocLabel}
                   className="bg-dalashala-creamDeep/70 border border-dalashala-meadow/50 rounded-xl p-5 md:p-6 mb-10"
@@ -233,12 +261,20 @@ const BlogPostPage = () => {
                   </p>
                   <ol className="space-y-2">
                     {tocHeadings.map((h, i) => (
-                      <li key={h.id} className="font-inter text-[0.9375rem] text-dalashala-earth">
+                      <li
+                        key={h.id}
+                        className={
+                          h.sub
+                            ? 'font-inter text-[0.875rem] text-dalashala-earth/75 pl-5'
+                            : 'font-inter text-[0.9375rem] text-dalashala-earth'
+                        }
+                      >
                         <a
                           href={`#${h.id}`}
-                          className="hover:text-dalashala-earthSoft hover:underline decoration-dalashala-meadow underline-offset-2"
+                          className="hover:text-clay hover:underline decoration-clay/40 underline-offset-2"
                         >
-                          {i + 1}. {softenAmp(h.text)}
+                          {h.sub ? '' : `${tocHeadings.slice(0, i + 1).filter((x) => !x.sub).length}. `}
+                          {softenAmp(h.text)}
                         </a>
                       </li>
                     ))}
@@ -248,7 +284,7 @@ const BlogPostPage = () => {
 
               {post.content.map((section, i) => {
                 if (section.type === 'heading') {
-                  const id = section.text ? slugify(section.text) : undefined;
+                  const id = section.text ? headingIds.get(i) : undefined;
                   const isFirstH2 = i === firstHeadingIndex;
                   return (
                     <h2
@@ -265,7 +301,8 @@ const BlogPostPage = () => {
                   return (
                     <h3
                       key={i}
-                      className="font-fraunces text-2xl md:text-[1.75rem] text-dalashala-earth mt-12 mb-3 tracking-[-0.02em] leading-snug"
+                      id={section.text ? headingIds.get(i) : undefined}
+                      className="font-fraunces text-2xl md:text-[1.75rem] text-dalashala-earth scroll-mt-24 mt-12 mb-3 tracking-[-0.02em] leading-snug"
                       style={{ fontWeight: 400, fontVariationSettings: "'opsz' 48, 'SOFT' 50" }}
                     >
                       {section.text && softenAmp(section.text)}
@@ -291,9 +328,9 @@ const BlogPostPage = () => {
                   return (
                     <aside
                       key={i}
-                      className="bg-dalashala-creamDeep/70 border-l-[3px] border-dalashala-earth rounded-r-xl px-6 py-5 my-8"
+                      className="bg-dalashala-creamDeep/70 border-l-[3px] border-clay rounded-r-xl px-6 py-5 my-9"
                     >
-                      <p className="font-inter text-base md:text-lg text-dalashala-earth leading-relaxed">
+                      <p className="font-inter text-lg md:text-xl text-dalashala-earth leading-relaxed">
                         {renderInline(section.text)}
                       </p>
                     </aside>
@@ -311,24 +348,44 @@ const BlogPostPage = () => {
                         {renderInline(section.text)}
                       </p>
                       {href && section.ctaLabel && (
-                        <a
-                          href={href}
-                          {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                          className="inline-block mt-5 bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-3 px-8 rounded-full uppercase tracking-[0.22em] text-xs md:text-sm font-semibold"
-                        >
-                          {section.ctaLabel}
-                        </a>
+                        isExternal ? (
+                          <a
+                            href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block mt-5 bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-3 px-8 rounded-full uppercase tracking-[0.22em] text-xs md:text-sm font-semibold"
+                          >
+                            {section.ctaLabel}
+                          </a>
+                        ) : (
+                          <Link
+                            to={href}
+                            className="inline-block mt-5 bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-3 px-8 rounded-full uppercase tracking-[0.22em] text-xs md:text-sm font-semibold"
+                          >
+                            {section.ctaLabel}
+                          </Link>
+                        )
                       )}
                     </aside>
+                  );
+                }
+                if (section.type === 'image' && section.image) {
+                  return (
+                    <Figure
+                      key={i}
+                      src={section.image.src}
+                      alt={section.image.alt}
+                      caption={section.image.caption}
+                    />
                   );
                 }
                 if (section.type === 'quote' && section.text) {
                   return (
                     <blockquote
                       key={i}
-                      className="border-l-2 border-dalashala-olive pl-8 my-12"
+                      className="border-l-2 border-clay pl-6 md:pl-7 my-10"
                     >
-                      <p className="font-fraunces italic text-2xl md:text-[1.75rem] text-dalashala-earth leading-[1.35] tracking-[-0.01em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 72, 'SOFT' 100" }}>
+                      <p className="font-fraunces text-2xl md:text-[1.75rem] text-dalashala-earth leading-snug tracking-[-0.015em]" style={{ fontWeight: 400 }}>
                         {section.text}
                       </p>
                       {section.author && (
@@ -378,24 +435,9 @@ const BlogPostPage = () => {
                 }
                 if (section.type === 'faq' && section.faqItems) {
                   return (
-                    <dl key={i} className="my-10 divide-y divide-dalashala-meadow/60 border-y border-dalashala-meadow/60">
-                      {section.faqItems.map((item, j) => (
-                        <details
-                          key={j}
-                          className="group py-5"
-                        >
-                          <summary className="font-inter text-base md:text-lg text-dalashala-earth font-semibold cursor-pointer list-none flex justify-between items-center gap-3 hover:text-dalashala-earthSoft transition-colors">
-                            <span>{softenAmp(item.q)}</span>
-                            <span className="text-dalashala-olive text-2xl font-light transition-transform group-open:rotate-45 shrink-0">
-                              +
-                            </span>
-                          </summary>
-                          <dd className="font-inter font-normal text-base md:text-lg text-dalashala-earth/90 leading-relaxed mt-4">
-                            {renderInline(item.a)}
-                          </dd>
-                        </details>
-                      ))}
-                    </dl>
+                    <div key={i} className="my-10">
+                      <GuideFAQ items={section.faqItems.map((f) => [f.q, f.a] as [string, string])} />
+                    </div>
                   );
                 }
                 const isLeadParagraph = i === firstParagraphIndex;
@@ -404,7 +446,7 @@ const BlogPostPage = () => {
                     key={i}
                     className={
                       isLeadParagraph
-                        ? "font-inter font-normal text-xl md:text-2xl text-dalashala-earth leading-[1.45] mb-10"
+                        ? "font-inter font-normal text-xl md:text-[1.375rem] text-dalashala-earth leading-[1.5] mb-10"
                         : "font-inter font-normal text-lg md:text-xl text-dalashala-earth/90 leading-relaxed mb-7 last:mb-0"
                     }
                   >
