@@ -153,8 +153,8 @@ const Index = () => {
         <div className="ryc-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.05fr) minmax(0, 0.95fr)', gap: 64, alignItems: 'center' }}>
           <div>
             <div style={{ ...eyebrow, marginBottom: 26 }}>Live on Teams or Zoom&nbsp;&nbsp;·&nbsp;&nbsp;camera optional</div>
-            <h1 style={{ fontFamily: serif, fontWeight: 400, fontSize: 'clamp(44px, 5.6vw, 78px)', lineHeight: 1.02, letterSpacing: '-0.025em', margin: 0, maxWidth: '17ch' }}>
-              Wellbeing your team <em style={{ fontStyle: 'italic', color: c.terracotta }}>actually</em> turns up for.
+            <h1 style={{ fontFamily: serif, fontWeight: 400, fontSize: 'clamp(32px, 3.5vw, 50px)', lineHeight: 1.14, letterSpacing: '-0.012em', margin: 0, maxWidth: '20ch', textWrap: 'balance' }}>
+              A stronger team, <span style={{ color: c.terracotta }}>half&nbsp;an&nbsp;hour</span> at a time.
             </h1>
             <p style={{ fontSize: 19.5, lineHeight: 1.6, color: c.text2, margin: '30px 0 0', maxWidth: '48ch' }}>
               Live breathing, meditation and chair yoga that fits inside the working day. Office, remote or hybrid. No mats, no changing, no awkward silence.
@@ -178,7 +178,7 @@ const Index = () => {
       {/* SESSIONS */}
       <section id="sessions" className="ryc-pad" style={{ maxWidth: 1200, margin: '0 auto', padding: '96px 40px 0' }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 40, marginBottom: 44, flexWrap: 'wrap' }}>
-          <h2 style={{ ...h2Style, fontSize: 'clamp(32px, 3.6vw, 46px)', maxWidth: '22ch' }}>Three classes. Choose one, alternate, or combine.</h2>
+          <h2 style={{ ...h2Style, fontSize: 'clamp(26px, 2.8vw, 36px)', maxWidth: '22ch' }}>Three classes. Choose one, alternate, or combine.</h2>
           <p style={{ fontSize: 16.5, lineHeight: 1.6, color: c.text3, margin: 0, maxWidth: '34ch' }}>Every class is live and about thirty minutes, so nobody is following a video into the void. Pick one, or rotate through them across the month.</p>
         </div>
         <div className="ryc-sessions-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 16 }}>
@@ -204,7 +204,7 @@ const Index = () => {
         <div className="ryc-pad" style={{ maxWidth: 1200, margin: '0 auto', padding: '86px 40px' }}>
           <div className="ryc-how-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 0.8fr) minmax(0, 1.2fr)', gap: 60 }}>
             <div>
-              <h2 style={{ ...h2Style, fontSize: 'clamp(30px, 3.4vw, 44px)', maxWidth: '16ch' }}>Booked on Monday, running next week.</h2>
+              <h2 style={{ ...h2Style, fontSize: 'clamp(25px, 2.7vw, 34px)', maxWidth: '16ch' }}>Booked on Monday, running next week.</h2>
               <p style={{ fontSize: 16.5, lineHeight: 1.65, color: c.text2, margin: '24px 0 0', maxWidth: '36ch' }}>No procurement marathon. No platform to roll out. It lands in the calendar tool you already use.</p>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 1, background: c.bandDivider }}>
@@ -230,7 +230,7 @@ const Index = () => {
           </div>
           <div>
             <div style={{ ...eyebrow, marginBottom: 22 }}>A real person, live, every week</div>
-            <h2 style={{ ...h2Style, fontSize: 'clamp(30px, 3.4vw, 46px)', lineHeight: 1.06, maxWidth: '20ch' }}>I&rsquo;m Camilla. I&rsquo;ve sat in the meetings too.</h2>
+            <h2 style={{ ...h2Style, fontSize: 'clamp(26px, 2.8vw, 36px)', lineHeight: 1.06, maxWidth: '20ch' }}>I&rsquo;m Camilla. I&rsquo;ve sat in the meetings too.</h2>
             <div style={{ display: 'grid', gap: 18, marginTop: 26, maxWidth: '54ch' }}>
               <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>Before I taught full time I worked in a large multinational, a startup, a consultancy and government. I know what a Thursday afternoon feels like. That is who I build these sessions for, not for people with an hour and a spare room.</p>
               <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>So the Weekly Reset is deliberately unimpressive. Done in a chair, in work clothes, camera off if you like. Nobody has to be fit, flexible, or any good at it. It is a habit, not a practice, and habits only work if they are easy to keep.</p>
@@ -250,7 +250,7 @@ const Index = () => {
       {/* PROOF */}
       <section id="proof" className="ryc-pad" style={{ maxWidth: 1200, margin: '0 auto', padding: '96px 40px 0' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 0.8fr)', gap: 60, alignItems: 'end', borderTop: `1px solid ${c.rule}`, paddingTop: 28, marginBottom: 44 }}>
-          <h2 style={{ ...h2Style, fontSize: 'clamp(30px, 3.6vw, 46px)', lineHeight: 1.05, maxWidth: '24ch' }}>What people say about practising with me</h2>
+          <h2 style={{ ...h2Style, fontSize: 'clamp(26px, 2.8vw, 36px)', lineHeight: 1.05, maxWidth: '24ch' }}>What people say about practising with me</h2>
           <p style={{ fontSize: 16.5, lineHeight: 1.6, color: 'oklch(0.45 0.02 60)', margin: 0, maxWidth: '38ch' }}>A few unedited comments from people I have taught, first names only, and not all of them from corporate sessions.</p>
         </div>
         <div className="ryc-proof-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 20 }}>
@@ -266,7 +266,7 @@ const Index = () => {
       {/* PRICING */}
       <section id="pricing" className="ryc-pad" style={{ maxWidth: 1200, margin: '0 auto', padding: '96px 40px 0' }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 40, borderTop: `1px solid ${c.rule}`, paddingTop: 28, marginBottom: 44, flexWrap: 'wrap' }}>
-          <h2 style={{ ...h2Style, fontSize: 'clamp(30px, 3.4vw, 44px)' }}>Simple, per month</h2>
+          <h2 style={{ ...h2Style, fontSize: 'clamp(25px, 2.7vw, 34px)' }}>Simple, per month</h2>
           <span style={{ fontSize: 15.5, color: c.text3 }}>A flat monthly fee, priced by how often you meet, not which class you pick.</span>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))', gap: 20 }}>
@@ -295,7 +295,7 @@ const Index = () => {
       <section id="pilot" className="ryc-pad" style={{ maxWidth: 1200, margin: '96px auto 0', padding: '0 40px 110px' }}>
         <div className="ryc-pilot-panel ryc-pilot-grid" style={{ background: c.softPanel, borderRadius: 18, padding: '72px 56px', display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 0.85fr)', gap: 56, alignItems: 'center' }}>
           <div>
-            <h2 style={{ ...h2Style, fontSize: 'clamp(32px, 4vw, 52px)', lineHeight: 1.05, maxWidth: '18ch' }}>Try one session. See who shows up.</h2>
+            <h2 style={{ ...h2Style, fontSize: 'clamp(27px, 2.9vw, 38px)', lineHeight: 1.05, maxWidth: '18ch' }}>Try one session. See who shows up.</h2>
             <p style={{ fontSize: 18, lineHeight: 1.6, color: c.text2, margin: '22px 0 0', maxWidth: '42ch' }}>One paid session, no contract, nothing to sign.</p>
           </div>
           <div style={{ background: c.card, border: `1px solid ${c.borderSoft}`, borderRadius: 12, padding: '30px 28px', display: 'grid', gap: 16 }}>
