@@ -31,6 +31,30 @@
   # does nothing.
   PUPPETEER_CACHE_DIR = "/opt/build/cache/puppeteer"
 
+# Serve /pricing directly instead of redirecting it to /pricing/.
+#
+# The prerender step writes dist/<route>/index.html, and Netlify's Pretty URLs
+# post-processing (on by default) then 301s /pricing to /pricing/. But the
+# sitemap lists the slashless form for 46 of its 47 URLs, and every canonical
+# tag in src/pages/ declares the slashless form too. So Google was being told
+# "the canonical version of this page is a URL that redirects somewhere else",
+# and the sitemap was sending it to a redirect on every entry.
+#
+# It tolerated that for the 31 pages indexed before September, then stopped:
+# Search Console raised Redirect error on the four pages crawled on 3-4
+# September (office-yoga-for-remote-teams, chair-yoga-at-your-desk,
+# guides/desk-yoga, foretagsyoga-distans) and emailed about it on the 7th.
+# Three of those four were URLs we had just asked it to index.
+#
+# With this off, both /pricing and /pricing/ return 200 and the existing
+# canonicals become true. If a future crawl still shows the 301, Netlify has
+# ignored this key in favour of the dashboard setting (Site configuration ->
+# Build & deploy -> Post processing -> Pretty URLs); turn it off there, or
+# align the other direction by adding trailing slashes to the 46 sitemap
+# entries and the 17 canonical props.
+[build.processing.html]
+  pretty_urls = false
+
 # No deploy previews. The routines push straight to main and nothing opens pull
 # requests any more, so a preview build is a full site build, prerendering
 # included, for a copy of the site nobody opens. It also produced a netlify[bot]
