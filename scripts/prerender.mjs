@@ -43,7 +43,11 @@ async function run() {
 
   const server = await preview({
     root,
-    preview: { port: PORT, strictPort: true },
+    // vite.config.ts sets server.host to "::" for LAN-accessible dev; preview
+    // inherits that default unless overridden, and some sandboxes have no
+    // IPv6 stack at all (EAFNOSUPPORT on bind). This step only ever talks to
+    // itself over localhost, so pin it to IPv4 explicitly.
+    preview: { port: PORT, strictPort: true, host: '127.0.0.1' },
     logLevel: 'warn',
   });
 

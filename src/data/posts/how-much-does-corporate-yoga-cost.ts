@@ -14,6 +14,7 @@ const post: BlogPost = {
   relatedServiceHref: '/pricing',
   relatedServiceLabel: 'See my transparent pricing',
   tableOfContents: true,
+  faqSchema: true,
   relatedPosts: [
     { slug: 'do-workplace-wellness-apps-work', label: 'Do workplace wellness apps actually work?' },
     { slug: 'corporate-wellness-ideas-remote-teams', label: 'Corporate wellness ideas that actually work' },
@@ -112,6 +113,12 @@ const post: BlogPost = {
       type: 'callout',
       text: 'Figures cited: Deloitte UK (Mental Health and Employers 2024), PwC and Beyond Blue, plus 2026 market pricing from UK, EU and AU providers. Verify the live source before republishing.',
     },
+    { type: 'faq', faqItems: [
+      { q: 'How much do corporate meditation sessions cost?', a: 'About the same as a chair yoga or breathing session, because the delivery model is identical: one live, online session for the whole team, priced as a flat monthly fee rather than per person. I keep the exact rate on my [pricing page](/pricing) rather than quoting a number here.' },
+      { q: 'How much should a company expect to pay for corporate yoga classes?', a: 'For a live, online, weekly programme, most distributed teams of 10 to 50 people land in the range set out above, and the figure drops per head as the team grows because it is priced as one flat fee, not per seat. A single pilot session is the cheapest way to find your own number before committing to anything.' },
+      { q: 'Is online corporate yoga cheaper than in-person?', a: 'Usually, yes. In-person sessions carry travel time and often a minimum group size, both of which push the price up. Online sessions remove that, which is one reason a distributed or hybrid team tends to land on a live online programme rather than flying someone in.' },
+      { q: 'Does the price change between yoga, meditation and chair yoga sessions?', a: 'No. I price by delivery, live, online, one team, not by which class type you pick, so switching between meditation, breathing and chair yoga, or combining them, does not change the monthly fee. [See my pricing](/pricing) for the current figure.' },
+    ] },
   ],
 };
 
