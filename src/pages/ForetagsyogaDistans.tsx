@@ -10,27 +10,27 @@ import { GuideFAQ, ProseList, PullQuote } from '@/components/GuideLayout';
 const faq: Array<[string, string]> = [
   [
     'Vad är företagsyoga på distans?',
-    'Korta livepass som hålls på skärm, i Teams eller Zoom, för hela teamet samtidigt. Hos mig kan ni välja mellan tre separata klasser: meditation, andning eller stolyoga. Ni kan hålla er till en, växla mellan dem, eller kombinera dem i samma pass. Ingen matta, inga ombyten, och kameran är frivillig.',
+    'Korta livepass i Teams eller Zoom för hela teamet samtidigt. Ni väljer meditation, andning eller stolyoga, eller växlar mellan dem. Ingen matta, inga ombyten, kameran frivillig.',
   ],
   [
     'Vilket språk hålls passen på?',
-    'Passen hålls på engelska. Jag är australiensisk yogalärare och bor i Stockholm. Instruktionerna är enkla och guidande snarare än tekniska, och för team med internationella kollegor betyder det att alla kan delta på samma villkor. Många svenska arbetsplatser har redan engelska som arbetsspråk internt.',
+    'Engelska, med enkla och guidande instruktioner. För team med internationella kollegor betyder det att alla kan delta på samma villkor.',
   ],
   [
     'Hur långa är passen?',
-    'Vanligtvis runt 30 minuter, vilket får plats i en arbetsdag utan att äta upp den. Längden går att anpassa efter hur er kalender ser ut.',
+    'Runt 30 minuter, så det får plats i arbetsdagen. Längden går att anpassa.',
   ],
   [
     'Behöver alla ha kameran på?',
-    'Nej. Kameran är frivillig, och det är en medveten del av upplägget. Så fort ett pass börjar kännas som en prestation slutar de som behöver det mest att dyka upp.',
+    'Nej. Så fort ett pass börjar kännas som en prestation slutar de som behöver det mest att dyka upp.',
   ],
   [
     'Vad händer om någon missar ett pass?',
-    'Alla pass spelas in, så den som var upptagen eller sitter i en annan tidszon kan följa med i efterhand.',
+    'Alla pass spelas in, så man kan följa med i efterhand.',
   ],
   [
     'Kan detta betalas som naturaförmån?',
-    'Ja, det är ofta så det passar bäst. När arbetsgivaren erbjuder yoga eller mindfulness till hela teamet på lika villkor kan det hanteras som en naturaförmån, i stället för att varje anställd ska lägga sitt eget friskvårdsbidrag på det. Kontrollera alltid upplägget med er ekonomifunktion eller revisor först.',
+    'Ofta, ja. När arbetsgivaren erbjuder det till hela teamet på lika villkor kan det hanteras som naturaförmån. Kontrollera alltid upplägget med er ekonomifunktion eller revisor.',
   ],
 ];
 
@@ -64,26 +64,15 @@ const structuredData = [
 ];
 
 const classes: Array<[string, string]> = [
-  [
-    'Meditation',
-    'En kort guidad meditation som ger huvudet en riktig paus mitt i dagen. Inget krav på tidigare vana.',
-  ],
-  [
-    'Andning',
-    'Enkla andningstekniker som lugnar nervsystemet, och som går att använda igen på egen hand före ett tufft möte.',
-  ],
-  [
-    'Stolyoga',
-    'Mjuk rörlighet i nacke, axlar och rygg, gjord från kontorsstolen. Inga ombyten och ingen utrustning.',
-  ],
+  ['Meditation', 'En kort guidad paus för huvudet. Ingen tidigare vana behövs.'],
+  ['Andning', 'Enkla tekniker som lugnar, och som går att använda före ett tufft möte.'],
+  ['Stolyoga', 'Mjuk rörlighet i nacke, axlar och rygg, direkt från kontorsstolen.'],
 ];
 
 const included: string[] = [
-  'Samma lärare varje vecka, så det blir en vana och inte ännu en inloggning',
-  'Kameran är alltid frivillig',
-  'Alla pass spelas in och delas efteråt',
-  'En länk som ni delar internt, jag sköter själva passet',
-  'Fungerar lika bra för helt distansbaserade, hybrida och kontorsbaserade team',
+  'Samma lärare varje vecka: jag, Camilla, med 500 timmars yogalärarutbildning',
+  'Kameran är alltid frivillig, och alla pass spelas in',
+  'En länk som ni delar internt, jag sköter resten',
   'Fast månadsavgift per team, i kronor',
 ];
 
@@ -124,10 +113,9 @@ const ForetagsyogaDistans = () => {
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Företagsyoga på distans för svenska team
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[660px] mx-auto">
-              Korta livepass i meditation, andning eller stolyoga, direkt i Teams eller Zoom. Samma lärare varje
-              vecka, kameran frivillig, alla pass spelas in. Inga mattor, inga ombyten och ingen restid. Passen
-              hålls på engelska, med enkla och guidande instruktioner.
+            <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[600px] mx-auto">
+              Korta livepass i meditation, andning eller stolyoga, direkt i Teams eller Zoom. Inga mattor och inga
+              ombyten. Passen hålls på engelska.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
@@ -155,15 +143,10 @@ const ForetagsyogaDistans = () => {
             </SectionHeading>
             <div className="mt-7 space-y-5 text-lg text-charcoal/75 leading-relaxed">
               <p>
-                Ett friskvårdsbidrag är individuellt. Det landar hos var och en, och den som redan är slut i
-                huvudet är sällan den som hinner boka något för det. En app blir en inloggning till som ingen
-                öppnar efter vecka två. Och en enstaka temadag är trevlig och bortglömd på fredagen.
+                Friskvårdsbidraget används av dem som redan tränar, appen glöms bort efter vecka två, och temadagen
+                är bortglömd på fredagen.
               </p>
-              <p>
-                Det som håller är något som redan står i kalendern, på en bestämd tid, som ingen behöver komma
-                ihåg att boka eller känna dåligt samvete över att hoppa över.
-              </p>
-              <PullQuote>Det är hela idén här: en fast punkt i veckan där någon faktiskt håller i det.</PullQuote>
+              <PullQuote>Det som håller är en fast punkt i veckan där någon faktiskt håller i det.</PullQuote>
             </div>
           </div>
         </section>
@@ -173,8 +156,7 @@ const ForetagsyogaDistans = () => {
           <div className="max-w-[860px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Tre klasser">Ni väljer, vi behöver inte blanda ihop dem</SectionHeading>
             <p className="mt-6 text-lg text-charcoal/75 leading-relaxed max-w-[640px]">
-              Det här är tre separata klasser, inte ett blandat pass. Håll er till en, växla mellan dem över
-              månaden, eller kombinera dem. Vad som passar ert team bestämmer ni.
+              Håll er till en, växla mellan dem över månaden, eller kombinera dem.
             </p>
             <div className="mt-10 grid gap-5 md:grid-cols-3">
               {classes.map(([name, text]) => (
@@ -195,8 +177,7 @@ const ForetagsyogaDistans = () => {
               <ProseList
                 items={[
                   'När arbetsgivaren erbjuder yoga och mindfulness till hela teamet på lika villkor kan det ofta hanteras som en naturaförmån.',
-                  'Det betyder att den enskilda medarbetaren inte behöver lägga sitt eget friskvårdsbidrag på det, och att bidraget kan gå till något annat.',
-                  'Det är också skillnaden mellan en förmån som några få utnyttjar och något hela teamet gör tillsammans.',
+                  'Då behöver ingen lägga sitt eget friskvårdsbidrag på det.',
                 ]}
               />
               <PullQuote>Stäm alltid av det konkreta upplägget med er ekonomifunktion eller revisor först.</PullQuote>
@@ -226,63 +207,20 @@ const ForetagsyogaDistans = () => {
               ))}
             </ul>
             <p className="mt-8 text-lg text-charcoal/75 leading-relaxed">
-              Priserna står i kronor på{' '}
+              Priserna står på{' '}
               <Link to="/pricing" className="text-clay underline underline-offset-4 hover:text-clayDark">
                 prissidan
               </Link>
-              , som en fast månadsavgift per team i stället för per person.
+              .
             </p>
           </div>
         </section>
 
-        {/* ABOUT */}
-        <section className="py-20 md:py-24">
-          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
-            <SectionHeading eyebrow="Vem håller i passen">Jag gör det själv, varje vecka</SectionHeading>
-            <div className="mt-7 space-y-5 text-lg text-charcoal/75 leading-relaxed">
-              <p>
-                Jag heter Camilla, är australiensisk yogalärare och bor i Stockholm. Jag har 500 timmars
-                yogalärarutbildning inom rörelse, andning och meditation, plus en Certificate III in Fitness från
-                Australien med anatomi och säker rörelse. Min meditations- och andningsdel bygger på erfarenhet
-                från tre traditioner, och jag har gjort retreat i alla tre.
-              </p>
-              <p>
-                Det är samma person varje vecka. Ingen pool av lärare, ingen ny röst varje gång. Det låter litet,
-                men det är just det som gör att ett pass blir en vana i stället för en aktivitet.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* FAQ */}
-        <section className="bg-cream py-20 md:py-24">
+        <section className="py-20 md:py-24">
           <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Vanliga frågor">Det ni brukar undra över</SectionHeading>
             <GuideFAQ items={faq as Array<[string, string]>} />
-          </div>
-        </section>
-
-        {/* READ MORE IN SWEDISH */}
-        <section className="py-20 md:py-24">
-          <div className="max-w-[860px] mx-auto px-5 sm:px-6 md:px-8">
-            <SectionHeading eyebrow="Läs mer">På svenska</SectionHeading>
-            <div className="mt-9 grid gap-4 md:grid-cols-3">
-              {[
-                ['Naturaförmån: yoga för hela teamet', '/blog/naturaforman-yoga-for-hela-teamet'],
-                ['Hybridarbete och psykisk hälsa', '/blog/halsa-hybridarbete-distansteam'],
-                ['Kontorsyoga på distans, förklarat', '/blog/kontorsyoga-pa-distans-forklaring'],
-              ].map(([label, href]) => (
-                <Link
-                  key={href}
-                  to={href}
-                  className="group block bg-white rounded-2xl border border-sage-light hover:border-clay/60 p-6 transition-colors"
-                >
-                  <span className="font-fraunces text-lg text-heading leading-snug group-hover:text-clay transition-colors">
-                    {label}
-                  </span>
-                </Link>
-              ))}
-            </div>
           </div>
         </section>
 
@@ -293,8 +231,7 @@ const ForetagsyogaDistans = () => {
               Börja med ett pilotpass
             </h2>
             <p className="mt-6 text-lg text-charcoal/75 leading-relaxed">
-              Ett enskilt livepass med ert team, så ni får känna hur det är innan ni bestämmer er för något
-              löpande. Berätta hur teamet ser ut och när ni har en lucka i kalendern, så föreslår jag ett upplägg.
+              Ett enskilt livepass med ert team, innan ni bestämmer er för något löpande.
             </p>
             <div className="mt-9">
               <Link to="/demo">
@@ -303,6 +240,21 @@ const ForetagsyogaDistans = () => {
                 </Button>
               </Link>
             </div>
+            <p className="mt-10 text-charcoal/60 text-[15px] leading-relaxed">
+              Läs mer på svenska:{' '}
+              <Link to="/blog/naturaforman-yoga-for-hela-teamet" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                naturaförmån
+              </Link>
+              ,{' '}
+              <Link to="/blog/halsa-hybridarbete-distansteam" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                hybridarbete och psykisk hälsa
+              </Link>{' '}
+              och{' '}
+              <Link to="/blog/kontorsyoga-pa-distans-forklaring" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                kontorsyoga på distans
+              </Link>
+              .
+            </p>
           </div>
         </section>
       </main>

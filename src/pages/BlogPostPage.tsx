@@ -4,7 +4,6 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { getBlogPost } from '@/data/blogPosts';
-import { Button } from '@/components/ui/button';
 import { softenAmp } from '@/lib/amp';
 import { GuideFAQ, Figure } from '@/components/GuideLayout';
 
@@ -24,7 +23,9 @@ const renderInline = (text: string) => {
       // **bold**
       parts.push(
         <strong key={`b-${key++}`} className="font-semibold text-dalashala-earth">
-          {match[1]}
+          {/* Recurse, so a link inside bold ("**[Desk yoga](/guides/desk-yoga)**")
+              renders as a link. Without this it printed the raw brackets. */}
+          {renderInline(match[1])}
         </strong>
       );
     } else {
@@ -219,7 +220,7 @@ const BlogPostPage = () => {
         <div className="max-w-[860px] mx-auto mb-8">
           <Link
             to="/blog"
-            className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive hover:text-dalashala-earth transition-colors font-bold"
+            className="font-mono text-[12px] text-charcoal/55 hover:text-clay transition-colors"
           >
             {t.back}
           </Link>
@@ -228,7 +229,7 @@ const BlogPostPage = () => {
         {/* Article Header */}
         <article className="max-w-[620px] mx-auto">
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold">
+            <span className="font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay">
               {post.category}
             </span>
             <span className="w-8 h-px bg-dalashala-meadow" />
@@ -237,7 +238,7 @@ const BlogPostPage = () => {
             </span>
           </div>
 
-          <h1 className="font-fraunces text-4xl md:text-6xl lg:text-[4.5rem] text-dalashala-earth mb-10 leading-[1] tracking-[-0.03em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
+          <h1 className="font-fraunces font-normal text-[2.4rem] md:text-[3.25rem] text-dalashala-earth mb-10 leading-[1.08] tracking-[-0.02em]">
             {softenAmp(post.title)}
           </h1>
 
@@ -256,7 +257,7 @@ const BlogPostPage = () => {
                   aria-label={t.tocLabel}
                   className="bg-dalashala-creamDeep/70 border border-dalashala-meadow/50 rounded-xl p-5 md:p-6 mb-10"
                 >
-                  <p className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mb-4">
+                  <p className="font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">
                     {t.tocLabel}
                   </p>
                   <ol className="space-y-2">
@@ -353,14 +354,14 @@ const BlogPostPage = () => {
                             href={href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-block mt-5 bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-3 px-8 rounded-full uppercase tracking-[0.22em] text-xs md:text-sm font-semibold"
+                            className="inline-block mt-5 bg-clay text-white hover:bg-clayDark transition-colors font-inter py-3 px-7 rounded-full text-[15px] font-medium"
                           >
                             {section.ctaLabel}
                           </a>
                         ) : (
                           <Link
                             to={href}
-                            className="inline-block mt-5 bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 transition-all duration-300 font-inter py-3 px-8 rounded-full uppercase tracking-[0.22em] text-xs md:text-sm font-semibold"
+                            className="inline-block mt-5 bg-clay text-white hover:bg-clayDark transition-colors font-inter py-3 px-7 rounded-full text-[15px] font-medium"
                           >
                             {section.ctaLabel}
                           </Link>
@@ -389,7 +390,7 @@ const BlogPostPage = () => {
                         {section.text}
                       </p>
                       {section.author && (
-                        <footer className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mt-4 not-italic">
+                        <footer className="font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mt-4 not-italic">
                           {section.author}
                         </footer>
                       )}
@@ -405,7 +406,7 @@ const BlogPostPage = () => {
                             {section.tableHead.map((h, j) => (
                               <th
                                 key={j}
-                                className="font-inter text-xs uppercase tracking-[0.2em] font-bold text-left px-4 py-3"
+                                className="font-inter text-[13px] font-semibold text-left px-4 py-3"
                               >
                                 {h}
                               </th>
@@ -456,35 +457,36 @@ const BlogPostPage = () => {
               })}
           </div>
 
-          {/* CTA to related service */}
+          {/* Related service: one quiet line. The post's own CTA card already asked. */}
           {post.relatedServiceHref && post.relatedServiceLabel && (
-            <div className="border-t border-b border-dalashala-meadow/60 py-14 text-center my-14">
-              <Button
-                className="bg-dalashala-earth text-white hover:bg-dalashala-earthSoft hover:-translate-y-0.5 font-inter py-4 px-10 rounded-full uppercase tracking-[0.22em] text-sm font-semibold transition-all"
-                asChild
+            <p className="mt-14 pt-8 border-t border-dalashala-meadow/60">
+              <Link
+                to={post.relatedServiceHref}
+                className="inline-flex items-center gap-2 text-clay hover:text-clayDark font-medium text-[16px]"
               >
-                <Link to={post.relatedServiceHref}>{post.relatedServiceLabel}</Link>
-              </Button>
-            </div>
+                {post.relatedServiceLabel} <span aria-hidden="true">→</span>
+              </Link>
+            </p>
           )}
 
           {/* Related posts */}
           {post.relatedPosts && post.relatedPosts.length > 0 && (
-            <div className="mb-10">
-              <p className="font-inter text-xs uppercase tracking-[0.32em] text-dalashala-olive font-bold mb-5">
+            <div className="mt-10 mb-6">
+              <p className="font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-3">
                 {t.related}
               </p>
-              <div className="flex flex-wrap gap-3">
+              <ul className="space-y-2.5">
                 {post.relatedPosts.map((rp) => (
-                  <Link
-                    key={rp.slug}
-                    to={`/blog/${rp.slug}`}
-                    className="font-inter text-sm font-semibold uppercase tracking-[0.18em] bg-white border border-dalashala-meadow/80 text-dalashala-earth px-5 py-3 rounded-full hover:border-dalashala-earth hover:bg-dalashala-earth hover:text-white transition-all"
-                  >
-                    {rp.label}
-                  </Link>
+                  <li key={rp.slug}>
+                    <Link
+                      to={`/blog/${rp.slug}`}
+                      className="text-dalashala-earth hover:text-clay underline decoration-dalashala-meadow hover:decoration-clay underline-offset-4 text-[17px] leading-snug"
+                    >
+                      {rp.label}
+                    </Link>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           )}
 

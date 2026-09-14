@@ -5,37 +5,29 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
-import { Reveal, GlowField, StatBand, Eyebrow } from '@/components/SiteBlocks';
+import { Eyebrow } from '@/components/SiteBlocks';
 import { GuideFAQ, PullQuote } from '@/components/GuideLayout';
 
 const faqItems: Array<[string, string]> = [
   [
     'What is corporate wellbeing for a remote team?',
-    'A structured wellbeing programme delivered live and online to a distributed workforce, rather than in an office. It is a recurring weekly session of breathing, meditation and chair yoga on Teams or Zoom, led by the same coach, with attendance and wellbeing reporting. No room to book, no travel, every location joins as an equal.',
+    'A wellbeing programme delivered live and online instead of in an office: a weekly session of breathing, meditation or chair yoga on Teams or Zoom, with attendance reporting.',
   ],
   [
     'How is a team wellbeing subscription different from a one-off workshop?',
-    'A one-off workshop is a nice afternoon that fades by Friday. A subscription is a recurring habit at a protected time each week, which is where the results actually come from. Wellbeing works like fitness: the weekly rhythm matters far more than any single impressive session.',
-  ],
-  [
-    'Does it work for teams spread across time zones?',
-    'Yes, this is what the live online format is built for. Sessions run across UK and European hours, with Australian hours for part of the year, and every session is recorded so colleagues in other time zones are never left out of the habit.',
+    'A workshop is a nice afternoon that fades by Friday. A subscription is a protected slot every week, and the weekly rhythm is where the results come from.',
   ],
   [
     'We are a hybrid team, some in the office and some at home. Does this still work?',
-    'Yes, this is built for exactly that. Because every session is live on Teams or Zoom, it does not matter who is in the office and who is at home that day. Everyone joins the same session from wherever they already are, which gives a hybrid team one shared weekly moment and an easy way to stay connected and focused without coordinating a room or any travel.',
+    'Yes. Everyone joins the same live session from wherever they are that day, so a hybrid team gets one shared moment a week without booking a room.',
   ],
   [
-    'How many people can join?',
-    'Everyone on the team joins the same live session, and camera-off is welcome throughout. For teams spread across several regions I can run more than one weekly slot, so nobody has to join at an antisocial hour.',
-  ],
-  [
-    'How do we know it is working?',
-    'Every programme reports attendance and repeat attendance. Once it is a weekly habit you get a quarterly summary you can take straight to leadership.',
+    'Does it work for teams spread across time zones?',
+    'Yes. Sessions run in UK and European hours, and teams across several regions can have more than one weekly slot.',
   ],
   [
     'What does corporate wellbeing for a remote team cost?',
-    'A flat monthly subscription by session frequency, not a per-person app charge. Pricing is public, and every engagement starts with a single pilot session credited to your first month if you continue.',
+    'A flat monthly subscription by how often you meet, not a per-person charge. Pricing is public, and you start with a single pilot session.',
   ],
 ];
 
@@ -74,12 +66,10 @@ const SectionHeading = ({ eyebrow, children }: { eyebrow?: string; children: Rea
 );
 
 const included = [
-  ['One recurring weekly slot', 'The same time each week in the team calendar, so it becomes a habit, not a task anyone has to remember.'],
-  ['The same coach every week', 'A real, familiar human builds the trust and gentle accountability an app cannot.'],
-  ['Breathing, meditation, chair yoga', 'A simple, repeatable arc people can reuse at their desks between sessions.'],
-  ['Camera optional, no equipment', 'Designed for a normal workday. Nobody changes clothes or performs.'],
-  ['Recorded for every time zone', 'Included so shift workers and other regions never miss the habit.'],
-  ['Reporting you can show leadership', 'Attendance and pre and post wellbeing in a one-page summary.'],
+  ['One weekly slot', 'The same time every week, so it becomes a habit rather than a task.'],
+  ['The same coach', 'A familiar person, which an app can never be.'],
+  ['Breathing, meditation, chair yoga', 'Pick one, or rotate through them.'],
+  ['Camera optional', 'No equipment, no changing, nothing to perform.'],
 ];
 
 const CorporateWellbeingRemoteTeams = () => {
@@ -96,17 +86,15 @@ const CorporateWellbeingRemoteTeams = () => {
 
       <main>
         {/* HERO */}
-        <section className="relative overflow-hidden bg-cream-soft pt-36 pb-20 md:pt-44 md:pb-24">
-          <GlowField tone="warm" />
-          <div className="relative max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+        <section className="bg-cream-soft pt-36 pb-20 md:pt-44 md:pb-24">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <Eyebrow>Corporate wellbeing, distributed teams</Eyebrow>
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Wellbeing for remote and hybrid teams that reaches everyone on screen.
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[660px] mx-auto">
-              A live weekly wellbeing class for your whole team, remote, hybrid or in the office, on Teams or Zoom.
-              Meditation, breathing or chair yoga, led by the same coach, camera optional. A recurring habit
-              people keep, with the reporting to prove it, not another app licence nobody opens.
+            <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[600px] mx-auto">
+              A live weekly class on Teams or Zoom for your whole team, wherever they work. Meditation, breathing or
+              chair yoga, camera optional.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
@@ -129,14 +117,11 @@ const CorporateWellbeingRemoteTeams = () => {
             <SectionHeading eyebrow="The problem">Distributed teams are the hardest to reach, and the most at risk</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
-                Wellbeing is harder to deliver when the team is spread across cities and time zones, and it matters
-                more. Remote and hybrid workers{' '}
+                Remote and hybrid workers{' '}
                 <Link to="/guides/remote-work-burnout" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   report burnout at higher rates
-                </Link>{' '}
-                than office-based colleagues, driven by
-                isolation, blurred boundaries and always-on messaging. Meanwhile the usual fixes assume an office: a
-                room, a fixed hour, a local instructor.
+                </Link>
+                , yet most wellbeing still assumes an office: a room, a fixed hour, someone in person.
               </p>
               <PullQuote>
                 So most distributed teams fall back on passive tools, and passive tools do not get used.
@@ -145,59 +130,44 @@ const CorporateWellbeingRemoteTeams = () => {
           </div>
         </section>
 
-        {/* STAT BAND */}
-        <StatBand
-          variant="cream"
-          eyebrow="The stakes"
-          heading="Why remote wellbeing is worth getting right"
-          items={[
-            { value: '~2x', label: 'the loneliness rate of office-based staff, reported by remote workers' },
-            { value: '3 to 5%', label: 'of staff ever use their EAP, the passive fallback most teams rely on' },
-            { value: '£4.70', label: 'returned for every £1 invested in workplace mental health (Deloitte)' },
-          ]}
-        />
-
         {/* WHAT'S INCLUDED */}
-        <section className="py-20 md:py-24">
+        <section className="bg-cream py-20 md:py-24">
           <div className="max-w-[900px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="What you get">A wellbeing subscription built for distributed teams</SectionHeading>
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
-              {included.map(([title, text], i) => (
-                <Reveal key={title} delay={i * 60}>
-                  <div className="flex gap-4 bg-white rounded-lg border border-sage-light p-5 h-full">
-                    <span className="shrink-0 mt-1 w-6 h-6 rounded-full bg-clay/10 flex items-center justify-center">
-                      <Check className="text-clay" size={15} strokeWidth={2.5} />
-                    </span>
-                    <p className="text-charcoal/80 text-[15px] leading-relaxed">
-                      <span className="font-fraunces font-normal text-heading text-lg block mb-0.5">{title}</span>
-                      {text}
-                    </p>
-                  </div>
-                </Reveal>
+              {included.map(([title, text]) => (
+                <div key={title} className="flex gap-4 bg-white rounded-lg border border-sage-light p-5 h-full">
+                  <span className="shrink-0 mt-1 w-6 h-6 rounded-full bg-clay/10 flex items-center justify-center">
+                    <Check className="text-clay" size={15} strokeWidth={2.5} />
+                  </span>
+                  <p className="text-charcoal/80 text-[15px] leading-relaxed">
+                    <span className="font-fraunces font-normal text-heading text-lg block mb-0.5">{title}</span>
+                    {text}
+                  </p>
+                </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* SUBSCRIPTION VS ONE-OFF */}
-        <section className="bg-cream py-20 md:py-24">
+        {/* A HABIT, INCLUDING FOR HYBRID TEAMS */}
+        <section className="py-20 md:py-24">
           <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="Why a subscription">A habit, not a one-off event</SectionHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
-                A single wellbeing day is a nice memory by the weekend. It does not change how a stressed team
-                actually feels in week six. Wellbeing behaves like fitness: the weekly rhythm matters far more than
-                any one impressive session, and the results live in the habit.
-              </p>
-              <p>
-                That is why this is a subscription, not a booking. A protected weekly slot, the same coach, a
-                programme that builds over time, priced as a flat monthly fee. See{' '}
+                A wellbeing day is a nice memory by the weekend. A protected weekly slot is what changes how a team
+                feels in week six. See{' '}
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   how a session runs
-                </Link>{' '}
-                and the public{' '}
-                <Link to="/pricing" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                  pricing
+                </Link>
+                .
+              </p>
+              <p>
+                For a hybrid team it is also one fixed point in the week everyone shares, wherever they are that
+                day. A simple way to{' '}
+                <Link to="/blog/keep-hybrid-team-focused" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  keep a hybrid team focused
                 </Link>
                 .
               </p>
@@ -205,55 +175,8 @@ const CorporateWellbeingRemoteTeams = () => {
           </div>
         </section>
 
-        {/* HYBRID TEAMS */}
-        <section className="py-20 md:py-24">
-          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
-            <SectionHeading eyebrow="Hybrid teams">One shared moment to keep a hybrid team connected</SectionHeading>
-            <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
-              <p>
-                Hybrid is the hardest shape to hold together. Some of the team is in the office, some is at home, and
-                the days rarely line up, so the little moments that used to build belonging quietly disappear. A live
-                weekly session gives everyone one fixed point in the week they share, wherever they happen to be that
-                day. It is a simple way to keep a hybrid team connected and to{' '}
-                <Link to="/blog/keep-hybrid-team-focused" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                  keep a hybrid team focused
-                </Link>
-                , without
-                asking anyone to travel or coordinate a room.
-              </p>
-              <p>
-                Same time, same coach, same small ritual each week, so it becomes a moment of connection people
-                recognise across a distributed or hybrid team, not another meeting.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* WHO IT'S FOR */}
-        <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
-            <SectionHeading eyebrow="Who it's for">People leaders at remote-first companies</SectionHeading>
-            <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              HR and people leaders, team leads and founders at remote-first and hybrid companies. Tech, consulting,
-              sustainability and distributed teams. Delivered in English, online, across UK and European time zones,
-              with Australian hours for part of the year.
-            </p>
-            <p className="mt-5 text-charcoal/60 text-base leading-relaxed">
-              Deciding whether it is worth it? Read{' '}
-              <Link to="/guides/cost-of-employee-burnout" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                what employee burnout costs
-              </Link>{' '}
-              for the business case, or{' '}
-              <Link to="/compare" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                how live sessions compare to apps and EAPs
-              </Link>
-              .
-            </p>
-          </div>
-        </section>
-
         {/* FAQ */}
-        <section className="py-20 md:py-24">
+        <section className="bg-cream py-20 md:py-24">
           <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="FAQ">Common questions</SectionHeading>
             <GuideFAQ items={faqItems} />
@@ -261,15 +184,13 @@ const CorporateWellbeingRemoteTeams = () => {
         </section>
 
         {/* CTA */}
-        <section className="relative overflow-hidden bg-cream-soft-b py-24 md:py-28">
-          <GlowField tone="sage" />
-          <div className="relative max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+        <section className="bg-cream-soft-b py-24 md:py-28">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">
               Give your distributed team a habit that sticks
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              Start with a single pilot session, credited to your first month if you continue. Once it is a weekly
-              habit, the reporting gives you something concrete to take to leadership.
+              Start with a single pilot session, credited to your first month if you continue.
             </p>
             <div className="mt-9">
               <Link to="/demo">
@@ -278,6 +199,17 @@ const CorporateWellbeingRemoteTeams = () => {
                 </Button>
               </Link>
             </div>
+            <p className="mt-8 text-charcoal/60 text-[15px] leading-relaxed">
+              Making the case internally? Read{' '}
+              <Link to="/guides/cost-of-employee-burnout" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                what employee burnout costs
+              </Link>{' '}
+              or{' '}
+              <Link to="/compare" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                how live sessions compare to apps
+              </Link>
+              .
+            </p>
           </div>
         </section>
       </main>

@@ -21,11 +21,11 @@ const post: BlogPost = {
   content: [
     {
       type: "paragraph",
-      text: "A wellbeing lunch and learn is a short session, usually 30 to 45 minutes over the lunch break, where a team gathers to learn or do something that supports how they feel rather than how they perform. For remote and hybrid teams it runs live on Teams or Zoom. The problem is that most of them are built like a webinar: someone talks at a slide deck for 40 minutes, and everyone leaves their lunch feeling more drained than when they started. My favourite format flips that. Instead of a talk about wellbeing, you give people an actual reset they can feel in their body by the time they log off.",
+      text: "A wellbeing lunch and learn is a short session, usually 30 to 45 minutes over the lunch break, where a team does something that supports how they feel rather than how they perform. For remote and hybrid teams it runs live on Teams or Zoom.",
     },
     {
       type: "paragraph",
-      text: "Below is what usually goes wrong with corporate lunch and learns, and a handful of virtual lunch and learn ideas that hold up, ending with the one I run most often.",
+      text: "Most are built like a webinar: someone talks at a slide deck for 40 minutes, and everyone leaves their lunch more drained than when they started. My favourite format flips that. Instead of a talk about wellbeing, you give people a reset they can feel in their body by the time they log off.",
     },
     {
       type: "heading",
@@ -33,11 +33,11 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "The point of a lunch and learn is to use a low-stakes slot in the calendar to give people something they would not make time for on their own. That is a genuinely good instinct. Lunch is already broken up, nobody has to book a separate meeting, and there is no pressure to produce anything. It is the easiest window in the week to protect.",
+      text: "The point is to use a low-stakes slot to give people something they would not make time for on their own. Lunch is already broken up, nobody has to book a separate meeting, and there is no pressure to produce anything.",
     },
     {
       type: "paragraph",
-      text: "The trouble is that we then fill it with the same thing we fill every other slot: a presentation. If the goal is wellbeing, a lecture about wellbeing is a strange way to get there. People do not need more information about stress. They need 30 minutes where the pressure actually comes off.",
+      text: "The trouble is that we then fill it with a presentation. If the goal is wellbeing, a lecture about wellbeing is a strange way to get there. People do not need more information about stress. They need 30 minutes where the pressure actually comes off. My [remote work burnout guide](/guides/remote-work-burnout) sets out the underlying pattern.",
     },
     {
       type: "heading",
@@ -50,14 +50,14 @@ const post: BlogPost = {
     {
       type: "list",
       items: [
-        "**It is passive.** A slide deck and a speaker asks people to sit still and absorb. That is the exact posture they have been in all morning, so it adds to the load instead of lifting it.",
-        "**It is one-directional.** A guest expert talking at a muted grid of names is not restful and it is not connecting. People half-listen with an inbox open in the other window.",
-        "**It ends with homework.** A lot of wellbeing talks close with a list of things to try later, on your own time. For an already-stretched team, that is one more thing to feel behind on.",
+        "**It is passive.** A slide deck and a speaker ask people to sit still and absorb, the posture they have been in all morning. It adds to the load instead of lifting it.",
+        "**It is one-directional.** A guest expert talking at a muted grid of names is not restful and it is not connecting. People half-listen with their inbox open.",
+        "**It ends with homework.** Many wellbeing talks close with a list of things to try later, on your own time. For a stretched team, that is one more thing to feel behind on.",
       ],
     },
     {
       type: "paragraph",
-      text: "None of that means the topic is wrong. It means the format is. The fix is to make the session something people do together in real time, not something they watch.",
+      text: "None of that means the topic is wrong. It means the format is. Make the session something people do together in real time, not something they watch.",
     },
     {
       type: "heading",
@@ -69,7 +69,11 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "This is the one I run most, and the one I would suggest starting with. It is a short, live, guided session over Teams or Zoom: a few minutes of breathing to settle the nervous system, then gentle chair-based movement to undo the morning of sitting, and a brief moment of stillness at the end. No mat, no changing clothes, no floor work. People stay at their desk, camera optional, and follow along. By the time they log off they can feel the difference, which is the whole point of using the lunch slot in the first place. I am a 500-hour certified yoga teacher, so the movement is safe to lead for a mixed group of complete beginners.",
+      text: "This is the one I would suggest starting with. It is a short, live, guided session over Teams or Zoom: a few minutes of breathing to settle the nervous system, gentle chair-based movement to undo the morning of sitting, then a brief moment of stillness.",
+    },
+    {
+      type: "paragraph",
+      text: "No mat, no changing clothes, no floor work. People stay at their desk, camera optional, and follow along. I am a 500-hour certified yoga teacher, so the movement is safe to lead for a mixed group of complete beginners.",
     },
     {
       type: "subheading",
@@ -77,7 +81,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "If your team is more comfortable staying still, a guided meditation works well as a lunch reset. It asks nothing of anyone physically and gives the mind a genuine pause. It pairs naturally with breathing, so it can be its own session or the closing few minutes of a movement one.",
+      text: "If your team is more comfortable staying still, a guided meditation works well. It asks nothing of anyone physically and gives the mind a real pause. It can be its own session or the closing few minutes of a movement one.",
     },
     {
       type: "subheading",
@@ -85,15 +89,15 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "There is a middle ground between a lecture and a pure practice: a session where I teach two or three breathing techniques people can actually use before a stressful call or at the end of the day, and we practise each one live together. It is instructional, so it satisfies the learn part of lunch and learn, but every minute is hands-on rather than watched.",
+      text: "This is the middle ground between a lecture and a pure practice. I teach two or three breathing techniques people can use before a stressful call or at the end of the day, and we practise each one live. It covers the learn part of lunch and learn, but every minute is hands-on.",
     },
     {
       type: "paragraph",
-      text: "Whichever you choose, the design principles are the same: keep it short, keep it live, make it something people do rather than watch, and make sure nobody has to prepare or perform.",
+      text: "Whichever you choose, keep it short, keep it live, make it something people do rather than watch, and make sure nobody has to prepare or perform.",
     },
     {
       type: "callout",
-      text: "Camera optional matters more than it sounds. When people can join a movement session without being seen, participation goes up, because nobody is worried about looking silly at their desk. Every session I run can also be recorded, so anyone who cannot make the lunch slot can follow it later.",
+      text: "Camera optional matters more than it sounds. When people can join a movement session without being seen, participation goes up. Every session can also be recorded, so anyone who cannot make the lunch slot can follow it later.",
     },
     {
       type: "heading",
@@ -101,11 +105,11 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "A single virtual lunch and learn is the easiest possible way to test whether this kind of thing suits your team, before you commit to anything ongoing. You book one session, I run it live on Teams or Zoom, and you see for yourself how people respond and how many come back the following week if you offer it again. There is no obligation to turn it into a programme.",
+      text: "A single virtual lunch and learn is the easiest way to test whether this suits your team. You book one session, I run it live on Teams or Zoom, and you see for yourself how people respond. There is no obligation to turn it into a programme.",
     },
     {
       type: "paragraph",
-      text: "That said, the honest truth is that a one-off session feels lovely and then fades. Wellbeing that changes anything comes from rhythm, the same short reset at the same time each week, with the same coach, so it becomes a habit rather than an event. That is the idea behind The Weekly Reset: a recurring live session your remote team joins together, on a flat monthly subscription priced per team, with attendance and a short wellbeing check reported back so you can see it working. A lunch and learn is simply the easiest door into it. You can read how the recurring version works on my [team wellness page](/services/team-wellness), or start with a single session and judge it on the day.",
+      text: "A one-off session feels lovely and then fades. Wellbeing that changes anything comes from rhythm: the same reset at the same time each week, with the same coach. That is The Weekly Reset, a recurring live session on a flat monthly subscription, with attendance and a wellbeing check reported back. Read how it works on my [team wellness page](/services/team-wellness).",
     },
     {
       type: "cta",
@@ -113,25 +117,24 @@ const post: BlogPost = {
       ctaHref: "/demo",
       ctaLabel: "Book a session",
     },
-    { type: "callout", text: "My [remote work burnout guide](/guides/remote-work-burnout) sets out the underlying pattern, if you want the cause rather than the symptom." },
     {
       type: "faq",
       faqItems: [
         {
           q: "How long should a wellbeing lunch and learn be?",
-          a: "Around 30 minutes works best for a lunch slot. It is long enough for a proper breathing and gentle chair-yoga reset, and short enough that people can still eat and get back to their day without losing the whole break.",
+          a: "Around 30 minutes works best for a lunch slot. It is long enough for a proper breathing and gentle chair-yoga reset, and short enough that people can still eat and get back to their day.",
         },
         {
           q: "Do people need to turn their camera on?",
-          a: "No. Camera is always optional in my sessions. For a movement or chair-yoga reset that matters, because people are far more willing to follow along at their desk when they know they are not being watched. Every session is also recorded, so anyone who misses the slot can catch up later.",
+          a: "No. Camera is always optional in my sessions. For a chair-yoga reset that matters, because people are far more willing to follow along when they know they are not being watched. Every session is also recorded, so anyone who misses the slot can catch up later.",
         },
         {
           q: "Is this in person or fully virtual?",
-          a: "Fully virtual. Every session runs live on Teams or Zoom, so it works the same whether your team is remote, hybrid, or spread across different cities. Nobody has to travel or gather in a room.",
+          a: "Fully virtual. Every session runs live on Teams or Zoom, so it works the same whether your team is remote, hybrid, or spread across different cities.",
         },
         {
           q: "Can a one-off session turn into something regular?",
-          a: "Yes, and that is usually the best way to start. Book a single session first, see how your team responds, and if it lands you can move to a recurring weekly reset with the same coach each week on a flat monthly subscription. There is no pressure to commit up front.",
+          a: "Yes, and that is usually the best way to start. Book a single session, see how your team responds, and if it lands you can move to a recurring weekly reset with the same coach on a flat monthly subscription.",
         },
       ],
     },

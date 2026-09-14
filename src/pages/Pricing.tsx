@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
-import { Reveal, GlowField, Eyebrow } from '@/components/SiteBlocks';
+import { Reveal, Eyebrow } from '@/components/SiteBlocks';
 import { GuideFAQ, ProseList } from '@/components/GuideLayout';
 
 const faqs: Array<[string, string]> = [
@@ -94,7 +94,6 @@ const Pricing = () => {
       <main>
         {/* HERO */}
         <section className="relative overflow-hidden bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
-          <GlowField tone="warm" />
           <div className="relative max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <Eyebrow>Pricing</Eyebrow>
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
@@ -111,7 +110,6 @@ const Pricing = () => {
           <div className="max-w-[720px] mx-auto px-5 sm:px-6 md:px-8">
             <Reveal>
               <div className="relative overflow-hidden bg-cream border border-sage-light rounded-2xl p-8 md:p-10">
-                <GlowField tone="warm" />
                 <div className="relative">
                   <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">Start here</span>
                   <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
@@ -258,7 +256,6 @@ const Pricing = () => {
 
         {/* CTA */}
         <section className="relative overflow-hidden bg-cream-soft-b py-24 md:py-28">
-          <GlowField tone="sage" />
           <div className="relative max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">See it before you commit</h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">

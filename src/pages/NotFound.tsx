@@ -43,7 +43,7 @@ const NotFound = () => {
       <Navbar />
       <main className="pt-32 pb-20 px-4">
         <section className="max-w-2xl mx-auto text-center mb-16">
-          <p className="font-mono text-xs uppercase tracking-[0.28em] text-clay mb-6">404</p>
+          <p className="font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-6">404</p>
           <h1
             className="font-fraunces font-normal text-heading text-4xl md:text-5xl lg:text-6xl mb-7 leading-[1.05] tracking-[-0.025em]"
           >
@@ -62,7 +62,7 @@ const NotFound = () => {
         </section>
 
         <section className="max-w-3xl mx-auto">
-          <p className="font-mono text-xs uppercase tracking-[0.28em] text-clay text-center mb-8">
+          <p className="font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay text-center mb-8">
             Popular pages
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -79,7 +79,7 @@ const NotFound = () => {
           <div className="text-center mt-10">
             <Link
               to="/blog"
-              className="font-inter text-xs uppercase tracking-[0.28em] text-clay hover:text-clayDark font-semibold underline underline-offset-4 transition-colors"
+              className="font-inter text-[15px] text-clay hover:text-clayDark font-medium underline underline-offset-4 transition-colors"
             >
               Read the blog
             </Link>

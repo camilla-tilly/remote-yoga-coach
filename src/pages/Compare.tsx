@@ -4,45 +4,33 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
-import { Reveal, GlowField, ComparisonTable, Eyebrow } from '@/components/SiteBlocks';
+import { ComparisonTable, Eyebrow } from '@/components/SiteBlocks';
 import { GuideFAQ, PullQuote } from '@/components/GuideLayout';
 
 const faqItems: Array<[string, string]> = [
   [
     'We already pay for Headspace or Calm. Why add live sessions?',
-    'Apps are excellent libraries, but they are passive: they ask a busy, tired person to start on their own, and usage drops sharply within weeks. A live weekly session removes that first step, a real coach leads it, so participation holds. Position the app as the between-sessions library and the live session as the weekly class.',
-  ],
-  [
-    'We have an EAP. Is this not the same thing?',
-    'No. An employee assistance programme is a reactive crisis line, used by only 3 to 5 percent of staff, and a quarter of employees do not know theirs exists. It helps after a problem forms. Live wellbeing sessions are preventive and stigma-free: nobody has to admit anything, everyone just joins. They fill the gap the EAP leaves before crisis.',
-  ],
-  [
-    'Is this a replacement for our current wellbeing spend?',
-    'It does not have to be. The live session is the layer most wellbeing stacks are missing, the human, habit-forming one. Many teams keep the app and the EAP and add the weekly session as the thing that finally drives engagement across the other two.',
-  ],
-  [
-    'How do you prove the live session gets more engagement?',
-    'Attendance and repeat attendance are tracked automatically. Unlike an app dashboard that shows a few opens, you get real participation numbers for your own team in a simple report.',
-  ],
-  [
-    'What about cost? Apps look cheaper per head.',
-    'Per licence, yes. Per person who actually benefits, rarely, because most app licences go unused. A live session priced per team, with high real attendance, often costs less per engaged employee than an app almost nobody opens.',
+    'Apps are good libraries, but they wait for a busy person to start on their own, and usage drops within weeks. A live session removes that first step. Keep the app for between sessions.',
   ],
   [
     'Is this a Calm for Business alternative?',
-    'It is the live layer those apps are missing, not a like-for-like swap. Calm for Business and Headspace for Work are strong on-demand libraries, but they are passive: staff have to start on their own, and usage drops fast. I run a live weekly session on Teams or Zoom, led by me, a 500-hour certified yoga teacher, with camera optional and every session recorded. If you want a Calm for Business alternative that people actually attend, keep the app as the between-sessions library and add the live session as the weekly class.',
+    'It is the live layer those apps are missing rather than a like-for-like swap: a real person at a set time each week, on Teams or Zoom, which people actually attend.',
   ],
   [
-    'Is this a Headspace for Work alternative?',
-    'In the same way, yes. As a Headspace for Work alternative, the difference is a real, familiar human leading the practice at a set time each week, which removes the hardest part, starting. Attendance and repeat attendance are tracked and reported in a simple summary, so you can see the engagement an app dashboard cannot show.',
+    'We have an EAP. Is this not the same thing?',
+    'No. An EAP is a crisis line, used by 3 to 5 percent of staff after a problem has formed. A live session is preventive, and nobody has to admit anything to join.',
   ],
   [
-    'Is this an EAP alternative?',
-    'Not for crisis support, and I would never position it that way. An EAP is a reactive safety net and should stay. But if you are looking for an EAP alternative to actually build everyday wellbeing, rather than wait for a problem to form, that is what a live weekly session does. It is preventive and stigma-free: nobody has to admit anything, everyone just joins.',
+    'Is this a replacement for our current wellbeing spend?',
+    'It does not have to be. Many teams keep the app and the EAP and add the weekly session as the part that drives participation.',
+  ],
+  [
+    'What about cost? Apps look cheaper per head.',
+    'Per licence, yes. Per person who actually benefits, rarely, because most licences go unused.',
   ],
   [
     'App vs live sessions, which do teams actually use?',
-    'On the wellbeing app vs live sessions question, the honest answer is live sessions, by a wide margin on real participation. Apps win on library depth and per-licence price, but most licences go unused. A live session led by a real person, at a fixed weekly time, holds attendance because the starting step is handled for people. The two work best together: the app on demand, the live session as the habit.',
+    'Live sessions, by a wide margin on real participation. Apps win on library depth and price per licence. The two work best together.',
   ],
 ];
 
@@ -99,17 +87,14 @@ const Compare = () => {
 
       <main>
         {/* HERO */}
-        <section className="relative overflow-hidden bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
-          <GlowField tone="warm" />
-          <div className="relative max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+        <section className="bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <Eyebrow>The honest comparison</Eyebrow>
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Live sessions, apps and EAPs, on the metric that matters
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[640px] mx-auto">
-              Every wellbeing tool looks good in a pitch deck. The only question that matters is whether your team
-              actually uses it. Here is how a live weekly session compares to the app and the EAP you may already
-              have, and why it is usually the layer that makes the rest work.
+            <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[600px] mx-auto">
+              Every wellbeing tool looks good in a pitch deck. The question is whether your team actually uses it.
             </p>
           </div>
         </section>
@@ -117,99 +102,62 @@ const Compare = () => {
         {/* THE TABLE */}
         <section className="py-16 md:py-20">
           <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
-            <Reveal>
-              <ComparisonTable
-                columns={['Live weekly sessions', 'Wellbeing app', 'EAP']}
-                rows={rows as Array<{ label: string; values: Array<boolean | 'partial' | string> }>}
-                highlightIndex={0}
-              />
-            </Reveal>
+            <ComparisonTable
+              columns={['Live weekly sessions', 'Wellbeing app', 'EAP']}
+              rows={rows as Array<{ label: string; values: Array<boolean | 'partial' | string> }>}
+              highlightIndex={0}
+            />
             <p className="mt-6 text-center text-charcoal/50 text-sm">
               Take-up figures: EAP 3 to 5% (Personnel Today); app engagement declines within weeks of download.
             </p>
           </div>
         </section>
 
-        {/* THE APP */}
-        <section className="py-14 md:py-20">
-          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
-            <Eyebrow>The app</Eyebrow>
-            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
-              A great library nobody visits
-            </h2>
-            <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-              Wellbeing apps are genuinely good content. The problem is the invoice buys licences, not outcomes.
-              Downloads spike in week one and engagement slides fast, because the app asks the busiest, most tired
-              people to initiate practice alone, in the exact moments their willpower is lowest. As a company benefit
-              it quietly becomes a line item almost nobody uses. It works best as the between-sessions library, not
-              the main event.
-            </p>
-          </div>
-        </section>
-
-        {/* THE EAP */}
-        <section className="bg-cream py-14 md:py-20">
-          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
-            <Eyebrow>The EAP</Eyebrow>
-            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
-              A crisis line, not a habit
-            </h2>
-            <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-              Employee assistance programmes matter, and they should stay. But they are reactive by design: help once
-              a problem has formed, used by only 3 to 5 percent of staff, with a quarter of employees unaware theirs
-              exists. An EAP does nothing to build the everyday habit that prevents the crisis in the first place.
-              That prevention gap is exactly where a live weekly session sits.
-            </p>
-          </div>
-        </section>
-
-        {/* NOT EITHER/OR */}
-        <section className="py-16 md:py-20">
+        {/* WHERE EACH FITS */}
+        <section className="bg-cream py-16 md:py-20">
           <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The point</Eyebrow>
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               This is the missing layer, not a replacement
             </h2>
-            <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-              The strongest wellbeing stack is all three doing what each does well: the app as the on-demand library,
-              the EAP as the safety net, and a live weekly session as the human, habit-forming layer that finally
-              drives participation across the lot. See{' '}
-              <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                how a session runs
-              </Link>{' '}
-              or the deeper dive in{' '}
-              <Link to="/blog/do-workplace-wellness-apps-work" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                do workplace wellness apps actually work?
-              </Link>
-            </p>
+            <div className="mt-8 space-y-7 text-charcoal/75 text-lg leading-relaxed">
+              <div>
+                <h3 className="font-fraunces font-normal text-heading text-xl">The app: a great library nobody visits</h3>
+                <p className="mt-1.5">Good content, but it asks tired people to start alone. Best as the between-sessions library.</p>
+              </div>
+              <div>
+                <h3 className="font-fraunces font-normal text-heading text-xl">The EAP: a crisis line, not a habit</h3>
+                <p className="mt-1.5">It matters and should stay, but it only helps once a problem has formed.</p>
+              </div>
+              <div>
+                <h3 className="font-fraunces font-normal text-heading text-xl">A live session: the habit</h3>
+                <p className="mt-1.5">
+                  A real person at a fixed time, which is what gets people to turn up. See{' '}
+                  <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                    how a session runs
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* THE ALTERNATIVE */}
-        <section className="bg-cream py-16 md:py-20">
+        <section className="py-16 md:py-20">
           <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The alternative you are searching for</Eyebrow>
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
               A Calm for Business, Headspace for Work and EAP alternative that gets used
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-              If you are searching for a{' '}
+              If you are looking for a{' '}
               <Link to="/blog/do-workplace-wellness-apps-work" className="text-clay underline underline-offset-4 hover:text-clayDark">
                 Calm for Business alternative or a Headspace for Work alternative
               </Link>
-              , you are usually not looking for a better content library. You are looking for the piece those apps
-              leave out: a real person, at a fixed time, that people actually turn up to.
+              , you probably don't need a better library. You need the piece those apps leave out.
             </p>
-            <PullQuote>
-              That is the wellbeing app vs live sessions difference in one line: the app waits to be opened, a live
-              session is led.
-            </PullQuote>
-            <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-              As an EAP alternative the framing is different. An EAP is a crisis safety net and should stay. What it
-              does not do is build the everyday habit that keeps people well before a problem forms. That is a live
-              weekly session, led by me, a 500-hour certified yoga teacher, on Teams or Zoom, camera optional,
-              recorded, with attendance reported in a simple summary.
-            </p>
+            <PullQuote>The app waits to be opened. A live session is led.</PullQuote>
           </div>
         </section>
 
@@ -223,15 +171,13 @@ const Compare = () => {
         </section>
 
         {/* CTA */}
-        <section className="relative overflow-hidden bg-cream-soft-b py-24 md:py-28">
-          <GlowField tone="sage" />
-          <div className="relative max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+        <section className="bg-cream-soft-b py-24 md:py-28">
+          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">
               Add the layer your stack is missing
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              A single pilot session so your team can try it. Once it is a weekly habit, the reporting shows you
-              the participation for yourself.
+              Start with a single pilot session, and see the attendance for yourself.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">

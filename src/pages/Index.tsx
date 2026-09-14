@@ -53,28 +53,28 @@ const sessions = [
   {
     kind: 'Chair yoga',
     title: 'Desk reset',
-    body: 'Chair yoga for shoulders, neck and hips. Done in work clothes, at the desk they are already sitting at.',
+    body: 'Shoulders, neck and hips, in work clothes, at the desk.',
     to: '/services/chair-yoga-for-teams',
   },
   {
     kind: 'Breathing',
     title: 'Breathing break',
-    body: 'Slot it before the all-hands or after a hard call. Cameras off, and it still works.',
+    body: 'Before the all-hands or after a hard call. Works with cameras off.',
     to: '/blog/breathing-exercises-for-work-stress',
   },
   {
     kind: 'Meditation',
     title: 'Guided meditation',
-    body: 'A quiet middle of the day. Good for teams spread over three time zones and two continents.',
+    body: 'A quiet moment in the middle of the day.',
     to: '/guides/mindfulness-at-work',
   },
 ];
 
 const steps = [
-  ['01', 'A 20-minute call', 'Time zones, and what people are actually complaining about. That is all I need.'],
-  ['02', 'A pilot session', 'One session, one calendar link, paid as a one-off. You see who joins and how they react before you commit to anything.'],
-  ['03', 'A weekly slot', 'Same time every week, recurring invite, gentle reminder the morning of. Habits need a fixed hour.'],
-  ['04', 'A number you can forward', 'Monthly attendance you can actually see. Something concrete for the budget conversation.'],
+  ['01', 'A 20-minute call', 'Your time zones, and what the team is struggling with.'],
+  ['02', 'A pilot session', 'One paid session. See who joins before you commit.'],
+  ['03', 'A weekly slot', 'Same time every week, as a recurring invite.'],
+  ['04', 'A number you can forward', 'Monthly attendance, for the budget conversation.'],
 ];
 
 // Real client quotes, verbatim, first names only. Card layout with varied spans/sizes.
@@ -83,8 +83,6 @@ const reviews: Array<{ quote: string; name: string; span: number; size: number; 
   { quote: 'You have such a soothing voice.', name: 'Kris', span: 1, size: 26 },
   { quote: 'Thanks for this beautiful flow. I felt great afterwards.', name: 'Susanne', span: 1, size: 26 },
   { quote: 'Wonderful practice, especially all the balance poses. Thank you.', name: 'Nina', span: 2, size: 30 },
-  { quote: 'This felt amazing. Thank you, Camilla.', name: 'Miles', span: 2, size: 30 },
-  { quote: 'This was lovely. Thank you for sharing.', name: 'Kris', span: 1, size: 26 },
 ];
 
 const tiers = [
@@ -178,7 +176,7 @@ const Index = () => {
       <section id="sessions" className="ryc-pad" style={{ maxWidth: 1200, margin: '0 auto', padding: '96px 40px 0' }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 40, marginBottom: 44, flexWrap: 'wrap' }}>
           <h2 style={{ ...h2Style, fontSize: 'clamp(26px, 2.8vw, 36px)', maxWidth: '22ch' }}>Three classes. Choose one, alternate, or combine.</h2>
-          <p style={{ fontSize: 16.5, lineHeight: 1.6, color: c.text3, margin: 0, maxWidth: '34ch' }}>Every class is live and about thirty minutes, so nobody is following a video into the void. Pick one, or rotate through them across the month.</p>
+          <p style={{ fontSize: 16.5, lineHeight: 1.6, color: c.text3, margin: 0, maxWidth: '34ch' }}>Every class is live and about thirty minutes. Pick one, or rotate through them.</p>
         </div>
         <div className="ryc-sessions-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 16 }}>
           {sessions.map((s) => (
@@ -231,9 +229,8 @@ const Index = () => {
             <div style={{ ...eyebrow, marginBottom: 22 }}>A real person, live, every week</div>
             <h2 style={{ ...h2Style, fontSize: 'clamp(26px, 2.8vw, 36px)', lineHeight: 1.06, maxWidth: '20ch' }}>I&rsquo;m Camilla. I&rsquo;ve sat in the meetings too.</h2>
             <div style={{ display: 'grid', gap: 18, marginTop: 26, maxWidth: '54ch' }}>
-              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>Before I taught full time I worked in a large multinational, a startup, a consultancy and government. I know what a Thursday afternoon feels like. That is who I build these sessions for, not for people with an hour and a spare room.</p>
-              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>So the Weekly Reset is deliberately unimpressive. Done in a chair, in work clothes, camera off if you like. Nobody has to be fit, flexible, or any good at it. It is a habit, not a practice, and habits only work if they are easy to keep.</p>
-              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>I am a 500-hour certified yoga teacher with a Certificate III in Fitness covering anatomy and safe movement. The breathing and meditation come from training in the Hindu yogic tradition, and I teach them as what they are rather than as a productivity hack.</p>            </div>
+              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>Before I taught full time I worked in a multinational, a startup, a consultancy and government. I know what a Thursday afternoon feels like.</p>
+              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>So the Weekly Reset is deliberately unimpressive. Done in a chair, in work clothes, camera off if you like. Nobody has to be good at it.</p>            </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 30 }}>
               {['500 hours of yoga training', 'Movement, breathing and meditation', 'Live on Teams and Zoom', 'UK, EU and AU hours'].map((p) => (
                 <span key={p} style={{ fontFamily: mono, fontSize: 12, color: c.text2, border: `1px solid oklch(0.86 0.02 76)`, borderRadius: 999, padding: '9px 16px', whiteSpace: 'nowrap' }}>{p}</span>
@@ -250,7 +247,7 @@ const Index = () => {
       <section id="proof" className="ryc-pad" style={{ maxWidth: 1200, margin: '0 auto', padding: '96px 40px 0' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 0.8fr)', gap: 60, alignItems: 'end', borderTop: `1px solid ${c.rule}`, paddingTop: 28, marginBottom: 44 }}>
           <h2 style={{ ...h2Style, fontSize: 'clamp(26px, 2.8vw, 36px)', lineHeight: 1.05, maxWidth: '24ch' }}>What people say about practising with me</h2>
-          <p style={{ fontSize: 16.5, lineHeight: 1.6, color: 'oklch(0.45 0.02 60)', margin: 0, maxWidth: '38ch' }}>A few unedited comments from people I have taught, first names only, and not all of them from corporate sessions.</p>
+          <p style={{ fontSize: 16.5, lineHeight: 1.6, color: 'oklch(0.45 0.02 60)', margin: 0, maxWidth: '38ch' }}>Unedited comments from people I have taught.</p>
         </div>
         <div className="ryc-proof-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 20 }}>
           {reviews.map((r, i) => (

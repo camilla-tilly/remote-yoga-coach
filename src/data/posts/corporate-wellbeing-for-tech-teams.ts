@@ -22,11 +22,11 @@ const post: BlogPost = {
   content: [
     {
       type: "paragraph",
-      text: "If you run wellbeing for a tech team, the honest answer to \"what actually helps\" is short: a small, recurring, guided reset that people join together during the working week, not another perk they have to opt into in their own time. Tech and startup teams rarely burn out loudly. It shows up as slower thinking, shorter tempers in reviews, and good people quietly pulling back. This post is about why builder culture is unusually prone to that, and what a live reset can and cannot fix.",
+      text: "If you run wellbeing for a tech team, what actually helps is simple: a small, recurring, guided reset that people join together during the working week, not another perk they have to opt into in their own time.",
     },
     {
       type: "paragraph",
-      text: "I coach distributed teams entirely on screen, so everything here assumes remote-first and camera-optional. No offsite, no in-person day, nothing that needs a room.",
+      text: "Tech and startup teams rarely burn out loudly. It shows up as slower thinking, shorter tempers in reviews, and good people quietly pulling back.",
     },
     {
       type: "heading",
@@ -34,20 +34,20 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "A lot of the usual wellbeing advice was written for a nine-to-five office. Tech culture breaks several of its assumptions at once, which is why the quiet version of burnout takes hold before anyone raises a hand.",
+      text: "Much of the usual wellbeing advice was written for a nine-to-five office. Tech culture breaks several of its assumptions at once, which is why the quiet version of burnout takes hold before anyone raises a hand.",
     },
     {
       type: "list",
       items: [
-        "**Always-on by default.** Remote-first teams span time zones and Slack never really closes. The line between shipping and resting gets thin, and people stop noticing they never fully stepped away.",
-        "**High cognitive load.** Deep work, context-switching between tickets, holding a whole system in your head. This is tiring in a way that does not look tiring from the outside, so it goes unmeasured.",
-        "**Deadline cycles.** Sprints, launches, on-call rotations, and funding milestones create repeated sprint-and-crash waves. The crash rarely gets scheduled recovery, so fatigue compounds across cycles.",
-        "**A culture that rewards pushing through.** Builder cultures admire intensity. That is a strength, but it means people hide the early signs rather than flag them, and burnout stays invisible until someone leaves.",
+        "**Always-on by default.** Remote-first teams span time zones and Slack never really closes. People stop noticing they never fully stepped away.",
+        "**High cognitive load.** Deep work, context-switching between tickets, holding a whole system in your head. It is tiring in a way that does not look tiring, so it goes unmeasured.",
+        "**Deadline cycles.** Sprints, launches, on-call rotations and funding milestones create repeated sprint-and-crash waves. The crash rarely gets scheduled recovery, so fatigue compounds.",
+        "**A culture that rewards pushing through.** Builder cultures admire intensity. That means people hide the early signs rather than flag them, and burnout stays invisible until someone leaves.",
       ],
     },
     {
       type: "paragraph",
-      text: "None of this is a character problem. It is a structural one, which is good news, because structure is something you can change.",
+      text: "None of this is a character problem. It is a structural one, and structure is something you can change. My [remote work burnout guide](/guides/remote-work-burnout) sets out the underlying pattern.",
     },
     {
       type: "heading",
@@ -55,7 +55,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "The wellbeing ideas that survive contact with a busy engineering team share a shape: they are short, scheduled, shared, and led by a real person. Anything that relies on someone self-starting a meditation app at 9pm loses to the backlog. Here is what tends to hold up.",
+      text: "The ideas that survive a busy engineering team share a shape: they are short, scheduled, shared, and led by a real person. Anything that relies on someone self-starting a meditation app at 9pm loses to the backlog.",
     },
     {
       type: "subheading",
@@ -63,7 +63,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "A short guided session the team joins together at a set time, so nobody has to remember to look after themselves in their own hours. It is led, so it carries a small amount of accountability and warmth a library of recordings cannot. Because it repeats, it becomes a rhythm rather than an event, which is the whole point for a team stuck in sprint cycles.",
+      text: "A short guided session the team joins together at a set time, so nobody has to remember to look after themselves in their own hours. Being led gives it a little accountability and warmth a library of recordings cannot. Because it repeats, it becomes a rhythm rather than an event.",
     },
     {
       type: "subheading",
@@ -71,19 +71,19 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "What I run is three separate class types, and a team can pick one, alternate between them, or combine them across the month depending on where the pressure is:",
+      text: "I run three separate class types. A team can pick one, alternate, or combine them across the month depending on where the pressure is:",
     },
     {
       type: "list",
       items: [
-        "**A meditation class** for weeks heavy on decision-making and context-switching, when people need to put the mental load down for a few minutes.",
-        "**A breathing class** for the crunch around a launch or an on-call stretch, when the nervous system is running hot and needs a fast, practical way to settle.",
-        "**A chair yoga class** for release without anyone leaving their desk setup, changing clothes, or turning a camera on.",
+        "**A meditation class** for weeks heavy on decision-making and context-switching, when people need to put the mental load down.",
+        "**A breathing class** for the crunch around a launch or an on-call stretch, when the nervous system is running hot.",
+        "**A chair yoga class** for release without anyone leaving their desk, changing clothes, or turning a camera on.",
       ],
     },
     {
       type: "paragraph",
-      text: "All three run live on Teams or Zoom with the same coach each week, camera optional, and every session is recorded so anyone on call or in another time zone can catch it later. That combination is deliberate: it removes the friction that makes most tech teams quietly skip wellbeing.",
+      text: "All three run live on Teams or Zoom with the same coach each week, camera optional, and every session is recorded for anyone on call or in another time zone. That removes the friction that makes tech teams quietly skip wellbeing.",
     },
     {
       type: "subheading",
@@ -91,11 +91,11 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "The deeper fix is treating recovery as part of the delivery cycle rather than something people get to once the backlog is empty, which it never is. A standing weekly session is one honest way to put a small, protected recovery block on the calendar that survives a busy sprint.",
+      text: "The deeper fix is treating recovery as part of the delivery cycle rather than something people get to once the backlog is empty, which it never is. A standing weekly session puts a small, protected recovery block on the calendar that survives a busy sprint.",
     },
     {
       type: "callout",
-      text: "A recurring reset does not undo an unrealistic roadmap or a culture that emails at midnight. It genuinely helps the day-to-day load, and it makes the underlying pressure easier to see and talk about. Both matter. Neither replaces the other.",
+      text: "A recurring reset does not undo an unrealistic roadmap or a culture that emails at midnight. It helps the day-to-day load, and it makes the underlying pressure easier to see and talk about. Neither replaces the other.",
     },
     {
       type: "heading",
@@ -103,20 +103,20 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Builder cultures are quick to sniff out anything that feels like a mandated morale exercise. The way to avoid that is to treat it like any other part of how the team works rather than a wellness intervention bolted on top.",
+      text: "Builder cultures are quick to sniff out anything that feels like a mandated morale exercise. Treat it like any other part of how the team works, not a wellness intervention bolted on top.",
     },
     {
       type: "list",
       items: [
         "Put it on the shared calendar at a consistent time, so it is a fixture, not a surprise invite.",
-        "Keep it opt-in and low-pressure. Camera optional and recorded means people can join at whatever level they want, or catch up later.",
-        "Have a leader show up sometimes. When a founder or an engineering manager visibly takes fifteen minutes for it, it tells the team recovery is allowed here.",
+        "Keep it opt-in and low-pressure. Camera optional and recorded means people can join at whatever level they want.",
+        "Have a leader show up sometimes. When a founder or engineering manager visibly takes fifteen minutes for it, it shows recovery is allowed.",
         "Keep it short. A session that respects a builder's time gets attended. One that sprawls gets quietly dropped.",
       ],
     },
     {
       type: "paragraph",
-      text: "You can see how the format works on my [corporate wellbeing for remote and hybrid teams](/services/corporate-wellbeing-for-remote-teams) page, including how the meditation, breathing, and chair yoga classes fit together on a flat monthly subscription per team.",
+      text: "See how the meditation, breathing and chair yoga classes fit together on a flat monthly subscription per team on my [corporate wellbeing for remote and hybrid teams](/services/corporate-wellbeing-for-remote-teams) page.",
     },
     {
       type: "cta",
@@ -124,25 +124,24 @@ const post: BlogPost = {
       ctaHref: "/demo",
       ctaLabel: "Book a demo",
     },
-    { type: "callout", text: "My [remote work burnout guide](/guides/remote-work-burnout) sets out the underlying pattern, if you want the cause rather than the symptom." },
     {
       type: "faq",
       faqItems: [
         {
           q: "Is this in-person or remote?",
-          a: "It is fully remote. Every session runs live on Teams or Zoom, so it works for a distributed or hybrid team without anyone travelling or booking a room. Cameras are optional and each session is recorded for anyone who cannot join live.",
+          a: "It is fully remote. Every session runs live on Teams or Zoom, so nobody travels or books a room. Cameras are optional and each session is recorded for anyone who cannot join live.",
         },
         {
           q: "Do we have to choose one class type?",
-          a: "No. The meditation, breathing, and chair yoga classes are three separate options. A team can settle on one, alternate between them, or combine them across the month depending on where the pressure is that week.",
+          a: "No. The meditation, breathing, and chair yoga classes are three separate options. A team can settle on one, alternate, or combine them across the month.",
         },
         {
           q: "Will engineers actually attend something like this?",
-          a: "The teams where it works best keep it short, put it on the shared calendar at a consistent time, and leave it opt-in. Because it is led by the same coach each week and recorded, people join at whatever level suits them rather than feeling it is one more mandatory thing.",
+          a: "They are most likely to when it is kept short, sits on the shared calendar at a consistent time, and stays opt-in. Because it is led by the same coach each week and recorded, people join at whatever level suits them.",
         },
         {
           q: "How is it priced?",
-          a: "It is a flat monthly subscription per team rather than a per-person or per-session charge, so the cost does not swing with headcount or attendance. You can see the current options on my pricing page at /pricing.",
+          a: "It is a flat monthly subscription per team rather than a per-person or per-session charge, so the cost does not swing with headcount or attendance. The current options are on the pricing page.",
         },
       ],
     },

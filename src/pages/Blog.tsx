@@ -1,10 +1,11 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
-import Logo from '@/components/Logo';
+import { Eyebrow } from '@/components/SiteBlocks';
 import { blogPosts } from '@/data/blogPosts';
 
 const structuredData = {
@@ -22,6 +23,22 @@ const structuredData = {
 
 const ALL = 'All posts';
 
+const guides = [
+  { to: '/guides/remote-work-burnout', label: 'Remote work burnout', description: 'Signs, causes and prevention.' },
+  { to: '/guides/cost-of-employee-burnout', label: 'What burnout costs', description: 'The business case, in numbers.' },
+  { to: '/guides/mindfulness-at-work', label: 'Mindfulness at work', description: 'Does it work, and how to run it.' },
+];
+
+/**
+ * The blog index, in the site's current design.
+ *
+ * It was the last page still wearing the original look: the stacked-stones
+ * logo, a 96px heading and bold capitals spaced a third of an em apart. It was
+ * also 14 screens long, because every one of 27 posts got a 36px title, a
+ * 20px excerpt and a "Read more" label with 48px of padding either side. The
+ * list is now scannable: one line of title, one of excerpt, and the whole row
+ * is the link.
+ */
 const Blog = () => {
   const [active, setActive] = useState(ALL);
 
@@ -46,12 +63,7 @@ const Blog = () => {
     return c;
   }, []);
 
-  const filtering = active !== ALL;
-  const visible = filtering ? blogPosts.filter((p) => p.category === active) : blogPosts;
-
-  // The featured card only makes sense on the unfiltered view.
-  const leadPost = filtering ? null : visible[0];
-  const restPosts = filtering ? visible : visible.slice(1);
+  const visible = active === ALL ? blogPosts : blogPosts.filter((p) => p.category === active);
 
   return (
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
@@ -62,81 +74,45 @@ const Blog = () => {
         structuredData={structuredData}
       />
       <Navbar />
-      <main className="pt-24 pb-20">
-        {/* Header */}
-        <header className="relative text-center px-4 pt-10 pb-14 mb-4">
-          <div className="max-w-3xl mx-auto">
-            <div className="flex justify-center mb-6">
-              <Logo size={48} variant="clay" className="rounded-xl" />
-            </div>
-            <p className="font-inter text-sm md:text-base uppercase tracking-[0.32em] text-clay font-bold mb-8">
-              Practical wellbeing for teams
-            </p>
-            <h1 className="font-fraunces text-6xl md:text-7xl lg:text-8xl text-heading tracking-[-0.03em] mb-8 leading-[0.95]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
+      <main>
+        {/* HERO */}
+        <section className="bg-cream-soft pt-36 pb-14 md:pt-44 md:pb-16">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
+            <Eyebrow>Practical wellbeing for teams</Eyebrow>
+            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Blog
             </h1>
-            <span className="block mx-auto w-20 h-[2px] bg-clay/60 mb-8 rounded-full" aria-hidden="true" />
-            <p className="font-inter font-normal text-xl md:text-2xl text-charcoal/80 max-w-xl mx-auto leading-relaxed">
+            <p className="mt-5 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[560px] mx-auto">
               Chair yoga, breathing, burnout and what actually works for distributed teams.
             </p>
           </div>
-        </header>
+        </section>
 
-        {/* Pillar guides */}
-        <section className="px-4 mb-16">
-          <div className="max-w-5xl mx-auto">
-            <div className="flex items-center justify-center gap-6 mb-8">
-              <span className="flex-1 h-px bg-sage-light" aria-hidden="true" />
-              <p className="font-inter text-xs uppercase tracking-[0.32em] text-sage font-bold">Start with the guides</p>
-              <span className="flex-1 h-px bg-sage-light" aria-hidden="true" />
-            </div>
-            <div className="grid gap-5 md:grid-cols-3">
-              {[
-                {
-                  to: '/guides/remote-work-burnout',
-                  label: 'Remote work burnout',
-                  description: 'Signs, causes and prevention for distributed teams, for managers and HR.',
-                },
-                {
-                  to: '/guides/cost-of-employee-burnout',
-                  label: 'What burnout costs',
-                  description: 'The real cost of burnout and the ROI of fixing it. The business case.',
-                },
-                {
-                  to: '/guides/mindfulness-at-work',
-                  label: 'Mindfulness at work',
-                  description: 'Does workplace mindfulness work, and how to run it as a team habit.',
-                },
-              ].map((g) => (
+        {/* GUIDES */}
+        <section className="px-5 sm:px-6 md:px-8 pt-12">
+          <div className="max-w-[900px] mx-auto">
+            <p className="text-charcoal/60 text-[15px] mb-4">New here? Start with a guide.</p>
+            <div className="grid gap-4 md:grid-cols-3">
+              {guides.map((g) => (
                 <Link
                   key={g.to}
                   to={g.to}
-                  className="group block bg-cream rounded-2xl border border-sage-light hover:border-clay/60 p-7 transition-colors"
+                  className="group block bg-cream rounded-xl border border-sage-light hover:border-clay/60 px-6 py-5 transition-colors"
                 >
-                  <p className="font-inter text-[10px] uppercase tracking-[0.28em] text-sage font-bold mb-3">Guide</p>
-                  <h2 className="font-fraunces text-2xl text-heading leading-snug group-hover:text-clay transition-colors" style={{ fontWeight: 500 }}>
+                  <h2 className="font-fraunces font-normal text-heading text-xl leading-snug group-hover:text-clay transition-colors">
                     {g.label}
                   </h2>
-                  <p className="font-inter text-[15px] text-charcoal/75 leading-relaxed mt-2.5">{g.description}</p>
-                  <span className="mt-4 inline-flex items-center gap-2 font-inter text-xs uppercase tracking-[0.24em] font-semibold text-clay group-hover:gap-3 transition-all">
-                    Read the guide
-                    <span className="transition-transform group-hover:translate-x-1">→</span>
-                  </span>
+                  <p className="text-charcoal/65 text-[15px] leading-relaxed mt-1">{g.description}</p>
                 </Link>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Category filter */}
-        <section className="px-4 mb-14">
-          <div className="max-w-5xl mx-auto">
-            <div className="flex items-center justify-center gap-6 mb-7">
-              <span className="flex-1 h-px bg-sage-light" aria-hidden="true" />
-              <p className="font-inter text-xs uppercase tracking-[0.32em] text-sage font-bold">Browse by topic</p>
-              <span className="flex-1 h-px bg-sage-light" aria-hidden="true" />
-            </div>
-            <div className="flex flex-wrap justify-center gap-2.5" role="group" aria-label="Filter posts by topic">
+        {/* POSTS */}
+        <section className="px-5 sm:px-6 md:px-8 pt-14 pb-20 md:pb-24">
+          <div className="max-w-[900px] mx-auto">
+            <div className="flex flex-wrap gap-2" role="group" aria-label="Filter posts by topic">
               {categories.map((cat) => {
                 const isActive = cat === active;
                 return (
@@ -146,99 +122,48 @@ const Blog = () => {
                     onClick={() => setActive(cat)}
                     aria-pressed={isActive}
                     className={
-                      'font-inter text-xs uppercase tracking-[0.18em] font-semibold px-4 py-2.5 rounded-full border transition-all ' +
+                      'text-[14px] px-4 py-2 rounded-full border transition-colors ' +
                       (isActive
                         ? 'bg-clay text-white border-clay'
                         : 'bg-white text-charcoal/75 border-sage-light hover:border-clay/60 hover:text-heading')
                     }
                   >
                     {cat}
-                    <span className={isActive ? 'ml-2 text-white/70' : 'ml-2 text-charcoal/45'}>{counts[cat]}</span>
+                    <span className={isActive ? 'ml-1.5 text-white/70' : 'ml-1.5 text-charcoal/40'}>{counts[cat]}</span>
                   </button>
                 );
               })}
             </div>
+
+            <ul className="mt-8 divide-y divide-sage-light border-y border-sage-light">
+              {visible.map((post) => (
+                <li key={post.slug}>
+                  <Link
+                    to={`/blog/${post.slug}`}
+                    className="group flex items-start gap-6 py-6 md:py-7"
+                  >
+                    <div className="flex-1 min-w-0">
+                      <h2 className="font-fraunces font-normal text-heading text-[1.35rem] md:text-2xl leading-snug tracking-[-0.01em] group-hover:text-clay transition-colors">
+                        {post.title}
+                      </h2>
+                      <p className="mt-1.5 text-charcoal/65 text-[15px] md:text-base leading-relaxed line-clamp-2">
+                        {post.excerpt}
+                      </p>
+                      <p className="mt-2 font-mono text-[12px] text-charcoal/45">
+                        {post.category} · {post.readingTime} read
+                      </p>
+                    </div>
+                    <ArrowRight
+                      size={18}
+                      className="mt-2 shrink-0 text-clay/50 transition-transform group-hover:translate-x-1 group-hover:text-clay"
+                      aria-hidden="true"
+                    />
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
-
-        {/* Lead post */}
-        {leadPost && (
-          <section className="px-4 mb-20">
-            <Link
-              to={`/blog/${leadPost.slug}`}
-              className="group block max-w-5xl mx-auto relative overflow-hidden rounded-[28px] bg-cream border border-sage-light hover:border-clay/60 hover:shadow-card-hover transition-all duration-500"
-            >
-              <div className="p-10 md:p-14 lg:p-16 flex flex-col justify-center">
-                <div className="flex items-center gap-4 mb-6">
-                  <span className="font-inter text-[10px] uppercase tracking-[0.32em] text-white bg-clay px-3.5 py-1 rounded-full font-bold">
-                    Featured
-                  </span>
-                  <span className="font-inter text-[11px] uppercase tracking-[0.28em] text-sage font-bold">
-                    {leadPost.category}
-                  </span>
-                </div>
-                <h2 className="font-fraunces text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-heading mb-6 leading-[1.05] tracking-[-0.025em] group-hover:text-clay transition-colors" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 144, 'SOFT' 60" }}>
-                  {leadPost.title}
-                </h2>
-                <p className="font-inter font-normal text-lg md:text-xl text-charcoal/80 leading-relaxed mb-8">
-                  {leadPost.excerpt}
-                </p>
-                <div className="flex items-center gap-4 font-inter text-xs uppercase tracking-[0.24em] font-semibold">
-                  <span className="inline-flex items-center gap-2 text-clay group-hover:gap-3 transition-all">
-                    Read article
-                    <span className="transition-transform group-hover:translate-x-1">→</span>
-                  </span>
-                  <span className="w-8 h-px bg-sage-light" />
-                  <span className="text-charcoal/60">{leadPost.readingTime} read</span>
-                </div>
-              </div>
-            </Link>
-          </section>
-        )}
-
-        {/* Divider */}
-        {restPosts.length > 0 && (
-          <div className="max-w-[860px] mx-auto px-4 mb-12">
-            <div className="flex items-center justify-center gap-6">
-              <span className="flex-1 h-px bg-sage-light" aria-hidden="true" />
-              <p className="font-inter text-xs uppercase tracking-[0.32em] text-sage font-bold">
-                {filtering ? `${restPosts.length} ${restPosts.length === 1 ? 'post' : 'posts'} in ${active}` : 'More posts'}
-              </p>
-              <span className="flex-1 h-px bg-sage-light" aria-hidden="true" />
-            </div>
-          </div>
-        )}
-
-        {/* Rest of posts */}
-        <div className="max-w-[860px] mx-auto px-4 sm:px-6">
-          <div className="divide-y divide-sage-light border-y border-sage-light">
-            {restPosts.map((post) => (
-              <Link
-                key={post.slug}
-                to={`/blog/${post.slug}`}
-                className="block py-10 md:py-12 group hover:pl-2 hover:bg-cream/60 rounded-lg transition-[padding,background-color] duration-300"
-              >
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="font-inter text-xs uppercase tracking-[0.28em] text-sage font-bold">
-                    {post.category}
-                  </span>
-                  <span className="w-8 h-px bg-sage-light" />
-                  <span className="font-inter text-sm text-charcoal/70">{post.readingTime} read</span>
-                </div>
-                <h2 className="font-fraunces text-[1.75rem] md:text-[2.25rem] text-heading mb-4 group-hover:text-clay transition-colors leading-[1.08] tracking-[-0.02em]" style={{ fontWeight: 400, fontVariationSettings: "'opsz' 96, 'SOFT' 60" }}>
-                  {post.title}
-                </h2>
-                <p className="font-inter font-normal text-lg md:text-xl text-charcoal/80 leading-relaxed mb-5 max-w-2xl">
-                  {post.excerpt}
-                </p>
-                <span className="inline-flex items-center gap-2 font-inter text-xs uppercase tracking-[0.24em] font-semibold text-clay group-hover:gap-3 transition-all">
-                  Read more
-                  <span className="transition-transform group-hover:translate-x-1">→</span>
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
       </main>
       <Footer />
       <ScrollToTop />

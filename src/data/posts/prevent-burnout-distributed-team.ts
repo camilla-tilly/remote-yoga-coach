@@ -24,11 +24,11 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "In a distributed team, that trail disappears. Everyone shows up as a name, a small circle, a green dot. Nobody looks tired on Slack. The person who is quietly unravelling sends the same tidy messages as everyone else, sometimes tidier. By the time it surfaces, it is often a resignation letter or a sick note, not a quiet word over coffee."
+      text: "In a distributed team, that trail disappears. Everyone shows up as a name and a green dot. Nobody looks tired on Slack. The person who is quietly unravelling sends the same tidy messages as everyone else. By the time it surfaces, it is often a resignation letter or a sick note, not a quiet word over coffee."
     },
     {
       type: "paragraph",
-      text: "So prevention in a distributed team cannot rely on noticing. It has to be built into the rhythm of how the team works. Here is what raises the risk, the signals you can actually spot from a distance, what does not work, and the habits that do."
+      text: "So prevention in a distributed team cannot rely on noticing. It has to be built into the rhythm of how the team works. For the wider context, my [guide to remote work burnout](/guides/remote-work-burnout) covers what actually causes it and what helps."
     },
     {
       type: "heading",
@@ -41,15 +41,15 @@ const post: BlogPost = {
     {
       type: "list",
       items: [
-        "Isolation. Remote workers report loneliness at around 25 percent, against roughly 16 percent for office-based staff. Loneliness is not just a mood, it wears down the same reserves that protect against burnout.",
-        "Blurred boundaries. When the desk is in the bedroom, there is no physical line between working and not working. Work leaks into the evening because there is nothing to stop it.",
-        "Always-on culture. A fast reply at 9pm quietly becomes the expectation. People start monitoring the channel during dinner so they do not look absent.",
-        "The vanished commute. The walk or the train used to act as a decompression buffer, a gap between work-brain and home-brain. Remote, the last message and the sofa are ninety seconds apart."
+        "Isolation. Remote workers report loneliness at around 25 percent, against roughly 16 percent for office-based staff. Loneliness wears down the same reserves that protect against burnout.",
+        "Blurred boundaries. When the desk is in the bedroom, there is no physical line between working and not working, so work leaks into the evening.",
+        "Always-on culture. A fast reply at 9pm quietly becomes the expectation, and people start watching the channel during dinner so they do not look absent.",
+        "The vanished commute. The walk or the train used to be a buffer between work-brain and home-brain. Remote, the last message and the sofa are ninety seconds apart."
       ]
     },
     {
       type: "paragraph",
-      text: "None of these are dramatic on their own. Stacked together, over months, they are exactly the conditions that grind people down without anyone deciding to overwork them."
+      text: "None of these are dramatic on their own. Stacked together over months, they grind people down without anyone deciding to overwork them."
     },
     {
       type: "heading",
@@ -57,15 +57,15 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "You will not see someone look exhausted. But there are patterns you can watch for, and they are often clearer in a distributed team precisely because so much of the interaction is logged."
+      text: "You will not see someone look exhausted. But there are patterns to watch for, and they are often clearer in a distributed team because so much of the interaction is logged."
     },
     {
       type: "list",
       items: [
-        "Cameras-off creep. Someone who used to join video calls with their camera on gradually stops. It reads as a preference, but it is often withdrawal, the digital version of not making eye contact.",
-        "Slower responses. Not one slow reply, a trend. Messages that used to come back in minutes now take hours, and the replies are shorter and more clipped.",
-        "Dropping out of the optional. They stop coming to the non-mandatory things first: the social call, the informal stand-up, the coffee chat. When bandwidth shrinks, the optional goes before the required.",
-        "Productive overwork. This is the one managers miss most, because it looks like commitment. Messages sent late at night and early in the morning, work delivered at a pace nobody asked for. Sustained overwork is a warning sign, not a win."
+        "Cameras-off creep. Someone who used to join video calls with their camera on gradually stops. It reads as a preference, but it is often withdrawal.",
+        "Slower responses. Not one slow reply, a trend. Messages that used to come back in minutes now take hours, and the replies are shorter.",
+        "Dropping out of the optional. They stop coming to the non-mandatory things first: the social call, the informal stand-up, the coffee chat.",
+        "Productive overwork. This is the one managers miss most, because it looks like commitment: messages late at night and early in the morning, work delivered at a pace nobody asked for. Sustained overwork is a warning sign, not a win."
       ]
     },
     {
@@ -83,14 +83,14 @@ const post: BlogPost = {
     {
       type: "list",
       items: [
-        "The one-off wellbeing day. A single afternoon of talks and free smoothies does not touch a workload that resumes in full on Monday. It can even backfire, signalling that wellbeing is a one-day event rather than how the team works.",
-        "The app nobody opens. A meditation or wellbeing app gets rolled out, downloaded by a keen few, then quietly forgotten. Access is not the same as use, and use is not the same as habit. There is more on this in my piece on whether workplace wellness apps actually work at [/blog/do-workplace-wellness-apps-work](/blog/do-workplace-wellness-apps-work).",
-        "Leaning on the EAP. Employee assistance programmes matter and should exist, but typical uptake sits around 3 to 5 percent. An EAP is a safety net for people already in crisis, not a preventive measure. If it is the whole strategy, most people are unprotected."
+        "The one-off wellbeing day. An afternoon of talks and free smoothies does not touch a workload that resumes in full on Monday. It can even signal that wellbeing is a one-day event.",
+        "The app nobody opens. A wellbeing app gets rolled out, downloaded by a keen few, then quietly forgotten. Access is not the same as use, and use is not the same as habit. More on this in my piece on [whether workplace wellness apps actually work](/blog/do-workplace-wellness-apps-work).",
+        "Leaning on the EAP. Employee assistance programmes matter, but typical uptake sits around 3 to 5 percent. An EAP is a safety net for people already in crisis, not a preventive measure. If it is the whole strategy, most people are unprotected."
       ]
     },
     {
       type: "paragraph",
-      text: "The common thread: all three are reactive or optional, and all three ask the individual to go and fix themselves in their own time. Prevention has to be built into the team, not outsourced to the tired person."
+      text: "The common thread: all three are reactive or optional, and ask the individual to fix themselves in their own time. Prevention has to be built into the team, not outsourced to the tired person."
     },
     {
       type: "heading",
@@ -98,20 +98,20 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "The habits that reduce burnout risk in distributed teams share one feature: they are regular, shared, and led from the top rather than left to the individual."
+      text: "The habits that reduce burnout risk in distributed teams are regular, shared, and led from the top rather than left to the individual."
     },
     {
       type: "list",
       items: [
-        "A regular rhythm. Something predictable in the week that is not about output. A recurring moment people can count on does more than an occasional grand gesture, because the nervous system responds to consistency.",
-        "Boundaries modelled from the top. If managers send messages at 10pm, everyone learns that 10pm is fair game, whatever the policy says. When leaders visibly log off, take breaks, and protect their evenings, the team is given permission to do the same.",
-        "Shared moments that rebuild connection. Isolation is one of the biggest drivers, so the antidote is time spent together that is not a status meeting. A shared, low-pressure moment reminds people they are on a team, not alone at a laptop.",
-        "Preventive support, not crisis support. Help that reaches everyone before they are struggling, rather than a service that only activates once someone is already at the edge."
+        "A regular rhythm. Something predictable in the week that is not about output. A recurring moment people can count on does more than an occasional grand gesture.",
+        "Boundaries modelled from the top. If managers send messages at 10pm, everyone learns that 10pm is fair game, whatever the policy says. When leaders visibly log off and protect their evenings, the team gets permission to do the same.",
+        "Shared moments that rebuild connection. Isolation is one of the biggest drivers, so the antidote is time together that is not a status meeting.",
+        "Preventive support, not crisis support. Help that reaches everyone before they are struggling, not only once someone is at the edge."
       ]
     },
     {
       type: "paragraph",
-      text: "Notice that none of these require a person to opt in when they are already running on empty. That is the point. The people most at risk of burnout are the least likely to seek help, so the support has to come to them, as part of the ordinary week."
+      text: "None of these require a person to opt in when they are already running on empty. That is the point. The people most at risk of burnout are the least likely to seek help, so the support has to come to them, as part of the ordinary week."
     },
     {
       type: "heading",
@@ -119,15 +119,15 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "If you need to make the case internally, this is the ground to stand on. Poor mental health costs UK employers around 51 billion pounds a year. Analysis by Deloitte puts the return on workplace mental health spend at roughly 4.70 pounds for every 1 pound invested."
+      text: "If you need to make the case internally, start here. Poor mental health costs UK employers around 51 billion pounds a year. Analysis by Deloitte puts the return on workplace mental health spend at roughly 4.70 pounds for every 1 pound invested."
     },
     {
       type: "paragraph",
-      text: "The largest single component of that cost is presenteeism: people at their desks, logged in, but running well below capacity because they are depleted. That is exactly the state a distributed team hides so well. It rarely shows up as absence, so it rarely gets counted, but it is where most of the money quietly leaks out."
+      text: "The largest single part of that cost is presenteeism: people at their desks, logged in, but running well below capacity because they are depleted. That is exactly the state a distributed team hides so well. It rarely shows up as absence, so it rarely gets counted."
     },
     {
       type: "paragraph",
-      text: "This reframes wellbeing from a soft cost to a straightforward risk-and-return calculation, which is the language a budget conversation actually runs on. For how the numbers work on the spend side, see my breakdown of [how much corporate yoga costs](/blog/how-much-does-corporate-yoga-cost)."
+      text: "This turns wellbeing from a soft cost into a risk-and-return calculation, which is the language a budget conversation runs on. For the spend side, see my breakdown of [how much corporate yoga costs](/blog/how-much-does-corporate-yoga-cost)."
     },
     {
       type: "heading",
@@ -135,26 +135,25 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "You do not have to redesign the whole culture in a week. Prevention is built from small, repeated things, and a recurring live team reset is one of the most practical to start with. A regular session on the calendar, at a fixed time, gives the team a predictable pause that is not about output, a shared moment against isolation, and a visible signal from the top that stepping away from the screen is not only allowed but expected."
+      text: "You do not have to redesign the whole culture in a week. A recurring live team reset is one of the most practical places to start."
     },
     {
       type: "paragraph",
-      text: "Because it is live and recurring, it reaches the people an app never would, the ones too depleted to opt in on their own. That is what makes it preventive rather than reactive."
+      text: "A regular session at a fixed time gives the team a predictable pause that is not about output, a shared moment against isolation, and a visible signal from the top that stepping away from the screen is not only allowed but expected."
     },
-    { type: "callout", text: "For the wider context behind all of this, I keep a [guide to remote work burnout](/guides/remote-work-burnout) covering what actually causes it and what helps." },
+    {
+      type: "paragraph",
+      text: "Because it is live and recurring, it reaches the people an app never would: the ones too depleted to opt in on their own."
+    },
     {
       type: "cta",
-      text: "A recurring live team reset is one clear, preventive habit you can put on the calendar this month. See how a weekly team reset works, or try one with your team first.",
+      text: "A recurring live team reset is one clear, preventive habit you can put on the calendar this month. See [how a weekly team reset works](/services/team-wellness), or try one with your team first.",
       ctaHref: "/demo",
       ctaLabel: "Book a pilot"
     },
     {
-      type: "paragraph",
-      text: "If you want the mechanics of how a recurring reset fits a distributed team, my [team wellness page](/services/team-wellness) walks through what a weekly session looks like in practice."
-    },
-    {
       type: "callout",
-      text: "Note: the figures cited here (remote loneliness rates, EAP uptake, the 51 billion pound cost and the 4.70 pounds Deloitte return) should be verified against the live source before republishing."
+      text: "Figures: remote loneliness rates, EAP uptake, and Deloitte's 51 billion pound cost and 4.70 pound return."
     }
   ]
 };

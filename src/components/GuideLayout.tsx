@@ -62,7 +62,7 @@ export const GuideList = ({ items }: { items: Array<[string, string]> }) => (
 
 export const KeyTakeaways = ({ items }: { items: string[] }) => (
   <div className="mt-8 rounded-xl border border-sage-light bg-cream/60 p-7 md:p-9">
-    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-clay mb-4">Key takeaways</p>
+    <p className="font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">Key takeaways</p>
     <ul className="space-y-3">
       {items.map((t, i) => (
         <li key={i} className="flex gap-3 text-charcoal/80 text-[15px] md:text-[16px] leading-relaxed">

@@ -11,7 +11,6 @@ import {
   GuideTOC,
   ProseList,
   PullQuote,
-  KeyTakeaways,
   SpokeCard,
   GuideFAQ,
   GuideCTA,
@@ -21,27 +20,27 @@ import {
 const faqItems: Array<[string, string]> = [
   [
     'What is burnout, exactly?',
-    'The World Health Organization defines burnout as a syndrome resulting from chronic workplace stress that has not been successfully managed, with three signatures: exhaustion that rest does not fix, growing mental distance or cynicism about the job, and a real drop in effectiveness. It is an occupational phenomenon, not a personal weakness and not a mental illness.',
+    'The World Health Organization defines burnout as a syndrome resulting from chronic workplace stress that has not been successfully managed: exhaustion rest does not fix, growing cynicism about the job, and a real drop in effectiveness. It is not a personal weakness.',
   ],
   [
     'Is burnout worse for remote workers?',
-    'The risk profile is different rather than automatically worse, but several large surveys consistently show remote and hybrid workers reporting higher burnout rates than office-based colleagues. The main drivers are isolation, blurred boundaries between work and home, always-on messaging culture and the loss of the commute as a decompression buffer.',
+    'The risk is different rather than automatically worse, but surveys consistently show remote and hybrid workers reporting higher burnout. The main drivers are isolation, blurred work-home boundaries, always-on messaging and the lost commute.',
   ],
   [
     'What are the first signs of burnout at work?',
-    'Early signs include tiredness that a weekend no longer repairs, dreading work you used to find manageable, growing cynicism or detachment, irritability over small things, trouble concentrating, and working longer hours to produce the same output. In remote teams, watch for cameras going off, slower and shorter replies, and dropping out of optional social calls.',
+    'Early signs include tiredness a weekend no longer repairs, dread, cynicism, trouble concentrating and longer hours for the same output. In remote teams, watch for cameras going off, shorter replies and dropping out of optional calls.',
   ],
   [
     'How do you prevent burnout in a remote team?',
-    'Prevention is structural plus rhythmical. Structural: realistic workloads, clear priorities, and managers trained to spot early signs. Rhythmical: protected boundaries around working hours, real breaks during the day, and recurring recovery habits such as a weekly live wellbeing session the whole team attends. One-off wellness days and passive app subscriptions have consistently poor results.',
+    'Prevention is structural plus rhythmical: realistic workloads, clear priorities and trained managers, plus protected hours, real breaks and a recurring recovery habit such as a weekly live wellbeing session. One-off wellness days and passive apps have consistently poor results.',
   ],
   [
     'Can yoga, breathing or meditation help with burnout?',
-    'They help with the stress physiology that feeds burnout. A review of 28 studies found a single session of yoga, meditation or breathing reduced stress reactivity in 71 percent of physiological measures. As a weekly team habit they build recovery into the schedule. They do not replace fixing a structurally impossible workload, and any honest provider will tell you that.',
+    'They help with the stress physiology that feeds burnout: a review of 28 studies found a single session reduced stress reactivity in 71 percent of physiological measures. They do not replace fixing an impossible workload.',
   ],
   [
     'How much does burnout cost an employer?',
-    'Estimates converge on painful numbers. Deloitte puts the cost of poor mental health to UK employers at 51 billion pounds a year, roughly 2,646 pounds per affected employee, with presenteeism the largest share. The same research finds an average return of 4.70 pounds for every 1 pound invested in workplace mental health, rising for preventive, organisation-wide action.',
+    'Deloitte puts the cost of poor mental health to UK employers at 51 billion pounds a year, roughly 2,646 pounds per affected employee. The same research finds 4.70 pounds back for every 1 pound invested.',
   ],
 ];
 
@@ -108,18 +107,9 @@ const RemoteWorkBurnout = () => {
               Remote work burnout: signs, causes and prevention for distributed teams
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed">
-              In an office, burnout leaves a trail someone eventually notices. In a distributed team it hides behind
-              tidy Slack messages and a green status dot, and by the time it surfaces it is a resignation letter or a
-              long sick note, and the cost of replacing the person who wrote it. This guide is for the managers, HR
-              and people leaders who carry that risk: what burnout actually is, why remote conditions feed it, how to
-              spot it across a distributed team before it costs you someone, and what genuinely reduces it.
+              In an office, burnout leaves a trail someone notices. In a distributed team it hides behind tidy Slack
+              messages and a green status dot, until it surfaces as a resignation letter or a long sick note.
             </p>
-            <KeyTakeaways items={[
-              'Burnout is chronic workplace stress plus insufficient recovery; the WHO calls it an occupational phenomenon, not a personal failing.',
-              'Remote and hybrid teams are at higher risk: isolation, blurred boundaries, always-on culture and the lost commute.',
-              'Spot it remotely through patterns, not faces: cameras-off creep, slower and shorter replies, dropping optional calls, and productive overwork.',
-              'Prevention is structural (manager training, clear boundaries, real breaks) plus a recurring recovery habit the team keeps.',
-            ]} />
             <GuideTOC items={tocItems} />
           </div>
         </section>
@@ -130,21 +120,17 @@ const RemoteWorkBurnout = () => {
             <GuideHeading id="what-burnout-is" eyebrow="Definition">What burnout is, and what it is not</GuideHeading>
             <GuideProse>
               <p>
-                The World Health Organization classifies burnout as an occupational phenomenon: a syndrome resulting
-                from chronic workplace stress that has not been successfully managed. It shows up as three things
-                arriving together. Exhaustion that sleep and weekends stop fixing. A growing distance from the work,
-                often wearing the costume of cynicism. And a genuine drop in effectiveness that no amount of extra
-                hours repairs.
+                The World Health Organization classifies burnout as an occupational phenomenon: chronic workplace
+                stress that has not been successfully managed. It shows up as exhaustion weekends stop fixing, growing
+                cynicism about the work, and a drop in effectiveness.
               </p>
               <p>
-                Two things it is not. It is not ordinary tiredness, which recovery fixes. And it is not a character
-                flaw in the person burning out. Burnout is chronic stress plus insufficient recovery, sustained for
-                months. The people it takes down first are very often the most conscientious, precisely because they
-                are the ones who keep absorbing the overload without complaint.
+                It is not ordinary tiredness, and it is not a character flaw. It often takes down the most
+                conscientious people first, because they keep absorbing the overload.
               </p>
               <p>
-                That last point matters for anyone reading this about themselves: needing recovery is not
-                underperformance. You are allowed to be good at your job and still have limits.
+                If you are reading this about yourself: needing recovery is not underperformance. You are allowed to
+                be good at your job and still have limits.
               </p>
             </GuideProse>
           </div>
@@ -156,37 +142,30 @@ const RemoteWorkBurnout = () => {
             <GuideHeading id="why-remote" eyebrow="The conditions">Why remote teams are at higher risk</GuideHeading>
             <GuideProse>
               <p>
-                Remote work removed a lot of friction, and some of that friction was quietly protective. Surveys
-                consistently find remote and hybrid workers reporting more burnout than office-based colleagues, and
-                four mechanisms explain most of it.
+                Surveys consistently find remote and hybrid workers reporting more burnout. Four mechanisms explain
+                most of it.
               </p>
             </GuideProse>
             <GuideList
               items={[
                 [
                   'Isolation',
-                  'Remote workers report loneliness at roughly double the rate of office-based staff. Loneliness is not just unpleasant, it drains the same reserves that buffer against stress, so everything else costs more.',
+                  'Remote workers report loneliness at roughly double the rate of office-based staff, and loneliness drains the reserves that buffer stress.',
                 ],
                 [
                   'Blurred boundaries',
-                  'When the desk is three metres from the bed, there is no physical line where work ends. Work expands into evenings not because anyone demanded it, but because nothing stops it.',
+                  'With the desk three metres from the bed, nothing marks where work ends.',
                 ],
                 [
                   'Always-on culture',
-                  'One fast reply at 9pm quietly resets the team norm. Soon people monitor channels through dinner so they do not appear absent, and genuine recovery time disappears without a single policy changing.',
+                  'One fast reply at 9pm resets the team norm. Soon people watch channels through dinner, and recovery time disappears.',
                 ],
                 [
                   'The vanished commute',
-                  'The walk or train home was an accidental decompression ritual, a buffer between work-brain and home-brain. Remote, the last stressful message and the sofa are ninety seconds apart, and the stress comes along.',
+                  'The commute was an accidental decompression ritual. Now the last stressful message and the sofa are ninety seconds apart.',
                 ],
               ]}
             />
-            <GuideProse>
-              <p>
-                None of these is dramatic on its own. Stacked for months, they are exactly the conditions the WHO
-                definition describes: chronic stress, insufficient recovery, nobody deciding any of it on purpose.
-              </p>
-            </GuideProse>
           </div>
         </section>
 
@@ -196,20 +175,18 @@ const RemoteWorkBurnout = () => {
             <GuideHeading id="signs" eyebrow="Early warning">The signs, including the ones you can spot on Slack</GuideHeading>
             <GuideProse>
               <p>
-                In yourself, the early signs are: tiredness a weekend no longer repairs, dread on Sunday evening
-                about work that used to feel manageable, irritability out of proportion to its triggers, difficulty
-                concentrating, and the quiet arithmetic of working longer hours for the same output.
+                In yourself: tiredness a weekend no longer repairs, Sunday-evening dread, irritability, trouble
+                concentrating, and longer hours for the same output.
               </p>
               <p>
-                In a distributed team you will not see anyone look exhausted. But the interaction patterns are
-                visible, sometimes more visible than in an office, because so much is logged:
+                In a distributed team you will not see anyone look exhausted, but the patterns are logged:
               </p>
             </GuideProse>
             <GuideList
               items={[
                 [
                   'Cameras-off creep',
-                  'Someone who used to join calls with the camera on gradually stops. It reads as a preference. It is often withdrawal, the digital version of avoiding eye contact.',
+                  'Someone who used to join on camera gradually stops. It reads as a preference. It is often withdrawal.',
                 ],
                 [
                   'Slower, shorter replies',
@@ -217,18 +194,18 @@ const RemoteWorkBurnout = () => {
                 ],
                 [
                   'Dropping the optional',
-                  'The social call, the informal stand-up, the coffee chat go first. When bandwidth shrinks, the optional is cut before the required.',
+                  'The social call and the coffee chat go first, because the optional is cut before the required.',
                 ],
                 [
                   'Productive overwork',
-                  'The sign managers miss most because it looks like commitment: messages late at night and early in the morning, output at a pace nobody asked for. Sustained overwork is a warning, not a win.',
+                  'The sign managers miss most, because it looks like commitment: late-night messages, output at a pace nobody asked for. Sustained overwork is a warning, not a win.',
                 ],
               ]}
             />
             <GuideProse>
               <p>
-                One of these means little. A cluster in the same person across a few weeks deserves a private,
-                gentle check-in, not a performance conversation. The full playbook for managers is in my post on{' '}
+                One of these means little. A cluster in one person over a few weeks deserves a gentle private check-in,
+                not a performance conversation. The manager playbook is in my post on{' '}
                 <Link to="/blog/prevent-burnout-distributed-team" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   preventing burnout in a distributed team
                 </Link>
@@ -243,18 +220,17 @@ const RemoteWorkBurnout = () => {
           <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <GuideHeading id="cost" eyebrow="The numbers" size="md">What burnout costs</GuideHeading>
             <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
-              <p>For anyone who needs to make the business case internally, the research does the arguing.</p>
+              <p>For anyone making the business case, the research does the arguing.</p>
               <ProseList
                 items={[
-                  'Deloitte puts the cost of poor mental health to UK employers at 51 billion pounds a year, around 2,646 pounds per affected employee, with presenteeism, people present but running on empty, as the largest share.',
+                  'Deloitte puts the cost of poor mental health to UK employers at 51 billion pounds a year, around 2,646 pounds per affected employee, mostly presenteeism.',
                   'The UK Health and Safety Executive recorded over 22 million working days lost to stress, depression and anxiety in a single year.',
                   'Gallup estimates disengagement costs the global economy around 9 percent of GDP.',
                 ]}
               />
               <p>
-                The same Deloitte research found employers get back an average of 4.70 pounds for every 1 pound
-                spent on workplace mental health, and more when the spending is preventive and organisation-wide
-                rather than reactive.
+                The same Deloitte research finds 4.70 pounds back for every 1 pound spent, and more when it is
+                preventive and organisation-wide.
               </p>
               <PullQuote>Prevention is not the soft option. It is the cheap one.</PullQuote>
             </div>
@@ -267,27 +243,26 @@ const RemoteWorkBurnout = () => {
             <GuideHeading id="what-fails" eyebrow="Honest audit">What does not work</GuideHeading>
             <GuideProse>
               <p>
-                Most corporate wellbeing spend goes to things with weak results, which is why teams are cynical
-                about the next initiative. The recurring failures:
+                Most corporate wellbeing spend goes on things with weak results:
               </p>
             </GuideProse>
             <GuideList
               items={[
                 [
                   'The one-off wellness day',
-                  'A massage chair and a fruit basket do not touch chronic stress. By the following Friday it is a pleasant memory with no residue.',
+                  'A massage chair and a fruit basket do not touch chronic stress.',
                 ],
                 [
                   'The unused app subscription',
-                  'Meditation apps are good libraries, but licences are not outcomes. Usage collapses within weeks because the app asks exhausted people to self-initiate practice, alone, at their lowest-willpower moments.',
+                  'Licences are not outcomes. Usage collapses within weeks because the app asks exhausted people to start practice alone.',
                 ],
                 [
                   'The EAP nobody touches',
-                  'Employee assistance programmes are used by 3 to 5 percent of staff, and a quarter of employees do not know theirs exists. They are reactive by design: help after the crisis, not prevention before it.',
+                  'Used by 3 to 5 percent of staff, and a quarter of employees do not know theirs exists. Help after the crisis, not prevention.',
                 ],
                 [
                   'Resilience training that shifts the blame',
-                  'Teaching people to endure an impossible workload treats the symptom and quietly relocates the problem into the employee. If the workload is the cause, the workload is the fix.',
+                  'Teaching people to endure an impossible workload moves the problem onto them. If the workload is the cause, the workload is the fix.',
                 ],
               ]}
             />
@@ -300,43 +275,42 @@ const RemoteWorkBurnout = () => {
             <GuideHeading id="prevention" eyebrow="What works">Prevention that holds up</GuideHeading>
             <GuideProse>
               <p>
-                Prevention that survives contact with a real calendar has two layers: structure, which removes the
-                causes, and rhythm, which builds recovery into the week instead of hoping people find it themselves.
+                Prevention has two layers: structure, which removes the causes, and rhythm, which builds recovery into
+                the week.
               </p>
             </GuideProse>
             <GuideList
               items={[
                 [
                   'Train managers to see it early',
-                  'Manager training in recognising early burnout signs is consistently one of the highest-leverage interventions in the research. Managers who can read the remote signals above intervene months earlier.',
+                  'Manager training in spotting early signs is consistently one of the highest-leverage interventions in the research. Managers who read the signals above intervene months earlier.',
                 ],
                 [
                   'Make boundaries explicit',
-                  'Agree team norms in writing: when messages expect replies, when they do not, and leaders who visibly log off on time. Employees with clear work-hour boundaries report substantially lower burnout risk.',
+                  'Agree in writing when messages expect replies, and have leaders visibly log off on time. Employees with clear work-hour boundaries report substantially lower burnout risk.',
                 ],
                 [
                   'Protect real breaks',
-                  'Back-to-back video calls are an attention meat-grinder. Default meetings to 25 or 50 minutes, and treat lunch as load-bearing infrastructure rather than a gap to be colonised.',
+                  'Default meetings to 25 or 50 minutes, and protect lunch.',
                 ],
                 [
                   'Schedule recovery as a team ritual',
-                  'A recurring live session of breathing, gentle movement and meditation, same time every week, makes recovery visible and normal. Scheduled and collective beats optional and individual, because it removes both the initiation problem and the guilt.',
+                  'A live session of breathing, gentle movement and meditation, same time every week, makes recovery normal and removes the guilt.',
                 ],
                 [
                   'Measure something honest',
-                  'A two-question pulse on stress and energy, tracked over time, tells you more than an annual engagement survey. If an intervention is not moving the numbers, change it.',
+                  'Track a two-question pulse on stress and energy over time. If an intervention is not moving the numbers, change it.',
                 ],
               ]}
             />
             <GuideProse>
               <p>
-                The rhythm layer is exactly what my{' '}
+                The rhythm layer is what my{' '}
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   Weekly Reset programme
                 </Link>{' '}
-                provides: a live 30-minute session on Teams each week, camera optional, with attendance and pre-post
-                stress ratings reported honestly so you can see whether it is working. For the wider menu of options,
-                see{' '}
+                provides: a live 30-minute session on Teams each week, with honest attendance and pre-post stress
+                reporting. For wider options, see{' '}
                 <Link to="/blog/corporate-wellness-ideas-remote-teams" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   corporate wellness ideas that actually work for remote teams
                 </Link>
@@ -352,20 +326,16 @@ const RemoteWorkBurnout = () => {
             <GuideHeading id="recovery" eyebrow="If it is already here">If someone is already burning out</GuideHeading>
             <GuideProse>
               <p>
-                Prevention advice is little comfort to the person already in it. If that is you or someone on your
-                team, the honest sequence is: name it without shame, reduce the load for real rather than
-                cosmetically, and rebuild recovery gradually. See a doctor if exhaustion, sleep problems or low mood
-                are entrenched; burnout overlaps with conditions that deserve proper care.
+                If that is you or someone on your team: name it without shame, reduce the load for real, and rebuild
+                recovery gradually. See a doctor if exhaustion, sleep problems or low mood are entrenched.
               </p>
               <p>
-                What managers control directly: take work off the plate visibly, so the person does not have to keep
-                proving they are struggling. Agree a temporary scope, protect it, and check in on the person rather
-                than the backlog. Recovery from serious burnout is measured in months, and a team that watches
-                someone be treated well during it becomes a team less afraid to speak up early next time.
+                Managers can take work off the plate visibly, so the person does not have to keep proving they are
+                struggling. Agree a temporary scope, protect it, and check in on the person, not the backlog. Recovery
+                takes months.
               </p>
               <p>
-                Gentle daily practices help the physiology along the way: slow breathing lowers stress arousal
-                within minutes, and short movement breaks interrupt the frozen-at-desk pattern. Start with the{' '}
+                Slow breathing lowers stress arousal within minutes. Start with the{' '}
                 <Link to="/blog/breathing-exercises-for-work-stress" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   breathing exercises for work stress
                 </Link>{' '}
@@ -400,19 +370,19 @@ const RemoteWorkBurnout = () => {
             {
               to: '/guides/mindfulness-at-work',
               label: 'Mindfulness at work: the complete guide',
-              description: 'The recovery skill itself: meditation at work, focus practices and team exercises that stick.',
+              description: 'The recovery skill itself: meditation, focus practices and team exercises.',
             },
             {
               to: '/guides/desk-yoga',
               label: 'Desk yoga and chair yoga at work',
-              description: 'The movement side: stretches and short routines for bodies that sit through back-to-back calls.',
+              description: 'The movement side: short routines for bodies that sit through back-to-back calls.',
             },
           ]}
         />
 
         <GuideCTA
           heading="Build recovery into your team's week"
-          text="A single pilot session of The Weekly Reset: live breathing, meditation and chair yoga on Teams, camera optional. Once it is a weekly habit, the ongoing subscription gives you honest attendance and stress reporting."
+          text="A single pilot session of The Weekly Reset: live breathing, meditation and chair yoga on Teams, camera optional. The weekly habit adds honest attendance and stress reporting."
         />
       </main>
 

@@ -21,11 +21,11 @@ const post: BlogPost = {
   content: [
     {
       type: "paragraph",
-      text: "Search \"remote wellness ideas\" and you will get the same recycled list: step challenges, virtual coffee roulette, a meditation app subscription, a one-off webinar. Some are fine. But most share a fatal flaw for distributed teams: they are one-offs or opt-ins that a handful of already-keen people do once, and everyone else ignores.",
+      text: "Search \"remote wellness ideas\" and you will get the same recycled list: step challenges, virtual coffee roulette, a meditation app subscription, a one-off webinar. Some are fine. But most are one-offs or opt-ins that a handful of already-keen people do once, and everyone else ignores.",
     },
     {
       type: "paragraph",
-      text: "Here is a more useful way to think about it: not a list of activities, but the principles that separate the wellbeing initiatives people actually use from the ones that quietly die, followed by the ideas that tend to hold up.",
+      text: "Instead of another list, here are the principles that separate wellbeing people actually use from what quietly dies, then the ideas that hold up.",
     },
     {
       type: "heading",
@@ -38,8 +38,8 @@ const post: BlogPost = {
     {
       type: "list",
       items: [
-        "**It is scheduled, not optional-whenever.** Anything that relies on people self-starting in their own time loses to a busy calendar. The single biggest predictor of participation is whether there is a set time people simply join.",
-        "**It is shared, not solitary.** Distributed teams are short on connection, not content. Things people do together fight the isolation that drives a lot of remote stress in the first place, so they deliver double value.",
+        "**It is scheduled, not optional-whenever.** Anything that relies on people self-starting in their own time loses to a busy calendar. The biggest predictor of participation is whether there is a set time people simply join.",
+        "**It is shared, not solitary.** Distributed teams are short on connection, not content. Things people do together fight the isolation that drives a lot of remote stress, so they deliver double value. My [guide to remote work burnout](/guides/remote-work-burnout) covers the wider context.",
         "**It is led, not self-serve.** A real person holding the space adds accountability and warmth a platform cannot. Led things get attended; libraries get forgotten.",
       ],
     },
@@ -57,7 +57,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "A short, scheduled, guided session, breathing, gentle movement, meditation, that the team joins together each week. It hits all three principles, which is why it tends to out-perform an app many times over on actual participation. Camera-optional and chair-based means there is no barrier to joining.",
+      text: "A short, guided session, breathing, gentle movement, meditation, that the team joins together each week. It hits all three principles, which is why it tends to out-perform an app on actual participation. Camera-optional and chair-based means there is no barrier to joining.",
     },
     {
       type: "subheading",
@@ -65,7 +65,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "A protected window each week with nothing in it, not for wellness activities, just for breathing room. Cheap, and quietly one of the most appreciated things you can do for an over-scheduled remote team.",
+      text: "A protected window each week with nothing in it, not for wellness activities, just breathing room. Cheap, and one of the most appreciated things you can do for an over-scheduled remote team.",
     },
     {
       type: "subheading",
@@ -103,8 +103,8 @@ const post: BlogPost = {
       type: "list",
       items: [
         "**An app on its own.** Useful as a library for the self-motivated, but engagement fades fast and it does nothing for connection. Fine as a supplement, weak as your whole strategy.",
-        "**The one-off wellbeing day.** A nice gesture that rarely changes anything by the following week. A regular rhythm beats a single event every time.",
-        "**Anything that adds another screen to manage.** Remote teams are already saturated; the best remote wellbeing often reduces screen pressure rather than adding to it.",
+        "**The one-off wellbeing day.** A nice gesture that rarely changes anything by the following week.",
+        "**Anything that adds another screen to manage.** Remote teams are already saturated; the best remote wellbeing reduces screen pressure rather than adding to it.",
       ],
     },
     {
@@ -126,7 +126,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "And set the bar realistically up front. If an app gets 5–15% sustained use and an EAP gets 3–5%, then a live session pulling 25–35% of the team, with most of them returning, is a strong result, not a disappointing one.",
+      text: "Set the bar realistically up front. If an app gets 5–15% sustained use and an EAP gets 3–5%, then a live session pulling 25–35% of the team, with most returning, is a strong result.",
     },
     {
       type: "heading",
@@ -134,22 +134,17 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Across all of this, the same shape keeps winning: scheduled, shared, led, and short. It is not a coincidence, it is the combination that beats the self-initiation problem at the heart of why most remote wellbeing goes unused.",
+      text: "The same shape keeps winning: scheduled, shared, led, and short. That combination beats the self-initiation problem at the heart of why most remote wellbeing goes unused.",
     },
-    {
-      type: "paragraph",
-      text: "That is exactly the offer behind a live weekly reset: a 30-minute breathing and chair-yoga session your distributed team joins together, guided by the same coach each week, with simple reporting so you can see it working. It is the recurring, human habit the research keeps pointing to. See how it works on my [team wellness page](/services/team-wellness), or book a pilot at my [demo](/demo) and see the attendance for yourself.",
-    },
-    { type: "callout", text: "For the wider context behind all of this, I keep a [guide to remote work burnout](/guides/remote-work-burnout) covering what actually causes it and what helps." },
     {
       type: "cta",
-      text: "Live, recurring, and short: the shape of remote wellbeing that people actually turn up for. See what it costs for your team.",
+      text: "A live weekly reset is a 30-minute breathing and chair-yoga session your team joins together, with the same coach each week. See how it works on my [team wellness page](/services/team-wellness), book a [pilot session](/demo), or see what it costs for your team.",
       ctaHref: "/pricing",
       ctaLabel: "See my pricing",
     },
     {
       type: "callout",
-      text: "Figures: EAP, app and gym utilisation and remote-isolation data. Verify against the live source before republishing.",
+      text: "Figures: EAP, app and gym utilisation and remote-isolation data.",
     },
   ],
 };

@@ -11,31 +11,27 @@ import { GuideFAQ, GuideHeading, DefinitionList, PullQuote } from '@/components/
 const faqItems: Array<[string, string]> = [
   [
     'Is this office yoga, workplace yoga or chair yoga?',
-    'They are the same thing here. Office yoga and workplace yoga are umbrella terms for yoga done during the workday, and what I run is chair yoga: the seated, gentle version that needs no mat and no changing of clothes. It is live on Teams or Zoom, camera optional, and works from any desk, whether your team is remote, hybrid or in an office.',
+    'The same thing here. Office and workplace yoga are the umbrella terms. What I run is chair yoga: seated, gentle, no mat and no changing, live on Teams or Zoom from any desk.',
   ],
   [
     'What is a virtual chair yoga session for a company?',
-    'A live, guided session over Teams or Zoom in which a coach leads your team through gentle seated and standing movement, simple breathing and a short reset, usually 15 to 30 minutes. Everyone joins from their own desk, in normal work clothes, camera optional. No mats, no changing, no experience needed.',
-  ],
-  [
-    'Is chair yoga suitable for a whole workforce?',
-    'That is exactly what it is designed for. Chair yoga came from adaptive yoga, so it assumes a range of bodies, ages and fitness levels rather than the flexible few. There are no advanced poses, nothing anyone has to be fit or bendy to do, which is why participation holds up across a mixed team in a way a gym benefit never does.',
+    'A live session on Teams or Zoom where I lead your team through gentle seated movement, breathing and a short reset, usually 15 to 30 minutes. Everyone joins from their desk, camera optional.',
   ],
   [
     'How long should a corporate chair yoga session be?',
-    'For a recurring workplace session, 15 to 30 minutes is the sweet spot: long enough to reset the neck, shoulders and back and steady the nervous system, short enough to fit a lunch break or a slot between meetings without eating the day.',
+    '15 to 30 minutes. Long enough to reset the neck, shoulders and back, short enough to fit between meetings.',
   ],
   [
     'Does chair yoga help with the aches of desk work?',
-    'It targets them directly. Around 80 percent of office workers report neck or back discomfort, most of it from sustained sitting. Regular seated mobility for the neck, shoulders, wrists, hips and lower back is exactly the gentle, frequent movement that eases screen-related stiffness.',
+    'It targets them directly. Around 80 percent of office workers report neck or back discomfort, mostly from sitting, and gentle, frequent seated movement is what eases it.',
   ],
   [
     'How much does chair yoga for a team cost?',
-    'It is priced as a monthly subscription by session frequency, not per class, so a weekly habit stays affordable. Pricing is public on the pricing page, and every engagement starts with a single pilot session so you can see how it lands before committing.',
+    'A monthly subscription priced by how often you meet, not per class. Prices are on the pricing page, and you start with a single pilot session.',
   ],
   [
     'Can remote and hybrid teams do chair yoga together?',
-    'Yes, and the live online format is where it works best. There is no room to book and no travel, every location joins as an equal, cameras stay off for anyone who prefers it, and sessions are recorded for colleagues in other time zones. It reaches a distributed workforce that an on-site class never could.',
+    'Yes, that is where the live online format works best. No room to book, every location joins as an equal, and cameras can stay off.',
   ],
 ];
 
@@ -70,12 +66,10 @@ const structuredData = {
 };
 
 const included = [
-  ['Live and guided', 'A real coach leads every session, the same face each week. No pre-recorded video nobody presses play on.'],
-  ['Seated and standing', 'Gentle mobility for the neck, shoulders, wrists, hips and lower back, the areas desk work punishes most.'],
-  ['Breathing built in', 'Simple techniques your team can reuse before a meeting or a deadline, not just during the session.'],
-  ['Camera optional', 'No activewear, no floor, nothing to perform. People join from their desk exactly as they are.'],
-  ['Recorded every week', 'Included for shift workers and other time zones, so nobody is left out of the habit.'],
-  ['One link to run it', 'You set the slot once. I take it from there. Zero admin for whoever organises it.'],
+  ['Live and guided', 'A real person leads every session, the same face each week.'],
+  ['Seated, in work clothes', 'Neck, shoulders, wrists, hips and lower back. Camera optional.'],
+  ['Breathing built in', 'Techniques people reuse before a meeting or a deadline.'],
+  ['One link, zero admin', 'You set the slot once. I take it from there.'],
 ];
 
 const ChairYogaForTeams = () => {
@@ -98,14 +92,12 @@ const ChairYogaForTeams = () => {
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
               Virtual office yoga and chair yoga your whole team can actually do.
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[640px] mx-auto">
+            <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[600px] mx-auto">
               Live, guided{' '}
               <Link to="/blog/office-yoga-for-remote-teams" className="text-clay underline underline-offset-4 hover:text-clayDark">
                 workplace yoga for distributed and hybrid teams
-              </Link>
-              , on Teams or Zoom. Gentle seated
-              movement, simple breathing and a short reset, in normal work clothes, camera optional. Nothing anyone
-              has to be fit or flexible to join.
+              </Link>{' '}
+              on Teams or Zoom. Gentle, seated, in normal work clothes.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
@@ -121,50 +113,21 @@ const ChairYogaForTeams = () => {
             </div>
         </Section>
 
-        {/* DEFINITIONS -- three definitions that were already a table, set as one. */}
+        {/* DEFINITIONS -- the three terms people search for, one line each. */}
         <Section tone="cream">
-          <GuideHeading eyebrow="Quick definitions">Office yoga, desk yoga and chair yoga: what's the difference?</GuideHeading>
+          <GuideHeading eyebrow="Quick definitions" size="md">Office yoga, desk yoga and chair yoga: what's the difference?</GuideHeading>
           <DefinitionList
             items={[
-              [
-                'Office yoga and workplace yoga',
-                'are umbrella terms for yoga done during the workday, wherever the team happens to be. They cover any format built to fit around meetings and desk work, from a few minutes of stretching to a full guided session.',
-              ],
-              [
-                'Desk yoga',
-                'is the narrowest of the three: gentle movements done at, or right beside, a desk. It is designed to loosen the neck, shoulders, wrists and back between tasks, without anyone leaving their workstation.',
-              ],
-              [
-                'Chair yoga',
-                'is seated and gentle, with a standing option. It needs no mat and no changing of clothes, and it came from adaptive yoga, so it assumes a range of bodies and levels rather than the flexible few. It is the version I run for teams, live on Teams or Zoom, whether yours is fully remote, hybrid, or together in an office.',
-              ],
+              ['Office yoga and workplace yoga', 'are umbrella terms for yoga done during the workday.'],
+              ['Desk yoga', 'is gentle movement at, or right beside, your desk.'],
+              ['Chair yoga', 'is seated and gentle, with no mat and no changing. It is the version I run for teams.'],
             ]}
           />
         </Section>
 
-        {/* WHY CHAIR YOGA */}
-        <Section>
-          <GuideHeading eyebrow="Why chair yoga">Movement a whole workforce will keep</GuideHeading>
-          <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
-              <p>
-                Most corporate fitness perks are built for the people who least need them. A gym benefit rewards
-                the already-active. Uptake settles around 12 percent, and the other 88 percent quietly opt out.
-              </p>
-              <PullQuote>Chair yoga is the opposite. It was designed for every body in the room.</PullQuote>
-              <p>
-                Seated, gentle and nothing athletic, so participation holds up across ages, sizes and fitness
-                levels. That matters when roughly 80 percent of office workers report{' '}
-                <Link to="/blog/tech-neck-exercises-desk" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                  neck or back discomfort
-                </Link>{' '}
-                from sitting: the people who most need to move are the ones an intense class scares off.
-              </p>
-          </div>
-        </Section>
-
         {/* WHAT'S INCLUDED */}
-        <Section width="hero" tone="cream">
-          <GuideHeading eyebrow="What a session includes">One weekly slot, run for you</GuideHeading>
+        <Section width="hero">
+          <GuideHeading eyebrow="What a session includes" size="md">One weekly slot, run for you</GuideHeading>
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">
               {included.map(([title, text]) => (
                 <li key={title} className="flex gap-4 bg-card rounded-lg border border-sage-light p-5">
@@ -180,87 +143,38 @@ const ChairYogaForTeams = () => {
             </ul>
         </Section>
 
-        {/* WHY IT STICKS */}
-        <Section>
-          <GuideHeading eyebrow="Why it sticks">Live and scheduled beats an app or a handout</GuideHeading>
-            <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
+        {/* WHY IT WORKS */}
+        <Section tone="cream">
+          <GuideHeading eyebrow="Why chair yoga" size="md">Movement a whole workforce will keep</GuideHeading>
+          <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
               <p>
-                You could send your team a chair-yoga PDF or a meditation-app licence. Most companies already have,
-                and watched usage collapse within weeks. The content is usually fine. The problem is that passive
-                tools ask busy, tired people to start on their own, and they almost never do.
+                A gym benefit rewards the already-active, and a PDF of stretches waits for busy people to start on
+                their own. Most never do.
               </p>
+              <PullQuote>Chair yoga is the opposite. It was designed for every body in the room.</PullQuote>
               <p>
-                A live session in the calendar removes that step. People click one link and someone else leads.
-                Within a few weeks it stops being a task and becomes the moment the team quietly protects.
-              </p>
-              <p>
-                To share alongside it, my{' '}
+                Around 80 percent of office workers report{' '}
+                <Link to="/blog/tech-neck-exercises-desk" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  neck or back discomfort
+                </Link>
+                . A live session in the calendar reaches them, because someone else leads. For the movements
+                themselves, see the{' '}
                 <Link to="/guides/desk-yoga" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                  desk yoga and chair yoga guide
+                  desk yoga guide
                 </Link>{' '}
-                covers the movements in full and the{' '}
+                or the{' '}
                 <Link to="/blog/chair-yoga-at-your-desk" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   8-pose chair yoga routine
-                </Link>{' '}
-                works as a handout.
+                </Link>
+                .
               </p>
-            </div>
-        </Section>
-
-        {/* MEASUREMENT */}
-        <Section tone="cream">
-          <GuideHeading eyebrow="The proof" size="md">You will see whether it is working</GuideHeading>
-            <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              Every programme comes with simple, honest reporting: how many of your team attend, and how many keep
-              coming back. Once it is a weekly habit you get a one-page summary you can take straight to your
-              budget-holder.
-            </p>
-        </Section>
-
-        {/* WHO IT'S FOR */}
-        <Section>
-          <GuideHeading eyebrow="Who it's for">Built for distributed teams</GuideHeading>
-            <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              People and culture leaders, team leads and founders at remote-first and hybrid companies who want a
-              wellbeing habit the whole team actually keeps, not another perk that lands flat. Teams across tech,
-              consulting, sustainability and distributed organisations.
-            </p>
-            <p className="mt-5 text-charcoal/60 text-base leading-relaxed">
-              Sessions run in English, online, across UK and European time zones, with Australian hours for part of
-              the year. It sits alongside{' '}
-              <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                The Weekly Reset
-              </Link>
-              , which blends chair yoga with breathing and meditation in one recurring session.
-            </p>
+          </div>
         </Section>
 
         {/* FAQ */}
-        <Section tone="cream">
-          <GuideHeading eyebrow="FAQ">Common questions</GuideHeading>
-          <GuideFAQ items={faqItems} />
-        </Section>
-
-        {/* RELATED READING */}
         <Section>
-            <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">Related reading</span>
-            <ul className="space-y-2 text-lg leading-relaxed">
-              <li>
-                <Link to="/guides/desk-yoga" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                  Desk yoga and chair yoga at work
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog/chair-yoga-at-your-desk" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                  Chair yoga at your desk: 8 poses
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog/tech-neck-exercises-desk" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                  Tech neck: gentle exercises
-                </Link>
-              </li>
-            </ul>
+          <GuideHeading eyebrow="FAQ" size="md">Common questions</GuideHeading>
+          <GuideFAQ items={faqItems} />
         </Section>
 
         {/* CTA */}
@@ -269,7 +183,12 @@ const ChairYogaForTeams = () => {
               Try chair yoga with your team
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              A single pilot session of live chair yoga, credited to your first month if you continue.
+              Start with one pilot session, credited to your first month if you continue. Want breathing and
+              meditation too? See{' '}
+              <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                The Weekly Reset
+              </Link>
+              .
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">

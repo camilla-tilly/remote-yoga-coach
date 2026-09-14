@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
-import { Reveal, GlowField, Eyebrow } from '@/components/SiteBlocks';
+import { Reveal, Eyebrow } from '@/components/SiteBlocks';
 
 const guides = [
   {
@@ -75,7 +75,6 @@ const Guides = () => {
       <main>
         {/* HERO */}
         <section className="relative overflow-hidden bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
-          <GlowField tone="warm" />
           <div className="relative max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <Eyebrow>Guides</Eyebrow>
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
@@ -96,7 +95,6 @@ const Guides = () => {
               to={lead.to}
               className="group block rounded-[24px] bg-cream border border-sage-light hover:border-clay p-9 md:p-12 relative overflow-hidden"
             >
-              <GlowField tone="warm" />
               <div className="relative">
                 <span className="inline-block font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">{lead.kicker}</span>
                 <h2 className="font-fraunces font-normal text-2xl md:text-4xl leading-tight max-w-[600px] group-hover:text-clay transition-colors">
@@ -120,12 +118,12 @@ const Guides = () => {
                   to={g.to}
                   className="group flex flex-col h-full bg-white rounded-2xl border border-sage-light hover:border-clay/60 p-7 transition-colors"
                 >
-                  <span className="text-[10px] font-semibold uppercase tracking-[0.28em] text-sage mb-3">{g.kicker}</span>
+                  <span className="font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-3">{g.kicker}</span>
                   <h3 className="font-fraunces font-normal text-heading text-xl leading-snug group-hover:text-clay transition-colors">
                     {g.title}
                   </h3>
                   <p className="text-charcoal/70 text-[15px] leading-relaxed mt-3 flex-1">{g.description}</p>
-                  <span className="mt-5 inline-flex items-center gap-1.5 text-clay text-xs font-semibold uppercase tracking-wider">
+                  <span className="mt-5 inline-flex items-center gap-1.5 text-clay text-[15px] font-medium">
                     Read <ArrowRight size={13} className="transition-transform group-hover:translate-x-0.5" />
                   </span>
                 </Link>
