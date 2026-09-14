@@ -41,14 +41,14 @@ const post: BlogPost = {
     { type: 'heading', text: 'How often, and why weekly beats occasional' },
     { type: 'paragraph', text: 'Occasional sessions feel efficient and do very little. A short weekly rhythm, at a protected time, is what turns a nice idea into a habit. It is also what the research points to: regular short practice outperforms rare long sessions. If budget is tight, fewer minutes more often beats a big one-off.' },
     { type: 'heading', text: 'How to tell if it is working' },
-    { type: 'paragraph', text: 'This is where most wellbeing spend falls down. A session you cannot measure is a session you cannot defend at budget time. Ask any provider for:' },
+    { type: 'paragraph', text: 'This is where most wellbeing spend falls down. A session you cannot measure is a session you cannot defend at budget time. Keep track of:' },
     { type: 'list', items: [
-      'Attendance and repeat attendance, tracked automatically.',
+      'Attendance and repeat attendance.',
       'A short wellbeing check at the start and end, so you can see the shift.',
       'A simple summary you can put in front of leadership.',
     ] },
     { type: 'paragraph', text: 'If people keep coming back of their own accord, that is your clearest signal, and one an app dashboard can never fake.' },
-    { type: 'cta', text: 'Curious what a live, measured session looks like with your own team? Start with a single pilot session. Once it is a weekly habit, you get attendance and before-and-after wellbeing reporting.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
+    { type: 'cta', text: 'Curious what a live session looks like with your own team? Start with a single pilot session.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
     { type: 'faq', faqItems: [
       { q: 'How long should a corporate mindfulness session be?', a: '15 to 30 minutes is the sweet spot for a recurring workplace session: long enough to reset, short enough to fit between meetings.' },
       { q: 'Do employees need any experience?', a: 'None. A good session assumes everyone is a beginner, uses plain language, and never asks anyone to perform. Camera-off is welcome throughout.' },

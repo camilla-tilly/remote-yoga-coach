@@ -16,11 +16,11 @@ const groups: Array<{ heading: string; items: Array<[string, string]> }> = [
     items: [
       [
         'What does Remote Yoga Coach offer?',
-        'I run live wellbeing classes for remote and hybrid teams, delivered online over Microsoft Teams or Zoom. There are three separate class types to choose from: a meditation class, a breathing class, and a chair yoga class. You can pick one format, alternate between them week to week, or combine them into a single session. I am a 500-hour certified yoga teacher and I lead every session myself.',
+        'I run live wellbeing classes for remote and hybrid teams, delivered online over Microsoft Teams. There are three separate class types to choose from: a meditation class, a breathing class, and a chair yoga class. You can pick one format, alternate between them week to week, or combine them into a single session. I am a 500-hour certified yoga teacher and I lead every session myself.',
       ],
       [
         'Are the meditation, breathing and chair yoga classes separate, or one combined session?',
-        'They are three separate classes, and the choice is yours. Some teams pick one format to focus on, some alternate between them across the month, and others prefer a combined session that touches all three. Whatever suits your team, I build the sessions around that.',
+        'They are three separate classes, and the choice is yours. You can pick one format to focus on, alternate between them across the month, or have a combined session that touches all three. Whatever suits your team, I build the sessions around that.',
       ],
       [
         'What happens in a typical session?',
@@ -28,7 +28,7 @@ const groups: Array<{ heading: string; items: Array<[string, string]> }> = [
       ],
       [
         'How long is a session?',
-        'Usually around 30 minutes, which fits neatly into a workday without eating into it. I can flex the length to suit your team’s schedule.',
+        'Around 15 to 30 minutes, which fits neatly into a workday without eating into it. Where it lands in that range depends on your team’s schedule.',
       ],
     ],
   },
@@ -58,15 +58,15 @@ const groups: Array<{ heading: string; items: Array<[string, string]> }> = [
       ],
       [
         'What platform do you use?',
-        'Whatever your team already uses. I run sessions live on Microsoft Teams or Zoom, so there is nothing new to install.',
+        'Microsoft Teams. I run every session live on Teams, so if your team already uses it, there is nothing new to install.',
       ],
       [
         'Are the sessions recorded?',
-        'Yes, every session is recorded, so anyone who cannot make the live slot, or who is in another time zone, can follow along later.',
+        'They can be, if you want that. Sessions can be recorded on request, so anyone who cannot make the live slot, or who is in another time zone, can follow along later.',
       ],
       [
         'Can you work across time zones?',
-        'Yes. I run sessions across UK and European hours, with Australian hours for part of the year, and the recordings cover everyone else.',
+        'Yes. I run sessions across UK and European hours, with Australian hours for part of the year. Sessions can be recorded on request for everyone else.',
       ],
       [
         'Does anyone need equipment or to change clothes?',
@@ -87,7 +87,7 @@ const groups: Array<{ heading: string; items: Array<[string, string]> }> = [
       ],
       [
         'Can we try it before committing?',
-        'Yes. There is a single pilot session, one live 30-minute class, and if you continue, the pilot fee is credited to your first month. Once it is a weekly habit, the ongoing subscription gives you the attendance and wellbeing reporting.',
+        'Yes. There is a single paid pilot session, one live class, and if you continue, the pilot fee is credited to your first month.',
       ],
       [
         'Can we book a one-off session, like a lunch and learn?',
@@ -95,11 +95,11 @@ const groups: Array<{ heading: string; items: Array<[string, string]> }> = [
       ],
       [
         'Do you offer in-person sessions?',
-        'The sessions are delivered live online, over Teams or Zoom, which is what lets them reach a whole distributed team equally. If you have a specific in-person need, get in touch and we can talk it through.',
+        'The sessions are delivered live online, over Teams, which is what lets them reach a whole distributed team equally. If you have a specific in-person need, get in touch and we can talk it through.',
       ],
       [
         'How do we get started?',
-        'Get in touch through the contact form with a line about your team. I will reply, and we can either talk it through or set up a first session.',
+        'Get in touch through the contact form with a line about your team. I will reply, we have a first call to see if it is a fit, and then you can book a paid pilot session.',
       ],
     ],
   },
@@ -113,10 +113,6 @@ const groups: Array<{ heading: string; items: Array<[string, string]> }> = [
       [
         'We already have an EAP. Why add this?',
         'An employee assistance programme is a reactive safety net for people in crisis, and it is worth keeping. This is the opposite: a proactive weekly habit that supports everyone before things reach that point. The two complement each other.',
-      ],
-      [
-        'How do you measure whether it is working?',
-        'I report attendance and repeat attendance, tracked automatically, summarised in a simple report for leadership.',
       ],
     ],
   },

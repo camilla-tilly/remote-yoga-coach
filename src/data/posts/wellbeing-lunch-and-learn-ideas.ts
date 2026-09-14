@@ -69,7 +69,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "This is the one I would suggest starting with. It is a short, live, guided session over Teams or Zoom: a few minutes of breathing to settle the nervous system, gentle chair-based movement to undo the morning of sitting, then a brief moment of stillness.",
+      text: "This is the one I would suggest starting with. It is a short, live, guided session over Teams: a few minutes of breathing to settle the nervous system, gentle chair-based movement to undo the morning of sitting, then a brief moment of stillness.",
     },
     {
       type: "paragraph",
@@ -97,7 +97,7 @@ const post: BlogPost = {
     },
     {
       type: "callout",
-      text: "Camera optional matters more than it sounds. When people can join a movement session without being seen, participation goes up. Every session can also be recorded, so anyone who cannot make the lunch slot can follow it later.",
+      text: "Camera optional matters more than it sounds. When people can join a movement session without being seen, participation goes up. Sessions can also be recorded on request, so anyone who cannot make the lunch slot can follow it later.",
     },
     {
       type: "heading",
@@ -105,15 +105,15 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "A single virtual lunch and learn is the easiest way to test whether this suits your team. You book one session, I run it live on Teams or Zoom, and you see for yourself how people respond. There is no obligation to turn it into a programme.",
+      text: "A single virtual lunch and learn is the easiest way to test whether this suits your team. You book one session, I run it live on Teams, and you see for yourself how people respond. There is no obligation to turn it into a programme.",
     },
     {
       type: "paragraph",
-      text: "A one-off session feels lovely and then fades. Wellbeing that changes anything comes from rhythm: the same reset at the same time each week, with the same coach. That is The Weekly Reset, a recurring live session on a flat monthly subscription, with attendance and a wellbeing check reported back. Read how it works on my [team wellness page](/services/team-wellness).",
+      text: "A one-off session feels lovely and then fades. Wellbeing that changes anything comes from rhythm: the same reset at the same time each week, with the same coach. That is The Weekly Reset, a recurring live session on a flat monthly subscription. Read how it works on my [team wellness page](/services/team-wellness).",
     },
     {
       type: "cta",
-      text: "Try a real reset over the lunch break, live on Teams or Zoom, camera optional. Book one session and see how your team responds before committing to anything ongoing.",
+      text: "Try a real reset over the lunch break, live on Teams, camera optional. Book one session and see how your team responds before committing to anything ongoing.",
       ctaHref: "/demo",
       ctaLabel: "Book a session",
     },
@@ -122,15 +122,15 @@ const post: BlogPost = {
       faqItems: [
         {
           q: "How long should a wellbeing lunch and learn be?",
-          a: "Around 30 minutes works best for a lunch slot. It is long enough for a proper breathing and gentle chair-yoga reset, and short enough that people can still eat and get back to their day.",
+          a: "Around 15 to 30 minutes works best for a lunch slot. It is long enough for a proper breathing and gentle chair-yoga reset, and short enough that people can still eat and get back to their day.",
         },
         {
           q: "Do people need to turn their camera on?",
-          a: "No. Camera is always optional in my sessions. For a chair-yoga reset that matters, because people are far more willing to follow along when they know they are not being watched. Every session is also recorded, so anyone who misses the slot can catch up later.",
+          a: "No. Camera is always optional in my sessions. For a chair-yoga reset that matters, because people are far more willing to follow along when they know they are not being watched. Sessions can also be recorded on request, so anyone who misses the slot can catch up later.",
         },
         {
           q: "Is this in person or fully virtual?",
-          a: "Fully virtual. Every session runs live on Teams or Zoom, so it works the same whether your team is remote, hybrid, or spread across different cities.",
+          a: "Fully virtual. Every session runs live on Teams, so it works the same whether your team is remote, hybrid, or spread across different cities.",
         },
         {
           q: "Can a one-off session turn into something regular?",

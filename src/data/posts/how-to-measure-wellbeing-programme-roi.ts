@@ -40,7 +40,7 @@ const post: BlogPost = {
       'Use internal context you already hold, such as sick days or turnover in the pilot team compared with the rest of the organisation, rather than an external multiplier you cannot verify. My [guide to the cost of employee burnout](/guides/cost-of-employee-burnout) sets out what the problem costs.',
       'Keep the reporting light. A short update every few weeks is more credible, and more sustainable for you, than one heavy report at the end of the year.',
     ] },
-    { type: 'paragraph', text: 'This is the shape of reporting built into [The Weekly Reset](/services/team-wellness): attendance and a short wellbeing check, delivered alongside the sessions, so you always have current numbers ready for a budget conversation.' },
+    { type: 'paragraph', text: 'These two numbers work for any programme, including [The Weekly Reset](/services/team-wellness). You collect them yourself, which is exactly why they hold up.' },
     { type: 'heading', text: 'What to avoid when you present the numbers' },
     { type: 'paragraph', text: 'A few habits quietly undermine an otherwise solid case.' },
     { type: 'list', items: [
@@ -50,7 +50,7 @@ const post: BlogPost = {
       'Treating the wellbeing check as a test people can fail. Frame it as a pulse, not an evaluation, and keep it anonymous where you can, or people will tell you what they think you want to hear.',
     ] },
     { type: 'paragraph', text: 'None of this requires expensive tooling. A simple spreadsheet with attendance per week and the wellbeing check readings is enough to tell an honest story, and that is what survives scrutiny at renewal time.' },
-    { type: 'cta', text: 'Want real numbers before your next budget conversation? A four-week pilot comes with attendance and wellbeing check reporting built in, so you have evidence, not a guess, before you commit.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
+    { type: 'cta', text: 'Want to see how your team responds before a bigger commitment? Start with one paid pilot session, credited to your first month if you continue, and track attendance from the first week.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
     { type: 'faq', faqItems: [
       { q: 'What is the ROI of a workplace wellbeing programme?', a: 'There is no single trustworthy figure that applies to every organisation, and any number that cannot be traced back to your own team deserves caution. A more honest approach is to track attendance and a short wellbeing check over several weeks and let those numbers make the case.' },
       { q: 'How do you measure wellbeing programme success without hard financial data?', a: 'Use two proxies you fully control: the attendance trend, which shows whether people keep choosing to show up, and a short before and after wellbeing check. Together they give a credible picture without a financial study.' },

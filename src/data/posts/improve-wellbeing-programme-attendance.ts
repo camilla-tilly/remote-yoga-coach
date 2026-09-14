@@ -44,8 +44,8 @@ const post: BlogPost = {
     ] },
     { type: 'heading', text: 'What to actually track' },
     { type: 'paragraph', text: 'Resist the urge to build a dashboard. Attendance over several weeks is the signal that matters, because people only keep showing up to something that does them some good. Watch the trend, not any single week. A dip during a busy sprint is normal. A slow climb as the new slot and format settle in is what you want.' },
-    { type: 'paragraph', text: 'A short, optional pulse check every few weeks adds context without becoming another thing to complete. I report attendance and a short wellbeing check alongside every session, so a team lead can see the trend without chasing it.' },
-    { type: 'cta', text: 'If attendance has been sliding, seeing the format in action is the fastest way to tell what needs to change. Book a demo session and I will run a live class with your team so you can watch how people respond.', ctaHref: '/demo', ctaLabel: 'Book a demo session' },
+    { type: 'paragraph', text: 'A short, optional pulse check every few weeks adds context without becoming another thing to complete.' },
+    { type: 'cta', text: 'If attendance has been sliding, seeing the format in action is the fastest way to tell what needs to change. Book a pilot session and I will run a live class with your team so you can watch how people respond.', ctaHref: '/demo', ctaLabel: 'Book a pilot session' },
     { type: 'faq', faqItems: [
       { q: 'Why does attendance at a wellbeing programme drop over time?', a: 'Usually friction rather than lost interest: an inconsistent time slot, a single format that does not suit the whole team, or no visible sign that joining is genuinely fine. Fixing that friction matters more than promoting the programme harder.' },
       { q: 'Does making a session optional or camera-off hurt attendance?', a: 'No, usually the opposite. Camera optional removes one of the biggest reasons people hesitate to join a live call, and it does not stop anyone from taking part fully.' },

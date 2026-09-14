@@ -11,11 +11,10 @@ import { GuideFAQ, ProseList } from '@/components/GuideLayout';
 const faqs: Array<[string, string]> = [
   ['Do people need their cameras on?', 'No. Camera-off is welcome, and I say so at the start of every session.'],
   ['Do we have to choose one type of class?', 'No. Every plan includes all three, meditation, breathing and chair yoga. Your team can settle on one, alternate between them, or mix them week to week, depending on what people need. The plan you choose only sets how often we meet, it does not lock you to a single class.'],
-  ['Will people actually attend?', 'That is what a pilot session is for. Live, scheduled sessions out-attend apps and EAPs, because the hardest part, starting, is already done, and once it is a weekly habit you see the numbers in your reporting.'],
-  ['What if people join late or miss one?', 'Sessions are built to drop into, and every one is recorded, so anyone can catch up or join from another time zone.'],
+  ['Will people actually attend?', 'That is what a pilot session is for. Live, scheduled sessions out-attend apps and EAPs, because the hardest part, starting, is already done.'],
+  ['What if people join late or miss one?', 'Sessions are built to drop into, and they can be recorded on request, so anyone who misses one can catch up later.'],
   ['We already have an app or an EAP. Why add this?', 'Those are libraries and crisis lines: useful, but passive. The Weekly Reset is the live, weekly layer with a real person, which is what actually drives participation. It complements what you have.'],
-  ['How do you measure it?', 'Attendance and repeat attendance, tracked automatically. You get a simple summary.'],
-  ['Can you work across time zones?', 'Yes. Sessions run across UK and European hours, with Australian hours for part of the year, plus recordings for everyone else.'],
+  ['Can you work across time zones?', 'Yes. Sessions run across UK and European hours, with Australian hours for part of the year. Sessions can be recorded on request for everyone else.'],
 ];
 
 const pilotPrice = '1,490 kr';
@@ -23,17 +22,15 @@ const pilotPrice = '1,490 kr';
 const tiers = [
   {
     name: 'Starter', best: 'Two live sessions a month', sessions: '2 per month',
-    reporting: 'Quarterly',
     price: '2,990 kr', priceValue: '2990', per: 'per month', highlight: false,
   },
   {
     name: 'Weekly', best: 'One live session every week', sessions: '4 per month (weekly)',
-    reporting: 'Quarterly',
     price: '4,990 kr', priceValue: '4990', per: 'per month', highlight: true,
   },
   {
     name: 'Enterprise', best: 'Two or more a week, or across time zones', sessions: '8+ per month',
-    reporting: 'Quarterly',
+    extra: 'Monthly check-in call with your HR contact',
     price: 'from 8,900 kr', priceValue: '8900', per: 'per month', highlight: false,
   },
 ];
@@ -58,7 +55,7 @@ const structuredData = {
           name: 'Pilot session',
           price: '1490',
           priceCurrency: 'SEK',
-          description: 'A single 30-minute live session, credited to your first month if you continue.',
+          description: 'A single live session, credited to your first month if you continue.',
           url: 'https://remoteyogacoach.com/pricing',
         },
         ...tiers.map((t) => ({
@@ -72,7 +69,7 @@ const structuredData = {
             priceCurrency: 'SEK',
             unitText: 'MONTH',
           },
-          description: `${t.best}. Flat monthly fee, on Teams or Zoom.`,
+          description: `${t.best}. Flat monthly fee, on Teams.`,
           url: 'https://remoteyogacoach.com/pricing',
         })),
       ],
@@ -116,12 +113,12 @@ const Pricing = () => {
                     <h2 className="font-fraunces font-normal text-2xl md:text-3xl">A pilot session</h2>
                     <span className="font-fraunces font-normal text-2xl md:text-3xl text-clay">{pilotPrice}</span>
                   </div>
-                  <p className="mt-4 text-charcoal/75 leading-relaxed">One 30-minute live session, so your team can try it before you commit to anything:</p>
+                  <p className="mt-4 text-charcoal/75 leading-relaxed">One live session, so your team can try it before you commit to anything:</p>
                   <ul className="mt-5 space-y-2.5">
                     {[
-                      'A live 30-minute session, breathing, chair yoga or meditation, your pick',
-                      'Runs on Teams or Zoom, camera optional',
-                      'The recording afterwards, to share with anyone who missed it',
+                      'A live session, breathing, chair yoga or meditation, your pick',
+                      'Runs on Teams, camera optional',
+                      'Recorded on request, to share with anyone who missed it',
                       'No setup, no contract, nothing to sign',
                     ].map((item) => (
                       <li key={item} className="flex gap-3 text-charcoal/85 text-[15px]">
@@ -179,8 +176,10 @@ const Pricing = () => {
                     </div>
                     <ul className="space-y-3 text-[15px] text-charcoal/80 flex-1">
                       <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>The same coach every week</span></li>
-                      <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>All sessions recorded</span></li>
-                      <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>{t.reporting} attendance reporting</span></li>
+                      <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>Sessions recorded on request</span></li>
+                      {t.extra && (
+                        <li className="flex gap-2.5"><Check className="text-clay shrink-0 mt-0.5" size={16} strokeWidth={2.5} /><span>{t.extra}</span></li>
+                      )}
                     </ul>
                     <div className="mt-7">
                       <Link to="/demo">
@@ -235,7 +234,6 @@ const Pricing = () => {
                 'The same named coach every week, continuity is the whole point',
                 'A structured programme that moves through themes, not random one-off classes',
                 'Camera-off permission, no equipment, no activewear',
-                'Honest reporting you can show your leadership',
               ].map((item) => (
                 <li key={item} className="flex gap-3 text-charcoal/80 text-[16px] leading-relaxed">
                   <Check className="text-clay shrink-0 mt-1" size={17} strokeWidth={2.5} />

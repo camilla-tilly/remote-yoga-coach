@@ -121,7 +121,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "I run [live, 30-minute breathing and chair-yoga sessions](/services/team-wellness) your whole team joins on Teams: scheduled, guided, camera optional, with attendance and wellbeing reported so you can see it working. It's the \"class\" alongside whatever \"library\" you already have."
+      text: "I run [live meditation, breathing and chair yoga sessions](/services/team-wellness) of 15 to 30 minutes that your whole team joins on Teams: scheduled, guided and camera optional. It's the \"class\" alongside whatever \"library\" you already have."
     },
     {
       type: "cta",

@@ -41,7 +41,7 @@ const About = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="About | Remote Yoga Coach"
-        description="Camilla is a certified yoga teacher with 500 hours of training in movement, breathing and meditation, delivering live wellbeing sessions for remote and distributed teams. Real training, real human, measurable."
+        description="Camilla is a certified yoga teacher with 500 hours of training in movement, breathing and meditation, delivering live wellbeing sessions for remote and distributed teams. Real training, real human."
         canonical="https://remoteyogacoach.com/about"
         structuredData={structuredData}
       />
@@ -54,7 +54,7 @@ const About = () => {
               A real person, live, every week.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[600px] mx-auto">
-              Remote Yoga Coach isn't a generic wellness app. It's one coach, a defined programme, and honest reporting, 
+              Remote Yoga Coach isn't a generic wellness app. It's one coach and a defined programme,
               built specifically for teams that work apart.
             </p>
           </div>
@@ -129,11 +129,10 @@ const About = () => {
         <section className="py-16 md:py-20">
           <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight text-center">Why live and human</h2>
-            <div className="mt-12 grid gap-6 sm:grid-cols-3">
+            <div className="mt-12 grid gap-6 sm:grid-cols-2">
               {[
                 ['Continuity', 'The same coach every week, someone your team gets to know. The relationship is the whole point.'],
                 ['Accessibility', 'Camera-off, chair-based, no equipment. Everyone can join, wherever they work.'],
-                ['Honesty', 'Real attendance numbers and plainly-stated results, never inflated claims.'],
               ].map(([title, text]) => (
                 <div key={title} className="rounded-[12px] border border-sage-light bg-card p-8 text-center">
                   <h3 className="font-fraunces font-normal text-heading text-xl">{title}</h3>

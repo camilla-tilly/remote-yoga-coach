@@ -33,9 +33,9 @@ const post: BlogPost = {
       '**A protected slot.** Same time each week, so it becomes a habit rather than something to organise.',
       '**The same coach.** Familiarity builds the gentle accountability and trust that a rotating cast of facilitators cannot.',
       '**A programme, not a sampler.** Sessions build on each other instead of being disconnected pilots.',
-      '**Measurement over time.** You see attendance and wellbeing move across weeks, not guess from a single feedback form.',
+      '**Measurement over time.** You can track attendance and wellbeing across weeks, not guess from a single feedback form.',
     ] },
-    { type: 'paragraph', text: 'That is the model behind my [wellbeing subscription for remote teams](/services/corporate-wellbeing-for-remote-teams): a recurring weekly session, the same coach, with reporting you can take to leadership.' },
+    { type: 'paragraph', text: 'That is the model behind my [wellbeing subscription for remote teams](/services/corporate-wellbeing-for-remote-teams): a recurring weekly session with the same coach.' },
     { type: 'heading', text: 'The cost comparison' },
     { type: 'paragraph', text: 'On a per-session sticker price, a one-off can look cheaper. Per unit of actual change, it rarely is, because most of what you pay for evaporates. The rough trade-off:' },
     { type: 'table', tableHead: ['', 'One-off workshop', 'Weekly subscription'], tableRows: [
@@ -47,12 +47,12 @@ const post: BlogPost = {
     { type: 'paragraph', text: 'Because a subscription is priced per team rather than per person, the cost per employee falls as the team grows, the opposite of per-seat app licensing. For the wider picture, see [how much corporate wellbeing costs](/blog/how-much-does-corporate-yoga-cost). The [cost of employee burnout guide](/guides/cost-of-employee-burnout) helps if you need to justify the spend.' },
     { type: 'heading', text: 'When a one-off still makes sense' },
     { type: 'paragraph', text: 'Workshops are not bad. For a one-time occasion, like a team day or an awareness week, a single well-run session is lovely. Just do not expect it to shift ongoing stress. That needs rhythm. A sensible path is to run a [pilot session](/demo) and convert it into a subscription if it lands.' },
-    { type: 'cta', text: 'Want to test the habit before committing? A single pilot session lets your team try it. Once it is weekly, you get attendance and wellbeing reporting.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
+    { type: 'cta', text: 'Want to test the habit before committing? A single pilot session lets your team try it.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
     { type: 'faq', faqItems: [
       { q: 'Is a wellbeing subscription better than a one-off workshop?', a: 'For ongoing team wellbeing, yes, because results come from the weekly rhythm, not any single session. For a specific one-time occasion, a one-off workshop can be the right call.' },
       { q: 'How much does a team wellbeing subscription cost?', a: 'It is priced as a flat monthly fee by session frequency rather than per person, so the cost per employee stays low as you grow. Every engagement starts with a single pilot session credited to your first month.' },
-      { q: 'How long before a subscription shows results?', a: 'Attendance patterns are visible within the first few weeks; the wellbeing effect builds over a couple of months as the habit forms. That is why I report attendance and pre and post wellbeing from the start.' },
-      { q: 'Can we try it before subscribing?', a: 'Yes. A single pilot session, one live 30-minute class, lets your team try it first.' },
+      { q: 'How long before a subscription shows results?', a: 'Attendance patterns are visible within the first few weeks; the wellbeing effect builds over a couple of months as the habit forms.' },
+      { q: 'Can we try it before subscribing?', a: 'Yes. A single paid pilot session lets your team try it first, and it is credited to your first month if you continue.' },
     ] },
   ],
 };

@@ -41,7 +41,7 @@ const faqItems: Array<[string, string]> = [
   ],
   [
     'How do chair yoga sessions work for a whole team?',
-    'A live guided session over Teams or Zoom, usually 15 to 30 minutes: breathing, seated and standing mobility, and a short settle. Cameras optional, recordings for other time zones. A recurring weekly slot makes it a habit.',
+    'A live guided session on Teams, usually 15 to 30 minutes: breathing, seated and standing mobility, and a short settle. Cameras optional, and it can be recorded if you want. A recurring weekly slot makes it a habit.',
   ],
 ];
 
@@ -319,8 +319,7 @@ const DeskYoga = () => {
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   The Weekly Reset
                 </Link>
-                , which adds breathing and a short meditation and reports attendance and pre-post stress, so you can
-                see whether it earns its slot.
+                , which adds breathing and a short meditation.
               </p>
             </div>
             <div className="mt-8">
@@ -359,7 +358,7 @@ const DeskYoga = () => {
 
         <GuideCTA
           heading="Give your team a weekly movement habit"
-          text="A single pilot session of The Weekly Reset: live chair yoga, breathing and meditation on Teams, camera optional. Once it is a weekly habit, you get attendance and wellbeing reporting."
+          text="A single pilot session of The Weekly Reset: live chair yoga, breathing and meditation on Teams, camera optional."
         />
       </main>
 

@@ -138,7 +138,7 @@ const post: BlogPost = {
     },
     {
       type: "cta",
-      text: "A live weekly reset is a 30-minute breathing and chair-yoga session your team joins together, with the same coach each week. See how it works on my [team wellness page](/services/team-wellness), book a [pilot session](/demo), or see what it costs for your team.",
+      text: "A live weekly reset is a 15 to 30 minute session your team joins together, with the same coach each week, choosing from meditation, breathing and chair yoga classes. See how it works on my [team wellness page](/services/team-wellness), book a [pilot session](/demo), or see what it costs for your team.",
       ctaHref: "/pricing",
       ctaLabel: "See my pricing",
     },

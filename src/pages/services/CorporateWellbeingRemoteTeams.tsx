@@ -11,7 +11,7 @@ import { GuideFAQ, PullQuote } from '@/components/GuideLayout';
 const faqItems: Array<[string, string]> = [
   [
     'What is corporate wellbeing for a remote team?',
-    'A wellbeing programme delivered live and online instead of in an office: a weekly session of breathing, meditation or chair yoga on Teams or Zoom, with attendance reporting.',
+    'A wellbeing programme delivered live and online instead of in an office: a weekly session of breathing, meditation or chair yoga on Teams.',
   ],
   [
     'How is a team wellbeing subscription different from a one-off workshop?',
@@ -41,7 +41,7 @@ const structuredData = {
       provider: { '@type': 'Organization', name: 'Remote Yoga Coach', url: 'https://remoteyogacoach.com' },
       areaServed: ['GB', 'EU', 'AU'],
       description:
-        'Live weekly wellbeing sessions for distributed and hybrid teams on Teams or Zoom: breathing, meditation and chair yoga, camera optional, with attendance and wellbeing reporting.',
+        'Live weekly wellbeing sessions for distributed and hybrid teams on Teams: breathing, meditation and chair yoga, camera optional.',
       offers: { '@type': 'Offer', priceCurrency: 'SEK', description: 'Monthly subscription by session frequency, from a single pilot session.' },
     },
     {
@@ -77,7 +77,7 @@ const CorporateWellbeingRemoteTeams = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Weekly Wellbeing Sessions for Remote and Hybrid Teams | Remote Yoga Coach"
-        description="A live weekly wellbeing subscription for remote, hybrid and in-office teams. Breathing, meditation and chair yoga on Teams or Zoom, camera optional, with reporting. Book a pilot session."
+        description="A live weekly wellbeing subscription for remote, hybrid and in-office teams. Breathing, meditation and chair yoga on Teams, camera optional. Book a pilot session."
         canonical="https://remoteyogacoach.com/services/corporate-wellbeing-for-remote-teams"
         ogImage="https://remoteyogacoach.com/og/corporate-wellbeing-remote-teams.png?v=3"
         structuredData={structuredData}
@@ -93,7 +93,7 @@ const CorporateWellbeingRemoteTeams = () => {
               Wellbeing for remote and hybrid teams that reaches everyone on screen.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[600px] mx-auto">
-              A live weekly class on Teams or Zoom for your whole team, wherever they work. Meditation, breathing or
+              A live weekly class on Teams for your whole team, wherever they work. Meditation, breathing or
               chair yoga, camera optional.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">

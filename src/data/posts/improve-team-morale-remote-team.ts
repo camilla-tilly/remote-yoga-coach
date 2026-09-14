@@ -119,17 +119,17 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Your team chooses what serves them: a meditation class to settle, a breathing class to steady a stressful stretch, or a chair yoga class to get gently moving. Pick one, alternate, or combine them over a month. It is live on Teams or Zoom with the same coach each week, and the camera is always optional.",
+      text: "Your team chooses what serves them: a meditation class to settle, a breathing class to steady a stressful stretch, or a chair yoga class to get gently moving. Pick one, alternate, or combine them over a month. It is live on Teams with the same coach each week, and the camera is always optional.",
     },
     {
       type: "paragraph",
-      text: "Every session is recorded, so people in other time zones are included rather than left out. It runs on a flat monthly subscription per team, priced in SEK. See how it works on my [corporate wellbeing for remote and hybrid teams](/services/corporate-wellbeing-for-remote-teams) page.",
+      text: "Sessions can be recorded if you want, so people in other time zones are included rather than left out. It runs on a flat monthly subscription per team, priced in SEK. See how it works on my [corporate wellbeing for remote and hybrid teams](/services/corporate-wellbeing-for-remote-teams) page.",
     },
     {
       type: "cta",
-      text: "Want one dependable, human moment in your team's week? Book a live demo session and see how a meditation, breathing, or chair yoga class feels for your remote team.",
+      text: "Want one dependable, human moment in your team's week? Book a pilot session and see how a meditation, breathing, or chair yoga class feels for your remote team.",
       ctaHref: "/demo",
-      ctaLabel: "Book a demo session",
+      ctaLabel: "Book a pilot session",
     },
     {
       type: "faq",

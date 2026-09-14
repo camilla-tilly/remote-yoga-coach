@@ -92,7 +92,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "What removes the \"I never get round to it\" problem is having someone else hold the time, so you are no longer relying on remembering. That is the idea behind [The Weekly Reset](/services/team-wellness): a short guided session, live on Teams or Zoom, once a week with the same coach. Camera is optional, and every session is recorded."
+      text: "What removes the \"I never get round to it\" problem is having someone else hold the time, so you are no longer relying on remembering. That is the idea behind [The Weekly Reset](/services/team-wellness): a short guided session, live on Teams, once a week with the same coach. Camera is optional, and sessions can be recorded on request."
     },
     {
       type: "cta",
@@ -117,7 +117,7 @@ const post: BlogPost = {
         },
         {
           q: "How is a guided team session different from meditating on my own?",
-          a: "The practice is much the same, but someone else holds the time and leads it, so it actually happens. With The Weekly Reset your team gets a live meditation class each week, camera optional, and every session is recorded."
+          a: "The practice is much the same, but someone else holds the time and leads it, so it actually happens. With The Weekly Reset your team gets a live meditation class each week, camera optional, and sessions can be recorded on request."
         }
       ]
     }

@@ -233,13 +233,12 @@ const CostOfBurnout = () => {
                 ['Lead with cost-avoidance', 'Open on the money already leaking: about 2,646 pounds per affected employee, most of it invisible. You are paying it now.'],
                 ['Attach it to one departure', 'One resignation costs six to nine months of salary. Prevention costs a fraction of that.'],
                 ['Show the documented return', 'Around 4.70 pounds back per 1 pound, up to 6.30 for preventive, whole-team programmes.'],
-                ['Propose a measured pilot', 'Ask for a short trial that reports attendance and pre and post stress and energy. Your next slide is then your own team’s data.'],
+                ['Propose a measured pilot', 'Ask for a short trial, and count who keeps coming back. Your next slide is then your own team’s data.'],
               ]}
             />
             <GuideProse>
               <p>
-                Start with a single pilot session, then take the attendance and wellbeing reporting to the
-                budget-holder. See{' '}
+                Start with a single pilot session. See{' '}
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   how the programme works
                 </Link>{' '}
@@ -293,8 +292,8 @@ const CostOfBurnout = () => {
         />
 
         <GuideCTA
-          heading="Prove the return on your own team"
-          text="Start with a single pilot session. Once it is a weekly habit, the attendance and stress reporting gives you something concrete for your budget-holder."
+          heading="Try it on your own team"
+          text="Start with a single pilot session."
         />
       </main>
 

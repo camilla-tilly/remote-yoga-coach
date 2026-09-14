@@ -14,7 +14,7 @@ const faqItems: Array<[string, string]> = [
   ],
   [
     'Is this a Calm for Business alternative?',
-    'It is the live layer those apps are missing rather than a like-for-like swap: a real person at a set time each week, on Teams or Zoom, which people actually attend.',
+    'It is the live layer those apps are missing rather than a like-for-like swap: a real person at a set time each week, on Teams, which people actually attend.',
   ],
   [
     'We have an EAP. Is this not the same thing?',
@@ -22,7 +22,7 @@ const faqItems: Array<[string, string]> = [
   ],
   [
     'Is this a replacement for our current wellbeing spend?',
-    'It does not have to be. Many teams keep the app and the EAP and add the weekly session as the part that drives participation.',
+    'It does not have to be. You can keep the app and the EAP and add the weekly session as the part that drives participation.',
   ],
   [
     'What about cost? Apps look cheaper per head.',
@@ -67,7 +67,6 @@ const rows = [
   { label: 'Stigma-free for everyone', values: [true, true, 'partial'] },
   { label: 'Reaches the whole team', values: [true, 'partial', 'partial'] },
   { label: 'Live accountability to show up', values: [true, false, false] },
-  { label: 'Measurable participation', values: [true, 'partial', false] },
   { label: 'Works across time zones', values: [true, true, 'partial'] },
   { label: 'Typical take-up', values: ['High, live', 'Drops fast', '3 to 5%'] },
 ];

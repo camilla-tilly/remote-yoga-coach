@@ -10,7 +10,7 @@ import { GuideFAQ, ProseList, PullQuote } from '@/components/GuideLayout';
 const faq: Array<[string, string]> = [
   [
     'Vad är företagsyoga på distans?',
-    'Korta livepass i Teams eller Zoom för hela teamet samtidigt. Ni väljer meditation, andning eller stolyoga, eller växlar mellan dem. Ingen matta, inga ombyten, kameran frivillig.',
+    'Korta livepass i Teams för hela teamet samtidigt. Ni väljer meditation, andning eller stolyoga, eller växlar mellan dem. Ingen matta, inga ombyten, kameran frivillig.',
   ],
   [
     'Vilket språk hålls passen på?',
@@ -18,7 +18,7 @@ const faq: Array<[string, string]> = [
   ],
   [
     'Hur långa är passen?',
-    'Runt 30 minuter, så det får plats i arbetsdagen. Längden går att anpassa.',
+    'Runt 15 till 30 minuter, så det får plats i arbetsdagen.',
   ],
   [
     'Behöver alla ha kameran på?',
@@ -26,7 +26,7 @@ const faq: Array<[string, string]> = [
   ],
   [
     'Vad händer om någon missar ett pass?',
-    'Alla pass spelas in, så man kan följa med i efterhand.',
+    'Passen kan spelas in om ni vill, så att den som missar kan följa med i efterhand.',
   ],
   [
     'Kan detta betalas som naturaförmån?',
@@ -49,7 +49,7 @@ const structuredData = [
     availableLanguage: 'en',
     inLanguage: 'sv',
     description:
-      'Livepass i meditation, andning eller stolyoga för distans- och hybridteam, direkt i Teams eller Zoom. Samma lärare varje vecka, kamera frivillig, alla pass spelas in.',
+      'Livepass i meditation, andning eller stolyoga för distans- och hybridteam, direkt i Teams. Samma lärare varje vecka, kamera frivillig, passen kan spelas in om ni vill.',
   },
   {
     '@context': 'https://schema.org',
@@ -71,7 +71,7 @@ const classes: Array<[string, string]> = [
 
 const included: string[] = [
   'Samma lärare varje vecka: jag, Camilla, med 500 timmars yogalärarutbildning',
-  'Kameran är alltid frivillig, och alla pass spelas in',
+  'Kameran är alltid frivillig, och passen kan spelas in om ni vill',
   'En länk som ni delar internt, jag sköter resten',
   'Fast månadsavgift per team, i kronor',
 ];
@@ -94,7 +94,7 @@ const ForetagsyogaDistans = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Företagsyoga på distans för svenska team | Remote Yoga Coach"
-        description="Livepass i meditation, andning eller stolyoga för distans- och hybridteam, direkt i Teams eller Zoom. Kamera frivillig, alla pass spelas in, fast månadspris i kronor. Boka ett pilotpass."
+        description="Livepass i meditation, andning eller stolyoga för distans- och hybridteam, direkt i Teams. Kamera frivillig, passen kan spelas in om ni vill, fast månadspris i kronor. Boka ett pilotpass."
         canonical="https://remoteyogacoach.com/foretagsyoga-distans"
         ogType="website"
         ogLocale="sv_SE"
@@ -114,7 +114,7 @@ const ForetagsyogaDistans = () => {
               Företagsyoga på distans för svenska team
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[600px] mx-auto">
-              Korta livepass i meditation, andning eller stolyoga, direkt i Teams eller Zoom. Inga mattor och inga
+              Korta livepass i meditation, andning eller stolyoga, direkt i Teams. Inga mattor och inga
               ombyten. Passen hålls på engelska.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">

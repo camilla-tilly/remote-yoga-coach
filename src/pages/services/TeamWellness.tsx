@@ -13,7 +13,7 @@ const structuredData = {
   "name": "The Weekly Reset, team wellness",
   "provider": { "@type": "Organization", "name": "Remote Yoga Coach", "url": "https://remoteyogacoach.com" },
   "areaServed": ["GB", "EU", "AU"],
-  "description": "Live breathing, meditation and chair-yoga sessions for remote, hybrid and in-office teams on Teams or Zoom, with honest wellbeing reporting."
+  "description": "Live breathing, meditation and chair-yoga sessions for remote, hybrid and in-office teams on Teams."
 };
 
 const arc = [
@@ -37,7 +37,7 @@ const TeamWellness = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Corporate Wellbeing Sessions for Remote and Hybrid Teams | Remote Yoga Coach"
-        description="Live corporate wellbeing for remote, hybrid and in-office teams: The Weekly Reset, breathing, meditation and chair yoga on Teams or Zoom, camera optional, with attendance and stress reporting. Book a pilot."
+        description="Live corporate wellbeing for remote, hybrid and in-office teams: The Weekly Reset, breathing, meditation and chair yoga on Teams, camera optional. Book a pilot."
         canonical="https://remoteyogacoach.com/services/team-wellness"
         structuredData={structuredData}
       />
@@ -51,7 +51,7 @@ const TeamWellness = () => {
               The weekly reset your remote and hybrid team looks forward to.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[600px] mx-auto">
-              A live 30-minute class on Teams or Zoom: meditation, breathing or chair yoga. Same coach every week,
+              A live class of 15 to 30 minutes on Teams: meditation, breathing or chair yoga. Same coach every week,
               camera optional.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -94,12 +94,11 @@ const TeamWellness = () => {
           <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
             <SectionHeading eyebrow="The offer">The Weekly Reset</SectionHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              A session in the calendar removes the hardest part: starting. Every one follows the same simple arc.
+              A session in the calendar removes the hardest part: starting. A combined session follows a simple arc.
             </p>
             <NumberedSteps items={arc as Array<[string, string]>} separator=": " />
             <p className="mt-8 text-charcoal/75 text-lg leading-relaxed">
-              No advanced poses and nothing anyone has to be fit to do. Attendance is reported, so you can see
-              whether it earns its slot.
+              No advanced poses and nothing anyone has to be fit to do.
             </p>
           </div>
         </section>

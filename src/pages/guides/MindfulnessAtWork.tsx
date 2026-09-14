@@ -351,8 +351,8 @@ const MindfulnessAtWork = () => {
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   Weekly Reset programme
                 </Link>{' '}
-                is built: live 30-minute sessions of breathing, meditation and chair yoga on Teams or Zoom, the same
-                coach every week, with honest monthly reporting. Pricing is public on the{' '}
+                is built: live 15 to 30 minute sessions of breathing, meditation and chair yoga on Teams, the same
+                coach every week. Pricing is public on the{' '}
                 <Link to="/pricing" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   pricing page
                 </Link>
@@ -387,7 +387,7 @@ const MindfulnessAtWork = () => {
 
         <GuideCTA
           heading="Give your team a weekly mindfulness habit"
-          text="A single pilot session of The Weekly Reset: live breathing, meditation and chair yoga on Teams, camera optional. Once it is a weekly habit, you get attendance and wellbeing reporting."
+          text="A single pilot session of The Weekly Reset: live breathing, meditation and chair yoga on Teams, camera optional."
         />
       </main>
 

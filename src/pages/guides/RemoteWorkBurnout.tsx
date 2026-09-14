@@ -309,8 +309,7 @@ const RemoteWorkBurnout = () => {
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   Weekly Reset programme
                 </Link>{' '}
-                provides: a live 30-minute session on Teams each week, with honest attendance and pre-post stress
-                reporting. For wider options, see{' '}
+                provides: a live session of 15 to 30 minutes on Teams each week. For wider options, see{' '}
                 <Link to="/blog/corporate-wellness-ideas-remote-teams" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   corporate wellness ideas that actually work for remote teams
                 </Link>
@@ -382,7 +381,7 @@ const RemoteWorkBurnout = () => {
 
         <GuideCTA
           heading="Build recovery into your team's week"
-          text="A single pilot session of The Weekly Reset: live breathing, meditation and chair yoga on Teams, camera optional. The weekly habit adds honest attendance and stress reporting."
+          text="A single pilot session of The Weekly Reset: live breathing, meditation and chair yoga on Teams, camera optional."
         />
       </main>
 

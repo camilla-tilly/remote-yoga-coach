@@ -80,17 +80,16 @@ const post: BlogPost = {
       type: "table",
       tableHead: ["", "Wellbeing app", "Live weekly session"],
       tableRows: [
-        ["Format", "Self-guided library, open when you choose", "Live on Teams or Zoom, same time each week"],
+        ["Format", "Self-guided library, open when you choose", "Live on Teams, same time each week"],
         ["Who it helps", "The disciplined few who open it", "Everyone who joins, and joining is easy"],
         ["The hard part, starting", "Left to each person", "Already handled, the time is held for them"],
         ["Human connection", "None, you practise alone", "A real coach, the same one each week"],
-        ["Proof it is working", "App login counts, if you get them", "Attendance and a short wellbeing check reported"],
-        ["Camera and recording", "Not applicable", "Camera optional, session recorded to catch up"]
+        ["Camera and recording", "Not applicable", "Camera optional, recorded on request"]
       ]
     },
     {
       type: "paragraph",
-      text: "I run these as a 500-hour certified yoga teacher, live on Teams or Zoom. Camera is always optional, every session is recorded, and I report attendance and a short wellbeing check so you can see whether it is landing. It is a flat monthly subscription priced per team, so the cost doesn't balloon with headcount."
+      text: "I run these as a 500-hour certified yoga teacher, live on Teams. Camera is always optional, and sessions can be recorded on request. It is a flat monthly subscription priced per team, so the cost doesn't balloon with headcount."
     },
     {
       type: "callout",
@@ -135,11 +134,11 @@ const post: BlogPost = {
         },
         {
           q: "What is a good Calm for Business or Headspace for Work alternative for a remote team?",
-          a: "A live, scheduled session works well for distributed teams because it gives everyone a shared moment rather than another solo app. Mine runs live on Teams or Zoom with the same coach each week, camera optional, recorded, and I report attendance and a short wellbeing check."
+          a: "A live, scheduled session works well for distributed teams because it gives everyone a shared moment rather than another solo app. Mine runs live on Teams with the same coach each week, camera optional, and it can be recorded on request."
         },
         {
           q: "How do I know people are actually using it?",
-          a: "That is the part apps often can't show clearly. With a live session I report attendance and a short wellbeing check each period, so you can see participation rather than guessing from a login count."
+          a: "That is the part apps often can't show clearly. With a live session you can see who joins the call each week for yourself, rather than guessing from a login count."
         }
       ]
     }

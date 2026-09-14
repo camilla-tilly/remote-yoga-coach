@@ -54,7 +54,7 @@ const post: BlogPost = {
     ] },
     { type: 'heading', text: 'Or, have someone run it for you' },
     { type: 'paragraph', text: 'Leading it yourself is a fine way to start, and for some teams it is enough. A dedicated coach adds continuity: the same familiar person every week builds trust that a rotating internal volunteer struggles to. See [how a run-for-you session works](/services/team-wellness), or [corporate wellness ideas that actually work](/blog/corporate-wellness-ideas-remote-teams) for the wider menu.' },
-    { type: 'cta', text: 'Would rather not run it yourself? Start with a single pilot session, hosted for you. Once it is a weekly habit, you get attendance and wellbeing reporting.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
+    { type: 'cta', text: 'Would rather not run it yourself? Start with a single pilot session, hosted for you.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
     { type: 'faq', faqItems: [
       { q: 'Does a wellbeing session work over Teams or Zoom?', a: 'Yes, and often better than in person for a distributed team. There is no room to book, every location joins equally, cameras can stay off, and the session is recorded for other time zones.' },
       { q: 'How long should a virtual wellbeing session be?', a: '15 to 30 minutes works best: long enough to reset, short enough to fit a lunch break or a gap between meetings.' },

@@ -86,7 +86,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "This is the shape of what I run: a short live session on Teams or Zoom each week, the same coach every time, covering breathing, meditation and chair yoga. Camera is optional so nobody has to perform, and every session is recorded. I report attendance plus a short wellbeing check, so you can see it is working rather than guessing.",
+      text: "This is the shape of what I run: a short live session on Teams each week, the same coach every time, with a choice of meditation, breathing and chair yoga classes. Camera is optional so nobody has to perform, and sessions can be recorded on request.",
     },
     {
       type: "list",
@@ -94,7 +94,7 @@ const post: BlogPost = {
         "**One recurring session beats a scattering of one-offs.** A regular habit changes how a week feels; a single wellbeing day rarely survives to the following Monday.",
         "**Per-team pricing protects a small budget.** Adding people does not add cost.",
         "**Live and led drives real participation.** A set time people simply join, with a real person leading, gets attended in a way a self-serve library does not.",
-        "**Recorded and camera-optional removes the barriers.** Nobody has to be on screen or free at the exact hour to benefit.",
+        "**Camera-optional, with recordings on request, removes the barriers.** Nobody has to be on screen or free at the exact hour to benefit.",
       ],
     },
     {
@@ -141,7 +141,7 @@ const post: BlogPost = {
         },
         {
           q: "What does your live session include and how is it priced?",
-          a: "A short live session on Teams or Zoom each week with the same coach, covering breathing, meditation and chair yoga. Camera is optional and every session is recorded. It is priced per team as a flat monthly subscription, shown on the pricing page, and I report attendance and a short wellbeing check.",
+          a: "A short live session on Teams each week with the same coach, with a choice of meditation, breathing and chair yoga classes. Camera is optional and sessions can be recorded on request. It is priced per team as a flat monthly subscription, shown on the pricing page.",
         },
       ],
     },

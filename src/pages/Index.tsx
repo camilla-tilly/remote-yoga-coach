@@ -12,7 +12,7 @@ import SEO from '@/components/SEO';
  * editorial image-led layout. Ported with inline styles + oklch to reproduce the
  * design faithfully without touching the shared Tailwind theme (which another
  * chat is mid-edit on). Content and SEO are Camilla's real, verified copy:
- * three separate classes, 30-minute sessions, SEK pricing, Teams or Zoom, real
+ * three separate classes, 15 to 30 minute sessions, SEK pricing, Teams only, real
  * review quotes, real bio. No fabricated stats, credentials, or client logos.
  */
 
@@ -46,7 +46,7 @@ const structuredData = {
   provider: { '@type': 'Organization', name: 'Remote Yoga Coach', url: 'https://remoteyogacoach.com' },
   areaServed: ['GB', 'EU', 'AU'],
   description:
-    'Live 30-minute breathing, meditation and chair-yoga classes for remote and hybrid teams, delivered on Teams or Zoom, with attendance and wellbeing reporting.',
+    'Live breathing, meditation and chair-yoga classes of around 15 to 30 minutes for remote and hybrid teams, delivered on Teams.',
 };
 
 const sessions = [
@@ -71,10 +71,9 @@ const sessions = [
 ];
 
 const steps = [
-  ['01', 'A 20-minute call', 'Your time zones, and what the team is struggling with.'],
+  ['01', 'A first call', 'To see if it is a fit. Your time zones, and what the team is struggling with.'],
   ['02', 'A pilot session', 'One paid session. See who joins before you commit.'],
   ['03', 'A weekly slot', 'Same time every week, as a recurring invite.'],
-  ['04', 'A number you can forward', 'Monthly attendance, for the budget conversation.'],
 ];
 
 // Real client quotes, verbatim, first names only. Card layout with varied spans/sizes.
@@ -86,9 +85,9 @@ const reviews: Array<{ quote: string; name: string; span: number; size: number; 
 ];
 
 const tiers = [
-  { name: 'Starter', price: '2,990 kr', per: '/mo', body: 'Two live sessions a month, with quarterly reporting.', highlight: false },
-  { name: 'Weekly', price: '4,990 kr', per: '/mo', body: 'One live session every week, with quarterly reporting.', highlight: true },
-  { name: 'Enterprise', price: 'from 8,900 kr', per: '/mo', body: 'Two or more a week, or across time zones.', highlight: false },
+  { name: 'Starter', price: '2,990 kr', per: '/mo', body: 'Two live sessions a month.', highlight: false },
+  { name: 'Weekly', price: '4,990 kr', per: '/mo', body: 'One live session every week.', highlight: true },
+  { name: 'Enterprise', price: 'from 8,900 kr', per: '/mo', body: 'Two or more a week, or across time zones. Includes a monthly check-in call with your HR contact.', highlight: false },
 ];
 
 const eyebrow: React.CSSProperties = {
@@ -110,7 +109,7 @@ const Index = () => {
     <div className="ryc" style={{ fontFamily: sans, color: c.text, background: c.paper, overflowX: 'hidden', minHeight: '100vh' }}>
       <SEO
         title="Corporate Wellbeing for Remote and Hybrid Teams | Remote Yoga Coach"
-        description="Live meditation, breathing and chair yoga for remote and hybrid teams on Teams or Zoom. Sessions your team actually turns up for, and you can measure."
+        description="Live meditation, breathing and chair yoga for remote and hybrid teams on Teams. Sessions your team actually turns up for."
         canonical="https://remoteyogacoach.com/"
         structuredData={structuredData}
       />
@@ -149,7 +148,7 @@ const Index = () => {
       <section className="ryc-pad" style={{ maxWidth: 1200, margin: '0 auto', padding: '120px 40px 0' }}>
         <div className="ryc-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.05fr) minmax(0, 0.95fr)', gap: 64, alignItems: 'center' }}>
           <div>
-            <div style={{ ...eyebrow, marginBottom: 26 }}>Live on Teams or Zoom&nbsp;&nbsp;·&nbsp;&nbsp;camera optional</div>
+            <div style={{ ...eyebrow, marginBottom: 26 }}>Live on Teams&nbsp;&nbsp;·&nbsp;&nbsp;camera optional</div>
             <h1 style={{ fontFamily: serif, fontWeight: 400, fontSize: 'clamp(34px, 3.8vw, 53px)', lineHeight: 1.14, letterSpacing: '-0.012em', margin: 0, maxWidth: '20ch', textWrap: 'balance' }}>
               A stronger team, <span style={{ color: c.terracotta }}>half&nbsp;an&nbsp;hour</span> at a time.
             </h1>
@@ -176,7 +175,7 @@ const Index = () => {
       <section id="sessions" className="ryc-pad" style={{ maxWidth: 1200, margin: '0 auto', padding: '96px 40px 0' }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 40, marginBottom: 44, flexWrap: 'wrap' }}>
           <h2 style={{ ...h2Style, fontSize: 'clamp(26px, 2.8vw, 36px)', maxWidth: '22ch' }}>Three classes. Choose one, alternate, or combine.</h2>
-          <p style={{ fontSize: 16.5, lineHeight: 1.6, color: c.text3, margin: 0, maxWidth: '34ch' }}>Every class is live and about thirty minutes. Pick one, or rotate through them.</p>
+          <p style={{ fontSize: 16.5, lineHeight: 1.6, color: c.text3, margin: 0, maxWidth: '34ch' }}>Every class is live and around 15 to 30 minutes. Pick one, or rotate through them.</p>
         </div>
         <div className="ryc-sessions-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 16 }}>
           {sessions.map((s) => (
@@ -232,7 +231,7 @@ const Index = () => {
               <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>Before I taught full time I worked in a multinational, a startup, a consultancy and government. I know what a Thursday afternoon feels like.</p>
               <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>So the Weekly Reset is deliberately unimpressive. Done in a chair, in work clothes, camera off if you like. Nobody has to be good at it.</p>            </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 30 }}>
-              {['500 hours of yoga training', 'Movement, breathing and meditation', 'Live on Teams and Zoom', 'UK, EU and AU hours'].map((p) => (
+              {['500 hours of yoga training', 'Meditation, breathing and chair yoga', 'Live on Teams', 'UK, EU and AU hours'].map((p) => (
                 <span key={p} style={{ fontFamily: mono, fontSize: 12, color: c.text2, border: `1px solid oklch(0.86 0.02 76)`, borderRadius: 999, padding: '9px 16px', whiteSpace: 'nowrap' }}>{p}</span>
               ))}
             </div>

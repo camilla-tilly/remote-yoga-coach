@@ -32,8 +32,8 @@ const post: BlogPost = {
     { type: 'paragraph', text: 'Det vanligaste svaret är en friskvårdsdag, en engångsföreläsning om stresshantering, eller en app-licens som delas ut men sällan öppnas. Insatserna är inte dåliga, men de är punktinsatser.' },
     { type: 'paragraph', text: 'Wellbeing fungerar ungefär som kondition: ingen tror att ett enda bra träningspass förändrar hälsan, ändå förväntar sig organisationer ofta det av en friskvårdsdag. Den goda känslan är verklig, men den är borta veckan efter, eftersom inget förstärker den.' },
     { type: 'heading', text: 'En enkel, återkommande vana' },
-    { type: 'paragraph', text: 'Det som gör skillnad är en vana som upprepas. [Veckoresetet](/services/team-wellness) är byggt för just det: ett live-pass på Teams eller Zoom, samma tid varje vecka, samma coach, så att det blir en del av kalendern.' },
-    { type: 'paragraph', text: 'Kameran är valfri och varje pass spelas in, så den som inte kan vara med live blir aldrig utestängd. Teamet väljer mellan meditation, andning eller stolyoga och kan kombinera dem över en månad.' },
+    { type: 'paragraph', text: 'Det som gör skillnad är en vana som upprepas. [Veckoresetet](/services/team-wellness) är byggt för just det: ett live-pass på Teams, samma tid varje vecka, samma coach, så att det blir en del av kalendern.' },
+    { type: 'paragraph', text: 'Kameran är valfri och passen kan spelas in om ni vill, så den som inte kan vara med live blir aldrig utestängd. Teamet väljer mellan meditation, andning eller stolyoga och kan kombinera dem över en månad.' },
     { type: 'callout', text: 'Passen hålls på engelska av en 500-timmars certifierad yogalärare. För team med internationella kollegor är det en fördel: alla kan delta oavsett modersmål.' },
     { type: 'heading', text: 'Så börjar ni utan att bygga ett stort projekt' },
     { type: 'list', items: [
@@ -47,7 +47,7 @@ const post: BlogPost = {
     { type: 'faq', faqItems: [
       { q: 'Vilka är de tidigaste tecknen på att ett distansteam mår dåligt?', a: 'Kameran som alltid är av på möten, krympande svarstider på Slack eller Teams utan ökad arbetsbörda, och korttidsfrånvaro som ökar utan tydlig orsak. Var för sig bevisar de inget, men som mönster över några veckor är de värda att ta på allvar.' },
       { q: 'Varför räcker inte en enstaka friskvårdsdag eller app-licens?', a: 'Wellbeing fungerar som kondition: ett enda bra tillfälle förändrar sällan mönstret. En vana som upprepas varje vecka gör mer för teamets mående än flera enstaka insatser.' },
-      { q: 'Fungerar det för ett team som sitter i flera länder eller tidszoner?', a: 'Ja. Allt sker via Teams eller Zoom, så det spelar ingen roll om teamet sitter på ett kontor, är helt distribuerat eller en blandning. Passen hålls på engelska, så internationella kollegor kan delta på samma villkor.' },
+      { q: 'Fungerar det för ett team som sitter i flera länder eller tidszoner?', a: 'Ja. Allt sker via Teams, så det spelar ingen roll om teamet sitter på ett kontor, är helt distribuerat eller en blandning. Passen hålls på engelska, så internationella kollegor kan delta på samma villkor.' },
       { q: 'Hur kommer vi igång utan att bygga ett stort internt projekt?', a: 'Börja med ett enskilt pilotpass för ett team, se hur det landar, och besluta om ett löpande upplägg utifrån det. Det kräver ingen stor budgetprocess.' },
     ] },
   ],

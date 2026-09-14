@@ -46,7 +46,7 @@ const Footer = () => {
             </Link>
             <p className="font-inter text-[15px] text-charcoal/65 leading-relaxed mt-5 max-w-sm">
               Live breathing, meditation and chair-yoga classes your distributed team actually shows up for. On
-              Teams or Zoom, camera optional, with reporting you can take to leadership.
+              Teams, camera optional.
             </p>
             <a
               href="https://www.linkedin.com/"

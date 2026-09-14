@@ -68,7 +68,7 @@ const post: BlogPost = {
     },
     {
       type: 'paragraph',
-      text: 'A live, recurring team session works well here because there is nothing extra to build. I run one weekly class (meditation, breathing or chair yoga) live on Teams or Zoom, with the same coach each week, so a new face becomes a familiar one quickly. A new starter simply joins whichever class is next on the calendar.'
+      text: 'A live, recurring team session works well here because there is nothing extra to build. I run one weekly class (meditation, breathing or chair yoga) live on Teams, with the same coach each week, so a new face becomes a familiar one quickly. A new starter simply joins whichever class is next on the calendar.'
     },
     {
       type: 'callout',
@@ -80,7 +80,7 @@ const post: BlogPost = {
     },
     {
       type: 'paragraph',
-      text: "Including wellbeing in onboarding tells a new starter, without a single line of policy, that pausing during the day is not something they need permission for. Camera optional and every session recorded also signals that missing something for a good reason is fine, which matters to someone still working out how flexible this new job actually is."
+      text: "Including wellbeing in onboarding tells a new starter, without a single line of policy, that pausing during the day is not something they need permission for. Camera optional, and recordings if the team wants them, also signal that missing something for a good reason is fine, which matters to someone still working out how flexible this new job actually is."
     },
     {
       type: 'paragraph',
@@ -98,7 +98,7 @@ const post: BlogPost = {
       type: 'cta',
       text: 'See what a live session looks like before you decide whether to build it into onboarding. I will run a short class on your own call, no preparation needed. For the wider context, see my [guide to remote work burnout](/guides/remote-work-burnout).',
       ctaHref: '/demo',
-      ctaLabel: 'Book a demo session'
+      ctaLabel: 'Book a pilot session'
     },
     {
       type: 'faq',

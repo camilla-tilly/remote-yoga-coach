@@ -11,11 +11,11 @@ import { GuideFAQ, GuideHeading, DefinitionList, PullQuote } from '@/components/
 const faqItems: Array<[string, string]> = [
   [
     'Is this office yoga, workplace yoga or chair yoga?',
-    'The same thing here. Office and workplace yoga are the umbrella terms. What I run is chair yoga: seated, gentle, no mat and no changing, live on Teams or Zoom from any desk.',
+    'The same thing here. Office and workplace yoga are the umbrella terms. What I run is chair yoga: seated, gentle, no mat and no changing, live on Teams from any desk.',
   ],
   [
     'What is a virtual chair yoga session for a company?',
-    'A live session on Teams or Zoom where I lead your team through gentle seated movement, breathing and a short reset, usually 15 to 30 minutes. Everyone joins from their desk, camera optional.',
+    'A live session on Teams where I lead your team through gentle seated movement, breathing and a short reset, usually 15 to 30 minutes. Everyone joins from their desk, camera optional.',
   ],
   [
     'How long should a corporate chair yoga session be?',
@@ -45,7 +45,7 @@ const structuredData = {
       provider: { '@type': 'Organization', name: 'Remote Yoga Coach', url: 'https://remoteyogacoach.com' },
       areaServed: ['GB', 'EU', 'AU'],
       description:
-        'Live virtual office yoga and chair yoga sessions for companies and distributed teams on Teams or Zoom: gentle seated movement, breathing and a short reset, camera optional, no experience needed.',
+        'Live virtual office yoga and chair yoga sessions for companies and distributed teams on Teams: gentle seated movement, breathing and a short reset, camera optional, no experience needed.',
     },
     {
       '@type': 'FAQPage',
@@ -77,7 +77,7 @@ const ChairYogaForTeams = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Virtual Office Yoga and Chair Yoga for Teams | Remote Yoga Coach"
-        description="Live virtual office yoga and chair yoga for companies and remote teams on Teams or Zoom. Workplace yoga that is gentle and desk-friendly, camera optional, no experience needed. Book a pilot session."
+        description="Live virtual office yoga and chair yoga for companies and remote teams on Teams. Workplace yoga that is gentle and desk-friendly, camera optional, no experience needed. Book a pilot session."
         canonical="https://remoteyogacoach.com/services/chair-yoga-for-teams"
         structuredData={structuredData}
       />
@@ -97,7 +97,7 @@ const ChairYogaForTeams = () => {
               <Link to="/blog/office-yoga-for-remote-teams" className="text-clay underline underline-offset-4 hover:text-clayDark">
                 workplace yoga for distributed and hybrid teams
               </Link>{' '}
-              on Teams or Zoom. Gentle, seated, in normal work clothes.
+              on Teams. Gentle, seated, in normal work clothes.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">
