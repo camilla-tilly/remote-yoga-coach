@@ -2,12 +2,12 @@ import type { BlogPost } from '../blogTypes';
 
 const post: BlogPost = {
   slug: "how-to-meditate-at-work",
-  title: "How to meditate at work: a simple practice you can do at your desk",
-  metaDescription: "A practical guide to meditation at work: a short, no-equipment desk meditation you can do between meetings, plus how to get past the two obstacles that stop most people.",
+  title: "How to meditate at work: a 5-minute desk meditation",
+  metaDescription: "A 5-minute desk meditation for the gap between meetings: no app, camera off, step by step for beginners, plus how to keep it up on busy days.",
   publishDate: "2026-07-29",
   readingTime: "5 min",
   category: "Meditation and breathing",
-  excerpt: "You don't need an app, a cushion, or a quiet room to meditate at work. Here is a simple desk meditation for a complete beginner, plus how to actually keep it up.",
+  excerpt: "You don't need an app, a cushion, or a quiet room to meditate at work. Here is a 5-minute desk meditation for a complete beginner, plus how to actually keep it up.",
   language: "en",
   relatedServiceHref: "/services/team-wellness",
   relatedServiceLabel: "The Weekly Reset",
@@ -16,13 +16,13 @@ const post: BlogPost = {
   relatedPosts: [
     { slug: "meditation-breathing-or-chair-yoga-for-your-team", label: "Meditation, breathing or chair yoga" },
     { slug: "corporate-mindfulness-sessions-what-to-expect", label: "Corporate mindfulness sessions" },
-    { slug: "5-minute-desk-meditation", label: "A 5-minute desk meditation" },
+    { slug: "chair-yoga-at-your-desk", label: "Chair yoga at your desk: 8 poses" },
     { slug: "breathing-exercises-for-work-stress", label: "Breathing exercises for work stress" }
   ],
   content: [
     {
       type: "paragraph",
-      text: "Here is the short version. To meditate at work, sit where you are, put both feet on the floor, and spend a few minutes resting your attention on your breath. Do it in a gap between meetings, camera off, no app required. When your mind wanders to your inbox, notice it and come back. That is the whole practice. Below I will walk you through it step by step and deal with the two obstacles that stop most people before they start."
+      text: "Here is the short version. To meditate at work, sit where you are, put both feet on the floor, and spend five minutes resting your attention on your breath. Do it in a gap between meetings, camera off, no app required. When your mind wanders to your inbox, notice it and come back. That is the whole practice. Below I will walk you through it minute by minute and deal with the two obstacles that stop most people before they start."
     },
     {
       type: "heading",
@@ -38,27 +38,25 @@ const post: BlogPost = {
     },
     {
       type: "heading",
-      text: "A simple desk meditation, step by step"
+      text: "A 5-minute desk meditation, step by step"
     },
     {
       type: "paragraph",
-      text: "This is built for a complete beginner. No equipment, nothing to download, nobody watching. If it helps, set a soft timer for five minutes so you are not clock-watching."
+      text: "This is built for a complete beginner. No equipment, nothing to download, nobody watching. Sit back in your chair with both feet flat on the floor and your hands in your lap, camera off, sound off. Set a soft timer for five minutes so you are not clock-watching."
     },
     {
       type: "list",
       items: [
-        "Sit back in your chair with both feet flat on the floor and your hands resting in your lap. Camera off, sound off.",
-        "Close your eyes, or if that feels odd at work, soften your gaze down towards the desk.",
-        "Take three slow breaths, making the out-breath a little longer than the in-breath. Let your shoulders drop each time you breathe out.",
-        "Now stop steering your breath and simply follow it. Notice the cooler air coming in and the warmer air going out. You are not changing it, just watching it.",
-        "After a minute or so, scan your jaw, your shoulders and your hands. These are the places desk work quietly tightens. Wherever you are gripping, let it soften.",
-        "When you notice you have drifted off to your to-do list, and you will, just bring your attention back to the breath without any telling-off. That return is the point.",
-        "To finish, take one more slow breath, notice how you feel compared to a few minutes ago, and open your eyes."
+        "**Minute 1, arrive.** Close your eyes, or if that feels odd at work, soften your gaze down towards the desk. Take three slow breaths, making the out-breath a little longer than the in-breath. Let your shoulders drop each time you breathe out.",
+        "**Minute 2, follow the breath.** Stop steering your breath and simply watch it. Notice the cooler air coming in and the warmer air going out.",
+        "**Minute 3, soften.** Scan your jaw, your shoulders and your hands. These are the places desk work quietly tightens. Wherever you are gripping, let it soften.",
+        "**Minute 4, come back.** By now you have probably drifted off to your to-do list. That is normal. Bring your attention back to the breath without any telling-off. That return is the point.",
+        "**Minute 5, close.** Take one more slow breath, notice how you feel compared to five minutes ago, and open your eyes."
       ]
     },
     {
       type: "callout",
-      text: "You can shorten this to three breaths on a truly frantic day, or stretch it to ten minutes when you have the room. The shape stays the same: arrive, follow the breath, soften, return."
+      text: "You can shorten this to three breaths on a truly frantic day, or stretch it to ten minutes when you have the room. The shape stays the same: arrive, follow the breath, soften, come back."
     },
     {
       type: "heading",
@@ -70,7 +68,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "This is the most common one, and I understand it. But the busiest, most back-to-back days are exactly when a short reset earns its place. Without a pause, you carry the tension of one call straight into the next, and by mid-afternoon it has all stacked up. A few minutes between meetings gives your brain a clean break. You are not losing that time, you are making the next hour of work a bit sharper and a bit calmer."
+      text: "This is the most common one, and I understand it. But the busiest, most back-to-back days are exactly when a short reset earns its place. Without a pause, you carry the tension of one call straight into the next, and by mid-afternoon it has all stacked up. Five minutes between meetings gives your brain a clean break. You are not losing that time, you are making the next hour of work a bit sharper and a bit calmer."
     },
     {
       type: "subheading",
@@ -78,7 +76,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Good news: you do not have to. The goal was never a blank, switched-off mind. If your thoughts keep arriving, let them, and keep returning to the breath anyway. A distracted, thought-filled five minutes still counts. In fact that is what most sessions feel like, even after years of practice. Lower the bar and you will actually keep going."
+      text: "You do not have to. If your thoughts keep arriving, let them, and keep returning to the breath anyway. A distracted five minutes still counts, and that is what most sessions feel like, even after years of practice. Lower the bar and you will actually keep going."
     },
     {
       type: "heading",
@@ -86,11 +84,15 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Here is the honest problem with solo desk meditation. It is simple, it works, and almost nobody keeps it up. Not because they lack willpower, but because a five-minute personal habit is the first thing to get bumped when the day gets loud. The intention is real. The follow-through quietly disappears."
+      text: "Here is the honest problem with solo desk meditation. It is simple, it works, and almost nobody keeps it up. Not because they lack willpower, but because a five-minute personal habit is the first thing to get bumped when the day gets loud."
     },
     {
       type: "paragraph",
-      text: "What removes the \"I never get round to it\" problem is having someone else hold the time. When a short guided session sits in the calendar once a week and you do it together as a team, you are no longer relying on remembering. The time is booked, the practice is led, and you simply show up. That is the whole idea behind [The Weekly Reset](/services/team-wellness): a live session on Teams or Zoom with the same coach each week, camera optional, covering breathing, meditation and gentle chair yoga. Every session is recorded, so anyone who misses it can catch up in their own time."
+      text: "Two small things help. Put a recurring five-minute hold in your calendar straight after your heaviest block of meetings. And tie the practice to ending a call: meditate before you open anything else."
+    },
+    {
+      type: "paragraph",
+      text: "What removes the \"I never get round to it\" problem is having someone else hold the time. When a short guided session sits in the calendar once a week and you do it together as a team, you are no longer relying on remembering. That is the whole idea behind [The Weekly Reset](/services/team-wellness): a live session on Teams or Zoom with the same coach each week, camera optional. Meditation, breathing and chair yoga are separate class types, so your team books the one it wants. Every session is recorded, so anyone who misses it can catch up in their own time."
     },
     {
       type: "cta",
@@ -104,7 +106,7 @@ const post: BlogPost = {
       faqItems: [
         {
           q: "How do I meditate at work if I only have a few minutes?",
-          a: "A few minutes is plenty. Sit back, feet on the floor, take three slow breaths with a longer out-breath, then simply follow your breathing until your timer ends. When your mind wanders, bring it back. You do not need a longer session to feel steadier."
+          a: "Five minutes is plenty, and even three slow breaths with a longer out-breath will steady you on a frantic day. Sit back, feet on the floor, and follow your breathing until your timer ends. When your mind wanders, bring it back."
         },
         {
           q: "Do I need an app or any equipment for desk meditation?",
@@ -116,7 +118,7 @@ const post: BlogPost = {
         },
         {
           q: "How is a guided team session different from meditating on my own?",
-          a: "The practice is much the same, but someone else holds the time and leads it, so it actually happens. With The Weekly Reset you get a live session on Teams or Zoom with the same coach each week, camera optional, and every session is recorded so nobody has to miss out."
+          a: "The practice is much the same, but someone else holds the time and leads it, so it actually happens. With The Weekly Reset your team gets a live meditation class on Teams or Zoom each week, camera optional, and every session is recorded."
         }
       ]
     }

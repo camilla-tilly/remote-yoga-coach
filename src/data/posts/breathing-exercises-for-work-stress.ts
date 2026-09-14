@@ -14,7 +14,7 @@ const post: BlogPost = {
   tableOfContents: false,
   relatedPosts: [
     { slug: "how-to-meditate-at-work", label: "How to meditate at work" },
-    { slug: "5-minute-desk-meditation", label: "A 5-minute meditation you can do at your desk" },
+    { slug: "tech-neck-exercises-desk", label: "Tech neck exercises: neck and shoulder stretches" },
     { slug: "chair-yoga-at-your-desk", label: "Chair yoga at your desk: 8 poses" },
     { slug: "prevent-burnout-distributed-team", label: "How to prevent burnout in a distributed team" }
   ],

@@ -263,9 +263,9 @@ const DeskYoga = () => {
                 description="The full chair yoga sequence with step-by-step instructions for each pose."
               />
               <SpokeCard
-                to="/blog/neck-and-shoulder-stretches-desk-workers"
-                label="Neck and shoulder stretches for desk workers"
-                description="A deeper dive on the area screen work punishes hardest, with a daily maintenance routine."
+                to="/blog/tech-neck-exercises-desk"
+                label="Tech neck exercises: neck and shoulder stretches"
+                description="A deeper dive on the area screen work punishes hardest: seven seated stretches and the desk setup fix."
               />
             </div>
           </div>
@@ -293,9 +293,9 @@ const DeskYoga = () => {
             <GuideProse>
               <p>
                 Done twice a day, this adds up to more useful movement than most gym intentions survive to deliver.
-                The full version with detailed cues is in{' '}
-                <Link to="/blog/desk-yoga-5-minute-routine" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                  desk yoga: a 5-minute routine between calls
+                The poses with detailed cues are in{' '}
+                <Link to="/blog/chair-yoga-at-your-desk" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                  chair yoga at your desk in 5 minutes
                 </Link>
                 .
               </p>
@@ -322,7 +322,7 @@ const DeskYoga = () => {
                   breathing exercises for work stress
                 </Link>{' '}
                 or the{' '}
-                <Link to="/blog/5-minute-desk-meditation" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                <Link to="/blog/how-to-meditate-at-work" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   five-minute desk meditation
                 </Link>
                 . The movement and the stillness are two doors into the same room; my{' '}

@@ -18,7 +18,7 @@ const post: BlogPost = {
   relatedPosts: [
     { slug: 'tech-neck-exercises-desk', label: 'Tech neck' },
     { slug: 'chair-yoga-at-your-desk', label: 'Chair yoga at your desk' },
-    { slug: 'desk-yoga-5-minute-routine', label: 'A 5-minute desk yoga routine' },
+    { slug: 'meditation-breathing-or-chair-yoga-for-your-team', label: 'Meditation, breathing or chair yoga for your team?' },
   ],
   content: [
     { type: 'paragraph', text: 'Office yoga is simply yoga done during the workday, in whatever space a team already works in, rather than a studio class people have to travel to. Workplace yoga is the same idea under a slightly more formal name. Neither term means anyone rolls out a mat and folds into a headstand between meetings. In practice it is gentle, mostly seated movement and breathing, kept short and kept easy, so a whole team can join without changing, sweating, or moving furniture. Here is what that actually involves and how I run it live on screen.' },
@@ -31,7 +31,7 @@ const post: BlogPost = {
     { type: 'paragraph', text: 'These terms overlap, so it helps to separate them:' },
     { type: 'list', items: [
       '**Office yoga / workplace yoga** is the umbrella: any yoga done during the workday, in any format, however long.',
-      '**[Desk yoga](/blog/desk-yoga-5-minute-routine)** is the short, self-led version: a few stretches you do at your own desk, often solo, in a spare five minutes.',
+      '**[Desk yoga](/guides/desk-yoga)** is the short, self-led version: a few stretches you do at your own desk, often solo, in a spare five minutes.',
       '**[Chair yoga](/blog/chair-yoga-at-your-desk)** describes the method: yoga done seated in an ordinary chair, using the chair for support so no mat or floor work is needed.',
     ] },
     { type: 'paragraph', text: 'When I run office yoga for a team, it is usually delivered as chair yoga, because seated practice is the format that lets everyone take part on the same call. My [chair yoga for teams](/services/chair-yoga-for-teams) sessions are built exactly this way.' },
@@ -46,7 +46,7 @@ const post: BlogPost = {
       '**The same coach each week.** You get me every time, which is how the gentle familiarity and trust build up.',
       '**Camera optional.** Anyone can join with their camera off and still follow along, which quietly removes the biggest reason people hesitate.',
       '**Recorded every time.** Whoever cannot make the live slot gets the recording, so a clash with a meeting does not mean missing out.',
-      '**Breathing, meditation, and chair yoga.** The mix depends on the team and the week, but it stays seated, gentle, and short.',
+      '**Meditation, breathing or chair yoga.** Three separate class types. A team picks one, alternates between them, or combines them across a month, and all three stay seated, gentle, and short.',
     ] },
     { type: 'paragraph', text: 'I am a 500-hour certified yoga teacher, and I keep every session pitched so a complete beginner can follow it comfortably. The aim is a team that feels a little looser and a little calmer afterwards, not one that has been put through its paces.' },
     { type: 'heading', text: 'How to start office yoga for your team' },

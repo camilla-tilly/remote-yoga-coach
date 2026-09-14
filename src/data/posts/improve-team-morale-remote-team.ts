@@ -2,12 +2,12 @@ import type { BlogPost } from '../blogTypes';
 
 const post: BlogPost = {
   slug: "improve-team-morale-remote-team",
-  title: "How to improve team morale on a remote team",
-  metaDescription: "What actually lifts morale on a distributed team: being seen as a person, shared rituals, realistic workloads and honest recognition, not forced fun or perks.",
+  title: "How to improve morale on a remote team",
+  metaDescription: "What builds morale and a strong, connected remote team: being seen, shared rituals, realistic workloads and honest recognition, not perks or forced fun.",
   publishDate: "2026-08-03",
   readingTime: "6 min",
   category: "Remote teams and burnout",
-  excerpt: "Forced fun and perks rarely move morale on a remote team. What does: people feeling seen, shared rituals, realistic workloads and honest recognition. Here is the practical version, and one small habit that helps.",
+  excerpt: "Perks and forced fun rarely build a strong, connected remote team. What does: people feeling seen, shared rituals, realistic workloads and honest recognition. Here is the practical version, and one small habit that helps.",
   language: "en",
   relatedServiceHref: "/services/corporate-wellbeing-for-remote-teams",
   relatedServiceLabel: "Corporate wellbeing for remote and hybrid teams",
@@ -15,17 +15,17 @@ const post: BlogPost = {
   faqSchema: true,
   relatedPosts: [
     { slug: "improve-wellbeing-programme-attendance", label: "Why wellbeing programme attendance drops, and how..." },
-    { slug: "build-a-strong-remote-team", label: "Building a strong, connected remote team" },
+    { slug: "keep-hybrid-team-focused", label: "How to keep a hybrid team focused and connected" },
     { slug: "corporate-wellness-ideas-remote-teams", label: "Corporate wellness ideas for remote teams" },
   ],
   content: [
     {
       type: "paragraph",
-      text: "If morale on your remote team is low, the fix is almost never another perk or a themed social. What actually lifts morale on a distributed team is quieter and harder to buy: people feeling seen as individuals, a few shared rituals they can count on, workloads that are realistic, honest recognition, and low-pressure moments together that are not about output. Do those consistently and morale tends to look after itself. Skip them and no amount of forced fun will paper over the gap.",
+      text: "If morale on your remote team is low, the fix is almost never another perk or a themed social. What actually builds morale, and a strong, connected remote team, is quieter and harder to buy: people feeling seen as individuals, a few shared rituals they can count on, workloads that are realistic, honest recognition, and low-pressure moments together that are not about output. Do those consistently and morale tends to look after itself. Skip them and no amount of forced fun will paper over the gap.",
     },
     {
       type: "paragraph",
-      text: "I coach live wellbeing sessions for remote and hybrid teams, so I spend a lot of my time thinking about how distributed teams actually feel rather than how they are supposed to feel. Here is what tends to work, and what quietly fails.",
+      text: "I coach live wellbeing sessions for remote and hybrid teams, so I think a lot about how distributed teams actually feel rather than how they are supposed to feel. Here is what helps, and what quietly fails.",
     },
     {
       type: "heading",
@@ -57,7 +57,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Rituals give a scattered week a shape. A Monday check-in that is genuinely about how people are, a Friday wind-down, a standing moment that always happens: the value is in the reliability. When something is always there, people stop bracing and start relaxing into it. One dependable ritual beats five occasional ones.",
+      text: "Rituals give a scattered week a shape. A Monday check-in that is genuinely about how people are, a Friday wind-down, a standing moment that always happens: the value is in the reliability. Because it is already in the calendar, nobody has to organise it or decide each week whether to turn up, and people stop bracing and relax into it. One dependable ritual beats five occasional ones.",
     },
     {
       type: "subheading",
@@ -97,6 +97,7 @@ const post: BlogPost = {
         "**Forced fun asks for energy people do not have.** A mandatory quiz on a stretched week is another task, not a gift.",
         "**Perks are one-way.** A voucher or an app is a nice moment, but it does nothing about being seen, recognised, or realistically loaded.",
         "**One-offs cannot build trust.** Morale is rebuilt in small, repeated moments, not in a single big event that is gone by the following week.",
+        "**Optional socials reach the wrong people.** The confident, already-connected few turn up. Quieter colleagues, people in other time zones and parents logging off at five often miss out.",
         "**It can read as a cover-up.** If the real problem is workload or silence from managers, a social event lands as a distraction from what people actually want fixed.",
       ],
     },
@@ -110,15 +111,15 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "I want to be honest about what a wellbeing session is and is not. It will not fix a broken workload, absent recognition, or a manager who never really talks to their team. If those are your issues, start there. No class solves a culture problem.",
+      text: "I want to be honest about what a wellbeing session is and is not. It will not fix a broken workload, absent recognition, or a manager who never really talks to their team. If those are your issues, start there.",
     },
     {
       type: "paragraph",
-      text: "What a short, live, recurring session can be is one small, dependable morale anchor: a shared ritual, a low-pressure moment together, and a bit of being human in the same virtual room each week. That is genuinely useful once the bigger things are in decent shape, and it is one of the few wellbeing formats that hits several of the levers above at once.",
+      text: "What a short, live, recurring session can be is one small, dependable morale anchor: a shared ritual, a low-pressure moment together, and a bit of being human in the same virtual room each week. Once the bigger things are in decent shape, it touches several of the levers above at once, and unlike an optional social it reaches everyone equally.",
     },
     {
       type: "paragraph",
-      text: "The way I run it, your team chooses what serves them: a meditation class to settle and reset, a breathing class to steady a stressful stretch, or a chair yoga class to get people out of their heads and gently moving. You can pick one, alternate between them, or combine them over a month. Everything is live on Teams or Zoom with the same coach each week, camera always optional, and recorded so anyone who misses it can catch up. It runs on a flat monthly subscription per team, so nobody is counting individual sign-ups. You can see how the offering works on my [corporate wellbeing for remote and hybrid teams](/services/corporate-wellbeing-for-remote-teams) page.",
+      text: "The way I run it, your team chooses what serves them: a meditation class to settle and reset, a breathing class to steady a stressful stretch, or a chair yoga class to get people out of their heads and gently moving. You can pick one, alternate between them, or combine them over a month. Everything is live on Teams or Zoom with the same coach each week, so people get to know one familiar face. The camera is always optional, so nobody has to perform, and every session is recorded, so people in other time zones or with a clash are included rather than left out. It runs on a flat monthly subscription per team, priced in SEK, so nobody is counting individual sign-ups. You can see how the offering works on my [corporate wellbeing for remote and hybrid teams](/services/corporate-wellbeing-for-remote-teams) page.",
     },
     {
       type: "cta",
@@ -139,8 +140,8 @@ const post: BlogPost = {
           a: "Remote work strips out the small in-person moments that quietly topped up morale, such as shared coffees and being in the room when something goes well, without replacing them. So low morale is usually a connection and recognition problem rather than a motivation one. People feel under-seen and rarely told plainly that their work mattered.",
         },
         {
-          q: "Does forced fun improve team morale?",
-          a: "Rarely. Mandatory social events and perks ask for energy people may not have and do nothing about being seen, recognised, or realistically loaded. If the underlying issue is workload or silence from managers, forced fun can even read as a cover-up. Small, repeated, genuine moments rebuild morale far better than a single big event.",
+          q: "Do perks or forced fun build a strong remote team?",
+          a: "Rarely. Perks and mandatory socials are single moments, they ask for energy people may not have, and optional events tend to miss quieter colleagues and people in other time zones. They do nothing about being seen, recognised, or realistically loaded. Connection is built through small, shared moments that repeat, not a single big event.",
         },
         {
           q: "Can a wellbeing class fix low team morale?",

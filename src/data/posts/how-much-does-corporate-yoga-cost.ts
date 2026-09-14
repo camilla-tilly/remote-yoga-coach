@@ -95,7 +95,7 @@ const post: BlogPost = {
     { type: 'heading', text: 'What to actually budget' },
     {
       type: 'paragraph',
-      text: 'For most distributed teams of 10–50, a realistic 2026 budget for a **live, online, weekly** programme is **£330–£550 per month** (€380–€640), often with a discount for paying annually. A single pilot session, one live 30-minute class, is the low-risk way to test it before committing.',
+      text: 'For most distributed teams of 10–50, a realistic 2026 budget for a **live, online, weekly** programme is roughly **4,000–7,000 kr per month** (about £330–£550 or €380–€640 at UK and European market rates), often with a discount for paying annually. A single pilot session, one live 30-minute class, is the low-risk way to test it before committing.',
     },
     { type: 'heading', text: 'See exactly what it costs' },
     {

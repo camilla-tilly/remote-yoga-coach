@@ -18,7 +18,7 @@ const post: BlogPost = {
   relatedPosts: [
     { slug: 'corporate-wellness-ideas-remote-teams', label: 'Corporate wellness ideas that actually work' },
     { slug: 'prevent-burnout-distributed-team', label: 'How to prevent burnout in a distributed team' },
-    { slug: '5-minute-desk-meditation', label: 'A 5-minute meditation you can do at your desk' },
+    { slug: 'how-to-meditate-at-work', label: 'How to meditate at work: a 5-minute desk meditation' },
   ],
   content: [
     { type: 'paragraph', text: 'Running a wellbeing session for a distributed team over Teams or Zoom sounds harder than it is, and in some ways it works better than gathering everyone in a room. There is no space to book, no travel, and every location joins as an equal. Whether you want to lead one yourself or just understand what good looks like before you hire someone, here is how to run one well.' },

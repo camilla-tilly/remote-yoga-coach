@@ -231,8 +231,8 @@ const MindfulnessAtWork = () => {
             />
             <div className="mt-10 grid gap-5 sm:grid-cols-2">
               <SpokeCard
-                to="/blog/5-minute-desk-meditation"
-                label="A 5-minute meditation you can do at your desk"
+                to="/blog/how-to-meditate-at-work"
+                label="How to meditate at work: a 5-minute desk meditation"
                 description="The full desk meditation, step by step, camera off. No experience needed."
               />
               <SpokeCard

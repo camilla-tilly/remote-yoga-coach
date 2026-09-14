@@ -1,3 +1,15 @@
+# Merged duplicate posts (2026-09-14). Each pair answered the same search
+# question, so the weaker page was folded into the stronger one and 301s to it.
+# Both slash forms, because pretty_urls is off and either can be requested.
+/blog/5-minute-desk-meditation                    /blog/how-to-meditate-at-work           301
+/blog/5-minute-desk-meditation/                   /blog/how-to-meditate-at-work           301
+/blog/desk-yoga-5-minute-routine                  /blog/chair-yoga-at-your-desk           301
+/blog/desk-yoga-5-minute-routine/                 /blog/chair-yoga-at-your-desk           301
+/blog/neck-and-shoulder-stretches-desk-workers    /blog/tech-neck-exercises-desk          301
+/blog/neck-and-shoulder-stretches-desk-workers/   /blog/tech-neck-exercises-desk          301
+/blog/build-a-strong-remote-team                  /blog/improve-team-morale-remote-team   301
+/blog/build-a-strong-remote-team/                 /blog/improve-team-morale-remote-team   301
+
 # SPA fallback: prerendered static files in dist/ are served first,
 # anything else falls through to the app shell.
 /*    /index.html   200
