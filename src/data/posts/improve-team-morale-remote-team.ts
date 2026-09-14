@@ -25,7 +25,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "I coach live wellbeing sessions for remote and hybrid teams, so I spend a lot of my week on other people's calls watching how distributed teams actually feel. Here is what I see working, and what I see quietly failing.",
+      text: "I coach live wellbeing sessions for remote and hybrid teams, so I spend a lot of my time thinking about how distributed teams actually feel rather than how they are supposed to feel. Here is what tends to work, and what quietly fails.",
     },
     {
       type: "heading",

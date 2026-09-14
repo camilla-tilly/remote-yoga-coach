@@ -21,7 +21,7 @@ const post: BlogPost = {
     { slug: 'office-yoga-for-remote-teams', label: 'Office yoga for remote and hybrid teams' },
   ],
   content: [
-    { type: 'paragraph', text: 'Short answer: there is no single right choice, because meditation, breathing and chair yoga are three separate class types I run, not one blended session. Most HR leads I work with start with whichever feels closest to what their team already struggles with, then either stick with it or alternate between the three from month to month. Here is how I actually help a team decide.' },
+    { type: 'paragraph', text: 'Short answer: there is no single right choice, because meditation, breathing and chair yoga are three separate class types I run, not one blended session. The sensible starting point is whichever feels closest to what your team already struggles with, then either sticking with it or alternating between the three from month to month. Here is how I would help you decide.' },
     { type: 'heading', text: 'The three class types, in plain terms' },
     { type: 'paragraph', text: 'It helps to treat these as genuinely separate options rather than three names for the same thing. Each session is built around one of them, and a team can pick one, alternate between them, or combine all three across a month.' },
     { type: 'list', items: [
@@ -40,7 +40,7 @@ const post: BlogPost = {
     { type: 'paragraph', text: 'Meditation suits teams that are mentally overloaded rather than physically tense, particularly distributed teams juggling different time zones and a constant stream of notifications. It is the slowest of the three to feel dramatic, but it is the one people often say they miss most once it is in the calendar.' },
     { type: 'heading', text: 'Why most teams end up mixing all three' },
     { type: 'paragraph', text: 'In practice, few teams stay with only one class type once they get going. A common pattern is chair yoga most weeks, with a breathing-focused session in a particularly stretched month, or meditation added once the team has settled into the habit and wants to extend it. Because the format, live, seated, camera optional, recorded, stays the same across all three, switching between them does not disrupt the routine. It just changes what the session is training that week.' },
-    { type: 'paragraph', text: 'There is no requirement to lock in one class type from the start. Plenty of the teams I work with treat the first month as a trial of all three and settle on a rhythm once they can see which one their people actually look forward to.' },
+    { type: 'paragraph', text: 'There is no requirement to lock in one class type from the start. Treating the first month as a trial of all three is a perfectly good approach, and it lets a team settle on a rhythm once they can see which one their people actually look forward to.' },
     { type: 'heading', text: 'What stays the same across all three' },
     { type: 'paragraph', text: 'Whichever class type a team chooses, the surrounding structure does not change:' },
     { type: 'list', items: [
@@ -58,7 +58,7 @@ const post: BlogPost = {
     { type: 'faq', faqItems: [
       { q: 'Are meditation, breathing and chair yoga the same session?', a: 'No. They are three separate class types. Meditation is a guided, seated session focused on attention and calm. Breathing is built entirely around breath technique. Chair yoga is gentle, seated movement done from an ordinary chair. A team can pick one, alternate between them, or combine all three.' },
       { q: 'Which class type should we start with?', a: 'It depends on what the team needs most right now. Physically stiff, desk-bound teams often start with chair yoga. Teams under heavy deadline pressure tend to get more from breathing. Distributed teams struggling to switch off often prefer meditation. None of these are permanent choices.' },
-      { q: 'Can we switch between class types later?', a: 'Yes. Most teams I work with do not stay with just one. Because the format, live, seated, camera optional, recorded, is the same for all three, switching between them does not disrupt the routine, it just changes the focus of that week’s session.' },
+      { q: 'Can we switch between class types later?', a: 'Yes, and there is no reason to stay with just one. Because the format, live, seated, camera optional, recorded, is the same for all three, switching between them does not disrupt the routine, it just changes the focus of that week’s session.' },
       { q: 'Do we need any equipment for any of the three?', a: 'No. All three run seated, over Teams or Zoom, with no mat or floor space needed. Chair yoga uses an ordinary desk chair for support. Meditation and breathing need nothing more than a quiet-ish spot to sit for the session.' },
     ] },
   ],

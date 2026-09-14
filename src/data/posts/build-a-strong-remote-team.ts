@@ -86,7 +86,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Here is what the session I run actually is, so there is no mystery. It happens live on Teams or Zoom, with the same coach each week, so the team builds familiarity rather than meeting a new face every time. It is short and gentle: breathing, meditation, and chair yoga that anyone can do from their desk. The camera is optional, so nobody has to perform or tidy their room to take part. Every session is recorded, so people in other time zones or with clashes are never left out. It runs on a flat monthly subscription in euros, and afterwards attendance and a short wellbeing check are reported back, so you can see who is being reached.",
+      text: "Here is what the session I run actually is, so there is no mystery. It happens live on Teams or Zoom, with the same coach each week, so the team builds familiarity rather than meeting a new face every time. It is short and gentle: breathing, meditation, and chair yoga that anyone can do from their desk. The camera is optional, so nobody has to perform or tidy their room to take part. Every session is recorded, so people in other time zones or with clashes are never left out. It runs on a flat monthly subscription in SEK, and afterwards attendance and a short wellbeing check are reported back, so you can see who is being reached.",
     },
     {
       type: "callout",
