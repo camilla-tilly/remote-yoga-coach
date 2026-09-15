@@ -49,7 +49,10 @@ const structuredData = {
     'Live breathing, meditation and chair-yoga classes of around 15 to 30 minutes for remote and hybrid teams, delivered on Teams.',
 };
 
-// The three classes are the product, so each one gets its own mark and tint and
+// The three classes are the product, so each one gets its own mark, and the
+// brand's only accent colour (terracotta) carries the emphasis. All three cards
+// share the brand cream: an earlier version gave each its own peach, butter or
+// blush tint, and two of those sat outside the palette entirely.
 // the class name is the headline. Before this they were three identical pale
 // cards whose largest text was a secondary name ("Desk reset"), with the class
 // itself reduced to a small grey label, so nothing on the page said "these are
@@ -60,7 +63,6 @@ const sessions = [
     tagline: 'A desk reset',
     body: 'Shoulders, neck and hips, in work clothes, at the desk.',
     to: '/services/chair-yoga-for-teams',
-    tint: 'oklch(0.935 0.03 55)',
     icon: 'chair',
   },
   {
@@ -68,7 +70,6 @@ const sessions = [
     tagline: 'A pause between calls',
     body: 'Before the all-hands or after a hard call. Works with cameras off.',
     to: '/blog/breathing-exercises-for-work-stress',
-    tint: 'oklch(0.945 0.025 85)',
     icon: 'breath',
   },
   {
@@ -76,7 +77,6 @@ const sessions = [
     tagline: 'Settle and refocus',
     body: 'A quiet moment in the middle of the day.',
     to: '/guides/mindfulness-at-work',
-    tint: 'oklch(0.935 0.018 30)',
     icon: 'meditation',
   },
 ] as const;
@@ -221,9 +221,9 @@ const Index = () => {
         <div className="ryc-sessions-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 20 }}>
           {sessions.map((s) => (
             <Link key={s.kind} to={s.to} style={{ textDecoration: 'none', color: 'inherit', display: 'block', height: '100%' }}>
-              <div className="ryc-card ryc-class-card" style={{ background: s.tint, border: `1px solid ${c.borderSoft}`, borderRadius: 14, padding: '34px 32px 30px', height: '100%', display: 'flex', flexDirection: 'column' }}>
-                <div style={{ width: 58, height: 58, borderRadius: 999, background: c.card, border: `1px solid ${c.borderSoft}`, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 26 }}>
-                  <ClassIcon kind={s.icon} color={c.terracotta} />
+              <div className="ryc-card ryc-class-card" style={{ background: '#efe4d6', border: `1px solid ${c.borderSoft}`, borderRadius: 14, padding: '34px 32px 30px', height: '100%', display: 'flex', flexDirection: 'column' }}>
+                <div style={{ width: 58, height: 58, borderRadius: 999, background: c.terracotta, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 26 }}>
+                  <ClassIcon kind={s.icon} color={c.onDark} />
                 </div>
                 <h3 style={{ fontFamily: serif, fontWeight: 400, fontSize: 'clamp(30px, 2.6vw, 36px)', lineHeight: 1.05, letterSpacing: '-0.012em', margin: 0, color: c.text }}>{s.kind}</h3>
                 <div style={{ fontFamily: mono, fontSize: 12.5, color: c.terracotta, margin: '10px 0 14px' }}>{s.tagline}</div>
