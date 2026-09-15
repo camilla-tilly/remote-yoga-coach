@@ -49,26 +49,63 @@ const structuredData = {
     'Live breathing, meditation and chair-yoga classes of around 15 to 30 minutes for remote and hybrid teams, delivered on Teams.',
 };
 
+// The three classes are the product, so each one gets its own mark and tint and
+// the class name is the headline. Before this they were three identical pale
+// cards whose largest text was a secondary name ("Desk reset"), with the class
+// itself reduced to a small grey label, so nothing on the page said "these are
+// the three things you can book".
 const sessions = [
   {
     kind: 'Chair yoga',
-    title: 'Desk reset',
+    tagline: 'A desk reset',
     body: 'Shoulders, neck and hips, in work clothes, at the desk.',
     to: '/services/chair-yoga-for-teams',
+    tint: 'oklch(0.935 0.03 55)',
+    icon: 'chair',
   },
   {
     kind: 'Breathing',
-    title: 'Breathing break',
+    tagline: 'A pause between calls',
     body: 'Before the all-hands or after a hard call. Works with cameras off.',
     to: '/blog/breathing-exercises-for-work-stress',
+    tint: 'oklch(0.945 0.025 85)',
+    icon: 'breath',
   },
   {
     kind: 'Meditation',
-    title: 'Guided meditation',
+    tagline: 'Settle and refocus',
     body: 'A quiet moment in the middle of the day.',
     to: '/guides/mindfulness-at-work',
+    tint: 'oklch(0.935 0.018 30)',
+    icon: 'meditation',
   },
-];
+] as const;
+
+// Simple line marks, drawn to sit with the site's dot logo rather than
+// borrowing yoga-studio iconography. Decorative only.
+const ClassIcon = ({ kind, color }: { kind: 'chair' | 'breath' | 'meditation'; color: string }) => (
+  <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    {kind === 'chair' && (
+      <>
+        <rect x="8" y="4" width="5" height="13.5" rx="2.5" />
+        <rect x="8" y="16" width="17" height="4" rx="2" />
+        <path d="M10.5 20v8M22.5 20v8" />
+      </>
+    )}
+    {kind === 'breath' && (
+      <>
+        <path d="M3 13c3.5-5 6.5-5 10 0s6.5 5 10 0 4-3.5 6-2" />
+        <path d="M3 21c3.5-5 6.5-5 10 0s6.5 5 10 0 4-3.5 6-2" opacity="0.5" />
+      </>
+    )}
+    {kind === 'meditation' && (
+      <>
+        <circle cx="16" cy="16" r="11" opacity="0.5" />
+        <circle cx="16" cy="16" r="4.5" fill={color} stroke="none" />
+      </>
+    )}
+  </svg>
+);
 
 const steps = [
   ['01', 'A first call', 'To see if it is a fit. Your time zones, and what the team is struggling with.'],
@@ -129,6 +166,10 @@ const Index = () => {
         .ryc-underline:hover { text-decoration: underline; text-underline-offset: 4px; }
         .ryc-card { transition: border-color .18s ease, transform .18s ease; }
         .ryc-card:hover { border-color: ${c.terracotta}; transform: translateY(-2px); }
+        .ryc-class-card { box-shadow: 0 1px 0 oklch(0.88 0.02 60 / 0.6); }
+        .ryc-class-card:hover { box-shadow: 0 14px 30px -18px oklch(0.4 0.05 45 / 0.35); }
+        .ryc-class-arrow { transition: transform .18s ease; }
+        .ryc-class-card:hover .ryc-class-arrow { transform: translateX(4px); }
         @media (max-width: 900px) {
           .ryc-nav-links { display: none !important; }
           .ryc-hero-grid, .ryc-how-grid, .ryc-coach-grid, .ryc-pilot-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
@@ -177,13 +218,20 @@ const Index = () => {
           <h2 style={{ ...h2Style, fontSize: 'clamp(26px, 2.8vw, 36px)', maxWidth: '22ch' }}>Three classes. Choose one, alternate, or combine.</h2>
           <p style={{ fontSize: 16.5, lineHeight: 1.6, color: c.text3, margin: 0, maxWidth: '34ch' }}>Every class is live and around 15 to 30 minutes. Pick one, or rotate through them.</p>
         </div>
-        <div className="ryc-sessions-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 16 }}>
+        <div className="ryc-sessions-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 20 }}>
           {sessions.map((s) => (
-            <Link key={s.title} to={s.to} style={{ textDecoration: 'none', color: 'inherit', display: 'block', height: '100%' }}>
-              <div className="ryc-card" style={{ background: c.card, border: `1px solid ${c.rule}`, borderRadius: 8, padding: '34px 30px 36px' }}>
-                <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: '0.04em', textTransform: 'uppercase', color: c.terracotta, marginBottom: 20 }}>{s.kind}</div>
-                <h3 style={{ fontFamily: serif, fontWeight: 400, fontSize: 25, margin: '0 0 12px', color: c.text }}>{s.title}</h3>
-                <p style={{ fontSize: 15.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>{s.body}</p>
+            <Link key={s.kind} to={s.to} style={{ textDecoration: 'none', color: 'inherit', display: 'block', height: '100%' }}>
+              <div className="ryc-card ryc-class-card" style={{ background: s.tint, border: `1px solid ${c.borderSoft}`, borderRadius: 14, padding: '34px 32px 30px', height: '100%', display: 'flex', flexDirection: 'column' }}>
+                <div style={{ width: 58, height: 58, borderRadius: 999, background: c.card, border: `1px solid ${c.borderSoft}`, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 26 }}>
+                  <ClassIcon kind={s.icon} color={c.terracotta} />
+                </div>
+                <h3 style={{ fontFamily: serif, fontWeight: 400, fontSize: 'clamp(30px, 2.6vw, 36px)', lineHeight: 1.05, letterSpacing: '-0.012em', margin: 0, color: c.text }}>{s.kind}</h3>
+                <div style={{ fontFamily: mono, fontSize: 12.5, color: c.terracotta, margin: '10px 0 14px' }}>{s.tagline}</div>
+                <p style={{ fontSize: 16, lineHeight: 1.6, color: c.text2, margin: 0, flex: 1 }}>{s.body}</p>
+                <div className="ryc-class-more" style={{ marginTop: 26, paddingTop: 18, borderTop: `1px solid ${c.borderSoft}`, display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 14.5, color: c.terracotta }}>
+                  <span>Explore {s.kind.toLowerCase()}</span>
+                  <span aria-hidden="true" className="ryc-class-arrow">→</span>
+                </div>
               </div>
             </Link>
           ))}
