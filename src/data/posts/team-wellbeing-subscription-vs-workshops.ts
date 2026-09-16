@@ -44,7 +44,7 @@ const post: BlogPost = {
       ['Measurable over time', 'No', 'Yes'],
       ['Best for', 'A specific occasion', 'Ongoing team wellbeing'],
     ] },
-    { type: 'paragraph', text: 'Because a subscription is priced per team rather than per person, the cost per employee falls as the team grows, the opposite of per-seat app licensing. For the wider picture, see [how much corporate wellbeing costs](/blog/how-much-does-corporate-yoga-cost). The [cost of employee burnout guide](/guides/cost-of-employee-burnout) helps if you need to justify the spend.' },
+    { type: 'paragraph', text: 'Because a subscription is priced per team rather than per person, the cost per employee falls as the team grows, the opposite of per-seat app licensing. For the wider picture, see my guide to [office yoga prices](/blog/how-much-does-corporate-yoga-cost). The [cost of employee burnout guide](/guides/cost-of-employee-burnout) helps if you need to justify the spend.' },
     { type: 'heading', text: 'When a one-off still makes sense' },
     { type: 'paragraph', text: 'Workshops are not bad. For a one-time occasion, like a team day or an awareness week, a single well-run session is lovely. Just do not expect it to shift ongoing stress. That needs rhythm. A sensible path is to run a [pilot session](/demo) and convert it into a subscription if it lands.' },
     { type: 'cta', text: 'Want to test the habit before committing? A single pilot session lets your team try it.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },

@@ -127,7 +127,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "This turns wellbeing from a soft cost into a risk-and-return calculation, which is the language a budget conversation runs on. For the spend side, see my breakdown of [how much corporate yoga costs](/blog/how-much-does-corporate-yoga-cost)."
+      text: "This turns wellbeing from a soft cost into a risk-and-return calculation, which is the language a budget conversation runs on. For the spend side, see my breakdown of [office yoga prices in 2026](/blog/how-much-does-corporate-yoga-cost)."
     },
     {
       type: "heading",
