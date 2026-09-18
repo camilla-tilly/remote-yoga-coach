@@ -381,7 +381,7 @@ const RemoteWorkBurnout = () => {
 
         <GuideCTA
           heading="Build recovery into your team's week"
-          text="A single pilot session of The Weekly Reset: live breathing, meditation and chair yoga on Teams, camera optional."
+          text="A single pilot session of The Weekly Reset: live breathing, meditation and chair yoga on Teams."
         />
       </main>
 

@@ -117,7 +117,7 @@ const post: BlogPost = {
         },
         {
           q: "How is a guided team session different from meditating on my own?",
-          a: "The practice is much the same, but someone else holds the time and leads it, so it actually happens. With The Weekly Reset your team gets a live meditation class each week, camera optional, and sessions can be recorded on request."
+          a: "The practice is much the same, but someone else holds the time and leads it, so it actually happens. With The Weekly Reset your team gets a live meditation class each week, sessions can be recorded on request."
         }
       ]
     }

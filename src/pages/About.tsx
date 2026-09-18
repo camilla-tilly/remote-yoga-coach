@@ -75,7 +75,7 @@ const About = () => {
             </p>
             <p>
               The Weekly Reset is a simple idea: a scheduled moment with a real person, not another app to work
-              through alone. Chair-based, camera optional, nothing anyone has to be fit or flexible to do. Not an
+              through alone. Chair-based, nothing anyone has to be fit or flexible to do. Not an
               impressive practice, just a habit your whole team can keep.
             </p>
             </div>
@@ -132,7 +132,7 @@ const About = () => {
             <div className="mt-12 grid gap-6 sm:grid-cols-2">
               {[
                 ['Continuity', 'The same coach every week, someone your team gets to know. The relationship is the whole point.'],
-                ['Accessibility', 'Camera-off, chair-based, no equipment. Everyone can join, wherever they work.'],
+                ['Accessibility', 'Chair-based, no equipment. Everyone can join, wherever they work.'],
               ].map(([title, text]) => (
                 <div key={title} className="rounded-[12px] border border-sage-light bg-card p-8 text-center">
                   <h3 className="font-fraunces font-normal text-heading text-xl">{title}</h3>

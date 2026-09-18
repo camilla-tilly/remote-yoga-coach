@@ -29,7 +29,7 @@ const post: BlogPost = {
     { type: 'heading', text: 'What actually happens in a session' },
     { type: 'paragraph', text: 'A well-run session follows a simple, predictable arc:' },
     { type: 'list', items: [
-      '**Arrive.** A minute or two to land, cameras optional, no pressure to speak.',
+      '**Arrive.** A minute or two to land, with no pressure to speak.',
       '**Breathe.** One simple technique that works before a meeting or a hard call.',
       '**Move a little.** Gentle, seated mobility for the neck, shoulders and back that screen work punishes.',
       '**Settle.** A short guided meditation to close, five minutes or so.',

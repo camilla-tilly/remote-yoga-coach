@@ -68,7 +68,7 @@ const sessions = [
   {
     kind: 'Breathing',
     tagline: 'A pause between calls',
-    body: 'Before the all-hands or after a hard call. Works with cameras off.',
+    body: 'Before the all-hands or after a hard call.',
     to: '/blog/breathing-exercises-for-work-stress',
     icon: 'breath',
   },
@@ -189,7 +189,7 @@ const Index = () => {
       <section className="ryc-pad" style={{ maxWidth: 1200, margin: '0 auto', padding: '120px 40px 0' }}>
         <div className="ryc-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.05fr) minmax(0, 0.95fr)', gap: 64, alignItems: 'center' }}>
           <div>
-            <div style={{ ...eyebrow, marginBottom: 26 }}>Live on Teams&nbsp;&nbsp;·&nbsp;&nbsp;camera optional</div>
+            <div style={{ ...eyebrow, marginBottom: 26 }}>Live on Teams&nbsp;&nbsp;·&nbsp;&nbsp;15 to 30 minutes</div>
             <h1 style={{ fontFamily: serif, fontWeight: 400, fontSize: 'clamp(34px, 3.8vw, 53px)', lineHeight: 1.14, letterSpacing: '-0.012em', margin: 0, maxWidth: '20ch', textWrap: 'balance' }}>
               A stronger team, <span style={{ color: c.terracotta }}>half&nbsp;an&nbsp;hour</span> at a time.
             </h1>
@@ -277,7 +277,7 @@ const Index = () => {
             <h2 style={{ ...h2Style, fontSize: 'clamp(26px, 2.8vw, 36px)', lineHeight: 1.06, maxWidth: '20ch' }}>I&rsquo;m Camilla. I&rsquo;ve sat in the meetings too.</h2>
             <div style={{ display: 'grid', gap: 18, marginTop: 26, maxWidth: '54ch' }}>
               <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>Before I taught full time I worked in a multinational, a startup, a consultancy and government. I know what a Thursday afternoon feels like.</p>
-              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>So the Weekly Reset is deliberately unimpressive. Done in a chair, in work clothes, camera off if you like. Nobody has to be good at it.</p>            </div>
+              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>So the Weekly Reset is deliberately unimpressive. Done in a chair, in work clothes. Nobody has to be good at it.</p>            </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 30 }}>
               {['500 hours of yoga training', 'Meditation, breathing and chair yoga', 'Live on Teams', 'UK, EU and AU hours'].map((p) => (
                 <span key={p} style={{ fontFamily: mono, fontSize: 12, color: c.text2, border: `1px solid oklch(0.86 0.02 76)`, borderRadius: 999, padding: '9px 16px', whiteSpace: 'nowrap' }}>{p}</span>

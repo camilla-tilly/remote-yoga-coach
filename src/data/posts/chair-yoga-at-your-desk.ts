@@ -86,7 +86,7 @@ const post: BlogPost = {
     { type: 'heading', text: 'Even better with a team' },
     {
       type: 'paragraph',
-      text: 'Stretching alone helps. Doing it together, with someone guiding you, helps more, because the hardest part of any wellbeing habit is starting, and a scheduled session does that for you. That is the idea behind a live weekly reset: a short, guided chair-yoga and breathing session your whole team joins from wherever they are, camera optional.',
+      text: 'Stretching alone helps. Doing it together, with someone guiding you, helps more, because the hardest part of any wellbeing habit is starting, and a scheduled session does that for you. That is the idea behind a live weekly reset: a short, guided chair-yoga and breathing session your whole team joins from wherever they are.',
     },
     {
       type: 'cta',

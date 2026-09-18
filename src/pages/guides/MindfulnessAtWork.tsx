@@ -337,7 +337,7 @@ const MindfulnessAtWork = () => {
                 ],
                 [
                   'Low threshold beats impressive',
-                  'Camera optional, chair-based, nothing to get right. The moment a session demands performance, the people who need it most stop coming.',
+                  'Chair-based, nothing to get right. The moment a session demands performance, the people who need it most stop coming.',
                 ],
                 [
                   'Measured beats hoped-for',
@@ -387,7 +387,7 @@ const MindfulnessAtWork = () => {
 
         <GuideCTA
           heading="Give your team a weekly mindfulness habit"
-          text="A single pilot session of The Weekly Reset: live breathing, meditation and chair yoga on Teams, camera optional."
+          text="A single pilot session of The Weekly Reset: live breathing, meditation and chair yoga on Teams."
         />
       </main>
 

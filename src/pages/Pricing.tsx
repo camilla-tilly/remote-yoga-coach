@@ -117,7 +117,7 @@ const Pricing = () => {
                   <ul className="mt-5 space-y-2.5">
                     {[
                       'A live session, breathing, chair yoga or meditation, your pick',
-                      'Runs on Teams, camera optional',
+                      'Runs on Teams',
                       'Recorded on request, to share with anyone who missed it',
                       'No setup, no contract, nothing to sign',
                     ].map((item) => (
@@ -233,7 +233,7 @@ const Pricing = () => {
               {[
                 'The same named coach every week, continuity is the whole point',
                 'A structured programme that moves through themes, not random one-off classes',
-                'Camera-off permission, no equipment, no activewear',
+                'No equipment, no activewear, nothing to prepare',
               ].map((item) => (
                 <li key={item} className="flex gap-3 text-charcoal/80 text-[16px] leading-relaxed">
                   <Check className="text-clay shrink-0 mt-1" size={17} strokeWidth={2.5} />

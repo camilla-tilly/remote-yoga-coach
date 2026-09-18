@@ -17,7 +17,7 @@ const structuredData = {
 };
 
 const arc = [
-  ['Arrive', 'A few breaths to settle. Camera on or off.'],
+  ['Arrive', 'A few breaths to settle.'],
   ['Breath', 'One technique simple enough to reuse at your desk.'],
   ['Move', 'Gentle chair-based mobility for the neck, shoulders and back.'],
   ['Settle', 'A short guided meditation.'],
@@ -37,7 +37,7 @@ const TeamWellness = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Corporate Wellbeing Sessions for Remote and Hybrid Teams | Remote Yoga Coach"
-        description="Live corporate wellbeing for remote, hybrid and in-office teams: The Weekly Reset, breathing, meditation and chair yoga on Teams, camera optional. Book a pilot."
+        description="Live corporate wellbeing for remote, hybrid and in-office teams: The Weekly Reset, breathing, meditation and chair yoga on Teams. Book a pilot."
         canonical="https://remoteyogacoach.com/services/team-wellness"
         structuredData={structuredData}
       />
@@ -51,8 +51,8 @@ const TeamWellness = () => {
               The weekly reset your remote and hybrid team looks forward to.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[600px] mx-auto">
-              A live class of 15 to 30 minutes on Teams: meditation, breathing or chair yoga. Same coach every week,
-              camera optional.
+              A live class of 15 to 30 minutes on Teams: meditation, breathing or chair yoga, with the same coach
+              every week.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">

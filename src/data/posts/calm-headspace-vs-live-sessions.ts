@@ -84,7 +84,7 @@ const post: BlogPost = {
         ["Who it helps", "The disciplined few who open it", "Everyone who joins, and joining is easy"],
         ["The hard part, starting", "Left to each person", "Already handled, the time is held for them"],
         ["Human connection", "None, you practise alone", "A real coach, the same one each week"],
-        ["Camera and recording", "Not applicable", "Camera optional, recorded on request"]
+        ["Recording", "Not applicable", "On request"]
       ]
     },
     {
@@ -134,7 +134,7 @@ const post: BlogPost = {
         },
         {
           q: "What is a good Calm for Business or Headspace for Work alternative for a remote team?",
-          a: "A live, scheduled session works well for distributed teams because it gives everyone a shared moment rather than another solo app. Mine runs live on Teams with the same coach each week, camera optional, and it can be recorded on request."
+          a: "A live, scheduled session works well for distributed teams because it gives everyone a shared moment rather than another solo app. Mine runs live on Teams with the same coach each week, it can be recorded on request."
         },
         {
           q: "How do I know people are actually using it?",

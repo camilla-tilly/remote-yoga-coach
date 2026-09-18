@@ -10,7 +10,7 @@ import { GuideFAQ, ProseList, PullQuote } from '@/components/GuideLayout';
 const faq: Array<[string, string]> = [
   [
     'Vad är företagsyoga på distans?',
-    'Korta livepass i Teams för hela teamet samtidigt. Ni väljer meditation, andning eller stolyoga, eller växlar mellan dem. Ingen matta, inga ombyten, kameran frivillig.',
+    'Korta livepass i Teams för hela teamet samtidigt. Ni väljer meditation, andning eller stolyoga, eller växlar mellan dem. Ingen matta och inga ombyten.',
   ],
   [
     'Vilket språk hålls passen på?',
@@ -49,7 +49,7 @@ const structuredData = [
     availableLanguage: 'en',
     inLanguage: 'sv',
     description:
-      'Livepass i meditation, andning eller stolyoga för distans- och hybridteam, direkt i Teams. Samma lärare varje vecka, kamera frivillig, passen kan spelas in om ni vill.',
+      'Livepass i meditation, andning eller stolyoga för distans- och hybridteam, direkt i Teams. Samma lärare varje vecka, passen kan spelas in om ni vill.',
   },
   {
     '@context': 'https://schema.org',
@@ -71,7 +71,7 @@ const classes: Array<[string, string]> = [
 
 const included: string[] = [
   'Samma lärare varje vecka: jag, Camilla, med 500 timmars yogalärarutbildning',
-  'Kameran är alltid frivillig, och passen kan spelas in om ni vill',
+  'Passen kan spelas in om ni vill',
   'En länk som ni delar internt, jag sköter resten',
   'Fast månadsavgift per team, i kronor',
 ];
@@ -94,7 +94,7 @@ const ForetagsyogaDistans = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Företagsyoga på distans för svenska team | Remote Yoga Coach"
-        description="Livepass i meditation, andning eller stolyoga för distans- och hybridteam, direkt i Teams. Kamera frivillig, passen kan spelas in om ni vill, fast månadspris i kronor. Boka ett pilotpass."
+        description="Livepass i meditation, andning eller stolyoga för distans- och hybridteam, direkt i Teams. Passen kan spelas in om ni vill, fast månadspris i kronor. Boka ett pilotpass."
         canonical="https://remoteyogacoach.com/foretagsyoga-distans"
         ogType="website"
         ogLocale="sv_SE"

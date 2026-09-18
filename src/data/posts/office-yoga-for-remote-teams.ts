@@ -45,7 +45,7 @@ const post: BlogPost = {
     { type: 'list', items: [
       '**Live, not a recording.** I run it in real time on Teams, so I can adjust to the energy in the room and answer the odd question.',
       '**The same coach each week.** You get me every time, which is how familiarity and trust build up.',
-      '**Camera optional.** Anyone can follow along with their camera off, which removes the biggest reason people hesitate.',
+      '**Nothing to prepare.** No mat and no changing, which removes the biggest reason people hesitate.',
       '**Recorded on request.** If you want it, whoever cannot make the live slot gets the recording.',
       '**Meditation, breathing or chair yoga.** Three separate class types. A team picks one, alternates, or combines them across a month, and all three stay seated, gentle and short.',
     ] },

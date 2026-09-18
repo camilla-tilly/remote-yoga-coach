@@ -57,7 +57,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "A short, guided session, breathing, gentle movement, meditation, that the team joins together each week. It hits all three principles, which is why it tends to out-perform an app on actual participation. Camera-optional and chair-based means there is no barrier to joining.",
+      text: "A short, guided session, breathing, gentle movement, meditation, that the team joins together each week. It hits all three principles, which is why it tends to out-perform an app on actual participation. Chair-based and desk-friendly means there is no barrier to joining.",
     },
     {
       type: "subheading",

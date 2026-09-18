@@ -41,7 +41,7 @@ const structuredData = {
       provider: { '@type': 'Organization', name: 'Remote Yoga Coach', url: 'https://remoteyogacoach.com' },
       areaServed: ['GB', 'EU', 'AU'],
       description:
-        'Live weekly wellbeing sessions for distributed and hybrid teams on Teams: breathing, meditation and chair yoga, camera optional.',
+        'Live weekly wellbeing sessions for distributed and hybrid teams on Teams: breathing, meditation and chair yoga.',
       offers: { '@type': 'Offer', priceCurrency: 'SEK', description: 'Monthly subscription by session frequency, from a single pilot session.' },
     },
     {
@@ -69,7 +69,7 @@ const included = [
   ['One weekly slot', 'The same time every week, so it becomes a habit rather than a task.'],
   ['The same coach', 'A familiar person, which an app can never be.'],
   ['Breathing, meditation, chair yoga', 'Pick one, or rotate through them.'],
-  ['Camera optional', 'No equipment, no changing, nothing to perform.'],
+  ['Nothing to prepare', 'No equipment, no changing, nothing to perform.'],
 ];
 
 const CorporateWellbeingRemoteTeams = () => {
@@ -77,7 +77,7 @@ const CorporateWellbeingRemoteTeams = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Weekly Wellbeing Sessions for Remote and Hybrid Teams | Remote Yoga Coach"
-        description="A live weekly wellbeing subscription for remote, hybrid and in-office teams. Breathing, meditation and chair yoga on Teams, camera optional. Book a pilot session."
+        description="A live weekly wellbeing subscription for remote, hybrid and in-office teams. Breathing, meditation and chair yoga on Teams. Book a pilot session."
         canonical="https://remoteyogacoach.com/services/corporate-wellbeing-for-remote-teams"
         ogImage="https://remoteyogacoach.com/og/corporate-wellbeing-remote-teams.png?v=3"
         structuredData={structuredData}
@@ -94,7 +94,7 @@ const CorporateWellbeingRemoteTeams = () => {
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[600px] mx-auto">
               A live weekly class on Teams for your whole team, wherever they work. Meditation, breathing or
-              chair yoga, camera optional.
+              chair yoga.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">

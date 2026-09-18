@@ -78,12 +78,12 @@ const post: BlogPost = {
       items: [
         "**A meditation class** for weeks heavy on decision-making and context-switching, when people need to put the mental load down.",
         "**A breathing class** for the crunch around a launch or an on-call stretch, when the nervous system is running hot.",
-        "**A chair yoga class** for release without anyone leaving their desk, changing clothes, or turning a camera on.",
+        "**A chair yoga class** for release without anyone leaving their desk or changing clothes.",
       ],
     },
     {
       type: "paragraph",
-      text: "All three run live on Teams with the same coach each week, camera optional, and sessions can be recorded on request for anyone on call or in another time zone. That removes the friction that makes tech teams quietly skip wellbeing.",
+      text: "All three run live on Teams with the same coach each week, sessions can be recorded on request for anyone on call or in another time zone. That removes the friction that makes tech teams quietly skip wellbeing.",
     },
     {
       type: "subheading",
@@ -109,7 +109,7 @@ const post: BlogPost = {
       type: "list",
       items: [
         "Put it on the shared calendar at a consistent time, so it is a fixture, not a surprise invite.",
-        "Keep it opt-in and low-pressure. Camera optional, with a recording on request, means people can join at whatever level they want.",
+        "Keep it opt-in and low-pressure. A recording on request means people can join at whatever level they want.",
         "Have a leader show up sometimes. When a founder or engineering manager visibly takes fifteen minutes for it, it shows recovery is allowed.",
         "Keep it short. A session that respects a builder's time gets attended. One that sprawls gets quietly dropped.",
       ],
@@ -137,7 +137,7 @@ const post: BlogPost = {
         },
         {
           q: "Will engineers actually attend something like this?",
-          a: "They are most likely to when it is kept short, sits on the shared calendar at a consistent time, and stays opt-in. Because it is led by the same coach each week, camera optional and recorded if you want, people join at whatever level suits them.",
+          a: "They are most likely to when it is kept short, sits on the shared calendar at a consistent time, and stays opt-in. Because it is led by the same coach each week, and recorded if you want, people join at whatever level suits them.",
         },
         {
           q: "How is it priced?",

@@ -94,7 +94,7 @@ const post: BlogPost = {
         "**One recurring session beats a scattering of one-offs.** A regular habit changes how a week feels; a single wellbeing day rarely survives to the following Monday.",
         "**Per-team pricing protects a small budget.** Adding people does not add cost.",
         "**Live and led drives real participation.** A set time people simply join, with a real person leading, gets attended in a way a self-serve library does not.",
-        "**Camera-optional, with recordings on request, removes the barriers.** Nobody has to be on screen or free at the exact hour to benefit.",
+        "**Nothing to prepare removes the barriers.** Nobody has to be on screen or free at the exact hour to benefit.",
       ],
     },
     {

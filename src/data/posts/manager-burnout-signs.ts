@@ -129,7 +129,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "That last point is where a shared, low-pressure wellbeing moment earns its place. I run live sessions on Teams, the same coach each week, camera optional, and sessions can be recorded on request so anyone who misses one can catch up. It is breathing, meditation and chair yoga, nothing strenuous and nothing that needs a change of clothes."
+      text: "That last point is where a shared, low-pressure wellbeing moment earns its place. I run live sessions on Teams, the same coach each week, sessions can be recorded on request so anyone who misses one can catch up. It is breathing, meditation and chair yoga, nothing strenuous and nothing that needs a change of clothes."
     },
     {
       type: "paragraph",

@@ -73,7 +73,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "No mat, no changing clothes, no floor work. People stay at their desk, camera optional, and follow along. I am a 500-hour certified yoga teacher, so the movement is safe to lead for a mixed group of complete beginners.",
+      text: "No mat, no changing clothes, no floor work. People stay at their desk, and follow along. I am a 500-hour certified yoga teacher, so the movement is safe to lead for a mixed group of complete beginners.",
     },
     {
       type: "subheading",
@@ -113,7 +113,7 @@ const post: BlogPost = {
     },
     {
       type: "cta",
-      text: "Try a real reset over the lunch break, live on Teams, camera optional. Book one session and see how your team responds before committing to anything ongoing.",
+      text: "Try a real reset over the lunch break, live on Teams\. Book one session and see how your team responds before committing to anything ongoing.",
       ctaHref: "/demo",
       ctaLabel: "Book a session",
     },
