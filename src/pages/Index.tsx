@@ -64,9 +64,9 @@ const sessions = [
 const classPhoto: { src: string; alt: string; caption: string } | null = null;
 
 const steps = [
-  ['01', 'A first call', 'Your time zones, and what the team is struggling with.'],
-  ['02', 'A pilot session', 'One paid session. See who joins before you commit.'],
-  ['03', 'A weekly slot', 'Same time every week, as a recurring invite.'],
+  ['01', 'A first call', 'We talk about your team, your time zones and what you would like help with.'],
+  ['02', 'A pilot session', 'You book one paid class, so your team can try it before you commit to anything.'],
+  ['03', 'A weekly slot', 'If it works for you, we pick a regular time each week and I send a recurring invite.'],
 ];
 
 // Real client quotes, verbatim. Only the two that speak to what a buyer worries
@@ -102,7 +102,7 @@ const Index = () => {
     <div className="ryc" style={{ fontFamily: sans, color: c.text, background: c.paper, overflowX: 'hidden', minHeight: '100vh' }}>
       <SEO
         title="Corporate Wellbeing for Remote and Hybrid Teams | Remote Yoga Coach"
-        description="Live meditation, breathing and chair yoga for remote and hybrid teams on Teams. Sessions your team actually turns up for."
+        description="Live meditation, breathing and chair yoga classes for remote and hybrid teams, held on Teams. Each class is 15 to 30 minutes."
         canonical="https://remoteyogacoach.com/"
         structuredData={structuredData}
       />
@@ -154,18 +154,17 @@ const Index = () => {
           <div>
             <div style={{ ...eyebrow, fontSize: 'clamp(13px, 1vw, 16px)', marginBottom: 'clamp(22px, 2vw, 34px)' }}>Live on Teams&nbsp;&nbsp;·&nbsp;&nbsp;15 to 30 minutes</div>
             <h1 style={{ fontFamily: serif, fontWeight: 400, fontSize: 'clamp(40px, 6.6vw, 92px)', lineHeight: 1.03, letterSpacing: '-0.025em', margin: 0, maxWidth: '13ch', textWrap: 'balance' }}>
-              A stronger team, <span style={{ color: c.terracotta }}>half&nbsp;an&nbsp;hour</span> at a time.
+              Live <span style={{ color: c.terracotta }}>yoga and meditation</span> for your team.
             </h1>
             <p style={{ fontSize: 'clamp(18px, 1.55vw, 23px)', lineHeight: 1.55, color: c.text2, margin: 'clamp(24px, 2.4vw, 38px) 0 0', maxWidth: '40ch' }}>
-              Live breathing, meditation and chair yoga that fits inside the working day. Office, remote or hybrid. No mats, no changing, no awkward silence.
+              Short classes in chair yoga, breathing or meditation, 15 to 30 minutes long, held on Teams. Everyone joins from their own desk, in their normal clothes.
             </p>
             <div className="ryc-hero-ctas" style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 'clamp(28px, 2.8vw, 44px)' }}>
               <Link className="ryc-btn-primary" to="/demo" style={{ display: 'inline-flex', alignItems: 'center', height: 'clamp(54px, 4vw, 64px)', padding: '0 clamp(26px, 2.2vw, 36px)', borderRadius: 999, background: c.terracotta, color: c.onDark, fontWeight: 600, fontSize: 'clamp(16px, 1.2vw, 18.5px)' }}>Book a pilot session</Link>
               <a className="ryc-btn-outline" href="#sessions" style={{ display: 'inline-flex', alignItems: 'center', height: 'clamp(54px, 4vw, 64px)', padding: '0 clamp(24px, 2vw, 32px)', borderRadius: 999, border: `1px solid oklch(0.84 0.02 76)`, color: c.text, fontSize: 'clamp(16px, 1.2vw, 18.5px)' }}>See the sessions</a>
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 26, marginTop: 'clamp(26px, 2.6vw, 40px)', fontSize: 'clamp(14.5px, 1vw, 16.5px)', color: c.text3 }}>
-              <span>No app to install</span>
-              <span>Runs in your calendar</span>            </div>
+              <span>There is nothing to install. The class is a recurring invite in your calendar.</span>            </div>
           </div>
           <div style={{ position: 'relative' }}>
             <div className="ryc-hero-img" style={{ height: 'min(80svh, 52vw, 800px)', borderRadius: '999px 999px 20px 20px', overflow: 'hidden', border: `1px solid ${c.rule}`, background: 'oklch(0.94 0.018 76)' }}>
@@ -190,8 +189,8 @@ const Index = () => {
               right, so the heading never sits alone with empty space beside it. */}
           <div className={classPhoto ? undefined : 'ryc-split'} style={classPhoto ? undefined : { display: 'grid', gridTemplateColumns: 'minmax(0, 0.85fr) minmax(0, 1.15fr)', gap: 64, alignItems: 'start' }}>
             <div>
-              <h2 style={{ ...h2Style, fontSize: 'clamp(28px, 3vw, 40px)', lineHeight: 1.1, maxWidth: '18ch' }}>Three classes. Choose one, or rotate.</h2>
-              <p style={{ fontSize: 17, lineHeight: 1.6, color: c.text2, margin: '16px 0 0', maxWidth: '44ch' }}>Every class is live and around 15 to 30 minutes, done from a chair.</p>
+              <h2 style={{ ...h2Style, fontSize: 'clamp(28px, 3vw, 40px)', lineHeight: 1.1, maxWidth: '18ch' }}>There are three kinds of class</h2>
+              <p style={{ fontSize: 17, lineHeight: 1.6, color: c.text2, margin: '16px 0 0', maxWidth: '44ch' }}>Every class is live, 15 to 30 minutes long, and done sitting in a chair. You can stick to one or switch between them.</p>
             </div>
             <ul style={{ listStyle: 'none', padding: 0, margin: classPhoto ? '32px 0 0' : 0, borderTop: `1px solid ${c.rule}` }}>
               {sessions.map((s) => (
@@ -213,7 +212,7 @@ const Index = () => {
       {/* HOW IT WORKS: one horizontal strip, not a tall list */}
       <section id="how" className="ryc-sec" style={{ background: c.band, color: c.text, marginTop: 112 }}>
         <div className="ryc-pad ryc-band" style={{ maxWidth: 1320, margin: '0 auto', padding: '72px 48px' }}>
-          <h2 style={{ ...h2Style, fontSize: 'clamp(26px, 2.7vw, 34px)' }}>Booked on Monday, running next week.</h2>
+          <h2 style={{ ...h2Style, fontSize: 'clamp(26px, 2.7vw, 34px)' }}>How getting started works</h2>
           <ol className="ryc-steps" style={{ listStyle: 'none', padding: 0, margin: '36px 0 0', display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 40 }}>
             {steps.map(([n, title, body]) => (
               <li key={n} style={{ borderTop: `1px solid ${c.bandDivider}`, paddingTop: 20 }}>
@@ -233,10 +232,10 @@ const Index = () => {
             <img src="/images/coach-camilla.jpg" alt="Camilla walking with a yoga mat past a sandstone facade in Stockholm" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 70%', display: 'block' }} />
           </div>
           <div>
-            <h2 style={{ ...h2Style, fontSize: 'clamp(28px, 3vw, 40px)', lineHeight: 1.1, maxWidth: '18ch' }}>I&rsquo;m Camilla. I&rsquo;ve sat in the meetings too.</h2>
+            <h2 style={{ ...h2Style, fontSize: 'clamp(28px, 3vw, 40px)', lineHeight: 1.1, maxWidth: '18ch' }}>I&rsquo;m Camilla, and I teach every class myself.</h2>
             <div style={{ display: 'grid', gap: 18, marginTop: 24, maxWidth: '50ch' }}>
-              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>Before I taught full time I worked in a multinational, a startup, a consultancy and government. I know what a Thursday afternoon feels like.</p>
-              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>So the classes are deliberately unimpressive. Done in a chair, in work clothes. Nobody has to be good at it.</p>
+              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>Before I taught full time I worked in a multinational, a startup, a consultancy and government. So I know what long days at a desk are like.</p>
+              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>That is why the classes are simple and done sitting in a chair, in normal work clothes. Nobody needs any experience or flexibility.</p>
             </div>
             <p style={{ fontSize: 15, color: c.text3, margin: '24px 0 0' }}>500 hours of yoga training · Live on Teams · UK and European hours</p>
             <p style={{ marginTop: 20 }}>
@@ -260,8 +259,8 @@ const Index = () => {
 
       {/* PRICING */}
       <section id="pricing" className="ryc-pad ryc-sec" style={{ maxWidth: 1320, margin: '0 auto', padding: '112px 48px 0' }}>
-        <h2 style={{ ...h2Style, fontSize: 'clamp(26px, 2.7vw, 34px)' }}>Simple, per month</h2>
-        <p style={{ fontSize: 16.5, lineHeight: 1.6, color: c.text2, margin: '12px 0 32px', maxWidth: '52ch' }}>Priced by how often you meet, not which class you pick.</p>
+        <h2 style={{ ...h2Style, fontSize: 'clamp(26px, 2.7vw, 34px)' }}>Prices</h2>
+        <p style={{ fontSize: 16.5, lineHeight: 1.6, color: c.text2, margin: '12px 0 32px', maxWidth: '52ch' }}>You pay a monthly fee based on how often you meet. The price is the same whichever class you choose.</p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 16 }}>
           {tiers.map((t) => (
             <Link key={t.name} to="/pricing" style={{ textDecoration: 'none', color: 'inherit', display: 'block', height: '100%' }}>
@@ -287,8 +286,8 @@ const Index = () => {
       {/* PILOT CTA: one message, one button */}
       <section id="pilot" className="ryc-pad ryc-sec" style={{ maxWidth: 1320, margin: '0 auto', padding: '112px 48px 112px' }}>
         <div className="ryc-pilot-panel" style={{ background: c.darkPill, color: c.onDark, borderRadius: 18, padding: '64px 56px', textAlign: 'center' }}>
-          <h2 style={{ ...h2Style, color: c.onDark, fontSize: 'clamp(28px, 3vw, 40px)', lineHeight: 1.1 }}>Try one session. See who shows up.</h2>
-          <p style={{ fontSize: 18, lineHeight: 1.6, color: 'oklch(0.86 0.02 76)', margin: '16px auto 0', maxWidth: '42ch' }}>One paid session, no contract, nothing to sign.</p>
+          <h2 style={{ ...h2Style, color: c.onDark, fontSize: 'clamp(28px, 3vw, 40px)', lineHeight: 1.1 }}>Start with one pilot session</h2>
+          <p style={{ fontSize: 18, lineHeight: 1.6, color: 'oklch(0.86 0.02 76)', margin: '16px auto 0', maxWidth: '42ch' }}>It is a single paid class with no contract. If you continue, the cost is credited to your first month.</p>
           <Link className="ryc-btn-light" to="/demo" style={{ display: 'inline-flex', alignItems: 'center', height: 54, padding: '0 30px', marginTop: 30, borderRadius: 999, background: c.onDark, color: c.text, fontWeight: 600, fontSize: 16 }}>Book a pilot</Link>
         </div>
       </section>

@@ -78,7 +78,7 @@ const Guides = () => {
           <div className="relative max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <Eyebrow>Guides</Eyebrow>
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
-              Everything you need to make the case for team wellbeing
+              Guides on team wellbeing
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[640px] mx-auto">
               Plain-English guides for the person who has to sell this internally, from the hard cost of burnout to
@@ -136,10 +136,10 @@ const Guides = () => {
         <section className="bg-cream py-16 md:py-20">
           <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
-              Ready to see it with your own team?
+              Try a live class with your team
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-              Every guide points the same way: a live weekly habit. Start with a single pilot session.
+              If you would like to try it, start with a single pilot session.
             </p>
             <div className="mt-8">
               <Link

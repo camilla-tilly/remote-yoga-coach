@@ -94,7 +94,7 @@ const Pricing = () => {
           <div className="relative max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <Eyebrow>Pricing</Eyebrow>
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
-              Simple, transparent pricing.
+              Pricing
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[560px] mx-auto">
               Here is exactly what weekly classes cost: a subscription billed as a flat monthly fee for your whole team, not a per-person app charge.
@@ -206,16 +206,16 @@ const Pricing = () => {
           <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>Put it in context</Eyebrow>
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
-              Cheaper than the problem it prevents
+              How the cost compares with burnout
             </h2>
             <ProseList
               items={[
                 'Poor mental health costs UK employers around 2,646 pounds per affected employee a year, and workplace mental health spend returns about 4.70 pounds for every 1 pound (Deloitte).',
-                'A year of these sessions costs a fraction of a single burnout resignation.',
+                'A year of weekly classes costs much less than replacing one person who leaves because of burnout.',
               ]}
             />
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              If you need to make that case internally, I wrote it up for you.
+              If you need to explain this internally, I have written a guide:
             </p>
             <p className="mt-6">
               <Link to="/guides/cost-of-employee-burnout" className="inline-flex items-center gap-1.5 text-clay hover:text-clayDark font-medium text-[15px]">
@@ -231,9 +231,9 @@ const Pricing = () => {
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">What's included in every tier</h2>
             <ul className="mt-6 space-y-3">
               {[
-                'The same named coach every week, continuity is the whole point',
-                'A structured programme that moves through themes, not random one-off classes',
-                'No equipment, no activewear, nothing to prepare',
+                'The same teacher every week',
+                'A planned programme that follows a theme from week to week',
+                'No equipment or sports clothes needed',
               ].map((item) => (
                 <li key={item} className="flex gap-3 text-charcoal/80 text-[16px] leading-relaxed">
                   <Check className="text-clay shrink-0 mt-1" size={17} strokeWidth={2.5} />
@@ -247,7 +247,7 @@ const Pricing = () => {
         {/* FAQ */}
         <section className="bg-cream py-16 md:py-24">
           <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
-            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight text-center">Questions HR asks</h2>
+            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight text-center">Common questions</h2>
             <GuideFAQ items={faqs as Array<[string, string]>} />
           </div>
         </section>
@@ -255,7 +255,7 @@ const Pricing = () => {
         {/* CTA */}
         <section className="relative overflow-hidden bg-cream-soft-b py-24 md:py-28">
           <div className="relative max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
-            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">See it before you commit</h2>
+            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">Start with one pilot session</h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               Start with a single pilot session: one live class, credited to your first month if you continue.
             </p>
@@ -266,7 +266,7 @@ const Pricing = () => {
                 </Button>
               </Link>
             </div>
-            <p className="mt-6 text-charcoal/50 text-sm">Pricing is v1 and may be refined after our first buyer conversations.</p>
+            
           </div>
         </section>
       </main>

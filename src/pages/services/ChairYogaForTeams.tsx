@@ -64,10 +64,10 @@ const structuredData = {
 };
 
 const included = [
-  ['Live and guided', 'A real person leads every session, the same face each week.'],
-  ['Seated, in work clothes', 'Neck, shoulders, wrists, hips and lower back.'],
-  ['Breathing built in', 'Techniques people reuse before a meeting or a deadline.'],
-  ['One link, zero admin', 'You set the slot once. I take it from there.'],
+  ['Live classes', 'I lead every class live, so your team sees the same teacher each week.'],
+  ['Done sitting down', 'Stretches for the neck, shoulders, wrists, hips and lower back, in normal work clothes.'],
+  ['Breathing included', 'Breathing exercises people can use again before a meeting or a deadline.'],
+  ['Easy to organise', 'You choose a time once and share the link. I handle the rest.'],
 ];
 
 const ChairYogaForTeams = () => {
@@ -84,7 +84,7 @@ const ChairYogaForTeams = () => {
       <main>
         <PageHero
           eyebrow="For companies and remote teams"
-          title="Virtual office yoga and chair yoga your whole team can actually do."
+          title="Virtual office yoga and chair yoga for teams"
           actions={
             <>
               <PillLink to="/demo">Book a pilot</PillLink>
@@ -97,7 +97,7 @@ const ChairYogaForTeams = () => {
             <Link to="/blog/office-yoga-for-remote-teams" className="text-clay underline underline-offset-4 hover:text-clayDark">
               workplace yoga for distributed and hybrid teams
             </Link>{' '}
-            on Teams. Gentle, seated, in normal work clothes.
+            on Teams. It is gentle and done sitting down, in normal work clothes.
           </p>
         </PageHero>
 
@@ -112,23 +112,22 @@ const ChairYogaForTeams = () => {
           />
         </PageSection>
 
-        <PageSection heading="One weekly slot, run for you">
+        <PageSection heading="What is included">
           <FeatureRows items={included as Array<[string, string]>} />
         </PageSection>
 
-        <PageSection heading="Movement a whole workforce will keep">
+        <PageSection heading="Why chair yoga suits a whole team">
           <div className="space-y-5">
             <p>
-              A gym benefit rewards the already-active, and a PDF of stretches waits for busy people to start on
-              their own. Most never do.
+              A gym benefit is mostly used by people who already exercise, and a list of stretches relies on busy people starting on their own, which most do not.
             </p>
-            <PullQuote>Chair yoga is the opposite. It was designed for every body in the room.</PullQuote>
+            <PullQuote>Chair yoga works for everyone, whatever their fitness.</PullQuote>
             <p>
               Around 80 percent of office workers report{' '}
               <Link to="/blog/tech-neck-exercises-desk" className="text-clay underline underline-offset-4 hover:text-clayDark">
                 neck or back discomfort
               </Link>
-              . A live session in the calendar reaches them, because someone else leads. For the movements
+              . A live class in the calendar helps, because someone else leads it. For the movements
               themselves, see the{' '}
               <Link to="/guides/desk-yoga" className="text-clay underline underline-offset-4 hover:text-clayDark">
                 desk yoga guide

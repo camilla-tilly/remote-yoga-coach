@@ -58,10 +58,10 @@ const structuredData = {
 
 
 const included = [
-  ['One weekly slot', 'The same time every week, so it becomes a habit rather than a task.'],
-  ['The same coach', 'A familiar person, which an app can never be.'],
-  ['Breathing, meditation, chair yoga', 'Pick one, or rotate through them.'],
-  ['Nothing to prepare', 'No equipment, no changing, nothing to perform.'],
+  ['One weekly slot', 'The same time every week, so it becomes routine.'],
+  ['The same coach', 'The same teacher every week, so your team gets to know me.'],
+  ['Breathing, meditation, chair yoga', 'Choose one, or switch between them.'],
+  ['Nothing to prepare', 'No equipment and no changing clothes.'],
 ];
 
 const CorporateWellbeingRemoteTeams = () => {
@@ -79,7 +79,7 @@ const CorporateWellbeingRemoteTeams = () => {
       <main>
         <PageHero
           eyebrow="Corporate wellbeing, distributed teams"
-          title="Wellbeing for remote and hybrid teams that reaches everyone on screen."
+          title="Weekly wellbeing classes for remote and hybrid teams"
           actions={
             <>
               <PillLink to="/demo">Book a pilot</PillLink>
@@ -93,7 +93,7 @@ const CorporateWellbeingRemoteTeams = () => {
           </p>
         </PageHero>
 
-        <PageSection heading="Distributed teams are the hardest to reach, and the most at risk">
+        <PageSection heading="Why remote teams need something different">
           <div className="space-y-5">
             <p>
               Remote and hybrid workers{' '}
@@ -103,20 +103,19 @@ const CorporateWellbeingRemoteTeams = () => {
               , yet most wellbeing still assumes an office: a room, a fixed hour, someone in person.
             </p>
             <PullQuote>
-              So most distributed teams fall back on passive tools, and passive tools do not get used.
+              So most remote teams end up with apps and benefits that people rarely use.
             </PullQuote>
           </div>
         </PageSection>
 
-        <PageSection heading="A wellbeing subscription built for distributed teams">
+        <PageSection heading="What is included">
           <FeatureRows items={included as Array<[string, string]>} />
         </PageSection>
 
-        <PageSection heading="A habit, not a one-off event">
+        <PageSection heading="Why weekly works better than a one-off day">
           <div className="space-y-5">
             <p>
-              A wellbeing day is a nice memory by the weekend. A protected weekly slot is what changes how a team
-              feels in week six. See{' '}
+              A wellbeing day is nice, but the effect fades within days. A regular weekly class is what makes a lasting difference. See{' '}
               <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                 how a session runs
               </Link>
@@ -138,12 +137,12 @@ const CorporateWellbeingRemoteTeams = () => {
         </PageSection>
 
         <ClosingCTA
-          heading="Give your distributed team a habit that sticks"
+          heading="Start with one pilot session"
           actions={<PillLink to="/demo" variant="light">Book a pilot</PillLink>}
         >
           <p>Start with a single pilot session, credited to your first month if you continue.</p>
           <p className="text-[15px] text-offwhite/60">
-            Making the case internally? Read{' '}
+            If you need to explain it to others internally, read{' '}
             <Link to="/guides/cost-of-employee-burnout">what employee burnout costs</Link> or{' '}
             <Link to="/compare">how live sessions compare to apps</Link>.
           </p>

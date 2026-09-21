@@ -41,7 +41,7 @@ const structuredData = {
       '@type': 'Article',
       headline: 'Live wellbeing sessions vs wellbeing apps vs EAPs: what actually gets used',
       description:
-        'An honest comparison of live team wellbeing sessions, wellbeing apps and EAPs on the metric that matters: whether your team actually uses it. For HR and people leaders.',
+        'A comparison of live team wellbeing sessions, wellbeing apps and EAPs, looking mainly at how many people actually use each one. For HR and people leaders.',
       author: { '@type': 'Person', name: 'Camilla', jobTitle: 'Corporate Wellness Coach' },
       publisher: { '@type': 'Organization', name: 'Remote Yoga Coach', url: 'https://remoteyogacoach.com' },
       mainEntityOfPage: 'https://remoteyogacoach.com/compare',
@@ -76,7 +76,7 @@ const Compare = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Live Wellbeing Sessions vs Apps and EAPs | Remote Yoga Coach"
-        description="An honest comparison of live team wellbeing sessions, wellbeing apps and EAPs on the metric that matters: whether your team actually uses it."
+        description="A comparison of live team wellbeing sessions, wellbeing apps and EAPs, looking mainly at how many people actually use each one. For HR and people leaders."
         canonical="https://remoteyogacoach.com/compare"
         ogType="article"
         ogImage="https://remoteyogacoach.com/og/compare.png?v=4"
@@ -90,10 +90,10 @@ const Compare = () => {
           <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <Eyebrow>The honest comparison</Eyebrow>
             <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
-              Live sessions, apps and EAPs, on the metric that matters
+              Live sessions, wellbeing apps and EAPs compared
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[600px] mx-auto">
-              Every wellbeing tool looks good in a pitch deck. The question is whether your team actually uses it.
+              The biggest difference between them is how many people actually use them.
             </p>
           </div>
         </section>
@@ -117,21 +117,21 @@ const Compare = () => {
           <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The point</Eyebrow>
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
-              This is the missing layer, not a replacement
+              Live sessions work alongside apps and EAPs
             </h2>
             <div className="mt-8 space-y-7 text-charcoal/75 text-lg leading-relaxed">
               <div>
-                <h3 className="font-fraunces font-normal text-heading text-xl">The app: a great library nobody visits</h3>
-                <p className="mt-1.5">Good content, but it asks tired people to start alone. Best as the between-sessions library.</p>
+                <h3 className="font-fraunces font-normal text-heading text-xl">Wellbeing apps</h3>
+                <p className="mt-1.5">The content is often good, but each person has to start on their own, and most stop after a few weeks. An app works well as something to use between live sessions.</p>
               </div>
               <div>
-                <h3 className="font-fraunces font-normal text-heading text-xl">The EAP: a crisis line, not a habit</h3>
-                <p className="mt-1.5">It matters and should stay, but it only helps once a problem has formed.</p>
+                <h3 className="font-fraunces font-normal text-heading text-xl">Employee assistance programmes (EAPs)</h3>
+                <p className="mt-1.5">An EAP is important and worth keeping, but people usually only use it once a problem has already started.</p>
               </div>
               <div>
-                <h3 className="font-fraunces font-normal text-heading text-xl">A live session: the habit</h3>
+                <h3 className="font-fraunces font-normal text-heading text-xl">Live sessions</h3>
                 <p className="mt-1.5">
-                  A real person at a fixed time, which is what gets people to turn up. See{' '}
+                  A real teacher at a fixed time each week, which makes people much more likely to join. See{' '}
                   <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
                     how a session runs
                   </Link>
@@ -147,7 +147,7 @@ const Compare = () => {
           <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
             <Eyebrow>The alternative you are searching for</Eyebrow>
             <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">
-              A Calm for Business, Headspace for Work and EAP alternative that gets used
+              An alternative to Calm for Business, Headspace for Work and EAPs
             </h2>
             <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
               If you are looking for a{' '}
@@ -156,7 +156,7 @@ const Compare = () => {
               </Link>
               , you probably don't need a better library. You need the piece those apps leave out.
             </p>
-            <PullQuote>The app waits to be opened. A live session is led.</PullQuote>
+            <PullQuote>An app needs each person to open it. A live session has a teacher leading it at a set time.</PullQuote>
           </div>
         </section>
 
@@ -173,10 +173,10 @@ const Compare = () => {
         <section className="bg-cream-soft-b py-24 md:py-28">
           <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
             <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">
-              Add the layer your stack is missing
+              Start with one pilot session
             </h2>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              Start with a single pilot session, and see the attendance for yourself.
+              Book a single pilot session and see how many of your team join.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/demo">

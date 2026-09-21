@@ -46,8 +46,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="font-inter text-[15px] text-charcoal/65 leading-relaxed mt-5 max-w-sm">
-              Live breathing, meditation and chair-yoga classes your distributed team actually shows up for, on
-              Teams.
+              Live breathing, meditation and chair yoga classes for remote and hybrid teams, held on Teams.
             </p>
             <p className="font-inter text-[14px] text-charcoal/55 leading-relaxed mt-3 max-w-sm">
               Run by Camilla, a yoga teacher in Stockholm. In person as{' '}

@@ -18,10 +18,10 @@ const structuredData = {
 
 const arc = [
   ['Arrive', 'A few breaths to settle.'],
-  ['Breath', 'One technique simple enough to reuse at your desk.'],
+  ['Breath', 'One breathing exercise you can use again at your desk.'],
   ['Move', 'Gentle chair-based mobility for the neck, shoulders and back.'],
   ['Settle', 'A short guided meditation.'],
-  ['Carry it out', 'One small thing to take into the rest of the day.'],
+  ['Finish', 'One small thing to try during the rest of the day.'],
 ];
 
 
@@ -39,7 +39,7 @@ const TeamWellness = () => {
 
       <main>
         <PageHero
-          title="The weekly reset your remote and hybrid team looks forward to."
+          title="A weekly wellbeing class for remote and hybrid teams"
           actions={
             <>
               <PillLink to="/demo">Book a pilot</PillLink>
@@ -53,7 +53,7 @@ const TeamWellness = () => {
           </p>
         </PageHero>
 
-        <PageSection heading="HR knows this one">
+        <PageSection heading="Why most wellbeing benefits go unused">
           <div className="space-y-5">
             <p>
               The gym benefit goes unused, the meditation app is forgotten within a fortnight, and{' '}
@@ -63,24 +63,22 @@ const TeamWellness = () => {
               .
             </p>
             <PullQuote>
-              The issue isn't that people don't want to feel better. It's that passive tools ask them to start on
-              their own, and busy, screen-tired people rarely do.
+              People do want to feel better. But apps and benefits leave it to each person to start on their own, and busy people rarely get round to it.
             </PullQuote>
           </div>
         </PageSection>
 
-        <PageSection heading="One weekly slot">
+        <PageSection heading="What a weekly class looks like">
           <p>
-            A session in the calendar removes the hardest part: starting. A combined session follows a simple arc.
+            Because the class is in the calendar, nobody has to remember to start. A class that mixes all three usually goes like this:
           </p>
           <NumberedSteps items={arc as Array<[string, string]>} separator=": " />
-          <p className="mt-8">No advanced poses and nothing anyone has to be fit to do.</p>
+          <p className="mt-8">There are no advanced poses, and you do not need to be fit or flexible.</p>
         </PageSection>
 
         <PageSection heading="A virtual session for a team event">
           <p>
-            Not ready for a weekly slot? Book a single live session for a kickoff, an all-hands or an online
-            offsite. It's the easiest way to try it.
+            You can also book a single live class for a kickoff, an all-hands or an online offsite.
           </p>
           <div className="mt-8">
             <PillLink to="/demo" variant="outline">Ask about a one-off</PillLink>
@@ -88,7 +86,7 @@ const TeamWellness = () => {
         </PageSection>
 
         <ClosingCTA
-          heading="Start with a pilot"
+          heading="Start with one pilot session"
           actions={<PillLink to="/demo" variant="light">Book a pilot</PillLink>}
         >
           <p>One session for your team, credited to your first month if you continue.</p>

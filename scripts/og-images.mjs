@@ -25,9 +25,9 @@ const cards = [
     // No eyebrow. The buyer is HR, but the sessions are for everyone in the
     // team, and this card gets shared internally.
     eyebrow: null,
-    title: 'A stronger team,',
-    accent: 'half an hour',
-    tail: 'at a time.',
+    title: 'Live',
+    accent: 'yoga and meditation',
+    tail: 'for your team.',
     // A real photo of Camilla, in the same arch as the homepage hero, so the
     // link preview shows a person and not only type.
     photo: 'images/hero-camilla.jpg',
@@ -36,7 +36,7 @@ const cards = [
     name: 'guides',
     variant: 'dark',
     eyebrow: 'Guides',
-    title: 'Make the case for',
+    title: 'Guides on',
     accent: 'team wellbeing',
   },
   {
@@ -51,14 +51,14 @@ const cards = [
     variant: 'dark',
     eyebrow: 'The business case',
     title: 'What employee burnout',
-    accent: 'really costs',
+    accent: 'costs',
   },
   {
     name: 'corporate-wellbeing-remote-teams',
     variant: 'light',
     eyebrow: 'Distributed teams',
-    title: 'Wellbeing that actually',
-    accent: 'reaches everyone',
+    title: 'Weekly wellbeing classes for',
+    accent: 'remote and hybrid teams',
   },
 ];
 

@@ -108,7 +108,7 @@ const groups: Array<{ heading: string; items: Array<[string, string]> }> = [
     items: [
       [
         'Is this an alternative to a wellbeing app like Calm or Headspace for Business?',
-        'It works well alongside them, or instead of them. Apps are good content, but they are passive: they only help the people who remember to open them. A live, scheduled class holds the time and removes the hardest part, starting, so far more of the team actually takes part.',
+        'It works well alongside them, or instead of them. Apps are good content, but they are passive: they only help the people who remember to open them. A live class at a set time means nobody has to remember to start, so far more of the team takes part.',
       ],
       [
         'We already have an EAP. Why add this?',
