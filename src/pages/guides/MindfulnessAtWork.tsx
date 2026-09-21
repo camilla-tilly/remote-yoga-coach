@@ -349,9 +349,9 @@ const MindfulnessAtWork = () => {
               <p>
                 That is how my{' '}
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                  Weekly Reset programme
+                  weekly classes
                 </Link>{' '}
-                is built: live 15 to 30 minute sessions of breathing, meditation and chair yoga on Teams, the same
+                are built: live 15 to 30 minute sessions of breathing, meditation and chair yoga on Teams, the same
                 coach every week. Pricing is public on the{' '}
                 <Link to="/pricing" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   pricing page
@@ -387,7 +387,7 @@ const MindfulnessAtWork = () => {
 
         <GuideCTA
           heading="Give your team a weekly mindfulness habit"
-          text="A single pilot session of The Weekly Reset: live breathing, meditation and chair yoga on Teams."
+          text="A single pilot session: live breathing, meditation and chair yoga on Teams."
         />
       </main>
 

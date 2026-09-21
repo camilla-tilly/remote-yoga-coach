@@ -12,7 +12,7 @@ const post: BlogPost = {
     'You can honestly track two things about a wellbeing programme: attendance and a simple wellbeing check. Here is how to use those two numbers to build a business case, instead of reaching for a return figure you cannot actually stand behind.',
   language: 'en',
   relatedServiceHref: '/services/team-wellness',
-  relatedServiceLabel: 'The Weekly Reset',
+  relatedServiceLabel: 'Weekly classes for teams',
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
@@ -40,7 +40,7 @@ const post: BlogPost = {
       'Use internal context you already hold, such as sick days or turnover in the pilot team compared with the rest of the organisation, rather than an external multiplier you cannot verify. My [guide to the cost of employee burnout](/guides/cost-of-employee-burnout) sets out what the problem costs.',
       'Keep the reporting light. A short update every few weeks is more credible, and more sustainable for you, than one heavy report at the end of the year.',
     ] },
-    { type: 'paragraph', text: 'These two numbers work for any programme, including [The Weekly Reset](/services/team-wellness). You collect them yourself, which is exactly why they hold up.' },
+    { type: 'paragraph', text: 'These two numbers work for any programme, including [my weekly classes](/services/team-wellness). You collect them yourself, which is exactly why they hold up.' },
     { type: 'heading', text: 'What to avoid when you present the numbers' },
     { type: 'paragraph', text: 'A few habits quietly undermine an otherwise solid case.' },
     { type: 'list', items: [

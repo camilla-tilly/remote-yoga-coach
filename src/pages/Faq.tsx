@@ -66,7 +66,7 @@ const groups: Array<{ heading: string; items: Array<[string, string]> }> = [
       ],
       [
         'Can you work across time zones?',
-        'Yes. I run sessions across UK and European hours, with Australian hours for part of the year. Sessions can be recorded on request for everyone else.',
+        'Yes. I run sessions across UK and European hours. Sessions can be recorded on request for everyone else.',
       ],
       [
         'Does anyone need equipment or to change clothes?',

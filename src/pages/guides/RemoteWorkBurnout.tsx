@@ -307,9 +307,9 @@ const RemoteWorkBurnout = () => {
               <p>
                 The rhythm layer is what my{' '}
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                  Weekly Reset programme
+                  weekly classes
                 </Link>{' '}
-                provides: a live session of 15 to 30 minutes on Teams each week. For wider options, see{' '}
+                provide: a live session of 15 to 30 minutes on Teams each week. For wider options, see{' '}
                 <Link to="/blog/corporate-wellness-ideas-remote-teams" className="text-clay underline underline-offset-4 hover:text-clayDark">
                   corporate wellness ideas that actually work for remote teams
                 </Link>
@@ -381,7 +381,7 @@ const RemoteWorkBurnout = () => {
 
         <GuideCTA
           heading="Build recovery into your team's week"
-          text="A single pilot session of The Weekly Reset: live breathing, meditation and chair yoga on Teams."
+          text="A single pilot session: live breathing, meditation and chair yoga on Teams."
         />
       </main>
 

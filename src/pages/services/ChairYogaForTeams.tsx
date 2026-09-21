@@ -43,7 +43,7 @@ const structuredData = {
       serviceType: 'Virtual office yoga and chair yoga classes for companies and remote teams',
       name: 'Office yoga and chair yoga for teams',
       provider: { '@type': 'Organization', name: 'Remote Yoga Coach', url: 'https://remoteyogacoach.com' },
-      areaServed: ['GB', 'EU', 'AU'],
+      areaServed: ['GB', 'EU'],
       description:
         'Live virtual office yoga and chair yoga sessions for companies and distributed teams on Teams: gentle seated movement, breathing and a short reset, no experience needed.',
     },
@@ -186,7 +186,7 @@ const ChairYogaForTeams = () => {
               Start with one pilot session, credited to your first month if you continue. Want breathing and
               meditation too? See{' '}
               <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                The Weekly Reset
+                how a session runs
               </Link>
               .
             </p>

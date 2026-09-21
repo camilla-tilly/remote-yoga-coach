@@ -84,7 +84,7 @@ const About = () => {
               . Same sessions, same prices, same teacher.
             </p>
             <p>
-              The Weekly Reset is a simple idea: a scheduled moment with a real person, not another app to work
+              The idea is simple: a scheduled moment with a real person, not another app to work
               through alone. Chair-based, nothing anyone has to be fit or flexible to do. Not an
               impressive practice, just a habit your whole team can keep.
             </p>

@@ -98,7 +98,7 @@ const Footer = () => {
             &copy; {currentYear} Remote Yoga Coach
           </p>
           <p className="font-inter text-[12px] text-charcoal/50">
-            Live across UK, European and Australian time zones.
+            Live across UK and European time zones.
           </p>
         </div>
       </div>

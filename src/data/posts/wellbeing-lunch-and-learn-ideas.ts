@@ -10,7 +10,7 @@ const post: BlogPost = {
   excerpt: "A wellbeing lunch and learn is meant to give people a break, not another webinar to sit through. Here is what tends to fall flat, and a simpler idea that actually lands over the lunch hour.",
   language: "en",
   relatedServiceHref: "/services/team-wellness",
-  relatedServiceLabel: "The Weekly Reset",
+  relatedServiceLabel: "Weekly classes for teams",
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
@@ -109,7 +109,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "A one-off session feels lovely and then fades. Wellbeing that changes anything comes from rhythm: the same reset at the same time each week, with the same coach. That is The Weekly Reset, a recurring live session on a flat monthly subscription. Read how it works on my [team wellness page](/services/team-wellness).",
+      text: "A one-off session feels lovely and then fades. Wellbeing that changes anything comes from rhythm: the same reset at the same time each week, with the same coach. That is what my weekly classes are: a recurring live session on a flat monthly subscription. Read how it works on my [team wellness page](/services/team-wellness).",
     },
     {
       type: "cta",

@@ -10,7 +10,7 @@ const post: BlogPost = {
   excerpt: "Most wellbeing on a budget comes down to a few honest, near-free habits done consistently. Here are the low-cost ideas I would start with, and the single paid option that gives a small budget the most leverage.",
   language: "en",
   relatedServiceHref: "/services/team-wellness",
-  relatedServiceLabel: "The Weekly Reset",
+  relatedServiceLabel: "Weekly classes for teams",
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [

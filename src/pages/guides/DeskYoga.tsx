@@ -317,9 +317,9 @@ const DeskYoga = () => {
                 </Link>
                 , and of{' '}
                 <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                  The Weekly Reset
+                  weekly classes
                 </Link>
-                , which adds breathing and a short meditation.
+                , which add breathing and a short meditation.
               </p>
             </div>
             <div className="mt-8">
@@ -358,7 +358,7 @@ const DeskYoga = () => {
 
         <GuideCTA
           heading="Give your team a weekly movement habit"
-          text="A single pilot session of The Weekly Reset: live chair yoga, breathing and meditation on Teams."
+          text="A single pilot session: live chair yoga, breathing and meditation on Teams."
         />
       </main>
 

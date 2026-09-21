@@ -42,9 +42,9 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   serviceType: 'Corporate wellbeing sessions for distributed teams',
-  name: 'The Weekly Reset',
+  name: 'Weekly yoga and meditation for teams',
   provider: { '@type': 'Organization', name: 'Remote Yoga Coach', url: 'https://remoteyogacoach.com' },
-  areaServed: ['GB', 'EU', 'AU'],
+  areaServed: ['GB', 'EU'],
   description:
     'Live breathing, meditation and chair-yoga classes of around 15 to 30 minutes for remote and hybrid teams, delivered on Teams.',
 };
@@ -236,9 +236,9 @@ const Index = () => {
             <h2 style={{ ...h2Style, fontSize: 'clamp(28px, 3vw, 40px)', lineHeight: 1.1, maxWidth: '18ch' }}>I&rsquo;m Camilla. I&rsquo;ve sat in the meetings too.</h2>
             <div style={{ display: 'grid', gap: 18, marginTop: 24, maxWidth: '50ch' }}>
               <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>Before I taught full time I worked in a multinational, a startup, a consultancy and government. I know what a Thursday afternoon feels like.</p>
-              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>So the Weekly Reset is deliberately unimpressive. Done in a chair, in work clothes. Nobody has to be good at it.</p>
+              <p style={{ fontSize: 17.5, lineHeight: 1.6, color: c.text2, margin: 0 }}>So the classes are deliberately unimpressive. Done in a chair, in work clothes. Nobody has to be good at it.</p>
             </div>
-            <p style={{ fontSize: 15, color: c.text3, margin: '24px 0 0' }}>500 hours of yoga training · Live on Teams · UK, EU and AU hours</p>
+            <p style={{ fontSize: 15, color: c.text3, margin: '24px 0 0' }}>500 hours of yoga training · Live on Teams · UK and European hours</p>
             <p style={{ marginTop: 20 }}>
               <Link className="ryc-underline" to="/about" style={{ color: c.terracotta, fontSize: 15 }}>More about how I work →</Link>
             </p>

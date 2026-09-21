@@ -10,7 +10,7 @@ const post: BlogPost = {
   excerpt: "You don't need an app, a cushion, or a quiet room to meditate at work. Here is a 5-minute desk meditation for a complete beginner, plus how to actually keep it up.",
   language: "en",
   relatedServiceHref: "/services/team-wellness",
-  relatedServiceLabel: "The Weekly Reset",
+  relatedServiceLabel: "Weekly classes for teams",
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
@@ -92,7 +92,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "What removes the \"I never get round to it\" problem is having someone else hold the time, so you are no longer relying on remembering. That is the idea behind [The Weekly Reset](/services/team-wellness): a short guided session, live on Teams, once a week with the same coach. Camera is optional, and sessions can be recorded on request."
+      text: "What removes the \"I never get round to it\" problem is having someone else hold the time, so you are no longer relying on remembering. That is the idea behind [my weekly classes](/services/team-wellness): a short guided session, live on Teams, once a week with the same coach. Camera is optional, and sessions can be recorded on request."
     },
     {
       type: "cta",
@@ -117,7 +117,7 @@ const post: BlogPost = {
         },
         {
           q: "How is a guided team session different from meditating on my own?",
-          a: "The practice is much the same, but someone else holds the time and leads it, so it actually happens. With The Weekly Reset your team gets a live meditation class each week, sessions can be recorded on request."
+          a: "The practice is much the same, but someone else holds the time and leads it, so it actually happens. With weekly classes your team gets a live meditation class each week, sessions can be recorded on request."
         }
       ]
     }

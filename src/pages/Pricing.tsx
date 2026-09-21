@@ -13,8 +13,8 @@ const faqs: Array<[string, string]> = [
   ['Do we have to choose one type of class?', 'No. Every plan includes all three, meditation, breathing and chair yoga. Your team can settle on one, alternate between them, or mix them week to week, depending on what people need. The plan you choose only sets how often we meet, it does not lock you to a single class.'],
   ['Will people actually attend?', 'That is what a pilot session is for. Live, scheduled sessions out-attend apps and EAPs, because the hardest part, starting, is already done.'],
   ['What if people join late or miss one?', 'Sessions are built to drop into, and they can be recorded on request, so anyone who misses one can catch up later.'],
-  ['We already have an app or an EAP. Why add this?', 'Those are libraries and crisis lines: useful, but passive. The Weekly Reset is the live, weekly layer with a real person, which is what actually drives participation. It complements what you have.'],
-  ['Can you work across time zones?', 'Yes. Sessions run across UK and European hours, with Australian hours for part of the year. Sessions can be recorded on request for everyone else.'],
+  ['We already have an app or an EAP. Why add this?', 'Those are libraries and crisis lines: useful, but passive. A live weekly class is the layer with a real person, which is what actually drives participation. It complements what you have.'],
+  ['Can you work across time zones?', 'Yes. Sessions run across UK and European hours. Sessions can be recorded on request for everyone else.'],
 ];
 
 const pilotPrice = '1,490 kr';
@@ -44,7 +44,7 @@ const structuredData = {
     },
     {
       '@type': 'Service',
-      name: 'The Weekly Reset, live team wellbeing subscription',
+      name: 'Weekly team classes, live wellbeing subscription',
       serviceType: 'Corporate wellbeing sessions for remote and hybrid teams',
       provider: { '@type': 'Organization', name: 'Remote Yoga Coach', url: 'https://remoteyogacoach.com' },
       areaServed: 'Worldwide',
@@ -97,7 +97,7 @@ const Pricing = () => {
               Simple, transparent pricing.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[560px] mx-auto">
-              Here is exactly what The Weekly Reset costs. A corporate wellbeing subscription billed as a flat monthly fee for your whole team, not a per-person app charge.
+              Here is exactly what weekly classes cost: a subscription billed as a flat monthly fee for your whole team, not a per-person app charge.
             </p>
           </div>
         </section>

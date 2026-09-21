@@ -12,7 +12,7 @@ const post: BlogPost = {
     'A wellbeing programme with falling attendance is not usually a sign that people stopped caring. It is almost always friction: the slot moves, the format does not suit the whole team, or nobody can tell whether joining is genuinely fine. Here is what to fix, in order.',
   language: 'en',
   relatedServiceHref: '/services/team-wellness',
-  relatedServiceLabel: 'The Weekly Reset',
+  relatedServiceLabel: 'Weekly classes for teams',
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
@@ -34,7 +34,7 @@ const post: BlogPost = {
     { type: 'heading', text: 'Fix the format before you fix the marketing' },
     { type: 'paragraph', text: 'The natural reaction to low attendance is to promote the programme harder: another reminder email, a nudge from HR. That rarely works on its own, because it pushes people towards a session that still has the friction baked in. Fix the format first.' },
     { type: 'paragraph', text: 'A few changes make the biggest difference. Camera optional removes the most common reason people hesitate to join a live call. A recording of every session means a missed slot is a delay, not a missed week. And a genuine choice of class type lets people opt into what suits them instead of quietly opting out.' },
-    { type: 'paragraph', text: 'In [The Weekly Reset](/services/team-wellness), that choice is three class types: meditation for a quiet, guided reset, breathing for something practical people can reuse in their own day, and chair yoga for gentle movement from a desk chair. A team can pick one, alternate, or combine them over a month.' },
+    { type: 'paragraph', text: 'In [my weekly classes](/services/team-wellness), that choice is three class types: meditation for a quiet, guided reset, breathing for something practical people can reuse in their own day, and chair yoga for gentle movement from a desk chair. A team can pick one, alternate, or combine them over a month.' },
     { type: 'heading', text: 'Make the habit easier to keep than to skip' },
     { type: 'paragraph', text: 'Consistency does more for attendance than almost anything else. A session at the same time, on the same day, with the same coach, becomes a fixture people plan around. Move it around to dodge every clash and people learn not to bother checking whether it is on.' },
     { type: 'list', items: [

@@ -10,7 +10,7 @@ const post: BlogPost = {
   excerpt: "Calm and Headspace for Business are genuinely good apps. The catch is participation: a library only helps the people disciplined enough to open it. Here is the honest comparison, and where a live session fits.",
   language: "en",
   relatedServiceHref: "/services/team-wellness",
-  relatedServiceLabel: "The Weekly Reset",
+  relatedServiceLabel: "Weekly classes for teams",
   tableOfContents: true,
   faqSchema: true,
   relatedPosts: [
@@ -117,7 +117,7 @@ const post: BlogPost = {
     },
     {
       type: "cta",
-      text: "The simplest way to compare is to watch your own team's attendance. Book a pilot and see who actually shows up. The details are on [The Weekly Reset](/services/team-wellness), and if you are building the business case, my [guide to the cost of employee burnout](/guides/cost-of-employee-burnout) sets out what the problem costs.",
+      text: "The simplest way to compare is to watch your own team's attendance. Book a pilot and see who actually shows up. The details are on [how a session runs](/services/team-wellness), and if you are building the business case, my [guide to the cost of employee burnout](/guides/cost-of-employee-burnout) sets out what the problem costs.",
       ctaHref: "/demo",
       ctaLabel: "Book a pilot session"
     },

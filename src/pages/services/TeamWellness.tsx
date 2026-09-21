@@ -10,9 +10,9 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
   "serviceType": "Online corporate wellbeing sessions for remote and hybrid teams",
-  "name": "The Weekly Reset, team wellness",
+  "name": "Weekly classes for teams",
   "provider": { "@type": "Organization", "name": "Remote Yoga Coach", "url": "https://remoteyogacoach.com" },
-  "areaServed": ["GB", "EU", "AU"],
+  "areaServed": ["GB", "EU"],
   "description": "Live breathing, meditation and chair-yoga sessions for remote, hybrid and in-office teams on Teams."
 };
 
@@ -37,7 +37,7 @@ const TeamWellness = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Corporate Wellbeing Sessions for Remote and Hybrid Teams | Remote Yoga Coach"
-        description="Live corporate wellbeing for remote, hybrid and in-office teams: The Weekly Reset, breathing, meditation and chair yoga on Teams. Book a pilot."
+        description="Live corporate wellbeing for remote, hybrid and in-office teams: weekly breathing, meditation and chair yoga on Teams. Book a pilot."
         canonical="https://remoteyogacoach.com/services/team-wellness"
         structuredData={structuredData}
       />
@@ -92,7 +92,7 @@ const TeamWellness = () => {
         {/* THE OFFER */}
         <section className="bg-cream py-20 md:py-24">
           <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
-            <SectionHeading eyebrow="The offer">The Weekly Reset</SectionHeading>
+            <SectionHeading eyebrow="The offer">One weekly slot</SectionHeading>
             <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
               A session in the calendar removes the hardest part: starting. A combined session follows a simple arc.
             </p>
