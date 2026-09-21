@@ -48,9 +48,9 @@ export const GuideProse = ({ children }: { children: React.ReactNode }) => (
 );
 
 export const GuideList = ({ items }: { items: Array<[string, string]> }) => (
-  <ul className="mt-8 space-y-4">
+  <ul className="mt-8 border-t border-sage-light">
     {items.map(([title, text]) => (
-      <li key={title} className="bg-card rounded-lg border border-sage-light p-6 md:p-7">
+      <li key={title} className="border-b border-sage-light py-5 md:py-6">
         <p className="text-charcoal/80 text-[16px] leading-relaxed">
           <span className="font-fraunces font-normal text-heading text-lg">{title}</span>
           {'. '}{text}
@@ -264,9 +264,9 @@ export const NumberedSteps = ({
   items: Array<[string, string]>;
   separator?: string;
 }) => (
-  <ol className="numbered-steps mt-8 space-y-4">
+  <ol className="numbered-steps mt-8 border-t border-sage-light">
     {items.map(([title, text]) => (
-      <li key={title} className="flex gap-5 bg-card rounded-lg border border-sage-light p-6 md:p-7">
+      <li key={title} className="flex gap-5 border-b border-sage-light py-5 md:py-6">
         <p className="text-charcoal/80 text-[16px] leading-relaxed">
           <span className="font-fraunces font-normal text-heading text-lg">{title}</span>
           {separator}

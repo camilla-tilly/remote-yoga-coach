@@ -10,13 +10,12 @@ import {
 } from '@/components/ui/drawer';
 import { Button } from './ui/button';
 
+// Four links a buyer needs. The logo goes home; Blog and FAQ live under
+// Resources and in the footer, so every page still links to them.
 const navLinks = [
-  { name: 'Home', href: '/' },
   { name: 'How it works', href: '/services/team-wellness' },
-  { name: 'Resources', href: '/guides' },
   { name: 'Pricing', href: '/pricing' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'FAQ', href: '/faq' },
+  { name: 'Resources', href: '/guides' },
   { name: 'About', href: '/about' },
 ];
 

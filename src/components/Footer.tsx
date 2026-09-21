@@ -18,6 +18,7 @@ const columns: Array<{ heading: string; links: Array<{ label: string; to?: strin
       { label: 'Compare vs apps and EAPs', to: '/compare' },
       { label: 'What burnout costs', to: '/guides/cost-of-employee-burnout' },
       { label: 'Blog', to: '/blog' },
+      { label: 'FAQ', to: '/faq' },
     ],
   },
   {
@@ -34,7 +35,7 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-cream text-charcoal w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] overflow-hidden border-t border-sage-light">
-      <div className="relative max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8 py-16 md:py-20">
+      <div className="relative max-w-[1320px] mx-auto px-5 sm:px-6 md:px-12 py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-12">
           {/* Brand */}
           <div className="md:col-span-5">

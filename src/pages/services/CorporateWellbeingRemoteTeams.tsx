@@ -1,11 +1,9 @@
 import { Link } from 'react-router-dom';
-import { Check } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
-import { Button } from '@/components/ui/button';
-import { Eyebrow } from '@/components/SiteBlocks';
+import { PageHero, PageSection, FeatureRows, ClosingCTA, PillLink } from '@/components/PageKit';
 import { GuideFAQ, PullQuote } from '@/components/GuideLayout';
 
 const faqItems: Array<[string, string]> = [
@@ -58,12 +56,6 @@ const structuredData = {
   ],
 };
 
-const SectionHeading = ({ eyebrow, children }: { eyebrow?: string; children: React.ReactNode }) => (
-  <>
-    {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-    <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">{children}</h2>
-  </>
-);
 
 const included = [
   ['One weekly slot', 'The same time every week, so it becomes a habit rather than a task.'],
@@ -85,133 +77,77 @@ const CorporateWellbeingRemoteTeams = () => {
       <Navbar />
 
       <main>
-        {/* HERO */}
-        <section className="bg-cream-soft pt-36 pb-20 md:pt-44 md:pb-24">
-          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
-            <Eyebrow>Corporate wellbeing, distributed teams</Eyebrow>
-            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
-              Wellbeing for remote and hybrid teams that reaches everyone on screen.
-            </h1>
-            <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[600px] mx-auto">
-              A live weekly class on Teams for your whole team, wherever they work. Meditation, breathing or
-              chair yoga.
+        <PageHero
+          eyebrow="Corporate wellbeing, distributed teams"
+          title="Wellbeing for remote and hybrid teams that reaches everyone on screen."
+          actions={
+            <>
+              <PillLink to="/demo">Book a pilot</PillLink>
+              <PillLink to="/pricing" variant="outline">See pricing</PillLink>
+            </>
+          }
+        >
+          <p>
+            A live weekly class on Teams for your whole team, wherever they work. Meditation, breathing or
+            chair yoga.
+          </p>
+        </PageHero>
+
+        <PageSection heading="Distributed teams are the hardest to reach, and the most at risk">
+          <div className="space-y-5">
+            <p>
+              Remote and hybrid workers{' '}
+              <Link to="/guides/remote-work-burnout" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                report burnout at higher rates
+              </Link>
+              , yet most wellbeing still assumes an office: a room, a fixed hour, someone in person.
             </p>
-            <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-6">
-                  Book a pilot
-                </Button>
+            <PullQuote>
+              So most distributed teams fall back on passive tools, and passive tools do not get used.
+            </PullQuote>
+          </div>
+        </PageSection>
+
+        <PageSection heading="A wellbeing subscription built for distributed teams">
+          <FeatureRows items={included as Array<[string, string]>} />
+        </PageSection>
+
+        <PageSection heading="A habit, not a one-off event">
+          <div className="space-y-5">
+            <p>
+              A wellbeing day is a nice memory by the weekend. A protected weekly slot is what changes how a team
+              feels in week six. See{' '}
+              <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                how a session runs
               </Link>
-              <Link to="/pricing">
-                <Button variant="outline" className="border-sage text-charcoal hover:bg-sage-light/40 font-medium text-[15px] rounded-full px-8 py-6">
-                  See pricing
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* THE PROBLEM */}
-        <section className="py-20 md:py-24">
-          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
-            <SectionHeading eyebrow="The problem">Distributed teams are the hardest to reach, and the most at risk</SectionHeading>
-            <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
-              <p>
-                Remote and hybrid workers{' '}
-                <Link to="/guides/remote-work-burnout" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                  report burnout at higher rates
-                </Link>
-                , yet most wellbeing still assumes an office: a room, a fixed hour, someone in person.
-              </p>
-              <PullQuote>
-                So most distributed teams fall back on passive tools, and passive tools do not get used.
-              </PullQuote>
-            </div>
-          </div>
-        </section>
-
-        {/* WHAT'S INCLUDED */}
-        <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[900px] mx-auto px-5 sm:px-6 md:px-8">
-            <SectionHeading eyebrow="What you get">A wellbeing subscription built for distributed teams</SectionHeading>
-            <div className="mt-10 grid gap-4 sm:grid-cols-2">
-              {included.map(([title, text]) => (
-                <div key={title} className="flex gap-4 bg-white rounded-lg border border-sage-light p-5 h-full">
-                  <span className="shrink-0 mt-1 w-6 h-6 rounded-full bg-clay/10 flex items-center justify-center">
-                    <Check className="text-clay" size={15} strokeWidth={2.5} />
-                  </span>
-                  <p className="text-charcoal/80 text-[15px] leading-relaxed">
-                    <span className="font-fraunces font-normal text-heading text-lg block mb-0.5">{title}</span>
-                    {text}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* A HABIT, INCLUDING FOR HYBRID TEAMS */}
-        <section className="py-20 md:py-24">
-          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
-            <SectionHeading eyebrow="Why a subscription">A habit, not a one-off event</SectionHeading>
-            <div className="mt-6 space-y-5 text-charcoal/75 text-lg leading-relaxed">
-              <p>
-                A wellbeing day is a nice memory by the weekend. A protected weekly slot is what changes how a team
-                feels in week six. See{' '}
-                <Link to="/services/team-wellness" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                  how a session runs
-                </Link>
-                .
-              </p>
-              <p>
-                For a hybrid team it is also one fixed point in the week everyone shares, wherever they are that
-                day. A simple way to{' '}
-                <Link to="/blog/keep-hybrid-team-focused" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                  keep a hybrid team focused
-                </Link>
-                .
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <section className="bg-cream py-20 md:py-24">
-          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
-            <SectionHeading eyebrow="FAQ">Common questions</SectionHeading>
-            <GuideFAQ items={faqItems} />
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="bg-cream-soft-b py-24 md:py-28">
-          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
-            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">
-              Give your distributed team a habit that sticks
-            </h2>
-            <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              Start with a single pilot session, credited to your first month if you continue.
+              .
             </p>
-            <div className="mt-9">
-              <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-6">
-                  Book a pilot
-                </Button>
-              </Link>
-            </div>
-            <p className="mt-8 text-charcoal/60 text-[15px] leading-relaxed">
-              Making the case internally? Read{' '}
-              <Link to="/guides/cost-of-employee-burnout" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                what employee burnout costs
-              </Link>{' '}
-              or{' '}
-              <Link to="/compare" className="text-clay underline underline-offset-4 hover:text-clayDark">
-                how live sessions compare to apps
+            <p>
+              For a hybrid team it is also one fixed point in the week everyone shares, wherever they are that
+              day. A simple way to{' '}
+              <Link to="/blog/keep-hybrid-team-focused" className="text-clay underline underline-offset-4 hover:text-clayDark">
+                keep a hybrid team focused
               </Link>
               .
             </p>
           </div>
-        </section>
+        </PageSection>
+
+        <PageSection heading="Common questions">
+          <GuideFAQ items={faqItems} />
+        </PageSection>
+
+        <ClosingCTA
+          heading="Give your distributed team a habit that sticks"
+          actions={<PillLink to="/demo" variant="light">Book a pilot</PillLink>}
+        >
+          <p>Start with a single pilot session, credited to your first month if you continue.</p>
+          <p className="text-[15px] text-offwhite/60">
+            Making the case internally? Read{' '}
+            <Link to="/guides/cost-of-employee-burnout">what employee burnout costs</Link> or{' '}
+            <Link to="/compare">how live sessions compare to apps</Link>.
+          </p>
+        </ClosingCTA>
       </main>
 
       <Footer />
