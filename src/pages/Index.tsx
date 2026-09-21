@@ -54,9 +54,9 @@ const structuredData = {
 // plain editorial list next to a real photo of a session, so the page shows
 // what the buyer is getting instead of describing it three times over.
 const sessions = [
-  { kind: 'Chair yoga', body: 'Shoulders, neck and hips, in work clothes, at the desk.', to: '/services/chair-yoga-for-teams' },
-  { kind: 'Breathing', body: 'Before the all-hands or after a hard call.', to: '/blog/breathing-exercises-for-work-stress' },
-  { kind: 'Meditation', body: 'A quiet moment in the middle of the day.', to: '/guides/mindfulness-at-work' },
+  { kind: 'Chair yoga', body: 'Gentle stretches for the neck, shoulders and back, sitting in your chair.', to: '/services/chair-yoga-for-teams' },
+  { kind: 'Breathing', body: 'Simple breathing exercises to slow down and feel calmer.', to: '/blog/breathing-exercises-for-work-stress' },
+  { kind: 'Meditation', body: 'A short guided meditation. You sit and listen.', to: '/guides/mindfulness-at-work' },
 ] as const;
 
 // A real class photo. Set `src` to null to fall back to the list-only layout.
