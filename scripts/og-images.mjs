@@ -4,13 +4,18 @@
 // Chrome, so LinkedIn / Slack / X previews look designed instead of blank.
 // Run: node scripts/og-images.mjs   (re-run any time the set changes)
 
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const outDir = join(__dirname, '..', 'public', 'og');
+const publicDir = join(__dirname, '..', 'public');
+
+// Inlined as a data URI: the card is rendered from a string, so a file path
+// would not resolve.
+const dataUri = (rel) => `data:image/jpeg;base64,${readFileSync(join(publicDir, rel)).toString('base64')}`;
 
 // name -> card content. `default` is the site-wide fallback (also the home card).
 const cards = [
@@ -23,6 +28,9 @@ const cards = [
     title: 'A stronger team,',
     accent: 'half an hour',
     tail: 'at a time.',
+    // A real photo of Camilla, in the same arch as the homepage hero, so the
+    // link preview shows a person and not only type.
+    photo: 'images/hero-camilla.jpg',
   },
   {
     name: 'guides',
@@ -54,7 +62,7 @@ const cards = [
   },
 ];
 
-const html = ({ variant, eyebrow, title, accent, tail }) => {
+const html = ({ variant, eyebrow, title, accent, tail, photo }) => {
   // Palette is the site's own tailwind tokens, so the cards cannot drift from
   // the pages they represent: offwhite #f9f2e9, cream #efe4d6, heading #261d16,
   // charcoal #50453d, clay #8f5033, sage-light #dfd6c9.
@@ -69,7 +77,7 @@ const html = ({ variant, eyebrow, title, accent, tail }) => {
   return `<!DOCTYPE html><html><head><meta charset="utf-8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Karla:wght@500;600;700&display=swap">
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   html,body { width:1200px; height:630px; }
@@ -77,22 +85,27 @@ const html = ({ variant, eyebrow, title, accent, tail }) => {
     padding:80px; display:flex; flex-direction:column; justify-content:space-between; }
   .row { position:relative; display:flex; align-items:center; gap:14px; }
   .mark { width:22px; height:22px; border-radius:50%; background:#8f5033; display:inline-block; }
-  .brand { font-family:'Fraunces',serif; font-weight:600; font-size:30px; color:${ink}; letter-spacing:-0.01em; }
+  .brand { font-family:'Newsreader',serif; font-weight:500; font-size:30px; color:${ink}; letter-spacing:-0.01em; }
   .mid { position:relative; }
-  .eyebrow { font-family:'Inter',sans-serif; font-weight:700; font-size:20px; letter-spacing:0.22em; text-transform:uppercase; color:${eyebrowCol}; margin-bottom:26px; }
-  .title { font-family:'Fraunces',serif; font-weight:400; font-size:56px; line-height:1.14; letter-spacing:-0.014em; color:${ink}; max-width:960px; }
+  .eyebrow { font-family:'Karla',sans-serif; font-weight:700; font-size:20px; letter-spacing:0.22em; text-transform:uppercase; color:${eyebrowCol}; margin-bottom:26px; }
+  .title { font-family:'Newsreader',serif; font-weight:400; font-size:56px; line-height:1.14; letter-spacing:-0.014em; color:${ink}; max-width:960px; }
   .title .accent { color:${accentCol}; }
+  .card.has-photo .mid, .card.has-photo .foot { max-width:600px; }
+  .card.has-photo .title { font-size:62px; }
+  .photo { position:absolute; right:80px; top:60px; width:380px; height:510px; border-radius:190px 190px 18px 18px; overflow:hidden; }
+  .photo img { width:100%; height:100%; object-fit:cover; object-position:center bottom; display:block; }
   .foot { position:relative; display:flex; align-items:center; justify-content:space-between; border-top:2px solid ${rule}; padding-top:26px; }
-  .url { font-family:'Inter',sans-serif; font-weight:600; font-size:24px; color:${ink}; }
-  .tag { font-family:'Inter',sans-serif; font-weight:500; font-size:20px; color:${body}; }
+  .url { font-family:'Karla',sans-serif; font-weight:600; font-size:24px; color:${ink}; }
+  .tag { font-family:'Karla',sans-serif; font-weight:500; font-size:20px; color:${body}; }
 </style></head>
-<body><div class="card">
+<body><div class="card${photo ? ' has-photo' : ''}">
+  ${photo ? `<div class="photo"><img src="${dataUri(photo)}" alt=""></div>` : ''}
   <div class="row"><span class="mark"></span><div class="brand">Remote Yoga Coach</div></div>
   <div class="mid">
     ${eyebrow ? `<div class="eyebrow">${eyebrow}</div>` : ''}
     <div class="title">${title} <span class="accent">${accent}</span>${tail ? ' ' + tail : ''}</div>
   </div>
-  <div class="foot"><div class="url">remoteyogacoach.com</div><div class="tag">Live on Teams or Zoom. Camera optional.</div></div>
+  <div class="foot"><div class="url">remoteyogacoach.com</div><div class="tag">Live on Teams. 15 to 30 minutes.</div></div>
 </div></body></html>`;
 };
 
