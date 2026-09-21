@@ -149,26 +149,26 @@ const Index = () => {
 
       {/* HERO: fills the first screen, so the page opens on one clear message
           and the rest is below the fold. */}
-      <section className="ryc-pad ryc-hero-top" style={{ maxWidth: 1240, margin: '0 auto', padding: '112px 40px 56px', minHeight: '100svh', display: 'flex', alignItems: 'center' }}>
-        <div className="ryc-hero-grid" style={{ width: '100%', display: 'grid', gridTemplateColumns: 'minmax(0, 1.1fr) minmax(0, 0.9fr)', gap: 72, alignItems: 'center' }}>
+      <section className="ryc-pad ryc-hero-top" style={{ maxWidth: 1320, margin: '0 auto', padding: '104px 48px 48px', minHeight: '100svh', display: 'flex', alignItems: 'center' }}>
+        <div className="ryc-hero-grid" style={{ width: '100%', display: 'grid', gridTemplateColumns: 'minmax(0, 1.15fr) minmax(0, 0.85fr)', gap: 'clamp(48px, 5vw, 96px)', alignItems: 'center' }}>
           <div>
-            <div style={{ ...eyebrow, marginBottom: 26 }}>Live on Teams&nbsp;&nbsp;·&nbsp;&nbsp;15 to 30 minutes</div>
-            <h1 style={{ fontFamily: serif, fontWeight: 400, fontSize: 'clamp(38px, 5.4vw, 76px)', lineHeight: 1.06, letterSpacing: '-0.02em', margin: 0, maxWidth: '14ch', textWrap: 'balance' }}>
+            <div style={{ ...eyebrow, fontSize: 'clamp(13px, 1vw, 16px)', marginBottom: 'clamp(22px, 2vw, 34px)' }}>Live on Teams&nbsp;&nbsp;·&nbsp;&nbsp;15 to 30 minutes</div>
+            <h1 style={{ fontFamily: serif, fontWeight: 400, fontSize: 'clamp(40px, 6.6vw, 92px)', lineHeight: 1.03, letterSpacing: '-0.025em', margin: 0, maxWidth: '13ch', textWrap: 'balance' }}>
               A stronger team, <span style={{ color: c.terracotta }}>half&nbsp;an&nbsp;hour</span> at a time.
             </h1>
-            <p style={{ fontSize: 'clamp(18px, 1.5vw, 21px)', lineHeight: 1.6, color: c.text2, margin: '30px 0 0', maxWidth: '44ch' }}>
+            <p style={{ fontSize: 'clamp(18px, 1.55vw, 23px)', lineHeight: 1.55, color: c.text2, margin: 'clamp(24px, 2.4vw, 38px) 0 0', maxWidth: '40ch' }}>
               Live breathing, meditation and chair yoga that fits inside the working day. Office, remote or hybrid. No mats, no changing, no awkward silence.
             </p>
-            <div className="ryc-hero-ctas" style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginTop: 34 }}>
-              <Link className="ryc-btn-primary" to="/demo" style={{ display: 'inline-flex', alignItems: 'center', height: 54, padding: '0 28px', borderRadius: 999, background: c.terracotta, color: c.onDark, fontWeight: 600, fontSize: 16 }}>Book a pilot session</Link>
-              <a className="ryc-btn-outline" href="#sessions" style={{ display: 'inline-flex', alignItems: 'center', height: 54, padding: '0 26px', borderRadius: 999, border: `1px solid oklch(0.84 0.02 76)`, color: c.text, fontSize: 16 }}>See the sessions</a>
+            <div className="ryc-hero-ctas" style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 'clamp(28px, 2.8vw, 44px)' }}>
+              <Link className="ryc-btn-primary" to="/demo" style={{ display: 'inline-flex', alignItems: 'center', height: 'clamp(54px, 4vw, 64px)', padding: '0 clamp(26px, 2.2vw, 36px)', borderRadius: 999, background: c.terracotta, color: c.onDark, fontWeight: 600, fontSize: 'clamp(16px, 1.2vw, 18.5px)' }}>Book a pilot session</Link>
+              <a className="ryc-btn-outline" href="#sessions" style={{ display: 'inline-flex', alignItems: 'center', height: 'clamp(54px, 4vw, 64px)', padding: '0 clamp(24px, 2vw, 32px)', borderRadius: 999, border: `1px solid oklch(0.84 0.02 76)`, color: c.text, fontSize: 'clamp(16px, 1.2vw, 18.5px)' }}>See the sessions</a>
             </div>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 26, marginTop: 34, fontSize: 14.5, color: c.text3 }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 26, marginTop: 'clamp(26px, 2.6vw, 40px)', fontSize: 'clamp(14.5px, 1vw, 16.5px)', color: c.text3 }}>
               <span>No app to install</span>
               <span>Runs in your calendar</span>            </div>
           </div>
           <div style={{ position: 'relative' }}>
-            <div className="ryc-hero-img" style={{ height: 'min(640px, 72svh)', borderRadius: '999px 999px 18px 18px', overflow: 'hidden', border: `1px solid ${c.rule}`, background: 'oklch(0.94 0.018 76)' }}>
+            <div className="ryc-hero-img" style={{ height: 'min(80svh, 52vw, 800px)', borderRadius: '999px 999px 20px 20px', overflow: 'hidden', border: `1px solid ${c.rule}`, background: 'oklch(0.94 0.018 76)' }}>
               <img src="/images/hero-camilla.jpg" alt="Camilla, a certified yoga teacher, against a sandstone wall in Stockholm" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center bottom', display: 'block' }} />
             </div>
           </div>
@@ -176,7 +176,7 @@ const Index = () => {
       </section>
 
       {/* SESSIONS: a real class photo beside a plain list of the three classes */}
-      <section id="sessions" className="ryc-pad ryc-sec" style={{ maxWidth: 1200, margin: '0 auto', padding: '112px 40px 0' }}>
+      <section id="sessions" className="ryc-pad ryc-sec" style={{ maxWidth: 1320, margin: '0 auto', padding: '112px 48px 0' }}>
         <div className={classPhoto ? 'ryc-split' : undefined} style={classPhoto ? { display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)', gap: 64, alignItems: 'center' } : undefined}>
           {classPhoto && (
             <figure style={{ margin: 0 }}>
@@ -212,7 +212,7 @@ const Index = () => {
 
       {/* HOW IT WORKS: one horizontal strip, not a tall list */}
       <section id="how" className="ryc-sec" style={{ background: c.band, color: c.text, marginTop: 112 }}>
-        <div className="ryc-pad ryc-band" style={{ maxWidth: 1200, margin: '0 auto', padding: '72px 40px' }}>
+        <div className="ryc-pad ryc-band" style={{ maxWidth: 1320, margin: '0 auto', padding: '72px 48px' }}>
           <h2 style={{ ...h2Style, fontSize: 'clamp(26px, 2.7vw, 34px)' }}>Booked on Monday, running next week.</h2>
           <ol className="ryc-steps" style={{ listStyle: 'none', padding: 0, margin: '36px 0 0', display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 40 }}>
             {steps.map(([n, title, body]) => (
@@ -227,7 +227,7 @@ const Index = () => {
       </section>
 
       {/* YOUR COACH */}
-      <section id="about" className="ryc-pad ryc-sec" style={{ maxWidth: 1200, margin: '0 auto', padding: '112px 40px 0' }}>
+      <section id="about" className="ryc-pad ryc-sec" style={{ maxWidth: 1320, margin: '0 auto', padding: '112px 48px 0' }}>
         <div className="ryc-split" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 0.8fr) minmax(0, 1.2fr)', gap: 64, alignItems: 'center' }}>
           <div className="ryc-coach-img" style={{ aspectRatio: '4 / 5', borderRadius: 14, overflow: 'hidden', background: 'oklch(0.94 0.018 76)' }}>
             <img src="/images/coach-camilla.jpg" alt="Camilla walking with a yoga mat past a sandstone facade in Stockholm" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 70%', display: 'block' }} />
@@ -247,7 +247,7 @@ const Index = () => {
       </section>
 
       {/* PROOF: two quotes, set large, no cards */}
-      <section id="proof" className="ryc-pad ryc-sec" style={{ maxWidth: 1200, margin: '0 auto', padding: '112px 40px 0' }}>
+      <section id="proof" className="ryc-pad ryc-sec" style={{ maxWidth: 1320, margin: '0 auto', padding: '112px 48px 0' }}>
         <div className="ryc-quotes" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 56, borderTop: `1px solid ${c.rule}`, paddingTop: 48 }}>
           {reviews.map((r) => (
             <figure key={r.name} style={{ margin: 0 }}>
@@ -259,7 +259,7 @@ const Index = () => {
       </section>
 
       {/* PRICING */}
-      <section id="pricing" className="ryc-pad ryc-sec" style={{ maxWidth: 1200, margin: '0 auto', padding: '112px 40px 0' }}>
+      <section id="pricing" className="ryc-pad ryc-sec" style={{ maxWidth: 1320, margin: '0 auto', padding: '112px 48px 0' }}>
         <h2 style={{ ...h2Style, fontSize: 'clamp(26px, 2.7vw, 34px)' }}>Simple, per month</h2>
         <p style={{ fontSize: 16.5, lineHeight: 1.6, color: c.text2, margin: '12px 0 32px', maxWidth: '52ch' }}>Priced by how often you meet, not which class you pick.</p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 16 }}>
@@ -285,7 +285,7 @@ const Index = () => {
       </section>
 
       {/* PILOT CTA: one message, one button */}
-      <section id="pilot" className="ryc-pad ryc-sec" style={{ maxWidth: 1200, margin: '0 auto', padding: '112px 40px 112px' }}>
+      <section id="pilot" className="ryc-pad ryc-sec" style={{ maxWidth: 1320, margin: '0 auto', padding: '112px 48px 112px' }}>
         <div className="ryc-pilot-panel" style={{ background: c.darkPill, color: c.onDark, borderRadius: 18, padding: '64px 56px', textAlign: 'center' }}>
           <h2 style={{ ...h2Style, color: c.onDark, fontSize: 'clamp(28px, 3vw, 40px)', lineHeight: 1.1 }}>Try one session. See who shows up.</h2>
           <p style={{ fontSize: 18, lineHeight: 1.6, color: 'oklch(0.86 0.02 76)', margin: '16px auto 0', maxWidth: '42ch' }}>One paid session, no contract, nothing to sign.</p>

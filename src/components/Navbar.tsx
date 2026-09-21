@@ -45,7 +45,7 @@ const Navbar = () => {
           : 'bg-offwhite/40 backdrop-blur-sm'
       )}
     >
-      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 mx-auto max-w-[1200px]">
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 mx-auto max-w-[1320px]">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-baseline gap-2.5 group" aria-label="Remote Yoga Coach, home">
