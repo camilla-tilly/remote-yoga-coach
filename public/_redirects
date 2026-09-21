@@ -14,3 +14,14 @@
 # anything else falls through to the app shell.
 # No catch-all: every real route is prerendered, and unknown addresses get
 # dist/404.html with a real 404 status (see scripts/prerender.mjs).
+
+# Swedish pages moved to yogawithcamilla.se (2026-09-21). Swedish buyers are
+# served by the Swedish site; this site is English-only.
+/foretagsyoga-distans                             https://yogawithcamilla.se/tjanster/foretagsyoga       301!
+/foretagsyoga-distans/                            https://yogawithcamilla.se/tjanster/foretagsyoga       301!
+/blog/naturaforman-yoga-for-hela-teamet           https://yogawithcamilla.se/blogg/friskvardsbidrag-yoga 301!
+/blog/naturaforman-yoga-for-hela-teamet/          https://yogawithcamilla.se/blogg/friskvardsbidrag-yoga 301!
+/blog/halsa-hybridarbete-distansteam              https://yogawithcamilla.se/tjanster/foretagsyoga       301!
+/blog/halsa-hybridarbete-distansteam/             https://yogawithcamilla.se/tjanster/foretagsyoga       301!
+/blog/kontorsyoga-pa-distans-forklaring           https://yogawithcamilla.se/tjanster/foretagsyoga       301!
+/blog/kontorsyoga-pa-distans-forklaring/          https://yogawithcamilla.se/tjanster/foretagsyoga       301!

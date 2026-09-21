@@ -250,29 +250,4 @@
   </url>
 
   <!-- Swedish-market blog posts (English-taught sessions, Swedish-language content) -->
-  <url>
-    <loc>https://remoteyogacoach.com/blog/naturaforman-yoga-for-hela-teamet</loc>
-    <lastmod>2026-08-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://remoteyogacoach.com/blog/halsa-hybridarbete-distansteam</loc>
-    <lastmod>2026-08-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://remoteyogacoach.com/blog/kontorsyoga-pa-distans-forklaring</loc>
-    <lastmod>2026-08-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://remoteyogacoach.com/foretagsyoga-distans</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
 </urlset>

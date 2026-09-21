@@ -23,9 +23,6 @@ import improveWellbeingProgrammeAttendance from './posts/improve-wellbeing-progr
 import wellbeingInRemoteOnboarding from './posts/wellbeing-in-remote-onboarding';
 import meditationBreathingOrChairYogaForYourTeam from './posts/meditation-breathing-or-chair-yoga-for-your-team';
 import howToMeasureWellbeingProgrammeRoi from './posts/how-to-measure-wellbeing-programme-roi';
-import naturaformanYogaForHelaTeamet from './posts/naturaforman-yoga-for-hela-teamet';
-import halsaHybridarbeteDistansteam from './posts/halsa-hybridarbete-distansteam';
-import kontorsyogaPaDistansForklaring from './posts/kontorsyoga-pa-distans-forklaring';
 
 export type { BlogPost, BlogLanguage, BlogContentBlock } from './blogTypes';
 
@@ -55,9 +52,6 @@ export const blogPosts: BlogPost[] = [
   chairYogaAtYourDesk,
   breathingExercisesForWorkStress,
   wellbeingInRemoteOnboarding,
-  naturaformanYogaForHelaTeamet,
-  halsaHybridarbeteDistansteam,
-  kontorsyogaPaDistansForklaring,
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

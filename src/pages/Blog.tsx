@@ -42,14 +42,13 @@ const guides = [
 const Blog = () => {
   const [active, setActive] = useState(ALL);
 
-  // Categories in a deliberate reading order, widest topic first, Swedish last.
+  // Categories in a deliberate reading order, widest topic first.
   const categories = useMemo(() => {
     const order = [
       'Remote teams and burnout',
       'Desk and posture',
       'Meditation and breathing',
       'Cost and proof',
-      'På svenska',
     ];
     const present = new Set(blogPosts.map((p) => p.category));
     return [ALL, ...order.filter((c) => present.has(c))];
