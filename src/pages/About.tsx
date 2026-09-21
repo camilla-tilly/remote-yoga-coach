@@ -61,17 +61,27 @@ const About = () => {
         </section>
 
         <section className="py-20 md:py-28">
-          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 md:grid md:grid-cols-[220px_1fr] md:gap-10 md:items-start">
+          <div className="max-w-[940px] mx-auto px-5 sm:px-6 md:px-8 md:grid md:grid-cols-[300px_1fr] md:gap-12 md:items-start">
             <CoachPhoto
               src="/coach-camilla.jpg"
               alt="Camilla, a certified yoga teacher for remote teams"
-              className="w-full max-w-[220px] mx-auto md:mx-0 mb-8 md:mb-0"
+              className="w-full max-w-[340px] mx-auto md:mx-0 mb-8 md:mb-0"
             />
             <div className="space-y-6 text-charcoal/80 text-lg leading-relaxed">
             <p>
-              I'm Camilla, a 500-hour certified yoga teacher. Before teaching full time I worked across a
-              large multinational company, a startup, a consultancy and in government, so the sessions are
-              built around real office life, not an ideal version of it.
+              I'm Camilla, a 500-hour certified yoga teacher based in Stockholm. Before teaching full time I
+              worked across a large multinational company, a startup, a consultancy and in government, so the
+              sessions are built around real office life, not an ideal version of it.
+            </p>
+            <p>
+              Remote Yoga Coach is my online offer for teams. In Stockholm I also teach in person, as{' '}
+              <a
+                href="https://yogawithcamilla.se/tjanster/foretagsyoga"
+                className="text-clay underline underline-offset-4 hover:text-clayDark"
+              >
+                Yoga with Camilla
+              </a>
+              . Same sessions, same prices, same teacher.
             </p>
             <p>
               The Weekly Reset is a simple idea: a scheduled moment with a real person, not another app to work

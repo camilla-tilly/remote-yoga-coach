@@ -57,7 +57,7 @@ async function run() {
   });
 
   // One attempt at a route. Separated out so it can be retried.
-  async function render(route, timeout) {
+  async function render(route, timeout, outOverride) {
     const page = await browser.newPage();
     try {
       // Cache off, or a retry re-requests a page the browser already has and
@@ -77,10 +77,10 @@ async function run() {
       const html = await page.evaluate(
         () => '<!DOCTYPE html>\n' + document.documentElement.outerHTML
       );
-      const outPath =
-        route === '/'
+      const outPath = outOverride ||
+        (route === '/'
           ? join(distDir, 'index.html')
-          : join(distDir, route, 'index.html');
+          : join(distDir, route, 'index.html'));
       mkdirSync(dirname(outPath), { recursive: true });
       writeFileSync(outPath, html, 'utf8');
     } finally {
@@ -124,6 +124,19 @@ async function run() {
     if (!done) failedRoutes.push(route);
   }
   const failed = failedRoutes.length;
+
+  // A real 404 page. public/_redirects used to end with `/* /index.html 200`,
+  // so any made-up address returned the homepage with a 200: a "soft 404",
+  // which wastes Google's crawl on a site it is still rationing. Every real
+  // route is prerendered above, so the catch-all is no longer needed; Netlify
+  // serves dist/404.html with a genuine 404 status for anything else. The page
+  // boots the app, and the router shows NotFound for the unknown path.
+  try {
+    await render('/__prerender-404__', 30000, join(distDir, '404.html'));
+    console.log('[prerender] ✓ 404.html');
+  } catch (err) {
+    console.error(`[prerender] ✗ 404.html — ${err.message}`);
+  }
 
   await browser.close();
   await server.httpServer.close();

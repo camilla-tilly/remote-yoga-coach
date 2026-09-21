@@ -12,4 +12,5 @@
 
 # SPA fallback: prerendered static files in dist/ are served first,
 # anything else falls through to the app shell.
-/*    /index.html   200
+# No catch-all: every real route is prerendered, and unknown addresses get
+# dist/404.html with a real 404 status (see scripts/prerender.mjs).

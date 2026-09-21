@@ -11,9 +11,16 @@ import { Check, X, Minus, UserRound } from 'lucide-react';
  * Reveal — lightweight scroll-in animation (no framer-motion needed).
  * Never wrap the hero H1/subcopy in this: keep above-the-fold instant.
  * ------------------------------------------------------------------ */
+/**
+ * Used to fade content in as it scrolled into view. It shipped every wrapped
+ * element with an inline opacity:0 until an IntersectionObserver fired, so
+ * anything that renders without scrolling (Google's renderer, link previews,
+ * a slow phone) saw a blank gap where the pricing plans and guide cards should
+ * be. Now a plain wrapper: the content is simply there. Props kept so existing
+ * call sites need no change.
+ */
 export const Reveal = ({
   children,
-  delay = 0,
   className = '',
   as: Tag = 'div',
 }: {
@@ -21,46 +28,7 @@ export const Reveal = ({
   delay?: number;
   className?: string;
   as?: React.ElementType;
-}) => {
-  const ref = useRef<HTMLElement | null>(null);
-  const [shown, setShown] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    if (typeof IntersectionObserver === 'undefined') {
-      setShown(true);
-      return;
-    }
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            setShown(true);
-            io.disconnect();
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: '0px 0px -48px 0px' },
-    );
-    io.observe(el);
-    return () => io.disconnect();
-  }, []);
-
-  return (
-    <Tag
-      ref={ref}
-      className={className}
-      style={{
-        opacity: shown ? 1 : 0,
-        transform: shown ? 'none' : 'translateY(18px)',
-        transition: `opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1) ${delay}ms, transform 0.65s cubic-bezier(0.22, 1, 0.36, 1) ${delay}ms`,
-      }}
-    >
-      {children}
-    </Tag>
-  );
-};
+}) => <Tag className={className}>{children}</Tag>;
 
 /* ------------------------------------------------------------------ *
  * Branded decorative glow field — soft clay/sage radial blobs.

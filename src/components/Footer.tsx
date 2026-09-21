@@ -48,11 +48,18 @@ const Footer = () => {
               Live breathing, meditation and chair-yoga classes your distributed team actually shows up for, on
               Teams.
             </p>
+            <p className="font-inter text-[14px] text-charcoal/55 leading-relaxed mt-3 max-w-sm">
+              Run by Camilla, a yoga teacher in Stockholm. In person as{' '}
+              <a href="https://yogawithcamilla.se" className="underline underline-offset-4 hover:text-clay">
+                Yoga with Camilla
+              </a>
+              .
+            </p>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/camillatilly/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn"
+              aria-label="Camilla on LinkedIn"
               className="mt-7 w-11 h-11 inline-flex items-center justify-center rounded-full bg-white ring-1 ring-sage-light text-charcoal/75 hover:text-heading hover:bg-white transition-colors"
             >
               <Linkedin size={18} aria-hidden="true" />
