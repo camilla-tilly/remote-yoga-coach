@@ -140,22 +140,23 @@ const Index = () => {
           #pilot.ryc-sec { padding-bottom: 64px !important; }
           .ryc-pilot-panel { padding: 44px 24px !important; }
           .ryc-hero-ctas a { padding: 0 20px !important; height: 50px !important; font-size: 15px !important; }
-          .ryc-hero-top { padding-top: 96px !important; }
+          .ryc-hero-top { padding-top: 96px !important; padding-bottom: 0 !important; min-height: 0 !important; }
         }
       `}</style>
 
       {/* HEADER (shared, restyled) */}
       <Navbar />
 
-      {/* HERO */}
-      <section className="ryc-pad ryc-hero-top" style={{ maxWidth: 1200, margin: '0 auto', padding: '120px 40px 0' }}>
-        <div className="ryc-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.05fr) minmax(0, 0.95fr)', gap: 64, alignItems: 'center' }}>
+      {/* HERO: fills the first screen, so the page opens on one clear message
+          and the rest is below the fold. */}
+      <section className="ryc-pad ryc-hero-top" style={{ maxWidth: 1240, margin: '0 auto', padding: '112px 40px 56px', minHeight: '100svh', display: 'flex', alignItems: 'center' }}>
+        <div className="ryc-hero-grid" style={{ width: '100%', display: 'grid', gridTemplateColumns: 'minmax(0, 1.1fr) minmax(0, 0.9fr)', gap: 72, alignItems: 'center' }}>
           <div>
             <div style={{ ...eyebrow, marginBottom: 26 }}>Live on Teams&nbsp;&nbsp;·&nbsp;&nbsp;15 to 30 minutes</div>
-            <h1 style={{ fontFamily: serif, fontWeight: 400, fontSize: 'clamp(34px, 3.8vw, 53px)', lineHeight: 1.14, letterSpacing: '-0.012em', margin: 0, maxWidth: '20ch', textWrap: 'balance' }}>
+            <h1 style={{ fontFamily: serif, fontWeight: 400, fontSize: 'clamp(38px, 5.4vw, 76px)', lineHeight: 1.06, letterSpacing: '-0.02em', margin: 0, maxWidth: '14ch', textWrap: 'balance' }}>
               A stronger team, <span style={{ color: c.terracotta }}>half&nbsp;an&nbsp;hour</span> at a time.
             </h1>
-            <p style={{ fontSize: 19.5, lineHeight: 1.6, color: c.text2, margin: '30px 0 0', maxWidth: '48ch' }}>
+            <p style={{ fontSize: 'clamp(18px, 1.5vw, 21px)', lineHeight: 1.6, color: c.text2, margin: '30px 0 0', maxWidth: '44ch' }}>
               Live breathing, meditation and chair yoga that fits inside the working day. Office, remote or hybrid. No mats, no changing, no awkward silence.
             </p>
             <div className="ryc-hero-ctas" style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginTop: 34 }}>
@@ -167,7 +168,7 @@ const Index = () => {
               <span>Runs in your calendar</span>            </div>
           </div>
           <div style={{ position: 'relative' }}>
-            <div className="ryc-hero-img" style={{ height: 520, borderRadius: '260px 260px 18px 18px', overflow: 'hidden', border: `1px solid ${c.rule}`, background: 'oklch(0.94 0.018 76)' }}>
+            <div className="ryc-hero-img" style={{ height: 'min(640px, 72svh)', borderRadius: '999px 999px 18px 18px', overflow: 'hidden', border: `1px solid ${c.rule}`, background: 'oklch(0.94 0.018 76)' }}>
               <img src="/images/hero-camilla.jpg" alt="Camilla, a certified yoga teacher, against a sandstone wall in Stockholm" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center bottom', display: 'block' }} />
             </div>
           </div>
@@ -185,10 +186,14 @@ const Index = () => {
               <figcaption style={{ fontSize: 14, color: c.text3, marginTop: 12 }}>{classPhoto.caption}</figcaption>
             </figure>
           )}
-          <div>
-            <h2 style={{ ...h2Style, fontSize: 'clamp(28px, 3vw, 40px)', lineHeight: 1.1, maxWidth: '18ch' }}>Three classes. Choose one, or rotate.</h2>
-            <p style={{ fontSize: 17, lineHeight: 1.6, color: c.text2, margin: '16px 0 0', maxWidth: '44ch' }}>Every class is live and around 15 to 30 minutes, done from a chair.</p>
-            <ul style={{ listStyle: 'none', padding: 0, margin: '32px 0 0', borderTop: `1px solid ${c.rule}` }}>
+          {/* Without a photo, the heading takes the left column and the list the
+              right, so the heading never sits alone with empty space beside it. */}
+          <div className={classPhoto ? undefined : 'ryc-split'} style={classPhoto ? undefined : { display: 'grid', gridTemplateColumns: 'minmax(0, 0.85fr) minmax(0, 1.15fr)', gap: 64, alignItems: 'start' }}>
+            <div>
+              <h2 style={{ ...h2Style, fontSize: 'clamp(28px, 3vw, 40px)', lineHeight: 1.1, maxWidth: '18ch' }}>Three classes. Choose one, or rotate.</h2>
+              <p style={{ fontSize: 17, lineHeight: 1.6, color: c.text2, margin: '16px 0 0', maxWidth: '44ch' }}>Every class is live and around 15 to 30 minutes, done from a chair.</p>
+            </div>
+            <ul style={{ listStyle: 'none', padding: 0, margin: classPhoto ? '32px 0 0' : 0, borderTop: `1px solid ${c.rule}` }}>
               {sessions.map((s) => (
                 <li key={s.kind} style={{ borderBottom: `1px solid ${c.rule}` }}>
                   <Link to={s.to} className="ryc-class-row" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) auto', gap: 20, alignItems: 'center', padding: '22px 0', color: 'inherit' }}>
