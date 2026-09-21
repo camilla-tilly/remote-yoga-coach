@@ -193,3 +193,41 @@ export const ClosingCTA = ({
     </div>
   </section>
 );
+
+/**
+ * A list of links as plain rows: serif title, one line of text, an arrow.
+ * The same pattern as the class list on the homepage.
+ */
+export const LinkRows = ({
+  items,
+  small = false,
+}: {
+  items: Array<{ to: string; title: React.ReactNode; text?: React.ReactNode; meta?: React.ReactNode }>;
+  small?: boolean;
+}) => (
+  <ul className="border-t border-sage-light">
+    {items.map((item) => (
+      <li key={item.to} className="border-b border-sage-light">
+        <Link
+          to={item.to}
+          className="group grid grid-cols-[minmax(0,1fr)_auto] gap-6 items-center py-5 md:py-6 text-inherit"
+        >
+          <span>
+            {item.meta && <span className="block text-[13px] text-charcoal/55 mb-1.5">{item.meta}</span>}
+            <span
+              className={`block font-fraunces font-normal text-heading leading-snug group-hover:text-clay transition-colors ${
+                small ? 'text-[1.25rem] md:text-[1.35rem]' : 'text-[1.45rem] md:text-[1.7rem]'
+              }`}
+            >
+              {item.title}
+            </span>
+            {item.text && <span className="block mt-1.5 text-charcoal/70 text-[15px] md:text-[16px] leading-relaxed">{item.text}</span>}
+          </span>
+          <span aria-hidden="true" className="text-clay text-xl transition-transform group-hover:translate-x-1">
+            →
+          </span>
+        </Link>
+      </li>
+    ))}
+  </ul>
+);

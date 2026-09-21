@@ -1,11 +1,9 @@
-import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
-import { Button } from '@/components/ui/button';
-import { CoachPhoto } from '@/components/SiteBlocks';
-import { PullQuote } from '@/components/GuideLayout';
+import { PullQuote, ProseList } from '@/components/GuideLayout';
+import { PageHero, PageSection, ClosingCTA, PillLink } from '@/components/PageKit';
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -48,29 +46,31 @@ const About = () => {
       <Navbar />
 
       <main>
-        <section className="bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
-          <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8 text-center">
-            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
-              About Camilla
-            </h1>
-            <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[600px] mx-auto">
-              Remote Yoga Coach is me, Camilla. I teach live classes on Teams for teams that work remotely or in a hybrid setup.
-            </p>
-          </div>
-        </section>
+        <PageHero
+          title="About Camilla"
+          aside={
+            <div className="aspect-[4/5] max-h-[640px] rounded-[20px] overflow-hidden border border-sage-light bg-cream">
+              <img
+                src="/images/coach-camilla.jpg"
+                alt="Camilla, a certified yoga teacher for remote teams, walking with a yoga mat in Stockholm"
+                width={900}
+                height={1200}
+                className="w-full h-full object-cover object-[center_70%]"
+              />
+            </div>
+          }
+        >
+          <p>
+            Remote Yoga Coach is me, Camilla. I teach live classes on Teams for teams that work remotely or in a hybrid setup.
+          </p>
+        </PageHero>
 
-        <section className="py-20 md:py-28">
-          <div className="max-w-[940px] mx-auto px-5 sm:px-6 md:px-8 md:grid md:grid-cols-[300px_1fr] md:gap-12 md:items-start">
-            <CoachPhoto
-              src="/coach-camilla.jpg"
-              alt="Camilla, a certified yoga teacher for remote teams"
-              className="w-full max-w-[340px] mx-auto md:mx-0 mb-8 md:mb-0"
-            />
-            <div className="space-y-6 text-charcoal/80 text-lg leading-relaxed">
+        <PageSection heading="My background">
+          <div className="space-y-5">
             <p>
               I'm Camilla, a 500-hour certified yoga teacher based in Stockholm. Before teaching full time I
-              worked across a large multinational company, a startup, a consultancy and in government, so the
-              sessions are built around real office life, not an ideal version of it.
+              worked across a large multinational company, a startup, a consultancy and in government, so I build
+              the classes around what office life is really like.
             </p>
             <p>
               Remote Yoga Coach is my online offer for teams. In Stockholm I also teach in person, as{' '}
@@ -80,90 +80,63 @@ const About = () => {
               >
                 Yoga with Camilla
               </a>
-              . Same sessions, same prices, same teacher.
+              . The classes, the prices and the teacher are the same.
             </p>
             <p>
               The idea is simple: a regular class with a real teacher, instead of another app to use on your own. It is done sitting in a chair, and nobody needs to be fit or flexible.
             </p>
-            </div>
           </div>
-        </section>
+        </PageSection>
 
-        {/* TRAINING AND CREDENTIALS */}
-        <section className="bg-cream py-16 md:py-20">
-          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8">
-            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">Training and credentials</h2>
-            <div className="mt-5 space-y-5 text-charcoal/75 text-lg leading-relaxed">
-              <p>
-                I have 500 hours of yoga teacher training in movement, breathwork and meditation, plus a Certificate III
-                in Fitness from Australia covering anatomy and safe movement for all levels. That combination means I
-                understand how bodies actually work, so I can keep every session genuinely accessible, no experience or
-                equipment needed.
-              </p>
-              <p>
-                My meditation and breathing work draws on extensive
-                experience across three traditions, Kadampa Buddhism meditation, Tranquil Wisdom Insight Meditation,
-                and the Hindu yogic tradition of mantra, breathing techniques and meditation. I have done retreats in
-                all three and teach these styles, so the breathwork and stillness in a session is grounded in the
-                traditions it comes from.
-              </p>
-              <PullQuote>
-                I am also an ultra runner, with six ultra marathons behind me, so I know how important rest is when you work hard.
-              </PullQuote>
-            </div>
-            <div className="mt-7 flex flex-wrap gap-2.5">
-              {[
+        <PageSection heading="Training and credentials">
+          <div className="space-y-5">
+            <p>
+              I have 500 hours of yoga teacher training in movement, breathwork and meditation, plus a Certificate III
+              in Fitness from Australia covering anatomy and safe movement for all levels. That means I understand how
+              bodies work, so I can keep every class suitable for everyone, with no experience or equipment needed.
+            </p>
+            <p>
+              My meditation and breathing work draws on extensive
+              experience across three traditions, Kadampa Buddhism meditation, Tranquil Wisdom Insight Meditation,
+              and the Hindu yogic tradition of mantra, breathing techniques and meditation. I have done retreats in
+              all three and teach these styles, so the breathwork and meditation in a class come from those
+              traditions.
+            </p>
+            <PullQuote>
+              I am also an ultra runner, with six ultra marathons behind me, so I know how important rest is when you work hard.
+            </PullQuote>
+            <ProseList
+              items={[
                 '500 hours of yoga teacher training',
                 'Certificate III in Fitness (Australia)',
                 'Movement and breathwork',
                 'Meditation and mindfulness',
                 'Anatomy and safe movement',
-                'Ultra runner',
-              ].map((c) => (
-                <span
-                  key={c}
-                  className="inline-flex items-center gap-2 rounded-full border border-sage-light bg-white px-3.5 py-1.5 text-[13px] font-medium text-charcoal/75"
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-clay" aria-hidden="true" />
-                  {c}
-                </span>
-              ))}
-            </div>
+              ]}
+            />
           </div>
-        </section>
+        </PageSection>
 
-        <section className="py-16 md:py-20">
-          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8">
-            <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight text-center">Why the classes are live</h2>
-            <div className="mt-12 grid gap-6 sm:grid-cols-2">
-              {[
-                ['Continuity', 'The same teacher every week, so your team gets to know me.'],
-                ['Accessibility', 'Chair-based, no equipment. Everyone can join, wherever they work.'],
-              ].map(([title, text]) => (
-                <div key={title} className="rounded-[12px] border border-sage-light bg-card p-8 text-center">
-                  <h3 className="font-fraunces font-normal text-heading text-xl">{title}</h3>
-                  <p className="text-charcoal/70 text-[15px] leading-relaxed mt-3">{text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <PageSection heading="Why the classes are live">
+          <ul className="border-t border-sage-light">
+            {[
+              ['Continuity', 'The same teacher every week, so your team gets to know me.'],
+              ['Accessibility', 'Chair-based, no equipment. Everyone can join, wherever they work.'],
+            ].map(([title, text]) => (
+              <li key={title} className="border-b border-sage-light py-5 md:py-6">
+                <h3 className="font-fraunces font-normal text-heading text-[1.4rem] leading-snug">{title}</h3>
+                <p className="mt-1 text-charcoal/75 text-[16px] leading-relaxed">{text}</p>
+              </li>
+            ))}
+          </ul>
+        </PageSection>
 
-        <section className="bg-cream-soft-b py-24 md:py-28">
-          <div className="max-w-[680px] mx-auto px-5 sm:px-6 md:px-8 text-center">
-            <h2 className="font-fraunces font-normal text-heading text-4xl md:text-5xl tracking-[-0.02em] leading-tight">Start with one pilot session</h2>
-            <p className="mt-6 text-charcoal/75 text-lg leading-relaxed">
-              Start with a single pilot session, credited to your first month if you continue.
-            </p>
-            <div className="mt-9">
-              <Link to="/demo">
-                <Button className="bg-clay hover:bg-clayDark text-white font-medium text-[15px] rounded-full px-8 py-6">
-                  Book a pilot
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </section>
+        <ClosingCTA
+          heading="Start with one pilot session"
+          actions={<PillLink to="/demo" variant="light">Book a pilot</PillLink>}
+        >
+          <p>A single live class, credited to your first month if you continue.</p>
+        </ClosingCTA>
       </main>
 
       <Footer />

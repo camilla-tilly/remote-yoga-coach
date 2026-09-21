@@ -6,6 +6,7 @@ import SEO from '@/components/SEO';
 import { getBlogPost } from '@/data/blogPosts';
 import { softenAmp } from '@/lib/amp';
 import { GuideFAQ, Figure } from '@/components/GuideLayout';
+import { ClosingCTA, PillLink, WRAP } from '@/components/PageKit';
 
 // Parse inline markdown: **bold** and [label](/path) links.
 // Supports internal links (starting with "/") and external (starting with "http").
@@ -215,73 +216,52 @@ const BlogPostPage = () => {
         structuredData={structuredData}
       />
       <Navbar />
-      <main className="pt-28 pb-16 px-4">
-        {/* Breadcrumb */}
-        <div className="max-w-[860px] mx-auto mb-8">
-          <Link
-            to="/blog"
-            className="font-mono text-[12px] text-charcoal/55 hover:text-clay transition-colors"
-          >
+      <main className="pt-32 md:pt-44">
+        <div className={WRAP}>
+          <Link to="/blog" className="text-[14px] text-charcoal/60 hover:text-clay transition-colors">
             {t.back}
           </Link>
-        </div>
 
-        {/* Article Header */}
-        <article className="max-w-[620px] mx-auto">
-          <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay">
-              {post.category}
-            </span>
-            <span className="w-8 h-px bg-dalashala-meadow" />
-            <span className="font-inter text-sm text-dalashala-earth/70">
-              {post.readingTime} {t.reading}
-            </span>
-          </div>
+          <article>
+            <header className="mt-8 max-w-[960px]">
+              <p className="text-[14px] md:text-[15px] text-charcoal/60">
+                {post.category} · {post.readingTime} {t.reading}
+              </p>
+              <h1 className="mt-4 font-fraunces font-normal text-heading text-[2.4rem] sm:text-[3rem] lg:text-[3.8rem] leading-[1.05] tracking-[-0.022em] max-w-[22ch] [text-wrap:balance]">
+                {softenAmp(post.title)}
+              </h1>
+            </header>
 
-          <h1 className="font-fraunces font-normal text-[2.4rem] md:text-[3.25rem] text-dalashala-earth mb-10 leading-[1.08] tracking-[-0.02em]">
-            {softenAmp(post.title)}
-          </h1>
-
-          {/* heroImage was typed on BlogPost and wired to the OG tag, but never
-              actually shown on the page. No post sets it yet, so this stays
-              inert until there is a photo worth putting there. */}
-          {post.heroImage && (
-            <Figure src={post.heroImage.src} alt={post.heroImage.alt} ratio="3/2" className="mt-0 mb-10" />
-          )}
-
-          {/* Article Content */}
-          <div className="mb-12">
-              {/* Table of Contents */}
+            {/* Contents sit in a sticky right-hand column on wide screens and
+                above the text on phones. One element, placed by the grid. */}
+            <div className="mt-12 md:mt-16 border-t border-sage-light pt-10 md:pt-14 lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-20 xl:gap-28">
               {tocHeadings.length > 1 && (
-                <nav
-                  aria-label={t.tocLabel}
-                  className="bg-dalashala-creamDeep/70 border border-dalashala-meadow/50 rounded-xl p-5 md:p-6 mb-10"
-                >
-                  <p className="font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-4">
-                    {t.tocLabel}
-                  </p>
-                  <ol className="space-y-2">
-                    {tocHeadings.map((h, i) => (
-                      <li
-                        key={h.id}
-                        className={
-                          h.sub
-                            ? 'font-inter text-[0.875rem] text-dalashala-earth/75 pl-5'
-                            : 'font-inter text-[0.9375rem] text-dalashala-earth'
-                        }
-                      >
-                        <a
-                          href={`#${h.id}`}
-                          className="hover:text-clay hover:underline decoration-clay/40 underline-offset-2"
-                        >
-                          {h.sub ? '' : `${tocHeadings.slice(0, i + 1).filter((x) => !x.sub).length}. `}
-                          {softenAmp(h.text)}
-                        </a>
-                      </li>
-                    ))}
-                  </ol>
-                </nav>
+                <aside className="mb-10 lg:mb-0 lg:col-start-2 lg:row-start-1">
+                  <nav aria-label={t.tocLabel} className="lg:sticky lg:top-28">
+                    <p className="font-fraunces text-heading text-[1.3rem] mb-3">{t.tocLabel}</p>
+                    <ol className="border-t border-sage-light">
+                      {tocHeadings.map((h) => (
+                        <li key={h.id} className="border-b border-sage-light">
+                          <a
+                            href={`#${h.id}`}
+                            className="block py-2.5 text-[15px] leading-snug text-charcoal/75 hover:text-clay transition-colors"
+                          >
+                            {softenAmp(h.text)}
+                          </a>
+                        </li>
+                      ))}
+                    </ol>
+                  </nav>
+                </aside>
               )}
+
+              <div className="max-w-[680px] lg:col-start-1 lg:row-start-1">
+                {/* heroImage was typed on BlogPost and wired to the OG tag, but never
+                    actually shown on the page. No post sets it yet, so this stays
+                    inert until there is a photo worth putting there. */}
+                {post.heroImage && (
+                  <Figure src={post.heroImage.src} alt={post.heroImage.alt} ratio="3/2" className="mt-0 mb-10" />
+                )}
 
               {post.content.map((section, i) => {
                 if (section.type === 'heading') {
@@ -455,42 +435,48 @@ const BlogPostPage = () => {
                   </p>
                 );
               })}
-          </div>
 
-          {/* Related service: one quiet line. The post's own CTA card already asked. */}
-          {post.relatedServiceHref && post.relatedServiceLabel && (
-            <p className="mt-14 pt-8 border-t border-dalashala-meadow/60">
-              <Link
-                to={post.relatedServiceHref}
-                className="inline-flex items-center gap-2 text-clay hover:text-clayDark font-medium text-[16px]"
-              >
-                {post.relatedServiceLabel} <span aria-hidden="true">→</span>
-              </Link>
-            </p>
-          )}
-
-          {/* Related posts */}
-          {post.relatedPosts && post.relatedPosts.length > 0 && (
-            <div className="mt-10 mb-6">
-              <p className="font-mono text-[12px] font-medium uppercase tracking-[0.14em] text-clay mb-3">
-                {t.related}
-              </p>
-              <ul className="space-y-2.5">
-                {post.relatedPosts.map((rp) => (
-                  <li key={rp.slug}>
+                {/* Related service: one quiet line. The post's own CTA card already asked. */}
+                {post.relatedServiceHref && post.relatedServiceLabel && (
+                  <p className="mt-14 pt-8 border-t border-sage-light">
                     <Link
-                      to={`/blog/${rp.slug}`}
-                      className="text-dalashala-earth hover:text-clay underline decoration-dalashala-meadow hover:decoration-clay underline-offset-4 text-[17px] leading-snug"
+                      to={post.relatedServiceHref}
+                      className="inline-flex items-center gap-2 text-clay hover:text-clayDark font-medium text-[16px]"
                     >
-                      {rp.label}
+                      {post.relatedServiceLabel} <span aria-hidden="true">→</span>
                     </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+                  </p>
+                )}
 
-        </article>
+                {/* Related posts */}
+                {post.relatedPosts && post.relatedPosts.length > 0 && (
+                  <div className="mt-10">
+                    <p className="font-fraunces text-heading text-[1.3rem] mb-3">{t.related}</p>
+                    <ul className="space-y-2.5">
+                      {post.relatedPosts.map((rp) => (
+                        <li key={rp.slug}>
+                          <Link
+                            to={`/blog/${rp.slug}`}
+                            className="text-heading hover:text-clay underline decoration-sage-light hover:decoration-clay underline-offset-4 text-[17px] leading-snug"
+                          >
+                            {rp.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <ClosingCTA
+          heading="Try a live class with your team"
+          actions={<PillLink to="/demo" variant="light">Book a pilot</PillLink>}
+        >
+          <p>If you would like to try it, start with a single pilot session.</p>
+        </ClosingCTA>
       </main>
       <Footer />
       <ScrollToTop />

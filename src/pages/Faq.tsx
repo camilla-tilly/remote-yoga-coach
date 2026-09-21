@@ -2,7 +2,8 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
-import { GuideEyebrow, GuideFAQ, GuideCTA } from '@/components/GuideLayout';
+import { GuideFAQ } from '@/components/GuideLayout';
+import { PageHero, PageSection, ClosingCTA, PillLink } from '@/components/PageKit';
 
 /**
  * Consolidated FAQ hub. Keyword-friendly buyer questions grouped into
@@ -45,7 +46,7 @@ const groups: Array<{ heading: string; items: Array<[string, string]> }> = [
       ],
       [
         'Is it suitable for complete beginners?',
-        'Completely. Every class is pitched so a total beginner can follow it comfortably. Nobody needs to be fit, flexible, or to have done yoga or meditation before. The chair yoga in particular came from adaptive yoga, so it assumes a range of bodies rather than the flexible few.',
+        'Completely. Every class is pitched so a total beginner can follow it comfortably. Nobody needs to be fit, flexible, or to have done yoga or meditation before. The chair yoga in particular came from adaptive yoga, so it is designed for all kinds of bodies.',
       ],
     ],
   },
@@ -112,7 +113,7 @@ const groups: Array<{ heading: string; items: Array<[string, string]> }> = [
       ],
       [
         'We already have an EAP. Why add this?',
-        'An employee assistance programme is a reactive safety net for people in crisis, and it is worth keeping. This is the opposite: a proactive weekly habit that supports everyone before things reach that point. The two complement each other.',
+        'An employee assistance programme is a reactive safety net for people in crisis, and it is worth keeping. A weekly class is different: it supports everyone regularly, before things reach that point. The two complement each other.',
       ],
     ],
   },
@@ -152,35 +153,28 @@ const Faq = () => (
     <Navbar />
 
     <main>
-      <section className="bg-cream-soft pt-36 pb-16 md:pt-44 md:pb-20">
-        <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8 text-center">
-          <GuideEyebrow>FAQ</GuideEyebrow>
-          <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
-            Frequently asked questions
-          </h1>
-          <p className="mt-6 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[600px] mx-auto">
-            Everything HR and people leaders usually ask about live wellbeing classes for a remote or hybrid team. If
-            your question is not here, just get in touch.
-          </p>
-        </div>
-      </section>
+      <PageHero title="Frequently asked questions">
+        <p>
+          Everything HR and people leaders usually ask about live wellbeing classes for a remote or hybrid team. If
+          your question is not here, just get in touch.
+        </p>
+      </PageHero>
 
-      <section className="py-16 md:py-20">
-        <div className="max-w-[760px] mx-auto px-5 sm:px-6 md:px-8 space-y-14">
-          {groups.map((g) => (
-            <div key={g.heading}>
-              <h2 className="font-fraunces font-normal text-heading text-3xl md:text-4xl tracking-[-0.015em] leading-tight">{g.heading}</h2>
-              <GuideFAQ items={g.items} />
-            </div>
-          ))}
-        </div>
-      </section>
+      {groups.map((g) => (
+        <PageSection key={g.heading} heading={g.heading}>
+          <GuideFAQ items={g.items} />
+        </PageSection>
+      ))}
 
-      <GuideCTA
+      <ClosingCTA
         heading="Still have a question?"
-        text="Tell me about your team and what you are looking for, whether you just want more information or you are ready to try a session. I am happy to help."
-        buttonLabel="Get in touch"
-      />
+        actions={<PillLink to="/demo" variant="light">Get in touch</PillLink>}
+      >
+        <p>
+          Tell me about your team and what you are looking for, whether you just want more information or you are
+          ready to try a session. I am happy to help.
+        </p>
+      </ClosingCTA>
     </main>
 
     <Footer />

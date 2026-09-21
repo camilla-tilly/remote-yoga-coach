@@ -1,11 +1,10 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SEO from '@/components/SEO';
-import { Eyebrow } from '@/components/SiteBlocks';
+import { PageHero, ClosingCTA, PillLink, WRAP } from '@/components/PageKit';
 import { blogPosts } from '@/data/blogPosts';
 
 const structuredData = {
@@ -74,95 +73,81 @@ const Blog = () => {
       />
       <Navbar />
       <main>
-        {/* HERO */}
-        <section className="bg-cream-soft pt-36 pb-14 md:pt-44 md:pb-16">
-          <div className="max-w-[820px] mx-auto px-5 sm:px-6 md:px-8 text-center">
-            <Eyebrow>Practical wellbeing for teams</Eyebrow>
-            <h1 className="font-fraunces font-normal text-heading text-[2.7rem] md:text-6xl leading-[1.05] tracking-[-0.02em]">
-              Blog
-            </h1>
-            <p className="mt-5 text-lg md:text-xl text-charcoal/75 leading-relaxed max-w-[560px] mx-auto">
-              Chair yoga, breathing, burnout and what actually works for distributed teams.
-            </p>
-          </div>
-        </section>
+        <PageHero title="Blog">
+          <p>Chair yoga, breathing, burnout and what actually works for distributed teams.</p>
+        </PageHero>
 
-        {/* GUIDES */}
-        <section className="px-5 sm:px-6 md:px-8 pt-12">
-          <div className="max-w-[900px] mx-auto">
-            <p className="text-charcoal/60 text-[15px] mb-4">New here? Start with a guide.</p>
-            <div className="grid gap-4 md:grid-cols-3">
-              {guides.map((g) => (
-                <Link
-                  key={g.to}
-                  to={g.to}
-                  className="group block bg-cream rounded-xl border border-sage-light hover:border-clay/60 px-6 py-5 transition-colors"
-                >
-                  <h2 className="font-fraunces font-normal text-heading text-xl leading-snug group-hover:text-clay transition-colors">
-                    {g.label}
-                  </h2>
-                  <p className="text-charcoal/65 text-[15px] leading-relaxed mt-1">{g.description}</p>
-                </Link>
-              ))}
+        {/* Topics and guides on the left, posts on the right. */}
+        <section data-section className="pb-20 md:pb-28">
+          <div className={WRAP}>
+            <div className="border-t border-sage-light pt-10 md:pt-14 md:grid md:grid-cols-[minmax(0,4fr)_minmax(0,8fr)] md:gap-16 lg:gap-24">
+              <aside className="md:sticky md:top-28 md:self-start">
+                <p className="font-fraunces text-heading text-[1.4rem]">Topics</p>
+                <div className="mt-4 flex flex-wrap md:flex-col md:items-start gap-2" role="group" aria-label="Filter posts by topic">
+                  {categories.map((cat) => {
+                    const isActive = cat === active;
+                    return (
+                      <button
+                        key={cat}
+                        type="button"
+                        onClick={() => setActive(cat)}
+                        aria-pressed={isActive}
+                        className={
+                          'text-[15px] px-4 py-2 rounded-full border transition-colors ' +
+                          (isActive
+                            ? 'bg-heading text-offwhite border-heading'
+                            : 'border-sage-light text-charcoal/75 hover:border-clay hover:text-heading')
+                        }
+                      >
+                        {cat}
+                        <span className={isActive ? 'ml-1.5 text-offwhite/60' : 'ml-1.5 text-charcoal/40'}>{counts[cat]}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                <p className="mt-10 font-fraunces text-heading text-[1.4rem]">New here? Start with a guide</p>
+                <ul className="mt-3 space-y-2.5">
+                  {guides.map((g) => (
+                    <li key={g.to}>
+                      <Link to={g.to} className="text-clay underline underline-offset-4 decoration-clay/30 hover:decoration-clay text-[16px] leading-snug">
+                        {g.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </aside>
+
+              <ul className="mt-12 md:mt-0 border-t border-sage-light">
+                {visible.map((post) => (
+                  <li key={post.slug} className="border-b border-sage-light">
+                    <Link to={`/blog/${post.slug}`} className="group grid grid-cols-[minmax(0,1fr)_auto] gap-6 items-start py-6 md:py-7">
+                      <div className="min-w-0">
+                        <p className="text-[13px] text-charcoal/55">
+                          {post.category} · {post.readingTime} read
+                        </p>
+                        <h2 className="mt-1.5 font-fraunces font-normal text-heading text-[1.4rem] md:text-[1.65rem] leading-snug tracking-[-0.01em] group-hover:text-clay transition-colors">
+                          {post.title}
+                        </h2>
+                        <p className="mt-2 text-charcoal/70 text-[15px] md:text-base leading-relaxed line-clamp-2">
+                          {post.excerpt}
+                        </p>
+                      </div>
+                      <span aria-hidden="true" className="mt-7 text-clay text-xl transition-transform group-hover:translate-x-1">→</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </section>
 
-        {/* POSTS */}
-        <section className="px-5 sm:px-6 md:px-8 pt-14 pb-20 md:pb-24">
-          <div className="max-w-[900px] mx-auto">
-            <div className="flex flex-wrap gap-2" role="group" aria-label="Filter posts by topic">
-              {categories.map((cat) => {
-                const isActive = cat === active;
-                return (
-                  <button
-                    key={cat}
-                    type="button"
-                    onClick={() => setActive(cat)}
-                    aria-pressed={isActive}
-                    className={
-                      'text-[14px] px-4 py-2 rounded-full border transition-colors ' +
-                      (isActive
-                        ? 'bg-clay text-white border-clay'
-                        : 'bg-white text-charcoal/75 border-sage-light hover:border-clay/60 hover:text-heading')
-                    }
-                  >
-                    {cat}
-                    <span className={isActive ? 'ml-1.5 text-white/70' : 'ml-1.5 text-charcoal/40'}>{counts[cat]}</span>
-                  </button>
-                );
-              })}
-            </div>
-
-            <ul className="mt-8 divide-y divide-sage-light border-y border-sage-light">
-              {visible.map((post) => (
-                <li key={post.slug}>
-                  <Link
-                    to={`/blog/${post.slug}`}
-                    className="group flex items-start gap-6 py-6 md:py-7"
-                  >
-                    <div className="flex-1 min-w-0">
-                      <h2 className="font-fraunces font-normal text-heading text-[1.35rem] md:text-2xl leading-snug tracking-[-0.01em] group-hover:text-clay transition-colors">
-                        {post.title}
-                      </h2>
-                      <p className="mt-1.5 text-charcoal/65 text-[15px] md:text-base leading-relaxed line-clamp-2">
-                        {post.excerpt}
-                      </p>
-                      <p className="mt-2 font-mono text-[12px] text-charcoal/45">
-                        {post.category} · {post.readingTime} read
-                      </p>
-                    </div>
-                    <ArrowRight
-                      size={18}
-                      className="mt-2 shrink-0 text-clay/50 transition-transform group-hover:translate-x-1 group-hover:text-clay"
-                      aria-hidden="true"
-                    />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
+        <ClosingCTA
+          heading="Try a live class with your team"
+          actions={<PillLink to="/demo" variant="light">Book a pilot</PillLink>}
+        >
+          <p>If you would like to try it, start with a single pilot session.</p>
+        </ClosingCTA>
       </main>
       <Footer />
       <ScrollToTop />
