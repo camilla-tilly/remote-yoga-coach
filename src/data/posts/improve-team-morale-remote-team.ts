@@ -7,7 +7,7 @@ const post: BlogPost = {
   publishDate: "2026-08-03",
   readingTime: "6 min",
   category: "Remote teams and burnout",
-  excerpt: "Perks and forced fun rarely build a strong, connected remote team. What does: people feeling seen, shared rituals, realistic workloads and honest recognition. Here is the practical version, and one small habit that helps.",
+  excerpt: "Perks and forced fun rarely build a strong, connected remote team. People feeling seen, shared rituals, realistic workloads and honest recognition do. Here is the practical version, and one small habit that helps.",
   language: "en",
   relatedServiceHref: "/services/corporate-wellbeing-for-remote-teams",
   relatedServiceLabel: "Corporate wellbeing for remote and hybrid teams",
@@ -25,7 +25,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Do those consistently and morale tends to look after itself. Skip them and no amount of forced fun will paper over the gap.",
+      text: "Do those consistently and morale tends to look after itself. If you skip them, forced fun will not make up for it.",
     },
     {
       type: "heading",
@@ -37,7 +37,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "So low morale on a remote team is often not a motivation problem. It is a connection and recognition problem. People are not lazy. They are under-seen, sometimes over-loaded, and rarely told plainly that their work landed. My [guide to remote work burnout](/guides/remote-work-burnout) covers what actually causes it.",
+      text: "So low morale on a remote team is often caused by a lack of connection and recognition rather than a lack of motivation. People are usually not lazy. More often, nobody notices their work, they sometimes have too much of it, and they are rarely told plainly that it went well. My [guide to remote work burnout](/guides/remote-work-burnout) covers what actually causes it.",
     },
     {
       type: "heading",
@@ -45,11 +45,11 @@ const post: BlogPost = {
     },
     {
       type: "subheading",
-      text: "Being seen as a person, not a task queue",
+      text: "Being seen as a person",
     },
     {
       type: "paragraph",
-      text: "The biggest lever is whether people feel known. A manager who asks a real question and remembers the answer does more for morale than any platform. That does not mean prying. It means letting the first two minutes of a call be about the person rather than the backlog.",
+      text: "The biggest lever is whether people feel known. A manager who asks a real question and remembers the answer does more for morale than any platform. This does not mean prying, just letting the first two minutes of a call be about the person rather than the backlog.",
     },
     {
       type: "subheading",
@@ -57,7 +57,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Rituals give a scattered week a shape. A Monday check-in that is really about how people are, a Friday wind-down, a standing moment that always happens: the value is in the reliability. Nobody has to organise it or decide each week whether to turn up. One dependable ritual beats five occasional ones.",
+      text: "Rituals give a scattered week a shape. A Monday check-in that is really about how people are, a Friday wind-down, a standing moment that always happens: the value is in the reliability. Nobody has to organise it or decide each week whether to turn up. One ritual that always happens does more than five that happen now and then.",
     },
     {
       type: "subheading",
@@ -65,7 +65,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "You cannot cheer a team out of exhaustion. If people are quietly drowning, every wellbeing gesture reads as tone-deaf, or as pressure to be grateful. Protect focus time, be honest about what will not get done, and do not treat always-on as the default. Fix the load first, then the extras land.",
+      text: "Cheering people on does not help a team that is exhausted. If people are quietly drowning, every wellbeing gesture reads as tone-deaf, or as pressure to be grateful. Protect focus time, be honest about what will not get done, and do not treat always-on as the default. Sort out the workload first, and the extras will be more welcome.",
     },
     {
       type: "subheading",
@@ -81,7 +81,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Not another meeting with an agenda. A short shared moment where nothing is being asked of anyone: a few minutes of calm, a non-work chat, a breathing break. This is where the corridor warmth comes back.",
+      text: "This should not be another meeting with an agenda, but a short shared moment where nothing is being asked of anyone: a few minutes of calm, a non-work chat, a breathing break. It brings back some of the warmth of chatting in an office corridor.",
     },
     {
       type: "heading",
@@ -94,9 +94,9 @@ const post: BlogPost = {
     {
       type: "list",
       items: [
-        "**Forced fun asks for energy people do not have.** A mandatory quiz on a stretched week is another task, not a gift.",
-        "**Perks are one-way.** A voucher or an app does nothing about being seen, recognised, or realistically loaded.",
-        "**One-offs cannot build trust.** Morale is rebuilt in small, repeated moments, not in a single big event.",
+        "**Forced fun asks for energy people do not have.** A mandatory quiz in a stretched week feels like another task.",
+        "**Perks do not reach the real causes.** A voucher or an app does nothing about being seen, recognised, or realistically loaded.",
+        "**One-off events do not build trust.** Morale comes back through small moments that repeat, rather than one big event.",
         "**Optional socials reach the wrong people.** The already-connected few turn up. Quieter colleagues, people in other time zones and parents logging off at five often miss out.",
         "**It can read as a cover-up.** If the real problem is workload or silent managers, a social event lands as a distraction from what people want fixed.",
       ],
@@ -115,7 +115,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "What a short, live, recurring session can be is one dependable morale anchor: a shared ritual and a low-pressure moment of being human together each week. It touches several of the levers above at once, and unlike an optional social it reaches everyone equally.",
+      text: "What a short live session every week can give you is one dependable shared ritual: a low-pressure moment together each week. It touches several of the levers above at once, and unlike an optional social it reaches everyone equally.",
     },
     {
       type: "paragraph",
@@ -127,7 +127,7 @@ const post: BlogPost = {
     },
     {
       type: "cta",
-      text: "Want one dependable, human moment in your team's week? Book a pilot session and see how a meditation, breathing, or chair yoga class feels for your remote team.",
+      text: "Would your team benefit from one regular, low-pressure moment together each week? Book a pilot session and see how a meditation, breathing, or chair yoga class feels for your remote team.",
       ctaHref: "/demo",
       ctaLabel: "Book a pilot session",
     },
@@ -144,11 +144,11 @@ const post: BlogPost = {
         },
         {
           q: "Do perks or forced fun build a strong remote team?",
-          a: "Rarely. Perks and mandatory socials are single moments that ask for energy people may not have, and optional events tend to miss quieter colleagues. Connection is built through small, shared moments that repeat, not a single big event.",
+          a: "Rarely. Perks and mandatory socials are single moments that ask for energy people may not have, and optional events tend to miss quieter colleagues. Connection builds up through small shared moments that repeat, rather than through one big event.",
         },
         {
           q: "Can a wellbeing class fix low team morale?",
-          a: "No single class fixes deeper problems like a broken workload or absent recognition, so address those first. What a short, live, recurring session can be is one dependable morale anchor: a shared ritual and a low-pressure moment together each week.",
+          a: "No single class fixes deeper problems like a broken workload or absent recognition, so address those first. What a short live session every week can give you is one dependable shared ritual: a low-pressure moment together each week.",
         },
       ],
     },

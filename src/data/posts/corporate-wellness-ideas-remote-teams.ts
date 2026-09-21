@@ -7,7 +7,7 @@ const post: BlogPost = {
   publishDate: "2026-08-05",
   readingTime: "6 min",
   category: "Remote teams and burnout",
-  excerpt: "Most remote wellness ideas are one-offs a few keen people do once. Here are the principles that separate wellbeing that sticks from what quietly dies, and the ideas that hold up.",
+  excerpt: "Most remote wellness ideas are one-offs a few keen people do once. Here is what makes some wellbeing ideas last while others fade out, and the ideas that hold up.",
   language: "en",
   relatedServiceHref: "/pricing",
   relatedServiceLabel: "See my transparent pricing",
@@ -25,7 +25,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Instead of another list, here are the principles that separate wellbeing people actually use from what quietly dies, then the ideas that hold up.",
+      text: "Instead of another list, here is what makes the difference between wellbeing people actually use and ideas that fade out, then the ideas that hold up.",
     },
     {
       type: "heading",
@@ -38,9 +38,9 @@ const post: BlogPost = {
     {
       type: "list",
       items: [
-        "**It is scheduled, not optional-whenever.** Anything that relies on people self-starting in their own time loses to a busy calendar. The biggest predictor of participation is whether there is a set time people simply join.",
-        "**It is shared, not solitary.** Distributed teams are short on connection, not content. Things people do together fight the isolation that drives a lot of remote stress, so they deliver double value. My [guide to remote work burnout](/guides/remote-work-burnout) covers the wider context.",
-        "**It is led, not self-serve.** A real person holding the space adds accountability and warmth a platform cannot. Led things get attended; libraries get forgotten.",
+        "**It happens at a set time.** Anything that relies on people starting on their own in their own time usually gets pushed aside by a busy calendar. The biggest predictor of participation is whether there is a set time people simply join.",
+        "**People do it together.** Distributed teams usually have plenty of content available but little contact with each other. Things people do together help with the isolation behind a lot of remote stress, so they help in two ways at once. My [guide to remote work burnout](/guides/remote-work-burnout) covers the wider context.",
+        "**A person leads it.** A real teacher adds accountability and warmth that a platform cannot. Sessions with a teacher tend to get attended, while libraries of content tend to get forgotten.",
       ],
     },
     {
@@ -57,7 +57,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "A short, guided session, breathing, gentle movement, meditation, that the team joins together each week. It hits all three principles, which is why it tends to out-perform an app on actual participation. Chair-based and desk-friendly means there is no barrier to joining.",
+      text: "The team joins a short guided session together each week, with breathing, gentle movement or meditation. It meets all three principles, which is why it tends to get more people taking part than an app. Because it is done sitting at your desk, it is easy for anyone to join.",
     },
     {
       type: "subheading",
@@ -65,7 +65,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "A protected window each week with nothing in it, not for wellness activities, just breathing room. Cheap, and one of the most appreciated things you can do for an over-scheduled remote team.",
+      text: "A protected window each week with nothing in it, not for wellness activities, just breathing room. It is cheap, and it is one of the most appreciated things you can do for an over-scheduled remote team.",
     },
     {
       type: "subheading",
@@ -77,19 +77,19 @@ const post: BlogPost = {
     },
     {
       type: "subheading",
-      text: "Shared rituals over solo perks",
+      text: "Shared team rituals",
     },
     {
       type: "paragraph",
-      text: "A team that starts Monday with a five-minute reset together, or closes Friday with a wind-down, builds rhythm and connection. The togetherness is the point.",
+      text: "A team that starts Monday with a five-minute reset together, or closes Friday with a wind-down, builds rhythm and connection. What makes it work is that people do it together.",
     },
     {
       type: "subheading",
-      text: "Targeted support, not generic challenges",
+      text: "Support aimed at your team's actual problem",
     },
     {
       type: "paragraph",
-      text: "Step challenges reward the already-fit. If your team's real issue is stress and screen fatigue, aim at that: short stress-reset sessions beat a leaderboard most people ignore.",
+      text: "Step challenges reward the already-fit. If your team's real issue is stress and screen fatigue, aim at that: short sessions to reduce stress will help more than a step-count leaderboard most people ignore.",
     },
     {
       type: "heading",
@@ -97,12 +97,12 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Not bad, just oversold for distributed teams:",
+      text: "These are not bad ideas, but they are often oversold for distributed teams:",
     },
     {
       type: "list",
       items: [
-        "**An app on its own.** Useful as a library for the self-motivated, but engagement fades fast and it does nothing for connection. Fine as a supplement, weak as your whole strategy.",
+        "**An app on its own.** Useful as a library for the self-motivated, but engagement fades fast and it does nothing for connection. It works as an addition, but not as your whole strategy.",
         "**The one-off wellbeing day.** A nice gesture that rarely changes anything by the following week.",
         "**Anything that adds another screen to manage.** Remote teams are already saturated; the best remote wellbeing reduces screen pressure rather than adding to it.",
       ],
@@ -130,11 +130,11 @@ const post: BlogPost = {
     },
     {
       type: "heading",
-      text: "Why live and recurring keeps coming out on top",
+      text: "Why live, recurring sessions work best",
     },
     {
       type: "paragraph",
-      text: "The same shape keeps winning: scheduled, shared, led, and short. That combination beats the self-initiation problem at the heart of why most remote wellbeing goes unused.",
+      text: "The ideas that work are the ones that are scheduled, done together, led by a person and kept short. Together, these solve the main reason most remote wellbeing goes unused: people having to start on their own.",
     },
     {
       type: "cta",

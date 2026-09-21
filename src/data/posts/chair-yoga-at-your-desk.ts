@@ -4,12 +4,12 @@ const post: BlogPost = {
   slug: 'chair-yoga-at-your-desk',
   title: 'Chair yoga at your desk in 5 minutes',
   metaDescription:
-    '8 gentle chair yoga poses you can do at your desk in 5 minutes, between calls. No mat, no changing, camera off. Eases tense shoulders and a stiff back.',
+    '8 gentle chair yoga poses you can do at your desk in 5 minutes, between calls, with no mat or change of clothes and your camera off. Eases tense shoulders and a stiff back.',
   publishDate: '2026-06-17',
   readingTime: '5 min',
   category: 'Desk and posture',
   excerpt:
-    'Five minutes between calls is enough. Here are eight gentle chair yoga poses you can do at your desk, seated the whole time, with no mat, no changing and no camera needed.',
+    'Here are eight gentle chair yoga poses you can do at your desk in the five minutes between calls, seated the whole time. You do not need a mat, a change of clothes or your camera.',
   language: 'en',
   relatedServiceHref: '/services/team-wellness',
   relatedServiceLabel: 'See how a team version works',
@@ -81,12 +81,12 @@ const post: BlogPost = {
     },
     {
       type: 'paragraph',
-      text: "The trick isn't doing this perfectly once, it's doing a little, often. A few short resets across the day do more than the long session you keep meaning to fit in. Pair it with something you already do (your mid-morning coffee, the end of a call) so it doesn't rely on willpower.",
+      text: "It helps more to do a little of this often than to do it perfectly once. A few short resets across the day do more than the long session you keep meaning to fit in. Pair it with something you already do (your mid-morning coffee, the end of a call) so it doesn't rely on willpower.",
     },
     { type: 'heading', text: 'Even better with a team' },
     {
       type: 'paragraph',
-      text: 'Stretching alone helps. Doing it together, with someone guiding you, helps more, because the hardest part of any wellbeing habit is starting, and a scheduled session does that for you. That is the idea behind a live weekly reset: a short, guided chair-yoga and breathing session your whole team joins from wherever they are.',
+      text: 'Stretching on your own helps, and doing it with a teacher guiding you helps more, because the hardest part of any wellbeing habit is starting, and a scheduled session takes care of that. That is the idea behind a live weekly reset: a short, guided chair-yoga and breathing session your whole team joins from wherever they are.',
     },
     {
       type: 'cta',

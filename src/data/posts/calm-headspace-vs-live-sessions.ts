@@ -3,7 +3,7 @@ import type { BlogPost } from '../blogTypes';
 const post: BlogPost = {
   slug: "calm-headspace-vs-live-sessions",
   title: "Calm and Headspace for Business vs live sessions: which does your team actually use?",
-  metaDescription: "A fair Calm for Business and Headspace for Work alternative comparison. Great apps, but a library only helps those who open it. Why a live session wins on use.",
+  metaDescription: "A fair comparison of Calm for Business and Headspace for Work with a live alternative. The apps are good, but they only help the people who open them.",
   publishDate: "2026-07-30",
   readingTime: "6 min",
   category: "Cost and proof",
@@ -26,7 +26,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "This isn't an app-bashing piece. It is a fair way to choose, so you spend your budget on what your team will actually use, not what looks best on a slide."
+      text: "This isn't an app-bashing piece. It is a fair way to choose, so you spend your budget on something your team will actually use."
     },
     {
       type: "heading",
@@ -46,7 +46,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "An app reaches every inbox instantly, which looks like broad coverage. But reach is not use. A tool everyone can access and almost nobody opens is quietly expensive, because you are paying per seat whether or not the seat is used."
+      text: "An app reaches every inbox instantly, which looks like broad coverage. But having access to an app is not the same as using it. If almost nobody opens it, it is still expensive, because you pay per seat whether or not the seat is used."
     },
     {
       type: "heading",
@@ -74,7 +74,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "A live session flips the model. The time is booked, the same coach turns up each week, and all anyone has to do is join. The decision is made once, at the calendar level, not thirty times by thirty tired people."
+      text: "A live session works the other way round. The time is booked, the same coach turns up each week, and all anyone has to do is join. The decision is made once, when the session goes in the calendar, instead of thirty tired people each having to decide for themselves."
     },
     {
       type: "table",
@@ -93,7 +93,7 @@ const post: BlogPost = {
     },
     {
       type: "callout",
-      text: "Rule of thumb: an app is the library, a live session is the class. The library is great for the few who browse it. The class gets everyone else to turn up."
+      text: "In short: an app works like a library, which suits the few people who go and browse it. A live session works like a class at a set time, which is what gets most of the rest of the team to turn up."
     },
     {
       type: "heading",
@@ -113,7 +113,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Judge any option on use, not features. Ask what share of the team turns up, whether the same people keep coming back, and whether you can point to anything that shows it is working. On those three questions, a held weekly slot with a real person tends to beat a library left on a shelf."
+      text: "Judge any option by how much it gets used, rather than by its list of features. Ask what share of the team turns up, whether the same people keep coming back, and whether you can point to anything that shows it is working. On those three questions, a weekly session at a fixed time with a real teacher tends to do better than an app library."
     },
     {
       type: "cta",
@@ -130,7 +130,7 @@ const post: BlogPost = {
         },
         {
           q: "We already pay for a wellbeing app. Do we have to drop it?",
-          a: "No. Think of the app as the library and the live session as the class. Keep the library for people who browse it, and add the class to get everyone else to turn up."
+          a: "No. Keep the app for the people who use it on their own, and add the live session to get more of the rest of the team taking part."
         },
         {
           q: "What is a good Calm for Business or Headspace for Work alternative for a remote team?",

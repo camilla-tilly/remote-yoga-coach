@@ -39,7 +39,7 @@ const post: BlogPost = {
     },
     {
       type: 'heading',
-      text: 'Why the first weeks are the right moment, not an afterthought'
+      text: 'Why the first weeks are the right moment'
     },
     {
       type: 'paragraph',
@@ -55,7 +55,7 @@ const post: BlogPost = {
     },
     {
       type: 'paragraph',
-      text: 'The goal is not a bespoke wellbeing induction. It is one small addition to the calendar invite a new starter already receives.'
+      text: 'You do not need a separate wellbeing induction, just one small addition to the calendar invites a new starter already receives.'
     },
     {
       type: 'list',
@@ -72,7 +72,7 @@ const post: BlogPost = {
     },
     {
       type: 'callout',
-      text: 'The habit only teaches what it looks like if a new hire sees it in their first weeks, not after they have already learned to work through everything.'
+      text: 'New hires only pick up the habit if they see it in their first weeks, before they have learned to work through everything without a break.'
     },
     {
       type: 'heading',

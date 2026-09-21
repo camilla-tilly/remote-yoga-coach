@@ -45,7 +45,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Meanwhile only around a fifth of employees globally describe themselves as engaged at work, and over 40% report a lot of daily stress. The demand is there. The tools just aren't being used."
+      text: "Meanwhile only around a fifth of employees globally describe themselves as engaged at work, and over 40% report a lot of daily stress. So people need support, but they are not using the tools they have been given."
     },
     {
       type: "heading",
@@ -63,7 +63,7 @@ const post: BlogPost = {
       type: "list",
       items: [
         "It relies on self-initiation. The person has to notice they're struggling, remember the tool exists, open it and follow through, alone, when they have the least spare capacity.",
-        "It adds another screen. For remote teams already living on their laptops, \"download this app\" is asking them to solve screen fatigue with more screen.",
+        "It adds another screen. For remote teams already living on their laptops, \"download this app\" means asking them to deal with screen fatigue by spending more time on a screen.",
         "There's no accountability or connection. Nobody notices if you don't show up to an app. For distributed teams, isolation is part of the problem already: remote workers report loneliness at noticeably higher rates than office-based ones."
       ]
     },
@@ -73,7 +73,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "The factor that consistently lifts participation isn't a better app, it's structure and people. Things that are scheduled, shared and led see far higher engagement than things left on a shelf. Two levers stand out:"
+      text: "The factor that consistently lifts participation is structure and people, rather than a better app. Things that are scheduled, done together and led by a person get far higher engagement than things people have to find for themselves. Two levers stand out:"
     },
     {
       type: "list",
@@ -84,7 +84,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "This is why a short, live, recurring session can out-attend a glossy app many times over, even though the app reaches more inboxes. Reach isn't engagement, and engagement is what produces an outcome."
+      text: "This is why a short live session every week can get many times the attendance of a polished app, even though the app reaches more people. Having access does not mean people use it, and only use leads to results."
     },
     {
       type: "heading",
@@ -92,7 +92,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "You don't have to throw it away. Think of the app as the library and a live session as the class. The library is useful for the self-motivated few. The class gets everyone else to turn up. They work well side by side, and the live session even tends to lift app usage, because it normalises taking wellbeing seriously."
+      text: "You don't have to throw it away. The app can stay for the self-motivated few who use it on their own, and a live session gets more of the rest of the team taking part. They work well side by side, and the live session even tends to lift app usage, because it makes taking wellbeing seriously feel normal."
     },
     {
       type: "heading",
@@ -113,7 +113,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "A cheap tool nobody opens is more expensive than it looks. A slightly pricier one people genuinely use is the better buy. If you need to justify the spend, the [cost of employee burnout guide](/guides/cost-of-employee-burnout) has the numbers side."
+      text: "A cheap tool that nobody opens still costs money and gives you nothing back, so a slightly more expensive one that people actually use is better value. If you need to justify the spend, the [cost of employee burnout guide](/guides/cost-of-employee-burnout) has the numbers side."
     },
     {
       type: "heading",
@@ -121,11 +121,11 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "I run [live meditation, breathing and chair yoga sessions](/services/team-wellness) of 15 to 30 minutes that your whole team joins on Teams: scheduled and guided. It's the \"class\" alongside whatever \"library\" you already have."
+      text: "I run [live meditation, breathing and chair yoga sessions](/services/team-wellness) of 15 to 30 minutes that your whole team joins on Teams: scheduled and guided. It can run alongside any app you already pay for."
     },
     {
       type: "cta",
-      text: "Transparent pricing, no long lock-ins. See exactly what a live, recurring session costs for your team, or [book a pilot](/demo) and watch the attendance for yourself.",
+      text: "The pricing is published and there are no long contracts. See exactly what a live, recurring session costs for your team, or [book a pilot](/demo) and watch the attendance for yourself.",
       ctaHref: "/pricing",
       ctaLabel: "See my pricing"
     },

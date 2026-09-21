@@ -25,7 +25,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Most are built like a webinar: someone talks at a slide deck for 40 minutes, and everyone leaves their lunch more drained than when they started. My favourite format flips that. Instead of a talk about wellbeing, you give people a reset they can feel in their body by the time they log off.",
+      text: "Most are built like a webinar: someone talks at a slide deck for 40 minutes, and everyone leaves their lunch more drained than when they started. I prefer a different format. Instead of a talk about wellbeing, you give people a reset they can feel in their body by the time they log off.",
     },
     {
       type: "heading",
@@ -37,7 +37,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "The trouble is that we then fill it with a presentation. If the goal is wellbeing, a lecture about wellbeing is a strange way to get there. People do not need more information about stress. They need 30 minutes where the pressure actually comes off. My [remote work burnout guide](/guides/remote-work-burnout) sets out the underlying pattern.",
+      text: "The trouble is that we then fill it with a presentation. If the goal is wellbeing, a lecture about wellbeing is a strange way to get there. Most people already know plenty about stress. What helps more is 30 minutes where the pressure actually comes off. My [remote work burnout guide](/guides/remote-work-burnout) sets out the underlying pattern.",
     },
     {
       type: "heading",
@@ -51,13 +51,13 @@ const post: BlogPost = {
       type: "list",
       items: [
         "**It is passive.** A slide deck and a speaker ask people to sit still and absorb, the posture they have been in all morning. It adds to the load instead of lifting it.",
-        "**It is one-directional.** A guest expert talking at a muted grid of names is not restful and it is not connecting. People half-listen with their inbox open.",
+        "**It is one-directional.** A guest expert talking at a muted grid of names is neither restful nor a way for people to connect. People half-listen with their inbox open.",
         "**It ends with homework.** Many wellbeing talks close with a list of things to try later, on your own time. For a stretched team, that is one more thing to feel behind on.",
       ],
     },
     {
       type: "paragraph",
-      text: "None of that means the topic is wrong. It means the format is. Make the session something people do together in real time, not something they watch.",
+      text: "The problem lies in the format rather than the topic, so make the session something people do together in real time instead of something they watch.",
     },
     {
       type: "heading",
@@ -73,7 +73,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "No mat, no changing clothes, no floor work. People stay at their desk, and follow along. I am a 500-hour certified yoga teacher, so the movement is safe to lead for a mixed group of complete beginners.",
+      text: "There is no mat, no changing clothes and no floor work. People stay at their desk and follow along. I am a 500-hour certified yoga teacher, so the movement is safe to lead for a mixed group of complete beginners.",
     },
     {
       type: "subheading",
@@ -109,7 +109,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "A one-off session feels lovely and then fades. Wellbeing that changes anything comes from rhythm: the same reset at the same time each week, with the same coach. That is what my weekly classes are: a recurring live session on a flat monthly subscription. Read how it works on my [team wellness page](/services/team-wellness).",
+      text: "A one-off session is pleasant, but the effect fades. Lasting change comes from doing it regularly: the same reset at the same time each week, with the same coach. That is what my weekly classes are: a recurring live session on a flat monthly subscription. Read how it works on my [team wellness page](/services/team-wellness).",
     },
     {
       type: "cta",

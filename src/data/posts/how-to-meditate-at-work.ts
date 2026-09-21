@@ -42,7 +42,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "This is built for a complete beginner. No equipment, nothing to download, nobody watching. Sit back with both feet flat on the floor and your hands in your lap, camera off, sound off. Set a soft timer for five minutes so you are not clock-watching."
+      text: "This is built for a complete beginner. You do not need any equipment or anything to download, and nobody is watching. Sit back with both feet flat on the floor and your hands in your lap, camera off, sound off. Set a soft timer for five minutes so you are not clock-watching."
     },
     {
       type: "list",
@@ -68,7 +68,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "This is the most common one. But the busiest, back-to-back days are exactly when a short reset earns its place. Without a pause, you carry the tension of one call straight into the next, and by mid-afternoon it has all stacked up. You are not losing those five minutes, you are making the next hour a bit sharper and calmer."
+      text: "This is the most common one. But the busiest, back-to-back days are exactly when a short reset earns its place. Without a pause, you carry the tension of one call straight into the next, and by mid-afternoon it has all stacked up. Taking those five minutes helps you get through the next hour a bit sharper and calmer."
     },
     {
       type: "subheading",
@@ -76,7 +76,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "You do not have to. If your thoughts keep arriving, let them, and keep returning to the breath anyway. A distracted five minutes still counts, and that is what most sessions feel like, even after years of practice. Lower the bar and you will keep going."
+      text: "You do not have to. If your thoughts keep arriving, let them, and keep returning to the breath anyway. A distracted five minutes still counts, and that is what most sessions feel like, even after years of practice. If you expect less of each session, you are more likely to keep going."
     },
     {
       type: "heading",
@@ -84,7 +84,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "The problem with solo desk meditation is that it is simple, it works, and almost nobody keeps it up. A five-minute personal habit is the first thing to get bumped when the day gets loud."
+      text: "The problem with meditating alone at your desk is that, although it is simple and it works, almost nobody keeps it up. A five-minute personal habit is the first thing to get dropped when the day gets busy."
     },
     {
       type: "paragraph",
@@ -96,7 +96,7 @@ const post: BlogPost = {
     },
     {
       type: "cta",
-      text: "Want to see how a live, guided weekly meditation lands with your team? Try a session and feel the difference for yourself. My [guide to mindfulness at work](/guides/mindfulness-at-work) goes deeper into building it into a normal working week.",
+      text: "Want to see how a live, guided weekly meditation lands with your team? Try a session and see how it feels. My [guide to mindfulness at work](/guides/mindfulness-at-work) goes deeper into building it into a normal working week.",
       ctaHref: "/demo",
       ctaLabel: "Book a pilot session"
     },

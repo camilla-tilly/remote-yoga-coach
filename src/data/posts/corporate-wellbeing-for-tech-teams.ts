@@ -7,7 +7,7 @@ const post: BlogPost = {
   publishDate: "2026-08-03",
   readingTime: "6 min",
   category: "Remote teams and burnout",
-  excerpt: "Tech and startup teams rarely burn out loudly. It shows up as slower thinking, shorter tempers, and people going quiet. Here is why builder culture is prone to it, and what actually helps.",
+  excerpt: "In tech and startup teams, burnout is rarely obvious. It shows up as slower thinking, shorter tempers, and people going quiet. Here is why builder culture is prone to it, and what actually helps.",
   language: "en",
   relatedServiceHref: "/services/corporate-wellbeing-for-remote-teams",
   relatedServiceLabel: "Corporate wellbeing for remote and hybrid teams",
@@ -22,11 +22,11 @@ const post: BlogPost = {
   content: [
     {
       type: "paragraph",
-      text: "If you run wellbeing for a tech team, what actually helps is simple: a small, recurring, guided reset that people join together during the working week, not another perk they have to opt into in their own time.",
+      text: "If you run wellbeing for a tech team, what actually helps is simple: a short guided session every week that people join together during working hours. That works better than another perk they have to take up in their own time.",
     },
     {
       type: "paragraph",
-      text: "Tech and startup teams rarely burn out loudly. It shows up as slower thinking, shorter tempers in reviews, and good people quietly pulling back.",
+      text: "In tech and startup teams, burnout is rarely obvious. It shows up as slower thinking, shorter tempers in reviews, and good people quietly pulling back.",
     },
     {
       type: "heading",
@@ -40,14 +40,14 @@ const post: BlogPost = {
       type: "list",
       items: [
         "**Always-on by default.** Remote-first teams span time zones and Slack never really closes. People stop noticing they never fully stepped away.",
-        "**High cognitive load.** Deep work, context-switching between tickets, holding a whole system in your head. It is tiring in a way that does not look tiring, so it goes unmeasured.",
+        "**High cognitive load.** Deep work, switching between tickets and holding a whole system in your head are tiring, but it does not look like hard work from the outside, so nobody measures it.",
         "**Deadline cycles.** Sprints, launches, on-call rotations and funding milestones create repeated sprint-and-crash waves. The crash rarely gets scheduled recovery, so fatigue compounds.",
         "**A culture that rewards pushing through.** Builder cultures admire intensity. That means people hide the early signs rather than flag them, and burnout stays invisible until someone leaves.",
       ],
     },
     {
       type: "paragraph",
-      text: "None of this is a character problem. It is a structural one, and structure is something you can change. My [remote work burnout guide](/guides/remote-work-burnout) sets out the underlying pattern.",
+      text: "None of this is about individual character. It comes from how the work is set up, and that can be changed. My [remote work burnout guide](/guides/remote-work-burnout) sets out the underlying pattern.",
     },
     {
       type: "heading",
@@ -55,7 +55,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "The ideas that survive a busy engineering team share a shape: they are short, scheduled, shared, and led by a real person. Anything that relies on someone self-starting a meditation app at 9pm loses to the backlog.",
+      text: "The ideas that last in a busy engineering team have four things in common: they are short, scheduled, done together, and led by a real person. If it depends on someone opening a meditation app on their own at 9pm, people usually end up working on the backlog instead.",
     },
     {
       type: "subheading",
@@ -63,11 +63,11 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "A short guided session the team joins together at a set time, so nobody has to remember to look after themselves in their own hours. Being led gives it a little accountability and warmth a library of recordings cannot. Because it repeats, it becomes a rhythm rather than an event.",
+      text: "The team joins a short guided session together at a set time, so nobody has to remember to look after themselves in their own hours. Having a teacher lead it adds some accountability and warmth that a library of recordings cannot. Because it happens every week, it becomes a habit instead of a one-off.",
     },
     {
       type: "subheading",
-      text: "Three formats, so it fits the week you are actually having",
+      text: "Three formats to suit different weeks",
     },
     {
       type: "paragraph",
@@ -87,15 +87,15 @@ const post: BlogPost = {
     },
     {
       type: "subheading",
-      text: "Recovery that is scheduled, not hoped for",
+      text: "Scheduling time for recovery",
     },
     {
       type: "paragraph",
-      text: "The deeper fix is treating recovery as part of the delivery cycle rather than something people get to once the backlog is empty, which it never is. A standing weekly session puts a small, protected recovery block on the calendar that survives a busy sprint.",
+      text: "The deeper fix is treating recovery as part of the delivery cycle rather than something people get to once the backlog is empty, which it never is. A standing weekly session puts a small, protected recovery block on the calendar that stays in place during a busy sprint.",
     },
     {
       type: "callout",
-      text: "A recurring reset does not undo an unrealistic roadmap or a culture that emails at midnight. It helps the day-to-day load, and it makes the underlying pressure easier to see and talk about. Neither replaces the other.",
+      text: "A recurring reset does not undo an unrealistic roadmap or a culture that emails at midnight. It helps the day-to-day load, and it makes the underlying pressure easier to see and talk about. Both the session and fixing those deeper problems are needed.",
     },
     {
       type: "heading",
@@ -103,15 +103,15 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Builder cultures are quick to sniff out anything that feels like a mandated morale exercise. Treat it like any other part of how the team works, not a wellness intervention bolted on top.",
+      text: "Builder cultures are quick to sniff out anything that feels like a mandated morale exercise. Treat it like any other part of how the team works, rather than as a separate wellness programme added on top.",
     },
     {
       type: "list",
       items: [
-        "Put it on the shared calendar at a consistent time, so it is a fixture, not a surprise invite.",
+        "Put it on the shared calendar at a consistent time, so people can plan around it instead of getting a surprise invite.",
         "Keep it opt-in and low-pressure. A recording on request means people can join at whatever level they want.",
         "Have a leader show up sometimes. When a founder or engineering manager visibly takes fifteen minutes for it, it shows recovery is allowed.",
-        "Keep it short. A session that respects a builder's time gets attended. One that sprawls gets quietly dropped.",
+        "Keep it short. People attend sessions that fit into their day, and quietly drop ones that run long.",
       ],
     },
     {

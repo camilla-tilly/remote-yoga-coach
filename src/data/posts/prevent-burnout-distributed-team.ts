@@ -7,7 +7,7 @@ const post: BlogPost = {
   publishDate: "2026-07-01",
   readingTime: "6 min",
   category: "Remote teams and burnout",
-  excerpt: "Burnout in a distributed team hides, nobody looks tired on Slack. Here is how to spot the warning signs remotely and the preventive habits that actually reduce the risk.",
+  excerpt: "In a distributed team burnout is hard to see, because nobody looks tired on Slack. Here is how to spot the warning signs remotely and the preventive habits that actually reduce the risk.",
   language: "en",
   relatedServiceHref: "/services/team-wellness",
   relatedServiceLabel: "See how a weekly team reset works",
@@ -20,11 +20,11 @@ const post: BlogPost = {
   content: [
     {
       type: "paragraph",
-      text: "In an office, burnout leaves a trail. Someone stops talking in meetings. They look grey. They snap at a small thing, then apologise too quickly. A manager who walks the floor picks up on it, often before the person can name it themselves."
+      text: "In an office, burnout usually shows. Someone stops talking in meetings, looks grey, or snaps at a small thing and then apologises too quickly. A manager who walks the floor picks up on it, often before the person can name it themselves."
     },
     {
       type: "paragraph",
-      text: "In a distributed team, that trail disappears. Everyone shows up as a name and a green dot. Nobody looks tired on Slack. The person who is quietly unravelling sends the same tidy messages as everyone else. By the time it surfaces, it is often a resignation letter or a sick note, not a quiet word over coffee."
+      text: "In a distributed team, those signs are hard to see. Everyone shows up as a name and a green dot, and nobody looks tired on Slack. Someone who is struggling can send the same tidy messages as everyone else. By the time it comes to light, it is often a resignation letter or a sick note rather than a quiet word over coffee."
     },
     {
       type: "paragraph",
@@ -36,7 +36,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Remote work removes a lot of friction, and some of that friction was doing quiet, useful work. Four things push the risk up."
+      text: "Remote work removes a lot of everyday friction, and some of that friction turned out to be useful. Four things push the risk up."
     },
     {
       type: "list",
@@ -44,7 +44,7 @@ const post: BlogPost = {
         "Isolation. Remote workers report loneliness at around 25 percent, against roughly 16 percent for office-based staff. Loneliness wears down the same reserves that protect against burnout.",
         "Blurred boundaries. When the desk is in the bedroom, there is no physical line between working and not working, so work leaks into the evening.",
         "Always-on culture. A fast reply at 9pm quietly becomes the expectation, and people start watching the channel during dinner so they do not look absent.",
-        "The vanished commute. The walk or the train used to be a buffer between work-brain and home-brain. Remote, the last message and the sofa are ninety seconds apart."
+        "The vanished commute. The walk or the train used to give people time to switch from work to home. Working remotely, you can go from the last message to the sofa in ninety seconds."
       ]
     },
     {
@@ -63,9 +63,9 @@ const post: BlogPost = {
       type: "list",
       items: [
         "Cameras-off creep. Someone who used to join video calls with their camera on gradually stops. It reads as a preference, but it is often withdrawal.",
-        "Slower responses. Not one slow reply, a trend. Messages that used to come back in minutes now take hours, and the replies are shorter.",
+        "Slower responses. Look for a trend rather than one slow reply. Messages that used to come back in minutes now take hours, and the replies are shorter.",
         "Dropping out of the optional. They stop coming to the non-mandatory things first: the social call, the informal stand-up, the coffee chat.",
-        "Productive overwork. This is the one managers miss most, because it looks like commitment: messages late at night and early in the morning, work delivered at a pace nobody asked for. Sustained overwork is a warning sign, not a win."
+        "Productive overwork. This is the one managers miss most, because it looks like commitment: messages late at night and early in the morning, work delivered at a pace nobody asked for. Overwork that carries on over a long period should be treated as a warning sign."
       ]
     },
     {
@@ -84,13 +84,13 @@ const post: BlogPost = {
       type: "list",
       items: [
         "The one-off wellbeing day. An afternoon of talks and free smoothies does not touch a workload that resumes in full on Monday. It can even signal that wellbeing is a one-day event.",
-        "The app nobody opens. A wellbeing app gets rolled out, downloaded by a keen few, then quietly forgotten. Access is not the same as use, and use is not the same as habit. More on this in my piece on [whether workplace wellness apps actually work](/blog/do-workplace-wellness-apps-work).",
+        "The app nobody opens. A wellbeing app gets rolled out, downloaded by a keen few, then quietly forgotten. Having access to an app does not mean people use it, and using it once does not make it a habit. More on this in my piece on [whether workplace wellness apps actually work](/blog/do-workplace-wellness-apps-work).",
         "Leaning on the EAP. Employee assistance programmes matter, but typical uptake sits around 3 to 5 percent. An EAP is a safety net for people already in crisis, not a preventive measure. If it is the whole strategy, most people are unprotected."
       ]
     },
     {
       type: "paragraph",
-      text: "The common thread: all three are reactive or optional, and ask the individual to fix themselves in their own time. Prevention has to be built into the team, not outsourced to the tired person."
+      text: "The common thread: all three are reactive or optional, and ask the individual to fix themselves in their own time. Prevention has to be part of how the team works, rather than left to the person who is already tired."
     },
     {
       type: "heading",
@@ -103,15 +103,15 @@ const post: BlogPost = {
     {
       type: "list",
       items: [
-        "A regular rhythm. Something predictable in the week that is not about output. A recurring moment people can count on does more than an occasional grand gesture.",
+        "A regular rhythm. Have something predictable in the week that is not about output. A recurring moment people can count on does more than an occasional grand gesture.",
         "Boundaries modelled from the top. If managers send messages at 10pm, everyone learns that 10pm is fair game, whatever the policy says. When leaders visibly log off and protect their evenings, the team gets permission to do the same.",
         "Shared moments that rebuild connection. Isolation is one of the biggest drivers, so the antidote is time together that is not a status meeting.",
-        "Preventive support, not crisis support. Help that reaches everyone before they are struggling, not only once someone is at the edge."
+        "Preventive support. This means help that reaches everyone before they are struggling, and not only once someone is at the edge."
       ]
     },
     {
       type: "paragraph",
-      text: "None of these require a person to opt in when they are already running on empty. That is the point. The people most at risk of burnout are the least likely to seek help, so the support has to come to them, as part of the ordinary week."
+      text: "None of these require a person to opt in when they are already running on empty, and that matters, because the people most at risk of burnout are the least likely to seek help, so the support has to come to them, as part of the ordinary week."
     },
     {
       type: "heading",

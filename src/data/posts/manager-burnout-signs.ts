@@ -49,7 +49,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "None of these are dramatic on their own. It is the cluster, held over weeks, that matters."
+      text: "None of these is dramatic on its own. What matters is several of them together over a few weeks."
     },
     {
       type: "subheading",
@@ -83,7 +83,7 @@ const post: BlogPost = {
         "The reliable one going quiet. A manager who used to offer ideas and push back now just nods and agrees. That is often someone conserving what little they have left.",
         "Decisions slowing down. Choices that would once have been quick start to stall, or get bounced upward. Decision fatigue is one of the clearest signals that a manager is depleted.",
         "Their team getting louder. More friction, more confusion, more small things going wrong can mean the person holding it together has run out of capacity to hold.",
-        "Always available, never off. The manager who answers at any hour and never takes real time away is not necessarily the most committed. Sustained overwork is a warning sign, not a badge."
+        "Always available, never off. The manager who answers at any hour and never takes real time away is not necessarily the most committed. Overwork that carries on over a long period should be treated as a warning sign."
       ]
     },
     {
@@ -102,13 +102,13 @@ const post: BlogPost = {
       type: "list",
       items: [
         "The tone shifts. A depleted manager has less patience and less warmth to spare, and the team feels it even when nothing is said.",
-        "Boundaries collapse. A manager who works every evening quietly teaches the team that evenings are fair game, whatever the written policy says. People model what they see leaders do, not what they are told.",
+        "Boundaries collapse. A manager who works every evening quietly teaches the team that evenings are fair game, whatever the written policy says. People copy what leaders do more than what they are told.",
         "Support dries up at the top. The manager is usually the first line of care for their reports. When they have nothing left, the strain moves down the line."
       ]
     },
     {
       type: "paragraph",
-      text: "This is why protecting managers is not a nice extra. It is one of the most effective things an organisation can do for the wellbeing of everyone underneath them. I have written more about the wider picture in my piece on [preventing burnout in a distributed team](/blog/prevent-burnout-distributed-team)."
+      text: "This is why protecting managers is one of the most effective things an organisation can do for the wellbeing of everyone underneath them. I have written more about the wider picture in my piece on [preventing burnout in a distributed team](/blog/prevent-burnout-distributed-team)."
     },
     {
       type: "heading",
@@ -122,7 +122,7 @@ const post: BlogPost = {
       type: "list",
       items: [
         "Name the second job. Simply acknowledging out loud that holding the team's mood is real work takes some of the weight off.",
-        "Protect one real boundary. Not a whole new lifestyle, one line that holds: a hard stop in the evening, or one afternoon a week without meetings.",
+        "Protect one real boundary. This does not need to be a whole new lifestyle, just one rule you keep: a hard stop in the evening, or one afternoon a week without meetings.",
         "Build in recovery you do not have to organise. The most useful support for a tired manager already exists on the calendar, so they do not have to summon the energy to arrange it.",
         "Take the pressure to lead off them, sometimes. A manager who is always the one holding space rarely gets held themselves. A regular moment where they are just a participant is genuinely restorative."
       ]
@@ -141,7 +141,7 @@ const post: BlogPost = {
     },
     {
       type: "cta",
-      text: "If you want to take the wellbeing load off your managers rather than add to it, a recurring live session is one clear habit to put on the calendar. See how it works for [remote and hybrid teams](/services/corporate-wellbeing-for-remote-teams), or try one with your team first. For the cause rather than the symptom, see my [remote work burnout guide](/guides/remote-work-burnout).",
+      text: "If you want to take the wellbeing load off your managers rather than add to it, a recurring live session is one clear habit to put on the calendar. See how it works for [remote and hybrid teams](/services/corporate-wellbeing-for-remote-teams), or try one with your team first. To read about what causes burnout in the first place, see my [remote work burnout guide](/guides/remote-work-burnout).",
       ctaHref: "/demo",
       ctaLabel: "Book a pilot"
     },

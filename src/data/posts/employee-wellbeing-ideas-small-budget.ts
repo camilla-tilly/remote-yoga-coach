@@ -30,7 +30,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "I am a 500-hour certified yoga teacher. What makes wellbeing last is not budget. It is consistency.",
+      text: "I am a 500-hour certified yoga teacher. What makes wellbeing habits last is doing them regularly, and that does not depend on the size of the budget.",
     },
     {
       type: "heading",
@@ -46,7 +46,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Block a recurring window each week where nothing is scheduled. No wellbeing activity, no catch-up, just room to think. It is free, and for an over-booked team it is one of the most appreciated things you can offer. But leadership has to defend it, or it fills back up within a fortnight.",
+      text: "Block a recurring window each week where nothing is scheduled. Do not fill it with a wellbeing activity or a catch-up. Leave it free so people have time to think. It is free, and for an over-booked team it is one of the most appreciated things you can offer. But leadership has to defend it, or it fills back up within a fortnight.",
     },
     {
       type: "subheading",
@@ -74,7 +74,7 @@ const post: BlogPost = {
     },
     {
       type: "callout",
-      text: "The thread running through all of these: a modest thing done every week beats an impressive thing done once. Consistency is the ingredient budget cannot buy, and it is free.",
+      text: "What all of these have in common is that a small thing done every week helps more than a big thing done once, and doing something regularly costs nothing.",
     },
     {
       type: "heading",
@@ -82,7 +82,7 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "When you do have something to spend, spend it on rhythm, not a one-off event. A single recurring live session gives a small budget the most leverage, for one reason: priced per team rather than per person, the cost per head drops as the team grows. A ten-person team and a forty-person team pay the same.",
+      text: "When you do have something to spend, spend it on something that happens every week rather than a one-off event. A single recurring live session gives a small budget the most leverage, for one reason: priced per team rather than per person, the cost per head drops as the team grows. A ten-person team and a forty-person team pay the same.",
     },
     {
       type: "paragraph",
@@ -91,10 +91,10 @@ const post: BlogPost = {
     {
       type: "list",
       items: [
-        "**One recurring session beats a scattering of one-offs.** A regular habit changes how a week feels; a single wellbeing day rarely survives to the following Monday.",
+        "**One recurring session does more than several one-offs.** A regular habit changes how the week feels, while the effect of a single wellbeing day has usually gone by the following Monday.",
         "**Per-team pricing protects a small budget.** Adding people does not add cost.",
-        "**Live and led drives real participation.** A set time people simply join, with a real person leading, gets attended in a way a self-serve library does not.",
-        "**Nothing to prepare removes the barriers.** Nobody has to be on screen or free at the exact hour to benefit.",
+        "**A live session with a teacher gets people taking part.** A set time people simply join, with a real person leading, gets attended in a way a self-serve library does not.",
+        "**There is nothing to prepare.** Nobody has to be on screen or free at the exact hour to benefit.",
       ],
     },
     {
@@ -109,20 +109,20 @@ const post: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "A few principles keep cheap wellbeing from becoming forgettable wellbeing:",
+      text: "A few principles help cheap wellbeing ideas last:",
     },
     {
       type: "list",
       items: [
         "Pick one thing and do it every week, rather than five things once.",
-        "Schedule it. Anything that relies on people self-starting loses to a busy calendar.",
+        "Schedule it. Anything that relies on people starting on their own usually gets pushed aside by a busy calendar.",
         "Measure participation honestly: what share of the whole team takes part, and do they come back.",
         "Let leaders go first. Whatever you introduce works when managers visibly use it too.",
       ],
     },
     {
       type: "paragraph",
-      text: "Do the near-free habits well, and add one recurring paid session when you can. That combination gives a small budget the best return I know of, because it is built on what actually moves wellbeing: showing up, together, again next week.",
+      text: "Do the near-free habits well, and add one recurring paid session when you can. That combination gives a small budget the best return I know of, because it is built on what makes the most difference to wellbeing: people turning up together, week after week.",
     },
     {
       type: "faq",
@@ -137,7 +137,7 @@ const post: BlogPost = {
         },
         {
           q: "Is a one-off wellbeing day worth it on a small budget?",
-          a: "Rarely. A single event is a nice gesture but seldom changes how the week feels by the following Monday. A modest weekly rhythm beats a one-off almost every time, and usually costs less over a year.",
+          a: "Rarely. A single event is a nice gesture but seldom changes how the week feels by the following Monday. A small weekly habit helps more than a one-off almost every time, and usually costs less over a year.",
         },
         {
           q: "What does your live session include and how is it priced?",

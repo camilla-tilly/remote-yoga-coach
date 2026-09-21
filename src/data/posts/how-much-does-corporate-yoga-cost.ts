@@ -9,7 +9,7 @@ const post: BlogPost = {
   readingTime: '6 min',
   category: 'Cost and proof',
   excerpt:
-    'Almost nobody publishes their prices. This guide fixes that: what corporate yoga actually costs in 2026, in-person and online, per session and per month, so you can budget before you pick up the phone.',
+    'Almost nobody publishes their prices, so this guide sets out what corporate yoga actually costs in 2026, in-person and online, per session and per month, so you can budget before you pick up the phone.',
   language: 'en',
   relatedServiceHref: '/pricing',
   relatedServiceLabel: 'See my transparent pricing',
@@ -27,7 +27,7 @@ const post: BlogPost = {
     },
     {
       type: 'paragraph',
-      text: "This guide fixes that. Here's what corporate yoga actually costs in 2026, in-person and online, per session and per month, so you can budget before you ever pick up the phone.",
+      text: "This guide sets out what corporate yoga actually costs in 2026, in-person and online, per session and per month, so you can budget before you ever pick up the phone.",
     },
     { type: 'heading', text: 'The short answer' },
     { type: 'paragraph', text: 'For a single live session, expect roughly:' },
@@ -51,7 +51,7 @@ const post: BlogPost = {
     },
     {
       type: 'paragraph',
-      text: '**One-off vs ongoing.** A single session is priced as an event. A regular slot is priced as a relationship: lower per session, because the value is in the habit it builds.',
+      text: '**One-off vs ongoing.** A single session is priced as a one-off event. A regular weekly slot costs less per session, because the provider has a longer commitment and the value comes from the habit it builds.',
     },
     {
       type: 'paragraph',
@@ -66,7 +66,7 @@ const post: BlogPost = {
       type: 'list',
       items: [
         '**Meditation apps** (the Calms and Headspaces) cost a few pounds per employee per month. Cheap per head, but they are a content library. Nobody delivers anything live, and engagement reflects that: most people download the app and stop using it within a fortnight.',
-        "**Live instructor sessions** (what this guide is mostly about) cost more because a real person shows up, every week, and your team gets to know them. You're paying for delivery and accountability, not just access.",
+        "**Live instructor sessions** (what this guide is mostly about) cost more because a real person shows up, every week, and your team gets to know them. The price covers someone delivering the session and keeping people accountable, as well as access.",
         '**Benefit marketplaces and gym aggregators** sit somewhere in between: your team gets access to lots of options, but again, the onus is on each person to go and use them.',
       ],
     },
