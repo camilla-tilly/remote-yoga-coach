@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Remote Yoga Coach. The mark is the dot used beside the wordmark in the
-       navbar on every page: a clay dot on warm paper. Kept on a tile so it
-       reads as an intentional icon at favicon size. -->
-  <rect x="0" y="0" width="64" height="64" rx="16" fill="#f9f2e9"/>
-  <circle cx="32" cy="32" r="13" fill="#8f5033"/>
+  <!-- Remote Yoga Coach. A cream R on a solid clay tile. The old mark was a small
+       clay dot on a pale tile: at 16px the tile vanished into the browser bar and
+       the dot read as a dot in a ring. A filled tile holds its shape at tab size. -->
+  <rect x="0" y="0" width="64" height="64" rx="15" fill="#8f5033"/>
+  <text x="32" y="33" fill="#f9f2e9" font-family="Georgia, 'Times New Roman', serif"
+        font-size="42" text-anchor="middle" dominant-baseline="central">R</text>
 </svg>

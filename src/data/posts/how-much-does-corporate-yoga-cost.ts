@@ -103,7 +103,7 @@ const post: BlogPost = {
     },
     {
       type: 'cta',
-      text: 'Curious what it would cost for your team? My [pricing is public](/pricing), with a single [pilot session](/demo) you can try first, credited to your first month if you continue.',
+      text: 'Curious what it would cost for your team? My [pricing is public](/pricing), with a single [pilot session](/demo) you can try first, and we take it off your first month if you continue.',
       ctaHref: '/pricing',
       ctaLabel: 'See my pricing',
     },

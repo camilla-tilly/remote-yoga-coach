@@ -50,7 +50,7 @@ const post: BlogPost = {
       'Treating the wellbeing check as a test people can fail. Present it as a quick check-in rather than an evaluation, and keep it anonymous where you can, or people will tell you what they think you want to hear.',
     ] },
     { type: 'paragraph', text: 'None of this requires expensive tooling. A simple spreadsheet with attendance per week and the wellbeing check readings is enough to tell an honest story, and that is what survives scrutiny at renewal time.' },
-    { type: 'cta', text: 'Want to see how your team responds before a bigger commitment? Start with one paid pilot session, credited to your first month if you continue, and track attendance from the first week.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
+    { type: 'cta', text: 'Want to see how your team responds before a bigger commitment? Start with one paid pilot session, and we take it off your first month if you continue, and track attendance from the first week.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
     { type: 'faq', faqItems: [
       { q: 'What is the ROI of a workplace wellbeing programme?', a: 'There is no single trustworthy figure that applies to every organisation, and any number that cannot be traced back to your own team deserves caution. A more honest approach is to track attendance and a short wellbeing check over several weeks and let those numbers make the case.' },
       { q: 'How do you measure wellbeing programme success without hard financial data?', a: 'Use two proxies you fully control: the attendance trend, which shows whether people keep choosing to show up, and a short before and after wellbeing check. Together they give a credible picture without a financial study.' },

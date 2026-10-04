@@ -88,7 +88,7 @@ const groups: Array<{ heading: string; items: Array<[string, string]> }> = [
       ],
       [
         'Can we try it before committing?',
-        'Yes. There is a single paid pilot session, one live class, and if you continue, the pilot fee is credited to your first month.',
+        'Yes. There is a single paid pilot session, one live class, and if you continue, we take the pilot fee off your first month.',
       ],
       [
         'Can we book a one-off session, like a lunch and learn?',

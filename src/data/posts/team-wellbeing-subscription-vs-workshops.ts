@@ -50,9 +50,9 @@ const post: BlogPost = {
     { type: 'cta', text: 'Want to test the habit before committing? A single pilot session lets your team try it.', ctaHref: '/demo', ctaLabel: 'Book a pilot' },
     { type: 'faq', faqItems: [
       { q: 'Is a wellbeing subscription better than a one-off workshop?', a: 'For ongoing team wellbeing, yes, because results come from the weekly rhythm, not any single session. For a specific one-time occasion, a one-off workshop can be the right call.' },
-      { q: 'How much does a team wellbeing subscription cost?', a: 'It is priced as a flat monthly fee by session frequency rather than per person, so the cost per employee stays low as you grow. Every engagement starts with a single pilot session credited to your first month.' },
+      { q: 'How much does a team wellbeing subscription cost?', a: 'It is priced as a flat monthly fee by session frequency rather than per person, so the cost per employee stays low as you grow. Every engagement starts with a single pilot session, and we take it off your first month if you continue.' },
       { q: 'How long before a subscription shows results?', a: 'Attendance patterns are visible within the first few weeks; the wellbeing effect builds over a couple of months as the habit forms.' },
-      { q: 'Can we try it before subscribing?', a: 'Yes. A single paid pilot session lets your team try it first, and it is credited to your first month if you continue.' },
+      { q: 'Can we try it before subscribing?', a: 'Yes. A single paid pilot session lets your team try it first, and if you continue, we take it off your first month.' },
     ] },
   ],
 };

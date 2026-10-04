@@ -155,7 +155,7 @@ const ChairYogaForTeams = () => {
           }
         >
           <p>
-            Start with one pilot session, credited to your first month if you continue. Want breathing and
+            Start with one pilot session, and we take it off your first month if you continue. Want breathing and
             meditation too? See{' '}
             <Link to="/services/team-wellness">how a session runs</Link>.
           </p>

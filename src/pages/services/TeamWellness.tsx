@@ -89,7 +89,7 @@ const TeamWellness = () => {
           heading="Start with one pilot session"
           actions={<PillLink to="/demo" variant="light">Book a pilot</PillLink>}
         >
-          <p>One session for your team, credited to your first month if you continue.</p>
+          <p>One session for your team, and we take it off your first month if you continue.</p>
           <p className="text-[15px] text-offwhite/60">
             Further reading:{' '}
             <Link to="/guides/mindfulness-at-work">mindfulness at work</Link>,{' '}

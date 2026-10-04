@@ -13,7 +13,7 @@ const labelClass = 'block text-sm font-semibold text-charcoal mb-1.5';
 
 const nextSteps: Array<[string, string]> = [
   ['A short call', "To see if it's a fit: your time zones, your team, and what they are struggling with."],
-  ['Your pilot session', 'One live session with your team, 1,490 kr, credited to your first month if you continue.'],
+  ['Your pilot session', 'One live session with your team, 1,490 kr, and we take it off your first month if you continue.'],
   ['A weekly slot', 'If it works, the same time every week, as a recurring invite.'],
 ];
 
@@ -55,7 +55,7 @@ const Demo = () => {
     <div className="min-h-screen bg-offwhite relative overflow-x-hidden">
       <SEO
         title="Book a pilot session | Remote Yoga Coach"
-        description="Book a single pilot session for your team: one live class, credited to your first month if you continue."
+        description="Book a single pilot session for your team: one live class, and we take it off your first month if you continue."
         canonical="https://remoteyogacoach.com/demo"
       />
       <Navbar />

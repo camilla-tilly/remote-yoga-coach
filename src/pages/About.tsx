@@ -135,7 +135,7 @@ const About = () => {
           heading="Start with one pilot session"
           actions={<PillLink to="/demo" variant="light">Book a pilot</PillLink>}
         >
-          <p>A single live class, credited to your first month if you continue.</p>
+          <p>A single live class, and we take it off your first month if you continue.</p>
         </ClosingCTA>
       </main>
 

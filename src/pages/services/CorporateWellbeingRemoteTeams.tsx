@@ -140,7 +140,7 @@ const CorporateWellbeingRemoteTeams = () => {
           heading="Start with one pilot session"
           actions={<PillLink to="/demo" variant="light">Book a pilot</PillLink>}
         >
-          <p>Start with a single pilot session, credited to your first month if you continue.</p>
+          <p>Start with a single pilot session, and we take it off your first month if you continue.</p>
           <p className="text-[15px] text-offwhite/60">
             If you need to explain it to others internally, read{' '}
             <Link to="/guides/cost-of-employee-burnout">what employee burnout costs</Link> or{' '}

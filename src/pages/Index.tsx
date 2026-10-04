@@ -278,7 +278,7 @@ const Index = () => {
           ))}
         </div>
         <p style={{ marginTop: 20, fontSize: 15.5, color: c.text3 }}>
-          Every engagement starts with a single pilot session at 1,490 kr, credited to your first month.{' '}
+          Every engagement starts with a single pilot session at 1,490 kr, and we take it off your first month if you continue.{' '}
           <Link className="ryc-underline" to="/pricing" style={{ color: c.terracotta }}>See full pricing →</Link>
         </p>
       </section>
@@ -287,7 +287,7 @@ const Index = () => {
       <section id="pilot" className="ryc-pad ryc-sec" style={{ maxWidth: 1320, margin: '0 auto', padding: '112px 48px 112px' }}>
         <div className="ryc-pilot-panel" style={{ background: c.darkPill, color: c.onDark, borderRadius: 18, padding: '64px 56px', textAlign: 'center' }}>
           <h2 style={{ ...h2Style, color: c.onDark, fontSize: 'clamp(28px, 3vw, 40px)', lineHeight: 1.1 }}>Start with one pilot session</h2>
-          <p style={{ fontSize: 18, lineHeight: 1.6, color: 'oklch(0.86 0.02 76)', margin: '16px auto 0', maxWidth: '42ch' }}>It is a single paid class with no contract. If you continue, the cost is credited to your first month.</p>
+          <p style={{ fontSize: 18, lineHeight: 1.6, color: 'oklch(0.86 0.02 76)', margin: '16px auto 0', maxWidth: '42ch' }}>It is a single paid class with no contract. If you continue, we take the cost off your first month.</p>
           <Link className="ryc-btn-light" to="/demo" style={{ display: 'inline-flex', alignItems: 'center', height: 54, padding: '0 30px', marginTop: 30, borderRadius: 999, background: c.onDark, color: c.text, fontWeight: 600, fontSize: 16 }}>Book a pilot</Link>
         </div>
       </section>

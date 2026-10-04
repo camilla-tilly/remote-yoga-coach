@@ -53,7 +53,7 @@ const structuredData = {
           name: 'Pilot session',
           price: '1490',
           priceCurrency: 'SEK',
-          description: 'A single live session, credited to your first month if you continue.',
+          description: 'A single live session, and we take it off your first month if you continue.',
           url: 'https://remoteyogacoach.com/pricing',
         },
         ...tiers.map((t) => ({
@@ -105,7 +105,7 @@ const Pricing = () => {
                 ]}
               />
               <p className="mt-5 text-charcoal/65 text-[15px] leading-relaxed">
-                If you go ahead, the {pilotPrice} is credited to your first month.
+                If you go ahead, we take the {pilotPrice} off your first month.
               </p>
               <div className="mt-7">
                 <PillLink to="/demo">Book a pilot session</PillLink>
@@ -200,7 +200,7 @@ const Pricing = () => {
           heading="Start with one pilot session"
           actions={<PillLink to="/demo" variant="light">Book a pilot</PillLink>}
         >
-          <p>One live class, credited to your first month if you continue.</p>
+          <p>One live class, and we take it off your first month if you continue.</p>
         </ClosingCTA>
       </main>
 
